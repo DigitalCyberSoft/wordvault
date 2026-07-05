@@ -1,0 +1,29 @@
+Word Vault sound effects
+========================
+
+All ten clips are sourced from Kenney's audio packs (https://kenney.nl),
+licensed Creative Commons Zero (CC0) - free for any use, no attribution
+required. Credit given anyway because the packs are excellent.
+
+Clip mapping (game id -> source pack / file):
+
+  tap.mp3      Interface Sounds / click_001.ogg
+  whoosh.mp3   RPG Audio / cloth1.ogg
+  seat.mp3     RPG Audio / metalClick.ogg
+  drop.mp3     RPG Audio / dropLeather.ogg
+  relock.mp3   RPG Audio / metalLatch.ogg
+  door.mp3     Impact Sounds / impactPlate_heavy_002.ogg
+  coin.mp3     RPG Audio / handleCoins.ogg
+  chime.mp3    Interface Sounds / confirmation_001.ogg
+  fanfare.mp3  Music Jingles / jingles_PIZZI07.ogg
+  page.mp3     RPG Audio / bookFlip2.ogg
+
+Packs downloaded 2026-07-05:
+  https://kenney.nl/assets/rpg-audio
+  https://kenney.nl/assets/interface-sounds
+  https://kenney.nl/assets/impact-sounds
+  https://kenney.nl/assets/music-jingles
+
+Converted ogg -> mp3 (lame VBR q6) by tools; volumes are set per clip in
+game-ui.js (SFX_VOL). tools/generate-sfx.py remains available to replace
+these with generated foley later.
