@@ -5,7 +5,13 @@
   "theme": "ways of talking",
   "band": 2,
   "band_override": 2,
-  "computed": null,
+  "computed": {
+    "zipf_min": 2.79,
+    "zipf_mean": 3.42,
+    "tightness": 0.693,
+    "band_suggested": 4,
+    "scored_at": "2026-07-05T08:59:48+00:00"
+  },
   "words": [
     {
       "w": "whisper",
@@ -238,7 +244,15 @@
         "chatter": "chattered",
         "announce": "announced",
         "bellow": "bellowed"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-talk-01-s10",
@@ -253,7 +267,15 @@
         "chatter": "chatter",
         "announce": "announce",
         "bellow": "bellow"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-talk-01-s11",
@@ -268,7 +290,15 @@
         "chatter": "chattered",
         "announce": "announced",
         "bellow": "bellowed"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "Card-constrained acceptance: dissenting judges use the neighbour word's loose colloquial sense; the pinned card sense excludes it here. See FORMAT.md lessons.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-talk-01-s12",
@@ -283,7 +313,15 @@
         "chatter": "chattered",
         "announce": "announced",
         "bellow": "bellowed"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "Card-constrained acceptance: dissenting judges use the neighbour word's loose colloquial sense; the pinned card sense excludes it here. See FORMAT.md lessons.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-talk-01-s13",
@@ -298,7 +336,15 @@
         "chatter": "chattered",
         "announce": "announced",
         "bellow": "bellowed"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-talk-01-s14",
@@ -343,7 +389,15 @@
         "chatter": "chattered",
         "announce": "announced",
         "bellow": "bellowed"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-talk-01-s17",
@@ -403,7 +457,15 @@
         "chatter": "chattered",
         "announce": "announced",
         "bellow": "bellowed"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-talk-01-s21",
@@ -418,7 +480,15 @@
         "chatter": "chattered",
         "announce": "announced",
         "bellow": "bellowed"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-talk-01-s22",
@@ -433,7 +503,15 @@
         "chatter": "chattered",
         "announce": "announced",
         "bellow": "bellowed"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-talk-01-s23",
@@ -575,8 +653,8 @@
       "answer": "announce",
       "cue": "contextual",
       "reserve": true,
-      "text": "Our class website ___ officially for every family before the fair.",
-      "cue_phrase": "class website",
+      "text": "The head teacher ___ the winner to the whole school at assembly.",
+      "cue_phrase": "to the whole school at assembly",
       "surface": {
         "whisper": "whispers",
         "mumble": "mumbles",
@@ -695,8 +773,8 @@
       "answer": "bellow",
       "cue": "contextual",
       "reserve": true,
-      "text": "A bull in stories ___ with a rumble like thunder.",
-      "cue_phrase": "rumble like thunder",
+      "text": "'GET DOWN FROM THERE!' Dad ___ from the bottom of the garden.",
+      "cue_phrase": "from the bottom of the garden",
       "surface": {
         "whisper": "whispers",
         "mumble": "mumbles",
@@ -811,7 +889,7 @@
   "meta": {
     "generated_at": "2026-07-05T07:22:59+00:00",
     "model": "gpt-5.5",
-    "scrubbed_at": null,
-    "scrub_note": null
+    "scrubbed_at": "2026-07-05",
+    "scrub_note": "Full read by claude during judge triage: every flagged sentence adjudicated (rewrite or recorded waiver), unflagged sentences read for frame sanity."
   }
 }

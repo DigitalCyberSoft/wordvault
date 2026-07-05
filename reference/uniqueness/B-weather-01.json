@@ -1,0 +1,1141 @@
+{
+  "set_id": "B-weather-01",
+  "sentences": {
+    "B-weather-01-s01": {
+      "text_sha256": "bfff69c1066bab617be29cbd327392cdcf5737a0bb502c2fba00bf213c19780b",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "drizzle"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "drizzle"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "drizzle"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:21:36+00:00"
+    },
+    "B-weather-01-s02": {
+      "text_sha256": "5b8c22259e62a366eb6a11cccb46ac7bfb688cf1102e5e747cecd4e3f93f88b3",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "drizzle"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "drizzle"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "drizzle"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:21:36+00:00"
+    },
+    "B-weather-01-s03": {
+      "text_sha256": "2ae98871c5a4dd60cbd6d8d55bff2dca93d4edf5cd90785721ddb129bc2dd2dd",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "drizzle"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "drizzle"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "drizzle"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:21:36+00:00"
+    },
+    "B-weather-01-s04": {
+      "text_sha256": "626a5fe90ebb0377aeb4518fb021edd15848a39881b072fdc81f262711ad4928",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "drizzle"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "drizzle"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "drizzle"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:21:36+00:00"
+    },
+    "B-weather-01-s05": {
+      "text_sha256": "308ecb24e7261bd9442eb974d685a1bdac5ba50c3b4d27c2fe844b0002f2dda8",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "drizzle"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "drizzle"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "drizzle"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:21:36+00:00"
+    },
+    "B-weather-01-s06": {
+      "text_sha256": "e9a6ee880118e8b0c70670e404ea662030c415ea661d4ce4f0529b9ba764fb3c",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "drizzle",
+            "hail",
+            "sleet"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "drizzle"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "drizzle"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:21:36+00:00"
+    },
+    "B-weather-01-s07": {
+      "text_sha256": "2598a4b3ee9ce5b199159ceab7f39ff86b78fb94733a681daa4bb854964792f0",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "drizzle",
+            "sleet"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "drizzle"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "drizzle"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:21:36+00:00"
+    },
+    "B-weather-01-s08": {
+      "text_sha256": "01678434f667fdce723d7323d7a5275778733a88db19a27b772a23d038061b06",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "drizzle",
+            "hail",
+            "sleet"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "drizzle"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "drizzle"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:21:36+00:00"
+    },
+    "B-weather-01-s09": {
+      "text_sha256": "96cf6738fabaa461cd946267561b2a9131eeea02152bff4e41438be90df4c7bd",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "downpour",
+            "hail",
+            "sleet"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "downpour"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "downpour"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:21:36+00:00"
+    },
+    "B-weather-01-s10": {
+      "text_sha256": "5de00a7e481d350933d6c52612f9098ee29a4f7b4e188dc66d0b9c9786ac4a8a",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "downpour"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "downpour"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "downpour"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:21:36+00:00"
+    },
+    "B-weather-01-s11": {
+      "text_sha256": "8e23e96e38cd040f550a28d07de2f92896e68b38f2fb74e425edfaea7fbc0653",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "downpour"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "downpour"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "downpour"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:22:48+00:00"
+    },
+    "B-weather-01-s12": {
+      "text_sha256": "d63a926f6b0ed179fbc76f16e4f812c9f8a5a915f6a0f13a5e013087b3575f23",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "downpour"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "downpour"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "downpour"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:22:48+00:00"
+    },
+    "B-weather-01-s13": {
+      "text_sha256": "b71b5b2cf4a6cb88ec0194ae5a292f73b209922bc6e1ac71c1c80360d0ecdd42",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "downpour"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "downpour"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "downpour"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:22:48+00:00"
+    },
+    "B-weather-01-s14": {
+      "text_sha256": "a9c63584db57684826f3c59a76a161a5c73c4d17d5adc89699c763b128ab65e5",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "downpour"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "downpour"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "downpour"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:22:48+00:00"
+    },
+    "B-weather-01-s15": {
+      "text_sha256": "aadef3f9fcf8edfd2ce2c25c12ec322a7aa825fed9eb694fda33f6810fda909c",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "downpour",
+            "hail"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "downpour"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "downpour"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:22:48+00:00"
+    },
+    "B-weather-01-s16": {
+      "text_sha256": "382a0d48861976b90e5fc310d8db3f726b5d08a04b77558bc0259b2f8b0ae11a",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "downpour"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "downpour"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "downpour"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:22:48+00:00"
+    },
+    "B-weather-01-s17": {
+      "text_sha256": "dd1e4bcf7a37c10c4225c34d126ec28aaff89d91121a11f50cd53b43c94d03f9",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "hail"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "hail"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "hail"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:22:48+00:00"
+    },
+    "B-weather-01-s18": {
+      "text_sha256": "92e13558fe5a2248a1d4032c52ee103854e6fe564650b46b353a72093097d093",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "hail",
+            "sleet"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "hail"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "hail"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:22:48+00:00"
+    },
+    "B-weather-01-s19": {
+      "text_sha256": "ed1089ac6c7e2b7f1c8bb6f0305ebc1d55e30b219c3513fd29336c1b5cea73d1",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "hail"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "hail"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "hail"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:22:48+00:00"
+    },
+    "B-weather-01-s20": {
+      "text_sha256": "add3c1e1bc46a3d2f060d1d4f754b0e2037764f9e091bf124e05bd4790627ba3",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "hail",
+            "sleet"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "hail"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "hail"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:22:48+00:00"
+    },
+    "B-weather-01-s21": {
+      "text_sha256": "b63dffaa838ddd12ec32aa0b58bb2cd973e3b6d8b8a76e46c0e7bf7058c302a1",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "hail"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "hail"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "hail"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:24:02+00:00"
+    },
+    "B-weather-01-s22": {
+      "text_sha256": "592821b9d5de2bb1811774c110a58dd9378bf1ff013d8bd94d785922281cf662",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "hail",
+            "sleet"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "hail"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "hail"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:24:02+00:00"
+    },
+    "B-weather-01-s23": {
+      "text_sha256": "6a7bc0e7e1518e7556ae40c1c8b1e1d5342050449b2ac6fcc60ca194d65cf10f",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "hail",
+            "sleet"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "hail"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "hail"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:24:02+00:00"
+    },
+    "B-weather-01-s24": {
+      "text_sha256": "1d77e215706f02b37b9318cf3b8f9a6468e332069e07eb612b5977fdef09db42",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "hail"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "hail"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "hail"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:24:02+00:00"
+    },
+    "B-weather-01-s25": {
+      "text_sha256": "9ea9bc28ca81fb0841b1291e48ac6eac26911d04a48a10f1f6107f766471311c",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "sleet"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "sleet"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "sleet"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:24:02+00:00"
+    },
+    "B-weather-01-s26": {
+      "text_sha256": "f09ffd3210e0ad2b8a98966e202ada08f027ab61582fe698e921d436c651c1f7",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "sleet"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "sleet"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "sleet"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:24:02+00:00"
+    },
+    "B-weather-01-s27": {
+      "text_sha256": "ad1db3cd06a4f2be4ea8eb77b56ac36227941029ba48164c1bafbada27bb4095",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "sleet"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "sleet"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "sleet"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:24:02+00:00"
+    },
+    "B-weather-01-s28": {
+      "text_sha256": "4066ffa837d98a701c9fb69b038b2290711145809055e38ee5c7c7e7af1d4669",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "hail",
+            "sleet"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "sleet"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "sleet"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:24:02+00:00"
+    },
+    "B-weather-01-s29": {
+      "text_sha256": "3d8584df2ff3ebc6d3bfce52d375af78ffae10063d8410b0dd57813bac74a8c9",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "sleet"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "sleet"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "sleet"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:24:02+00:00"
+    },
+    "B-weather-01-s30": {
+      "text_sha256": "b390cecf132f57fc7230182b71f6362d77eb3cfd7c446a36d9359cc4cb67d4fc",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "sleet"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "sleet"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "sleet"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:24:02+00:00"
+    },
+    "B-weather-01-s31": {
+      "text_sha256": "27db92dfea2fb1df94f096e8ac90ef66d0c06238213afcff8350303aed9287f1",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "sleet"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "sleet"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "sleet"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:25:01+00:00"
+    },
+    "B-weather-01-s32": {
+      "text_sha256": "59bde9c67c70ab6861d658d8c28379d14f5a1ff0566a622b4a7cd2f38716e297",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "sleet"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "sleet"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "sleet"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:25:01+00:00"
+    },
+    "B-weather-01-s33": {
+      "text_sha256": "631076e18753dcec9076357542dab0049ad6a4739d3be4fdfc4775d1f33ea969",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "fog"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "fog"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "fog"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:25:01+00:00"
+    },
+    "B-weather-01-s34": {
+      "text_sha256": "b85657c9c69f90ffd5ae97761be4cbd07b29acc57c213d846e2dabe635684f98",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "fog"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "fog"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "fog"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:25:01+00:00"
+    },
+    "B-weather-01-s35": {
+      "text_sha256": "527738e22b6f0257b1985daf7afeecd7646546211da82c48a2da6e6d4249deb0",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "fog"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "fog"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "fog"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:25:01+00:00"
+    },
+    "B-weather-01-s36": {
+      "text_sha256": "6fe8ecdf8876ce3e5137aa405d030f61deea708a49dbaa9f5201923f34b0ce6c",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "fog"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "fog"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "fog"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:25:01+00:00"
+    },
+    "B-weather-01-s37": {
+      "text_sha256": "fce32ebfc46f2b160e99eaacbe92a34eb149807b1c865841def6c86236115883",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "fog"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "fog"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "fog"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:25:01+00:00"
+    },
+    "B-weather-01-s38": {
+      "text_sha256": "6f9d36786e4064b2022e03c509c87dec6bed5e92e28dc59ea0eaa22c512a5ad9",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "fog"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "fog"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "fog"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:25:01+00:00"
+    },
+    "B-weather-01-s39": {
+      "text_sha256": "235a0345e85f10160e941fb09eaa14d8793235e5bd90c4c7044630016048b26c",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "fog"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "fog"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "fog"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:25:01+00:00"
+    },
+    "B-weather-01-s40": {
+      "text_sha256": "b21f947a153b8e57473212cb71c7ca46fd6d1e9444a3f0b0bcda99c6fdc8af3e",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "downpour",
+            "drizzle",
+            "fog",
+            "sleet"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "fog"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "fog"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:25:01+00:00"
+    }
+  }
+}

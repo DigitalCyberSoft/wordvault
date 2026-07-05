@@ -117,6 +117,24 @@ CONTRAST LINES (all 20 ordered pairs answer->picked): at most 140 characters, pl
 child, mention only those two words, and teach the difference the cue turns on, e.g.
 "Trudging is slow, tired work. This walk is light and happy."
 """
+    if set_data["bank"] == "C":
+        rules += """
+BANK-C EXTRA RULES (usage confusions) - the first draft of sets like this failed the judges; obey these:
+- Every sentence is NATURAL speech or writing with the blank in its ordinary grammatical slot.
+  NEVER write meta-frames about choosing or writing a word ("...so Jay chose ___", "to show X, write ___").
+  If the intended word cannot sit naturally in a normal sentence, write a different sentence.
+- Anchor the deixis so exactly one direction/ownership reading survives:
+  * giver vs getter: name BOTH parties with nouns, never a bare ambiguous "his/her"
+    ("Priya said yes, so Tom ___ Priya's pump until his tyre was fixed").
+  * lend-frames: giver is the subject AND add a coming-back clause that blocks motion verbs
+    ("...until Sunday - she wants it back for the fair").
+  * bring/take: state where the speaker is, so toward-here vs away-from-here is forced
+    ("We're at the beach already - ___ the umbrella out to us" vs "...___ this form home to Mum").
+  * keep-frames: the thing is ALREADY in the person's possession and the point is not returning it
+    ("The library said the damaged book was hers to ___ now").
+- Homophone sets (their/there/they're/then/than): the frame's grammar must admit only one spelling
+  to a fluent reader ("___ going to be late" / "over ___ by the gate" / "colder ___ yesterday").
+"""
     return rules + "\nWORD DATA:\n" + json.dumps(per_word, ensure_ascii=False, indent=1)
 
 

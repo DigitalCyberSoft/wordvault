@@ -5,7 +5,13 @@
   "theme": "animal sounds",
   "band": 1,
   "band_override": 1,
-  "computed": null,
+  "computed": {
+    "zipf_min": 2.9,
+    "zipf_mean": 3.33,
+    "tightness": 0.3,
+    "band_suggested": 3,
+    "scored_at": "2026-07-05T08:59:48+00:00"
+  },
   "words": [
     {
       "w": "bark",
@@ -316,7 +322,15 @@
         "squeak": "squeaking",
         "hiss": "hissing",
         "moo": "mooing"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "B-animal-01-s15",
@@ -473,8 +487,8 @@
       "answer": "hiss",
       "cue": "explicit",
       "reserve": false,
-      "text": "The snake ___ a long sss from the warm rock.",
-      "cue_phrase": "a long sss",
+      "text": "The snake ___ a long cross sss at the dog that sniffed too close.",
+      "cue_phrase": "long cross sss",
       "surface": {
         "bark": "barked",
         "roar": "roared",
@@ -488,8 +502,8 @@
       "answer": "hiss",
       "cue": "explicit",
       "reserve": false,
-      "text": "The angry goose stretched its neck to ___ with a snake-like sss.",
-      "cue_phrase": "snake-like sss",
+      "text": "The angry goose stretched its neck to ___ at anyone who came near.",
+      "cue_phrase": "angry goose",
       "surface": {
         "bark": "bark",
         "roar": "roar",
@@ -503,8 +517,8 @@
       "answer": "hiss",
       "cue": "contextual",
       "reserve": false,
-      "text": "The cobra ___ when the explorer stepped too close.",
-      "cue_phrase": "The cobra",
+      "text": "The cobra ___ crossly when the explorer stepped too close.",
+      "cue_phrase": "crossly; stepped too close",
       "surface": {
         "bark": "barked",
         "roar": "roared",
@@ -518,8 +532,8 @@
       "answer": "hiss",
       "cue": "contextual",
       "reserve": false,
-      "text": "A cornered viper ___ before sliding beneath the stones.",
-      "cue_phrase": "cornered viper",
+      "text": "A cornered viper ___ its warning before sliding beneath the stones.",
+      "cue_phrase": "its warning",
       "surface": {
         "bark": "barks",
         "roar": "roars",
@@ -533,8 +547,8 @@
       "answer": "hiss",
       "cue": "inferential",
       "reserve": false,
-      "text": "Steam ___ from the kettle in a thin sss.",
-      "cue_phrase": "thin sss",
+      "text": "Deep in the reeds, something long and legless ___ as we waded past.",
+      "cue_phrase": "long and legless",
       "surface": {
         "bark": "barked",
         "roar": "roared",
@@ -548,8 +562,8 @@
       "answer": "hiss",
       "cue": "inferential",
       "reserve": false,
-      "text": "The tyre was ___ through a narrow slit after the thorn stuck.",
-      "cue_phrase": "narrow slit",
+      "text": "Next door's cat was ___ at the new puppy through the fence.",
+      "cue_phrase": "cat at the new puppy",
       "surface": {
         "bark": "barking",
         "roar": "roaring",
@@ -563,8 +577,8 @@
       "answer": "hiss",
       "cue": "explicit",
       "reserve": true,
-      "text": "The stage serpent ___ a drawn-out sss at the brave knight.",
-      "cue_phrase": "drawn-out sss",
+      "text": "The pantomime snake ___ a long cross sss at the brave knight.",
+      "cue_phrase": "long cross sss at the knight",
       "surface": {
         "bark": "barked",
         "roar": "roared",
@@ -578,8 +592,8 @@
       "answer": "hiss",
       "cue": "inferential",
       "reserve": true,
-      "text": "The leaky balloon began to ___ as air slipped away.",
-      "cue_phrase": "air slipped away",
+      "text": "The swan on the nest began to ___ when rowers drifted near her eggs.",
+      "cue_phrase": "near her eggs",
       "surface": {
         "bark": "bark",
         "roar": "roar",
@@ -814,7 +828,7 @@
   "meta": {
     "generated_at": "2026-07-05T07:26:08+00:00",
     "model": "gpt-5.5",
-    "scrubbed_at": null,
-    "scrub_note": null
+    "scrubbed_at": "2026-07-05",
+    "scrub_note": "Full read by claude during judge triage: every flagged sentence adjudicated (rewrite or recorded waiver), unflagged sentences read for frame sanity."
   }
 }

@@ -132,10 +132,15 @@ def batch_prompt(set_data: dict, sentences: list[dict], judge_model: str) -> str
             "intended_answer": s["answer"],
             "intended_definition": glosses[s["answer"]],
         })
-    return json.dumps({
-        "instructions": "For every item: label EVERY candidate (use its 'word' key), then judge sense_match for the intended answer against its definition.",
-        "items": items,
-    }, ensure_ascii=False)
+    instructions = "For every item: label EVERY candidate (use its 'word' key), then judge sense_match for the intended answer against its definition."
+    if set_data.get("bank") == "C":
+        instructions = (
+            "This is a USAGE set: the five candidates are commonly confused in school writing. "
+            "Label 'fits' ONLY for the word that standard written school English prescribes in this exact "
+            "slot. A casual everyday substitute that a teacher would correct (e.g. 'take' where the "
+            "sentence describes a loan to be returned, or 'bring' where the giver hands over their own "
+            "item) is 'awkward', not 'fits'. " + instructions)
+    return json.dumps({"instructions": instructions, "items": items}, ensure_ascii=False)
 
 
 def judge_openai(model: str, key: str, system: str, user: str) -> dict:

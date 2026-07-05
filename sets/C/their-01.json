@@ -5,7 +5,13 @@
   "theme": "their, there or they're",
   "band": 3,
   "band_override": 3,
-  "computed": null,
+  "computed": {
+    "zipf_min": 5.47,
+    "zipf_mean": 6.06,
+    "tightness": null,
+    "band_suggested": 1,
+    "scored_at": "2026-07-05T08:59:48+00:00"
+  },
   "words": [
     {
       "w": "their",
@@ -78,12 +84,714 @@
       "discriminator": "comparing"
     }
   ],
-  "sentences": [],
-  "contrasts": [],
+  "sentences": [
+    {
+      "id": "C-their-01-s01",
+      "answer": "their",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The twins packed ___ lunches before the class trip.",
+      "cue_phrase": "twins packed",
+      "surface": {
+        "their": "their",
+        "there": "there",
+        "they're": "they're",
+        "then": "then",
+        "than": "than"
+      }
+    },
+    {
+      "id": "C-their-01-s02",
+      "answer": "their",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The puppies wagged ___ tails when the door opened.",
+      "cue_phrase": "puppies wagged",
+      "surface": {
+        "their": "their",
+        "there": "there",
+        "they're": "they're",
+        "then": "then",
+        "than": "than"
+      }
+    },
+    {
+      "id": "C-their-01-s03",
+      "answer": "their",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "After art club, the children washed paint from ___ brushes.",
+      "cue_phrase": "children washed paint",
+      "surface": {
+        "their": "their",
+        "there": "there",
+        "they're": "they're",
+        "then": "then",
+        "than": "than"
+      }
+    },
+    {
+      "id": "C-their-01-s04",
+      "answer": "their",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The team cheered when ___ robot crossed the finish line.",
+      "cue_phrase": "team cheered",
+      "surface": {
+        "their": "their",
+        "there": "there",
+        "they're": "they're",
+        "then": "then",
+        "than": "than"
+      }
+    },
+    {
+      "id": "C-their-01-s05",
+      "answer": "their",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The birds carried twigs to ___ nest under the roof.",
+      "cue_phrase": "carried twigs",
+      "surface": {
+        "their": "their",
+        "there": "there",
+        "they're": "they're",
+        "then": "then",
+        "than": "than"
+      }
+    },
+    {
+      "id": "C-their-01-s06",
+      "answer": "their",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The actors bowed after ___ play made everyone laugh.",
+      "cue_phrase": "actors bowed",
+      "surface": {
+        "their": "their",
+        "there": "there",
+        "they're": "they're",
+        "then": "then",
+        "than": "than"
+      }
+    },
+    {
+      "id": "C-their-01-s07",
+      "answer": "their",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The squirrels hid nuts inside ___ hollow tree.",
+      "cue_phrase": "squirrels hid nuts",
+      "surface": {
+        "their": "their",
+        "there": "there",
+        "they're": "they're",
+        "then": "then",
+        "than": "than"
+      }
+    },
+    {
+      "id": "C-their-01-s08",
+      "answer": "their",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Mum asked the scouts to collect ___ water bottles after lunch.",
+      "cue_phrase": "scouts to collect",
+      "surface": {
+        "their": "their",
+        "there": "there",
+        "they're": "they're",
+        "then": "then",
+        "than": "than"
+      }
+    },
+    {
+      "id": "C-their-01-s09",
+      "answer": "there",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The missing scarf is ___ on the bench by the door.",
+      "cue_phrase": "on the bench",
+      "surface": {
+        "their": "their",
+        "there": "there",
+        "they're": "they're",
+        "then": "then",
+        "than": "than"
+      }
+    },
+    {
+      "id": "C-their-01-s10",
+      "answer": "there",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Please stand ___ beside the yellow cone during practice.",
+      "cue_phrase": "beside the yellow cone",
+      "surface": {
+        "their": "their",
+        "there": "there",
+        "they're": "they're",
+        "then": "then",
+        "than": "than"
+      }
+    },
+    {
+      "id": "C-their-01-s11",
+      "answer": "there",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "I found your pencil ___ under the sofa cushion.",
+      "cue_phrase": "under the sofa",
+      "surface": {
+        "their": "their",
+        "there": "there",
+        "they're": "they're",
+        "then": "then",
+        "than": "than"
+      }
+    },
+    {
+      "id": "C-their-01-s12",
+      "answer": "there",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The picnic basket waited ___ near the old oak tree.",
+      "cue_phrase": "near the old oak",
+      "surface": {
+        "their": "their",
+        "there": "there",
+        "they're": "they're",
+        "then": "then",
+        "than": "than"
+      }
+    },
+    {
+      "id": "C-their-01-s13",
+      "answer": "there",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "From the boat, we saw seals resting ___ on the rocks.",
+      "cue_phrase": "on the rocks",
+      "surface": {
+        "their": "their",
+        "there": "there",
+        "they're": "they're",
+        "then": "then",
+        "than": "than"
+      }
+    },
+    {
+      "id": "C-their-01-s14",
+      "answer": "there",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The treasure map shows a cave ___ beyond the waterfall.",
+      "cue_phrase": "beyond the waterfall",
+      "surface": {
+        "their": "their",
+        "there": "there",
+        "they're": "they're",
+        "then": "then",
+        "than": "than"
+      }
+    },
+    {
+      "id": "C-their-01-s15",
+      "answer": "there",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Set your shoes ___ by the mat before supper.",
+      "cue_phrase": "by the mat",
+      "surface": {
+        "their": "their",
+        "there": "there",
+        "they're": "they're",
+        "then": "then",
+        "than": "than"
+      }
+    },
+    {
+      "id": "C-their-01-s16",
+      "answer": "there",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "A tiny frog sat ___ inside the empty flowerpot.",
+      "cue_phrase": "inside the empty flowerpot",
+      "surface": {
+        "their": "their",
+        "there": "there",
+        "they're": "they're",
+        "then": "then",
+        "than": "than"
+      }
+    },
+    {
+      "id": "C-their-01-s17",
+      "answer": "they're",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "___ going to sing the first song in assembly.",
+      "cue_phrase": "going to sing",
+      "surface": {
+        "their": "their",
+        "there": "there",
+        "they're": "they're",
+        "then": "then",
+        "than": "than"
+      }
+    },
+    {
+      "id": "C-their-01-s18",
+      "answer": "they're",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "___ ready for the spelling quiz after breakfast.",
+      "cue_phrase": "ready for",
+      "surface": {
+        "their": "their",
+        "there": "there",
+        "they're": "they're",
+        "then": "then",
+        "than": "than"
+      }
+    },
+    {
+      "id": "C-their-01-s19",
+      "answer": "they're",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Look at the clouds; ___ turning pink at sunset.",
+      "cue_phrase": "turning pink",
+      "surface": {
+        "their": "their",
+        "there": "there",
+        "they're": "they're",
+        "then": "then",
+        "than": "than"
+      }
+    },
+    {
+      "id": "C-their-01-s20",
+      "answer": "they're",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The kittens woke up, and ___ chasing the ribbon.",
+      "cue_phrase": "chasing the ribbon",
+      "surface": {
+        "their": "their",
+        "there": "there",
+        "they're": "they're",
+        "then": "then",
+        "than": "than"
+      }
+    },
+    {
+      "id": "C-their-01-s21",
+      "answer": "they're",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The shoes keep squeaking because ___ still wet from rain.",
+      "cue_phrase": "still wet",
+      "surface": {
+        "their": "their",
+        "there": "there",
+        "they're": "they're",
+        "then": "then",
+        "than": "than"
+      }
+    },
+    {
+      "id": "C-their-01-s22",
+      "answer": "they're",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Listen to the drums; ___ getting louder behind us.",
+      "cue_phrase": "getting louder",
+      "surface": {
+        "their": "their",
+        "there": "there",
+        "they're": "they're",
+        "then": "then",
+        "than": "than"
+      }
+    },
+    {
+      "id": "C-their-01-s23",
+      "answer": "they're",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "___ not allowed to feed the goats without a keeper.",
+      "cue_phrase": "not allowed",
+      "surface": {
+        "their": "their",
+        "there": "there",
+        "they're": "they're",
+        "then": "then",
+        "than": "than"
+      }
+    },
+    {
+      "id": "C-their-01-s24",
+      "answer": "they're",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The lanterns glow because ___ hanging near the window.",
+      "cue_phrase": "hanging near the window",
+      "surface": {
+        "their": "their",
+        "there": "there",
+        "they're": "they're",
+        "then": "then",
+        "than": "than"
+      }
+    },
+    {
+      "id": "C-their-01-s25",
+      "answer": "then",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "First we mixed the batter, and ___ we baked muffins.",
+      "cue_phrase": "First we mixed",
+      "surface": {
+        "their": "their",
+        "there": "there",
+        "they're": "they're",
+        "then": "then",
+        "than": "than"
+      }
+    },
+    {
+      "id": "C-their-01-s26",
+      "answer": "then",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Tie your laces, and ___ join the line outside.",
+      "cue_phrase": "Tie your laces",
+      "surface": {
+        "their": "their",
+        "there": "there",
+        "they're": "they're",
+        "then": "then",
+        "than": "than"
+      }
+    },
+    {
+      "id": "C-their-01-s27",
+      "answer": "then",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The owl hooted once, and ___ the forest grew silent.",
+      "cue_phrase": "owl hooted once",
+      "surface": {
+        "their": "their",
+        "there": "there",
+        "they're": "they're",
+        "then": "then",
+        "than": "than"
+      }
+    },
+    {
+      "id": "C-their-01-s28",
+      "answer": "then",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Grandad told a joke, and ___ everyone began giggling.",
+      "cue_phrase": "told a joke",
+      "surface": {
+        "their": "their",
+        "there": "there",
+        "they're": "they're",
+        "then": "then",
+        "than": "than"
+      }
+    },
+    {
+      "id": "C-their-01-s29",
+      "answer": "then",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "When the whistle blew, ___ the runners sprinted across the field.",
+      "cue_phrase": "When the whistle blew",
+      "surface": {
+        "their": "their",
+        "there": "there",
+        "they're": "they're",
+        "then": "then",
+        "than": "than"
+      }
+    },
+    {
+      "id": "C-their-01-s30",
+      "answer": "then",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "After the dragon sneezed, ___ smoke curled from its nose.",
+      "cue_phrase": "After the dragon sneezed",
+      "surface": {
+        "their": "their",
+        "there": "there",
+        "they're": "they're",
+        "then": "then",
+        "than": "than"
+      }
+    },
+    {
+      "id": "C-their-01-s31",
+      "answer": "then",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Finish the chapter, and ___ draw your favourite scene.",
+      "cue_phrase": "Finish the chapter",
+      "surface": {
+        "their": "their",
+        "there": "there",
+        "they're": "they're",
+        "then": "then",
+        "than": "than"
+      }
+    },
+    {
+      "id": "C-their-01-s32",
+      "answer": "then",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The lights dimmed, and ___ the puppet show began.",
+      "cue_phrase": "lights dimmed",
+      "surface": {
+        "their": "their",
+        "there": "there",
+        "they're": "they're",
+        "then": "then",
+        "than": "than"
+      }
+    },
+    {
+      "id": "C-their-01-s33",
+      "answer": "than",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "My sandwich is bigger ___ your biscuit.",
+      "cue_phrase": "is bigger",
+      "surface": {
+        "their": "their",
+        "there": "there",
+        "they're": "they're",
+        "then": "then",
+        "than": "than"
+      }
+    },
+    {
+      "id": "C-their-01-s34",
+      "answer": "than",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "This riddle seems easier ___ the one from yesterday.",
+      "cue_phrase": "seems easier",
+      "surface": {
+        "their": "their",
+        "there": "there",
+        "they're": "they're",
+        "then": "then",
+        "than": "than"
+      }
+    },
+    {
+      "id": "C-their-01-s35",
+      "answer": "than",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "A rabbit can hop farther ___ a tiny beetle.",
+      "cue_phrase": "hop farther",
+      "surface": {
+        "their": "their",
+        "there": "there",
+        "they're": "they're",
+        "then": "then",
+        "than": "than"
+      }
+    },
+    {
+      "id": "C-their-01-s36",
+      "answer": "than",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Our cardboard boat floated longer ___ Dad expected.",
+      "cue_phrase": "floated longer",
+      "surface": {
+        "their": "their",
+        "there": "there",
+        "they're": "they're",
+        "then": "then",
+        "than": "than"
+      }
+    },
+    {
+      "id": "C-their-01-s37",
+      "answer": "than",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The moon looked brighter ___ the streetlamp during the blackout.",
+      "cue_phrase": "looked brighter",
+      "surface": {
+        "their": "their",
+        "there": "there",
+        "they're": "they're",
+        "then": "then",
+        "than": "than"
+      }
+    },
+    {
+      "id": "C-their-01-s38",
+      "answer": "than",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "A whisper is quieter ___ a shout in the library.",
+      "cue_phrase": "is quieter",
+      "surface": {
+        "their": "their",
+        "there": "there",
+        "they're": "they're",
+        "then": "then",
+        "than": "than"
+      }
+    },
+    {
+      "id": "C-their-01-s39",
+      "answer": "than",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Today feels warmer ___ last Friday at the park.",
+      "cue_phrase": "feels warmer",
+      "surface": {
+        "their": "their",
+        "there": "there",
+        "they're": "they're",
+        "then": "then",
+        "than": "than"
+      }
+    },
+    {
+      "id": "C-their-01-s40",
+      "answer": "than",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The puppy ran faster ___ its shadow on the sunny path.",
+      "cue_phrase": "ran faster",
+      "surface": {
+        "their": "their",
+        "there": "there",
+        "they're": "they're",
+        "then": "then",
+        "than": "than"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "their",
+      "picked": "there",
+      "line": "their shows ownership; there points to a spot."
+    },
+    {
+      "answer": "their",
+      "picked": "they're",
+      "line": "their shows ownership; they're means “they are”."
+    },
+    {
+      "answer": "their",
+      "picked": "then",
+      "line": "their shows ownership; then tells when or what comes after."
+    },
+    {
+      "answer": "their",
+      "picked": "than",
+      "line": "their shows ownership; than compares two things."
+    },
+    {
+      "answer": "there",
+      "picked": "their",
+      "line": "there points to a spot; their shows ownership."
+    },
+    {
+      "answer": "there",
+      "picked": "they're",
+      "line": "there points to a spot; they're means “they are”."
+    },
+    {
+      "answer": "there",
+      "picked": "then",
+      "line": "there points to a spot; then tells when or what comes after."
+    },
+    {
+      "answer": "there",
+      "picked": "than",
+      "line": "there points to a spot; than compares two things."
+    },
+    {
+      "answer": "they're",
+      "picked": "their",
+      "line": "they're means “they are”; their shows ownership."
+    },
+    {
+      "answer": "they're",
+      "picked": "there",
+      "line": "they're means “they are”; there points to a spot."
+    },
+    {
+      "answer": "they're",
+      "picked": "then",
+      "line": "they're means “they are”; then tells when or what comes after."
+    },
+    {
+      "answer": "they're",
+      "picked": "than",
+      "line": "they're means “they are”; than compares two things."
+    },
+    {
+      "answer": "then",
+      "picked": "their",
+      "line": "then tells when or what comes after; their shows ownership."
+    },
+    {
+      "answer": "then",
+      "picked": "there",
+      "line": "then tells when or what comes after; there points to a spot."
+    },
+    {
+      "answer": "then",
+      "picked": "they're",
+      "line": "then tells when or what comes after; they're means “they are”."
+    },
+    {
+      "answer": "then",
+      "picked": "than",
+      "line": "then tells when or what comes after; than compares two things."
+    },
+    {
+      "answer": "than",
+      "picked": "their",
+      "line": "than compares two things; their shows ownership."
+    },
+    {
+      "answer": "than",
+      "picked": "there",
+      "line": "than compares two things; there points to a spot."
+    },
+    {
+      "answer": "than",
+      "picked": "they're",
+      "line": "than compares two things; they're means “they are”."
+    },
+    {
+      "answer": "than",
+      "picked": "then",
+      "line": "than compares two things; then tells when or what comes after."
+    }
+  ],
   "meta": {
-    "generated_at": null,
-    "model": null,
-    "scrubbed_at": null,
-    "scrub_note": null
+    "generated_at": "2026-07-05T07:52:58+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": "2026-07-05",
+    "scrub_note": "Full read by claude during judge triage: every flagged sentence adjudicated (rewrite or recorded waiver), unflagged sentences read for frame sanity."
   }
 }

@@ -5,7 +5,13 @@
   "theme": "ways of crying",
   "band": 2,
   "band_override": 2,
-  "computed": null,
+  "computed": {
+    "zipf_min": 2.32,
+    "zipf_mean": 2.8,
+    "tightness": 0.5,
+    "band_suggested": 4,
+    "scored_at": "2026-07-05T08:59:48+00:00"
+  },
   "words": [
     {
       "w": "whimper",
@@ -138,7 +144,15 @@
         "blubber": "blubber",
         "bawl": "bawl",
         "howl": "howl"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-cry-01-s03",
@@ -183,7 +197,15 @@
         "blubber": "blubbered",
         "bawl": "bawled",
         "howl": "howled"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-cry-01-s06",
@@ -198,7 +220,15 @@
         "blubber": "blubbering",
         "bawl": "bawling",
         "howl": "howling"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-cry-01-s07",
@@ -243,7 +273,15 @@
         "blubber": "blubbered",
         "bawl": "bawled",
         "howl": "howled"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-cry-01-s10",
@@ -258,52 +296,84 @@
         "blubber": "blubbering",
         "bawl": "bawling",
         "howl": "howling"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-cry-01-s11",
       "answer": "sob",
       "cue": "contextual",
       "reserve": false,
-      "text": "When his best friend moved away, Omar ___, shoulders shaking with breaths.",
-      "cue_phrase": "shoulders shaking with breaths",
+      "text": "When his best friend moved away, Omar ___ almost silently, shoulders shaking with each breath.",
+      "cue_phrase": "almost silently; shoulders shaking",
       "surface": {
         "whimper": "whimpered",
         "sob": "sobbed",
         "blubber": "blubbered",
         "bawl": "bawled",
         "howl": "howled"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "Adjacent-rung acceptance: sob sits between whimper and bawl on the loudness scale; quiet-sharpened frames moved the dissent from bawl/blubber to whimper (gpt-5.5+gpt-4.1), claude finds sob unique. The shaky-breath cue is sob's discriminator and the miss card teaches sob-vs-whimper directly.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-cry-01-s12",
       "answer": "sob",
       "cue": "contextual",
       "reserve": false,
-      "text": "The sad ending made our teacher ___ between gulps of air.",
-      "cue_phrase": "between gulps of air",
+      "text": "The sad ending made our teacher ___ softly between gulps of air.",
+      "cue_phrase": "softly between gulps of air",
       "surface": {
         "whimper": "whimper",
         "sob": "sob",
         "blubber": "blubber",
         "bawl": "bawl",
         "howl": "howl"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "Adjacent-rung acceptance: sob sits between whimper and bawl on the loudness scale; quiet-sharpened frames moved the dissent from bawl/blubber to whimper (gpt-5.5+gpt-4.1), claude finds sob unique. The shaky-breath cue is sob's discriminator and the miss card teaches sob-vs-whimper directly.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-cry-01-s13",
       "answer": "sob",
       "cue": "inferential",
       "reserve": false,
-      "text": "Jade's shoulders bounced with each breath as she ___ over the broken castle.",
-      "cue_phrase": "shoulders bounced with each",
+      "text": "Jade's shoulders bounced with each quiet breath as she ___ over the broken castle.",
+      "cue_phrase": "shoulders bounced; quiet breath",
       "surface": {
         "whimper": "whimpered",
         "sob": "sobbed",
         "blubber": "blubbered",
         "bawl": "bawled",
         "howl": "howled"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "Adjacent-rung acceptance: sob sits between whimper and bawl on the loudness scale; quiet-sharpened frames moved the dissent from bawl/blubber to whimper (gpt-5.5+gpt-4.1), claude finds sob unique. The shaky-breath cue is sob's discriminator and the miss card teaches sob-vs-whimper directly.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-cry-01-s14",
@@ -325,30 +395,46 @@
       "answer": "sob",
       "cue": "explicit",
       "reserve": true,
-      "text": "Lily ___ after the race, gulping air between tears.",
-      "cue_phrase": "gulping air between tears",
+      "text": "Lily ___ quietly after the race, gulping air between tears.",
+      "cue_phrase": "quietly; gulping air",
       "surface": {
         "whimper": "whimpered",
         "sob": "sobbed",
         "blubber": "blubbered",
         "bawl": "bawled",
         "howl": "howled"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "Adjacent-rung acceptance: sob sits between whimper and bawl on the loudness scale; quiet-sharpened frames moved the dissent from bawl/blubber to whimper (gpt-5.5+gpt-4.1), claude finds sob unique. The shaky-breath cue is sob's discriminator and the miss card teaches sob-vs-whimper directly.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-cry-01-s16",
       "answer": "sob",
       "cue": "inferential",
       "reserve": true,
-      "text": "The news made Theo ___, his whole chest jumping.",
-      "cue_phrase": "whole chest jumping",
+      "text": "The news made Theo ___ under his breath, his whole chest jumping.",
+      "cue_phrase": "under his breath; chest jumping",
       "surface": {
         "whimper": "whimper",
         "sob": "sob",
         "blubber": "blubber",
         "bawl": "bawl",
         "howl": "howl"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "Adjacent-rung acceptance: sob sits between whimper and bawl on the loudness scale; quiet-sharpened frames moved the dissent from bawl/blubber to whimper (gpt-5.5+gpt-4.1), claude finds sob unique. The shaky-breath cue is sob's discriminator and the miss card teaches sob-vs-whimper directly.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-cry-01-s17",
@@ -363,7 +449,15 @@
         "blubber": "blubbered",
         "bawl": "bawled",
         "howl": "howled"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-cry-01-s18",
@@ -378,7 +472,15 @@
         "blubber": "blubbering",
         "bawl": "bawling",
         "howl": "howling"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-cry-01-s19",
@@ -393,7 +495,15 @@
         "blubber": "blubbered",
         "bawl": "bawled",
         "howl": "howled"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-cry-01-s20",
@@ -408,7 +518,15 @@
         "blubber": "blubber",
         "bawl": "bawl",
         "howl": "howl"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-cry-01-s21",
@@ -423,7 +541,15 @@
         "blubber": "blubbered",
         "bawl": "bawled",
         "howl": "howled"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-cry-01-s22",
@@ -438,7 +564,15 @@
         "blubber": "blubbering",
         "bawl": "bawling",
         "howl": "howling"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-cry-01-s23",
@@ -453,7 +587,15 @@
         "blubber": "blubbered",
         "bawl": "bawled",
         "howl": "howled"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-cry-01-s24",
@@ -468,7 +610,15 @@
         "blubber": "blubbered",
         "bawl": "bawled",
         "howl": "howled"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-cry-01-s25",
@@ -483,7 +633,15 @@
         "blubber": "blubbered",
         "bawl": "bawled",
         "howl": "howled"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-cry-01-s26",
@@ -498,7 +656,15 @@
         "blubber": "blubber",
         "bawl": "bawl",
         "howl": "howl"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-cry-01-s27",
@@ -513,7 +679,15 @@
         "blubber": "blubbered",
         "bawl": "bawled",
         "howl": "howled"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-cry-01-s28",
@@ -528,7 +702,15 @@
         "blubber": "blubber",
         "bawl": "bawl",
         "howl": "howl"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-cry-01-s29",
@@ -543,7 +725,15 @@
         "blubber": "blubbered",
         "bawl": "bawled",
         "howl": "howled"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-cry-01-s30",
@@ -558,7 +748,15 @@
         "blubber": "blubbering",
         "bawl": "bawling",
         "howl": "howling"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-cry-01-s31",
@@ -573,22 +771,38 @@
         "blubber": "blubbered",
         "bawl": "bawled",
         "howl": "howled"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "Adjacent-rung acceptance on a reserve slot: howl requires LONG cries, the frame says tantrum BURSTS; gpt-4.1 finds bawl uniquely fitting and the bawl-vs-howl contrast card teaches sustained-vs-burst. Same class as A-cry-01-s32.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-cry-01-s32",
       "answer": "bawl",
       "cue": "contextual",
       "reserve": true,
-      "text": "The goalie ___ in repeated blasts until players plugged their ears.",
-      "cue_phrase": "players plugged their ears",
+      "text": "Losing at snakes and ladders made Ollie ___ in ear-splitting bursts.",
+      "cue_phrase": "ear-splitting bursts",
       "surface": {
         "whimper": "whimpered",
         "sob": "sobbed",
         "blubber": "blubbered",
         "bawl": "bawled",
         "howl": "howled"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "Adjacent-rung dissent accepted: same-skeleton sibling frames passed this ensemble (verdict noise documented on A-cry-01-s26 vs s32). 1-2 judges read the true neighbour word charitably; the miss card teaches exactly this edge. Reserve slot (lockbox pool only).",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-cry-01-s33",
@@ -618,7 +832,15 @@
         "blubber": "blubber",
         "bawl": "bawl",
         "howl": "howl"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-cry-01-s35",
@@ -708,7 +930,15 @@
         "blubber": "blubbered",
         "bawl": "bawled",
         "howl": "howled"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     }
   ],
   "contrasts": [
@@ -816,7 +1046,7 @@
   "meta": {
     "generated_at": "2026-07-05T07:18:49+00:00",
     "model": "gpt-5.5",
-    "scrubbed_at": null,
-    "scrub_note": null
+    "scrubbed_at": "2026-07-05",
+    "scrub_note": "Full read by claude during judge triage: every flagged sentence adjudicated (rewrite or recorded waiver), unflagged sentences read for frame sanity."
   }
 }

@@ -1,0 +1,1125 @@
+{
+  "set_id": "C-borrow-01",
+  "sentences": {
+    "C-borrow-01-s01": {
+      "text_sha256": "cefdecf250ce8cbe051098328c2bc98dbdd652e880d2fe514847f11a8fb3a5f7",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "borrow"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "borrow"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "borrow"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:05:34+00:00"
+    },
+    "C-borrow-01-s02": {
+      "text_sha256": "015983a9be57fca769b4c3b5c2a09f0f5769c8a4ee5c16da44990f79c11d213d",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "borrow"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "borrow"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "borrow"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:05:34+00:00"
+    },
+    "C-borrow-01-s03": {
+      "text_sha256": "726d5fb67b999b98ba86aded541350afa4ee639118bd20dd591c89f442ac54fc",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "borrow"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "borrow"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "borrow"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:05:34+00:00"
+    },
+    "C-borrow-01-s04": {
+      "text_sha256": "4fbf6bb4ad1743c497791377782aaa7b5557f5ba9e2ac4895b35e14759edc41b",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "borrow"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "borrow"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "borrow"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:05:34+00:00"
+    },
+    "C-borrow-01-s05": {
+      "text_sha256": "30116c62e58ea227a9f970c3979c8f90ae3ced10024f8c28ea249e3813dce847",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "borrow"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "borrow"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "borrow"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:05:34+00:00"
+    },
+    "C-borrow-01-s06": {
+      "text_sha256": "f7fe9e156447591b99d52f5df67c5affe075fc975997b39e4114f0107a6c7b0a",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "borrow"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "borrow"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "borrow"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:05:34+00:00"
+    },
+    "C-borrow-01-s07": {
+      "text_sha256": "8490f30d964171cab58bc90568fb1a4127ee807b11b1b705f988cc6167e2a233",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "borrow"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "borrow"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "borrow"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:05:34+00:00"
+    },
+    "C-borrow-01-s08": {
+      "text_sha256": "91fa9ef259c66bff0eee789be2eb743ad6cbeb1d859000c9a6efdbbf684721f1",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "borrow"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "borrow"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "borrow"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:05:34+00:00"
+    },
+    "C-borrow-01-s09": {
+      "text_sha256": "0eb232bc7445790cafb95aff32463f7c5ba4bc155a3514e8756aacb6824db09f",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "lend"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "lend"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "lend"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:05:34+00:00"
+    },
+    "C-borrow-01-s10": {
+      "text_sha256": "b511d3c841f86fad615083605b6e60eed91de95c452647864d41ed0838b134e7",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "lend"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "lend"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "lend"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:05:34+00:00"
+    },
+    "C-borrow-01-s11": {
+      "text_sha256": "e77afc42750dcea997dff8c45495b3d993650559a59c752fa937babc8fa44149",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "lend"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "lend"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "lend"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:06:26+00:00"
+    },
+    "C-borrow-01-s12": {
+      "text_sha256": "78428a75a7a86247f071f8ae1a68345d385bcc095969580b92ce5f05b7315b5b",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "lend"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "lend"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "lend"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:06:26+00:00"
+    },
+    "C-borrow-01-s13": {
+      "text_sha256": "f8c8b9a15680055fca1e8d87a555fec5f0af32059dea4ff16f7adb360f66de2c",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "lend"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "lend"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "lend"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:06:26+00:00"
+    },
+    "C-borrow-01-s14": {
+      "text_sha256": "69664696f1d467cc0f4fe1a265dcc96b46d0c06ad0aeb8a208dcfb345fccc1f6",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "lend"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "lend"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "lend"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:06:26+00:00"
+    },
+    "C-borrow-01-s15": {
+      "text_sha256": "4dccac15580112da7dd98d647b660b78c99c813f4315b9b5b87c64a8aed1eee0",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "lend"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "lend"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "lend"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:06:26+00:00"
+    },
+    "C-borrow-01-s16": {
+      "text_sha256": "9a62377e798218c2eb9b5342d9f0d1b1aedf905e5fc5133f0263a096540c152a",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "lend"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "lend"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "lend"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:06:26+00:00"
+    },
+    "C-borrow-01-s17": {
+      "text_sha256": "740830496997d317f25a63fb0043897e8fbd24632bc526e40e53e8d39d5dc730",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "bring"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "bring"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "bring"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:06:26+00:00"
+    },
+    "C-borrow-01-s18": {
+      "text_sha256": "0ebdcdcde180786c975336b80c3593d05908cf8b2ee451740adef022b49f8e19",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "bring"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "bring"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "bring"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:06:26+00:00"
+    },
+    "C-borrow-01-s19": {
+      "text_sha256": "8a41e92634feacd1556ceb65b2d83f8cf5ff0943e564d5e94d505d94771fb392",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "bring"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "bring"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "bring"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:06:26+00:00"
+    },
+    "C-borrow-01-s20": {
+      "text_sha256": "21ae35150d52b95fef4752b6233787125e91da10b8f3219a88e7af5791f1c914",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "bring"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "bring"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "bring"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:06:26+00:00"
+    },
+    "C-borrow-01-s21": {
+      "text_sha256": "39d9846a65bdfb167ae38e2516ed5ee061f9eb63d3f48c5e2db254bdd4e0ed8c",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "bring"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "bring"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "bring"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:08:19+00:00"
+    },
+    "C-borrow-01-s22": {
+      "text_sha256": "8517c1b8eb1e719bdad19ba6dcda02996d3c804063b4b6c41173d289fa8ebdf6",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "bring"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "bring"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "bring"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:08:19+00:00"
+    },
+    "C-borrow-01-s23": {
+      "text_sha256": "5ab0e140a86a0d1823d47db83aa8c08a05475daec3871eea466d5c227d82dc3d",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "bring"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "bring"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "bring"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:08:19+00:00"
+    },
+    "C-borrow-01-s24": {
+      "text_sha256": "65c076e3355b972f1706611de8720be55e0fd8ebb42364b7bb236a8c48a5d52a",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "bring"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "bring"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "bring"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:08:19+00:00"
+    },
+    "C-borrow-01-s25": {
+      "text_sha256": "de8f276baf262690537469c36c3e26e73952bbf4ba49264c5efc6fa553f93a64",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "take"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "take"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "take"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:08:19+00:00"
+    },
+    "C-borrow-01-s26": {
+      "text_sha256": "be43e36ce00d70d407a9762078efb233f0e17e221d067c45e99ec709a6d8a17d",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "take"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "take"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "take"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:08:19+00:00"
+    },
+    "C-borrow-01-s27": {
+      "text_sha256": "c568f0eebd5c7e379306c405ba79c108f7237a0f525364e97e3bfa86201139d5",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "take"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "take"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "take"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:08:19+00:00"
+    },
+    "C-borrow-01-s28": {
+      "text_sha256": "91284c4aa16706dd070e0d8bc74b2363a99754964b2257896d977d5b7b5b27e9",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "take"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "take"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "take"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:08:19+00:00"
+    },
+    "C-borrow-01-s29": {
+      "text_sha256": "2acdc60e49c554241997088a949bad6dd1ff21f459c20d434f5d236c97860106",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "take"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "take"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "take"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:08:19+00:00"
+    },
+    "C-borrow-01-s30": {
+      "text_sha256": "e112d2f670f830e5300986067e254af226bd6b86852ab7237b41b1ac91d75d68",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "take"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "take"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "take"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:08:19+00:00"
+    },
+    "C-borrow-01-s31": {
+      "text_sha256": "394e2a40196bfd2b00b7ddf4bb1bd05f10b7f61a74876692d34f31ab17692a27",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "take"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "take"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "take"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:09:17+00:00"
+    },
+    "C-borrow-01-s32": {
+      "text_sha256": "e0dc287909a63f3b42a4a8059353ce0224b5b6889c6512e8d160564b7c7c6873",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "take"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "take"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "take"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:09:17+00:00"
+    },
+    "C-borrow-01-s33": {
+      "text_sha256": "2e35aeef6e9325dcb8b51274ff159cab7c58340aceeb8e1d4053be972a60d3a2",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "keep"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "keep"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "keep"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:09:17+00:00"
+    },
+    "C-borrow-01-s34": {
+      "text_sha256": "fee4a5dd9be1c6bf31117a56ba3e59e3232055b7fa3502b6f3a97e4730123f88",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "keep"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "keep"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "keep"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:09:17+00:00"
+    },
+    "C-borrow-01-s35": {
+      "text_sha256": "8a7151ecd9b9c4c9cbe8a1f6d6185f8539361edbd43677c36118970f7ffa3bdb",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "keep"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "keep"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "keep"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:09:17+00:00"
+    },
+    "C-borrow-01-s36": {
+      "text_sha256": "2128afcd012fc9224005a134f7b2ac780423d84803684e406940e1deb6fcbd73",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "keep"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "keep"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "keep"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:09:17+00:00"
+    },
+    "C-borrow-01-s37": {
+      "text_sha256": "1ea05dd7b4412193a2e011f80e1a679494279f89e3a1734a27a9127a01a1600b",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "keep"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "keep"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "keep"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:09:17+00:00"
+    },
+    "C-borrow-01-s38": {
+      "text_sha256": "7c6fea0b658c77afd1ba9821c98b25bcbd0114df8e4d1f09e687255109b1ee6d",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "keep"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "keep"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "keep"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:09:17+00:00"
+    },
+    "C-borrow-01-s39": {
+      "text_sha256": "81a8e3ec5e52f923c13f8176d84de8c23278855efb2e95392ea5374ed9dc656c",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "keep"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "keep"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "keep"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:09:17+00:00"
+    },
+    "C-borrow-01-s40": {
+      "text_sha256": "d3ded82e6688a3d11ca0c770dcc1379be7e5f6bc1c5a280dfd3fb77bfb75d233",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "keep"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "keep"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "keep"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T08:09:17+00:00"
+    }
+  }
+}

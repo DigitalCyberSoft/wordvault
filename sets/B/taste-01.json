@@ -5,7 +5,13 @@
   "theme": "how things taste",
   "band": 1,
   "band_override": 1,
-  "computed": null,
+  "computed": {
+    "zipf_min": 3.74,
+    "zipf_mean": 4.11,
+    "tightness": null,
+    "band_suggested": 2,
+    "scored_at": "2026-07-05T08:59:48+00:00"
+  },
   "words": [
     {
       "w": "sweet",
@@ -244,8 +250,8 @@
       "answer": "sour",
       "cue": "explicit",
       "reserve": false,
-      "text": "The milk smelled ___ after being left out all night.",
-      "cue_phrase": "left out all night",
+      "text": "The forgotten milk tasted ___ and Zara spat it straight back into the cup.",
+      "cue_phrase": "spat it straight back",
       "surface": {
         "sweet": "sweet",
         "sour": "sour",
@@ -567,7 +573,15 @@
         "salty": "salty",
         "bitter": "bitter",
         "spicy": "spicy"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "B-taste-01-s32",
@@ -810,7 +824,7 @@
   "meta": {
     "generated_at": "2026-07-05T07:32:32+00:00",
     "model": "gpt-5.5",
-    "scrubbed_at": null,
-    "scrub_note": null
+    "scrubbed_at": "2026-07-05",
+    "scrub_note": "Full read by claude during judge triage: every flagged sentence adjudicated (rewrite or recorded waiver), unflagged sentences read for frame sanity."
   }
 }

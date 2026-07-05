@@ -2,10 +2,16 @@
   "id": "A-eat-01",
   "bank": "A",
   "pos": "verb",
-  "theme": "ways of eating",
+  "theme": "ways of eating and drinking",
   "band": 2,
   "band_override": 2,
-  "computed": null,
+  "computed": {
+    "zipf_min": 2.83,
+    "zipf_mean": 3.07,
+    "tightness": 0.241,
+    "band_suggested": 3,
+    "scored_at": "2026-07-05T08:59:48+00:00"
+  },
   "words": [
     {
       "w": "nibble",
@@ -76,21 +82,21 @@
       "discriminator": "fast and messy"
     },
     {
-      "w": "devour",
-      "synset": "devour.v.04",
+      "w": "sip",
+      "synset": "sip.v.01",
       "gloss_source": "wordnet",
-      "gloss": "eat greedily",
-      "zipf": 3.17,
+      "gloss": "drink in sips",
+      "zipf": 3.67,
       "register": "neutral",
-      "senses_at_pos": 4,
+      "senses_at_pos": 1,
       "dominant_sense_ok": null,
       "forms": {
-        "base": "devour",
-        "third": "devours",
-        "past": "devoured",
-        "part": "devouring"
+        "base": "sip",
+        "third": "sips",
+        "past": "sipped",
+        "part": "sipping"
       },
-      "discriminator": "eat everything fast, very hungry"
+      "discriminator": "the smallest drink at a time, making it last"
     }
   ],
   "sentences": [
@@ -106,7 +112,7 @@
         "munch": "munched",
         "gulp": "gulped",
         "gobble": "gobbled",
-        "devour": "devoured"
+        "sip": "sipped"
       }
     },
     {
@@ -121,7 +127,7 @@
         "munch": "munch",
         "gulp": "gulp",
         "gobble": "gobble",
-        "devour": "devour"
+        "sip": "sip"
       }
     },
     {
@@ -136,7 +142,7 @@
         "munch": "munched",
         "gulp": "gulped",
         "gobble": "gobbled",
-        "devour": "devoured"
+        "sip": "sipped"
       }
     },
     {
@@ -151,8 +157,16 @@
         "munch": "munch",
         "gulp": "gulp",
         "gobble": "gobble",
-        "devour": "devour"
-      }
+        "sip": "sip"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-eat-01-s05",
@@ -166,8 +180,16 @@
         "munch": "munched",
         "gulp": "gulped",
         "gobble": "gobbled",
-        "devour": "devoured"
-      }
+        "sip": "sipped"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-eat-01-s06",
@@ -181,7 +203,7 @@
         "munch": "munch",
         "gulp": "gulp",
         "gobble": "gobble",
-        "devour": "devour"
+        "sip": "sip"
       }
     },
     {
@@ -196,7 +218,7 @@
         "munch": "munched",
         "gulp": "gulped",
         "gobble": "gobbled",
-        "devour": "devoured"
+        "sip": "sipped"
       }
     },
     {
@@ -211,8 +233,16 @@
         "munch": "munch",
         "gulp": "gulp",
         "gobble": "gobble",
-        "devour": "devour"
-      }
+        "sip": "sip"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-eat-01-s09",
@@ -226,8 +256,16 @@
         "munch": "munched",
         "gulp": "gulped",
         "gobble": "gobbled",
-        "devour": "devoured"
-      }
+        "sip": "sipped"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-eat-01-s10",
@@ -241,8 +279,16 @@
         "munch": "munch",
         "gulp": "gulp",
         "gobble": "gobble",
-        "devour": "devour"
-      }
+        "sip": "sip"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-eat-01-s11",
@@ -256,8 +302,16 @@
         "munch": "munched",
         "gulp": "gulped",
         "gobble": "gobbled",
-        "devour": "devoured"
-      }
+        "sip": "sipped"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-eat-01-s12",
@@ -271,8 +325,16 @@
         "nibble": "nibble",
         "gulp": "gulp",
         "gobble": "gobble",
-        "devour": "devour"
-      }
+        "sip": "sip"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-eat-01-s13",
@@ -286,8 +348,16 @@
         "nibble": "nibbled",
         "gulp": "gulped",
         "gobble": "gobbled",
-        "devour": "devoured"
-      }
+        "sip": "sipped"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-eat-01-s14",
@@ -301,8 +371,16 @@
         "nibble": "nibbled",
         "gulp": "gulped",
         "gobble": "gobbled",
-        "devour": "devoured"
-      }
+        "sip": "sipped"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-eat-01-s15",
@@ -316,8 +394,16 @@
         "nibble": "nibble",
         "gulp": "gulp",
         "gobble": "gobble",
-        "devour": "devour"
-      }
+        "sip": "sip"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-eat-01-s16",
@@ -331,8 +417,16 @@
         "nibble": "nibbling",
         "gulp": "gulping",
         "gobble": "gobbling",
-        "devour": "devouring"
-      }
+        "sip": "sipping"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-eat-01-s17",
@@ -346,7 +440,7 @@
         "nibble": "nibbled",
         "munch": "munched",
         "gobble": "gobbled",
-        "devour": "devoured"
+        "sip": "sipped"
       }
     },
     {
@@ -354,14 +448,14 @@
       "answer": "gulp",
       "cue": "explicit",
       "reserve": false,
-      "text": "The giant had to ___ soup straight from the bowl.",
-      "cue_phrase": "straight from the bowl",
+      "text": "The hungry giant ___ his lemonade in one go, straight from the jug.",
+      "cue_phrase": "in one go; jug",
       "surface": {
         "gulp": "gulp",
         "nibble": "nibble",
         "munch": "munch",
         "gobble": "gobble",
-        "devour": "devour"
+        "sip": "sip"
       }
     },
     {
@@ -376,7 +470,7 @@
         "nibble": "nibbled",
         "munch": "munched",
         "gobble": "gobbled",
-        "devour": "devoured"
+        "sip": "sipped"
       }
     },
     {
@@ -391,7 +485,7 @@
         "nibble": "nibble",
         "munch": "munch",
         "gobble": "gobble",
-        "devour": "devour"
+        "sip": "sip"
       }
     },
     {
@@ -406,7 +500,7 @@
         "nibble": "nibbled",
         "munch": "munched",
         "gobble": "gobbled",
-        "devour": "devoured"
+        "sip": "sipped"
       }
     },
     {
@@ -421,7 +515,7 @@
         "nibble": "nibbled",
         "munch": "munched",
         "gobble": "gobbled",
-        "devour": "devoured"
+        "sip": "sipped"
       }
     },
     {
@@ -436,8 +530,16 @@
         "nibble": "nibble",
         "munch": "munch",
         "gobble": "gobble",
-        "devour": "devour"
-      }
+        "sip": "sip"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-eat-01-s24",
@@ -451,8 +553,16 @@
         "nibble": "nibbled",
         "munch": "munched",
         "gobble": "gobbled",
-        "devour": "devoured"
-      }
+        "sip": "sipped"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-eat-01-s25",
@@ -466,8 +576,16 @@
         "nibble": "nibbled",
         "munch": "munched",
         "gulp": "gulped",
-        "devour": "devoured"
-      }
+        "sip": "sipped"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-eat-01-s26",
@@ -481,38 +599,62 @@
         "nibble": "nibble",
         "munch": "munch",
         "gulp": "gulp",
-        "devour": "devour"
-      }
+        "sip": "sip"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-eat-01-s27",
       "answer": "gobble",
       "cue": "contextual",
       "reserve": false,
-      "text": "At breakfast, Max ___ toast in huge chunks; crumbs covered his jumper.",
-      "cue_phrase": "huge chunks",
+      "text": "Max ___ his entire plate of eggs in under a minute and ran for the bus.",
+      "cue_phrase": "entire plate; under a minute",
       "surface": {
         "gobble": "gobbled",
         "nibble": "nibbled",
         "munch": "munched",
         "gulp": "gulped",
-        "devour": "devoured"
-      }
+        "sip": "sipped"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-eat-01-s28",
       "answer": "gobble",
       "cue": "contextual",
       "reserve": false,
-      "text": "The raccoon tried to ___ sandwiches, dropping lettuce and sauce everywhere.",
-      "cue_phrase": "dropping lettuce and sauce",
+      "text": "The raccoon ___ the stolen sandwich in seconds, dropping lettuce everywhere.",
+      "cue_phrase": "in seconds; dropping lettuce",
       "surface": {
         "gobble": "gobble",
         "nibble": "nibble",
         "munch": "munch",
         "gulp": "gulp",
-        "devour": "devour"
-      }
+        "sip": "sip"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-eat-01-s29",
@@ -526,63 +668,95 @@
         "nibble": "nibbled",
         "munch": "munched",
         "gulp": "gulped",
-        "devour": "devoured"
-      }
+        "sip": "sipped"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-eat-01-s30",
       "answer": "gobble",
       "cue": "inferential",
       "reserve": false,
-      "text": "No one spoke while the troll ___ dumplings, jaws barely stopping.",
-      "cue_phrase": "jaws barely stopping",
+      "text": "No one spoke while the troll ___ the whole plate of dumplings in one minute flat.",
+      "cue_phrase": "one minute flat",
       "surface": {
         "gobble": "gobbled",
         "nibble": "nibbled",
         "munch": "munched",
         "gulp": "gulped",
-        "devour": "devoured"
-      }
+        "sip": "sipped"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-eat-01-s31",
       "answer": "gobble",
       "cue": "explicit",
       "reserve": true,
-      "text": "Please do not ___ your snack; use your teeth and napkin.",
-      "cue_phrase": "use your teeth",
+      "text": "Don't ___ your lunch like the ogre in the story, jaws never closing.",
+      "cue_phrase": "jaws never closing",
       "surface": {
         "gobble": "gobble",
         "nibble": "nibble",
         "munch": "munch",
         "gulp": "gulp",
-        "devour": "devour"
-      }
+        "sip": "sip"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "Adjacent-rung dissent accepted: same-skeleton sibling frames passed this ensemble (verdict noise documented on A-cry-01-s26 vs s32). 1-2 judges read the true neighbour word charitably; the miss card teaches exactly this edge. Reserve slot (lockbox pool only).",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-eat-01-s32",
       "answer": "gobble",
       "cue": "inferential",
       "reserve": true,
-      "text": "The fox was ___ sausages, snout messy and teeth almost idle.",
-      "cue_phrase": "teeth almost idle",
+      "text": "The seagull was ___ chips, dropping bits of batter with every snatch.",
+      "cue_phrase": "dropping bits with every snatch",
       "surface": {
         "gobble": "gobbling",
         "nibble": "nibbling",
         "munch": "munching",
         "gulp": "gulping",
-        "devour": "devouring"
-      }
+        "sip": "sipping"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "Adjacent-rung dissent accepted: same-skeleton sibling frames passed this ensemble (verdict noise documented on A-cry-01-s26 vs s32). 1-2 judges read the true neighbour word charitably; the miss card teaches exactly this edge. Reserve slot (lockbox pool only).",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-eat-01-s33",
-      "answer": "devour",
+      "answer": "sip",
       "cue": "explicit",
       "reserve": false,
-      "text": "The locusts ___ the whole crop, leaving bare stalks behind.",
-      "cue_phrase": "whole crop",
+      "text": "The cocoa was still too hot, so Maya ___ it slowly from the edge of the mug.",
+      "cue_phrase": "too hot; slowly from the edge",
       "surface": {
-        "devour": "devoured",
+        "sip": "sipped",
         "nibble": "nibbled",
         "munch": "munched",
         "gulp": "gulped",
@@ -591,13 +765,13 @@
     },
     {
       "id": "A-eat-01-s34",
-      "answer": "devour",
+      "answer": "sip",
       "cue": "explicit",
       "reserve": false,
-      "text": "A wolf pack can ___ an entire carcass, leaving only bones.",
-      "cue_phrase": "entire carcass",
+      "text": "Grandpa ___ his tiny cup of coffee in little tastes, making it last.",
+      "cue_phrase": "little tastes, making it last",
       "surface": {
-        "devour": "devour",
+        "sip": "sip",
         "nibble": "nibble",
         "munch": "munch",
         "gulp": "gulp",
@@ -606,13 +780,13 @@
     },
     {
       "id": "A-eat-01-s35",
-      "answer": "devour",
+      "answer": "sip",
       "cue": "contextual",
       "reserve": false,
-      "text": "By sunset, caterpillars ___ every leaf, and the plant stood bare.",
-      "cue_phrase": "plant stood bare",
+      "text": "The juice had to last the whole film, so Ben ___ it carefully.",
+      "cue_phrase": "had to last the whole film",
       "surface": {
-        "devour": "devoured",
+        "sip": "sipped",
         "nibble": "nibbled",
         "munch": "munched",
         "gulp": "gulped",
@@ -621,13 +795,13 @@
     },
     {
       "id": "A-eat-01-s36",
-      "answer": "devour",
+      "answer": "sip",
       "cue": "contextual",
       "reserve": false,
-      "text": "The dragon planned to ___ the banquet, leaving empty plates.",
-      "cue_phrase": "leaving empty plates",
+      "text": "Too shy to ask for more, the mouse in the story ___ dew from a leaf.",
+      "cue_phrase": "dew from a leaf",
       "surface": {
-        "devour": "devour",
+        "sip": "sip",
         "nibble": "nibble",
         "munch": "munch",
         "gulp": "gulp",
@@ -636,13 +810,13 @@
     },
     {
       "id": "A-eat-01-s37",
-      "answer": "devour",
+      "answer": "sip",
       "cue": "inferential",
       "reserve": false,
-      "text": "After winter sleep, the bear ___ the salmon supply, leaving none.",
-      "cue_phrase": "leaving none",
+      "text": "Her lemonade was nearly full by the last page, though she had ___ it since breakfast.",
+      "cue_phrase": "nearly full; since breakfast",
       "surface": {
-        "devour": "devoured",
+        "sip": "sipped",
         "nibble": "nibbled",
         "munch": "munched",
         "gulp": "gulped",
@@ -651,13 +825,13 @@
     },
     {
       "id": "A-eat-01-s38",
-      "answer": "devour",
+      "answer": "sip",
       "cue": "inferential",
       "reserve": false,
-      "text": "Nothing remained of the picnic after the ants ___ it.",
-      "cue_phrase": "Nothing remained",
+      "text": "The soup judge ___ once from each bowl and moved on down the table.",
+      "cue_phrase": "once from each bowl",
       "surface": {
-        "devour": "devoured",
+        "sip": "sipped",
         "nibble": "nibbled",
         "munch": "munched",
         "gulp": "gulped",
@@ -666,28 +840,36 @@
     },
     {
       "id": "A-eat-01-s39",
-      "answer": "devour",
+      "answer": "sip",
       "cue": "contextual",
       "reserve": true,
-      "text": "The monster was ___ the feast until every platter was bare.",
-      "cue_phrase": "every platter was bare",
+      "text": "Hidden behind the curtain, the spy ___ her tea and watched the door.",
+      "cue_phrase": "spy; watched the door",
       "surface": {
-        "devour": "devouring",
+        "sip": "sipping",
         "nibble": "nibbling",
         "munch": "munching",
         "gulp": "gulping",
         "gobble": "gobbling"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-eat-01-s40",
-      "answer": "devour",
+      "answer": "sip",
       "cue": "inferential",
       "reserve": true,
-      "text": "A swarm of beetles can ___ a fallen tree to dust.",
-      "cue_phrase": "to dust",
+      "text": "The hummingbird ___ from every red flower along the fence.",
+      "cue_phrase": "hummingbird; every red flower",
       "surface": {
-        "devour": "devour",
+        "sip": "sip",
         "nibble": "nibble",
         "munch": "munch",
         "gulp": "gulp",
@@ -713,8 +895,8 @@
     },
     {
       "answer": "nibble",
-      "picked": "devour",
-      "line": "Nibble leaves most behind. Devour means finishing a lot with huge hunger."
+      "picked": "sip",
+      "line": "Sipping is for drinks. Nibbling is tiny bites of food."
     },
     {
       "answer": "munch",
@@ -733,8 +915,8 @@
     },
     {
       "answer": "munch",
-      "picked": "devour",
-      "line": "Munch focuses on crunching sounds. Devour focuses on finishing everything hungrily."
+      "picked": "sip",
+      "line": "Sipping is a little drink. Munching is chewing food, on and on."
     },
     {
       "answer": "gulp",
@@ -753,8 +935,8 @@
     },
     {
       "answer": "gulp",
-      "picked": "devour",
-      "line": "Gulp is one quick throat action. Devour means finishing a lot with hunger."
+      "picked": "sip",
+      "line": "Sipping makes a drink last. Gulping finishes it in one swallow."
     },
     {
       "answer": "gobble",
@@ -773,34 +955,34 @@
     },
     {
       "answer": "gobble",
-      "picked": "devour",
-      "line": "Gobble shows messy rushing. Devour shows huge hunger and nothing left."
+      "picked": "sip",
+      "line": "Sipping is small and careful. Gobbling is eating fast with a mess."
     },
     {
-      "answer": "devour",
+      "answer": "sip",
       "picked": "nibble",
-      "line": "Devour means huge hunger and nothing left. Nibble means tiny careful mouthfuls."
+      "line": "Nibbling is tiny bites of food. Sipping is tiny drinks."
     },
     {
-      "answer": "devour",
+      "answer": "sip",
       "picked": "munch",
-      "line": "Devour focuses on finishing everything. Munch focuses on crunchy sounds."
+      "line": "Munching is steady chewing. Sipping is drinking, a little at a time."
     },
     {
-      "answer": "devour",
+      "answer": "sip",
       "picked": "gulp",
-      "line": "Devour means finishing a lot hungrily. Gulp means one fast throat action."
+      "line": "Gulping downs the drink in one go. Sipping takes the smallest taste at a time."
     },
     {
-      "answer": "devour",
+      "answer": "sip",
       "picked": "gobble",
-      "line": "Devour leaves nothing because of hunger. Gobble is rushed and messy."
+      "line": "Gobbling is fast messy eating. Sipping is slow careful drinking."
     }
   ],
   "meta": {
     "generated_at": "2026-07-05T07:20:46+00:00",
     "model": "gpt-5.5",
-    "scrubbed_at": null,
-    "scrub_note": null
+    "scrubbed_at": "2026-07-05",
+    "scrub_note": "devour swapped for sip: gobble/devour proved judge-inseparable in every frame; sip also makes gulp's drink dimension coherent. Full read by claude during judge triage: every flagged sentence adjudicated (rewrite or recorded waiver), unflagged sentences read for frame sanity."
   }
 }

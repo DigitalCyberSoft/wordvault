@@ -60,7 +60,7 @@ def main() -> int:
             "band_suggested": suggested,
             "scored_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         }
-        if set_data.get("computed", {}).get("note"):
+        if (set_data.get("computed") or {}).get("note"):
             computed["note"] = set_data["computed"]["note"]
         set_data["computed"] = computed
         band = set_data.get("band_override") if set_data.get("band_override") is not None else suggested

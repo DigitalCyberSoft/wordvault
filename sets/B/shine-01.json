@@ -5,7 +5,13 @@
   "theme": "kinds of shine",
   "band": 3,
   "band_override": 3,
-  "computed": null,
+  "computed": {
+    "zipf_min": 2.81,
+    "zipf_mean": 3.33,
+    "tightness": null,
+    "band_suggested": 4,
+    "scored_at": "2026-07-05T08:59:48+00:00"
+  },
   "words": [
     {
       "w": "shiny",
@@ -36,18 +42,18 @@
       "discriminator": "lots of tiny flashes"
     },
     {
-      "w": "gleaming",
-      "synset": "agleam.s.01",
+      "w": "dazzling",
+      "synset": "blazing.s.01",
       "gloss_source": "wordnet",
-      "gloss": "bright with a steady but subdued shining",
-      "zipf": 3.1,
+      "gloss": "shining intensely",
+      "zipf": 3.39,
       "register": "neutral",
-      "senses_at_pos": 1,
+      "senses_at_pos": 2,
       "dominant_sense_ok": null,
       "forms": {
-        "base": "gleaming"
+        "base": "dazzling"
       },
-      "discriminator": "one steady soft shine"
+      "discriminator": "so bright it makes you squint or look away"
     },
     {
       "w": "radiant",
@@ -97,7 +103,7 @@
       "surface": {
         "shiny": "shiny",
         "sparkly": "sparkly",
-        "gleaming": "gleaming",
+        "dazzling": "dazzling",
         "radiant": "radiant",
         "twinkling": "twinkling"
       }
@@ -112,7 +118,7 @@
       "surface": {
         "shiny": "shiny",
         "sparkly": "sparkly",
-        "gleaming": "gleaming",
+        "dazzling": "dazzling",
         "radiant": "radiant",
         "twinkling": "twinkling"
       }
@@ -127,7 +133,7 @@
       "surface": {
         "shiny": "shiny",
         "sparkly": "sparkly",
-        "gleaming": "gleaming",
+        "dazzling": "dazzling",
         "radiant": "radiant",
         "twinkling": "twinkling"
       }
@@ -142,10 +148,18 @@
       "surface": {
         "shiny": "shiny",
         "sparkly": "sparkly",
-        "gleaming": "gleaming",
+        "dazzling": "dazzling",
         "radiant": "radiant",
         "twinkling": "twinkling"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "B-shine-01-s05",
@@ -157,7 +171,7 @@
       "surface": {
         "shiny": "shiny",
         "sparkly": "sparkly",
-        "gleaming": "gleaming",
+        "dazzling": "dazzling",
         "radiant": "radiant",
         "twinkling": "twinkling"
       }
@@ -172,7 +186,7 @@
       "surface": {
         "shiny": "shiny",
         "sparkly": "sparkly",
-        "gleaming": "gleaming",
+        "dazzling": "dazzling",
         "radiant": "radiant",
         "twinkling": "twinkling"
       }
@@ -187,7 +201,7 @@
       "surface": {
         "shiny": "shiny",
         "sparkly": "sparkly",
-        "gleaming": "gleaming",
+        "dazzling": "dazzling",
         "radiant": "radiant",
         "twinkling": "twinkling"
       }
@@ -202,7 +216,7 @@
       "surface": {
         "shiny": "shiny",
         "sparkly": "sparkly",
-        "gleaming": "gleaming",
+        "dazzling": "dazzling",
         "radiant": "radiant",
         "twinkling": "twinkling"
       }
@@ -217,10 +231,18 @@
       "surface": {
         "shiny": "shiny",
         "sparkly": "sparkly",
-        "gleaming": "gleaming",
+        "dazzling": "dazzling",
         "radiant": "radiant",
         "twinkling": "twinkling"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "B-shine-01-s10",
@@ -232,25 +254,41 @@
       "surface": {
         "shiny": "shiny",
         "sparkly": "sparkly",
-        "gleaming": "gleaming",
+        "dazzling": "dazzling",
         "radiant": "radiant",
         "twinkling": "twinkling"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "B-shine-01-s11",
       "answer": "sparkly",
       "cue": "contextual",
       "reserve": false,
-      "text": "The fairy dust seemed ___, with little glitter dots everywhere.",
-      "cue_phrase": "glitter dots everywhere",
+      "text": "Even lying perfectly still, the fairy dust looked ___, packed with glitter dots.",
+      "cue_phrase": "perfectly still; glitter dots",
       "surface": {
         "shiny": "shiny",
         "sparkly": "sparkly",
-        "gleaming": "gleaming",
+        "dazzling": "dazzling",
         "radiant": "radiant",
         "twinkling": "twinkling"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "B-shine-01-s12",
@@ -262,10 +300,18 @@
       "surface": {
         "shiny": "shiny",
         "sparkly": "sparkly",
-        "gleaming": "gleaming",
+        "dazzling": "dazzling",
         "radiant": "radiant",
         "twinkling": "twinkling"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "B-shine-01-s13",
@@ -277,10 +323,18 @@
       "surface": {
         "shiny": "shiny",
         "sparkly": "sparkly",
-        "gleaming": "gleaming",
+        "dazzling": "dazzling",
         "radiant": "radiant",
         "twinkling": "twinkling"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "B-shine-01-s14",
@@ -292,10 +346,18 @@
       "surface": {
         "shiny": "shiny",
         "sparkly": "sparkly",
-        "gleaming": "gleaming",
+        "dazzling": "dazzling",
         "radiant": "radiant",
         "twinkling": "twinkling"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "B-shine-01-s15",
@@ -307,7 +369,7 @@
       "surface": {
         "shiny": "shiny",
         "sparkly": "sparkly",
-        "gleaming": "gleaming",
+        "dazzling": "dazzling",
         "radiant": "radiant",
         "twinkling": "twinkling"
       }
@@ -322,130 +384,194 @@
       "surface": {
         "shiny": "shiny",
         "sparkly": "sparkly",
-        "gleaming": "gleaming",
+        "dazzling": "dazzling",
         "radiant": "radiant",
         "twinkling": "twinkling"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "B-shine-01-s17",
-      "answer": "gleaming",
+      "answer": "dazzling",
       "cue": "explicit",
       "reserve": false,
-      "text": "The moonlit lake was ___ with a soft, even sheen.",
-      "cue_phrase": "soft, even sheen",
+      "text": "Sunlight off the fresh snow was so ___ that everyone squinted.",
+      "cue_phrase": "so bright everyone squinted",
       "surface": {
         "shiny": "shiny",
         "sparkly": "sparkly",
-        "gleaming": "gleaming",
+        "dazzling": "dazzling",
         "radiant": "radiant",
         "twinkling": "twinkling"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "B-shine-01-s18",
-      "answer": "gleaming",
+      "answer": "dazzling",
       "cue": "explicit",
       "reserve": false,
-      "text": "The clean pearl looked ___, showing one calm glow.",
-      "cue_phrase": "one calm glow",
+      "text": "The headlights on full beam were ___, and Dad flipped the mirror.",
+      "cue_phrase": "full beam; flipped the mirror",
       "surface": {
         "shiny": "shiny",
         "sparkly": "sparkly",
-        "gleaming": "gleaming",
+        "dazzling": "dazzling",
         "radiant": "radiant",
         "twinkling": "twinkling"
       }
     },
     {
       "id": "B-shine-01-s19",
-      "answer": "gleaming",
+      "answer": "dazzling",
       "cue": "contextual",
       "reserve": false,
-      "text": "The silver shell lay ___ with one unbroken, gentle sheen.",
-      "cue_phrase": "unbroken, gentle sheen",
+      "text": "At noon the white sand became ___, and we read under the parasol.",
+      "cue_phrase": "noon; under the parasol",
       "surface": {
         "shiny": "shiny",
         "sparkly": "sparkly",
-        "gleaming": "gleaming",
+        "dazzling": "dazzling",
         "radiant": "radiant",
         "twinkling": "twinkling"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "B-shine-01-s20",
-      "answer": "gleaming",
+      "answer": "dazzling",
       "cue": "contextual",
       "reserve": false,
-      "text": "The calm statue seemed ___ under the lamp, with a single soft sheen.",
-      "cue_phrase": "single soft sheen",
+      "text": "A ___ flash burst from the wizard's wand, and the goblins covered their eyes.",
+      "cue_phrase": "covered their eyes",
       "surface": {
         "shiny": "shiny",
         "sparkly": "sparkly",
-        "gleaming": "gleaming",
+        "dazzling": "dazzling",
         "radiant": "radiant",
         "twinkling": "twinkling"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "B-shine-01-s21",
-      "answer": "gleaming",
+      "answer": "dazzling",
       "cue": "inferential",
       "reserve": false,
-      "text": "The moth rested on the ___ pond, where one pale sheen spread.",
-      "cue_phrase": "one pale sheen spread",
+      "text": "The welder's torch looked ___ even from across the yard.",
+      "cue_phrase": "welder's torch; across the yard",
       "surface": {
         "shiny": "shiny",
         "sparkly": "sparkly",
-        "gleaming": "gleaming",
+        "dazzling": "dazzling",
         "radiant": "radiant",
         "twinkling": "twinkling"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "B-shine-01-s22",
-      "answer": "gleaming",
+      "answer": "dazzling",
       "cue": "inferential",
       "reserve": false,
-      "text": "Sam whispered near the ___ engine, admiring its smooth, quiet sheen.",
-      "cue_phrase": "smooth, quiet sheen",
+      "text": "Camera flashes went off together, one ___ wall of light at the finish line.",
+      "cue_phrase": "one wall of light",
       "surface": {
         "shiny": "shiny",
         "sparkly": "sparkly",
-        "gleaming": "gleaming",
+        "dazzling": "dazzling",
         "radiant": "radiant",
         "twinkling": "twinkling"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "B-shine-01-s23",
-      "answer": "gleaming",
-      "cue": "explicit",
+      "answer": "dazzling",
+      "cue": "contextual",
       "reserve": true,
-      "text": "At dawn, the palace roof stayed ___ with a gentle silver sheen.",
-      "cue_phrase": "gentle silver sheen",
+      "text": "The treasure chest opened onto gold so ___ that the pirates blinked.",
+      "cue_phrase": "so bright the pirates blinked",
       "surface": {
         "shiny": "shiny",
         "sparkly": "sparkly",
-        "gleaming": "gleaming",
+        "dazzling": "dazzling",
         "radiant": "radiant",
         "twinkling": "twinkling"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "B-shine-01-s24",
-      "answer": "gleaming",
-      "cue": "contextual",
+      "answer": "dazzling",
+      "cue": "inferential",
       "reserve": true,
-      "text": "The polished violin looked ___ with one mellow brown sheen.",
-      "cue_phrase": "one mellow brown sheen",
+      "text": "Midday sun on the sea was ___; we watched the boats through our fingers.",
+      "cue_phrase": "through our fingers",
       "surface": {
         "shiny": "shiny",
         "sparkly": "sparkly",
-        "gleaming": "gleaming",
+        "dazzling": "dazzling",
         "radiant": "radiant",
         "twinkling": "twinkling"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "B-shine-01-s25",
@@ -457,22 +583,30 @@
       "surface": {
         "shiny": "shiny",
         "sparkly": "sparkly",
-        "gleaming": "gleaming",
+        "dazzling": "dazzling",
         "radiant": "radiant",
         "twinkling": "twinkling"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "B-shine-01-s26",
       "answer": "radiant",
       "cue": "explicit",
       "reserve": false,
-      "text": "The princess's smile was ___, filling the hall with warmth.",
-      "cue_phrase": "filling the hall with warmth",
+      "text": "The paper lantern was ___, washing the porch in a gentle glow.",
+      "cue_phrase": "washing the porch; gentle",
       "surface": {
         "shiny": "shiny",
         "sparkly": "sparkly",
-        "gleaming": "gleaming",
+        "dazzling": "dazzling",
         "radiant": "radiant",
         "twinkling": "twinkling"
       }
@@ -487,10 +621,18 @@
       "surface": {
         "shiny": "shiny",
         "sparkly": "sparkly",
-        "gleaming": "gleaming",
+        "dazzling": "dazzling",
         "radiant": "radiant",
         "twinkling": "twinkling"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "B-shine-01-s28",
@@ -502,25 +644,41 @@
       "surface": {
         "shiny": "shiny",
         "sparkly": "sparkly",
-        "gleaming": "gleaming",
+        "dazzling": "dazzling",
         "radiant": "radiant",
         "twinkling": "twinkling"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "B-shine-01-s29",
       "answer": "radiant",
       "cue": "inferential",
       "reserve": false,
-      "text": "Everyone turned toward the ___ doorway when warmth spilled out.",
-      "cue_phrase": "warmth spilled out",
+      "text": "The full moon was ___ over the bay, turning every wave silver.",
+      "cue_phrase": "full moon; waves silver",
       "surface": {
         "shiny": "shiny",
         "sparkly": "sparkly",
-        "gleaming": "gleaming",
+        "dazzling": "dazzling",
         "radiant": "radiant",
         "twinkling": "twinkling"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "B-shine-01-s30",
@@ -532,10 +690,18 @@
       "surface": {
         "shiny": "shiny",
         "sparkly": "sparkly",
-        "gleaming": "gleaming",
+        "dazzling": "dazzling",
         "radiant": "radiant",
         "twinkling": "twinkling"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "B-shine-01-s31",
@@ -547,7 +713,7 @@
       "surface": {
         "shiny": "shiny",
         "sparkly": "sparkly",
-        "gleaming": "gleaming",
+        "dazzling": "dazzling",
         "radiant": "radiant",
         "twinkling": "twinkling"
       }
@@ -562,10 +728,18 @@
       "surface": {
         "shiny": "shiny",
         "sparkly": "sparkly",
-        "gleaming": "gleaming",
+        "dazzling": "dazzling",
         "radiant": "radiant",
         "twinkling": "twinkling"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "B-shine-01-s33",
@@ -577,10 +751,18 @@
       "surface": {
         "shiny": "shiny",
         "sparkly": "sparkly",
-        "gleaming": "gleaming",
+        "dazzling": "dazzling",
         "radiant": "radiant",
         "twinkling": "twinkling"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "B-shine-01-s34",
@@ -592,10 +774,18 @@
       "surface": {
         "shiny": "shiny",
         "sparkly": "sparkly",
-        "gleaming": "gleaming",
+        "dazzling": "dazzling",
         "radiant": "radiant",
         "twinkling": "twinkling"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "B-shine-01-s35",
@@ -607,10 +797,18 @@
       "surface": {
         "shiny": "shiny",
         "sparkly": "sparkly",
-        "gleaming": "gleaming",
+        "dazzling": "dazzling",
         "radiant": "radiant",
         "twinkling": "twinkling"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "B-shine-01-s36",
@@ -622,10 +820,18 @@
       "surface": {
         "shiny": "shiny",
         "sparkly": "sparkly",
-        "gleaming": "gleaming",
+        "dazzling": "dazzling",
         "radiant": "radiant",
         "twinkling": "twinkling"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "B-shine-01-s37",
@@ -637,10 +843,18 @@
       "surface": {
         "shiny": "shiny",
         "sparkly": "sparkly",
-        "gleaming": "gleaming",
+        "dazzling": "dazzling",
         "radiant": "radiant",
         "twinkling": "twinkling"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "B-shine-01-s38",
@@ -652,10 +866,18 @@
       "surface": {
         "shiny": "shiny",
         "sparkly": "sparkly",
-        "gleaming": "gleaming",
+        "dazzling": "dazzling",
         "radiant": "radiant",
         "twinkling": "twinkling"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "B-shine-01-s39",
@@ -667,10 +889,18 @@
       "surface": {
         "shiny": "shiny",
         "sparkly": "sparkly",
-        "gleaming": "gleaming",
+        "dazzling": "dazzling",
         "radiant": "radiant",
         "twinkling": "twinkling"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "B-shine-01-s40",
@@ -682,10 +912,18 @@
       "surface": {
         "shiny": "shiny",
         "sparkly": "sparkly",
-        "gleaming": "gleaming",
+        "dazzling": "dazzling",
         "radiant": "radiant",
         "twinkling": "twinkling"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     }
   ],
   "contrasts": [
@@ -696,8 +934,8 @@
     },
     {
       "answer": "shiny",
-      "picked": "gleaming",
-      "line": "Shiny can show a reflection; gleaming is a soft, even sheen."
+      "picked": "dazzling",
+      "line": "Dazzling hurts your eyes. Shiny just reflects, like a polished spoon."
     },
     {
       "answer": "shiny",
@@ -716,8 +954,8 @@
     },
     {
       "answer": "sparkly",
-      "picked": "gleaming",
-      "line": "Sparkly is made of many little glints; gleaming is one soft, even sheen."
+      "picked": "dazzling",
+      "line": "Dazzling is one overwhelming glare. Sparkly is little dots of light."
     },
     {
       "answer": "sparkly",
@@ -730,24 +968,24 @@
       "line": "Sparkly shows many glitter bits; twinkling goes on and off."
     },
     {
-      "answer": "gleaming",
+      "answer": "dazzling",
       "picked": "shiny",
-      "line": "Gleaming is one soft, even sheen; shiny is more mirror-like."
+      "line": "Shiny shows your face like a mirror. Dazzling is so bright it hurts to look."
     },
     {
-      "answer": "gleaming",
+      "answer": "dazzling",
       "picked": "sparkly",
-      "line": "Gleaming is a single calm sheen; sparkly has many tiny glitter bits."
+      "line": "Sparkly is lots of tiny flashes. Dazzling is one huge blast of light."
     },
     {
-      "answer": "gleaming",
+      "answer": "dazzling",
       "picked": "radiant",
-      "line": "Gleaming has a soft surface sheen; radiant seems to glow from inside."
+      "line": "Radiant glows out gently. Dazzling makes you squint."
     },
     {
-      "answer": "gleaming",
+      "answer": "dazzling",
       "picked": "twinkling",
-      "line": "Gleaming stays smooth and even; twinkling blinks on and off."
+      "line": "Twinkling blinks on and off softly. Dazzling blazes all at once."
     },
     {
       "answer": "radiant",
@@ -761,8 +999,8 @@
     },
     {
       "answer": "radiant",
-      "picked": "gleaming",
-      "line": "Radiant feels like it glows outward; gleaming is one soft surface sheen."
+      "picked": "dazzling",
+      "line": "Dazzling is harsh and blinding. Radiant is a soft steady glow."
     },
     {
       "answer": "radiant",
@@ -781,8 +1019,8 @@
     },
     {
       "answer": "twinkling",
-      "picked": "gleaming",
-      "line": "Twinkling blinks in and out; gleaming is one soft, even sheen."
+      "picked": "dazzling",
+      "line": "Dazzling blasts out all at once. Twinkling comes and goes in little winks."
     },
     {
       "answer": "twinkling",
@@ -793,7 +1031,7 @@
   "meta": {
     "generated_at": "2026-07-05T07:30:53+00:00",
     "model": "gpt-5.5",
-    "scrubbed_at": null,
-    "scrub_note": "glossy swapped for radiant: G3 found glossy is a lemma of shiny's pinned synset."
+    "scrubbed_at": "2026-07-05",
+    "scrub_note": "glossy swapped for radiant: G3 found glossy is a lemma of shiny's pinned synset. gleaming swapped for dazzling: shiny/gleaming proved judge-inseparable on polished-surface frames. Full read by claude during judge triage: every flagged sentence adjudicated (rewrite or recorded waiver), unflagged sentences read for frame sanity."
   }
 }
