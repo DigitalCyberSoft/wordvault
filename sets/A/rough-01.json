@@ -1,0 +1,791 @@
+{
+  "id": "A-rough-01",
+  "bank": "A",
+  "pos": "adjective",
+  "theme": "kinds of rough",
+  "band": 4,
+  "band_override": 4,
+  "computed": null,
+  "words": [
+    {
+      "w": "jagged",
+      "synset": "jagged.s.01",
+      "gloss_source": "wordnet",
+      "gloss": "having a sharply uneven surface or outline",
+      "zipf": 3.12,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "jagged"
+      },
+      "discriminator": "sharp uneven edges and points"
+    },
+    {
+      "w": "prickly",
+      "synset": "barbed.s.02",
+      "gloss_source": "authored",
+      "gloss": "covered in little spikes that poke you",
+      "zipf": 3.03,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "prickly"
+      },
+      "discriminator": "spikes that jab"
+    },
+    {
+      "w": "coarse",
+      "synset": "coarse.a.01",
+      "gloss_source": "wordnet",
+      "gloss": "of textures that are rough to the touch or substances consisting of relatively large particles",
+      "zipf": 3.41,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "coarse"
+      },
+      "discriminator": "large grains; rough to the touch"
+    },
+    {
+      "w": "bumpy",
+      "synset": "bumpy.s.01",
+      "gloss_source": "wordnet",
+      "gloss": "covered with or full of bumps",
+      "zipf": 3.18,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "bumpy"
+      },
+      "discriminator": "lumps and humps all over"
+    },
+    {
+      "w": "scratchy",
+      "synset": "abrasive.s.01",
+      "gloss_source": "authored",
+      "gloss": "rubbing your skin raw, like a stiff wool jumper",
+      "zipf": 2.79,
+      "register": "neutral",
+      "senses_at_pos": 4,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "scratchy"
+      },
+      "discriminator": "rubs and rasps the skin"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-rough-01-s01",
+      "answer": "jagged",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ glass edge had sharp broken points.",
+      "cue_phrase": "sharp broken points",
+      "surface": {
+        "jagged": "jagged",
+        "prickly": "prickly",
+        "coarse": "coarse",
+        "bumpy": "bumpy",
+        "scratchy": "scratchy"
+      }
+    },
+    {
+      "id": "A-rough-01-s02",
+      "answer": "jagged",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "A ___ lightning bolt has pointed bends, not smooth curves.",
+      "cue_phrase": "pointed bends",
+      "surface": {
+        "jagged": "jagged",
+        "prickly": "prickly",
+        "coarse": "coarse",
+        "bumpy": "bumpy",
+        "scratchy": "scratchy"
+      }
+    },
+    {
+      "id": "A-rough-01-s03",
+      "answer": "jagged",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ mountain ridge looked like dragon teeth at sunset.",
+      "cue_phrase": "dragon teeth",
+      "surface": {
+        "jagged": "jagged",
+        "prickly": "prickly",
+        "coarse": "coarse",
+        "bumpy": "bumpy",
+        "scratchy": "scratchy"
+      }
+    },
+    {
+      "id": "A-rough-01-s04",
+      "answer": "jagged",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Lena drew a ___ crack with zigzags and knife-like corners.",
+      "cue_phrase": "knife-like corners",
+      "surface": {
+        "jagged": "jagged",
+        "prickly": "prickly",
+        "coarse": "coarse",
+        "bumpy": "bumpy",
+        "scratchy": "scratchy"
+      }
+    },
+    {
+      "id": "A-rough-01-s05",
+      "answer": "jagged",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "We wrapped the ___ tin lid so it would not cut anyone.",
+      "cue_phrase": "would not cut",
+      "surface": {
+        "jagged": "jagged",
+        "prickly": "prickly",
+        "coarse": "coarse",
+        "bumpy": "bumpy",
+        "scratchy": "scratchy"
+      }
+    },
+    {
+      "id": "A-rough-01-s06",
+      "answer": "jagged",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The ___ shell sliced the beach ball when it landed.",
+      "cue_phrase": "sliced the beach ball",
+      "surface": {
+        "jagged": "jagged",
+        "prickly": "prickly",
+        "coarse": "coarse",
+        "bumpy": "bumpy",
+        "scratchy": "scratchy"
+      }
+    },
+    {
+      "id": "A-rough-01-s07",
+      "answer": "jagged",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Keep fingers away from the ___ can top with saw-tooth edges.",
+      "cue_phrase": "saw-tooth edges",
+      "surface": {
+        "jagged": "jagged",
+        "prickly": "prickly",
+        "coarse": "coarse",
+        "bumpy": "bumpy",
+        "scratchy": "scratchy"
+      }
+    },
+    {
+      "id": "A-rough-01-s08",
+      "answer": "jagged",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The knight avoided the ___ broken crown; its metal teeth could cut.",
+      "cue_phrase": "metal teeth could cut",
+      "surface": {
+        "jagged": "jagged",
+        "prickly": "prickly",
+        "coarse": "coarse",
+        "bumpy": "bumpy",
+        "scratchy": "scratchy"
+      }
+    },
+    {
+      "id": "A-rough-01-s09",
+      "answer": "prickly",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ cactus had needle tips that jabbed Max's glove.",
+      "cue_phrase": "needle tips",
+      "surface": {
+        "jagged": "jagged",
+        "prickly": "prickly",
+        "coarse": "coarse",
+        "bumpy": "bumpy",
+        "scratchy": "scratchy"
+      }
+    },
+    {
+      "id": "A-rough-01-s10",
+      "answer": "prickly",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "A ___ rose stem has thorns along the green part.",
+      "cue_phrase": "has thorns",
+      "surface": {
+        "jagged": "jagged",
+        "prickly": "prickly",
+        "coarse": "coarse",
+        "bumpy": "bumpy",
+        "scratchy": "scratchy"
+      }
+    },
+    {
+      "id": "A-rough-01-s11",
+      "answer": "prickly",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ hedge snagged our coats with tiny barbs.",
+      "cue_phrase": "tiny barbs",
+      "surface": {
+        "jagged": "jagged",
+        "prickly": "prickly",
+        "coarse": "coarse",
+        "bumpy": "bumpy",
+        "scratchy": "scratchy"
+      }
+    },
+    {
+      "id": "A-rough-01-s12",
+      "answer": "prickly",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Ella wore gloves before touching the ___ holly leaves.",
+      "cue_phrase": "wore gloves before",
+      "surface": {
+        "jagged": "jagged",
+        "prickly": "prickly",
+        "coarse": "coarse",
+        "bumpy": "bumpy",
+        "scratchy": "scratchy"
+      }
+    },
+    {
+      "id": "A-rough-01-s13",
+      "answer": "prickly",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Sam backed away after the ___ burrs stuck in his socks.",
+      "cue_phrase": "burrs stuck",
+      "surface": {
+        "jagged": "jagged",
+        "prickly": "prickly",
+        "coarse": "coarse",
+        "bumpy": "bumpy",
+        "scratchy": "scratchy"
+      }
+    },
+    {
+      "id": "A-rough-01-s14",
+      "answer": "prickly",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The goat nibbled around the ___ thistle, avoiding its tiny needles.",
+      "cue_phrase": "tiny needles",
+      "surface": {
+        "jagged": "jagged",
+        "prickly": "prickly",
+        "coarse": "coarse",
+        "bumpy": "bumpy",
+        "scratchy": "scratchy"
+      }
+    },
+    {
+      "id": "A-rough-01-s15",
+      "answer": "prickly",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Mum used tongs to move the ___ shell with long spines.",
+      "cue_phrase": "long spines",
+      "surface": {
+        "jagged": "jagged",
+        "prickly": "prickly",
+        "coarse": "coarse",
+        "bumpy": "bumpy",
+        "scratchy": "scratchy"
+      }
+    },
+    {
+      "id": "A-rough-01-s16",
+      "answer": "prickly",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The ___ seed case clung to Mina's sleeve by barbed hooks.",
+      "cue_phrase": "barbed hooks",
+      "surface": {
+        "jagged": "jagged",
+        "prickly": "prickly",
+        "coarse": "coarse",
+        "bumpy": "bumpy",
+        "scratchy": "scratchy"
+      }
+    },
+    {
+      "id": "A-rough-01-s17",
+      "answer": "coarse",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ salt had big grains that crunched loudly.",
+      "cue_phrase": "big grains",
+      "surface": {
+        "jagged": "jagged",
+        "prickly": "prickly",
+        "coarse": "coarse",
+        "bumpy": "bumpy",
+        "scratchy": "scratchy"
+      }
+    },
+    {
+      "id": "A-rough-01-s18",
+      "answer": "coarse",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "This ___ sand will not pass through the fine sieve.",
+      "cue_phrase": "not pass through",
+      "surface": {
+        "jagged": "jagged",
+        "prickly": "prickly",
+        "coarse": "coarse",
+        "bumpy": "bumpy",
+        "scratchy": "scratchy"
+      }
+    },
+    {
+      "id": "A-rough-01-s19",
+      "answer": "coarse",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Dad bought ___ sugar for the recipe, not powdery icing sugar.",
+      "cue_phrase": "not powdery icing",
+      "surface": {
+        "jagged": "jagged",
+        "prickly": "prickly",
+        "coarse": "coarse",
+        "bumpy": "bumpy",
+        "scratchy": "scratchy"
+      }
+    },
+    {
+      "id": "A-rough-01-s20",
+      "answer": "coarse",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ flour left gritty bits in the pancake mix.",
+      "cue_phrase": "gritty bits",
+      "surface": {
+        "jagged": "jagged",
+        "prickly": "prickly",
+        "coarse": "coarse",
+        "bumpy": "bumpy",
+        "scratchy": "scratchy"
+      }
+    },
+    {
+      "id": "A-rough-01-s21",
+      "answer": "coarse",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The sieve caught the ___ meal because chunks stayed behind.",
+      "cue_phrase": "chunks stayed behind",
+      "surface": {
+        "jagged": "jagged",
+        "prickly": "prickly",
+        "coarse": "coarse",
+        "bumpy": "bumpy",
+        "scratchy": "scratchy"
+      }
+    },
+    {
+      "id": "A-rough-01-s22",
+      "answer": "coarse",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Gran chose ___ breadcrumbs, so the coating crunched in chunky crumbs.",
+      "cue_phrase": "chunky crumbs",
+      "surface": {
+        "jagged": "jagged",
+        "prickly": "prickly",
+        "coarse": "coarse",
+        "bumpy": "bumpy",
+        "scratchy": "scratchy"
+      }
+    },
+    {
+      "id": "A-rough-01-s23",
+      "answer": "coarse",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The ___ pepper looked grainy beside the smooth white sauce.",
+      "cue_phrase": "looked grainy",
+      "surface": {
+        "jagged": "jagged",
+        "prickly": "prickly",
+        "coarse": "coarse",
+        "bumpy": "bumpy",
+        "scratchy": "scratchy"
+      }
+    },
+    {
+      "id": "A-rough-01-s24",
+      "answer": "coarse",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Ali measured ___ cornmeal; the gritty grains were bigger than sugar.",
+      "cue_phrase": "grains were bigger",
+      "surface": {
+        "jagged": "jagged",
+        "prickly": "prickly",
+        "coarse": "coarse",
+        "bumpy": "bumpy",
+        "scratchy": "scratchy"
+      }
+    },
+    {
+      "id": "A-rough-01-s25",
+      "answer": "bumpy",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ road jolted the bus over many small humps.",
+      "cue_phrase": "small humps",
+      "surface": {
+        "jagged": "jagged",
+        "prickly": "prickly",
+        "coarse": "coarse",
+        "bumpy": "bumpy",
+        "scratchy": "scratchy"
+      }
+    },
+    {
+      "id": "A-rough-01-s26",
+      "answer": "bumpy",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "A ___ toad has raised lumps across its back.",
+      "cue_phrase": "raised lumps",
+      "surface": {
+        "jagged": "jagged",
+        "prickly": "prickly",
+        "coarse": "coarse",
+        "bumpy": "bumpy",
+        "scratchy": "scratchy"
+      }
+    },
+    {
+      "id": "A-rough-01-s27",
+      "answer": "bumpy",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ track made every bike basket rattle.",
+      "cue_phrase": "bike basket rattle",
+      "surface": {
+        "jagged": "jagged",
+        "prickly": "prickly",
+        "coarse": "coarse",
+        "bumpy": "bumpy",
+        "scratchy": "scratchy"
+      }
+    },
+    {
+      "id": "A-rough-01-s28",
+      "answer": "bumpy",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Nia's ___ mattress had hidden knobbles under the sheet.",
+      "cue_phrase": "hidden knobbles",
+      "surface": {
+        "jagged": "jagged",
+        "prickly": "prickly",
+        "coarse": "coarse",
+        "bumpy": "bumpy",
+        "scratchy": "scratchy"
+      }
+    },
+    {
+      "id": "A-rough-01-s29",
+      "answer": "bumpy",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The buggy bounced because the ___ path rose and dipped.",
+      "cue_phrase": "rose and dipped",
+      "surface": {
+        "jagged": "jagged",
+        "prickly": "prickly",
+        "coarse": "coarse",
+        "bumpy": "bumpy",
+        "scratchy": "scratchy"
+      }
+    },
+    {
+      "id": "A-rough-01-s30",
+      "answer": "bumpy",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "My pencil line wobbled on the ___ table with a lumpy top.",
+      "cue_phrase": "lumpy top",
+      "surface": {
+        "jagged": "jagged",
+        "prickly": "prickly",
+        "coarse": "coarse",
+        "bumpy": "bumpy",
+        "scratchy": "scratchy"
+      }
+    },
+    {
+      "id": "A-rough-01-s31",
+      "answer": "bumpy",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The ___ pumpkin had knobbly ridges all around it.",
+      "cue_phrase": "knobbly ridges",
+      "surface": {
+        "jagged": "jagged",
+        "prickly": "prickly",
+        "coarse": "coarse",
+        "bumpy": "bumpy",
+        "scratchy": "scratchy"
+      }
+    },
+    {
+      "id": "A-rough-01-s32",
+      "answer": "bumpy",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The cart shook across the ___ field of small mounds.",
+      "cue_phrase": "small mounds",
+      "surface": {
+        "jagged": "jagged",
+        "prickly": "prickly",
+        "coarse": "coarse",
+        "bumpy": "bumpy",
+        "scratchy": "scratchy"
+      }
+    },
+    {
+      "id": "A-rough-01-s33",
+      "answer": "scratchy",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ pen made a scraping noise across the card.",
+      "cue_phrase": "scraping noise",
+      "surface": {
+        "jagged": "jagged",
+        "prickly": "prickly",
+        "coarse": "coarse",
+        "bumpy": "bumpy",
+        "scratchy": "scratchy"
+      }
+    },
+    {
+      "id": "A-rough-01-s34",
+      "answer": "scratchy",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "A ___ label rasps the neck and makes it itch.",
+      "cue_phrase": "rasps the neck",
+      "surface": {
+        "jagged": "jagged",
+        "prickly": "prickly",
+        "coarse": "coarse",
+        "bumpy": "bumpy",
+        "scratchy": "scratchy"
+      }
+    },
+    {
+      "id": "A-rough-01-s35",
+      "answer": "scratchy",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ chalk squealed while the teacher wrote today's date.",
+      "cue_phrase": "chalk squealed",
+      "surface": {
+        "jagged": "jagged",
+        "prickly": "prickly",
+        "coarse": "coarse",
+        "bumpy": "bumpy",
+        "scratchy": "scratchy"
+      }
+    },
+    {
+      "id": "A-rough-01-s36",
+      "answer": "scratchy",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ radio crackled so much that we missed the song.",
+      "cue_phrase": "radio crackled",
+      "surface": {
+        "jagged": "jagged",
+        "prickly": "prickly",
+        "coarse": "coarse",
+        "bumpy": "bumpy",
+        "scratchy": "scratchy"
+      }
+    },
+    {
+      "id": "A-rough-01-s37",
+      "answer": "scratchy",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Milo changed crayons because the ___ one scraped the paper.",
+      "cue_phrase": "scraped the paper",
+      "surface": {
+        "jagged": "jagged",
+        "prickly": "prickly",
+        "coarse": "coarse",
+        "bumpy": "bumpy",
+        "scratchy": "scratchy"
+      }
+    },
+    {
+      "id": "A-rough-01-s38",
+      "answer": "scratchy",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Tara cleared her throat after the ___ cough rasped all morning.",
+      "cue_phrase": "cough rasped",
+      "surface": {
+        "jagged": "jagged",
+        "prickly": "prickly",
+        "coarse": "coarse",
+        "bumpy": "bumpy",
+        "scratchy": "scratchy"
+      }
+    },
+    {
+      "id": "A-rough-01-s39",
+      "answer": "scratchy",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The ___ microphone hissed whenever the narrator spoke.",
+      "cue_phrase": "microphone hissed",
+      "surface": {
+        "jagged": "jagged",
+        "prickly": "prickly",
+        "coarse": "coarse",
+        "bumpy": "bumpy",
+        "scratchy": "scratchy"
+      }
+    },
+    {
+      "id": "A-rough-01-s40",
+      "answer": "scratchy",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "The ___ violin note rasped instead of singing smoothly.",
+      "cue_phrase": "note rasped",
+      "surface": {
+        "jagged": "jagged",
+        "prickly": "prickly",
+        "coarse": "coarse",
+        "bumpy": "bumpy",
+        "scratchy": "scratchy"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "jagged",
+      "picked": "prickly",
+      "line": "Jagged has sharp broken edges; prickly has thorns or needles that jab."
+    },
+    {
+      "answer": "jagged",
+      "picked": "coarse",
+      "line": "Jagged has sharp broken edges; coarse has big grains or gritty bits."
+    },
+    {
+      "answer": "jagged",
+      "picked": "bumpy",
+      "line": "Jagged has cutting points; bumpy has humps and lumps."
+    },
+    {
+      "answer": "jagged",
+      "picked": "scratchy",
+      "line": "Jagged has sharp broken edges; scratchy scrapes or rasps as it moves."
+    },
+    {
+      "answer": "prickly",
+      "picked": "jagged",
+      "line": "Prickly has thorns or needles that jab; jagged has sharp broken edges."
+    },
+    {
+      "answer": "prickly",
+      "picked": "coarse",
+      "line": "Prickly jabs with thorns or needles; coarse feels grainy or has big bits."
+    },
+    {
+      "answer": "prickly",
+      "picked": "bumpy",
+      "line": "Prickly has points that jab; bumpy has raised lumps."
+    },
+    {
+      "answer": "prickly",
+      "picked": "scratchy",
+      "line": "Prickly jabs with points; scratchy scrapes, rasps, or itches."
+    },
+    {
+      "answer": "coarse",
+      "picked": "jagged",
+      "line": "Coarse has big grains or gritty bits; jagged has sharp broken edges."
+    },
+    {
+      "answer": "coarse",
+      "picked": "prickly",
+      "line": "Coarse is grainy or chunky; prickly has thorns or needles that jab."
+    },
+    {
+      "answer": "coarse",
+      "picked": "bumpy",
+      "line": "Coarse has grains or gritty bits; bumpy has humps and lumps."
+    },
+    {
+      "answer": "coarse",
+      "picked": "scratchy",
+      "line": "Coarse is grainy or chunky; scratchy scrapes, rasps, or itches."
+    },
+    {
+      "answer": "bumpy",
+      "picked": "jagged",
+      "line": "Bumpy has humps and lumps; jagged has sharp broken edges."
+    },
+    {
+      "answer": "bumpy",
+      "picked": "prickly",
+      "line": "Bumpy has raised lumps; prickly has thorns or needles that jab."
+    },
+    {
+      "answer": "bumpy",
+      "picked": "coarse",
+      "line": "Bumpy has humps and lumps; coarse has big grains or gritty bits."
+    },
+    {
+      "answer": "bumpy",
+      "picked": "scratchy",
+      "line": "Bumpy makes jolts over humps; scratchy scrapes, rasps, or itches."
+    },
+    {
+      "answer": "scratchy",
+      "picked": "jagged",
+      "line": "Scratchy scrapes, rasps, or itches; jagged has sharp broken edges."
+    },
+    {
+      "answer": "scratchy",
+      "picked": "prickly",
+      "line": "Scratchy scrapes or rasps; prickly jabs with thorns or needles."
+    },
+    {
+      "answer": "scratchy",
+      "picked": "coarse",
+      "line": "Scratchy scrapes, rasps, or itches; coarse is grainy or chunky."
+    },
+    {
+      "answer": "scratchy",
+      "picked": "bumpy",
+      "line": "Scratchy scrapes or rasps; bumpy has humps and lumps."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-05T11:23:46+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": null,
+    "scrub_note": null
+  }
+}

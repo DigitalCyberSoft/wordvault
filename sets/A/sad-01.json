@@ -1,0 +1,791 @@
+{
+  "id": "A-sad-01",
+  "bank": "A",
+  "pos": "adjective",
+  "theme": "kinds of sad",
+  "band": 2,
+  "band_override": 2,
+  "computed": null,
+  "words": [
+    {
+      "w": "gloomy",
+      "synset": "gloomy.s.02",
+      "gloss_source": "authored",
+      "gloss": "in a heavy, low mood",
+      "zipf": 3.39,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "gloomy"
+      },
+      "discriminator": "low mood colouring everything, no single cause"
+    },
+    {
+      "w": "miserable",
+      "synset": "miserable.s.01",
+      "gloss_source": "wordnet",
+      "gloss": "very unhappy; full of misery",
+      "zipf": 4.07,
+      "register": "neutral",
+      "senses_at_pos": 6,
+      "dominant_sense_ok": "pinned per set design; frames use only this sense (2026-07-05)",
+      "forms": {
+        "base": "miserable"
+      },
+      "discriminator": "deeply unhappy through and through"
+    },
+    {
+      "w": "heartbroken",
+      "synset": "brokenhearted.s.01",
+      "gloss_source": "wordnet",
+      "gloss": "full of sorrow",
+      "zipf": 3.41,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "heartbroken"
+      },
+      "discriminator": "crushed by losing someone or something loved"
+    },
+    {
+      "w": "disappointed",
+      "synset": "defeated.s.01",
+      "gloss_source": "authored",
+      "gloss": "let down because what you hoped for did not happen",
+      "zipf": 4.42,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "disappointed"
+      },
+      "discriminator": "dashed hopes"
+    },
+    {
+      "w": "homesick",
+      "synset": "homesick.s.01",
+      "gloss_source": "wordnet",
+      "gloss": "longing to return home",
+      "zipf": 2.93,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "homesick"
+      },
+      "discriminator": "missing home while away"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-sad-01-s01",
+      "answer": "gloomy",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Lena felt ___, cheerless and grey inside for no clear reason.",
+      "cue_phrase": "cheerless and grey inside",
+      "surface": {
+        "gloomy": "gloomy",
+        "miserable": "miserable",
+        "heartbroken": "heartbroken",
+        "disappointed": "disappointed",
+        "homesick": "homesick"
+      }
+    },
+    {
+      "id": "A-sad-01-s02",
+      "answer": "gloomy",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Omar grew ___, as if a raincloud followed only him.",
+      "cue_phrase": "raincloud followed only him",
+      "surface": {
+        "gloomy": "gloomy",
+        "miserable": "miserable",
+        "heartbroken": "heartbroken",
+        "disappointed": "disappointed",
+        "homesick": "homesick"
+      }
+    },
+    {
+      "id": "A-sad-01-s03",
+      "answer": "gloomy",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The sunny classroom seemed ___ to Priya, and every joke sounded dull.",
+      "cue_phrase": "every joke sounded dull",
+      "surface": {
+        "gloomy": "gloomy",
+        "miserable": "miserable",
+        "heartbroken": "heartbroken",
+        "disappointed": "disappointed",
+        "homesick": "homesick"
+      }
+    },
+    {
+      "id": "A-sad-01-s04",
+      "answer": "gloomy",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "After breakfast, Ben was ___; even his favourite comic looked grey.",
+      "cue_phrase": "comic looked grey",
+      "surface": {
+        "gloomy": "gloomy",
+        "miserable": "miserable",
+        "heartbroken": "heartbroken",
+        "disappointed": "disappointed",
+        "homesick": "homesick"
+      }
+    },
+    {
+      "id": "A-sad-01-s05",
+      "answer": "gloomy",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "No one knew why Mia became ___ and stared past the games.",
+      "cue_phrase": "No one knew why",
+      "surface": {
+        "gloomy": "gloomy",
+        "miserable": "miserable",
+        "heartbroken": "heartbroken",
+        "disappointed": "disappointed",
+        "homesick": "homesick"
+      }
+    },
+    {
+      "id": "A-sad-01-s06",
+      "answer": "gloomy",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "A grey feeling followed Jack everywhere, making him seem ___ all day.",
+      "cue_phrase": "followed Jack everywhere",
+      "surface": {
+        "gloomy": "gloomy",
+        "miserable": "miserable",
+        "heartbroken": "heartbroken",
+        "disappointed": "disappointed",
+        "homesick": "homesick"
+      }
+    },
+    {
+      "id": "A-sad-01-s07",
+      "answer": "gloomy",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The party lights were bright, but Noor still looked ___ and far away.",
+      "cue_phrase": "party lights were bright",
+      "surface": {
+        "gloomy": "gloomy",
+        "miserable": "miserable",
+        "heartbroken": "heartbroken",
+        "disappointed": "disappointed",
+        "homesick": "homesick"
+      }
+    },
+    {
+      "id": "A-sad-01-s08",
+      "answer": "gloomy",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "Tom tried to smile, yet his whole afternoon stayed ___.",
+      "cue_phrase": "whole afternoon stayed",
+      "surface": {
+        "gloomy": "gloomy",
+        "miserable": "miserable",
+        "heartbroken": "heartbroken",
+        "disappointed": "disappointed",
+        "homesick": "homesick"
+      }
+    },
+    {
+      "id": "A-sad-01-s09",
+      "answer": "miserable",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Eva felt ___, utterly wretched and unable to enjoy anything.",
+      "cue_phrase": "utterly wretched and unable",
+      "surface": {
+        "gloomy": "gloomy",
+        "miserable": "miserable",
+        "heartbroken": "heartbroken",
+        "disappointed": "disappointed",
+        "homesick": "homesick"
+      }
+    },
+    {
+      "id": "A-sad-01-s10",
+      "answer": "miserable",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The long fever made Leo ___, aching, teary, and cross at once.",
+      "cue_phrase": "aching, teary, and cross",
+      "surface": {
+        "gloomy": "gloomy",
+        "miserable": "miserable",
+        "heartbroken": "heartbroken",
+        "disappointed": "disappointed",
+        "homesick": "homesick"
+      }
+    },
+    {
+      "id": "A-sad-01-s11",
+      "answer": "miserable",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "On the wet hike, everyone became ___, soaked, cold, and wanting bed.",
+      "cue_phrase": "soaked, cold, and wanting",
+      "surface": {
+        "gloomy": "gloomy",
+        "miserable": "miserable",
+        "heartbroken": "heartbroken",
+        "disappointed": "disappointed",
+        "homesick": "homesick"
+      }
+    },
+    {
+      "id": "A-sad-01-s12",
+      "answer": "miserable",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "After losing sleep all night, Nia was ___ from head to toe.",
+      "cue_phrase": "from head to toe",
+      "surface": {
+        "gloomy": "gloomy",
+        "miserable": "miserable",
+        "heartbroken": "heartbroken",
+        "disappointed": "disappointed",
+        "homesick": "homesick"
+      }
+    },
+    {
+      "id": "A-sad-01-s13",
+      "answer": "miserable",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Finn curled under the blanket, cried, and refused cake; he was ___.",
+      "cue_phrase": "cried, and refused cake",
+      "surface": {
+        "gloomy": "gloomy",
+        "miserable": "miserable",
+        "heartbroken": "heartbroken",
+        "disappointed": "disappointed",
+        "homesick": "homesick"
+      }
+    },
+    {
+      "id": "A-sad-01-s14",
+      "answer": "miserable",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The storm ruined the tent, and the campers sat ___ in puddles.",
+      "cue_phrase": "sat ___ in puddles",
+      "surface": {
+        "gloomy": "gloomy",
+        "miserable": "miserable",
+        "heartbroken": "heartbroken",
+        "disappointed": "disappointed",
+        "homesick": "homesick"
+      }
+    },
+    {
+      "id": "A-sad-01-s15",
+      "answer": "miserable",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "A toothache made Sara ___, so even cartoons could not help.",
+      "cue_phrase": "toothache made Sara",
+      "surface": {
+        "gloomy": "gloomy",
+        "miserable": "miserable",
+        "heartbroken": "heartbroken",
+        "disappointed": "disappointed",
+        "homesick": "homesick"
+      }
+    },
+    {
+      "id": "A-sad-01-s16",
+      "answer": "miserable",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "By lunchtime, the whole team felt ___: hungry, soaked, and shivering.",
+      "cue_phrase": "hungry, soaked, and shivering",
+      "surface": {
+        "gloomy": "gloomy",
+        "miserable": "miserable",
+        "heartbroken": "heartbroken",
+        "disappointed": "disappointed",
+        "homesick": "homesick"
+      }
+    },
+    {
+      "id": "A-sad-01-s17",
+      "answer": "heartbroken",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Maya was ___ after her old dog died in the night.",
+      "cue_phrase": "old dog died",
+      "surface": {
+        "gloomy": "gloomy",
+        "miserable": "miserable",
+        "heartbroken": "heartbroken",
+        "disappointed": "disappointed",
+        "homesick": "homesick"
+      }
+    },
+    {
+      "id": "A-sad-01-s18",
+      "answer": "heartbroken",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "When his best friend moved away forever, Arun felt ___.",
+      "cue_phrase": "moved away forever",
+      "surface": {
+        "gloomy": "gloomy",
+        "miserable": "miserable",
+        "heartbroken": "heartbroken",
+        "disappointed": "disappointed",
+        "homesick": "homesick"
+      }
+    },
+    {
+      "id": "A-sad-01-s19",
+      "answer": "heartbroken",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Lily looked ___ beside the empty cage where her rabbit had lived.",
+      "cue_phrase": "empty cage where her",
+      "surface": {
+        "gloomy": "gloomy",
+        "miserable": "miserable",
+        "heartbroken": "heartbroken",
+        "disappointed": "disappointed",
+        "homesick": "homesick"
+      }
+    },
+    {
+      "id": "A-sad-01-s20",
+      "answer": "heartbroken",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Grandad's cracked violin left Dad ___; it had been his mother's.",
+      "cue_phrase": "had been his mother's",
+      "surface": {
+        "gloomy": "gloomy",
+        "miserable": "miserable",
+        "heartbroken": "heartbroken",
+        "disappointed": "disappointed",
+        "homesick": "homesick"
+      }
+    },
+    {
+      "id": "A-sad-01-s21",
+      "answer": "heartbroken",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The letter said the kitten was gone forever, and Jo became ___.",
+      "cue_phrase": "gone forever",
+      "surface": {
+        "gloomy": "gloomy",
+        "miserable": "miserable",
+        "heartbroken": "heartbroken",
+        "disappointed": "disappointed",
+        "homesick": "homesick"
+      }
+    },
+    {
+      "id": "A-sad-01-s22",
+      "answer": "heartbroken",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Ravi hugged the photo and whispered goodbye, looking ___.",
+      "cue_phrase": "whispered goodbye",
+      "surface": {
+        "gloomy": "gloomy",
+        "miserable": "miserable",
+        "heartbroken": "heartbroken",
+        "disappointed": "disappointed",
+        "homesick": "homesick"
+      }
+    },
+    {
+      "id": "A-sad-01-s23",
+      "answer": "heartbroken",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Ella felt ___ when her treasured necklace sank into the sea.",
+      "cue_phrase": "sank into the sea",
+      "surface": {
+        "gloomy": "gloomy",
+        "miserable": "miserable",
+        "heartbroken": "heartbroken",
+        "disappointed": "disappointed",
+        "homesick": "homesick"
+      }
+    },
+    {
+      "id": "A-sad-01-s24",
+      "answer": "heartbroken",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "After the funeral, Sam sat ___, holding his sister's hand.",
+      "cue_phrase": "After the funeral",
+      "surface": {
+        "gloomy": "gloomy",
+        "miserable": "miserable",
+        "heartbroken": "heartbroken",
+        "disappointed": "disappointed",
+        "homesick": "homesick"
+      }
+    },
+    {
+      "id": "A-sad-01-s25",
+      "answer": "disappointed",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Amir felt ___ when the promised museum trip was cancelled.",
+      "cue_phrase": "trip was cancelled",
+      "surface": {
+        "gloomy": "gloomy",
+        "miserable": "miserable",
+        "heartbroken": "heartbroken",
+        "disappointed": "disappointed",
+        "homesick": "homesick"
+      }
+    },
+    {
+      "id": "A-sad-01-s26",
+      "answer": "disappointed",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Sofia was ___ after expecting cake and finding plain biscuits.",
+      "cue_phrase": "expecting cake and finding",
+      "surface": {
+        "gloomy": "gloomy",
+        "miserable": "miserable",
+        "heartbroken": "heartbroken",
+        "disappointed": "disappointed",
+        "homesick": "homesick"
+      }
+    },
+    {
+      "id": "A-sad-01-s27",
+      "answer": "disappointed",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The team looked ___; the trophy went to another class.",
+      "cue_phrase": "trophy went to another",
+      "surface": {
+        "gloomy": "gloomy",
+        "miserable": "miserable",
+        "heartbroken": "heartbroken",
+        "disappointed": "disappointed",
+        "homesick": "homesick"
+      }
+    },
+    {
+      "id": "A-sad-01-s28",
+      "answer": "disappointed",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Mum seemed ___ when the repaired kite still would not fly.",
+      "cue_phrase": "still would not fly",
+      "surface": {
+        "gloomy": "gloomy",
+        "miserable": "miserable",
+        "heartbroken": "heartbroken",
+        "disappointed": "disappointed",
+        "homesick": "homesick"
+      }
+    },
+    {
+      "id": "A-sad-01-s29",
+      "answer": "disappointed",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Kai packed skates, then the rink closed early; he felt ___.",
+      "cue_phrase": "rink closed early",
+      "surface": {
+        "gloomy": "gloomy",
+        "miserable": "miserable",
+        "heartbroken": "heartbroken",
+        "disappointed": "disappointed",
+        "homesick": "homesick"
+      }
+    },
+    {
+      "id": "A-sad-01-s30",
+      "answer": "disappointed",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The magic show was sold out, so Poppy walked away ___.",
+      "cue_phrase": "show was sold out",
+      "surface": {
+        "gloomy": "gloomy",
+        "miserable": "miserable",
+        "heartbroken": "heartbroken",
+        "disappointed": "disappointed",
+        "homesick": "homesick"
+      }
+    },
+    {
+      "id": "A-sad-01-s31",
+      "answer": "disappointed",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "After three guesses, the empty prize box made Mina ___.",
+      "cue_phrase": "empty prize box",
+      "surface": {
+        "gloomy": "gloomy",
+        "miserable": "miserable",
+        "heartbroken": "heartbroken",
+        "disappointed": "disappointed",
+        "homesick": "homesick"
+      }
+    },
+    {
+      "id": "A-sad-01-s32",
+      "answer": "disappointed",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "I felt ___ when my painted mug cracked before the contest.",
+      "cue_phrase": "before the contest",
+      "surface": {
+        "gloomy": "gloomy",
+        "miserable": "miserable",
+        "heartbroken": "heartbroken",
+        "disappointed": "disappointed",
+        "homesick": "homesick"
+      }
+    },
+    {
+      "id": "A-sad-01-s33",
+      "answer": "homesick",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "At camp, Rosa felt ___, missing her own bed and kitchen.",
+      "cue_phrase": "missing her own bed",
+      "surface": {
+        "gloomy": "gloomy",
+        "miserable": "miserable",
+        "heartbroken": "heartbroken",
+        "disappointed": "disappointed",
+        "homesick": "homesick"
+      }
+    },
+    {
+      "id": "A-sad-01-s34",
+      "answer": "homesick",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Far from her family, Bea was ___ and wanted her bedroom.",
+      "cue_phrase": "Far from her family",
+      "surface": {
+        "gloomy": "gloomy",
+        "miserable": "miserable",
+        "heartbroken": "heartbroken",
+        "disappointed": "disappointed",
+        "homesick": "homesick"
+      }
+    },
+    {
+      "id": "A-sad-01-s35",
+      "answer": "homesick",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "In the hostel, Max grew ___ while picturing Dad's soup.",
+      "cue_phrase": "picturing Dad's soup",
+      "surface": {
+        "gloomy": "gloomy",
+        "miserable": "miserable",
+        "heartbroken": "heartbroken",
+        "disappointed": "disappointed",
+        "homesick": "homesick"
+      }
+    },
+    {
+      "id": "A-sad-01-s36",
+      "answer": "homesick",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "On the island trip, Zara felt ___ each night without her family.",
+      "cue_phrase": "without her family",
+      "surface": {
+        "gloomy": "gloomy",
+        "miserable": "miserable",
+        "heartbroken": "heartbroken",
+        "disappointed": "disappointed",
+        "homesick": "homesick"
+      }
+    },
+    {
+      "id": "A-sad-01-s37",
+      "answer": "homesick",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "No monster scared Pip; he just missed his little house, feeling ___.",
+      "cue_phrase": "missed his little house",
+      "surface": {
+        "gloomy": "gloomy",
+        "miserable": "miserable",
+        "heartbroken": "heartbroken",
+        "disappointed": "disappointed",
+        "homesick": "homesick"
+      }
+    },
+    {
+      "id": "A-sad-01-s38",
+      "answer": "homesick",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The cabin was fun, yet Ali counted days until his own pillow and felt ___.",
+      "cue_phrase": "until his own pillow",
+      "surface": {
+        "gloomy": "gloomy",
+        "miserable": "miserable",
+        "heartbroken": "heartbroken",
+        "disappointed": "disappointed",
+        "homesick": "homesick"
+      }
+    },
+    {
+      "id": "A-sad-01-s39",
+      "answer": "homesick",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "During the school exchange, I became ___ whenever I pictured our noisy kitchen.",
+      "cue_phrase": "school exchange",
+      "surface": {
+        "gloomy": "gloomy",
+        "miserable": "miserable",
+        "heartbroken": "heartbroken",
+        "disappointed": "disappointed",
+        "homesick": "homesick"
+      }
+    },
+    {
+      "id": "A-sad-01-s40",
+      "answer": "homesick",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "Miles tried new games abroad, but he stayed ___ for his own room.",
+      "cue_phrase": "games abroad",
+      "surface": {
+        "gloomy": "gloomy",
+        "miserable": "miserable",
+        "heartbroken": "heartbroken",
+        "disappointed": "disappointed",
+        "homesick": "homesick"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "gloomy",
+      "picked": "miserable",
+      "line": "Gloomy is grey and cheerless; miserable is much more wretched all through."
+    },
+    {
+      "answer": "gloomy",
+      "picked": "heartbroken",
+      "line": "Gloomy covers the day for no clear reason; heartbroken comes from a deep loss."
+    },
+    {
+      "answer": "gloomy",
+      "picked": "disappointed",
+      "line": "Gloomy has no single failed wish; disappointed follows a promise or plan going wrong."
+    },
+    {
+      "answer": "gloomy",
+      "picked": "homesick",
+      "line": "Gloomy is a grey feeling anywhere; homesick means missing your own place while away."
+    },
+    {
+      "answer": "miserable",
+      "picked": "gloomy",
+      "line": "Miserable is wretched all through; gloomy is more like a grey cloud over everything."
+    },
+    {
+      "answer": "miserable",
+      "picked": "heartbroken",
+      "line": "Miserable can come from pain or awful times; heartbroken is hurt from losing what is loved."
+    },
+    {
+      "answer": "miserable",
+      "picked": "disappointed",
+      "line": "Miserable is wretched and intense; disappointed is about a wish or plan falling flat."
+    },
+    {
+      "answer": "miserable",
+      "picked": "homesick",
+      "line": "Miserable means feeling awful all over; homesick means missing your own place while away."
+    },
+    {
+      "answer": "heartbroken",
+      "picked": "gloomy",
+      "line": "Heartbroken points to a painful loss; gloomy is a grey feeling without one clear cause."
+    },
+    {
+      "answer": "heartbroken",
+      "picked": "miserable",
+      "line": "Heartbroken comes from losing what is loved; miserable is a wider, wretched feeling."
+    },
+    {
+      "answer": "heartbroken",
+      "picked": "disappointed",
+      "line": "Heartbroken is crushed by loss; disappointed is upset over a plan or wish failing."
+    },
+    {
+      "answer": "heartbroken",
+      "picked": "homesick",
+      "line": "Heartbroken is about loss of something loved; homesick is about missing your own place."
+    },
+    {
+      "answer": "disappointed",
+      "picked": "gloomy",
+      "line": "Disappointed means a wish fell flat; gloomy is a grey feeling with no single cause."
+    },
+    {
+      "answer": "disappointed",
+      "picked": "miserable",
+      "line": "Disappointed follows a failed wish; miserable is much stronger and more wretched."
+    },
+    {
+      "answer": "disappointed",
+      "picked": "heartbroken",
+      "line": "Disappointed is about dashed hopes; heartbroken is about losing what is loved."
+    },
+    {
+      "answer": "disappointed",
+      "picked": "homesick",
+      "line": "Disappointed comes from a failed plan; homesick comes from being away from your own place."
+    },
+    {
+      "answer": "homesick",
+      "picked": "gloomy",
+      "line": "Homesick means missing your own place while away; gloomy is a grey feeling anywhere."
+    },
+    {
+      "answer": "homesick",
+      "picked": "miserable",
+      "line": "Homesick is missing your own place; miserable means feeling awful all through."
+    },
+    {
+      "answer": "homesick",
+      "picked": "heartbroken",
+      "line": "Homesick is about being away from your place; heartbroken is about a deep loss."
+    },
+    {
+      "answer": "homesick",
+      "picked": "disappointed",
+      "line": "Homesick is missing your own place while away; disappointed is a failed wish or plan."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-05T11:25:26+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": null,
+    "scrub_note": null
+  }
+}

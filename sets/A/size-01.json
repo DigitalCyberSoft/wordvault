@@ -1,0 +1,791 @@
+{
+  "id": "A-size-01",
+  "bank": "A",
+  "pos": "adjective",
+  "theme": "ways of being big",
+  "band": 2,
+  "band_override": 2,
+  "computed": null,
+  "words": [
+    {
+      "w": "vast",
+      "synset": "huge.s.01",
+      "gloss_source": "authored",
+      "gloss": "spreading much further than the eye can easily take in",
+      "zipf": 4.49,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "vast"
+      },
+      "discriminator": "a wide, open expanse"
+    },
+    {
+      "w": "towering",
+      "synset": "eminent.s.02",
+      "gloss_source": "authored",
+      "gloss": "so tall it rises over everything around it",
+      "zipf": 3.25,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "towering"
+      },
+      "discriminator": "big upward: height"
+    },
+    {
+      "w": "gigantic",
+      "synset": "gigantic.s.01",
+      "gloss_source": "authored",
+      "gloss": "as big as a giant; unbelievably large",
+      "zipf": 3.63,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "gigantic"
+      },
+      "discriminator": "monster-scale overall size"
+    },
+    {
+      "w": "bulky",
+      "synset": "bulky.s.01",
+      "gloss_source": "authored",
+      "gloss": "big and awkward to carry or fit through spaces",
+      "zipf": 3.3,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "bulky"
+      },
+      "discriminator": "big and awkward to carry or move"
+    },
+    {
+      "w": "spacious",
+      "synset": "roomy.s.01",
+      "gloss_source": "authored",
+      "gloss": "with plenty of room inside",
+      "zipf": 3.41,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "spacious"
+      },
+      "discriminator": "big inside: fits a lot"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-size-01-s01",
+      "answer": "vast",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The desert was ___, stretching the same in every direction for hours.",
+      "cue_phrase": "every direction for hours",
+      "surface": {
+        "vast": "vast",
+        "towering": "towering",
+        "gigantic": "gigantic",
+        "bulky": "bulky",
+        "spacious": "spacious"
+      }
+    },
+    {
+      "id": "A-size-01-s02",
+      "answer": "vast",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "From the plane, the ocean looked ___, water spreading past every window edge.",
+      "cue_phrase": "spreading past every edge",
+      "surface": {
+        "vast": "vast",
+        "towering": "towering",
+        "gigantic": "gigantic",
+        "bulky": "bulky",
+        "spacious": "spacious"
+      }
+    },
+    {
+      "id": "A-size-01-s03",
+      "answer": "vast",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The wheat fields were so ___ that the combine worked from breakfast to dark.",
+      "cue_phrase": "breakfast to dark",
+      "surface": {
+        "vast": "vast",
+        "towering": "towering",
+        "gigantic": "gigantic",
+        "bulky": "bulky",
+        "spacious": "spacious"
+      }
+    },
+    {
+      "id": "A-size-01-s04",
+      "answer": "vast",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Explorers crossed the ___ ice sheet for weeks without seeing a single hill.",
+      "cue_phrase": "for weeks",
+      "surface": {
+        "vast": "vast",
+        "towering": "towering",
+        "gigantic": "gigantic",
+        "bulky": "bulky",
+        "spacious": "spacious"
+      }
+    },
+    {
+      "id": "A-size-01-s05",
+      "answer": "vast",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Nobody fenced the ___ grassland; riders slept twice before reaching the far side.",
+      "cue_phrase": "slept twice crossing",
+      "surface": {
+        "vast": "vast",
+        "towering": "towering",
+        "gigantic": "gigantic",
+        "bulky": "bulky",
+        "spacious": "spacious"
+      }
+    },
+    {
+      "id": "A-size-01-s06",
+      "answer": "vast",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The forest was ___ on the map, one green shape covering half the country.",
+      "cue_phrase": "half the country",
+      "surface": {
+        "vast": "vast",
+        "towering": "towering",
+        "gigantic": "gigantic",
+        "bulky": "bulky",
+        "spacious": "spacious"
+      }
+    },
+    {
+      "id": "A-size-01-s07",
+      "answer": "vast",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Their sheep farm was ___, with paddocks past the horizon in three directions.",
+      "cue_phrase": "past the horizon",
+      "surface": {
+        "vast": "vast",
+        "towering": "towering",
+        "gigantic": "gigantic",
+        "bulky": "bulky",
+        "spacious": "spacious"
+      }
+    },
+    {
+      "id": "A-size-01-s08",
+      "answer": "vast",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "The night sky felt ___ above the campsite, stars in every direction we turned.",
+      "cue_phrase": "stars in every direction",
+      "surface": {
+        "vast": "vast",
+        "towering": "towering",
+        "gigantic": "gigantic",
+        "bulky": "bulky",
+        "spacious": "spacious"
+      }
+    },
+    {
+      "id": "A-size-01-s09",
+      "answer": "towering",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The crane stood ___ over the rooftops, taller than every chimney in town.",
+      "cue_phrase": "taller than every chimney",
+      "surface": {
+        "vast": "vast",
+        "towering": "towering",
+        "gigantic": "gigantic",
+        "bulky": "bulky",
+        "spacious": "spacious"
+      }
+    },
+    {
+      "id": "A-size-01-s10",
+      "answer": "towering",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "From the beach, the lighthouse looked ___, high above the little cottages.",
+      "cue_phrase": "high above the cottages",
+      "surface": {
+        "vast": "vast",
+        "towering": "towering",
+        "gigantic": "gigantic",
+        "bulky": "bulky",
+        "spacious": "spacious"
+      }
+    },
+    {
+      "id": "A-size-01-s11",
+      "answer": "towering",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ pine stood over the whole orchard, twice the height of any apple tree.",
+      "cue_phrase": "twice the height",
+      "surface": {
+        "vast": "vast",
+        "towering": "towering",
+        "gigantic": "gigantic",
+        "bulky": "bulky",
+        "spacious": "spacious"
+      }
+    },
+    {
+      "id": "A-size-01-s12",
+      "answer": "towering",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "A ___ wall rose above the courtyard, stealing the afternoon sun.",
+      "cue_phrase": "rose above; stole the sun",
+      "surface": {
+        "vast": "vast",
+        "towering": "towering",
+        "gigantic": "gigantic",
+        "bulky": "bulky",
+        "spacious": "spacious"
+      }
+    },
+    {
+      "id": "A-size-01-s13",
+      "answer": "towering",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "We tilted our heads right back to see the top of the ___ flagpole.",
+      "cue_phrase": "heads right back",
+      "surface": {
+        "vast": "vast",
+        "towering": "towering",
+        "gigantic": "gigantic",
+        "bulky": "bulky",
+        "spacious": "spacious"
+      }
+    },
+    {
+      "id": "A-size-01-s14",
+      "answer": "towering",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Only the kite flew higher than the ___ chimney above the old mill.",
+      "cue_phrase": "only the kite higher",
+      "surface": {
+        "vast": "vast",
+        "towering": "towering",
+        "gigantic": "gigantic",
+        "bulky": "bulky",
+        "spacious": "spacious"
+      }
+    },
+    {
+      "id": "A-size-01-s15",
+      "answer": "towering",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The ___ lighthouse rose above the cliffs, its lamp lost in low cloud.",
+      "cue_phrase": "lamp lost in cloud",
+      "surface": {
+        "vast": "vast",
+        "towering": "towering",
+        "gigantic": "gigantic",
+        "bulky": "bulky",
+        "spacious": "spacious"
+      }
+    },
+    {
+      "id": "A-size-01-s16",
+      "answer": "towering",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "The ___ ladder leaned against the barn, its top rungs above the roofline.",
+      "cue_phrase": "top rungs above the roof",
+      "surface": {
+        "vast": "vast",
+        "towering": "towering",
+        "gigantic": "gigantic",
+        "bulky": "bulky",
+        "spacious": "spacious"
+      }
+    },
+    {
+      "id": "A-size-01-s17",
+      "answer": "gigantic",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The statue was ___, so large we could stand inside its shoe.",
+      "cue_phrase": "stand inside its shoe",
+      "surface": {
+        "vast": "vast",
+        "towering": "towering",
+        "gigantic": "gigantic",
+        "bulky": "bulky",
+        "spacious": "spacious"
+      }
+    },
+    {
+      "id": "A-size-01-s18",
+      "answer": "gigantic",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The balloon grew ___, until it filled the entire town square.",
+      "cue_phrase": "filled the town square",
+      "surface": {
+        "vast": "vast",
+        "towering": "towering",
+        "gigantic": "gigantic",
+        "bulky": "bulky",
+        "spacious": "spacious"
+      }
+    },
+    {
+      "id": "A-size-01-s19",
+      "answer": "gigantic",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ spoon could stir soup for an ogre family.",
+      "cue_phrase": "for an ogre family",
+      "surface": {
+        "vast": "vast",
+        "towering": "towering",
+        "gigantic": "gigantic",
+        "bulky": "bulky",
+        "spacious": "spacious"
+      }
+    },
+    {
+      "id": "A-size-01-s20",
+      "answer": "gigantic",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "A ___ egg in the nest held a baby dragon.",
+      "cue_phrase": "held a baby dragon",
+      "surface": {
+        "vast": "vast",
+        "towering": "towering",
+        "gigantic": "gigantic",
+        "bulky": "bulky",
+        "spacious": "spacious"
+      }
+    },
+    {
+      "id": "A-size-01-s21",
+      "answer": "gigantic",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The footprint was ___; our whole picnic blanket fitted within it.",
+      "cue_phrase": "picnic blanket fitted within",
+      "surface": {
+        "vast": "vast",
+        "towering": "towering",
+        "gigantic": "gigantic",
+        "bulky": "bulky",
+        "spacious": "spacious"
+      }
+    },
+    {
+      "id": "A-size-01-s22",
+      "answer": "gigantic",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The ___ pumpkin needed four carts to reach the fair.",
+      "cue_phrase": "needed four carts",
+      "surface": {
+        "vast": "vast",
+        "towering": "towering",
+        "gigantic": "gigantic",
+        "bulky": "bulky",
+        "spacious": "spacious"
+      }
+    },
+    {
+      "id": "A-size-01-s23",
+      "answer": "gigantic",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "In the tale, a ___ boot became the children's cave.",
+      "cue_phrase": "became the children's cave",
+      "surface": {
+        "vast": "vast",
+        "towering": "towering",
+        "gigantic": "gigantic",
+        "bulky": "bulky",
+        "spacious": "spacious"
+      }
+    },
+    {
+      "id": "A-size-01-s24",
+      "answer": "gigantic",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "The ___ sandwich looked fit for a hungry ogre.",
+      "cue_phrase": "fit for a hungry ogre",
+      "surface": {
+        "vast": "vast",
+        "towering": "towering",
+        "gigantic": "gigantic",
+        "bulky": "bulky",
+        "spacious": "spacious"
+      }
+    },
+    {
+      "id": "A-size-01-s25",
+      "answer": "bulky",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The parcel was so ___ that Milo could not fit it through the door.",
+      "cue_phrase": "could not fit through the door",
+      "surface": {
+        "vast": "vast",
+        "towering": "towering",
+        "gigantic": "gigantic",
+        "bulky": "bulky",
+        "spacious": "spacious"
+      }
+    },
+    {
+      "id": "A-size-01-s26",
+      "answer": "bulky",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Her sleeping bag was warm but ___, taking up half the rucksack by itself.",
+      "cue_phrase": "taking up half the rucksack",
+      "surface": {
+        "vast": "vast",
+        "towering": "towering",
+        "gigantic": "gigantic",
+        "bulky": "bulky",
+        "spacious": "spacious"
+      }
+    },
+    {
+      "id": "A-size-01-s27",
+      "answer": "bulky",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ costume caught on the doorway during the school play.",
+      "cue_phrase": "caught on the doorway",
+      "surface": {
+        "vast": "vast",
+        "towering": "towering",
+        "gigantic": "gigantic",
+        "bulky": "bulky",
+        "spacious": "spacious"
+      }
+    },
+    {
+      "id": "A-size-01-s28",
+      "answer": "bulky",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "My ___ backpack bumped chairs although it held only feathers.",
+      "cue_phrase": "held only feathers",
+      "surface": {
+        "vast": "vast",
+        "towering": "towering",
+        "gigantic": "gigantic",
+        "bulky": "bulky",
+        "spacious": "spacious"
+      }
+    },
+    {
+      "id": "A-size-01-s29",
+      "answer": "bulky",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The ___ parcel was light, yet Ben needed both arms.",
+      "cue_phrase": "needed both arms",
+      "surface": {
+        "vast": "vast",
+        "towering": "towering",
+        "gigantic": "gigantic",
+        "bulky": "bulky",
+        "spacious": "spacious"
+      }
+    },
+    {
+      "id": "A-size-01-s30",
+      "answer": "bulky",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "A ___ blanket roll would not fit through the narrow gate.",
+      "cue_phrase": "would not fit through",
+      "surface": {
+        "vast": "vast",
+        "towering": "towering",
+        "gigantic": "gigantic",
+        "bulky": "bulky",
+        "spacious": "spacious"
+      }
+    },
+    {
+      "id": "A-size-01-s31",
+      "answer": "bulky",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The ___ coat made her knock crayons from the desk.",
+      "cue_phrase": "knock crayons from",
+      "surface": {
+        "vast": "vast",
+        "towering": "towering",
+        "gigantic": "gigantic",
+        "bulky": "bulky",
+        "spacious": "spacious"
+      }
+    },
+    {
+      "id": "A-size-01-s32",
+      "answer": "bulky",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "We chose a flat box because the first one was ___.",
+      "cue_phrase": "chose a flat box",
+      "surface": {
+        "vast": "vast",
+        "towering": "towering",
+        "gigantic": "gigantic",
+        "bulky": "bulky",
+        "spacious": "spacious"
+      }
+    },
+    {
+      "id": "A-size-01-s33",
+      "answer": "spacious",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The new classroom felt ___, easily fitting beanbags, desks and a reading tent.",
+      "cue_phrase": "easily fitting everything",
+      "surface": {
+        "vast": "vast",
+        "towering": "towering",
+        "gigantic": "gigantic",
+        "bulky": "bulky",
+        "spacious": "spacious"
+      }
+    },
+    {
+      "id": "A-size-01-s34",
+      "answer": "spacious",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The tent looked small outside, yet inside it was ___, fitting all five of us.",
+      "cue_phrase": "inside; fitting all five",
+      "surface": {
+        "vast": "vast",
+        "towering": "towering",
+        "gigantic": "gigantic",
+        "bulky": "bulky",
+        "spacious": "spacious"
+      }
+    },
+    {
+      "id": "A-size-01-s35",
+      "answer": "spacious",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Our ___ tent fitted four sleeping bags and everyone's muddy boots.",
+      "cue_phrase": "fitted four sleeping bags",
+      "surface": {
+        "vast": "vast",
+        "towering": "towering",
+        "gigantic": "gigantic",
+        "bulky": "bulky",
+        "spacious": "spacious"
+      }
+    },
+    {
+      "id": "A-size-01-s36",
+      "answer": "spacious",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ hall let both classes dance without bumping elbows.",
+      "cue_phrase": "without bumping elbows",
+      "surface": {
+        "vast": "vast",
+        "towering": "towering",
+        "gigantic": "gigantic",
+        "bulky": "bulky",
+        "spacious": "spacious"
+      }
+    },
+    {
+      "id": "A-size-01-s37",
+      "answer": "spacious",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Even after the sofa arrived, the ___ den felt open.",
+      "cue_phrase": "den felt open",
+      "surface": {
+        "vast": "vast",
+        "towering": "towering",
+        "gigantic": "gigantic",
+        "bulky": "bulky",
+        "spacious": "spacious"
+      }
+    },
+    {
+      "id": "A-size-01-s38",
+      "answer": "spacious",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The ___ cupboard held games, coats, and three footballs easily.",
+      "cue_phrase": "held games, coats",
+      "surface": {
+        "vast": "vast",
+        "towering": "towering",
+        "gigantic": "gigantic",
+        "bulky": "bulky",
+        "spacious": "spacious"
+      }
+    },
+    {
+      "id": "A-size-01-s39",
+      "answer": "spacious",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "A ___ car gave each child space for a backpack.",
+      "cue_phrase": "space for a backpack",
+      "surface": {
+        "vast": "vast",
+        "towering": "towering",
+        "gigantic": "gigantic",
+        "bulky": "bulky",
+        "spacious": "spacious"
+      }
+    },
+    {
+      "id": "A-size-01-s40",
+      "answer": "spacious",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "The ___ cave let our whole group sit in a circle.",
+      "cue_phrase": "whole group sit",
+      "surface": {
+        "vast": "vast",
+        "towering": "towering",
+        "gigantic": "gigantic",
+        "bulky": "bulky",
+        "spacious": "spacious"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "vast",
+      "picked": "towering",
+      "line": "Towering is tall, going UP. Vast spreads OUT, wide as a desert."
+    },
+    {
+      "answer": "vast",
+      "picked": "gigantic",
+      "line": "Gigantic is one monster-sized thing. Vast is open space going on and on."
+    },
+    {
+      "answer": "vast",
+      "picked": "bulky",
+      "line": "Bulky is awkward to carry. Vast is far too wide to carry at all - like a plain."
+    },
+    {
+      "answer": "vast",
+      "picked": "spacious",
+      "line": "Spacious is roomy INSIDE a building. Vast is huge open land, sea or sky."
+    },
+    {
+      "answer": "towering",
+      "picked": "vast",
+      "line": "Vast spreads wide like an ocean. Towering rises high above everything."
+    },
+    {
+      "answer": "towering",
+      "picked": "gigantic",
+      "line": "Towering points upward; gigantic means monster-scale all over."
+    },
+    {
+      "answer": "towering",
+      "picked": "bulky",
+      "line": "Towering is high above; bulky is awkward to carry or move."
+    },
+    {
+      "answer": "towering",
+      "picked": "spacious",
+      "line": "Towering is about height; spacious is about space within."
+    },
+    {
+      "answer": "gigantic",
+      "picked": "vast",
+      "line": "Vast is endless open space. Gigantic is one unbelievably big thing."
+    },
+    {
+      "answer": "gigantic",
+      "picked": "towering",
+      "line": "Gigantic means monster-scale overall; towering mainly means very high."
+    },
+    {
+      "answer": "gigantic",
+      "picked": "bulky",
+      "line": "Gigantic is monster-scale; bulky focuses on awkward carrying or moving."
+    },
+    {
+      "answer": "gigantic",
+      "picked": "spacious",
+      "line": "Gigantic is monster-scale outside; spacious means roomy within."
+    },
+    {
+      "answer": "bulky",
+      "picked": "vast",
+      "line": "Vast is a wide-open expanse. Bulky is one awkward object you can barely carry."
+    },
+    {
+      "answer": "bulky",
+      "picked": "towering",
+      "line": "Bulky is awkward and sticks out; towering is high above things."
+    },
+    {
+      "answer": "bulky",
+      "picked": "gigantic",
+      "line": "Bulky is hard to handle; gigantic sounds monster-scale."
+    },
+    {
+      "answer": "bulky",
+      "picked": "spacious",
+      "line": "Bulky is awkward to move; spacious gives people space within."
+    },
+    {
+      "answer": "spacious",
+      "picked": "vast",
+      "line": "Vast is the open outdoors going on forever. Spacious is plenty of room indoors."
+    },
+    {
+      "answer": "spacious",
+      "picked": "towering",
+      "line": "Spacious is about space within; towering is about height."
+    },
+    {
+      "answer": "spacious",
+      "picked": "gigantic",
+      "line": "Spacious means open within; gigantic means monster-scale."
+    },
+    {
+      "answer": "spacious",
+      "picked": "bulky",
+      "line": "Spacious lets things fit within; bulky is awkward to carry or move."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-05T11:09:29+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": null,
+    "scrub_note": "huge swapped for vast: huge was the generic donor the judges fit into every sibling frame."
+  }
+}

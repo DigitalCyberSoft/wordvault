@@ -1,0 +1,791 @@
+{
+  "id": "A-happy-01",
+  "bank": "A",
+  "pos": "adjective",
+  "theme": "kinds of happy",
+  "band": 2,
+  "band_override": 2,
+  "computed": null,
+  "words": [
+    {
+      "w": "cheerful",
+      "synset": "cheerful.a.01",
+      "gloss_source": "wordnet",
+      "gloss": "being full of or promoting cheer; having or showing good spirits",
+      "zipf": 3.6,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "cheerful"
+      },
+      "discriminator": "visibly sunny mood, no special reason needed"
+    },
+    {
+      "w": "delighted",
+      "synset": "delighted.s.01",
+      "gloss_source": "wordnet",
+      "gloss": "greatly pleased",
+      "zipf": 4.09,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "delighted"
+      },
+      "discriminator": "a burst of joy at something that just happened"
+    },
+    {
+      "w": "proud",
+      "synset": "proud.a.01",
+      "gloss_source": "authored",
+      "gloss": "pleased about something you or someone close to you managed to do",
+      "zipf": 4.78,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "proud"
+      },
+      "discriminator": "pleasure in an achievement"
+    },
+    {
+      "w": "relieved",
+      "synset": "alleviated.s.01",
+      "gloss_source": "authored",
+      "gloss": "glad because a worry turned out all right",
+      "zipf": 3.95,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "relieved"
+      },
+      "discriminator": "the bad thing did not happen"
+    },
+    {
+      "w": "grateful",
+      "synset": "grateful.a.01",
+      "gloss_source": "wordnet",
+      "gloss": "feeling or showing gratitude",
+      "zipf": 4.35,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "grateful"
+      },
+      "discriminator": "thankful to someone for what they did"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-happy-01-s01",
+      "answer": "cheerful",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Lena felt ___, in a sunny mood for no special reason.",
+      "cue_phrase": "sunny mood",
+      "surface": {
+        "cheerful": "cheerful",
+        "delighted": "delighted",
+        "proud": "proud",
+        "relieved": "relieved",
+        "grateful": "grateful"
+      }
+    },
+    {
+      "id": "A-happy-01-s02",
+      "answer": "cheerful",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The reading corner looked ___, bright and welcoming before any news arrived.",
+      "cue_phrase": "bright and welcoming",
+      "surface": {
+        "cheerful": "cheerful",
+        "delighted": "delighted",
+        "proud": "proud",
+        "relieved": "relieved",
+        "grateful": "grateful"
+      }
+    },
+    {
+      "id": "A-happy-01-s03",
+      "answer": "cheerful",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Omar stayed ___, humming through the ordinary Monday desk tasks.",
+      "cue_phrase": "ordinary Monday desk tasks",
+      "surface": {
+        "cheerful": "cheerful",
+        "delighted": "delighted",
+        "proud": "proud",
+        "relieved": "relieved",
+        "grateful": "grateful"
+      }
+    },
+    {
+      "id": "A-happy-01-s04",
+      "answer": "cheerful",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Even in drizzle, the painted gate seemed ___ beside the path.",
+      "cue_phrase": "painted gate seemed",
+      "surface": {
+        "cheerful": "cheerful",
+        "delighted": "delighted",
+        "proud": "proud",
+        "relieved": "relieved",
+        "grateful": "grateful"
+      }
+    },
+    {
+      "id": "A-happy-01-s05",
+      "answer": "cheerful",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "On a plain bus ride, Nia was ___, waving and whistling softly.",
+      "cue_phrase": "waving and whistling",
+      "surface": {
+        "cheerful": "cheerful",
+        "delighted": "delighted",
+        "proud": "proud",
+        "relieved": "relieved",
+        "grateful": "grateful"
+      }
+    },
+    {
+      "id": "A-happy-01-s06",
+      "answer": "cheerful",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Nothing special had happened, yet Pip's wag made Sam seem ___.",
+      "cue_phrase": "Nothing special had happened",
+      "surface": {
+        "cheerful": "cheerful",
+        "delighted": "delighted",
+        "proud": "proud",
+        "relieved": "relieved",
+        "grateful": "grateful"
+      }
+    },
+    {
+      "id": "A-happy-01-s07",
+      "answer": "cheerful",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "A yellow lamp made the rainy kitchen look ___ after breakfast.",
+      "cue_phrase": "rainy kitchen look",
+      "surface": {
+        "cheerful": "cheerful",
+        "delighted": "delighted",
+        "proud": "proud",
+        "relieved": "relieved",
+        "grateful": "grateful"
+      }
+    },
+    {
+      "id": "A-happy-01-s08",
+      "answer": "cheerful",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The bouncy tune kept everyone ___ through the dull ordinary clean-up.",
+      "cue_phrase": "dull ordinary clean-up",
+      "surface": {
+        "cheerful": "cheerful",
+        "delighted": "delighted",
+        "proud": "proud",
+        "relieved": "relieved",
+        "grateful": "grateful"
+      }
+    },
+    {
+      "id": "A-happy-01-s09",
+      "answer": "delighted",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Zara was ___, squealing with joy when the puppet sneezed glitter.",
+      "cue_phrase": "squealing with joy",
+      "surface": {
+        "cheerful": "cheerful",
+        "delighted": "delighted",
+        "proud": "proud",
+        "relieved": "relieved",
+        "grateful": "grateful"
+      }
+    },
+    {
+      "id": "A-happy-01-s10",
+      "answer": "delighted",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The class was ___, jumping and whooping at the surprise snow news.",
+      "cue_phrase": "jumping and whooping",
+      "surface": {
+        "cheerful": "cheerful",
+        "delighted": "delighted",
+        "proud": "proud",
+        "relieved": "relieved",
+        "grateful": "grateful"
+      }
+    },
+    {
+      "id": "A-happy-01-s11",
+      "answer": "delighted",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "When the cake volcano fizzed, Noor was ___ and clapped at once.",
+      "cue_phrase": "clapped at once",
+      "surface": {
+        "cheerful": "cheerful",
+        "delighted": "delighted",
+        "proud": "proud",
+        "relieved": "relieved",
+        "grateful": "grateful"
+      }
+    },
+    {
+      "id": "A-happy-01-s12",
+      "answer": "delighted",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Ben looked ___ as fireworks bloomed above the fairground.",
+      "cue_phrase": "fireworks bloomed",
+      "surface": {
+        "cheerful": "cheerful",
+        "delighted": "delighted",
+        "proud": "proud",
+        "relieved": "relieved",
+        "grateful": "grateful"
+      }
+    },
+    {
+      "id": "A-happy-01-s13",
+      "answer": "delighted",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The puppet winked; Mia gasped, bounced twice, and became ___.",
+      "cue_phrase": "gasped, bounced twice",
+      "surface": {
+        "cheerful": "cheerful",
+        "delighted": "delighted",
+        "proud": "proud",
+        "relieved": "relieved",
+        "grateful": "grateful"
+      }
+    },
+    {
+      "id": "A-happy-01-s14",
+      "answer": "delighted",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "A secret door opened in the story, making Imani feel ___.",
+      "cue_phrase": "secret door opened",
+      "surface": {
+        "cheerful": "cheerful",
+        "delighted": "delighted",
+        "proud": "proud",
+        "relieved": "relieved",
+        "grateful": "grateful"
+      }
+    },
+    {
+      "id": "A-happy-01-s15",
+      "answer": "delighted",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Rafi was ___ when the magician's card trick showered paper stars.",
+      "cue_phrase": "showered paper stars",
+      "surface": {
+        "cheerful": "cheerful",
+        "delighted": "delighted",
+        "proud": "proud",
+        "relieved": "relieved",
+        "grateful": "grateful"
+      }
+    },
+    {
+      "id": "A-happy-01-s16",
+      "answer": "delighted",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Ella felt ___ when the hidden banner unrolled above the stage.",
+      "cue_phrase": "hidden banner unrolled",
+      "surface": {
+        "cheerful": "cheerful",
+        "delighted": "delighted",
+        "proud": "proud",
+        "relieved": "relieved",
+        "grateful": "grateful"
+      }
+    },
+    {
+      "id": "A-happy-01-s17",
+      "answer": "proud",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "After earning the badge through practice, Aisha stood ___ and tall.",
+      "cue_phrase": "earning the badge",
+      "surface": {
+        "cheerful": "cheerful",
+        "delighted": "delighted",
+        "proud": "proud",
+        "relieved": "relieved",
+        "grateful": "grateful"
+      }
+    },
+    {
+      "id": "A-happy-01-s18",
+      "answer": "proud",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Leo looked at the finished model he had built alone and felt quietly ___.",
+      "cue_phrase": "built alone; quietly",
+      "surface": {
+        "cheerful": "cheerful",
+        "delighted": "delighted",
+        "proud": "proud",
+        "relieved": "relieved",
+        "grateful": "grateful"
+      }
+    },
+    {
+      "id": "A-happy-01-s19",
+      "answer": "proud",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Mina pinned her blue ribbon up and stood ___ beside it.",
+      "cue_phrase": "blue ribbon up",
+      "surface": {
+        "cheerful": "cheerful",
+        "delighted": "delighted",
+        "proud": "proud",
+        "relieved": "relieved",
+        "grateful": "grateful"
+      }
+    },
+    {
+      "id": "A-happy-01-s20",
+      "answer": "proud",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "After fixing the bike alone, Leo stood ___ beside the wheels.",
+      "cue_phrase": "fixing the bike alone",
+      "surface": {
+        "cheerful": "cheerful",
+        "delighted": "delighted",
+        "proud": "proud",
+        "relieved": "relieved",
+        "grateful": "grateful"
+      }
+    },
+    {
+      "id": "A-happy-01-s21",
+      "answer": "proud",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "His pupils solved the puzzle; Mr Shah stood quietly ___.",
+      "cue_phrase": "pupils solved the puzzle",
+      "surface": {
+        "cheerful": "cheerful",
+        "delighted": "delighted",
+        "proud": "proud",
+        "relieved": "relieved",
+        "grateful": "grateful"
+      }
+    },
+    {
+      "id": "A-happy-01-s22",
+      "answer": "proud",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Kara held the neat scarf she knitted, her chin high and ___.",
+      "cue_phrase": "chin high",
+      "surface": {
+        "cheerful": "cheerful",
+        "delighted": "delighted",
+        "proud": "proud",
+        "relieved": "relieved",
+        "grateful": "grateful"
+      }
+    },
+    {
+      "id": "A-happy-01-s23",
+      "answer": "proud",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Dad heard my solo and smiled with an achievement glow, ___.",
+      "cue_phrase": "heard my solo",
+      "surface": {
+        "cheerful": "cheerful",
+        "delighted": "delighted",
+        "proud": "proud",
+        "relieved": "relieved",
+        "grateful": "grateful"
+      }
+    },
+    {
+      "id": "A-happy-01-s24",
+      "answer": "proud",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "After finishing the long swim, Pavan wore a tall, quiet smile, ___.",
+      "cue_phrase": "finishing the long swim",
+      "surface": {
+        "cheerful": "cheerful",
+        "delighted": "delighted",
+        "proud": "proud",
+        "relieved": "relieved",
+        "grateful": "grateful"
+      }
+    },
+    {
+      "id": "A-happy-01-s25",
+      "answer": "relieved",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Everyone felt ___ after the feared storm missed the campsite.",
+      "cue_phrase": "feared storm missed",
+      "surface": {
+        "cheerful": "cheerful",
+        "delighted": "delighted",
+        "proud": "proud",
+        "relieved": "relieved",
+        "grateful": "grateful"
+      }
+    },
+    {
+      "id": "A-happy-01-s26",
+      "answer": "relieved",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Ravi was ___ when the alarm was false, not a fire.",
+      "cue_phrase": "false, not a fire",
+      "surface": {
+        "cheerful": "cheerful",
+        "delighted": "delighted",
+        "proud": "proud",
+        "relieved": "relieved",
+        "grateful": "grateful"
+      }
+    },
+    {
+      "id": "A-happy-01-s27",
+      "answer": "relieved",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The glass did not break when it fell, and Mia felt ___.",
+      "cue_phrase": "did not break",
+      "surface": {
+        "cheerful": "cheerful",
+        "delighted": "delighted",
+        "proud": "proud",
+        "relieved": "relieved",
+        "grateful": "grateful"
+      }
+    },
+    {
+      "id": "A-happy-01-s28",
+      "answer": "relieved",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "We found the missing key before bedtime, so Dad seemed ___.",
+      "cue_phrase": "found the missing key",
+      "surface": {
+        "cheerful": "cheerful",
+        "delighted": "delighted",
+        "proud": "proud",
+        "relieved": "relieved",
+        "grateful": "grateful"
+      }
+    },
+    {
+      "id": "A-happy-01-s29",
+      "answer": "relieved",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The loud bang was only a balloon; Malik felt ___.",
+      "cue_phrase": "only a balloon",
+      "surface": {
+        "cheerful": "cheerful",
+        "delighted": "delighted",
+        "proud": "proud",
+        "relieved": "relieved",
+        "grateful": "grateful"
+      }
+    },
+    {
+      "id": "A-happy-01-s30",
+      "answer": "relieved",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "After the doctor said the ankle was only bruised, Jen felt ___.",
+      "cue_phrase": "only bruised",
+      "surface": {
+        "cheerful": "cheerful",
+        "delighted": "delighted",
+        "proud": "proud",
+        "relieved": "relieved",
+        "grateful": "grateful"
+      }
+    },
+    {
+      "id": "A-happy-01-s31",
+      "answer": "relieved",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The boat rocked, then reached shore safely; the crew felt ___.",
+      "cue_phrase": "reached shore safely",
+      "surface": {
+        "cheerful": "cheerful",
+        "delighted": "delighted",
+        "proud": "proud",
+        "relieved": "relieved",
+        "grateful": "grateful"
+      }
+    },
+    {
+      "id": "A-happy-01-s32",
+      "answer": "relieved",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "At last, the passport sat in the drawer, and Mum felt ___.",
+      "cue_phrase": "passport sat in the drawer",
+      "surface": {
+        "cheerful": "cheerful",
+        "delighted": "delighted",
+        "proud": "proud",
+        "relieved": "relieved",
+        "grateful": "grateful"
+      }
+    },
+    {
+      "id": "A-happy-01-s33",
+      "answer": "grateful",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Mara felt ___ after her neighbour fed the cat, so she said thanks.",
+      "cue_phrase": "she said thanks",
+      "surface": {
+        "cheerful": "cheerful",
+        "delighted": "delighted",
+        "proud": "proud",
+        "relieved": "relieved",
+        "grateful": "grateful"
+      }
+    },
+    {
+      "id": "A-happy-01-s34",
+      "answer": "grateful",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Sam was ___ after Dad helped, then wrote a thank-you card.",
+      "cue_phrase": "thank-you card",
+      "surface": {
+        "cheerful": "cheerful",
+        "delighted": "delighted",
+        "proud": "proud",
+        "relieved": "relieved",
+        "grateful": "grateful"
+      }
+    },
+    {
+      "id": "A-happy-01-s35",
+      "answer": "grateful",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "After Lila shared lunch, Niko felt ___ and offered a warm thanks.",
+      "cue_phrase": "offered a warm thanks",
+      "surface": {
+        "cheerful": "cheerful",
+        "delighted": "delighted",
+        "proud": "proud",
+        "relieved": "relieved",
+        "grateful": "grateful"
+      }
+    },
+    {
+      "id": "A-happy-01-s36",
+      "answer": "grateful",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Gran mended the torn bear; I felt ___ and thanked her twice.",
+      "cue_phrase": "thanked her twice",
+      "surface": {
+        "cheerful": "cheerful",
+        "delighted": "delighted",
+        "proud": "proud",
+        "relieved": "relieved",
+        "grateful": "grateful"
+      }
+    },
+    {
+      "id": "A-happy-01-s37",
+      "answer": "grateful",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The coach stayed late to help, so Priya wrote a thank-you note, ___.",
+      "cue_phrase": "wrote a thank-you note",
+      "surface": {
+        "cheerful": "cheerful",
+        "delighted": "delighted",
+        "proud": "proud",
+        "relieved": "relieved",
+        "grateful": "grateful"
+      }
+    },
+    {
+      "id": "A-happy-01-s38",
+      "answer": "grateful",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Tariq was ___ after the helper rescued his kite, and thanked her.",
+      "cue_phrase": "thanked her",
+      "surface": {
+        "cheerful": "cheerful",
+        "delighted": "delighted",
+        "proud": "proud",
+        "relieved": "relieved",
+        "grateful": "grateful"
+      }
+    },
+    {
+      "id": "A-happy-01-s39",
+      "answer": "grateful",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Sofia felt ___ when her mate lent boots, then whispered thanks.",
+      "cue_phrase": "whispered thanks",
+      "surface": {
+        "cheerful": "cheerful",
+        "delighted": "delighted",
+        "proud": "proud",
+        "relieved": "relieved",
+        "grateful": "grateful"
+      }
+    },
+    {
+      "id": "A-happy-01-s40",
+      "answer": "grateful",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "After Uncle patched the tyre, Max felt ___ and made a thank-you sign.",
+      "cue_phrase": "thank-you sign",
+      "surface": {
+        "cheerful": "cheerful",
+        "delighted": "delighted",
+        "proud": "proud",
+        "relieved": "relieved",
+        "grateful": "grateful"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "cheerful",
+      "picked": "delighted",
+      "line": "Cheerful is a sunny mood without a special cause. Delighted is a burst after an exciting event."
+    },
+    {
+      "answer": "cheerful",
+      "picked": "proud",
+      "line": "Cheerful looks bright and upbeat. Proud is about an achievement."
+    },
+    {
+      "answer": "cheerful",
+      "picked": "relieved",
+      "line": "Cheerful is sunny for no special reason. Relieved means a bad thing did not happen."
+    },
+    {
+      "answer": "cheerful",
+      "picked": "grateful",
+      "line": "Cheerful is a bright mood. Grateful is thanks for help from another person."
+    },
+    {
+      "answer": "delighted",
+      "picked": "cheerful",
+      "line": "Delighted is a sudden burst after an event. Cheerful is a steady sunny mood."
+    },
+    {
+      "answer": "delighted",
+      "picked": "proud",
+      "line": "Delighted reacts to happy news or a surprise. Proud comes from achievement."
+    },
+    {
+      "answer": "delighted",
+      "picked": "relieved",
+      "line": "Delighted jumps up at a fun event. Relieved relaxes when danger or trouble passes."
+    },
+    {
+      "answer": "delighted",
+      "picked": "grateful",
+      "line": "Delighted is joy at what happened. Grateful is thanks for what a person did."
+    },
+    {
+      "answer": "proud",
+      "picked": "cheerful",
+      "line": "Proud means happy about achievement. Cheerful just means sunny in mood."
+    },
+    {
+      "answer": "proud",
+      "picked": "delighted",
+      "line": "Proud is about work or achievement. Delighted is a burst from an exciting event."
+    },
+    {
+      "answer": "proud",
+      "picked": "relieved",
+      "line": "Proud stands tall after achievement. Relieved relaxes after a scare ends safely."
+    },
+    {
+      "answer": "proud",
+      "picked": "grateful",
+      "line": "Proud is joy in achievement. Grateful is thanks for help from another person."
+    },
+    {
+      "answer": "relieved",
+      "picked": "cheerful",
+      "line": "Relieved means the feared bad thing did not happen. Cheerful is simply sunny."
+    },
+    {
+      "answer": "relieved",
+      "picked": "delighted",
+      "line": "Relieved comes after a scare ends safely. Delighted comes after exciting news."
+    },
+    {
+      "answer": "relieved",
+      "picked": "proud",
+      "line": "Relieved is about danger passing. Proud is about achievement."
+    },
+    {
+      "answer": "relieved",
+      "picked": "grateful",
+      "line": "Relieved says trouble is over. Grateful says thanks for another person's help."
+    },
+    {
+      "answer": "grateful",
+      "picked": "cheerful",
+      "line": "Grateful means thankful for help. Cheerful means bright and sunny in mood."
+    },
+    {
+      "answer": "grateful",
+      "picked": "delighted",
+      "line": "Grateful thanks a helper. Delighted bursts with joy at an event."
+    },
+    {
+      "answer": "grateful",
+      "picked": "proud",
+      "line": "Grateful is thanks for help. Proud is happiness about achievement."
+    },
+    {
+      "answer": "grateful",
+      "picked": "relieved",
+      "line": "Grateful thanks a helper. Relieved relaxes when a feared problem is gone."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-05T11:04:21+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": null,
+    "scrub_note": null
+  }
+}

@@ -26,7 +26,7 @@
   var MAX_LEVEL = 20;
   var HELP_THRESHOLD = 12;
   var RUNS_PER_SET = 3;      // misses allowed per encounter; a miss ends its run
-  var CRACK_NEED = 5;        // consecutive corrects to crack the safe
+  var CRACK_NEED = 5;        // pin ceiling (band 4+); crackNeedFor scales below
   var REVIEW_CRACK_NEED = 3; // consecutive corrects to open a review lockbox
   var REVIEW_EVERY = 4;      // a lockbox is offered after every Nth completed set
   var UP_STEP = 0.7;
@@ -169,6 +169,14 @@
         ws.forEach(function (w) {
           if (!s.surface || !s.surface[w]) bad(id, s.id + ': missing surface for ' + w);
         });
+        // five tiles must show five DIFFERENT strings, or a correct-looking
+        // tap can grade as a miss
+        if (s.surface) {
+          var vals = ws.map(function (w) { return (s.surface[w] || '').toLowerCase(); });
+          vals.forEach(function (v, i) {
+            if (vals.indexOf(v) !== i) bad(id, s.id + ': duplicate surface form "' + v + '"');
+          });
+        }
         perWord[s.answer][s.reserve ? 'reserve' : 'active'] += 1;
       });
       ws.forEach(function (w) {
@@ -187,6 +195,14 @@
   // review lockbox). Plain serializable data: the UI persists it verbatim so a
   // reload resumes at the top of the current run. States:
   //   ready -> run -> (miss -> run)* -> cracked | exhausted | failed(review)
+  // Locks grow more pins as the player climbs: 2 at band 1 up to the full 5
+  // from band 4. Harder vaults are structurally harder, and the youngest
+  // players get fast early wins. Leveling itself still needs clean-crack
+  // STREAKS (neededStreak below), so one lucky crack never moves the level.
+  function crackNeedFor(level) {
+    return Math.min(2 + Math.floor((levelOf(level) - 1) / 4), CRACK_NEED);
+  }
+
   function newEncounter(set, opts, rng) {
     var review = !!(opts && opts.review);
     return {
@@ -196,7 +212,8 @@
       runIndex: 0,
       misses: 0,
       correctInRun: 0,
-      need: review ? REVIEW_CRACK_NEED : CRACK_NEED,
+      need: review ? REVIEW_CRACK_NEED
+        : (opts && opts.level != null ? crackNeedFor(opts.level) : CRACK_NEED),
       runsAllowed: review ? 1 : RUNS_PER_SET,
       // tile positions are fixed for the whole encounter: shuffled once here,
       // never again, so the child spends working memory on meaning, not on
@@ -338,8 +355,10 @@
   // Rewards. Coins are a quiet tally; the collectible is the real prize. Speed
   // pays a small coin bonus and NOTHING else (deliberately not a difficulty
   // input; see adjustDifficulty).
-  function coinsFor(outcome, level) {
-    if (outcome === 'crack') return 5 + Math.floor((levelOf(level) - 1) / 4);
+  function coinsFor(outcome, level, need) {
+    // crack pay scales with the pins seated, so a 2-pin band-1 vault does not
+    // out-earn-per-minute the 5-pin vaults it feeds into
+    if (outcome === 'crack') return 2 * (need || CRACK_NEED) + Math.floor((levelOf(level) - 1) / 4);
     if (outcome === 'review-opened') return 2;
     return 0;
   }
@@ -411,6 +430,7 @@
   return {
     MAX_LEVEL: MAX_LEVEL, HELP_THRESHOLD: HELP_THRESHOLD, RUNS_PER_SET: RUNS_PER_SET,
     CRACK_NEED: CRACK_NEED, REVIEW_CRACK_NEED: REVIEW_CRACK_NEED, REVIEW_EVERY: REVIEW_EVERY,
+    crackNeedFor: crackNeedFor,
     UP_STEP: UP_STEP, DOWN_STEP: DOWN_STEP, SHELVES: SHELVES,
     makeRng: makeRng, shuffle: shuffle, bandOf: bandOf,
     setsForLevel: setsForLevel, pickSet: pickSet, validateContent: validateContent,

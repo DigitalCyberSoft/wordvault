@@ -156,6 +156,21 @@ body {
 #mech { transform-box: fill-box; transform-origin: center; }
 #mech.thunk { animation: mech-thunk 130ms ease-out; }
 @keyframes mech-thunk { 0% { transform: translateY(0); } 45% { transform: translateY(2px); } 100% { transform: translateY(0); } }
+/* alarm lamps: one per miss; the third rings the klaxon */
+#alarm-box .lamp { fill: #2b323a; stroke: #1d2228; stroke-width: 2; transition: fill 180ms ease-out; }
+#alarm-box .lamp.on { fill: #e04b3a; filter: drop-shadow(0 0 5px rgba(224, 75, 58, .8)); }
+#alarm-bell { transform-box: fill-box; transform-origin: center; }
+#vault.alarm #alarm-bell { animation: bell-ring 220ms linear 3; }
+@keyframes bell-ring {
+  0% { transform: rotate(0deg); } 25% { transform: rotate(-16deg); }
+  75% { transform: rotate(16deg); } 100% { transform: rotate(0deg); }
+}
+#vault.alarm { animation: alarm-flash 360ms ease-in-out 2; }
+@keyframes alarm-flash {
+  0%, 100% { filter: drop-shadow(0 10px 0 rgba(0,0,0,.12)); }
+  50% { filter: drop-shadow(0 10px 0 rgba(0,0,0,.12)) drop-shadow(0 0 30px rgba(224, 75, 58, .65)); }
+}
+
 /* the bolt slides free just before the door swings */
 #bolt { transition: transform 320ms cubic-bezier(.6, .04, .35, 1) 60ms; }
 #vault.unbolted #bolt { transform: translateX(-76px); }
@@ -343,7 +358,8 @@ body.pins-copper .pinstack .setline { stroke: #ffc9a3; }
 /* ---- Reduced motion: every animation collapses, transitions go instant ---- */
 @media (prefers-reduced-motion: reduce) {
   .overlay.show, .overlay.show > *, .bob, .pinstack.spring .stack, #tile-ghost.shake, #blank.glow, .coin-pop,
-  #vault.open #door-leaf, #vault.open #rays, .pinstack.seated .ring, #mech.thunk, #slip.deal, #hud .stat.coins.tick { animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
+  #vault.open #door-leaf, #vault.open #rays, .pinstack.seated .ring, #mech.thunk, #slip.deal, #hud .stat.coins.tick,
+  #vault.alarm, #vault.alarm #alarm-bell { animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
   #door-leaf, #tile-ghost, button.big, .menu-btn, .tile, #mech .stack, #bolt, .pinstack .keypin, .pinstack .setline,
-  #dial, #handle, #rays, .coin-fly { transition: none; }
+  #dial, #handle, #rays, .coin-fly, #alarm-box .lamp { transition: none; }
 }

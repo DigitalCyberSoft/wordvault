@@ -1,0 +1,791 @@
+{
+  "id": "A-wet-01",
+  "bank": "A",
+  "pos": "adjective",
+  "theme": "kinds of wet",
+  "band": 2,
+  "band_override": 2,
+  "computed": null,
+  "words": [
+    {
+      "w": "soaked",
+      "synset": null,
+      "gloss_source": "authored",
+      "gloss": "wet all the way through",
+      "zipf": 3.66,
+      "register": "neutral",
+      "senses_at_pos": null,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "soaked"
+      },
+      "discriminator": "water has gone right through it"
+    },
+    {
+      "w": "damp",
+      "synset": "damp.s.01",
+      "gloss_source": "wordnet",
+      "gloss": "slightly wet",
+      "zipf": 3.62,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "damp"
+      },
+      "discriminator": "only slightly wet"
+    },
+    {
+      "w": "soggy",
+      "synset": null,
+      "gloss_source": "authored",
+      "gloss": "gone soft from taking in water",
+      "zipf": 3.14,
+      "register": "neutral",
+      "senses_at_pos": null,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "soggy"
+      },
+      "discriminator": "softened and floppy with water"
+    },
+    {
+      "w": "dripping",
+      "synset": null,
+      "gloss_source": "authored",
+      "gloss": "so wet that drops are falling off it",
+      "zipf": 3.48,
+      "register": "neutral",
+      "senses_at_pos": null,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "dripping"
+      },
+      "discriminator": "actively shedding drops"
+    },
+    {
+      "w": "humid",
+      "synset": "humid.s.01",
+      "gloss_source": "wordnet",
+      "gloss": "containing or characterized by a great deal of water vapor",
+      "zipf": 3.5,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "humid"
+      },
+      "discriminator": "sticky wet air"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-wet-01-s01",
+      "answer": "soaked",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The football boot was ___; nothing ran until Dad poured liquid from it.",
+      "cue_phrase": "poured liquid from it",
+      "surface": {
+        "soaked": "soaked",
+        "damp": "damp",
+        "soggy": "soggy",
+        "dripping": "dripping",
+        "humid": "humid"
+      }
+    },
+    {
+      "id": "A-wet-01-s02",
+      "answer": "soaked",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The map case was ___; liquid reached the sealed inner pocket, but no bead fell off.",
+      "cue_phrase": "reached the sealed inner",
+      "surface": {
+        "soaked": "soaked",
+        "damp": "damp",
+        "soggy": "soggy",
+        "dripping": "dripping",
+        "humid": "humid"
+      }
+    },
+    {
+      "id": "A-wet-01-s03",
+      "answer": "soaked",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "After stepping into the ankle-deep puddle, her boot was ___; leather stayed stiff.",
+      "cue_phrase": "ankle-deep puddle",
+      "surface": {
+        "soaked": "soaked",
+        "damp": "damp",
+        "soggy": "soggy",
+        "dripping": "dripping",
+        "humid": "humid"
+      }
+    },
+    {
+      "id": "A-wet-01-s04",
+      "answer": "soaked",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The rain filled the hatband, leaving his cap ___; shape stayed sharp.",
+      "cue_phrase": "filled the hatband",
+      "surface": {
+        "soaked": "soaked",
+        "damp": "damp",
+        "soggy": "soggy",
+        "dripping": "dripping",
+        "humid": "humid"
+      }
+    },
+    {
+      "id": "A-wet-01-s05",
+      "answer": "soaked",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Grandad called the glove ___ after wringing a puddle while it kept shape.",
+      "cue_phrase": "wringing a puddle",
+      "surface": {
+        "soaked": "soaked",
+        "damp": "damp",
+        "soggy": "soggy",
+        "dripping": "dripping",
+        "humid": "humid"
+      }
+    },
+    {
+      "id": "A-wet-01-s06",
+      "answer": "soaked",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Her raincoat's inner pocket held liquid, so Dad knew it was ___.",
+      "cue_phrase": "inner pocket held liquid",
+      "surface": {
+        "soaked": "soaked",
+        "damp": "damp",
+        "soggy": "soggy",
+        "dripping": "dripping",
+        "humid": "humid"
+      }
+    },
+    {
+      "id": "A-wet-01-s07",
+      "answer": "soaked",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The wooden shield was ___ after the moat dive; no bead fell.",
+      "cue_phrase": "moat dive; no bead fell",
+      "surface": {
+        "soaked": "soaked",
+        "damp": "damp",
+        "soggy": "soggy",
+        "dripping": "dripping",
+        "humid": "humid"
+      }
+    },
+    {
+      "id": "A-wet-01-s08",
+      "answer": "soaked",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "By morning, the scout badge was ___; rain sat inside its stitching.",
+      "cue_phrase": "inside its stitching",
+      "surface": {
+        "soaked": "soaked",
+        "damp": "damp",
+        "soggy": "soggy",
+        "dripping": "dripping",
+        "humid": "humid"
+      }
+    },
+    {
+      "id": "A-wet-01-s09",
+      "answer": "damp",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The apron felt ___, just a little cool from the spray.",
+      "cue_phrase": "just a little cool",
+      "surface": {
+        "soaked": "soaked",
+        "damp": "damp",
+        "soggy": "soggy",
+        "dripping": "dripping",
+        "humid": "humid"
+      }
+    },
+    {
+      "id": "A-wet-01-s10",
+      "answer": "damp",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The bench was ___, with only a faint mark on my sleeve.",
+      "cue_phrase": "only a faint mark",
+      "surface": {
+        "soaked": "soaked",
+        "damp": "damp",
+        "soggy": "soggy",
+        "dripping": "dripping",
+        "humid": "humid"
+      }
+    },
+    {
+      "id": "A-wet-01-s11",
+      "answer": "damp",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Mist touched the window, leaving the curtain ___ near the bottom edge.",
+      "cue_phrase": "Mist touched the window",
+      "surface": {
+        "soaked": "soaked",
+        "damp": "damp",
+        "soggy": "soggy",
+        "dripping": "dripping",
+        "humid": "humid"
+      }
+    },
+    {
+      "id": "A-wet-01-s12",
+      "answer": "damp",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "A small splash made the worksheet ___, but the writing stayed clear.",
+      "cue_phrase": "small splash",
+      "surface": {
+        "soaked": "soaked",
+        "damp": "damp",
+        "soggy": "soggy",
+        "dripping": "dripping",
+        "humid": "humid"
+      }
+    },
+    {
+      "id": "A-wet-01-s13",
+      "answer": "damp",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The towel needed only two minutes on the line because it was ___.",
+      "cue_phrase": "only two minutes",
+      "surface": {
+        "soaked": "soaked",
+        "damp": "damp",
+        "soggy": "soggy",
+        "dripping": "dripping",
+        "humid": "humid"
+      }
+    },
+    {
+      "id": "A-wet-01-s14",
+      "answer": "damp",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Maya used one tissue to dry the table, since it was ___.",
+      "cue_phrase": "one tissue to dry",
+      "surface": {
+        "soaked": "soaked",
+        "damp": "damp",
+        "soggy": "soggy",
+        "dripping": "dripping",
+        "humid": "humid"
+      }
+    },
+    {
+      "id": "A-wet-01-s15",
+      "answer": "damp",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The dog's paw print was ___, pale, and vanished after lunch.",
+      "cue_phrase": "pale, and vanished",
+      "surface": {
+        "soaked": "soaked",
+        "damp": "damp",
+        "soggy": "soggy",
+        "dripping": "dripping",
+        "humid": "humid"
+      }
+    },
+    {
+      "id": "A-wet-01-s16",
+      "answer": "damp",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The grass left my shoes ___, not enough to reach my socks.",
+      "cue_phrase": "not enough to reach",
+      "surface": {
+        "soaked": "soaked",
+        "damp": "damp",
+        "soggy": "soggy",
+        "dripping": "dripping",
+        "humid": "humid"
+      }
+    },
+    {
+      "id": "A-wet-01-s17",
+      "answer": "soggy",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The cereal turned ___, mushy and floppy, after sitting in milk.",
+      "cue_phrase": "mushy and floppy",
+      "surface": {
+        "soaked": "soaked",
+        "damp": "damp",
+        "soggy": "soggy",
+        "dripping": "dripping",
+        "humid": "humid"
+      }
+    },
+    {
+      "id": "A-wet-01-s18",
+      "answer": "soggy",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "His paper crown became ___, limp at the points, though only tips were marked.",
+      "cue_phrase": "limp at the points",
+      "surface": {
+        "soaked": "soaked",
+        "damp": "damp",
+        "soggy": "soggy",
+        "dripping": "dripping",
+        "humid": "humid"
+      }
+    },
+    {
+      "id": "A-wet-01-s19",
+      "answer": "soggy",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The biscuit fell into tea and turned ___, bending like paste.",
+      "cue_phrase": "bending like paste",
+      "surface": {
+        "soaked": "soaked",
+        "damp": "damp",
+        "soggy": "soggy",
+        "dripping": "dripping",
+        "humid": "humid"
+      }
+    },
+    {
+      "id": "A-wet-01-s20",
+      "answer": "soggy",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "A few raindrops made the cardboard castle ___; towers slumped like porridge.",
+      "cue_phrase": "towers slumped like porridge",
+      "surface": {
+        "soaked": "soaked",
+        "damp": "damp",
+        "soggy": "soggy",
+        "dripping": "dripping",
+        "humid": "humid"
+      }
+    },
+    {
+      "id": "A-wet-01-s21",
+      "answer": "soggy",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Nina called the sandwich ___ when the bread sagged in her fingers.",
+      "cue_phrase": "bread sagged",
+      "surface": {
+        "soaked": "soaked",
+        "damp": "damp",
+        "soggy": "soggy",
+        "dripping": "dripping",
+        "humid": "humid"
+      }
+    },
+    {
+      "id": "A-wet-01-s22",
+      "answer": "soggy",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The chips were ___ after steam filled the box, bending instead of crunching.",
+      "cue_phrase": "bending instead of crunching",
+      "surface": {
+        "soaked": "soaked",
+        "damp": "damp",
+        "soggy": "soggy",
+        "dripping": "dripping",
+        "humid": "humid"
+      }
+    },
+    {
+      "id": "A-wet-01-s23",
+      "answer": "soggy",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The pirate's toast was ___ on top, drooping under seaweed sauce.",
+      "cue_phrase": "drooping under seaweed",
+      "surface": {
+        "soaked": "soaked",
+        "damp": "damp",
+        "soggy": "soggy",
+        "dripping": "dripping",
+        "humid": "humid"
+      }
+    },
+    {
+      "id": "A-wet-01-s24",
+      "answer": "soggy",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The picnic napkin turned ___ where a spoonful of jelly spilled, wrinkly and limp.",
+      "cue_phrase": "wrinkly and limp",
+      "surface": {
+        "soaked": "soaked",
+        "damp": "damp",
+        "soggy": "soggy",
+        "dripping": "dripping",
+        "humid": "humid"
+      }
+    },
+    {
+      "id": "A-wet-01-s25",
+      "answer": "dripping",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The glass statue was ___; beads slid off its chin.",
+      "cue_phrase": "beads slid off",
+      "surface": {
+        "soaked": "soaked",
+        "damp": "damp",
+        "soggy": "soggy",
+        "dripping": "dripping",
+        "humid": "humid"
+      }
+    },
+    {
+      "id": "A-wet-01-s26",
+      "answer": "dripping",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The icicle was ___, making tiny splashes on the path below.",
+      "cue_phrase": "tiny splashes",
+      "surface": {
+        "soaked": "soaked",
+        "damp": "damp",
+        "soggy": "soggy",
+        "dripping": "dripping",
+        "humid": "humid"
+      }
+    },
+    {
+      "id": "A-wet-01-s27",
+      "answer": "dripping",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "After the bath, the rubber duck was ___; spots kept appearing below.",
+      "cue_phrase": "spots kept appearing",
+      "surface": {
+        "soaked": "soaked",
+        "damp": "damp",
+        "soggy": "soggy",
+        "dripping": "dripping",
+        "humid": "humid"
+      }
+    },
+    {
+      "id": "A-wet-01-s28",
+      "answer": "dripping",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The cave roof was ___, and plip-plop echoed through the tunnel.",
+      "cue_phrase": "plip-plop echoed",
+      "surface": {
+        "soaked": "soaked",
+        "damp": "damp",
+        "soggy": "soggy",
+        "dripping": "dripping",
+        "humid": "humid"
+      }
+    },
+    {
+      "id": "A-wet-01-s29",
+      "answer": "dripping",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Ben put a bowl under the plant because it was ___.",
+      "cue_phrase": "bowl under the plant",
+      "surface": {
+        "soaked": "soaked",
+        "damp": "damp",
+        "soggy": "soggy",
+        "dripping": "dripping",
+        "humid": "humid"
+      }
+    },
+    {
+      "id": "A-wet-01-s30",
+      "answer": "dripping",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Gran said the candle was ___ when wax made dots on the table.",
+      "cue_phrase": "wax made dots",
+      "surface": {
+        "soaked": "soaked",
+        "damp": "damp",
+        "soggy": "soggy",
+        "dripping": "dripping",
+        "humid": "humid"
+      }
+    },
+    {
+      "id": "A-wet-01-s31",
+      "answer": "dripping",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The mermaid's glass comb was ___, leaving a trail across the shell shelf.",
+      "cue_phrase": "leaving a trail",
+      "surface": {
+        "soaked": "soaked",
+        "damp": "damp",
+        "soggy": "soggy",
+        "dripping": "dripping",
+        "humid": "humid"
+      }
+    },
+    {
+      "id": "A-wet-01-s32",
+      "answer": "dripping",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The lemonade jug was ___; ring after ring formed on the table.",
+      "cue_phrase": "ring after ring",
+      "surface": {
+        "soaked": "soaked",
+        "damp": "damp",
+        "soggy": "soggy",
+        "dripping": "dripping",
+        "humid": "humid"
+      }
+    },
+    {
+      "id": "A-wet-01-s33",
+      "answer": "humid",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The air was ___ at ninety per cent, so sweat stayed on skin.",
+      "cue_phrase": "at ninety per cent",
+      "surface": {
+        "soaked": "soaked",
+        "damp": "damp",
+        "soggy": "soggy",
+        "dripping": "dripping",
+        "humid": "humid"
+      }
+    },
+    {
+      "id": "A-wet-01-s34",
+      "answer": "humid",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The jungle air felt ___, like a warm sticky blanket.",
+      "cue_phrase": "warm sticky blanket",
+      "surface": {
+        "soaked": "soaked",
+        "damp": "damp",
+        "soggy": "soggy",
+        "dripping": "dripping",
+        "humid": "humid"
+      }
+    },
+    {
+      "id": "A-wet-01-s35",
+      "answer": "humid",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Before the thunder, the classroom air was ___; fans only pushed warmth.",
+      "cue_phrase": "fans only pushed warmth",
+      "surface": {
+        "soaked": "soaked",
+        "damp": "damp",
+        "soggy": "soggy",
+        "dripping": "dripping",
+        "humid": "humid"
+      }
+    },
+    {
+      "id": "A-wet-01-s36",
+      "answer": "humid",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "In the greenhouse, the air grew ___; even our noses felt sticky.",
+      "cue_phrase": "noses felt sticky",
+      "surface": {
+        "soaked": "soaked",
+        "damp": "damp",
+        "soggy": "soggy",
+        "dripping": "dripping",
+        "humid": "humid"
+      }
+    },
+    {
+      "id": "A-wet-01-s37",
+      "answer": "humid",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Liam's shirt clung in the heat, so the day was ___.",
+      "cue_phrase": "shirt clung in the heat",
+      "surface": {
+        "soaked": "soaked",
+        "damp": "damp",
+        "soggy": "soggy",
+        "dripping": "dripping",
+        "humid": "humid"
+      }
+    },
+    {
+      "id": "A-wet-01-s38",
+      "answer": "humid",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "We needed the fan because the room felt ___, warm and steamy.",
+      "cue_phrase": "warm and steamy",
+      "surface": {
+        "soaked": "soaked",
+        "damp": "damp",
+        "soggy": "soggy",
+        "dripping": "dripping",
+        "humid": "humid"
+      }
+    },
+    {
+      "id": "A-wet-01-s39",
+      "answer": "humid",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The dragon's cave air was ___, making armour feel sticky inside.",
+      "cue_phrase": "armour feel sticky",
+      "surface": {
+        "soaked": "soaked",
+        "damp": "damp",
+        "soggy": "soggy",
+        "dripping": "dripping",
+        "humid": "humid"
+      }
+    },
+    {
+      "id": "A-wet-01-s40",
+      "answer": "humid",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "At noon, the tent felt ___, hot and sticky, though nothing had spilled.",
+      "cue_phrase": "hot and sticky",
+      "surface": {
+        "soaked": "soaked",
+        "damp": "damp",
+        "soggy": "soggy",
+        "dripping": "dripping",
+        "humid": "humid"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "soaked",
+      "picked": "damp",
+      "line": "Soaked means liquid went right through. Damp means only a little moisture."
+    },
+    {
+      "answer": "soaked",
+      "picked": "soggy",
+      "line": "Soaked is about liquid reaching through. Soggy is about turning limp or mushy."
+    },
+    {
+      "answer": "soaked",
+      "picked": "dripping",
+      "line": "Soaked means full through. Dripping means liquid is coming off in drops."
+    },
+    {
+      "answer": "soaked",
+      "picked": "humid",
+      "line": "Soaked describes a thing filled through. Humid describes sticky air."
+    },
+    {
+      "answer": "damp",
+      "picked": "soaked",
+      "line": "Damp is only a little moisture. Soaked is through and through."
+    },
+    {
+      "answer": "damp",
+      "picked": "soggy",
+      "line": "Damp is light moisture. Soggy means limp or mushy from moisture."
+    },
+    {
+      "answer": "damp",
+      "picked": "dripping",
+      "line": "Damp may leave a faint mark. Dripping has drops coming off."
+    },
+    {
+      "answer": "damp",
+      "picked": "humid",
+      "line": "Damp describes a lightly moist thing. Humid describes sticky air."
+    },
+    {
+      "answer": "soggy",
+      "picked": "soaked",
+      "line": "Soggy means limp or mushy. Soaked means liquid has reached right through."
+    },
+    {
+      "answer": "soggy",
+      "picked": "damp",
+      "line": "Soggy is limp or mushy. Damp is just a little moist."
+    },
+    {
+      "answer": "soggy",
+      "picked": "dripping",
+      "line": "Soggy has lost crunch or shape. Dripping has drops coming off now."
+    },
+    {
+      "answer": "soggy",
+      "picked": "humid",
+      "line": "Soggy describes a limp thing. Humid describes sticky air."
+    },
+    {
+      "answer": "dripping",
+      "picked": "soaked",
+      "line": "Dripping means drops are coming off. Soaked means liquid has gone through."
+    },
+    {
+      "answer": "dripping",
+      "picked": "damp",
+      "line": "Dripping has drops coming off. Damp is only a little moist."
+    },
+    {
+      "answer": "dripping",
+      "picked": "soggy",
+      "line": "Dripping is about drops coming off. Soggy is about limp, mushy texture."
+    },
+    {
+      "answer": "dripping",
+      "picked": "humid",
+      "line": "Dripping describes a thing shedding drops. Humid describes sticky air."
+    },
+    {
+      "answer": "humid",
+      "picked": "soaked",
+      "line": "Humid is sticky air. Soaked is a thing wet through."
+    },
+    {
+      "answer": "humid",
+      "picked": "damp",
+      "line": "Humid is sticky air. Damp is a little moisture on a thing."
+    },
+    {
+      "answer": "humid",
+      "picked": "soggy",
+      "line": "Humid describes air. Soggy describes something limp or mushy."
+    },
+    {
+      "answer": "humid",
+      "picked": "dripping",
+      "line": "Humid is moisture in the air. Dripping means drops are coming off."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-05T11:29:49+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": null,
+    "scrub_note": null
+  }
+}

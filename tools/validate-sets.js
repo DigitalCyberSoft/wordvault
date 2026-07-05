@@ -110,6 +110,13 @@ files.forEach(function (entry) {
       });
       if (!stemOk) R(id, 'M6', sid + ': surface "' + s.surface[w] + '" does not resemble ' + w);
     });
+    // M17 the five surfaces must be five DISTINCT strings: a duplicate puts
+    // the same word on two tiles and grades a visually correct tap as a miss
+    // (shipped once as B-move-01-s21 run->"swim")
+    if (s.surface) {
+      var vals = ws.map(function (w) { return (s.surface[w] || '').toLowerCase(); });
+      if (new Set(vals).size !== vals.length) H(id, 'M17', sid + ': duplicate surface forms ' + JSON.stringify(s.surface));
+    }
 
     // M7 the cue must not quote the gloss
     var answerWord = set.words.filter(function (x) { return x.w === s.answer; })[0];

@@ -1,0 +1,791 @@
+{
+  "id": "A-dirty-01",
+  "bank": "A",
+  "pos": "adjective",
+  "theme": "kinds of dirty",
+  "band": 3,
+  "band_override": 3,
+  "computed": null,
+  "words": [
+    {
+      "w": "filthy",
+      "synset": "filthy.s.01",
+      "gloss_source": "authored",
+      "gloss": "disgustingly dirty all over",
+      "zipf": 3.8,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "filthy"
+      },
+      "discriminator": "as dirty as it gets"
+    },
+    {
+      "w": "grubby",
+      "synset": "begrimed.s.01",
+      "gloss_source": "authored",
+      "gloss": "marked with everyday grime, like hands after playing outside",
+      "zipf": 2.78,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "grubby"
+      },
+      "discriminator": "fingermarks and playground dirt"
+    },
+    {
+      "w": "dusty",
+      "synset": "dusty.s.01",
+      "gloss_source": "wordnet",
+      "gloss": "covered with a layer of dust",
+      "zipf": 3.67,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "dusty"
+      },
+      "discriminator": "a dry powdery layer"
+    },
+    {
+      "w": "muddy",
+      "synset": "mucky.s.02",
+      "gloss_source": "authored",
+      "gloss": "covered in wet mud",
+      "zipf": 3.6,
+      "register": "neutral",
+      "senses_at_pos": 4,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "muddy"
+      },
+      "discriminator": "wet earth stuck on"
+    },
+    {
+      "w": "greasy",
+      "synset": "greasy.s.02",
+      "gloss_source": "authored",
+      "gloss": "slick with grease or oil",
+      "zipf": 3.45,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "greasy"
+      },
+      "discriminator": "slippery oil film"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-dirty-01-s01",
+      "answer": "filthy",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The bin room was ___, utterly foul from floor to ceiling.",
+      "cue_phrase": "utterly foul from floor",
+      "surface": {
+        "filthy": "filthy",
+        "grubby": "grubby",
+        "dusty": "dusty",
+        "muddy": "muddy",
+        "greasy": "greasy"
+      }
+    },
+    {
+      "id": "A-dirty-01-s02",
+      "answer": "filthy",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The abandoned kennel was ___, with rotting scraps in every corner.",
+      "cue_phrase": "rotting scraps in every corner",
+      "surface": {
+        "filthy": "filthy",
+        "grubby": "grubby",
+        "dusty": "dusty",
+        "muddy": "muddy",
+        "greasy": "greasy"
+      }
+    },
+    {
+      "id": "A-dirty-01-s03",
+      "answer": "filthy",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "We threw away the ___ mop because it stank through the hallway.",
+      "cue_phrase": "stank through the hallway",
+      "surface": {
+        "filthy": "filthy",
+        "grubby": "grubby",
+        "dusty": "dusty",
+        "muddy": "muddy",
+        "greasy": "greasy"
+      }
+    },
+    {
+      "id": "A-dirty-01-s04",
+      "answer": "filthy",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "No one sat on the ___ chair after the baby was sick there.",
+      "cue_phrase": "baby was sick there",
+      "surface": {
+        "filthy": "filthy",
+        "grubby": "grubby",
+        "dusty": "dusty",
+        "muddy": "muddy",
+        "greasy": "greasy"
+      }
+    },
+    {
+      "id": "A-dirty-01-s05",
+      "answer": "filthy",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The ___ costume smelled so bad Mum sealed it in a bag.",
+      "cue_phrase": "sealed it in a bag",
+      "surface": {
+        "filthy": "filthy",
+        "grubby": "grubby",
+        "dusty": "dusty",
+        "muddy": "muddy",
+        "greasy": "greasy"
+      }
+    },
+    {
+      "id": "A-dirty-01-s06",
+      "answer": "filthy",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "After unblocking the sewer, the overalls were ___ from neck to boots.",
+      "cue_phrase": "unblocking the sewer",
+      "surface": {
+        "filthy": "filthy",
+        "grubby": "grubby",
+        "dusty": "dusty",
+        "muddy": "muddy",
+        "greasy": "greasy"
+      }
+    },
+    {
+      "id": "A-dirty-01-s07",
+      "answer": "filthy",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The ogre's cave was ___, with mouldy bones and sour puddles.",
+      "cue_phrase": "mouldy bones and sour",
+      "surface": {
+        "filthy": "filthy",
+        "grubby": "grubby",
+        "dusty": "dusty",
+        "muddy": "muddy",
+        "greasy": "greasy"
+      }
+    },
+    {
+      "id": "A-dirty-01-s08",
+      "answer": "filthy",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "The toilet brush looked ___, so Sam fetched rubber gloves first.",
+      "cue_phrase": "toilet brush looked",
+      "surface": {
+        "filthy": "filthy",
+        "grubby": "grubby",
+        "dusty": "dusty",
+        "muddy": "muddy",
+        "greasy": "greasy"
+      }
+    },
+    {
+      "id": "A-dirty-01-s09",
+      "answer": "grubby",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The library card was ___, with small fingerprints around the corners.",
+      "cue_phrase": "small fingerprints around",
+      "surface": {
+        "filthy": "filthy",
+        "grubby": "grubby",
+        "dusty": "dusty",
+        "muddy": "muddy",
+        "greasy": "greasy"
+      }
+    },
+    {
+      "id": "A-dirty-01-s10",
+      "answer": "grubby",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The cuffs were ___, showing grey smudges from breaktime games.",
+      "cue_phrase": "grey smudges from",
+      "surface": {
+        "filthy": "filthy",
+        "grubby": "grubby",
+        "dusty": "dusty",
+        "muddy": "muddy",
+        "greasy": "greasy"
+      }
+    },
+    {
+      "id": "A-dirty-01-s11",
+      "answer": "grubby",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Please wash before lunch; your ___ fingers left prints on the cup.",
+      "cue_phrase": "left prints on",
+      "surface": {
+        "filthy": "filthy",
+        "grubby": "grubby",
+        "dusty": "dusty",
+        "muddy": "muddy",
+        "greasy": "greasy"
+      }
+    },
+    {
+      "id": "A-dirty-01-s12",
+      "answer": "grubby",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Tom's workbook looked ___ after snack crumbs and pencil smears.",
+      "cue_phrase": "pencil smears",
+      "surface": {
+        "filthy": "filthy",
+        "grubby": "grubby",
+        "dusty": "dusty",
+        "muddy": "muddy",
+        "greasy": "greasy"
+      }
+    },
+    {
+      "id": "A-dirty-01-s13",
+      "answer": "grubby",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "After crawling under the climbing frame, Dan's knees were ___.",
+      "cue_phrase": "under the climbing frame",
+      "surface": {
+        "filthy": "filthy",
+        "grubby": "grubby",
+        "dusty": "dusty",
+        "muddy": "muddy",
+        "greasy": "greasy"
+      }
+    },
+    {
+      "id": "A-dirty-01-s14",
+      "answer": "grubby",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Finger smears circled the ___ light switch after garden club.",
+      "cue_phrase": "Finger smears circled",
+      "surface": {
+        "filthy": "filthy",
+        "grubby": "grubby",
+        "dusty": "dusty",
+        "muddy": "muddy",
+        "greasy": "greasy"
+      }
+    },
+    {
+      "id": "A-dirty-01-s15",
+      "answer": "grubby",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The toddler's ___ face had biscuit crumbs and grey smudges.",
+      "cue_phrase": "grey smudges",
+      "surface": {
+        "filthy": "filthy",
+        "grubby": "grubby",
+        "dusty": "dusty",
+        "muddy": "muddy",
+        "greasy": "greasy"
+      }
+    },
+    {
+      "id": "A-dirty-01-s16",
+      "answer": "grubby",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "Grandad wiped the ___ coins, blackened by many pockets.",
+      "cue_phrase": "blackened by many pockets",
+      "surface": {
+        "filthy": "filthy",
+        "grubby": "grubby",
+        "dusty": "dusty",
+        "muddy": "muddy",
+        "greasy": "greasy"
+      }
+    },
+    {
+      "id": "A-dirty-01-s17",
+      "answer": "dusty",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The attic trunk was ___, with grey powder on its lid.",
+      "cue_phrase": "grey powder on",
+      "surface": {
+        "filthy": "filthy",
+        "grubby": "grubby",
+        "dusty": "dusty",
+        "muddy": "muddy",
+        "greasy": "greasy"
+      }
+    },
+    {
+      "id": "A-dirty-01-s18",
+      "answer": "dusty",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The shelf was ___, leaving dry grey fluff on my finger.",
+      "cue_phrase": "dry grey fluff",
+      "surface": {
+        "filthy": "filthy",
+        "grubby": "grubby",
+        "dusty": "dusty",
+        "muddy": "muddy",
+        "greasy": "greasy"
+      }
+    },
+    {
+      "id": "A-dirty-01-s19",
+      "answer": "dusty",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "We sneezed when Dad opened the ___ box from the loft.",
+      "cue_phrase": "sneezed when Dad opened",
+      "surface": {
+        "filthy": "filthy",
+        "grubby": "grubby",
+        "dusty": "dusty",
+        "muddy": "muddy",
+        "greasy": "greasy"
+      }
+    },
+    {
+      "id": "A-dirty-01-s20",
+      "answer": "dusty",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ curtains puffed pale clouds when Gran shook them.",
+      "cue_phrase": "puffed pale clouds",
+      "surface": {
+        "filthy": "filthy",
+        "grubby": "grubby",
+        "dusty": "dusty",
+        "muddy": "muddy",
+        "greasy": "greasy"
+      }
+    },
+    {
+      "id": "A-dirty-01-s21",
+      "answer": "dusty",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Sunbeams showed tiny specks rising from the ___ piano.",
+      "cue_phrase": "tiny specks rising",
+      "surface": {
+        "filthy": "filthy",
+        "grubby": "grubby",
+        "dusty": "dusty",
+        "muddy": "muddy",
+        "greasy": "greasy"
+      }
+    },
+    {
+      "id": "A-dirty-01-s22",
+      "answer": "dusty",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "I wrote my name in pale powder on the ___ cupboard.",
+      "cue_phrase": "pale powder",
+      "surface": {
+        "filthy": "filthy",
+        "grubby": "grubby",
+        "dusty": "dusty",
+        "muddy": "muddy",
+        "greasy": "greasy"
+      }
+    },
+    {
+      "id": "A-dirty-01-s23",
+      "answer": "dusty",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The dragon sneezed after unrolling the ___ map from the crypt.",
+      "cue_phrase": "sneezed after unrolling",
+      "surface": {
+        "filthy": "filthy",
+        "grubby": "grubby",
+        "dusty": "dusty",
+        "muddy": "muddy",
+        "greasy": "greasy"
+      }
+    },
+    {
+      "id": "A-dirty-01-s24",
+      "answer": "dusty",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "Each book left a pale square on the ___ windowsill.",
+      "cue_phrase": "left a pale square",
+      "surface": {
+        "filthy": "filthy",
+        "grubby": "grubby",
+        "dusty": "dusty",
+        "muddy": "muddy",
+        "greasy": "greasy"
+      }
+    },
+    {
+      "id": "A-dirty-01-s25",
+      "answer": "muddy",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "After the storm, the path was ___, with brown squelch underfoot.",
+      "cue_phrase": "brown squelch underfoot",
+      "surface": {
+        "filthy": "filthy",
+        "grubby": "grubby",
+        "dusty": "dusty",
+        "muddy": "muddy",
+        "greasy": "greasy"
+      }
+    },
+    {
+      "id": "A-dirty-01-s26",
+      "answer": "muddy",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The dog's paws were ___, caked with soft brown earth.",
+      "cue_phrase": "soft brown earth",
+      "surface": {
+        "filthy": "filthy",
+        "grubby": "grubby",
+        "dusty": "dusty",
+        "muddy": "muddy",
+        "greasy": "greasy"
+      }
+    },
+    {
+      "id": "A-dirty-01-s27",
+      "answer": "muddy",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Rain turned the field ___ before the school race began.",
+      "cue_phrase": "Rain turned the field",
+      "surface": {
+        "filthy": "filthy",
+        "grubby": "grubby",
+        "dusty": "dusty",
+        "muddy": "muddy",
+        "greasy": "greasy"
+      }
+    },
+    {
+      "id": "A-dirty-01-s28",
+      "answer": "muddy",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Ben slipped on the ___ bank beside the swollen stream.",
+      "cue_phrase": "swollen stream",
+      "surface": {
+        "filthy": "filthy",
+        "grubby": "grubby",
+        "dusty": "dusty",
+        "muddy": "muddy",
+        "greasy": "greasy"
+      }
+    },
+    {
+      "id": "A-dirty-01-s29",
+      "answer": "muddy",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Brown sludge from the flowerbed dripped off the ___ boots.",
+      "cue_phrase": "sludge from the flowerbed",
+      "surface": {
+        "filthy": "filthy",
+        "grubby": "grubby",
+        "dusty": "dusty",
+        "muddy": "muddy",
+        "greasy": "greasy"
+      }
+    },
+    {
+      "id": "A-dirty-01-s30",
+      "answer": "muddy",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The football came back ___ after landing in the rain-soaked field.",
+      "cue_phrase": "rain-soaked field",
+      "surface": {
+        "filthy": "filthy",
+        "grubby": "grubby",
+        "dusty": "dusty",
+        "muddy": "muddy",
+        "greasy": "greasy"
+      }
+    },
+    {
+      "id": "A-dirty-01-s31",
+      "answer": "muddy",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The piglet rolled happily in the ___ patch after heavy rain.",
+      "cue_phrase": "after heavy rain",
+      "surface": {
+        "filthy": "filthy",
+        "grubby": "grubby",
+        "dusty": "dusty",
+        "muddy": "muddy",
+        "greasy": "greasy"
+      }
+    },
+    {
+      "id": "A-dirty-01-s32",
+      "answer": "muddy",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "The knight's cloak became ___ when he fell in the marsh.",
+      "cue_phrase": "fell in the marsh",
+      "surface": {
+        "filthy": "filthy",
+        "grubby": "grubby",
+        "dusty": "dusty",
+        "muddy": "muddy",
+        "greasy": "greasy"
+      }
+    },
+    {
+      "id": "A-dirty-01-s33",
+      "answer": "greasy",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The pan was ___, shiny with fat after breakfast.",
+      "cue_phrase": "shiny with fat",
+      "surface": {
+        "filthy": "filthy",
+        "grubby": "grubby",
+        "dusty": "dusty",
+        "muddy": "muddy",
+        "greasy": "greasy"
+      }
+    },
+    {
+      "id": "A-dirty-01-s34",
+      "answer": "greasy",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The bike chain left ___ smears with a slippery shine.",
+      "cue_phrase": "slippery shine",
+      "surface": {
+        "filthy": "filthy",
+        "grubby": "grubby",
+        "dusty": "dusty",
+        "muddy": "muddy",
+        "greasy": "greasy"
+      }
+    },
+    {
+      "id": "A-dirty-01-s35",
+      "answer": "greasy",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Jamie washed the ___ plate twice after the buttery toast.",
+      "cue_phrase": "buttery toast",
+      "surface": {
+        "filthy": "filthy",
+        "grubby": "grubby",
+        "dusty": "dusty",
+        "muddy": "muddy",
+        "greasy": "greasy"
+      }
+    },
+    {
+      "id": "A-dirty-01-s36",
+      "answer": "greasy",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ handle shone after someone ate chips and grabbed it.",
+      "cue_phrase": "ate chips and grabbed",
+      "surface": {
+        "filthy": "filthy",
+        "grubby": "grubby",
+        "dusty": "dusty",
+        "muddy": "muddy",
+        "greasy": "greasy"
+      }
+    },
+    {
+      "id": "A-dirty-01-s37",
+      "answer": "greasy",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The mechanic's ___ rag slid from his pocket after wiping engine parts.",
+      "cue_phrase": "wiping engine parts",
+      "surface": {
+        "filthy": "filthy",
+        "grubby": "grubby",
+        "dusty": "dusty",
+        "muddy": "muddy",
+        "greasy": "greasy"
+      }
+    },
+    {
+      "id": "A-dirty-01-s38",
+      "answer": "greasy",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Soap was needed because the ___ bowl made water bead up.",
+      "cue_phrase": "water bead up",
+      "surface": {
+        "filthy": "filthy",
+        "grubby": "grubby",
+        "dusty": "dusty",
+        "muddy": "muddy",
+        "greasy": "greasy"
+      }
+    },
+    {
+      "id": "A-dirty-01-s39",
+      "answer": "greasy",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The fairy's frying spoon was ___ and gleamed with melted butter.",
+      "cue_phrase": "melted butter",
+      "surface": {
+        "filthy": "filthy",
+        "grubby": "grubby",
+        "dusty": "dusty",
+        "muddy": "muddy",
+        "greasy": "greasy"
+      }
+    },
+    {
+      "id": "A-dirty-01-s40",
+      "answer": "greasy",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "The sandwich wrapper felt ___, leaving shiny patches on the desk.",
+      "cue_phrase": "shiny patches",
+      "surface": {
+        "filthy": "filthy",
+        "grubby": "grubby",
+        "dusty": "dusty",
+        "muddy": "muddy",
+        "greasy": "greasy"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "filthy",
+      "picked": "grubby",
+      "line": "Filthy is awful mess all over; grubby is small smudges from use."
+    },
+    {
+      "answer": "filthy",
+      "picked": "dusty",
+      "line": "Filthy is awful mess all over; dusty has a dry powdery coat."
+    },
+    {
+      "answer": "filthy",
+      "picked": "muddy",
+      "line": "Filthy is awful mess all over; muddy means wet earth is stuck on."
+    },
+    {
+      "answer": "filthy",
+      "picked": "greasy",
+      "line": "Filthy is awful mess all over; greasy feels slippery from fat or oil."
+    },
+    {
+      "answer": "grubby",
+      "picked": "filthy",
+      "line": "Grubby means small smudges from fingers; filthy is awful mess all over."
+    },
+    {
+      "answer": "grubby",
+      "picked": "dusty",
+      "line": "Grubby has finger smudges; dusty has a dry powdery coat."
+    },
+    {
+      "answer": "grubby",
+      "picked": "muddy",
+      "line": "Grubby has finger smudges; muddy has wet earth stuck on."
+    },
+    {
+      "answer": "grubby",
+      "picked": "greasy",
+      "line": "Grubby has finger smudges; greasy feels slippery from fat or oil."
+    },
+    {
+      "answer": "dusty",
+      "picked": "filthy",
+      "line": "Dusty has a dry powdery coat; filthy is awful mess all over."
+    },
+    {
+      "answer": "dusty",
+      "picked": "grubby",
+      "line": "Dusty has a dry powdery coat; grubby has finger smudges."
+    },
+    {
+      "answer": "dusty",
+      "picked": "muddy",
+      "line": "Dusty is dry and powdery; muddy is wet earth stuck on."
+    },
+    {
+      "answer": "dusty",
+      "picked": "greasy",
+      "line": "Dusty is dry and powdery; greasy is slippery from fat or oil."
+    },
+    {
+      "answer": "muddy",
+      "picked": "filthy",
+      "line": "Muddy means wet earth is stuck on; filthy is awful mess all over."
+    },
+    {
+      "answer": "muddy",
+      "picked": "grubby",
+      "line": "Muddy means wet earth is stuck on; grubby has finger smudges."
+    },
+    {
+      "answer": "muddy",
+      "picked": "dusty",
+      "line": "Muddy is wet earth stuck on; dusty is dry and powdery."
+    },
+    {
+      "answer": "muddy",
+      "picked": "greasy",
+      "line": "Muddy is wet earth stuck on; greasy is slippery from fat or oil."
+    },
+    {
+      "answer": "greasy",
+      "picked": "filthy",
+      "line": "Greasy feels slippery from fat or oil; filthy is awful mess all over."
+    },
+    {
+      "answer": "greasy",
+      "picked": "grubby",
+      "line": "Greasy feels slippery from fat or oil; grubby has finger smudges."
+    },
+    {
+      "answer": "greasy",
+      "picked": "dusty",
+      "line": "Greasy is slippery from fat or oil; dusty is dry and powdery."
+    },
+    {
+      "answer": "greasy",
+      "picked": "muddy",
+      "line": "Greasy is slippery from fat or oil; muddy is wet earth stuck on."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-05T11:22:03+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": null,
+    "scrub_note": null
+  }
+}

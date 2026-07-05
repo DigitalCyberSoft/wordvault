@@ -116,6 +116,11 @@ HARD RULES for every sentence:
 CONTRAST LINES (all 20 ordered pairs answer->picked): at most 140 characters, plain language for a
 child, mention only those two words, and teach the difference the cue turns on, e.g.
 "Trudging is slow, tired work. This walk is light and happy."
+
+EVERY sentence is a SCENE, never a definition. Banned shapes (they surfaced in real drafts):
+"The guide says ___ means...", "Use ___ for...", "Being ___ means...", "___ describes...".
+If the discriminating feature is hard to stage, put a concrete measurement or comparison in the
+scene ("twice the size of last summer's best") instead of explaining the word.
 """
     if set_data["bank"] == "C":
         rules += """

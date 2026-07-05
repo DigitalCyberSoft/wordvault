@@ -1,0 +1,791 @@
+{
+  "id": "A-brave-01",
+  "bank": "A",
+  "pos": "adjective",
+  "theme": "ways of being brave",
+  "band": 3,
+  "band_override": 3,
+  "computed": null,
+  "words": [
+    {
+      "w": "determined",
+      "synset": "determined.s.01",
+      "gloss_source": "authored",
+      "gloss": "keeping at something difficult without giving up",
+      "zipf": 4.64,
+      "register": "neutral",
+      "senses_at_pos": 5,
+      "dominant_sense_ok": "pinned per set design; frames use only this sense (2026-07-05)",
+      "forms": {
+        "base": "determined"
+      },
+      "discriminator": "keeps going despite setbacks"
+    },
+    {
+      "w": "daring",
+      "synset": "audacious.s.03",
+      "gloss_source": "wordnet",
+      "gloss": "disposed to venture or take risks",
+      "zipf": 3.7,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "daring"
+      },
+      "discriminator": "chooses the risky thrill on purpose"
+    },
+    {
+      "w": "fearless",
+      "synset": "unafraid.a.01",
+      "gloss_source": "authored",
+      "gloss": "not scared even when the danger is real",
+      "zipf": 3.55,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "fearless"
+      },
+      "discriminator": "fear just does not arrive"
+    },
+    {
+      "w": "reckless",
+      "synset": "foolhardy.s.01",
+      "gloss_source": "authored",
+      "gloss": "taking risks without thinking about what could go wrong",
+      "zipf": 3.82,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "reckless"
+      },
+      "discriminator": "the careless kind of brave"
+    },
+    {
+      "w": "heroic",
+      "synset": "heroic.s.02",
+      "gloss_source": "wordnet",
+      "gloss": "having or displaying qualities appropriate for heroes",
+      "zipf": 3.84,
+      "register": "neutral",
+      "senses_at_pos": 5,
+      "dominant_sense_ok": "pinned per set design; frames use only this sense (2026-07-05)",
+      "forms": {
+        "base": "heroic"
+      },
+      "discriminator": "brave for someone else's sake"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-brave-01-s01",
+      "answer": "determined",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Maya was ___ to finish the race, jogging on long after her legs burned.",
+      "cue_phrase": "long after her legs burned",
+      "surface": {
+        "determined": "determined",
+        "daring": "daring",
+        "fearless": "fearless",
+        "reckless": "reckless",
+        "heroic": "heroic"
+      }
+    },
+    {
+      "id": "A-brave-01-s02",
+      "answer": "determined",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Despite failing twice, Leo stayed ___ and tried the jump serve again.",
+      "cue_phrase": "failing twice; tried again",
+      "surface": {
+        "determined": "determined",
+        "daring": "daring",
+        "fearless": "fearless",
+        "reckless": "reckless",
+        "heroic": "heroic"
+      }
+    },
+    {
+      "id": "A-brave-01-s03",
+      "answer": "determined",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The climbers turned back in the storm, but returned next spring, more ___ than ever.",
+      "cue_phrase": "returned next spring",
+      "surface": {
+        "determined": "determined",
+        "daring": "daring",
+        "fearless": "fearless",
+        "reckless": "reckless",
+        "heroic": "heroic"
+      }
+    },
+    {
+      "id": "A-brave-01-s04",
+      "answer": "determined",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Every fall from the skateboard left Ana more ___ to land the trick.",
+      "cue_phrase": "every fall; more",
+      "surface": {
+        "determined": "determined",
+        "daring": "daring",
+        "fearless": "fearless",
+        "reckless": "reckless",
+        "heroic": "heroic"
+      }
+    },
+    {
+      "id": "A-brave-01-s05",
+      "answer": "determined",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Sam stayed ___ through a month of dawn practices, until the solo finally flowed.",
+      "cue_phrase": "a month of dawn practices",
+      "surface": {
+        "determined": "determined",
+        "daring": "daring",
+        "fearless": "fearless",
+        "reckless": "reckless",
+        "heroic": "heroic"
+      }
+    },
+    {
+      "id": "A-brave-01-s06",
+      "answer": "determined",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Twenty drafts filled the bin, yet Ria remained ___ to make the poem right.",
+      "cue_phrase": "twenty drafts",
+      "surface": {
+        "determined": "determined",
+        "daring": "daring",
+        "fearless": "fearless",
+        "reckless": "reckless",
+        "heroic": "heroic"
+      }
+    },
+    {
+      "id": "A-brave-01-s07",
+      "answer": "determined",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The ___ tortoise in the story never stopped walking, whatever the hare shouted.",
+      "cue_phrase": "never stopped walking",
+      "surface": {
+        "determined": "determined",
+        "daring": "daring",
+        "fearless": "fearless",
+        "reckless": "reckless",
+        "heroic": "heroic"
+      }
+    },
+    {
+      "id": "A-brave-01-s08",
+      "answer": "determined",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "Dev stayed ___ all winter, never missing a single training session.",
+      "cue_phrase": "never missing a session",
+      "surface": {
+        "determined": "determined",
+        "daring": "daring",
+        "fearless": "fearless",
+        "reckless": "reckless",
+        "heroic": "heroic"
+      }
+    },
+    {
+      "id": "A-brave-01-s09",
+      "answer": "daring",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "His knees wobbled, but Omar was ___, choosing the supervised zip-wire for fun.",
+      "cue_phrase": "for fun",
+      "surface": {
+        "determined": "determined",
+        "daring": "daring",
+        "fearless": "fearless",
+        "reckless": "reckless",
+        "heroic": "heroic"
+      }
+    },
+    {
+      "id": "A-brave-01-s10",
+      "answer": "daring",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Although her stomach fluttered, Priya felt ___ choosing guided high ropes for excitement.",
+      "cue_phrase": "for excitement",
+      "surface": {
+        "determined": "determined",
+        "daring": "daring",
+        "fearless": "fearless",
+        "reckless": "reckless",
+        "heroic": "heroic"
+      }
+    },
+    {
+      "id": "A-brave-01-s11",
+      "answer": "daring",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "After checking her helmet, Mei got ___ and tried the steeper trail.",
+      "cue_phrase": "the steeper trail",
+      "surface": {
+        "determined": "determined",
+        "daring": "daring",
+        "fearless": "fearless",
+        "reckless": "reckless",
+        "heroic": "heroic"
+      }
+    },
+    {
+      "id": "A-brave-01-s12",
+      "answer": "daring",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Tomas felt ___ when he chose the taller slide, grinning at the rush.",
+      "cue_phrase": "grinning at the rush",
+      "surface": {
+        "determined": "determined",
+        "daring": "daring",
+        "fearless": "fearless",
+        "reckless": "reckless",
+        "heroic": "heroic"
+      }
+    },
+    {
+      "id": "A-brave-01-s13",
+      "answer": "daring",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Lila was ___; she shook slightly, yet picked the safe climbing wall for excitement.",
+      "cue_phrase": "safe climbing wall",
+      "surface": {
+        "determined": "determined",
+        "daring": "daring",
+        "fearless": "fearless",
+        "reckless": "reckless",
+        "heroic": "heroic"
+      }
+    },
+    {
+      "id": "A-brave-01-s14",
+      "answer": "daring",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The bridge had rails, and Ben was ___ about crossing for thrills.",
+      "cue_phrase": "for thrills",
+      "surface": {
+        "determined": "determined",
+        "daring": "daring",
+        "fearless": "fearless",
+        "reckless": "reckless",
+        "heroic": "heroic"
+      }
+    },
+    {
+      "id": "A-brave-01-s15",
+      "answer": "daring",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Despite butterflies, after the instructor nodded, Zed became ___ and tried the rope swing.",
+      "cue_phrase": "Despite butterflies",
+      "surface": {
+        "determined": "determined",
+        "daring": "daring",
+        "fearless": "fearless",
+        "reckless": "reckless",
+        "heroic": "heroic"
+      }
+    },
+    {
+      "id": "A-brave-01-s16",
+      "answer": "daring",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Mina felt ___ choosing the bumpy pony ride, not the gentle one.",
+      "cue_phrase": "not the gentle one",
+      "surface": {
+        "determined": "determined",
+        "daring": "daring",
+        "fearless": "fearless",
+        "reckless": "reckless",
+        "heroic": "heroic"
+      }
+    },
+    {
+      "id": "A-brave-01-s17",
+      "answer": "fearless",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The dog growled nearby, yet Ben stayed ___, with no tremble.",
+      "cue_phrase": "with no tremble",
+      "surface": {
+        "determined": "determined",
+        "daring": "daring",
+        "fearless": "fearless",
+        "reckless": "reckless",
+        "heroic": "heroic"
+      }
+    },
+    {
+      "id": "A-brave-01-s18",
+      "answer": "fearless",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "As thunder cracked overhead, Asha remained ___, calm as warm milk.",
+      "cue_phrase": "calm as warm milk",
+      "surface": {
+        "determined": "determined",
+        "daring": "daring",
+        "fearless": "fearless",
+        "reckless": "reckless",
+        "heroic": "heroic"
+      }
+    },
+    {
+      "id": "A-brave-01-s19",
+      "answer": "fearless",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "A wasp circled Tariq's face, but he seemed ___, not flinching once.",
+      "cue_phrase": "not flinching once",
+      "surface": {
+        "determined": "determined",
+        "daring": "daring",
+        "fearless": "fearless",
+        "reckless": "reckless",
+        "heroic": "heroic"
+      }
+    },
+    {
+      "id": "A-brave-01-s20",
+      "answer": "fearless",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The cave echoed loudly; Jo felt ___, her heartbeat steady.",
+      "cue_phrase": "heartbeat steady",
+      "surface": {
+        "determined": "determined",
+        "daring": "daring",
+        "fearless": "fearless",
+        "reckless": "reckless",
+        "heroic": "heroic"
+      }
+    },
+    {
+      "id": "A-brave-01-s21",
+      "answer": "fearless",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "While waves slapped the boat, Noor was ___ and smiled quietly.",
+      "cue_phrase": "smiled quietly",
+      "surface": {
+        "determined": "determined",
+        "daring": "daring",
+        "fearless": "fearless",
+        "reckless": "reckless",
+        "heroic": "heroic"
+      }
+    },
+    {
+      "id": "A-brave-01-s22",
+      "answer": "fearless",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The snake slid past the path, yet I stayed ___, breathing slowly.",
+      "cue_phrase": "breathing slowly",
+      "surface": {
+        "determined": "determined",
+        "daring": "daring",
+        "fearless": "fearless",
+        "reckless": "reckless",
+        "heroic": "heroic"
+      }
+    },
+    {
+      "id": "A-brave-01-s23",
+      "answer": "fearless",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "When the lift jolted, Gran looked ___, with relaxed shoulders.",
+      "cue_phrase": "relaxed shoulders",
+      "surface": {
+        "determined": "determined",
+        "daring": "daring",
+        "fearless": "fearless",
+        "reckless": "reckless",
+        "heroic": "heroic"
+      }
+    },
+    {
+      "id": "A-brave-01-s24",
+      "answer": "fearless",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The dark tunnel rattled, but Kai was ___, humming softly.",
+      "cue_phrase": "humming softly",
+      "surface": {
+        "determined": "determined",
+        "daring": "daring",
+        "fearless": "fearless",
+        "reckless": "reckless",
+        "heroic": "heroic"
+      }
+    },
+    {
+      "id": "A-brave-01-s25",
+      "answer": "reckless",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "It was ___ to race downhill after unbuckling his helmet.",
+      "cue_phrase": "unbuckling his helmet",
+      "surface": {
+        "determined": "determined",
+        "daring": "daring",
+        "fearless": "fearless",
+        "reckless": "reckless",
+        "heroic": "heroic"
+      }
+    },
+    {
+      "id": "A-brave-01-s26",
+      "answer": "reckless",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Jae took a ___ leap across the wet rocks without even glancing at the drop below.",
+      "cue_phrase": "without even glancing",
+      "surface": {
+        "determined": "determined",
+        "daring": "daring",
+        "fearless": "fearless",
+        "reckless": "reckless",
+        "heroic": "heroic"
+      }
+    },
+    {
+      "id": "A-brave-01-s27",
+      "answer": "reckless",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Mila was ___ when she skated onto thin ice despite loud cracks.",
+      "cue_phrase": "despite loud cracks",
+      "surface": {
+        "determined": "determined",
+        "daring": "daring",
+        "fearless": "fearless",
+        "reckless": "reckless",
+        "heroic": "heroic"
+      }
+    },
+    {
+      "id": "A-brave-01-s28",
+      "answer": "reckless",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The boys were ___ to light fireworks beside dry leaves.",
+      "cue_phrase": "beside dry leaves",
+      "surface": {
+        "determined": "determined",
+        "daring": "daring",
+        "fearless": "fearless",
+        "reckless": "reckless",
+        "heroic": "heroic"
+      }
+    },
+    {
+      "id": "A-brave-01-s29",
+      "answer": "reckless",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Pip felt ___, cycling at night in black clothes with no lights.",
+      "cue_phrase": "with no lights",
+      "surface": {
+        "determined": "determined",
+        "daring": "daring",
+        "fearless": "fearless",
+        "reckless": "reckless",
+        "heroic": "heroic"
+      }
+    },
+    {
+      "id": "A-brave-01-s30",
+      "answer": "reckless",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Ana was ___, ignoring the fence and sprinting over cracked concrete.",
+      "cue_phrase": "ignoring the fence",
+      "surface": {
+        "determined": "determined",
+        "daring": "daring",
+        "fearless": "fearless",
+        "reckless": "reckless",
+        "heroic": "heroic"
+      }
+    },
+    {
+      "id": "A-brave-01-s31",
+      "answer": "reckless",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Rory became ___, paddling past the red flag after lifeguards shouted.",
+      "cue_phrase": "past the red flag",
+      "surface": {
+        "determined": "determined",
+        "daring": "daring",
+        "fearless": "fearless",
+        "reckless": "reckless",
+        "heroic": "heroic"
+      }
+    },
+    {
+      "id": "A-brave-01-s32",
+      "answer": "reckless",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Nina was ___ to poke the bonfire with her sleeve dangling.",
+      "cue_phrase": "sleeve dangling",
+      "surface": {
+        "determined": "determined",
+        "daring": "daring",
+        "fearless": "fearless",
+        "reckless": "reckless",
+        "heroic": "heroic"
+      }
+    },
+    {
+      "id": "A-brave-01-s33",
+      "answer": "heroic",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Though trembling, the ___ neighbour carried the toddler from smoke after calling for help.",
+      "cue_phrase": "carried the toddler",
+      "surface": {
+        "determined": "determined",
+        "daring": "daring",
+        "fearless": "fearless",
+        "reckless": "reckless",
+        "heroic": "heroic"
+      }
+    },
+    {
+      "id": "A-brave-01-s34",
+      "answer": "heroic",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Though nervous, the ___ nurse crossed with rescuers to bring children medicine.",
+      "cue_phrase": "bring children medicine",
+      "surface": {
+        "determined": "determined",
+        "daring": "daring",
+        "fearless": "fearless",
+        "reckless": "reckless",
+        "heroic": "heroic"
+      }
+    },
+    {
+      "id": "A-brave-01-s35",
+      "answer": "heroic",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Maya made a ___ climb, roped safely, not for excitement, to free the kitten.",
+      "cue_phrase": "free the kitten",
+      "surface": {
+        "determined": "determined",
+        "daring": "daring",
+        "fearless": "fearless",
+        "reckless": "reckless",
+        "heroic": "heroic"
+      }
+    },
+    {
+      "id": "A-brave-01-s36",
+      "answer": "heroic",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Though tired, Arun's ___ swim with a guide rope, not for fun, brought medicine to his sister.",
+      "cue_phrase": "brought medicine to his sister",
+      "surface": {
+        "determined": "determined",
+        "daring": "daring",
+        "fearless": "fearless",
+        "reckless": "reckless",
+        "heroic": "heroic"
+      }
+    },
+    {
+      "id": "A-brave-01-s37",
+      "answer": "heroic",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Lena made the ___ choice to give her only coat to the shivering younger child.",
+      "cue_phrase": "her only coat",
+      "surface": {
+        "determined": "determined",
+        "daring": "daring",
+        "fearless": "fearless",
+        "reckless": "reckless",
+        "heroic": "heroic"
+      }
+    },
+    {
+      "id": "A-brave-01-s38",
+      "answer": "heroic",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Fynn was ___, shielding his friend from falling glass while shaking.",
+      "cue_phrase": "shielding his friend",
+      "surface": {
+        "determined": "determined",
+        "daring": "daring",
+        "fearless": "fearless",
+        "reckless": "reckless",
+        "heroic": "heroic"
+      }
+    },
+    {
+      "id": "A-brave-01-s39",
+      "answer": "heroic",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The ___ captain turned back, rather than win, to help the lost swimmer.",
+      "cue_phrase": "help the lost swimmer",
+      "surface": {
+        "determined": "determined",
+        "daring": "daring",
+        "fearless": "fearless",
+        "reckless": "reckless",
+        "heroic": "heroic"
+      }
+    },
+    {
+      "id": "A-brave-01-s40",
+      "answer": "heroic",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "I called Sita ___ because she shared air with the trapped diver.",
+      "cue_phrase": "shared air with",
+      "surface": {
+        "determined": "determined",
+        "daring": "daring",
+        "fearless": "fearless",
+        "reckless": "reckless",
+        "heroic": "heroic"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "determined",
+      "picked": "daring",
+      "line": "Daring picks the risky thrill. Determined just refuses to give up."
+    },
+    {
+      "answer": "determined",
+      "picked": "fearless",
+      "line": "Fearless feels no fear. Determined may feel like quitting, and keeps going anyway."
+    },
+    {
+      "answer": "determined",
+      "picked": "reckless",
+      "line": "Reckless charges in without thinking. Determined keeps carefully trying."
+    },
+    {
+      "answer": "determined",
+      "picked": "heroic",
+      "line": "Heroic is brave for someone else. Determined is sticking at your own hard thing."
+    },
+    {
+      "answer": "daring",
+      "picked": "determined",
+      "line": "Determined is grit over time. Daring is choosing the risky leap right now."
+    },
+    {
+      "answer": "daring",
+      "picked": "fearless",
+      "line": "Daring may feel nerves but chooses the thrill. Fearless feels no fear."
+    },
+    {
+      "answer": "daring",
+      "picked": "reckless",
+      "line": "Daring seeks excitement with care. Reckless skips safety."
+    },
+    {
+      "answer": "daring",
+      "picked": "heroic",
+      "line": "Daring is for the thrill. Heroic is for helping someone else."
+    },
+    {
+      "answer": "fearless",
+      "picked": "determined",
+      "line": "Determined pushes through the urge to quit. Fearless simply never feels the fear."
+    },
+    {
+      "answer": "fearless",
+      "picked": "daring",
+      "line": "Fearless has no fear. Daring may feel fear but still chooses excitement."
+    },
+    {
+      "answer": "fearless",
+      "picked": "reckless",
+      "line": "Fearless is calm near trouble. Reckless is careless near trouble."
+    },
+    {
+      "answer": "fearless",
+      "picked": "heroic",
+      "line": "Fearless means fear is absent. Heroic means helping someone else despite trouble."
+    },
+    {
+      "answer": "reckless",
+      "picked": "determined",
+      "line": "Determined thinks and keeps trying. Reckless stops thinking entirely."
+    },
+    {
+      "answer": "reckless",
+      "picked": "daring",
+      "line": "Reckless is careless. Daring wants excitement but can still use safety."
+    },
+    {
+      "answer": "reckless",
+      "picked": "fearless",
+      "line": "Reckless may rush into harm carelessly. Fearless stays calm, not careless."
+    },
+    {
+      "answer": "reckless",
+      "picked": "heroic",
+      "line": "Reckless ignores what may hurt people. Heroic protects people."
+    },
+    {
+      "answer": "heroic",
+      "picked": "determined",
+      "line": "Determined is about your own goal. Heroic is risking yourself for someone else."
+    },
+    {
+      "answer": "heroic",
+      "picked": "daring",
+      "line": "Heroic is for another person. Daring is for excitement."
+    },
+    {
+      "answer": "heroic",
+      "picked": "fearless",
+      "line": "Heroic helps someone despite fear. Fearless means fear is missing."
+    },
+    {
+      "answer": "heroic",
+      "picked": "reckless",
+      "line": "Heroic protects others. Reckless forgets safety."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-05T11:02:23+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": null,
+    "scrub_note": "bold swapped for determined: bold was the generic donor the judges fit into every sibling frame."
+  }
+}

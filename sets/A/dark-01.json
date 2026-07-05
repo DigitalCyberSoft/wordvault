@@ -1,0 +1,791 @@
+{
+  "id": "A-dark-01",
+  "bank": "A",
+  "pos": "adjective",
+  "theme": "kinds of dark",
+  "band": 3,
+  "band_override": 3,
+  "computed": null,
+  "words": [
+    {
+      "w": "dim",
+      "synset": "dim.s.01",
+      "gloss_source": "wordnet",
+      "gloss": "lacking in light; not bright or harsh",
+      "zipf": 3.62,
+      "register": "neutral",
+      "senses_at_pos": 5,
+      "dominant_sense_ok": "pinned per set design; frames use only this sense (2026-07-05)",
+      "forms": {
+        "base": "dim"
+      },
+      "discriminator": "a little light, but weak"
+    },
+    {
+      "w": "murky",
+      "synset": "murky.s.02",
+      "gloss_source": "wordnet",
+      "gloss": "dark or gloomy",
+      "zipf": 3.12,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "murky"
+      },
+      "discriminator": "dark and hard to see through, like deep water"
+    },
+    {
+      "w": "shadowy",
+      "synset": "shady.s.04",
+      "gloss_source": "wordnet",
+      "gloss": "filled with shade",
+      "zipf": 3.24,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "shadowy"
+      },
+      "discriminator": "full of patches of shade"
+    },
+    {
+      "w": "overcast",
+      "synset": "cloud-covered.s.01",
+      "gloss_source": "authored",
+      "gloss": "with the sky fully covered by cloud",
+      "zipf": 3.05,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "overcast"
+      },
+      "discriminator": "grey covered sky, daytime"
+    },
+    {
+      "w": "pitch-black",
+      "synset": "black.s.06",
+      "gloss_source": "wordnet",
+      "gloss": "extremely dark",
+      "zipf": 4.39,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "pitch-black"
+      },
+      "discriminator": "no light at all"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-dark-01-s01",
+      "answer": "dim",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Turn the dial down until the bulb looks ___, not dazzling.",
+      "cue_phrase": "bulb looks ___, not dazzling",
+      "surface": {
+        "dim": "dim",
+        "murky": "murky",
+        "shadowy": "shadowy",
+        "overcast": "overcast",
+        "pitch-black": "pitch-black"
+      }
+    },
+    {
+      "id": "A-dark-01-s02",
+      "answer": "dim",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Mum chose a ___ night-lamp, gentle enough for sleepy eyes.",
+      "cue_phrase": "night-lamp, gentle enough",
+      "surface": {
+        "dim": "dim",
+        "murky": "murky",
+        "shadowy": "shadowy",
+        "overcast": "overcast",
+        "pitch-black": "pitch-black"
+      }
+    },
+    {
+      "id": "A-dark-01-s03",
+      "answer": "dim",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The tiny wall bulbs gave a ___ glow during the play.",
+      "cue_phrase": "gave a ___ glow",
+      "surface": {
+        "dim": "dim",
+        "murky": "murky",
+        "shadowy": "shadowy",
+        "overcast": "overcast",
+        "pitch-black": "pitch-black"
+      }
+    },
+    {
+      "id": "A-dark-01-s04",
+      "answer": "dim",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "After sunset, the shop sign was ___, yet its letters showed.",
+      "cue_phrase": "yet its letters showed",
+      "surface": {
+        "dim": "dim",
+        "murky": "murky",
+        "shadowy": "shadowy",
+        "overcast": "overcast",
+        "pitch-black": "pitch-black"
+      }
+    },
+    {
+      "id": "A-dark-01-s05",
+      "answer": "dim",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Her tablet screen was ___ after Dad lowered the setting.",
+      "cue_phrase": "lowered the setting",
+      "surface": {
+        "dim": "dim",
+        "murky": "murky",
+        "shadowy": "shadowy",
+        "overcast": "overcast",
+        "pitch-black": "pitch-black"
+      }
+    },
+    {
+      "id": "A-dark-01-s06",
+      "answer": "dim",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The torch batteries were nearly flat, so the beam seemed ___.",
+      "cue_phrase": "batteries were nearly flat",
+      "surface": {
+        "dim": "dim",
+        "murky": "murky",
+        "shadowy": "shadowy",
+        "overcast": "overcast",
+        "pitch-black": "pitch-black"
+      }
+    },
+    {
+      "id": "A-dark-01-s07",
+      "answer": "dim",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The old hallway bulb made a ___ glow beside the stairs.",
+      "cue_phrase": "old hallway bulb made",
+      "surface": {
+        "dim": "dim",
+        "murky": "murky",
+        "shadowy": "shadowy",
+        "overcast": "overcast",
+        "pitch-black": "pitch-black"
+      }
+    },
+    {
+      "id": "A-dark-01-s08",
+      "answer": "dim",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "At dawn, the lantern's flame looked ___ inside the tent.",
+      "cue_phrase": "lantern's flame looked",
+      "surface": {
+        "dim": "dim",
+        "murky": "murky",
+        "shadowy": "shadowy",
+        "overcast": "overcast",
+        "pitch-black": "pitch-black"
+      }
+    },
+    {
+      "id": "A-dark-01-s09",
+      "answer": "murky",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ pond water hid every pebble after ducks stirred mud.",
+      "cue_phrase": "hid every pebble",
+      "surface": {
+        "dim": "dim",
+        "murky": "murky",
+        "shadowy": "shadowy",
+        "overcast": "overcast",
+        "pitch-black": "pitch-black"
+      }
+    },
+    {
+      "id": "A-dark-01-s10",
+      "answer": "murky",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Stirred-up mud made the water ___ and impossible to see through.",
+      "cue_phrase": "impossible to see through",
+      "surface": {
+        "dim": "dim",
+        "murky": "murky",
+        "shadowy": "shadowy",
+        "overcast": "overcast",
+        "pitch-black": "pitch-black"
+      }
+    },
+    {
+      "id": "A-dark-01-s11",
+      "answer": "murky",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "After the storm, the river looked ___, with brown swirls everywhere.",
+      "cue_phrase": "brown swirls everywhere",
+      "surface": {
+        "dim": "dim",
+        "murky": "murky",
+        "shadowy": "shadowy",
+        "overcast": "overcast",
+        "pitch-black": "pitch-black"
+      }
+    },
+    {
+      "id": "A-dark-01-s12",
+      "answer": "murky",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The jar of rinse water turned ___ after many painty brushes.",
+      "cue_phrase": "after many painty brushes",
+      "surface": {
+        "dim": "dim",
+        "murky": "murky",
+        "shadowy": "shadowy",
+        "overcast": "overcast",
+        "pitch-black": "pitch-black"
+      }
+    },
+    {
+      "id": "A-dark-01-s13",
+      "answer": "murky",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The aquarium became ___ when sand puffed up from the floor.",
+      "cue_phrase": "sand puffed up",
+      "surface": {
+        "dim": "dim",
+        "murky": "murky",
+        "shadowy": "shadowy",
+        "overcast": "overcast",
+        "pitch-black": "pitch-black"
+      }
+    },
+    {
+      "id": "A-dark-01-s14",
+      "answer": "murky",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "No fish appeared through the ___, muddy canal water.",
+      "cue_phrase": "muddy canal water",
+      "surface": {
+        "dim": "dim",
+        "murky": "murky",
+        "shadowy": "shadowy",
+        "overcast": "overcast",
+        "pitch-black": "pitch-black"
+      }
+    },
+    {
+      "id": "A-dark-01-s15",
+      "answer": "murky",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The soup looked ___ after pepper and spinach were blended in.",
+      "cue_phrase": "spinach were blended in",
+      "surface": {
+        "dim": "dim",
+        "murky": "murky",
+        "shadowy": "shadowy",
+        "overcast": "overcast",
+        "pitch-black": "pitch-black"
+      }
+    },
+    {
+      "id": "A-dark-01-s16",
+      "answer": "murky",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "Rain washed soil into the lake, turning the shallows ___.",
+      "cue_phrase": "washed soil into",
+      "surface": {
+        "dim": "dim",
+        "murky": "murky",
+        "shadowy": "shadowy",
+        "overcast": "overcast",
+        "pitch-black": "pitch-black"
+      }
+    },
+    {
+      "id": "A-dark-01-s17",
+      "answer": "shadowy",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Branches made ___ patterns on the sunny wall.",
+      "cue_phrase": "Branches made ___ patterns",
+      "surface": {
+        "dim": "dim",
+        "murky": "murky",
+        "shadowy": "shadowy",
+        "overcast": "overcast",
+        "pitch-black": "pitch-black"
+      }
+    },
+    {
+      "id": "A-dark-01-s18",
+      "answer": "shadowy",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The tree cast ___ patches across our picnic rug.",
+      "cue_phrase": "tree cast ___ patches",
+      "surface": {
+        "dim": "dim",
+        "murky": "murky",
+        "shadowy": "shadowy",
+        "overcast": "overcast",
+        "pitch-black": "pitch-black"
+      }
+    },
+    {
+      "id": "A-dark-01-s19",
+      "answer": "shadowy",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Curtain lace left ___ shapes on the bedroom floor.",
+      "cue_phrase": "Curtain lace left",
+      "surface": {
+        "dim": "dim",
+        "murky": "murky",
+        "shadowy": "shadowy",
+        "overcast": "overcast",
+        "pitch-black": "pitch-black"
+      }
+    },
+    {
+      "id": "A-dark-01-s20",
+      "answer": "shadowy",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Leaves made the picnic blanket ___ with moving patches.",
+      "cue_phrase": "with moving patches",
+      "surface": {
+        "dim": "dim",
+        "murky": "murky",
+        "shadowy": "shadowy",
+        "overcast": "overcast",
+        "pitch-black": "pitch-black"
+      }
+    },
+    {
+      "id": "A-dark-01-s21",
+      "answer": "shadowy",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "When the kite hid the sun, a ___ shape crossed us.",
+      "cue_phrase": "kite hid the sun",
+      "surface": {
+        "dim": "dim",
+        "murky": "murky",
+        "shadowy": "shadowy",
+        "overcast": "overcast",
+        "pitch-black": "pitch-black"
+      }
+    },
+    {
+      "id": "A-dark-01-s22",
+      "answer": "shadowy",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "As branches swayed, ___ patches danced over the path.",
+      "cue_phrase": "patches danced over",
+      "surface": {
+        "dim": "dim",
+        "murky": "murky",
+        "shadowy": "shadowy",
+        "overcast": "overcast",
+        "pitch-black": "pitch-black"
+      }
+    },
+    {
+      "id": "A-dark-01-s23",
+      "answer": "shadowy",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The dragon's wings made ___ shapes across the castle roof.",
+      "cue_phrase": "dragon's wings made",
+      "surface": {
+        "dim": "dim",
+        "murky": "murky",
+        "shadowy": "shadowy",
+        "overcast": "overcast",
+        "pitch-black": "pitch-black"
+      }
+    },
+    {
+      "id": "A-dark-01-s24",
+      "answer": "shadowy",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "A paper screen cut ___ bands across the wall.",
+      "cue_phrase": "screen cut ___ bands",
+      "surface": {
+        "dim": "dim",
+        "murky": "murky",
+        "shadowy": "shadowy",
+        "overcast": "overcast",
+        "pitch-black": "pitch-black"
+      }
+    },
+    {
+      "id": "A-dark-01-s25",
+      "answer": "overcast",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The weather was ___, with grey sheets stretching above the playground.",
+      "cue_phrase": "grey sheets stretching above",
+      "surface": {
+        "dim": "dim",
+        "murky": "murky",
+        "shadowy": "shadowy",
+        "overcast": "overcast",
+        "pitch-black": "pitch-black"
+      }
+    },
+    {
+      "id": "A-dark-01-s26",
+      "answer": "overcast",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "At noon, the day stayed ___, with no blue showing overhead.",
+      "cue_phrase": "no blue showing overhead",
+      "surface": {
+        "dim": "dim",
+        "murky": "murky",
+        "shadowy": "shadowy",
+        "overcast": "overcast",
+        "pitch-black": "pitch-black"
+      }
+    },
+    {
+      "id": "A-dark-01-s27",
+      "answer": "overcast",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "We packed coats because the forecast said tomorrow would be ___.",
+      "cue_phrase": "forecast said tomorrow",
+      "surface": {
+        "dim": "dim",
+        "murky": "murky",
+        "shadowy": "shadowy",
+        "overcast": "overcast",
+        "pitch-black": "pitch-black"
+      }
+    },
+    {
+      "id": "A-dark-01-s28",
+      "answer": "overcast",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "During break, the ___ weather kept the sundial from working.",
+      "cue_phrase": "weather kept the sundial",
+      "surface": {
+        "dim": "dim",
+        "murky": "murky",
+        "shadowy": "shadowy",
+        "overcast": "overcast",
+        "pitch-black": "pitch-black"
+      }
+    },
+    {
+      "id": "A-dark-01-s29",
+      "answer": "overcast",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The sundial showed nothing at lunchtime because the day was ___.",
+      "cue_phrase": "sundial showed nothing",
+      "surface": {
+        "dim": "dim",
+        "murky": "murky",
+        "shadowy": "shadowy",
+        "overcast": "overcast",
+        "pitch-black": "pitch-black"
+      }
+    },
+    {
+      "id": "A-dark-01-s30",
+      "answer": "overcast",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "No blue appeared overhead while the morning remained ___.",
+      "cue_phrase": "No blue appeared overhead",
+      "surface": {
+        "dim": "dim",
+        "murky": "murky",
+        "shadowy": "shadowy",
+        "overcast": "overcast",
+        "pitch-black": "pitch-black"
+      }
+    },
+    {
+      "id": "A-dark-01-s31",
+      "answer": "overcast",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The weather report said ___ all day, so the solar panel rested.",
+      "cue_phrase": "weather report said",
+      "surface": {
+        "dim": "dim",
+        "murky": "murky",
+        "shadowy": "shadowy",
+        "overcast": "overcast",
+        "pitch-black": "pitch-black"
+      }
+    },
+    {
+      "id": "A-dark-01-s32",
+      "answer": "overcast",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "Even at midday, the garden sat beneath a grey, ___ ceiling.",
+      "cue_phrase": "grey, ___ ceiling",
+      "surface": {
+        "dim": "dim",
+        "murky": "murky",
+        "shadowy": "shadowy",
+        "overcast": "overcast",
+        "pitch-black": "pitch-black"
+      }
+    },
+    {
+      "id": "A-dark-01-s33",
+      "answer": "pitch-black",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Inside the closed box, it was ___; I saw nothing at all.",
+      "cue_phrase": "saw nothing at all",
+      "surface": {
+        "dim": "dim",
+        "murky": "murky",
+        "shadowy": "shadowy",
+        "overcast": "overcast",
+        "pitch-black": "pitch-black"
+      }
+    },
+    {
+      "id": "A-dark-01-s34",
+      "answer": "pitch-black",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The cave became ___ when every torch went out.",
+      "cue_phrase": "every torch went out",
+      "surface": {
+        "dim": "dim",
+        "murky": "murky",
+        "shadowy": "shadowy",
+        "overcast": "overcast",
+        "pitch-black": "pitch-black"
+      }
+    },
+    {
+      "id": "A-dark-01-s35",
+      "answer": "pitch-black",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "During the power cut, the cellar turned ___ until Mum found candles.",
+      "cue_phrase": "During the power cut",
+      "surface": {
+        "dim": "dim",
+        "murky": "murky",
+        "shadowy": "shadowy",
+        "overcast": "overcast",
+        "pitch-black": "pitch-black"
+      }
+    },
+    {
+      "id": "A-dark-01-s36",
+      "answer": "pitch-black",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The sealed cupboard was ___, so Tom felt for the handle.",
+      "cue_phrase": "felt for the handle",
+      "surface": {
+        "dim": "dim",
+        "murky": "murky",
+        "shadowy": "shadowy",
+        "overcast": "overcast",
+        "pitch-black": "pitch-black"
+      }
+    },
+    {
+      "id": "A-dark-01-s37",
+      "answer": "pitch-black",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Ravi waved his hand, but the ___ room showed no fingers.",
+      "cue_phrase": "showed no fingers",
+      "surface": {
+        "dim": "dim",
+        "murky": "murky",
+        "shadowy": "shadowy",
+        "overcast": "overcast",
+        "pitch-black": "pitch-black"
+      }
+    },
+    {
+      "id": "A-dark-01-s38",
+      "answer": "pitch-black",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The moonless tunnel was ___ after the last lantern failed.",
+      "cue_phrase": "last lantern failed",
+      "surface": {
+        "dim": "dim",
+        "murky": "murky",
+        "shadowy": "shadowy",
+        "overcast": "overcast",
+        "pitch-black": "pitch-black"
+      }
+    },
+    {
+      "id": "A-dark-01-s39",
+      "answer": "pitch-black",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Under the thick blanket, Sam found it ___ and giggled.",
+      "cue_phrase": "Under the thick blanket",
+      "surface": {
+        "dim": "dim",
+        "murky": "murky",
+        "shadowy": "shadowy",
+        "overcast": "overcast",
+        "pitch-black": "pitch-black"
+      }
+    },
+    {
+      "id": "A-dark-01-s40",
+      "answer": "pitch-black",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "With the door shut, the windowless shed became ___.",
+      "cue_phrase": "windowless shed became",
+      "surface": {
+        "dim": "dim",
+        "murky": "murky",
+        "shadowy": "shadowy",
+        "overcast": "overcast",
+        "pitch-black": "pitch-black"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "dim",
+      "picked": "murky",
+      "line": "Dim means weak glow. Murky means hard to see through, like muddy water."
+    },
+    {
+      "answer": "dim",
+      "picked": "shadowy",
+      "line": "Dim is low and gentle. Shadowy has patches or shapes made by blocked sun."
+    },
+    {
+      "answer": "dim",
+      "picked": "overcast",
+      "line": "Dim describes weak glow. Overcast describes grey daytime weather overhead."
+    },
+    {
+      "answer": "dim",
+      "picked": "pitch-black",
+      "line": "Dim still lets you see a little. Pitch-black means you see nothing."
+    },
+    {
+      "answer": "murky",
+      "picked": "dim",
+      "line": "Murky is hard to see through. Dim is just weak glow."
+    },
+    {
+      "answer": "murky",
+      "picked": "shadowy",
+      "line": "Murky hides things in water or haze. Shadowy has patches from blocked sun."
+    },
+    {
+      "answer": "murky",
+      "picked": "overcast",
+      "line": "Murky is hard to see through. Overcast is grey weather overhead."
+    },
+    {
+      "answer": "murky",
+      "picked": "pitch-black",
+      "line": "Murky may hide shapes through water. Pitch-black has no glow at all."
+    },
+    {
+      "answer": "shadowy",
+      "picked": "dim",
+      "line": "Shadowy has patchy shapes from blocked sun. Dim is only weak glow."
+    },
+    {
+      "answer": "shadowy",
+      "picked": "murky",
+      "line": "Shadowy has patches and shapes. Murky is hard to see through."
+    },
+    {
+      "answer": "shadowy",
+      "picked": "overcast",
+      "line": "Shadowy is patchy under objects. Overcast is grey weather overhead."
+    },
+    {
+      "answer": "shadowy",
+      "picked": "pitch-black",
+      "line": "Shadowy has some patches. Pitch-black lets you see nothing."
+    },
+    {
+      "answer": "overcast",
+      "picked": "dim",
+      "line": "Overcast is grey daytime weather overhead. Dim is weak glow indoors or out."
+    },
+    {
+      "answer": "overcast",
+      "picked": "murky",
+      "line": "Overcast is about weather overhead. Murky is about seeing through water or haze."
+    },
+    {
+      "answer": "overcast",
+      "picked": "shadowy",
+      "line": "Overcast covers the whole day overhead. Shadowy makes patches and shapes."
+    },
+    {
+      "answer": "overcast",
+      "picked": "pitch-black",
+      "line": "Overcast is grey daytime weather. Pitch-black means no glow at all."
+    },
+    {
+      "answer": "pitch-black",
+      "picked": "dim",
+      "line": "Pitch-black means no glow at all. Dim still has a little glow."
+    },
+    {
+      "answer": "pitch-black",
+      "picked": "murky",
+      "line": "Pitch-black stops all seeing. Murky is hard to see through, not always total."
+    },
+    {
+      "answer": "pitch-black",
+      "picked": "shadowy",
+      "line": "Pitch-black has no visible glow. Shadowy has patches and shapes."
+    },
+    {
+      "answer": "pitch-black",
+      "picked": "overcast",
+      "line": "Pitch-black is total blackness. Overcast is grey daytime weather overhead."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-05T11:20:11+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": null,
+    "scrub_note": null
+  }
+}

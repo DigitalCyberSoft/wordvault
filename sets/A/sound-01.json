@@ -1,0 +1,791 @@
+{
+  "id": "A-sound-01",
+  "bank": "A",
+  "pos": "adjective",
+  "theme": "kinds of sound",
+  "band": 3,
+  "band_override": 3,
+  "computed": null,
+  "words": [
+    {
+      "w": "faint",
+      "synset": "faint.s.01",
+      "gloss_source": "authored",
+      "gloss": "so quiet it is hard to hear at all",
+      "zipf": 3.78,
+      "register": "neutral",
+      "senses_at_pos": 6,
+      "dominant_sense_ok": "pinned per set design; frames use only this sense (2026-07-05)",
+      "forms": {
+        "base": "faint"
+      },
+      "discriminator": "volume near zero at the source"
+    },
+    {
+      "w": "muffled",
+      "synset": "dull.s.01",
+      "gloss_source": "wordnet",
+      "gloss": "being or made softer or less loud or clear",
+      "zipf": 3.04,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "muffled"
+      },
+      "discriminator": "something in the way softens it"
+    },
+    {
+      "w": "piercing",
+      "synset": null,
+      "gloss_source": "authored",
+      "gloss": "so high and sharp it hurts your ears",
+      "zipf": 3.57,
+      "register": "neutral",
+      "senses_at_pos": null,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "piercing"
+      },
+      "discriminator": "high, sharp, painful"
+    },
+    {
+      "w": "booming",
+      "synset": "booming.s.02",
+      "gloss_source": "authored",
+      "gloss": "deep and hugely loud, like thunder",
+      "zipf": 3.43,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "booming"
+      },
+      "discriminator": "deep and huge"
+    },
+    {
+      "w": "squeaky",
+      "synset": "screaky.s.02",
+      "gloss_source": "authored",
+      "gloss": "high and thin, like a mouse or a rusty door",
+      "zipf": 3.07,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "squeaky"
+      },
+      "discriminator": "thin little high notes"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-sound-01-s01",
+      "answer": "faint",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "With nothing covering it, the ___ buzz was barely audible.",
+      "cue_phrase": "barely audible",
+      "surface": {
+        "faint": "faint",
+        "muffled": "muffled",
+        "piercing": "piercing",
+        "booming": "booming",
+        "squeaky": "squeaky"
+      }
+    },
+    {
+      "id": "A-sound-01-s02",
+      "answer": "faint",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The uncovered ___ tapping was almost no sound, even in the empty hall.",
+      "cue_phrase": "almost no sound",
+      "surface": {
+        "faint": "faint",
+        "muffled": "muffled",
+        "piercing": "piercing",
+        "booming": "booming",
+        "squeaky": "squeaky"
+      }
+    },
+    {
+      "id": "A-sound-01-s03",
+      "answer": "faint",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "I leaned close to notice the ___ ticking from the open clock.",
+      "cue_phrase": "leaned close to notice",
+      "surface": {
+        "faint": "faint",
+        "muffled": "muffled",
+        "piercing": "piercing",
+        "booming": "booming",
+        "squeaky": "squeaky"
+      }
+    },
+    {
+      "id": "A-sound-01-s04",
+      "answer": "faint",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The kitten's uncovered ___ purr barely stirred the ribbon.",
+      "cue_phrase": "barely stirred the ribbon",
+      "surface": {
+        "faint": "faint",
+        "muffled": "muffled",
+        "piercing": "piercing",
+        "booming": "booming",
+        "squeaky": "squeaky"
+      }
+    },
+    {
+      "id": "A-sound-01-s05",
+      "answer": "faint",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Nobody noticed the uncovered fan's ___ hum until the classroom became still.",
+      "cue_phrase": "until the classroom became still",
+      "surface": {
+        "faint": "faint",
+        "muffled": "muffled",
+        "piercing": "piercing",
+        "booming": "booming",
+        "squeaky": "squeaky"
+      }
+    },
+    {
+      "id": "A-sound-01-s06",
+      "answer": "faint",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The uncovered ___ rustle vanished under one small cough.",
+      "cue_phrase": "vanished under one small cough",
+      "surface": {
+        "faint": "faint",
+        "muffled": "muffled",
+        "piercing": "piercing",
+        "booming": "booming",
+        "squeaky": "squeaky"
+      }
+    },
+    {
+      "id": "A-sound-01-s07",
+      "answer": "faint",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The uncovered ___ tone barely registered on the sound meter.",
+      "cue_phrase": "barely registered",
+      "surface": {
+        "faint": "faint",
+        "muffled": "muffled",
+        "piercing": "piercing",
+        "booming": "booming",
+        "squeaky": "squeaky"
+      }
+    },
+    {
+      "id": "A-sound-01-s08",
+      "answer": "faint",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Across the meadow, the open bell sent a ___ speck of sound.",
+      "cue_phrase": "speck of sound",
+      "surface": {
+        "faint": "faint",
+        "muffled": "muffled",
+        "piercing": "piercing",
+        "booming": "booming",
+        "squeaky": "squeaky"
+      }
+    },
+    {
+      "id": "A-sound-01-s09",
+      "answer": "muffled",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Under the pillow, the ___ alarm sounded wrapped and dull.",
+      "cue_phrase": "Under the pillow",
+      "surface": {
+        "faint": "faint",
+        "muffled": "muffled",
+        "piercing": "piercing",
+        "booming": "booming",
+        "squeaky": "squeaky"
+      }
+    },
+    {
+      "id": "A-sound-01-s10",
+      "answer": "muffled",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Through her thick scarf, the ___ giggle came out woolly.",
+      "cue_phrase": "through her thick scarf",
+      "surface": {
+        "faint": "faint",
+        "muffled": "muffled",
+        "piercing": "piercing",
+        "booming": "booming",
+        "squeaky": "squeaky"
+      }
+    },
+    {
+      "id": "A-sound-01-s11",
+      "answer": "muffled",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ music behind the closed cupboard lost its words.",
+      "cue_phrase": "closed cupboard lost",
+      "surface": {
+        "faint": "faint",
+        "muffled": "muffled",
+        "piercing": "piercing",
+        "booming": "booming",
+        "squeaky": "squeaky"
+      }
+    },
+    {
+      "id": "A-sound-01-s12",
+      "answer": "muffled",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Dad's ___ call through the duvet sounded blurred, not far away.",
+      "cue_phrase": "through the duvet",
+      "surface": {
+        "faint": "faint",
+        "muffled": "muffled",
+        "piercing": "piercing",
+        "booming": "booming",
+        "squeaky": "squeaky"
+      }
+    },
+    {
+      "id": "A-sound-01-s13",
+      "answer": "muffled",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "We knew the ___ bark was trapped behind thick sofa cushions.",
+      "cue_phrase": "trapped behind thick",
+      "surface": {
+        "faint": "faint",
+        "muffled": "muffled",
+        "piercing": "piercing",
+        "booming": "booming",
+        "squeaky": "squeaky"
+      }
+    },
+    {
+      "id": "A-sound-01-s14",
+      "answer": "muffled",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The ___ footsteps under the carpet sounded padded, not tiny.",
+      "cue_phrase": "under the carpet",
+      "surface": {
+        "faint": "faint",
+        "muffled": "muffled",
+        "piercing": "piercing",
+        "booming": "booming",
+        "squeaky": "squeaky"
+      }
+    },
+    {
+      "id": "A-sound-01-s15",
+      "answer": "muffled",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "A ___ sneeze from inside the mask came out fuzzy.",
+      "cue_phrase": "inside the mask",
+      "surface": {
+        "faint": "faint",
+        "muffled": "muffled",
+        "piercing": "piercing",
+        "booming": "booming",
+        "squeaky": "squeaky"
+      }
+    },
+    {
+      "id": "A-sound-01-s16",
+      "answer": "muffled",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The ___ bell under the hat sounded thick and shut in.",
+      "cue_phrase": "under the hat",
+      "surface": {
+        "faint": "faint",
+        "muffled": "muffled",
+        "piercing": "piercing",
+        "booming": "booming",
+        "squeaky": "squeaky"
+      }
+    },
+    {
+      "id": "A-sound-01-s17",
+      "answer": "piercing",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ whistle felt needle-bright and made everyone wince.",
+      "cue_phrase": "made everyone wince",
+      "surface": {
+        "faint": "faint",
+        "muffled": "muffled",
+        "piercing": "piercing",
+        "booming": "booming",
+        "squeaky": "squeaky"
+      }
+    },
+    {
+      "id": "A-sound-01-s18",
+      "answer": "piercing",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "A ___ shriek sliced the air, and the class covered their heads.",
+      "cue_phrase": "sliced the air",
+      "surface": {
+        "faint": "faint",
+        "muffled": "muffled",
+        "piercing": "piercing",
+        "booming": "booming",
+        "squeaky": "squeaky"
+      }
+    },
+    {
+      "id": "A-sound-01-s19",
+      "answer": "piercing",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ alarm sent a painful tingle through my teeth.",
+      "cue_phrase": "painful tingle through my teeth",
+      "surface": {
+        "faint": "faint",
+        "muffled": "muffled",
+        "piercing": "piercing",
+        "booming": "booming",
+        "squeaky": "squeaky"
+      }
+    },
+    {
+      "id": "A-sound-01-s20",
+      "answer": "piercing",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "At the pool, the ___ referee whistle made toddlers cry.",
+      "cue_phrase": "made toddlers cry",
+      "surface": {
+        "faint": "faint",
+        "muffled": "muffled",
+        "piercing": "piercing",
+        "booming": "booming",
+        "squeaky": "squeaky"
+      }
+    },
+    {
+      "id": "A-sound-01-s21",
+      "answer": "piercing",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Rina dropped the microphone after its ___ squeal stabbed the room.",
+      "cue_phrase": "stabbed the room",
+      "surface": {
+        "faint": "faint",
+        "muffled": "muffled",
+        "piercing": "piercing",
+        "booming": "booming",
+        "squeaky": "squeaky"
+      }
+    },
+    {
+      "id": "A-sound-01-s22",
+      "answer": "piercing",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The ___ note from the violin made everyone flinch at once.",
+      "cue_phrase": "made everyone flinch",
+      "surface": {
+        "faint": "faint",
+        "muffled": "muffled",
+        "piercing": "piercing",
+        "booming": "booming",
+        "squeaky": "squeaky"
+      }
+    },
+    {
+      "id": "A-sound-01-s23",
+      "answer": "piercing",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "A ___ cry from the kettle drilled through the kitchen.",
+      "cue_phrase": "drilled through the kitchen",
+      "surface": {
+        "faint": "faint",
+        "muffled": "muffled",
+        "piercing": "piercing",
+        "booming": "booming",
+        "squeaky": "squeaky"
+      }
+    },
+    {
+      "id": "A-sound-01-s24",
+      "answer": "piercing",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The ___ tone was so biting that we ended the test.",
+      "cue_phrase": "so biting",
+      "surface": {
+        "faint": "faint",
+        "muffled": "muffled",
+        "piercing": "piercing",
+        "booming": "booming",
+        "squeaky": "squeaky"
+      }
+    },
+    {
+      "id": "A-sound-01-s25",
+      "answer": "booming",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ drumbeat was low and shook the gym floor.",
+      "cue_phrase": "low and shook",
+      "surface": {
+        "faint": "faint",
+        "muffled": "muffled",
+        "piercing": "piercing",
+        "booming": "booming",
+        "squeaky": "squeaky"
+      }
+    },
+    {
+      "id": "A-sound-01-s26",
+      "answer": "booming",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "A ___ voice rolled across the hall and rattled windows.",
+      "cue_phrase": "rattled windows",
+      "surface": {
+        "faint": "faint",
+        "muffled": "muffled",
+        "piercing": "piercing",
+        "booming": "booming",
+        "squeaky": "squeaky"
+      }
+    },
+    {
+      "id": "A-sound-01-s27",
+      "answer": "booming",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ gong made the stage boards tremble under our shoes.",
+      "cue_phrase": "stage boards tremble",
+      "surface": {
+        "faint": "faint",
+        "muffled": "muffled",
+        "piercing": "piercing",
+        "booming": "booming",
+        "squeaky": "squeaky"
+      }
+    },
+    {
+      "id": "A-sound-01-s28",
+      "answer": "booming",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ bass from uncovered parade drums thudded in my chest.",
+      "cue_phrase": "thudded in my chest",
+      "surface": {
+        "faint": "faint",
+        "muffled": "muffled",
+        "piercing": "piercing",
+        "booming": "booming",
+        "squeaky": "squeaky"
+      }
+    },
+    {
+      "id": "A-sound-01-s29",
+      "answer": "booming",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Even outside, the ___ organ notes made the stone steps vibrate.",
+      "cue_phrase": "stone steps vibrate",
+      "surface": {
+        "faint": "faint",
+        "muffled": "muffled",
+        "piercing": "piercing",
+        "booming": "booming",
+        "squeaky": "squeaky"
+      }
+    },
+    {
+      "id": "A-sound-01-s30",
+      "answer": "booming",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The giant's ___ laugh bounced off every cave wall.",
+      "cue_phrase": "bounced off every cave wall",
+      "surface": {
+        "faint": "faint",
+        "muffled": "muffled",
+        "piercing": "piercing",
+        "booming": "booming",
+        "squeaky": "squeaky"
+      }
+    },
+    {
+      "id": "A-sound-01-s31",
+      "answer": "booming",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The ___ engine roar was big, low, and felt in our ribs.",
+      "cue_phrase": "big, low",
+      "surface": {
+        "faint": "faint",
+        "muffled": "muffled",
+        "piercing": "piercing",
+        "booming": "booming",
+        "squeaky": "squeaky"
+      }
+    },
+    {
+      "id": "A-sound-01-s32",
+      "answer": "booming",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "A ___ bell note rolled low over the whole harbour.",
+      "cue_phrase": "rolled low",
+      "surface": {
+        "faint": "faint",
+        "muffled": "muffled",
+        "piercing": "piercing",
+        "booming": "booming",
+        "squeaky": "squeaky"
+      }
+    },
+    {
+      "id": "A-sound-01-s33",
+      "answer": "squeaky",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ toy voice was small, peepy, and silly.",
+      "cue_phrase": "small, peepy",
+      "surface": {
+        "faint": "faint",
+        "muffled": "muffled",
+        "piercing": "piercing",
+        "booming": "booming",
+        "squeaky": "squeaky"
+      }
+    },
+    {
+      "id": "A-sound-01-s34",
+      "answer": "squeaky",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "A ___ hinge gave tiny eek-eek notes when pushed.",
+      "cue_phrase": "tiny eek-eek notes",
+      "surface": {
+        "faint": "faint",
+        "muffled": "muffled",
+        "piercing": "piercing",
+        "booming": "booming",
+        "squeaky": "squeaky"
+      }
+    },
+    {
+      "id": "A-sound-01-s35",
+      "answer": "squeaky",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "My ___ trainers chirped on the shiny gym floor.",
+      "cue_phrase": "trainers chirped",
+      "surface": {
+        "faint": "faint",
+        "muffled": "muffled",
+        "piercing": "piercing",
+        "booming": "booming",
+        "squeaky": "squeaky"
+      }
+    },
+    {
+      "id": "A-sound-01-s36",
+      "answer": "squeaky",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ cart wheel went ee-ee-ee down the aisle.",
+      "cue_phrase": "went ee-ee-ee",
+      "surface": {
+        "faint": "faint",
+        "muffled": "muffled",
+        "piercing": "piercing",
+        "booming": "booming",
+        "squeaky": "squeaky"
+      }
+    },
+    {
+      "id": "A-sound-01-s37",
+      "answer": "squeaky",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Everyone laughed at the ___ chair because it sounded tiny and funny.",
+      "cue_phrase": "tiny and funny",
+      "surface": {
+        "faint": "faint",
+        "muffled": "muffled",
+        "piercing": "piercing",
+        "booming": "booming",
+        "squeaky": "squeaky"
+      }
+    },
+    {
+      "id": "A-sound-01-s38",
+      "answer": "squeaky",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The puppet's ___ hello came out in little chirps.",
+      "cue_phrase": "little chirps",
+      "surface": {
+        "faint": "faint",
+        "muffled": "muffled",
+        "piercing": "piercing",
+        "booming": "booming",
+        "squeaky": "squeaky"
+      }
+    },
+    {
+      "id": "A-sound-01-s39",
+      "answer": "squeaky",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "A ___ wheelbarrow creaked in tiny repeated notes.",
+      "cue_phrase": "tiny repeated notes",
+      "surface": {
+        "faint": "faint",
+        "muffled": "muffled",
+        "piercing": "piercing",
+        "booming": "booming",
+        "squeaky": "squeaky"
+      }
+    },
+    {
+      "id": "A-sound-01-s40",
+      "answer": "squeaky",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The ___ balloon rubbed against my jumper with a funny ee sound.",
+      "cue_phrase": "funny ee sound",
+      "surface": {
+        "faint": "faint",
+        "muffled": "muffled",
+        "piercing": "piercing",
+        "booming": "booming",
+        "squeaky": "squeaky"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "faint",
+      "picked": "muffled",
+      "line": "Faint is almost no volume. Muffled means something is covering or blocking the sound."
+    },
+    {
+      "answer": "faint",
+      "picked": "piercing",
+      "line": "Faint is barely there. Piercing is strong, high, and painful."
+    },
+    {
+      "answer": "faint",
+      "picked": "booming",
+      "line": "Faint is tiny in volume. Booming is big, low, and room-shaking."
+    },
+    {
+      "answer": "faint",
+      "picked": "squeaky",
+      "line": "Faint is almost no volume. Squeaky is small and peepy, not necessarily weak."
+    },
+    {
+      "answer": "muffled",
+      "picked": "faint",
+      "line": "Muffled is covered or blocked. Faint is simply very weak."
+    },
+    {
+      "answer": "muffled",
+      "picked": "piercing",
+      "line": "Muffled sounds wrapped up. Piercing sounds biting and painful."
+    },
+    {
+      "answer": "muffled",
+      "picked": "booming",
+      "line": "Muffled is dulled by a cover. Booming is big, low, and shaking."
+    },
+    {
+      "answer": "muffled",
+      "picked": "squeaky",
+      "line": "Muffled is blocked and dull. Squeaky is tiny, peepy, and chirpy."
+    },
+    {
+      "answer": "piercing",
+      "picked": "faint",
+      "line": "Piercing is biting and painful. Faint is barely there."
+    },
+    {
+      "answer": "piercing",
+      "picked": "muffled",
+      "line": "Piercing cuts through. Muffled is dulled by something in the way."
+    },
+    {
+      "answer": "piercing",
+      "picked": "booming",
+      "line": "Piercing is high and painful. Booming is low, huge, and shaking."
+    },
+    {
+      "answer": "piercing",
+      "picked": "squeaky",
+      "line": "Piercing feels painfully sharp. Squeaky is small, peepy, and often funny."
+    },
+    {
+      "answer": "booming",
+      "picked": "faint",
+      "line": "Booming is big, low, and shaking. Faint is almost no volume."
+    },
+    {
+      "answer": "booming",
+      "picked": "muffled",
+      "line": "Booming rolls out strongly. Muffled is dulled by a cover or block."
+    },
+    {
+      "answer": "booming",
+      "picked": "piercing",
+      "line": "Booming is low and huge. Piercing is high, biting, and painful."
+    },
+    {
+      "answer": "booming",
+      "picked": "squeaky",
+      "line": "Booming is big and low. Squeaky is small, peepy, and light."
+    },
+    {
+      "answer": "squeaky",
+      "picked": "faint",
+      "line": "Squeaky is small and peepy. Faint is simply very weak."
+    },
+    {
+      "answer": "squeaky",
+      "picked": "muffled",
+      "line": "Squeaky is chirpy and tiny. Muffled is covered, blocked, and dull."
+    },
+    {
+      "answer": "squeaky",
+      "picked": "piercing",
+      "line": "Squeaky is small and peepy. Piercing is painfully sharp."
+    },
+    {
+      "answer": "squeaky",
+      "picked": "booming",
+      "line": "Squeaky is tiny and chirpy. Booming is big, low, and shaking."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-05T11:26:57+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": null,
+    "scrub_note": null
+  }
+}

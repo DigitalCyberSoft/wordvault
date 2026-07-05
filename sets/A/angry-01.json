@@ -1,0 +1,791 @@
+{
+  "id": "A-angry-01",
+  "bank": "A",
+  "pos": "adjective",
+  "theme": "kinds of angry",
+  "band": 2,
+  "band_override": 2,
+  "computed": null,
+  "words": [
+    {
+      "w": "annoyed",
+      "synset": "annoyed.s.01",
+      "gloss_source": "authored",
+      "gloss": "mildly angry at something that keeps bothering you",
+      "zipf": 3.95,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "annoyed"
+      },
+      "discriminator": "mildly bothered"
+    },
+    {
+      "w": "furious",
+      "synset": "angered.s.01",
+      "gloss_source": "wordnet",
+      "gloss": "marked by extreme anger",
+      "zipf": 3.98,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "furious"
+      },
+      "discriminator": "the strongest anger"
+    },
+    {
+      "w": "grumpy",
+      "synset": "crabbed.s.01",
+      "gloss_source": "authored",
+      "gloss": "in a cross, complaining mood",
+      "zipf": 3.47,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "grumpy"
+      },
+      "discriminator": "a scowling mood, not aimed at anything"
+    },
+    {
+      "w": "outraged",
+      "synset": "indignant.s.01",
+      "gloss_source": "wordnet",
+      "gloss": "angered at something unjust or wrong",
+      "zipf": 3.57,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "outraged"
+      },
+      "discriminator": "angry because something is unfair or wrong"
+    },
+    {
+      "w": "resentful",
+      "synset": "resentful.a.01",
+      "gloss_source": "authored",
+      "gloss": "quietly angry about something unfair that still stings",
+      "zipf": 2.97,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "resentful"
+      },
+      "discriminator": "holds the grudge in, over time"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-angry-01-s01",
+      "answer": "annoyed",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Max felt a bit ___ when the tap dripped through the film.",
+      "cue_phrase": "tap dripped through",
+      "surface": {
+        "annoyed": "annoyed",
+        "furious": "furious",
+        "grumpy": "grumpy",
+        "outraged": "outraged",
+        "resentful": "resentful"
+      }
+    },
+    {
+      "id": "A-angry-01-s02",
+      "answer": "annoyed",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The tiny buzzing near her ear made Priya a little ___.",
+      "cue_phrase": "tiny buzzing near her ear",
+      "surface": {
+        "annoyed": "annoyed",
+        "furious": "furious",
+        "grumpy": "grumpy",
+        "outraged": "outraged",
+        "resentful": "resentful"
+      }
+    },
+    {
+      "id": "A-angry-01-s03",
+      "answer": "annoyed",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "After Ben heard the same joke five times, he was ___.",
+      "cue_phrase": "same joke five times",
+      "surface": {
+        "annoyed": "annoyed",
+        "furious": "furious",
+        "grumpy": "grumpy",
+        "outraged": "outraged",
+        "resentful": "resentful"
+      }
+    },
+    {
+      "id": "A-angry-01-s04",
+      "answer": "annoyed",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Mina became ___ as crumbs scratched inside her woolly jumper.",
+      "cue_phrase": "crumbs scratched inside",
+      "surface": {
+        "annoyed": "annoyed",
+        "furious": "furious",
+        "grumpy": "grumpy",
+        "outraged": "outraged",
+        "resentful": "resentful"
+      }
+    },
+    {
+      "id": "A-angry-01-s05",
+      "answer": "annoyed",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Ollie sighed after each squeak, so the loose door had him ___.",
+      "cue_phrase": "sighed after each squeak",
+      "surface": {
+        "annoyed": "annoyed",
+        "furious": "furious",
+        "grumpy": "grumpy",
+        "outraged": "outraged",
+        "resentful": "resentful"
+      }
+    },
+    {
+      "id": "A-angry-01-s06",
+      "answer": "annoyed",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Her smile faded during the hiccup song, but she only felt ___.",
+      "cue_phrase": "only felt",
+      "surface": {
+        "annoyed": "annoyed",
+        "furious": "furious",
+        "grumpy": "grumpy",
+        "outraged": "outraged",
+        "resentful": "resentful"
+      }
+    },
+    {
+      "id": "A-angry-01-s07",
+      "answer": "annoyed",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "By the tenth nudge, the queue behind Sam made him ___.",
+      "cue_phrase": "tenth nudge",
+      "surface": {
+        "annoyed": "annoyed",
+        "furious": "furious",
+        "grumpy": "grumpy",
+        "outraged": "outraged",
+        "resentful": "resentful"
+      }
+    },
+    {
+      "id": "A-angry-01-s08",
+      "answer": "annoyed",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Lena was a bit ___ with the fly circling her lunch.",
+      "cue_phrase": "fly circling her lunch",
+      "surface": {
+        "annoyed": "annoyed",
+        "furious": "furious",
+        "grumpy": "grumpy",
+        "outraged": "outraged",
+        "resentful": "resentful"
+      }
+    },
+    {
+      "id": "A-angry-01-s09",
+      "answer": "furious",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Kai was ___, shaking with rage after the wind smashed his kite.",
+      "cue_phrase": "shaking with rage",
+      "surface": {
+        "annoyed": "annoyed",
+        "furious": "furious",
+        "grumpy": "grumpy",
+        "outraged": "outraged",
+        "resentful": "resentful"
+      }
+    },
+    {
+      "id": "A-angry-01-s10",
+      "answer": "furious",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The giant felt ___ enough to roar and stamp both feet.",
+      "cue_phrase": "roar and stamp",
+      "surface": {
+        "annoyed": "annoyed",
+        "furious": "furious",
+        "grumpy": "grumpy",
+        "outraged": "outraged",
+        "resentful": "resentful"
+      }
+    },
+    {
+      "id": "A-angry-01-s11",
+      "answer": "furious",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "When lava ruined her cave, the dragon became ___ and breathed sparks.",
+      "cue_phrase": "breathed sparks",
+      "surface": {
+        "annoyed": "annoyed",
+        "furious": "furious",
+        "grumpy": "grumpy",
+        "outraged": "outraged",
+        "resentful": "resentful"
+      }
+    },
+    {
+      "id": "A-angry-01-s12",
+      "answer": "furious",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Ravi was ___ after his model fell, yelling until his throat hurt.",
+      "cue_phrase": "yelling until his throat hurt",
+      "surface": {
+        "annoyed": "annoyed",
+        "furious": "furious",
+        "grumpy": "grumpy",
+        "outraged": "outraged",
+        "resentful": "resentful"
+      }
+    },
+    {
+      "id": "A-angry-01-s13",
+      "answer": "furious",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Nobody dared speak, because Nora looked ___, red-faced and thunderous.",
+      "cue_phrase": "red-faced and thunderous",
+      "surface": {
+        "annoyed": "annoyed",
+        "furious": "furious",
+        "grumpy": "grumpy",
+        "outraged": "outraged",
+        "resentful": "resentful"
+      }
+    },
+    {
+      "id": "A-angry-01-s14",
+      "answer": "furious",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The troll smashed three rocks, which showed he was ___.",
+      "cue_phrase": "smashed three rocks",
+      "surface": {
+        "annoyed": "annoyed",
+        "furious": "furious",
+        "grumpy": "grumpy",
+        "outraged": "outraged",
+        "resentful": "resentful"
+      }
+    },
+    {
+      "id": "A-angry-01-s15",
+      "answer": "furious",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Amira was ___, with a rage so hot she could hardly talk.",
+      "cue_phrase": "rage so hot",
+      "surface": {
+        "annoyed": "annoyed",
+        "furious": "furious",
+        "grumpy": "grumpy",
+        "outraged": "outraged",
+        "resentful": "resentful"
+      }
+    },
+    {
+      "id": "A-angry-01-s16",
+      "answer": "furious",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The storm made the sea ___, crashing high over the wall.",
+      "cue_phrase": "crashing high over",
+      "surface": {
+        "annoyed": "annoyed",
+        "furious": "furious",
+        "grumpy": "grumpy",
+        "outraged": "outraged",
+        "resentful": "resentful"
+      }
+    },
+    {
+      "id": "A-angry-01-s17",
+      "answer": "grumpy",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Grandad felt ___ and grumbled about socks, soup, and the weather.",
+      "cue_phrase": "grumbled about socks",
+      "surface": {
+        "annoyed": "annoyed",
+        "furious": "furious",
+        "grumpy": "grumpy",
+        "outraged": "outraged",
+        "resentful": "resentful"
+      }
+    },
+    {
+      "id": "A-angry-01-s18",
+      "answer": "grumpy",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Tara woke up ___, scowling at breakfast for no reason.",
+      "cue_phrase": "scowling at breakfast",
+      "surface": {
+        "annoyed": "annoyed",
+        "furious": "furious",
+        "grumpy": "grumpy",
+        "outraged": "outraged",
+        "resentful": "resentful"
+      }
+    },
+    {
+      "id": "A-angry-01-s19",
+      "answer": "grumpy",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "On cold mornings, the bus driver can seem ___ before tea.",
+      "cue_phrase": "before tea",
+      "surface": {
+        "annoyed": "annoyed",
+        "furious": "furious",
+        "grumpy": "grumpy",
+        "outraged": "outraged",
+        "resentful": "resentful"
+      }
+    },
+    {
+      "id": "A-angry-01-s20",
+      "answer": "grumpy",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The sleepy badger was ___, muttering at every twig and cloud.",
+      "cue_phrase": "muttering at every twig",
+      "surface": {
+        "annoyed": "annoyed",
+        "furious": "furious",
+        "grumpy": "grumpy",
+        "outraged": "outraged",
+        "resentful": "resentful"
+      }
+    },
+    {
+      "id": "A-angry-01-s21",
+      "answer": "grumpy",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Ella seemed ___, answering with huffs though nobody had done anything.",
+      "cue_phrase": "nobody had done anything",
+      "surface": {
+        "annoyed": "annoyed",
+        "furious": "furious",
+        "grumpy": "grumpy",
+        "outraged": "outraged",
+        "resentful": "resentful"
+      }
+    },
+    {
+      "id": "A-angry-01-s22",
+      "answer": "grumpy",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Dad looked ___ at sunrise, so we waited before asking questions.",
+      "cue_phrase": "waited before asking",
+      "surface": {
+        "annoyed": "annoyed",
+        "furious": "furious",
+        "grumpy": "grumpy",
+        "outraged": "outraged",
+        "resentful": "resentful"
+      }
+    },
+    {
+      "id": "A-angry-01-s23",
+      "answer": "grumpy",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The gnome got ___ whenever his nap ended too early.",
+      "cue_phrase": "nap ended too early",
+      "surface": {
+        "annoyed": "annoyed",
+        "furious": "furious",
+        "grumpy": "grumpy",
+        "outraged": "outraged",
+        "resentful": "resentful"
+      }
+    },
+    {
+      "id": "A-angry-01-s24",
+      "answer": "grumpy",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "Mum sounded ___, saying 'hmm' to cake, games, and sunshine.",
+      "cue_phrase": "cake, games, and sunshine",
+      "surface": {
+        "annoyed": "annoyed",
+        "furious": "furious",
+        "grumpy": "grumpy",
+        "outraged": "outraged",
+        "resentful": "resentful"
+      }
+    },
+    {
+      "id": "A-angry-01-s25",
+      "answer": "outraged",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The class felt ___ when the prize went to a cheat.",
+      "cue_phrase": "prize went to a cheat",
+      "surface": {
+        "annoyed": "annoyed",
+        "furious": "furious",
+        "grumpy": "grumpy",
+        "outraged": "outraged",
+        "resentful": "resentful"
+      }
+    },
+    {
+      "id": "A-angry-01-s26",
+      "answer": "outraged",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Maya was ___ that the tiny puppy had been kicked.",
+      "cue_phrase": "puppy had been kicked",
+      "surface": {
+        "annoyed": "annoyed",
+        "furious": "furious",
+        "grumpy": "grumpy",
+        "outraged": "outraged",
+        "resentful": "resentful"
+      }
+    },
+    {
+      "id": "A-angry-01-s27",
+      "answer": "outraged",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The villagers were ___ after the king jailed people for singing.",
+      "cue_phrase": "jailed people for singing",
+      "surface": {
+        "annoyed": "annoyed",
+        "furious": "furious",
+        "grumpy": "grumpy",
+        "outraged": "outraged",
+        "resentful": "resentful"
+      }
+    },
+    {
+      "id": "A-angry-01-s28",
+      "answer": "outraged",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Sam felt ___ when the referee ignored clear cheating.",
+      "cue_phrase": "referee ignored clear cheating",
+      "surface": {
+        "annoyed": "annoyed",
+        "furious": "furious",
+        "grumpy": "grumpy",
+        "outraged": "outraged",
+        "resentful": "resentful"
+      }
+    },
+    {
+      "id": "A-angry-01-s29",
+      "answer": "outraged",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Everyone gasped, then demanded a fair vote, feeling ___.",
+      "cue_phrase": "demanded a fair vote",
+      "surface": {
+        "annoyed": "annoyed",
+        "furious": "furious",
+        "grumpy": "grumpy",
+        "outraged": "outraged",
+        "resentful": "resentful"
+      }
+    },
+    {
+      "id": "A-angry-01-s30",
+      "answer": "outraged",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The team was ___ and wrote a protest over rich players' special rule.",
+      "cue_phrase": "wrote a protest",
+      "surface": {
+        "annoyed": "annoyed",
+        "furious": "furious",
+        "grumpy": "grumpy",
+        "outraged": "outraged",
+        "resentful": "resentful"
+      }
+    },
+    {
+      "id": "A-angry-01-s31",
+      "answer": "outraged",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Lila felt ___ when only boys could enter the science club.",
+      "cue_phrase": "only boys could enter",
+      "surface": {
+        "annoyed": "annoyed",
+        "furious": "furious",
+        "grumpy": "grumpy",
+        "outraged": "outraged",
+        "resentful": "resentful"
+      }
+    },
+    {
+      "id": "A-angry-01-s32",
+      "answer": "outraged",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The crowd grew ___ as guards took blankets from travellers.",
+      "cue_phrase": "took blankets from travellers",
+      "surface": {
+        "annoyed": "annoyed",
+        "furious": "furious",
+        "grumpy": "grumpy",
+        "outraged": "outraged",
+        "resentful": "resentful"
+      }
+    },
+    {
+      "id": "A-angry-01-s33",
+      "answer": "resentful",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Weeks later, Zed felt ___ about cleaning while others played.",
+      "cue_phrase": "Weeks later",
+      "surface": {
+        "annoyed": "annoyed",
+        "furious": "furious",
+        "grumpy": "grumpy",
+        "outraged": "outraged",
+        "resentful": "resentful"
+      }
+    },
+    {
+      "id": "A-angry-01-s34",
+      "answer": "resentful",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Mina stayed ___ after always getting the smallest slice.",
+      "cue_phrase": "always getting the smallest",
+      "surface": {
+        "annoyed": "annoyed",
+        "furious": "furious",
+        "grumpy": "grumpy",
+        "outraged": "outraged",
+        "resentful": "resentful"
+      }
+    },
+    {
+      "id": "A-angry-01-s35",
+      "answer": "resentful",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Ali smiled, but felt ___ about being blamed again.",
+      "cue_phrase": "smiled, but felt",
+      "surface": {
+        "annoyed": "annoyed",
+        "furious": "furious",
+        "grumpy": "grumpy",
+        "outraged": "outraged",
+        "resentful": "resentful"
+      }
+    },
+    {
+      "id": "A-angry-01-s36",
+      "answer": "resentful",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "For days, Kira was ___ after her idea was stolen.",
+      "cue_phrase": "For days",
+      "surface": {
+        "annoyed": "annoyed",
+        "furious": "furious",
+        "grumpy": "grumpy",
+        "outraged": "outraged",
+        "resentful": "resentful"
+      }
+    },
+    {
+      "id": "A-angry-01-s37",
+      "answer": "resentful",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Tom felt ___ all week, remembering the lost turn and giving short answers.",
+      "cue_phrase": "all week",
+      "surface": {
+        "annoyed": "annoyed",
+        "furious": "furious",
+        "grumpy": "grumpy",
+        "outraged": "outraged",
+        "resentful": "resentful"
+      }
+    },
+    {
+      "id": "A-angry-01-s38",
+      "answer": "resentful",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Although Nia said 'fine', she felt ___ and saved the slight.",
+      "cue_phrase": "saved the slight",
+      "surface": {
+        "annoyed": "annoyed",
+        "furious": "furious",
+        "grumpy": "grumpy",
+        "outraged": "outraged",
+        "resentful": "resentful"
+      }
+    },
+    {
+      "id": "A-angry-01-s39",
+      "answer": "resentful",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Months on, Leo felt ___ about losing his place to a cousin.",
+      "cue_phrase": "Months on",
+      "surface": {
+        "annoyed": "annoyed",
+        "furious": "furious",
+        "grumpy": "grumpy",
+        "outraged": "outraged",
+        "resentful": "resentful"
+      }
+    },
+    {
+      "id": "A-angry-01-s40",
+      "answer": "resentful",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Sasha stayed ___ for days after doing extra chores with no thanks.",
+      "cue_phrase": "stayed ___ for days",
+      "surface": {
+        "annoyed": "annoyed",
+        "furious": "furious",
+        "grumpy": "grumpy",
+        "outraged": "outraged",
+        "resentful": "resentful"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "annoyed",
+      "picked": "furious",
+      "line": "Annoyed is a small irritation at a pest; furious is far stronger and explosive."
+    },
+    {
+      "answer": "annoyed",
+      "picked": "grumpy",
+      "line": "Annoyed points to a little pest; grumpy is a whole scowly state."
+    },
+    {
+      "answer": "annoyed",
+      "picked": "outraged",
+      "line": "Annoyed is about a small pest; outraged is about seeing unfairness or cruelty."
+    },
+    {
+      "answer": "annoyed",
+      "picked": "resentful",
+      "line": "Annoyed fades after a pest stops; resentful holds a hurt feeling over time."
+    },
+    {
+      "answer": "furious",
+      "picked": "annoyed",
+      "line": "Furious is huge and stormy; annoyed is only a small irritation."
+    },
+    {
+      "answer": "furious",
+      "picked": "grumpy",
+      "line": "Furious is intense and explosive; grumpy is just a sour scowly state."
+    },
+    {
+      "answer": "furious",
+      "picked": "outraged",
+      "line": "Furious tells how strong the feeling is; outraged tells it comes from unfairness."
+    },
+    {
+      "answer": "furious",
+      "picked": "resentful",
+      "line": "Furious bursts out hot and strong; resentful stays inside for a long time."
+    },
+    {
+      "answer": "grumpy",
+      "picked": "annoyed",
+      "line": "Grumpy is a general scowly state; annoyed has a small target causing irritation."
+    },
+    {
+      "answer": "grumpy",
+      "picked": "furious",
+      "line": "Grumpy is low and crabby; furious is much stronger and louder."
+    },
+    {
+      "answer": "grumpy",
+      "picked": "outraged",
+      "line": "Grumpy may have no clear target; outraged needs unfairness or cruelty."
+    },
+    {
+      "answer": "grumpy",
+      "picked": "resentful",
+      "line": "Grumpy is a sour state now; resentful carries a grudge from before."
+    },
+    {
+      "answer": "outraged",
+      "picked": "annoyed",
+      "line": "Outraged is about unfairness or cruelty; annoyed is only a small irritation."
+    },
+    {
+      "answer": "outraged",
+      "picked": "furious",
+      "line": "Outraged focuses on fairness; furious focuses on very strong heat."
+    },
+    {
+      "answer": "outraged",
+      "picked": "grumpy",
+      "line": "Outraged has a reason in unfairness; grumpy can be sour for no clear reason."
+    },
+    {
+      "answer": "outraged",
+      "picked": "resentful",
+      "line": "Outraged speaks up against unfairness; resentful stores the hurt over time."
+    },
+    {
+      "answer": "resentful",
+      "picked": "annoyed",
+      "line": "Resentful holds hurt over time; annoyed is a small irritation in the moment."
+    },
+    {
+      "answer": "resentful",
+      "picked": "furious",
+      "line": "Resentful is held inside over time; furious bursts out with huge force."
+    },
+    {
+      "answer": "resentful",
+      "picked": "grumpy",
+      "line": "Resentful remembers a past slight; grumpy is just a sour state."
+    },
+    {
+      "answer": "resentful",
+      "picked": "outraged",
+      "line": "Resentful nurses a grudge; outraged reacts to unfairness and wants it fixed."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-05T11:18:07+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": null,
+    "scrub_note": null
+  }
+}

@@ -4,7 +4,8 @@ A vocabulary game disguised as safe-cracking, in the same family as
 [Pizza Palace](https://github.com/DigitalCyberSoft/pizzashop). Five confusable
 words are engraved on brass tiles; a paper slip shows a sentence with a hole in
 it; the child taps the one word that truly fits. Every correct word seats a
-tumbler pin - five in a row and the vault swings open. One wrong word springs
+tumbler pin - seat them all and the vault swings open (locks grow from 2 pins
+at band 1 to 5 from band 4). One wrong word springs
 every pin back out: that run is over, and a safe grants three runs before it
 keeps its secret and the game moves on (gently, a level down).
 
@@ -96,7 +97,7 @@ for a pass/fail banner over the shipped content.
 | `#play` | Skip the title menu |
 | `#demo` | Auto-answer correctly on a timer (watch a crack) |
 | `#wrongdemo` | Auto-answer wrongly (watch the three-run exhaustion flow) |
-| `#missdemo` | Miss once on pin 3, then crack on run 2 |
+| `#missdemo` | Miss once on the final pin, then crack on run 2 |
 | `#cabinet` | Open the Curio Cabinet |
 | `#selftest` | Run the content check in-page |
 

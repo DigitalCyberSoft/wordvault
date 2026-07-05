@@ -1,0 +1,1205 @@
+{
+  "set_id": "A-scared-01",
+  "sentences": {
+    "A-scared-01-s01": {
+      "text_sha256": "f667d9790b465d2a6a6aa4c3a3fd67e0a07c1c67c70c0868aa34b0e767431f65",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "nervous",
+            "uneasy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "nervous"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "nervous",
+            "uneasy"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T11:38:56+00:00"
+    },
+    "A-scared-01-s02": {
+      "text_sha256": "5dce22bebc561f2867f355faabf051195f7c30a8ddd6a21bfcaa1caa015a996a",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "nervous",
+            "uneasy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "nervous"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "nervous",
+            "uneasy"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T11:38:56+00:00"
+    },
+    "A-scared-01-s03": {
+      "text_sha256": "51567b8440d802c1ebfe5f5d95f3c4729c27f223cb93e8348ec88256507fde42",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "nervous",
+            "timid",
+            "uneasy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "nervous"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "nervous",
+            "uneasy"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T11:38:56+00:00"
+    },
+    "A-scared-01-s04": {
+      "text_sha256": "01b7b0d5931407101f8bd49cabf86ff0c98e73b014debdb2ad8a8eca82d2d2c3",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "nervous",
+            "uneasy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "nervous"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "nervous",
+            "uneasy"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T11:38:56+00:00"
+    },
+    "A-scared-01-s05": {
+      "text_sha256": "f7cf3d094bfee8dd0714277331816caf093716cc48b2baf6b59fd06064bea51f",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "nervous",
+            "uneasy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "nervous"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "nervous",
+            "uneasy"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T11:38:56+00:00"
+    },
+    "A-scared-01-s06": {
+      "text_sha256": "9b5ebd0fb3890bea7337e21f0eeec7d9e5ce6dc5fb2b86282f4c907d46aab037",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "nervous",
+            "terrified",
+            "uneasy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "nervous"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "nervous",
+            "uneasy"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T11:38:56+00:00"
+    },
+    "A-scared-01-s07": {
+      "text_sha256": "3e0f131848171371e7e69debea9dc553af02b0b078f4a25a2c99bdf6e368cef0",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "nervous",
+            "uneasy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "nervous"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "nervous",
+            "uneasy"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T11:38:56+00:00"
+    },
+    "A-scared-01-s08": {
+      "text_sha256": "d6885bd7c2f9b44cc8da85b7a7b2e7d6485b2d12413607ffd64e64473eaf6258",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "nervous",
+            "uneasy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "nervous"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "nervous",
+            "uneasy"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T11:38:56+00:00"
+    },
+    "A-scared-01-s09": {
+      "text_sha256": "25a2d972b96b4027bc995002b568ec08ef9d6d6d95826590dd6f455007bb9399",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "startled"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "startled"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "startled"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T11:38:56+00:00"
+    },
+    "A-scared-01-s10": {
+      "text_sha256": "c2b49bd509728c385e7d3679d16636d557177c40454cfd1f0400ea7317f01247",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "startled"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "startled"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "startled"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T11:38:56+00:00"
+    },
+    "A-scared-01-s11": {
+      "text_sha256": "204bb35885f1579001dd8615061cfc30143030c6156810b571e37a8bc38e17bb",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "startled"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "startled"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "startled"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T11:40:57+00:00"
+    },
+    "A-scared-01-s12": {
+      "text_sha256": "9eae99a251b4630d92684e646d2438c6d5952f6f4019170714b8d2ce09735b93",
+      "verdict": "hard",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "startled"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "startled"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T11:40:57+00:00"
+    },
+    "A-scared-01-s13": {
+      "text_sha256": "d3197c1ee6348a46797a73c229e9afad321a87749611f7e1308d1cf1cc602b51",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "startled"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "startled"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "startled"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T11:40:57+00:00"
+    },
+    "A-scared-01-s14": {
+      "text_sha256": "9802ee1dabfa76ee155728874e2ad662691cfe3c12e0c682d0a69b26d814d3da",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "startled"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "startled"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "startled"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T11:40:57+00:00"
+    },
+    "A-scared-01-s15": {
+      "text_sha256": "2774b56dcbcdc166ad6e2127988c7e7223042bdb392ea0b8ed6cd3c1125953ac",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "nervous",
+            "startled",
+            "terrified",
+            "timid",
+            "uneasy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "startled"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "startled"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T11:40:57+00:00"
+    },
+    "A-scared-01-s16": {
+      "text_sha256": "d81c86a64df0e72a2bc97285a876cd07a1e53373a168dc29c40bed0d881ae913",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "startled"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "startled"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "startled"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T11:40:57+00:00"
+    },
+    "A-scared-01-s17": {
+      "text_sha256": "0eec33bf3ed91c9831c7b442d322570ebf0a8e66ac00029e4529dd1716e7a95c",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "terrified"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "terrified"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "terrified"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T11:40:57+00:00"
+    },
+    "A-scared-01-s18": {
+      "text_sha256": "fcf05ded4560f249ef971f711ad97f0e84e5f78ef3e80f94dfea7d34aa59a241",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "terrified"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "terrified"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "terrified"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T11:40:57+00:00"
+    },
+    "A-scared-01-s19": {
+      "text_sha256": "1935f2037d4f04e97a92f1e60d75a3231e64b445e988927af0b8fe0e0d76b778",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "terrified"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "terrified"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "terrified"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T11:40:57+00:00"
+    },
+    "A-scared-01-s20": {
+      "text_sha256": "3f4a859c3686460095e211bf3a3f7e32e1bdb1720febd81361e7bb9ae3c1d4ab",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "nervous",
+            "terrified"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "terrified"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "terrified"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T11:40:57+00:00"
+    },
+    "A-scared-01-s21": {
+      "text_sha256": "cad98202775d3c035143a0d1e31bb294e0e09285ce35f56413c704afb326cf8e",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "nervous",
+            "startled",
+            "terrified"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "terrified"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "terrified"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T11:43:19+00:00"
+    },
+    "A-scared-01-s22": {
+      "text_sha256": "ead27b9cc593efaccaf7225a923c2dd1df07bfd2daaa1a0d7406bc574f19d377",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "nervous",
+            "terrified"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "terrified"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "terrified"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T11:43:19+00:00"
+    },
+    "A-scared-01-s23": {
+      "text_sha256": "7eafe24154822fb0dc3f5f6a178482137c9a851ccd32fa087048d73f1c51eb3f",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "nervous",
+            "terrified",
+            "uneasy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "terrified"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "terrified"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T11:43:19+00:00"
+    },
+    "A-scared-01-s24": {
+      "text_sha256": "6968e931b25218f01727ef92d494f5423c5b8998dc3faf39cc14a929a2568a22",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "nervous",
+            "terrified"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "terrified"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "terrified"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T11:43:19+00:00"
+    },
+    "A-scared-01-s25": {
+      "text_sha256": "aafc236c46ab598d0081bdc4b8147b42cc99c3f0aac35c31678f0ff5080a8dd9",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "nervous",
+            "timid"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "timid"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "timid"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T11:43:19+00:00"
+    },
+    "A-scared-01-s26": {
+      "text_sha256": "da9954845645ef1fb27149214ba7668eeda8966cbbc57fa427db9bef206c8af7",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "nervous",
+            "terrified",
+            "timid"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "timid"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "nervous",
+            "timid"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T11:43:19+00:00"
+    },
+    "A-scared-01-s27": {
+      "text_sha256": "bb1645a815c146ca1de53286c5b4756d6d7b2807833bfff312f9969f47c8d29a",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "nervous",
+            "timid",
+            "uneasy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "timid"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "timid"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T11:43:19+00:00"
+    },
+    "A-scared-01-s28": {
+      "text_sha256": "94123724c7480c6611962f1a1c351b8aa74732162774772983f9bf6db874d6c3",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "nervous",
+            "terrified",
+            "timid",
+            "uneasy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "timid"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "nervous",
+            "timid"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T11:43:19+00:00"
+    },
+    "A-scared-01-s29": {
+      "text_sha256": "cd513de43a5691e0334b4785823310e9c0706a017c4ea93e8dc7409ed0f368a4",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "nervous",
+            "timid",
+            "uneasy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "timid"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "timid"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T11:43:19+00:00"
+    },
+    "A-scared-01-s30": {
+      "text_sha256": "a5e7ab98f9f172c4a401c1ff498edc3f49c341fe12a43ed8fa4b54329479df8c",
+      "verdict": "hard",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "nervous",
+            "terrified"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "timid"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "timid"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T11:43:19+00:00"
+    },
+    "A-scared-01-s31": {
+      "text_sha256": "6f1ab7ec5fd847829a4231df404119100f67b9226af1567e84b88d6e2a1d34ed",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "nervous",
+            "terrified",
+            "timid",
+            "uneasy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "nervous",
+            "timid"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "nervous",
+            "timid"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T11:44:41+00:00"
+    },
+    "A-scared-01-s32": {
+      "text_sha256": "bed66f3b0264d595110477090b8d9a5fe224422552dc3d246753c3a7723020d3",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "nervous",
+            "terrified",
+            "timid",
+            "uneasy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "nervous",
+            "timid",
+            "uneasy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "nervous",
+            "timid"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T11:44:41+00:00"
+    },
+    "A-scared-01-s33": {
+      "text_sha256": "7cbf0327cec4746fc54f043af0e28dbefae095bee6b9ef010ac3bc6ec3cb9527",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "nervous",
+            "terrified",
+            "uneasy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "nervous",
+            "uneasy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "nervous",
+            "uneasy"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T11:44:41+00:00"
+    },
+    "A-scared-01-s34": {
+      "text_sha256": "2c681a5d0016cc185b2b5c13aac62fe349493916eaedf7075c2310cbe73e6bec",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "nervous",
+            "terrified",
+            "uneasy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "nervous",
+            "uneasy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "nervous",
+            "uneasy"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T11:44:41+00:00"
+    },
+    "A-scared-01-s35": {
+      "text_sha256": "9781a85a3db9e7eb9f684ac83b8255fe7d585f34122db359199aefd41c5ecc01",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "nervous",
+            "terrified",
+            "uneasy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "nervous",
+            "uneasy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "nervous",
+            "uneasy"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T11:44:41+00:00"
+    },
+    "A-scared-01-s36": {
+      "text_sha256": "0d518ce3e2f437ff99431ad66c3bb4edf67022de571a4c4a86229d5bbd572c01",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "nervous",
+            "uneasy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "nervous",
+            "uneasy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "nervous",
+            "uneasy"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T11:44:41+00:00"
+    },
+    "A-scared-01-s37": {
+      "text_sha256": "cd607466f3934a49728abad680a3b8bfbeb3c110f827334fd76d3fb43a8e3fe9",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "nervous",
+            "uneasy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "nervous",
+            "uneasy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "nervous",
+            "uneasy"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T11:44:41+00:00"
+    },
+    "A-scared-01-s38": {
+      "text_sha256": "88a79aacc1699786b1df0f9f33b38f9262d571e8dbe56dca6b112751d7838ce4",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "nervous",
+            "terrified",
+            "uneasy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "nervous",
+            "uneasy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "nervous",
+            "uneasy"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T11:44:41+00:00"
+    },
+    "A-scared-01-s39": {
+      "text_sha256": "24fb73392f407687bedc815965a7d1f72e6b0c423abf1fcd88d32c947e9df4d4",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "nervous",
+            "uneasy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "nervous",
+            "uneasy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "nervous",
+            "uneasy"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T11:44:41+00:00"
+    },
+    "A-scared-01-s40": {
+      "text_sha256": "790bf480924253fb742f1033a0a296b9eb34d51a8e187c2e2276131865a5b652",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "nervous",
+            "terrified",
+            "uneasy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "nervous",
+            "uneasy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "nervous",
+            "uneasy"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T11:44:41+00:00"
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
-  "id": "B-shine-01",
-  "bank": "B",
+  "id": "A-shine-01",
+  "bank": "A",
   "pos": "adjective",
   "theme": "kinds of shine",
   "band": 3,
@@ -94,7 +94,7 @@
   ],
   "sentences": [
     {
-      "id": "B-shine-01-s01",
+      "id": "A-shine-01-s01",
       "answer": "shiny",
       "cue": "explicit",
       "reserve": false,
@@ -109,7 +109,7 @@
       }
     },
     {
-      "id": "B-shine-01-s02",
+      "id": "A-shine-01-s02",
       "answer": "shiny",
       "cue": "explicit",
       "reserve": false,
@@ -124,7 +124,7 @@
       }
     },
     {
-      "id": "B-shine-01-s03",
+      "id": "A-shine-01-s03",
       "answer": "shiny",
       "cue": "contextual",
       "reserve": false,
@@ -139,7 +139,7 @@
       }
     },
     {
-      "id": "B-shine-01-s04",
+      "id": "A-shine-01-s04",
       "answer": "shiny",
       "cue": "contextual",
       "reserve": false,
@@ -162,7 +162,7 @@
       ]
     },
     {
-      "id": "B-shine-01-s05",
+      "id": "A-shine-01-s05",
       "answer": "shiny",
       "cue": "inferential",
       "reserve": false,
@@ -177,7 +177,7 @@
       }
     },
     {
-      "id": "B-shine-01-s06",
+      "id": "A-shine-01-s06",
       "answer": "shiny",
       "cue": "inferential",
       "reserve": false,
@@ -192,7 +192,7 @@
       }
     },
     {
-      "id": "B-shine-01-s07",
+      "id": "A-shine-01-s07",
       "answer": "shiny",
       "cue": "explicit",
       "reserve": true,
@@ -207,7 +207,7 @@
       }
     },
     {
-      "id": "B-shine-01-s08",
+      "id": "A-shine-01-s08",
       "answer": "shiny",
       "cue": "contextual",
       "reserve": true,
@@ -222,7 +222,7 @@
       }
     },
     {
-      "id": "B-shine-01-s09",
+      "id": "A-shine-01-s09",
       "answer": "sparkly",
       "cue": "explicit",
       "reserve": false,
@@ -245,7 +245,7 @@
       ]
     },
     {
-      "id": "B-shine-01-s10",
+      "id": "A-shine-01-s10",
       "answer": "sparkly",
       "cue": "explicit",
       "reserve": false,
@@ -268,7 +268,7 @@
       ]
     },
     {
-      "id": "B-shine-01-s11",
+      "id": "A-shine-01-s11",
       "answer": "sparkly",
       "cue": "contextual",
       "reserve": false,
@@ -291,7 +291,7 @@
       ]
     },
     {
-      "id": "B-shine-01-s12",
+      "id": "A-shine-01-s12",
       "answer": "sparkly",
       "cue": "contextual",
       "reserve": false,
@@ -314,7 +314,7 @@
       ]
     },
     {
-      "id": "B-shine-01-s13",
+      "id": "A-shine-01-s13",
       "answer": "sparkly",
       "cue": "inferential",
       "reserve": false,
@@ -337,7 +337,7 @@
       ]
     },
     {
-      "id": "B-shine-01-s14",
+      "id": "A-shine-01-s14",
       "answer": "sparkly",
       "cue": "inferential",
       "reserve": false,
@@ -360,7 +360,7 @@
       ]
     },
     {
-      "id": "B-shine-01-s15",
+      "id": "A-shine-01-s15",
       "answer": "sparkly",
       "cue": "explicit",
       "reserve": true,
@@ -375,7 +375,7 @@
       }
     },
     {
-      "id": "B-shine-01-s16",
+      "id": "A-shine-01-s16",
       "answer": "sparkly",
       "cue": "contextual",
       "reserve": true,
@@ -398,7 +398,7 @@
       ]
     },
     {
-      "id": "B-shine-01-s17",
+      "id": "A-shine-01-s17",
       "answer": "dazzling",
       "cue": "explicit",
       "reserve": false,
@@ -421,7 +421,7 @@
       ]
     },
     {
-      "id": "B-shine-01-s18",
+      "id": "A-shine-01-s18",
       "answer": "dazzling",
       "cue": "explicit",
       "reserve": false,
@@ -436,7 +436,7 @@
       }
     },
     {
-      "id": "B-shine-01-s19",
+      "id": "A-shine-01-s19",
       "answer": "dazzling",
       "cue": "contextual",
       "reserve": false,
@@ -459,7 +459,7 @@
       ]
     },
     {
-      "id": "B-shine-01-s20",
+      "id": "A-shine-01-s20",
       "answer": "dazzling",
       "cue": "contextual",
       "reserve": false,
@@ -482,7 +482,7 @@
       ]
     },
     {
-      "id": "B-shine-01-s21",
+      "id": "A-shine-01-s21",
       "answer": "dazzling",
       "cue": "inferential",
       "reserve": false,
@@ -505,7 +505,7 @@
       ]
     },
     {
-      "id": "B-shine-01-s22",
+      "id": "A-shine-01-s22",
       "answer": "dazzling",
       "cue": "inferential",
       "reserve": false,
@@ -528,7 +528,7 @@
       ]
     },
     {
-      "id": "B-shine-01-s23",
+      "id": "A-shine-01-s23",
       "answer": "dazzling",
       "cue": "contextual",
       "reserve": true,
@@ -551,7 +551,7 @@
       ]
     },
     {
-      "id": "B-shine-01-s24",
+      "id": "A-shine-01-s24",
       "answer": "dazzling",
       "cue": "inferential",
       "reserve": true,
@@ -574,7 +574,7 @@
       ]
     },
     {
-      "id": "B-shine-01-s25",
+      "id": "A-shine-01-s25",
       "answer": "radiant",
       "cue": "explicit",
       "reserve": false,
@@ -597,7 +597,7 @@
       ]
     },
     {
-      "id": "B-shine-01-s26",
+      "id": "A-shine-01-s26",
       "answer": "radiant",
       "cue": "explicit",
       "reserve": false,
@@ -612,7 +612,7 @@
       }
     },
     {
-      "id": "B-shine-01-s27",
+      "id": "A-shine-01-s27",
       "answer": "radiant",
       "cue": "contextual",
       "reserve": false,
@@ -635,7 +635,7 @@
       ]
     },
     {
-      "id": "B-shine-01-s28",
+      "id": "A-shine-01-s28",
       "answer": "radiant",
       "cue": "contextual",
       "reserve": false,
@@ -658,7 +658,7 @@
       ]
     },
     {
-      "id": "B-shine-01-s29",
+      "id": "A-shine-01-s29",
       "answer": "radiant",
       "cue": "inferential",
       "reserve": false,
@@ -681,7 +681,7 @@
       ]
     },
     {
-      "id": "B-shine-01-s30",
+      "id": "A-shine-01-s30",
       "answer": "radiant",
       "cue": "inferential",
       "reserve": false,
@@ -704,7 +704,7 @@
       ]
     },
     {
-      "id": "B-shine-01-s31",
+      "id": "A-shine-01-s31",
       "answer": "radiant",
       "cue": "contextual",
       "reserve": true,
@@ -719,7 +719,7 @@
       }
     },
     {
-      "id": "B-shine-01-s32",
+      "id": "A-shine-01-s32",
       "answer": "radiant",
       "cue": "explicit",
       "reserve": true,
@@ -742,7 +742,7 @@
       ]
     },
     {
-      "id": "B-shine-01-s33",
+      "id": "A-shine-01-s33",
       "answer": "twinkling",
       "cue": "explicit",
       "reserve": false,
@@ -765,7 +765,7 @@
       ]
     },
     {
-      "id": "B-shine-01-s34",
+      "id": "A-shine-01-s34",
       "answer": "twinkling",
       "cue": "explicit",
       "reserve": false,
@@ -788,7 +788,7 @@
       ]
     },
     {
-      "id": "B-shine-01-s35",
+      "id": "A-shine-01-s35",
       "answer": "twinkling",
       "cue": "contextual",
       "reserve": false,
@@ -811,7 +811,7 @@
       ]
     },
     {
-      "id": "B-shine-01-s36",
+      "id": "A-shine-01-s36",
       "answer": "twinkling",
       "cue": "contextual",
       "reserve": false,
@@ -834,7 +834,7 @@
       ]
     },
     {
-      "id": "B-shine-01-s37",
+      "id": "A-shine-01-s37",
       "answer": "twinkling",
       "cue": "inferential",
       "reserve": false,
@@ -857,7 +857,7 @@
       ]
     },
     {
-      "id": "B-shine-01-s38",
+      "id": "A-shine-01-s38",
       "answer": "twinkling",
       "cue": "inferential",
       "reserve": false,
@@ -880,7 +880,7 @@
       ]
     },
     {
-      "id": "B-shine-01-s39",
+      "id": "A-shine-01-s39",
       "answer": "twinkling",
       "cue": "explicit",
       "reserve": true,
@@ -903,7 +903,7 @@
       ]
     },
     {
-      "id": "B-shine-01-s40",
+      "id": "A-shine-01-s40",
       "answer": "twinkling",
       "cue": "explicit",
       "reserve": true,

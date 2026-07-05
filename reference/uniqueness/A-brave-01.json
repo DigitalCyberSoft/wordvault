@@ -1,0 +1,1171 @@
+{
+  "set_id": "A-brave-01",
+  "sentences": {
+    "A-brave-01-s01": {
+      "text_sha256": "9a9a57010e6ee06abbdde8f71ca35cb4c3443d8fabe47fb05581dba17db40222",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "determined"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "determined"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "determined"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T12:13:48+00:00"
+    },
+    "A-brave-01-s02": {
+      "text_sha256": "b402e59cf2b1ae9c364291f60ae236c513af3887f02bfac38a8924810e58e8da",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "determined"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "determined"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "determined"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T12:13:48+00:00"
+    },
+    "A-brave-01-s03": {
+      "text_sha256": "2eeb879ee8873045c61ba4200eca4ffbf635c0ed58ad7b7d6670e9f5bdb8928b",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "daring",
+            "determined",
+            "fearless"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "determined"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "daring",
+            "determined",
+            "fearless"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T12:13:48+00:00"
+    },
+    "A-brave-01-s04": {
+      "text_sha256": "3c9e7d8b24bccc938196c9ecc32543f42bf9b0fff2e167d30cdf1d1f71ab34c8",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "determined"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "determined"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "determined"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T12:13:48+00:00"
+    },
+    "A-brave-01-s05": {
+      "text_sha256": "c1fb20f89d12e946cf29d45fbabd120ad7126945993eb59101dea0f756105b72",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "determined"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "determined"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "determined"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T12:13:48+00:00"
+    },
+    "A-brave-01-s06": {
+      "text_sha256": "a843f7a69d941554ce3a7c5e8d3427a0c677676df35d18830ff05435613070d1",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "determined"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "determined"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "determined"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T12:13:48+00:00"
+    },
+    "A-brave-01-s07": {
+      "text_sha256": "386f456e30a88f2fe097d67e67846a5dd9790b6aeb1d622569e08f2997ea9ea8",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "determined",
+            "fearless"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "determined"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "determined"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T12:13:48+00:00"
+    },
+    "A-brave-01-s08": {
+      "text_sha256": "637a3b55c10d54efae595f1c1f72837b599e8225c34452be5d9c2b3dee746840",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "determined"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "determined"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "determined"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T12:13:48+00:00"
+    },
+    "A-brave-01-s09": {
+      "text_sha256": "8bf89e4ceeeef1d49b70899ecb2aab0ef8b9b892ae090069123d6b5fd644fc35",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "daring"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "daring"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "daring"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T12:13:48+00:00"
+    },
+    "A-brave-01-s10": {
+      "text_sha256": "0eca57974ab96f66c0dbe9396f6413388ab0379dab733da0637ed7a83f040af6",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "daring"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "daring"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "daring"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T12:13:48+00:00"
+    },
+    "A-brave-01-s11": {
+      "text_sha256": "f9865e5c5ab8dba923687af5afdd6102a3b85ea94bf80c8005778b2d88d9a95f",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "daring",
+            "determined",
+            "fearless"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "daring"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "daring",
+            "determined"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T12:15:44+00:00"
+    },
+    "A-brave-01-s12": {
+      "text_sha256": "8bbf4d9957b8eeb98e8f73cb5acebf1155ee1ba3c72c25b17eac4890275e4fad",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "daring",
+            "fearless",
+            "reckless"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "daring"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "daring"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T12:15:44+00:00"
+    },
+    "A-brave-01-s13": {
+      "text_sha256": "3313dc86823c63a89a67f2df9240d175464fcc8adc8111d773388487ace37292",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "daring",
+            "determined"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "daring"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "daring"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T12:15:44+00:00"
+    },
+    "A-brave-01-s14": {
+      "text_sha256": "b05dc6ef40d22aaf0963704a210f43302e35995615fddd56c5f9a5ff581b2220",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "daring",
+            "fearless"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "daring"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "daring"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T12:15:44+00:00"
+    },
+    "A-brave-01-s15": {
+      "text_sha256": "5de26144facd99639c009b61bef802c02292e0426260fffb8c488c072e7448dd",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "daring",
+            "determined",
+            "fearless"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "daring"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "daring",
+            "determined"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T12:15:44+00:00"
+    },
+    "A-brave-01-s16": {
+      "text_sha256": "d10b6dd8dbfa0aaa838b31622f653b836383986ead1cfcc7199a086fe2d74d42",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "daring",
+            "fearless"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "daring"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "daring"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T12:15:44+00:00"
+    },
+    "A-brave-01-s17": {
+      "text_sha256": "7311718afd31cd891d1217f76b97458aa1b1cba6bd72340861d92d1c8b4be0fa",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "fearless"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "fearless"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "fearless"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T12:15:44+00:00"
+    },
+    "A-brave-01-s18": {
+      "text_sha256": "af0ec02ebac2602a9c23564d18bad685c3ba4bcc2e0d130979d51eaf3ae80e5e",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "fearless"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "fearless"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "fearless"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T12:15:44+00:00"
+    },
+    "A-brave-01-s19": {
+      "text_sha256": "d61ff1c3c34969e51c8317d1eab3edf3f6f16a88df02412e798612bfaa74c7d2",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "determined",
+            "fearless"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "fearless"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "fearless"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T12:15:44+00:00"
+    },
+    "A-brave-01-s20": {
+      "text_sha256": "e1b5fb4086296932299bc2d09b125741a9e5fe0de6d5c8e1f155ccf2dfb734bb",
+      "verdict": "hard",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "fearless"
+          ],
+          "sense_match": false
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "fearless"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "fearless"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T12:15:44+00:00"
+    },
+    "A-brave-01-s21": {
+      "text_sha256": "4746ec0ce029e999e29b19fe5a4ac3e1064cd5e66fe2aac0786906bae57a9af7",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "fearless"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "fearless"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "fearless"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T12:18:44+00:00"
+    },
+    "A-brave-01-s22": {
+      "text_sha256": "8abeaaad93193eea0d0fb7e2fd576ac042791a873e531bba73afc0ed5ccdf98a",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "fearless"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "fearless"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "fearless"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T12:18:44+00:00"
+    },
+    "A-brave-01-s23": {
+      "text_sha256": "9a64c4b21cabd2eeb0ebfe534d0f519992dce543ababf127ed567e4e7548812d",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "fearless"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "fearless"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "fearless"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T12:18:44+00:00"
+    },
+    "A-brave-01-s24": {
+      "text_sha256": "8bec801bcdca78d0c4532388761e23cc814b7852e5c4dc9656ccd84fc47284e3",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "fearless"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "fearless"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "fearless"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T12:18:44+00:00"
+    },
+    "A-brave-01-s25": {
+      "text_sha256": "d4b27790d474c0ce99e90429f860c9c8c417fe843b518b887221f91603c2b8d6",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "daring",
+            "reckless"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "reckless"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "reckless"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T12:18:44+00:00"
+    },
+    "A-brave-01-s26": {
+      "text_sha256": "4422f4a97e2eb1686347209f45add0f9c57fec2f97ac352d155534955a5734ba",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "daring",
+            "fearless",
+            "reckless"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "reckless"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "daring",
+            "reckless"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T12:18:44+00:00"
+    },
+    "A-brave-01-s27": {
+      "text_sha256": "172fd5cc42b11993bc8137f90355bd5ea1f098d615b4f437469cf90e1e22da57",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "daring",
+            "fearless",
+            "reckless"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "reckless"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "reckless"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T12:18:44+00:00"
+    },
+    "A-brave-01-s28": {
+      "text_sha256": "6a078cf84fbe7abf9b39f250aa8ec34d4f44ba590fb82d603b2b25c30d9a32f6",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "determined",
+            "reckless"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "reckless"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "determined",
+            "reckless"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T12:18:44+00:00"
+    },
+    "A-brave-01-s29": {
+      "text_sha256": "afcabf7b6094bc952f243f7910504b4feb681cbf71d7e0231f7759e02833f00a",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "daring",
+            "fearless",
+            "reckless"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "reckless"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "reckless"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T12:18:44+00:00"
+    },
+    "A-brave-01-s30": {
+      "text_sha256": "cc8fa5ec193962647bfc394e775cf5032e661a0d7f51860ca3edf733491ed24c",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "daring",
+            "determined",
+            "fearless",
+            "reckless"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "reckless"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "determined",
+            "reckless"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T12:18:44+00:00"
+    },
+    "A-brave-01-s31": {
+      "text_sha256": "a8fc3d507019eae20a8aa3af722a552c358a8645beb022cf437896bc265dd643",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "daring",
+            "reckless"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "reckless"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "reckless"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T12:20:38+00:00"
+    },
+    "A-brave-01-s32": {
+      "text_sha256": "ad0787dbd14cc0bd0bb524946dd32ffe4b5bf0187a4d9ae6b92063d14e462600",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "daring",
+            "reckless"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "reckless"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "reckless"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T12:20:38+00:00"
+    },
+    "A-brave-01-s33": {
+      "text_sha256": "b941fd903bdee2751c3adec58e00c28925403b1677ea9104e99ee00bdc0e2633",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "daring",
+            "determined",
+            "heroic"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "heroic"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "heroic"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T12:20:38+00:00"
+    },
+    "A-brave-01-s34": {
+      "text_sha256": "be131dd3b915fa1d4d7a52dcf74b32c9adca59d9752b00ec58a87e9848cba4a8",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "daring",
+            "determined",
+            "heroic"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "heroic"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "heroic"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T12:20:38+00:00"
+    },
+    "A-brave-01-s35": {
+      "text_sha256": "5aac3efebecc130f775a3bf087bdcf5ccf3dba8e918e4663c81f29ef50eb5007",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "daring",
+            "determined",
+            "heroic"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "heroic"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "heroic"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T12:20:38+00:00"
+    },
+    "A-brave-01-s36": {
+      "text_sha256": "95fd30bd95a812bb4e3e87079ef597a98d5057457669986f8392537257e6b8ea",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "daring",
+            "determined",
+            "heroic"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "heroic"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "heroic"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T12:20:38+00:00"
+    },
+    "A-brave-01-s37": {
+      "text_sha256": "6399401c28319d3944d739b34d58d17cdf41fa4b9e34cdfb3bf05365fd11c66e",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "heroic"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "heroic"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "heroic"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T12:20:38+00:00"
+    },
+    "A-brave-01-s38": {
+      "text_sha256": "d194a2f87bbdd4d4fab3695a32f6516ad90bbb3ec07ebf9db19752e23750087c",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "daring",
+            "determined",
+            "heroic"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "heroic"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "heroic"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T12:20:38+00:00"
+    },
+    "A-brave-01-s39": {
+      "text_sha256": "c8f7f5fa13eeb199379ed29ec97cf509f572e59a4ec9e4cef632479c8d0753d3",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "determined",
+            "heroic"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "heroic"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "heroic"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T12:20:38+00:00"
+    },
+    "A-brave-01-s40": {
+      "text_sha256": "eb9ef2d80c3c524a7a4863a2d33bfded05ed30a1b7edb1a81948e4a90edfd2a7",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "daring",
+            "fearless",
+            "heroic"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "heroic"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "heroic"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T12:20:38+00:00"
+    }
+  }
+}

@@ -1,0 +1,791 @@
+{
+  "id": "A-scared-01",
+  "bank": "A",
+  "pos": "adjective",
+  "theme": "kinds of scared",
+  "band": 2,
+  "band_override": 2,
+  "computed": null,
+  "words": [
+    {
+      "w": "nervous",
+      "synset": "nervous.s.01",
+      "gloss_source": "authored",
+      "gloss": "worried and shaky about what might happen",
+      "zipf": 4.42,
+      "register": "neutral",
+      "senses_at_pos": 5,
+      "dominant_sense_ok": "pinned per set design; frames use only this sense (2026-07-05)",
+      "forms": {
+        "base": "nervous"
+      },
+      "discriminator": "before something: butterflies"
+    },
+    {
+      "w": "startled",
+      "synset": "startled.s.01",
+      "gloss_source": "authored",
+      "gloss": "jumping from a sudden fright",
+      "zipf": 3.31,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "startled"
+      },
+      "discriminator": "an instant jump, over in a second"
+    },
+    {
+      "w": "terrified",
+      "synset": "panicky.s.01",
+      "gloss_source": "wordnet",
+      "gloss": "thrown into a state of intense fear or desperation",
+      "zipf": 3.94,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "terrified"
+      },
+      "discriminator": "the strongest fear"
+    },
+    {
+      "w": "timid",
+      "synset": "timid.a.01",
+      "gloss_source": "wordnet",
+      "gloss": "showing fear and lack of confidence",
+      "zipf": 3.25,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "timid"
+      },
+      "discriminator": "shy of trying things: a way someone is"
+    },
+    {
+      "w": "horrified",
+      "synset": "horrified.s.01",
+      "gloss_source": "authored",
+      "gloss": "shocked and upset by something awful",
+      "zipf": 3.43,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "horrified"
+      },
+      "discriminator": "shock at something awful or gross"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-scared-01-s01",
+      "answer": "nervous",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "With butterflies in her tummy, Lina felt ___ before her piano solo.",
+      "cue_phrase": "butterflies in her tummy",
+      "surface": {
+        "nervous": "nervous",
+        "startled": "startled",
+        "terrified": "terrified",
+        "timid": "timid",
+        "horrified": "horrified"
+      }
+    },
+    {
+      "id": "A-scared-01-s02",
+      "answer": "nervous",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Raj was ___, chewing his sleeve while waiting for the spelling final.",
+      "cue_phrase": "waiting for the spelling final",
+      "surface": {
+        "nervous": "nervous",
+        "startled": "startled",
+        "terrified": "terrified",
+        "timid": "timid",
+        "horrified": "horrified"
+      }
+    },
+    {
+      "id": "A-scared-01-s03",
+      "answer": "nervous",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Before the class vote, Ana felt ___ and kept checking her speech cards.",
+      "cue_phrase": "checking her speech cards",
+      "surface": {
+        "nervous": "nervous",
+        "startled": "startled",
+        "terrified": "terrified",
+        "timid": "timid",
+        "horrified": "horrified"
+      }
+    },
+    {
+      "id": "A-scared-01-s04",
+      "answer": "nervous",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Tom felt ___, with mild tummy flutters, as his dentist turn neared.",
+      "cue_phrase": "mild tummy flutters",
+      "surface": {
+        "nervous": "nervous",
+        "startled": "startled",
+        "terrified": "terrified",
+        "timid": "timid",
+        "horrified": "horrified"
+      }
+    },
+    {
+      "id": "A-scared-01-s05",
+      "answer": "nervous",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The night before camp, I felt ___ and packed my bag twice.",
+      "cue_phrase": "packed my bag twice",
+      "surface": {
+        "nervous": "nervous",
+        "startled": "startled",
+        "terrified": "terrified",
+        "timid": "timid",
+        "horrified": "horrified"
+      }
+    },
+    {
+      "id": "A-scared-01-s06",
+      "answer": "nervous",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Maya was ___; her hands tingled as she waited backstage.",
+      "cue_phrase": "waited backstage",
+      "surface": {
+        "nervous": "nervous",
+        "startled": "startled",
+        "terrified": "terrified",
+        "timid": "timid",
+        "horrified": "horrified"
+      }
+    },
+    {
+      "id": "A-scared-01-s07",
+      "answer": "nervous",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The captain felt ___ before tossing the coin for the final match.",
+      "cue_phrase": "before tossing the coin",
+      "surface": {
+        "nervous": "nervous",
+        "startled": "startled",
+        "terrified": "terrified",
+        "timid": "timid",
+        "horrified": "horrified"
+      }
+    },
+    {
+      "id": "A-scared-01-s08",
+      "answer": "nervous",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "As the race whistle neared, Eli became ___ and bounced on his toes.",
+      "cue_phrase": "whistle neared",
+      "surface": {
+        "nervous": "nervous",
+        "startled": "startled",
+        "terrified": "terrified",
+        "timid": "timid",
+        "horrified": "horrified"
+      }
+    },
+    {
+      "id": "A-scared-01-s09",
+      "answer": "startled",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "When the balloon burst, Poppy was ___ for one quick second.",
+      "cue_phrase": "one quick second",
+      "surface": {
+        "nervous": "nervous",
+        "startled": "startled",
+        "terrified": "terrified",
+        "timid": "timid",
+        "horrified": "horrified"
+      }
+    },
+    {
+      "id": "A-scared-01-s10",
+      "answer": "startled",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "A dropped tray clattered, and Noah looked ___ with a little gasp.",
+      "cue_phrase": "dropped tray clattered",
+      "surface": {
+        "nervous": "nervous",
+        "startled": "startled",
+        "terrified": "terrified",
+        "timid": "timid",
+        "horrified": "horrified"
+      }
+    },
+    {
+      "id": "A-scared-01-s11",
+      "answer": "startled",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The cat leapt out, making Sam feel ___, then laugh.",
+      "cue_phrase": "cat leapt out",
+      "surface": {
+        "nervous": "nervous",
+        "startled": "startled",
+        "terrified": "terrified",
+        "timid": "timid",
+        "horrified": "horrified"
+      }
+    },
+    {
+      "id": "A-scared-01-s12",
+      "answer": "startled",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The loud bang left the rabbits ___, frozen mid-hop for a moment.",
+      "cue_phrase": "loud bang; frozen mid-hop",
+      "surface": {
+        "nervous": "nervous",
+        "startled": "startled",
+        "terrified": "terrified",
+        "timid": "timid",
+        "horrified": "horrified"
+      }
+    },
+    {
+      "id": "A-scared-01-s13",
+      "answer": "startled",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "I was ___ when a book slid off the shelf behind me.",
+      "cue_phrase": "shelf behind me",
+      "surface": {
+        "nervous": "nervous",
+        "startled": "startled",
+        "terrified": "terrified",
+        "timid": "timid",
+        "horrified": "horrified"
+      }
+    },
+    {
+      "id": "A-scared-01-s14",
+      "answer": "startled",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Mum became ___ as the doorbell rang during total silence.",
+      "cue_phrase": "doorbell rang",
+      "surface": {
+        "nervous": "nervous",
+        "startled": "startled",
+        "terrified": "terrified",
+        "timid": "timid",
+        "horrified": "horrified"
+      }
+    },
+    {
+      "id": "A-scared-01-s15",
+      "answer": "startled",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The puppy looked ___ after a pan lid crashed nearby.",
+      "cue_phrase": "crashed nearby",
+      "surface": {
+        "nervous": "nervous",
+        "startled": "startled",
+        "terrified": "terrified",
+        "timid": "timid",
+        "horrified": "horrified"
+      }
+    },
+    {
+      "id": "A-scared-01-s16",
+      "answer": "startled",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "A crow flapped from the hedge, leaving Zoe ___ for a moment.",
+      "cue_phrase": "for a moment",
+      "surface": {
+        "nervous": "nervous",
+        "startled": "startled",
+        "terrified": "terrified",
+        "timid": "timid",
+        "horrified": "horrified"
+      }
+    },
+    {
+      "id": "A-scared-01-s17",
+      "answer": "terrified",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Seeing smoke fill the hall, Aisha was ___, too afraid to speak.",
+      "cue_phrase": "too afraid to speak",
+      "surface": {
+        "nervous": "nervous",
+        "startled": "startled",
+        "terrified": "terrified",
+        "timid": "timid",
+        "horrified": "horrified"
+      }
+    },
+    {
+      "id": "A-scared-01-s18",
+      "answer": "terrified",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The cub was ___, crying hard when the river swept mum away.",
+      "cue_phrase": "crying hard",
+      "surface": {
+        "nervous": "nervous",
+        "startled": "startled",
+        "terrified": "terrified",
+        "timid": "timid",
+        "horrified": "horrified"
+      }
+    },
+    {
+      "id": "A-scared-01-s19",
+      "answer": "terrified",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Under the dragon's claws, the knight felt ___ and dropped his sword.",
+      "cue_phrase": "dragon's claws",
+      "surface": {
+        "nervous": "nervous",
+        "startled": "startled",
+        "terrified": "terrified",
+        "timid": "timid",
+        "horrified": "horrified"
+      }
+    },
+    {
+      "id": "A-scared-01-s20",
+      "answer": "terrified",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "When the lift stuck in darkness, Kai became ___ and screamed for help.",
+      "cue_phrase": "screamed for help",
+      "surface": {
+        "nervous": "nervous",
+        "startled": "startled",
+        "terrified": "terrified",
+        "timid": "timid",
+        "horrified": "horrified"
+      }
+    },
+    {
+      "id": "A-scared-01-s21",
+      "answer": "terrified",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The mouse was ___; its whole body trembled beneath the owl's shadow.",
+      "cue_phrase": "whole body trembled",
+      "surface": {
+        "nervous": "nervous",
+        "startled": "startled",
+        "terrified": "terrified",
+        "timid": "timid",
+        "horrified": "horrified"
+      }
+    },
+    {
+      "id": "A-scared-01-s22",
+      "answer": "terrified",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "After the wave pulled him out, Ben was ___ and could not breathe calmly.",
+      "cue_phrase": "could not breathe calmly",
+      "surface": {
+        "nervous": "nervous",
+        "startled": "startled",
+        "terrified": "terrified",
+        "timid": "timid",
+        "horrified": "horrified"
+      }
+    },
+    {
+      "id": "A-scared-01-s23",
+      "answer": "terrified",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The villagers grew ___ when lava rolled towards their only bridge.",
+      "cue_phrase": "lava rolled towards",
+      "surface": {
+        "nervous": "nervous",
+        "startled": "startled",
+        "terrified": "terrified",
+        "timid": "timid",
+        "horrified": "horrified"
+      }
+    },
+    {
+      "id": "A-scared-01-s24",
+      "answer": "terrified",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "Hearing claws scratch inside the cupboard, Nia felt ___ and sobbed.",
+      "cue_phrase": "and sobbed",
+      "surface": {
+        "nervous": "nervous",
+        "startled": "startled",
+        "terrified": "terrified",
+        "timid": "timid",
+        "horrified": "horrified"
+      }
+    },
+    {
+      "id": "A-scared-01-s25",
+      "answer": "timid",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ boy whispered answers and avoided joining games with new children.",
+      "cue_phrase": "avoided joining games",
+      "surface": {
+        "nervous": "nervous",
+        "startled": "startled",
+        "terrified": "terrified",
+        "timid": "timid",
+        "horrified": "horrified"
+      }
+    },
+    {
+      "id": "A-scared-01-s26",
+      "answer": "timid",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Our kitten was born ___, hiding from every visitor but creeping out for milk later.",
+      "cue_phrase": "born; every visitor",
+      "surface": {
+        "nervous": "nervous",
+        "startled": "startled",
+        "terrified": "terrified",
+        "timid": "timid",
+        "horrified": "horrified"
+      }
+    },
+    {
+      "id": "A-scared-01-s27",
+      "answer": "timid",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "At art club, Leila stayed ___, letting others choose colours first.",
+      "cue_phrase": "letting others choose",
+      "surface": {
+        "nervous": "nervous",
+        "startled": "startled",
+        "terrified": "terrified",
+        "timid": "timid",
+        "horrified": "horrified"
+      }
+    },
+    {
+      "id": "A-scared-01-s28",
+      "answer": "timid",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ foal backed away from every child's gentle pat, as it always did.",
+      "cue_phrase": "every pat; always",
+      "surface": {
+        "nervous": "nervous",
+        "startled": "startled",
+        "terrified": "terrified",
+        "timid": "timid",
+        "horrified": "horrified"
+      }
+    },
+    {
+      "id": "A-scared-01-s29",
+      "answer": "timid",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Max was ___, speaking so softly that the coach asked him to repeat.",
+      "cue_phrase": "speaking so softly",
+      "surface": {
+        "nervous": "nervous",
+        "startled": "startled",
+        "terrified": "terrified",
+        "timid": "timid",
+        "horrified": "horrified"
+      }
+    },
+    {
+      "id": "A-scared-01-s30",
+      "answer": "timid",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Priya had always been too ___ to try the big slide, watching from behind her friend.",
+      "cue_phrase": "always been too",
+      "surface": {
+        "nervous": "nervous",
+        "startled": "startled",
+        "terrified": "terrified",
+        "timid": "timid",
+        "horrified": "horrified"
+      }
+    },
+    {
+      "id": "A-scared-01-s31",
+      "answer": "timid",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The ___ child would only read aloud beside a kind partner, every single time.",
+      "cue_phrase": "would only; every time",
+      "surface": {
+        "nervous": "nervous",
+        "startled": "startled",
+        "terrified": "terrified",
+        "timid": "timid",
+        "horrified": "horrified"
+      }
+    },
+    {
+      "id": "A-scared-01-s32",
+      "answer": "timid",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "However many friendly waves it saw, the deer stayed as ___ as ever at the fence.",
+      "cue_phrase": "as ever",
+      "surface": {
+        "nervous": "nervous",
+        "startled": "startled",
+        "terrified": "terrified",
+        "timid": "timid",
+        "horrified": "horrified"
+      }
+    },
+    {
+      "id": "A-scared-01-s33",
+      "answer": "horrified",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Mum was ___ at the state of my room, hands over her mouth.",
+      "cue_phrase": "hands over her mouth",
+      "surface": {
+        "nervous": "nervous",
+        "startled": "startled",
+        "terrified": "terrified",
+        "timid": "timid",
+        "horrified": "horrified"
+      }
+    },
+    {
+      "id": "A-scared-01-s34",
+      "answer": "horrified",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Jade was ___ to find slugs sliding across the kitchen floor.",
+      "cue_phrase": "slugs on the floor",
+      "surface": {
+        "nervous": "nervous",
+        "startled": "startled",
+        "terrified": "terrified",
+        "timid": "timid",
+        "horrified": "horrified"
+      }
+    },
+    {
+      "id": "A-scared-01-s35",
+      "answer": "horrified",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Leo was ___ by the smell from the fridge and slammed it shut.",
+      "cue_phrase": "smell; slammed it shut",
+      "surface": {
+        "nervous": "nervous",
+        "startled": "startled",
+        "terrified": "terrified",
+        "timid": "timid",
+        "horrified": "horrified"
+      }
+    },
+    {
+      "id": "A-scared-01-s36",
+      "answer": "horrified",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The librarian looked ___ when she saw the juice stains across the returned book.",
+      "cue_phrase": "juice stains",
+      "surface": {
+        "nervous": "nervous",
+        "startled": "startled",
+        "terrified": "terrified",
+        "timid": "timid",
+        "horrified": "horrified"
+      }
+    },
+    {
+      "id": "A-scared-01-s37",
+      "answer": "horrified",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The judges looked ___ as the cake collapsed into a grey puddle.",
+      "cue_phrase": "collapsed into a puddle",
+      "surface": {
+        "nervous": "nervous",
+        "startled": "startled",
+        "terrified": "terrified",
+        "timid": "timid",
+        "horrified": "horrified"
+      }
+    },
+    {
+      "id": "A-scared-01-s38",
+      "answer": "horrified",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Priya was ___ as she slowly realised her painting hung upside down at the fair.",
+      "cue_phrase": "slowly realised; upside down",
+      "surface": {
+        "nervous": "nervous",
+        "startled": "startled",
+        "terrified": "terrified",
+        "timid": "timid",
+        "horrified": "horrified"
+      }
+    },
+    {
+      "id": "A-scared-01-s39",
+      "answer": "horrified",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Dad was ___ by the price of the tiny festival chips.",
+      "cue_phrase": "the price",
+      "surface": {
+        "nervous": "nervous",
+        "startled": "startled",
+        "terrified": "terrified",
+        "timid": "timid",
+        "horrified": "horrified"
+      }
+    },
+    {
+      "id": "A-scared-01-s40",
+      "answer": "horrified",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "The dentist looked ___ when Sam admitted eating toffee for breakfast every day.",
+      "cue_phrase": "toffee for breakfast",
+      "surface": {
+        "nervous": "nervous",
+        "startled": "startled",
+        "terrified": "terrified",
+        "timid": "timid",
+        "horrified": "horrified"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "nervous",
+      "picked": "startled",
+      "line": "Nervous builds before a turn; startled is one quick jolt after a surprise."
+    },
+    {
+      "answer": "nervous",
+      "picked": "terrified",
+      "line": "Nervous has butterflies before a test; terrified is much stronger, like panic."
+    },
+    {
+      "answer": "nervous",
+      "picked": "timid",
+      "line": "Nervous is about an upcoming moment; timid is a shy way of acting often."
+    },
+    {
+      "answer": "nervous",
+      "picked": "horrified",
+      "line": "Horrified is shock at something awful. Nervous is worry before something that has not happened."
+    },
+    {
+      "answer": "startled",
+      "picked": "nervous",
+      "line": "Startled is a quick jolt after a noise; nervous is butterflies before a turn."
+    },
+    {
+      "answer": "startled",
+      "picked": "terrified",
+      "line": "Startled lasts a moment; terrified is huge fear that can make you scream."
+    },
+    {
+      "answer": "startled",
+      "picked": "timid",
+      "line": "Startled is a quick reaction; timid is a shy pattern around people or new tasks."
+    },
+    {
+      "answer": "startled",
+      "picked": "horrified",
+      "line": "Horrified is upset at an awful sight. Startled is the quick jump at a sudden one."
+    },
+    {
+      "answer": "terrified",
+      "picked": "nervous",
+      "line": "Terrified is the strongest scare; nervous is butterflies before an event."
+    },
+    {
+      "answer": "terrified",
+      "picked": "startled",
+      "line": "Terrified is huge and lasting; startled is a one-second jolt."
+    },
+    {
+      "answer": "terrified",
+      "picked": "timid",
+      "line": "Terrified is extreme fear right now; timid is a shy way someone often acts."
+    },
+    {
+      "answer": "terrified",
+      "picked": "horrified",
+      "line": "Horrified is disgusted shock. Terrified is deep fear of real danger."
+    },
+    {
+      "answer": "timid",
+      "picked": "nervous",
+      "line": "Timid means shy about trying; nervous means butterflies before a moment."
+    },
+    {
+      "answer": "timid",
+      "picked": "startled",
+      "line": "Timid is a usual shy manner; startled is a quick jolt."
+    },
+    {
+      "answer": "timid",
+      "picked": "terrified",
+      "line": "Timid is gentle shyness; terrified is the strongest scare."
+    },
+    {
+      "answer": "timid",
+      "picked": "horrified",
+      "line": "Horrified is one big shocked moment. Timid is being shy of things all the time."
+    },
+    {
+      "answer": "horrified",
+      "picked": "nervous",
+      "line": "Nervous is jitters about what MIGHT happen. Horrified is shock at something awful right there."
+    },
+    {
+      "answer": "horrified",
+      "picked": "startled",
+      "line": "Startled is the jump at something sudden. Horrified is the upset at something awful."
+    },
+    {
+      "answer": "horrified",
+      "picked": "terrified",
+      "line": "Terrified is the strongest FEAR of danger. Horrified is shock and disgust, not danger."
+    },
+    {
+      "answer": "horrified",
+      "picked": "timid",
+      "line": "Timid is how someone always is. Horrified is a reaction to one awful sight."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-05T11:07:53+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": null,
+    "scrub_note": "uneasy swapped for horrified: uneasy was the generic donor the judges fit into every sibling frame."
+  }
+}

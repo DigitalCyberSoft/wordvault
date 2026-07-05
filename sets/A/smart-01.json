@@ -1,0 +1,791 @@
+{
+  "id": "A-smart-01",
+  "bank": "A",
+  "pos": "adjective",
+  "theme": "ways of being smart",
+  "band": 3,
+  "band_override": 3,
+  "computed": null,
+  "words": [
+    {
+      "w": "clever",
+      "synset": "apt.s.03",
+      "gloss_source": "authored",
+      "gloss": "quick at finding ways to solve things",
+      "zipf": 4.21,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "clever"
+      },
+      "discriminator": "fast, tricky solutions"
+    },
+    {
+      "w": "wise",
+      "synset": "wise.a.01",
+      "gloss_source": "authored",
+      "gloss": "using good judgment built from experience",
+      "zipf": 4.51,
+      "register": "neutral",
+      "senses_at_pos": 4,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "wise"
+      },
+      "discriminator": "knows what should be done: the long view"
+    },
+    {
+      "w": "curious",
+      "synset": "curious.a.02",
+      "gloss_source": "authored",
+      "gloss": "eager to find out and learn more",
+      "zipf": 4.45,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "curious"
+      },
+      "discriminator": "full of questions"
+    },
+    {
+      "w": "observant",
+      "synset": "observant.s.02",
+      "gloss_source": "wordnet",
+      "gloss": "quick to notice; showing quick and keen perception",
+      "zipf": 3.05,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "observant"
+      },
+      "discriminator": "notices small details others miss"
+    },
+    {
+      "w": "knowledgeable",
+      "synset": null,
+      "gloss_source": "authored",
+      "gloss": "having a large store of facts about a subject",
+      "zipf": 3.53,
+      "register": "neutral",
+      "senses_at_pos": null,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "knowledgeable"
+      },
+      "discriminator": "knows many facts about a subject"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-smart-01-s01",
+      "answer": "clever",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Maya found a ___ shortcut for the puzzle and finished it in seconds.",
+      "cue_phrase": "shortcut; in seconds",
+      "surface": {
+        "clever": "clever",
+        "wise": "wise",
+        "curious": "curious",
+        "observant": "observant",
+        "knowledgeable": "knowledgeable"
+      }
+    },
+    {
+      "id": "A-smart-01-s02",
+      "answer": "clever",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Someone ___ can crack a riddle after one clue.",
+      "cue_phrase": "crack a riddle",
+      "surface": {
+        "clever": "clever",
+        "wise": "wise",
+        "curious": "curious",
+        "observant": "observant",
+        "knowledgeable": "knowledgeable"
+      }
+    },
+    {
+      "id": "A-smart-01-s03",
+      "answer": "clever",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ pupil cracked the code before the sand timer emptied.",
+      "cue_phrase": "cracked the code",
+      "surface": {
+        "clever": "clever",
+        "wise": "wise",
+        "curious": "curious",
+        "observant": "observant",
+        "knowledgeable": "knowledgeable"
+      }
+    },
+    {
+      "id": "A-smart-01-s04",
+      "answer": "clever",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Mara was ___ when one clue led her to the hidden number.",
+      "cue_phrase": "one clue led",
+      "surface": {
+        "clever": "clever",
+        "wise": "wise",
+        "curious": "curious",
+        "observant": "observant",
+        "knowledgeable": "knowledgeable"
+      }
+    },
+    {
+      "id": "A-smart-01-s05",
+      "answer": "clever",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Sam was ___; he moved one matchstick, and the sum became right.",
+      "cue_phrase": "moved one matchstick",
+      "surface": {
+        "clever": "clever",
+        "wise": "wise",
+        "curious": "curious",
+        "observant": "observant",
+        "knowledgeable": "knowledgeable"
+      }
+    },
+    {
+      "id": "A-smart-01-s06",
+      "answer": "clever",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Leah was ___: one knot made the broken zip work again.",
+      "cue_phrase": "one knot made",
+      "surface": {
+        "clever": "clever",
+        "wise": "wise",
+        "curious": "curious",
+        "observant": "observant",
+        "knowledgeable": "knowledgeable"
+      }
+    },
+    {
+      "id": "A-smart-01-s07",
+      "answer": "clever",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The ___ mouse escaped the jar by tipping it onto a spoon.",
+      "cue_phrase": "tipping it onto",
+      "surface": {
+        "clever": "clever",
+        "wise": "wise",
+        "curious": "curious",
+        "observant": "observant",
+        "knowledgeable": "knowledgeable"
+      }
+    },
+    {
+      "id": "A-smart-01-s08",
+      "answer": "clever",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "Dad called her ___ after she fixed the game with one card swap.",
+      "cue_phrase": "one card swap",
+      "surface": {
+        "clever": "clever",
+        "wise": "wise",
+        "curious": "curious",
+        "observant": "observant",
+        "knowledgeable": "knowledgeable"
+      }
+    },
+    {
+      "id": "A-smart-01-s09",
+      "answer": "wise",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Grandpa gave ___ advice: save the sweets until after the match.",
+      "cue_phrase": "advice; thinking ahead",
+      "surface": {
+        "clever": "clever",
+        "wise": "wise",
+        "curious": "curious",
+        "observant": "observant",
+        "knowledgeable": "knowledgeable"
+      }
+    },
+    {
+      "id": "A-smart-01-s10",
+      "answer": "wise",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Someone ___ knows when safety matters more than winning.",
+      "cue_phrase": "safety matters more",
+      "surface": {
+        "clever": "clever",
+        "wise": "wise",
+        "curious": "curious",
+        "observant": "observant",
+        "knowledgeable": "knowledgeable"
+      }
+    },
+    {
+      "id": "A-smart-01-s11",
+      "answer": "wise",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ elder told them to rest before crossing the desert.",
+      "cue_phrase": "rest before crossing",
+      "surface": {
+        "clever": "clever",
+        "wise": "wise",
+        "curious": "curious",
+        "observant": "observant",
+        "knowledgeable": "knowledgeable"
+      }
+    },
+    {
+      "id": "A-smart-01-s12",
+      "answer": "wise",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ choice saved pocket money for repairs instead of sweets.",
+      "cue_phrase": "instead of sweets",
+      "surface": {
+        "clever": "clever",
+        "wise": "wise",
+        "curious": "curious",
+        "observant": "observant",
+        "knowledgeable": "knowledgeable"
+      }
+    },
+    {
+      "id": "A-smart-01-s13",
+      "answer": "wise",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The ___ referee calmed both teams before the quarrel grew worse.",
+      "cue_phrase": "quarrel grew worse",
+      "surface": {
+        "clever": "clever",
+        "wise": "wise",
+        "curious": "curious",
+        "observant": "observant",
+        "knowledgeable": "knowledgeable"
+      }
+    },
+    {
+      "id": "A-smart-01-s14",
+      "answer": "wise",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The ___ squirrel stored nuts early, knowing winter would be hard.",
+      "cue_phrase": "winter would be hard",
+      "surface": {
+        "clever": "clever",
+        "wise": "wise",
+        "curious": "curious",
+        "observant": "observant",
+        "knowledgeable": "knowledgeable"
+      }
+    },
+    {
+      "id": "A-smart-01-s15",
+      "answer": "wise",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The ___ sailor waited for daylight rather than race through fog.",
+      "cue_phrase": "rather than race",
+      "surface": {
+        "clever": "clever",
+        "wise": "wise",
+        "curious": "curious",
+        "observant": "observant",
+        "knowledgeable": "knowledgeable"
+      }
+    },
+    {
+      "id": "A-smart-01-s16",
+      "answer": "wise",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "It was ___ to ask an adult before touching the strange wire.",
+      "cue_phrase": "ask an adult",
+      "surface": {
+        "clever": "clever",
+        "wise": "wise",
+        "curious": "curious",
+        "observant": "observant",
+        "knowledgeable": "knowledgeable"
+      }
+    },
+    {
+      "id": "A-smart-01-s17",
+      "answer": "curious",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Tom stayed ___ all show, asking how the magician did every trick.",
+      "cue_phrase": "asking how; every trick",
+      "surface": {
+        "clever": "clever",
+        "wise": "wise",
+        "curious": "curious",
+        "observant": "observant",
+        "knowledgeable": "knowledgeable"
+      }
+    },
+    {
+      "id": "A-smart-01-s18",
+      "answer": "curious",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Someone ___ wants to know what is inside every closed box.",
+      "cue_phrase": "wants to know",
+      "surface": {
+        "clever": "clever",
+        "wise": "wise",
+        "curious": "curious",
+        "observant": "observant",
+        "knowledgeable": "knowledgeable"
+      }
+    },
+    {
+      "id": "A-smart-01-s19",
+      "answer": "curious",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "At the museum, the ___ twins pressed every information button.",
+      "cue_phrase": "pressed every information button",
+      "surface": {
+        "clever": "clever",
+        "wise": "wise",
+        "curious": "curious",
+        "observant": "observant",
+        "knowledgeable": "knowledgeable"
+      }
+    },
+    {
+      "id": "A-smart-01-s20",
+      "answer": "curious",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ puppy sniffed each bag to see what was inside.",
+      "cue_phrase": "what was inside",
+      "surface": {
+        "clever": "clever",
+        "wise": "wise",
+        "curious": "curious",
+        "observant": "observant",
+        "knowledgeable": "knowledgeable"
+      }
+    },
+    {
+      "id": "A-smart-01-s21",
+      "answer": "curious",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Jaya was ___; she would not leave until she knew why magnets pull.",
+      "cue_phrase": "knew why magnets",
+      "surface": {
+        "clever": "clever",
+        "wise": "wise",
+        "curious": "curious",
+        "observant": "observant",
+        "knowledgeable": "knowledgeable"
+      }
+    },
+    {
+      "id": "A-smart-01-s22",
+      "answer": "curious",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The ___ dragon opened every chest, hoping to see what each held.",
+      "cue_phrase": "what each held",
+      "surface": {
+        "clever": "clever",
+        "wise": "wise",
+        "curious": "curious",
+        "observant": "observant",
+        "knowledgeable": "knowledgeable"
+      }
+    },
+    {
+      "id": "A-smart-01-s23",
+      "answer": "curious",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The ___ pupil asked why after every science demonstration.",
+      "cue_phrase": "asked why after",
+      "surface": {
+        "clever": "clever",
+        "wise": "wise",
+        "curious": "curious",
+        "observant": "observant",
+        "knowledgeable": "knowledgeable"
+      }
+    },
+    {
+      "id": "A-smart-01-s24",
+      "answer": "curious",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "The ___ kitten peered into the boot to check the rustling sound.",
+      "cue_phrase": "check the rustling sound",
+      "surface": {
+        "clever": "clever",
+        "wise": "wise",
+        "curious": "curious",
+        "observant": "observant",
+        "knowledgeable": "knowledgeable"
+      }
+    },
+    {
+      "id": "A-smart-01-s25",
+      "answer": "observant",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Ana was ___ enough to spot the tiny spider hiding on the ceiling beam.",
+      "cue_phrase": "spot the tiny spider",
+      "surface": {
+        "clever": "clever",
+        "wise": "wise",
+        "curious": "curious",
+        "observant": "observant",
+        "knowledgeable": "knowledgeable"
+      }
+    },
+    {
+      "id": "A-smart-01-s26",
+      "answer": "observant",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Someone ___ can spot a missing comma on a crowded page.",
+      "cue_phrase": "missing comma",
+      "surface": {
+        "clever": "clever",
+        "wise": "wise",
+        "curious": "curious",
+        "observant": "observant",
+        "knowledgeable": "knowledgeable"
+      }
+    },
+    {
+      "id": "A-smart-01-s27",
+      "answer": "observant",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Because she was ___, Poppy saw the blue thread on the rug.",
+      "cue_phrase": "blue thread",
+      "surface": {
+        "clever": "clever",
+        "wise": "wise",
+        "curious": "curious",
+        "observant": "observant",
+        "knowledgeable": "knowledgeable"
+      }
+    },
+    {
+      "id": "A-smart-01-s28",
+      "answer": "observant",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ guard heard the faint click behind the curtain.",
+      "cue_phrase": "faint click",
+      "surface": {
+        "clever": "clever",
+        "wise": "wise",
+        "curious": "curious",
+        "observant": "observant",
+        "knowledgeable": "knowledgeable"
+      }
+    },
+    {
+      "id": "A-smart-01-s29",
+      "answer": "observant",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Milo was ___; he named the changed painting before anyone spoke.",
+      "cue_phrase": "changed painting",
+      "surface": {
+        "clever": "clever",
+        "wise": "wise",
+        "curious": "curious",
+        "observant": "observant",
+        "knowledgeable": "knowledgeable"
+      }
+    },
+    {
+      "id": "A-smart-01-s30",
+      "answer": "observant",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The ___ goalie saw the striker glance left before the kick.",
+      "cue_phrase": "striker glance left",
+      "surface": {
+        "clever": "clever",
+        "wise": "wise",
+        "curious": "curious",
+        "observant": "observant",
+        "knowledgeable": "knowledgeable"
+      }
+    },
+    {
+      "id": "A-smart-01-s31",
+      "answer": "observant",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The ___ neighbour spotted smoke curling from the empty shed.",
+      "cue_phrase": "smoke curling",
+      "surface": {
+        "clever": "clever",
+        "wise": "wise",
+        "curious": "curious",
+        "observant": "observant",
+        "knowledgeable": "knowledgeable"
+      }
+    },
+    {
+      "id": "A-smart-01-s32",
+      "answer": "observant",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "The ___ child heard one wrong note in the whole song.",
+      "cue_phrase": "one wrong note",
+      "surface": {
+        "clever": "clever",
+        "wise": "wise",
+        "curious": "curious",
+        "observant": "observant",
+        "knowledgeable": "knowledgeable"
+      }
+    },
+    {
+      "id": "A-smart-01-s33",
+      "answer": "knowledgeable",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Priya is ___ about dinosaurs, naming every species in the museum hall.",
+      "cue_phrase": "naming every species",
+      "surface": {
+        "clever": "clever",
+        "wise": "wise",
+        "curious": "curious",
+        "observant": "observant",
+        "knowledgeable": "knowledgeable"
+      }
+    },
+    {
+      "id": "A-smart-01-s34",
+      "answer": "knowledgeable",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ranger was ___ about the forest, telling each bird by its call alone.",
+      "cue_phrase": "each bird by its call",
+      "surface": {
+        "clever": "clever",
+        "wise": "wise",
+        "curious": "curious",
+        "observant": "observant",
+        "knowledgeable": "knowledgeable"
+      }
+    },
+    {
+      "id": "A-smart-01-s35",
+      "answer": "knowledgeable",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Ask Omar which flag is which; he is the most ___ boy in the quiz club.",
+      "cue_phrase": "which flag is which",
+      "surface": {
+        "clever": "clever",
+        "wise": "wise",
+        "curious": "curious",
+        "observant": "observant",
+        "knowledgeable": "knowledgeable"
+      }
+    },
+    {
+      "id": "A-smart-01-s36",
+      "answer": "knowledgeable",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Years of reading atlases made Nina ___ far beyond the geography test.",
+      "cue_phrase": "years of atlases",
+      "surface": {
+        "clever": "clever",
+        "wise": "wise",
+        "curious": "curious",
+        "observant": "observant",
+        "knowledgeable": "knowledgeable"
+      }
+    },
+    {
+      "id": "A-smart-01-s37",
+      "answer": "knowledgeable",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Nobody could name the beetle until the ___ caretaker listed its family and diet.",
+      "cue_phrase": "listed its family and diet",
+      "surface": {
+        "clever": "clever",
+        "wise": "wise",
+        "curious": "curious",
+        "observant": "observant",
+        "knowledgeable": "knowledgeable"
+      }
+    },
+    {
+      "id": "A-smart-01-s38",
+      "answer": "knowledgeable",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Her ___ answers about every planet earned a place on the space quiz team.",
+      "cue_phrase": "every planet",
+      "surface": {
+        "clever": "clever",
+        "wise": "wise",
+        "curious": "curious",
+        "observant": "observant",
+        "knowledgeable": "knowledgeable"
+      }
+    },
+    {
+      "id": "A-smart-01-s39",
+      "answer": "knowledgeable",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The ___ guide answered every castle question, right down to the cook's name.",
+      "cue_phrase": "every question answered",
+      "surface": {
+        "clever": "clever",
+        "wise": "wise",
+        "curious": "curious",
+        "observant": "observant",
+        "knowledgeable": "knowledgeable"
+      }
+    },
+    {
+      "id": "A-smart-01-s40",
+      "answer": "knowledgeable",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "Jay proved ___ about trains, reciting the timetable changes from memory.",
+      "cue_phrase": "timetables from memory",
+      "surface": {
+        "clever": "clever",
+        "wise": "wise",
+        "curious": "curious",
+        "observant": "observant",
+        "knowledgeable": "knowledgeable"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "clever",
+      "picked": "wise",
+      "line": "Clever works out a tricky answer fast. Wise chooses what helps later."
+    },
+    {
+      "answer": "clever",
+      "picked": "curious",
+      "line": "Clever cracks the problem. Curious asks questions to explore it."
+    },
+    {
+      "answer": "clever",
+      "picked": "observant",
+      "line": "Clever handles the puzzle fast. Observant spots tiny details."
+    },
+    {
+      "answer": "clever",
+      "picked": "knowledgeable",
+      "line": "Knowledgeable is a head full of facts. Clever is using quick tricks to solve something new."
+    },
+    {
+      "answer": "wise",
+      "picked": "clever",
+      "line": "Wise chooses safely for later. Clever works out a tricky answer fast."
+    },
+    {
+      "answer": "wise",
+      "picked": "curious",
+      "line": "Wise knows the best choice. Curious wants to ask and explore."
+    },
+    {
+      "answer": "wise",
+      "picked": "observant",
+      "line": "Wise thinks about what should happen. Observant spots small details."
+    },
+    {
+      "answer": "wise",
+      "picked": "knowledgeable",
+      "line": "Knowledgeable knows the facts. Wise knows what SHOULD be done with them."
+    },
+    {
+      "answer": "curious",
+      "picked": "clever",
+      "line": "Curious asks questions. Clever works out a tricky answer fast."
+    },
+    {
+      "answer": "curious",
+      "picked": "wise",
+      "line": "Curious wants to explore. Wise chooses what is best for later."
+    },
+    {
+      "answer": "curious",
+      "picked": "observant",
+      "line": "Curious asks why. Observant spots small details without needing to ask."
+    },
+    {
+      "answer": "curious",
+      "picked": "knowledgeable",
+      "line": "Knowledgeable already has the answers. Curious is still hungry to find them."
+    },
+    {
+      "answer": "observant",
+      "picked": "clever",
+      "line": "Observant spots small details. Clever works out a tricky answer fast."
+    },
+    {
+      "answer": "observant",
+      "picked": "wise",
+      "line": "Observant sees tiny clues. Wise chooses what helps later."
+    },
+    {
+      "answer": "observant",
+      "picked": "curious",
+      "line": "Observant spots details. Curious asks questions to explore."
+    },
+    {
+      "answer": "observant",
+      "picked": "knowledgeable",
+      "line": "Knowledgeable is remembered learning. Observant is spotting the detail in front of you."
+    },
+    {
+      "answer": "knowledgeable",
+      "picked": "clever",
+      "line": "Clever is quick at solving. Knowledgeable is knowing piles of facts already."
+    },
+    {
+      "answer": "knowledgeable",
+      "picked": "wise",
+      "line": "Wise is good judgment about what to do. Knowledgeable is having the facts."
+    },
+    {
+      "answer": "knowledgeable",
+      "picked": "curious",
+      "line": "Curious wants to find out. Knowledgeable already knows."
+    },
+    {
+      "answer": "knowledgeable",
+      "picked": "observant",
+      "line": "Observant notices what is here right now. Knowledgeable remembers what was learned before."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-05T11:11:28+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": null,
+    "scrub_note": "inventive swapped for knowledgeable: inventive was the generic donor the judges fit into every sibling frame."
+  }
+}

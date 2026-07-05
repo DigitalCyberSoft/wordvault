@@ -48,25 +48,36 @@ def audit_word(set_id: str, set_pos: str, w: dict, member_words: list[str]) -> N
     lemma = w["w"]
     where = f"{set_id}/{lemma}"
 
-    if w.get("gloss_source") == "authored":
-        if not w.get("gloss"):
-            hard.append(f"[G1] {where}: authored gloss is empty")
+    # Two gloss sources exist. "wordnet" = verbatim synset definition (G2
+    # enforces). "authored" = hand-written dictionary-register line, used where
+    # WordNet self-defines a scale (dim = "not bright") or where no synset is
+    # pinned (bank C). Authored glosses skip exactly G2; every gloss-quality
+    # gate below (G4 siblings, G5 opacity, G6 frequency) runs on both.
+    authored = w.get("gloss_source") == "authored"
+    if not w.get("gloss"):
+        hard.append(f"[G1] {where}: gloss is empty")
         return
 
-    # G1 synset exists
-    try:
-        syn = wn.synset(w["synset"])
-    except Exception:
-        hard.append(f"[G1] {where}: synset {w.get('synset')!r} does not resolve")
+    # G1 synset resolves (authored-gloss words may pin a synset for the sense
+    # anchor and the G3/G7/G8 structure checks; bank C words pin none)
+    syn = None
+    if w.get("synset"):
+        try:
+            syn = wn.synset(w["synset"])
+        except Exception:
+            hard.append(f"[G1] {where}: synset {w.get('synset')!r} does not resolve")
+            return
+    elif not authored:
+        hard.append(f"[G1] {where}: no synset pinned and gloss_source is not 'authored'")
         return
 
     # G2 gloss is the synset definition, verbatim
-    if w.get("gloss") != syn.definition():
+    if not authored and w.get("gloss") != syn.definition():
         hard.append(f"[G2] {where}: gloss is not verbatim WordNet ({w.get('gloss')!r} vs {syn.definition()!r})")
 
     # G8 POS match
     allowed = POS_MAP.get(set_pos, ())
-    if syn.pos() not in allowed:
+    if syn and syn.pos() not in allowed:
         hard.append(f"[G8] {where}: synset POS {syn.pos()!r} does not match set pos {set_pos!r}")
     if w.get("register") not in REGISTERS:
         hard.append(f"[G8] {where}: register {w.get('register')!r} not in {sorted(REGISTERS)}")
@@ -112,8 +123,11 @@ def audit_word(set_id: str, set_pos: str, w: dict, member_words: list[str]) -> N
     if stored is not None and abs(stored - head_z) > 0.05:
         hard.append(f"[G6] {where}: stored zipf {stored} disagrees with wordfreq {head_z:.2f}")
 
-    # G7 polysemy needs a recorded human sense sign-off
-    senses = len(wn.synsets(lemma, allowed[0])) if allowed else 0
+    # G7 polysemy needs a recorded human sense sign-off (only meaningful for
+    # words with a pinned sense; bank C words have none to disambiguate)
+    if syn is None or not allowed:
+        return
+    senses = len(wn.synsets(lemma, allowed[0]))
     if w.get("senses_at_pos") is not None and w["senses_at_pos"] != senses:
         hard.append(f"[G7] {where}: senses_at_pos says {w['senses_at_pos']}, WordNet has {senses}")
     if senses > 4 and not w.get("dominant_sense_ok"):

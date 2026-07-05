@@ -1,0 +1,791 @@
+{
+  "id": "A-tired-01",
+  "bank": "A",
+  "pos": "adjective",
+  "theme": "kinds of tired",
+  "band": 3,
+  "band_override": 3,
+  "computed": null,
+  "words": [
+    {
+      "w": "drowsy",
+      "synset": "drowsy.s.01",
+      "gloss_source": "wordnet",
+      "gloss": "half asleep",
+      "zipf": 2.82,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "drowsy"
+      },
+      "discriminator": "eyes closing: sleep is coming"
+    },
+    {
+      "w": "exhausted",
+      "synset": "exhausted.s.01",
+      "gloss_source": "authored",
+      "gloss": "so tired you can barely move",
+      "zipf": 4.08,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "exhausted"
+      },
+      "discriminator": "totally out of energy"
+    },
+    {
+      "w": "groggy",
+      "synset": "dazed.s.02",
+      "gloss_source": "authored",
+      "gloss": "slow and muddled, as if just woken up",
+      "zipf": 2.61,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "groggy"
+      },
+      "discriminator": "fuzzy head after waking or a knock"
+    },
+    {
+      "w": "sluggish",
+      "synset": "sluggish.s.01",
+      "gloss_source": "wordnet",
+      "gloss": "moving slowly",
+      "zipf": 3.25,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "sluggish"
+      },
+      "discriminator": "body running at half speed"
+    },
+    {
+      "w": "restless",
+      "synset": "restless.s.02",
+      "gloss_source": "authored",
+      "gloss": "unable to settle or stay still",
+      "zipf": 3.6,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "restless"
+      },
+      "discriminator": "cannot settle; keeps moving"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-tired-01-s01",
+      "answer": "drowsy",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The lullaby made Priya ___; her eyes kept closing over the book.",
+      "cue_phrase": "eyes kept closing",
+      "surface": {
+        "drowsy": "drowsy",
+        "exhausted": "exhausted",
+        "groggy": "groggy",
+        "sluggish": "sluggish",
+        "restless": "restless"
+      }
+    },
+    {
+      "id": "A-tired-01-s02",
+      "answer": "drowsy",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "After warm milk, Omar grew ___, blinking longer with every soft yawn.",
+      "cue_phrase": "blinking longer",
+      "surface": {
+        "drowsy": "drowsy",
+        "exhausted": "exhausted",
+        "groggy": "groggy",
+        "sluggish": "sluggish",
+        "restless": "restless"
+      }
+    },
+    {
+      "id": "A-tired-01-s03",
+      "answer": "drowsy",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "During the quiet film, Mei became ___, and her chin dipped twice.",
+      "cue_phrase": "chin dipped twice",
+      "surface": {
+        "drowsy": "drowsy",
+        "exhausted": "exhausted",
+        "groggy": "groggy",
+        "sluggish": "sluggish",
+        "restless": "restless"
+      }
+    },
+    {
+      "id": "A-tired-01-s04",
+      "answer": "drowsy",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The warm bus ride left Juno ___, nodding beside the rainy window.",
+      "cue_phrase": "nodding beside",
+      "surface": {
+        "drowsy": "drowsy",
+        "exhausted": "exhausted",
+        "groggy": "groggy",
+        "sluggish": "sluggish",
+        "restless": "restless"
+      }
+    },
+    {
+      "id": "A-tired-01-s05",
+      "answer": "drowsy",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The fairy's sleep dust made Leo ___; his eyes shut mid-smile.",
+      "cue_phrase": "sleep dust made",
+      "surface": {
+        "drowsy": "drowsy",
+        "exhausted": "exhausted",
+        "groggy": "groggy",
+        "sluggish": "sluggish",
+        "restless": "restless"
+      }
+    },
+    {
+      "id": "A-tired-01-s06",
+      "answer": "drowsy",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "By the fireplace, the kitten was ___, purring while its eyelids sank.",
+      "cue_phrase": "eyelids sank",
+      "surface": {
+        "drowsy": "drowsy",
+        "exhausted": "exhausted",
+        "groggy": "groggy",
+        "sluggish": "sluggish",
+        "restless": "restless"
+      }
+    },
+    {
+      "id": "A-tired-01-s07",
+      "answer": "drowsy",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The rocking boat made Ella ___, so she curled under a blanket.",
+      "cue_phrase": "curled under a blanket",
+      "surface": {
+        "drowsy": "drowsy",
+        "exhausted": "exhausted",
+        "groggy": "groggy",
+        "sluggish": "sluggish",
+        "restless": "restless"
+      }
+    },
+    {
+      "id": "A-tired-01-s08",
+      "answer": "drowsy",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The moonlit song made the giant ___, with eyes drooping fast.",
+      "cue_phrase": "eyes drooping fast",
+      "surface": {
+        "drowsy": "drowsy",
+        "exhausted": "exhausted",
+        "groggy": "groggy",
+        "sluggish": "sluggish",
+        "restless": "restless"
+      }
+    },
+    {
+      "id": "A-tired-01-s09",
+      "answer": "exhausted",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "After three races, the whole team was ___, with no energy left.",
+      "cue_phrase": "no energy left",
+      "surface": {
+        "drowsy": "drowsy",
+        "exhausted": "exhausted",
+        "groggy": "groggy",
+        "sluggish": "sluggish",
+        "restless": "restless"
+      }
+    },
+    {
+      "id": "A-tired-01-s10",
+      "answer": "exhausted",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The climbers were ___; not one had strength to lift a rope.",
+      "cue_phrase": "not one had strength",
+      "surface": {
+        "drowsy": "drowsy",
+        "exhausted": "exhausted",
+        "groggy": "groggy",
+        "sluggish": "sluggish",
+        "restless": "restless"
+      }
+    },
+    {
+      "id": "A-tired-01-s11",
+      "answer": "exhausted",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "By sunset, every dancer was ___, sprawled across the studio floor.",
+      "cue_phrase": "sprawled across",
+      "surface": {
+        "drowsy": "drowsy",
+        "exhausted": "exhausted",
+        "groggy": "groggy",
+        "sluggish": "sluggish",
+        "restless": "restless"
+      }
+    },
+    {
+      "id": "A-tired-01-s12",
+      "answer": "exhausted",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "After shovelling snow, the neighbours were ___; nobody had energy for cocoa.",
+      "cue_phrase": "nobody had energy",
+      "surface": {
+        "drowsy": "drowsy",
+        "exhausted": "exhausted",
+        "groggy": "groggy",
+        "sluggish": "sluggish",
+        "restless": "restless"
+      }
+    },
+    {
+      "id": "A-tired-01-s13",
+      "answer": "exhausted",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Mina finished the swim and lay ___, unable to lift her goggles.",
+      "cue_phrase": "unable to lift",
+      "surface": {
+        "drowsy": "drowsy",
+        "exhausted": "exhausted",
+        "groggy": "groggy",
+        "sluggish": "sluggish",
+        "restless": "restless"
+      }
+    },
+    {
+      "id": "A-tired-01-s14",
+      "answer": "exhausted",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The rescue dogs were ___ after searching, and all flopped beside their bowls.",
+      "cue_phrase": "all flopped",
+      "surface": {
+        "drowsy": "drowsy",
+        "exhausted": "exhausted",
+        "groggy": "groggy",
+        "sluggish": "sluggish",
+        "restless": "restless"
+      }
+    },
+    {
+      "id": "A-tired-01-s15",
+      "answer": "exhausted",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "After pulling the wagon uphill, both ponies were ___, completely out of energy.",
+      "cue_phrase": "completely out of energy",
+      "surface": {
+        "drowsy": "drowsy",
+        "exhausted": "exhausted",
+        "groggy": "groggy",
+        "sluggish": "sluggish",
+        "restless": "restless"
+      }
+    },
+    {
+      "id": "A-tired-01-s16",
+      "answer": "exhausted",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "After circling the mountain, the dragon landed ___, and even its tail fell flat.",
+      "cue_phrase": "tail fell flat",
+      "surface": {
+        "drowsy": "drowsy",
+        "exhausted": "exhausted",
+        "groggy": "groggy",
+        "sluggish": "sluggish",
+        "restless": "restless"
+      }
+    },
+    {
+      "id": "A-tired-01-s17",
+      "answer": "groggy",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "After his nap, Tom felt ___, with a fuzzy head and heavy tongue.",
+      "cue_phrase": "fuzzy head",
+      "surface": {
+        "drowsy": "drowsy",
+        "exhausted": "exhausted",
+        "groggy": "groggy",
+        "sluggish": "sluggish",
+        "restless": "restless"
+      }
+    },
+    {
+      "id": "A-tired-01-s18",
+      "answer": "groggy",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The bump left Rafi ___, and his thoughts seemed foggy.",
+      "cue_phrase": "thoughts seemed foggy",
+      "surface": {
+        "drowsy": "drowsy",
+        "exhausted": "exhausted",
+        "groggy": "groggy",
+        "sluggish": "sluggish",
+        "restless": "restless"
+      }
+    },
+    {
+      "id": "A-tired-01-s19",
+      "answer": "groggy",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "When the alarm rang, Isla was ___ and put shoes on wrong feet.",
+      "cue_phrase": "shoes on wrong feet",
+      "surface": {
+        "drowsy": "drowsy",
+        "exhausted": "exhausted",
+        "groggy": "groggy",
+        "sluggish": "sluggish",
+        "restless": "restless"
+      }
+    },
+    {
+      "id": "A-tired-01-s20",
+      "answer": "groggy",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "After the dentist's mask, Leo sounded ___ and called the chair a cloud.",
+      "cue_phrase": "called the chair",
+      "surface": {
+        "drowsy": "drowsy",
+        "exhausted": "exhausted",
+        "groggy": "groggy",
+        "sluggish": "sluggish",
+        "restless": "restless"
+      }
+    },
+    {
+      "id": "A-tired-01-s21",
+      "answer": "groggy",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "After a deep nap, Mum asked the date, but Nia was ___ and answered banana.",
+      "cue_phrase": "answered banana",
+      "surface": {
+        "drowsy": "drowsy",
+        "exhausted": "exhausted",
+        "groggy": "groggy",
+        "sluggish": "sluggish",
+        "restless": "restless"
+      }
+    },
+    {
+      "id": "A-tired-01-s22",
+      "answer": "groggy",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Woken suddenly from a deep nap, Max was ___ and stared at the wrong door.",
+      "cue_phrase": "woken suddenly; wrong door",
+      "surface": {
+        "drowsy": "drowsy",
+        "exhausted": "exhausted",
+        "groggy": "groggy",
+        "sluggish": "sluggish",
+        "restless": "restless"
+      }
+    },
+    {
+      "id": "A-tired-01-s23",
+      "answer": "groggy",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Kiki rose from bed ___, with a fuzzy head and mismatched socks.",
+      "cue_phrase": "fuzzy head",
+      "surface": {
+        "drowsy": "drowsy",
+        "exhausted": "exhausted",
+        "groggy": "groggy",
+        "sluggish": "sluggish",
+        "restless": "restless"
+      }
+    },
+    {
+      "id": "A-tired-01-s24",
+      "answer": "groggy",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "After the nurse's medicine, Jo felt ___ and forgot the word ticket.",
+      "cue_phrase": "forgot the word",
+      "surface": {
+        "drowsy": "drowsy",
+        "exhausted": "exhausted",
+        "groggy": "groggy",
+        "sluggish": "sluggish",
+        "restless": "restless"
+      }
+    },
+    {
+      "id": "A-tired-01-s25",
+      "answer": "sluggish",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "After lunch, Raj felt ___, as if his body ran at half speed.",
+      "cue_phrase": "body ran at half speed",
+      "surface": {
+        "drowsy": "drowsy",
+        "exhausted": "exhausted",
+        "groggy": "groggy",
+        "sluggish": "sluggish",
+        "restless": "restless"
+      }
+    },
+    {
+      "id": "A-tired-01-s26",
+      "answer": "sluggish",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The cold lizard was ___, with limbs working in first gear.",
+      "cue_phrase": "in first gear",
+      "surface": {
+        "drowsy": "drowsy",
+        "exhausted": "exhausted",
+        "groggy": "groggy",
+        "sluggish": "sluggish",
+        "restless": "restless"
+      }
+    },
+    {
+      "id": "A-tired-01-s27",
+      "answer": "sluggish",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "At practice, I felt ___; my feet dragged during the easy warm-up.",
+      "cue_phrase": "feet dragged",
+      "surface": {
+        "drowsy": "drowsy",
+        "exhausted": "exhausted",
+        "groggy": "groggy",
+        "sluggish": "sluggish",
+        "restless": "restless"
+      }
+    },
+    {
+      "id": "A-tired-01-s28",
+      "answer": "sluggish",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "After the enormous lunch, the whole team was ___ during the afternoon drills.",
+      "cue_phrase": "after the enormous lunch",
+      "surface": {
+        "drowsy": "drowsy",
+        "exhausted": "exhausted",
+        "groggy": "groggy",
+        "sluggish": "sluggish",
+        "restless": "restless"
+      }
+    },
+    {
+      "id": "A-tired-01-s29",
+      "answer": "sluggish",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Milo was ___ after sitting all morning, trailing far behind the group.",
+      "cue_phrase": "trailing far behind",
+      "surface": {
+        "drowsy": "drowsy",
+        "exhausted": "exhausted",
+        "groggy": "groggy",
+        "sluggish": "sluggish",
+        "restless": "restless"
+      }
+    },
+    {
+      "id": "A-tired-01-s30",
+      "answer": "sluggish",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The garden snail was ___, reaching the lettuce after everyone finished.",
+      "cue_phrase": "after everyone finished",
+      "surface": {
+        "drowsy": "drowsy",
+        "exhausted": "exhausted",
+        "groggy": "groggy",
+        "sluggish": "sluggish",
+        "restless": "restless"
+      }
+    },
+    {
+      "id": "A-tired-01-s31",
+      "answer": "sluggish",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Before breakfast, Ada felt ___, not sleepy, but stuck in first gear.",
+      "cue_phrase": "stuck in first gear",
+      "surface": {
+        "drowsy": "drowsy",
+        "exhausted": "exhausted",
+        "groggy": "groggy",
+        "sluggish": "sluggish",
+        "restless": "restless"
+      }
+    },
+    {
+      "id": "A-tired-01-s32",
+      "answer": "sluggish",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The turtle was ___ today, with every step delayed.",
+      "cue_phrase": "every step delayed",
+      "surface": {
+        "drowsy": "drowsy",
+        "exhausted": "exhausted",
+        "groggy": "groggy",
+        "sluggish": "sluggish",
+        "restless": "restless"
+      }
+    },
+    {
+      "id": "A-tired-01-s33",
+      "answer": "restless",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Ben lay ___ in the tent, turning over every few minutes, sleep refusing to come.",
+      "cue_phrase": "turning over; sleep refusing",
+      "surface": {
+        "drowsy": "drowsy",
+        "exhausted": "exhausted",
+        "groggy": "groggy",
+        "sluggish": "sluggish",
+        "restless": "restless"
+      }
+    },
+    {
+      "id": "A-tired-01-s34",
+      "answer": "restless",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The baby was ___ all evening, kicking her blanket off each time it settled.",
+      "cue_phrase": "kicking the blanket off",
+      "surface": {
+        "drowsy": "drowsy",
+        "exhausted": "exhausted",
+        "groggy": "groggy",
+        "sluggish": "sluggish",
+        "restless": "restless"
+      }
+    },
+    {
+      "id": "A-tired-01-s35",
+      "answer": "restless",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "On the last day of term, the whole class was ___, chairs scraping every minute.",
+      "cue_phrase": "chairs scraping",
+      "surface": {
+        "drowsy": "drowsy",
+        "exhausted": "exhausted",
+        "groggy": "groggy",
+        "sluggish": "sluggish",
+        "restless": "restless"
+      }
+    },
+    {
+      "id": "A-tired-01-s36",
+      "answer": "restless",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Rain kept the puppies indoors, and by lunch they were ___, pacing the hallway.",
+      "cue_phrase": "pacing the hallway",
+      "surface": {
+        "drowsy": "drowsy",
+        "exhausted": "exhausted",
+        "groggy": "groggy",
+        "sluggish": "sluggish",
+        "restless": "restless"
+      }
+    },
+    {
+      "id": "A-tired-01-s37",
+      "answer": "restless",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The night before the trip, Ella was ___, checking her packed bag again at midnight.",
+      "cue_phrase": "checking again at midnight",
+      "surface": {
+        "drowsy": "drowsy",
+        "exhausted": "exhausted",
+        "groggy": "groggy",
+        "sluggish": "sluggish",
+        "restless": "restless"
+      }
+    },
+    {
+      "id": "A-tired-01-s38",
+      "answer": "restless",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Waiting for the results, Sam was ___, walking to the letterbox every ten minutes.",
+      "cue_phrase": "letterbox every ten minutes",
+      "surface": {
+        "drowsy": "drowsy",
+        "exhausted": "exhausted",
+        "groggy": "groggy",
+        "sluggish": "sluggish",
+        "restless": "restless"
+      }
+    },
+    {
+      "id": "A-tired-01-s39",
+      "answer": "restless",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The horses grew ___ before the storm, circling and stamping in the field.",
+      "cue_phrase": "circling and stamping",
+      "surface": {
+        "drowsy": "drowsy",
+        "exhausted": "exhausted",
+        "groggy": "groggy",
+        "sluggish": "sluggish",
+        "restless": "restless"
+      }
+    },
+    {
+      "id": "A-tired-01-s40",
+      "answer": "restless",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "Too ___ to finish his book, Leo wandered from room to room until dinner.",
+      "cue_phrase": "wandered room to room",
+      "surface": {
+        "drowsy": "drowsy",
+        "exhausted": "exhausted",
+        "groggy": "groggy",
+        "sluggish": "sluggish",
+        "restless": "restless"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "drowsy",
+      "picked": "exhausted",
+      "line": "Drowsy means sleep is coming; exhausted means all energy is gone."
+    },
+    {
+      "answer": "drowsy",
+      "picked": "groggy",
+      "line": "Drowsy has closing eyes; groggy has a fuzzy head after rest or a bump."
+    },
+    {
+      "answer": "drowsy",
+      "picked": "sluggish",
+      "line": "Drowsy is about needing sleep; sluggish is about acting at low speed."
+    },
+    {
+      "answer": "drowsy",
+      "picked": "restless",
+      "line": "Restless cannot settle down. Drowsy is drifting into sleep."
+    },
+    {
+      "answer": "exhausted",
+      "picked": "drowsy",
+      "line": "Exhausted has no energy left; drowsy mainly means sleep is near."
+    },
+    {
+      "answer": "exhausted",
+      "picked": "groggy",
+      "line": "Exhausted is drained in the body; groggy is fuzzy in the head."
+    },
+    {
+      "answer": "exhausted",
+      "picked": "sluggish",
+      "line": "Exhausted is empty of energy; sluggish is simply running at low speed."
+    },
+    {
+      "answer": "exhausted",
+      "picked": "restless",
+      "line": "Restless is fidgety energy. Exhausted is no energy left at all."
+    },
+    {
+      "answer": "groggy",
+      "picked": "drowsy",
+      "line": "Groggy means fuzzy after rest or a bump; drowsy means sleep is coming."
+    },
+    {
+      "answer": "groggy",
+      "picked": "exhausted",
+      "line": "Groggy is a foggy head; exhausted is no strength left."
+    },
+    {
+      "answer": "groggy",
+      "picked": "sluggish",
+      "line": "Groggy is confused and foggy; sluggish is slow in action."
+    },
+    {
+      "answer": "groggy",
+      "picked": "restless",
+      "line": "Restless keeps pacing and turning. Groggy is the foggy slowness just after waking."
+    },
+    {
+      "answer": "sluggish",
+      "picked": "drowsy",
+      "line": "Sluggish means acting at low speed; drowsy means eyes want to close."
+    },
+    {
+      "answer": "sluggish",
+      "picked": "exhausted",
+      "line": "Sluggish is low speed; exhausted is no energy left."
+    },
+    {
+      "answer": "sluggish",
+      "picked": "groggy",
+      "line": "Sluggish is slow action; groggy is a fuzzy head."
+    },
+    {
+      "answer": "sluggish",
+      "picked": "restless",
+      "line": "Restless will not stay still. Sluggish barely moves at all."
+    },
+    {
+      "answer": "restless",
+      "picked": "drowsy",
+      "line": "Drowsy is eyes closing, sleep arriving. Restless is the opposite: you cannot settle at all."
+    },
+    {
+      "answer": "restless",
+      "picked": "exhausted",
+      "line": "Exhausted is out of energy. Restless is full of twitchy energy that will not switch off."
+    },
+    {
+      "answer": "restless",
+      "picked": "groggy",
+      "line": "Groggy is slow and muddled after waking. Restless is fidgety and unable to stay put."
+    },
+    {
+      "answer": "restless",
+      "picked": "sluggish",
+      "line": "Sluggish is moving at half speed. Restless is moving all the time because you cannot stop."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-05T11:13:46+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": null,
+    "scrub_note": "weary swapped for restless: weary was the generic donor the judges fit into every sibling frame."
+  }
+}

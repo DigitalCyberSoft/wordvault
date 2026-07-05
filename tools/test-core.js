@@ -317,6 +317,30 @@ var alwaysWrong = function (s) { return s.answer === 'alpha' ? 'bravo' : 'alpha'
   eq(C.speedBonus(1000, 0), 0, 'zero answers earns 0');
 })();
 
+// 12. Progressive pins: locks grow with the band; leveling still needs streaks.
+(function () {
+  eq(C.crackNeedFor(1), 2, 'band 1 locks take 2 pins');
+  eq(C.crackNeedFor(4), 2, 'level 4 still band 1');
+  eq(C.crackNeedFor(5), 3, 'band 2 locks take 3 pins');
+  eq(C.crackNeedFor(9), 4, 'band 3 locks take 4 pins');
+  eq(C.crackNeedFor(13), 5, 'band 4 locks take the full 5');
+  eq(C.crackNeedFor(20), 5, 'pin count is capped at 5');
+  var set = makeSet('A-test-01');
+  var rng = C.makeRng(11);
+  var enc = C.newEncounter(set, { level: 1 }, rng);
+  eq(enc.need, 2, 'encounter at level 1 needs 2 pins');
+  C.startRun(enc);
+  var s1 = C.drawSentence(enc, set, rng);
+  eq(C.answer(enc, set, s1, s1.answer).state, 'run', 'first pin seats, lock still shut');
+  var s2 = C.drawSentence(enc, set, rng);
+  eq(C.answer(enc, set, s2, s2.answer).state, 'cracked', 'second pin cracks a 2-pin lock');
+  var rev = C.newEncounter(set, { review: true, level: 20 }, rng);
+  eq(rev.need, 3, 'review lockboxes stay at 3 pins regardless of level');
+  var legacy = C.newEncounter(set, {}, rng);
+  eq(legacy.need, 5, 'no level given falls back to the full 5 (old saves)');
+  ok(C.coinsFor('crack', 1, 5) > C.coinsFor('crack', 1, 2), 'more pins pay more coins');
+})();
+
 // ---------------------------------------------------------------------------
 console.log(passed + ' passed, ' + failed + ' failed');
 process.exit(failed ? 1 : 0);

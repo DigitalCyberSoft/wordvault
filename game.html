@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title>Word Vault — the game</title>
-  <meta name="description" content="Crack the safe by choosing the one word that fits. A vocabulary game: five confusable words, one sentence, five in a row opens the vault.">
+  <meta name="description" content="Crack the safe by choosing the one word that fits. A vocabulary game: five confusable words, one sentence, seat every pin to open the vault.">
   <link rel="canonical" href="https://digitalcybersoft.github.io/wordvault/game.html">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#46505a">
@@ -47,6 +47,14 @@
         <!-- wall frame -->
         <rect x="40" y="10" width="560" height="400" rx="26" fill="#5f6a76"/>
         <rect x="52" y="22" width="536" height="376" rx="20" fill="#46505a"/>
+        <!-- alarm on the wall: one lamp lights per miss, klaxon at three -->
+        <g id="alarm-box">
+          <rect x="492" y="14" width="100" height="22" rx="9" fill="#39424c" stroke="#2b323a" stroke-width="3"/>
+          <circle id="alarm-bell" cx="508" cy="25" r="7" fill="#c9973f" stroke="#96702c" stroke-width="2.5"/>
+          <circle class="lamp" cx="536" cy="25" r="5.5"/>
+          <circle class="lamp" cx="556" cy="25" r="5.5"/>
+          <circle class="lamp" cx="576" cy="25" r="5.5"/>
+        </g>
         <!-- interior, revealed when the door swings -->
         <g id="door-inside">
           <rect x="68" y="38" width="504" height="344" rx="14" fill="#241b10"/>
@@ -248,8 +256,9 @@
       <p style="text-align:left;font-weight:600;line-height:1.55">
         Five words are carved on the brass tiles. The paper slip shows a sentence with a hole in it.
         <b>Tap the one word that truly fits.</b> Every correct word seats one tumbler pin —
-        five in a row and the vault swings open. One wrong word and all the pins spring back:
-        that run is over, and you get up to three runs per safe.
+        seat them all in a row and the vault swings open. Bigger vaults need more pins as you
+        level up. One wrong word and all the pins spring back: that run is over, a lamp lights
+        on the alarm, and three wrong answers ring the alarm — that safe stays shut for now.
         Press and hold a tile to peek at what a word means (on lower levels).
       </p>
       <p><button class="big" id="howto-close">Got it</button></p>

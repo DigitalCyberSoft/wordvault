@@ -24,17 +24,22 @@ answers for is a shipping bug, because it punishes a correct answer.
 | 5 | Sentence length | short frames dominate low bands (review-lane flag above 15 words in bands 1-2) |
 | 6 | Review pressure | lockboxes interleave after every 4th set at all levels |
 
-Fixed non-levers: 3 runs per safe, 5-in-a-row to crack, 5 tiles, no timers.
+Fixed non-levers: 3 runs per safe, 5 tiles, no timers. (Crack length is a
+lever since the band-scaling change: see Bands below.)
 
 ## Bands
 
-Five bands of four levels each (`MAX_LEVEL = 20`).
+Five bands of four levels each (`MAX_LEVEL = 20`). The crack requirement grows
+with the band - 2 pins at band 1, 3 at band 2, 4 at band 3, 5 from band 4
+(`crackNeedFor`; review lockboxes stay at 3) - so higher vaults are structurally
+harder as well as lexically harder. Leveling is still gated on clean-crack
+streaks, never on a single success.
 
 | Band | Levels | Feel | Banks | Example sets |
 |---|---|---|---|---|
-| 1 | 1-4 | Common words, clearly different things | A, B | move (run/hop/swim/climb/crawl), taste, animal sounds |
-| 2 | 5-8 | Manner families: same act, different flavour | A, B | cry, talk, eat, ways of walking |
-| 3 | 9-12 | Rarer members, one-shade gaps, usage traps begin | A, B, C | throw, kinds of shine, wet weather, their/there, borrow/lend |
+| 1 | 1-4 | Highest-frequency similarity families | A | (served by band-2 fallback in the pilot) |
+| 2 | 5-8 | Similar words split by one everyday feature | A, B | kinds of happy, ways of being big, cry, eat, ways of walking |
+| 3 | 9-12 | Rarer members, one-shade gaps, usage traps begin | A, B, C | ways of being brave, kinds of tired, kinds of shine, their/there, borrow/lend |
 | 4 | 13-16 | Tier-2 vocabulary, inferential cues carry more | A, B, C | (post-pilot authoring) |
 | 5 | 17-20 | Adjacent-rung sets, cue buried or fully inferential | A, B, C | (post-pilot authoring) |
 
@@ -82,7 +87,8 @@ seen in normal play), coins only.
 
 ## Knobs deliberately left tunable
 
-Runs per set (3), crack length (5), review cadence (4) and lockbox length (3),
+Runs per set (3), the crack-length band curve (2/3/4/5, `crackNeedFor`),
+review cadence (4) and lockbox length (3),
 the help threshold (long-press glosses below level 12), the needed-streak
 curve, bank mix targets (65/20/15), the served cue-mix curve (lever 3), and
 the M11 length thresholds. All are constants in game-core.js or gates in

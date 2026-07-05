@@ -47,6 +47,13 @@ word), draft sentences with `tools/consult-sentences.py`, then run the gates:
   audience floor must be waived with a reason or the word swapped.
 - Bank C words: `synset: null`, `gloss_source: "authored"`, and `gloss` is a
   hand-written usage one-liner.
+- Bank A words MAY pin a synset and still carry `gloss_source: "authored"`.
+  This is the sanctioned escape for scale families WordNet defines circularly
+  (dim = "not bright") or with words below the opacity floor: the synset stays
+  pinned (it anchors the sense for G3/G7/G8 and the judge's sense check), only
+  the card text is authored. Authored glosses are dictionary-register, never
+  kiddified, and every gloss gate except G2 verbatim (G4 siblings, G5 opacity,
+  G6 frequency) still applies to them.
 
 ## A sentence
 

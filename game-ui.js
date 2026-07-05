@@ -75,7 +75,7 @@
   // file://. Every clip is primed inside the first user gesture for iOS.
   var SFX_VOL = {
     tap: 0.4, whoosh: 0.5, seat: 0.9, drop: 0.5, relock: 0.7,
-    door: 0.9, coin: 0.7, chime: 0.8, fanfare: 0.9, page: 0.5
+    door: 0.9, coin: 0.7, chime: 0.8, fanfare: 0.9, page: 0.5, alarm: 0.8
   };
   var clips = {};
   function preloadClips() {
@@ -169,7 +169,7 @@
       set: set,
       review: !!opts.review,
       reviewEntry: opts.entry || null,
-      enc: opts.resume || C.newEncounter(set, { review: !!opts.review }, rng),
+      enc: opts.resume || C.newEncounter(set, { review: !!opts.review, level: currentLevel() }, rng),
       rng: rng,
       startedAt: Date.now(),
       answered: 0,
@@ -191,7 +191,7 @@
     el('ready-runs').textContent = S.review
       ? '1 run · 3 pins to open · one miss and it stays shut'
       : (enc.misses ? 'Run ' + (enc.runIndex + 1) + ' of ' + enc.runsAllowed + ' · fresh sentences this run'
-                    : enc.runsAllowed + ' runs · 5 in a row cracks it');
+                    : enc.runsAllowed + ' runs · ' + enc.need + ' in a row cracks it');
     var box = el('ready-glosses');
     box.innerHTML = '';
     // Gloss cards in the authored order: the semantic gradient, not the
@@ -274,9 +274,15 @@
     for (var i = 0; i < pins.length; i++) {
       pins[i].classList.remove('spring');
       pins[i].classList.toggle('seated', i < S.enc.correctInRun);
-      // review lockboxes need 3 pins, not 5; hide the spare channels
+      // locks grow pins with the band (2..5); hide the spare channels
       pins[i].style.display = (i < S.enc.need) ? '' : 'none';
     }
+    // the alarm lamps track misses this encounter; three rings the klaxon
+    var lamps = el('alarm-box').querySelectorAll('.lamp');
+    for (var j = 0; j < lamps.length; j++) {
+      lamps[j].classList.toggle('on', j < S.enc.misses);
+    }
+    if (S.enc.misses === 0) el('vault').classList.remove('alarm');
   }
   function springPins() {
     var pins = el('mech').querySelectorAll('.pinstack');
@@ -410,7 +416,12 @@
           afterMs(480, function () {
             el('stage').classList.remove('dimmed');
             if (res.state === 'miss') showMissCard(sentence, word, true);
-            else if (res.state === 'exhausted') { showMissCard(sentence, word, false); }
+            else if (res.state === 'exhausted') {
+              // third lamp is lit: ring the klaxon, then the card
+              el('vault').classList.add('alarm');
+              Snd.alarm();
+              afterMs(750, function () { showMissCard(sentence, word, false); });
+            }
             else onReviewFailed(sentence, word);
           });
         });
@@ -475,7 +486,7 @@
     var adj = C.adjustDifficulty(LS.difficulty, clean ? 'clean-crack' : 'crack', LS.streak, LS.capLevel);
     LS.difficulty = adj.difficulty;
     LS.streak = adj.streak;
-    var coins = C.coinsFor('crack', currentLevel()) +
+    var coins = C.coinsFor('crack', currentLevel(), S.enc.need) +
       C.speedBonus(Date.now() - S.startedAt, S.answered);
     LS.coins = LS.coins + coins;
     var owned = LS.collectibles;
@@ -734,7 +745,7 @@
       if (!S || S.busy || S.enc.state !== 'run') return;
       var mode = S.auto;
       var want = sentence.answer;
-      if (mode === 'wrong' || (mode === 'miss' && S.enc.correctInRun === 2)) {
+      if (mode === 'wrong' || (mode === 'miss' && S.enc.correctInRun === S.enc.need - 1)) {
         want = S.enc.tileOrder.filter(function (w) { return w !== sentence.answer; })[0];
         if (mode === 'miss') S.auto = 'right';
       }

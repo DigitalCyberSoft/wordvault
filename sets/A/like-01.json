@@ -1,0 +1,806 @@
+{
+  "id": "A-like-01",
+  "bank": "A",
+  "pos": "verb",
+  "theme": "ways of liking",
+  "band": 2,
+  "band_override": 2,
+  "computed": null,
+  "words": [
+    {
+      "w": "enjoy",
+      "synset": "enjoy.v.01",
+      "gloss_source": "wordnet",
+      "gloss": "derive or receive pleasure from; get enjoyment from; take pleasure in",
+      "zipf": 5.09,
+      "register": "neutral",
+      "senses_at_pos": 5,
+      "dominant_sense_ok": "pinned per set design; frames use only this sense (2026-07-05)",
+      "forms": {
+        "base": "enjoy",
+        "third": "enjoys",
+        "past": "enjoyed",
+        "part": "enjoying"
+      },
+      "discriminator": "having fun while doing it"
+    },
+    {
+      "w": "admire",
+      "synset": "admire.v.01",
+      "gloss_source": "wordnet",
+      "gloss": "feel admiration for",
+      "zipf": 3.97,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "admire",
+        "third": "admires",
+        "past": "admired",
+        "part": "admiring"
+      },
+      "discriminator": "looking up to someone for how good they are"
+    },
+    {
+      "w": "adore",
+      "synset": "adore.v.01",
+      "gloss_source": "wordnet",
+      "gloss": "love intensely",
+      "zipf": 3.7,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "adore",
+        "third": "adores",
+        "past": "adored",
+        "part": "adoring"
+      },
+      "discriminator": "over-the-moon love"
+    },
+    {
+      "w": "cherish",
+      "synset": "care_for.v.02",
+      "gloss_source": "wordnet",
+      "gloss": "be fond of; be attached to",
+      "zipf": 3.52,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "cherish",
+        "third": "cherishes",
+        "past": "cherished",
+        "part": "cherishing"
+      },
+      "discriminator": "holding something precious close"
+    },
+    {
+      "w": "miss",
+      "synset": null,
+      "gloss_source": "authored",
+      "gloss": "feel sad because someone or something is not there",
+      "zipf": 5.22,
+      "register": "neutral",
+      "senses_at_pos": null,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "miss",
+        "third": "misses",
+        "past": "missed",
+        "part": "missing"
+      },
+      "discriminator": "feels the absence of it"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-like-01-s01",
+      "answer": "enjoy",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Nia ___ skating after school; it was fun, though not her favourite.",
+      "cue_phrase": "it was fun",
+      "surface": {
+        "enjoy": "enjoyed",
+        "admire": "admired",
+        "adore": "adored",
+        "cherish": "cherished",
+        "miss": "missed"
+      }
+    },
+    {
+      "id": "A-like-01-s02",
+      "answer": "enjoy",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Ollie wanted to ___ chess because the silly matches were fun.",
+      "cue_phrase": "matches were fun",
+      "surface": {
+        "enjoy": "enjoy",
+        "admire": "admire",
+        "adore": "adore",
+        "cherish": "cherish",
+        "miss": "miss"
+      }
+    },
+    {
+      "id": "A-like-01-s03",
+      "answer": "enjoy",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "I ___ the rainy walk, grinning, but would not choose it again.",
+      "cue_phrase": "grinning, but would not choose",
+      "surface": {
+        "enjoy": "enjoyed",
+        "admire": "admired",
+        "adore": "adored",
+        "cherish": "cherished",
+        "miss": "missed"
+      }
+    },
+    {
+      "id": "A-like-01-s04",
+      "answer": "enjoy",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The class ___ the quiz a bit when jokes appeared between questions.",
+      "cue_phrase": "jokes appeared between questions",
+      "surface": {
+        "enjoy": "enjoyed",
+        "admire": "admired",
+        "adore": "adored",
+        "cherish": "cherished",
+        "miss": "missed"
+      }
+    },
+    {
+      "id": "A-like-01-s05",
+      "answer": "enjoy",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Sam ___ washing the dog; he laughed more than he scrubbed.",
+      "cue_phrase": "laughed more than",
+      "surface": {
+        "enjoy": "enjoyed",
+        "admire": "admired",
+        "adore": "adored",
+        "cherish": "cherished",
+        "miss": "missed"
+      }
+    },
+    {
+      "id": "A-like-01-s06",
+      "answer": "enjoy",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Mum said I might ___ fractions after turning them into puzzles.",
+      "cue_phrase": "turning them into puzzles",
+      "surface": {
+        "enjoy": "enjoy",
+        "admire": "admire",
+        "adore": "adore",
+        "cherish": "cherish",
+        "miss": "miss"
+      }
+    },
+    {
+      "id": "A-like-01-s07",
+      "answer": "enjoy",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Ravi ___ the song enough to hum, but not to replay it.",
+      "cue_phrase": "enough to hum",
+      "surface": {
+        "enjoy": "enjoyed",
+        "admire": "admired",
+        "adore": "adored",
+        "cherish": "cherished",
+        "miss": "missed"
+      }
+    },
+    {
+      "id": "A-like-01-s08",
+      "answer": "enjoy",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "People often ___ hobbies that are amusing but not precious.",
+      "cue_phrase": "amusing but not precious",
+      "surface": {
+        "enjoy": "enjoy",
+        "admire": "admire",
+        "adore": "adore",
+        "cherish": "cherish",
+        "miss": "miss"
+      }
+    },
+    {
+      "id": "A-like-01-s09",
+      "answer": "admire",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Zara ___ the captain, hoping to play just like her one day.",
+      "cue_phrase": "hoping to play like her",
+      "surface": {
+        "enjoy": "enjoyed",
+        "admire": "admired",
+        "adore": "adored",
+        "cherish": "cherished",
+        "miss": "missed"
+      }
+    },
+    {
+      "id": "A-like-01-s10",
+      "answer": "admire",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Ben learned to ___ the dancer for moves he wished he could do.",
+      "cue_phrase": "wished he could do",
+      "surface": {
+        "enjoy": "enjoy",
+        "admire": "admire",
+        "adore": "adore",
+        "cherish": "cherish",
+        "miss": "miss"
+      }
+    },
+    {
+      "id": "A-like-01-s11",
+      "answer": "admire",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Mina ___ the careful builder, staring at the tower's perfect balance.",
+      "cue_phrase": "tower's perfect balance",
+      "surface": {
+        "enjoy": "enjoyed",
+        "admire": "admired",
+        "adore": "adored",
+        "cherish": "cherished",
+        "miss": "missed"
+      }
+    },
+    {
+      "id": "A-like-01-s12",
+      "answer": "admire",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "We ___ our chess teacher, gasping at the clever plan he made.",
+      "cue_phrase": "gasping at the clever",
+      "surface": {
+        "enjoy": "enjoyed",
+        "admire": "admired",
+        "adore": "adored",
+        "cherish": "cherished",
+        "miss": "missed"
+      }
+    },
+    {
+      "id": "A-like-01-s13",
+      "answer": "admire",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "After the rescue, Tomas ___ the lifeguard and practised her knot technique.",
+      "cue_phrase": "practised her knot technique",
+      "surface": {
+        "enjoy": "enjoyed",
+        "admire": "admired",
+        "adore": "adored",
+        "cherish": "cherished",
+        "miss": "missed"
+      }
+    },
+    {
+      "id": "A-like-01-s14",
+      "answer": "admire",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Lily ___ the older runner, then tried to match his smooth stride.",
+      "cue_phrase": "match his smooth stride",
+      "surface": {
+        "enjoy": "enjoyed",
+        "admire": "admired",
+        "adore": "adored",
+        "cherish": "cherished",
+        "miss": "missed"
+      }
+    },
+    {
+      "id": "A-like-01-s15",
+      "answer": "admire",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Artists often ___ a rival's skill while hoping to improve themselves.",
+      "cue_phrase": "hoping to improve themselves",
+      "surface": {
+        "enjoy": "enjoy",
+        "admire": "admire",
+        "adore": "adore",
+        "cherish": "cherish",
+        "miss": "miss"
+      }
+    },
+    {
+      "id": "A-like-01-s16",
+      "answer": "admire",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Dad had me ___ the inventor's clever fix, not just clap politely.",
+      "cue_phrase": "inventor's clever fix",
+      "surface": {
+        "enjoy": "enjoy",
+        "admire": "admire",
+        "adore": "adore",
+        "cherish": "cherish",
+        "miss": "miss"
+      }
+    },
+    {
+      "id": "A-like-01-s17",
+      "answer": "adore",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Tia ___ her kitten; she was over the moon at each purr.",
+      "cue_phrase": "over the moon",
+      "surface": {
+        "enjoy": "enjoyed",
+        "admire": "admired",
+        "adore": "adored",
+        "cherish": "cherished",
+        "miss": "missed"
+      }
+    },
+    {
+      "id": "A-like-01-s18",
+      "answer": "adore",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Noah ___ dragons, drawing them on every page of every notebook he owned.",
+      "cue_phrase": "every page of every notebook",
+      "surface": {
+        "enjoy": "enjoy",
+        "admire": "admire",
+        "adore": "adore",
+        "cherish": "cherish",
+        "miss": "miss"
+      }
+    },
+    {
+      "id": "A-like-01-s19",
+      "answer": "adore",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Maya ___ the new puppy, beaming and whispering, 'You're perfect!'",
+      "cue_phrase": "You're perfect",
+      "surface": {
+        "enjoy": "enjoyed",
+        "admire": "admired",
+        "adore": "adored",
+        "cherish": "cherished",
+        "miss": "missed"
+      }
+    },
+    {
+      "id": "A-like-01-s20",
+      "answer": "adore",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Leo ___ that comic, calling every page his favourite ever.",
+      "cue_phrase": "favourite ever",
+      "surface": {
+        "enjoy": "enjoyed",
+        "admire": "admired",
+        "adore": "adored",
+        "cherish": "cherished",
+        "miss": "missed"
+      }
+    },
+    {
+      "id": "A-like-01-s21",
+      "answer": "adore",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "When Grandma visited, Pia ___ her and ran screaming into her arms.",
+      "cue_phrase": "ran screaming into",
+      "surface": {
+        "enjoy": "enjoyed",
+        "admire": "admired",
+        "adore": "adored",
+        "cherish": "cherished",
+        "miss": "missed"
+      }
+    },
+    {
+      "id": "A-like-01-s22",
+      "answer": "adore",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The baby ___ the moon, waving both hands whenever it rose.",
+      "cue_phrase": "waving both hands",
+      "surface": {
+        "enjoy": "enjoyed",
+        "admire": "admired",
+        "adore": "adored",
+        "cherish": "cherished",
+        "miss": "missed"
+      }
+    },
+    {
+      "id": "A-like-01-s23",
+      "answer": "adore",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Finn ___ his baby sister, cheering every tiny thing she did.",
+      "cue_phrase": "cheering every tiny thing",
+      "surface": {
+        "enjoy": "enjoyed",
+        "admire": "admired",
+        "adore": "adored",
+        "cherish": "cherished",
+        "miss": "missed"
+      }
+    },
+    {
+      "id": "A-like-01-s24",
+      "answer": "adore",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Toddlers ___ that bedtime song, demanding it five times every night.",
+      "cue_phrase": "five times every night",
+      "surface": {
+        "enjoy": "enjoy",
+        "admire": "admire",
+        "adore": "adore",
+        "cherish": "cherish",
+        "miss": "miss"
+      }
+    },
+    {
+      "id": "A-like-01-s25",
+      "answer": "cherish",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Grandad ___ the medal, keeping it safe as a precious memory.",
+      "cue_phrase": "as a precious memory",
+      "surface": {
+        "enjoy": "enjoyed",
+        "admire": "admired",
+        "adore": "adored",
+        "cherish": "cherished",
+        "miss": "missed"
+      }
+    },
+    {
+      "id": "A-like-01-s26",
+      "answer": "cherish",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Mira learned to ___ the old scarf because it held family stories.",
+      "cue_phrase": "held family stories",
+      "surface": {
+        "enjoy": "enjoy",
+        "admire": "admire",
+        "adore": "adore",
+        "cherish": "cherish",
+        "miss": "miss"
+      }
+    },
+    {
+      "id": "A-like-01-s27",
+      "answer": "cherish",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Sam ___ the ticket stub, tucking it inside his memory box.",
+      "cue_phrase": "inside his memory box",
+      "surface": {
+        "enjoy": "enjoyed",
+        "admire": "admired",
+        "adore": "adored",
+        "cherish": "cherished",
+        "miss": "missed"
+      }
+    },
+    {
+      "id": "A-like-01-s28",
+      "answer": "cherish",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Lena ___ the tiny shell, wrapping it carefully for years.",
+      "cue_phrase": "carefully for years",
+      "surface": {
+        "enjoy": "enjoyed",
+        "admire": "admired",
+        "adore": "adored",
+        "cherish": "cherished",
+        "miss": "missed"
+      }
+    },
+    {
+      "id": "A-like-01-s29",
+      "answer": "cherish",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Whenever homesick, Raj ___ the postcard from his first camp.",
+      "cue_phrase": "Whenever homesick",
+      "surface": {
+        "enjoy": "enjoyed",
+        "admire": "admired",
+        "adore": "adored",
+        "cherish": "cherished",
+        "miss": "missed"
+      }
+    },
+    {
+      "id": "A-like-01-s30",
+      "answer": "cherish",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "I ___ Dad's note, so I keep it under my pillow.",
+      "cue_phrase": "under my pillow",
+      "surface": {
+        "enjoy": "enjoy",
+        "admire": "admire",
+        "adore": "adore",
+        "cherish": "cherish",
+        "miss": "miss"
+      }
+    },
+    {
+      "id": "A-like-01-s31",
+      "answer": "cherish",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Families often ___ photographs that hold important days close.",
+      "cue_phrase": "important days close",
+      "surface": {
+        "enjoy": "enjoy",
+        "admire": "admire",
+        "adore": "adore",
+        "cherish": "cherish",
+        "miss": "miss"
+      }
+    },
+    {
+      "id": "A-like-01-s32",
+      "answer": "cherish",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The queen would ___ her sister's letters above every jewel in the palace.",
+      "cue_phrase": "above every jewel",
+      "surface": {
+        "enjoy": "enjoy",
+        "admire": "admire",
+        "adore": "adore",
+        "cherish": "cherish",
+        "miss": "miss"
+      }
+    },
+    {
+      "id": "A-like-01-s33",
+      "answer": "miss",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Away at camp, Noor ___ her little brother more than she expected.",
+      "cue_phrase": "away; more than expected",
+      "surface": {
+        "enjoy": "enjoyed",
+        "admire": "admired",
+        "adore": "adored",
+        "cherish": "cherished",
+        "miss": "missed"
+      }
+    },
+    {
+      "id": "A-like-01-s34",
+      "answer": "miss",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Grandpa still ___ the old corner bakery whenever he walks past the empty shop.",
+      "cue_phrase": "the empty shop",
+      "surface": {
+        "enjoy": "enjoy",
+        "admire": "admire",
+        "adore": "adore",
+        "cherish": "cherish",
+        "miss": "miss"
+      }
+    },
+    {
+      "id": "A-like-01-s35",
+      "answer": "miss",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Since the pool closed for repairs, Amir ___ his Saturday swims.",
+      "cue_phrase": "since the pool closed",
+      "surface": {
+        "enjoy": "enjoyed",
+        "admire": "admired",
+        "adore": "adored",
+        "cherish": "cherished",
+        "miss": "missed"
+      }
+    },
+    {
+      "id": "A-like-01-s36",
+      "answer": "miss",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Moving house meant Lily ___ the mango tree outside her old window.",
+      "cue_phrase": "her old window",
+      "surface": {
+        "enjoy": "enjoyed",
+        "admire": "admired",
+        "adore": "adored",
+        "cherish": "cherished",
+        "miss": "missed"
+      }
+    },
+    {
+      "id": "A-like-01-s37",
+      "answer": "miss",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "With football cancelled all winter, Jack ___ it so much he slept in his shirt.",
+      "cue_phrase": "cancelled all winter",
+      "surface": {
+        "enjoy": "enjoyed",
+        "admire": "admired",
+        "adore": "adored",
+        "cherish": "cherished",
+        "miss": "missed"
+      }
+    },
+    {
+      "id": "A-like-01-s38",
+      "answer": "miss",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Three weeks into the exchange trip, Elsa ___ hearing her own language on the bus.",
+      "cue_phrase": "three weeks away",
+      "surface": {
+        "enjoy": "enjoyed",
+        "admire": "admired",
+        "adore": "adored",
+        "cherish": "cherished",
+        "miss": "missed"
+      }
+    },
+    {
+      "id": "A-like-01-s39",
+      "answer": "miss",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The dog plainly ___ Priya during term time, waiting at her bedroom door each morning.",
+      "cue_phrase": "waiting each morning",
+      "surface": {
+        "enjoy": "enjoy",
+        "admire": "admire",
+        "adore": "adore",
+        "cherish": "cherish",
+        "miss": "miss"
+      }
+    },
+    {
+      "id": "A-like-01-s40",
+      "answer": "miss",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "Retired now, Coach Ade said he ___ the noise of match days most of all.",
+      "cue_phrase": "retired now",
+      "surface": {
+        "enjoy": "enjoy",
+        "admire": "admire",
+        "adore": "adore",
+        "cherish": "cherish",
+        "miss": "miss"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "enjoy",
+      "picked": "admire",
+      "line": "Enjoy means having fun with it. Admire means looking up to skill or goodness."
+    },
+    {
+      "answer": "enjoy",
+      "picked": "adore",
+      "line": "Enjoy is happy fun. Adore is a huge, over-the-moon liking."
+    },
+    {
+      "answer": "enjoy",
+      "picked": "cherish",
+      "line": "Enjoy is about fun now. Cherish is keeping something precious close."
+    },
+    {
+      "answer": "enjoy",
+      "picked": "miss",
+      "line": "Missing is about something gone. Enjoying is having fun with it now."
+    },
+    {
+      "answer": "admire",
+      "picked": "enjoy",
+      "line": "Admire means looking up to skill. Enjoy means having fun with it."
+    },
+    {
+      "answer": "admire",
+      "picked": "adore",
+      "line": "Admire is about being impressed. Adore is a huge warm liking."
+    },
+    {
+      "answer": "admire",
+      "picked": "cherish",
+      "line": "Admire looks up to talent. Cherish holds something precious close."
+    },
+    {
+      "answer": "admire",
+      "picked": "miss",
+      "line": "Missing wants them back. Admiring looks up to how good they are."
+    },
+    {
+      "answer": "adore",
+      "picked": "enjoy",
+      "line": "Adore is huge warm liking. Enjoy is simply having fun."
+    },
+    {
+      "answer": "adore",
+      "picked": "admire",
+      "line": "Adore is over-the-moon liking. Admire is looking up to skill."
+    },
+    {
+      "answer": "adore",
+      "picked": "cherish",
+      "line": "Adore is very strong liking. Cherish is keeping something precious close."
+    },
+    {
+      "answer": "adore",
+      "picked": "miss",
+      "line": "Missing is sadness for what is away. Adoring is delight in what is here."
+    },
+    {
+      "answer": "cherish",
+      "picked": "enjoy",
+      "line": "Cherish means keeping something precious close. Enjoy means having fun with it."
+    },
+    {
+      "answer": "cherish",
+      "picked": "admire",
+      "line": "Cherish protects a treasure or memory. Admire looks up to skill."
+    },
+    {
+      "answer": "cherish",
+      "picked": "adore",
+      "line": "Cherish is holding precious things close. Adore is over-the-moon liking."
+    },
+    {
+      "answer": "cherish",
+      "picked": "miss",
+      "line": "Missing is the gap left behind. Cherishing is treasuring what is still yours."
+    },
+    {
+      "answer": "miss",
+      "picked": "enjoy",
+      "line": "Enjoying is fun while it happens. Missing is the ache when it is gone."
+    },
+    {
+      "answer": "miss",
+      "picked": "admire",
+      "line": "Admiring is looking up to someone. Missing is wishing they were here."
+    },
+    {
+      "answer": "miss",
+      "picked": "adore",
+      "line": "Adoring is huge love up close. Missing is love noticing an empty space."
+    },
+    {
+      "answer": "miss",
+      "picked": "cherish",
+      "line": "Cherishing is holding something dear while you have it. Missing is feeling its absence."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-05T11:06:12+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": null,
+    "scrub_note": "respect swapped for miss: respect was the generic donor the judges fit into every sibling frame."
+  }
+}
