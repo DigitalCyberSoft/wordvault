@@ -115,28 +115,26 @@ body {
 #vault.open #door-leaf { transform: perspective(1400px) rotateY(-104deg); }
 #vault.open { filter: drop-shadow(0 10px 0 rgba(0,0,0,.12)) drop-shadow(0 0 34px var(--gold-glow)); }
 
-/* Five tumbler pins across the door face. The pin row IS the score: empty = dark
-   recess, seated = lit brass. The contrast must read from across a room. */
-#pins { position: absolute; left: 50%; top: 16%; transform: translateX(-50%); display: flex; gap: clamp(10px, 2.4vw, 22px); }
-.pin {
-  width: clamp(30px, 5.4vw, 48px); height: clamp(30px, 5.4vw, 48px); border-radius: 50%;
-  background: radial-gradient(circle at 38% 32%, #39424c 0%, #232a31 70%);
-  box-shadow: inset 0 4px 7px rgba(0,0,0,.55), inset 0 -1px 0 rgba(255,255,255,.14), 0 1px 0 rgba(255,255,255,.25);
-  border: 3px solid var(--steel-dark);
+/* Cross-section lock. Each correct answer lifts one pin stack with a springy
+   overshoot so its split sits flush with the shear line; the seated key pin
+   goes brass so progress still reads from across a room. A miss drops every
+   seated stack back with a 40ms stagger. The 5th seat frees the bolt. */
+#mech .stack { transition: transform var(--t-seat) cubic-bezier(.34, 1.56, .64, 1); }
+.pinstack.seated .stack { transform: translateY(-10px); }
+.pinstack .keypin, .pinstack .setline { transition: fill 160ms ease-out, opacity 160ms ease-out; }
+.pinstack.seated .keypin { fill: url(#brassV); }
+.pinstack .setline { opacity: 0; }
+.pinstack.seated .setline { opacity: 1; }
+.pinstack.spring .stack { animation: mech-drop var(--t-relock) ease-in both; animation-delay: calc(var(--i) * 40ms); }
+@keyframes mech-drop {
+  0% { transform: translateY(-10px); }
+  70% { transform: translateY(2px); }
+  100% { transform: translateY(0); }
 }
-.pin.seated {
-  background: radial-gradient(circle at 36% 30%, #ffe9ad 0%, var(--brass-bright) 45%, var(--brass) 100%);
-  border-color: var(--brass-dark);
-  box-shadow: 0 0 14px var(--gold-glow), inset 0 2px 0 rgba(255,255,255,.65), inset 0 -3px 5px rgba(120,80,20,.45);
-  animation: pin-seat var(--t-seat) cubic-bezier(.34, 1.56, .64, 1) both;
-}
-.pin.spring { animation: pin-spring var(--t-relock) ease-in both; animation-delay: calc(var(--i) * 40ms); }
-@keyframes pin-seat { 0% { transform: scale(.55); } 70% { transform: scale(1.12); } 100% { transform: scale(1); } }
-@keyframes pin-spring {
-  0% { transform: scale(1); filter: none; }
-  55% { transform: scale(1.12); }
-  100% { transform: scale(1); filter: saturate(.25) brightness(.9); }
-}
+/* the bolt slides free just before the door swings */
+#bolt { transition: transform 320ms cubic-bezier(.6, .04, .35, 1) 60ms; }
+#vault.unbolted #bolt { transform: translateX(-76px); }
+#vault.unbolted #plug { fill: #4a4436; }
 @keyframes blank-glow { 0% { box-shadow: 0 0 0 0 var(--gold-glow); } 100% { box-shadow: 0 0 0 14px rgba(240,180,41,0); } }
 
 /* the whole stage dims for a beat on a miss: desaturation IS the wrong-colour */
@@ -290,13 +288,9 @@ body.backdrop-night #slip { background: #f3ecd8; }
 /* skin 'bronze' (Museum Shelf): the door re-cast in bronze */
 body.skin-bronze #door-leaf > rect:first-of-type { fill: #9c7a4a; }
 body.skin-bronze #door-leaf > rect:nth-of-type(2) { stroke: #6e5430; }
-body.skin-bronze .pin { border-color: #6e5430; }
-/* pins 'copper' (Workshop Shelf): seated pins glow copper instead of brass */
-body.pins-copper .pin.seated {
-  background: radial-gradient(circle at 36% 30%, #ffc9a3 0%, #d98d5a 45%, #b06a3b 100%);
-  border-color: #7e4a26;
-  box-shadow: 0 0 14px rgba(217,141,90,.5), inset 0 2px 0 rgba(255,255,255,.6), inset 0 -3px 5px rgba(110,60,20,.45);
-}
+/* pins 'copper' (Workshop Shelf): seated key pins glow copper instead of brass */
+body.pins-copper .pinstack.seated .keypin { fill: url(#copperV); }
+body.pins-copper .pinstack .setline { stroke: #ffc9a3; }
 .shelf h3 button { border: none; background: #fff; border-radius: 999px; padding: 3px 12px; font-family: inherit; font-weight: 700; cursor: pointer; color: var(--brass-dark); margin-left: 8px; font-size: .85rem; }
 
 /* ---- Portrait nudge: the game is laid out for tablet landscape ---- */
@@ -305,6 +299,6 @@ body.pins-copper .pin.seated {
 
 /* ---- Reduced motion: every animation collapses, transitions go instant ---- */
 @media (prefers-reduced-motion: reduce) {
-  .overlay.show, .overlay.show > *, .bob, .pin.seated, .pin.spring, #tile-ghost.shake, #blank.glow, .coin-pop { animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
-  #door-leaf, #tile-ghost, button.big, .menu-btn, .tile { transition: none; }
+  .overlay.show, .overlay.show > *, .bob, .pinstack.spring .stack, #tile-ghost.shake, #blank.glow, .coin-pop { animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
+  #door-leaf, #tile-ghost, button.big, .menu-btn, .tile, #mech .stack, #bolt, .pinstack .keypin, .pinstack .setline { transition: none; }
 }

@@ -266,16 +266,16 @@
   }
 
   function renderPins() {
-    var pins = el('pins').children;
+    var pins = el('mech').querySelectorAll('.pinstack');
     for (var i = 0; i < pins.length; i++) {
       pins[i].classList.remove('spring');
       pins[i].classList.toggle('seated', i < S.enc.correctInRun);
-      // review lockboxes need 3 pins, not 5; hide the spares
+      // review lockboxes need 3 pins, not 5; hide the spare channels
       pins[i].style.display = (i < S.enc.need) ? '' : 'none';
     }
   }
   function springPins() {
-    var pins = el('pins').children;
+    var pins = el('mech').querySelectorAll('.pinstack');
     for (var i = 0; i < pins.length; i++) {
       if (pins[i].classList.contains('seated')) pins[i].classList.add('spring');
     }
@@ -284,7 +284,20 @@
     }, reducedMotion() ? 0 : 560);
   }
 
-  function renderDoor(open) { el('vault').classList.toggle('open', !!open); }
+  function renderDoor(open) {
+    if (!open) el('vault').classList.remove('unbolted');
+    el('vault').classList.toggle('open', !!open);
+  }
+  // the opening beat: bolt slides free of the frame, then the door swings
+  function openVault(cb) {
+    el('vault').classList.add('unbolted');
+    Snd.relock();
+    afterMs(380, function () {
+      renderDoor(true);
+      Snd.door();
+      cb();
+    });
+  }
 
   // ---- the flying tile ----
   function afterMs(ms, fn) { setTimeout(fn, reducedMotion() ? 0 : ms); }
@@ -426,10 +439,8 @@
     if (newLevel > LS.bestLevel) { S.queuedLevelUp = newLevel; LS.bestLevel = newLevel; }
     LS.encounter = null;
     refreshHud();
-    renderDoor(true);
-    Snd.door();
     el('vault-reward').textContent = reward ? reward.emoji : '🪙';
-    afterMs(850, function () {
+    openVault(function () { afterMs(850, function () {
       el('crack-collectible').innerHTML = '';
       var big = document.createElement('div');
       big.style.fontSize = '4rem';
@@ -449,7 +460,7 @@
       if (shelf && shelf.complete) Snd.chime();
       show('crack-overlay');
       if (S.auto) autoContinue('crack-next');
-    });
+    }); });
   }
   function crackNext() {
     hide('crack-overlay');
@@ -497,13 +508,13 @@
     LS.reviewedAt = LS.setsCount;
     LS.encounter = null;
     refreshHud();
-    renderDoor(true);
-    Snd.door();
-    el('crack-collectible').innerHTML = '<div style="font-size:4rem">🔓</div><p style="font-weight:800">Still yours! The words held.</p>';
-    el('crack-coins').textContent = '+' + coins + ' coins';
-    el('crack-shelf').textContent = '';
-    show('crack-overlay');
-    if (S.auto) autoContinue('crack-next');
+    openVault(function () {
+      el('crack-collectible').innerHTML = '<div style="font-size:4rem">🔓</div><p style="font-weight:800">Still yours! The words held.</p>';
+      el('crack-coins').textContent = '+' + coins + ' coins';
+      el('crack-shelf').textContent = '';
+      show('crack-overlay');
+      if (S.auto) autoContinue('crack-next');
+    });
   }
   function onReviewFailed(sentence, picked) {
     LS.review = C.settleReview(LS.review, S.reviewEntry, false);
