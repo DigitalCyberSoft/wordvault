@@ -36,13 +36,16 @@ STYLE = ("flat chunky children's game art, warm high-contrast palette, thick "
 # id -> (relative path, prompt, size)
 ART = {}
 ART["wall"] = ("assets/backdrop/wall.png",
-               "warm terracotta plaster wall of a friendly bank interior, soft top light, "
-               "subtle skirting board, empty centre stage for a vault door, " + STYLE, "1536x1024")
+               "warm terracotta plaster interior wall, soft ceiling light pooling in the centre, "
+               "subtle skirting board, completely bare empty wall with nothing mounted on it, "
+               "no vault, no door, no furniture, no letters, no signs, no writing, " + STYLE, "1536x1024")
 ART["expedition"] = ("assets/backdrop/expedition.png",
                      "sun-bleached explorer's study wall with faded map outlines and warm sand tones, "
                      + STYLE, "1536x1024")
 ART["night"] = ("assets/backdrop/night.png",
-                "deep blue night-time bank interior wall, moonlight from a high window, cosy not scary, "
+                "deep blue stone room at night, moonlight beaming from one high arched window, "
+                "stars visible through the glass, cosy not scary, otherwise completely bare walls, "
+                "no vault, no door, no desk, no furniture, no letters, no signs, no writing, "
                 + STYLE, "1536x1024")
 ART["logo"] = ("assets/logo/logo.png",
                "game logo art: a round steel vault door with brass dial slightly open with warm golden "
@@ -122,6 +125,7 @@ def main():
         return
     print("Generating %d image(s) with gpt-image-1 (this costs credits)." % len(todo))
 
+    failed = 0
     for cid, path, prompt, size in todo:
         last_err = None
         for attempt in range(3):
@@ -142,7 +146,10 @@ def main():
                 last_err = str(e)
                 time.sleep(3)
         if last_err:
+            failed += 1
             print("  FAILED %s: %s" % (cid, last_err), file=sys.stderr)
+    if failed:
+        sys.exit("%d image(s) failed" % failed)
 
 
 if __name__ == "__main__":

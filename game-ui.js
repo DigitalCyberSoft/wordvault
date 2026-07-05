@@ -433,7 +433,7 @@
       el('crack-collectible').innerHTML = '';
       var big = document.createElement('div');
       big.style.fontSize = '4rem';
-      big.textContent = reward ? reward.emoji : '🪙';
+      if (reward) collectibleIcon(reward, big); else big.textContent = '🪙';
       var name = document.createElement('p');
       name.style.fontWeight = '800';
       name.textContent = reward ? reward.name : 'The cabinet is full - coins only!';
@@ -607,6 +607,16 @@
   }
 
   // ---- curio cabinet ----
+  // Collectible art with the emoji as fallback (mirrors the title logo's
+  // onerror pattern); the game stays complete without any PNGs on disk.
+  function collectibleIcon(item, holder) {
+    var img = document.createElement('img');
+    img.alt = item.name;
+    img.addEventListener('error', function () { holder.textContent = item.emoji; });
+    // shelf items carry .id, the crack reward carries .itemId
+    img.src = 'assets/collectibles/' + (item.id || item.itemId) + '.png';
+    holder.appendChild(img);
+  }
   function renderCabinet() {
     var box = el('shelves');
     box.innerHTML = '';
@@ -629,7 +639,7 @@
         var slot = document.createElement('div');
         var have = LS.collectibles.indexOf(it.id) !== -1;
         slot.className = 'slot' + (have ? '' : ' empty');
-        slot.textContent = have ? it.emoji : '?';
+        if (have) collectibleIcon(it, slot); else slot.textContent = '?';
         slot.title = have ? it.name : '???';
         items.appendChild(slot);
       });

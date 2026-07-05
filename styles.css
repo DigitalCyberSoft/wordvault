@@ -47,7 +47,11 @@ html, body { margin: 0; height: 100%; }
 body {
   font-family: 'Baloo 2', 'Comic Sans MS', 'Trebuchet MS', system-ui, sans-serif;
   background-color: var(--bg);
-  background-image: linear-gradient(180deg, rgba(255,244,214,.35) 0%, rgba(120,80,20,.18) 100%);
+  /* painted wall under a light cohesion tint; if the PNG is missing the gradient still paints */
+  background-image: linear-gradient(180deg, rgba(255,244,214,.18) 0%, rgba(120,80,20,.12) 100%),
+                    url('assets/backdrop/wall.png');
+  background-size: auto, cover;
+  background-position: center;
   color: var(--ink);
   -webkit-user-select: none; user-select: none;
   overflow: hidden;
@@ -266,13 +270,22 @@ button.plain { --face: #fff; --edge: #d9c6a0; color: var(--ink); }
 .shelf .items { display: flex; gap: 10px; }
 .shelf .items .slot { width: 64px; height: 64px; border-radius: var(--r-sm); background: rgba(0,0,0,.08); box-shadow: inset 0 2px 4px rgba(0,0,0,.18); display: grid; place-items: center; }
 .shelf .items .slot img { width: 54px; height: 54px; object-fit: contain; }
+#crack-collectible img { width: 96px; height: 96px; object-fit: contain; }
 .shelf .items .slot.empty { font-size: 1.6rem; opacity: .35; }
 
 /* ---- Cosmetics: unlocked by completing Curio Cabinet shelves ---- */
 /* backdrop 'expedition' (Expedition Shelf): sun-bleached map tones */
-body.backdrop-expedition { background-color: #ead9b0; background-image: linear-gradient(180deg, rgba(255,240,200,.5) 0%, rgba(140,100,40,.22) 100%); }
+body.backdrop-expedition {
+  background-color: #ead9b0;
+  background-image: linear-gradient(180deg, rgba(255,240,200,.25) 0%, rgba(140,100,40,.15) 100%),
+                    url('assets/backdrop/expedition.png');
+}
 /* backdrop 'night' (Shelf of Wonders): the vault after closing time */
-body.backdrop-night { background-color: #2e3442; background-image: linear-gradient(180deg, rgba(90,110,160,.35) 0%, rgba(10,12,20,.5) 100%); }
+body.backdrop-night {
+  background-color: #2e3442;
+  background-image: linear-gradient(180deg, rgba(90,110,160,.2) 0%, rgba(10,12,20,.3) 100%),
+                    url('assets/backdrop/night.png');
+}
 body.backdrop-night #slip { background: #f3ecd8; }
 /* skin 'bronze' (Museum Shelf): the door re-cast in bronze */
 body.skin-bronze #door-leaf > rect:first-of-type { fill: #9c7a4a; }
