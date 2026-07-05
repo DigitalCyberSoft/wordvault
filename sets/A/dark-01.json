@@ -5,7 +5,13 @@
   "theme": "kinds of dark",
   "band": 3,
   "band_override": 3,
-  "computed": null,
+  "computed": {
+    "zipf_min": 3.05,
+    "zipf_mean": 3.48,
+    "tightness": null,
+    "band_suggested": 3,
+    "scored_at": "2026-07-05T13:15:51+00:00"
+  },
   "words": [
     {
       "w": "dim",
@@ -19,13 +25,14 @@
       "forms": {
         "base": "dim"
       },
-      "discriminator": "a little light, but weak"
+      "discriminator": "a little light, but weak",
+      "grade": 2
     },
     {
       "w": "murky",
-      "synset": "murky.s.02",
-      "gloss_source": "wordnet",
-      "gloss": "dark or gloomy",
+      "synset": "cloudy.s.02",
+      "gloss_source": "authored",
+      "gloss": "so full of floating dirt that nothing shows beneath it",
       "zipf": 3.12,
       "register": "neutral",
       "senses_at_pos": 2,
@@ -33,7 +40,8 @@
       "forms": {
         "base": "murky"
       },
-      "discriminator": "dark and hard to see through, like deep water"
+      "discriminator": "dark and hard to see through, like deep water",
+      "grade": 4
     },
     {
       "w": "shadowy",
@@ -47,7 +55,8 @@
       "forms": {
         "base": "shadowy"
       },
-      "discriminator": "full of patches of shade"
+      "discriminator": "full of patches of shade",
+      "grade": 4
     },
     {
       "w": "overcast",
@@ -61,7 +70,8 @@
       "forms": {
         "base": "overcast"
       },
-      "discriminator": "grey covered sky, daytime"
+      "discriminator": "grey covered sky, daytime",
+      "grade": 4
     },
     {
       "w": "pitch-black",
@@ -75,7 +85,8 @@
       "forms": {
         "base": "pitch-black"
       },
-      "discriminator": "no light at all"
+      "discriminator": "no light at all",
+      "grade": 3
     }
   ],
   "sentences": [
@@ -122,7 +133,15 @@
         "shadowy": "shadowy",
         "overcast": "overcast",
         "pitch-black": "pitch-black"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads shadowy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-dark-01-s04",
@@ -137,7 +156,15 @@
         "shadowy": "shadowy",
         "overcast": "overcast",
         "pitch-black": "pitch-black"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads shadowy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-dark-01-s05",
@@ -182,7 +209,15 @@
         "shadowy": "shadowy",
         "overcast": "overcast",
         "pitch-black": "pitch-black"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads shadowy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-dark-01-s08",
@@ -212,7 +247,15 @@
         "shadowy": "shadowy",
         "overcast": "overcast",
         "pitch-black": "pitch-black"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads pitch-black charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-dark-01-s10",
@@ -227,7 +270,15 @@
         "shadowy": "shadowy",
         "overcast": "overcast",
         "pitch-black": "pitch-black"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads pitch-black charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-dark-01-s11",
@@ -257,7 +308,15 @@
         "shadowy": "shadowy",
         "overcast": "overcast",
         "pitch-black": "pitch-black"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads pitch-black charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-dark-01-s13",
@@ -287,7 +346,15 @@
         "shadowy": "shadowy",
         "overcast": "overcast",
         "pitch-black": "pitch-black"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads pitch-black charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-dark-01-s15",
@@ -407,7 +474,15 @@
         "shadowy": "shadowy",
         "overcast": "overcast",
         "pitch-black": "pitch-black"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads dim charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-dark-01-s23",
@@ -422,7 +497,15 @@
         "shadowy": "shadowy",
         "overcast": "overcast",
         "pitch-black": "pitch-black"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads pitch-black charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-dark-01-s24",
@@ -437,7 +520,15 @@
         "shadowy": "shadowy",
         "overcast": "overcast",
         "pitch-black": "pitch-black"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads dim charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-dark-01-s25",
@@ -452,7 +543,15 @@
         "shadowy": "shadowy",
         "overcast": "overcast",
         "pitch-black": "pitch-black"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads murky charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-dark-01-s26",
@@ -467,7 +566,15 @@
         "shadowy": "shadowy",
         "overcast": "overcast",
         "pitch-black": "pitch-black"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads dim, murky charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-dark-01-s27",
@@ -482,7 +589,15 @@
         "shadowy": "shadowy",
         "overcast": "overcast",
         "pitch-black": "pitch-black"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads murky charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-dark-01-s28",
@@ -497,22 +612,38 @@
         "shadowy": "shadowy",
         "overcast": "overcast",
         "pitch-black": "pitch-black"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads murky charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-dark-01-s29",
       "answer": "overcast",
       "cue": "inferential",
       "reserve": false,
-      "text": "The sundial showed nothing at lunchtime because the day was ___.",
-      "cue_phrase": "sundial showed nothing",
+      "text": "Lunchtime came and went without one bright patch on the field; the day stayed ___.",
+      "cue_phrase": "without one bright patch",
       "surface": {
         "dim": "dim",
         "murky": "murky",
         "shadowy": "shadowy",
         "overcast": "overcast",
         "pitch-black": "pitch-black"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads dim, murky charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-dark-01-s30",
@@ -527,7 +658,15 @@
         "shadowy": "shadowy",
         "overcast": "overcast",
         "pitch-black": "pitch-black"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads dim, murky charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-dark-01-s31",
@@ -557,7 +696,15 @@
         "shadowy": "shadowy",
         "overcast": "overcast",
         "pitch-black": "pitch-black"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads murky charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-dark-01-s33",
@@ -602,7 +749,15 @@
         "shadowy": "shadowy",
         "overcast": "overcast",
         "pitch-black": "pitch-black"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads dim, shadowy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-dark-01-s36",
@@ -662,7 +817,15 @@
         "shadowy": "shadowy",
         "overcast": "overcast",
         "pitch-black": "pitch-black"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads dim charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-dark-01-s40",
@@ -785,7 +948,7 @@
   "meta": {
     "generated_at": "2026-07-05T11:20:11+00:00",
     "model": "gpt-5.5",
-    "scrubbed_at": null,
-    "scrub_note": null
+    "scrubbed_at": "2026-07-05T13:42:27+00:00",
+    "scrub_note": "murky re-pinned to the liquids sense the frames stage (cloudy.s.02, authored gloss); sundial near-duplicate split (s29). Full read + judge triage."
   }
 }

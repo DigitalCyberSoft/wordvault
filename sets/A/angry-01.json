@@ -5,36 +5,14 @@
   "theme": "kinds of angry",
   "band": 2,
   "band_override": 2,
-  "computed": null,
+  "computed": {
+    "zipf_min": 2.97,
+    "zipf_mean": 3.75,
+    "tightness": null,
+    "band_suggested": 4,
+    "scored_at": "2026-07-05T13:15:51+00:00"
+  },
   "words": [
-    {
-      "w": "annoyed",
-      "synset": "annoyed.s.01",
-      "gloss_source": "authored",
-      "gloss": "mildly angry at something that keeps bothering you",
-      "zipf": 3.95,
-      "register": "neutral",
-      "senses_at_pos": 2,
-      "dominant_sense_ok": null,
-      "forms": {
-        "base": "annoyed"
-      },
-      "discriminator": "mildly bothered"
-    },
-    {
-      "w": "furious",
-      "synset": "angered.s.01",
-      "gloss_source": "wordnet",
-      "gloss": "marked by extreme anger",
-      "zipf": 3.98,
-      "register": "neutral",
-      "senses_at_pos": 3,
-      "dominant_sense_ok": null,
-      "forms": {
-        "base": "furious"
-      },
-      "discriminator": "the strongest anger"
-    },
     {
       "w": "grumpy",
       "synset": "crabbed.s.01",
@@ -47,21 +25,34 @@
       "forms": {
         "base": "grumpy"
       },
-      "discriminator": "a scowling mood, not aimed at anything"
+      "discriminator": "a scowling mood, not aimed at anything",
+      "grade": 1
     },
     {
-      "w": "outraged",
-      "synset": "indignant.s.01",
-      "gloss_source": "wordnet",
-      "gloss": "angered at something unjust or wrong",
-      "zipf": 3.57,
+      "w": "frustrated",
+      "synset": "defeated.s.01",
+      "gloss_source": "authored",
+      "gloss": "upset because something keeps stopping you from doing what you are trying to do",
+      "zipf": 4.08,
       "register": "neutral",
-      "senses_at_pos": 1,
-      "dominant_sense_ok": null,
       "forms": {
-        "base": "outraged"
+        "base": "frustrated"
       },
-      "discriminator": "angry because something is unfair or wrong"
+      "discriminator": "a real attempt keeps failing; groans and tries again",
+      "grade": 3
+    },
+    {
+      "w": "jealous",
+      "synset": "covetous.s.01",
+      "gloss_source": "authored",
+      "gloss": "unhappy because someone else has the thing you want",
+      "zipf": 4.24,
+      "register": "neutral",
+      "forms": {
+        "base": "jealous"
+      },
+      "discriminator": "someone else has the wanted thing",
+      "grade": 3
     },
     {
       "w": "resentful",
@@ -75,129 +66,209 @@
       "forms": {
         "base": "resentful"
       },
-      "discriminator": "holds the grudge in, over time"
+      "discriminator": "holds the grudge in, over time",
+      "grade": 6
+    },
+    {
+      "w": "furious",
+      "synset": "angered.s.01",
+      "gloss_source": "wordnet",
+      "gloss": "marked by extreme anger",
+      "zipf": 3.98,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "furious"
+      },
+      "discriminator": "the strongest anger",
+      "grade": 3
     }
   ],
   "sentences": [
     {
       "id": "A-angry-01-s01",
-      "answer": "annoyed",
+      "answer": "frustrated",
       "cue": "explicit",
       "reserve": false,
-      "text": "Max felt a bit ___ when the tap dripped through the film.",
-      "cue_phrase": "tap dripped through",
+      "text": "Max felt ___ because however hard he pulled, the knot would not come undone.",
+      "cue_phrase": "would not come undone",
       "surface": {
-        "annoyed": "annoyed",
         "furious": "furious",
         "grumpy": "grumpy",
-        "outraged": "outraged",
-        "resentful": "resentful"
-      }
+        "resentful": "resentful",
+        "frustrated": "frustrated",
+        "jealous": "jealous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads furious, grumpy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-angry-01-s02",
-      "answer": "annoyed",
+      "answer": "frustrated",
       "cue": "explicit",
       "reserve": false,
-      "text": "The tiny buzzing near her ear made Priya a little ___.",
-      "cue_phrase": "tiny buzzing near her ear",
+      "text": "Priya grew ___ when the jigsaw's last piece refused to fit anywhere.",
+      "cue_phrase": "refused to fit anywhere",
       "surface": {
-        "annoyed": "annoyed",
         "furious": "furious",
         "grumpy": "grumpy",
-        "outraged": "outraged",
-        "resentful": "resentful"
-      }
+        "resentful": "resentful",
+        "frustrated": "frustrated",
+        "jealous": "jealous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads furious, grumpy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-angry-01-s03",
-      "answer": "annoyed",
+      "answer": "frustrated",
       "cue": "contextual",
       "reserve": false,
-      "text": "After Ben heard the same joke five times, he was ___.",
-      "cue_phrase": "same joke five times",
+      "text": "After the jar lid slipped from his grip five times, Ben felt ___.",
+      "cue_phrase": "slipped from his grip five times",
       "surface": {
-        "annoyed": "annoyed",
         "furious": "furious",
         "grumpy": "grumpy",
-        "outraged": "outraged",
-        "resentful": "resentful"
-      }
+        "resentful": "resentful",
+        "frustrated": "frustrated",
+        "jealous": "jealous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads furious, grumpy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-angry-01-s04",
-      "answer": "annoyed",
+      "answer": "frustrated",
       "cue": "contextual",
       "reserve": false,
-      "text": "Mina became ___ as crumbs scratched inside her woolly jumper.",
-      "cue_phrase": "crumbs scratched inside",
+      "text": "Mina's kite dived into the hedge again and again until she was ___.",
+      "cue_phrase": "again and again",
       "surface": {
-        "annoyed": "annoyed",
         "furious": "furious",
         "grumpy": "grumpy",
-        "outraged": "outraged",
-        "resentful": "resentful"
-      }
+        "resentful": "resentful",
+        "frustrated": "frustrated",
+        "jealous": "jealous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads furious, grumpy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-angry-01-s05",
-      "answer": "annoyed",
+      "answer": "frustrated",
       "cue": "inferential",
       "reserve": false,
-      "text": "Ollie sighed after each squeak, so the loose door had him ___.",
-      "cue_phrase": "sighed after each squeak",
+      "text": "Ollie rubbed out the same sum again, pressing so hard the paper tore; he was ___.",
+      "cue_phrase": "pressing so hard the paper tore",
       "surface": {
-        "annoyed": "annoyed",
         "furious": "furious",
         "grumpy": "grumpy",
-        "outraged": "outraged",
-        "resentful": "resentful"
-      }
+        "resentful": "resentful",
+        "frustrated": "frustrated",
+        "jealous": "jealous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads furious, grumpy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-angry-01-s06",
-      "answer": "annoyed",
+      "answer": "frustrated",
       "cue": "inferential",
       "reserve": false,
-      "text": "Her smile faded during the hiccup song, but she only felt ___.",
-      "cue_phrase": "only felt",
+      "text": "Her tower wobbled and fell at the same brick each time, and Sofia went quiet, ___.",
+      "cue_phrase": "fell at the same brick each time",
       "surface": {
-        "annoyed": "annoyed",
         "furious": "furious",
         "grumpy": "grumpy",
-        "outraged": "outraged",
-        "resentful": "resentful"
-      }
+        "resentful": "resentful",
+        "frustrated": "frustrated",
+        "jealous": "jealous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads furious, grumpy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-angry-01-s07",
-      "answer": "annoyed",
+      "answer": "frustrated",
       "cue": "contextual",
       "reserve": true,
-      "text": "By the tenth nudge, the queue behind Sam made him ___.",
-      "cue_phrase": "tenth nudge",
+      "text": "The zip stuck halfway again, and by the third tug Sam felt ___.",
+      "cue_phrase": "stuck halfway again",
       "surface": {
-        "annoyed": "annoyed",
         "furious": "furious",
         "grumpy": "grumpy",
-        "outraged": "outraged",
-        "resentful": "resentful"
-      }
+        "resentful": "resentful",
+        "frustrated": "frustrated",
+        "jealous": "jealous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads furious, grumpy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-angry-01-s08",
-      "answer": "annoyed",
+      "answer": "frustrated",
       "cue": "contextual",
       "reserve": true,
-      "text": "Lena was a bit ___ with the fly circling her lunch.",
-      "cue_phrase": "fly circling her lunch",
+      "text": "Weeks of practice still had not earned the badge, and Lena felt ___.",
+      "cue_phrase": "still had not earned the badge",
       "surface": {
-        "annoyed": "annoyed",
         "furious": "furious",
         "grumpy": "grumpy",
-        "outraged": "outraged",
-        "resentful": "resentful"
-      }
+        "resentful": "resentful",
+        "frustrated": "frustrated",
+        "jealous": "jealous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads furious, grumpy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-angry-01-s09",
@@ -207,11 +278,11 @@
       "text": "Kai was ___, shaking with rage after the wind smashed his kite.",
       "cue_phrase": "shaking with rage",
       "surface": {
-        "annoyed": "annoyed",
         "furious": "furious",
         "grumpy": "grumpy",
-        "outraged": "outraged",
-        "resentful": "resentful"
+        "resentful": "resentful",
+        "frustrated": "frustrated",
+        "jealous": "jealous"
       }
     },
     {
@@ -222,12 +293,20 @@
       "text": "The giant felt ___ enough to roar and stamp both feet.",
       "cue_phrase": "roar and stamp",
       "surface": {
-        "annoyed": "annoyed",
         "furious": "furious",
         "grumpy": "grumpy",
-        "outraged": "outraged",
-        "resentful": "resentful"
-      }
+        "resentful": "resentful",
+        "frustrated": "frustrated",
+        "jealous": "jealous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads frustrated, grumpy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-angry-01-s11",
@@ -237,11 +316,11 @@
       "text": "When lava ruined her cave, the dragon became ___ and breathed sparks.",
       "cue_phrase": "breathed sparks",
       "surface": {
-        "annoyed": "annoyed",
         "furious": "furious",
         "grumpy": "grumpy",
-        "outraged": "outraged",
-        "resentful": "resentful"
+        "resentful": "resentful",
+        "frustrated": "frustrated",
+        "jealous": "jealous"
       }
     },
     {
@@ -249,14 +328,14 @@
       "answer": "furious",
       "cue": "contextual",
       "reserve": false,
-      "text": "Ravi was ___ after his model fell, yelling until his throat hurt.",
-      "cue_phrase": "yelling until his throat hurt",
+      "text": "Ravi was ___ after his sister snapped his model in two, yelling until his throat hurt.",
+      "cue_phrase": "snapped his model in two",
       "surface": {
-        "annoyed": "annoyed",
         "furious": "furious",
         "grumpy": "grumpy",
-        "outraged": "outraged",
-        "resentful": "resentful"
+        "resentful": "resentful",
+        "frustrated": "frustrated",
+        "jealous": "jealous"
       }
     },
     {
@@ -267,11 +346,11 @@
       "text": "Nobody dared speak, because Nora looked ___, red-faced and thunderous.",
       "cue_phrase": "red-faced and thunderous",
       "surface": {
-        "annoyed": "annoyed",
         "furious": "furious",
         "grumpy": "grumpy",
-        "outraged": "outraged",
-        "resentful": "resentful"
+        "resentful": "resentful",
+        "frustrated": "frustrated",
+        "jealous": "jealous"
       }
     },
     {
@@ -279,15 +358,23 @@
       "answer": "furious",
       "cue": "inferential",
       "reserve": false,
-      "text": "The troll smashed three rocks, which showed he was ___.",
-      "cue_phrase": "smashed three rocks",
+      "text": "The troll smashed three rocks after the goats tricked him, which showed he was ___.",
+      "cue_phrase": "after the goats tricked him",
       "surface": {
-        "annoyed": "annoyed",
         "furious": "furious",
         "grumpy": "grumpy",
-        "outraged": "outraged",
-        "resentful": "resentful"
-      }
+        "resentful": "resentful",
+        "frustrated": "frustrated",
+        "jealous": "jealous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads frustrated, resentful charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-angry-01-s15",
@@ -297,11 +384,11 @@
       "text": "Amira was ___, with a rage so hot she could hardly talk.",
       "cue_phrase": "rage so hot",
       "surface": {
-        "annoyed": "annoyed",
         "furious": "furious",
         "grumpy": "grumpy",
-        "outraged": "outraged",
-        "resentful": "resentful"
+        "resentful": "resentful",
+        "frustrated": "frustrated",
+        "jealous": "jealous"
       }
     },
     {
@@ -309,14 +396,14 @@
       "answer": "furious",
       "cue": "contextual",
       "reserve": true,
-      "text": "The storm made the sea ___, crashing high over the wall.",
-      "cue_phrase": "crashing high over",
+      "text": "The prank soaked Dev's homework, and he turned ___, shouting until the windows rattled.",
+      "cue_phrase": "shouting until the windows rattled",
       "surface": {
-        "annoyed": "annoyed",
         "furious": "furious",
         "grumpy": "grumpy",
-        "outraged": "outraged",
-        "resentful": "resentful"
+        "resentful": "resentful",
+        "frustrated": "frustrated",
+        "jealous": "jealous"
       }
     },
     {
@@ -327,11 +414,11 @@
       "text": "Grandad felt ___ and grumbled about socks, soup, and the weather.",
       "cue_phrase": "grumbled about socks",
       "surface": {
-        "annoyed": "annoyed",
         "furious": "furious",
         "grumpy": "grumpy",
-        "outraged": "outraged",
-        "resentful": "resentful"
+        "resentful": "resentful",
+        "frustrated": "frustrated",
+        "jealous": "jealous"
       }
     },
     {
@@ -342,11 +429,11 @@
       "text": "Tara woke up ___, scowling at breakfast for no reason.",
       "cue_phrase": "scowling at breakfast",
       "surface": {
-        "annoyed": "annoyed",
         "furious": "furious",
         "grumpy": "grumpy",
-        "outraged": "outraged",
-        "resentful": "resentful"
+        "resentful": "resentful",
+        "frustrated": "frustrated",
+        "jealous": "jealous"
       }
     },
     {
@@ -357,11 +444,11 @@
       "text": "On cold mornings, the bus driver can seem ___ before tea.",
       "cue_phrase": "before tea",
       "surface": {
-        "annoyed": "annoyed",
         "furious": "furious",
         "grumpy": "grumpy",
-        "outraged": "outraged",
-        "resentful": "resentful"
+        "resentful": "resentful",
+        "frustrated": "frustrated",
+        "jealous": "jealous"
       }
     },
     {
@@ -372,11 +459,11 @@
       "text": "The sleepy badger was ___, muttering at every twig and cloud.",
       "cue_phrase": "muttering at every twig",
       "surface": {
-        "annoyed": "annoyed",
         "furious": "furious",
         "grumpy": "grumpy",
-        "outraged": "outraged",
-        "resentful": "resentful"
+        "resentful": "resentful",
+        "frustrated": "frustrated",
+        "jealous": "jealous"
       }
     },
     {
@@ -387,11 +474,11 @@
       "text": "Ella seemed ___, answering with huffs though nobody had done anything.",
       "cue_phrase": "nobody had done anything",
       "surface": {
-        "annoyed": "annoyed",
         "furious": "furious",
         "grumpy": "grumpy",
-        "outraged": "outraged",
-        "resentful": "resentful"
+        "resentful": "resentful",
+        "frustrated": "frustrated",
+        "jealous": "jealous"
       }
     },
     {
@@ -402,12 +489,20 @@
       "text": "Dad looked ___ at sunrise, so we waited before asking questions.",
       "cue_phrase": "waited before asking",
       "surface": {
-        "annoyed": "annoyed",
         "furious": "furious",
         "grumpy": "grumpy",
-        "outraged": "outraged",
-        "resentful": "resentful"
-      }
+        "resentful": "resentful",
+        "frustrated": "frustrated",
+        "jealous": "jealous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads frustrated, furious charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-angry-01-s23",
@@ -417,12 +512,20 @@
       "text": "The gnome got ___ whenever his nap ended too early.",
       "cue_phrase": "nap ended too early",
       "surface": {
-        "annoyed": "annoyed",
         "furious": "furious",
         "grumpy": "grumpy",
-        "outraged": "outraged",
-        "resentful": "resentful"
-      }
+        "resentful": "resentful",
+        "frustrated": "frustrated",
+        "jealous": "jealous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads frustrated, furious charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-angry-01-s24",
@@ -432,162 +535,242 @@
       "text": "Mum sounded ___, saying 'hmm' to cake, games, and sunshine.",
       "cue_phrase": "cake, games, and sunshine",
       "surface": {
-        "annoyed": "annoyed",
         "furious": "furious",
         "grumpy": "grumpy",
-        "outraged": "outraged",
-        "resentful": "resentful"
+        "resentful": "resentful",
+        "frustrated": "frustrated",
+        "jealous": "jealous"
       }
     },
     {
       "id": "A-angry-01-s25",
-      "answer": "outraged",
+      "answer": "jealous",
       "cue": "explicit",
       "reserve": false,
-      "text": "The class felt ___ when the prize went to a cheat.",
-      "cue_phrase": "prize went to a cheat",
+      "text": "Maya felt ___ because her brother's new bike was everything she wished for.",
+      "cue_phrase": "everything she wished for",
       "surface": {
-        "annoyed": "annoyed",
         "furious": "furious",
         "grumpy": "grumpy",
-        "outraged": "outraged",
-        "resentful": "resentful"
-      }
+        "resentful": "resentful",
+        "frustrated": "frustrated",
+        "jealous": "jealous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads resentful charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-angry-01-s26",
-      "answer": "outraged",
+      "answer": "jealous",
       "cue": "explicit",
       "reserve": false,
-      "text": "Maya was ___ that the tiny puppy had been kicked.",
-      "cue_phrase": "puppy had been kicked",
+      "text": "Watching his friend unwrap the robot he had dreamed of owning, Sam felt ___.",
+      "cue_phrase": "he had dreamed of owning",
       "surface": {
-        "annoyed": "annoyed",
         "furious": "furious",
         "grumpy": "grumpy",
-        "outraged": "outraged",
-        "resentful": "resentful"
-      }
+        "resentful": "resentful",
+        "frustrated": "frustrated",
+        "jealous": "jealous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads frustrated, resentful charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-angry-01-s27",
-      "answer": "outraged",
+      "answer": "jealous",
       "cue": "contextual",
       "reserve": false,
-      "text": "The villagers were ___ after the king jailed people for singing.",
-      "cue_phrase": "jailed people for singing",
+      "text": "Lila kept staring at her cousin's sparkly trainers instead of her own plain ones, feeling ___.",
+      "cue_phrase": "instead of her own plain ones",
       "surface": {
-        "annoyed": "annoyed",
         "furious": "furious",
         "grumpy": "grumpy",
-        "outraged": "outraged",
-        "resentful": "resentful"
-      }
+        "resentful": "resentful",
+        "frustrated": "frustrated",
+        "jealous": "jealous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads resentful charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-angry-01-s28",
-      "answer": "outraged",
+      "answer": "jealous",
       "cue": "contextual",
       "reserve": false,
-      "text": "Sam felt ___ when the referee ignored clear cheating.",
-      "cue_phrase": "referee ignored clear cheating",
+      "text": "When the twins compared shell collections, Ren counted his smaller pile twice and felt ___.",
+      "cue_phrase": "counted his smaller pile twice",
       "surface": {
-        "annoyed": "annoyed",
         "furious": "furious",
         "grumpy": "grumpy",
-        "outraged": "outraged",
-        "resentful": "resentful"
-      }
+        "resentful": "resentful",
+        "frustrated": "frustrated",
+        "jealous": "jealous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads frustrated, grumpy, resentful charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-angry-01-s29",
-      "answer": "outraged",
+      "answer": "jealous",
       "cue": "inferential",
       "reserve": false,
-      "text": "Everyone gasped, then demanded a fair vote, feeling ___.",
-      "cue_phrase": "demanded a fair vote",
+      "text": "Zed turned away whenever the winner spun that golden top, feeling ___ inside.",
+      "cue_phrase": "turned away whenever the winner spun",
       "surface": {
-        "annoyed": "annoyed",
         "furious": "furious",
         "grumpy": "grumpy",
-        "outraged": "outraged",
-        "resentful": "resentful"
-      }
+        "resentful": "resentful",
+        "frustrated": "frustrated",
+        "jealous": "jealous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads resentful charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-angry-01-s30",
-      "answer": "outraged",
+      "answer": "jealous",
       "cue": "inferential",
       "reserve": false,
-      "text": "The team was ___ and wrote a protest over rich players' special rule.",
-      "cue_phrase": "wrote a protest",
+      "text": "Nia said 'lovely' about Ana's puppy photos, then scrolled her own with a sigh, ___.",
+      "cue_phrase": "scrolled her own with a sigh",
       "surface": {
-        "annoyed": "annoyed",
         "furious": "furious",
         "grumpy": "grumpy",
-        "outraged": "outraged",
-        "resentful": "resentful"
-      }
+        "resentful": "resentful",
+        "frustrated": "frustrated",
+        "jealous": "jealous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads frustrated, resentful charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-angry-01-s31",
-      "answer": "outraged",
+      "answer": "jealous",
       "cue": "contextual",
       "reserve": true,
-      "text": "Lila felt ___ when only boys could enter the science club.",
-      "cue_phrase": "only boys could enter",
+      "text": "Her sister got the window seat for the whole trip, and Kira sat there ___.",
+      "cue_phrase": "her sister got the window seat",
       "surface": {
-        "annoyed": "annoyed",
         "furious": "furious",
         "grumpy": "grumpy",
-        "outraged": "outraged",
-        "resentful": "resentful"
-      }
+        "resentful": "resentful",
+        "frustrated": "frustrated",
+        "jealous": "jealous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads frustrated, furious, grumpy, resentful charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-angry-01-s32",
-      "answer": "outraged",
+      "answer": "jealous",
       "cue": "contextual",
       "reserve": true,
-      "text": "The crowd grew ___ as guards took blankets from travellers.",
-      "cue_phrase": "took blankets from travellers",
+      "text": "Tom's tiny pumpkin sat beside Ben's prize-winner, and Tom felt ___ all afternoon.",
+      "cue_phrase": "sat beside Ben's prize-winner",
       "surface": {
-        "annoyed": "annoyed",
         "furious": "furious",
         "grumpy": "grumpy",
-        "outraged": "outraged",
-        "resentful": "resentful"
-      }
+        "resentful": "resentful",
+        "frustrated": "frustrated",
+        "jealous": "jealous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads frustrated, grumpy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-angry-01-s33",
       "answer": "resentful",
       "cue": "explicit",
       "reserve": false,
-      "text": "Weeks later, Zed felt ___ about cleaning while others played.",
-      "cue_phrase": "Weeks later",
+      "text": "Weeks later, Zed still felt ___ about the day he was made to clean alone.",
+      "cue_phrase": "made to clean alone",
       "surface": {
-        "annoyed": "annoyed",
         "furious": "furious",
         "grumpy": "grumpy",
-        "outraged": "outraged",
-        "resentful": "resentful"
-      }
+        "resentful": "resentful",
+        "frustrated": "frustrated",
+        "jealous": "jealous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads furious charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-angry-01-s34",
       "answer": "resentful",
       "cue": "explicit",
       "reserve": false,
-      "text": "Mina stayed ___ after always getting the smallest slice.",
-      "cue_phrase": "always getting the smallest",
+      "text": "Mina was polite about it, but stayed ___ about the promise nobody had kept.",
+      "cue_phrase": "the promise nobody had kept",
       "surface": {
-        "annoyed": "annoyed",
         "furious": "furious",
         "grumpy": "grumpy",
-        "outraged": "outraged",
-        "resentful": "resentful"
-      }
+        "resentful": "resentful",
+        "frustrated": "frustrated",
+        "jealous": "jealous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads frustrated, furious, grumpy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-angry-01-s35",
@@ -597,12 +780,20 @@
       "text": "Ali smiled, but felt ___ about being blamed again.",
       "cue_phrase": "smiled, but felt",
       "surface": {
-        "annoyed": "annoyed",
         "furious": "furious",
         "grumpy": "grumpy",
-        "outraged": "outraged",
-        "resentful": "resentful"
-      }
+        "resentful": "resentful",
+        "frustrated": "frustrated",
+        "jealous": "jealous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads frustrated, furious, grumpy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-angry-01-s36",
@@ -612,27 +803,43 @@
       "text": "For days, Kira was ___ after her idea was stolen.",
       "cue_phrase": "For days",
       "surface": {
-        "annoyed": "annoyed",
         "furious": "furious",
         "grumpy": "grumpy",
-        "outraged": "outraged",
-        "resentful": "resentful"
-      }
+        "resentful": "resentful",
+        "frustrated": "frustrated",
+        "jealous": "jealous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads frustrated, furious, grumpy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-angry-01-s37",
       "answer": "resentful",
       "cue": "inferential",
       "reserve": false,
-      "text": "Tom felt ___ all week, remembering the lost turn and giving short answers.",
-      "cue_phrase": "all week",
+      "text": "Tom felt ___ all week, replaying the moment his turn was skipped.",
+      "cue_phrase": "replaying the moment his turn was skipped",
       "surface": {
-        "annoyed": "annoyed",
         "furious": "furious",
         "grumpy": "grumpy",
-        "outraged": "outraged",
-        "resentful": "resentful"
-      }
+        "resentful": "resentful",
+        "frustrated": "frustrated",
+        "jealous": "jealous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads frustrated, furious, grumpy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-angry-01-s38",
@@ -642,79 +849,73 @@
       "text": "Although Nia said 'fine', she felt ___ and saved the slight.",
       "cue_phrase": "saved the slight",
       "surface": {
-        "annoyed": "annoyed",
         "furious": "furious",
         "grumpy": "grumpy",
-        "outraged": "outraged",
-        "resentful": "resentful"
-      }
+        "resentful": "resentful",
+        "frustrated": "frustrated",
+        "jealous": "jealous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads furious charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-angry-01-s39",
       "answer": "resentful",
       "cue": "contextual",
       "reserve": true,
-      "text": "Months on, Leo felt ___ about losing his place to a cousin.",
-      "cue_phrase": "Months on",
+      "text": "Months on, Leo still felt ___ about the way his place had been given away.",
+      "cue_phrase": "his place had been given away",
       "surface": {
-        "annoyed": "annoyed",
         "furious": "furious",
         "grumpy": "grumpy",
-        "outraged": "outraged",
-        "resentful": "resentful"
-      }
+        "resentful": "resentful",
+        "frustrated": "frustrated",
+        "jealous": "jealous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads frustrated, furious charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-angry-01-s40",
       "answer": "resentful",
       "cue": "contextual",
       "reserve": true,
-      "text": "Sasha stayed ___ for days after doing extra chores with no thanks.",
-      "cue_phrase": "stayed ___ for days",
+      "text": "Days later, Sasha remained ___ that her extra chores had never been noticed.",
+      "cue_phrase": "never been noticed",
       "surface": {
-        "annoyed": "annoyed",
         "furious": "furious",
         "grumpy": "grumpy",
-        "outraged": "outraged",
-        "resentful": "resentful"
-      }
+        "resentful": "resentful",
+        "frustrated": "frustrated",
+        "jealous": "jealous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads frustrated, furious charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     }
   ],
   "contrasts": [
     {
-      "answer": "annoyed",
-      "picked": "furious",
-      "line": "Annoyed is a small irritation at a pest; furious is far stronger and explosive."
-    },
-    {
-      "answer": "annoyed",
-      "picked": "grumpy",
-      "line": "Annoyed points to a little pest; grumpy is a whole scowly state."
-    },
-    {
-      "answer": "annoyed",
-      "picked": "outraged",
-      "line": "Annoyed is about a small pest; outraged is about seeing unfairness or cruelty."
-    },
-    {
-      "answer": "annoyed",
-      "picked": "resentful",
-      "line": "Annoyed fades after a pest stops; resentful holds a hurt feeling over time."
-    },
-    {
-      "answer": "furious",
-      "picked": "annoyed",
-      "line": "Furious is huge and stormy; annoyed is only a small irritation."
-    },
-    {
       "answer": "furious",
       "picked": "grumpy",
       "line": "Furious is intense and explosive; grumpy is just a sour scowly state."
-    },
-    {
-      "answer": "furious",
-      "picked": "outraged",
-      "line": "Furious tells how strong the feeling is; outraged tells it comes from unfairness."
     },
     {
       "answer": "furious",
@@ -723,48 +924,13 @@
     },
     {
       "answer": "grumpy",
-      "picked": "annoyed",
-      "line": "Grumpy is a general scowly state; annoyed has a small target causing irritation."
-    },
-    {
-      "answer": "grumpy",
       "picked": "furious",
       "line": "Grumpy is low and crabby; furious is much stronger and louder."
     },
     {
       "answer": "grumpy",
-      "picked": "outraged",
-      "line": "Grumpy may have no clear target; outraged needs unfairness or cruelty."
-    },
-    {
-      "answer": "grumpy",
       "picked": "resentful",
       "line": "Grumpy is a sour state now; resentful carries a grudge from before."
-    },
-    {
-      "answer": "outraged",
-      "picked": "annoyed",
-      "line": "Outraged is about unfairness or cruelty; annoyed is only a small irritation."
-    },
-    {
-      "answer": "outraged",
-      "picked": "furious",
-      "line": "Outraged focuses on fairness; furious focuses on very strong heat."
-    },
-    {
-      "answer": "outraged",
-      "picked": "grumpy",
-      "line": "Outraged has a reason in unfairness; grumpy can be sour for no clear reason."
-    },
-    {
-      "answer": "outraged",
-      "picked": "resentful",
-      "line": "Outraged speaks up against unfairness; resentful stores the hurt over time."
-    },
-    {
-      "answer": "resentful",
-      "picked": "annoyed",
-      "line": "Resentful holds hurt over time; annoyed is a small irritation in the moment."
     },
     {
       "answer": "resentful",
@@ -777,15 +943,80 @@
       "line": "Resentful remembers a past slight; grumpy is just a sour state."
     },
     {
+      "answer": "frustrated",
+      "picked": "grumpy",
+      "line": "Frustrated means a real try keeps failing; grumpy is a scowly mood with no clear cause."
+    },
+    {
+      "answer": "frustrated",
+      "picked": "jealous",
+      "line": "Frustrated is about being blocked from a goal; jealous is wanting what someone else has."
+    },
+    {
+      "answer": "frustrated",
+      "picked": "resentful",
+      "line": "Frustrated is about a try failing right now; resentful looks back at an old sting."
+    },
+    {
+      "answer": "frustrated",
+      "picked": "furious",
+      "line": "Frustrated is a groan at a stuck thing; furious is a full boiling blow-up."
+    },
+    {
+      "answer": "grumpy",
+      "picked": "frustrated",
+      "line": "Grumpy is a cross mood about nothing in particular; frustrated needs a goal that keeps failing."
+    },
+    {
+      "answer": "jealous",
+      "picked": "frustrated",
+      "line": "Jealous means someone else has the thing you long for; frustrated means your own try keeps failing."
+    },
+    {
       "answer": "resentful",
-      "picked": "outraged",
-      "line": "Resentful nurses a grudge; outraged reacts to unfairness and wants it fixed."
+      "picked": "frustrated",
+      "line": "Resentful is quiet anger about a past wrong; frustrated is about a task refusing to work now."
+    },
+    {
+      "answer": "furious",
+      "picked": "frustrated",
+      "line": "Furious is huge, hot anger; frustrated is the smaller ache of a try that will not work."
+    },
+    {
+      "answer": "jealous",
+      "picked": "grumpy",
+      "line": "Jealous points at what another person has; grumpy is just a scowly mood from nowhere."
+    },
+    {
+      "answer": "jealous",
+      "picked": "resentful",
+      "line": "Jealous wants what someone else has; resentful broods over a wrong already done."
+    },
+    {
+      "answer": "jealous",
+      "picked": "furious",
+      "line": "Jealous is a quiet wanting ache; furious is loud, boiling anger."
+    },
+    {
+      "answer": "grumpy",
+      "picked": "jealous",
+      "line": "Grumpy is a general bad mood; jealous needs someone else to have the thing you wish was yours."
+    },
+    {
+      "answer": "resentful",
+      "picked": "jealous",
+      "line": "Resentful is about being treated badly before; jealous is about wanting what another has now."
+    },
+    {
+      "answer": "furious",
+      "picked": "jealous",
+      "line": "Furious is exploding anger in the moment; jealous is the wish for what someone else has."
     }
   ],
   "meta": {
     "generated_at": "2026-07-05T11:18:07+00:00",
     "model": "gpt-5.5",
-    "scrubbed_at": null,
-    "scrub_note": null
+    "scrubbed_at": "2026-07-05T13:42:27+00:00",
+    "scrub_note": "Donor surgery: annoyed->frustrated, jealous replaces outraged (furious/outraged rung pair); furious s16 sense fix; resentful frames restaged as quiet brooding; s14 given an explicit wrong-done cause. Full read + 3-round judge triage."
   }
 }

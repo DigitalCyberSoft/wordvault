@@ -5,7 +5,13 @@
   "theme": "kinds of sound",
   "band": 3,
   "band_override": 3,
-  "computed": null,
+  "computed": {
+    "zipf_min": 3.04,
+    "zipf_mean": 3.38,
+    "tightness": null,
+    "band_suggested": 3,
+    "scored_at": "2026-07-05T13:15:51+00:00"
+  },
   "words": [
     {
       "w": "faint",
@@ -19,7 +25,8 @@
       "forms": {
         "base": "faint"
       },
-      "discriminator": "volume near zero at the source"
+      "discriminator": "volume near zero at the source",
+      "grade": 4
     },
     {
       "w": "muffled",
@@ -33,7 +40,8 @@
       "forms": {
         "base": "muffled"
       },
-      "discriminator": "something in the way softens it"
+      "discriminator": "something in the way softens it",
+      "grade": 4
     },
     {
       "w": "piercing",
@@ -47,7 +55,8 @@
       "forms": {
         "base": "piercing"
       },
-      "discriminator": "high, sharp, painful"
+      "discriminator": "high, sharp, painful",
+      "grade": 4
     },
     {
       "w": "booming",
@@ -61,7 +70,8 @@
       "forms": {
         "base": "booming"
       },
-      "discriminator": "deep and huge"
+      "discriminator": "deep and huge",
+      "grade": 3
     },
     {
       "w": "squeaky",
@@ -75,7 +85,8 @@
       "forms": {
         "base": "squeaky"
       },
-      "discriminator": "thin little high notes"
+      "discriminator": "thin little high notes",
+      "grade": 2
     }
   ],
   "sentences": [
@@ -84,52 +95,76 @@
       "answer": "faint",
       "cue": "explicit",
       "reserve": false,
-      "text": "With nothing covering it, the ___ buzz was barely audible.",
-      "cue_phrase": "barely audible",
+      "text": "The ___ buzz from the tiny speaker was barely there, even up close.",
+      "cue_phrase": "barely there, even up close",
       "surface": {
         "faint": "faint",
         "muffled": "muffled",
         "piercing": "piercing",
         "booming": "booming",
         "squeaky": "squeaky"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads muffled charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-sound-01-s02",
       "answer": "faint",
       "cue": "explicit",
       "reserve": false,
-      "text": "The uncovered ___ tapping was almost no sound, even in the empty hall.",
-      "cue_phrase": "almost no sound",
+      "text": "The ___ tapping was almost no sound at all, even in the empty hall.",
+      "cue_phrase": "almost no sound at all",
       "surface": {
         "faint": "faint",
         "muffled": "muffled",
         "piercing": "piercing",
         "booming": "booming",
         "squeaky": "squeaky"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads muffled charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-sound-01-s03",
       "answer": "faint",
       "cue": "contextual",
       "reserve": false,
-      "text": "I leaned close to notice the ___ ticking from the open clock.",
-      "cue_phrase": "leaned close to notice",
+      "text": "I leaned close to catch the ___ ticking of the little watch.",
+      "cue_phrase": "leaned close to catch",
       "surface": {
         "faint": "faint",
         "muffled": "muffled",
         "piercing": "piercing",
         "booming": "booming",
         "squeaky": "squeaky"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads muffled charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-sound-01-s04",
       "answer": "faint",
       "cue": "contextual",
       "reserve": false,
-      "text": "The kitten's uncovered ___ purr barely stirred the ribbon.",
+      "text": "The kitten's ___ purr barely stirred the ribbon by its nose.",
       "cue_phrase": "barely stirred the ribbon",
       "surface": {
         "faint": "faint",
@@ -137,29 +172,45 @@
         "piercing": "piercing",
         "booming": "booming",
         "squeaky": "squeaky"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads muffled, squeaky charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-sound-01-s05",
       "answer": "faint",
       "cue": "inferential",
       "reserve": false,
-      "text": "Nobody noticed the uncovered fan's ___ hum until the classroom became still.",
-      "cue_phrase": "until the classroom became still",
+      "text": "Nobody noticed the fan's ___ hum until the classroom became completely still.",
+      "cue_phrase": "until the classroom became completely still",
       "surface": {
         "faint": "faint",
         "muffled": "muffled",
         "piercing": "piercing",
         "booming": "booming",
         "squeaky": "squeaky"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads muffled charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-sound-01-s06",
       "answer": "faint",
       "cue": "inferential",
       "reserve": false,
-      "text": "The uncovered ___ rustle vanished under one small cough.",
+      "text": "The ___ rustle of the turning page vanished under one small cough.",
       "cue_phrase": "vanished under one small cough",
       "surface": {
         "faint": "faint",
@@ -167,29 +218,45 @@
         "piercing": "piercing",
         "booming": "booming",
         "squeaky": "squeaky"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads muffled charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-sound-01-s07",
       "answer": "faint",
       "cue": "explicit",
       "reserve": true,
-      "text": "The uncovered ___ tone barely registered on the sound meter.",
-      "cue_phrase": "barely registered",
+      "text": "Right beside the sound meter, the ___ tone barely made the needle move.",
+      "cue_phrase": "barely made the needle move",
       "surface": {
         "faint": "faint",
         "muffled": "muffled",
         "piercing": "piercing",
         "booming": "booming",
         "squeaky": "squeaky"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads muffled, squeaky charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-sound-01-s08",
       "answer": "faint",
       "cue": "contextual",
       "reserve": true,
-      "text": "Across the meadow, the open bell sent a ___ speck of sound.",
+      "text": "From across the meadow, the bell was just a ___ speck of sound.",
       "cue_phrase": "speck of sound",
       "surface": {
         "faint": "faint",
@@ -212,7 +279,15 @@
         "piercing": "piercing",
         "booming": "booming",
         "squeaky": "squeaky"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads faint charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-sound-01-s10",
@@ -227,7 +302,15 @@
         "piercing": "piercing",
         "booming": "booming",
         "squeaky": "squeaky"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads faint, squeaky charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-sound-01-s11",
@@ -242,7 +325,15 @@
         "piercing": "piercing",
         "booming": "booming",
         "squeaky": "squeaky"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads faint charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-sound-01-s12",
@@ -272,7 +363,15 @@
         "piercing": "piercing",
         "booming": "booming",
         "squeaky": "squeaky"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads faint charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-sound-01-s14",
@@ -287,7 +386,15 @@
         "piercing": "piercing",
         "booming": "booming",
         "squeaky": "squeaky"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads faint charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-sound-01-s15",
@@ -302,7 +409,15 @@
         "piercing": "piercing",
         "booming": "booming",
         "squeaky": "squeaky"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads faint charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-sound-01-s16",
@@ -317,7 +432,15 @@
         "piercing": "piercing",
         "booming": "booming",
         "squeaky": "squeaky"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads faint charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-sound-01-s17",
@@ -332,7 +455,15 @@
         "piercing": "piercing",
         "booming": "booming",
         "squeaky": "squeaky"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads squeaky charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-sound-01-s18",
@@ -347,7 +478,15 @@
         "piercing": "piercing",
         "booming": "booming",
         "squeaky": "squeaky"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads squeaky charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-sound-01-s19",
@@ -362,7 +501,15 @@
         "piercing": "piercing",
         "booming": "booming",
         "squeaky": "squeaky"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads squeaky charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-sound-01-s20",
@@ -377,7 +524,15 @@
         "piercing": "piercing",
         "booming": "booming",
         "squeaky": "squeaky"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads squeaky charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-sound-01-s21",
@@ -392,22 +547,38 @@
         "piercing": "piercing",
         "booming": "booming",
         "squeaky": "squeaky"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads squeaky charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-sound-01-s22",
       "answer": "piercing",
       "cue": "inferential",
       "reserve": false,
-      "text": "The ___ note from the violin made everyone flinch at once.",
-      "cue_phrase": "made everyone flinch",
+      "text": "The smoke alarm's ___ beep hurt our ears even from the garden.",
+      "cue_phrase": "hurt our ears even from the garden",
       "surface": {
         "faint": "faint",
         "muffled": "muffled",
         "piercing": "piercing",
         "booming": "booming",
         "squeaky": "squeaky"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads squeaky charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-sound-01-s23",
@@ -422,7 +593,15 @@
         "piercing": "piercing",
         "booming": "booming",
         "squeaky": "squeaky"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads squeaky charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-sound-01-s24",
@@ -437,7 +616,15 @@
         "piercing": "piercing",
         "booming": "booming",
         "squeaky": "squeaky"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads squeaky charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-sound-01-s25",
@@ -489,7 +676,7 @@
       "answer": "booming",
       "cue": "contextual",
       "reserve": false,
-      "text": "The ___ bass from uncovered parade drums thudded in my chest.",
+      "text": "The ___ bass of the parade drums thudded in my chest.",
       "cue_phrase": "thudded in my chest",
       "surface": {
         "faint": "faint",
@@ -497,7 +684,15 @@
         "piercing": "piercing",
         "booming": "booming",
         "squeaky": "squeaky"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads muffled charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-sound-01-s29",
@@ -527,7 +722,15 @@
         "piercing": "piercing",
         "booming": "booming",
         "squeaky": "squeaky"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads piercing charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-sound-01-s31",
@@ -647,7 +850,15 @@
         "piercing": "piercing",
         "booming": "booming",
         "squeaky": "squeaky"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads faint charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-sound-01-s39",
@@ -785,7 +996,7 @@
   "meta": {
     "generated_at": "2026-07-05T11:26:57+00:00",
     "model": "gpt-5.5",
-    "scrubbed_at": null,
-    "scrub_note": null
+    "scrubbed_at": "2026-07-05T13:42:27+00:00",
+    "scrub_note": "faint block de-ticced (six 'uncovered' hedges replaced with natural at-source staging); piercing s22 and booming s28 rewritten. Full read + judge triage."
   }
 }

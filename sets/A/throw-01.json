@@ -10,7 +10,7 @@
     "zipf_mean": 3.91,
     "tightness": 0.374,
     "band_suggested": 3,
-    "scored_at": "2026-07-05T08:59:48+00:00"
+    "scored_at": "2026-07-05T13:15:51+00:00"
   },
   "words": [
     {
@@ -31,7 +31,8 @@
         "past": "tossed",
         "part": "tossing"
       },
-      "discriminator": "light and easy"
+      "discriminator": "light and easy",
+      "grade": 3
     },
     {
       "w": "hurl",
@@ -48,7 +49,8 @@
         "past": "hurled",
         "part": "hurling"
       },
-      "discriminator": "as hard as you can"
+      "discriminator": "as hard as you can",
+      "grade": 4
     },
     {
       "w": "lob",
@@ -65,7 +67,8 @@
         "past": "lobbed",
         "part": "lobbing"
       },
-      "discriminator": "high slow arc"
+      "discriminator": "high slow arc",
+      "grade": 5
     },
     {
       "w": "drop",
@@ -85,7 +88,8 @@
         "past": "dropped",
         "part": "dropping"
       },
-      "discriminator": "just let it fall"
+      "discriminator": "just let it fall",
+      "grade": 1
     },
     {
       "w": "roll",
@@ -105,7 +109,8 @@
         "past": "rolled",
         "part": "rolling"
       },
-      "discriminator": "send it turning along the ground"
+      "discriminator": "send it turning along the ground",
+      "grade": 1
     }
   ],
   "sentences": [
@@ -156,7 +161,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads roll charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -179,7 +184,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads lob charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -202,7 +207,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "gpt-5.5 alone reads colloquial 'lob'; the card pins lob to 'propel in a high arc', which a flick to something beside you is not. 2 of 3 judges find toss unique.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads lob charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -225,7 +230,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "gpt-5.5 and claude allow colloquial 'lob'; the pinned card sense is 'propel in a high arc' and a flat flick from a pillow is not an arc. gpt-4.1 finds toss unique; card-constrained reading accepted.",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds lob; claude-opus-4-8 adds lob): lob co-occurs on a light indoor throw; the effortless casual manner is toss's feature, no deliberate high arc is staged",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -293,7 +298,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads roll charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -331,7 +336,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads roll, toss charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -354,7 +359,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads toss charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -392,7 +397,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads drop, roll, toss charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -430,7 +435,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads toss charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -453,7 +458,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads hurl, toss charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -476,7 +481,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads hurl, toss charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -499,7 +504,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "Card-constrained acceptance: dissenting judges use the neighbour word's loose colloquial sense; the pinned card sense excludes it here. See FORMAT.md lessons.",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds toss; claude-opus-4-8 adds toss): toss co-occurs with any gentle throw; the deliberate curve up over the branch is lob's exclusive feature",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -522,7 +527,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "Card-constrained acceptance: dissenting judges use the neighbour word's loose colloquial sense; the pinned card sense excludes it here. See FORMAT.md lessons.",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds hurl, toss; claude-opus-4-8 adds toss): toss co-occurs; going up and over blocking players is lob's arc feature",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -545,7 +550,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "Card-constrained acceptance: dissenting judges use the neighbour word's loose colloquial sense; the pinned card sense excludes it here. See FORMAT.md lessons.",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds hurl, toss; claude-opus-4-8 adds toss): toss co-occurs; the upward path over the tall screen is lob's arc feature",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -568,7 +573,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads toss charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -591,7 +596,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "Card-constrained acceptance: dissenting judges use the neighbour word's loose colloquial sense; the pinned card sense excludes it here. See FORMAT.md lessons.",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds drop, toss; claude-opus-4-8 adds toss): toss co-occurs; softly over the fielder's head is lob's arc-over-an-obstacle feature",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -764,7 +769,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads hurl charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }

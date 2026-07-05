@@ -31,7 +31,7 @@ word), draft sentences with `tools/consult-sentences.py`, then run the gates:
 { "w": "trudge", "synset": "slog.v.02", "gloss_source": "wordnet",
   "gloss": "walk heavily and firmly, as when weary, or through mud",
   "zipf": 2.40, "register": "neutral", "senses_at_pos": 1,
-  "dominant_sense_ok": null,
+  "dominant_sense_ok": null, "grade": 4,
   "forms": { "base": "trudge", "third": "trudges", "past": "trudged", "part": "trudging" },
   "discriminator": "slow, heavy and tired, but keeps going" }
 ```
@@ -47,6 +47,11 @@ word), draft sentences with `tools/consult-sentences.py`, then run the gates:
   audience floor must be waived with a reason or the word swapped.
 - Bank C words: `synset: null`, `gloss_source: "authored"`, and `gloss` is a
   hand-written usage one-liner.
+- `grade` is the Australian school year (integer 1-7, Year 1 ≈ age 6-7) at
+  which a typical student reads and understands the word **in its pinned
+  sense**. Assigned by `tools/grade-words.py` (gpt-5.5 + claude-opus-4-8
+  consensus; splits of 2+ years are adjudicated by hand in
+  `reference/grade-overrides.json`). Gate M18 refuses ungraded words.
 - Bank A words MAY pin a synset and still carry `gloss_source: "authored"`.
   This is the sanctioned escape for scale families WordNet defines circularly
   (dim = "not bright") or with words below the opacity floor: the synset stays

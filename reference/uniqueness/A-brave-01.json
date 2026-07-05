@@ -551,15 +551,17 @@
       "judged_at": "2026-07-05T12:15:44+00:00"
     },
     "A-brave-01-s20": {
-      "text_sha256": "e1b5fb4086296932299bc2d09b125741a9e5fe0de6d5c8e1f155ccf2dfb734bb",
-      "verdict": "hard",
+      "text_sha256": "4a2b57da3e9e3fdec70c745618ab10175eb39193565e60610028118ffdf686dc",
+      "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
+            "daring",
+            "determined",
             "fearless"
           ],
-          "sense_match": false
+          "sense_match": true
         },
         {
           "model": "gpt-4.1",
@@ -576,7 +578,7 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:15:44+00:00"
+      "judged_at": "2026-07-05T13:05:17+00:00"
     },
     "A-brave-01-s21": {
       "text_sha256": "4746ec0ce029e999e29b19fe5a4ac3e1064cd5e66fe2aac0786906bae57a9af7",
@@ -720,7 +722,7 @@
       "judged_at": "2026-07-05T12:18:44+00:00"
     },
     "A-brave-01-s26": {
-      "text_sha256": "4422f4a97e2eb1686347209f45add0f9c57fec2f97ac352d155534955a5734ba",
+      "text_sha256": "56ef665b13ab22f612f71d26d53e731b1daad9478717f4cd66f75c2e901c97e1",
       "verdict": "review",
       "judges": [
         {
@@ -748,7 +750,7 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:18:44+00:00"
+      "judged_at": "2026-07-05T13:05:17+00:00"
     },
     "A-brave-01-s27": {
       "text_sha256": "172fd5cc42b11993bc8137f90355bd5ea1f098d615b4f437469cf90e1e22da57",
@@ -781,13 +783,13 @@
       "judged_at": "2026-07-05T12:18:44+00:00"
     },
     "A-brave-01-s28": {
-      "text_sha256": "6a078cf84fbe7abf9b39f250aa8ec34d4f44ba590fb82d603b2b25c30d9a32f6",
+      "text_sha256": "4e31854399424edb1f1ef685dd14887207ba5b8e4750e1d20101b7532903bc65",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "determined",
+            "daring",
             "reckless"
           ],
           "sense_match": true
@@ -802,13 +804,12 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "determined",
             "reckless"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:18:44+00:00"
+      "judged_at": "2026-07-05T13:05:17+00:00"
     },
     "A-brave-01-s29": {
       "text_sha256": "afcabf7b6094bc952f243f7910504b4feb681cbf71d7e0231f7759e02833f00a",

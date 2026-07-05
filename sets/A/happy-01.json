@@ -5,7 +5,13 @@
   "theme": "kinds of happy",
   "band": 2,
   "band_override": 2,
-  "computed": null,
+  "computed": {
+    "zipf_min": 3.6,
+    "zipf_mean": 4.15,
+    "tightness": null,
+    "band_suggested": 2,
+    "scored_at": "2026-07-05T13:15:51+00:00"
+  },
   "words": [
     {
       "w": "cheerful",
@@ -19,7 +25,8 @@
       "forms": {
         "base": "cheerful"
       },
-      "discriminator": "visibly sunny mood, no special reason needed"
+      "discriminator": "visibly sunny mood, no special reason needed",
+      "grade": 2
     },
     {
       "w": "delighted",
@@ -33,7 +40,8 @@
       "forms": {
         "base": "delighted"
       },
-      "discriminator": "a burst of joy at something that just happened"
+      "discriminator": "a burst of joy at something that just happened",
+      "grade": 3
     },
     {
       "w": "proud",
@@ -47,7 +55,8 @@
       "forms": {
         "base": "proud"
       },
-      "discriminator": "pleasure in an achievement"
+      "discriminator": "pleasure in an achievement",
+      "grade": 2
     },
     {
       "w": "relieved",
@@ -61,7 +70,8 @@
       "forms": {
         "base": "relieved"
       },
-      "discriminator": "the bad thing did not happen"
+      "discriminator": "the bad thing did not happen",
+      "grade": 4
     },
     {
       "w": "grateful",
@@ -75,7 +85,8 @@
       "forms": {
         "base": "grateful"
       },
-      "discriminator": "thankful to someone for what they did"
+      "discriminator": "thankful to someone for what they did",
+      "grade": 4
     }
   ],
   "sentences": [
@@ -212,7 +223,15 @@
         "proud": "proud",
         "relieved": "relieved",
         "grateful": "grateful"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds cheerful; claude-opus-4-8 adds cheerful): cheerful co-occurs with joy; the event trigger and squealing burst are delighted's features, cheerful is a standing mood",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-happy-01-s10",
@@ -227,7 +246,15 @@
         "proud": "proud",
         "relieved": "relieved",
         "grateful": "grateful"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds cheerful; claude-opus-4-8 adds cheerful): cheerful co-occurs; jumping and whooping at sudden news is delighted's burst, not a standing sunny mood",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-happy-01-s11",
@@ -257,7 +284,15 @@
         "proud": "proud",
         "relieved": "relieved",
         "grateful": "grateful"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds cheerful; claude-opus-4-8 adds cheerful): cheerful co-occurs; the fireworks trigger stages delighted's in-the-moment joy",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-happy-01-s13",
@@ -272,7 +307,15 @@
         "proud": "proud",
         "relieved": "relieved",
         "grateful": "grateful"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads cheerful charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-happy-01-s14",
@@ -287,7 +330,15 @@
         "proud": "proud",
         "relieved": "relieved",
         "grateful": "grateful"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads cheerful charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-happy-01-s15",
@@ -302,7 +353,15 @@
         "proud": "proud",
         "relieved": "relieved",
         "grateful": "grateful"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads cheerful charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-happy-01-s16",
@@ -317,7 +376,15 @@
         "proud": "proud",
         "relieved": "relieved",
         "grateful": "grateful"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads cheerful charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-happy-01-s17",
@@ -347,7 +414,15 @@
         "proud": "proud",
         "relieved": "relieved",
         "grateful": "grateful"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds delighted; claude-opus-4-8 adds delighted): delight co-occurs with pride; 'built alone' stages own-achievement, pride's exclusive feature",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-happy-01-s19",
@@ -362,7 +437,15 @@
         "proud": "proud",
         "relieved": "relieved",
         "grateful": "grateful"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads delighted charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-happy-01-s20",
@@ -377,7 +460,15 @@
         "proud": "proud",
         "relieved": "relieved",
         "grateful": "grateful"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads delighted charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-happy-01-s21",
@@ -392,7 +483,15 @@
         "proud": "proud",
         "relieved": "relieved",
         "grateful": "grateful"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds delighted; claude-opus-4-8 adds delighted): delight co-occurs; achievement by his own pupils plus the quiet manner stage pride, not a joy burst",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-happy-01-s22",
@@ -414,15 +513,23 @@
       "answer": "proud",
       "cue": "contextual",
       "reserve": true,
-      "text": "Dad heard my solo and smiled with an achievement glow, ___.",
-      "cue_phrase": "heard my solo",
+      "text": "Dad heard my solo and glowed as if the achievement were his own, ___.",
+      "cue_phrase": "as if the achievement were his own",
       "surface": {
         "cheerful": "cheerful",
         "delighted": "delighted",
         "proud": "proud",
         "relieved": "relieved",
         "grateful": "grateful"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds delighted; claude-opus-4-8 adds delighted): delight co-occurs; 'as if the achievement were his own' names pride's feature",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-happy-01-s24",
@@ -452,7 +559,15 @@
         "proud": "proud",
         "relieved": "relieved",
         "grateful": "grateful"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads cheerful, delighted, grateful charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-happy-01-s26",
@@ -467,7 +582,15 @@
         "proud": "proud",
         "relieved": "relieved",
         "grateful": "grateful"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads delighted, grateful charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-happy-01-s27",
@@ -482,7 +605,15 @@
         "proud": "proud",
         "relieved": "relieved",
         "grateful": "grateful"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads delighted, grateful charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-happy-01-s28",
@@ -497,7 +628,15 @@
         "proud": "proud",
         "relieved": "relieved",
         "grateful": "grateful"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads cheerful, delighted, grateful charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-happy-01-s29",
@@ -527,7 +666,15 @@
         "proud": "proud",
         "relieved": "relieved",
         "grateful": "grateful"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads delighted, grateful charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-happy-01-s31",
@@ -542,7 +689,15 @@
         "proud": "proud",
         "relieved": "relieved",
         "grateful": "grateful"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads grateful charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-happy-01-s32",
@@ -557,7 +712,15 @@
         "proud": "proud",
         "relieved": "relieved",
         "grateful": "grateful"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads delighted charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-happy-01-s33",
@@ -602,7 +765,15 @@
         "proud": "proud",
         "relieved": "relieved",
         "grateful": "grateful"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads delighted charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-happy-01-s36",
@@ -617,7 +788,15 @@
         "proud": "proud",
         "relieved": "relieved",
         "grateful": "grateful"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads delighted, relieved charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-happy-01-s37",
@@ -647,7 +826,15 @@
         "proud": "proud",
         "relieved": "relieved",
         "grateful": "grateful"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads delighted, relieved charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-happy-01-s39",
@@ -662,7 +849,15 @@
         "proud": "proud",
         "relieved": "relieved",
         "grateful": "grateful"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads delighted, relieved charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-happy-01-s40",
@@ -677,7 +872,15 @@
         "proud": "proud",
         "relieved": "relieved",
         "grateful": "grateful"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads delighted, relieved charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     }
   ],
   "contrasts": [
@@ -785,7 +988,7 @@
   "meta": {
     "generated_at": "2026-07-05T11:04:21+00:00",
     "model": "gpt-5.5",
-    "scrubbed_at": null,
-    "scrub_note": null
+    "scrubbed_at": "2026-07-05T13:42:27+00:00",
+    "scrub_note": "Full read; proud s23 rephrased ('achievement glow'); proud s18 delighted adjacency accepted with waiver."
   }
 }

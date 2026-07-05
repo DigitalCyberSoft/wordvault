@@ -5,50 +5,14 @@
   "theme": "kinds of sad",
   "band": 2,
   "band_override": 2,
-  "computed": null,
+  "computed": {
+    "zipf_min": 2.93,
+    "zipf_mean": 3.92,
+    "tightness": null,
+    "band_suggested": 4,
+    "scored_at": "2026-07-05T13:15:51+00:00"
+  },
   "words": [
-    {
-      "w": "gloomy",
-      "synset": "gloomy.s.02",
-      "gloss_source": "authored",
-      "gloss": "in a heavy, low mood",
-      "zipf": 3.39,
-      "register": "neutral",
-      "senses_at_pos": 3,
-      "dominant_sense_ok": null,
-      "forms": {
-        "base": "gloomy"
-      },
-      "discriminator": "low mood colouring everything, no single cause"
-    },
-    {
-      "w": "miserable",
-      "synset": "miserable.s.01",
-      "gloss_source": "wordnet",
-      "gloss": "very unhappy; full of misery",
-      "zipf": 4.07,
-      "register": "neutral",
-      "senses_at_pos": 6,
-      "dominant_sense_ok": "pinned per set design; frames use only this sense (2026-07-05)",
-      "forms": {
-        "base": "miserable"
-      },
-      "discriminator": "deeply unhappy through and through"
-    },
-    {
-      "w": "heartbroken",
-      "synset": "brokenhearted.s.01",
-      "gloss_source": "wordnet",
-      "gloss": "full of sorrow",
-      "zipf": 3.41,
-      "register": "neutral",
-      "senses_at_pos": 1,
-      "dominant_sense_ok": null,
-      "forms": {
-        "base": "heartbroken"
-      },
-      "discriminator": "crushed by losing someone or something loved"
-    },
     {
       "w": "disappointed",
       "synset": "defeated.s.01",
@@ -61,7 +25,21 @@
       "forms": {
         "base": "disappointed"
       },
-      "discriminator": "dashed hopes"
+      "discriminator": "dashed hopes",
+      "grade": 3
+    },
+    {
+      "w": "lonely",
+      "synset": "lonely.s.02",
+      "gloss_source": "authored",
+      "gloss": "sad because you are by yourself, wanting someone to be with",
+      "zipf": 4.25,
+      "register": "neutral",
+      "forms": {
+        "base": "lonely"
+      },
+      "discriminator": "no one to be with; the sadness of empty company",
+      "grade": 2
     },
     {
       "w": "homesick",
@@ -75,248 +53,341 @@
       "forms": {
         "base": "homesick"
       },
-      "discriminator": "missing home while away"
+      "discriminator": "missing home while away",
+      "grade": 3
+    },
+    {
+      "w": "guilty",
+      "synset": "guilty.s.01",
+      "gloss_source": "authored",
+      "gloss": "feeling bad because you did something wrong",
+      "zipf": 4.61,
+      "register": "neutral",
+      "forms": {
+        "base": "guilty"
+      },
+      "discriminator": "you did the wrong thing and feel it",
+      "grade": 3
+    },
+    {
+      "w": "heartbroken",
+      "synset": "brokenhearted.s.01",
+      "gloss_source": "wordnet",
+      "gloss": "full of sorrow",
+      "zipf": 3.41,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "heartbroken"
+      },
+      "discriminator": "crushed by losing someone or something loved",
+      "grade": 4
     }
   ],
   "sentences": [
     {
       "id": "A-sad-01-s01",
-      "answer": "gloomy",
+      "answer": "lonely",
       "cue": "explicit",
       "reserve": false,
-      "text": "Lena felt ___, cheerless and grey inside for no clear reason.",
-      "cue_phrase": "cheerless and grey inside",
+      "text": "Lena felt ___ at break, with no one to sit beside on the long bench.",
+      "cue_phrase": "no one to sit beside",
       "surface": {
-        "gloomy": "gloomy",
-        "miserable": "miserable",
         "heartbroken": "heartbroken",
         "disappointed": "disappointed",
-        "homesick": "homesick"
-      }
+        "homesick": "homesick",
+        "lonely": "lonely",
+        "guilty": "guilty"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads disappointed charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-sad-01-s02",
-      "answer": "gloomy",
+      "answer": "lonely",
       "cue": "explicit",
       "reserve": false,
-      "text": "Omar grew ___, as if a raincloud followed only him.",
-      "cue_phrase": "raincloud followed only him",
+      "text": "Omar grew ___ once his brothers left for camp and the house fell silent.",
+      "cue_phrase": "the house fell silent",
       "surface": {
-        "gloomy": "gloomy",
-        "miserable": "miserable",
         "heartbroken": "heartbroken",
         "disappointed": "disappointed",
-        "homesick": "homesick"
+        "homesick": "homesick",
+        "lonely": "lonely",
+        "guilty": "guilty"
       }
     },
     {
       "id": "A-sad-01-s03",
-      "answer": "gloomy",
+      "answer": "lonely",
       "cue": "contextual",
       "reserve": false,
-      "text": "The sunny classroom seemed ___ to Priya, and every joke sounded dull.",
-      "cue_phrase": "every joke sounded dull",
+      "text": "New to the school, Priya ate by herself again and started feeling ___.",
+      "cue_phrase": "ate by herself again",
       "surface": {
-        "gloomy": "gloomy",
-        "miserable": "miserable",
         "heartbroken": "heartbroken",
         "disappointed": "disappointed",
-        "homesick": "homesick"
-      }
+        "homesick": "homesick",
+        "lonely": "lonely",
+        "guilty": "guilty"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads disappointed charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-sad-01-s04",
-      "answer": "gloomy",
+      "answer": "lonely",
       "cue": "contextual",
       "reserve": false,
-      "text": "After breakfast, Ben was ___; even his favourite comic looked grey.",
-      "cue_phrase": "comic looked grey",
+      "text": "Everyone had a partner by the time Ben looked up, and he worked alone, ___.",
+      "cue_phrase": "worked alone",
       "surface": {
-        "gloomy": "gloomy",
-        "miserable": "miserable",
         "heartbroken": "heartbroken",
         "disappointed": "disappointed",
-        "homesick": "homesick"
-      }
+        "homesick": "homesick",
+        "lonely": "lonely",
+        "guilty": "guilty"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads disappointed charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-sad-01-s05",
-      "answer": "gloomy",
+      "answer": "lonely",
       "cue": "inferential",
       "reserve": false,
-      "text": "No one knew why Mia became ___ and stared past the games.",
-      "cue_phrase": "No one knew why",
+      "text": "Mia watched the group games from the wall, drawing circles in the dust, ___.",
+      "cue_phrase": "watched the group games from the wall",
       "surface": {
-        "gloomy": "gloomy",
-        "miserable": "miserable",
         "heartbroken": "heartbroken",
         "disappointed": "disappointed",
-        "homesick": "homesick"
-      }
+        "homesick": "homesick",
+        "lonely": "lonely",
+        "guilty": "guilty"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads disappointed charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-sad-01-s06",
-      "answer": "gloomy",
+      "answer": "lonely",
       "cue": "inferential",
       "reserve": false,
-      "text": "A grey feeling followed Jack everywhere, making him seem ___ all day.",
-      "cue_phrase": "followed Jack everywhere",
+      "text": "With his best friend away all summer, Jack talked to the goldfish more each day, feeling ___.",
+      "cue_phrase": "talked to the goldfish",
       "surface": {
-        "gloomy": "gloomy",
-        "miserable": "miserable",
         "heartbroken": "heartbroken",
         "disappointed": "disappointed",
-        "homesick": "homesick"
+        "homesick": "homesick",
+        "lonely": "lonely",
+        "guilty": "guilty"
       }
     },
     {
       "id": "A-sad-01-s07",
-      "answer": "gloomy",
+      "answer": "lonely",
       "cue": "contextual",
       "reserve": true,
-      "text": "The party lights were bright, but Noor still looked ___ and far away.",
-      "cue_phrase": "party lights were bright",
+      "text": "The rainy Saturday stretched on with nobody to play with, and Noor felt ___.",
+      "cue_phrase": "nobody to play with",
       "surface": {
-        "gloomy": "gloomy",
-        "miserable": "miserable",
         "heartbroken": "heartbroken",
         "disappointed": "disappointed",
-        "homesick": "homesick"
-      }
+        "homesick": "homesick",
+        "lonely": "lonely",
+        "guilty": "guilty"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads disappointed charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-sad-01-s08",
-      "answer": "gloomy",
+      "answer": "lonely",
       "cue": "inferential",
       "reserve": true,
-      "text": "Tom tried to smile, yet his whole afternoon stayed ___.",
-      "cue_phrase": "whole afternoon stayed",
+      "text": "Tom set up the board game, looked at the empty chair opposite, and packed it away, ___.",
+      "cue_phrase": "the empty chair opposite",
       "surface": {
-        "gloomy": "gloomy",
-        "miserable": "miserable",
         "heartbroken": "heartbroken",
         "disappointed": "disappointed",
-        "homesick": "homesick"
-      }
+        "homesick": "homesick",
+        "lonely": "lonely",
+        "guilty": "guilty"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads disappointed charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-sad-01-s09",
-      "answer": "miserable",
+      "answer": "guilty",
       "cue": "explicit",
       "reserve": false,
-      "text": "Eva felt ___, utterly wretched and unable to enjoy anything.",
-      "cue_phrase": "utterly wretched and unable",
+      "text": "Eva felt ___ because the vase had broken while she was juggling indoors.",
+      "cue_phrase": "while she was juggling indoors",
       "surface": {
-        "gloomy": "gloomy",
-        "miserable": "miserable",
         "heartbroken": "heartbroken",
         "disappointed": "disappointed",
-        "homesick": "homesick"
-      }
+        "homesick": "homesick",
+        "lonely": "lonely",
+        "guilty": "guilty"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads disappointed charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-sad-01-s10",
-      "answer": "miserable",
+      "answer": "guilty",
       "cue": "explicit",
       "reserve": false,
-      "text": "The long fever made Leo ___, aching, teary, and cross at once.",
-      "cue_phrase": "aching, teary, and cross",
+      "text": "After blaming the mess on the cat, Leo felt ___ all through dinner.",
+      "cue_phrase": "after blaming the mess on the cat",
       "surface": {
-        "gloomy": "gloomy",
-        "miserable": "miserable",
         "heartbroken": "heartbroken",
         "disappointed": "disappointed",
-        "homesick": "homesick"
+        "homesick": "homesick",
+        "lonely": "lonely",
+        "guilty": "guilty"
       }
     },
     {
       "id": "A-sad-01-s11",
-      "answer": "miserable",
+      "answer": "guilty",
       "cue": "contextual",
       "reserve": false,
-      "text": "On the wet hike, everyone became ___, soaked, cold, and wanting bed.",
-      "cue_phrase": "soaked, cold, and wanting",
+      "text": "Nia hid the torn page inside the library book and walked home feeling ___.",
+      "cue_phrase": "hid the torn page",
       "surface": {
-        "gloomy": "gloomy",
-        "miserable": "miserable",
         "heartbroken": "heartbroken",
         "disappointed": "disappointed",
-        "homesick": "homesick"
+        "homesick": "homesick",
+        "lonely": "lonely",
+        "guilty": "guilty"
       }
     },
     {
       "id": "A-sad-01-s12",
-      "answer": "miserable",
+      "answer": "guilty",
       "cue": "contextual",
       "reserve": false,
-      "text": "After losing sleep all night, Nia was ___ from head to toe.",
-      "cue_phrase": "from head to toe",
+      "text": "The last biscuit was supposed to be shared, and after eating it Sam felt ___.",
+      "cue_phrase": "supposed to be shared",
       "surface": {
-        "gloomy": "gloomy",
-        "miserable": "miserable",
         "heartbroken": "heartbroken",
         "disappointed": "disappointed",
-        "homesick": "homesick"
+        "homesick": "homesick",
+        "lonely": "lonely",
+        "guilty": "guilty"
       }
     },
     {
       "id": "A-sad-01-s13",
-      "answer": "miserable",
+      "answer": "guilty",
       "cue": "inferential",
       "reserve": false,
-      "text": "Finn curled under the blanket, cried, and refused cake; he was ___.",
-      "cue_phrase": "cried, and refused cake",
+      "text": "Finn kept glancing at the broken window and could not enjoy the film, feeling ___.",
+      "cue_phrase": "kept glancing at the broken window",
       "surface": {
-        "gloomy": "gloomy",
-        "miserable": "miserable",
         "heartbroken": "heartbroken",
         "disappointed": "disappointed",
-        "homesick": "homesick"
+        "homesick": "homesick",
+        "lonely": "lonely",
+        "guilty": "guilty"
       }
     },
     {
       "id": "A-sad-01-s14",
-      "answer": "miserable",
+      "answer": "guilty",
       "cue": "inferential",
       "reserve": false,
-      "text": "The storm ruined the tent, and the campers sat ___ in puddles.",
-      "cue_phrase": "sat ___ in puddles",
+      "text": "Sara practised saying sorry in the mirror twice before knocking on her sister's door, ___.",
+      "cue_phrase": "practised saying sorry",
       "surface": {
-        "gloomy": "gloomy",
-        "miserable": "miserable",
         "heartbroken": "heartbroken",
         "disappointed": "disappointed",
-        "homesick": "homesick"
+        "homesick": "homesick",
+        "lonely": "lonely",
+        "guilty": "guilty"
       }
     },
     {
       "id": "A-sad-01-s15",
-      "answer": "miserable",
+      "answer": "guilty",
       "cue": "contextual",
       "reserve": true,
-      "text": "A toothache made Sara ___, so even cartoons could not help.",
-      "cue_phrase": "toothache made Sara",
+      "text": "Ravi had promised to practise and had not, and he sat ___ on the quiet bus.",
+      "cue_phrase": "had promised to practise and had not",
       "surface": {
-        "gloomy": "gloomy",
-        "miserable": "miserable",
         "heartbroken": "heartbroken",
         "disappointed": "disappointed",
-        "homesick": "homesick"
-      }
+        "homesick": "homesick",
+        "lonely": "lonely",
+        "guilty": "guilty"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads disappointed charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-sad-01-s16",
-      "answer": "miserable",
+      "answer": "guilty",
       "cue": "explicit",
       "reserve": true,
-      "text": "By lunchtime, the whole team felt ___: hungry, soaked, and shivering.",
-      "cue_phrase": "hungry, soaked, and shivering",
+      "text": "Jo felt ___ about the lie, even though nobody had found out yet.",
+      "cue_phrase": "about the lie",
       "surface": {
-        "gloomy": "gloomy",
-        "miserable": "miserable",
         "heartbroken": "heartbroken",
         "disappointed": "disappointed",
-        "homesick": "homesick"
+        "homesick": "homesick",
+        "lonely": "lonely",
+        "guilty": "guilty"
       }
     },
     {
@@ -327,42 +398,66 @@
       "text": "Maya was ___ after her old dog died in the night.",
       "cue_phrase": "old dog died",
       "surface": {
-        "gloomy": "gloomy",
-        "miserable": "miserable",
         "heartbroken": "heartbroken",
         "disappointed": "disappointed",
-        "homesick": "homesick"
-      }
+        "homesick": "homesick",
+        "lonely": "lonely",
+        "guilty": "guilty"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads lonely charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-sad-01-s18",
       "answer": "heartbroken",
       "cue": "explicit",
       "reserve": false,
-      "text": "When his best friend moved away forever, Arun felt ___.",
-      "cue_phrase": "moved away forever",
+      "text": "When the old treehouse finally came down, Arun felt ___; every summer had happened there.",
+      "cue_phrase": "every summer had happened there",
       "surface": {
-        "gloomy": "gloomy",
-        "miserable": "miserable",
         "heartbroken": "heartbroken",
         "disappointed": "disappointed",
-        "homesick": "homesick"
-      }
+        "homesick": "homesick",
+        "lonely": "lonely",
+        "guilty": "guilty"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads disappointed charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-sad-01-s19",
       "answer": "heartbroken",
       "cue": "contextual",
       "reserve": false,
-      "text": "Lily looked ___ beside the empty cage where her rabbit had lived.",
-      "cue_phrase": "empty cage where her",
+      "text": "Lily looked ___ as she washed the little food bowl her rabbit would never need again.",
+      "cue_phrase": "would never need again",
       "surface": {
-        "gloomy": "gloomy",
-        "miserable": "miserable",
         "heartbroken": "heartbroken",
         "disappointed": "disappointed",
-        "homesick": "homesick"
-      }
+        "homesick": "homesick",
+        "lonely": "lonely",
+        "guilty": "guilty"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads lonely charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-sad-01-s20",
@@ -372,12 +467,20 @@
       "text": "Grandad's cracked violin left Dad ___; it had been his mother's.",
       "cue_phrase": "had been his mother's",
       "surface": {
-        "gloomy": "gloomy",
-        "miserable": "miserable",
         "heartbroken": "heartbroken",
         "disappointed": "disappointed",
-        "homesick": "homesick"
-      }
+        "homesick": "homesick",
+        "lonely": "lonely",
+        "guilty": "guilty"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads disappointed charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-sad-01-s21",
@@ -387,11 +490,11 @@
       "text": "The letter said the kitten was gone forever, and Jo became ___.",
       "cue_phrase": "gone forever",
       "surface": {
-        "gloomy": "gloomy",
-        "miserable": "miserable",
         "heartbroken": "heartbroken",
         "disappointed": "disappointed",
-        "homesick": "homesick"
+        "homesick": "homesick",
+        "lonely": "lonely",
+        "guilty": "guilty"
       }
     },
     {
@@ -402,12 +505,20 @@
       "text": "Ravi hugged the photo and whispered goodbye, looking ___.",
       "cue_phrase": "whispered goodbye",
       "surface": {
-        "gloomy": "gloomy",
-        "miserable": "miserable",
         "heartbroken": "heartbroken",
         "disappointed": "disappointed",
-        "homesick": "homesick"
-      }
+        "homesick": "homesick",
+        "lonely": "lonely",
+        "guilty": "guilty"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads lonely charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-sad-01-s23",
@@ -417,11 +528,11 @@
       "text": "Ella felt ___ when her treasured necklace sank into the sea.",
       "cue_phrase": "sank into the sea",
       "surface": {
-        "gloomy": "gloomy",
-        "miserable": "miserable",
         "heartbroken": "heartbroken",
         "disappointed": "disappointed",
-        "homesick": "homesick"
+        "homesick": "homesick",
+        "lonely": "lonely",
+        "guilty": "guilty"
       }
     },
     {
@@ -432,11 +543,11 @@
       "text": "After the funeral, Sam sat ___, holding his sister's hand.",
       "cue_phrase": "After the funeral",
       "surface": {
-        "gloomy": "gloomy",
-        "miserable": "miserable",
         "heartbroken": "heartbroken",
         "disappointed": "disappointed",
-        "homesick": "homesick"
+        "homesick": "homesick",
+        "lonely": "lonely",
+        "guilty": "guilty"
       }
     },
     {
@@ -447,11 +558,11 @@
       "text": "Amir felt ___ when the promised museum trip was cancelled.",
       "cue_phrase": "trip was cancelled",
       "surface": {
-        "gloomy": "gloomy",
-        "miserable": "miserable",
         "heartbroken": "heartbroken",
         "disappointed": "disappointed",
-        "homesick": "homesick"
+        "homesick": "homesick",
+        "lonely": "lonely",
+        "guilty": "guilty"
       }
     },
     {
@@ -462,11 +573,11 @@
       "text": "Sofia was ___ after expecting cake and finding plain biscuits.",
       "cue_phrase": "expecting cake and finding",
       "surface": {
-        "gloomy": "gloomy",
-        "miserable": "miserable",
         "heartbroken": "heartbroken",
         "disappointed": "disappointed",
-        "homesick": "homesick"
+        "homesick": "homesick",
+        "lonely": "lonely",
+        "guilty": "guilty"
       }
     },
     {
@@ -477,12 +588,20 @@
       "text": "The team looked ___; the trophy went to another class.",
       "cue_phrase": "trophy went to another",
       "surface": {
-        "gloomy": "gloomy",
-        "miserable": "miserable",
         "heartbroken": "heartbroken",
         "disappointed": "disappointed",
-        "homesick": "homesick"
-      }
+        "homesick": "homesick",
+        "lonely": "lonely",
+        "guilty": "guilty"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads heartbroken charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-sad-01-s28",
@@ -492,11 +611,11 @@
       "text": "Mum seemed ___ when the repaired kite still would not fly.",
       "cue_phrase": "still would not fly",
       "surface": {
-        "gloomy": "gloomy",
-        "miserable": "miserable",
         "heartbroken": "heartbroken",
         "disappointed": "disappointed",
-        "homesick": "homesick"
+        "homesick": "homesick",
+        "lonely": "lonely",
+        "guilty": "guilty"
       }
     },
     {
@@ -507,11 +626,11 @@
       "text": "Kai packed skates, then the rink closed early; he felt ___.",
       "cue_phrase": "rink closed early",
       "surface": {
-        "gloomy": "gloomy",
-        "miserable": "miserable",
         "heartbroken": "heartbroken",
         "disappointed": "disappointed",
-        "homesick": "homesick"
+        "homesick": "homesick",
+        "lonely": "lonely",
+        "guilty": "guilty"
       }
     },
     {
@@ -522,11 +641,11 @@
       "text": "The magic show was sold out, so Poppy walked away ___.",
       "cue_phrase": "show was sold out",
       "surface": {
-        "gloomy": "gloomy",
-        "miserable": "miserable",
         "heartbroken": "heartbroken",
         "disappointed": "disappointed",
-        "homesick": "homesick"
+        "homesick": "homesick",
+        "lonely": "lonely",
+        "guilty": "guilty"
       }
     },
     {
@@ -537,11 +656,11 @@
       "text": "After three guesses, the empty prize box made Mina ___.",
       "cue_phrase": "empty prize box",
       "surface": {
-        "gloomy": "gloomy",
-        "miserable": "miserable",
         "heartbroken": "heartbroken",
         "disappointed": "disappointed",
-        "homesick": "homesick"
+        "homesick": "homesick",
+        "lonely": "lonely",
+        "guilty": "guilty"
       }
     },
     {
@@ -552,12 +671,20 @@
       "text": "I felt ___ when my painted mug cracked before the contest.",
       "cue_phrase": "before the contest",
       "surface": {
-        "gloomy": "gloomy",
-        "miserable": "miserable",
         "heartbroken": "heartbroken",
         "disappointed": "disappointed",
-        "homesick": "homesick"
-      }
+        "homesick": "homesick",
+        "lonely": "lonely",
+        "guilty": "guilty"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads heartbroken charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-sad-01-s33",
@@ -567,11 +694,11 @@
       "text": "At camp, Rosa felt ___, missing her own bed and kitchen.",
       "cue_phrase": "missing her own bed",
       "surface": {
-        "gloomy": "gloomy",
-        "miserable": "miserable",
         "heartbroken": "heartbroken",
         "disappointed": "disappointed",
-        "homesick": "homesick"
+        "homesick": "homesick",
+        "lonely": "lonely",
+        "guilty": "guilty"
       }
     },
     {
@@ -582,12 +709,20 @@
       "text": "Far from her family, Bea was ___ and wanted her bedroom.",
       "cue_phrase": "Far from her family",
       "surface": {
-        "gloomy": "gloomy",
-        "miserable": "miserable",
         "heartbroken": "heartbroken",
         "disappointed": "disappointed",
-        "homesick": "homesick"
-      }
+        "homesick": "homesick",
+        "lonely": "lonely",
+        "guilty": "guilty"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds lonely; claude-opus-4-8 adds lonely): lonely co-occurs with homesickness; away-from-home plus home-object longing is homesick's exclusive feature",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-sad-01-s35",
@@ -597,11 +732,11 @@
       "text": "In the hostel, Max grew ___ while picturing Dad's soup.",
       "cue_phrase": "picturing Dad's soup",
       "surface": {
-        "gloomy": "gloomy",
-        "miserable": "miserable",
         "heartbroken": "heartbroken",
         "disappointed": "disappointed",
-        "homesick": "homesick"
+        "homesick": "homesick",
+        "lonely": "lonely",
+        "guilty": "guilty"
       }
     },
     {
@@ -612,12 +747,20 @@
       "text": "On the island trip, Zara felt ___ each night without her family.",
       "cue_phrase": "without her family",
       "surface": {
-        "gloomy": "gloomy",
-        "miserable": "miserable",
         "heartbroken": "heartbroken",
         "disappointed": "disappointed",
-        "homesick": "homesick"
-      }
+        "homesick": "homesick",
+        "lonely": "lonely",
+        "guilty": "guilty"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds lonely; claude-opus-4-8 adds lonely): lonely co-occurs; the frame's longing is pinned to home, homesick's feature",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-sad-01-s37",
@@ -627,11 +770,11 @@
       "text": "No monster scared Pip; he just missed his little house, feeling ___.",
       "cue_phrase": "missed his little house",
       "surface": {
-        "gloomy": "gloomy",
-        "miserable": "miserable",
         "heartbroken": "heartbroken",
         "disappointed": "disappointed",
-        "homesick": "homesick"
+        "homesick": "homesick",
+        "lonely": "lonely",
+        "guilty": "guilty"
       }
     },
     {
@@ -642,11 +785,11 @@
       "text": "The cabin was fun, yet Ali counted days until his own pillow and felt ___.",
       "cue_phrase": "until his own pillow",
       "surface": {
-        "gloomy": "gloomy",
-        "miserable": "miserable",
         "heartbroken": "heartbroken",
         "disappointed": "disappointed",
-        "homesick": "homesick"
+        "homesick": "homesick",
+        "lonely": "lonely",
+        "guilty": "guilty"
       }
     },
     {
@@ -657,12 +800,20 @@
       "text": "During the school exchange, I became ___ whenever I pictured our noisy kitchen.",
       "cue_phrase": "school exchange",
       "surface": {
-        "gloomy": "gloomy",
-        "miserable": "miserable",
         "heartbroken": "heartbroken",
         "disappointed": "disappointed",
-        "homesick": "homesick"
-      }
+        "homesick": "homesick",
+        "lonely": "lonely",
+        "guilty": "guilty"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads lonely charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-sad-01-s40",
@@ -672,65 +823,15 @@
       "text": "Miles tried new games abroad, but he stayed ___ for his own room.",
       "cue_phrase": "games abroad",
       "surface": {
-        "gloomy": "gloomy",
-        "miserable": "miserable",
         "heartbroken": "heartbroken",
         "disappointed": "disappointed",
-        "homesick": "homesick"
+        "homesick": "homesick",
+        "lonely": "lonely",
+        "guilty": "guilty"
       }
     }
   ],
   "contrasts": [
-    {
-      "answer": "gloomy",
-      "picked": "miserable",
-      "line": "Gloomy is grey and cheerless; miserable is much more wretched all through."
-    },
-    {
-      "answer": "gloomy",
-      "picked": "heartbroken",
-      "line": "Gloomy covers the day for no clear reason; heartbroken comes from a deep loss."
-    },
-    {
-      "answer": "gloomy",
-      "picked": "disappointed",
-      "line": "Gloomy has no single failed wish; disappointed follows a promise or plan going wrong."
-    },
-    {
-      "answer": "gloomy",
-      "picked": "homesick",
-      "line": "Gloomy is a grey feeling anywhere; homesick means missing your own place while away."
-    },
-    {
-      "answer": "miserable",
-      "picked": "gloomy",
-      "line": "Miserable is wretched all through; gloomy is more like a grey cloud over everything."
-    },
-    {
-      "answer": "miserable",
-      "picked": "heartbroken",
-      "line": "Miserable can come from pain or awful times; heartbroken is hurt from losing what is loved."
-    },
-    {
-      "answer": "miserable",
-      "picked": "disappointed",
-      "line": "Miserable is wretched and intense; disappointed is about a wish or plan falling flat."
-    },
-    {
-      "answer": "miserable",
-      "picked": "homesick",
-      "line": "Miserable means feeling awful all over; homesick means missing your own place while away."
-    },
-    {
-      "answer": "heartbroken",
-      "picked": "gloomy",
-      "line": "Heartbroken points to a painful loss; gloomy is a grey feeling without one clear cause."
-    },
-    {
-      "answer": "heartbroken",
-      "picked": "miserable",
-      "line": "Heartbroken comes from losing what is loved; miserable is a wider, wretched feeling."
-    },
     {
       "answer": "heartbroken",
       "picked": "disappointed",
@@ -740,16 +841,6 @@
       "answer": "heartbroken",
       "picked": "homesick",
       "line": "Heartbroken is about loss of something loved; homesick is about missing your own place."
-    },
-    {
-      "answer": "disappointed",
-      "picked": "gloomy",
-      "line": "Disappointed means a wish fell flat; gloomy is a grey feeling with no single cause."
-    },
-    {
-      "answer": "disappointed",
-      "picked": "miserable",
-      "line": "Disappointed follows a failed wish; miserable is much stronger and more wretched."
     },
     {
       "answer": "disappointed",
@@ -763,16 +854,6 @@
     },
     {
       "answer": "homesick",
-      "picked": "gloomy",
-      "line": "Homesick means missing your own place while away; gloomy is a grey feeling anywhere."
-    },
-    {
-      "answer": "homesick",
-      "picked": "miserable",
-      "line": "Homesick is missing your own place; miserable means feeling awful all through."
-    },
-    {
-      "answer": "homesick",
       "picked": "heartbroken",
       "line": "Homesick is about being away from your place; heartbroken is about a deep loss."
     },
@@ -780,12 +861,82 @@
       "answer": "homesick",
       "picked": "disappointed",
       "line": "Homesick is missing your own place while away; disappointed is a failed wish or plan."
+    },
+    {
+      "answer": "lonely",
+      "picked": "guilty",
+      "line": "Lonely is sadness from having no one around; guilty is feeling bad about what you did."
+    },
+    {
+      "answer": "lonely",
+      "picked": "heartbroken",
+      "line": "Lonely means missing company right now; heartbroken means something loved is lost for good."
+    },
+    {
+      "answer": "lonely",
+      "picked": "disappointed",
+      "line": "Lonely is about being on your own; disappointed is about a hoped-for thing not happening."
+    },
+    {
+      "answer": "lonely",
+      "picked": "homesick",
+      "line": "Lonely can happen anywhere with no one around; homesick is missing home while you are away."
+    },
+    {
+      "answer": "guilty",
+      "picked": "lonely",
+      "line": "Guilty is feeling bad about your own doing; lonely is having no one to be with."
+    },
+    {
+      "answer": "guilty",
+      "picked": "heartbroken",
+      "line": "Guilty points at your own mistake; heartbroken is deep sorrow over losing something dear."
+    },
+    {
+      "answer": "guilty",
+      "picked": "disappointed",
+      "line": "Guilty is about what you did; disappointed is about what never happened."
+    },
+    {
+      "answer": "guilty",
+      "picked": "homesick",
+      "line": "Guilty is carrying a mistake; homesick is aching for home while far from it."
+    },
+    {
+      "answer": "heartbroken",
+      "picked": "lonely",
+      "line": "Heartbroken is grief for something lost forever; lonely is wanting company in the moment."
+    },
+    {
+      "answer": "disappointed",
+      "picked": "lonely",
+      "line": "Disappointed follows a plan that fell through; lonely is about missing people, not plans."
+    },
+    {
+      "answer": "homesick",
+      "picked": "lonely",
+      "line": "Homesick misses home itself, its beds and smells; lonely just misses having someone near."
+    },
+    {
+      "answer": "heartbroken",
+      "picked": "guilty",
+      "line": "Heartbroken is sorrow over a loss; guilty is the weight of your own wrongdoing."
+    },
+    {
+      "answer": "disappointed",
+      "picked": "guilty",
+      "line": "Disappointed means the good thing never came; guilty means the bad thing was yours."
+    },
+    {
+      "answer": "homesick",
+      "picked": "guilty",
+      "line": "Homesick is longing for home; guilty is feeling bad about something you did."
     }
   ],
   "meta": {
     "generated_at": "2026-07-05T11:25:26+00:00",
     "model": "gpt-5.5",
-    "scrubbed_at": null,
-    "scrub_note": null
+    "scrubbed_at": "2026-07-05T13:42:27+00:00",
+    "scrub_note": "Donor surgery: gloomy->lonely, miserable->guilty (mutual generics); two gloomy sense drifts removed with the word; heartbroken s18/s19 restaged off companionship losses. Full read + judge triage."
   }
 }

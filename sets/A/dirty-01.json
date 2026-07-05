@@ -5,7 +5,13 @@
   "theme": "kinds of dirty",
   "band": 3,
   "band_override": 3,
-  "computed": null,
+  "computed": {
+    "zipf_min": 2.78,
+    "zipf_mean": 3.46,
+    "tightness": null,
+    "band_suggested": 4,
+    "scored_at": "2026-07-05T13:15:51+00:00"
+  },
   "words": [
     {
       "w": "filthy",
@@ -19,7 +25,8 @@
       "forms": {
         "base": "filthy"
       },
-      "discriminator": "as dirty as it gets"
+      "discriminator": "as dirty as it gets",
+      "grade": 2
     },
     {
       "w": "grubby",
@@ -33,7 +40,8 @@
       "forms": {
         "base": "grubby"
       },
-      "discriminator": "fingermarks and playground dirt"
+      "discriminator": "fingermarks and playground dirt",
+      "grade": 2
     },
     {
       "w": "dusty",
@@ -47,7 +55,8 @@
       "forms": {
         "base": "dusty"
       },
-      "discriminator": "a dry powdery layer"
+      "discriminator": "a dry powdery layer",
+      "grade": 1
     },
     {
       "w": "muddy",
@@ -61,7 +70,8 @@
       "forms": {
         "base": "muddy"
       },
-      "discriminator": "wet earth stuck on"
+      "discriminator": "wet earth stuck on",
+      "grade": 1
     },
     {
       "w": "greasy",
@@ -75,7 +85,8 @@
       "forms": {
         "base": "greasy"
       },
-      "discriminator": "slippery oil film"
+      "discriminator": "slippery oil film",
+      "grade": 3
     }
   ],
   "sentences": [
@@ -122,7 +133,15 @@
         "dusty": "dusty",
         "muddy": "muddy",
         "greasy": "greasy"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads greasy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-dirty-01-s04",
@@ -152,7 +171,15 @@
         "dusty": "dusty",
         "muddy": "muddy",
         "greasy": "greasy"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads greasy, muddy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-dirty-01-s06",
@@ -167,7 +194,15 @@
         "dusty": "dusty",
         "muddy": "muddy",
         "greasy": "greasy"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads muddy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-dirty-01-s07",
@@ -182,7 +217,15 @@
         "dusty": "dusty",
         "muddy": "muddy",
         "greasy": "greasy"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads muddy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-dirty-01-s08",
@@ -197,7 +240,15 @@
         "dusty": "dusty",
         "muddy": "muddy",
         "greasy": "greasy"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads grubby charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-dirty-01-s09",
@@ -234,53 +285,77 @@
       "answer": "grubby",
       "cue": "contextual",
       "reserve": false,
-      "text": "Please wash before lunch; your ___ fingers left prints on the cup.",
-      "cue_phrase": "left prints on",
+      "text": "Wash your hands before lunch; those ___ fingers have left faint marks on the cup.",
+      "cue_phrase": "faint marks on the cup",
       "surface": {
         "filthy": "filthy",
         "grubby": "grubby",
         "dusty": "dusty",
         "muddy": "muddy",
         "greasy": "greasy"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds dusty, greasy; claude-opus-4-8 adds greasy): greasy read is charitable; unwashed-hand grime with a 'faint marks' degree marker is grubby's home ground",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-dirty-01-s12",
       "answer": "grubby",
       "cue": "contextual",
       "reserve": false,
-      "text": "Tom's workbook looked ___ after snack crumbs and pencil smears.",
-      "cue_phrase": "pencil smears",
+      "text": "The corner of Tom's workbook turned ___ where his thumb rested every day.",
+      "cue_phrase": "where his thumb rested",
       "surface": {
         "filthy": "filthy",
         "grubby": "grubby",
         "dusty": "dusty",
         "muddy": "muddy",
         "greasy": "greasy"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads greasy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-dirty-01-s13",
       "answer": "grubby",
       "cue": "inferential",
       "reserve": false,
-      "text": "After crawling under the climbing frame, Dan's knees were ___.",
-      "cue_phrase": "under the climbing frame",
+      "text": "After one trip under the climbing frame, Dan's knees came out a little ___.",
+      "cue_phrase": "after one trip under the climbing frame",
       "surface": {
         "filthy": "filthy",
         "grubby": "grubby",
         "dusty": "dusty",
         "muddy": "muddy",
         "greasy": "greasy"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds dusty, muddy; claude-opus-4-8 adds dusty): dusty read is charitable; no dust staged, play-grime after crawling is grubby",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-dirty-01-s14",
       "answer": "grubby",
       "cue": "inferential",
       "reserve": false,
-      "text": "Finger smears circled the ___ light switch after garden club.",
-      "cue_phrase": "Finger smears circled",
+      "text": "A pale ring of finger smudges made the light switch ___ after garden club.",
+      "cue_phrase": "pale ring of finger smudges",
       "surface": {
         "filthy": "filthy",
         "grubby": "grubby",
@@ -294,8 +369,8 @@
       "answer": "grubby",
       "cue": "contextual",
       "reserve": true,
-      "text": "The toddler's ___ face had biscuit crumbs and grey smudges.",
-      "cue_phrase": "grey smudges",
+      "text": "The toddler's ___ chin wore one biscuit crumb and a little grey mark.",
+      "cue_phrase": "one biscuit crumb",
       "surface": {
         "filthy": "filthy",
         "grubby": "grubby",
@@ -309,8 +384,8 @@
       "answer": "grubby",
       "cue": "inferential",
       "reserve": true,
-      "text": "Grandad wiped the ___ coins, blackened by many pockets.",
-      "cue_phrase": "blackened by many pockets",
+      "text": "Grandad rubbed the ___ coins until the dull film from his pocket came off.",
+      "cue_phrase": "dull film from his pocket",
       "surface": {
         "filthy": "filthy",
         "grubby": "grubby",
@@ -324,8 +399,8 @@
       "answer": "dusty",
       "cue": "explicit",
       "reserve": false,
-      "text": "The attic trunk was ___, with grey powder on its lid.",
-      "cue_phrase": "grey powder on",
+      "text": "A thin grey powder lay over the attic trunk, leaving it ___.",
+      "cue_phrase": "thin grey powder",
       "surface": {
         "filthy": "filthy",
         "grubby": "grubby",
@@ -347,7 +422,15 @@
         "dusty": "dusty",
         "muddy": "muddy",
         "greasy": "greasy"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads filthy, grubby charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-dirty-01-s19",
@@ -377,7 +460,15 @@
         "dusty": "dusty",
         "muddy": "muddy",
         "greasy": "greasy"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads filthy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-dirty-01-s21",
@@ -392,7 +483,15 @@
         "dusty": "dusty",
         "muddy": "muddy",
         "greasy": "greasy"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads filthy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-dirty-01-s22",
@@ -407,7 +506,15 @@
         "dusty": "dusty",
         "muddy": "muddy",
         "greasy": "greasy"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads filthy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-dirty-01-s23",
@@ -422,7 +529,15 @@
         "dusty": "dusty",
         "muddy": "muddy",
         "greasy": "greasy"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads filthy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-dirty-01-s24",
@@ -437,7 +552,15 @@
         "dusty": "dusty",
         "muddy": "muddy",
         "greasy": "greasy"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads filthy, grubby charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-dirty-01-s25",
@@ -452,7 +575,15 @@
         "dusty": "dusty",
         "muddy": "muddy",
         "greasy": "greasy"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads filthy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-dirty-01-s26",
@@ -467,7 +598,15 @@
         "dusty": "dusty",
         "muddy": "muddy",
         "greasy": "greasy"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads filthy, grubby charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-dirty-01-s27",
@@ -512,7 +651,15 @@
         "dusty": "dusty",
         "muddy": "muddy",
         "greasy": "greasy"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads filthy, grubby charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-dirty-01-s30",
@@ -527,7 +674,15 @@
         "dusty": "dusty",
         "muddy": "muddy",
         "greasy": "greasy"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads filthy, grubby charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-dirty-01-s31",
@@ -557,7 +712,15 @@
         "dusty": "dusty",
         "muddy": "muddy",
         "greasy": "greasy"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads filthy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-dirty-01-s33",
@@ -587,7 +750,15 @@
         "dusty": "dusty",
         "muddy": "muddy",
         "greasy": "greasy"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads filthy, grubby charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-dirty-01-s35",
@@ -617,7 +788,15 @@
         "dusty": "dusty",
         "muddy": "muddy",
         "greasy": "greasy"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads grubby charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-dirty-01-s37",
@@ -632,7 +811,15 @@
         "dusty": "dusty",
         "muddy": "muddy",
         "greasy": "greasy"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads filthy, grubby charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-dirty-01-s38",
@@ -785,7 +972,7 @@
   "meta": {
     "generated_at": "2026-07-05T11:22:03+00:00",
     "model": "gpt-5.5",
-    "scrubbed_at": null,
-    "scrub_note": null
+    "scrubbed_at": "2026-07-05T13:42:27+00:00",
+    "scrub_note": "grubby s11-s16 given degree markers to exclude filthy; dusty s17 tightened. Full read + judge triage."
   }
 }

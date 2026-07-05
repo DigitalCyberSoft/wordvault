@@ -5,7 +5,13 @@
   "theme": "ways of being brave",
   "band": 3,
   "band_override": 3,
-  "computed": null,
+  "computed": {
+    "zipf_min": 3.55,
+    "zipf_mean": 3.91,
+    "tightness": null,
+    "band_suggested": 3,
+    "scored_at": "2026-07-05T13:15:51+00:00"
+  },
   "words": [
     {
       "w": "determined",
@@ -19,7 +25,8 @@
       "forms": {
         "base": "determined"
       },
-      "discriminator": "keeps going despite setbacks"
+      "discriminator": "keeps going despite setbacks",
+      "grade": 4
     },
     {
       "w": "daring",
@@ -33,7 +40,8 @@
       "forms": {
         "base": "daring"
       },
-      "discriminator": "chooses the risky thrill on purpose"
+      "discriminator": "chooses the risky thrill on purpose",
+      "grade": 3
     },
     {
       "w": "fearless",
@@ -47,7 +55,8 @@
       "forms": {
         "base": "fearless"
       },
-      "discriminator": "fear just does not arrive"
+      "discriminator": "fear just does not arrive",
+      "grade": 3
     },
     {
       "w": "reckless",
@@ -61,7 +70,8 @@
       "forms": {
         "base": "reckless"
       },
-      "discriminator": "the careless kind of brave"
+      "discriminator": "the careless kind of brave",
+      "grade": 5
     },
     {
       "w": "heroic",
@@ -75,7 +85,8 @@
       "forms": {
         "base": "heroic"
       },
-      "discriminator": "brave for someone else's sake"
+      "discriminator": "brave for someone else's sake",
+      "grade": 4
     }
   ],
   "sentences": [
@@ -122,7 +133,15 @@
         "fearless": "fearless",
         "reckless": "reckless",
         "heroic": "heroic"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds daring, fearless; claude-opus-4-8 adds daring, fearless): daring and fearless co-occur on climbers; returning after a forced retreat stages persistence, determined's exclusive feature",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-brave-01-s04",
@@ -182,7 +201,15 @@
         "fearless": "fearless",
         "reckless": "reckless",
         "heroic": "heroic"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads fearless charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-brave-01-s08",
@@ -242,7 +269,15 @@
         "fearless": "fearless",
         "reckless": "reckless",
         "heroic": "heroic"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds determined, fearless; claude-opus-4-8 adds determined): determined co-occurs; a one-off choice of the riskier trail for thrill is daring's feature, no persisted goal is staged",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-brave-01-s12",
@@ -257,7 +292,15 @@
         "fearless": "fearless",
         "reckless": "reckless",
         "heroic": "heroic"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads fearless, reckless charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-brave-01-s13",
@@ -272,7 +315,15 @@
         "fearless": "fearless",
         "reckless": "reckless",
         "heroic": "heroic"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads determined charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-brave-01-s14",
@@ -287,7 +338,15 @@
         "fearless": "fearless",
         "reckless": "reckless",
         "heroic": "heroic"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads fearless charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-brave-01-s15",
@@ -302,7 +361,15 @@
         "fearless": "fearless",
         "reckless": "reckless",
         "heroic": "heroic"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds determined, fearless; claude-opus-4-8 adds determined): determined co-occurs; choosing the rope swing for excitement is daring's feature, no setback or persistence is staged",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-brave-01-s16",
@@ -317,7 +384,15 @@
         "fearless": "fearless",
         "reckless": "reckless",
         "heroic": "heroic"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads fearless charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-brave-01-s17",
@@ -362,22 +437,38 @@
         "fearless": "fearless",
         "reckless": "reckless",
         "heroic": "heroic"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads determined charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-brave-01-s20",
       "answer": "fearless",
       "cue": "contextual",
       "reserve": false,
-      "text": "The cave echoed loudly; Jo felt ___, her heartbeat steady.",
-      "cue_phrase": "heartbeat steady",
+      "text": "The rope bridge swayed over the gorge, but Jo felt ___, her heartbeat steady.",
+      "cue_phrase": "her heartbeat steady",
       "surface": {
         "determined": "determined",
         "daring": "daring",
         "fearless": "fearless",
         "reckless": "reckless",
         "heroic": "heroic"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads daring, determined charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-brave-01-s21",
@@ -452,22 +543,38 @@
         "fearless": "fearless",
         "reckless": "reckless",
         "heroic": "heroic"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads daring charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-brave-01-s26",
       "answer": "reckless",
       "cue": "explicit",
       "reserve": false,
-      "text": "Jae took a ___ leap across the wet rocks without even glancing at the drop below.",
-      "cue_phrase": "without even glancing",
+      "text": "Ignoring the warning sign, Jae took a ___ leap across the wet rocks.",
+      "cue_phrase": "ignoring the warning sign",
       "surface": {
         "determined": "determined",
         "daring": "daring",
         "fearless": "fearless",
         "reckless": "reckless",
         "heroic": "heroic"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds daring, fearless; claude-opus-4-8 adds daring): daring co-occurs on a bold leap; 'ignoring the warning sign' stages the foolishness only reckless carries",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-brave-01-s27",
@@ -482,22 +589,38 @@
         "fearless": "fearless",
         "reckless": "reckless",
         "heroic": "heroic"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads daring, fearless charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-brave-01-s28",
       "answer": "reckless",
       "cue": "contextual",
       "reserve": false,
-      "text": "The boys were ___ to light fireworks beside dry leaves.",
-      "cue_phrase": "beside dry leaves",
+      "text": "The boys were ___, lighting fireworks right beside the dry leaves.",
+      "cue_phrase": "right beside the dry leaves",
       "surface": {
         "determined": "determined",
         "daring": "daring",
         "fearless": "fearless",
         "reckless": "reckless",
         "heroic": "heroic"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads daring charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-brave-01-s29",
@@ -512,7 +635,15 @@
         "fearless": "fearless",
         "reckless": "reckless",
         "heroic": "heroic"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads daring, fearless charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-brave-01-s30",
@@ -527,7 +658,15 @@
         "fearless": "fearless",
         "reckless": "reckless",
         "heroic": "heroic"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds daring, determined, fearless; claude-opus-4-8 adds determined): determined lacks its needed goal in a goal-less dash; frame stages danger-ignoring",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-brave-01-s31",
@@ -542,7 +681,15 @@
         "fearless": "fearless",
         "reckless": "reckless",
         "heroic": "heroic"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads daring charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-brave-01-s32",
@@ -557,7 +704,15 @@
         "fearless": "fearless",
         "reckless": "reckless",
         "heroic": "heroic"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads daring charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-brave-01-s33",
@@ -572,7 +727,15 @@
         "fearless": "fearless",
         "reckless": "reckless",
         "heroic": "heroic"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads daring, determined charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-brave-01-s34",
@@ -587,7 +750,15 @@
         "fearless": "fearless",
         "reckless": "reckless",
         "heroic": "heroic"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads daring, determined charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-brave-01-s35",
@@ -602,7 +773,15 @@
         "fearless": "fearless",
         "reckless": "reckless",
         "heroic": "heroic"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads daring, determined charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-brave-01-s36",
@@ -617,7 +796,15 @@
         "fearless": "fearless",
         "reckless": "reckless",
         "heroic": "heroic"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads daring, determined charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-brave-01-s37",
@@ -647,7 +834,15 @@
         "fearless": "fearless",
         "reckless": "reckless",
         "heroic": "heroic"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads daring, determined charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-brave-01-s39",
@@ -662,7 +857,15 @@
         "fearless": "fearless",
         "reckless": "reckless",
         "heroic": "heroic"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads determined charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-brave-01-s40",
@@ -677,7 +880,15 @@
         "fearless": "fearless",
         "reckless": "reckless",
         "heroic": "heroic"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads daring, fearless charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     }
   ],
   "contrasts": [
@@ -785,7 +996,7 @@
   "meta": {
     "generated_at": "2026-07-05T11:02:23+00:00",
     "model": "gpt-5.5",
-    "scrubbed_at": null,
-    "scrub_note": "bold swapped for determined: bold was the generic donor the judges fit into every sibling frame."
+    "scrubbed_at": "2026-07-05T13:42:27+00:00",
+    "scrub_note": "fearless s20 given real danger; reckless s26 foolish-risk marker; s28 'were ___ to light' parse ambiguity removed. Full read + judge triage."
   }
 }

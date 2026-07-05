@@ -10,7 +10,7 @@
     "zipf_mean": 3.45,
     "tightness": 0.667,
     "band_suggested": 5,
-    "scored_at": "2026-07-05T08:59:48+00:00",
+    "scored_at": "2026-07-05T13:15:51+00:00",
     "note": "band_suggested from rarity alone misleads here: tiptoe/trudge are children's-book staples that news corpora undercount. Overridden to 2 by hand."
   },
   "words": [
@@ -29,7 +29,8 @@
         "past": "tiptoed",
         "part": "tiptoeing"
       },
-      "discriminator": "quiet and careful on purpose, trying not to be heard"
+      "discriminator": "quiet and careful on purpose, trying not to be heard",
+      "grade": 2
     },
     {
       "w": "limp",
@@ -54,7 +55,8 @@
         "past": "limped",
         "part": "limping"
       },
-      "discriminator": "uneven steps because something hurts"
+      "discriminator": "uneven steps because something hurts",
+      "grade": 3
     },
     {
       "w": "trudge",
@@ -71,7 +73,8 @@
         "past": "trudged",
         "part": "trudging"
       },
-      "discriminator": "slow, heavy and tired, but keeps going"
+      "discriminator": "slow, heavy and tired, but keeps going",
+      "grade": 4
     },
     {
       "w": "stroll",
@@ -96,7 +99,8 @@
         "past": "strolled",
         "part": "strolling"
       },
-      "discriminator": "relaxed and unhurried, just for the pleasure of it"
+      "discriminator": "relaxed and unhurried, just for the pleasure of it",
+      "grade": 3
     },
     {
       "w": "march",
@@ -117,7 +121,8 @@
         "past": "marched",
         "part": "marching"
       },
-      "discriminator": "fast, even, in-step and full of purpose"
+      "discriminator": "fast, even, in-step and full of purpose",
+      "grade": 2
     }
   ],
   "sentences": [
@@ -716,7 +721,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "gpt-5.5 alone reads 'tiptoeing to spare the stone' as also fitting; 2 of 3 judges find limp unique and the hobble reading dominates for ages 8-12. Accepted after three sharpening rounds.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads tiptoe charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }

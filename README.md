@@ -66,13 +66,17 @@ passes, and the bake tool physically refuses otherwise:
    labels all five candidates and checks the intended answer against its
    pinned sense. A sentence two words fit never ships. Verdicts are keyed to a
    hash of the sentence, so editing one re-judges exactly that sentence.
-3. `tools/validate-sets.js` - gates M1-M16: schema, one blank, full surface
+3. `tools/grade-words.py` - attaches an Australian school year level (1-7)
+   to every word in its pinned sense, by gpt-5.5 + claude-opus-4-8 consensus;
+   splits of 2+ years are adjudicated by hand in
+   `reference/grade-overrides.json`.
+4. `tools/validate-sets.js` - gates M1-M18: schema, one blank, full surface
    tables, cue mix (2 explicit / 2 contextual / 2 inferential + 2 reserve per
-   word), all 20 directed contrast lines, no gloss quoting, provenance,
-   stamp/verdict freshness.
-4. `tools/bake-content.js` - runs gate 3, then compiles `sets/` into
+   word), all 20 directed contrast lines, distinct tile surfaces, no gloss
+   quoting, provenance, a grade on every word, stamp/verdict freshness.
+5. `tools/bake-content.js` - runs gate 4, then compiles `sets/` into
    `game-content.js` and writes `reference/CONTENT-REPORT.md`.
-5. `tools/test-content.js` - re-asserts over the baked artifact, including a
+6. `tools/test-content.js` - re-asserts over the baked artifact, including a
    scripted full playthrough of every set.
 
 Set authoring needs `python3` with `nltk` (WordNet corpus) and `wordfreq`,

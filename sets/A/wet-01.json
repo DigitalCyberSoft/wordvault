@@ -5,7 +5,13 @@
   "theme": "kinds of wet",
   "band": 2,
   "band_override": 2,
-  "computed": null,
+  "computed": {
+    "zipf_min": 3.14,
+    "zipf_mean": 3.48,
+    "tightness": null,
+    "band_suggested": 3,
+    "scored_at": "2026-07-05T13:15:51+00:00"
+  },
   "words": [
     {
       "w": "soaked",
@@ -19,7 +25,8 @@
       "forms": {
         "base": "soaked"
       },
-      "discriminator": "water has gone right through it"
+      "discriminator": "water has gone right through it",
+      "grade": 2
     },
     {
       "w": "damp",
@@ -33,7 +40,8 @@
       "forms": {
         "base": "damp"
       },
-      "discriminator": "only slightly wet"
+      "discriminator": "only slightly wet",
+      "grade": 2
     },
     {
       "w": "soggy",
@@ -47,7 +55,8 @@
       "forms": {
         "base": "soggy"
       },
-      "discriminator": "softened and floppy with water"
+      "discriminator": "softened and floppy with water",
+      "grade": 2
     },
     {
       "w": "dripping",
@@ -61,7 +70,8 @@
       "forms": {
         "base": "dripping"
       },
-      "discriminator": "actively shedding drops"
+      "discriminator": "actively shedding drops",
+      "grade": 2
     },
     {
       "w": "humid",
@@ -75,7 +85,8 @@
       "forms": {
         "base": "humid"
       },
-      "discriminator": "sticky wet air"
+      "discriminator": "sticky wet air",
+      "grade": 5
     }
   ],
   "sentences": [
@@ -84,30 +95,46 @@
       "answer": "soaked",
       "cue": "explicit",
       "reserve": false,
-      "text": "The football boot was ___; nothing ran until Dad poured liquid from it.",
-      "cue_phrase": "poured liquid from it",
+      "text": "His football boot was ___ right through; the stiff leather held, yet Dad tipped a puddle out.",
+      "cue_phrase": "tipped a puddle out",
       "surface": {
         "soaked": "soaked",
         "damp": "damp",
         "soggy": "soggy",
         "dripping": "dripping",
         "humid": "humid"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-4.1 also reads dripping, soggy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-wet-01-s02",
       "answer": "soaked",
       "cue": "explicit",
       "reserve": false,
-      "text": "The map case was ___; liquid reached the sealed inner pocket, but no bead fell off.",
-      "cue_phrase": "reached the sealed inner",
+      "text": "Rain had worked deep into the map case's inner pocket, leaving it ___ though it held its shape.",
+      "cue_phrase": "deep into the map case's inner pocket",
       "surface": {
         "soaked": "soaked",
         "damp": "damp",
         "soggy": "soggy",
         "dripping": "dripping",
         "humid": "humid"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds damp, soggy; gpt-4.1 adds soggy): soggy read ignores the stated shape-retention marker; wet-through with form intact is soaked",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-wet-01-s03",
@@ -122,82 +149,130 @@
         "soggy": "soggy",
         "dripping": "dripping",
         "humid": "humid"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3 (gpt-4.1 adds soggy; claude-opus-4-8 adds dripping, soggy): soggy and dripping co-occur fresh from a puddle; 'leather stayed stiff' contradicts softening, and ankle-deep immersion stages saturation",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-wet-01-s04",
       "answer": "soaked",
       "cue": "contextual",
       "reserve": false,
-      "text": "The rain filled the hatband, leaving his cap ___; shape stayed sharp.",
-      "cue_phrase": "filled the hatband",
+      "text": "His cap had taken in rain at every stitch and stayed ___ all afternoon, still holding its shape.",
+      "cue_phrase": "rain at every stitch",
       "surface": {
         "soaked": "soaked",
         "damp": "damp",
         "soggy": "soggy",
         "dripping": "dripping",
         "humid": "humid"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds damp, dripping, soggy; gpt-4.1 adds soggy): soggy read ignores 'still holding its shape'; every-stitch saturation is soaked's feature",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-wet-01-s05",
       "answer": "soaked",
       "cue": "inferential",
       "reserve": false,
-      "text": "Grandad called the glove ___ after wringing a puddle while it kept shape.",
-      "cue_phrase": "wringing a puddle",
+      "text": "Grandad wrung a whole puddle out of the glove, and even then it felt ___ to the seams.",
+      "cue_phrase": "wrung a whole puddle out",
       "surface": {
         "soaked": "soaked",
         "damp": "damp",
         "soggy": "soggy",
         "dripping": "dripping",
         "humid": "humid"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds damp, soggy; gpt-4.1 adds soggy): a just-wrung glove still wet to the seams is saturation; soggy reads a texture the frame does not stage",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-wet-01-s06",
       "answer": "soaked",
       "cue": "inferential",
       "reserve": false,
-      "text": "Her raincoat's inner pocket held liquid, so Dad knew it was ___.",
-      "cue_phrase": "inner pocket held liquid",
+      "text": "A week in the flooded shed left the rope ___ right through, yet neatly coiled as ever.",
+      "cue_phrase": "a week in the flooded shed",
       "surface": {
         "soaked": "soaked",
         "damp": "damp",
         "soggy": "soggy",
         "dripping": "dripping",
         "humid": "humid"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-4.1 also reads soggy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-wet-01-s07",
       "answer": "soaked",
       "cue": "contextual",
       "reserve": true,
-      "text": "The wooden shield was ___ after the moat dive; no bead fell.",
-      "cue_phrase": "moat dive; no bead fell",
+      "text": "By the campfire that night, the wooden shield was still ___, twice its dry weight.",
+      "cue_phrase": "twice its dry weight",
       "surface": {
         "soaked": "soaked",
         "damp": "damp",
         "soggy": "soggy",
         "dripping": "dripping",
         "humid": "humid"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3 (gpt-4.1 adds damp, soggy; claude-opus-4-8 adds soggy): 'twice its dry weight' states saturation mass; soggy's softening is not staged on solid oak, but waterlogged-wood usage overlaps",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-wet-01-s08",
       "answer": "soaked",
       "cue": "explicit",
       "reserve": true,
-      "text": "By morning, the scout badge was ___; rain sat inside its stitching.",
-      "cue_phrase": "inside its stitching",
+      "text": "By morning the scout badge was still ___ from front to back, its stitching flat as ever.",
+      "cue_phrase": "its stitching flat as ever",
       "surface": {
         "soaked": "soaked",
         "damp": "damp",
         "soggy": "soggy",
         "dripping": "dripping",
         "humid": "humid"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads damp, soggy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-wet-01-s09",
@@ -347,7 +422,15 @@
         "soggy": "soggy",
         "dripping": "dripping",
         "humid": "humid"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads damp charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-wet-01-s19",
@@ -392,7 +475,15 @@
         "soggy": "soggy",
         "dripping": "dripping",
         "humid": "humid"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads soaked charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-wet-01-s22",
@@ -407,7 +498,15 @@
         "soggy": "soggy",
         "dripping": "dripping",
         "humid": "humid"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads damp charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-wet-01-s23",
@@ -422,7 +521,15 @@
         "soggy": "soggy",
         "dripping": "dripping",
         "humid": "humid"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads soaked charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-wet-01-s24",
@@ -437,7 +544,15 @@
         "soggy": "soggy",
         "dripping": "dripping",
         "humid": "humid"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads damp, soaked charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-wet-01-s25",
@@ -452,7 +567,15 @@
         "soggy": "soggy",
         "dripping": "dripping",
         "humid": "humid"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads damp, soaked charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-wet-01-s26",
@@ -482,7 +605,15 @@
         "soggy": "soggy",
         "dripping": "dripping",
         "humid": "humid"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads soaked charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-wet-01-s28",
@@ -497,7 +628,15 @@
         "soggy": "soggy",
         "dripping": "dripping",
         "humid": "humid"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads damp, soaked charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-wet-01-s29",
@@ -512,22 +651,38 @@
         "soggy": "soggy",
         "dripping": "dripping",
         "humid": "humid"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads soaked charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-wet-01-s30",
       "answer": "dripping",
       "cue": "inferential",
       "reserve": false,
-      "text": "Gran said the candle was ___ when wax made dots on the table.",
-      "cue_phrase": "wax made dots",
+      "text": "The dog came in ___ from the rain and left a trail across the kitchen floor.",
+      "cue_phrase": "left a trail across the kitchen floor",
       "surface": {
         "soaked": "soaked",
         "damp": "damp",
         "soggy": "soggy",
         "dripping": "dripping",
         "humid": "humid"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds soaked, soggy; claude-opus-4-8 adds soaked): soaked co-occurs on a rain-wet dog; the drop trail stages active shedding, dripping's exclusive feature",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-wet-01-s31",
@@ -542,7 +697,15 @@
         "soggy": "soggy",
         "dripping": "dripping",
         "humid": "humid"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads soaked charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-wet-01-s32",
@@ -557,7 +720,15 @@
         "soggy": "soggy",
         "dripping": "dripping",
         "humid": "humid"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads damp, soaked charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-wet-01-s33",
@@ -572,7 +743,15 @@
         "soggy": "soggy",
         "dripping": "dripping",
         "humid": "humid"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads damp charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-wet-01-s34",
@@ -587,7 +766,15 @@
         "soggy": "soggy",
         "dripping": "dripping",
         "humid": "humid"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads damp charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-wet-01-s35",
@@ -602,7 +789,15 @@
         "soggy": "soggy",
         "dripping": "dripping",
         "humid": "humid"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads damp charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-wet-01-s36",
@@ -617,7 +812,15 @@
         "soggy": "soggy",
         "dripping": "dripping",
         "humid": "humid"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads damp charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-wet-01-s37",
@@ -632,7 +835,15 @@
         "soggy": "soggy",
         "dripping": "dripping",
         "humid": "humid"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads damp charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-wet-01-s38",
@@ -647,7 +858,15 @@
         "soggy": "soggy",
         "dripping": "dripping",
         "humid": "humid"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads damp charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-wet-01-s39",
@@ -662,7 +881,15 @@
         "soggy": "soggy",
         "dripping": "dripping",
         "humid": "humid"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads damp charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-wet-01-s40",
@@ -677,7 +904,15 @@
         "soggy": "soggy",
         "dripping": "dripping",
         "humid": "humid"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads damp charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     }
   ],
   "contrasts": [
@@ -785,7 +1020,7 @@
   "meta": {
     "generated_at": "2026-07-05T11:29:49+00:00",
     "model": "gpt-5.5",
-    "scrubbed_at": null,
-    "scrub_note": null
+    "scrubbed_at": "2026-07-05T13:42:27+00:00",
+    "scrub_note": "soaked frames s01/s02/s04-s07 rewritten out of defensive register ('no bead fell') keeping the absorption-evidence logic. Full read + judge triage."
   }
 }

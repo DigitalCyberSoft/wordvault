@@ -2,254 +2,244 @@
   "set_id": "A-scared-01",
   "sentences": {
     "A-scared-01-s01": {
-      "text_sha256": "f667d9790b465d2a6a6aa4c3a3fd67e0a07c1c67c70c0868aa34b0e767431f65",
+      "text_sha256": "4b084bafe72a7dbc8c21daf5315e241fbf97fec88bb824ffd6c40ba004387700",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "nervous",
-            "uneasy"
+            "alarmed",
+            "terrified"
           ],
           "sense_match": true
         },
         {
           "model": "gpt-4.1",
           "fits": [
-            "nervous"
+            "alarmed"
           ],
           "sense_match": true
         },
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "nervous",
-            "uneasy"
+            "alarmed"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T11:38:56+00:00"
+      "judged_at": "2026-07-05T13:20:36+00:00"
     },
     "A-scared-01-s02": {
-      "text_sha256": "5dce22bebc561f2867f355faabf051195f7c30a8ddd6a21bfcaa1caa015a996a",
+      "text_sha256": "79502dd1da9472d7cc01e1086ca297644a0ec2d4258f8bc91c8970a0bef18bc4",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "nervous",
-            "uneasy"
+            "alarmed",
+            "terrified"
           ],
           "sense_match": true
         },
         {
           "model": "gpt-4.1",
           "fits": [
-            "nervous"
+            "alarmed"
           ],
           "sense_match": true
         },
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "nervous",
-            "uneasy"
+            "alarmed"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T11:38:56+00:00"
+      "judged_at": "2026-07-05T13:20:36+00:00"
     },
     "A-scared-01-s03": {
-      "text_sha256": "51567b8440d802c1ebfe5f5d95f3c4729c27f223cb93e8348ec88256507fde42",
+      "text_sha256": "ce4feaf2456a750ca4b5e10267e06cda9cdaab8a8ec5c6f94b461821cf6968d0",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "nervous",
-            "timid",
-            "uneasy"
+            "alarmed",
+            "terrified"
           ],
           "sense_match": true
         },
         {
           "model": "gpt-4.1",
           "fits": [
-            "nervous"
+            "alarmed"
           ],
           "sense_match": true
         },
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "nervous",
-            "uneasy"
+            "alarmed"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T11:38:56+00:00"
+      "judged_at": "2026-07-05T13:20:36+00:00"
     },
     "A-scared-01-s04": {
-      "text_sha256": "01b7b0d5931407101f8bd49cabf86ff0c98e73b014debdb2ad8a8eca82d2d2c3",
+      "text_sha256": "212c3735409a62117d36dc01ac859a474b84639318366f8e91188c98b30311e1",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "nervous",
-            "uneasy"
+            "alarmed",
+            "startled",
+            "terrified"
           ],
           "sense_match": true
         },
         {
           "model": "gpt-4.1",
           "fits": [
-            "nervous"
+            "alarmed"
           ],
           "sense_match": true
         },
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "nervous",
-            "uneasy"
+            "alarmed"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T11:38:56+00:00"
+      "judged_at": "2026-07-05T13:20:36+00:00"
     },
     "A-scared-01-s05": {
-      "text_sha256": "f7cf3d094bfee8dd0714277331816caf093716cc48b2baf6b59fd06064bea51f",
-      "verdict": "review",
+      "text_sha256": "bd98a37a2fd1d7e92582b64a4749c437db0f769166954387b6bfe9f391d5b9e4",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "nervous",
-            "uneasy"
+            "alarmed"
           ],
           "sense_match": true
         },
         {
           "model": "gpt-4.1",
           "fits": [
-            "nervous"
+            "alarmed"
           ],
           "sense_match": true
         },
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "nervous",
-            "uneasy"
+            "alarmed"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T11:38:56+00:00"
+      "judged_at": "2026-07-05T13:20:36+00:00"
     },
     "A-scared-01-s06": {
-      "text_sha256": "9b5ebd0fb3890bea7337e21f0eeec7d9e5ce6dc5fb2b86282f4c907d46aab037",
+      "text_sha256": "b18bf601a01d5fe424c339afe93186c669f5309414d4ffd2320250db383c6bee",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "nervous",
-            "terrified",
-            "uneasy"
+            "alarmed",
+            "terrified"
           ],
           "sense_match": true
         },
         {
           "model": "gpt-4.1",
           "fits": [
-            "nervous"
+            "alarmed"
           ],
           "sense_match": true
         },
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "nervous",
-            "uneasy"
+            "alarmed"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T11:38:56+00:00"
+      "judged_at": "2026-07-05T13:20:36+00:00"
     },
     "A-scared-01-s07": {
-      "text_sha256": "3e0f131848171371e7e69debea9dc553af02b0b078f4a25a2c99bdf6e368cef0",
-      "verdict": "review",
+      "text_sha256": "a8d891b1341935971cf894af8268b22d6f1eb1d5a535c9b3f1ed8dfd6f4f4ef5",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "nervous",
-            "uneasy"
+            "alarmed"
           ],
           "sense_match": true
         },
         {
           "model": "gpt-4.1",
           "fits": [
-            "nervous"
+            "alarmed"
           ],
           "sense_match": true
         },
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "nervous",
-            "uneasy"
+            "alarmed"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T11:38:56+00:00"
+      "judged_at": "2026-07-05T13:20:36+00:00"
     },
     "A-scared-01-s08": {
-      "text_sha256": "d6885bd7c2f9b44cc8da85b7a7b2e7d6485b2d12413607ffd64e64473eaf6258",
+      "text_sha256": "4d6665f4ba89d142d7620ddc8064706833fa527dd69e861a2293a32c0b06260a",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "nervous",
-            "uneasy"
+            "alarmed",
+            "terrified"
           ],
           "sense_match": true
         },
         {
           "model": "gpt-4.1",
           "fits": [
-            "nervous"
+            "alarmed"
           ],
           "sense_match": true
         },
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "nervous",
-            "uneasy"
+            "alarmed"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T11:38:56+00:00"
+      "judged_at": "2026-07-05T13:20:36+00:00"
     },
     "A-scared-01-s09": {
-      "text_sha256": "25a2d972b96b4027bc995002b568ec08ef9d6d6d95826590dd6f455007bb9399",
-      "verdict": "pass",
+      "text_sha256": "2b713d1d99fe93e5d6e5b0c5d8b397410c45cac8de23612f5db4410ab2e2e810",
+      "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
+            "alarmed",
             "startled"
           ],
           "sense_match": true
@@ -269,15 +259,16 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T11:38:56+00:00"
+      "judged_at": "2026-07-05T13:20:36+00:00"
     },
     "A-scared-01-s10": {
-      "text_sha256": "c2b49bd509728c385e7d3679d16636d557177c40454cfd1f0400ea7317f01247",
-      "verdict": "pass",
+      "text_sha256": "2f55a5934f135b020080000fbc0569709b7d05c6811291a075f0916ce27ac397",
+      "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
+            "alarmed",
             "startled"
           ],
           "sense_match": true
@@ -297,15 +288,16 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T11:38:56+00:00"
+      "judged_at": "2026-07-05T13:20:36+00:00"
     },
     "A-scared-01-s11": {
-      "text_sha256": "204bb35885f1579001dd8615061cfc30143030c6156810b571e37a8bc38e17bb",
-      "verdict": "pass",
+      "text_sha256": "8a1ac9dbfa97f6765c7972c6240408d270c9b2a9c58d3c9979676e7804df04e3",
+      "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
+            "alarmed",
             "startled"
           ],
           "sense_match": true
@@ -325,15 +317,19 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T11:40:57+00:00"
+      "judged_at": "2026-07-05T13:22:25+00:00"
     },
     "A-scared-01-s12": {
-      "text_sha256": "9eae99a251b4630d92684e646d2438c6d5952f6f4019170714b8d2ce09735b93",
-      "verdict": "hard",
+      "text_sha256": "ebbd03becb2e5c465a4b350086566b76e33f9aeb4f1b867abb349f843ce61467",
+      "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
-          "fits": [],
+          "fits": [
+            "alarmed",
+            "startled",
+            "terrified"
+          ],
           "sense_match": true
         },
         {
@@ -351,15 +347,16 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T11:40:57+00:00"
+      "judged_at": "2026-07-05T13:22:25+00:00"
     },
     "A-scared-01-s13": {
-      "text_sha256": "d3197c1ee6348a46797a73c229e9afad321a87749611f7e1308d1cf1cc602b51",
-      "verdict": "pass",
+      "text_sha256": "d9da4d3ac9089fe7be3bfdd12883ffcbf03cbe22366e7206c3aebd4c90bc855f",
+      "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
+            "alarmed",
             "startled"
           ],
           "sense_match": true
@@ -379,15 +376,16 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T11:40:57+00:00"
+      "judged_at": "2026-07-05T13:22:25+00:00"
     },
     "A-scared-01-s14": {
-      "text_sha256": "9802ee1dabfa76ee155728874e2ad662691cfe3c12e0c682d0a69b26d814d3da",
-      "verdict": "pass",
+      "text_sha256": "9f74a55c0e2a5e30f2017461d65db1dd0727a9c26369726c64f7a95fa671d662",
+      "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
+            "alarmed",
             "startled"
           ],
           "sense_match": true
@@ -407,20 +405,18 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T11:40:57+00:00"
+      "judged_at": "2026-07-05T13:22:25+00:00"
     },
     "A-scared-01-s15": {
-      "text_sha256": "2774b56dcbcdc166ad6e2127988c7e7223042bdb392ea0b8ed6cd3c1125953ac",
+      "text_sha256": "4a5d041c1243a5be7605fe135842198cdeb3b30ed0cd81e34c9cefbf1a8671ba",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "nervous",
+            "alarmed",
             "startled",
-            "terrified",
-            "timid",
-            "uneasy"
+            "terrified"
           ],
           "sense_match": true
         },
@@ -439,15 +435,16 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T11:40:57+00:00"
+      "judged_at": "2026-07-05T13:22:25+00:00"
     },
     "A-scared-01-s16": {
-      "text_sha256": "d81c86a64df0e72a2bc97285a876cd07a1e53373a168dc29c40bed0d881ae913",
-      "verdict": "pass",
+      "text_sha256": "871de92270d7ccad9a26cd689e932d1de612497d60f4787ed347dc187a945c43",
+      "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
+            "alarmed",
             "startled"
           ],
           "sense_match": true
@@ -467,15 +464,17 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T11:40:57+00:00"
+      "judged_at": "2026-07-05T13:22:25+00:00"
     },
     "A-scared-01-s17": {
-      "text_sha256": "0eec33bf3ed91c9831c7b442d322570ebf0a8e66ac00029e4529dd1716e7a95c",
-      "verdict": "pass",
+      "text_sha256": "07c3511e6e1dabfebef69a795073960bf261a5dd5e73bdef368dde41e793e7cb",
+      "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
+            "alarmed",
+            "horrified",
             "terrified"
           ],
           "sense_match": true
@@ -490,20 +489,22 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
+            "horrified",
             "terrified"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T11:40:57+00:00"
+      "judged_at": "2026-07-05T13:22:25+00:00"
     },
     "A-scared-01-s18": {
-      "text_sha256": "fcf05ded4560f249ef971f711ad97f0e84e5f78ef3e80f94dfea7d34aa59a241",
-      "verdict": "pass",
+      "text_sha256": "f40feb5536b26bc48e5a998b4996f0fa6469e93cf2d550a923641c3003c3ed63",
+      "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
+            "horrified",
             "terrified"
           ],
           "sense_match": true
@@ -523,15 +524,17 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T11:40:57+00:00"
+      "judged_at": "2026-07-05T13:22:25+00:00"
     },
     "A-scared-01-s19": {
-      "text_sha256": "1935f2037d4f04e97a92f1e60d75a3231e64b445e988927af0b8fe0e0d76b778",
-      "verdict": "pass",
+      "text_sha256": "3c716c19cdefb4878b0a53d3c4b1c752284b21958f403362c1eece042c6c67fc",
+      "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
+            "alarmed",
+            "horrified",
             "terrified"
           ],
           "sense_match": true
@@ -551,16 +554,17 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T11:40:57+00:00"
+      "judged_at": "2026-07-05T13:22:25+00:00"
     },
     "A-scared-01-s20": {
-      "text_sha256": "3f4a859c3686460095e211bf3a3f7e32e1bdb1720febd81361e7bb9ae3c1d4ab",
+      "text_sha256": "814936bd230b5d5af146b00d980368b5a408063fce39aa514b740d1534b9961a",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "nervous",
+            "alarmed",
+            "horrified",
             "terrified"
           ],
           "sense_match": true
@@ -580,16 +584,108 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T11:40:57+00:00"
+      "judged_at": "2026-07-05T13:22:25+00:00"
     },
     "A-scared-01-s21": {
-      "text_sha256": "cad98202775d3c035143a0d1e31bb294e0e09285ce35f56413c704afb326cf8e",
+      "text_sha256": "d9fef4b59956136c97d12e548614ec8eb58281c1c949cb0dfc0ce0ddc26a8649",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "nervous",
+            "alarmed",
+            "horrified",
+            "terrified"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "terrified"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "terrified"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T13:23:49+00:00"
+    },
+    "A-scared-01-s22": {
+      "text_sha256": "b5d822300e775981a3cd913dca44100100e6a4268c3ef4b6c80e8fd0322e3d7e",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "alarmed",
+            "horrified",
+            "terrified"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "terrified"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "terrified"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T13:23:49+00:00"
+    },
+    "A-scared-01-s23": {
+      "text_sha256": "0e7a17470aacdbfc3b7c75c126e9034f71f336518e6674504a5598927c6424eb",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "alarmed",
+            "horrified",
+            "terrified"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "terrified"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "alarmed",
+            "terrified"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-05T13:23:49+00:00"
+    },
+    "A-scared-01-s24": {
+      "text_sha256": "7ea052044f83aa5f282266339cf00c650273fcb419b211e6679fbee417ba1798",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "alarmed",
+            "horrified",
             "startled",
             "terrified"
           ],
@@ -610,104 +706,15 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T11:43:19+00:00"
-    },
-    "A-scared-01-s22": {
-      "text_sha256": "ead27b9cc593efaccaf7225a923c2dd1df07bfd2daaa1a0d7406bc574f19d377",
-      "verdict": "review",
-      "judges": [
-        {
-          "model": "gpt-5.5",
-          "fits": [
-            "nervous",
-            "terrified"
-          ],
-          "sense_match": true
-        },
-        {
-          "model": "gpt-4.1",
-          "fits": [
-            "terrified"
-          ],
-          "sense_match": true
-        },
-        {
-          "model": "claude-opus-4-8",
-          "fits": [
-            "terrified"
-          ],
-          "sense_match": true
-        }
-      ],
-      "judged_at": "2026-07-05T11:43:19+00:00"
-    },
-    "A-scared-01-s23": {
-      "text_sha256": "7eafe24154822fb0dc3f5f6a178482137c9a851ccd32fa087048d73f1c51eb3f",
-      "verdict": "review",
-      "judges": [
-        {
-          "model": "gpt-5.5",
-          "fits": [
-            "nervous",
-            "terrified",
-            "uneasy"
-          ],
-          "sense_match": true
-        },
-        {
-          "model": "gpt-4.1",
-          "fits": [
-            "terrified"
-          ],
-          "sense_match": true
-        },
-        {
-          "model": "claude-opus-4-8",
-          "fits": [
-            "terrified"
-          ],
-          "sense_match": true
-        }
-      ],
-      "judged_at": "2026-07-05T11:43:19+00:00"
-    },
-    "A-scared-01-s24": {
-      "text_sha256": "6968e931b25218f01727ef92d494f5423c5b8998dc3faf39cc14a929a2568a22",
-      "verdict": "review",
-      "judges": [
-        {
-          "model": "gpt-5.5",
-          "fits": [
-            "nervous",
-            "terrified"
-          ],
-          "sense_match": true
-        },
-        {
-          "model": "gpt-4.1",
-          "fits": [
-            "terrified"
-          ],
-          "sense_match": true
-        },
-        {
-          "model": "claude-opus-4-8",
-          "fits": [
-            "terrified"
-          ],
-          "sense_match": true
-        }
-      ],
-      "judged_at": "2026-07-05T11:43:19+00:00"
+      "judged_at": "2026-07-05T13:23:49+00:00"
     },
     "A-scared-01-s25": {
-      "text_sha256": "aafc236c46ab598d0081bdc4b8147b42cc99c3f0aac35c31678f0ff5080a8dd9",
-      "verdict": "review",
+      "text_sha256": "0d21b01c0a2fd8a775e71ddb12500df3baca0d00bcd314fefc2d5b20c7281afc",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "nervous",
             "timid"
           ],
           "sense_match": true
@@ -727,17 +734,15 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T11:43:19+00:00"
+      "judged_at": "2026-07-05T13:23:49+00:00"
     },
     "A-scared-01-s26": {
-      "text_sha256": "da9954845645ef1fb27149214ba7668eeda8966cbbc57fa427db9bef206c8af7",
-      "verdict": "review",
+      "text_sha256": "b49b096863ade15efe850a2423aa69c50f7f43e83b071062356c66c1a81d166b",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "nervous",
-            "terrified",
             "timid"
           ],
           "sense_match": true
@@ -752,24 +757,21 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "nervous",
             "timid"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T11:43:19+00:00"
+      "judged_at": "2026-07-05T13:23:49+00:00"
     },
     "A-scared-01-s27": {
-      "text_sha256": "bb1645a815c146ca1de53286c5b4756d6d7b2807833bfff312f9969f47c8d29a",
-      "verdict": "review",
+      "text_sha256": "cf293b9fea72a807d82527ba7c0dc96db63109f607e4120b7c0e607d787283a5",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "nervous",
-            "timid",
-            "uneasy"
+            "timid"
           ],
           "sense_match": true
         },
@@ -788,19 +790,17 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T11:43:19+00:00"
+      "judged_at": "2026-07-05T13:23:49+00:00"
     },
     "A-scared-01-s28": {
-      "text_sha256": "94123724c7480c6611962f1a1c351b8aa74732162774772983f9bf6db874d6c3",
+      "text_sha256": "3f3cc57fbbbfaaed18204c30249b9296253102677bfc7abe592b243209d85210",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "nervous",
-            "terrified",
-            "timid",
-            "uneasy"
+            "alarmed",
+            "timid"
           ],
           "sense_match": true
         },
@@ -814,24 +814,21 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "nervous",
             "timid"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T11:43:19+00:00"
+      "judged_at": "2026-07-05T13:23:49+00:00"
     },
     "A-scared-01-s29": {
-      "text_sha256": "cd513de43a5691e0334b4785823310e9c0706a017c4ea93e8dc7409ed0f368a4",
-      "verdict": "review",
+      "text_sha256": "181a7420a7230c06d58758f0454c42a22370bfa5f839c9d887386e26c67b588a",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "nervous",
-            "timid",
-            "uneasy"
+            "timid"
           ],
           "sense_match": true
         },
@@ -850,17 +847,17 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T11:43:19+00:00"
+      "judged_at": "2026-07-05T13:23:49+00:00"
     },
     "A-scared-01-s30": {
-      "text_sha256": "a5e7ab98f9f172c4a401c1ff498edc3f49c341fe12a43ed8fa4b54329479df8c",
-      "verdict": "hard",
+      "text_sha256": "ab578fe953988d78d754c7304178cb037c1035de7086372f002cdd0baf2eee1c",
+      "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "nervous",
-            "terrified"
+            "terrified",
+            "timid"
           ],
           "sense_match": true
         },
@@ -874,31 +871,28 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
+            "terrified",
             "timid"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T11:43:19+00:00"
+      "judged_at": "2026-07-05T13:23:49+00:00"
     },
     "A-scared-01-s31": {
-      "text_sha256": "6f1ab7ec5fd847829a4231df404119100f67b9226af1567e84b88d6e2a1d34ed",
-      "verdict": "review",
+      "text_sha256": "82f61152ac4b23b1a10723dfb4ce6255457ec218a2e3dc1d2958b3af74a56d58",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "nervous",
-            "terrified",
-            "timid",
-            "uneasy"
+            "timid"
           ],
           "sense_match": true
         },
         {
           "model": "gpt-4.1",
           "fits": [
-            "nervous",
             "timid"
           ],
           "sense_match": true
@@ -906,300 +900,278 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "nervous",
             "timid"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T11:44:41+00:00"
+      "judged_at": "2026-07-05T13:24:47+00:00"
     },
     "A-scared-01-s32": {
-      "text_sha256": "bed66f3b0264d595110477090b8d9a5fe224422552dc3d246753c3a7723020d3",
-      "verdict": "review",
+      "text_sha256": "651443c1fe34faff07d745ab5bcc260ae88c6052fab27cbf3fbae0210e6d8acb",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "nervous",
-            "terrified",
-            "timid",
-            "uneasy"
+            "timid"
           ],
           "sense_match": true
         },
         {
           "model": "gpt-4.1",
           "fits": [
-            "nervous",
-            "timid",
-            "uneasy"
+            "timid"
           ],
           "sense_match": true
         },
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "nervous",
             "timid"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T11:44:41+00:00"
+      "judged_at": "2026-07-05T13:24:47+00:00"
     },
     "A-scared-01-s33": {
-      "text_sha256": "7cbf0327cec4746fc54f043af0e28dbefae095bee6b9ef010ac3bc6ec3cb9527",
+      "text_sha256": "56a2c669d2cfced3121ace1d35becdb323e3ee991211ef2149aed852909823af",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "nervous",
-            "terrified",
-            "uneasy"
+            "alarmed",
+            "horrified"
           ],
           "sense_match": true
         },
         {
           "model": "gpt-4.1",
           "fits": [
-            "nervous",
-            "uneasy"
+            "horrified"
           ],
           "sense_match": true
         },
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "nervous",
-            "uneasy"
+            "horrified"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T11:44:41+00:00"
+      "judged_at": "2026-07-05T13:24:47+00:00"
     },
     "A-scared-01-s34": {
-      "text_sha256": "2c681a5d0016cc185b2b5c13aac62fe349493916eaedf7075c2310cbe73e6bec",
+      "text_sha256": "602e3fed34fdfe33ffe0690e08a547e0f2f828bf4bcffe269404308e88358f75",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "nervous",
-            "terrified",
-            "uneasy"
+            "alarmed",
+            "horrified",
+            "startled"
           ],
           "sense_match": true
         },
         {
           "model": "gpt-4.1",
           "fits": [
-            "nervous",
-            "uneasy"
+            "horrified"
           ],
           "sense_match": true
         },
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "nervous",
-            "uneasy"
+            "horrified",
+            "startled"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T11:44:41+00:00"
+      "judged_at": "2026-07-05T13:24:47+00:00"
     },
     "A-scared-01-s35": {
-      "text_sha256": "9781a85a3db9e7eb9f684ac83b8255fe7d585f34122db359199aefd41c5ecc01",
+      "text_sha256": "c87c76c1737662712bf9236acf0bce0353928f8e53e5cf7dea55c5e341262f54",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "nervous",
-            "terrified",
-            "uneasy"
+            "alarmed",
+            "horrified"
           ],
           "sense_match": true
         },
         {
           "model": "gpt-4.1",
           "fits": [
-            "nervous",
-            "uneasy"
+            "horrified"
           ],
           "sense_match": true
         },
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "nervous",
-            "uneasy"
+            "horrified"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T11:44:41+00:00"
+      "judged_at": "2026-07-05T13:24:47+00:00"
     },
     "A-scared-01-s36": {
-      "text_sha256": "0d518ce3e2f437ff99431ad66c3bb4edf67022de571a4c4a86229d5bbd572c01",
+      "text_sha256": "87aa80aed3a89ecd16f8b4bc622bbd43374567ad62cbfcd3ad5945808aac8f42",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "nervous",
-            "uneasy"
+            "alarmed",
+            "horrified",
+            "startled"
           ],
           "sense_match": true
         },
         {
           "model": "gpt-4.1",
           "fits": [
-            "nervous",
-            "uneasy"
+            "horrified"
           ],
           "sense_match": true
         },
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "nervous",
-            "uneasy"
+            "horrified"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T11:44:41+00:00"
+      "judged_at": "2026-07-05T13:24:47+00:00"
     },
     "A-scared-01-s37": {
-      "text_sha256": "cd607466f3934a49728abad680a3b8bfbeb3c110f827334fd76d3fb43a8e3fe9",
+      "text_sha256": "7ffc6266c6098ee1114ae3a46c5605b7924d51de146a76155874a388c0f41b8d",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "nervous",
-            "uneasy"
+            "alarmed",
+            "horrified",
+            "startled"
           ],
           "sense_match": true
         },
         {
           "model": "gpt-4.1",
           "fits": [
-            "nervous",
-            "uneasy"
+            "horrified"
           ],
           "sense_match": true
         },
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "nervous",
-            "uneasy"
+            "horrified"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T11:44:41+00:00"
+      "judged_at": "2026-07-05T13:24:47+00:00"
     },
     "A-scared-01-s38": {
-      "text_sha256": "88a79aacc1699786b1df0f9f33b38f9262d571e8dbe56dca6b112751d7838ce4",
+      "text_sha256": "c8fd38f27f807b6d17e1c169cc47e1d5d69e58e8056dcaa17f699677b0a0fa4c",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "nervous",
-            "terrified",
-            "uneasy"
+            "alarmed",
+            "horrified"
           ],
           "sense_match": true
         },
         {
           "model": "gpt-4.1",
           "fits": [
-            "nervous",
-            "uneasy"
+            "horrified"
           ],
           "sense_match": true
         },
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "nervous",
-            "uneasy"
+            "horrified"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T11:44:41+00:00"
+      "judged_at": "2026-07-05T13:24:47+00:00"
     },
     "A-scared-01-s39": {
-      "text_sha256": "24fb73392f407687bedc815965a7d1f72e6b0c423abf1fcd88d32c947e9df4d4",
+      "text_sha256": "c927a6df98cdd59857dcaf1be1e8f579ebca7c1a4317a2f2fca34d624605424a",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "nervous",
-            "uneasy"
+            "alarmed",
+            "horrified",
+            "startled"
           ],
           "sense_match": true
         },
         {
           "model": "gpt-4.1",
           "fits": [
-            "nervous",
-            "uneasy"
+            "horrified"
           ],
           "sense_match": true
         },
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "nervous",
-            "uneasy"
+            "horrified"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T11:44:41+00:00"
+      "judged_at": "2026-07-05T13:24:47+00:00"
     },
     "A-scared-01-s40": {
-      "text_sha256": "790bf480924253fb742f1033a0a296b9eb34d51a8e187c2e2276131865a5b652",
+      "text_sha256": "5c7f860c7d58a99d5621e622fe1c95e386b8995b30dd51ea056a140b575c8f6a",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "nervous",
-            "terrified",
-            "uneasy"
+            "alarmed",
+            "horrified",
+            "startled"
           ],
           "sense_match": true
         },
         {
           "model": "gpt-4.1",
           "fits": [
-            "nervous",
-            "uneasy"
+            "horrified"
           ],
           "sense_match": true
         },
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "nervous",
-            "uneasy"
+            "horrified"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T11:44:41+00:00"
+      "judged_at": "2026-07-05T13:24:47+00:00"
     }
   }
 }

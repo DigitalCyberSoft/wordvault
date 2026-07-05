@@ -288,51 +288,44 @@
       "judged_at": "2026-07-05T12:19:05+00:00"
     },
     "A-dirty-01-s11": {
-      "text_sha256": "ffc91795632ab2a0cf246defd1e1b8546a107b32c196e2d64d63e4a9d3529d78",
+      "text_sha256": "d9cf788738079e79b5db95e66491b18e509263cb9d2a51a9bf2234754d5b91a3",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
             "dusty",
-            "filthy",
             "greasy",
-            "grubby",
-            "muddy"
+            "grubby"
           ],
           "sense_match": true
         },
         {
           "model": "gpt-4.1",
           "fits": [
-            "filthy",
-            "greasy",
-            "grubby",
-            "muddy"
+            "grubby"
           ],
           "sense_match": true
         },
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "filthy",
             "greasy",
-            "grubby",
-            "muddy"
+            "grubby"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:20:33+00:00"
+      "judged_at": "2026-07-05T13:06:33+00:00"
     },
     "A-dirty-01-s12": {
-      "text_sha256": "1fa326d62db30632856a1e055f76119931c0797387eb742b1af305a63d40dbdd",
+      "text_sha256": "bdde6a4a76ebf14818d6c0d25fa8a6b02682e8787d6c8c7e1f87a8f3295182c7",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "filthy",
+            "greasy",
             "grubby"
           ],
           "sense_match": true
@@ -340,7 +333,6 @@
         {
           "model": "gpt-4.1",
           "fits": [
-            "filthy",
             "grubby"
           ],
           "sense_match": true
@@ -348,23 +340,21 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "filthy",
             "grubby"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:20:33+00:00"
+      "judged_at": "2026-07-05T13:06:33+00:00"
     },
     "A-dirty-01-s13": {
-      "text_sha256": "dbdb7e6c79d9e4daed7a03993a42f5bb6f63977d7d0dbc7a7e9efb73d2afeeee",
+      "text_sha256": "8c18f621ecd6e960361d887ef7e7b22c068906bca9e022534c2c411c8f798342",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
             "dusty",
-            "filthy",
             "grubby",
             "muddy"
           ],
@@ -373,9 +363,7 @@
         {
           "model": "gpt-4.1",
           "fits": [
-            "filthy",
-            "grubby",
-            "muddy"
+            "grubby"
           ],
           "sense_match": true
         },
@@ -383,32 +371,27 @@
           "model": "claude-opus-4-8",
           "fits": [
             "dusty",
-            "filthy",
-            "grubby",
-            "muddy"
+            "grubby"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:20:33+00:00"
+      "judged_at": "2026-07-05T13:06:33+00:00"
     },
     "A-dirty-01-s14": {
-      "text_sha256": "aa3f7e56325b19347eaee2d535207e27d04aa3941bd397cb9c19020ccb5ebd76",
-      "verdict": "review",
+      "text_sha256": "3503428d803766d92ce8c05533e1c060585d89f13c8f405a5b0efa64af1a898f",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "filthy",
-            "grubby",
-            "muddy"
+            "grubby"
           ],
           "sense_match": true
         },
         {
           "model": "gpt-4.1",
           "fits": [
-            "filthy",
             "grubby"
           ],
           "sense_match": true
@@ -416,24 +399,20 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "filthy",
-            "greasy",
-            "grubby",
-            "muddy"
+            "grubby"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:20:33+00:00"
+      "judged_at": "2026-07-05T13:06:33+00:00"
     },
     "A-dirty-01-s15": {
-      "text_sha256": "e14089d592ea75124d16e5f4f43c0cb6046dda926619629cda24978ee38b4bcc",
-      "verdict": "review",
+      "text_sha256": "5545a1e8742c0186c4c8e6fd42e8e04e98bdfb728dc5712351ef2c376ce76355",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "filthy",
             "grubby"
           ],
           "sense_match": true
@@ -441,7 +420,6 @@
         {
           "model": "gpt-4.1",
           "fits": [
-            "filthy",
             "grubby"
           ],
           "sense_match": true
@@ -449,22 +427,20 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "filthy",
             "grubby"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:20:33+00:00"
+      "judged_at": "2026-07-05T13:06:33+00:00"
     },
     "A-dirty-01-s16": {
-      "text_sha256": "b18776bdd2f8ee892c15dc0eda38c6b6244160dcc64c0e52a4a462d8d4bf4138",
-      "verdict": "review",
+      "text_sha256": "61f7a797e11229d8b41563bcf408629279de40e9dfb143cd9935965502814bc0",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "filthy",
             "grubby"
           ],
           "sense_match": true
@@ -472,7 +448,6 @@
         {
           "model": "gpt-4.1",
           "fits": [
-            "filthy",
             "grubby"
           ],
           "sense_match": true
@@ -480,32 +455,28 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "filthy",
             "grubby"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:20:33+00:00"
+      "judged_at": "2026-07-05T13:06:33+00:00"
     },
     "A-dirty-01-s17": {
-      "text_sha256": "5dd129cc77bbde3e292c7e95d3678ac9dc02d84b410fba2ecbf8b9722c891956",
-      "verdict": "review",
+      "text_sha256": "45fdfd56265541bf3d7a10037b62c25c3dbad0cd1e1784bfaa3f0b863c988689",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "dusty",
-            "filthy",
-            "grubby"
+            "dusty"
           ],
           "sense_match": true
         },
         {
           "model": "gpt-4.1",
           "fits": [
-            "dusty",
-            "filthy"
+            "dusty"
           ],
           "sense_match": true
         },
@@ -517,7 +488,7 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:20:33+00:00"
+      "judged_at": "2026-07-05T13:06:33+00:00"
     },
     "A-dirty-01-s18": {
       "text_sha256": "cc381a3f4046de6c70db37f58f4d11aa725522066d7c2c4f5e87b7a83a451f2b",

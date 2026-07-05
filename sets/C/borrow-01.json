@@ -10,7 +10,7 @@
     "zipf_mean": 4.95,
     "tightness": null,
     "band_suggested": 2,
-    "scored_at": "2026-07-05T08:59:48+00:00"
+    "scored_at": "2026-07-05T13:15:52+00:00"
   },
   "words": [
     {
@@ -28,7 +28,8 @@
         "past": "borrowed",
         "part": "borrowing"
       },
-      "discriminator": "you get it, for a while"
+      "discriminator": "you get it, for a while",
+      "grade": 2
     },
     {
       "w": "lend",
@@ -45,7 +46,8 @@
         "past": "lent",
         "part": "lending"
       },
-      "discriminator": "you give it out, for a while"
+      "discriminator": "you give it out, for a while",
+      "grade": 2
     },
     {
       "w": "bring",
@@ -62,7 +64,8 @@
         "past": "brought",
         "part": "bringing"
       },
-      "discriminator": "movement toward here"
+      "discriminator": "movement toward here",
+      "grade": 1
     },
     {
       "w": "take",
@@ -79,7 +82,8 @@
         "past": "took",
         "part": "taking"
       },
-      "discriminator": "movement away"
+      "discriminator": "movement away",
+      "grade": 1
     },
     {
       "w": "keep",
@@ -96,7 +100,8 @@
         "past": "kept",
         "part": "keeping"
       },
-      "discriminator": "it stays with you"
+      "discriminator": "it stays with you",
+      "grade": 1
     }
   ],
   "sentences": [

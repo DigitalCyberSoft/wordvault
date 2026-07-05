@@ -5,7 +5,13 @@
   "theme": "ways of being smart",
   "band": 3,
   "band_override": 3,
-  "computed": null,
+  "computed": {
+    "zipf_min": 3.05,
+    "zipf_mean": 3.95,
+    "tightness": null,
+    "band_suggested": 3,
+    "scored_at": "2026-07-05T13:15:51+00:00"
+  },
   "words": [
     {
       "w": "clever",
@@ -19,7 +25,8 @@
       "forms": {
         "base": "clever"
       },
-      "discriminator": "fast, tricky solutions"
+      "discriminator": "fast, tricky solutions",
+      "grade": 2
     },
     {
       "w": "wise",
@@ -33,7 +40,8 @@
       "forms": {
         "base": "wise"
       },
-      "discriminator": "knows what should be done: the long view"
+      "discriminator": "knows what should be done: the long view",
+      "grade": 3
     },
     {
       "w": "curious",
@@ -47,7 +55,8 @@
       "forms": {
         "base": "curious"
       },
-      "discriminator": "full of questions"
+      "discriminator": "full of questions",
+      "grade": 3
     },
     {
       "w": "observant",
@@ -61,7 +70,8 @@
       "forms": {
         "base": "observant"
       },
-      "discriminator": "notices small details others miss"
+      "discriminator": "notices small details others miss",
+      "grade": 5
     },
     {
       "w": "knowledgeable",
@@ -75,7 +85,8 @@
       "forms": {
         "base": "knowledgeable"
       },
-      "discriminator": "knows many facts about a subject"
+      "discriminator": "knows many facts about a subject",
+      "grade": 6
     }
   ],
   "sentences": [
@@ -92,7 +103,15 @@
         "curious": "curious",
         "observant": "observant",
         "knowledgeable": "knowledgeable"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads curious charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-smart-01-s02",
@@ -107,7 +126,15 @@
         "curious": "curious",
         "observant": "observant",
         "knowledgeable": "knowledgeable"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads observant charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-smart-01-s03",
@@ -122,7 +149,15 @@
         "curious": "curious",
         "observant": "observant",
         "knowledgeable": "knowledgeable"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads observant charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-smart-01-s04",
@@ -137,7 +172,15 @@
         "curious": "curious",
         "observant": "observant",
         "knowledgeable": "knowledgeable"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads observant charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-smart-01-s05",
@@ -152,7 +195,15 @@
         "curious": "curious",
         "observant": "observant",
         "knowledgeable": "knowledgeable"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads observant charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-smart-01-s06",
@@ -182,7 +233,15 @@
         "curious": "curious",
         "observant": "observant",
         "knowledgeable": "knowledgeable"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads observant charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-smart-01-s08",
@@ -197,7 +256,15 @@
         "curious": "curious",
         "observant": "observant",
         "knowledgeable": "knowledgeable"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads observant charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-smart-01-s09",
@@ -212,7 +279,15 @@
         "curious": "curious",
         "observant": "observant",
         "knowledgeable": "knowledgeable"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads knowledgeable charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-smart-01-s10",
@@ -242,7 +317,15 @@
         "curious": "curious",
         "observant": "observant",
         "knowledgeable": "knowledgeable"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads knowledgeable charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-smart-01-s12",
@@ -257,7 +340,15 @@
         "curious": "curious",
         "observant": "observant",
         "knowledgeable": "knowledgeable"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads clever charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-smart-01-s13",
@@ -272,7 +363,15 @@
         "curious": "curious",
         "observant": "observant",
         "knowledgeable": "knowledgeable"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads clever, observant charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-smart-01-s14",
@@ -287,7 +386,15 @@
         "curious": "curious",
         "observant": "observant",
         "knowledgeable": "knowledgeable"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds clever; gpt-4.1 adds clever): clever co-occurs; the frame stages prudence with no ingenuity, wise's territory",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-smart-01-s15",
@@ -302,7 +409,15 @@
         "curious": "curious",
         "observant": "observant",
         "knowledgeable": "knowledgeable"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads knowledgeable charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-smart-01-s16",
@@ -317,7 +432,15 @@
         "curious": "curious",
         "observant": "observant",
         "knowledgeable": "knowledgeable"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads clever charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-smart-01-s17",
@@ -467,7 +590,15 @@
         "curious": "curious",
         "observant": "observant",
         "knowledgeable": "knowledgeable"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads knowledgeable charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-smart-01-s27",
@@ -639,8 +770,8 @@
       "answer": "knowledgeable",
       "cue": "inferential",
       "reserve": false,
-      "text": "Her ___ answers about every planet earned a place on the space quiz team.",
-      "cue_phrase": "every planet",
+      "text": "She was so ___ about the planets that the quiz team gave her the astronomy seat.",
+      "cue_phrase": "gave her the astronomy seat",
       "surface": {
         "clever": "clever",
         "wise": "wise",
@@ -785,7 +916,7 @@
   "meta": {
     "generated_at": "2026-07-05T11:11:28+00:00",
     "model": "gpt-5.5",
-    "scrubbed_at": null,
-    "scrub_note": "inventive swapped for knowledgeable: inventive was the generic donor the judges fit into every sibling frame."
+    "scrubbed_at": "2026-07-05T13:42:27+00:00",
+    "scrub_note": "Full read after the inventive->knowledgeable swap; generic-subject frames reviewed and kept (usage frames, not definitional)."
   }
 }

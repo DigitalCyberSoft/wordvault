@@ -5,7 +5,13 @@
   "theme": "ways of liking",
   "band": 2,
   "band_override": 2,
-  "computed": null,
+  "computed": {
+    "zipf_min": 3.52,
+    "zipf_mean": 4.3,
+    "tightness": null,
+    "band_suggested": 3,
+    "scored_at": "2026-07-05T13:15:51+00:00"
+  },
   "words": [
     {
       "w": "enjoy",
@@ -22,7 +28,8 @@
         "past": "enjoyed",
         "part": "enjoying"
       },
-      "discriminator": "having fun while doing it"
+      "discriminator": "having fun while doing it",
+      "grade": 2
     },
     {
       "w": "admire",
@@ -39,7 +46,8 @@
         "past": "admired",
         "part": "admiring"
       },
-      "discriminator": "looking up to someone for how good they are"
+      "discriminator": "looking up to someone for how good they are",
+      "grade": 4
     },
     {
       "w": "adore",
@@ -56,7 +64,8 @@
         "past": "adored",
         "part": "adoring"
       },
-      "discriminator": "over-the-moon love"
+      "discriminator": "over-the-moon love",
+      "grade": 4
     },
     {
       "w": "cherish",
@@ -73,7 +82,8 @@
         "past": "cherished",
         "part": "cherishing"
       },
-      "discriminator": "holding something precious close"
+      "discriminator": "holding something precious close",
+      "grade": 5
     },
     {
       "w": "miss",
@@ -90,7 +100,8 @@
         "past": "missed",
         "part": "missing"
       },
-      "discriminator": "feels the absence of it"
+      "discriminator": "feels the absence of it",
+      "grade": 1
     }
   ],
   "sentences": [
@@ -167,7 +178,15 @@
         "adore": "adored",
         "cherish": "cherished",
         "miss": "missed"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads adore charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-like-01-s06",
@@ -182,7 +201,15 @@
         "adore": "adore",
         "cherish": "cherish",
         "miss": "miss"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads adore charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-like-01-s07",
@@ -197,7 +224,15 @@
         "adore": "adored",
         "cherish": "cherished",
         "miss": "missed"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads miss charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-like-01-s08",
@@ -227,7 +262,15 @@
         "adore": "adored",
         "cherish": "cherished",
         "miss": "missed"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads adore charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-like-01-s10",
@@ -242,7 +285,15 @@
         "adore": "adore",
         "cherish": "cherish",
         "miss": "miss"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads adore, enjoy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-like-01-s11",
@@ -272,7 +323,15 @@
         "adore": "adored",
         "cherish": "cherished",
         "miss": "missed"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads adore charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-like-01-s13",
@@ -287,7 +346,15 @@
         "adore": "adored",
         "cherish": "cherished",
         "miss": "missed"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads adore charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-like-01-s14",
@@ -302,7 +369,15 @@
         "adore": "adored",
         "cherish": "cherished",
         "miss": "missed"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads adore charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-like-01-s15",
@@ -339,15 +414,23 @@
       "answer": "adore",
       "cue": "explicit",
       "reserve": false,
-      "text": "Tia ___ her kitten; she was over the moon at each purr.",
-      "cue_phrase": "over the moon",
+      "text": "Tia ___ the neighbour's kitten, squealing with joy whenever it appeared at the fence.",
+      "cue_phrase": "squealing with joy",
       "surface": {
         "enjoy": "enjoyed",
         "admire": "admired",
         "adore": "adored",
         "cherish": "cherished",
         "miss": "missed"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads cherish charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-like-01-s18",
@@ -362,37 +445,61 @@
         "adore": "adore",
         "cherish": "cherish",
         "miss": "miss"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads admire, enjoy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-like-01-s19",
       "answer": "adore",
       "cue": "contextual",
       "reserve": false,
-      "text": "Maya ___ the new puppy, beaming and whispering, 'You're perfect!'",
-      "cue_phrase": "You're perfect",
+      "text": "Maya ___ every puppy she met, beaming and whispering, 'You're perfect!'",
+      "cue_phrase": "beaming and whispering",
       "surface": {
         "enjoy": "enjoyed",
         "admire": "admired",
         "adore": "adored",
         "cherish": "cherished",
         "miss": "missed"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds admire; claude-opus-4-8 adds admire): admire read is charitable; whispering 'you're perfect' to puppies is doting affection, not looking up to",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-like-01-s20",
       "answer": "adore",
       "cue": "contextual",
       "reserve": false,
-      "text": "Leo ___ that comic, calling every page his favourite ever.",
-      "cue_phrase": "favourite ever",
+      "text": "Mia ___ the therapy pony the moment it arrived, planting a kiss between its ears.",
+      "cue_phrase": "planting a kiss between its ears",
       "surface": {
         "enjoy": "enjoyed",
         "admire": "admired",
         "adore": "adored",
         "cherish": "cherished",
         "miss": "missed"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads cherish, enjoy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-like-01-s21",
@@ -407,7 +514,15 @@
         "adore": "adored",
         "cherish": "cherished",
         "miss": "missed"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads cherish charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-like-01-s22",
@@ -422,7 +537,15 @@
         "adore": "adored",
         "cherish": "cherished",
         "miss": "missed"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds admire; claude-opus-4-8 adds admire): admire's gaze reading co-occurs; a baby's hand-waving affection at the moon is doting love, adore's feature",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-like-01-s23",
@@ -437,22 +560,38 @@
         "adore": "adored",
         "cherish": "cherished",
         "miss": "missed"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads admire, cherish charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-like-01-s24",
       "answer": "adore",
       "cue": "contextual",
       "reserve": true,
-      "text": "Toddlers ___ that bedtime song, demanding it five times every night.",
-      "cue_phrase": "five times every night",
+      "text": "The twins ___ their swimming teacher, racing to hug her at every lesson.",
+      "cue_phrase": "racing to hug her",
       "surface": {
         "enjoy": "enjoy",
         "admire": "admire",
         "adore": "adore",
         "cherish": "cherish",
         "miss": "miss"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds admire, cherish; claude-opus-4-8 adds admire): admire co-occurs; racing to hug is physical affection, adore's feature",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-like-01-s25",
@@ -467,7 +606,15 @@
         "adore": "adored",
         "cherish": "cherished",
         "miss": "missed"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads adore charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-like-01-s26",
@@ -482,7 +629,15 @@
         "adore": "adore",
         "cherish": "cherish",
         "miss": "miss"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads adore charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-like-01-s27",
@@ -497,7 +652,15 @@
         "adore": "adored",
         "cherish": "cherished",
         "miss": "missed"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads adore charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-like-01-s28",
@@ -512,7 +675,15 @@
         "adore": "adored",
         "cherish": "cherished",
         "miss": "missed"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads admire, adore charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-like-01-s29",
@@ -527,7 +698,15 @@
         "adore": "adored",
         "cherish": "cherished",
         "miss": "missed"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads adore charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-like-01-s30",
@@ -542,7 +721,15 @@
         "adore": "adore",
         "cherish": "cherish",
         "miss": "miss"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads adore charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-like-01-s31",
@@ -557,7 +744,15 @@
         "adore": "adore",
         "cherish": "cherish",
         "miss": "miss"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds adore, enjoy; claude-opus-4-8 adds enjoy): enjoy co-occurs on a generic-subject frame; keeping important days close is treasuring, cherish's exclusive feature",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-like-01-s32",
@@ -572,7 +767,15 @@
         "adore": "adore",
         "cherish": "cherish",
         "miss": "miss"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads adore charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-like-01-s33",
@@ -587,7 +790,15 @@
         "adore": "adored",
         "cherish": "cherished",
         "miss": "missed"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads adore, cherish charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-like-01-s34",
@@ -647,7 +858,15 @@
         "adore": "adored",
         "cherish": "cherished",
         "miss": "missed"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads adore charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-like-01-s38",
@@ -662,7 +881,15 @@
         "adore": "adored",
         "cherish": "cherished",
         "miss": "missed"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads adore, cherish, enjoy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-like-01-s39",
@@ -677,7 +904,15 @@
         "adore": "adore",
         "cherish": "cherish",
         "miss": "miss"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads adore charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-like-01-s40",
@@ -800,7 +1035,7 @@
   "meta": {
     "generated_at": "2026-07-05T11:06:12+00:00",
     "model": "gpt-5.5",
-    "scrubbed_at": null,
-    "scrub_note": "respect swapped for miss: respect was the generic donor the judges fit into every sibling frame."
+    "scrubbed_at": "2026-07-05T13:42:27+00:00",
+    "scrub_note": "adore s17/s19/s20/s24 restaged as active intense affection (drafts leaked into cherish's attachment territory). Full read + judge triage."
   }
 }

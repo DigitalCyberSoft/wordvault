@@ -5,7 +5,13 @@
   "theme": "kinds of tired",
   "band": 3,
   "band_override": 3,
-  "computed": null,
+  "computed": {
+    "zipf_min": 2.61,
+    "zipf_mean": 3.27,
+    "tightness": null,
+    "band_suggested": 4,
+    "scored_at": "2026-07-05T13:15:51+00:00"
+  },
   "words": [
     {
       "w": "drowsy",
@@ -19,7 +25,8 @@
       "forms": {
         "base": "drowsy"
       },
-      "discriminator": "eyes closing: sleep is coming"
+      "discriminator": "eyes closing: sleep is coming",
+      "grade": 4
     },
     {
       "w": "exhausted",
@@ -33,7 +40,8 @@
       "forms": {
         "base": "exhausted"
       },
-      "discriminator": "totally out of energy"
+      "discriminator": "totally out of energy",
+      "grade": 4
     },
     {
       "w": "groggy",
@@ -47,7 +55,8 @@
       "forms": {
         "base": "groggy"
       },
-      "discriminator": "fuzzy head after waking or a knock"
+      "discriminator": "fuzzy head after waking or a knock",
+      "grade": 5
     },
     {
       "w": "sluggish",
@@ -61,7 +70,8 @@
       "forms": {
         "base": "sluggish"
       },
-      "discriminator": "body running at half speed"
+      "discriminator": "body running at half speed",
+      "grade": 5
     },
     {
       "w": "restless",
@@ -75,7 +85,8 @@
       "forms": {
         "base": "restless"
       },
-      "discriminator": "cannot settle; keeps moving"
+      "discriminator": "cannot settle; keeps moving",
+      "grade": 4
     }
   ],
   "sentences": [
@@ -137,7 +148,15 @@
         "groggy": "groggy",
         "sluggish": "sluggish",
         "restless": "restless"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads groggy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-tired-01-s05",
@@ -212,7 +231,15 @@
         "groggy": "groggy",
         "sluggish": "sluggish",
         "restless": "restless"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads sluggish charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-tired-01-s10",
@@ -257,7 +284,15 @@
         "groggy": "groggy",
         "sluggish": "sluggish",
         "restless": "restless"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads sluggish charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-tired-01-s13",
@@ -287,7 +322,15 @@
         "groggy": "groggy",
         "sluggish": "sluggish",
         "restless": "restless"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads sluggish charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-tired-01-s15",
@@ -332,7 +375,15 @@
         "groggy": "groggy",
         "sluggish": "sluggish",
         "restless": "restless"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads drowsy, sluggish charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-tired-01-s18",
@@ -347,7 +398,15 @@
         "groggy": "groggy",
         "sluggish": "sluggish",
         "restless": "restless"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads drowsy, sluggish charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-tired-01-s19",
@@ -362,7 +421,15 @@
         "groggy": "groggy",
         "sluggish": "sluggish",
         "restless": "restless"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads drowsy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-tired-01-s20",
@@ -377,7 +444,15 @@
         "groggy": "groggy",
         "sluggish": "sluggish",
         "restless": "restless"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads drowsy, sluggish charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-tired-01-s21",
@@ -392,7 +467,15 @@
         "groggy": "groggy",
         "sluggish": "sluggish",
         "restless": "restless"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads drowsy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-tired-01-s22",
@@ -407,7 +490,15 @@
         "groggy": "groggy",
         "sluggish": "sluggish",
         "restless": "restless"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads drowsy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-tired-01-s23",
@@ -422,7 +513,15 @@
         "groggy": "groggy",
         "sluggish": "sluggish",
         "restless": "restless"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads drowsy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-tired-01-s24",
@@ -437,7 +536,15 @@
         "groggy": "groggy",
         "sluggish": "sluggish",
         "restless": "restless"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads drowsy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-tired-01-s25",
@@ -452,7 +559,15 @@
         "groggy": "groggy",
         "sluggish": "sluggish",
         "restless": "restless"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads drowsy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-tired-01-s26",
@@ -482,7 +597,15 @@
         "groggy": "groggy",
         "sluggish": "sluggish",
         "restless": "restless"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads drowsy, exhausted charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-tired-01-s28",
@@ -497,7 +620,15 @@
         "groggy": "groggy",
         "sluggish": "sluggish",
         "restless": "restless"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds drowsy; claude-opus-4-8 adds drowsy): drowsy contradicts the frame's explicit 'not sleepy'; judge charity against stated text",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-tired-01-s29",
@@ -512,7 +643,15 @@
         "groggy": "groggy",
         "sluggish": "sluggish",
         "restless": "restless"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads drowsy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-tired-01-s30",
@@ -785,7 +924,7 @@
   "meta": {
     "generated_at": "2026-07-05T11:13:46+00:00",
     "model": "gpt-5.5",
-    "scrubbed_at": null,
-    "scrub_note": "weary swapped for restless: weary was the generic donor the judges fit into every sibling frame."
+    "scrubbed_at": "2026-07-05T13:42:27+00:00",
+    "scrub_note": "Full read after the weary->restless swap; no changes needed."
   }
 }

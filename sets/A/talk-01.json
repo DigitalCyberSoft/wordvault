@@ -10,7 +10,7 @@
     "zipf_mean": 3.42,
     "tightness": 0.693,
     "band_suggested": 4,
-    "scored_at": "2026-07-05T08:59:48+00:00"
+    "scored_at": "2026-07-05T13:15:51+00:00"
   },
   "words": [
     {
@@ -28,7 +28,8 @@
         "past": "whispered",
         "part": "whispering"
       },
-      "discriminator": "very quietly, on purpose"
+      "discriminator": "very quietly, on purpose",
+      "grade": 1
     },
     {
       "w": "mumble",
@@ -45,7 +46,8 @@
         "past": "mumbled",
         "part": "mumbling"
       },
-      "discriminator": "unclear, hard to make out"
+      "discriminator": "unclear, hard to make out",
+      "grade": 3
     },
     {
       "w": "chatter",
@@ -73,7 +75,8 @@
         "reason": "stem 'incessant' sits at the floor; 'rapidly and on and on' carries the meaning",
         "by": "claude",
         "at": "2026-07-05"
-      }
+      },
+      "grade": 2
     },
     {
       "w": "announce",
@@ -90,7 +93,8 @@
         "past": "announced",
         "part": "announcing"
       },
-      "discriminator": "tell everyone, officially"
+      "discriminator": "tell everyone, officially",
+      "grade": 3
     },
     {
       "w": "bellow",
@@ -107,7 +111,8 @@
         "past": "bellowed",
         "part": "bellowing"
       },
-      "discriminator": "shout in a huge deep voice"
+      "discriminator": "shout in a huge deep voice",
+      "grade": 4
     }
   ],
   "sentences": [
@@ -248,7 +253,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads bellow, chatter, whisper charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -271,7 +276,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads whisper charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -294,7 +299,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "Card-constrained acceptance: dissenting judges use the neighbour word's loose colloquial sense; the pinned card sense excludes it here. See FORMAT.md lessons.",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds whisper; gpt-4.1 adds whisper): whisper co-occurs with low speech; toothpaste foam obstructs speech into mumbling - whispering is deliberate quietness",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -317,7 +322,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "Card-constrained acceptance: dissenting judges use the neighbour word's loose colloquial sense; the pinned card sense excludes it here. See FORMAT.md lessons.",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds whisper; gpt-4.1 adds whisper): whisper co-occurs; speech lost through a beard is indistinct, mumble's feature, not deliberately hushed",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -340,7 +345,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads bellow, chatter, whisper charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -393,7 +398,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads whisper charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -461,7 +466,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads whisper charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -484,7 +489,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads whisper charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -507,7 +512,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads whisper charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }

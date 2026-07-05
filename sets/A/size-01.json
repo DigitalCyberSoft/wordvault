@@ -5,7 +5,13 @@
   "theme": "ways of being big",
   "band": 2,
   "band_override": 2,
-  "computed": null,
+  "computed": {
+    "zipf_min": 3.25,
+    "zipf_mean": 3.62,
+    "tightness": null,
+    "band_suggested": 3,
+    "scored_at": "2026-07-05T13:15:51+00:00"
+  },
   "words": [
     {
       "w": "vast",
@@ -19,7 +25,8 @@
       "forms": {
         "base": "vast"
       },
-      "discriminator": "a wide, open expanse"
+      "discriminator": "a wide, open expanse",
+      "grade": 5
     },
     {
       "w": "towering",
@@ -33,7 +40,8 @@
       "forms": {
         "base": "towering"
       },
-      "discriminator": "big upward: height"
+      "discriminator": "big upward: height",
+      "grade": 4
     },
     {
       "w": "gigantic",
@@ -47,7 +55,8 @@
       "forms": {
         "base": "gigantic"
       },
-      "discriminator": "monster-scale overall size"
+      "discriminator": "monster-scale overall size",
+      "grade": 2
     },
     {
       "w": "bulky",
@@ -61,7 +70,8 @@
       "forms": {
         "base": "bulky"
       },
-      "discriminator": "big and awkward to carry or move"
+      "discriminator": "big and awkward to carry or move",
+      "grade": 4
     },
     {
       "w": "spacious",
@@ -75,7 +85,8 @@
       "forms": {
         "base": "spacious"
       },
-      "discriminator": "big inside: fits a lot"
+      "discriminator": "big inside: fits a lot",
+      "grade": 5
     }
   ],
   "sentences": [
@@ -92,7 +103,15 @@
         "gigantic": "gigantic",
         "bulky": "bulky",
         "spacious": "spacious"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads gigantic charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-size-01-s02",
@@ -107,7 +126,15 @@
         "gigantic": "gigantic",
         "bulky": "bulky",
         "spacious": "spacious"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads gigantic charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-size-01-s03",
@@ -122,7 +149,15 @@
         "gigantic": "gigantic",
         "bulky": "bulky",
         "spacious": "spacious"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads gigantic charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-size-01-s04",
@@ -137,7 +172,15 @@
         "gigantic": "gigantic",
         "bulky": "bulky",
         "spacious": "spacious"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads gigantic charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-size-01-s05",
@@ -152,7 +195,15 @@
         "gigantic": "gigantic",
         "bulky": "bulky",
         "spacious": "spacious"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads gigantic charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-size-01-s06",
@@ -167,7 +218,15 @@
         "gigantic": "gigantic",
         "bulky": "bulky",
         "spacious": "spacious"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads gigantic charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-size-01-s07",
@@ -182,7 +241,15 @@
         "gigantic": "gigantic",
         "bulky": "bulky",
         "spacious": "spacious"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads gigantic charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-size-01-s08",
@@ -197,7 +264,15 @@
         "gigantic": "gigantic",
         "bulky": "bulky",
         "spacious": "spacious"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads gigantic charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-size-01-s09",
@@ -212,7 +287,15 @@
         "gigantic": "gigantic",
         "bulky": "bulky",
         "spacious": "spacious"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads gigantic charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-size-01-s10",
@@ -227,37 +310,61 @@
         "gigantic": "gigantic",
         "bulky": "bulky",
         "spacious": "spacious"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads gigantic charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-size-01-s11",
       "answer": "towering",
       "cue": "contextual",
       "reserve": false,
-      "text": "The ___ pine stood over the whole orchard, twice the height of any apple tree.",
-      "cue_phrase": "twice the height",
+      "text": "The ___ mast rose thin as a pencil above the harbour boats.",
+      "cue_phrase": "thin as a pencil",
       "surface": {
         "vast": "vast",
         "towering": "towering",
         "gigantic": "gigantic",
         "bulky": "bulky",
         "spacious": "spacious"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads gigantic charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-size-01-s12",
       "answer": "towering",
       "cue": "contextual",
       "reserve": false,
-      "text": "A ___ wall rose above the courtyard, stealing the afternoon sun.",
-      "cue_phrase": "rose above; stole the sun",
+      "text": "A ___ poplar stood over the courtyard, slim but stealing the afternoon sun.",
+      "cue_phrase": "slim but stealing the afternoon sun",
       "surface": {
         "vast": "vast",
         "towering": "towering",
         "gigantic": "gigantic",
         "bulky": "bulky",
         "spacious": "spacious"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads gigantic charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-size-01-s13",
@@ -272,7 +379,15 @@
         "gigantic": "gigantic",
         "bulky": "bulky",
         "spacious": "spacious"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads gigantic charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-size-01-s14",
@@ -287,7 +402,15 @@
         "gigantic": "gigantic",
         "bulky": "bulky",
         "spacious": "spacious"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads gigantic charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-size-01-s15",
@@ -302,7 +425,15 @@
         "gigantic": "gigantic",
         "bulky": "bulky",
         "spacious": "spacious"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads gigantic charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-size-01-s16",
@@ -317,7 +448,15 @@
         "gigantic": "gigantic",
         "bulky": "bulky",
         "spacious": "spacious"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads gigantic charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-size-01-s17",
@@ -332,7 +471,15 @@
         "gigantic": "gigantic",
         "bulky": "bulky",
         "spacious": "spacious"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads towering charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-size-01-s18",
@@ -347,7 +494,15 @@
         "gigantic": "gigantic",
         "bulky": "bulky",
         "spacious": "spacious"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads vast charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-size-01-s19",
@@ -384,15 +539,23 @@
       "answer": "gigantic",
       "cue": "inferential",
       "reserve": false,
-      "text": "The footprint was ___; our whole picnic blanket fitted within it.",
-      "cue_phrase": "picnic blanket fitted within",
+      "text": "The snowman grew ___, taller and wider than Dad's car by dinnertime.",
+      "cue_phrase": "taller and wider than Dad's car",
       "surface": {
         "vast": "vast",
         "towering": "towering",
         "gigantic": "gigantic",
         "bulky": "bulky",
         "spacious": "spacious"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: claude-opus-4-8 also reads towering charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-size-01-s22",
@@ -407,52 +570,84 @@
         "gigantic": "gigantic",
         "bulky": "bulky",
         "spacious": "spacious"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads bulky charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-size-01-s23",
       "answer": "gigantic",
       "cue": "contextual",
       "reserve": true,
-      "text": "In the tale, a ___ boot became the children's cave.",
-      "cue_phrase": "became the children's cave",
+      "text": "In the tale, the wizard's hat grew ___, swallowing the whole market square by morning.",
+      "cue_phrase": "swallowing the whole market square",
       "surface": {
         "vast": "vast",
         "towering": "towering",
         "gigantic": "gigantic",
         "bulky": "bulky",
         "spacious": "spacious"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds vast; gpt-4.1 adds vast): vast reads the square-coverage; the hat is an object grown huge, not an open expanse - gigantic's bare scale is what the frame stages",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-size-01-s24",
       "answer": "gigantic",
       "cue": "inferential",
       "reserve": true,
-      "text": "The ___ sandwich looked fit for a hungry ogre.",
-      "cue_phrase": "fit for a hungry ogre",
+      "text": "The ___ sandwich hung over every edge of the dinner plate.",
+      "cue_phrase": "hung over every edge",
       "surface": {
         "vast": "vast",
         "towering": "towering",
         "gigantic": "gigantic",
         "bulky": "bulky",
         "spacious": "spacious"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads bulky, vast charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-size-01-s25",
       "answer": "bulky",
       "cue": "explicit",
       "reserve": false,
-      "text": "The parcel was so ___ that Milo could not fit it through the door.",
-      "cue_phrase": "could not fit through the door",
+      "text": "The footstool was ___, no taller than Milo's knee yet impossible to carry neatly.",
+      "cue_phrase": "impossible to carry neatly",
       "surface": {
         "vast": "vast",
         "towering": "towering",
         "gigantic": "gigantic",
         "bulky": "bulky",
         "spacious": "spacious"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads gigantic charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-size-01-s26",
@@ -467,7 +662,15 @@
         "gigantic": "gigantic",
         "bulky": "bulky",
         "spacious": "spacious"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads gigantic charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-size-01-s27",
@@ -482,7 +685,15 @@
         "gigantic": "gigantic",
         "bulky": "bulky",
         "spacious": "spacious"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads gigantic, towering charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-size-01-s28",
@@ -497,15 +708,23 @@
         "gigantic": "gigantic",
         "bulky": "bulky",
         "spacious": "spacious"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads gigantic charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-size-01-s29",
       "answer": "bulky",
       "cue": "inferential",
       "reserve": false,
-      "text": "The ___ parcel was light, yet Ben needed both arms.",
-      "cue_phrase": "needed both arms",
+      "text": "The ___ parcel was no bigger than a pillow, yet it defeated Ben's arms.",
+      "cue_phrase": "no bigger than a pillow",
       "surface": {
         "vast": "vast",
         "towering": "towering",
@@ -519,15 +738,23 @@
       "answer": "bulky",
       "cue": "inferential",
       "reserve": false,
-      "text": "A ___ blanket roll would not fit through the narrow gate.",
-      "cue_phrase": "would not fit through",
+      "text": "Though it reached only her waist, the ___ blanket roll jammed in the gate.",
+      "cue_phrase": "jammed in the gate",
       "surface": {
         "vast": "vast",
         "towering": "towering",
         "gigantic": "gigantic",
         "bulky": "bulky",
         "spacious": "spacious"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads gigantic charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-size-01-s31",
@@ -542,7 +769,15 @@
         "gigantic": "gigantic",
         "bulky": "bulky",
         "spacious": "spacious"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads gigantic, vast charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-size-01-s32",
@@ -557,7 +792,15 @@
         "gigantic": "gigantic",
         "bulky": "bulky",
         "spacious": "spacious"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads gigantic charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-size-01-s33",
@@ -572,7 +815,15 @@
         "gigantic": "gigantic",
         "bulky": "bulky",
         "spacious": "spacious"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads gigantic, vast charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-size-01-s34",
@@ -602,7 +853,15 @@
         "gigantic": "gigantic",
         "bulky": "bulky",
         "spacious": "spacious"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads gigantic, vast charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-size-01-s36",
@@ -617,7 +876,15 @@
         "gigantic": "gigantic",
         "bulky": "bulky",
         "spacious": "spacious"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds gigantic, vast; claude-opus-4-8 adds vast): vast on an interior; the roomy-inside feature staged is spacious's, vast needs open expanse",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-size-01-s37",
@@ -632,7 +899,15 @@
         "gigantic": "gigantic",
         "bulky": "bulky",
         "spacious": "spacious"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads gigantic, vast charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-size-01-s38",
@@ -647,7 +922,15 @@
         "gigantic": "gigantic",
         "bulky": "bulky",
         "spacious": "spacious"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads gigantic, towering, vast charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-size-01-s39",
@@ -662,7 +945,15 @@
         "gigantic": "gigantic",
         "bulky": "bulky",
         "spacious": "spacious"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads gigantic charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-size-01-s40",
@@ -677,7 +968,15 @@
         "gigantic": "gigantic",
         "bulky": "bulky",
         "spacious": "spacious"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds gigantic, vast; claude-opus-4-8 adds vast): vast on an interior; spacious's feature is staged",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     }
   ],
   "contrasts": [
@@ -785,7 +1084,7 @@
   "meta": {
     "generated_at": "2026-07-05T11:09:29+00:00",
     "model": "gpt-5.5",
-    "scrubbed_at": null,
-    "scrub_note": "huge swapped for vast: huge was the generic donor the judges fit into every sibling frame."
+    "scrubbed_at": "2026-07-05T13:42:27+00:00",
+    "scrub_note": "towering s11/s12 restaged thin-tall, gigantic s21/s23/s24 onto solid objects, bulky s25/s29/s30 given hard size caps, all to exclude the bare-size genus. Full read + judge triage."
   }
 }

@@ -2,13 +2,14 @@
   "set_id": "A-angry-01",
   "sentences": {
     "A-angry-01-s01": {
-      "text_sha256": "773e9e5c7814504325dec776ce40ec1cfb1e6c4c47b4ce8a0d879015f1b7e774",
+      "text_sha256": "f2fb15c9f532e5693d7e9b51d5a02a1484186faa2866284ef82e3446e86e0510",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "annoyed",
+            "frustrated",
+            "furious",
             "grumpy"
           ],
           "sense_match": true
@@ -16,28 +17,29 @@
         {
           "model": "gpt-4.1",
           "fits": [
-            "annoyed"
+            "frustrated"
           ],
           "sense_match": true
         },
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "annoyed"
+            "frustrated"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:07:33+00:00"
+      "judged_at": "2026-07-05T13:05:49+00:00"
     },
     "A-angry-01-s02": {
-      "text_sha256": "d06835f5f5bf792b6804b441ee3f61c312fd4bfd96e41a1ae6e5031171d7a100",
+      "text_sha256": "00615a1cab86d5fa719d7360bd8e8cf7a107a593453c93121ad1567b7bb107af",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "annoyed",
+            "frustrated",
+            "furious",
             "grumpy"
           ],
           "sense_match": true
@@ -45,28 +47,29 @@
         {
           "model": "gpt-4.1",
           "fits": [
-            "annoyed"
+            "frustrated"
           ],
           "sense_match": true
         },
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "annoyed"
+            "frustrated"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:07:33+00:00"
+      "judged_at": "2026-07-05T13:05:49+00:00"
     },
     "A-angry-01-s03": {
-      "text_sha256": "4aba3160e8910cf96267f84e73551aa33e990a58c84622bf4909c2529615daa5",
+      "text_sha256": "fddd78228af468572c0e9028bc8fb96845dbe9d8ff2491f46c2b4c1f2d8d99c9",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "annoyed",
+            "frustrated",
+            "furious",
             "grumpy"
           ],
           "sense_match": true
@@ -74,28 +77,29 @@
         {
           "model": "gpt-4.1",
           "fits": [
-            "annoyed"
+            "frustrated"
           ],
           "sense_match": true
         },
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "annoyed"
+            "frustrated"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:07:33+00:00"
+      "judged_at": "2026-07-05T13:05:49+00:00"
     },
     "A-angry-01-s04": {
-      "text_sha256": "4dae1349577b0f6fe9dc6192a1ca81afa13663d71cfd5538062a736fcb3e5871",
+      "text_sha256": "1708e0bc3d4d19b032b2509e3ff50cb2c9d024a38fd1db2be13f15ee33986b6c",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "annoyed",
+            "frustrated",
+            "furious",
             "grumpy"
           ],
           "sense_match": true
@@ -103,28 +107,29 @@
         {
           "model": "gpt-4.1",
           "fits": [
-            "annoyed"
+            "frustrated"
           ],
           "sense_match": true
         },
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "annoyed"
+            "frustrated"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:07:33+00:00"
+      "judged_at": "2026-07-05T13:05:49+00:00"
     },
     "A-angry-01-s05": {
-      "text_sha256": "d9254eae7feccdcd5dec47abeaf21cf066b9578cb959dcd2717db960c0314068",
+      "text_sha256": "1cec8a496153c3cba82f8c2d42c2f63197542315f2483eb38e603f22ca82848f",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "annoyed",
+            "frustrated",
+            "furious",
             "grumpy"
           ],
           "sense_match": true
@@ -132,28 +137,29 @@
         {
           "model": "gpt-4.1",
           "fits": [
-            "annoyed"
+            "frustrated"
           ],
           "sense_match": true
         },
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "annoyed"
+            "frustrated"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:07:33+00:00"
+      "judged_at": "2026-07-05T13:05:49+00:00"
     },
     "A-angry-01-s06": {
-      "text_sha256": "b98ab6d4b111a065e09e6cde0420f2a2e79e77c1e2c2f792e04c7fbec8a71bcf",
+      "text_sha256": "05b0c529bfe990e048699b5e70c6e8eb579bb5a71bd26f073e1a80f96d9d8d87",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "annoyed",
+            "frustrated",
+            "furious",
             "grumpy"
           ],
           "sense_match": true
@@ -161,28 +167,28 @@
         {
           "model": "gpt-4.1",
           "fits": [
-            "annoyed"
+            "frustrated"
           ],
           "sense_match": true
         },
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "annoyed"
+            "frustrated"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:07:33+00:00"
+      "judged_at": "2026-07-05T13:05:49+00:00"
     },
     "A-angry-01-s07": {
-      "text_sha256": "e58a6fa73e58414d27a634ca79f7d441bde87f73a0c7ce685e9d52bddf5a45ba",
+      "text_sha256": "8827e8363476748dbb16eb02f62f91718bb299f9e8106b9d89805194fa4dd117",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "annoyed",
+            "frustrated",
             "furious",
             "grumpy"
           ],
@@ -191,50 +197,52 @@
         {
           "model": "gpt-4.1",
           "fits": [
-            "annoyed"
+            "frustrated"
           ],
           "sense_match": true
         },
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "annoyed"
+            "frustrated"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:07:33+00:00"
+      "judged_at": "2026-07-05T13:05:49+00:00"
     },
     "A-angry-01-s08": {
-      "text_sha256": "a67003298d7248617da6901e2df3f9eb7b7cb1cb131966bf0ee5566c018fd682",
-      "verdict": "pass",
+      "text_sha256": "1f8b6fc2cb864a6c1b3e206f395b149b55925fc76f3fb2c104152a8de1d87456",
+      "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "annoyed"
+            "frustrated",
+            "furious",
+            "grumpy"
           ],
           "sense_match": true
         },
         {
           "model": "gpt-4.1",
           "fits": [
-            "annoyed"
+            "frustrated"
           ],
           "sense_match": true
         },
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "annoyed"
+            "frustrated"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:07:33+00:00"
+      "judged_at": "2026-07-05T13:05:49+00:00"
     },
     "A-angry-01-s09": {
-      "text_sha256": "feb280c9495b1e4f28de0c010453baa162e713e90c447108167c64cd82247f3d",
+      "text_sha256": "03183462075c7528a70ceb77bbba282ba13c872d679b11e765acbcc6452e14cb",
       "verdict": "pass",
       "judges": [
         {
@@ -259,17 +267,18 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:07:33+00:00"
+      "judged_at": "2026-07-05T13:05:49+00:00"
     },
     "A-angry-01-s10": {
-      "text_sha256": "550c9f71e78282f8b9ddd6f2ff921a2a0c8ecf98a954367ac1d5187cdc3648b2",
+      "text_sha256": "bc9a84611e7ca3ad92993b572c0c7b5bd94bcf3e4ab2159e290a403989aa099c",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
+            "frustrated",
             "furious",
-            "outraged"
+            "grumpy"
           ],
           "sense_match": true
         },
@@ -288,25 +297,23 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:07:33+00:00"
+      "judged_at": "2026-07-05T13:05:49+00:00"
     },
     "A-angry-01-s11": {
-      "text_sha256": "a544f1d2bdaf3c975e4521d64eb3aab3576a4d6560efd4cbb7c4dcf00aa30985",
-      "verdict": "review",
+      "text_sha256": "bc72dabde38117b7cf28e13d569c9beb5a6f978dfa197e760fca3c4490fc997b",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "furious",
-            "outraged"
+            "furious"
           ],
           "sense_match": true
         },
         {
           "model": "gpt-4.1",
           "fits": [
-            "furious",
-            "outraged"
+            "furious"
           ],
           "sense_match": true
         },
@@ -318,11 +325,11 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:09:06+00:00"
+      "judged_at": "2026-07-05T13:06:40+00:00"
     },
     "A-angry-01-s12": {
-      "text_sha256": "6b166383cb1bebfe3560484f63b5c3de8764eedcc4376f18b8b57db13a6fbaac",
-      "verdict": "review",
+      "text_sha256": "a1bcbe7c6abdb5dbde2e424299bf465083dd3dbf951a930b1421133b8e08d3d4",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
@@ -334,8 +341,7 @@
         {
           "model": "gpt-4.1",
           "fits": [
-            "furious",
-            "outraged"
+            "furious"
           ],
           "sense_match": true
         },
@@ -347,25 +353,23 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:09:06+00:00"
+      "judged_at": "2026-07-05T13:06:40+00:00"
     },
     "A-angry-01-s13": {
-      "text_sha256": "91cfcccde96f0b93c07c495475ad35163872cf9e407476e665808859e623fd79",
-      "verdict": "review",
+      "text_sha256": "22cab63008f09942517f4e3dc1d9faab8fafdcee3c043b00b256adf16e128923",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "furious",
-            "outraged"
+            "furious"
           ],
           "sense_match": true
         },
         {
           "model": "gpt-4.1",
           "fits": [
-            "furious",
-            "outraged"
+            "furious"
           ],
           "sense_match": true
         },
@@ -377,25 +381,25 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:09:06+00:00"
+      "judged_at": "2026-07-05T13:06:40+00:00"
     },
     "A-angry-01-s14": {
-      "text_sha256": "66424374a9f6c6f81366f0b2a3ae077c7d7dc55d77a2793091e60d180416e693",
+      "text_sha256": "6782cb114a6e5a98f0ca8db46e31086652f71204119f919ad5b45b1d2becb356",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
+            "frustrated",
             "furious",
-            "outraged"
+            "resentful"
           ],
           "sense_match": true
         },
         {
           "model": "gpt-4.1",
           "fits": [
-            "furious",
-            "outraged"
+            "furious"
           ],
           "sense_match": true
         },
@@ -407,25 +411,23 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:09:06+00:00"
+      "judged_at": "2026-07-05T13:27:48+00:00"
     },
     "A-angry-01-s15": {
-      "text_sha256": "1e6704f71dedce1fd01ab8eaa03eb095bd8ba80ae86b8f4b0a385a3fc869223c",
-      "verdict": "review",
+      "text_sha256": "d8b73aacd2f035fd1041d03c63f02c6f24087ddc3049ca306e269f61c249d840",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "furious",
-            "outraged"
+            "furious"
           ],
           "sense_match": true
         },
         {
           "model": "gpt-4.1",
           "fits": [
-            "furious",
-            "outraged"
+            "furious"
           ],
           "sense_match": true
         },
@@ -437,44 +439,43 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:09:06+00:00"
+      "judged_at": "2026-07-05T13:06:40+00:00"
     },
     "A-angry-01-s16": {
-      "text_sha256": "b4eaf209be63f2c3196a3e5de40193790b86c05b720b433beeed050d15513b1e",
-      "verdict": "hard",
+      "text_sha256": "a8bfa4094830514a8415c8d98c10a8dacb5b5b3305d098926714a2ef54ec768f",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
             "furious"
           ],
-          "sense_match": false
+          "sense_match": true
         },
         {
           "model": "gpt-4.1",
           "fits": [
             "furious"
           ],
-          "sense_match": false
+          "sense_match": true
         },
         {
           "model": "claude-opus-4-8",
           "fits": [
             "furious"
           ],
-          "sense_match": false
+          "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:09:06+00:00"
+      "judged_at": "2026-07-05T13:06:40+00:00"
     },
     "A-angry-01-s17": {
-      "text_sha256": "abfc04bafa31de38d98f22198555373d27f8fbc79357f37ca13bee50e6e67e2a",
-      "verdict": "review",
+      "text_sha256": "cc2179b1d508c2d98e373a69725439675d10cf704a795db0fcfcce41f2410309",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "annoyed",
             "grumpy"
           ],
           "sense_match": true
@@ -494,16 +495,15 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:09:06+00:00"
+      "judged_at": "2026-07-05T13:06:40+00:00"
     },
     "A-angry-01-s18": {
-      "text_sha256": "35252fa3d99e7dc82231840062972f0e188c205de242ceefb0bb2db32f3133e9",
-      "verdict": "review",
+      "text_sha256": "7c71f9a32faeecbf7c33a79417d45fbefed7e631d15f322331803c9c2d5a3f2b",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "annoyed",
             "grumpy"
           ],
           "sense_match": true
@@ -523,16 +523,15 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:09:06+00:00"
+      "judged_at": "2026-07-05T13:06:40+00:00"
     },
     "A-angry-01-s19": {
-      "text_sha256": "06f9a3118ceae089f51b69625798f0d453028a911bc6289649f0411d91b680d7",
-      "verdict": "review",
+      "text_sha256": "42589e20243be6b4eab7800f480779df185444d81ef217d308586f39de2309a4",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "annoyed",
             "grumpy"
           ],
           "sense_match": true
@@ -552,16 +551,15 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:09:06+00:00"
+      "judged_at": "2026-07-05T13:06:40+00:00"
     },
     "A-angry-01-s20": {
-      "text_sha256": "43d019af535ee651017f13b435029db5463239e1313c063f02607dfba378ad45",
-      "verdict": "review",
+      "text_sha256": "ba6637e9ad9b0609f61c033822fdb4b587db7d9876b6adeb39eac395558f2771",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "annoyed",
             "grumpy"
           ],
           "sense_match": true
@@ -581,16 +579,15 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:09:06+00:00"
+      "judged_at": "2026-07-05T13:06:40+00:00"
     },
     "A-angry-01-s21": {
-      "text_sha256": "0678e99016dd3728a87c4b87248287fe31165119a9e57556471c7faac5a5f08f",
-      "verdict": "review",
+      "text_sha256": "3cf306bbb4b05199e7ff4beb8168fad128c6a5cfbff5e7661450e7c2d1f7fb4b",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "annoyed",
             "grumpy"
           ],
           "sense_match": true
@@ -598,7 +595,6 @@
         {
           "model": "gpt-4.1",
           "fits": [
-            "annoyed",
             "grumpy"
           ],
           "sense_match": true
@@ -611,16 +607,17 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:10:38+00:00"
+      "judged_at": "2026-07-05T13:08:13+00:00"
     },
     "A-angry-01-s22": {
-      "text_sha256": "93938f7dc41db2d200d228cee777f120246226037ed7de4ebbdfe7c1f1ccd97e",
+      "text_sha256": "af1a7da6b3b89bd822ef5e99ba5cb3fa3d3b07ea402b910d25fcac1b9844ff71",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "annoyed",
+            "frustrated",
+            "furious",
             "grumpy"
           ],
           "sense_match": true
@@ -628,7 +625,6 @@
         {
           "model": "gpt-4.1",
           "fits": [
-            "annoyed",
             "grumpy"
           ],
           "sense_match": true
@@ -641,16 +637,16 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:10:38+00:00"
+      "judged_at": "2026-07-05T13:08:13+00:00"
     },
     "A-angry-01-s23": {
-      "text_sha256": "a20ff1da49ffb78afff6c9634b039d8dcc52a4655d11aaeacbf15a172b62eda5",
+      "text_sha256": "49c52b8f6dd73faf4cd3bba53e558e5724ad7a1cff282ea7128e3e9b914fc2af",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "annoyed",
+            "frustrated",
             "furious",
             "grumpy"
           ],
@@ -659,7 +655,6 @@
         {
           "model": "gpt-4.1",
           "fits": [
-            "annoyed",
             "grumpy"
           ],
           "sense_match": true
@@ -667,22 +662,20 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "annoyed",
             "grumpy"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:10:38+00:00"
+      "judged_at": "2026-07-05T13:08:13+00:00"
     },
     "A-angry-01-s24": {
-      "text_sha256": "c328538b433415936454f56d726cc505fb9130a15ac90e513ca3046bcd2bbd6d",
-      "verdict": "review",
+      "text_sha256": "5e4abfd226d1cd6096b0508d9a1f2b91e4e806086b8e1ef4cb253b2ead0e368c",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "annoyed",
             "grumpy"
           ],
           "sense_match": true
@@ -690,7 +683,6 @@
         {
           "model": "gpt-4.1",
           "fits": [
-            "annoyed",
             "grumpy"
           ],
           "sense_match": true
@@ -703,18 +695,16 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:10:38+00:00"
+      "judged_at": "2026-07-05T13:08:13+00:00"
     },
     "A-angry-01-s25": {
-      "text_sha256": "27f2e1bf5ad8dc77230b79ea34af45a35846c36807ffc1adda21f97f46ad8f4d",
+      "text_sha256": "f202fa153ff36c661451a4fefcca3ebd6643822a18cb5bbf94e306bdb1badc3f",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "annoyed",
-            "furious",
-            "outraged",
+            "jealous",
             "resentful"
           ],
           "sense_match": true
@@ -722,63 +712,58 @@
         {
           "model": "gpt-4.1",
           "fits": [
-            "annoyed",
-            "outraged",
-            "resentful"
+            "jealous"
           ],
           "sense_match": true
         },
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "furious",
-            "outraged"
+            "jealous"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:10:38+00:00"
+      "judged_at": "2026-07-05T13:08:13+00:00"
     },
     "A-angry-01-s26": {
-      "text_sha256": "024c4684bec24a040ebcd861f534bb3722e015c86eb75e385da23b7e1b84b6d5",
+      "text_sha256": "a3b28cf98f06d3f6b11c20ba1cb6809a58bb41dca38d92f2cd3e0494e75059b8",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "furious",
-            "outraged"
+            "frustrated",
+            "jealous",
+            "resentful"
           ],
           "sense_match": true
         },
         {
           "model": "gpt-4.1",
           "fits": [
-            "furious",
-            "outraged"
+            "jealous"
           ],
           "sense_match": true
         },
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "furious",
-            "outraged"
+            "jealous"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:10:38+00:00"
+      "judged_at": "2026-07-05T13:08:13+00:00"
     },
     "A-angry-01-s27": {
-      "text_sha256": "92ff33d932d9fbb1590b7859ac6a52de47bb902ad86367b5ec9812459ed18b2d",
+      "text_sha256": "b0250e2a356a3c4ad66105a4383d401bb2187782e0ec6982448b2305a2fad049",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "furious",
-            "outraged",
+            "jealous",
             "resentful"
           ],
           "sense_match": true
@@ -786,34 +771,30 @@
         {
           "model": "gpt-4.1",
           "fits": [
-            "furious",
-            "outraged",
-            "resentful"
+            "jealous"
           ],
           "sense_match": true
         },
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "furious",
-            "outraged",
-            "resentful"
+            "jealous"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:10:38+00:00"
+      "judged_at": "2026-07-05T13:08:13+00:00"
     },
     "A-angry-01-s28": {
-      "text_sha256": "6af24420d04edcbed37be05d9614874a81e1ed5f88a3ac9d686eb7f53c406dad",
+      "text_sha256": "8edae889c8bf23314184061114058a4e69f7ebc3ed8c922b6593e465b26194cc",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "annoyed",
-            "furious",
-            "outraged",
+            "frustrated",
+            "grumpy",
+            "jealous",
             "resentful"
           ],
           "sense_match": true
@@ -821,66 +802,58 @@
         {
           "model": "gpt-4.1",
           "fits": [
-            "annoyed",
-            "furious",
-            "outraged"
+            "jealous"
           ],
           "sense_match": true
         },
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "furious",
-            "outraged"
+            "jealous"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:10:38+00:00"
+      "judged_at": "2026-07-05T13:08:13+00:00"
     },
     "A-angry-01-s29": {
-      "text_sha256": "2a1d33359046970ef3108516a1c59ca33cf1de7746d4e267af0f9e937c9137b1",
+      "text_sha256": "e2faafc2e82433ae324b2ffb0741ad995625750a9bde089fdaa9c16c3a806255",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "furious",
-            "outraged"
+            "jealous",
+            "resentful"
           ],
           "sense_match": true
         },
         {
           "model": "gpt-4.1",
           "fits": [
-            "annoyed",
-            "furious",
-            "outraged",
-            "resentful"
+            "jealous"
           ],
           "sense_match": true
         },
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "furious",
-            "outraged"
+            "jealous"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:10:38+00:00"
+      "judged_at": "2026-07-05T13:08:13+00:00"
     },
     "A-angry-01-s30": {
-      "text_sha256": "0f9f12e1a4f566981d9dff5960b11db8bb0c93914e81253669dcb0d3f777888e",
+      "text_sha256": "f1ad036764ce805077a4a50b00d0ad5c874c3e5d212b6ab5b4c97041acdef3e7",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "annoyed",
-            "furious",
-            "outraged",
+            "frustrated",
+            "jealous",
             "resentful"
           ],
           "sense_match": true
@@ -888,34 +861,31 @@
         {
           "model": "gpt-4.1",
           "fits": [
-            "furious",
-            "outraged",
-            "resentful"
+            "jealous"
           ],
           "sense_match": true
         },
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "furious",
-            "outraged",
-            "resentful"
+            "jealous"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:10:38+00:00"
+      "judged_at": "2026-07-05T13:08:13+00:00"
     },
     "A-angry-01-s31": {
-      "text_sha256": "589899b9d8e8a836e488861c764c9f099d802e45da6b7297522fe1c96af967c8",
+      "text_sha256": "6f5d571ac60a627688bb2d673ed805ae6e0eadf30e299589d25a7987162bba4b",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "annoyed",
+            "frustrated",
             "furious",
-            "outraged",
+            "grumpy",
+            "jealous",
             "resentful"
           ],
           "sense_match": true
@@ -923,71 +893,58 @@
         {
           "model": "gpt-4.1",
           "fits": [
-            "annoyed",
-            "furious",
-            "outraged",
-            "resentful"
+            "jealous"
           ],
           "sense_match": true
         },
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "annoyed",
-            "furious",
-            "outraged",
-            "resentful"
+            "jealous"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:11:52+00:00"
+      "judged_at": "2026-07-05T13:09:27+00:00"
     },
     "A-angry-01-s32": {
-      "text_sha256": "a961291d42c8f021e37a1062b01df88f3db17504d83149e13f925e8db5cb6fe3",
+      "text_sha256": "d29a2cb51d84a7e73e2343ad9503e3902468415d9dc0ef2efec167ebe488043f",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "annoyed",
-            "furious",
-            "outraged",
-            "resentful"
+            "frustrated",
+            "grumpy",
+            "jealous"
           ],
           "sense_match": true
         },
         {
           "model": "gpt-4.1",
           "fits": [
-            "annoyed",
-            "furious",
-            "outraged",
-            "resentful"
+            "jealous"
           ],
           "sense_match": true
         },
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "annoyed",
-            "furious",
-            "outraged",
-            "resentful"
+            "jealous"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:11:52+00:00"
+      "judged_at": "2026-07-05T13:09:27+00:00"
     },
     "A-angry-01-s33": {
-      "text_sha256": "85c1d5a94ae2ef76a1dc28c3cda8a59be21f747d19f69db172c04dcf935d2877",
+      "text_sha256": "e0005b8f3cfceca52f07124588a6b0a647110f57e3e8032909542846d228e390",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "annoyed",
+            "furious",
             "resentful"
           ],
           "sense_match": true
@@ -995,7 +952,6 @@
         {
           "model": "gpt-4.1",
           "fits": [
-            "annoyed",
             "resentful"
           ],
           "sense_match": true
@@ -1003,23 +959,22 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "annoyed",
-            "grumpy",
             "resentful"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:11:52+00:00"
+      "judged_at": "2026-07-05T13:09:27+00:00"
     },
     "A-angry-01-s34": {
-      "text_sha256": "87525b07d9608ca88f8bbf243d5089a5f0c058a2401748227a7caa84c22d0520",
+      "text_sha256": "ff3a183e4fb36d28f207c7055f5f2acde1bcc2a537147735f9914ea3530e9232",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "annoyed",
+            "frustrated",
+            "furious",
             "grumpy",
             "resentful"
           ],
@@ -1028,7 +983,6 @@
         {
           "model": "gpt-4.1",
           "fits": [
-            "annoyed",
             "resentful"
           ],
           "sense_match": true
@@ -1036,25 +990,23 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "annoyed",
-            "grumpy",
             "resentful"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:11:52+00:00"
+      "judged_at": "2026-07-05T13:09:27+00:00"
     },
     "A-angry-01-s35": {
-      "text_sha256": "8f9aba34664d4ced76e42fc0594b83818cacff14b34a0a91ee3e77d79294ec82",
+      "text_sha256": "761cf5ff2c9eb9217b37cb461ef4dbc98a837ef3ca892631fc599412b247938a",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "annoyed",
+            "frustrated",
             "furious",
-            "outraged",
+            "grumpy",
             "resentful"
           ],
           "sense_match": true
@@ -1062,7 +1014,6 @@
         {
           "model": "gpt-4.1",
           "fits": [
-            "annoyed",
             "resentful"
           ],
           "sense_match": true
@@ -1070,27 +1021,23 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "annoyed",
-            "furious",
-            "outraged",
             "resentful"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:11:52+00:00"
+      "judged_at": "2026-07-05T13:09:27+00:00"
     },
     "A-angry-01-s36": {
-      "text_sha256": "7f794edfdf1367b8d47ed0dc6414f63b38c643b09e477b679b52f57e577d4133",
+      "text_sha256": "5781e52d92bf053041ffb5d17c79053102b58c705dfb1e158dcc366a7c8a49c2",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "annoyed",
+            "frustrated",
             "furious",
             "grumpy",
-            "outraged",
             "resentful"
           ],
           "sense_match": true
@@ -1098,9 +1045,6 @@
         {
           "model": "gpt-4.1",
           "fits": [
-            "annoyed",
-            "furious",
-            "outraged",
             "resentful"
           ],
           "sense_match": true
@@ -1108,23 +1052,22 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "annoyed",
-            "outraged",
             "resentful"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:11:52+00:00"
+      "judged_at": "2026-07-05T13:09:27+00:00"
     },
     "A-angry-01-s37": {
-      "text_sha256": "630d6f5dde9a228276360b384c9c9c3e5c6c9230dc29b795996167100901ba34",
+      "text_sha256": "253afbaf8a41862174ed15bf85eccc267ded44b5b15daf05b5efa4449c409e05",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "annoyed",
+            "frustrated",
+            "furious",
             "grumpy",
             "resentful"
           ],
@@ -1133,8 +1076,6 @@
         {
           "model": "gpt-4.1",
           "fits": [
-            "annoyed",
-            "grumpy",
             "resentful"
           ],
           "sense_match": true
@@ -1142,23 +1083,21 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "annoyed",
-            "grumpy",
             "resentful"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:11:52+00:00"
+      "judged_at": "2026-07-05T13:09:27+00:00"
     },
     "A-angry-01-s38": {
-      "text_sha256": "5d341c1ec9813c77dbf8f62db9dca60a1c1b86886d2d554b6c2e3996569673fb",
+      "text_sha256": "77d4aad93bb34f27e700e538bd66c61d8063161b3ef49159efc2cf1125063077",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "annoyed",
+            "furious",
             "resentful"
           ],
           "sense_match": true
@@ -1166,7 +1105,6 @@
         {
           "model": "gpt-4.1",
           "fits": [
-            "annoyed",
             "resentful"
           ],
           "sense_match": true
@@ -1174,22 +1112,22 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "annoyed",
             "resentful"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:11:52+00:00"
+      "judged_at": "2026-07-05T13:09:27+00:00"
     },
     "A-angry-01-s39": {
-      "text_sha256": "d5702407062ebdf4071dca5e7c8f9b9f79f1a7b258ca7e25aab90a8707819162",
+      "text_sha256": "df495581fc93af60fc54af97abb3e9ffa2b8b81fb42a500c27889a7de8b588e4",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "annoyed",
+            "frustrated",
+            "furious",
             "resentful"
           ],
           "sense_match": true
@@ -1197,7 +1135,6 @@
         {
           "model": "gpt-4.1",
           "fits": [
-            "annoyed",
             "resentful"
           ],
           "sense_match": true
@@ -1205,24 +1142,22 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "annoyed",
-            "outraged",
             "resentful"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:11:52+00:00"
+      "judged_at": "2026-07-05T13:09:27+00:00"
     },
     "A-angry-01-s40": {
-      "text_sha256": "4aa71022af05fc9d9a2fcafde9e6345dbb14291bc7d9eb023faa6b0e1cd851db",
+      "text_sha256": "53f7be4c0c054355db8b83179d2099c71b0e5106e8beb688febb05c271b85a17",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "annoyed",
-            "grumpy",
+            "frustrated",
+            "furious",
             "resentful"
           ],
           "sense_match": true
@@ -1230,7 +1165,6 @@
         {
           "model": "gpt-4.1",
           "fits": [
-            "annoyed",
             "resentful"
           ],
           "sense_match": true
@@ -1238,14 +1172,12 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "annoyed",
-            "grumpy",
             "resentful"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:11:52+00:00"
+      "judged_at": "2026-07-05T13:09:27+00:00"
     }
   }
 }

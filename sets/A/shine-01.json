@@ -10,7 +10,7 @@
     "zipf_mean": 3.33,
     "tightness": null,
     "band_suggested": 4,
-    "scored_at": "2026-07-05T08:59:48+00:00"
+    "scored_at": "2026-07-05T13:15:51+00:00"
   },
   "words": [
     {
@@ -25,7 +25,8 @@
       "forms": {
         "base": "shiny"
       },
-      "discriminator": "reflects light, like polished metal"
+      "discriminator": "reflects light, like polished metal",
+      "grade": 1
     },
     {
       "w": "sparkly",
@@ -39,7 +40,8 @@
       "forms": {
         "base": "sparkly"
       },
-      "discriminator": "lots of tiny flashes"
+      "discriminator": "lots of tiny flashes",
+      "grade": 1
     },
     {
       "w": "dazzling",
@@ -53,7 +55,8 @@
       "forms": {
         "base": "dazzling"
       },
-      "discriminator": "so bright it makes you squint or look away"
+      "discriminator": "so bright it makes you squint or look away",
+      "grade": 4
     },
     {
       "w": "radiant",
@@ -75,7 +78,8 @@
         "reason": "same root as the headword; morphologically transparent",
         "by": "claude",
         "at": "2026-07-05"
-      }
+      },
+      "grade": 6
     },
     {
       "w": "twinkling",
@@ -89,7 +93,8 @@
       "forms": {
         "base": "twinkling"
       },
-      "discriminator": "little lights going on and off"
+      "discriminator": "little lights going on and off",
+      "grade": 2
     }
   ],
   "sentences": [
@@ -155,7 +160,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads dazzling charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -238,7 +243,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads dazzling, shiny charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -261,7 +266,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads dazzling, shiny, twinkling charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -284,7 +289,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads dazzling, shiny charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -330,7 +335,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads shiny charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -353,7 +358,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads dazzling, shiny charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -391,7 +396,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads shiny, twinkling charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -414,7 +419,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads radiant charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -452,7 +457,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads radiant charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -475,7 +480,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads radiant charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -498,7 +503,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads radiant, sparkly charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -521,7 +526,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads radiant charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -544,7 +549,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads radiant, shiny, sparkly charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -567,7 +572,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads radiant, sparkly charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -590,7 +595,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads dazzling charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -628,7 +633,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads dazzling charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -651,7 +656,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads dazzling, sparkly charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -674,7 +679,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads dazzling charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -697,7 +702,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads dazzling charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -735,7 +740,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads dazzling charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -758,7 +763,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads sparkly charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -781,7 +786,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads dazzling, radiant, sparkly charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -827,7 +832,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads shiny, sparkly charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -850,7 +855,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads sparkly charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -873,7 +878,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads radiant, sparkly charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -896,7 +901,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads sparkly charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }

@@ -2,7 +2,7 @@
 /*
  * validate-sets.js - the content hard gate. Run: node tools/validate-sets.js
  *
- * Validates every authored set under sets/{A,B,C}/ against gates M1-M16 (see
+ * Validates every authored set under sets/{A,B,C}/ against gates M1-M18 (see
  * the build plan; gates G1-G8 live in tools/audit-glosses.py, whose freshness
  * stamp is verified here as M13, and G9 uniqueness verdicts are verified as
  * M14). Two lanes, mirroring pizzashop's validate-orders.js:
@@ -82,6 +82,13 @@ files.forEach(function (entry) {
     H(id, 'M2', 'needs exactly 5 unique words');
     return;
   }
+
+  // M18 every word carries an Australian school year level (tools/grade-words.py)
+  set.words.forEach(function (w) {
+    if (!(Number.isInteger(w.grade) && w.grade >= 1 && w.grade <= 7)) {
+      H(id, 'M18', w.w + ': grade must be an integer year 1-7, got ' + JSON.stringify(w.grade));
+    }
+  });
 
   var texts = {};
   set.sentences.forEach(function (s) {

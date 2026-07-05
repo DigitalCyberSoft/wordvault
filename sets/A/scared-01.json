@@ -5,21 +5,41 @@
   "theme": "kinds of scared",
   "band": 2,
   "band_override": 2,
-  "computed": null,
+  "computed": {
+    "zipf_min": 3.25,
+    "zipf_mean": 3.48,
+    "tightness": null,
+    "band_suggested": 3,
+    "scored_at": "2026-07-05T13:15:51+00:00"
+  },
   "words": [
     {
-      "w": "nervous",
-      "synset": "nervous.s.01",
-      "gloss_source": "authored",
-      "gloss": "worried and shaky about what might happen",
-      "zipf": 4.42,
+      "w": "timid",
+      "synset": "timid.a.01",
+      "gloss_source": "wordnet",
+      "gloss": "showing fear and lack of confidence",
+      "zipf": 3.25,
       "register": "neutral",
-      "senses_at_pos": 5,
-      "dominant_sense_ok": "pinned per set design; frames use only this sense (2026-07-05)",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
       "forms": {
-        "base": "nervous"
+        "base": "timid"
       },
-      "discriminator": "before something: butterflies"
+      "discriminator": "shy of trying things: a way someone is",
+      "grade": 4
+    },
+    {
+      "w": "alarmed",
+      "synset": "alarmed.s.01",
+      "gloss_source": "wordnet",
+      "gloss": "experiencing a sudden sense of danger",
+      "zipf": 3.48,
+      "register": "neutral",
+      "forms": {
+        "base": "alarmed"
+      },
+      "discriminator": "a danger sign was just noticed; act now",
+      "grade": 4
     },
     {
       "w": "startled",
@@ -33,7 +53,8 @@
       "forms": {
         "base": "startled"
       },
-      "discriminator": "an instant jump, over in a second"
+      "discriminator": "an instant jump, over in a second",
+      "grade": 3
     },
     {
       "w": "terrified",
@@ -47,21 +68,8 @@
       "forms": {
         "base": "terrified"
       },
-      "discriminator": "the strongest fear"
-    },
-    {
-      "w": "timid",
-      "synset": "timid.a.01",
-      "gloss_source": "wordnet",
-      "gloss": "showing fear and lack of confidence",
-      "zipf": 3.25,
-      "register": "neutral",
-      "senses_at_pos": 3,
-      "dominant_sense_ok": null,
-      "forms": {
-        "base": "timid"
-      },
-      "discriminator": "shy of trying things: a way someone is"
+      "discriminator": "the strongest fear",
+      "grade": 3
     },
     {
       "w": "horrified",
@@ -75,129 +83,178 @@
       "forms": {
         "base": "horrified"
       },
-      "discriminator": "shock at something awful or gross"
+      "discriminator": "shock at something awful or gross",
+      "grade": 5
     }
   ],
   "sentences": [
     {
       "id": "A-scared-01-s01",
-      "answer": "nervous",
+      "answer": "alarmed",
       "cue": "explicit",
       "reserve": false,
-      "text": "With butterflies in her tummy, Lina felt ___ before her piano solo.",
-      "cue_phrase": "butterflies in her tummy",
+      "text": "Lina smelled smoke from the kitchen and felt ___, calling Dad straight away.",
+      "cue_phrase": "smelled smoke",
       "surface": {
-        "nervous": "nervous",
         "startled": "startled",
         "terrified": "terrified",
         "timid": "timid",
-        "horrified": "horrified"
-      }
+        "horrified": "horrified",
+        "alarmed": "alarmed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads terrified charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-scared-01-s02",
-      "answer": "nervous",
+      "answer": "alarmed",
       "cue": "explicit",
       "reserve": false,
-      "text": "Raj was ___, chewing his sleeve while waiting for the spelling final.",
-      "cue_phrase": "waiting for the spelling final",
+      "text": "Seeing the creek rise towards the path, Raj grew ___ and turned back.",
+      "cue_phrase": "the creek rise towards the path",
       "surface": {
-        "nervous": "nervous",
         "startled": "startled",
         "terrified": "terrified",
         "timid": "timid",
-        "horrified": "horrified"
-      }
+        "horrified": "horrified",
+        "alarmed": "alarmed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads terrified charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-scared-01-s03",
-      "answer": "nervous",
+      "answer": "alarmed",
       "cue": "contextual",
       "reserve": false,
-      "text": "Before the class vote, Ana felt ___ and kept checking her speech cards.",
-      "cue_phrase": "checking her speech cards",
+      "text": "The ice gave a long slow creak, and Ana stepped carefully to the bank, ___.",
+      "cue_phrase": "a long slow creak",
       "surface": {
-        "nervous": "nervous",
         "startled": "startled",
         "terrified": "terrified",
         "timid": "timid",
-        "horrified": "horrified"
-      }
+        "horrified": "horrified",
+        "alarmed": "alarmed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads terrified charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-scared-01-s04",
-      "answer": "nervous",
+      "answer": "alarmed",
       "cue": "contextual",
       "reserve": false,
-      "text": "Tom felt ___, with mild tummy flutters, as his dentist turn neared.",
-      "cue_phrase": "mild tummy flutters",
+      "text": "When the ladder wobbled under Grandpa, Tom felt ___ and held it with both hands.",
+      "cue_phrase": "the ladder wobbled",
       "surface": {
-        "nervous": "nervous",
         "startled": "startled",
         "terrified": "terrified",
         "timid": "timid",
-        "horrified": "horrified"
-      }
+        "horrified": "horrified",
+        "alarmed": "alarmed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads startled, terrified charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-scared-01-s05",
-      "answer": "nervous",
+      "answer": "alarmed",
       "cue": "inferential",
       "reserve": false,
-      "text": "The night before camp, I felt ___ and packed my bag twice.",
-      "cue_phrase": "packed my bag twice",
+      "text": "I read the sign by the deep end twice, then moved my little sister back, ___.",
+      "cue_phrase": "read the sign by the deep end twice",
       "surface": {
-        "nervous": "nervous",
         "startled": "startled",
         "terrified": "terrified",
         "timid": "timid",
-        "horrified": "horrified"
+        "horrified": "horrified",
+        "alarmed": "alarmed"
       }
     },
     {
       "id": "A-scared-01-s06",
-      "answer": "nervous",
+      "answer": "alarmed",
       "cue": "inferential",
       "reserve": false,
-      "text": "Maya was ___; her hands tingled as she waited backstage.",
-      "cue_phrase": "waited backstage",
+      "text": "Maya noticed the wasps circling the picnic and quietly moved the jam indoors, ___.",
+      "cue_phrase": "wasps circling the picnic",
       "surface": {
-        "nervous": "nervous",
         "startled": "startled",
         "terrified": "terrified",
         "timid": "timid",
-        "horrified": "horrified"
-      }
+        "horrified": "horrified",
+        "alarmed": "alarmed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads terrified charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-scared-01-s07",
-      "answer": "nervous",
+      "answer": "alarmed",
       "cue": "contextual",
       "reserve": true,
-      "text": "The captain felt ___ before tossing the coin for the final match.",
-      "cue_phrase": "before tossing the coin",
+      "text": "Dark clouds piled up fast over the match, and the coach felt ___.",
+      "cue_phrase": "dark clouds piled up fast",
       "surface": {
-        "nervous": "nervous",
         "startled": "startled",
         "terrified": "terrified",
         "timid": "timid",
-        "horrified": "horrified"
+        "horrified": "horrified",
+        "alarmed": "alarmed"
       }
     },
     {
       "id": "A-scared-01-s08",
-      "answer": "nervous",
+      "answer": "alarmed",
       "cue": "inferential",
       "reserve": true,
-      "text": "As the race whistle neared, Eli became ___ and bounced on his toes.",
-      "cue_phrase": "whistle neared",
+      "text": "Eli counted the lifejackets twice after the wind picked up, growing ___.",
+      "cue_phrase": "counted the lifejackets twice",
       "surface": {
-        "nervous": "nervous",
         "startled": "startled",
         "terrified": "terrified",
         "timid": "timid",
-        "horrified": "horrified"
-      }
+        "horrified": "horrified",
+        "alarmed": "alarmed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads terrified charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-scared-01-s09",
@@ -207,12 +264,20 @@
       "text": "When the balloon burst, Poppy was ___ for one quick second.",
       "cue_phrase": "one quick second",
       "surface": {
-        "nervous": "nervous",
         "startled": "startled",
         "terrified": "terrified",
         "timid": "timid",
-        "horrified": "horrified"
-      }
+        "horrified": "horrified",
+        "alarmed": "alarmed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads alarmed charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-scared-01-s10",
@@ -222,12 +287,20 @@
       "text": "A dropped tray clattered, and Noah looked ___ with a little gasp.",
       "cue_phrase": "dropped tray clattered",
       "surface": {
-        "nervous": "nervous",
         "startled": "startled",
         "terrified": "terrified",
         "timid": "timid",
-        "horrified": "horrified"
-      }
+        "horrified": "horrified",
+        "alarmed": "alarmed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads alarmed charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-scared-01-s11",
@@ -237,12 +310,20 @@
       "text": "The cat leapt out, making Sam feel ___, then laugh.",
       "cue_phrase": "cat leapt out",
       "surface": {
-        "nervous": "nervous",
         "startled": "startled",
         "terrified": "terrified",
         "timid": "timid",
-        "horrified": "horrified"
-      }
+        "horrified": "horrified",
+        "alarmed": "alarmed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads alarmed charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-scared-01-s12",
@@ -252,12 +333,20 @@
       "text": "The loud bang left the rabbits ___, frozen mid-hop for a moment.",
       "cue_phrase": "loud bang; frozen mid-hop",
       "surface": {
-        "nervous": "nervous",
         "startled": "startled",
         "terrified": "terrified",
         "timid": "timid",
-        "horrified": "horrified"
-      }
+        "horrified": "horrified",
+        "alarmed": "alarmed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads alarmed, terrified charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-scared-01-s13",
@@ -267,12 +356,20 @@
       "text": "I was ___ when a book slid off the shelf behind me.",
       "cue_phrase": "shelf behind me",
       "surface": {
-        "nervous": "nervous",
         "startled": "startled",
         "terrified": "terrified",
         "timid": "timid",
-        "horrified": "horrified"
-      }
+        "horrified": "horrified",
+        "alarmed": "alarmed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads alarmed charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-scared-01-s14",
@@ -282,12 +379,20 @@
       "text": "Mum became ___ as the doorbell rang during total silence.",
       "cue_phrase": "doorbell rang",
       "surface": {
-        "nervous": "nervous",
         "startled": "startled",
         "terrified": "terrified",
         "timid": "timid",
-        "horrified": "horrified"
-      }
+        "horrified": "horrified",
+        "alarmed": "alarmed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads alarmed charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-scared-01-s15",
@@ -297,12 +402,20 @@
       "text": "The puppy looked ___ after a pan lid crashed nearby.",
       "cue_phrase": "crashed nearby",
       "surface": {
-        "nervous": "nervous",
         "startled": "startled",
         "terrified": "terrified",
         "timid": "timid",
-        "horrified": "horrified"
-      }
+        "horrified": "horrified",
+        "alarmed": "alarmed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads alarmed, terrified charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-scared-01-s16",
@@ -312,12 +425,20 @@
       "text": "A crow flapped from the hedge, leaving Zoe ___ for a moment.",
       "cue_phrase": "for a moment",
       "surface": {
-        "nervous": "nervous",
         "startled": "startled",
         "terrified": "terrified",
         "timid": "timid",
-        "horrified": "horrified"
-      }
+        "horrified": "horrified",
+        "alarmed": "alarmed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads alarmed charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-scared-01-s17",
@@ -327,12 +448,20 @@
       "text": "Seeing smoke fill the hall, Aisha was ___, too afraid to speak.",
       "cue_phrase": "too afraid to speak",
       "surface": {
-        "nervous": "nervous",
         "startled": "startled",
         "terrified": "terrified",
         "timid": "timid",
-        "horrified": "horrified"
-      }
+        "horrified": "horrified",
+        "alarmed": "alarmed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds alarmed, horrified; claude-opus-4-8 adds horrified): horrified co-occurs at a smoke-filled hall; 'too afraid to speak' is fear for self, terrified's feature",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-scared-01-s18",
@@ -342,12 +471,20 @@
       "text": "The cub was ___, crying hard when the river swept mum away.",
       "cue_phrase": "crying hard",
       "surface": {
-        "nervous": "nervous",
         "startled": "startled",
         "terrified": "terrified",
         "timid": "timid",
-        "horrified": "horrified"
-      }
+        "horrified": "horrified",
+        "alarmed": "alarmed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads horrified charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-scared-01-s19",
@@ -357,12 +494,20 @@
       "text": "Under the dragon's claws, the knight felt ___ and dropped his sword.",
       "cue_phrase": "dragon's claws",
       "surface": {
-        "nervous": "nervous",
         "startled": "startled",
         "terrified": "terrified",
         "timid": "timid",
-        "horrified": "horrified"
-      }
+        "horrified": "horrified",
+        "alarmed": "alarmed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads alarmed, horrified charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-scared-01-s20",
@@ -372,12 +517,20 @@
       "text": "When the lift stuck in darkness, Kai became ___ and screamed for help.",
       "cue_phrase": "screamed for help",
       "surface": {
-        "nervous": "nervous",
         "startled": "startled",
         "terrified": "terrified",
         "timid": "timid",
-        "horrified": "horrified"
-      }
+        "horrified": "horrified",
+        "alarmed": "alarmed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads alarmed, horrified charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-scared-01-s21",
@@ -387,27 +540,43 @@
       "text": "The mouse was ___; its whole body trembled beneath the owl's shadow.",
       "cue_phrase": "whole body trembled",
       "surface": {
-        "nervous": "nervous",
         "startled": "startled",
         "terrified": "terrified",
         "timid": "timid",
-        "horrified": "horrified"
-      }
+        "horrified": "horrified",
+        "alarmed": "alarmed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads alarmed, horrified charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-scared-01-s22",
       "answer": "terrified",
       "cue": "inferential",
       "reserve": false,
-      "text": "After the wave pulled him out, Ben was ___ and could not breathe calmly.",
-      "cue_phrase": "could not breathe calmly",
+      "text": "After the wave pulled him under, Ben clung to the rail, ___ and unable to move.",
+      "cue_phrase": "unable to move",
       "surface": {
-        "nervous": "nervous",
         "startled": "startled",
         "terrified": "terrified",
         "timid": "timid",
-        "horrified": "horrified"
-      }
+        "horrified": "horrified",
+        "alarmed": "alarmed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads alarmed, horrified charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-scared-01-s23",
@@ -417,27 +586,43 @@
       "text": "The villagers grew ___ when lava rolled towards their only bridge.",
       "cue_phrase": "lava rolled towards",
       "surface": {
-        "nervous": "nervous",
         "startled": "startled",
         "terrified": "terrified",
         "timid": "timid",
-        "horrified": "horrified"
-      }
+        "horrified": "horrified",
+        "alarmed": "alarmed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds alarmed, horrified; claude-opus-4-8 adds alarmed): alarmed co-occurs as villagers spot lava; the intensity marker carries terrified",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-scared-01-s24",
       "answer": "terrified",
       "cue": "inferential",
       "reserve": true,
-      "text": "Hearing claws scratch inside the cupboard, Nia felt ___ and sobbed.",
-      "cue_phrase": "and sobbed",
+      "text": "The claws scratched closer inside the cupboard, and Nia backed away, ___ and shaking.",
+      "cue_phrase": "scratched closer inside the cupboard",
       "surface": {
-        "nervous": "nervous",
         "startled": "startled",
         "terrified": "terrified",
         "timid": "timid",
-        "horrified": "horrified"
-      }
+        "horrified": "horrified",
+        "alarmed": "alarmed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads alarmed, horrified, startled charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-scared-01-s25",
@@ -447,11 +632,11 @@
       "text": "The ___ boy whispered answers and avoided joining games with new children.",
       "cue_phrase": "avoided joining games",
       "surface": {
-        "nervous": "nervous",
         "startled": "startled",
         "terrified": "terrified",
         "timid": "timid",
-        "horrified": "horrified"
+        "horrified": "horrified",
+        "alarmed": "alarmed"
       }
     },
     {
@@ -462,11 +647,11 @@
       "text": "Our kitten was born ___, hiding from every visitor but creeping out for milk later.",
       "cue_phrase": "born; every visitor",
       "surface": {
-        "nervous": "nervous",
         "startled": "startled",
         "terrified": "terrified",
         "timid": "timid",
-        "horrified": "horrified"
+        "horrified": "horrified",
+        "alarmed": "alarmed"
       }
     },
     {
@@ -477,11 +662,11 @@
       "text": "At art club, Leila stayed ___, letting others choose colours first.",
       "cue_phrase": "letting others choose",
       "surface": {
-        "nervous": "nervous",
         "startled": "startled",
         "terrified": "terrified",
         "timid": "timid",
-        "horrified": "horrified"
+        "horrified": "horrified",
+        "alarmed": "alarmed"
       }
     },
     {
@@ -492,12 +677,20 @@
       "text": "The ___ foal backed away from every child's gentle pat, as it always did.",
       "cue_phrase": "every pat; always",
       "surface": {
-        "nervous": "nervous",
         "startled": "startled",
         "terrified": "terrified",
         "timid": "timid",
-        "horrified": "horrified"
-      }
+        "horrified": "horrified",
+        "alarmed": "alarmed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads alarmed charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-scared-01-s29",
@@ -507,11 +700,11 @@
       "text": "Max was ___, speaking so softly that the coach asked him to repeat.",
       "cue_phrase": "speaking so softly",
       "surface": {
-        "nervous": "nervous",
         "startled": "startled",
         "terrified": "terrified",
         "timid": "timid",
-        "horrified": "horrified"
+        "horrified": "horrified",
+        "alarmed": "alarmed"
       }
     },
     {
@@ -522,12 +715,20 @@
       "text": "Priya had always been too ___ to try the big slide, watching from behind her friend.",
       "cue_phrase": "always been too",
       "surface": {
-        "nervous": "nervous",
         "startled": "startled",
         "terrified": "terrified",
         "timid": "timid",
-        "horrified": "horrified"
-      }
+        "horrified": "horrified",
+        "alarmed": "alarmed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds terrified; claude-opus-4-8 adds terrified): 'as terrified as ever' parses, but the standing-trait frame is timid's",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-scared-01-s31",
@@ -537,11 +738,11 @@
       "text": "The ___ child would only read aloud beside a kind partner, every single time.",
       "cue_phrase": "would only; every time",
       "surface": {
-        "nervous": "nervous",
         "startled": "startled",
         "terrified": "terrified",
         "timid": "timid",
-        "horrified": "horrified"
+        "horrified": "horrified",
+        "alarmed": "alarmed"
       }
     },
     {
@@ -552,11 +753,11 @@
       "text": "However many friendly waves it saw, the deer stayed as ___ as ever at the fence.",
       "cue_phrase": "as ever",
       "surface": {
-        "nervous": "nervous",
         "startled": "startled",
         "terrified": "terrified",
         "timid": "timid",
-        "horrified": "horrified"
+        "horrified": "horrified",
+        "alarmed": "alarmed"
       }
     },
     {
@@ -567,12 +768,20 @@
       "text": "Mum was ___ at the state of my room, hands over her mouth.",
       "cue_phrase": "hands over her mouth",
       "surface": {
-        "nervous": "nervous",
         "startled": "startled",
         "terrified": "terrified",
         "timid": "timid",
-        "horrified": "horrified"
-      }
+        "horrified": "horrified",
+        "alarmed": "alarmed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads alarmed charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-scared-01-s34",
@@ -582,12 +791,20 @@
       "text": "Jade was ___ to find slugs sliding across the kitchen floor.",
       "cue_phrase": "slugs on the floor",
       "surface": {
-        "nervous": "nervous",
         "startled": "startled",
         "terrified": "terrified",
         "timid": "timid",
-        "horrified": "horrified"
-      }
+        "horrified": "horrified",
+        "alarmed": "alarmed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds alarmed, startled; claude-opus-4-8 adds startled): startled co-occurs at a sudden awful sight; shock-at-awfulness is horrified's feature",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-scared-01-s35",
@@ -597,12 +814,20 @@
       "text": "Leo was ___ by the smell from the fridge and slammed it shut.",
       "cue_phrase": "smell; slammed it shut",
       "surface": {
-        "nervous": "nervous",
         "startled": "startled",
         "terrified": "terrified",
         "timid": "timid",
-        "horrified": "horrified"
-      }
+        "horrified": "horrified",
+        "alarmed": "alarmed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads alarmed charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-scared-01-s36",
@@ -612,12 +837,20 @@
       "text": "The librarian looked ___ when she saw the juice stains across the returned book.",
       "cue_phrase": "juice stains",
       "surface": {
-        "nervous": "nervous",
         "startled": "startled",
         "terrified": "terrified",
         "timid": "timid",
-        "horrified": "horrified"
-      }
+        "horrified": "horrified",
+        "alarmed": "alarmed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads alarmed, startled charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-scared-01-s37",
@@ -627,12 +860,20 @@
       "text": "The judges looked ___ as the cake collapsed into a grey puddle.",
       "cue_phrase": "collapsed into a puddle",
       "surface": {
-        "nervous": "nervous",
         "startled": "startled",
         "terrified": "terrified",
         "timid": "timid",
-        "horrified": "horrified"
-      }
+        "horrified": "horrified",
+        "alarmed": "alarmed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads alarmed, startled charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-scared-01-s38",
@@ -642,12 +883,20 @@
       "text": "Priya was ___ as she slowly realised her painting hung upside down at the fair.",
       "cue_phrase": "slowly realised; upside down",
       "surface": {
-        "nervous": "nervous",
         "startled": "startled",
         "terrified": "terrified",
         "timid": "timid",
-        "horrified": "horrified"
-      }
+        "horrified": "horrified",
+        "alarmed": "alarmed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads alarmed charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-scared-01-s39",
@@ -657,12 +906,20 @@
       "text": "Dad was ___ by the price of the tiny festival chips.",
       "cue_phrase": "the price",
       "surface": {
-        "nervous": "nervous",
         "startled": "startled",
         "terrified": "terrified",
         "timid": "timid",
-        "horrified": "horrified"
-      }
+        "horrified": "horrified",
+        "alarmed": "alarmed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads alarmed, startled charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-scared-01-s40",
@@ -672,40 +929,23 @@
       "text": "The dentist looked ___ when Sam admitted eating toffee for breakfast every day.",
       "cue_phrase": "toffee for breakfast",
       "surface": {
-        "nervous": "nervous",
         "startled": "startled",
         "terrified": "terrified",
         "timid": "timid",
-        "horrified": "horrified"
-      }
+        "horrified": "horrified",
+        "alarmed": "alarmed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads alarmed, startled charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     }
   ],
   "contrasts": [
-    {
-      "answer": "nervous",
-      "picked": "startled",
-      "line": "Nervous builds before a turn; startled is one quick jolt after a surprise."
-    },
-    {
-      "answer": "nervous",
-      "picked": "terrified",
-      "line": "Nervous has butterflies before a test; terrified is much stronger, like panic."
-    },
-    {
-      "answer": "nervous",
-      "picked": "timid",
-      "line": "Nervous is about an upcoming moment; timid is a shy way of acting often."
-    },
-    {
-      "answer": "nervous",
-      "picked": "horrified",
-      "line": "Horrified is shock at something awful. Nervous is worry before something that has not happened."
-    },
-    {
-      "answer": "startled",
-      "picked": "nervous",
-      "line": "Startled is a quick jolt after a noise; nervous is butterflies before a turn."
-    },
     {
       "answer": "startled",
       "picked": "terrified",
@@ -720,11 +960,6 @@
       "answer": "startled",
       "picked": "horrified",
       "line": "Horrified is upset at an awful sight. Startled is the quick jump at a sudden one."
-    },
-    {
-      "answer": "terrified",
-      "picked": "nervous",
-      "line": "Terrified is the strongest scare; nervous is butterflies before an event."
     },
     {
       "answer": "terrified",
@@ -743,11 +978,6 @@
     },
     {
       "answer": "timid",
-      "picked": "nervous",
-      "line": "Timid means shy about trying; nervous means butterflies before a moment."
-    },
-    {
-      "answer": "timid",
       "picked": "startled",
       "line": "Timid is a usual shy manner; startled is a quick jolt."
     },
@@ -763,11 +993,6 @@
     },
     {
       "answer": "horrified",
-      "picked": "nervous",
-      "line": "Nervous is jitters about what MIGHT happen. Horrified is shock at something awful right there."
-    },
-    {
-      "answer": "horrified",
       "picked": "startled",
       "line": "Startled is the jump at something sudden. Horrified is the upset at something awful."
     },
@@ -780,12 +1005,52 @@
       "answer": "horrified",
       "picked": "timid",
       "line": "Timid is how someone always is. Horrified is a reaction to one awful sight."
+    },
+    {
+      "answer": "alarmed",
+      "picked": "startled",
+      "line": "Alarmed means spotting real danger and acting; startled is the jump before thinking."
+    },
+    {
+      "answer": "alarmed",
+      "picked": "terrified",
+      "line": "Alarmed is quick, sensible worry at a danger sign; terrified is fear so big you can barely move."
+    },
+    {
+      "answer": "alarmed",
+      "picked": "timid",
+      "line": "Alarmed is a reaction to one danger sign; timid is being shy and careful all the time."
+    },
+    {
+      "answer": "alarmed",
+      "picked": "horrified",
+      "line": "Alarmed is about danger coming; horrified is shock at something awful you see."
+    },
+    {
+      "answer": "startled",
+      "picked": "alarmed",
+      "line": "Startled is the flinch at a sudden surprise; alarmed is noticing danger and acting on it."
+    },
+    {
+      "answer": "terrified",
+      "picked": "alarmed",
+      "line": "Terrified is overwhelming fear; alarmed is milder, a warning feeling that says check this now."
+    },
+    {
+      "answer": "timid",
+      "picked": "alarmed",
+      "line": "Timid describes a shy, careful nature; alarmed is one moment of spotting danger."
+    },
+    {
+      "answer": "horrified",
+      "picked": "alarmed",
+      "line": "Horrified is shock at an awful sight; alarmed is concern that danger is on the way."
     }
   ],
   "meta": {
     "generated_at": "2026-07-05T11:07:53+00:00",
     "model": "gpt-5.5",
-    "scrubbed_at": null,
-    "scrub_note": "uneasy swapped for horrified: uneasy was the generic donor the judges fit into every sibling frame."
+    "scrubbed_at": "2026-07-05T13:42:27+00:00",
+    "scrub_note": "Donor surgery: nervous->alarmed (invaded timid on all eight frames); terrified s22/s24 restaged to self-danger. Full read + judge triage."
   }
 }

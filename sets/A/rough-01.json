@@ -5,7 +5,13 @@
   "theme": "kinds of rough",
   "band": 4,
   "band_override": 4,
-  "computed": null,
+  "computed": {
+    "zipf_min": 2.79,
+    "zipf_mean": 3.11,
+    "tightness": null,
+    "band_suggested": 4,
+    "scored_at": "2026-07-05T13:15:51+00:00"
+  },
   "words": [
     {
       "w": "jagged",
@@ -19,7 +25,8 @@
       "forms": {
         "base": "jagged"
       },
-      "discriminator": "sharp uneven edges and points"
+      "discriminator": "sharp uneven edges and points",
+      "grade": 4
     },
     {
       "w": "prickly",
@@ -33,7 +40,8 @@
       "forms": {
         "base": "prickly"
       },
-      "discriminator": "spikes that jab"
+      "discriminator": "spikes that jab",
+      "grade": 2
     },
     {
       "w": "coarse",
@@ -47,7 +55,8 @@
       "forms": {
         "base": "coarse"
       },
-      "discriminator": "large grains; rough to the touch"
+      "discriminator": "large grains; rough to the touch",
+      "grade": 5
     },
     {
       "w": "bumpy",
@@ -61,7 +70,8 @@
       "forms": {
         "base": "bumpy"
       },
-      "discriminator": "lumps and humps all over"
+      "discriminator": "lumps and humps all over",
+      "grade": 1
     },
     {
       "w": "scratchy",
@@ -75,7 +85,8 @@
       "forms": {
         "base": "scratchy"
       },
-      "discriminator": "rubs and rasps the skin"
+      "discriminator": "rubs and rasps the skin",
+      "grade": 2
     }
   ],
   "sentences": [
@@ -242,7 +253,15 @@
         "coarse": "coarse",
         "bumpy": "bumpy",
         "scratchy": "scratchy"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads scratchy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-rough-01-s12",
@@ -257,7 +276,15 @@
         "coarse": "coarse",
         "bumpy": "bumpy",
         "scratchy": "scratchy"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads jagged, scratchy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-rough-01-s13",
@@ -272,7 +299,15 @@
         "coarse": "coarse",
         "bumpy": "bumpy",
         "scratchy": "scratchy"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads scratchy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-rough-01-s14",
@@ -287,7 +322,15 @@
         "coarse": "coarse",
         "bumpy": "bumpy",
         "scratchy": "scratchy"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads scratchy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-rough-01-s15",
@@ -302,7 +345,15 @@
         "coarse": "coarse",
         "bumpy": "bumpy",
         "scratchy": "scratchy"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads jagged charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-rough-01-s16",
@@ -317,7 +368,15 @@
         "coarse": "coarse",
         "bumpy": "bumpy",
         "scratchy": "scratchy"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads scratchy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-rough-01-s17",
@@ -564,15 +623,23 @@
       "answer": "scratchy",
       "cue": "explicit",
       "reserve": false,
-      "text": "The ___ pen made a scraping noise across the card.",
-      "cue_phrase": "scraping noise",
+      "text": "The ___ tag inside Milo's new shirt itched his neck all through assembly.",
+      "cue_phrase": "itched his neck",
       "surface": {
         "jagged": "jagged",
         "prickly": "prickly",
         "coarse": "coarse",
         "bumpy": "bumpy",
         "scratchy": "scratchy"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds coarse; claude-opus-4-8 adds prickly): prickly read treats fabric-itch as points; the glosses split spikes from skin-rubbing fibre",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-rough-01-s34",
@@ -587,97 +654,153 @@
         "coarse": "coarse",
         "bumpy": "bumpy",
         "scratchy": "scratchy"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads coarse, prickly charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-rough-01-s35",
       "answer": "scratchy",
       "cue": "contextual",
       "reserve": false,
-      "text": "The ___ chalk squealed while the teacher wrote today's date.",
-      "cue_phrase": "chalk squealed",
+      "text": "Nan's hand-knitted scarf felt ___ against Priya's chin the whole walk home.",
+      "cue_phrase": "against Priya's chin",
       "surface": {
         "jagged": "jagged",
         "prickly": "prickly",
         "coarse": "coarse",
         "bumpy": "bumpy",
         "scratchy": "scratchy"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds coarse, prickly; claude-opus-4-8 adds prickly): prickly read treats fabric-itch as points; hand-knitted scarf is fibre, not spikes",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-rough-01-s36",
       "answer": "scratchy",
       "cue": "contextual",
       "reserve": false,
-      "text": "The ___ radio crackled so much that we missed the song.",
-      "cue_phrase": "radio crackled",
+      "text": "The costume beard was so ___ that the actor's cheeks turned pink by the final bow.",
+      "cue_phrase": "cheeks turned pink",
       "surface": {
         "jagged": "jagged",
         "prickly": "prickly",
         "coarse": "coarse",
         "bumpy": "bumpy",
         "scratchy": "scratchy"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds coarse, prickly; claude-opus-4-8 adds prickly): prickly read treats costume-beard itch as points; fibre irritation is scratchy's feature",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-rough-01-s37",
       "answer": "scratchy",
       "cue": "inferential",
       "reserve": false,
-      "text": "Milo changed crayons because the ___ one scraped the paper.",
-      "cue_phrase": "scraped the paper",
+      "text": "Jae kept tugging at the ___ sock that bothered his ankle all day.",
+      "cue_phrase": "bothered his ankle",
       "surface": {
         "jagged": "jagged",
         "prickly": "prickly",
         "coarse": "coarse",
         "bumpy": "bumpy",
         "scratchy": "scratchy"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads bumpy, coarse, prickly charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-rough-01-s38",
       "answer": "scratchy",
       "cue": "inferential",
       "reserve": false,
-      "text": "Tara cleared her throat after the ___ cough rasped all morning.",
-      "cue_phrase": "cough rasped",
+      "text": "Grandad's old car rug felt ___ on Tara's arms, and she squirmed the whole ride.",
+      "cue_phrase": "squirmed the whole ride",
       "surface": {
         "jagged": "jagged",
         "prickly": "prickly",
         "coarse": "coarse",
         "bumpy": "bumpy",
         "scratchy": "scratchy"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds coarse, prickly; claude-opus-4-8 adds prickly): prickly read treats rug-itch as points; woven fibre, no spikes staged",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-rough-01-s39",
       "answer": "scratchy",
       "cue": "contextual",
       "reserve": true,
-      "text": "The ___ microphone hissed whenever the narrator spoke.",
-      "cue_phrase": "microphone hissed",
+      "text": "In shorts, Sam found the old train seat ___ on the backs of his legs.",
+      "cue_phrase": "on the backs of his legs",
       "surface": {
         "jagged": "jagged",
         "prickly": "prickly",
         "coarse": "coarse",
         "bumpy": "bumpy",
         "scratchy": "scratchy"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads coarse, prickly charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     },
     {
       "id": "A-rough-01-s40",
       "answer": "scratchy",
       "cue": "inferential",
       "reserve": true,
-      "text": "The ___ violin note rasped instead of singing smoothly.",
-      "cue_phrase": "note rasped",
+      "text": "That cheap blanket is so ___ that Ben sleeps on a smooth sheet instead.",
+      "cue_phrase": "sleeps on a smooth sheet instead",
       "surface": {
         "jagged": "jagged",
         "prickly": "prickly",
         "coarse": "coarse",
         "bumpy": "bumpy",
         "scratchy": "scratchy"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds coarse, prickly; claude-opus-4-8 adds coarse, prickly): coarse read is texture-generic; the smooth-sheet consequence stages skin-itch, scratchy's feature",
+          "by": "claude",
+          "at": "2026-07-05"
+        }
+      ]
     }
   ],
   "contrasts": [
@@ -785,7 +908,7 @@
   "meta": {
     "generated_at": "2026-07-05T11:23:46+00:00",
     "model": "gpt-5.5",
-    "scrubbed_at": null,
-    "scrub_note": null
+    "scrubbed_at": "2026-07-05T13:42:27+00:00",
+    "scrub_note": "scratchy frames s33/s35-s40 rewritten tactile to match the abrasive pin (drafts had used the sound sense). Full read + judge triage."
   }
 }

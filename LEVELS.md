@@ -17,7 +17,7 @@ answers for is a shipping bug, because it punishes a correct answer.
 
 | # | Lever | Easy → hard |
 |---|---|---|
-| 1 | Word rarity | zipf_min ≥ 4.2 → below 2.5 (tier-2 words) |
+| 1 | Word rarity | zipf_min ≥ 4.2 → below 2.5 (tier-2 words); every word also carries an Australian school year `grade` 1-7 (tools/grade-words.py) as the human-readable rarity check |
 | 2 | Set tightness | distinct categories (hiss / moo) → adjacent rungs of one scale (gleaming / twinkling) |
 | 3 | Cue mix *served* | explicit-heavy → inferential-heavy (authoring is uniform 2/2/2; the runtime shifts what it draws - a future knob, v1 serves uniformly) |
 | 4 | Bank mix | A+B only → bank C (their/there, borrow/lend) from band 3 |

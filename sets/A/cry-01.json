@@ -10,7 +10,7 @@
     "zipf_mean": 2.8,
     "tightness": 0.5,
     "band_suggested": 4,
-    "scored_at": "2026-07-05T08:59:48+00:00"
+    "scored_at": "2026-07-05T13:15:51+00:00"
   },
   "words": [
     {
@@ -28,7 +28,8 @@
         "past": "whimpered",
         "part": "whimpering"
       },
-      "discriminator": "quiet, weak and scared"
+      "discriminator": "quiet, weak and scared",
+      "grade": 4
     },
     {
       "w": "sob",
@@ -53,7 +54,8 @@
         "reason": "in big uncontrollable bursts; the discriminator 'big shaky breaths' carries it",
         "by": "claude",
         "at": "2026-07-05"
-      }
+      },
+      "grade": 2
     },
     {
       "w": "blubber",
@@ -78,7 +80,8 @@
         "reason": "echoic sound-word a child reads as sniffing; discriminator carries it",
         "by": "claude",
         "at": "2026-07-05"
-      }
+      },
+      "grade": 4
     },
     {
       "w": "bawl",
@@ -95,7 +98,8 @@
         "past": "bawled",
         "part": "bawling"
       },
-      "discriminator": "cry very loudly"
+      "discriminator": "cry very loudly",
+      "grade": 3
     },
     {
       "w": "howl",
@@ -112,7 +116,8 @@
         "past": "howled",
         "part": "howling"
       },
-      "discriminator": "one long loud wailing cry"
+      "discriminator": "one long loud wailing cry",
+      "grade": 2
     }
   ],
   "sentences": [
@@ -148,7 +153,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads sob charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -201,7 +206,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads sob charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -224,7 +229,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads sob charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -277,7 +282,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads bawl, blubber charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -300,7 +305,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads bawl, blubber charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -323,7 +328,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "Adjacent-rung acceptance: sob sits between whimper and bawl on the loudness scale; quiet-sharpened frames moved the dissent from bawl/blubber to whimper (gpt-5.5+gpt-4.1), claude finds sob unique. The shaky-breath cue is sob's discriminator and the miss card teaches sob-vs-whimper directly.",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds whimper; gpt-4.1 adds whimper): whimper co-occurs with quiet crying; shoulders shaking with each breath is sob's convulsive feature",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -346,7 +351,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "Adjacent-rung acceptance: sob sits between whimper and bawl on the loudness scale; quiet-sharpened frames moved the dissent from bawl/blubber to whimper (gpt-5.5+gpt-4.1), claude finds sob unique. The shaky-breath cue is sob's discriminator and the miss card teaches sob-vs-whimper directly.",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds whimper; gpt-4.1 adds whimper): whimper co-occurs; gulps of air stage sob's convulsive breathing, whimper is a thin whine without it",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -369,7 +374,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "Adjacent-rung acceptance: sob sits between whimper and bawl on the loudness scale; quiet-sharpened frames moved the dissent from bawl/blubber to whimper (gpt-5.5+gpt-4.1), claude finds sob unique. The shaky-breath cue is sob's discriminator and the miss card teaches sob-vs-whimper directly.",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds whimper; gpt-4.1 adds whimper): whimper co-occurs; bouncing shoulders with each breath is sob's convulsive feature",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -407,7 +412,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "Adjacent-rung acceptance: sob sits between whimper and bawl on the loudness scale; quiet-sharpened frames moved the dissent from bawl/blubber to whimper (gpt-5.5+gpt-4.1), claude finds sob unique. The shaky-breath cue is sob's discriminator and the miss card teaches sob-vs-whimper directly.",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds whimper; gpt-4.1 adds whimper): whimper co-occurs; gulping air between tears is sob's convulsive feature",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -430,7 +435,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "Adjacent-rung acceptance: sob sits between whimper and bawl on the loudness scale; quiet-sharpened frames moved the dissent from bawl/blubber to whimper (gpt-5.5+gpt-4.1), claude finds sob unique. The shaky-breath cue is sob's discriminator and the miss card teaches sob-vs-whimper directly.",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds whimper; gpt-4.1 adds whimper): whimper co-occurs; the jumping chest stages sob's convulsions",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -453,7 +458,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads sob, whimper charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -476,7 +481,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads sob, whimper charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -499,7 +504,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads bawl, sob, whimper charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -522,7 +527,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads bawl, howl, sob, whimper charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -545,7 +550,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads bawl, howl, sob, whimper charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -568,7 +573,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads sob, whimper charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -591,7 +596,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads sob, whimper charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -614,7 +619,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads bawl, howl, sob, whimper charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -637,7 +642,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads howl, sob charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -660,7 +665,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads howl charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -683,7 +688,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads howl charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -706,7 +711,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads blubber, howl, sob charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -729,7 +734,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads howl charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -752,7 +757,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads blubber, howl, sob charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -775,7 +780,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "Adjacent-rung acceptance on a reserve slot: howl requires LONG cries, the frame says tantrum BURSTS; gpt-4.1 finds bawl uniquely fitting and the bawl-vs-howl contrast card teaches sustained-vs-burst. Same class as A-cry-01-s32.",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds blubber, howl, sob; claude-opus-4-8 adds howl): howl co-occurs with full-volume crying; burst-pattern tantrum wailing is bawl's canonical staging",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -798,7 +803,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "Adjacent-rung dissent accepted: same-skeleton sibling frames passed this ensemble (verdict noise documented on A-cry-01-s26 vs s32). 1-2 judges read the true neighbour word charitably; the miss card teaches exactly this edge. Reserve slot (lockbox pool only).",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds blubber, howl, sob; claude-opus-4-8 adds blubber, howl): howl co-occurs; ear-splitting burst crying at a game loss is bawl's home ground",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -836,7 +841,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads bawl charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }
@@ -934,7 +939,7 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: one judge of three reads a neighbour word charitably; two find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads bawl charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
           "by": "claude",
           "at": "2026-07-05"
         }

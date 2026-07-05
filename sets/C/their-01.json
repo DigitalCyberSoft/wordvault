@@ -10,7 +10,7 @@
     "zipf_mean": 6.06,
     "tightness": null,
     "band_suggested": 1,
-    "scored_at": "2026-07-05T08:59:48+00:00"
+    "scored_at": "2026-07-05T13:15:52+00:00"
   },
   "words": [
     {
@@ -25,7 +25,8 @@
       "forms": {
         "base": "their"
       },
-      "discriminator": "owning something"
+      "discriminator": "owning something",
+      "grade": 2
     },
     {
       "w": "there",
@@ -39,7 +40,8 @@
       "forms": {
         "base": "there"
       },
-      "discriminator": "a place"
+      "discriminator": "a place",
+      "grade": 1
     },
     {
       "w": "they're",
@@ -53,7 +55,8 @@
       "forms": {
         "base": "they're"
       },
-      "discriminator": "they are"
+      "discriminator": "they are",
+      "grade": 2
     },
     {
       "w": "then",
@@ -67,7 +70,8 @@
       "forms": {
         "base": "then"
       },
-      "discriminator": "time or order"
+      "discriminator": "time or order",
+      "grade": 1
     },
     {
       "w": "than",
@@ -81,7 +85,8 @@
       "forms": {
         "base": "than"
       },
-      "discriminator": "comparing"
+      "discriminator": "comparing",
+      "grade": 2
     }
   ],
   "sentences": [
