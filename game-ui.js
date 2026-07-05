@@ -235,6 +235,10 @@
   }
 
   function renderSlip(sentence) {
+    var box = el('slip');
+    box.classList.remove('deal');
+    void document.body.offsetWidth;
+    box.classList.add('deal');
     var slip = el('slip-text');
     slip.innerHTML = '';
     var parts = sentence.text.split('___');
@@ -288,15 +292,58 @@
     if (!open) el('vault').classList.remove('unbolted');
     el('vault').classList.toggle('open', !!open);
   }
-  // the opening beat: bolt slides free of the frame, then the door swings
+  // juice: the dial accumulates a quarter-turn per seated pin (whole turns on
+  // the crack), and the mech panel takes a 2px thunk on every seat. The turn
+  // counter lives outside S so the dial never rewinds across encounters.
+  var dialTurns = 0;
+  function dialTurn(quarters) {
+    dialTurns += quarters;
+    el('dial').style.setProperty('--turns', dialTurns);
+  }
+  function mechThunk() {
+    var m = el('mech');
+    m.classList.remove('thunk');
+    void document.body.offsetWidth;
+    m.classList.add('thunk');
+  }
+  // the opening beat: bolt slides clear, the handle drops, then the door
+  // swings and the interior light blooms
   function openVault(cb) {
     el('vault').classList.add('unbolted');
     Snd.relock();
-    afterMs(380, function () {
+    dialTurn(8);
+    afterMs(680, function () {
       renderDoor(true);
       Snd.door();
       cb();
     });
+  }
+  // crack payout: six coins arc from the vault to the HUD tally
+  function spawnCoins() {
+    if (reducedMotion()) return;
+    var from = el('vault').getBoundingClientRect();
+    var to = el('coins').getBoundingClientRect();
+    var stat = el('coins').parentNode;
+    for (var i = 0; i < 6; i++) (function (i) {
+      setTimeout(function () {
+        var c = document.createElement('div');
+        c.className = 'coin-fly';
+        var x0 = from.left + from.width / 2 - 11, y0 = from.top + from.height / 2 - 11;
+        c.style.left = x0 + 'px';
+        c.style.top = y0 + 'px';
+        document.body.appendChild(c);
+        c.getBoundingClientRect(); // reflow so the transition runs
+        c.style.transform = 'translate(' + (to.left + to.width / 2 - 11 - x0) + 'px,' +
+          (to.top + to.height / 2 - 11 - y0) + 'px) scale(.5)';
+        c.style.opacity = '.2';
+        setTimeout(function () {
+          c.parentNode && c.parentNode.removeChild(c);
+          stat.classList.remove('tick');
+          void document.body.offsetWidth;
+          stat.classList.add('tick');
+        }, 570);
+      }, i * 70);
+    })(i);
   }
 
   // ---- the flying tile ----
@@ -347,6 +394,8 @@
         blank.classList.add('filled', 'glow');
         Snd.seat();
         renderPins();
+        dialTurn(1);
+        mechThunk();
         if (res.state === 'cracked') {
           afterMs(500, function () { S.review ? onReviewOpened() : onCracked(); });
         } else {
@@ -440,7 +489,7 @@
     LS.encounter = null;
     refreshHud();
     el('vault-reward').textContent = reward ? reward.emoji : '🪙';
-    openVault(function () { afterMs(850, function () {
+    openVault(function () { spawnCoins(); afterMs(850, function () {
       el('crack-collectible').innerHTML = '';
       var big = document.createElement('div');
       big.style.fontSize = '4rem';

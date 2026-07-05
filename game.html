@@ -51,6 +51,14 @@
         <g id="door-inside">
           <rect x="68" y="38" width="504" height="344" rx="14" fill="#241b10"/>
           <rect x="68" y="300" width="504" height="82" rx="10" fill="#3a2c18"/>
+          <!-- golden light spilling out as the door passes half-open -->
+          <g id="rays">
+            <ellipse cx="320" cy="240" rx="216" ry="150" fill="#f0b429" opacity=".18"/>
+            <polygon points="320,240 128,38 232,38" fill="#ffd76a" opacity=".22"/>
+            <polygon points="320,240 272,38 368,38" fill="#ffd76a" opacity=".3"/>
+            <polygon points="320,240 408,38 512,38" fill="#ffd76a" opacity=".22"/>
+            <ellipse cx="320" cy="278" rx="120" ry="64" fill="#ffe9ad" opacity=".3"/>
+          </g>
           <text id="vault-reward" x="320" y="250" text-anchor="middle" font-size="96"> </text>
         </g>
         <!-- the door leaf: steel slab, brass dial + handle. Hinged on its left. -->
@@ -74,6 +82,7 @@
             <g class="pinstack" style="--i:0" transform="translate(168,0)">
               <rect class="chan" x="-15" y="68" width="30" height="96" fill="#171c21"/>
               <line class="setline" x1="-15" y1="128" x2="15" y2="128" stroke="#ffd76a" stroke-width="2.5"/>
+              <circle class="ring" cx="0" cy="128" r="15" fill="none" stroke="#ffd76a" stroke-width="4"/>
               <g class="stack">
                 <path class="coil" d="M-8,78 h16 M-8,86 h16 M-8,94 h16" stroke="#7c8894" stroke-width="3"/>
                 <rect class="driver" x="-11" y="104" width="22" height="34" fill="#8f9aa6" stroke="#6b7682" stroke-width="1.5"/>
@@ -83,6 +92,7 @@
             <g class="pinstack" style="--i:1" transform="translate(244,0)">
               <rect class="chan" x="-15" y="68" width="30" height="96" fill="#171c21"/>
               <line class="setline" x1="-15" y1="128" x2="15" y2="128" stroke="#ffd76a" stroke-width="2.5"/>
+              <circle class="ring" cx="0" cy="128" r="15" fill="none" stroke="#ffd76a" stroke-width="4"/>
               <g class="stack">
                 <path class="coil" d="M-8,78 h16 M-8,86 h16 M-8,94 h16" stroke="#7c8894" stroke-width="3"/>
                 <rect class="driver" x="-11" y="104" width="22" height="34" fill="#8f9aa6" stroke="#6b7682" stroke-width="1.5"/>
@@ -92,6 +102,7 @@
             <g class="pinstack" style="--i:2" transform="translate(320,0)">
               <rect class="chan" x="-15" y="68" width="30" height="96" fill="#171c21"/>
               <line class="setline" x1="-15" y1="128" x2="15" y2="128" stroke="#ffd76a" stroke-width="2.5"/>
+              <circle class="ring" cx="0" cy="128" r="15" fill="none" stroke="#ffd76a" stroke-width="4"/>
               <g class="stack">
                 <path class="coil" d="M-8,78 h16 M-8,86 h16 M-8,94 h16" stroke="#7c8894" stroke-width="3"/>
                 <rect class="driver" x="-11" y="104" width="22" height="34" fill="#8f9aa6" stroke="#6b7682" stroke-width="1.5"/>
@@ -101,6 +112,7 @@
             <g class="pinstack" style="--i:3" transform="translate(396,0)">
               <rect class="chan" x="-15" y="68" width="30" height="96" fill="#171c21"/>
               <line class="setline" x1="-15" y1="128" x2="15" y2="128" stroke="#ffd76a" stroke-width="2.5"/>
+              <circle class="ring" cx="0" cy="128" r="15" fill="none" stroke="#ffd76a" stroke-width="4"/>
               <g class="stack">
                 <path class="coil" d="M-8,78 h16 M-8,86 h16 M-8,94 h16" stroke="#7c8894" stroke-width="3"/>
                 <rect class="driver" x="-11" y="104" width="22" height="34" fill="#8f9aa6" stroke="#6b7682" stroke-width="1.5"/>
@@ -110,6 +122,7 @@
             <g class="pinstack" style="--i:4" transform="translate(472,0)">
               <rect class="chan" x="-15" y="68" width="30" height="96" fill="#171c21"/>
               <line class="setline" x1="-15" y1="128" x2="15" y2="128" stroke="#ffd76a" stroke-width="2.5"/>
+              <circle class="ring" cx="0" cy="128" r="15" fill="none" stroke="#ffd76a" stroke-width="4"/>
               <g class="stack">
                 <path class="coil" d="M-8,78 h16 M-8,86 h16 M-8,94 h16" stroke="#7c8894" stroke-width="3"/>
                 <rect class="driver" x="-11" y="104" width="22" height="34" fill="#8f9aa6" stroke="#6b7682" stroke-width="1.5"/>
@@ -128,7 +141,7 @@
           </g>
           <circle cx="320" cy="252" r="10" fill="#96702c"/>
           <!-- handle -->
-          <rect x="452" y="236" width="86" height="30" rx="15" fill="#c9973f" stroke="#96702c" stroke-width="4"/>
+          <rect id="handle" x="452" y="236" width="86" height="30" rx="15" fill="#c9973f" stroke="#96702c" stroke-width="4"/>
         </g>
       </svg>
     </section>

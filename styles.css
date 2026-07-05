@@ -110,10 +110,25 @@ body {
 /* ---- The vault ---- */
 #vault-wrap { position: relative; height: 100%; width: min(640px, 92vw); display: grid; place-items: center; }
 #vault { width: 100%; height: auto; max-height: 100%; filter: drop-shadow(0 10px 0 rgba(0,0,0,.12)); }
-/* door swing: a real 3D hinge on the left edge */
+/* door swing: a real 3D hinge on the left edge, with a settle at the end */
 #door-leaf { transform-origin: 12% 50%; transition: transform var(--t-door) cubic-bezier(.6,.04,.35,1); }
-#vault.open #door-leaf { transform: perspective(1400px) rotateY(-104deg); }
+#vault.open #door-leaf { animation: door-swing var(--t-door) cubic-bezier(.5,.05,.35,1) both; }
+@keyframes door-swing {
+  0% { transform: perspective(1400px) rotateY(0deg); }
+  82% { transform: perspective(1400px) rotateY(-107deg); }
+  100% { transform: perspective(1400px) rotateY(-104deg); }
+}
 #vault.open { filter: drop-shadow(0 10px 0 rgba(0,0,0,.12)) drop-shadow(0 0 34px var(--gold-glow)); }
+/* interior light: dark until the door is on its way open */
+#rays { opacity: 0; transform-box: fill-box; transform-origin: center; transition: opacity 420ms ease-out 260ms; }
+#vault.open #rays { opacity: 1; animation: rays-bloom 900ms ease-out 260ms both; }
+@keyframes rays-bloom { 0% { transform: scale(.82); } 100% { transform: scale(1); } }
+/* the combination dial turns a quarter-turn per seated pin, and whirls on the crack */
+#dial, #dial + circle { transform-box: fill-box; transform-origin: center; }
+#dial { transition: transform 420ms cubic-bezier(.34, 1.56, .64, 1); transform: rotate(calc(var(--turns, 0) * 90deg)); }
+/* the handle drops once the bolt is clear, just before the swing */
+#handle { transform-box: fill-box; transform-origin: center; transition: transform 260ms cubic-bezier(.34, 1.56, .64, 1) 320ms; }
+#vault.unbolted #handle { transform: rotate(-78deg); }
 
 /* Cross-section lock. Each correct answer lifts one pin stack with a springy
    overshoot so its split sits flush with the shear line; the seated key pin
@@ -131,10 +146,38 @@ body {
   70% { transform: translateY(2px); }
   100% { transform: translateY(0); }
 }
+/* impact feedback on each seat: a click-ring pulse and a 2px panel thunk */
+.pinstack .ring { opacity: 0; transform-box: fill-box; transform-origin: center; }
+.pinstack.seated .ring { animation: ring-pop 380ms ease-out both; }
+@keyframes ring-pop {
+  0% { opacity: .9; transform: scale(.35); }
+  100% { opacity: 0; transform: scale(1.7); }
+}
+#mech { transform-box: fill-box; transform-origin: center; }
+#mech.thunk { animation: mech-thunk 130ms ease-out; }
+@keyframes mech-thunk { 0% { transform: translateY(0); } 45% { transform: translateY(2px); } 100% { transform: translateY(0); } }
 /* the bolt slides free just before the door swings */
 #bolt { transition: transform 320ms cubic-bezier(.6, .04, .35, 1) 60ms; }
 #vault.unbolted #bolt { transform: translateX(-76px); }
 #vault.unbolted #plug { fill: #4a4436; }
+
+/* each new sentence is dealt in like a paper slip pushed across a counter */
+#slip.deal { animation: slip-deal 240ms ease-out; }
+@keyframes slip-deal {
+  0% { transform: translateY(-12px) rotate(-1.4deg); opacity: .2; }
+  100% { transform: translateY(0) rotate(0deg); opacity: 1; }
+}
+
+/* crack payout: coins arc from the vault to the HUD tally, which ticks per hit */
+.coin-fly {
+  position: fixed; z-index: 150; width: 22px; height: 22px; border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #ffe9ad, #eec36a 55%, #c9973f);
+  box-shadow: 0 0 8px rgba(240, 180, 41, .7);
+  transition: transform 560ms cubic-bezier(.5, -.15, .65, 1), opacity 560ms ease-in;
+  pointer-events: none;
+}
+#hud .stat.coins.tick { animation: coin-tick 200ms ease-out; }
+@keyframes coin-tick { 0% { transform: scale(1); } 40% { transform: scale(1.22); } 100% { transform: scale(1); } }
 @keyframes blank-glow { 0% { box-shadow: 0 0 0 0 var(--gold-glow); } 100% { box-shadow: 0 0 0 14px rgba(240,180,41,0); } }
 
 /* the whole stage dims for a beat on a miss: desaturation IS the wrong-colour */
@@ -299,6 +342,8 @@ body.pins-copper .pinstack .setline { stroke: #ffc9a3; }
 
 /* ---- Reduced motion: every animation collapses, transitions go instant ---- */
 @media (prefers-reduced-motion: reduce) {
-  .overlay.show, .overlay.show > *, .bob, .pinstack.spring .stack, #tile-ghost.shake, #blank.glow, .coin-pop { animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
-  #door-leaf, #tile-ghost, button.big, .menu-btn, .tile, #mech .stack, #bolt, .pinstack .keypin, .pinstack .setline { transition: none; }
+  .overlay.show, .overlay.show > *, .bob, .pinstack.spring .stack, #tile-ghost.shake, #blank.glow, .coin-pop,
+  #vault.open #door-leaf, #vault.open #rays, .pinstack.seated .ring, #mech.thunk, #slip.deal, #hud .stat.coins.tick { animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
+  #door-leaf, #tile-ghost, button.big, .menu-btn, .tile, #mech .stack, #bolt, .pinstack .keypin, .pinstack .setline,
+  #dial, #handle, #rays, .coin-fly { transition: none; }
 }
