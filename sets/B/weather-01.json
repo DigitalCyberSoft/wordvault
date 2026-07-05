@@ -1,0 +1,799 @@
+{
+  "id": "B-weather-01",
+  "bank": "B",
+  "pos": "noun",
+  "theme": "wet weather",
+  "band": 3,
+  "band_override": 3,
+  "computed": null,
+  "words": [
+    {
+      "w": "drizzle",
+      "synset": "drizzle.n.01",
+      "gloss_source": "wordnet",
+      "gloss": "very light rain; stronger than mist but less than a shower",
+      "zipf": 3.15,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "drizzle"
+      },
+      "discriminator": "very light fine rain"
+    },
+    {
+      "w": "downpour",
+      "synset": "downpour.n.01",
+      "gloss_source": "wordnet",
+      "gloss": "a heavy rain",
+      "zipf": 2.83,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "downpour"
+      },
+      "discriminator": "sudden very heavy rain"
+    },
+    {
+      "w": "hail",
+      "synset": "hail.n.01",
+      "gloss_source": "wordnet",
+      "gloss": "precipitation of ice pellets when there are strong rising air currents",
+      "zipf": 3.92,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "hail"
+      },
+      "discriminator": "little balls of ice falling"
+    },
+    {
+      "w": "sleet",
+      "synset": "sleet.n.01",
+      "gloss_source": "wordnet",
+      "gloss": "partially melted snow (or a mixture of rain and snow)",
+      "zipf": 2.83,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "sleet"
+      },
+      "discriminator": "icy half-snow, half-rain"
+    },
+    {
+      "w": "fog",
+      "synset": "fog.n.01",
+      "gloss_source": "wordnet",
+      "gloss": "droplets of water vapor suspended in the air near the ground",
+      "zipf": 3.9,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "fog"
+      },
+      "discriminator": "thick cloud sitting on the ground",
+      "gloss_zipf_waiver": {
+        "words": [
+          "droplets"
+        ],
+        "reason": "drop + let, a transparent diminutive of a very common word",
+        "by": "claude",
+        "at": "2026-07-05"
+      }
+    }
+  ],
+  "sentences": [
+    {
+      "id": "B-weather-01-s01",
+      "answer": "drizzle",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ fell in tiny wet specks on the picnic map.",
+      "cue_phrase": "tiny wet specks",
+      "surface": {
+        "drizzle": "drizzle",
+        "downpour": "downpour",
+        "hail": "hail",
+        "sleet": "sleet",
+        "fog": "fog"
+      }
+    },
+    {
+      "id": "B-weather-01-s02",
+      "answer": "drizzle",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ barely dotted the puddle, making pinprick circles.",
+      "cue_phrase": "pinprick circles",
+      "surface": {
+        "drizzle": "drizzle",
+        "downpour": "downpour",
+        "hail": "hail",
+        "sleet": "sleet",
+        "fog": "fog"
+      }
+    },
+    {
+      "id": "B-weather-01-s03",
+      "answer": "drizzle",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Lena kept drawing outside because the ___ only freckled her paper.",
+      "cue_phrase": "only freckled her paper",
+      "surface": {
+        "drizzle": "drizzle",
+        "downpour": "downpour",
+        "hail": "hail",
+        "sleet": "sleet",
+        "fog": "fog"
+      }
+    },
+    {
+      "id": "B-weather-01-s04",
+      "answer": "drizzle",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Dad left the hood down; the ___ fell and tickled his hair.",
+      "cue_phrase": "tickled his hair",
+      "surface": {
+        "drizzle": "drizzle",
+        "downpour": "downpour",
+        "hail": "hail",
+        "sleet": "sleet",
+        "fog": "fog"
+      }
+    },
+    {
+      "id": "B-weather-01-s05",
+      "answer": "drizzle",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The ___ had made tiny rings in puddles without soaking our shoes.",
+      "cue_phrase": "without soaking our shoes",
+      "surface": {
+        "drizzle": "drizzle",
+        "downpour": "downpour",
+        "hail": "hail",
+        "sleet": "sleet",
+        "fog": "fog"
+      }
+    },
+    {
+      "id": "B-weather-01-s06",
+      "answer": "drizzle",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Under the tree, the ___ made faint pin taps on leaves.",
+      "cue_phrase": "faint pin taps",
+      "surface": {
+        "drizzle": "drizzle",
+        "downpour": "downpour",
+        "hail": "hail",
+        "sleet": "sleet",
+        "fog": "fog"
+      }
+    },
+    {
+      "id": "B-weather-01-s07",
+      "answer": "drizzle",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The ___ put silver dots on the window but no streams.",
+      "cue_phrase": "silver dots on the window",
+      "surface": {
+        "drizzle": "drizzle",
+        "downpour": "downpour",
+        "hail": "hail",
+        "sleet": "sleet",
+        "fog": "fog"
+      }
+    },
+    {
+      "id": "B-weather-01-s08",
+      "answer": "drizzle",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "While the ___ fell, our coats stayed almost dry.",
+      "cue_phrase": "almost dry",
+      "surface": {
+        "drizzle": "drizzle",
+        "downpour": "downpour",
+        "hail": "hail",
+        "sleet": "sleet",
+        "fog": "fog"
+      }
+    },
+    {
+      "id": "B-weather-01-s09",
+      "answer": "downpour",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ came in sheets, drumming hard on the roof.",
+      "cue_phrase": "came in sheets",
+      "surface": {
+        "drizzle": "drizzle",
+        "downpour": "downpour",
+        "hail": "hail",
+        "sleet": "sleet",
+        "fog": "fog"
+      }
+    },
+    {
+      "id": "B-weather-01-s10",
+      "answer": "downpour",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The sudden ___ soaked everyone in seconds at the bus stop.",
+      "cue_phrase": "soaked everyone in seconds",
+      "surface": {
+        "drizzle": "drizzle",
+        "downpour": "downpour",
+        "hail": "hail",
+        "sleet": "sleet",
+        "fog": "fog"
+      }
+    },
+    {
+      "id": "B-weather-01-s11",
+      "answer": "downpour",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "During the ___, gutters gushed and the playground emptied fast.",
+      "cue_phrase": "gutters gushed",
+      "surface": {
+        "drizzle": "drizzle",
+        "downpour": "downpour",
+        "hail": "hail",
+        "sleet": "sleet",
+        "fog": "fog"
+      }
+    },
+    {
+      "id": "B-weather-01-s12",
+      "answer": "downpour",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ filled drains so fast that water climbed the kerb.",
+      "cue_phrase": "water climbed the kerb",
+      "surface": {
+        "drizzle": "drizzle",
+        "downpour": "downpour",
+        "hail": "hail",
+        "sleet": "sleet",
+        "fog": "fog"
+      }
+    },
+    {
+      "id": "B-weather-01-s13",
+      "answer": "downpour",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "After the ___, my socks squelched and the field became a pond.",
+      "cue_phrase": "field became a pond",
+      "surface": {
+        "drizzle": "drizzle",
+        "downpour": "downpour",
+        "hail": "hail",
+        "sleet": "sleet",
+        "fog": "fog"
+      }
+    },
+    {
+      "id": "B-weather-01-s14",
+      "answer": "downpour",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The ___ forced the match indoors because puddles spread within minutes.",
+      "cue_phrase": "puddles spread within minutes",
+      "surface": {
+        "drizzle": "drizzle",
+        "downpour": "downpour",
+        "hail": "hail",
+        "sleet": "sleet",
+        "fog": "fog"
+      }
+    },
+    {
+      "id": "B-weather-01-s15",
+      "answer": "downpour",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The ___ hammered the windows, and streams raced along the street.",
+      "cue_phrase": "streams raced along",
+      "surface": {
+        "drizzle": "drizzle",
+        "downpour": "downpour",
+        "hail": "hail",
+        "sleet": "sleet",
+        "fog": "fog"
+      }
+    },
+    {
+      "id": "B-weather-01-s16",
+      "answer": "downpour",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "The ___ turned the dusty lane into sticky brown mud quickly.",
+      "cue_phrase": "sticky brown mud quickly",
+      "surface": {
+        "drizzle": "drizzle",
+        "downpour": "downpour",
+        "hail": "hail",
+        "sleet": "sleet",
+        "fog": "fog"
+      }
+    },
+    {
+      "id": "B-weather-01-s17",
+      "answer": "hail",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ fell as hard white balls that bounced off helmets.",
+      "cue_phrase": "hard white balls",
+      "surface": {
+        "drizzle": "drizzle",
+        "downpour": "downpour",
+        "hail": "hail",
+        "sleet": "sleet",
+        "fog": "fog"
+      }
+    },
+    {
+      "id": "B-weather-01-s18",
+      "answer": "hail",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ rattled like marbles across the classroom roof.",
+      "cue_phrase": "like marbles",
+      "surface": {
+        "drizzle": "drizzle",
+        "downpour": "downpour",
+        "hail": "hail",
+        "sleet": "sleet",
+        "fog": "fog"
+      }
+    },
+    {
+      "id": "B-weather-01-s19",
+      "answer": "hail",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "After the ___, tiny round dents marked Mum's flower leaves.",
+      "cue_phrase": "tiny round dents",
+      "surface": {
+        "drizzle": "drizzle",
+        "downpour": "downpour",
+        "hail": "hail",
+        "sleet": "sleet",
+        "fog": "fog"
+      }
+    },
+    {
+      "id": "B-weather-01-s20",
+      "answer": "hail",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "During the ___, we heard sharp clacks against the shed.",
+      "cue_phrase": "sharp clacks",
+      "surface": {
+        "drizzle": "drizzle",
+        "downpour": "downpour",
+        "hail": "hail",
+        "sleet": "sleet",
+        "fog": "fog"
+      }
+    },
+    {
+      "id": "B-weather-01-s21",
+      "answer": "hail",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "When the ___ stopped, small white lumps melted by the gate.",
+      "cue_phrase": "small white lumps",
+      "surface": {
+        "drizzle": "drizzle",
+        "downpour": "downpour",
+        "hail": "hail",
+        "sleet": "sleet",
+        "fog": "fog"
+      }
+    },
+    {
+      "id": "B-weather-01-s22",
+      "answer": "hail",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The dog hid as the ___ pinged off its metal bowl.",
+      "cue_phrase": "pinged off",
+      "surface": {
+        "drizzle": "drizzle",
+        "downpour": "downpour",
+        "hail": "hail",
+        "sleet": "sleet",
+        "fog": "fog"
+      }
+    },
+    {
+      "id": "B-weather-01-s23",
+      "answer": "hail",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The ___ bounced on the trampoline before turning to slush.",
+      "cue_phrase": "bounced on the trampoline",
+      "surface": {
+        "drizzle": "drizzle",
+        "downpour": "downpour",
+        "hail": "hail",
+        "sleet": "sleet",
+        "fog": "fog"
+      }
+    },
+    {
+      "id": "B-weather-01-s24",
+      "answer": "hail",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "The ___ left round white beads in the grass.",
+      "cue_phrase": "round white beads",
+      "surface": {
+        "drizzle": "drizzle",
+        "downpour": "downpour",
+        "hail": "hail",
+        "sleet": "sleet",
+        "fog": "fog"
+      }
+    },
+    {
+      "id": "B-weather-01-s25",
+      "answer": "sleet",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ fell as icy, slushy flakes that soaked our mittens.",
+      "cue_phrase": "icy, slushy flakes",
+      "surface": {
+        "drizzle": "drizzle",
+        "downpour": "downpour",
+        "hail": "hail",
+        "sleet": "sleet",
+        "fog": "fog"
+      }
+    },
+    {
+      "id": "B-weather-01-s26",
+      "answer": "sleet",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ was half-frozen wet stuff, not fluffy enough for sledging.",
+      "cue_phrase": "half-frozen wet stuff",
+      "surface": {
+        "drizzle": "drizzle",
+        "downpour": "downpour",
+        "hail": "hail",
+        "sleet": "sleet",
+        "fog": "fog"
+      }
+    },
+    {
+      "id": "B-weather-01-s27",
+      "answer": "sleet",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Walking home, the ___ pattered as cold slush against Sam's cheeks.",
+      "cue_phrase": "cold slush",
+      "surface": {
+        "drizzle": "drizzle",
+        "downpour": "downpour",
+        "hail": "hail",
+        "sleet": "sleet",
+        "fog": "fog"
+      }
+    },
+    {
+      "id": "B-weather-01-s28",
+      "answer": "sleet",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ made the pavement slippery with grey slush by morning.",
+      "cue_phrase": "grey slush",
+      "surface": {
+        "drizzle": "drizzle",
+        "downpour": "downpour",
+        "hail": "hail",
+        "sleet": "sleet",
+        "fog": "fog"
+      }
+    },
+    {
+      "id": "B-weather-01-s29",
+      "answer": "sleet",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The ___ arrived as mushy flakes, so no one could build castles.",
+      "cue_phrase": "mushy flakes",
+      "surface": {
+        "drizzle": "drizzle",
+        "downpour": "downpour",
+        "hail": "hail",
+        "sleet": "sleet",
+        "fog": "fog"
+      }
+    },
+    {
+      "id": "B-weather-01-s30",
+      "answer": "sleet",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Our gloves caught the ___ as flakes that quickly became slush.",
+      "cue_phrase": "quickly became slush",
+      "surface": {
+        "drizzle": "drizzle",
+        "downpour": "downpour",
+        "hail": "hail",
+        "sleet": "sleet",
+        "fog": "fog"
+      }
+    },
+    {
+      "id": "B-weather-01-s31",
+      "answer": "sleet",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The ___ tapped softly, leaving icy mush on the windowsill.",
+      "cue_phrase": "icy mush",
+      "surface": {
+        "drizzle": "drizzle",
+        "downpour": "downpour",
+        "hail": "hail",
+        "sleet": "sleet",
+        "fog": "fog"
+      }
+    },
+    {
+      "id": "B-weather-01-s32",
+      "answer": "sleet",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "The ___ made every step squelch with cold, grainy slush.",
+      "cue_phrase": "cold, grainy slush",
+      "surface": {
+        "drizzle": "drizzle",
+        "downpour": "downpour",
+        "hail": "hail",
+        "sleet": "sleet",
+        "fog": "fog"
+      }
+    },
+    {
+      "id": "B-weather-01-s33",
+      "answer": "fog",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ made a thick white cloud around the playground.",
+      "cue_phrase": "thick white cloud",
+      "surface": {
+        "drizzle": "drizzle",
+        "downpour": "downpour",
+        "hail": "hail",
+        "sleet": "sleet",
+        "fog": "fog"
+      }
+    },
+    {
+      "id": "B-weather-01-s34",
+      "answer": "fog",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ hid the road, though nothing was falling.",
+      "cue_phrase": "nothing was falling",
+      "surface": {
+        "drizzle": "drizzle",
+        "downpour": "downpour",
+        "hail": "hail",
+        "sleet": "sleet",
+        "fog": "fog"
+      }
+    },
+    {
+      "id": "B-weather-01-s35",
+      "answer": "fog",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Because of the ___, Tara saw grey shapes but no falling drops.",
+      "cue_phrase": "no falling drops",
+      "surface": {
+        "drizzle": "drizzle",
+        "downpour": "downpour",
+        "hail": "hail",
+        "sleet": "sleet",
+        "fog": "fog"
+      }
+    },
+    {
+      "id": "B-weather-01-s36",
+      "answer": "fog",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ blurred the castle towers without wetting the flags.",
+      "cue_phrase": "without wetting the flags",
+      "surface": {
+        "drizzle": "drizzle",
+        "downpour": "downpour",
+        "hail": "hail",
+        "sleet": "sleet",
+        "fog": "fog"
+      }
+    },
+    {
+      "id": "B-weather-01-s37",
+      "answer": "fog",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "In the ___, we heard the bus before its lights appeared.",
+      "cue_phrase": "before its lights appeared",
+      "surface": {
+        "drizzle": "drizzle",
+        "downpour": "downpour",
+        "hail": "hail",
+        "sleet": "sleet",
+        "fog": "fog"
+      }
+    },
+    {
+      "id": "B-weather-01-s38",
+      "answer": "fog",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The ___ erased the hilltop, though no drops were falling.",
+      "cue_phrase": "no drops were falling",
+      "surface": {
+        "drizzle": "drizzle",
+        "downpour": "downpour",
+        "hail": "hail",
+        "sleet": "sleet",
+        "fog": "fog"
+      }
+    },
+    {
+      "id": "B-weather-01-s39",
+      "answer": "fog",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The ___ wrapped the garden in grey before breakfast.",
+      "cue_phrase": "wrapped the garden in grey",
+      "surface": {
+        "drizzle": "drizzle",
+        "downpour": "downpour",
+        "hail": "hail",
+        "sleet": "sleet",
+        "fog": "fog"
+      }
+    },
+    {
+      "id": "B-weather-01-s40",
+      "answer": "fog",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "Through the ___, street signs looked like pale smudges.",
+      "cue_phrase": "pale smudges",
+      "surface": {
+        "drizzle": "drizzle",
+        "downpour": "downpour",
+        "hail": "hail",
+        "sleet": "sleet",
+        "fog": "fog"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "drizzle",
+      "picked": "downpour",
+      "line": "Drizzle falls as tiny wet specks; a downpour soaks everything fast."
+    },
+    {
+      "answer": "drizzle",
+      "picked": "hail",
+      "line": "Drizzle is soft wet specks; hail is hard icy balls."
+    },
+    {
+      "answer": "drizzle",
+      "picked": "sleet",
+      "line": "Drizzle is fine wet specks; sleet is slushy, icy flakes."
+    },
+    {
+      "answer": "drizzle",
+      "picked": "fog",
+      "line": "Drizzle falls gently; fog hangs as a thick cloud that hides things."
+    },
+    {
+      "answer": "downpour",
+      "picked": "drizzle",
+      "line": "A downpour soaks things fast; drizzle only dampens them."
+    },
+    {
+      "answer": "downpour",
+      "picked": "hail",
+      "line": "A downpour is lots of falling wetness; hail is hard icy balls."
+    },
+    {
+      "answer": "downpour",
+      "picked": "sleet",
+      "line": "A downpour makes puddles rush; sleet leaves cold slush."
+    },
+    {
+      "answer": "downpour",
+      "picked": "fog",
+      "line": "A downpour falls and soaks; fog sits thick and makes seeing hard."
+    },
+    {
+      "answer": "hail",
+      "picked": "drizzle",
+      "line": "Hail is hard icy balls; drizzle is tiny soft wet specks."
+    },
+    {
+      "answer": "hail",
+      "picked": "downpour",
+      "line": "Hail bounces and clacks; a downpour gushes and soaks."
+    },
+    {
+      "answer": "hail",
+      "picked": "sleet",
+      "line": "Hail is hard round balls; sleet is wet, slushy flakes."
+    },
+    {
+      "answer": "hail",
+      "picked": "fog",
+      "line": "Hail falls as hard balls; fog hangs still and hides the view."
+    },
+    {
+      "answer": "sleet",
+      "picked": "drizzle",
+      "line": "Sleet is icy slush; drizzle is only fine wet specks."
+    },
+    {
+      "answer": "sleet",
+      "picked": "downpour",
+      "line": "Sleet is cold slushy flakes; a downpour is a soaking rush."
+    },
+    {
+      "answer": "sleet",
+      "picked": "hail",
+      "line": "Sleet is slushy flakes; hail is hard bouncing balls."
+    },
+    {
+      "answer": "sleet",
+      "picked": "fog",
+      "line": "Sleet falls as cold slush; fog hangs like a thick cloud."
+    },
+    {
+      "answer": "fog",
+      "picked": "drizzle",
+      "line": "Fog hides the view like a low cloud; drizzle falls in tiny specks."
+    },
+    {
+      "answer": "fog",
+      "picked": "downpour",
+      "line": "Fog makes seeing hard; a downpour falls hard and soaks."
+    },
+    {
+      "answer": "fog",
+      "picked": "hail",
+      "line": "Fog hides roads softly; hail falls as hard icy balls."
+    },
+    {
+      "answer": "fog",
+      "picked": "sleet",
+      "line": "Fog is a thick cloud around you; sleet is cold slush falling."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-05T07:34:02+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": null,
+    "scrub_note": null
+  }
+}

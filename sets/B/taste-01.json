@@ -1,0 +1,816 @@
+{
+  "id": "B-taste-01",
+  "bank": "B",
+  "pos": "adjective",
+  "theme": "how things taste",
+  "band": 1,
+  "band_override": 1,
+  "computed": null,
+  "words": [
+    {
+      "w": "sweet",
+      "synset": "sweet.a.01",
+      "gloss_source": "wordnet",
+      "gloss": "having or denoting the characteristic taste of sugar",
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-05"
+      },
+      "zipf": 4.91,
+      "register": "neutral",
+      "senses_at_pos": 10,
+      "forms": {
+        "base": "sweet"
+      },
+      "discriminator": "like sugar or honey",
+      "gloss_zipf_waiver": {
+        "words": [
+          "denoting"
+        ],
+        "reason": "gloss function word; 'characteristic taste of sugar' is the content",
+        "by": "claude",
+        "at": "2026-07-05"
+      }
+    },
+    {
+      "w": "sour",
+      "synset": "sour.s.02",
+      "gloss_source": "wordnet",
+      "gloss": "one of the four basic taste sensations; like the taste of vinegar or lemons",
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-05"
+      },
+      "zipf": 3.88,
+      "register": "neutral",
+      "senses_at_pos": 6,
+      "forms": {
+        "base": "sour"
+      },
+      "discriminator": "sharp like lemon or vinegar"
+    },
+    {
+      "w": "salty",
+      "synset": "salty.s.02",
+      "gloss_source": "wordnet",
+      "gloss": "one of the four basic taste sensations; like the taste of sea water",
+      "zipf": 3.74,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "salty"
+      },
+      "discriminator": "like sea water or crisps"
+    },
+    {
+      "w": "bitter",
+      "synset": "bitter.s.06",
+      "gloss_source": "wordnet",
+      "gloss": "causing a sharp and acrid taste experience",
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-05"
+      },
+      "zipf": 4.21,
+      "register": "neutral",
+      "senses_at_pos": 7,
+      "forms": {
+        "base": "bitter"
+      },
+      "discriminator": "sharp and dry like strong coffee",
+      "gloss_zipf_waiver": {
+        "words": [
+          "acrid"
+        ],
+        "reason": "'sharp taste experience' carries it; acrid is precision, not load-bearing",
+        "by": "claude",
+        "at": "2026-07-05"
+      }
+    },
+    {
+      "w": "spicy",
+      "synset": "hot.s.07",
+      "gloss_source": "wordnet",
+      "gloss": "producing a burning sensation on the taste nerves",
+      "zipf": 3.8,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "spicy"
+      },
+      "discriminator": "burns your tongue like chilli"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "B-taste-01-s01",
+      "answer": "sweet",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The porridge became ___ after Mum stirred in honey.",
+      "cue_phrase": "stirred in honey",
+      "surface": {
+        "sweet": "sweet",
+        "sour": "sour",
+        "salty": "salty",
+        "bitter": "bitter",
+        "spicy": "spicy"
+      }
+    },
+    {
+      "id": "B-taste-01-s02",
+      "answer": "sweet",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The fairy's drink was ___ because it was made from syrup.",
+      "cue_phrase": "made from syrup",
+      "surface": {
+        "sweet": "sweet",
+        "sour": "sour",
+        "salty": "salty",
+        "bitter": "bitter",
+        "spicy": "spicy"
+      }
+    },
+    {
+      "id": "B-taste-01-s03",
+      "answer": "sweet",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Jam made the toast ___, so Omar asked for another slice.",
+      "cue_phrase": "Jam made the toast",
+      "surface": {
+        "sweet": "sweet",
+        "sour": "sour",
+        "salty": "salty",
+        "bitter": "bitter",
+        "spicy": "spicy"
+      }
+    },
+    {
+      "id": "B-taste-01-s04",
+      "answer": "sweet",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "After adding ripe banana, the smoothie turned ___ enough for dessert.",
+      "cue_phrase": "adding ripe banana",
+      "surface": {
+        "sweet": "sweet",
+        "sour": "sour",
+        "salty": "salty",
+        "bitter": "bitter",
+        "spicy": "spicy"
+      }
+    },
+    {
+      "id": "B-taste-01-s05",
+      "answer": "sweet",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The bees guarded the ___ treasure inside their hive.",
+      "cue_phrase": "inside their hive",
+      "surface": {
+        "sweet": "sweet",
+        "sour": "sour",
+        "salty": "salty",
+        "bitter": "bitter",
+        "spicy": "spicy"
+      }
+    },
+    {
+      "id": "B-taste-01-s06",
+      "answer": "sweet",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Grandad said the ___ pie reminded him of ripe peaches.",
+      "cue_phrase": "of ripe peaches",
+      "surface": {
+        "sweet": "sweet",
+        "sour": "sour",
+        "salty": "salty",
+        "bitter": "bitter",
+        "spicy": "spicy"
+      }
+    },
+    {
+      "id": "B-taste-01-s07",
+      "answer": "sweet",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The dragon baked ___ buns with honey for the village feast.",
+      "cue_phrase": "buns with honey",
+      "surface": {
+        "sweet": "sweet",
+        "sour": "sour",
+        "salty": "salty",
+        "bitter": "bitter",
+        "spicy": "spicy"
+      }
+    },
+    {
+      "id": "B-taste-01-s08",
+      "answer": "sweet",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Ella's cocoa became ___ after marshmallows melted on top.",
+      "cue_phrase": "marshmallows melted on top",
+      "surface": {
+        "sweet": "sweet",
+        "sour": "sour",
+        "salty": "salty",
+        "bitter": "bitter",
+        "spicy": "spicy"
+      }
+    },
+    {
+      "id": "B-taste-01-s09",
+      "answer": "sour",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The dip turned ___ when Dad squeezed lime juice into it.",
+      "cue_phrase": "squeezed lime juice",
+      "surface": {
+        "sweet": "sweet",
+        "sour": "sour",
+        "salty": "salty",
+        "bitter": "bitter",
+        "spicy": "spicy"
+      }
+    },
+    {
+      "id": "B-taste-01-s10",
+      "answer": "sour",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The milk smelled ___ after being left out all night.",
+      "cue_phrase": "left out all night",
+      "surface": {
+        "sweet": "sweet",
+        "sour": "sour",
+        "salty": "salty",
+        "bitter": "bitter",
+        "spicy": "spicy"
+      }
+    },
+    {
+      "id": "B-taste-01-s11",
+      "answer": "sour",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The unripe plum was ___, and Priya puckered her lips.",
+      "cue_phrase": "Priya puckered her lips",
+      "surface": {
+        "sweet": "sweet",
+        "sour": "sour",
+        "salty": "salty",
+        "bitter": "bitter",
+        "spicy": "spicy"
+      }
+    },
+    {
+      "id": "B-taste-01-s12",
+      "answer": "sour",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "One bite of the ___ yoghurt made Tom squint hard.",
+      "cue_phrase": "made Tom squint hard",
+      "surface": {
+        "sweet": "sweet",
+        "sour": "sour",
+        "salty": "salty",
+        "bitter": "bitter",
+        "spicy": "spicy"
+      }
+    },
+    {
+      "id": "B-taste-01-s13",
+      "answer": "sour",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "After nibbling the ___ berry, Noor's cheeks pulled inward.",
+      "cue_phrase": "cheeks pulled inward",
+      "surface": {
+        "sweet": "sweet",
+        "sour": "sour",
+        "salty": "salty",
+        "bitter": "bitter",
+        "spicy": "spicy"
+      }
+    },
+    {
+      "id": "B-taste-01-s14",
+      "answer": "sour",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The ___ sherbet fizz made Ava's mouth pinch at the corners.",
+      "cue_phrase": "mouth pinch at",
+      "surface": {
+        "sweet": "sweet",
+        "sour": "sour",
+        "salty": "salty",
+        "bitter": "bitter",
+        "spicy": "spicy"
+      }
+    },
+    {
+      "id": "B-taste-01-s15",
+      "answer": "sour",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "A drop of lime made the soup too ___ for Sam.",
+      "cue_phrase": "drop of lime",
+      "surface": {
+        "sweet": "sweet",
+        "sour": "sour",
+        "salty": "salty",
+        "bitter": "bitter",
+        "spicy": "spicy"
+      }
+    },
+    {
+      "id": "B-taste-01-s16",
+      "answer": "sour",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The old apple juice turned ___ and puckered our lips.",
+      "cue_phrase": "puckered our lips",
+      "surface": {
+        "sweet": "sweet",
+        "sour": "sour",
+        "salty": "salty",
+        "bitter": "bitter",
+        "spicy": "spicy"
+      }
+    },
+    {
+      "id": "B-taste-01-s17",
+      "answer": "salty",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The popcorn became ___ after Jay sprinkled salt over the bowl.",
+      "cue_phrase": "sprinkled salt over",
+      "surface": {
+        "sweet": "sweet",
+        "sour": "sour",
+        "salty": "salty",
+        "bitter": "bitter",
+        "spicy": "spicy"
+      }
+    },
+    {
+      "id": "B-taste-01-s18",
+      "answer": "salty",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The soup was ___ because the cook added too much salt.",
+      "cue_phrase": "too much salt",
+      "surface": {
+        "sweet": "sweet",
+        "sour": "sour",
+        "salty": "salty",
+        "bitter": "bitter",
+        "spicy": "spicy"
+      }
+    },
+    {
+      "id": "B-taste-01-s19",
+      "answer": "salty",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ crisps left tiny white grains on Ben's fingers.",
+      "cue_phrase": "tiny white grains",
+      "surface": {
+        "sweet": "sweet",
+        "sour": "sour",
+        "salty": "salty",
+        "bitter": "bitter",
+        "spicy": "spicy"
+      }
+    },
+    {
+      "id": "B-taste-01-s20",
+      "answer": "salty",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The crackers were ___, leaving pale grains around the picnic plate.",
+      "cue_phrase": "pale grains around",
+      "surface": {
+        "sweet": "sweet",
+        "sour": "sour",
+        "salty": "salty",
+        "bitter": "bitter",
+        "spicy": "spicy"
+      }
+    },
+    {
+      "id": "B-taste-01-s21",
+      "answer": "salty",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Plain pretzels made Nia thirsty because they were ___ at break.",
+      "cue_phrase": "Plain pretzels made",
+      "surface": {
+        "sweet": "sweet",
+        "sour": "sour",
+        "salty": "salty",
+        "bitter": "bitter",
+        "spicy": "spicy"
+      }
+    },
+    {
+      "id": "B-taste-01-s22",
+      "answer": "salty",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Gran brushed pale crystals off the ___ chips before dinner.",
+      "cue_phrase": "brushed pale crystals",
+      "surface": {
+        "sweet": "sweet",
+        "sour": "sour",
+        "salty": "salty",
+        "bitter": "bitter",
+        "spicy": "spicy"
+      }
+    },
+    {
+      "id": "B-taste-01-s23",
+      "answer": "salty",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The pretzel snack was ___ enough to make my lips feel dry.",
+      "cue_phrase": "pretzel snack",
+      "surface": {
+        "sweet": "sweet",
+        "sour": "sour",
+        "salty": "salty",
+        "bitter": "bitter",
+        "spicy": "spicy"
+      }
+    },
+    {
+      "id": "B-taste-01-s24",
+      "answer": "salty",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Dad said the gravy was ___ after an extra pinch of salt.",
+      "cue_phrase": "extra pinch of salt",
+      "surface": {
+        "sweet": "sweet",
+        "sour": "sour",
+        "salty": "salty",
+        "bitter": "bitter",
+        "spicy": "spicy"
+      }
+    },
+    {
+      "id": "B-taste-01-s25",
+      "answer": "bitter",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The drink was ___ because Dad brewed very strong black coffee.",
+      "cue_phrase": "strong black coffee",
+      "surface": {
+        "sweet": "sweet",
+        "sour": "sour",
+        "salty": "salty",
+        "bitter": "bitter",
+        "spicy": "spicy"
+      }
+    },
+    {
+      "id": "B-taste-01-s26",
+      "answer": "bitter",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The cocoa powder was ___ before Lily mixed in milk.",
+      "cue_phrase": "cocoa powder",
+      "surface": {
+        "sweet": "sweet",
+        "sour": "sour",
+        "salty": "salty",
+        "bitter": "bitter",
+        "spicy": "spicy"
+      }
+    },
+    {
+      "id": "B-taste-01-s27",
+      "answer": "bitter",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The medicine was ___, so Max quickly gulped orange juice.",
+      "cue_phrase": "gulped orange juice",
+      "surface": {
+        "sweet": "sweet",
+        "sour": "sour",
+        "salty": "salty",
+        "bitter": "bitter",
+        "spicy": "spicy"
+      }
+    },
+    {
+      "id": "B-taste-01-s28",
+      "answer": "bitter",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The burnt toast was ___, with dark edges and no jam.",
+      "cue_phrase": "burnt toast",
+      "surface": {
+        "sweet": "sweet",
+        "sour": "sour",
+        "salty": "salty",
+        "bitter": "bitter",
+        "spicy": "spicy"
+      }
+    },
+    {
+      "id": "B-taste-01-s29",
+      "answer": "bitter",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "No one finished the ___ tea brewed from old leaves.",
+      "cue_phrase": "old leaves",
+      "surface": {
+        "sweet": "sweet",
+        "sour": "sour",
+        "salty": "salty",
+        "bitter": "bitter",
+        "spicy": "spicy"
+      }
+    },
+    {
+      "id": "B-taste-01-s30",
+      "answer": "bitter",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The wizard's potion was ___, made from dandelion roots.",
+      "cue_phrase": "dandelion roots",
+      "surface": {
+        "sweet": "sweet",
+        "sour": "sour",
+        "salty": "salty",
+        "bitter": "bitter",
+        "spicy": "spicy"
+      }
+    },
+    {
+      "id": "B-taste-01-s31",
+      "answer": "bitter",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The dark leaf juice was ___, so Kira added honey.",
+      "cue_phrase": "dark leaf juice",
+      "surface": {
+        "sweet": "sweet",
+        "sour": "sour",
+        "salty": "salty",
+        "bitter": "bitter",
+        "spicy": "spicy"
+      }
+    },
+    {
+      "id": "B-taste-01-s32",
+      "answer": "bitter",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "Arlo spat out the ___ peel from the grapefruit.",
+      "cue_phrase": "peel from the grapefruit",
+      "surface": {
+        "sweet": "sweet",
+        "sour": "sour",
+        "salty": "salty",
+        "bitter": "bitter",
+        "spicy": "spicy"
+      }
+    },
+    {
+      "id": "B-taste-01-s33",
+      "answer": "spicy",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The stew became ___ when Mum stirred in chilli flakes.",
+      "cue_phrase": "chilli flakes",
+      "surface": {
+        "sweet": "sweet",
+        "sour": "sour",
+        "salty": "salty",
+        "bitter": "bitter",
+        "spicy": "spicy"
+      }
+    },
+    {
+      "id": "B-taste-01-s34",
+      "answer": "spicy",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The sauce was ___ because it had lots of pepper.",
+      "cue_phrase": "lots of pepper",
+      "surface": {
+        "sweet": "sweet",
+        "sour": "sour",
+        "salty": "salty",
+        "bitter": "bitter",
+        "spicy": "spicy"
+      }
+    },
+    {
+      "id": "B-taste-01-s35",
+      "answer": "spicy",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ curry made Omar reach for yoghurt.",
+      "cue_phrase": "reach for yoghurt",
+      "surface": {
+        "sweet": "sweet",
+        "sour": "sour",
+        "salty": "salty",
+        "bitter": "bitter",
+        "spicy": "spicy"
+      }
+    },
+    {
+      "id": "B-taste-01-s36",
+      "answer": "spicy",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "After one ___ taco, Ruby's tongue tingled for ages.",
+      "cue_phrase": "tongue tingled for ages",
+      "surface": {
+        "sweet": "sweet",
+        "sour": "sour",
+        "salty": "salty",
+        "bitter": "bitter",
+        "spicy": "spicy"
+      }
+    },
+    {
+      "id": "B-taste-01-s37",
+      "answer": "spicy",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The dragon's soup was ___, and tiny flames puffed from Mia's mouth.",
+      "cue_phrase": "tiny flames puffed",
+      "surface": {
+        "sweet": "sweet",
+        "sour": "sour",
+        "salty": "salty",
+        "bitter": "bitter",
+        "spicy": "spicy"
+      }
+    },
+    {
+      "id": "B-taste-01-s38",
+      "answer": "spicy",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Leo fanned his mouth after the ___ noodle bowl.",
+      "cue_phrase": "fanned his mouth",
+      "surface": {
+        "sweet": "sweet",
+        "sour": "sour",
+        "salty": "salty",
+        "bitter": "bitter",
+        "spicy": "spicy"
+      }
+    },
+    {
+      "id": "B-taste-01-s39",
+      "answer": "spicy",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The salsa was ___, making Dad's nose run at lunch.",
+      "cue_phrase": "nose run at lunch",
+      "surface": {
+        "sweet": "sweet",
+        "sour": "sour",
+        "salty": "salty",
+        "bitter": "bitter",
+        "spicy": "spicy"
+      }
+    },
+    {
+      "id": "B-taste-01-s40",
+      "answer": "spicy",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "A pinch of chilli made the beans ___ for the twins.",
+      "cue_phrase": "pinch of chilli",
+      "surface": {
+        "sweet": "sweet",
+        "sour": "sour",
+        "salty": "salty",
+        "bitter": "bitter",
+        "spicy": "spicy"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "sweet",
+      "picked": "sour",
+      "line": "Sweet is gentle, like honey; sour is a sharp lemony zing."
+    },
+    {
+      "answer": "sweet",
+      "picked": "salty",
+      "line": "Sweet is like honey; salty is what salt gives crisps."
+    },
+    {
+      "answer": "sweet",
+      "picked": "bitter",
+      "line": "Sweet is smooth and sugary; bitter is dry, like strong coffee."
+    },
+    {
+      "answer": "sweet",
+      "picked": "spicy",
+      "line": "Sweet feels like honey; spicy makes your mouth feel hot."
+    },
+    {
+      "answer": "sour",
+      "picked": "sweet",
+      "line": "Sour makes lips pucker; sweet is gentle, like honey."
+    },
+    {
+      "answer": "sour",
+      "picked": "salty",
+      "line": "Sour has a lemony zing; salty comes from salt on crisps."
+    },
+    {
+      "answer": "sour",
+      "picked": "bitter",
+      "line": "Sour puckers your lips; bitter feels dry, like strong coffee."
+    },
+    {
+      "answer": "sour",
+      "picked": "spicy",
+      "line": "Sour is a sharp lemony zing; spicy feels hot from chilli."
+    },
+    {
+      "answer": "salty",
+      "picked": "sweet",
+      "line": "Salty is salt-on-crisps flavour; sweet is honey-like."
+    },
+    {
+      "answer": "salty",
+      "picked": "sour",
+      "line": "Salty makes you thirsty; sour makes your lips pucker."
+    },
+    {
+      "answer": "salty",
+      "picked": "bitter",
+      "line": "Salty comes from salt; bitter is dry, like strong coffee."
+    },
+    {
+      "answer": "salty",
+      "picked": "spicy",
+      "line": "Salty makes you want a drink; spicy makes your mouth feel hot."
+    },
+    {
+      "answer": "bitter",
+      "picked": "sweet",
+      "line": "Bitter is dry, like strong coffee; sweet is honey-like."
+    },
+    {
+      "answer": "bitter",
+      "picked": "sour",
+      "line": "Bitter is dry and coffee-like; sour gives a lemony pucker."
+    },
+    {
+      "answer": "bitter",
+      "picked": "salty",
+      "line": "Bitter is dry, like strong coffee; salty comes from salt."
+    },
+    {
+      "answer": "bitter",
+      "picked": "spicy",
+      "line": "Bitter is dry, like strong coffee; spicy feels hot from chilli."
+    },
+    {
+      "answer": "spicy",
+      "picked": "sweet",
+      "line": "Spicy makes your mouth feel hot; sweet is like honey."
+    },
+    {
+      "answer": "spicy",
+      "picked": "sour",
+      "line": "Spicy feels hot from chilli; sour makes lips pucker."
+    },
+    {
+      "answer": "spicy",
+      "picked": "salty",
+      "line": "Spicy feels hot from chilli; salty comes from salt."
+    },
+    {
+      "answer": "spicy",
+      "picked": "bitter",
+      "line": "Spicy feels hot from chilli; bitter is dry, like strong coffee."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-05T07:32:32+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": null,
+    "scrub_note": null
+  }
+}

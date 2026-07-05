@@ -1,0 +1,799 @@
+{
+  "id": "B-shine-01",
+  "bank": "B",
+  "pos": "adjective",
+  "theme": "kinds of shine",
+  "band": 3,
+  "band_override": 3,
+  "computed": null,
+  "words": [
+    {
+      "w": "shiny",
+      "synset": "glistening.s.01",
+      "gloss_source": "wordnet",
+      "gloss": "reflecting light",
+      "zipf": 3.88,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "shiny"
+      },
+      "discriminator": "reflects light, like polished metal"
+    },
+    {
+      "w": "sparkly",
+      "synset": "aglitter.s.01",
+      "gloss_source": "wordnet",
+      "gloss": "having brief brilliant points or flashes of light",
+      "zipf": 3.07,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "sparkly"
+      },
+      "discriminator": "lots of tiny flashes"
+    },
+    {
+      "w": "gleaming",
+      "synset": "agleam.s.01",
+      "gloss_source": "wordnet",
+      "gloss": "bright with a steady but subdued shining",
+      "zipf": 3.1,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "gleaming"
+      },
+      "discriminator": "one steady soft shine"
+    },
+    {
+      "w": "radiant",
+      "synset": "beaming.s.03",
+      "gloss_source": "wordnet",
+      "gloss": "radiating or as if radiating light",
+      "zipf": 3.49,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "radiant"
+      },
+      "discriminator": "glowing brightly, as if giving out its own light",
+      "gloss_zipf_waiver": {
+        "words": [
+          "radiating"
+        ],
+        "reason": "same root as the headword; morphologically transparent",
+        "by": "claude",
+        "at": "2026-07-05"
+      }
+    },
+    {
+      "w": "twinkling",
+      "synset": "twinkling.s.01",
+      "gloss_source": "wordnet",
+      "gloss": "shining intermittently with a sparkling light",
+      "zipf": 2.81,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "twinkling"
+      },
+      "discriminator": "little lights going on and off"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "B-shine-01-s01",
+      "answer": "shiny",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The polished spoon was ___ enough to show my grin.",
+      "cue_phrase": "show my grin",
+      "surface": {
+        "shiny": "shiny",
+        "sparkly": "sparkly",
+        "gleaming": "gleaming",
+        "radiant": "radiant",
+        "twinkling": "twinkling"
+      }
+    },
+    {
+      "id": "B-shine-01-s02",
+      "answer": "shiny",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Dad rubbed the buckle until it looked ___ like a tiny mirror.",
+      "cue_phrase": "tiny mirror",
+      "surface": {
+        "shiny": "shiny",
+        "sparkly": "sparkly",
+        "gleaming": "gleaming",
+        "radiant": "radiant",
+        "twinkling": "twinkling"
+      }
+    },
+    {
+      "id": "B-shine-01-s03",
+      "answer": "shiny",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The new rain boots were ___, with smooth black sides.",
+      "cue_phrase": "smooth black sides",
+      "surface": {
+        "shiny": "shiny",
+        "sparkly": "sparkly",
+        "gleaming": "gleaming",
+        "radiant": "radiant",
+        "twinkling": "twinkling"
+      }
+    },
+    {
+      "id": "B-shine-01-s04",
+      "answer": "shiny",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "After polishing, the brass plate became ___ and showed the window.",
+      "cue_phrase": "showed the window",
+      "surface": {
+        "shiny": "shiny",
+        "sparkly": "sparkly",
+        "gleaming": "gleaming",
+        "radiant": "radiant",
+        "twinkling": "twinkling"
+      }
+    },
+    {
+      "id": "B-shine-01-s05",
+      "answer": "shiny",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Mia checked her hair in the ___ tray before lunch.",
+      "cue_phrase": "checked her hair",
+      "surface": {
+        "shiny": "shiny",
+        "sparkly": "sparkly",
+        "gleaming": "gleaming",
+        "radiant": "radiant",
+        "twinkling": "twinkling"
+      }
+    },
+    {
+      "id": "B-shine-01-s06",
+      "answer": "shiny",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The knight could see clouds in the ___ shield.",
+      "cue_phrase": "see clouds in",
+      "surface": {
+        "shiny": "shiny",
+        "sparkly": "sparkly",
+        "gleaming": "gleaming",
+        "radiant": "radiant",
+        "twinkling": "twinkling"
+      }
+    },
+    {
+      "id": "B-shine-01-s07",
+      "answer": "shiny",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The clean coin was ___, almost like a pocket mirror.",
+      "cue_phrase": "pocket mirror",
+      "surface": {
+        "shiny": "shiny",
+        "sparkly": "sparkly",
+        "gleaming": "gleaming",
+        "radiant": "radiant",
+        "twinkling": "twinkling"
+      }
+    },
+    {
+      "id": "B-shine-01-s08",
+      "answer": "shiny",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "We chose ___ foil because it showed our silly faces.",
+      "cue_phrase": "showed our silly faces",
+      "surface": {
+        "shiny": "shiny",
+        "sparkly": "sparkly",
+        "gleaming": "gleaming",
+        "radiant": "radiant",
+        "twinkling": "twinkling"
+      }
+    },
+    {
+      "id": "B-shine-01-s09",
+      "answer": "sparkly",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The birthday card was ___, covered with tiny glitter flecks.",
+      "cue_phrase": "tiny glitter flecks",
+      "surface": {
+        "shiny": "shiny",
+        "sparkly": "sparkly",
+        "gleaming": "gleaming",
+        "radiant": "radiant",
+        "twinkling": "twinkling"
+      }
+    },
+    {
+      "id": "B-shine-01-s10",
+      "answer": "sparkly",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Her skirt looked ___ because hundreds of sequins made tiny glints.",
+      "cue_phrase": "made tiny glints",
+      "surface": {
+        "shiny": "shiny",
+        "sparkly": "sparkly",
+        "gleaming": "gleaming",
+        "radiant": "radiant",
+        "twinkling": "twinkling"
+      }
+    },
+    {
+      "id": "B-shine-01-s11",
+      "answer": "sparkly",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The fairy dust seemed ___, with little glitter dots everywhere.",
+      "cue_phrase": "glitter dots everywhere",
+      "surface": {
+        "shiny": "shiny",
+        "sparkly": "sparkly",
+        "gleaming": "gleaming",
+        "radiant": "radiant",
+        "twinkling": "twinkling"
+      }
+    },
+    {
+      "id": "B-shine-01-s12",
+      "answer": "sparkly",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The frosted biscuit was ___ from rainbow sugar crystals.",
+      "cue_phrase": "rainbow sugar crystals",
+      "surface": {
+        "shiny": "shiny",
+        "sparkly": "sparkly",
+        "gleaming": "gleaming",
+        "radiant": "radiant",
+        "twinkling": "twinkling"
+      }
+    },
+    {
+      "id": "B-shine-01-s13",
+      "answer": "sparkly",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Noah saved the ___ paper with glitter bits for his poster.",
+      "cue_phrase": "with glitter bits",
+      "surface": {
+        "shiny": "shiny",
+        "sparkly": "sparkly",
+        "gleaming": "gleaming",
+        "radiant": "radiant",
+        "twinkling": "twinkling"
+      }
+    },
+    {
+      "id": "B-shine-01-s14",
+      "answer": "sparkly",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The dragon's scales looked ___ only where gems dotted each one.",
+      "cue_phrase": "gems dotted each one",
+      "surface": {
+        "shiny": "shiny",
+        "sparkly": "sparkly",
+        "gleaming": "gleaming",
+        "radiant": "radiant",
+        "twinkling": "twinkling"
+      }
+    },
+    {
+      "id": "B-shine-01-s15",
+      "answer": "sparkly",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "A ___ sticker leaves glitter specks on your fingers.",
+      "cue_phrase": "glitter specks",
+      "surface": {
+        "shiny": "shiny",
+        "sparkly": "sparkly",
+        "gleaming": "gleaming",
+        "radiant": "radiant",
+        "twinkling": "twinkling"
+      }
+    },
+    {
+      "id": "B-shine-01-s16",
+      "answer": "sparkly",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Under the torch, the cave walls turned ___ with mica specks.",
+      "cue_phrase": "with mica specks",
+      "surface": {
+        "shiny": "shiny",
+        "sparkly": "sparkly",
+        "gleaming": "gleaming",
+        "radiant": "radiant",
+        "twinkling": "twinkling"
+      }
+    },
+    {
+      "id": "B-shine-01-s17",
+      "answer": "gleaming",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The moonlit lake was ___ with a soft, even sheen.",
+      "cue_phrase": "soft, even sheen",
+      "surface": {
+        "shiny": "shiny",
+        "sparkly": "sparkly",
+        "gleaming": "gleaming",
+        "radiant": "radiant",
+        "twinkling": "twinkling"
+      }
+    },
+    {
+      "id": "B-shine-01-s18",
+      "answer": "gleaming",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The clean pearl looked ___, showing one calm glow.",
+      "cue_phrase": "one calm glow",
+      "surface": {
+        "shiny": "shiny",
+        "sparkly": "sparkly",
+        "gleaming": "gleaming",
+        "radiant": "radiant",
+        "twinkling": "twinkling"
+      }
+    },
+    {
+      "id": "B-shine-01-s19",
+      "answer": "gleaming",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The silver shell lay ___ with one unbroken, gentle sheen.",
+      "cue_phrase": "unbroken, gentle sheen",
+      "surface": {
+        "shiny": "shiny",
+        "sparkly": "sparkly",
+        "gleaming": "gleaming",
+        "radiant": "radiant",
+        "twinkling": "twinkling"
+      }
+    },
+    {
+      "id": "B-shine-01-s20",
+      "answer": "gleaming",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The calm statue seemed ___ under the lamp, with a single soft sheen.",
+      "cue_phrase": "single soft sheen",
+      "surface": {
+        "shiny": "shiny",
+        "sparkly": "sparkly",
+        "gleaming": "gleaming",
+        "radiant": "radiant",
+        "twinkling": "twinkling"
+      }
+    },
+    {
+      "id": "B-shine-01-s21",
+      "answer": "gleaming",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The moth rested on the ___ pond, where one pale sheen spread.",
+      "cue_phrase": "one pale sheen spread",
+      "surface": {
+        "shiny": "shiny",
+        "sparkly": "sparkly",
+        "gleaming": "gleaming",
+        "radiant": "radiant",
+        "twinkling": "twinkling"
+      }
+    },
+    {
+      "id": "B-shine-01-s22",
+      "answer": "gleaming",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Sam whispered near the ___ engine, admiring its smooth, quiet sheen.",
+      "cue_phrase": "smooth, quiet sheen",
+      "surface": {
+        "shiny": "shiny",
+        "sparkly": "sparkly",
+        "gleaming": "gleaming",
+        "radiant": "radiant",
+        "twinkling": "twinkling"
+      }
+    },
+    {
+      "id": "B-shine-01-s23",
+      "answer": "gleaming",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "At dawn, the palace roof stayed ___ with a gentle silver sheen.",
+      "cue_phrase": "gentle silver sheen",
+      "surface": {
+        "shiny": "shiny",
+        "sparkly": "sparkly",
+        "gleaming": "gleaming",
+        "radiant": "radiant",
+        "twinkling": "twinkling"
+      }
+    },
+    {
+      "id": "B-shine-01-s24",
+      "answer": "gleaming",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The polished violin looked ___ with one mellow brown sheen.",
+      "cue_phrase": "one mellow brown sheen",
+      "surface": {
+        "shiny": "shiny",
+        "sparkly": "sparkly",
+        "gleaming": "gleaming",
+        "radiant": "radiant",
+        "twinkling": "twinkling"
+      }
+    },
+    {
+      "id": "B-shine-01-s25",
+      "answer": "radiant",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The lantern fish seemed ___, glowing as if lit from inside.",
+      "cue_phrase": "lit from inside",
+      "surface": {
+        "shiny": "shiny",
+        "sparkly": "sparkly",
+        "gleaming": "gleaming",
+        "radiant": "radiant",
+        "twinkling": "twinkling"
+      }
+    },
+    {
+      "id": "B-shine-01-s26",
+      "answer": "radiant",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The princess's smile was ___, filling the hall with warmth.",
+      "cue_phrase": "filling the hall with warmth",
+      "surface": {
+        "shiny": "shiny",
+        "sparkly": "sparkly",
+        "gleaming": "gleaming",
+        "radiant": "radiant",
+        "twinkling": "twinkling"
+      }
+    },
+    {
+      "id": "B-shine-01-s27",
+      "answer": "radiant",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The sunrise looked ___, pouring golden warmth over the hills.",
+      "cue_phrase": "pouring golden warmth",
+      "surface": {
+        "shiny": "shiny",
+        "sparkly": "sparkly",
+        "gleaming": "gleaming",
+        "radiant": "radiant",
+        "twinkling": "twinkling"
+      }
+    },
+    {
+      "id": "B-shine-01-s28",
+      "answer": "radiant",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The magic crystal grew ___, as though a sun lived inside.",
+      "cue_phrase": "sun lived inside",
+      "surface": {
+        "shiny": "shiny",
+        "sparkly": "sparkly",
+        "gleaming": "gleaming",
+        "radiant": "radiant",
+        "twinkling": "twinkling"
+      }
+    },
+    {
+      "id": "B-shine-01-s29",
+      "answer": "radiant",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Everyone turned toward the ___ doorway when warmth spilled out.",
+      "cue_phrase": "warmth spilled out",
+      "surface": {
+        "shiny": "shiny",
+        "sparkly": "sparkly",
+        "gleaming": "gleaming",
+        "radiant": "radiant",
+        "twinkling": "twinkling"
+      }
+    },
+    {
+      "id": "B-shine-01-s30",
+      "answer": "radiant",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The healer made the dull stone ___ with an inner glow.",
+      "cue_phrase": "inner glow",
+      "surface": {
+        "shiny": "shiny",
+        "sparkly": "sparkly",
+        "gleaming": "gleaming",
+        "radiant": "radiant",
+        "twinkling": "twinkling"
+      }
+    },
+    {
+      "id": "B-shine-01-s31",
+      "answer": "radiant",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "A ___ face can make a gloomy room feel warmer.",
+      "cue_phrase": "feel warmer",
+      "surface": {
+        "shiny": "shiny",
+        "sparkly": "sparkly",
+        "gleaming": "gleaming",
+        "radiant": "radiant",
+        "twinkling": "twinkling"
+      }
+    },
+    {
+      "id": "B-shine-01-s32",
+      "answer": "radiant",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The phoenix rose ___, like a small sun above the trees.",
+      "cue_phrase": "small sun",
+      "surface": {
+        "shiny": "shiny",
+        "sparkly": "sparkly",
+        "gleaming": "gleaming",
+        "radiant": "radiant",
+        "twinkling": "twinkling"
+      }
+    },
+    {
+      "id": "B-shine-01-s33",
+      "answer": "twinkling",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The far lamps were ___, blinking on and off through mist.",
+      "cue_phrase": "blinking on and off",
+      "surface": {
+        "shiny": "shiny",
+        "sparkly": "sparkly",
+        "gleaming": "gleaming",
+        "radiant": "radiant",
+        "twinkling": "twinkling"
+      }
+    },
+    {
+      "id": "B-shine-01-s34",
+      "answer": "twinkling",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Stars above the tent looked ___ as they winked in and out.",
+      "cue_phrase": "winked in and out",
+      "surface": {
+        "shiny": "shiny",
+        "sparkly": "sparkly",
+        "gleaming": "gleaming",
+        "radiant": "radiant",
+        "twinkling": "twinkling"
+      }
+    },
+    {
+      "id": "B-shine-01-s35",
+      "answer": "twinkling",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The robot's eyes turned ___, blinking twice, then going dark.",
+      "cue_phrase": "blinking twice",
+      "surface": {
+        "shiny": "shiny",
+        "sparkly": "sparkly",
+        "gleaming": "gleaming",
+        "radiant": "radiant",
+        "twinkling": "twinkling"
+      }
+    },
+    {
+      "id": "B-shine-01-s36",
+      "answer": "twinkling",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "On the hill, tiny windows seemed ___ whenever clouds passed.",
+      "cue_phrase": "whenever clouds passed",
+      "surface": {
+        "shiny": "shiny",
+        "sparkly": "sparkly",
+        "gleaming": "gleaming",
+        "radiant": "radiant",
+        "twinkling": "twinkling"
+      }
+    },
+    {
+      "id": "B-shine-01-s37",
+      "answer": "twinkling",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Lena followed the ___ fireflies that kept appearing, then vanishing.",
+      "cue_phrase": "appearing, then vanishing",
+      "surface": {
+        "shiny": "shiny",
+        "sparkly": "sparkly",
+        "gleaming": "gleaming",
+        "radiant": "radiant",
+        "twinkling": "twinkling"
+      }
+    },
+    {
+      "id": "B-shine-01-s38",
+      "answer": "twinkling",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The wizard's map had ___ dots that blinked beside hidden doors.",
+      "cue_phrase": "dots that blinked",
+      "surface": {
+        "shiny": "shiny",
+        "sparkly": "sparkly",
+        "gleaming": "gleaming",
+        "radiant": "radiant",
+        "twinkling": "twinkling"
+      }
+    },
+    {
+      "id": "B-shine-01-s39",
+      "answer": "twinkling",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The harbour buoys looked ___, winking across the black water.",
+      "cue_phrase": "winking across",
+      "surface": {
+        "shiny": "shiny",
+        "sparkly": "sparkly",
+        "gleaming": "gleaming",
+        "radiant": "radiant",
+        "twinkling": "twinkling"
+      }
+    },
+    {
+      "id": "B-shine-01-s40",
+      "answer": "twinkling",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "A ___ signal blinks on and off to guide travellers.",
+      "cue_phrase": "blinks on and off",
+      "surface": {
+        "shiny": "shiny",
+        "sparkly": "sparkly",
+        "gleaming": "gleaming",
+        "radiant": "radiant",
+        "twinkling": "twinkling"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "shiny",
+      "picked": "sparkly",
+      "line": "Shiny is smooth and mirror-like; sparkly has many tiny glitter bits."
+    },
+    {
+      "answer": "shiny",
+      "picked": "gleaming",
+      "line": "Shiny can show a reflection; gleaming is a soft, even sheen."
+    },
+    {
+      "answer": "shiny",
+      "picked": "radiant",
+      "line": "Shiny bounces back a clear image; radiant seems to glow from inside."
+    },
+    {
+      "answer": "shiny",
+      "picked": "twinkling",
+      "line": "Shiny is smooth and mirror-like; twinkling blinks on and off."
+    },
+    {
+      "answer": "sparkly",
+      "picked": "shiny",
+      "line": "Sparkly has many tiny glitter bits; shiny is smooth and mirror-like."
+    },
+    {
+      "answer": "sparkly",
+      "picked": "gleaming",
+      "line": "Sparkly is made of many little glints; gleaming is one soft, even sheen."
+    },
+    {
+      "answer": "sparkly",
+      "picked": "radiant",
+      "line": "Sparkly has tiny glints on a surface; radiant seems to glow from within."
+    },
+    {
+      "answer": "sparkly",
+      "picked": "twinkling",
+      "line": "Sparkly shows many glitter bits; twinkling goes on and off."
+    },
+    {
+      "answer": "gleaming",
+      "picked": "shiny",
+      "line": "Gleaming is one soft, even sheen; shiny is more mirror-like."
+    },
+    {
+      "answer": "gleaming",
+      "picked": "sparkly",
+      "line": "Gleaming is a single calm sheen; sparkly has many tiny glitter bits."
+    },
+    {
+      "answer": "gleaming",
+      "picked": "radiant",
+      "line": "Gleaming has a soft surface sheen; radiant seems to glow from inside."
+    },
+    {
+      "answer": "gleaming",
+      "picked": "twinkling",
+      "line": "Gleaming stays smooth and even; twinkling blinks on and off."
+    },
+    {
+      "answer": "radiant",
+      "picked": "shiny",
+      "line": "Radiant seems to glow from inside; shiny is smooth and mirror-like."
+    },
+    {
+      "answer": "radiant",
+      "picked": "sparkly",
+      "line": "Radiant gives a warm inner glow; sparkly has tiny glitter bits."
+    },
+    {
+      "answer": "radiant",
+      "picked": "gleaming",
+      "line": "Radiant feels like it glows outward; gleaming is one soft surface sheen."
+    },
+    {
+      "answer": "radiant",
+      "picked": "twinkling",
+      "line": "Radiant glows strongly from within; twinkling blinks on and off."
+    },
+    {
+      "answer": "twinkling",
+      "picked": "shiny",
+      "line": "Twinkling blinks on and off; shiny is smooth and mirror-like."
+    },
+    {
+      "answer": "twinkling",
+      "picked": "sparkly",
+      "line": "Twinkling goes on and off; sparkly has many tiny glitter bits."
+    },
+    {
+      "answer": "twinkling",
+      "picked": "gleaming",
+      "line": "Twinkling blinks in and out; gleaming is one soft, even sheen."
+    },
+    {
+      "answer": "twinkling",
+      "picked": "radiant",
+      "line": "Twinkling blinks on and off; radiant glows strongly from within."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-05T07:30:53+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": null,
+    "scrub_note": "glossy swapped for radiant: G3 found glossy is a lemma of shiny's pinned synset."
+  }
+}

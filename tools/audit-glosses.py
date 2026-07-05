@@ -90,6 +90,11 @@ def audit_word(set_id: str, set_pos: str, w: dict, member_words: list[str]) -> N
         if gw == lemma or gw in (w.get("forms") or {}).values():
             continue
         z = zipf_frequency(gw, "en")
+        # -ly adverbs are morphologically transparent: "noisily" is readable by
+        # anyone who knows "noisy". Score the stem when it beats the surface.
+        if gw.endswith("ly"):
+            for stem in (gw[:-2], gw[:-3] + "y"):
+                z = max(z, zipf_frequency(stem, "en"))
         if z < min(head_z, OPACITY_FLOOR):
             if gw in waived:
                 review.append(f"[G5] {where}: gloss word {gw!r} (zipf {z:.2f} < {head_z:.2f}) - waived: "

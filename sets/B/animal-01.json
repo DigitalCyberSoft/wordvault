@@ -1,0 +1,820 @@
+{
+  "id": "B-animal-01",
+  "bank": "B",
+  "pos": "verb",
+  "theme": "animal sounds",
+  "band": 1,
+  "band_override": 1,
+  "computed": null,
+  "words": [
+    {
+      "w": "bark",
+      "synset": "bark.v.04",
+      "gloss_source": "wordnet",
+      "gloss": "make barking sounds",
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-05"
+      },
+      "zipf": 3.85,
+      "register": "neutral",
+      "senses_at_pos": 5,
+      "forms": {
+        "base": "bark",
+        "third": "barks",
+        "past": "barked",
+        "part": "barking"
+      },
+      "discriminator": "short rough dog sound"
+    },
+    {
+      "w": "roar",
+      "synset": "bellow.v.02",
+      "gloss_source": "wordnet",
+      "gloss": "make a loud noise, as of animal",
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-05"
+      },
+      "zipf": 3.7,
+      "register": "neutral",
+      "senses_at_pos": 6,
+      "forms": {
+        "base": "roar",
+        "third": "roars",
+        "past": "roared",
+        "part": "roaring"
+      },
+      "discriminator": "huge deep cry, like a lion"
+    },
+    {
+      "w": "squeak",
+      "synset": "whine.v.03",
+      "gloss_source": "wordnet",
+      "gloss": "make a high-pitched, screeching noise",
+      "zipf": 2.9,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "squeak",
+        "third": "squeaks",
+        "past": "squeaked",
+        "part": "squeaking"
+      },
+      "discriminator": "tiny high sound, like a mouse"
+    },
+    {
+      "w": "hiss",
+      "synset": "hiss.v.01",
+      "gloss_source": "wordnet",
+      "gloss": "make a sharp hissing sound, as if to show disapproval",
+      "zipf": 3.05,
+      "register": "neutral",
+      "senses_at_pos": 4,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "hiss",
+        "third": "hisses",
+        "past": "hissed",
+        "part": "hissing"
+      },
+      "discriminator": "long sss, like a snake"
+    },
+    {
+      "w": "moo",
+      "synset": "moo.v.01",
+      "gloss_source": "wordnet",
+      "gloss": "make a low noise, characteristic of bovines",
+      "zipf": 3.15,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "moo",
+        "third": "moos",
+        "past": "mooed",
+        "part": "mooing"
+      },
+      "discriminator": "low cow sound",
+      "gloss_zipf_waiver": {
+        "words": [
+          "bovines"
+        ],
+        "reason": "bovines = cows, and the word moo itself names the animal",
+        "by": "claude",
+        "at": "2026-07-05"
+      }
+    }
+  ],
+  "sentences": [
+    {
+      "id": "B-animal-01-s01",
+      "answer": "bark",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The guard dog ___ twice, in short rough bursts, at the gate.",
+      "cue_phrase": "short rough bursts",
+      "surface": {
+        "bark": "barked",
+        "roar": "roared",
+        "squeak": "squeaked",
+        "hiss": "hissed",
+        "moo": "mooed"
+      }
+    },
+    {
+      "id": "B-animal-01-s02",
+      "answer": "bark",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "When the puppy wanted out, it began to ___ in quick rough yaps.",
+      "cue_phrase": "quick rough yaps",
+      "surface": {
+        "bark": "bark",
+        "roar": "roar",
+        "squeak": "squeak",
+        "hiss": "hiss",
+        "moo": "moo"
+      }
+    },
+    {
+      "id": "B-animal-01-s03",
+      "answer": "bark",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "During the pet show, the collie ___ when the doorbell rang.",
+      "cue_phrase": "the collie",
+      "surface": {
+        "bark": "barked",
+        "roar": "roared",
+        "squeak": "squeaked",
+        "hiss": "hissed",
+        "moo": "mooed"
+      }
+    },
+    {
+      "id": "B-animal-01-s04",
+      "answer": "bark",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "A watchdog usually ___ when a stranger rattles the garden gate.",
+      "cue_phrase": "A watchdog usually",
+      "surface": {
+        "bark": "barks",
+        "roar": "roars",
+        "squeak": "squeaks",
+        "hiss": "hisses",
+        "moo": "moos"
+      }
+    },
+    {
+      "id": "B-animal-01-s05",
+      "answer": "bark",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The postman froze when something ___ in rough, clipped bursts behind the fence.",
+      "cue_phrase": "rough, clipped bursts",
+      "surface": {
+        "bark": "barked",
+        "roar": "roared",
+        "squeak": "squeaked",
+        "hiss": "hissed",
+        "moo": "mooed"
+      }
+    },
+    {
+      "id": "B-animal-01-s06",
+      "answer": "bark",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The delivery bell had the hidden pet ___ in rough alarm.",
+      "cue_phrase": "rough alarm",
+      "surface": {
+        "bark": "bark",
+        "roar": "roar",
+        "squeak": "squeak",
+        "hiss": "hiss",
+        "moo": "moo"
+      }
+    },
+    {
+      "id": "B-animal-01-s07",
+      "answer": "bark",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "We heard the terrier ___, each rough woof short and firm.",
+      "cue_phrase": "rough woof",
+      "surface": {
+        "bark": "barking",
+        "roar": "roaring",
+        "squeak": "squeaking",
+        "hiss": "hissing",
+        "moo": "mooing"
+      }
+    },
+    {
+      "id": "B-animal-01-s08",
+      "answer": "bark",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Behind the letterbox, the family dog ___ at the new scooter.",
+      "cue_phrase": "family dog",
+      "surface": {
+        "bark": "barked",
+        "roar": "roared",
+        "squeak": "squeaked",
+        "hiss": "hissed",
+        "moo": "mooed"
+      }
+    },
+    {
+      "id": "B-animal-01-s09",
+      "answer": "roar",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The lion ___ a huge deep cry over the rocks.",
+      "cue_phrase": "huge deep cry",
+      "surface": {
+        "bark": "barked",
+        "roar": "roared",
+        "squeak": "squeaked",
+        "hiss": "hissed",
+        "moo": "mooed"
+      }
+    },
+    {
+      "id": "B-animal-01-s10",
+      "answer": "roar",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "In the tale, the dragon opened its jaws to ___ with thunderous power.",
+      "cue_phrase": "thunderous power",
+      "surface": {
+        "bark": "bark",
+        "roar": "roar",
+        "squeak": "squeak",
+        "hiss": "hiss",
+        "moo": "moo"
+      }
+    },
+    {
+      "id": "B-animal-01-s11",
+      "answer": "roar",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "At feeding time, the hungry lion ___ from its shady den.",
+      "cue_phrase": "hungry lion",
+      "surface": {
+        "bark": "barked",
+        "roar": "roared",
+        "squeak": "squeaked",
+        "hiss": "hissed",
+        "moo": "mooed"
+      }
+    },
+    {
+      "id": "B-animal-01-s12",
+      "answer": "roar",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "A proud lion ___ when rivals step near its resting place.",
+      "cue_phrase": "proud lion",
+      "surface": {
+        "bark": "barks",
+        "roar": "roars",
+        "squeak": "squeaks",
+        "hiss": "hisses",
+        "moo": "moos"
+      }
+    },
+    {
+      "id": "B-animal-01-s13",
+      "answer": "roar",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The cave shook after the giant throat ___ beneath the mountain.",
+      "cue_phrase": "cave shook",
+      "surface": {
+        "bark": "barked",
+        "roar": "roared",
+        "squeak": "squeaked",
+        "hiss": "hissed",
+        "moo": "mooed"
+      }
+    },
+    {
+      "id": "B-animal-01-s14",
+      "answer": "roar",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The campers imagined a huge beast ___ with a chest-deep cry beyond the trees.",
+      "cue_phrase": "chest-deep cry",
+      "surface": {
+        "bark": "barking",
+        "roar": "roaring",
+        "squeak": "squeaking",
+        "hiss": "hissing",
+        "moo": "mooing"
+      }
+    },
+    {
+      "id": "B-animal-01-s15",
+      "answer": "roar",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The tiger ___, sending a deep rumble through the jungle clearing.",
+      "cue_phrase": "deep rumble",
+      "surface": {
+        "bark": "barked",
+        "roar": "roared",
+        "squeak": "squeaked",
+        "hiss": "hissed",
+        "moo": "mooed"
+      }
+    },
+    {
+      "id": "B-animal-01-s16",
+      "answer": "roar",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The giant in our play pretended to ___ before chasing knights.",
+      "cue_phrase": "giant in our play",
+      "surface": {
+        "bark": "bark",
+        "roar": "roar",
+        "squeak": "squeak",
+        "hiss": "hiss",
+        "moo": "moo"
+      }
+    },
+    {
+      "id": "B-animal-01-s17",
+      "answer": "squeak",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The mouse ___ with a tiny thin peep under the desk.",
+      "cue_phrase": "tiny thin peep",
+      "surface": {
+        "bark": "barked",
+        "roar": "roared",
+        "squeak": "squeaked",
+        "hiss": "hissed",
+        "moo": "mooed"
+      }
+    },
+    {
+      "id": "B-animal-01-s18",
+      "answer": "squeak",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The baby bat tried to ___ in a tiny silver peep.",
+      "cue_phrase": "tiny silver peep",
+      "surface": {
+        "bark": "bark",
+        "roar": "roar",
+        "squeak": "squeak",
+        "hiss": "hiss",
+        "moo": "moo"
+      }
+    },
+    {
+      "id": "B-animal-01-s19",
+      "answer": "squeak",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "A small mouse ___ inside the classroom cupboard during lunch.",
+      "cue_phrase": "small mouse",
+      "surface": {
+        "bark": "barked",
+        "roar": "roared",
+        "squeak": "squeaked",
+        "hiss": "hissed",
+        "moo": "mooed"
+      }
+    },
+    {
+      "id": "B-animal-01-s20",
+      "answer": "squeak",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "A rubber duck often ___ when a child squeezes it.",
+      "cue_phrase": "rubber duck often",
+      "surface": {
+        "bark": "barks",
+        "roar": "roars",
+        "squeak": "squeaks",
+        "hiss": "hisses",
+        "moo": "moos"
+      }
+    },
+    {
+      "id": "B-animal-01-s21",
+      "answer": "squeak",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The old door ___ in a tiny thin cry when opened.",
+      "cue_phrase": "tiny thin cry",
+      "surface": {
+        "bark": "barked",
+        "roar": "roared",
+        "squeak": "squeaked",
+        "hiss": "hissed",
+        "moo": "mooed"
+      }
+    },
+    {
+      "id": "B-animal-01-s22",
+      "answer": "squeak",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The loose wheel began to ___ with each tiny peep.",
+      "cue_phrase": "each tiny peep",
+      "surface": {
+        "bark": "bark",
+        "roar": "roar",
+        "squeak": "squeak",
+        "hiss": "hiss",
+        "moo": "moo"
+      }
+    },
+    {
+      "id": "B-animal-01-s23",
+      "answer": "squeak",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "We found the mouse ___ in tiny peeps beneath the scarves.",
+      "cue_phrase": "tiny peeps",
+      "surface": {
+        "bark": "barking",
+        "roar": "roaring",
+        "squeak": "squeaking",
+        "hiss": "hissing",
+        "moo": "mooing"
+      }
+    },
+    {
+      "id": "B-animal-01-s24",
+      "answer": "squeak",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "My new trainers ___ on the shiny hall floor.",
+      "cue_phrase": "shiny hall floor",
+      "surface": {
+        "bark": "barked",
+        "roar": "roared",
+        "squeak": "squeaked",
+        "hiss": "hissed",
+        "moo": "mooed"
+      }
+    },
+    {
+      "id": "B-animal-01-s25",
+      "answer": "hiss",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The snake ___ a long sss from the warm rock.",
+      "cue_phrase": "a long sss",
+      "surface": {
+        "bark": "barked",
+        "roar": "roared",
+        "squeak": "squeaked",
+        "hiss": "hissed",
+        "moo": "mooed"
+      }
+    },
+    {
+      "id": "B-animal-01-s26",
+      "answer": "hiss",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The angry goose stretched its neck to ___ with a snake-like sss.",
+      "cue_phrase": "snake-like sss",
+      "surface": {
+        "bark": "bark",
+        "roar": "roar",
+        "squeak": "squeak",
+        "hiss": "hiss",
+        "moo": "moo"
+      }
+    },
+    {
+      "id": "B-animal-01-s27",
+      "answer": "hiss",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The cobra ___ when the explorer stepped too close.",
+      "cue_phrase": "The cobra",
+      "surface": {
+        "bark": "barked",
+        "roar": "roared",
+        "squeak": "squeaked",
+        "hiss": "hissed",
+        "moo": "mooed"
+      }
+    },
+    {
+      "id": "B-animal-01-s28",
+      "answer": "hiss",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "A cornered viper ___ before sliding beneath the stones.",
+      "cue_phrase": "cornered viper",
+      "surface": {
+        "bark": "barks",
+        "roar": "roars",
+        "squeak": "squeaks",
+        "hiss": "hisses",
+        "moo": "moos"
+      }
+    },
+    {
+      "id": "B-animal-01-s29",
+      "answer": "hiss",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Steam ___ from the kettle in a thin sss.",
+      "cue_phrase": "thin sss",
+      "surface": {
+        "bark": "barked",
+        "roar": "roared",
+        "squeak": "squeaked",
+        "hiss": "hissed",
+        "moo": "mooed"
+      }
+    },
+    {
+      "id": "B-animal-01-s30",
+      "answer": "hiss",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The tyre was ___ through a narrow slit after the thorn stuck.",
+      "cue_phrase": "narrow slit",
+      "surface": {
+        "bark": "barking",
+        "roar": "roaring",
+        "squeak": "squeaking",
+        "hiss": "hissing",
+        "moo": "mooing"
+      }
+    },
+    {
+      "id": "B-animal-01-s31",
+      "answer": "hiss",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The stage serpent ___ a drawn-out sss at the brave knight.",
+      "cue_phrase": "drawn-out sss",
+      "surface": {
+        "bark": "barked",
+        "roar": "roared",
+        "squeak": "squeaked",
+        "hiss": "hissed",
+        "moo": "mooed"
+      }
+    },
+    {
+      "id": "B-animal-01-s32",
+      "answer": "hiss",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "The leaky balloon began to ___ as air slipped away.",
+      "cue_phrase": "air slipped away",
+      "surface": {
+        "bark": "bark",
+        "roar": "roar",
+        "squeak": "squeak",
+        "hiss": "hiss",
+        "moo": "moo"
+      }
+    },
+    {
+      "id": "B-animal-01-s33",
+      "answer": "moo",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The cow ___ a long oo across the quiet field.",
+      "cue_phrase": "long oo",
+      "surface": {
+        "bark": "barked",
+        "roar": "roared",
+        "squeak": "squeaked",
+        "hiss": "hissed",
+        "moo": "mooed"
+      }
+    },
+    {
+      "id": "B-animal-01-s34",
+      "answer": "moo",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The calf lifted its head to ___ in a deep oo.",
+      "cue_phrase": "deep oo",
+      "surface": {
+        "bark": "bark",
+        "roar": "roar",
+        "squeak": "squeak",
+        "hiss": "hiss",
+        "moo": "moo"
+      }
+    },
+    {
+      "id": "B-animal-01-s35",
+      "answer": "moo",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "At milking time, the red cow ___ beside the gate.",
+      "cue_phrase": "red cow",
+      "surface": {
+        "bark": "barked",
+        "roar": "roared",
+        "squeak": "squeaked",
+        "hiss": "hissed",
+        "moo": "mooed"
+      }
+    },
+    {
+      "id": "B-animal-01-s36",
+      "answer": "moo",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "A dairy cow usually ___ when her calf is nearby.",
+      "cue_phrase": "dairy cow",
+      "surface": {
+        "bark": "barks",
+        "roar": "roars",
+        "squeak": "squeaks",
+        "hiss": "hisses",
+        "moo": "moos"
+      }
+    },
+    {
+      "id": "B-animal-01-s37",
+      "answer": "moo",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "From the barn, the horned milk-giver ___ after the bucket clanged.",
+      "cue_phrase": "horned milk-giver",
+      "surface": {
+        "bark": "barked",
+        "roar": "roared",
+        "squeak": "squeaked",
+        "hiss": "hissed",
+        "moo": "mooed"
+      }
+    },
+    {
+      "id": "B-animal-01-s38",
+      "answer": "moo",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The meadow creature with an udder began to ___ near the fence.",
+      "cue_phrase": "with an udder",
+      "surface": {
+        "bark": "bark",
+        "roar": "roar",
+        "squeak": "squeak",
+        "hiss": "hiss",
+        "moo": "moo"
+      }
+    },
+    {
+      "id": "B-animal-01-s39",
+      "answer": "moo",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "We heard the cow ___ a soft oo at sunrise.",
+      "cue_phrase": "soft oo",
+      "surface": {
+        "bark": "barking",
+        "roar": "roaring",
+        "squeak": "squeaking",
+        "hiss": "hissing",
+        "moo": "mooing"
+      }
+    },
+    {
+      "id": "B-animal-01-s40",
+      "answer": "moo",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The farmer smiled when the calf ___ by the hay.",
+      "cue_phrase": "the calf",
+      "surface": {
+        "bark": "barked",
+        "roar": "roared",
+        "squeak": "squeaked",
+        "hiss": "hissed",
+        "moo": "mooed"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "bark",
+      "picked": "roar",
+      "line": "bark is a short, rough dog cry. roar is huge and deep."
+    },
+    {
+      "answer": "bark",
+      "picked": "squeak",
+      "line": "bark is rough and dog-like. squeak is tiny and thin."
+    },
+    {
+      "answer": "bark",
+      "picked": "hiss",
+      "line": "bark comes in rough dog bursts. hiss is a long sss."
+    },
+    {
+      "answer": "bark",
+      "picked": "moo",
+      "line": "bark is a rough dog cry. moo is the cow's oo cry."
+    },
+    {
+      "answer": "roar",
+      "picked": "bark",
+      "line": "roar is huge and deep. bark is a short, rough dog cry."
+    },
+    {
+      "answer": "roar",
+      "picked": "squeak",
+      "line": "roar has big power. squeak is tiny and thin."
+    },
+    {
+      "answer": "roar",
+      "picked": "hiss",
+      "line": "roar is a deep lion cry. hiss is a long sss."
+    },
+    {
+      "answer": "roar",
+      "picked": "moo",
+      "line": "roar is huge and deep. moo is a cow's oo cry."
+    },
+    {
+      "answer": "squeak",
+      "picked": "bark",
+      "line": "squeak is tiny and thin. bark is rough and dog-like."
+    },
+    {
+      "answer": "squeak",
+      "picked": "roar",
+      "line": "squeak is tiny and thin. roar is huge and deep."
+    },
+    {
+      "answer": "squeak",
+      "picked": "hiss",
+      "line": "squeak is a tiny peep. hiss is a long sss."
+    },
+    {
+      "answer": "squeak",
+      "picked": "moo",
+      "line": "squeak is a tiny peep. moo is a cow's oo cry."
+    },
+    {
+      "answer": "hiss",
+      "picked": "bark",
+      "line": "hiss is a long sss. bark is a rough dog cry."
+    },
+    {
+      "answer": "hiss",
+      "picked": "roar",
+      "line": "hiss is a long sss. roar is huge and deep."
+    },
+    {
+      "answer": "hiss",
+      "picked": "squeak",
+      "line": "hiss is a long sss. squeak is a tiny peep."
+    },
+    {
+      "answer": "hiss",
+      "picked": "moo",
+      "line": "hiss is a long sss. moo is a cow's oo cry."
+    },
+    {
+      "answer": "moo",
+      "picked": "bark",
+      "line": "moo is a cow's oo cry. bark is a rough dog cry."
+    },
+    {
+      "answer": "moo",
+      "picked": "roar",
+      "line": "moo is a cow's oo cry. roar is huge and deep."
+    },
+    {
+      "answer": "moo",
+      "picked": "squeak",
+      "line": "moo is a cow's oo cry. squeak is a tiny peep."
+    },
+    {
+      "answer": "moo",
+      "picked": "hiss",
+      "line": "moo is a cow's oo cry. hiss is a long sss."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-05T07:26:08+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": null,
+    "scrub_note": null
+  }
+}

@@ -1,0 +1,806 @@
+{
+  "id": "A-eat-01",
+  "bank": "A",
+  "pos": "verb",
+  "theme": "ways of eating",
+  "band": 2,
+  "band_override": 2,
+  "computed": null,
+  "words": [
+    {
+      "w": "nibble",
+      "synset": "nibble.v.01",
+      "gloss_source": "wordnet",
+      "gloss": "bite off very small pieces",
+      "zipf": 2.85,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "nibble",
+        "third": "nibbles",
+        "past": "nibbled",
+        "part": "nibbling"
+      },
+      "discriminator": "tiny careful bites"
+    },
+    {
+      "w": "munch",
+      "synset": "crunch.v.03",
+      "gloss_source": "wordnet",
+      "gloss": "chew noisily",
+      "zipf": 3.08,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "munch",
+        "third": "munches",
+        "past": "munched",
+        "part": "munching"
+      },
+      "discriminator": "steady noisy chewing"
+    },
+    {
+      "w": "gulp",
+      "synset": "gulp.v.01",
+      "gloss_source": "wordnet",
+      "gloss": "to swallow hurriedly or greedily or in one draught",
+      "zipf": 2.93,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "gulp",
+        "third": "gulps",
+        "past": "gulped",
+        "part": "gulping"
+      },
+      "discriminator": "swallow fast, in one go"
+    },
+    {
+      "w": "gobble",
+      "synset": "gobble.v.01",
+      "gloss_source": "wordnet",
+      "gloss": "eat hastily without proper chewing",
+      "zipf": 2.83,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "gobble",
+        "third": "gobbles",
+        "past": "gobbled",
+        "part": "gobbling"
+      },
+      "discriminator": "fast and messy"
+    },
+    {
+      "w": "devour",
+      "synset": "devour.v.04",
+      "gloss_source": "wordnet",
+      "gloss": "eat greedily",
+      "zipf": 3.17,
+      "register": "neutral",
+      "senses_at_pos": 4,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "devour",
+        "third": "devours",
+        "past": "devoured",
+        "part": "devouring"
+      },
+      "discriminator": "eat everything fast, very hungry"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-eat-01-s01",
+      "answer": "nibble",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The mouse ___ the cracker, leaving only faint tooth marks.",
+      "cue_phrase": "faint tooth marks",
+      "surface": {
+        "nibble": "nibbled",
+        "munch": "munched",
+        "gulp": "gulped",
+        "gobble": "gobbled",
+        "devour": "devoured"
+      }
+    },
+    {
+      "id": "A-eat-01-s02",
+      "answer": "nibble",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Sara used her front teeth to ___ one raisin for a minute.",
+      "cue_phrase": "front teeth",
+      "surface": {
+        "nibble": "nibble",
+        "munch": "munch",
+        "gulp": "gulp",
+        "gobble": "gobble",
+        "devour": "devour"
+      }
+    },
+    {
+      "id": "A-eat-01-s03",
+      "answer": "nibble",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The shy rabbit ___ the lettuce edge, stopping after each tiny taste.",
+      "cue_phrase": "each tiny taste",
+      "surface": {
+        "nibble": "nibbled",
+        "munch": "munched",
+        "gulp": "gulped",
+        "gobble": "gobbled",
+        "devour": "devoured"
+      }
+    },
+    {
+      "id": "A-eat-01-s04",
+      "answer": "nibble",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "At tea, Tom chose to ___ the biscuit corner instead of finishing it.",
+      "cue_phrase": "biscuit corner",
+      "surface": {
+        "nibble": "nibble",
+        "munch": "munch",
+        "gulp": "gulp",
+        "gobble": "gobble",
+        "devour": "devour"
+      }
+    },
+    {
+      "id": "A-eat-01-s05",
+      "answer": "nibble",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Only a thin crescent vanished as the hamster ___ the apple slice.",
+      "cue_phrase": "thin crescent vanished",
+      "surface": {
+        "nibble": "nibbled",
+        "munch": "munched",
+        "gulp": "gulped",
+        "gobble": "gobbled",
+        "devour": "devoured"
+      }
+    },
+    {
+      "id": "A-eat-01-s06",
+      "answer": "nibble",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Grandad told me to ___ the hot toast until it cooled.",
+      "cue_phrase": "until it cooled",
+      "surface": {
+        "nibble": "nibble",
+        "munch": "munch",
+        "gulp": "gulp",
+        "gobble": "gobble",
+        "devour": "devour"
+      }
+    },
+    {
+      "id": "A-eat-01-s07",
+      "answer": "nibble",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The fairy ___ the cake crumb with careful pin-prick teeth.",
+      "cue_phrase": "pin-prick teeth",
+      "surface": {
+        "nibble": "nibbled",
+        "munch": "munched",
+        "gulp": "gulped",
+        "gobble": "gobbled",
+        "devour": "devoured"
+      }
+    },
+    {
+      "id": "A-eat-01-s08",
+      "answer": "nibble",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Please ___ the sample slowly, taking the tiniest mouthfuls.",
+      "cue_phrase": "tiniest mouthfuls",
+      "surface": {
+        "nibble": "nibble",
+        "munch": "munch",
+        "gulp": "gulp",
+        "gobble": "gobble",
+        "devour": "devour"
+      }
+    },
+    {
+      "id": "A-eat-01-s09",
+      "answer": "munch",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The goat ___ hay with steady crunch-crunch sounds by the fence.",
+      "cue_phrase": "steady crunch-crunch sounds",
+      "surface": {
+        "nibble": "nibbled",
+        "munch": "munched",
+        "gulp": "gulped",
+        "gobble": "gobbled",
+        "devour": "devoured"
+      }
+    },
+    {
+      "id": "A-eat-01-s10",
+      "answer": "munch",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "We heard Sam ___ the carrots with loud jaw cracks.",
+      "cue_phrase": "loud jaw cracks",
+      "surface": {
+        "nibble": "nibble",
+        "munch": "munch",
+        "gulp": "gulp",
+        "gobble": "gobble",
+        "devour": "devour"
+      }
+    },
+    {
+      "id": "A-eat-01-s11",
+      "answer": "munch",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Kira ___ popcorn with crunches through the whole chapter.",
+      "cue_phrase": "crunches through the whole",
+      "surface": {
+        "nibble": "nibbled",
+        "munch": "munched",
+        "gulp": "gulped",
+        "gobble": "gobbled",
+        "devour": "devoured"
+      }
+    },
+    {
+      "id": "A-eat-01-s12",
+      "answer": "munch",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The pony began to ___ oats with clack-clack sounds after its ride.",
+      "cue_phrase": "clack-clack sounds",
+      "surface": {
+        "munch": "munch",
+        "nibble": "nibble",
+        "gulp": "gulp",
+        "gobble": "gobble",
+        "devour": "devour"
+      }
+    },
+    {
+      "id": "A-eat-01-s13",
+      "answer": "munch",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Crumbs fell while Ben ___ the hard apple with happy crunches.",
+      "cue_phrase": "happy crunches",
+      "surface": {
+        "munch": "munched",
+        "nibble": "nibbled",
+        "gulp": "gulped",
+        "gobble": "gobbled",
+        "devour": "devoured"
+      }
+    },
+    {
+      "id": "A-eat-01-s14",
+      "answer": "munch",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The classroom stayed quiet except for pupils who ___ cereal, crunch after crunch.",
+      "cue_phrase": "crunch after crunch",
+      "surface": {
+        "munch": "munched",
+        "nibble": "nibbled",
+        "gulp": "gulped",
+        "gobble": "gobbled",
+        "devour": "devoured"
+      }
+    },
+    {
+      "id": "A-eat-01-s15",
+      "answer": "munch",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "A squirrel can ___ nuts loudly, making tap-tap jaw sounds.",
+      "cue_phrase": "tap-tap jaw sounds",
+      "surface": {
+        "munch": "munch",
+        "nibble": "nibble",
+        "gulp": "gulp",
+        "gobble": "gobble",
+        "devour": "devour"
+      }
+    },
+    {
+      "id": "A-eat-01-s16",
+      "answer": "munch",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Nora was ___ toast so crunchily that the dog stared.",
+      "cue_phrase": "so crunchily",
+      "surface": {
+        "munch": "munching",
+        "nibble": "nibbling",
+        "gulp": "gulping",
+        "gobble": "gobbling",
+        "devour": "devouring"
+      }
+    },
+    {
+      "id": "A-eat-01-s17",
+      "answer": "gulp",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "After football, I ___ my water in one go.",
+      "cue_phrase": "in one go",
+      "surface": {
+        "gulp": "gulped",
+        "nibble": "nibbled",
+        "munch": "munched",
+        "gobble": "gobbled",
+        "devour": "devoured"
+      }
+    },
+    {
+      "id": "A-eat-01-s18",
+      "answer": "gulp",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The giant had to ___ soup straight from the bowl.",
+      "cue_phrase": "straight from the bowl",
+      "surface": {
+        "gulp": "gulp",
+        "nibble": "nibble",
+        "munch": "munch",
+        "gobble": "gobble",
+        "devour": "devour"
+      }
+    },
+    {
+      "id": "A-eat-01-s19",
+      "answer": "gulp",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The thirsty camel ___ a bucketful before anyone counted three.",
+      "cue_phrase": "before anyone counted three",
+      "surface": {
+        "gulp": "gulped",
+        "nibble": "nibbled",
+        "munch": "munched",
+        "gobble": "gobbled",
+        "devour": "devoured"
+      }
+    },
+    {
+      "id": "A-eat-01-s20",
+      "answer": "gulp",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "To win the silly race, Mia tried to ___ juice at once.",
+      "cue_phrase": "juice at once",
+      "surface": {
+        "gulp": "gulp",
+        "nibble": "nibble",
+        "munch": "munch",
+        "gobble": "gobble",
+        "devour": "devour"
+      }
+    },
+    {
+      "id": "A-eat-01-s21",
+      "answer": "gulp",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "His full cup emptied when he ___ it with one huge throat movement.",
+      "cue_phrase": "huge throat movement",
+      "surface": {
+        "gulp": "gulped",
+        "nibble": "nibbled",
+        "munch": "munched",
+        "gobble": "gobbled",
+        "devour": "devoured"
+      }
+    },
+    {
+      "id": "A-eat-01-s22",
+      "answer": "gulp",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Asha ___ the lemonade from her glass in a single second.",
+      "cue_phrase": "single second",
+      "surface": {
+        "gulp": "gulped",
+        "nibble": "nibbled",
+        "munch": "munched",
+        "gobble": "gobbled",
+        "devour": "devoured"
+      }
+    },
+    {
+      "id": "A-eat-01-s23",
+      "answer": "gulp",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The frog tried to ___ a whole raindrop at once.",
+      "cue_phrase": "at once",
+      "surface": {
+        "gulp": "gulp",
+        "nibble": "nibble",
+        "munch": "munch",
+        "gobble": "gobble",
+        "devour": "devour"
+      }
+    },
+    {
+      "id": "A-eat-01-s24",
+      "answer": "gulp",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "When the bell rang, Omar ___ milk too fast and coughed.",
+      "cue_phrase": "too fast and coughed",
+      "surface": {
+        "gulp": "gulped",
+        "nibble": "nibbled",
+        "munch": "munched",
+        "gobble": "gobbled",
+        "devour": "devoured"
+      }
+    },
+    {
+      "id": "A-eat-01-s25",
+      "answer": "gobble",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The puppy ___ its dinner, hardly using teeth, with gravy everywhere.",
+      "cue_phrase": "hardly using teeth",
+      "surface": {
+        "gobble": "gobbled",
+        "nibble": "nibbled",
+        "munch": "munched",
+        "gulp": "gulped",
+        "devour": "devoured"
+      }
+    },
+    {
+      "id": "A-eat-01-s26",
+      "answer": "gobble",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ogre likes to ___ pies, barely closing jaws between mouthfuls.",
+      "cue_phrase": "barely closing jaws",
+      "surface": {
+        "gobble": "gobble",
+        "nibble": "nibble",
+        "munch": "munch",
+        "gulp": "gulp",
+        "devour": "devour"
+      }
+    },
+    {
+      "id": "A-eat-01-s27",
+      "answer": "gobble",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "At breakfast, Max ___ toast in huge chunks; crumbs covered his jumper.",
+      "cue_phrase": "huge chunks",
+      "surface": {
+        "gobble": "gobbled",
+        "nibble": "nibbled",
+        "munch": "munched",
+        "gulp": "gulped",
+        "devour": "devoured"
+      }
+    },
+    {
+      "id": "A-eat-01-s28",
+      "answer": "gobble",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The raccoon tried to ___ sandwiches, dropping lettuce and sauce everywhere.",
+      "cue_phrase": "dropping lettuce and sauce",
+      "surface": {
+        "gobble": "gobble",
+        "nibble": "nibble",
+        "munch": "munch",
+        "gulp": "gulp",
+        "devour": "devour"
+      }
+    },
+    {
+      "id": "A-eat-01-s29",
+      "answer": "gobble",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Leo ___ noodles; long strands slid down with sauce on both cheeks.",
+      "cue_phrase": "long strands slid",
+      "surface": {
+        "gobble": "gobbled",
+        "nibble": "nibbled",
+        "munch": "munched",
+        "gulp": "gulped",
+        "devour": "devoured"
+      }
+    },
+    {
+      "id": "A-eat-01-s30",
+      "answer": "gobble",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "No one spoke while the troll ___ dumplings, jaws barely stopping.",
+      "cue_phrase": "jaws barely stopping",
+      "surface": {
+        "gobble": "gobbled",
+        "nibble": "nibbled",
+        "munch": "munched",
+        "gulp": "gulped",
+        "devour": "devoured"
+      }
+    },
+    {
+      "id": "A-eat-01-s31",
+      "answer": "gobble",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Please do not ___ your snack; use your teeth and napkin.",
+      "cue_phrase": "use your teeth",
+      "surface": {
+        "gobble": "gobble",
+        "nibble": "nibble",
+        "munch": "munch",
+        "gulp": "gulp",
+        "devour": "devour"
+      }
+    },
+    {
+      "id": "A-eat-01-s32",
+      "answer": "gobble",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "The fox was ___ sausages, snout messy and teeth almost idle.",
+      "cue_phrase": "teeth almost idle",
+      "surface": {
+        "gobble": "gobbling",
+        "nibble": "nibbling",
+        "munch": "munching",
+        "gulp": "gulping",
+        "devour": "devouring"
+      }
+    },
+    {
+      "id": "A-eat-01-s33",
+      "answer": "devour",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The locusts ___ the whole crop, leaving bare stalks behind.",
+      "cue_phrase": "whole crop",
+      "surface": {
+        "devour": "devoured",
+        "nibble": "nibbled",
+        "munch": "munched",
+        "gulp": "gulped",
+        "gobble": "gobbled"
+      }
+    },
+    {
+      "id": "A-eat-01-s34",
+      "answer": "devour",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "A wolf pack can ___ an entire carcass, leaving only bones.",
+      "cue_phrase": "entire carcass",
+      "surface": {
+        "devour": "devour",
+        "nibble": "nibble",
+        "munch": "munch",
+        "gulp": "gulp",
+        "gobble": "gobble"
+      }
+    },
+    {
+      "id": "A-eat-01-s35",
+      "answer": "devour",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "By sunset, caterpillars ___ every leaf, and the plant stood bare.",
+      "cue_phrase": "plant stood bare",
+      "surface": {
+        "devour": "devoured",
+        "nibble": "nibbled",
+        "munch": "munched",
+        "gulp": "gulped",
+        "gobble": "gobbled"
+      }
+    },
+    {
+      "id": "A-eat-01-s36",
+      "answer": "devour",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The dragon planned to ___ the banquet, leaving empty plates.",
+      "cue_phrase": "leaving empty plates",
+      "surface": {
+        "devour": "devour",
+        "nibble": "nibble",
+        "munch": "munch",
+        "gulp": "gulp",
+        "gobble": "gobble"
+      }
+    },
+    {
+      "id": "A-eat-01-s37",
+      "answer": "devour",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "After winter sleep, the bear ___ the salmon supply, leaving none.",
+      "cue_phrase": "leaving none",
+      "surface": {
+        "devour": "devoured",
+        "nibble": "nibbled",
+        "munch": "munched",
+        "gulp": "gulped",
+        "gobble": "gobbled"
+      }
+    },
+    {
+      "id": "A-eat-01-s38",
+      "answer": "devour",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Nothing remained of the picnic after the ants ___ it.",
+      "cue_phrase": "Nothing remained",
+      "surface": {
+        "devour": "devoured",
+        "nibble": "nibbled",
+        "munch": "munched",
+        "gulp": "gulped",
+        "gobble": "gobbled"
+      }
+    },
+    {
+      "id": "A-eat-01-s39",
+      "answer": "devour",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The monster was ___ the feast until every platter was bare.",
+      "cue_phrase": "every platter was bare",
+      "surface": {
+        "devour": "devouring",
+        "nibble": "nibbling",
+        "munch": "munching",
+        "gulp": "gulping",
+        "gobble": "gobbling"
+      }
+    },
+    {
+      "id": "A-eat-01-s40",
+      "answer": "devour",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "A swarm of beetles can ___ a fallen tree to dust.",
+      "cue_phrase": "to dust",
+      "surface": {
+        "devour": "devour",
+        "nibble": "nibble",
+        "munch": "munch",
+        "gulp": "gulp",
+        "gobble": "gobble"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "nibble",
+      "picked": "munch",
+      "line": "Nibble means tiny, careful mouthfuls. Munch means steady crunching sounds."
+    },
+    {
+      "answer": "nibble",
+      "picked": "gulp",
+      "line": "Nibble is slow and tiny. Gulp is taking drink or food down in one go."
+    },
+    {
+      "answer": "nibble",
+      "picked": "gobble",
+      "line": "Nibble is careful and tiny. Gobble is rushed, messy mouthfuls."
+    },
+    {
+      "answer": "nibble",
+      "picked": "devour",
+      "line": "Nibble leaves most behind. Devour means finishing a lot with huge hunger."
+    },
+    {
+      "answer": "munch",
+      "picked": "nibble",
+      "line": "Munch has steady crunching sounds. Nibble is tiny and careful."
+    },
+    {
+      "answer": "munch",
+      "picked": "gulp",
+      "line": "Munch is crunchy mouth work. Gulp is down the throat in one go."
+    },
+    {
+      "answer": "munch",
+      "picked": "gobble",
+      "line": "Munch is steady and crunchy. Gobble is rushed and messy."
+    },
+    {
+      "answer": "munch",
+      "picked": "devour",
+      "line": "Munch focuses on crunching sounds. Devour focuses on finishing everything hungrily."
+    },
+    {
+      "answer": "gulp",
+      "picked": "nibble",
+      "line": "Gulp is down in one go. Nibble is tiny, careful mouthfuls."
+    },
+    {
+      "answer": "gulp",
+      "picked": "munch",
+      "line": "Gulp is a fast throat action. Munch is steady crunchy mouth work."
+    },
+    {
+      "answer": "gulp",
+      "picked": "gobble",
+      "line": "Gulp is one fast throat action. Gobble is rushed, messy mouthfuls of food."
+    },
+    {
+      "answer": "gulp",
+      "picked": "devour",
+      "line": "Gulp is one quick throat action. Devour means finishing a lot with hunger."
+    },
+    {
+      "answer": "gobble",
+      "picked": "nibble",
+      "line": "Gobble is rushed and messy. Nibble is tiny and careful."
+    },
+    {
+      "answer": "gobble",
+      "picked": "munch",
+      "line": "Gobble is rushed, messy mouthfuls. Munch is steady crunching sounds."
+    },
+    {
+      "answer": "gobble",
+      "picked": "gulp",
+      "line": "Gobble is messy food rushing. Gulp is down the throat in one go."
+    },
+    {
+      "answer": "gobble",
+      "picked": "devour",
+      "line": "Gobble shows messy rushing. Devour shows huge hunger and nothing left."
+    },
+    {
+      "answer": "devour",
+      "picked": "nibble",
+      "line": "Devour means huge hunger and nothing left. Nibble means tiny careful mouthfuls."
+    },
+    {
+      "answer": "devour",
+      "picked": "munch",
+      "line": "Devour focuses on finishing everything. Munch focuses on crunchy sounds."
+    },
+    {
+      "answer": "devour",
+      "picked": "gulp",
+      "line": "Devour means finishing a lot hungrily. Gulp means one fast throat action."
+    },
+    {
+      "answer": "devour",
+      "picked": "gobble",
+      "line": "Devour leaves nothing because of hunger. Gobble is rushed and messy."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-05T07:20:46+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": null,
+    "scrub_note": null
+  }
+}

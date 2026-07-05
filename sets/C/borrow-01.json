@@ -1,0 +1,806 @@
+{
+  "id": "C-borrow-01",
+  "bank": "C",
+  "pos": "usage",
+  "theme": "borrow, lend or keep",
+  "band": 3,
+  "band_override": 3,
+  "computed": null,
+  "words": [
+    {
+      "w": "borrow",
+      "synset": null,
+      "gloss_source": "authored",
+      "gloss": "take something to use for a while, then give it back",
+      "zipf": 4.0,
+      "register": "neutral",
+      "senses_at_pos": 0,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "borrow",
+        "third": "borrows",
+        "past": "borrowed",
+        "part": "borrowing"
+      },
+      "discriminator": "you get it, for a while"
+    },
+    {
+      "w": "lend",
+      "synset": null,
+      "gloss_source": "authored",
+      "gloss": "let someone else use your thing for a while",
+      "zipf": 3.92,
+      "register": "neutral",
+      "senses_at_pos": 0,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "lend",
+        "third": "lends",
+        "past": "lent",
+        "part": "lending"
+      },
+      "discriminator": "you give it out, for a while"
+    },
+    {
+      "w": "bring",
+      "synset": null,
+      "gloss_source": "authored",
+      "gloss": "carry something here, toward the speaker",
+      "zipf": 5.27,
+      "register": "neutral",
+      "senses_at_pos": 0,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "bring",
+        "third": "brings",
+        "past": "brought",
+        "part": "bringing"
+      },
+      "discriminator": "movement toward here"
+    },
+    {
+      "w": "take",
+      "synset": null,
+      "gloss_source": "authored",
+      "gloss": "carry something away from here",
+      "zipf": 5.92,
+      "register": "neutral",
+      "senses_at_pos": 0,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "take",
+        "third": "takes",
+        "past": "took",
+        "part": "taking"
+      },
+      "discriminator": "movement away"
+    },
+    {
+      "w": "keep",
+      "synset": null,
+      "gloss_source": "authored",
+      "gloss": "hold on to something and not give it back",
+      "zipf": 5.66,
+      "register": "neutral",
+      "senses_at_pos": 0,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "keep",
+        "third": "keeps",
+        "past": "kept",
+        "part": "keeping"
+      },
+      "discriminator": "it stays with you"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "C-borrow-01-s01",
+      "answer": "borrow",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "To ___ is to receive an item temporarily and return it.",
+      "cue_phrase": "receive an item temporarily",
+      "surface": {
+        "borrow": "borrow",
+        "lend": "lend",
+        "bring": "bring",
+        "take": "take",
+        "keep": "keep"
+      }
+    },
+    {
+      "id": "C-borrow-01-s02",
+      "answer": "borrow",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "When pupils ___, they are temporary receivers, not owners.",
+      "cue_phrase": "temporary receivers, not owners",
+      "surface": {
+        "borrow": "borrow",
+        "lend": "lend",
+        "bring": "bring",
+        "take": "take",
+        "keep": "keep"
+      }
+    },
+    {
+      "id": "C-borrow-01-s03",
+      "answer": "borrow",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Asha agreed, and Lina ___ her scarf only until noon.",
+      "cue_phrase": "only until noon",
+      "surface": {
+        "borrow": "borrowed",
+        "lend": "lent",
+        "bring": "brought",
+        "take": "took",
+        "keep": "kept"
+      }
+    },
+    {
+      "id": "C-borrow-01-s04",
+      "answer": "borrow",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Before maths, Tom ___ Priya's compass for five minutes, with permission.",
+      "cue_phrase": "for five minutes",
+      "surface": {
+        "borrow": "borrowed",
+        "lend": "lent",
+        "bring": "brought",
+        "take": "took",
+        "keep": "kept"
+      }
+    },
+    {
+      "id": "C-borrow-01-s05",
+      "answer": "borrow",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Sam ___ a library book that was due for return tomorrow.",
+      "cue_phrase": "due for return tomorrow",
+      "surface": {
+        "borrow": "borrowed",
+        "lend": "lent",
+        "bring": "brought",
+        "take": "took",
+        "keep": "kept"
+      }
+    },
+    {
+      "id": "C-borrow-01-s06",
+      "answer": "borrow",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Nora signed the class sheet before she ___ the tablet overnight.",
+      "cue_phrase": "signed the class sheet",
+      "surface": {
+        "borrow": "borrowed",
+        "lend": "lent",
+        "bring": "brought",
+        "take": "took",
+        "keep": "kept"
+      }
+    },
+    {
+      "id": "C-borrow-01-s07",
+      "answer": "borrow",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "If the kite is not yours and must return, you ___ it.",
+      "cue_phrase": "must return",
+      "surface": {
+        "borrow": "borrow",
+        "lend": "lend",
+        "bring": "bring",
+        "take": "take",
+        "keep": "keep"
+      }
+    },
+    {
+      "id": "C-borrow-01-s08",
+      "answer": "borrow",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The museum allows pupils to ___ audio guides during the visit.",
+      "cue_phrase": "during the visit",
+      "surface": {
+        "borrow": "borrow",
+        "lend": "lend",
+        "bring": "bring",
+        "take": "take",
+        "keep": "keep"
+      }
+    },
+    {
+      "id": "C-borrow-01-s09",
+      "answer": "lend",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "To ___ is to pass an item out temporarily, expecting return.",
+      "cue_phrase": "pass an item out",
+      "surface": {
+        "borrow": "borrow",
+        "lend": "lend",
+        "bring": "bring",
+        "take": "take",
+        "keep": "keep"
+      }
+    },
+    {
+      "id": "C-borrow-01-s10",
+      "answer": "lend",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "When you ___, another person has the item for a while.",
+      "cue_phrase": "another person has",
+      "surface": {
+        "borrow": "borrow",
+        "lend": "lend",
+        "bring": "bring",
+        "take": "take",
+        "keep": "keep"
+      }
+    },
+    {
+      "id": "C-borrow-01-s11",
+      "answer": "lend",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Ravi ___ his rubber to Kim, expecting return after spelling.",
+      "cue_phrase": "expecting return after spelling",
+      "surface": {
+        "borrow": "borrowed",
+        "lend": "lent",
+        "bring": "brought",
+        "take": "took",
+        "keep": "kept"
+      }
+    },
+    {
+      "id": "C-borrow-01-s12",
+      "answer": "lend",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Grandad will ___ his torch to us for the camping night.",
+      "cue_phrase": "for the camping night",
+      "surface": {
+        "borrow": "borrow",
+        "lend": "lend",
+        "bring": "bring",
+        "take": "take",
+        "keep": "keep"
+      }
+    },
+    {
+      "id": "C-borrow-01-s13",
+      "answer": "lend",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The goalie had no cap, so Max ___ his for ten minutes.",
+      "cue_phrase": "no cap",
+      "surface": {
+        "borrow": "borrowed",
+        "lend": "lent",
+        "bring": "brought",
+        "take": "took",
+        "keep": "kept"
+      }
+    },
+    {
+      "id": "C-borrow-01-s14",
+      "answer": "lend",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Pia ___ her spare gloves to Ben, and his hands warmed.",
+      "cue_phrase": "his hands warmed",
+      "surface": {
+        "borrow": "borrowed",
+        "lend": "lent",
+        "bring": "brought",
+        "take": "took",
+        "keep": "kept"
+      }
+    },
+    {
+      "id": "C-borrow-01-s15",
+      "answer": "lend",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Our teacher may ___ extra rulers when pupils forget equipment.",
+      "cue_phrase": "pupils forget equipment",
+      "surface": {
+        "borrow": "borrow",
+        "lend": "lend",
+        "bring": "bring",
+        "take": "take",
+        "keep": "keep"
+      }
+    },
+    {
+      "id": "C-borrow-01-s16",
+      "answer": "lend",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "A kind neighbour ___ a ladder to Dad until Saturday.",
+      "cue_phrase": "until Saturday",
+      "surface": {
+        "borrow": "borrowed",
+        "lend": "lent",
+        "bring": "brought",
+        "take": "took",
+        "keep": "kept"
+      }
+    },
+    {
+      "id": "C-borrow-01-s17",
+      "answer": "bring",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "To ___ is to move an item towards the person talking.",
+      "cue_phrase": "towards the person talking",
+      "surface": {
+        "borrow": "borrow",
+        "lend": "lend",
+        "bring": "bring",
+        "take": "take",
+        "keep": "keep"
+      }
+    },
+    {
+      "id": "C-borrow-01-s18",
+      "answer": "bring",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "When you ___, the item comes to our side or place.",
+      "cue_phrase": "comes to our side",
+      "surface": {
+        "borrow": "borrow",
+        "lend": "lend",
+        "bring": "bring",
+        "take": "take",
+        "keep": "keep"
+      }
+    },
+    {
+      "id": "C-borrow-01-s19",
+      "answer": "bring",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Please ___ the biscuits from the kitchen to me before lunch.",
+      "cue_phrase": "to me",
+      "surface": {
+        "borrow": "borrow",
+        "lend": "lend",
+        "bring": "bring",
+        "take": "take",
+        "keep": "keep"
+      }
+    },
+    {
+      "id": "C-borrow-01-s20",
+      "answer": "bring",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Mum asked Jo to ___ the wet boots inside to us.",
+      "cue_phrase": "to us",
+      "surface": {
+        "borrow": "borrow",
+        "lend": "lend",
+        "bring": "bring",
+        "take": "take",
+        "keep": "keep"
+      }
+    },
+    {
+      "id": "C-borrow-01-s21",
+      "answer": "bring",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The puppy whined until Dan ___ its bowl over to our mat.",
+      "cue_phrase": "to our mat",
+      "surface": {
+        "borrow": "borrowed",
+        "lend": "lent",
+        "bring": "brought",
+        "take": "took",
+        "keep": "kept"
+      }
+    },
+    {
+      "id": "C-borrow-01-s22",
+      "answer": "bring",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "At the gate, I waved for Ella to ___ the map over.",
+      "cue_phrase": "I waved for Ella",
+      "surface": {
+        "borrow": "borrow",
+        "lend": "lend",
+        "bring": "bring",
+        "take": "take",
+        "keep": "keep"
+      }
+    },
+    {
+      "id": "C-borrow-01-s23",
+      "answer": "bring",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Can you ___ the ball from the shed to us before play?",
+      "cue_phrase": "from the shed to us",
+      "surface": {
+        "borrow": "borrow",
+        "lend": "lend",
+        "bring": "bring",
+        "take": "take",
+        "keep": "keep"
+      }
+    },
+    {
+      "id": "C-borrow-01-s24",
+      "answer": "bring",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The wizard said, '___ the key to me before sunset.'",
+      "cue_phrase": "to me",
+      "surface": {
+        "borrow": "borrow",
+        "lend": "lend",
+        "bring": "bring",
+        "take": "take",
+        "keep": "keep"
+      }
+    },
+    {
+      "id": "C-borrow-01-s25",
+      "answer": "take",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "To ___ is to move an item from this place to another.",
+      "cue_phrase": "from this place",
+      "surface": {
+        "borrow": "borrow",
+        "lend": "lend",
+        "bring": "bring",
+        "take": "take",
+        "keep": "keep"
+      }
+    },
+    {
+      "id": "C-borrow-01-s26",
+      "answer": "take",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "When you ___, the item goes from me to a different place.",
+      "cue_phrase": "different place",
+      "surface": {
+        "borrow": "borrow",
+        "lend": "lend",
+        "bring": "bring",
+        "take": "take",
+        "keep": "keep"
+      }
+    },
+    {
+      "id": "C-borrow-01-s27",
+      "answer": "take",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Please ___ this note from my desk to the office.",
+      "cue_phrase": "to the office",
+      "surface": {
+        "borrow": "borrow",
+        "lend": "lend",
+        "bring": "bring",
+        "take": "take",
+        "keep": "keep"
+      }
+    },
+    {
+      "id": "C-borrow-01-s28",
+      "answer": "take",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Dad said, 'Please ___ the empty cups from me to the sink.'",
+      "cue_phrase": "to the sink",
+      "surface": {
+        "borrow": "borrow",
+        "lend": "lend",
+        "bring": "bring",
+        "take": "take",
+        "keep": "keep"
+      }
+    },
+    {
+      "id": "C-borrow-01-s29",
+      "answer": "take",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The ranger pointed outward, so we ___ the injured bird to safety.",
+      "cue_phrase": "pointed outward",
+      "surface": {
+        "borrow": "borrowed",
+        "lend": "lent",
+        "bring": "brought",
+        "take": "took",
+        "keep": "kept"
+      }
+    },
+    {
+      "id": "C-borrow-01-s30",
+      "answer": "take",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "After eating, we ___ our trays from our table to the hatch.",
+      "cue_phrase": "to the hatch",
+      "surface": {
+        "borrow": "borrowed",
+        "lend": "lent",
+        "bring": "brought",
+        "take": "took",
+        "keep": "kept"
+      }
+    },
+    {
+      "id": "C-borrow-01-s31",
+      "answer": "take",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Please ___ this parcel from me to the postbox before lunch.",
+      "cue_phrase": "to the postbox",
+      "surface": {
+        "borrow": "borrow",
+        "lend": "lend",
+        "bring": "bring",
+        "take": "take",
+        "keep": "keep"
+      }
+    },
+    {
+      "id": "C-borrow-01-s32",
+      "answer": "take",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The coach had us ___ cones from where we stood to the shed.",
+      "cue_phrase": "to the shed",
+      "surface": {
+        "borrow": "borrow",
+        "lend": "lend",
+        "bring": "bring",
+        "take": "take",
+        "keep": "keep"
+      }
+    },
+    {
+      "id": "C-borrow-01-s33",
+      "answer": "keep",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "To ___ is to have an item stay with you forever.",
+      "cue_phrase": "stay with you forever",
+      "surface": {
+        "borrow": "borrow",
+        "lend": "lend",
+        "bring": "bring",
+        "take": "take",
+        "keep": "keep"
+      }
+    },
+    {
+      "id": "C-borrow-01-s34",
+      "answer": "keep",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "When you ___, the item remains yours, with no return.",
+      "cue_phrase": "with no return",
+      "surface": {
+        "borrow": "borrow",
+        "lend": "lend",
+        "bring": "bring",
+        "take": "take",
+        "keep": "keep"
+      }
+    },
+    {
+      "id": "C-borrow-01-s35",
+      "answer": "keep",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Gran said I could ___ the marble forever as a prize.",
+      "cue_phrase": "forever as a prize",
+      "surface": {
+        "borrow": "borrow",
+        "lend": "lend",
+        "bring": "bring",
+        "take": "take",
+        "keep": "keep"
+      }
+    },
+    {
+      "id": "C-borrow-01-s36",
+      "answer": "keep",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The badge was not a loan, so Ali ___ it after sports day.",
+      "cue_phrase": "not a loan",
+      "surface": {
+        "borrow": "borrowed",
+        "lend": "lent",
+        "bring": "brought",
+        "take": "took",
+        "keep": "kept"
+      }
+    },
+    {
+      "id": "C-borrow-01-s37",
+      "answer": "keep",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "No return date was written, because Jade ___ the book permanently.",
+      "cue_phrase": "book permanently",
+      "surface": {
+        "borrow": "borrowed",
+        "lend": "lent",
+        "bring": "brought",
+        "take": "took",
+        "keep": "kept"
+      }
+    },
+    {
+      "id": "C-borrow-01-s38",
+      "answer": "keep",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The shell stayed on Omar's shelf; he ___ it as his own.",
+      "cue_phrase": "as his own",
+      "surface": {
+        "borrow": "borrowed",
+        "lend": "lent",
+        "bring": "brought",
+        "take": "took",
+        "keep": "kept"
+      }
+    },
+    {
+      "id": "C-borrow-01-s39",
+      "answer": "keep",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "You may ___ the sticker; it is a present with no return.",
+      "cue_phrase": "present with no return",
+      "surface": {
+        "borrow": "borrow",
+        "lend": "lend",
+        "bring": "bring",
+        "take": "take",
+        "keep": "keep"
+      }
+    },
+    {
+      "id": "C-borrow-01-s40",
+      "answer": "keep",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The rescued dragon wanted to ___ the shiny crown forever.",
+      "cue_phrase": "crown forever",
+      "surface": {
+        "borrow": "borrow",
+        "lend": "lend",
+        "bring": "bring",
+        "take": "take",
+        "keep": "keep"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "borrow",
+      "picked": "lend",
+      "line": "Borrow means you get it for a short time. Lend means you pass yours out for a short time."
+    },
+    {
+      "answer": "borrow",
+      "picked": "bring",
+      "line": "Borrow is about getting it for now. Bring is about moving it toward the talker."
+    },
+    {
+      "answer": "borrow",
+      "picked": "take",
+      "line": "Borrow means get it and return it later. Take means move it to another place."
+    },
+    {
+      "answer": "borrow",
+      "picked": "keep",
+      "line": "Borrow is only for a while. Keep means it stays with you."
+    },
+    {
+      "answer": "lend",
+      "picked": "borrow",
+      "line": "Lend means yours goes out for a while. Borrow means you get another person's item for a while."
+    },
+    {
+      "answer": "lend",
+      "picked": "bring",
+      "line": "Lend is sharing yours for a while. Bring is moving it toward the talker."
+    },
+    {
+      "answer": "lend",
+      "picked": "take",
+      "line": "Lend expects the item to come home later. Take moves it to another place."
+    },
+    {
+      "answer": "lend",
+      "picked": "keep",
+      "line": "Lend sends yours out for a while. Keep means it stays with you."
+    },
+    {
+      "answer": "bring",
+      "picked": "borrow",
+      "line": "Bring moves it toward the talker. Borrow means get it for a short time and return it."
+    },
+    {
+      "answer": "bring",
+      "picked": "lend",
+      "line": "Bring moves it toward the talker. Lend means yours goes out for a while."
+    },
+    {
+      "answer": "bring",
+      "picked": "take",
+      "line": "Bring moves it toward the talker. Take moves it from the talker to another place."
+    },
+    {
+      "answer": "bring",
+      "picked": "keep",
+      "line": "Bring is about movement toward the talker. Keep is about having it stay with you."
+    },
+    {
+      "answer": "take",
+      "picked": "borrow",
+      "line": "Take moves it to another place. Borrow means get it for a short time and return it."
+    },
+    {
+      "answer": "take",
+      "picked": "lend",
+      "line": "Take moves it to another place. Lend means yours goes out for a while."
+    },
+    {
+      "answer": "take",
+      "picked": "bring",
+      "line": "Take moves it from the talker. Bring moves it toward the talker."
+    },
+    {
+      "answer": "take",
+      "picked": "keep",
+      "line": "Take is movement to another place. Keep means it stays with you."
+    },
+    {
+      "answer": "keep",
+      "picked": "borrow",
+      "line": "Keep means it stays with you. Borrow means you only have it for a short time."
+    },
+    {
+      "answer": "keep",
+      "picked": "lend",
+      "line": "Keep means it stays with you. Lend means yours goes out for a while."
+    },
+    {
+      "answer": "keep",
+      "picked": "bring",
+      "line": "Keep is about having it stay with you. Bring is movement toward the talker."
+    },
+    {
+      "answer": "keep",
+      "picked": "take",
+      "line": "Keep means it stays with you. Take means move it to another place."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-05T07:35:58+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": null,
+    "scrub_note": null
+  }
+}

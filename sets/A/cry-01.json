@@ -1,0 +1,822 @@
+{
+  "id": "A-cry-01",
+  "bank": "A",
+  "pos": "verb",
+  "theme": "ways of crying",
+  "band": 2,
+  "band_override": 2,
+  "computed": null,
+  "words": [
+    {
+      "w": "whimper",
+      "synset": "wail.v.02",
+      "gloss_source": "wordnet",
+      "gloss": "cry weakly or softly",
+      "zipf": 2.71,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "whimper",
+        "third": "whimpers",
+        "past": "whimpered",
+        "part": "whimpering"
+      },
+      "discriminator": "quiet, weak and scared"
+    },
+    {
+      "w": "sob",
+      "synset": "sob.v.01",
+      "gloss_source": "wordnet",
+      "gloss": "weep convulsively",
+      "zipf": 3.27,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "sob",
+        "third": "sobs",
+        "past": "sobbed",
+        "part": "sobbing"
+      },
+      "discriminator": "big shaky breaths",
+      "gloss_zipf_waiver": {
+        "words": [
+          "convulsively"
+        ],
+        "reason": "in big uncontrollable bursts; the discriminator 'big shaky breaths' carries it",
+        "by": "claude",
+        "at": "2026-07-05"
+      }
+    },
+    {
+      "w": "blubber",
+      "synset": "snivel.v.03",
+      "gloss_source": "wordnet",
+      "gloss": "cry or whine with snuffling",
+      "zipf": 2.53,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "blubber",
+        "third": "blubbers",
+        "past": "blubbered",
+        "part": "blubbering"
+      },
+      "discriminator": "messy, noisy crying with sniffing",
+      "gloss_zipf_waiver": {
+        "words": [
+          "snuffling"
+        ],
+        "reason": "echoic sound-word a child reads as sniffing; discriminator carries it",
+        "by": "claude",
+        "at": "2026-07-05"
+      }
+    },
+    {
+      "w": "bawl",
+      "synset": "bawl.v.03",
+      "gloss_source": "wordnet",
+      "gloss": "cry loudly",
+      "zipf": 2.32,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "bawl",
+        "third": "bawls",
+        "past": "bawled",
+        "part": "bawling"
+      },
+      "discriminator": "cry very loudly"
+    },
+    {
+      "w": "howl",
+      "synset": "howl.v.01",
+      "gloss_source": "wordnet",
+      "gloss": "emit long loud cries",
+      "zipf": 3.18,
+      "register": "neutral",
+      "senses_at_pos": 4,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "howl",
+        "third": "howls",
+        "past": "howled",
+        "part": "howling"
+      },
+      "discriminator": "one long loud wailing cry"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-cry-01-s01",
+      "answer": "whimper",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Under the bed, the puppy ___ in a tiny, frightened sound.",
+      "cue_phrase": "tiny, frightened sound",
+      "surface": {
+        "whimper": "whimpered",
+        "sob": "sobbed",
+        "blubber": "blubbered",
+        "bawl": "bawled",
+        "howl": "howled"
+      }
+    },
+    {
+      "id": "A-cry-01-s02",
+      "answer": "whimper",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Nina began to ___ with small scared noises during the thunder.",
+      "cue_phrase": "small scared noises",
+      "surface": {
+        "whimper": "whimper",
+        "sob": "sob",
+        "blubber": "blubber",
+        "bawl": "bawl",
+        "howl": "howl"
+      }
+    },
+    {
+      "id": "A-cry-01-s03",
+      "answer": "whimper",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The mouse under the chair ___ when the cat sniffed nearby.",
+      "cue_phrase": "when the cat sniffed",
+      "surface": {
+        "whimper": "whimpered",
+        "sob": "sobbed",
+        "blubber": "blubbered",
+        "bawl": "bawled",
+        "howl": "howled"
+      }
+    },
+    {
+      "id": "A-cry-01-s04",
+      "answer": "whimper",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The owl's shadow made the tiny bat ___ inside the cave.",
+      "cue_phrase": "The owl's shadow",
+      "surface": {
+        "whimper": "whimper",
+        "sob": "sob",
+        "blubber": "blubber",
+        "bawl": "bawl",
+        "howl": "howl"
+      }
+    },
+    {
+      "id": "A-cry-01-s05",
+      "answer": "whimper",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "At the dentist, Sam barely opened his mouth and ___.",
+      "cue_phrase": "barely opened his mouth",
+      "surface": {
+        "whimper": "whimpered",
+        "sob": "sobbed",
+        "blubber": "blubbered",
+        "bawl": "bawled",
+        "howl": "howled"
+      }
+    },
+    {
+      "id": "A-cry-01-s06",
+      "answer": "whimper",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "In the story, the trapped rabbit was ___ under the fox's stare.",
+      "cue_phrase": "under the fox's stare",
+      "surface": {
+        "whimper": "whimpering",
+        "sob": "sobbing",
+        "blubber": "blubbering",
+        "bawl": "bawling",
+        "howl": "howling"
+      }
+    },
+    {
+      "id": "A-cry-01-s07",
+      "answer": "whimper",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The scared puppy ___ in tiny squeaks instead of big noise.",
+      "cue_phrase": "in tiny squeaks",
+      "surface": {
+        "whimper": "whimpered",
+        "sob": "sobbed",
+        "blubber": "blubbered",
+        "bawl": "bawled",
+        "howl": "howled"
+      }
+    },
+    {
+      "id": "A-cry-01-s08",
+      "answer": "whimper",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Alone at the nurse's door, Ella ___ in a little frightened squeak.",
+      "cue_phrase": "little frightened squeak",
+      "surface": {
+        "whimper": "whimpered",
+        "sob": "sobbed",
+        "blubber": "blubbered",
+        "bawl": "bawled",
+        "howl": "howled"
+      }
+    },
+    {
+      "id": "A-cry-01-s09",
+      "answer": "sob",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "After the goodbye, Dad ___ with big shaky breaths.",
+      "cue_phrase": "big shaky breaths",
+      "surface": {
+        "whimper": "whimpered",
+        "sob": "sobbed",
+        "blubber": "blubbered",
+        "bawl": "bawled",
+        "howl": "howled"
+      }
+    },
+    {
+      "id": "A-cry-01-s10",
+      "answer": "sob",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Maya was ___, each breath jerking before the next.",
+      "cue_phrase": "breath jerking before",
+      "surface": {
+        "whimper": "whimpering",
+        "sob": "sobbing",
+        "blubber": "blubbering",
+        "bawl": "bawling",
+        "howl": "howling"
+      }
+    },
+    {
+      "id": "A-cry-01-s11",
+      "answer": "sob",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "When his best friend moved away, Omar ___, shoulders shaking with breaths.",
+      "cue_phrase": "shoulders shaking with breaths",
+      "surface": {
+        "whimper": "whimpered",
+        "sob": "sobbed",
+        "blubber": "blubbered",
+        "bawl": "bawled",
+        "howl": "howled"
+      }
+    },
+    {
+      "id": "A-cry-01-s12",
+      "answer": "sob",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The sad ending made our teacher ___ between gulps of air.",
+      "cue_phrase": "between gulps of air",
+      "surface": {
+        "whimper": "whimper",
+        "sob": "sob",
+        "blubber": "blubber",
+        "bawl": "bawl",
+        "howl": "howl"
+      }
+    },
+    {
+      "id": "A-cry-01-s13",
+      "answer": "sob",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Jade's shoulders bounced with each breath as she ___ over the broken castle.",
+      "cue_phrase": "shoulders bounced with each",
+      "surface": {
+        "whimper": "whimpered",
+        "sob": "sobbed",
+        "blubber": "blubbered",
+        "bawl": "bawled",
+        "howl": "howled"
+      }
+    },
+    {
+      "id": "A-cry-01-s14",
+      "answer": "sob",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "In quiet scenes, he ___ when sorrow shakes his chest.",
+      "cue_phrase": "sorrow shakes his chest",
+      "surface": {
+        "whimper": "whimpers",
+        "sob": "sobs",
+        "blubber": "blubbers",
+        "bawl": "bawls",
+        "howl": "howls"
+      }
+    },
+    {
+      "id": "A-cry-01-s15",
+      "answer": "sob",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Lily ___ after the race, gulping air between tears.",
+      "cue_phrase": "gulping air between tears",
+      "surface": {
+        "whimper": "whimpered",
+        "sob": "sobbed",
+        "blubber": "blubbered",
+        "bawl": "bawled",
+        "howl": "howled"
+      }
+    },
+    {
+      "id": "A-cry-01-s16",
+      "answer": "sob",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "The news made Theo ___, his whole chest jumping.",
+      "cue_phrase": "whole chest jumping",
+      "surface": {
+        "whimper": "whimper",
+        "sob": "sob",
+        "blubber": "blubber",
+        "bawl": "bawl",
+        "howl": "howl"
+      }
+    },
+    {
+      "id": "A-cry-01-s17",
+      "answer": "blubber",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Ben ___ with wet sniffles and words nobody understood.",
+      "cue_phrase": "wet sniffles and words",
+      "surface": {
+        "whimper": "whimpered",
+        "sob": "sobbed",
+        "blubber": "blubbered",
+        "bawl": "bawled",
+        "howl": "howled"
+      }
+    },
+    {
+      "id": "A-cry-01-s18",
+      "answer": "blubber",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The pirate was ___, all runny nose and wobbly chatter.",
+      "cue_phrase": "runny nose and wobbly",
+      "surface": {
+        "whimper": "whimpering",
+        "sob": "sobbing",
+        "blubber": "blubbering",
+        "bawl": "bawling",
+        "howl": "howling"
+      }
+    },
+    {
+      "id": "A-cry-01-s19",
+      "answer": "blubber",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "After dropping the pie, Mo ___ through jammy hiccups and sniffles.",
+      "cue_phrase": "jammy hiccups and sniffles",
+      "surface": {
+        "whimper": "whimpered",
+        "sob": "sobbed",
+        "blubber": "blubbered",
+        "bawl": "bawled",
+        "howl": "howled"
+      }
+    },
+    {
+      "id": "A-cry-01-s20",
+      "answer": "blubber",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The drippy-nosed clown began to ___ about his burst balloon.",
+      "cue_phrase": "drippy-nosed clown",
+      "surface": {
+        "whimper": "whimper",
+        "sob": "sob",
+        "blubber": "blubber",
+        "bawl": "bawl",
+        "howl": "howl"
+      }
+    },
+    {
+      "id": "A-cry-01-s21",
+      "answer": "blubber",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Gran offered tissues while Jack ___ through a nose full of cake.",
+      "cue_phrase": "nose full of cake",
+      "surface": {
+        "whimper": "whimpered",
+        "sob": "sobbed",
+        "blubber": "blubbered",
+        "bawl": "bawled",
+        "howl": "howled"
+      }
+    },
+    {
+      "id": "A-cry-01-s22",
+      "answer": "blubber",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "With sauce on his chin, Nico was ___ through sniffly words.",
+      "cue_phrase": "through sniffly words",
+      "surface": {
+        "whimper": "whimpering",
+        "sob": "sobbing",
+        "blubber": "blubbering",
+        "bawl": "bawling",
+        "howl": "howling"
+      }
+    },
+    {
+      "id": "A-cry-01-s23",
+      "answer": "blubber",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Pip ___ with sniffles and mumbling after missing nap time.",
+      "cue_phrase": "sniffles and mumbling",
+      "surface": {
+        "whimper": "whimpered",
+        "sob": "sobbed",
+        "blubber": "blubbered",
+        "bawl": "bawled",
+        "howl": "howled"
+      }
+    },
+    {
+      "id": "A-cry-01-s24",
+      "answer": "blubber",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The toddler ___ between sniffly words, smearing jam on her sleeve.",
+      "cue_phrase": "between sniffly words",
+      "surface": {
+        "whimper": "whimpered",
+        "sob": "sobbed",
+        "blubber": "blubbered",
+        "bawl": "bawled",
+        "howl": "howled"
+      }
+    },
+    {
+      "id": "A-cry-01-s25",
+      "answer": "bawl",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The baby ___ at top volume in short angry bursts.",
+      "cue_phrase": "top volume in short",
+      "surface": {
+        "whimper": "whimpered",
+        "sob": "sobbed",
+        "blubber": "blubbered",
+        "bawl": "bawled",
+        "howl": "howled"
+      }
+    },
+    {
+      "id": "A-cry-01-s26",
+      "answer": "bawl",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The dropped ice cream made Tara ___ in ear-splitting bursts.",
+      "cue_phrase": "in ear-splitting bursts",
+      "surface": {
+        "whimper": "whimper",
+        "sob": "sob",
+        "blubber": "blubber",
+        "bawl": "bawl",
+        "howl": "howl"
+      }
+    },
+    {
+      "id": "A-cry-01-s27",
+      "answer": "bawl",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "During his tantrum, Ravi ___ in blasts that filled the hall.",
+      "cue_phrase": "blasts that filled",
+      "surface": {
+        "whimper": "whimpered",
+        "sob": "sobbed",
+        "blubber": "blubbered",
+        "bawl": "bawled",
+        "howl": "howled"
+      }
+    },
+    {
+      "id": "A-cry-01-s28",
+      "answer": "bawl",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The toy swap made me ___, red-faced and noisy.",
+      "cue_phrase": "red-faced and noisy",
+      "surface": {
+        "whimper": "whimper",
+        "sob": "sob",
+        "blubber": "blubber",
+        "bawl": "bawl",
+        "howl": "howl"
+      }
+    },
+    {
+      "id": "A-cry-01-s29",
+      "answer": "bawl",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Everyone covered ears while Mia ___ in short repeated yells.",
+      "cue_phrase": "short repeated yells",
+      "surface": {
+        "whimper": "whimpered",
+        "sob": "sobbed",
+        "blubber": "blubbered",
+        "bawl": "bawled",
+        "howl": "howled"
+      }
+    },
+    {
+      "id": "A-cry-01-s30",
+      "answer": "bawl",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The whole playground heard Kai ___ in noisy bursts after the fall.",
+      "cue_phrase": "heard Kai ___ in",
+      "surface": {
+        "whimper": "whimpering",
+        "sob": "sobbing",
+        "blubber": "blubbering",
+        "bawl": "bawling",
+        "howl": "howling"
+      }
+    },
+    {
+      "id": "A-cry-01-s31",
+      "answer": "bawl",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The toddler ___ in full-volume tantrum bursts near the biscuits.",
+      "cue_phrase": "full-volume tantrum bursts",
+      "surface": {
+        "whimper": "whimpered",
+        "sob": "sobbed",
+        "blubber": "blubbered",
+        "bawl": "bawled",
+        "howl": "howled"
+      }
+    },
+    {
+      "id": "A-cry-01-s32",
+      "answer": "bawl",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The goalie ___ in repeated blasts until players plugged their ears.",
+      "cue_phrase": "players plugged their ears",
+      "surface": {
+        "whimper": "whimpered",
+        "sob": "sobbed",
+        "blubber": "blubbered",
+        "bawl": "bawled",
+        "howl": "howled"
+      }
+    },
+    {
+      "id": "A-cry-01-s33",
+      "answer": "howl",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The wolf ___ with one drawn-out wail under the moon.",
+      "cue_phrase": "one drawn-out wail",
+      "surface": {
+        "whimper": "whimpered",
+        "sob": "sobbed",
+        "blubber": "blubbered",
+        "bawl": "bawled",
+        "howl": "howled"
+      }
+    },
+    {
+      "id": "A-cry-01-s34",
+      "answer": "howl",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Leo began to ___ with one stretched wail at the spooky bit.",
+      "cue_phrase": "one stretched wail",
+      "surface": {
+        "whimper": "whimper",
+        "sob": "sob",
+        "blubber": "blubber",
+        "bawl": "bawl",
+        "howl": "howl"
+      }
+    },
+    {
+      "id": "A-cry-01-s35",
+      "answer": "howl",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "On the hilltop, the dog ___ towards the moon.",
+      "cue_phrase": "towards the moon",
+      "surface": {
+        "whimper": "whimpered",
+        "sob": "sobbed",
+        "blubber": "blubbered",
+        "bawl": "bawled",
+        "howl": "howled"
+      }
+    },
+    {
+      "id": "A-cry-01-s36",
+      "answer": "howl",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The lonely wolf was ___ across the snowy valley.",
+      "cue_phrase": "across the snowy valley",
+      "surface": {
+        "whimper": "whimpering",
+        "sob": "sobbing",
+        "blubber": "blubbering",
+        "bawl": "bawling",
+        "howl": "howling"
+      }
+    },
+    {
+      "id": "A-cry-01-s37",
+      "answer": "howl",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The note went on and on while the ghost ___.",
+      "cue_phrase": "note went on",
+      "surface": {
+        "whimper": "whimpered",
+        "sob": "sobbed",
+        "blubber": "blubbered",
+        "bawl": "bawled",
+        "howl": "howled"
+      }
+    },
+    {
+      "id": "A-cry-01-s38",
+      "answer": "howl",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The siren made the dog ___ until the sound matched it.",
+      "cue_phrase": "sound matched it",
+      "surface": {
+        "whimper": "whimper",
+        "sob": "sob",
+        "blubber": "blubber",
+        "bawl": "bawl",
+        "howl": "howl"
+      }
+    },
+    {
+      "id": "A-cry-01-s39",
+      "answer": "howl",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "A wolf often ___ with one stretched note at night.",
+      "cue_phrase": "one stretched note",
+      "surface": {
+        "whimper": "whimpers",
+        "sob": "sobs",
+        "blubber": "blubbers",
+        "bawl": "bawls",
+        "howl": "howls"
+      }
+    },
+    {
+      "id": "A-cry-01-s40",
+      "answer": "howl",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "From the tower, the monster ___ with a wail crossing the forest.",
+      "cue_phrase": "wail crossing the forest",
+      "surface": {
+        "whimper": "whimpered",
+        "sob": "sobbed",
+        "blubber": "blubbered",
+        "bawl": "bawled",
+        "howl": "howled"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "whimper",
+      "picked": "sob",
+      "line": "Whimper is tiny and scared. Sob has big shaky breaths."
+    },
+    {
+      "answer": "whimper",
+      "picked": "blubber",
+      "line": "Whimper is quiet and scared. Blubber is messy, with sniffles."
+    },
+    {
+      "answer": "whimper",
+      "picked": "bawl",
+      "line": "Whimper is a small scared sound. Bawl is at top volume."
+    },
+    {
+      "answer": "whimper",
+      "picked": "howl",
+      "line": "Whimper is a small scared sound. Howl is one stretched wail."
+    },
+    {
+      "answer": "sob",
+      "picked": "whimper",
+      "line": "Sob has big shaky breaths. Whimper is tiny and scared."
+    },
+    {
+      "answer": "sob",
+      "picked": "blubber",
+      "line": "Sob shakes the chest with big breaths. Blubber is messy, with sniffles."
+    },
+    {
+      "answer": "sob",
+      "picked": "bawl",
+      "line": "Sob is full of shaky breaths. Bawl is much noisier and bursty."
+    },
+    {
+      "answer": "sob",
+      "picked": "howl",
+      "line": "Sob comes in shaky breaths. Howl is one stretched wail."
+    },
+    {
+      "answer": "blubber",
+      "picked": "whimper",
+      "line": "Blubber is messy, with sniffles. Whimper is tiny and scared."
+    },
+    {
+      "answer": "blubber",
+      "picked": "sob",
+      "line": "Blubber has sniffles and muddled words. Sob has big shaky breaths."
+    },
+    {
+      "answer": "blubber",
+      "picked": "bawl",
+      "line": "Blubber is messy and sniffly. Bawl is clear, huge noise."
+    },
+    {
+      "answer": "blubber",
+      "picked": "howl",
+      "line": "Blubber is messy and sniffly. Howl is one stretched wail."
+    },
+    {
+      "answer": "bawl",
+      "picked": "whimper",
+      "line": "Bawl is huge noisy upset. Whimper is tiny and scared."
+    },
+    {
+      "answer": "bawl",
+      "picked": "sob",
+      "line": "Bawl is top-volume upset. Sob has big shaky breaths."
+    },
+    {
+      "answer": "bawl",
+      "picked": "blubber",
+      "line": "Bawl is huge noisy upset. Blubber is messy, with sniffles."
+    },
+    {
+      "answer": "bawl",
+      "picked": "howl",
+      "line": "Bawl comes in noisy bursts. Howl is one stretched wail."
+    },
+    {
+      "answer": "howl",
+      "picked": "whimper",
+      "line": "Howl is one stretched wail. Whimper is tiny and scared."
+    },
+    {
+      "answer": "howl",
+      "picked": "sob",
+      "line": "Howl is one stretched wail. Sob has big shaky breaths."
+    },
+    {
+      "answer": "howl",
+      "picked": "blubber",
+      "line": "Howl is one stretched wail. Blubber is messy, with sniffles."
+    },
+    {
+      "answer": "howl",
+      "picked": "bawl",
+      "line": "Howl is one stretched wail. Bawl comes in noisy bursts."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-05T07:18:49+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": null,
+    "scrub_note": null
+  }
+}

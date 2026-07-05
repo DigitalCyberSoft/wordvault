@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>🔐 Word Vault — crack the safe by choosing the right word</title>
+  <meta name="description" content="A free vocabulary game for ages 8-12. Five confusable words, one sentence with a blank: five right in a row cracks the safe. No ads, no accounts, works offline.">
+  <meta name="keywords" content="vocabulary game, word game for kids, synonyms, shades of meaning, their there they're, educational game, ages 8-12">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="canonical" href="https://digitalcybersoft.github.io/wordvault/">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#46505a">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Word Vault">
+  <meta property="og:url" content="https://digitalcybersoft.github.io/wordvault/">
+  <meta property="og:title" content="Word Vault — crack the safe by choosing the right word">
+  <meta property="og:description" content="Five confusable words, one sentence with a blank. Five right in a row cracks the safe.">
+  <style>
+    :root {
+      --ink: #3a2a16; --steel: #46505a; --brass: #c9973f; --brass-dark: #96702c;
+      --go: #2aa877; --go-dark: #1f8a5c; --paper: #fdf6e8;
+      --shadow: 0 8px 0 rgba(0,0,0,.10), 0 18px 34px rgba(0,0,0,.16);
+      --shadow-sm: 0 4px 0 rgba(0,0,0,.10), 0 10px 18px rgba(0,0,0,.12);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; color: var(--ink);
+      font-family: 'Baloo 2', 'Comic Sans MS', 'Trebuchet MS', system-ui, sans-serif;
+      background:
+        radial-gradient(1000px 500px at 85% -10%, #cfd9e5 0%, transparent 60%),
+        radial-gradient(900px 500px at -10% 15%, #ffd98c 0%, transparent 55%),
+        linear-gradient(160deg, #f3e2c4 0%, #efe6d2 60%, #e2e8ee 100%);
+      min-height: 100vh;
+    }
+    @font-face { font-family: 'Baloo 2'; font-style: normal; font-weight: 400 800; font-display: swap;
+      src: url('assets/fonts/Baloo2-latin-var.woff2') format('woff2'); }
+    .wrap { max-width: 920px; margin: 0 auto; padding: 0 18px; }
+    header { text-align: center; padding: 44px 0 10px; }
+    header h1 { font-size: clamp(2rem, 6vw, 3.2rem); margin: 0 0 8px; color: var(--steel); }
+    header p.tag { font-size: clamp(1.05rem, 2.6vw, 1.35rem); font-weight: 600; max-width: 640px; margin: 0 auto; }
+    .cta { text-align: center; margin: 26px 0 8px; }
+    .cta a {
+      display: inline-block; background: var(--go); color: #fff; text-decoration: none;
+      font-size: 1.5rem; font-weight: 800; padding: 16px 46px; border-radius: 18px;
+      box-shadow: inset 0 2px 0 rgba(255,255,255,.4), 0 6px 0 var(--go-dark), 0 12px 20px rgba(0,0,0,.25);
+    }
+    .cta a:active { transform: translateY(5px); box-shadow: inset 0 2px 0 rgba(255,255,255,.3), 0 1px 0 var(--go-dark); }
+    .cta .sub { font-size: .92rem; font-weight: 700; opacity: .8; margin-top: 12px; }
+    .panel { background: #fff; border-radius: 22px; padding: 24px 28px; box-shadow: var(--shadow); margin: 22px 0; }
+    .panel h2 { margin: 0 0 10px; color: var(--steel); font-size: 1.5rem; }
+    .panel p, .panel li { line-height: 1.55; font-size: 1.02rem; }
+    .slipdemo { background: var(--paper); border-radius: 10px; padding: 16px 20px; font-size: 1.2rem; font-weight: 600;
+      box-shadow: var(--shadow-sm); transform: rotate(-.5deg); margin: 14px 0; text-align: center; }
+    .slipdemo b { border-bottom: 4px solid var(--ink); padding: 0 10px; background: rgba(0,0,0,.05); border-radius: 3px; }
+    .tiles { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin: 12px 0 4px; }
+    .tiles span { background: linear-gradient(180deg, #f2d488 0%, #eec36a 40%, var(--brass) 100%);
+      border-radius: 12px; padding: 10px 18px; font-weight: 800; color: #4a3410;
+      box-shadow: inset 0 2px 0 rgba(255,255,255,.6), 0 4px 0 var(--brass-dark); }
+    .safe { background: #eafff5; border: 2px solid #bfe9d7; border-radius: 14px; padding: 14px 16px; font-weight: 600; }
+    .safe b { color: var(--go-dark); }
+    footer { text-align: center; margin: 36px 0 52px; font-size: .92rem; font-weight: 600; opacity: .85; }
+    footer a { color: var(--brass-dark); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>🔐 Word Vault</h1>
+      <p class="tag">A vocabulary game disguised as safe-cracking. Five confusable words, one sentence
+        with a hole in it — pick the word that <i>truly</i> fits, five in a row, and the vault swings open.</p>
+    </header>
+
+    <div class="cta">
+      <a href="game.html">▶ Crack the vault</a>
+      <p class="sub">Free · no ads · no sign-in · works offline · nothing tracked, ever</p>
+    </div>
+
+    <section class="panel">
+      <h2>One tumbler at a time</h2>
+      <p class="slipdemo">Worn out after training, every player <b>&nbsp;trudged&nbsp;</b> slowly back to the changing rooms together.</p>
+      <div class="tiles"><span>marched</span><span>tiptoed</span><span>trudged</span><span>strolled</span><span>limped</span></div>
+      <p>All five words fit the sentence's grammar — only one fits its <i>meaning</i>. The clue is in the
+        reading: worn out, slowly, the whole team together. Every correct word seats a brass pin; one wrong
+        word and all the pins spring back out. A safe grants three runs, then it keeps its secret, shows you
+        the words that got away, and the game gently steps down a level.</p>
+      <p>Get one wrong and it teaches instead of scolding: the word that fits and the word you picked appear
+        side by side with their dictionary meanings, the cue, and one line on the difference. Cracked safes
+        come back later as little review lockboxes with fresh sentences, so the words stick.</p>
+    </section>
+
+    <section class="panel">
+      <h2>It adapts by itself</h2>
+      <p>Clean cracks raise the level, stuck safes lower it, and the game settles where the reader is
+        challenged but never stuck. Early levels use words every child knows in clearly different jobs
+        (hiss / moo / bark); the top levels separate words one shade apart (gleaming / twinkling) and the
+        mix-ups school actually marks down: <b>their / there / they're</b>, <b>borrow / lend</b>. There are
+        no timers anywhere — a slow correct answer is a correct answer. Every crack pays a collectible into
+        the Curio Cabinet, and finished shelves unlock new looks for the vault.</p>
+    </section>
+
+    <section class="panel">
+      <div class="safe">✅ <b>Safe &amp; private.</b> No accounts, no ads, no chat, no purchases. The game makes
+        <b>no internet connection at all</b> while playing: progress is saved only in this browser, on this
+        device, and nothing is ever sent anywhere. One switch resets it for a new player.</div>
+      <p style="margin-bottom:0">Parent or teacher? The <a href="parents.html">parents &amp; teachers guide</a> explains what it
+        teaches and how the difficulty works, band by band.</p>
+    </section>
+
+    <footer>
+      Free and open source · runs offline · <a href="game.html">Play Word Vault</a> ·
+      <a href="parents.html">Parents &amp; teachers</a> ·
+      sibling of <a href="https://digitalcybersoft.github.io/pizzashop/">🍕 Pizza Palace</a>
+    </footer>
+  </div>
+</body>
+</html>

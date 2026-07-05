@@ -1,0 +1,815 @@
+{
+  "id": "A-throw-01",
+  "bank": "A",
+  "pos": "verb",
+  "theme": "sending things flying",
+  "band": 3,
+  "band_override": 3,
+  "computed": null,
+  "words": [
+    {
+      "w": "toss",
+      "synset": "flip.v.06",
+      "gloss_source": "wordnet",
+      "gloss": "throw or toss with a light motion",
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-05"
+      },
+      "zipf": 3.91,
+      "register": "neutral",
+      "senses_at_pos": 6,
+      "forms": {
+        "base": "toss",
+        "third": "tosses",
+        "past": "tossed",
+        "part": "tossing"
+      },
+      "discriminator": "light and easy"
+    },
+    {
+      "w": "hurl",
+      "synset": "hurl.v.01",
+      "gloss_source": "wordnet",
+      "gloss": "throw forcefully",
+      "zipf": 2.91,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "hurl",
+        "third": "hurls",
+        "past": "hurled",
+        "part": "hurling"
+      },
+      "discriminator": "as hard as you can"
+    },
+    {
+      "w": "lob",
+      "synset": "lob.v.01",
+      "gloss_source": "wordnet",
+      "gloss": "propel in a high arc",
+      "zipf": 2.98,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "lob",
+        "third": "lobs",
+        "past": "lobbed",
+        "part": "lobbing"
+      },
+      "discriminator": "high slow arc"
+    },
+    {
+      "w": "drop",
+      "synset": "drop.v.01",
+      "gloss_source": "wordnet",
+      "gloss": "let fall to the ground",
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-05"
+      },
+      "zipf": 4.99,
+      "register": "neutral",
+      "senses_at_pos": 23,
+      "forms": {
+        "base": "drop",
+        "third": "drops",
+        "past": "dropped",
+        "part": "dropping"
+      },
+      "discriminator": "just let it fall"
+    },
+    {
+      "w": "roll",
+      "synset": "roll.v.01",
+      "gloss_source": "wordnet",
+      "gloss": "move by turning over or rotating",
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-05"
+      },
+      "zipf": 4.75,
+      "register": "neutral",
+      "senses_at_pos": 18,
+      "forms": {
+        "base": "roll",
+        "third": "rolls",
+        "past": "rolled",
+        "part": "rolling"
+      },
+      "discriminator": "send it turning along the ground"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-throw-01-s01",
+      "answer": "toss",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "With a tiny wrist flick, Ana ___ the beanbag across one arm's length.",
+      "cue_phrase": "tiny wrist flick",
+      "surface": {
+        "toss": "tossed",
+        "hurl": "hurled",
+        "lob": "lobbed",
+        "drop": "dropped",
+        "roll": "rolled"
+      }
+    },
+    {
+      "id": "A-throw-01-s02",
+      "answer": "toss",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Dad gave an easy little flip to ___ the keys onto the sofa.",
+      "cue_phrase": "easy little flip",
+      "surface": {
+        "toss": "toss",
+        "hurl": "hurl",
+        "lob": "lob",
+        "drop": "drop",
+        "roll": "roll"
+      }
+    },
+    {
+      "id": "A-throw-01-s03",
+      "answer": "toss",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "At the picnic, Nia ___ grapes gently from palm to palm.",
+      "cue_phrase": "from palm to palm",
+      "surface": {
+        "toss": "tossed",
+        "hurl": "hurled",
+        "lob": "lobbed",
+        "drop": "dropped",
+        "roll": "rolled"
+      }
+    },
+    {
+      "id": "A-throw-01-s04",
+      "answer": "toss",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "During catch, Eli ___ the soft ball with a relaxed finger flick.",
+      "cue_phrase": "relaxed finger flick",
+      "surface": {
+        "toss": "tossed",
+        "hurl": "hurled",
+        "lob": "lobbed",
+        "drop": "dropped",
+        "roll": "rolled"
+      }
+    },
+    {
+      "id": "A-throw-01-s05",
+      "answer": "toss",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The parcel might break, so ___ it with only two fingers.",
+      "cue_phrase": "only two fingers",
+      "surface": {
+        "toss": "toss",
+        "hurl": "hurl",
+        "lob": "lob",
+        "drop": "drop",
+        "roll": "roll"
+      }
+    },
+    {
+      "id": "A-throw-01-s06",
+      "answer": "toss",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Jo smiled because she could ___ the feather upward with one breath.",
+      "cue_phrase": "with one breath",
+      "surface": {
+        "toss": "toss",
+        "hurl": "hurl",
+        "lob": "lob",
+        "drop": "drop",
+        "roll": "roll"
+      }
+    },
+    {
+      "id": "A-throw-01-s07",
+      "answer": "toss",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The clown will ___ a paper flower with a quick flip.",
+      "cue_phrase": "quick flip",
+      "surface": {
+        "toss": "toss",
+        "hurl": "hurl",
+        "lob": "lob",
+        "drop": "drop",
+        "roll": "roll"
+      }
+    },
+    {
+      "id": "A-throw-01-s08",
+      "answer": "toss",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Please ___ the eraser across the tiny gap between our desks.",
+      "cue_phrase": "tiny gap",
+      "surface": {
+        "toss": "toss",
+        "hurl": "hurl",
+        "lob": "lob",
+        "drop": "drop",
+        "roll": "roll"
+      }
+    },
+    {
+      "id": "A-throw-01-s09",
+      "answer": "hurl",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "With all her strength, Mira ___ the snowball at the old fence.",
+      "cue_phrase": "all her strength",
+      "surface": {
+        "toss": "tossed",
+        "hurl": "hurled",
+        "lob": "lobbed",
+        "drop": "dropped",
+        "roll": "rolled"
+      }
+    },
+    {
+      "id": "A-throw-01-s10",
+      "answer": "hurl",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The giant ___ boulders as hard as he could at the castle gate.",
+      "cue_phrase": "as hard as",
+      "surface": {
+        "toss": "tossed",
+        "hurl": "hurled",
+        "lob": "lobbed",
+        "drop": "dropped",
+        "roll": "rolled"
+      }
+    },
+    {
+      "id": "A-throw-01-s11",
+      "answer": "hurl",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Using both hands and a fierce shout, Leo ___ the ball across the field.",
+      "cue_phrase": "fierce shout",
+      "surface": {
+        "toss": "tossed",
+        "hurl": "hurled",
+        "lob": "lobbed",
+        "drop": "dropped",
+        "roll": "rolled"
+      }
+    },
+    {
+      "id": "A-throw-01-s12",
+      "answer": "hurl",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Angry waves ___ pebbles hard against the harbour wall during the storm.",
+      "cue_phrase": "hard against",
+      "surface": {
+        "toss": "tossed",
+        "hurl": "hurled",
+        "lob": "lobbed",
+        "drop": "dropped",
+        "roll": "rolled"
+      }
+    },
+    {
+      "id": "A-throw-01-s13",
+      "answer": "hurl",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "To knock over three tins, Raj had to ___ the beanbag hard.",
+      "cue_phrase": "had to",
+      "surface": {
+        "toss": "toss",
+        "hurl": "hurl",
+        "lob": "lob",
+        "drop": "drop",
+        "roll": "roll"
+      }
+    },
+    {
+      "id": "A-throw-01-s14",
+      "answer": "hurl",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "If you want it to crash into the shield, ___ the foam spear.",
+      "cue_phrase": "crash into",
+      "surface": {
+        "toss": "toss",
+        "hurl": "hurl",
+        "lob": "lob",
+        "drop": "drop",
+        "roll": "roll"
+      }
+    },
+    {
+      "id": "A-throw-01-s15",
+      "answer": "hurl",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The dragon ___ a rock so hard that nearby trees shook.",
+      "cue_phrase": "so hard",
+      "surface": {
+        "toss": "tossed",
+        "hurl": "hurled",
+        "lob": "lobbed",
+        "drop": "dropped",
+        "roll": "rolled"
+      }
+    },
+    {
+      "id": "A-throw-01-s16",
+      "answer": "hurl",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Sam was warned not to ___ stones with full power near anyone.",
+      "cue_phrase": "full power",
+      "surface": {
+        "toss": "toss",
+        "hurl": "hurl",
+        "lob": "lob",
+        "drop": "drop",
+        "roll": "roll"
+      }
+    },
+    {
+      "id": "A-throw-01-s17",
+      "answer": "lob",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "At tennis practice, Uma ___ the ball in a slow curve over her rival.",
+      "cue_phrase": "slow curve over",
+      "surface": {
+        "toss": "tossed",
+        "hurl": "hurled",
+        "lob": "lobbed",
+        "drop": "dropped",
+        "roll": "rolled"
+      }
+    },
+    {
+      "id": "A-throw-01-s18",
+      "answer": "lob",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The player ___ a pass above the defender, not straight at him.",
+      "cue_phrase": "above the defender",
+      "surface": {
+        "toss": "tossed",
+        "hurl": "hurled",
+        "lob": "lobbed",
+        "drop": "dropped",
+        "roll": "rolled"
+      }
+    },
+    {
+      "id": "A-throw-01-s19",
+      "answer": "lob",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The catapult ___ foam balls over the cardboard wall in slow looping paths.",
+      "cue_phrase": "slow looping paths",
+      "surface": {
+        "toss": "tossed",
+        "hurl": "hurled",
+        "lob": "lobbed",
+        "drop": "dropped",
+        "roll": "rolled"
+      }
+    },
+    {
+      "id": "A-throw-01-s20",
+      "answer": "lob",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "From the ditch, Priya ___ the rope bag up over the branch in a gentle curve.",
+      "cue_phrase": "up over the branch",
+      "surface": {
+        "toss": "tossed",
+        "hurl": "hurled",
+        "lob": "lobbed",
+        "drop": "dropped",
+        "roll": "rolled"
+      }
+    },
+    {
+      "id": "A-throw-01-s21",
+      "answer": "lob",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "When a straight pass was blocked, Noor chose to ___ it over everyone.",
+      "cue_phrase": "straight pass was blocked",
+      "surface": {
+        "toss": "toss",
+        "hurl": "hurl",
+        "lob": "lob",
+        "drop": "drop",
+        "roll": "roll"
+      }
+    },
+    {
+      "id": "A-throw-01-s22",
+      "answer": "lob",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "To reach behind the tall screen, June had to ___ the beanbag upward.",
+      "cue_phrase": "behind the tall screen",
+      "surface": {
+        "toss": "toss",
+        "hurl": "hurl",
+        "lob": "lob",
+        "drop": "drop",
+        "roll": "roll"
+      }
+    },
+    {
+      "id": "A-throw-01-s23",
+      "answer": "lob",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The wizard ___ a glowing pebble over the moat in a lazy curve.",
+      "cue_phrase": "lazy curve",
+      "surface": {
+        "toss": "tossed",
+        "hurl": "hurled",
+        "lob": "lobbed",
+        "drop": "dropped",
+        "roll": "rolled"
+      }
+    },
+    {
+      "id": "A-throw-01-s24",
+      "answer": "lob",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "During rounders, Kay ___ the ball softly over the fielder's head.",
+      "cue_phrase": "over the fielder's head",
+      "surface": {
+        "toss": "tossed",
+        "hurl": "hurled",
+        "lob": "lobbed",
+        "drop": "dropped",
+        "roll": "rolled"
+      }
+    },
+    {
+      "id": "A-throw-01-s25",
+      "answer": "drop",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "At the bin, Ali ___ the wrapper by opening his fingers.",
+      "cue_phrase": "opening his fingers",
+      "surface": {
+        "toss": "tossed",
+        "hurl": "hurled",
+        "lob": "lobbed",
+        "drop": "dropped",
+        "roll": "rolled"
+      }
+    },
+    {
+      "id": "A-throw-01-s26",
+      "answer": "drop",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "May ___ the marble straight down by opening her hand.",
+      "cue_phrase": "straight down",
+      "surface": {
+        "toss": "tossed",
+        "hurl": "hurled",
+        "lob": "lobbed",
+        "drop": "dropped",
+        "roll": "rolled"
+      }
+    },
+    {
+      "id": "A-throw-01-s27",
+      "answer": "drop",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The toddler ___ the spoon from loose fingers, and it clattered below.",
+      "cue_phrase": "loose fingers",
+      "surface": {
+        "toss": "tossed",
+        "hurl": "hurled",
+        "lob": "lobbed",
+        "drop": "dropped",
+        "roll": "rolled"
+      }
+    },
+    {
+      "id": "A-throw-01-s28",
+      "answer": "drop",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "On the tower, Finn ___ the pebble without any push.",
+      "cue_phrase": "without any push",
+      "surface": {
+        "toss": "tossed",
+        "hurl": "hurled",
+        "lob": "lobbed",
+        "drop": "dropped",
+        "roll": "rolled"
+      }
+    },
+    {
+      "id": "A-throw-01-s29",
+      "answer": "drop",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Since the cup was too hot, I had to ___ it immediately.",
+      "cue_phrase": "too hot",
+      "surface": {
+        "toss": "toss",
+        "hurl": "hurl",
+        "lob": "lob",
+        "drop": "drop",
+        "roll": "roll"
+      }
+    },
+    {
+      "id": "A-throw-01-s30",
+      "answer": "drop",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The trapdoor opened, making the pirate ___ the treasure chest.",
+      "cue_phrase": "trapdoor opened",
+      "surface": {
+        "toss": "toss",
+        "hurl": "hurl",
+        "lob": "lob",
+        "drop": "drop",
+        "roll": "roll"
+      }
+    },
+    {
+      "id": "A-throw-01-s31",
+      "answer": "drop",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Please ___ the chalk into the box by opening your hand.",
+      "cue_phrase": "opening your hand",
+      "surface": {
+        "toss": "toss",
+        "hurl": "hurl",
+        "lob": "lob",
+        "drop": "drop",
+        "roll": "roll"
+      }
+    },
+    {
+      "id": "A-throw-01-s32",
+      "answer": "drop",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The magician seemed to ___ the coin from empty fingers.",
+      "cue_phrase": "empty fingers",
+      "surface": {
+        "toss": "toss",
+        "hurl": "hurl",
+        "lob": "lob",
+        "drop": "drop",
+        "roll": "roll"
+      }
+    },
+    {
+      "id": "A-throw-01-s33",
+      "answer": "roll",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Ben ___ the hoop along the path like a wheel.",
+      "cue_phrase": "like a wheel",
+      "surface": {
+        "toss": "tossed",
+        "hurl": "hurled",
+        "lob": "lobbed",
+        "drop": "dropped",
+        "roll": "rolled"
+      }
+    },
+    {
+      "id": "A-throw-01-s34",
+      "answer": "roll",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The toddler ___ the ball down the ramp without lifting it.",
+      "cue_phrase": "without lifting it",
+      "surface": {
+        "toss": "tossed",
+        "hurl": "hurled",
+        "lob": "lobbed",
+        "drop": "dropped",
+        "roll": "rolled"
+      }
+    },
+    {
+      "id": "A-throw-01-s35",
+      "answer": "roll",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "In bowling, Sara ___ the heavy ball along the lane.",
+      "cue_phrase": "In bowling",
+      "surface": {
+        "toss": "tosses",
+        "hurl": "hurls",
+        "lob": "lobs",
+        "drop": "drops",
+        "roll": "rolls"
+      }
+    },
+    {
+      "id": "A-throw-01-s36",
+      "answer": "roll",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Ned ___ the toy car across the floor on its four wheels.",
+      "cue_phrase": "four wheels",
+      "surface": {
+        "toss": "tossed",
+        "hurl": "hurled",
+        "lob": "lobbed",
+        "drop": "dropped",
+        "roll": "rolled"
+      }
+    },
+    {
+      "id": "A-throw-01-s37",
+      "answer": "roll",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "To keep it under the table, ___ the ball along the floor.",
+      "cue_phrase": "along the floor",
+      "surface": {
+        "toss": "toss",
+        "hurl": "hurl",
+        "lob": "lob",
+        "drop": "drop",
+        "roll": "roll"
+      }
+    },
+    {
+      "id": "A-throw-01-s38",
+      "answer": "roll",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The log was round, so they could ___ it down the hill.",
+      "cue_phrase": "log was round",
+      "surface": {
+        "toss": "toss",
+        "hurl": "hurl",
+        "lob": "lob",
+        "drop": "drop",
+        "roll": "roll"
+      }
+    },
+    {
+      "id": "A-throw-01-s39",
+      "answer": "roll",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Grandma will ___ pastry flat with a wooden pin.",
+      "cue_phrase": "pastry flat",
+      "surface": {
+        "toss": "toss",
+        "hurl": "hurl",
+        "lob": "lob",
+        "drop": "drop",
+        "roll": "roll"
+      }
+    },
+    {
+      "id": "A-throw-01-s40",
+      "answer": "roll",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The game had us ___ barrels along rails to the finish.",
+      "cue_phrase": "along rails",
+      "surface": {
+        "toss": "toss",
+        "hurl": "hurl",
+        "lob": "lob",
+        "drop": "drop",
+        "roll": "roll"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "toss",
+      "picked": "hurl",
+      "line": "Toss is easy and gentle; hurl means using all your strength."
+    },
+    {
+      "answer": "toss",
+      "picked": "lob",
+      "line": "Toss is a quick small flip; lob sends it up in a slow curve."
+    },
+    {
+      "answer": "toss",
+      "picked": "drop",
+      "line": "Toss gives a small push; drop just releases it downward."
+    },
+    {
+      "answer": "toss",
+      "picked": "roll",
+      "line": "Toss sends it through the air; roll sends it along a surface."
+    },
+    {
+      "answer": "hurl",
+      "picked": "toss",
+      "line": "Hurl uses big power; toss is a small, easy action."
+    },
+    {
+      "answer": "hurl",
+      "picked": "lob",
+      "line": "Hurl is fast and hard; lob is slower and goes in a curve."
+    },
+    {
+      "answer": "hurl",
+      "picked": "drop",
+      "line": "Hurl uses your strength; drop happens by releasing your hold."
+    },
+    {
+      "answer": "hurl",
+      "picked": "roll",
+      "line": "Hurl sends it hard through the air; roll keeps it along a surface."
+    },
+    {
+      "answer": "lob",
+      "picked": "toss",
+      "line": "Lob goes up in a slow curve; toss is a short, easy flip."
+    },
+    {
+      "answer": "lob",
+      "picked": "hurl",
+      "line": "Lob is a soft curved send; hurl is a hard powerful send."
+    },
+    {
+      "answer": "lob",
+      "picked": "drop",
+      "line": "Lob lifts it over something; drop releases it straight downward."
+    },
+    {
+      "answer": "lob",
+      "picked": "roll",
+      "line": "Lob travels through the air; roll travels along a surface."
+    },
+    {
+      "answer": "drop",
+      "picked": "toss",
+      "line": "Drop means release downward; toss gives it a small push through the air."
+    },
+    {
+      "answer": "drop",
+      "picked": "hurl",
+      "line": "Drop is just releasing; hurl is using lots of power."
+    },
+    {
+      "answer": "drop",
+      "picked": "lob",
+      "line": "Drop goes downward from your hand; lob goes up in a slow curve."
+    },
+    {
+      "answer": "drop",
+      "picked": "roll",
+      "line": "Drop releases it downward; roll sends it along a surface."
+    },
+    {
+      "answer": "roll",
+      "picked": "toss",
+      "line": "Roll goes along a surface; toss sends it through the air with a small flip."
+    },
+    {
+      "answer": "roll",
+      "picked": "hurl",
+      "line": "Roll stays along a surface; hurl sends it hard through the air."
+    },
+    {
+      "answer": "roll",
+      "picked": "lob",
+      "line": "Roll goes along a surface; lob goes up and over in a curve."
+    },
+    {
+      "answer": "roll",
+      "picked": "drop",
+      "line": "Roll travels along a surface; drop simply releases it downward."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-05T07:24:44+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": null,
+    "scrub_note": null
+  }
+}

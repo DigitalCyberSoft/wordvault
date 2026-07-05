@@ -1,0 +1,817 @@
+{
+  "id": "A-talk-01",
+  "bank": "A",
+  "pos": "verb",
+  "theme": "ways of talking",
+  "band": 2,
+  "band_override": 2,
+  "computed": null,
+  "words": [
+    {
+      "w": "whisper",
+      "synset": "whisper.v.01",
+      "gloss_source": "wordnet",
+      "gloss": "speak softly; in a low voice",
+      "zipf": 3.74,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "whisper",
+        "third": "whispers",
+        "past": "whispered",
+        "part": "whispering"
+      },
+      "discriminator": "very quietly, on purpose"
+    },
+    {
+      "w": "mumble",
+      "synset": "mumble.v.01",
+      "gloss_source": "wordnet",
+      "gloss": "talk indistinctly; usually in a low voice",
+      "zipf": 2.91,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "mumble",
+        "third": "mumbles",
+        "past": "mumbled",
+        "part": "mumbling"
+      },
+      "discriminator": "unclear, hard to make out"
+    },
+    {
+      "w": "chatter",
+      "synset": "chatter.v.04",
+      "gloss_source": "wordnet",
+      "gloss": "speak (about unimportant matters) rapidly and incessantly",
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-05"
+      },
+      "zipf": 3.38,
+      "register": "neutral",
+      "senses_at_pos": 5,
+      "forms": {
+        "base": "chatter",
+        "third": "chatters",
+        "past": "chattered",
+        "part": "chattering"
+      },
+      "discriminator": "fast, on and on, about little things",
+      "gloss_zipf_waiver": {
+        "words": [
+          "incessantly"
+        ],
+        "reason": "stem 'incessant' sits at the floor; 'rapidly and on and on' carries the meaning",
+        "by": "claude",
+        "at": "2026-07-05"
+      }
+    },
+    {
+      "w": "announce",
+      "synset": "announce.v.01",
+      "gloss_source": "wordnet",
+      "gloss": "make known; make an announcement",
+      "zipf": 4.26,
+      "register": "neutral",
+      "senses_at_pos": 4,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "announce",
+        "third": "announces",
+        "past": "announced",
+        "part": "announcing"
+      },
+      "discriminator": "tell everyone, officially"
+    },
+    {
+      "w": "bellow",
+      "synset": "bawl.v.01",
+      "gloss_source": "wordnet",
+      "gloss": "shout loudly and without restraint",
+      "zipf": 2.79,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "bellow",
+        "third": "bellows",
+        "past": "bellowed",
+        "part": "bellowing"
+      },
+      "discriminator": "shout in a huge deep voice"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-talk-01-s01",
+      "answer": "whisper",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "I ___ clearly so only my brother heard the secret plan.",
+      "cue_phrase": "only my brother heard",
+      "surface": {
+        "whisper": "whispered",
+        "mumble": "mumbled",
+        "chatter": "chattered",
+        "announce": "announced",
+        "bellow": "bellowed"
+      }
+    },
+    {
+      "id": "A-talk-01-s02",
+      "answer": "whisper",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Please ___ clearly, right by my ear, so nobody else hears.",
+      "cue_phrase": "nobody else hears",
+      "surface": {
+        "whisper": "whisper",
+        "mumble": "mumble",
+        "chatter": "chatter",
+        "announce": "announce",
+        "bellow": "bellow"
+      }
+    },
+    {
+      "id": "A-talk-01-s03",
+      "answer": "whisper",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "From behind the curtain, Lia ___ clearly to help the stuck actor.",
+      "cue_phrase": "behind the curtain",
+      "surface": {
+        "whisper": "whispered",
+        "mumble": "mumbled",
+        "chatter": "chattered",
+        "announce": "announced",
+        "bellow": "bellowed"
+      }
+    },
+    {
+      "id": "A-talk-01-s04",
+      "answer": "whisper",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "At the sleepover, we ___ clearly under blankets, careful not to wake parents.",
+      "cue_phrase": "not to wake parents",
+      "surface": {
+        "whisper": "whispered",
+        "mumble": "mumbled",
+        "chatter": "chattered",
+        "announce": "announced",
+        "bellow": "bellowed"
+      }
+    },
+    {
+      "id": "A-talk-01-s05",
+      "answer": "whisper",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The guard nearby kept sleeping while Nora ___ clearly beside him.",
+      "cue_phrase": "guard nearby kept sleeping",
+      "surface": {
+        "whisper": "whispered",
+        "mumble": "mumbled",
+        "chatter": "chattered",
+        "announce": "announced",
+        "bellow": "bellowed"
+      }
+    },
+    {
+      "id": "A-talk-01-s06",
+      "answer": "whisper",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Finn put a finger to his lips and ___ clearly.",
+      "cue_phrase": "finger to his lips",
+      "surface": {
+        "whisper": "whispered",
+        "mumble": "mumbled",
+        "chatter": "chattered",
+        "announce": "announced",
+        "bellow": "bellowed"
+      }
+    },
+    {
+      "id": "A-talk-01-s07",
+      "answer": "whisper",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "To keep the hiding place secret, Sam had to ___ clearly.",
+      "cue_phrase": "hiding place secret",
+      "surface": {
+        "whisper": "whisper",
+        "mumble": "mumble",
+        "chatter": "chatter",
+        "announce": "announce",
+        "bellow": "bellow"
+      }
+    },
+    {
+      "id": "A-talk-01-s08",
+      "answer": "whisper",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Behind the museum rope, the guide ___ clearly into one child's ear.",
+      "cue_phrase": "one child's ear",
+      "surface": {
+        "whisper": "whispers",
+        "mumble": "mumbles",
+        "chatter": "chatters",
+        "announce": "announces",
+        "bellow": "bellows"
+      }
+    },
+    {
+      "id": "A-talk-01-s09",
+      "answer": "mumble",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "He ___, and the words came out unclear through his sandwich.",
+      "cue_phrase": "came out unclear",
+      "surface": {
+        "whisper": "whispered",
+        "mumble": "mumbled",
+        "chatter": "chattered",
+        "announce": "announced",
+        "bellow": "bellowed"
+      }
+    },
+    {
+      "id": "A-talk-01-s10",
+      "answer": "mumble",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Don't ___; I am near enough but cannot catch the words.",
+      "cue_phrase": "cannot catch the words",
+      "surface": {
+        "whisper": "whisper",
+        "mumble": "mumble",
+        "chatter": "chatter",
+        "announce": "announce",
+        "bellow": "bellow"
+      }
+    },
+    {
+      "id": "A-talk-01-s11",
+      "answer": "mumble",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "With toothpaste foam in his mouth, Omar ___ after bedtime.",
+      "cue_phrase": "toothpaste foam in his mouth",
+      "surface": {
+        "whisper": "whispered",
+        "mumble": "mumbled",
+        "chatter": "chattered",
+        "announce": "announced",
+        "bellow": "bellowed"
+      }
+    },
+    {
+      "id": "A-talk-01-s12",
+      "answer": "mumble",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The sleepy pirate ___ through his beard, and nobody caught the password.",
+      "cue_phrase": "through his beard",
+      "surface": {
+        "whisper": "whispered",
+        "mumble": "mumbled",
+        "chatter": "chattered",
+        "announce": "announced",
+        "bellow": "bellowed"
+      }
+    },
+    {
+      "id": "A-talk-01-s13",
+      "answer": "mumble",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Maya kept the cookie in her cheek and ___ unclearly.",
+      "cue_phrase": "cookie in her cheek",
+      "surface": {
+        "whisper": "whispered",
+        "mumble": "mumbled",
+        "chatter": "chattered",
+        "announce": "announced",
+        "bellow": "bellowed"
+      }
+    },
+    {
+      "id": "A-talk-01-s14",
+      "answer": "mumble",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "It was not quiet, just mushy, when Ben ___.",
+      "cue_phrase": "not quiet, just mushy",
+      "surface": {
+        "whisper": "whispered",
+        "mumble": "mumbled",
+        "chatter": "chattered",
+        "announce": "announced",
+        "bellow": "bellowed"
+      }
+    },
+    {
+      "id": "A-talk-01-s15",
+      "answer": "mumble",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Gran asked me to ___ less and open my mouth wider.",
+      "cue_phrase": "open my mouth wider",
+      "surface": {
+        "whisper": "whisper",
+        "mumble": "mumble",
+        "chatter": "chatter",
+        "announce": "announce",
+        "bellow": "bellow"
+      }
+    },
+    {
+      "id": "A-talk-01-s16",
+      "answer": "mumble",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Tariq ___ during rehearsal, swallowing endings until the teacher frowned.",
+      "cue_phrase": "swallowing endings",
+      "surface": {
+        "whisper": "whispered",
+        "mumble": "mumbled",
+        "chatter": "chattered",
+        "announce": "announced",
+        "bellow": "bellowed"
+      }
+    },
+    {
+      "id": "A-talk-01-s17",
+      "answer": "chatter",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The twins ___ like excited sparrows, tiny topic after tiny topic.",
+      "cue_phrase": "tiny topic after",
+      "surface": {
+        "whisper": "whispered",
+        "mumble": "mumbled",
+        "chatter": "chattered",
+        "announce": "announced",
+        "bellow": "bellowed"
+      }
+    },
+    {
+      "id": "A-talk-01-s18",
+      "answer": "chatter",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Please stop ___ like a happy bird over every tiny thing.",
+      "cue_phrase": "every tiny thing",
+      "surface": {
+        "whisper": "whispering",
+        "mumble": "mumbling",
+        "chatter": "chattering",
+        "announce": "announcing",
+        "bellow": "bellowing"
+      }
+    },
+    {
+      "id": "A-talk-01-s19",
+      "answer": "chatter",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "On the bus, friends ___ in a bubbling stream until our stop.",
+      "cue_phrase": "bubbling stream",
+      "surface": {
+        "whisper": "whispered",
+        "mumble": "mumbled",
+        "chatter": "chattered",
+        "announce": "announced",
+        "bellow": "bellowed"
+      }
+    },
+    {
+      "id": "A-talk-01-s20",
+      "answer": "chatter",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "During craft time, Mina ___ in many quick bursts between giggles.",
+      "cue_phrase": "many quick bursts",
+      "surface": {
+        "whisper": "whispered",
+        "mumble": "mumbled",
+        "chatter": "chattered",
+        "announce": "announced",
+        "bellow": "bellowed"
+      }
+    },
+    {
+      "id": "A-talk-01-s21",
+      "answer": "chatter",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "I heard a stream of tiny stories whenever Poppy ___.",
+      "cue_phrase": "stream of tiny stories",
+      "surface": {
+        "whisper": "whispered",
+        "mumble": "mumbled",
+        "chatter": "chattered",
+        "announce": "announced",
+        "bellow": "bellowed"
+      }
+    },
+    {
+      "id": "A-talk-01-s22",
+      "answer": "chatter",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Before class, Jay ___ until three small topics tangled together.",
+      "cue_phrase": "small topics tangled",
+      "surface": {
+        "whisper": "whispered",
+        "mumble": "mumbled",
+        "chatter": "chattered",
+        "announce": "announced",
+        "bellow": "bellowed"
+      }
+    },
+    {
+      "id": "A-talk-01-s23",
+      "answer": "chatter",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The parrot seemed to ___, hopping between buttons, biscuits, and blue hats.",
+      "cue_phrase": "hopping between buttons",
+      "surface": {
+        "whisper": "whisper",
+        "mumble": "mumble",
+        "chatter": "chatter",
+        "announce": "announce",
+        "bellow": "bellow"
+      }
+    },
+    {
+      "id": "A-talk-01-s24",
+      "answer": "chatter",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "When excited, our neighbour ___, ten tiny stories spilling out before breakfast.",
+      "cue_phrase": "ten tiny stories spilling",
+      "surface": {
+        "whisper": "whispers",
+        "mumble": "mumbles",
+        "chatter": "chatters",
+        "announce": "announces",
+        "bellow": "bellows"
+      }
+    },
+    {
+      "id": "A-talk-01-s25",
+      "answer": "announce",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The head teacher will ___ officially to everyone after lunch.",
+      "cue_phrase": "officially to everyone",
+      "surface": {
+        "whisper": "whisper",
+        "mumble": "mumble",
+        "chatter": "chatter",
+        "announce": "announce",
+        "bellow": "bellow"
+      }
+    },
+    {
+      "id": "A-talk-01-s26",
+      "answer": "announce",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Please ___ officially, so the whole club gets the rule change.",
+      "cue_phrase": "whole club gets",
+      "surface": {
+        "whisper": "whisper",
+        "mumble": "mumble",
+        "chatter": "chatter",
+        "announce": "announce",
+        "bellow": "bellow"
+      }
+    },
+    {
+      "id": "A-talk-01-s27",
+      "answer": "announce",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "At assembly, the captain ___ officially from the stage after voting.",
+      "cue_phrase": "At assembly",
+      "surface": {
+        "whisper": "whispered",
+        "mumble": "mumbled",
+        "chatter": "chattered",
+        "announce": "announced",
+        "bellow": "bellowed"
+      }
+    },
+    {
+      "id": "A-talk-01-s28",
+      "answer": "announce",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The noticeboard message will ___ officially for all families before tomorrow's trip.",
+      "cue_phrase": "for all families",
+      "surface": {
+        "whisper": "whisper",
+        "mumble": "mumble",
+        "chatter": "chatter",
+        "announce": "announce",
+        "bellow": "bellow"
+      }
+    },
+    {
+      "id": "A-talk-01-s29",
+      "answer": "announce",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "When the bell rang, Mrs Patel ___ officially to every class.",
+      "cue_phrase": "to every class",
+      "surface": {
+        "whisper": "whispered",
+        "mumble": "mumbled",
+        "chatter": "chattered",
+        "announce": "announced",
+        "bellow": "bellowed"
+      }
+    },
+    {
+      "id": "A-talk-01-s30",
+      "answer": "announce",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "A royal scroll arrived to ___ officially before the birthday feast.",
+      "cue_phrase": "royal scroll arrived",
+      "surface": {
+        "whisper": "whisper",
+        "mumble": "mumble",
+        "chatter": "chatter",
+        "announce": "announce",
+        "bellow": "bellow"
+      }
+    },
+    {
+      "id": "A-talk-01-s31",
+      "answer": "announce",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The referee raised a flag to ___ officially after the race.",
+      "cue_phrase": "referee raised a flag",
+      "surface": {
+        "whisper": "whisper",
+        "mumble": "mumble",
+        "chatter": "chatter",
+        "announce": "announce",
+        "bellow": "bellow"
+      }
+    },
+    {
+      "id": "A-talk-01-s32",
+      "answer": "announce",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Our class website ___ officially for every family before the fair.",
+      "cue_phrase": "class website",
+      "surface": {
+        "whisper": "whispers",
+        "mumble": "mumbles",
+        "chatter": "chatters",
+        "announce": "announces",
+        "bellow": "bellows"
+      }
+    },
+    {
+      "id": "A-talk-01-s33",
+      "answer": "bellow",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The giant ___ in a huge roar that shook the cave.",
+      "cue_phrase": "huge roar",
+      "surface": {
+        "whisper": "whispered",
+        "mumble": "mumbled",
+        "chatter": "chattered",
+        "announce": "announced",
+        "bellow": "bellowed"
+      }
+    },
+    {
+      "id": "A-talk-01-s34",
+      "answer": "bellow",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Dad had to ___ over the storm, using his biggest roar.",
+      "cue_phrase": "biggest roar",
+      "surface": {
+        "whisper": "whisper",
+        "mumble": "mumble",
+        "chatter": "chatter",
+        "announce": "announce",
+        "bellow": "bellow"
+      }
+    },
+    {
+      "id": "A-talk-01-s35",
+      "answer": "bellow",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Across the field, the coach ___ in a deep roar over thunder.",
+      "cue_phrase": "deep roar",
+      "surface": {
+        "whisper": "whispered",
+        "mumble": "mumbled",
+        "chatter": "chattered",
+        "announce": "announced",
+        "bellow": "bellowed"
+      }
+    },
+    {
+      "id": "A-talk-01-s36",
+      "answer": "bellow",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The dragon ___ from the tower, rattling cups in the kitchen.",
+      "cue_phrase": "rattling cups",
+      "surface": {
+        "whisper": "whispered",
+        "mumble": "mumbled",
+        "chatter": "chattered",
+        "announce": "announced",
+        "bellow": "bellowed"
+      }
+    },
+    {
+      "id": "A-talk-01-s37",
+      "answer": "bellow",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The ogre ___, and the deep blast made everyone cover ears.",
+      "cue_phrase": "deep blast",
+      "surface": {
+        "whisper": "whispered",
+        "mumble": "mumbled",
+        "chatter": "chattered",
+        "announce": "announced",
+        "bellow": "bellowed"
+      }
+    },
+    {
+      "id": "A-talk-01-s38",
+      "answer": "bellow",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The boat captain ___ in a deep boom until gulls burst away.",
+      "cue_phrase": "deep boom",
+      "surface": {
+        "whisper": "whispered",
+        "mumble": "mumbled",
+        "chatter": "chattered",
+        "announce": "announced",
+        "bellow": "bellowed"
+      }
+    },
+    {
+      "id": "A-talk-01-s39",
+      "answer": "bellow",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Never ___ indoors; that roaring blast hurts people's ears.",
+      "cue_phrase": "roaring blast",
+      "surface": {
+        "whisper": "whisper",
+        "mumble": "mumble",
+        "chatter": "chatter",
+        "announce": "announce",
+        "bellow": "bellow"
+      }
+    },
+    {
+      "id": "A-talk-01-s40",
+      "answer": "bellow",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "A bull in stories ___ with a rumble like thunder.",
+      "cue_phrase": "rumble like thunder",
+      "surface": {
+        "whisper": "whispers",
+        "mumble": "mumbles",
+        "chatter": "chatters",
+        "announce": "announces",
+        "bellow": "bellows"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "whisper",
+      "picked": "mumble",
+      "line": "Whisper is very quiet on purpose; mumble is unclear and hard to catch."
+    },
+    {
+      "answer": "whisper",
+      "picked": "chatter",
+      "line": "Whisper is quiet and brief for privacy; chatter runs on about little things."
+    },
+    {
+      "answer": "whisper",
+      "picked": "announce",
+      "line": "Whisper is meant for one or few ears; announce is meant for everyone."
+    },
+    {
+      "answer": "whisper",
+      "picked": "bellow",
+      "line": "Whisper is tiny and controlled; bellow is huge and booming."
+    },
+    {
+      "answer": "mumble",
+      "picked": "whisper",
+      "line": "Mumble is unclear; whisper is quiet on purpose but can still be clear."
+    },
+    {
+      "answer": "mumble",
+      "picked": "chatter",
+      "line": "Mumble hides the words by being unclear; chatter pours out many small ideas."
+    },
+    {
+      "answer": "mumble",
+      "picked": "announce",
+      "line": "Mumble is hard to understand; announce is clear and official for everyone."
+    },
+    {
+      "answer": "mumble",
+      "picked": "bellow",
+      "line": "Mumble is unclear and tucked away; bellow is a big roaring sound."
+    },
+    {
+      "answer": "chatter",
+      "picked": "whisper",
+      "line": "Chatter runs on about small things; whisper is quiet on purpose."
+    },
+    {
+      "answer": "chatter",
+      "picked": "mumble",
+      "line": "Chatter is quick and plentiful; mumble is unclear and hard to catch."
+    },
+    {
+      "answer": "chatter",
+      "picked": "announce",
+      "line": "Chatter is casual and busy; announce is official news for everyone."
+    },
+    {
+      "answer": "chatter",
+      "picked": "bellow",
+      "line": "Chatter is lots of small talk; bellow is one huge booming call."
+    },
+    {
+      "answer": "announce",
+      "picked": "whisper",
+      "line": "Announce tells everyone officially; whisper keeps things quiet for a few."
+    },
+    {
+      "answer": "announce",
+      "picked": "mumble",
+      "line": "Announce is clear public news; mumble is unclear and hard to catch."
+    },
+    {
+      "answer": "announce",
+      "picked": "chatter",
+      "line": "Announce gives official news; chatter runs on about little things."
+    },
+    {
+      "answer": "announce",
+      "picked": "bellow",
+      "line": "Announce is official and clear; bellow is huge and roaring."
+    },
+    {
+      "answer": "bellow",
+      "picked": "whisper",
+      "line": "Bellow is huge and booming; whisper is tiny and controlled."
+    },
+    {
+      "answer": "bellow",
+      "picked": "mumble",
+      "line": "Bellow is a powerful roar; mumble is unclear and hard to catch."
+    },
+    {
+      "answer": "bellow",
+      "picked": "chatter",
+      "line": "Bellow is one big roar; chatter is many quick bits about small things."
+    },
+    {
+      "answer": "bellow",
+      "picked": "announce",
+      "line": "Bellow is a huge roar; announce is official news for everyone."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-05T07:22:59+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": null,
+    "scrub_note": null
+  }
+}

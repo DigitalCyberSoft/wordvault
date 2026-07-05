@@ -587,6 +587,25 @@
     hideGloss();
   }
 
+  // ---- cosmetics ----
+  // A completed shelf's cosmetic is worn by tapping its button in the cabinet;
+  // the choice persists and is re-applied on boot.
+  function applyCosmetics() {
+    var cos = LS.cosmetic;
+    var cls = [];
+    if (cos.backdrop) cls.push('backdrop-' + cos.backdrop);
+    if (cos.skin) cls.push('skin-' + cos.skin);
+    if (cos.pins) cls.push('pins-' + cos.pins);
+    document.body.className = cls.join(' ');
+  }
+  function toggleCosmetic(cosmetic) {
+    var cos = LS.cosmetic;
+    cos[cosmetic.kind] = cos[cosmetic.kind] === cosmetic.id ? null : cosmetic.id;
+    LS.cosmetic = cos;
+    applyCosmetics();
+    renderCabinet();
+  }
+
   // ---- curio cabinet ----
   function renderCabinet() {
     var box = el('shelves');
@@ -596,6 +615,13 @@
       div.className = 'shelf';
       var h = document.createElement('h3');
       h.textContent = shelf.name + (shelf.complete ? ' ★' : ' · ' + shelf.owned + '/' + shelf.total);
+      if (shelf.complete) {
+        var wearing = LS.cosmetic[shelf.cosmetic.kind] === shelf.cosmetic.id;
+        var btn = document.createElement('button');
+        btn.textContent = wearing ? 'Wearing it ✓' : 'Wear it';
+        btn.addEventListener('click', function () { Snd.chime(); toggleCosmetic(shelf.cosmetic); });
+        h.appendChild(btn);
+      }
       div.appendChild(h);
       var items = document.createElement('div');
       items.className = 'items';
@@ -627,6 +653,7 @@
     });
     // the best-streak record survives a new game, like an arcade high score
     S = null;
+    applyCosmetics();
     refreshHud();
   }
 
@@ -673,6 +700,7 @@
 
   function init() {
     preloadClips();
+    applyCosmetics();
     refreshHud();
     refreshSettings();
 

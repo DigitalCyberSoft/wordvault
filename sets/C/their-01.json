@@ -1,0 +1,89 @@
+{
+  "id": "C-their-01",
+  "bank": "C",
+  "pos": "usage",
+  "theme": "their, there or they're",
+  "band": 3,
+  "band_override": 3,
+  "computed": null,
+  "words": [
+    {
+      "w": "their",
+      "synset": null,
+      "gloss_source": "authored",
+      "gloss": "belonging to them: their coats, their idea",
+      "zipf": 6.33,
+      "register": "neutral",
+      "senses_at_pos": 0,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "their"
+      },
+      "discriminator": "owning something"
+    },
+    {
+      "w": "there",
+      "synset": null,
+      "gloss_source": "authored",
+      "gloss": "in or at that place: put it there",
+      "zipf": 6.31,
+      "register": "neutral",
+      "senses_at_pos": 0,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "there"
+      },
+      "discriminator": "a place"
+    },
+    {
+      "w": "they're",
+      "synset": null,
+      "gloss_source": "authored",
+      "gloss": "short for 'they are': they're late",
+      "zipf": 5.47,
+      "register": "neutral",
+      "senses_at_pos": 0,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "they're"
+      },
+      "discriminator": "they are"
+    },
+    {
+      "w": "then",
+      "synset": null,
+      "gloss_source": "authored",
+      "gloss": "at that time, or next after something: back then; then we left",
+      "zipf": 6.07,
+      "register": "neutral",
+      "senses_at_pos": 0,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "then"
+      },
+      "discriminator": "time or order"
+    },
+    {
+      "w": "than",
+      "synset": null,
+      "gloss_source": "authored",
+      "gloss": "compared with: taller than me",
+      "zipf": 6.13,
+      "register": "neutral",
+      "senses_at_pos": 0,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "than"
+      },
+      "discriminator": "comparing"
+    }
+  ],
+  "sentences": [],
+  "contrasts": [],
+  "meta": {
+    "generated_at": null,
+    "model": null,
+    "scrubbed_at": null,
+    "scrub_note": null
+  }
+}

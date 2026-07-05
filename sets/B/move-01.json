@@ -1,0 +1,821 @@
+{
+  "id": "B-move-01",
+  "bank": "B",
+  "pos": "verb",
+  "theme": "ways of moving",
+  "band": 1,
+  "band_override": 1,
+  "computed": null,
+  "words": [
+    {
+      "w": "run",
+      "synset": "run.v.01",
+      "gloss_source": "wordnet",
+      "gloss": "move fast by using one's feet, with one foot off the ground at any given time",
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-05"
+      },
+      "zipf": 5.49,
+      "register": "neutral",
+      "senses_at_pos": 41,
+      "forms": {
+        "base": "run",
+        "third": "runs",
+        "past": "ran",
+        "part": "running"
+      },
+      "discriminator": "fastest, on your feet"
+    },
+    {
+      "w": "hop",
+      "synset": "hop.v.01",
+      "gloss_source": "wordnet",
+      "gloss": "jump lightly",
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-05"
+      },
+      "zipf": 4.4,
+      "register": "neutral",
+      "senses_at_pos": 6,
+      "forms": {
+        "base": "hop",
+        "third": "hops",
+        "past": "hopped",
+        "part": "hopping"
+      },
+      "discriminator": "small jumps"
+    },
+    {
+      "w": "swim",
+      "synset": "swim.v.01",
+      "gloss_source": "wordnet",
+      "gloss": "travel through water",
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-05"
+      },
+      "zipf": 4.21,
+      "register": "neutral",
+      "senses_at_pos": 5,
+      "forms": {
+        "base": "swim",
+        "third": "swims",
+        "past": "swam",
+        "part": "swimming"
+      },
+      "discriminator": "through water"
+    },
+    {
+      "w": "climb",
+      "synset": "climb.v.01",
+      "gloss_source": "wordnet",
+      "gloss": "go upward with gradual or continuous progress",
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-05"
+      },
+      "zipf": 4.22,
+      "register": "neutral",
+      "senses_at_pos": 6,
+      "forms": {
+        "base": "climb",
+        "third": "climbs",
+        "past": "climbed",
+        "part": "climbing"
+      },
+      "discriminator": "upward, using hands and feet"
+    },
+    {
+      "w": "crawl",
+      "synset": "crawl.v.01",
+      "gloss_source": "wordnet",
+      "gloss": "move slowly; in the case of people or animals with the body near the ground",
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-05"
+      },
+      "zipf": 3.77,
+      "register": "neutral",
+      "senses_at_pos": 5,
+      "forms": {
+        "base": "crawl",
+        "third": "crawls",
+        "past": "crawled",
+        "part": "crawling"
+      },
+      "discriminator": "low and slow, on hands and knees"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "B-move-01-s01",
+      "answer": "run",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "When Dad shouted dash, Sam had to ___ to the gate.",
+      "cue_phrase": "shouted dash",
+      "surface": {
+        "run": "run",
+        "hop": "hop",
+        "swim": "swim",
+        "climb": "climb",
+        "crawl": "crawl"
+      }
+    },
+    {
+      "id": "B-move-01-s02",
+      "answer": "run",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The starter pistol cracked, and Lila ___ down the racing lane.",
+      "cue_phrase": "starter pistol cracked",
+      "surface": {
+        "run": "ran",
+        "hop": "hopped",
+        "swim": "swam",
+        "climb": "climbed",
+        "crawl": "crawled"
+      }
+    },
+    {
+      "id": "B-move-01-s03",
+      "answer": "run",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "To catch the rolling bus, Arun had to ___ along the pavement.",
+      "cue_phrase": "catch the rolling bus",
+      "surface": {
+        "run": "run",
+        "hop": "hop",
+        "swim": "swim",
+        "climb": "climb",
+        "crawl": "crawl"
+      }
+    },
+    {
+      "id": "B-move-01-s04",
+      "answer": "run",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Late for assembly, the class ___ across the playground together.",
+      "cue_phrase": "Late for assembly",
+      "surface": {
+        "run": "ran",
+        "hop": "hopped",
+        "swim": "swam",
+        "climb": "climbed",
+        "crawl": "crawled"
+      }
+    },
+    {
+      "id": "B-move-01-s05",
+      "answer": "run",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The dog shot ahead, so I had to ___ after it.",
+      "cue_phrase": "dog shot ahead",
+      "surface": {
+        "run": "run",
+        "hop": "hop",
+        "swim": "swim",
+        "climb": "climb",
+        "crawl": "crawl"
+      }
+    },
+    {
+      "id": "B-move-01-s06",
+      "answer": "run",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Everyone reached the shelter dry because we ___ before the storm burst.",
+      "cue_phrase": "before the storm burst",
+      "surface": {
+        "run": "ran",
+        "hop": "hopped",
+        "swim": "swam",
+        "climb": "climbed",
+        "crawl": "crawled"
+      }
+    },
+    {
+      "id": "B-move-01-s07",
+      "answer": "run",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "At sports day, Zara was ___ in the sprint final.",
+      "cue_phrase": "sprint final",
+      "surface": {
+        "run": "running",
+        "hop": "hopping",
+        "swim": "swimming",
+        "climb": "climbing",
+        "crawl": "crawling"
+      }
+    },
+    {
+      "id": "B-move-01-s08",
+      "answer": "run",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "A footballer ___ for the loose ball before defenders arrive.",
+      "cue_phrase": "loose ball before defenders",
+      "surface": {
+        "run": "runs",
+        "hop": "hops",
+        "swim": "swims",
+        "climb": "climbs",
+        "crawl": "crawls"
+      }
+    },
+    {
+      "id": "B-move-01-s09",
+      "answer": "hop",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "During the game, players had to ___ on one leg.",
+      "cue_phrase": "on one leg",
+      "surface": {
+        "run": "run",
+        "hop": "hop",
+        "swim": "swim",
+        "climb": "climb",
+        "crawl": "crawl"
+      }
+    },
+    {
+      "id": "B-move-01-s10",
+      "answer": "hop",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The frog ___ in small bounces from lily pad to lily pad.",
+      "cue_phrase": "small bounces",
+      "surface": {
+        "run": "ran",
+        "hop": "hopped",
+        "swim": "swam",
+        "climb": "climbed",
+        "crawl": "crawled"
+      }
+    },
+    {
+      "id": "B-move-01-s11",
+      "answer": "hop",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "On the numbered squares, Tara had to ___ to number ten.",
+      "cue_phrase": "numbered squares",
+      "surface": {
+        "run": "run",
+        "hop": "hop",
+        "swim": "swim",
+        "climb": "climb",
+        "crawl": "crawl"
+      }
+    },
+    {
+      "id": "B-move-01-s12",
+      "answer": "hop",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Max ___ from square to square without putting both shoes down.",
+      "cue_phrase": "without putting both shoes down",
+      "surface": {
+        "run": "ran",
+        "hop": "hopped",
+        "swim": "swam",
+        "climb": "climbed",
+        "crawl": "crawled"
+      }
+    },
+    {
+      "id": "B-move-01-s13",
+      "answer": "hop",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The floor was lava, so Ravi had to ___ from cushion to cushion.",
+      "cue_phrase": "from cushion to cushion",
+      "surface": {
+        "run": "run",
+        "hop": "hop",
+        "swim": "swim",
+        "climb": "climb",
+        "crawl": "crawl"
+      }
+    },
+    {
+      "id": "B-move-01-s14",
+      "answer": "hop",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The sparrow ___ twice, then pecked the crumbs by the bench.",
+      "cue_phrase": "then pecked the crumbs",
+      "surface": {
+        "run": "ran",
+        "hop": "hopped",
+        "swim": "swam",
+        "climb": "climbed",
+        "crawl": "crawled"
+      }
+    },
+    {
+      "id": "B-move-01-s15",
+      "answer": "hop",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Ben was ___ on only his left leg during the silly relay.",
+      "cue_phrase": "only his left leg",
+      "surface": {
+        "run": "running",
+        "hop": "hopping",
+        "swim": "swimming",
+        "climb": "climbing",
+        "crawl": "crawling"
+      }
+    },
+    {
+      "id": "B-move-01-s16",
+      "answer": "hop",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "A kangaroo ___ over low bushes with springy little bounces.",
+      "cue_phrase": "springy little bounces",
+      "surface": {
+        "run": "runs",
+        "hop": "hops",
+        "swim": "swims",
+        "climb": "climbs",
+        "crawl": "crawls"
+      }
+    },
+    {
+      "id": "B-move-01-s17",
+      "answer": "swim",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "At the pool, they learned to ___ with their faces down.",
+      "cue_phrase": "At the pool",
+      "surface": {
+        "run": "run",
+        "hop": "hop",
+        "swim": "swim",
+        "climb": "climb",
+        "crawl": "crawl"
+      }
+    },
+    {
+      "id": "B-move-01-s18",
+      "answer": "swim",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The seal ___ beneath the waves and popped up beside us.",
+      "cue_phrase": "beneath the waves",
+      "surface": {
+        "run": "ran",
+        "hop": "hopped",
+        "swim": "swam",
+        "climb": "climbed",
+        "crawl": "crawled"
+      }
+    },
+    {
+      "id": "B-move-01-s19",
+      "answer": "swim",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "After putting on goggles, Mira was ready to ___ across the pool.",
+      "cue_phrase": "putting on goggles",
+      "surface": {
+        "run": "run",
+        "hop": "hop",
+        "swim": "swim",
+        "climb": "climb",
+        "crawl": "crawl"
+      }
+    },
+    {
+      "id": "B-move-01-s20",
+      "answer": "swim",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The children ___ to the raft before drying themselves in towels.",
+      "cue_phrase": "drying themselves in towels",
+      "surface": {
+        "run": "ran",
+        "hop": "hopped",
+        "swim": "swam",
+        "climb": "climbed",
+        "crawl": "crawled"
+      }
+    },
+    {
+      "id": "B-move-01-s21",
+      "answer": "swim",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "When the boat tipped, Jo had to ___ to the shore.",
+      "cue_phrase": "boat tipped",
+      "surface": {
+        "run": "swim",
+        "hop": "hop",
+        "swim": "swim",
+        "climb": "climb",
+        "crawl": "crawl"
+      }
+    },
+    {
+      "id": "B-move-01-s22",
+      "answer": "swim",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The ducklings ___ behind their mother across the pond.",
+      "cue_phrase": "across the pond",
+      "surface": {
+        "run": "ran",
+        "hop": "hopped",
+        "swim": "swam",
+        "climb": "climbed",
+        "crawl": "crawled"
+      }
+    },
+    {
+      "id": "B-move-01-s23",
+      "answer": "swim",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "In the deep end, Ali was ___ beside the lane rope.",
+      "cue_phrase": "deep end",
+      "surface": {
+        "run": "running",
+        "hop": "hopping",
+        "swim": "swimming",
+        "climb": "climbing",
+        "crawl": "crawling"
+      }
+    },
+    {
+      "id": "B-move-01-s24",
+      "answer": "swim",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "A fish ___ through the tank past the castle ornament.",
+      "cue_phrase": "through the tank",
+      "surface": {
+        "run": "runs",
+        "hop": "hops",
+        "swim": "swims",
+        "climb": "climbs",
+        "crawl": "crawls"
+      }
+    },
+    {
+      "id": "B-move-01-s25",
+      "answer": "climb",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The scout had to ___ on the rope, hand over hand.",
+      "cue_phrase": "hand over hand",
+      "surface": {
+        "run": "run",
+        "hop": "hop",
+        "swim": "swim",
+        "climb": "climb",
+        "crawl": "crawl"
+      }
+    },
+    {
+      "id": "B-move-01-s26",
+      "answer": "climb",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Cara ___ up the ladder, gripping every rung carefully.",
+      "cue_phrase": "gripping every rung",
+      "surface": {
+        "run": "ran",
+        "hop": "hopped",
+        "swim": "swam",
+        "climb": "climbed",
+        "crawl": "crawled"
+      }
+    },
+    {
+      "id": "B-move-01-s27",
+      "answer": "climb",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "To reach the treehouse door, Imran had to ___ from branch to branch.",
+      "cue_phrase": "reach the treehouse door",
+      "surface": {
+        "run": "run",
+        "hop": "hop",
+        "swim": "swim",
+        "climb": "climb",
+        "crawl": "crawl"
+      }
+    },
+    {
+      "id": "B-move-01-s28",
+      "answer": "climb",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The kitten ___ up the curtain with tiny claws.",
+      "cue_phrase": "with tiny claws",
+      "surface": {
+        "run": "ran",
+        "hop": "hopped",
+        "swim": "swam",
+        "climb": "climbed",
+        "crawl": "crawled"
+      }
+    },
+    {
+      "id": "B-move-01-s29",
+      "answer": "climb",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "To rescue the kite in the tall tree, Pat had to ___.",
+      "cue_phrase": "kite in the tall tree",
+      "surface": {
+        "run": "run",
+        "hop": "hop",
+        "swim": "swim",
+        "climb": "climb",
+        "crawl": "crawl"
+      }
+    },
+    {
+      "id": "B-move-01-s30",
+      "answer": "climb",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The path ended at a cliff, so we ___ with our hands too.",
+      "cue_phrase": "ended at a cliff",
+      "surface": {
+        "run": "ran",
+        "hop": "hopped",
+        "swim": "swam",
+        "climb": "climbed",
+        "crawl": "crawled"
+      }
+    },
+    {
+      "id": "B-move-01-s31",
+      "answer": "climb",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Rosa was ___ up the wall while holding coloured grips.",
+      "cue_phrase": "holding coloured grips",
+      "surface": {
+        "run": "running",
+        "hop": "hopping",
+        "swim": "swimming",
+        "climb": "climbing",
+        "crawl": "crawling"
+      }
+    },
+    {
+      "id": "B-move-01-s32",
+      "answer": "climb",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "A firefighter ___ on the tall ladder to rescue a cat.",
+      "cue_phrase": "tall ladder to rescue",
+      "surface": {
+        "run": "runs",
+        "hop": "hops",
+        "swim": "swims",
+        "climb": "climbs",
+        "crawl": "crawls"
+      }
+    },
+    {
+      "id": "B-move-01-s33",
+      "answer": "crawl",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The baby had to ___ on hands and knees across the rug.",
+      "cue_phrase": "on hands and knees",
+      "surface": {
+        "run": "run",
+        "hop": "hop",
+        "swim": "swim",
+        "climb": "climb",
+        "crawl": "crawl"
+      }
+    },
+    {
+      "id": "B-move-01-s34",
+      "answer": "crawl",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "We ___ on our bellies under the low net.",
+      "cue_phrase": "on our bellies",
+      "surface": {
+        "run": "ran",
+        "hop": "hopped",
+        "swim": "swam",
+        "climb": "climbed",
+        "crawl": "crawled"
+      }
+    },
+    {
+      "id": "B-move-01-s35",
+      "answer": "crawl",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "During the drill, pupils had to ___ below the pretend smoke.",
+      "cue_phrase": "below the pretend smoke",
+      "surface": {
+        "run": "run",
+        "hop": "hop",
+        "swim": "swim",
+        "climb": "climb",
+        "crawl": "crawl"
+      }
+    },
+    {
+      "id": "B-move-01-s36",
+      "answer": "crawl",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The puppy ___ under the sofa to fetch its ball.",
+      "cue_phrase": "under the sofa",
+      "surface": {
+        "run": "ran",
+        "hop": "hopped",
+        "swim": "swam",
+        "climb": "climbed",
+        "crawl": "crawled"
+      }
+    },
+    {
+      "id": "B-move-01-s37",
+      "answer": "crawl",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The tunnel was tiny, so Sam had to ___ through it.",
+      "cue_phrase": "tunnel was tiny",
+      "surface": {
+        "run": "run",
+        "hop": "hop",
+        "swim": "swim",
+        "climb": "climb",
+        "crawl": "crawl"
+      }
+    },
+    {
+      "id": "B-move-01-s38",
+      "answer": "crawl",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The toy car rolled under the bed, and Liam ___ after it.",
+      "cue_phrase": "under the bed",
+      "surface": {
+        "run": "ran",
+        "hop": "hopped",
+        "swim": "swam",
+        "climb": "climbed",
+        "crawl": "crawled"
+      }
+    },
+    {
+      "id": "B-move-01-s39",
+      "answer": "crawl",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Ava was ___ on her knees and palms through the blanket fort.",
+      "cue_phrase": "knees and palms",
+      "surface": {
+        "run": "running",
+        "hop": "hopping",
+        "swim": "swimming",
+        "climb": "climbing",
+        "crawl": "crawling"
+      }
+    },
+    {
+      "id": "B-move-01-s40",
+      "answer": "crawl",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "A snail ___ under the leaf, leaving a shiny trail.",
+      "cue_phrase": "shiny trail",
+      "surface": {
+        "run": "runs",
+        "hop": "hops",
+        "swim": "swims",
+        "climb": "climbs",
+        "crawl": "crawls"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "run",
+      "picked": "hop",
+      "line": "run is quick along a path; hop is short bounces, often on one leg."
+    },
+    {
+      "answer": "run",
+      "picked": "swim",
+      "line": "run is quick on land; swim happens in a pool, lake, or sea."
+    },
+    {
+      "answer": "run",
+      "picked": "climb",
+      "line": "run is quick across a place; climb means going higher with hands helping."
+    },
+    {
+      "answer": "run",
+      "picked": "crawl",
+      "line": "run is quick and upright; crawl is low on hands and knees."
+    },
+    {
+      "answer": "hop",
+      "picked": "run",
+      "line": "hop is short bounces; run is quicker, with many steps."
+    },
+    {
+      "answer": "hop",
+      "picked": "swim",
+      "line": "hop is small bounces on land; swim happens in a pool, lake, or sea."
+    },
+    {
+      "answer": "hop",
+      "picked": "climb",
+      "line": "hop is small bounces; climb means going higher on something."
+    },
+    {
+      "answer": "hop",
+      "picked": "crawl",
+      "line": "hop is bouncy and upright; crawl is low on hands and knees."
+    },
+    {
+      "answer": "swim",
+      "picked": "run",
+      "line": "swim happens in a pool, lake, or sea; run is quick on land."
+    },
+    {
+      "answer": "swim",
+      "picked": "hop",
+      "line": "swim happens in a pool, lake, or sea; hop is short bounces."
+    },
+    {
+      "answer": "swim",
+      "picked": "climb",
+      "line": "swim happens in a pool, lake, or sea; climb means going higher."
+    },
+    {
+      "answer": "swim",
+      "picked": "crawl",
+      "line": "swim happens in a pool, lake, or sea; crawl is low on hands and knees."
+    },
+    {
+      "answer": "climb",
+      "picked": "run",
+      "line": "climb means going higher with hands helping; run is quick across a place."
+    },
+    {
+      "answer": "climb",
+      "picked": "hop",
+      "line": "climb means going higher on something; hop is small bounces."
+    },
+    {
+      "answer": "climb",
+      "picked": "swim",
+      "line": "climb means going higher on something; swim happens in a pool, lake, or sea."
+    },
+    {
+      "answer": "climb",
+      "picked": "crawl",
+      "line": "climb means going higher; crawl is low on hands and knees."
+    },
+    {
+      "answer": "crawl",
+      "picked": "run",
+      "line": "crawl is low on hands and knees; run is quick and upright."
+    },
+    {
+      "answer": "crawl",
+      "picked": "hop",
+      "line": "crawl is low on hands and knees; hop is bouncy and upright."
+    },
+    {
+      "answer": "crawl",
+      "picked": "swim",
+      "line": "crawl is low on hands and knees; swim happens in a pool, lake, or sea."
+    },
+    {
+      "answer": "crawl",
+      "picked": "climb",
+      "line": "crawl is low on hands and knees; climb means going higher."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-05T07:29:31+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": null,
+    "scrub_note": null
+  }
+}
