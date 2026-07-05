@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://digitalcybersoft.github.io/wordvault/sitemap.xml

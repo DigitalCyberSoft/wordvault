@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Word Vault — the game</title>
+  <meta name="description" content="Crack the safe by choosing the one word that fits. A vocabulary game: five confusable words, one sentence, five in a row opens the vault.">
+  <link rel="canonical" href="https://digitalcybersoft.github.io/wordvault/game.html">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#46505a">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Word Vault">
+  <meta property="og:url" content="https://digitalcybersoft.github.io/wordvault/game.html">
+  <meta property="og:title" content="Word Vault — the game">
+  <meta property="og:description" content="Five confusable words, one sentence with a blank. Five right in a row cracks the safe.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div id="hud">
+    <span class="logo"><img src="assets/logo/logo-mark.svg" alt="" onerror="this.style.display='none'"> Word Vault</span>
+    <span class="stat coins">🪙 <b id="coins">0</b></span>
+    <span class="stat">🔓 <b id="level-pill">Level 1</b></span>
+    <span class="stat" title="Best clean-crack streak">🏆 <b id="beststreak">0</b></span>
+    <span class="spacer"></span>
+    <button class="toggle" id="cabinet-btn">🗄️ Cabinet</button>
+    <button class="toggle" id="mute-toggle">🔊 Sound on</button>
+    <button class="toggle" id="settings-btn">⚙️</button>
+  </div>
+
+  <div id="stage">
+    <section id="slip-wrap">
+      <div id="slip"><span id="slip-text"></span></div>
+    </section>
+
+    <section id="vault-wrap">
+      <svg id="vault" viewBox="0 0 640 420" aria-hidden="true">
+        <!-- wall frame -->
+        <rect x="40" y="10" width="560" height="400" rx="26" fill="#5f6a76"/>
+        <rect x="52" y="22" width="536" height="376" rx="20" fill="#46505a"/>
+        <!-- interior, revealed when the door swings -->
+        <g id="door-inside">
+          <rect x="68" y="38" width="504" height="344" rx="14" fill="#241b10"/>
+          <rect x="68" y="300" width="504" height="82" rx="10" fill="#3a2c18"/>
+          <text id="vault-reward" x="320" y="250" text-anchor="middle" font-size="96"> </text>
+        </g>
+        <!-- the door leaf: steel slab, brass dial + handle. Hinged on its left. -->
+        <g id="door-leaf">
+          <rect x="64" y="34" width="512" height="352" rx="16" fill="#8f9aa6"/>
+          <rect x="76" y="46" width="488" height="328" rx="12" fill="none" stroke="#5f6a76" stroke-width="4"/>
+          <!-- corner rivets -->
+          <circle cx="96" cy="66" r="7" fill="#c9973f"/><circle cx="544" cy="66" r="7" fill="#c9973f"/>
+          <circle cx="96" cy="354" r="7" fill="#c9973f"/><circle cx="544" cy="354" r="7" fill="#c9973f"/>
+          <!-- combination dial -->
+          <circle cx="320" cy="252" r="64" fill="#5f6a76"/>
+          <circle cx="320" cy="252" r="54" fill="#eec36a" stroke="#96702c" stroke-width="5"/>
+          <g id="dial" stroke="#96702c" stroke-width="4" stroke-linecap="round">
+            <line x1="320" y1="206" x2="320" y2="222"/>
+            <line x1="320" y1="282" x2="320" y2="298"/>
+            <line x1="274" y1="252" x2="290" y2="252"/>
+            <line x1="350" y1="252" x2="366" y2="252"/>
+          </g>
+          <circle cx="320" cy="252" r="10" fill="#96702c"/>
+          <!-- handle -->
+          <rect x="452" y="236" width="86" height="30" rx="15" fill="#c9973f" stroke="#96702c" stroke-width="4"/>
+        </g>
+      </svg>
+      <div id="pins" aria-label="progress">
+        <div class="pin" style="--i:0"></div>
+        <div class="pin" style="--i:1"></div>
+        <div class="pin" style="--i:2"></div>
+        <div class="pin" style="--i:3"></div>
+        <div class="pin" style="--i:4"></div>
+      </div>
+    </section>
+
+    <section id="tiles">
+      <button class="tile" data-i="0"></button>
+      <button class="tile" data-i="1"></button>
+      <button class="tile" data-i="2"></button>
+      <button class="tile" data-i="3"></button>
+      <button class="tile" data-i="4"></button>
+    </section>
+  </div>
+
+  <div id="gloss-pop" hidden></div>
+
+  <div class="overlay show" id="title-overlay">
+    <div class="title-menu">
+      <img class="title-logo bob" src="assets/logo/logo.png" alt="Word Vault" onerror="this.outerHTML='<h1 style=&quot;color:#fff;font-size:3rem;margin:0&quot;>🔐 Word Vault</h1>'">
+      <div class="menu-btns">
+        <button class="menu-btn primary" id="continue-btn" style="display:none"><span class="mb-ico">▶</span><span class="mb-text">Continue<span class="mb-sub" id="continue-sub"></span></span></button>
+        <button class="menu-btn primary" id="newgame-btn"><span class="mb-ico">✨</span><span class="mb-text">New game</span></button>
+        <button class="menu-btn" id="cabinet-menu-btn"><span class="mb-ico">🗄️</span><span class="mb-text">Curio Cabinet<span class="mb-sub">Your cracked-safe treasures</span></span></button>
+        <button class="menu-btn" id="howto-btn"><span class="mb-ico">❓</span><span class="mb-text">How to play</span></button>
+        <button class="menu-btn" id="settings-menu-btn"><span class="mb-ico">⚙️</span><span class="mb-text">Settings</span></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="overlay" id="ready-overlay">
+    <div class="card ready-card">
+      <h2 id="ready-title">Get ready</h2>
+      <div class="ready-runs" id="ready-runs"></div>
+      <div id="ready-glosses"></div>
+      <p style="margin:12px 0 14px"><button class="big brass" id="ready-btn">I’ve read them — open the job ▶</button></p>
+    </div>
+  </div>
+
+  <div class="overlay" id="miss-overlay">
+    <div class="card">
+      <h2>The tumblers reset</h2>
+      <p class="cue-line" id="miss-cue"></p>
+      <div class="contrast-cols">
+        <div class="right-col"><h3>The word that fits</h3><div class="cword" id="miss-right-word"></div><p id="miss-right-gloss"></p></div>
+        <div class="picked-col"><h3>You picked</h3><div class="cword" id="miss-picked-word"></div><p id="miss-picked-gloss"></p></div>
+      </div>
+      <p class="contrast-line" id="miss-line"></p>
+      <p id="miss-runs-left" style="font-weight:700"></p>
+      <button class="big" id="miss-next">Try the next run ▶</button>
+    </div>
+  </div>
+
+  <div class="overlay" id="crack-overlay">
+    <div class="card">
+      <h2>💥 CRACKED!</h2>
+      <div id="crack-collectible"></div>
+      <p class="money-line" id="crack-coins"></p>
+      <p class="shelfline" id="crack-shelf"></p>
+      <button class="big brass" id="crack-next">Collect ▶</button>
+    </div>
+  </div>
+
+  <div class="overlay" id="exhaust-overlay">
+    <div class="card">
+      <h2>This safe keeps its secret… for now</h2>
+      <p style="font-weight:600">Here are the words that slipped away. Read them once — you’ll meet this safe again.</p>
+      <div id="exhaust-words"></div>
+      <button class="big" id="exhaust-next">Onward ▶</button>
+    </div>
+  </div>
+
+  <div class="overlay" id="levelup-overlay">
+    <div class="card">
+      <h2>⭐ Level up!</h2>
+      <p class="rank" id="levelup-num"></p>
+      <p id="levelup-rank" style="font-weight:700"></p>
+      <button class="big brass" id="levelup-btn">Keep cracking ▶</button>
+    </div>
+  </div>
+
+  <div class="overlay" id="cabinet-overlay">
+    <div class="card cabinet-card">
+      <h2>🗄️ Curio Cabinet</h2>
+      <div id="shelves"></div>
+      <p style="margin:14px 0 0"><button class="big" id="cabinet-close">Back</button></p>
+    </div>
+  </div>
+
+  <div class="overlay" id="settings-overlay">
+    <div class="card settings-card">
+      <h2>⚙️ Settings</h2>
+      <div class="set-list">
+        <button class="set-row" id="set-sound"><span>Sound</span><span class="set-val" id="set-sound-val">On</span></button>
+        <button class="set-row" id="set-cap"><span>Top level cap <small>(for grown-ups)</small></span><span class="set-val" id="set-cap-val">Off</span></button>
+        <button class="set-row" id="set-howto"><span>How to play</span><span class="set-val">→</span></button>
+        <button class="set-row" id="set-newgame"><span>New game <small>(wipes progress)</small></span><span class="set-val">→</span></button>
+      </div>
+      <p style="text-align:center;margin:10px 0 0"><button class="big" id="settings-close">Done</button></p>
+    </div>
+  </div>
+
+  <div class="overlay" id="howto-overlay">
+    <div class="card">
+      <h2>How to play</h2>
+      <p style="text-align:left;font-weight:600;line-height:1.55">
+        Five words are carved on the brass tiles. The paper slip shows a sentence with a hole in it.
+        <b>Tap the one word that truly fits.</b> Every correct word seats one tumbler pin —
+        five in a row and the vault swings open. One wrong word and all the pins spring back:
+        that run is over, and you get up to three runs per safe.
+        Press and hold a tile to peek at what a word means (on lower levels).
+      </p>
+      <p><button class="big" id="howto-close">Got it</button></p>
+    </div>
+  </div>
+
+  <div id="rotate-note">Turn your tablet sideways to crack the vault 🔄</div>
+
+  <script src="game-content.js"></script>
+  <script src="game-core.js"></script>
+  <script src="game-ui.js"></script>
+</body>
+</html>

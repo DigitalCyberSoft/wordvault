@@ -1,0 +1,279 @@
+/* Word Vault - a vocabulary safe-cracking game. Drawn in CSS/SVG; rasters are the
+   backdrop, the collectibles and the logo only. Sibling of Pizza Palace: same warm
+   chunky family skin, but the vault itself is cool steel + brass so it pops off
+   the warm wall. */
+:root {
+  /* warm family base (kin to pizzashop) */
+  --bg: #f3e2c4;
+  --wall: #e8c99a;
+  --paper: #fdf6e8;
+  --panel: #fff;
+  --ink: #3a2a16;
+  --shadow: 0 6px 0 rgba(0,0,0,.12), 0 12px 24px rgba(0,0,0,.12);
+  /* vault material: cool steel body, brass fittings */
+  --steel: #8f9aa6;
+  --steel-dark: #5f6a76;
+  --steel-deep: #46505a;
+  --brass: #c9973f;
+  --brass-bright: #eec36a;
+  --brass-dark: #96702c;
+  /* feedback: warm gold for correct, desaturated dim for wrong. NO red anywhere -
+     the punishment is the mechanical relock, not a colour. */
+  --gold: #f0b429;
+  --gold-glow: rgba(240,180,41,.45);
+  --dim: #b9b2a6;
+  --dim-ink: #6f675c;
+  /* game-UI skin: pressed undersides + framed-plate rims (pizzashop system) */
+  --go: #2aa877;
+  --go-dark: #1f8a5c;
+  --frame-rim: #ffd9a8;
+  /* radius scale (pizzashop hardcodes these; tokenised here) */
+  --r-sm: 10px; --r-md: 14px; --r-lg: 18px; --r-card: 26px;
+  /* motion budget, pinned by the spec: pin seat < 250ms, relock < 400ms,
+     door open ~ 800ms. Nothing may block the next tap for long. */
+  --t-fly: 300ms; --t-seat: 220ms; --t-relock: 360ms; --t-door: 800ms;
+}
+/* Self-hosted so the GAME needs no network, ever (pizzashop's game page relies on
+   the font being cached from its landing page; this one carries its own). */
+@font-face {
+  font-family: 'Baloo 2';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url('assets/fonts/Baloo2-latin-var.woff2') format('woff2');
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; }
+body {
+  font-family: 'Baloo 2', 'Comic Sans MS', 'Trebuchet MS', system-ui, sans-serif;
+  background-color: var(--bg);
+  background-image: linear-gradient(180deg, rgba(255,244,214,.35) 0%, rgba(120,80,20,.18) 100%);
+  color: var(--ink);
+  -webkit-user-select: none; user-select: none;
+  overflow: hidden;
+}
+
+/* ---- HUD ---- */
+#hud {
+  display: flex; align-items: center; gap: 14px;
+  padding: 8px 16px; background: var(--steel-deep); color: #fff;
+  box-shadow: 0 4px 0 rgba(0,0,0,.15); position: relative; z-index: 5;
+}
+#hud .logo { font-weight: 800; font-size: 1.4rem; letter-spacing: .5px; display: flex; align-items: center; gap: 8px; }
+#hud .logo img { height: 34px; width: 34px; }
+#hud .stat { background: rgba(255,255,255,.16); border-radius: 999px; padding: 4px 12px; font-weight: 700; }
+#hud .stat b { font-variant-numeric: tabular-nums; }
+#hud .stat.coins { background: var(--brass-dark); box-shadow: 0 0 0 2px rgba(255,255,255,.4) inset; }
+#hud .spacer { flex: 1; }
+#hud button.toggle { border: none; border-radius: 999px; padding: 10px 14px; font-weight: 700; cursor: pointer; background: #fff; color: var(--steel-deep); font-family: inherit; }
+
+/* ---- Stage layout: slip above, vault centre, tiles below ---- */
+#stage {
+  height: calc(100% - 52px);
+  display: grid; grid-template-rows: auto 1fr auto;
+  justify-items: center; align-items: center;
+  padding: 10px 16px 16px; gap: 8px;
+  max-width: 1100px; margin: 0 auto;
+}
+
+/* The sentence slip: a paper note, slightly rotated, pinned to the wall above the
+   door. The blank is a hole to fill, not a word: heavy ruled underline + inner
+   shadow. The slip is the reading surface, so it gets the biggest type. */
+#slip-wrap { position: relative; width: min(860px, 96vw); }
+#slip {
+  background: var(--paper);
+  border-radius: 8px;
+  padding: 18px 26px;
+  transform: rotate(-.6deg);
+  box-shadow: 0 3px 0 rgba(0,0,0,.08), 0 10px 18px rgba(0,0,0,.16);
+  font-size: clamp(1.25rem, 2.6vw, 1.7rem); line-height: 1.5; font-weight: 600;
+  min-height: 92px; display: flex; align-items: center; justify-content: center;
+  text-align: center;
+}
+#slip:before { /* tape holding the note up */
+  content: ''; position: absolute; top: -10px; left: 50%; transform: translateX(-50%) rotate(1.5deg);
+  width: 92px; height: 22px; background: rgba(255,236,170,.85); box-shadow: 0 1px 2px rgba(0,0,0,.12);
+}
+#blank {
+  display: inline-block; min-width: 5.5ch; margin: 0 .25ch; padding: 0 .35ch;
+  border-bottom: 4px solid var(--ink); border-radius: 3px;
+  background: rgba(0,0,0,.05); box-shadow: inset 0 2px 3px rgba(0,0,0,.12);
+  font-weight: 800; text-align: center; white-space: nowrap;
+}
+#blank.filled { background: none; box-shadow: none; }
+#blank.glow { animation: blank-glow .5s ease-out both; }
+
+/* ---- The vault ---- */
+#vault-wrap { position: relative; height: 100%; width: min(640px, 92vw); display: grid; place-items: center; }
+#vault { width: 100%; height: auto; max-height: 100%; filter: drop-shadow(0 10px 0 rgba(0,0,0,.12)); }
+/* door swing: a real 3D hinge on the left edge */
+#door-leaf { transform-origin: 12% 50%; transition: transform var(--t-door) cubic-bezier(.6,.04,.35,1); }
+#vault.open #door-leaf { transform: perspective(1400px) rotateY(-104deg); }
+#vault.open { filter: drop-shadow(0 10px 0 rgba(0,0,0,.12)) drop-shadow(0 0 34px var(--gold-glow)); }
+
+/* Five tumbler pins across the door face. The pin row IS the score: empty = dark
+   recess, seated = lit brass. The contrast must read from across a room. */
+#pins { position: absolute; left: 50%; top: 16%; transform: translateX(-50%); display: flex; gap: clamp(10px, 2.4vw, 22px); }
+.pin {
+  width: clamp(30px, 5.4vw, 48px); height: clamp(30px, 5.4vw, 48px); border-radius: 50%;
+  background: radial-gradient(circle at 38% 32%, #39424c 0%, #232a31 70%);
+  box-shadow: inset 0 4px 7px rgba(0,0,0,.55), inset 0 -1px 0 rgba(255,255,255,.14), 0 1px 0 rgba(255,255,255,.25);
+  border: 3px solid var(--steel-dark);
+}
+.pin.seated {
+  background: radial-gradient(circle at 36% 30%, #ffe9ad 0%, var(--brass-bright) 45%, var(--brass) 100%);
+  border-color: var(--brass-dark);
+  box-shadow: 0 0 14px var(--gold-glow), inset 0 2px 0 rgba(255,255,255,.65), inset 0 -3px 5px rgba(120,80,20,.45);
+  animation: pin-seat var(--t-seat) cubic-bezier(.34, 1.56, .64, 1) both;
+}
+.pin.spring { animation: pin-spring var(--t-relock) ease-in both; animation-delay: calc(var(--i) * 40ms); }
+@keyframes pin-seat { 0% { transform: scale(.55); } 70% { transform: scale(1.12); } 100% { transform: scale(1); } }
+@keyframes pin-spring {
+  0% { transform: scale(1); filter: none; }
+  55% { transform: scale(1.12); }
+  100% { transform: scale(1); filter: saturate(.25) brightness(.9); }
+}
+@keyframes blank-glow { 0% { box-shadow: 0 0 0 0 var(--gold-glow); } 100% { box-shadow: 0 0 0 14px rgba(240,180,41,0); } }
+
+/* the whole stage dims for a beat on a miss: desaturation IS the wrong-colour */
+#stage.dimmed #vault-wrap, #stage.dimmed #slip-wrap { filter: saturate(.45) brightness(.94); transition: filter .25s ease; }
+
+/* ---- Word tiles: engraved brass plates that go into a safe ---- */
+#tiles { display: flex; gap: clamp(8px, 1.6vw, 16px); flex-wrap: wrap; justify-content: center; min-height: 84px; }
+.tile {
+  --face: linear-gradient(180deg, #f2d488 0%, var(--brass-bright) 40%, var(--brass) 100%);
+  border: none; border-radius: var(--r-md); padding: 16px 22px; min-width: 128px; min-height: 64px;
+  font-family: inherit; font-size: clamp(1.15rem, 2.2vw, 1.45rem); font-weight: 800; letter-spacing: .02em;
+  color: #4a3410; text-shadow: 0 1px 0 rgba(255,255,255,.45); /* engraved */
+  background: var(--face);
+  box-shadow: inset 0 2px 0 rgba(255,255,255,.6), inset 0 0 0 3px rgba(150,112,44,.5), 0 5px 0 var(--brass-dark), 0 9px 14px rgba(0,0,0,.24);
+  cursor: pointer; touch-action: none; -webkit-tap-highlight-color: transparent; -webkit-touch-callout: none;
+  transition: transform .06s ease, box-shadow .06s ease, filter .1s ease;
+}
+.tile:hover { filter: brightness(1.05); transform: translateY(-2px); }
+.tile.held, .tile:active { transform: translateY(4px); box-shadow: inset 0 2px 0 rgba(255,255,255,.4), inset 0 0 0 3px rgba(150,112,44,.5), 0 1px 0 var(--brass-dark), 0 2px 5px rgba(0,0,0,.26); }
+.tile:focus-visible { outline: none; box-shadow: inset 0 2px 0 rgba(255,255,255,.6), inset 0 0 0 3px rgba(150,112,44,.5), 0 5px 0 var(--brass-dark), 0 9px 14px rgba(0,0,0,.24), 0 0 0 4px #fff, 0 0 0 8px var(--go); }
+.tile.gone { visibility: hidden; } /* its ghost is mid-flight */
+/* the flying clone; positioned by JS, animated by this transition */
+#tile-ghost { position: fixed; z-index: 90; pointer-events: none; transition: transform var(--t-fly) cubic-bezier(.4,.0,.2,1); will-change: transform; }
+#tile-ghost.shake { animation: tile-shake 280ms ease-in-out both; }
+@keyframes tile-shake { 0%,100% { margin-left: 0; } 20%,60% { margin-left: -6px; } 40%,80% { margin-left: 6px; } }
+
+/* ---- Chunky depressible buttons: one system, straight from pizzashop ---- */
+button.big {
+  --face: var(--go); --edge: var(--go-dark);
+  border: none; border-radius: var(--r-md); padding: 12px 22px; font-family: inherit; font-size: 1.1rem; font-weight: 800; color: #fff; cursor: pointer;
+  background-color: var(--face);
+  background-image: linear-gradient(180deg, rgba(255,255,255,.22) 0%, rgba(255,255,255,0) 42%);
+  box-shadow: inset 0 2px 0 rgba(255,255,255,.45), 0 5px 0 var(--edge), 0 9px 14px rgba(0,0,0,.26);
+  transition: transform .06s ease, box-shadow .06s ease, filter .1s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+button.big:hover { filter: brightness(1.05); }
+button.big:active { transform: translateY(4px); box-shadow: inset 0 2px 0 rgba(255,255,255,.35), 0 1px 0 var(--edge), 0 2px 5px rgba(0,0,0,.28); }
+button.big:focus-visible { outline: none; box-shadow: inset 0 2px 0 rgba(255,255,255,.45), 0 5px 0 var(--edge), 0 9px 14px rgba(0,0,0,.26), 0 0 0 4px #fff, 0 0 0 8px var(--go); }
+button.brass { --face: var(--brass); --edge: var(--brass-dark); }
+button.plain { --face: #fff; --edge: #d9c6a0; color: var(--ink); }
+
+/* ---- Overlays (pizzashop system) ---- */
+.overlay { position: fixed; inset: 0; background: radial-gradient(125% 90% at 50% 36%, rgba(25,20,10,.30) 0%, rgba(10,8,4,.66) 78%); display: none; align-items: center; justify-content: center; z-index: 50; }
+.overlay.show { display: flex; }
+.card {
+  background: linear-gradient(180deg, var(--panel) 0%, #fff6e6 100%);
+  border: 3px solid var(--ink); border-radius: var(--r-card); padding: 26px 28px; max-width: 560px; width: 92%;
+  box-shadow: inset 0 3px 0 rgba(255,255,255,.85), inset 0 -7px 0 rgba(150,112,44,.16), 0 0 0 6px var(--frame-rim), 0 0 0 9px var(--brass-dark), var(--shadow);
+  text-align: center;
+}
+.card h2 { margin: 0 0 8px; font-size: 1.8rem; text-shadow: 0 2px 0 rgba(0,0,0,.14); }
+@keyframes pop-in { 0% { transform: translateY(16px) scale(.84); opacity: 0; } 62% { transform: translateY(0) scale(1.03); opacity: 1; } 100% { transform: scale(1); } }
+@keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+@keyframes card-up { 0% { transform: translateY(60vh); opacity: .4; } 100% { transform: translateY(0); opacity: 1; } }
+.overlay.show { animation: fade-in .18s ease both; }
+.overlay.show > .card, .overlay.show > .title-menu { animation: pop-in .26s cubic-bezier(.34, 1.56, .64, 1) both; }
+#miss-overlay.show > .card { animation: card-up .32s cubic-bezier(.2,.8,.3,1) both; }
+.bob { animation: bob 2.6s ease-in-out infinite; }
+#levelup-overlay { z-index: 62; } /* celebration above everything */
+.coin-pop { position: fixed; font-size: 2rem; font-weight: 900; color: var(--brass-dark); z-index: 60; pointer-events: none; animation: coin-fly 1.15s ease-out forwards; }
+@keyframes coin-fly { 0% { opacity: 0; transform: translateY(12px) scale(.6); } 25% { opacity: 1; } 100% { opacity: 0; transform: translateY(-95px) scale(1.25); } }
+
+/* ---- Title menu (pizzashop system) ---- */
+.title-menu { display: flex; flex-direction: column; align-items: center; gap: 16px; width: 90%; max-width: 420px; }
+.title-logo { width: min(320px, 80%); height: auto; filter: drop-shadow(0 6px 0 rgba(0,0,0,.18)); }
+.menu-btns { display: flex; flex-direction: column; gap: 14px; width: 100%; }
+.menu-btn {
+  --face: #fff; --edge: #d9c6a0;
+  display: flex; align-items: center; gap: 14px; width: 100%; padding: 16px 22px; border: none; border-radius: var(--r-lg);
+  color: var(--ink); font-family: inherit; font-weight: 800; font-size: 1.25rem; cursor: pointer; text-align: left;
+  background-color: var(--face);
+  background-image: linear-gradient(180deg, rgba(255,255,255,.5) 0%, rgba(255,255,255,0) 46%);
+  box-shadow: inset 0 2px 0 rgba(255,255,255,.7), 0 5px 0 var(--edge), 0 9px 14px rgba(0,0,0,.22);
+  transition: transform .06s ease, box-shadow .06s ease, filter .1s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+.menu-btn:hover { filter: brightness(1.03); }
+.menu-btn:active { transform: translateY(4px); box-shadow: inset 0 2px 0 rgba(255,255,255,.5), 0 1px 0 var(--edge), 0 2px 5px rgba(0,0,0,.24); }
+.menu-btn:focus-visible { outline: none; box-shadow: inset 0 2px 0 rgba(255,255,255,.7), 0 5px 0 var(--edge), 0 9px 14px rgba(0,0,0,.22), 0 0 0 4px #fff, 0 0 0 8px var(--go); }
+.menu-btn.primary { --face: var(--go); --edge: var(--go-dark); color: #fff; background-image: linear-gradient(180deg, rgba(255,255,255,.25) 0%, rgba(255,255,255,0) 46%); }
+.menu-btn .mb-ico { font-size: 1.55rem; width: 1.8rem; text-align: center; flex: none; }
+.menu-btn .mb-text { display: flex; flex-direction: column; line-height: 1.12; }
+.menu-btn .mb-sub { font-size: .8rem; font-weight: 700; opacity: .85; }
+
+/* ---- Settings (pizzashop system) ---- */
+.settings-card { text-align: left; max-width: 460px; max-height: 90vh; overflow-y: auto; }
+.settings-card h2 { text-align: center; }
+.set-list { display: flex; flex-direction: column; gap: 10px; margin: 14px 0; }
+.set-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; width: 100%; padding: 13px 16px; border: 2px solid #f0e2c4; border-radius: var(--r-md); background: #fffaf0; color: var(--ink); font-family: inherit; font-weight: 700; font-size: 1.02rem; cursor: pointer; }
+.set-row:active { transform: translateY(1px); }
+.set-row .set-val { font-weight: 800; color: var(--go); }
+.set-row .set-val.off { color: #9a8c74; }
+
+/* ---- Get Ready / gloss cards ---- */
+.ready-card { max-width: 720px; }
+.ready-runs { display: flex; justify-content: center; gap: 8px; margin: 4px 0 12px; font-weight: 800; color: var(--dim-ink); }
+#ready-glosses { display: flex; flex-direction: column; gap: 8px; text-align: left; max-height: 46vh; overflow-y: auto; }
+.gloss-card { display: flex; align-items: baseline; gap: 12px; background: #faf6ee; border: 2px dashed #e7cfa6; border-radius: var(--r-md); padding: 10px 14px; }
+.gloss-card b { font-size: 1.2rem; color: var(--brass-dark); min-width: 7ch; }
+.gloss-card span { font-weight: 600; line-height: 1.35; }
+/* long-press popover over a tile (below the help threshold only) */
+#gloss-pop {
+  position: fixed; z-index: 92; max-width: 340px; background: var(--paper); border: 3px solid var(--ink);
+  border-radius: var(--r-md); padding: 12px 16px; font-weight: 600; box-shadow: var(--shadow);
+}
+#gloss-pop b { color: var(--brass-dark); }
+#gloss-pop[hidden] { display: none; }
+
+/* ---- Contrast (miss) card ---- */
+.contrast-cols { display: flex; gap: 14px; margin: 12px 0; text-align: left; }
+.contrast-cols > div { flex: 1 1 0; border-radius: var(--r-md); padding: 12px 14px; }
+.contrast-cols .right-col { background: #f5ecd7; border: 3px solid var(--gold); }
+.contrast-cols .picked-col { background: #efece6; border: 3px solid var(--dim); filter: saturate(.8); }
+.contrast-cols h3 { margin: 0 0 4px; font-size: .85rem; text-transform: uppercase; letter-spacing: .5px; color: var(--dim-ink); }
+.contrast-cols .cword { font-size: 1.35rem; font-weight: 800; }
+.contrast-cols .right-col .cword { color: var(--brass-dark); }
+.contrast-cols p { margin: 6px 0 0; font-weight: 600; font-size: .95rem; line-height: 1.4; }
+.contrast-line { font-weight: 700; background: #eafff5; border: 2px solid #bfe9d7; border-radius: var(--r-sm); padding: 8px 12px; margin: 10px 0 4px; }
+.cue-line { font-weight: 600; margin: 6px 0; }
+.cue-line b { background: #f5e6bd; border-radius: 4px; padding: 0 4px; }
+
+/* ---- Crack / exhaust / cabinet ---- */
+.reward-art { width: 128px; height: 128px; object-fit: contain; margin: 6px auto; display: block; filter: drop-shadow(0 4px 0 rgba(0,0,0,.12)); }
+.shelfline { font-weight: 700; color: var(--dim-ink); margin: 8px 0 0; }
+.cabinet-card { max-width: 760px; }
+#shelves { display: flex; flex-direction: column; gap: 12px; max-height: 56vh; overflow-y: auto; text-align: left; }
+.shelf { background: #f6ead2; border: 3px solid var(--brass-dark); border-radius: var(--r-md); padding: 10px 14px; }
+.shelf h3 { margin: 0 0 6px; color: var(--brass-dark); }
+.shelf .items { display: flex; gap: 10px; }
+.shelf .items .slot { width: 64px; height: 64px; border-radius: var(--r-sm); background: rgba(0,0,0,.08); box-shadow: inset 0 2px 4px rgba(0,0,0,.18); display: grid; place-items: center; }
+.shelf .items .slot img { width: 54px; height: 54px; object-fit: contain; }
+.shelf .items .slot.empty { font-size: 1.6rem; opacity: .35; }
+
+/* ---- Portrait nudge: the game is laid out for tablet landscape ---- */
+#rotate-note { display: none; position: fixed; inset: 0; z-index: 200; background: var(--steel-deep); color: #fff; text-align: center; align-items: center; justify-content: center; font-size: 1.3rem; font-weight: 800; padding: 30px; }
+@media (orientation: portrait) and (max-width: 720px) { #rotate-note { display: flex; } }
+
+/* ---- Reduced motion: every animation collapses, transitions go instant ---- */
+@media (prefers-reduced-motion: reduce) {
+  .overlay.show, .overlay.show > *, .bob, .pin.seated, .pin.spring, #tile-ghost.shake, #blank.glow, .coin-pop { animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
+  #door-leaf, #tile-ghost, button.big, .menu-btn, .tile { transition: none; }
+}

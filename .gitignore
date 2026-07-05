@@ -1,0 +1,2 @@
+# Secrets for the content tools (OpenAI/Anthropic/ElevenLabs keys). Never commit.
+.env
