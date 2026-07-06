@@ -14,14 +14,14 @@
   'use strict';
   var DATA = {
    "schema_version": 1,
-   "built_at": "2026-07-05T13:43:44Z",
+   "built_at": "2026-07-06T08:40:49Z",
    "builder": "tools/bake-content.js",
-   "source_sha256": "2006f006a6943380728e845bb3b740de335bd392131125fc1fd30dd42553b20b",
+   "source_sha256": "8c32a9a9b615b0ffbc75b5fbc770773626f222832212777436025bf556904f0d",
    "counts": {
-    "sets": 23,
-    "words": 115,
-    "sentences": 920,
-    "contrasts": 460
+    "sets": 28,
+    "words": 140,
+    "sentences": 1120,
+    "contrasts": 560
    },
    "bands": {
     "2": [
@@ -46,12 +46,17 @@
      "A-sound-01",
      "A-throw-01",
      "A-tired-01",
+     "A-water-move-01",
+     "B-water-01",
      "B-weather-01",
      "C-borrow-01",
      "C-their-01"
     ],
     "4": [
-     "A-rough-01"
+     "A-look-01",
+     "A-rough-01",
+     "A-say-01",
+     "B-landform-01"
     ]
    },
    "sets": [
@@ -67,7 +72,7 @@
       "zipf_mean": 3.75,
       "tightness": null,
       "band_suggested": 4,
-      "scored_at": "2026-07-05T13:15:51+00:00"
+      "scored_at": "2026-07-06T05:33:18+00:00"
      },
      "words": [
       {
@@ -1089,7 +1094,7 @@
       "zipf_mean": 2.8,
       "tightness": 0.5,
       "band_suggested": 4,
-      "scored_at": "2026-07-05T13:15:51+00:00"
+      "scored_at": "2026-07-06T05:33:18+00:00"
      },
      "words": [
       {
@@ -2146,7 +2151,7 @@
       "zipf_mean": 3.07,
       "tightness": 0.241,
       "band_suggested": 3,
-      "scored_at": "2026-07-05T13:15:51+00:00"
+      "scored_at": "2026-07-06T05:33:18+00:00"
      },
      "words": [
       {
@@ -3139,7 +3144,7 @@
       "zipf_mean": 4.15,
       "tightness": null,
       "band_suggested": 2,
-      "scored_at": "2026-07-05T13:15:51+00:00"
+      "scored_at": "2026-07-06T05:33:18+00:00"
      },
      "words": [
       {
@@ -4133,7 +4138,7 @@
       "zipf_mean": 4.3,
       "tightness": null,
       "band_suggested": 3,
-      "scored_at": "2026-07-05T13:15:51+00:00"
+      "scored_at": "2026-07-06T05:33:18+00:00"
      },
      "words": [
       {
@@ -5174,7 +5179,7 @@
       "zipf_mean": 3.92,
       "tightness": null,
       "band_suggested": 4,
-      "scored_at": "2026-07-05T13:15:51+00:00"
+      "scored_at": "2026-07-06T05:33:18+00:00"
      },
      "words": [
       {
@@ -6116,7 +6121,7 @@
       "zipf_mean": 3.48,
       "tightness": null,
       "band_suggested": 3,
-      "scored_at": "2026-07-05T13:15:51+00:00"
+      "scored_at": "2026-07-06T05:33:18+00:00"
      },
      "words": [
       {
@@ -7172,7 +7177,7 @@
       "zipf_mean": 3.62,
       "tightness": null,
       "band_suggested": 3,
-      "scored_at": "2026-07-05T13:15:51+00:00"
+      "scored_at": "2026-07-06T05:33:18+00:00"
      },
      "words": [
       {
@@ -8262,7 +8267,7 @@
       "zipf_mean": 3.42,
       "tightness": 0.693,
       "band_suggested": 4,
-      "scored_at": "2026-07-05T13:15:51+00:00"
+      "scored_at": "2026-07-06T05:33:18+00:00"
      },
      "words": [
       {
@@ -9162,7 +9167,7 @@
       "zipf_mean": 3.45,
       "tightness": 0.667,
       "band_suggested": 5,
-      "scored_at": "2026-07-05T13:15:51+00:00",
+      "scored_at": "2026-07-06T05:33:18+00:00",
       "note": "band_suggested from rarity alone misleads here: tiptoe/trudge are children's-book staples that news corpora undercount. Overridden to 2 by hand."
      },
      "words": [
@@ -10008,7 +10013,7 @@
       "zipf_mean": 3.48,
       "tightness": null,
       "band_suggested": 3,
-      "scored_at": "2026-07-05T13:15:51+00:00"
+      "scored_at": "2026-07-06T05:33:18+00:00"
      },
      "words": [
       {
@@ -11034,7 +11039,7 @@
       "zipf_mean": 3.91,
       "tightness": null,
       "band_suggested": 3,
-      "scored_at": "2026-07-05T13:15:51+00:00"
+      "scored_at": "2026-07-06T05:33:18+00:00"
      },
      "words": [
       {
@@ -12036,7 +12041,7 @@
       "zipf_mean": 3.48,
       "tightness": null,
       "band_suggested": 3,
-      "scored_at": "2026-07-05T13:15:51+00:00"
+      "scored_at": "2026-07-06T05:33:18+00:00"
      },
      "words": [
       {
@@ -12990,7 +12995,7 @@
       "zipf_mean": 3.46,
       "tightness": null,
       "band_suggested": 4,
-      "scored_at": "2026-07-05T13:15:51+00:00"
+      "scored_at": "2026-07-06T05:33:18+00:00"
      },
      "words": [
       {
@@ -13968,7 +13973,7 @@
       "zipf_mean": 3.33,
       "tightness": null,
       "band_suggested": 4,
-      "scored_at": "2026-07-05T13:15:51+00:00"
+      "scored_at": "2026-07-06T05:33:18+00:00"
      },
      "words": [
       {
@@ -15010,7 +15015,7 @@
       "zipf_mean": 3.95,
       "tightness": null,
       "band_suggested": 3,
-      "scored_at": "2026-07-05T13:15:51+00:00"
+      "scored_at": "2026-07-06T05:33:18+00:00"
      },
      "words": [
       {
@@ -15932,7 +15937,7 @@
       "zipf_mean": 3.38,
       "tightness": null,
       "band_suggested": 3,
-      "scored_at": "2026-07-05T13:15:51+00:00"
+      "scored_at": "2026-07-06T05:33:18+00:00"
      },
      "words": [
       {
@@ -16934,7 +16939,7 @@
       "zipf_mean": 3.91,
       "tightness": 0.374,
       "band_suggested": 3,
-      "scored_at": "2026-07-05T13:15:51+00:00"
+      "scored_at": "2026-07-06T05:33:18+00:00"
      },
      "words": [
       {
@@ -17896,7 +17901,7 @@
       "zipf_mean": 3.27,
       "tightness": null,
       "band_suggested": 4,
-      "scored_at": "2026-07-05T13:15:51+00:00"
+      "scored_at": "2026-07-06T05:33:18+00:00"
      },
      "words": [
       {
@@ -18815,6 +18820,1829 @@
      }
     },
     {
+     "id": "A-water-move-01",
+     "bank": "A",
+     "pos": "verb",
+     "theme": "moving through water",
+     "band": 3,
+     "band_override": 3,
+     "computed": {
+      "zipf_min": 3.49,
+      "zipf_mean": 3.88,
+      "tightness": 0.28,
+      "band_suggested": 2,
+      "scored_at": "2026-07-06T05:33:18+00:00"
+     },
+     "words": [
+      {
+       "w": "wade",
+       "synset": "wade.v.01",
+       "gloss_source": "authored",
+       "gloss": "walk through water that is not deep",
+       "zipf": 3.98,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "wade",
+        "third": "wades",
+        "past": "waded",
+        "part": "wading"
+       },
+       "discriminator": "walking through shallow water",
+       "grade": 3
+      },
+      {
+       "w": "paddle",
+       "synset": "dabble.v.02",
+       "gloss_source": "authored",
+       "gloss": "splash and play about in water with hands and feet",
+       "zipf": 3.49,
+       "register": "neutral",
+       "senses_at_pos": 6,
+       "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-06",
+        "note": "dominant school-context sense confirmed at vet"
+       },
+       "forms": {
+        "base": "paddle",
+        "third": "paddles",
+        "past": "paddled",
+        "part": "paddling"
+       },
+       "discriminator": "splashy play at the edge",
+       "grade": 2
+      },
+      {
+       "w": "drift",
+       "synset": "float.v.01",
+       "gloss_source": "wordnet",
+       "gloss": "be in motion due to some air or water current",
+       "zipf": 3.82,
+       "register": "neutral",
+       "senses_at_pos": 10,
+       "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-06",
+        "note": "dominant school-context sense confirmed at vet"
+       },
+       "forms": {
+        "base": "drift",
+        "third": "drifts",
+        "past": "drifted",
+        "part": "drifting"
+       },
+       "discriminator": "carried along by the current",
+       "grade": 4
+      },
+      {
+       "w": "plunge",
+       "synset": "dive.v.01",
+       "gloss_source": "authored",
+       "gloss": "fall or throw yourself suddenly straight down into something",
+       "zipf": 3.49,
+       "register": "neutral",
+       "senses_at_pos": 8,
+       "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-06",
+        "note": "dominant school-context sense confirmed at vet"
+       },
+       "forms": {
+        "base": "plunge",
+        "third": "plunges",
+        "past": "plunged",
+        "part": "plunging"
+       },
+       "discriminator": "sudden dive straight in",
+       "grade": 4
+      },
+      {
+       "w": "bob",
+       "synset": "bob.v.01",
+       "gloss_source": "wordnet",
+       "gloss": "move up and down repeatedly",
+       "zipf": 4.63,
+       "register": "neutral",
+       "senses_at_pos": 5,
+       "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-06",
+        "note": "dominant school-context sense confirmed at vet"
+       },
+       "forms": {
+        "base": "bob",
+        "third": "bobs",
+        "past": "bobbed",
+        "part": "bobbing"
+       },
+       "discriminator": "floating up and down on the spot",
+       "grade": 2
+      }
+     ],
+     "sentences": [
+      {
+       "id": "A-water-move-01-s01",
+       "answer": "wade",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Lena ___ across the ankle-high stream, holding her lunchbox above the ripples.",
+       "cue_phrase": "ankle-high stream",
+       "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+       }
+      },
+      {
+       "id": "A-water-move-01-s02",
+       "answer": "wade",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Our class ___ through knee-high puddles after the drain blocked the playground gate.",
+       "cue_phrase": "knee-high puddles",
+       "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+       }
+      },
+      {
+       "id": "A-water-move-01-s03",
+       "answer": "wade",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Mum lifted her skirt and ___ to the stranded football near the reeds.",
+       "cue_phrase": "lifted her skirt",
+       "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+       }
+      },
+      {
+       "id": "A-water-move-01-s04",
+       "answer": "wade",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "With socks stuffed in pockets, the hikers ___ over shiny stones to camp.",
+       "cue_phrase": "socks stuffed in pockets",
+       "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+       }
+      },
+      {
+       "id": "A-water-move-01-s05",
+       "answer": "wade",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Theo's trainers dried by lunchtime after he ___ across the playground puddle.",
+       "cue_phrase": "trainers dried by lunchtime",
+       "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+       }
+      },
+      {
+       "id": "A-water-move-01-s06",
+       "answer": "wade",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The dog kept its collar dry when it ___ through the little brook.",
+       "cue_phrase": "collar dry",
+       "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+       }
+      },
+      {
+       "id": "A-water-move-01-s07",
+       "answer": "wade",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "To rescue the kite, Amira ___ through the marsh with boots on.",
+       "cue_phrase": "with boots on",
+       "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+       }
+      },
+      {
+       "id": "A-water-move-01-s08",
+       "answer": "wade",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "Grandad's trousers were wet below the knees after he ___ through the ford.",
+       "cue_phrase": "wet below the knees",
+       "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+       }
+      },
+      {
+       "id": "A-water-move-01-s09",
+       "answer": "paddle",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The toddlers ___ from the pier steps, kicking tiny arcs over pebbles.",
+       "cue_phrase": "kicking tiny arcs",
+       "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+       }
+      },
+      {
+       "id": "A-water-move-01-s10",
+       "answer": "paddle",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "On warm afternoons, Rafi ___ from the low step, flicking spray with his toes.",
+       "cue_phrase": "flicking spray",
+       "surface": {
+        "wade": "wades",
+        "paddle": "paddles",
+        "drift": "drifts",
+        "plunge": "plunges",
+        "bob": "bobs"
+       }
+      },
+      {
+       "id": "A-water-move-01-s11",
+       "answer": "paddle",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Jess sat laughing and ___ beside the sandcastles, making ripples with her toes.",
+       "cue_phrase": "Jess sat laughing",
+       "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+       }
+      },
+      {
+       "id": "A-water-move-01-s12",
+       "answer": "paddle",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The beach trip let us ___ from the rock ledge, stirring the foam gently.",
+       "cue_phrase": "from the rock ledge",
+       "surface": {
+        "wade": "wade",
+        "paddle": "paddle",
+        "drift": "drift",
+        "plunge": "plunge",
+        "bob": "bob"
+       }
+      },
+      {
+       "id": "A-water-move-01-s13",
+       "answer": "paddle",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "No one went far; the children sat and ___, shrieking at cold foam.",
+       "cue_phrase": "children sat and",
+       "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads bob charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-water-move-01-s14",
+       "answer": "paddle",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Maya's shorts stayed dry while she ___ from her seat at the pool edge.",
+       "cue_phrase": "shorts stayed dry",
+       "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+       }
+      },
+      {
+       "id": "A-water-move-01-s15",
+       "answer": "paddle",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Grandma allowed me to ___ on the bottom step while she watched from the towel.",
+       "cue_phrase": "on the bottom step",
+       "surface": {
+        "wade": "wade",
+        "paddle": "paddle",
+        "drift": "drift",
+        "plunge": "plunge",
+        "bob": "bob"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads bob charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-water-move-01-s16",
+       "answer": "paddle",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "Cousins ___ by the flat stone at the lake edge, giggling at every ripple.",
+       "cue_phrase": "giggling at every ripple",
+       "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3 (gpt-5.5 adds bob, wade; claude-opus-4-8 adds wade): wade co-occurs at a lake edge, but the children stay put at the stone giggling at ripples - playing in place is paddle's staging, wading goes somewhere",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-water-move-01-s17",
+       "answer": "drift",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The paper boat ___ downstream without oars, engine, or anyone pushing.",
+       "cue_phrase": "downstream without oars",
+       "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads bob charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-water-move-01-s18",
+       "answer": "drift",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "A leaf ___ ten metres downstream, lying flat and still on the river.",
+       "cue_phrase": "ten metres downstream",
+       "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+       }
+      },
+      {
+       "id": "A-water-move-01-s19",
+       "answer": "drift",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The untied raft ___ away, level as a tray, while everyone argued.",
+       "cue_phrase": "level as a tray",
+       "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads bob charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-water-move-01-s20",
+       "answer": "drift",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "We watched the message bottle ___ past the pier, smooth as a leaf.",
+       "cue_phrase": "smooth as a leaf",
+       "surface": {
+        "wade": "wade",
+        "paddle": "paddle",
+        "drift": "drift",
+        "plunge": "plunge",
+        "bob": "bob"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads bob charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-water-move-01-s21",
+       "answer": "drift",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "By tea, the lost ball had ___ from our dock to the mill.",
+       "cue_phrase": "from our dock to",
+       "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads bob charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-water-move-01-s22",
+       "answer": "drift",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Nobody touched the canoe, yet it ___ from the reeds to midstream.",
+       "cue_phrase": "Nobody touched",
+       "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads bob charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-water-move-01-s23",
+       "answer": "drift",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "The foam cup ___ downstream smoothly, carried by the brook after the picnic.",
+       "cue_phrase": "downstream smoothly",
+       "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads bob charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-water-move-01-s24",
+       "answer": "drift",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "In the story, the sleeping basket ___ past moonlit reeds, with no rower.",
+       "cue_phrase": "with no rower",
+       "surface": {
+        "wade": "wades",
+        "paddle": "paddles",
+        "drift": "drifts",
+        "plunge": "plunges",
+        "bob": "bobs"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads bob charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-water-move-01-s25",
+       "answer": "plunge",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "At the whistle, Sam ___ headfirst from the board into the pool.",
+       "cue_phrase": "headfirst from the board",
+       "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+       }
+      },
+      {
+       "id": "A-water-move-01-s26",
+       "answer": "plunge",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The stunt frog ___ from the lily pad into the pond with one leap.",
+       "cue_phrase": "with one leap",
+       "surface": {
+        "wade": "wades",
+        "paddle": "paddles",
+        "drift": "drifts",
+        "plunge": "plunges",
+        "bob": "bobs"
+       }
+      },
+      {
+       "id": "A-water-move-01-s27",
+       "answer": "plunge",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The pirate ___ off the mast, and a tall spray hid his hat.",
+       "cue_phrase": "off the mast",
+       "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+       }
+      },
+      {
+       "id": "A-water-move-01-s28",
+       "answer": "plunge",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The dragon made its rider ___ through the cloud into the lake below.",
+       "cue_phrase": "lake below",
+       "surface": {
+        "wade": "wade",
+        "paddle": "paddle",
+        "drift": "drift",
+        "plunge": "plunge",
+        "bob": "bob"
+       }
+      },
+      {
+       "id": "A-water-move-01-s29",
+       "answer": "plunge",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Everyone gasped when Noor ___; one second later, waves slapped the tiles.",
+       "cue_phrase": "Everyone gasped",
+       "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+       }
+      },
+      {
+       "id": "A-water-move-01-s30",
+       "answer": "plunge",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Kai's towel flew up as he ___, leaving only a round hole.",
+       "cue_phrase": "only a round hole",
+       "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+       }
+      },
+      {
+       "id": "A-water-move-01-s31",
+       "answer": "plunge",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "The coach told us to ___ headfirst only in the marked diving lane.",
+       "cue_phrase": "headfirst only",
+       "surface": {
+        "wade": "wade",
+        "paddle": "paddle",
+        "drift": "drift",
+        "plunge": "plunge",
+        "bob": "bob"
+       }
+      },
+      {
+       "id": "A-water-move-01-s32",
+       "answer": "plunge",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The seal ___ off the rock, vanishing beneath white foam.",
+       "cue_phrase": "vanishing beneath",
+       "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+       }
+      },
+      {
+       "id": "A-water-move-01-s33",
+       "answer": "bob",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The cork ___ in place, rising and sinking beside the toy boat.",
+       "cue_phrase": "rising and sinking",
+       "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+       }
+      },
+      {
+       "id": "A-water-move-01-s34",
+       "answer": "bob",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "A fishing float ___ on the spot whenever tiny waves pass.",
+       "cue_phrase": "on the spot",
+       "surface": {
+        "wade": "wades",
+        "paddle": "paddles",
+        "drift": "drifts",
+        "plunge": "plunges",
+        "bob": "bobs"
+       }
+      },
+      {
+       "id": "A-water-move-01-s35",
+       "answer": "bob",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Milo watched his apple ___ beside the bucket, never leaving the corner.",
+       "cue_phrase": "never leaving the corner",
+       "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+       }
+      },
+      {
+       "id": "A-water-move-01-s36",
+       "answer": "bob",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "We saw the buoy ___ beside the harbour wall after each small wave.",
+       "cue_phrase": "after each small wave",
+       "surface": {
+        "wade": "wade",
+        "paddle": "paddle",
+        "drift": "drift",
+        "plunge": "plunge",
+        "bob": "bob"
+       }
+      },
+      {
+       "id": "A-water-move-01-s37",
+       "answer": "bob",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The bottle cap stayed near my toes while it ___ all afternoon.",
+       "cue_phrase": "stayed near my toes",
+       "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+       }
+      },
+      {
+       "id": "A-water-move-01-s38",
+       "answer": "bob",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Tiny bath waves tapped the duck, but it ___ beside the soap.",
+       "cue_phrase": "waves tapped the duck",
+       "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads drift charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-water-move-01-s39",
+       "answer": "bob",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "The red ball ___ up, down, up, down inside the rain barrel.",
+       "cue_phrase": "up, down, up",
+       "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+       }
+      },
+      {
+       "id": "A-water-move-01-s40",
+       "answer": "bob",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "In rough weather, the little buoy ___ beside the jetty like a yo-yo.",
+       "cue_phrase": "like a yo-yo",
+       "surface": {
+        "wade": "wades",
+        "paddle": "paddles",
+        "drift": "drifts",
+        "plunge": "plunges",
+        "bob": "bobs"
+       }
+      }
+     ],
+     "contrasts": [
+      {
+       "answer": "wade",
+       "picked": "paddle",
+       "line": "Wade is crossing on foot through shallows. Paddle is playful kicking at the edge."
+      },
+      {
+       "answer": "wade",
+       "picked": "drift",
+       "line": "Wade uses legs to get across a shallow place. Drift is being carried along without steering."
+      },
+      {
+       "answer": "wade",
+       "picked": "plunge",
+       "line": "Wade is slow crossing through shallows. Plunge is a quick headfirst leap in."
+      },
+      {
+       "answer": "wade",
+       "picked": "bob",
+       "line": "Wade travels across a shallow place. Bob stays near one spot, rising and sinking."
+      },
+      {
+       "answer": "paddle",
+       "picked": "wade",
+       "line": "Paddle is playful kicking at the edge. Wade is crossing through shallows to get somewhere."
+      },
+      {
+       "answer": "paddle",
+       "picked": "drift",
+       "line": "Paddle is active fun at the edge. Drift is being carried along without effort."
+      },
+      {
+       "answer": "paddle",
+       "picked": "plunge",
+       "line": "Paddle is gentle edge fun. Plunge is a bold leap in from above."
+      },
+      {
+       "answer": "paddle",
+       "picked": "bob",
+       "line": "Paddle makes little sprays at the edge. Bob rises and sinks near one spot."
+      },
+      {
+       "answer": "drift",
+       "picked": "wade",
+       "line": "Drift means being carried along. Wade means crossing shallows on foot."
+      },
+      {
+       "answer": "drift",
+       "picked": "paddle",
+       "line": "Drift is passive travel with the flow. Paddle is playful kicking at the edge."
+      },
+      {
+       "answer": "drift",
+       "picked": "plunge",
+       "line": "Drift is slow carried travel. Plunge is a quick leap in from above."
+      },
+      {
+       "answer": "drift",
+       "picked": "bob",
+       "line": "Drift goes along with the flow. Bob rises and sinks near the same place."
+      },
+      {
+       "answer": "plunge",
+       "picked": "wade",
+       "line": "Plunge is a quick headfirst leap in. Wade is careful crossing through shallows."
+      },
+      {
+       "answer": "plunge",
+       "picked": "paddle",
+       "line": "Plunge is a bold leap in. Paddle is small, playful kicking at the edge."
+      },
+      {
+       "answer": "plunge",
+       "picked": "drift",
+       "line": "Plunge is a quick entry from above. Drift is being carried along slowly."
+      },
+      {
+       "answer": "plunge",
+       "picked": "bob",
+       "line": "Plunge goes in with a leap. Bob stays afloat, rising and sinking."
+      },
+      {
+       "answer": "bob",
+       "picked": "wade",
+       "line": "Bob rises and sinks near one spot. Wade crosses through shallows on foot."
+      },
+      {
+       "answer": "bob",
+       "picked": "paddle",
+       "line": "Bob is up-and-down floating. Paddle is playful kicking at the edge."
+      },
+      {
+       "answer": "bob",
+       "picked": "drift",
+       "line": "Bob stays near one spot, rising and sinking. Drift travels along with the flow."
+      },
+      {
+       "answer": "bob",
+       "picked": "plunge",
+       "line": "Bob is gentle up-and-down floating. Plunge is a quick leap in from above."
+      }
+     ],
+     "meta": {
+      "generated_at": "2026-07-06T05:24:41+00:00",
+      "model": "gpt-5.5",
+      "scrubbed_at": "2026-07-06T08:40:26+00:00",
+      "scrub_note": "Full read; two toe-tic frames varied; s16 restaged from ducklings (swim sense) to children at play to match the dabble pin. s34 rephrased off the verbatim gloss (M7)."
+     }
+    },
+    {
+     "id": "B-water-01",
+     "bank": "B",
+     "pos": "noun",
+     "theme": "kinds of water places",
+     "band": 3,
+     "band_override": 3,
+     "computed": {
+      "zipf_min": 3.26,
+      "zipf_mean": 3.85,
+      "tightness": 0.601,
+      "band_suggested": 3,
+      "scored_at": "2026-07-06T05:33:18+00:00"
+     },
+     "words": [
+      {
+       "w": "stream",
+       "synset": "stream.n.01",
+       "gloss_source": "wordnet",
+       "gloss": "a natural body of running water flowing on or under the earth",
+       "zipf": 4.62,
+       "register": "neutral",
+       "senses_at_pos": 5,
+       "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-06",
+        "note": "dominant school-context sense confirmed at vet"
+       },
+       "forms": {
+        "base": "stream"
+       },
+       "discriminator": "narrow running water",
+       "grade": 2
+      },
+      {
+       "w": "puddle",
+       "synset": "pool.n.06",
+       "gloss_source": "authored",
+       "gloss": "a small patch of water lying on the ground or floor, soon gone",
+       "zipf": 3.26,
+       "register": "neutral",
+       "senses_at_pos": 3,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "puddle"
+       },
+       "discriminator": "small, shallow, on the ground, soon gone",
+       "grade": 1
+      },
+      {
+       "w": "pond",
+       "synset": "pond.n.01",
+       "gloss_source": "wordnet",
+       "gloss": "a small lake",
+       "zipf": 3.98,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "pond"
+       },
+       "discriminator": "small still water that stays",
+       "grade": 2
+      },
+      {
+       "w": "waterfall",
+       "synset": "waterfall.n.01",
+       "gloss_source": "wordnet",
+       "gloss": "a steep descent of the water of a river",
+       "zipf": 3.54,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "waterfall"
+       },
+       "discriminator": "water falling off a drop",
+       "grade": 2
+      },
+      {
+       "w": "marsh",
+       "synset": "marsh.n.01",
+       "gloss_source": "wordnet",
+       "gloss": "low-lying wet land with grassy vegetation; usually is a transition zone between land and water",
+       "zipf": 3.87,
+       "register": "neutral",
+       "senses_at_pos": 3,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "marsh"
+       },
+       "discriminator": "wet, grassy, squelchy ground",
+       "grade": 5
+      }
+     ],
+     "sentences": [
+      {
+       "id": "B-water-01-s01",
+       "answer": "stream",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The narrow ___ slipped under the footbridge, carrying leaves past Mia.",
+       "cue_phrase": "carrying leaves past",
+       "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+       }
+      },
+      {
+       "id": "B-water-01-s02",
+       "answer": "stream",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Pebbles clicked as the ___ raced along its winding channel.",
+       "cue_phrase": "raced along its winding",
+       "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+       }
+      },
+      {
+       "id": "B-water-01-s03",
+       "answer": "stream",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Nina followed the ___ through the wood, hearing it chatter.",
+       "cue_phrase": "hearing it chatter",
+       "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+       }
+      },
+      {
+       "id": "B-water-01-s04",
+       "answer": "stream",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The toy boat floated down the ___ and disappeared round a bend.",
+       "cue_phrase": "floated down the",
+       "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+       }
+      },
+      {
+       "id": "B-water-01-s05",
+       "answer": "stream",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "After the hill path, we filled bottles where the ___ crossed our boots.",
+       "cue_phrase": "crossed our boots",
+       "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+       }
+      },
+      {
+       "id": "B-water-01-s06",
+       "answer": "stream",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The map showed a blue thread, so we searched for the ___.",
+       "cue_phrase": "blue thread",
+       "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+       }
+      },
+      {
+       "id": "B-water-01-s07",
+       "answer": "stream",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Ferns leaned over the ___, and tiny fish faced the current.",
+       "cue_phrase": "fish faced the current",
+       "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+       }
+      },
+      {
+       "id": "B-water-01-s08",
+       "answer": "stream",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "We heard the ___ gurgle before seeing it between the stones.",
+       "cue_phrase": "gurgle before seeing",
+       "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+       }
+      },
+      {
+       "id": "B-water-01-s09",
+       "answer": "puddle",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "A shallow ___ on the pavement reflected Jo's red boots.",
+       "cue_phrase": "on the pavement",
+       "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+       }
+      },
+      {
+       "id": "B-water-01-s10",
+       "answer": "puddle",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "After the storm, Sam splashed both shoes in the ___ beside the kerb.",
+       "cue_phrase": "beside the kerb",
+       "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads stream charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "B-water-01-s11",
+       "answer": "puddle",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "By lunchtime, the ___ near the gate had dried in the sun.",
+       "cue_phrase": "dried in the sun",
+       "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+       }
+      },
+      {
+       "id": "B-water-01-s12",
+       "answer": "puddle",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Mum wiped the muddy ___ from the hall tiles with one towel.",
+       "cue_phrase": "from the hall tiles",
+       "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+       }
+      },
+      {
+       "id": "B-water-01-s13",
+       "answer": "puddle",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Lena jumped over the ___ on the kitchen floor with clean socks.",
+       "cue_phrase": "kitchen floor with",
+       "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+       }
+      },
+      {
+       "id": "B-water-01-s14",
+       "answer": "puddle",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The dog shook, and a shiny ___ spread under the chair.",
+       "cue_phrase": "under the chair",
+       "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+       }
+      },
+      {
+       "id": "B-water-01-s15",
+       "answer": "puddle",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Only the ___ in the playground mirrored the clouds after assembly.",
+       "cue_phrase": "in the playground",
+       "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads pond charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "B-water-01-s16",
+       "answer": "puddle",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "Dad placed a bucket under the leak, but a ___ formed.",
+       "cue_phrase": "under the leak",
+       "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads stream charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "B-water-01-s17",
+       "answer": "pond",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Ducks glided across the still ___ behind the school garden.",
+       "cue_phrase": "Ducks glided across",
+       "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+       }
+      },
+      {
+       "id": "B-water-01-s18",
+       "answer": "pond",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Goldfish hid under lily pads in the ___ by Grandad's shed.",
+       "cue_phrase": "Goldfish hid under",
+       "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+       }
+      },
+      {
+       "id": "B-water-01-s19",
+       "answer": "pond",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "We skated on the frozen ___ after the ranger checked the ice.",
+       "cue_phrase": "skated on the frozen",
+       "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads stream charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "B-water-01-s20",
+       "answer": "pond",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The class counted frogspawn at the ___ every week until June.",
+       "cue_phrase": "until June",
+       "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads marsh charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "B-water-01-s21",
+       "answer": "pond",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Tariq walked around the ___ and fed ducks from each side.",
+       "cue_phrase": "fed ducks from",
+       "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+       }
+      },
+      {
+       "id": "B-water-01-s22",
+       "answer": "pond",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Dragonflies hovered over the ___, whose surface barely rippled.",
+       "cue_phrase": "surface barely rippled",
+       "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads puddle, stream charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "B-water-01-s23",
+       "answer": "pond",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "At the fair, model boats circled the ___ without drifting away.",
+       "cue_phrase": "model boats circled",
+       "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+       }
+      },
+      {
+       "id": "B-water-01-s24",
+       "answer": "pond",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "A toy sailboat crossed the ___, then returned to the same bank.",
+       "cue_phrase": "toy sailboat crossed",
+       "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads stream charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "B-water-01-s25",
+       "answer": "waterfall",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The ___ thundered off the cliff, spraying our picnic blanket.",
+       "cue_phrase": "off the cliff",
+       "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads stream charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "B-water-01-s26",
+       "answer": "waterfall",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "A white curtain plunged from the ledge at the ___.",
+       "cue_phrase": "plunged from the ledge",
+       "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+       }
+      },
+      {
+       "id": "B-water-01-s27",
+       "answer": "waterfall",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "We shouted near the ___ because the roar swallowed every word.",
+       "cue_phrase": "roar swallowed every word",
+       "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+       }
+      },
+      {
+       "id": "B-water-01-s28",
+       "answer": "waterfall",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Mist cooled our cheeks below the ___ at the gorge.",
+       "cue_phrase": "Mist cooled our cheeks",
+       "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+       }
+      },
+      {
+       "id": "B-water-01-s29",
+       "answer": "waterfall",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "We stood below the ___ as spray burst from the cliff.",
+       "cue_phrase": "spray burst from",
+       "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+       }
+      },
+      {
+       "id": "B-water-01-s30",
+       "answer": "waterfall",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Priya saw rainbow colours in spray at the foot of the ___.",
+       "cue_phrase": "at the foot",
+       "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+       }
+      },
+      {
+       "id": "B-water-01-s31",
+       "answer": "waterfall",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Behind the ___, a cave echoed with the crashing sheet.",
+       "cue_phrase": "crashing sheet",
+       "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+       }
+      },
+      {
+       "id": "B-water-01-s32",
+       "answer": "waterfall",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "The ___ fell so loudly that birds lifted from the trees.",
+       "cue_phrase": "fell so loudly",
+       "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+       }
+      },
+      {
+       "id": "B-water-01-s33",
+       "answer": "marsh",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The ___ squelched under our boots, with reeds taller than Sam.",
+       "cue_phrase": "squelched under our boots",
+       "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+       }
+      },
+      {
+       "id": "B-water-01-s34",
+       "answer": "marsh",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Frogs croaked in the ___ where rushes hid the muddy ground.",
+       "cue_phrase": "rushes hid the muddy",
+       "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3 (gpt-5.5 adds pond; claude-opus-4-8 adds pond): pond co-occurs as heron habitat; standing IN it while birds stalk through reeds is marsh's wet-ground feature",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "B-water-01-s35",
+       "answer": "marsh",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Our socks smelled of mud because the ___ sucked at the planks.",
+       "cue_phrase": "sucked at the planks",
+       "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+       }
+      },
+      {
+       "id": "B-water-01-s36",
+       "answer": "marsh",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Birdwatchers waited in the ___ as herons stalked through reeds.",
+       "cue_phrase": "herons stalked through reeds",
+       "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+       }
+      },
+      {
+       "id": "B-water-01-s37",
+       "answer": "marsh",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Each step in the ___ made a soft sucking sound.",
+       "cue_phrase": "soft sucking sound",
+       "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+       }
+      },
+      {
+       "id": "B-water-01-s38",
+       "answer": "marsh",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The pony refused the ___, choosing the firm track instead.",
+       "cue_phrase": "firm track instead",
+       "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads puddle, stream charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "B-water-01-s39",
+       "answer": "marsh",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Mosquitoes rose from the ___ while reeds brushed our elbows.",
+       "cue_phrase": "reeds brushed our elbows",
+       "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3 (gpt-5.5 adds pond; claude-opus-4-8 adds pond): pond co-occurs for mosquitoes; reeds brushing your elbows means standing in the wet ground, marsh's feature",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "B-water-01-s40",
+       "answer": "marsh",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "We lost a boot in the ___ before reaching the hide.",
+       "cue_phrase": "lost a boot",
+       "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads pond, puddle, stream charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      }
+     ],
+     "contrasts": [
+      {
+       "answer": "stream",
+       "picked": "puddle",
+       "line": "A stream moves along in a narrow channel. A puddle is shallow, still, and soon gone."
+      },
+      {
+       "answer": "stream",
+       "picked": "pond",
+       "line": "A stream moves along in a narrow channel. A pond is still and stays in one place."
+      },
+      {
+       "answer": "stream",
+       "picked": "waterfall",
+       "line": "A stream moves along in a narrow channel. A waterfall drops from a height."
+      },
+      {
+       "answer": "stream",
+       "picked": "marsh",
+       "line": "A stream moves along in a narrow channel. A marsh is soggy ground with reeds."
+      },
+      {
+       "answer": "puddle",
+       "picked": "stream",
+       "line": "A puddle is shallow and soon gone. A stream keeps moving along a narrow channel."
+      },
+      {
+       "answer": "puddle",
+       "picked": "pond",
+       "line": "A puddle is shallow and soon gone. A pond is deeper, still, and lasts."
+      },
+      {
+       "answer": "puddle",
+       "picked": "waterfall",
+       "line": "A puddle is shallow and soon gone. A waterfall crashes down from a height."
+      },
+      {
+       "answer": "puddle",
+       "picked": "marsh",
+       "line": "A puddle is shallow and soon gone. A marsh is soggy ground with reeds."
+      },
+      {
+       "answer": "pond",
+       "picked": "stream",
+       "line": "A pond is still and lasts. A stream moves along in a narrow channel."
+      },
+      {
+       "answer": "pond",
+       "picked": "puddle",
+       "line": "A pond is still and lasts. A puddle is shallow and soon gone."
+      },
+      {
+       "answer": "pond",
+       "picked": "waterfall",
+       "line": "A pond is still and lasts. A waterfall drops noisily from a height."
+      },
+      {
+       "answer": "pond",
+       "picked": "marsh",
+       "line": "A pond is still and lasts. A marsh is soggy ground with reeds."
+      },
+      {
+       "answer": "waterfall",
+       "picked": "stream",
+       "line": "A waterfall drops from a height. A stream moves along in a narrow channel."
+      },
+      {
+       "answer": "waterfall",
+       "picked": "puddle",
+       "line": "A waterfall drops from a height. A puddle is shallow and soon gone."
+      },
+      {
+       "answer": "waterfall",
+       "picked": "pond",
+       "line": "A waterfall drops from a height. A pond is still and lasts."
+      },
+      {
+       "answer": "waterfall",
+       "picked": "marsh",
+       "line": "A waterfall drops from a height. A marsh is soggy ground with reeds."
+      },
+      {
+       "answer": "marsh",
+       "picked": "stream",
+       "line": "A marsh is soggy ground with reeds. A stream moves along in a narrow channel."
+      },
+      {
+       "answer": "marsh",
+       "picked": "puddle",
+       "line": "A marsh is soggy ground with reeds. A puddle is shallow and soon gone."
+      },
+      {
+       "answer": "marsh",
+       "picked": "pond",
+       "line": "A marsh is soggy ground with reeds. A pond is still and lasts."
+      },
+      {
+       "answer": "marsh",
+       "picked": "waterfall",
+       "line": "A marsh is soggy ground with reeds. A waterfall drops from a height."
+      }
+     ],
+     "meta": {
+      "generated_at": "2026-07-06T05:29:29+00:00",
+      "model": "gpt-5.5",
+      "scrubbed_at": "2026-07-06T08:39:41+00:00",
+      "scrub_note": "Full read; puddle gloss widened from 'after rain' to any spilt water (WordNet pin includes 'or other liquid') after four indoor frames drew strict-gloss sense flags; full-set FORCE re-judge followed."
+     }
+    },
+    {
      "id": "B-weather-01",
      "bank": "B",
      "pos": "noun",
@@ -18826,7 +20654,7 @@
       "zipf_mean": 3.33,
       "tightness": 0.77,
       "band_suggested": 4,
-      "scored_at": "2026-07-05T13:15:52+00:00"
+      "scored_at": "2026-07-06T05:33:18+00:00"
      },
      "words": [
       {
@@ -19724,7 +21552,7 @@
       "zipf_mean": 4.95,
       "tightness": null,
       "band_suggested": 2,
-      "scored_at": "2026-07-05T13:15:52+00:00"
+      "scored_at": "2026-07-06T05:33:18+00:00"
      },
      "words": [
       {
@@ -20541,7 +22369,7 @@
       "zipf_mean": 6.06,
       "tightness": null,
       "band_suggested": 1,
-      "scored_at": "2026-07-05T13:15:52+00:00"
+      "scored_at": "2026-07-06T05:33:18+00:00"
      },
      "words": [
       {
@@ -21332,6 +23160,1023 @@
      }
     },
     {
+     "id": "A-look-01",
+     "bank": "A",
+     "pos": "verb",
+     "theme": "ways of looking",
+     "band": 4,
+     "band_override": 4,
+     "computed": {
+      "zipf_min": 2.8,
+      "zipf_mean": 3.58,
+      "tightness": 0.296,
+      "band_suggested": 3,
+      "scored_at": "2026-07-06T05:33:18+00:00"
+     },
+     "words": [
+      {
+       "w": "glance",
+       "synset": "glance.v.01",
+       "gloss_source": "authored",
+       "gloss": "take a quick look that lasts only a moment",
+       "zipf": 3.91,
+       "register": "neutral",
+       "senses_at_pos": 2,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "glance",
+        "third": "glances",
+        "past": "glanced",
+        "part": "glancing"
+       },
+       "discriminator": "quick, over in a moment",
+       "grade": 3
+      },
+      {
+       "w": "peer",
+       "synset": "peer.v.01",
+       "gloss_source": "authored",
+       "gloss": "look hard at something that is difficult to see",
+       "zipf": 4.14,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "peer",
+        "third": "peers",
+        "past": "peered",
+        "part": "peering"
+       },
+       "discriminator": "straining to make something out",
+       "grade": 4
+      },
+      {
+       "w": "gaze",
+       "synset": "gaze.v.01",
+       "gloss_source": "wordnet",
+       "gloss": "look at with fixed eyes",
+       "zipf": 3.7,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "gaze",
+        "third": "gazes",
+        "past": "gazed",
+        "part": "gazing"
+       },
+       "discriminator": "long, steady, lost in the looking",
+       "grade": 3
+      },
+      {
+       "w": "glare",
+       "synset": "glower.v.01",
+       "gloss_source": "authored",
+       "gloss": "look at someone with a hard, angry face",
+       "zipf": 3.36,
+       "register": "neutral",
+       "senses_at_pos": 3,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "glare",
+        "third": "glares",
+        "past": "glared",
+        "part": "glaring"
+       },
+       "discriminator": "angry eyes aimed at someone",
+       "grade": 3
+      },
+      {
+       "w": "squint",
+       "synset": "squint.v.03",
+       "gloss_source": "wordnet",
+       "gloss": "partly close one's eyes, as when hit by direct blinding light",
+       "zipf": 2.8,
+       "register": "neutral",
+       "senses_at_pos": 3,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "squint",
+        "third": "squints",
+        "past": "squinted",
+        "part": "squinting"
+       },
+       "discriminator": "eyes narrowed against light or to focus",
+       "grade": 4
+      }
+     ],
+     "sentences": [
+      {
+       "id": "A-look-01-s01",
+       "answer": "glance",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Omar ___ at the timer for one heartbeat before stirring the soup.",
+       "cue_phrase": "for one heartbeat",
+       "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+       }
+      },
+      {
+       "id": "A-look-01-s02",
+       "answer": "glance",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Lily ___ at the note in a flash, then hid it.",
+       "cue_phrase": "in a flash",
+       "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+       }
+      },
+      {
+       "id": "A-look-01-s03",
+       "answer": "glance",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Between two drumbeats, Mia ___ at the map and chose left.",
+       "cue_phrase": "Between two drumbeats",
+       "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+       }
+      },
+      {
+       "id": "A-look-01-s04",
+       "answer": "glance",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "During one skip, Asha ___ at the card, then played hers.",
+       "cue_phrase": "During one skip",
+       "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+       }
+      },
+      {
+       "id": "A-look-01-s05",
+       "answer": "glance",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Rafi ___ at the door number without slowing his bike.",
+       "cue_phrase": "without slowing his bike",
+       "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads peer, squint charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-look-01-s06",
+       "answer": "glance",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The teacher ___ at the clock without pausing her story.",
+       "cue_phrase": "without pausing her story",
+       "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+       }
+      },
+      {
+       "id": "A-look-01-s07",
+       "answer": "glance",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "The coach's whistle made us ___ at the timer, fast as a blink.",
+       "cue_phrase": "fast as a blink",
+       "surface": {
+        "glance": "glance",
+        "peer": "peer",
+        "gaze": "gaze",
+        "glare": "glare",
+        "squint": "squint"
+       }
+      },
+      {
+       "id": "A-look-01-s08",
+       "answer": "glance",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "During races, Omar ___ at the clock between strides.",
+       "cue_phrase": "between strides",
+       "surface": {
+        "glance": "glances",
+        "peer": "peers",
+        "gaze": "gazes",
+        "glare": "glares",
+        "squint": "squints"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads peer, squint charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-look-01-s09",
+       "answer": "peer",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Rosa ___ into the dim jar, trying to make out tadpoles.",
+       "cue_phrase": "trying to make out",
+       "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3 (gpt-5.5 adds gaze, squint; claude-opus-4-8 adds squint): squint co-occurs while peering, but narrowing your eyes at a dim jar is counterproductive; the obscured target is peer's staging",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-look-01-s10",
+       "answer": "peer",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Maya ___ into the dark cupboard, hunting for the second mitten.",
+       "cue_phrase": "into the dark cupboard",
+       "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3 (gpt-5.5 adds squint; claude-opus-4-8 adds squint): squint read is charitable; you do not narrow your eyes INTO a dark cupboard - the hidden target stages peer",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-look-01-s11",
+       "answer": "peer",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Jon ___ through the mist, searching for the next path marker.",
+       "cue_phrase": "through the mist",
+       "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3 (gpt-5.5 adds gaze, squint; claude-opus-4-8 adds squint): squint co-occurs in mist, but the searched-for marker stages peer's difficulty-of-seeing, not light-defence",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-look-01-s12",
+       "answer": "peer",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Finn ___ into the shadowy cage, trying to spot the sleeping lizard.",
+       "cue_phrase": "into the shadowy cage",
+       "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads gaze, squint charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-look-01-s13",
+       "answer": "peer",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "At dusk, Priya ___ beneath the bench, searching for her coin.",
+       "cue_phrase": "searching for her coin",
+       "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads squint charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-look-01-s14",
+       "answer": "peer",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The captain ___ through rain-streaked glass, wide-eyed, hunting the island.",
+       "cue_phrase": "wide-eyed, hunting",
+       "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+       }
+      },
+      {
+       "id": "A-look-01-s15",
+       "answer": "peer",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The hidden key had Milo ___ under the tangled roots until dark.",
+       "cue_phrase": "under the tangled roots",
+       "surface": {
+        "glance": "glance",
+        "peer": "peer",
+        "gaze": "gaze",
+        "glare": "glare",
+        "squint": "squint"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads squint charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-look-01-s16",
+       "answer": "peer",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "In foggy games, Lia ___ into the bushes, checking every dark corner for hiders.",
+       "cue_phrase": "into the bushes",
+       "surface": {
+        "glance": "glances",
+        "peer": "peers",
+        "gaze": "gazes",
+        "glare": "glares",
+        "squint": "squints"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads squint charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-look-01-s17",
+       "answer": "gaze",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Maya ___ at the moonlit castle for several minutes, smiling softly.",
+       "cue_phrase": "for several minutes",
+       "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+       }
+      },
+      {
+       "id": "A-look-01-s18",
+       "answer": "gaze",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Leo ___ at the sleeping puppy, still as a statue.",
+       "cue_phrase": "still as a statue",
+       "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+       }
+      },
+      {
+       "id": "A-look-01-s19",
+       "answer": "gaze",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The class ___ at the rainbow until the playground went quiet.",
+       "cue_phrase": "playground went quiet",
+       "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+       }
+      },
+      {
+       "id": "A-look-01-s20",
+       "answer": "gaze",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Amir ___ at the aquarium fish while his ice cream melted.",
+       "cue_phrase": "ice cream melted",
+       "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads peer charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-look-01-s21",
+       "answer": "gaze",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Grandad ___ at the glowing train set until his tea cooled.",
+       "cue_phrase": "tea cooled",
+       "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads peer, squint charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-look-01-s22",
+       "answer": "gaze",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The mermaid ___ at the pearl palace, forgetting the song.",
+       "cue_phrase": "forgetting the song",
+       "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+       }
+      },
+      {
+       "id": "A-look-01-s23",
+       "answer": "gaze",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The crystal waterfall made us ___ until our picnic went cold.",
+       "cue_phrase": "picnic went cold",
+       "surface": {
+        "glance": "glance",
+        "peer": "peer",
+        "gaze": "gaze",
+        "glare": "glare",
+        "squint": "squint"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads squint charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-look-01-s24",
+       "answer": "gaze",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "On clear nights, Hana ___ at the stars for half an hour.",
+       "cue_phrase": "for half an hour",
+       "surface": {
+        "glance": "glances",
+        "peer": "peers",
+        "gaze": "gazes",
+        "glare": "glares",
+        "squint": "squints"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads peer charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-look-01-s25",
+       "answer": "glare",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "After Max stole her seat, Tia ___ at him, fists tight.",
+       "cue_phrase": "fists tight",
+       "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads glance charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-look-01-s26",
+       "answer": "glare",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The dragon ___ at the knight, smoke curling from its nose.",
+       "cue_phrase": "smoke curling",
+       "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads glance charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-look-01-s27",
+       "answer": "glare",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "When Ben splashed mud on her dress, Ava ___ at him.",
+       "cue_phrase": "splashed mud",
+       "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads glance charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-look-01-s28",
+       "answer": "glare",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The cat ___ at the puppy for pawing its bowl.",
+       "cue_phrase": "pawing its bowl",
+       "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+       }
+      },
+      {
+       "id": "A-look-01-s29",
+       "answer": "glare",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Jude ___ at the cheater, and the card table fell silent.",
+       "cue_phrase": "table fell silent",
+       "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads glance charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-look-01-s30",
+       "answer": "glare",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The queen ___ at the guard; he backed away from the throne.",
+       "cue_phrase": "backed away",
+       "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads glance charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-look-01-s31",
+       "answer": "glare",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The stolen pie made Grandma ___ at the sneaky fox.",
+       "cue_phrase": "stolen pie",
+       "surface": {
+        "glance": "glance",
+        "peer": "peer",
+        "gaze": "gaze",
+        "glare": "glare",
+        "squint": "squint"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads glance charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-look-01-s32",
+       "answer": "glare",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "After the rude shove, Kira ___ at the boy with clenched teeth.",
+       "cue_phrase": "clenched teeth",
+       "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads squint charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-look-01-s33",
+       "answer": "squint",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "In the bright sun, Luca pulled his cap low and ___ at the tiny map.",
+       "cue_phrase": "in the bright sun",
+       "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3 (gpt-5.5 adds glance, peer; claude-opus-4-8 adds peer): peer co-occurs on tiny print; the bright sun and pulled-down cap are squint's exclusive trigger",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-look-01-s34",
+       "answer": "squint",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "On the glittering snow, Emma ___ all the way to the gate.",
+       "cue_phrase": "on the glittering snow",
+       "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+       }
+      },
+      {
+       "id": "A-look-01-s35",
+       "answer": "squint",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Sun bounced off the water, so Kai ___ under his cap.",
+       "cue_phrase": "Sun bounced off",
+       "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+       }
+      },
+      {
+       "id": "A-look-01-s36",
+       "answer": "squint",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The white pavement shone, and Nora ___ beneath her hat.",
+       "cue_phrase": "pavement shone",
+       "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads peer charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-look-01-s37",
+       "answer": "squint",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The torch flashed suddenly, and Poppy ___ behind her shield.",
+       "cue_phrase": "torch flashed suddenly",
+       "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+       }
+      },
+      {
+       "id": "A-look-01-s38",
+       "answer": "squint",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "At noon, Dad ___ at the shimmering road ahead.",
+       "cue_phrase": "at the shimmering road",
+       "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads gaze, glance, peer charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-look-01-s39",
+       "answer": "squint",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The stage lamps flared, making the actors ___ in a row.",
+       "cue_phrase": "lamps flared",
+       "surface": {
+        "glance": "glance",
+        "peer": "peer",
+        "gaze": "gaze",
+        "glare": "glare",
+        "squint": "squint"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads peer charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-look-01-s40",
+       "answer": "squint",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "During the camera flash, I ___ and ruined the royal portrait.",
+       "cue_phrase": "camera flash",
+       "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads glare charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      }
+     ],
+     "contrasts": [
+      {
+       "answer": "glance",
+       "picked": "peer",
+       "line": "A glance is over fast. A peer strains to make out unclear things."
+      },
+      {
+       "answer": "glance",
+       "picked": "gaze",
+       "line": "A glance is brief. A gaze stays steady for a long time."
+      },
+      {
+       "answer": "glance",
+       "picked": "glare",
+       "line": "A glance is brief. A glare shows anger at a person or creature."
+      },
+      {
+       "answer": "glance",
+       "picked": "squint",
+       "line": "A glance is brief. A squint narrows the eyelids against brightness or for focus."
+      },
+      {
+       "answer": "peer",
+       "picked": "glance",
+       "line": "A peer strains to make out unclear things. A glance is over fast."
+      },
+      {
+       "answer": "peer",
+       "picked": "gaze",
+       "line": "A peer works to make out unclear things. A gaze stays calm and long."
+      },
+      {
+       "answer": "peer",
+       "picked": "glare",
+       "line": "A peer tries to make out unclear things. A glare shows anger."
+      },
+      {
+       "answer": "peer",
+       "picked": "squint",
+       "line": "A peer searches through dimness or distance. A squint narrows eyelids against brightness or focus."
+      },
+      {
+       "answer": "gaze",
+       "picked": "glance",
+       "line": "A gaze stays steady for a long time. A glance is over fast."
+      },
+      {
+       "answer": "gaze",
+       "picked": "peer",
+       "line": "A gaze is long and steady. A peer strains to make out unclear things."
+      },
+      {
+       "answer": "gaze",
+       "picked": "glare",
+       "line": "A gaze can be calm or amazed. A glare shows anger."
+      },
+      {
+       "answer": "gaze",
+       "picked": "squint",
+       "line": "A gaze is long and steady. A squint narrows eyelids against brightness or focus."
+      },
+      {
+       "answer": "glare",
+       "picked": "glance",
+       "line": "A glare shows anger. A glance is over fast."
+      },
+      {
+       "answer": "glare",
+       "picked": "peer",
+       "line": "A glare shows anger. A peer strains to make out unclear things."
+      },
+      {
+       "answer": "glare",
+       "picked": "gaze",
+       "line": "A glare shows anger. A gaze is long and steady without that anger."
+      },
+      {
+       "answer": "glare",
+       "picked": "squint",
+       "line": "A glare shows anger. A squint narrows eyelids because of brightness or focus."
+      },
+      {
+       "answer": "squint",
+       "picked": "glance",
+       "line": "A squint narrows eyelids against brightness or focus. A glance is over fast."
+      },
+      {
+       "answer": "squint",
+       "picked": "peer",
+       "line": "A squint narrows eyelids. A peer strains to make out unclear things."
+      },
+      {
+       "answer": "squint",
+       "picked": "gaze",
+       "line": "A squint narrows eyelids. A gaze stays steady for a long time."
+      },
+      {
+       "answer": "squint",
+       "picked": "glare",
+       "line": "A squint narrows eyelids against brightness or focus. A glare shows anger."
+      }
+     ],
+     "meta": {
+      "generated_at": "2026-07-06T05:17:17+00:00",
+      "model": "gpt-5.5",
+      "scrubbed_at": "2026-07-06T08:39:41+00:00",
+      "scrub_note": "Full read; register pass replaced seven 'eyelids' anatomy hedges and two 'one heartbeat' repeats with storybook staging; peer/squint 2-of-3s adjudicated (narrowing eyes in the dark is counterproductive)."
+     }
+    },
+    {
      "id": "A-rough-01",
      "bank": "A",
      "pos": "adjective",
@@ -21343,7 +24188,7 @@
       "zipf_mean": 3.11,
       "tightness": null,
       "band_suggested": 4,
-      "scored_at": "2026-07-05T13:15:51+00:00"
+      "scored_at": "2026-07-06T05:33:18+00:00"
      },
      "words": [
       {
@@ -22243,6 +25088,1881 @@
       "model": "gpt-5.5",
       "scrubbed_at": "2026-07-05T13:42:27+00:00",
       "scrub_note": "scratchy frames s33/s35-s40 rewritten tactile to match the abrasive pin (drafts had used the sound sense). Full read + judge triage."
+     }
+    },
+    {
+     "id": "A-say-01",
+     "bank": "A",
+     "pos": "verb",
+     "theme": "ways of speaking up",
+     "band": 4,
+     "band_override": 4,
+     "computed": {
+      "zipf_min": 3.51,
+      "zipf_mean": 3.72,
+      "tightness": 0.188,
+      "band_suggested": 2,
+      "scored_at": "2026-07-06T05:33:18+00:00"
+     },
+     "words": [
+      {
+       "w": "boast",
+       "synset": "boast.v.01",
+       "gloss_source": "wordnet",
+       "gloss": "show off",
+       "zipf": 3.51,
+       "register": "neutral",
+       "senses_at_pos": 2,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "boast",
+        "third": "boasts",
+        "past": "boasted",
+        "part": "boasting"
+       },
+       "discriminator": "talking yourself up",
+       "grade": 3
+      },
+      {
+       "w": "plead",
+       "synset": "plead.v.01",
+       "gloss_source": "authored",
+       "gloss": "ask for something with your whole heart, almost begging",
+       "zipf": 3.63,
+       "register": "neutral",
+       "senses_at_pos": 4,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "plead",
+        "third": "pleads",
+        "past": "pleaded",
+        "part": "pleading"
+       },
+       "discriminator": "begging with feeling",
+       "grade": 4
+      },
+      {
+       "w": "insist",
+       "synset": "insist.v.01",
+       "gloss_source": "authored",
+       "gloss": "keep saying something firmly and refuse to back down",
+       "zipf": 4.03,
+       "register": "neutral",
+       "senses_at_pos": 3,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "insist",
+        "third": "insists",
+        "past": "insisted",
+        "part": "insisting"
+       },
+       "discriminator": "will not back down",
+       "grade": 4
+      },
+      {
+       "w": "confess",
+       "synset": "concede.v.01",
+       "gloss_source": "authored",
+       "gloss": "own up to something you did wrong",
+       "zipf": 3.82,
+       "register": "neutral",
+       "senses_at_pos": 3,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "confess",
+        "third": "confesses",
+        "past": "confessed",
+        "part": "confessing"
+       },
+       "discriminator": "owning up to your own wrong",
+       "grade": 4
+      },
+      {
+       "w": "tease",
+       "synset": "tease.v.08",
+       "gloss_source": "wordnet",
+       "gloss": "mock or make fun of playfully",
+       "zipf": 3.59,
+       "register": "neutral",
+       "senses_at_pos": 9,
+       "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-06",
+        "note": "dominant school-context sense confirmed at vet"
+       },
+       "forms": {
+        "base": "tease",
+        "third": "teases",
+        "past": "teased",
+        "part": "teasing"
+       },
+       "discriminator": "playful poking fun at someone",
+       "grade": 2
+      }
+     ],
+     "sentences": [
+      {
+       "id": "A-say-01-s01",
+       "answer": "boast",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "At assembly, Leo ___, 'My poem is the finest in school!'",
+       "cue_phrase": "finest in school",
+       "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads insist charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-say-01-s02",
+       "answer": "boast",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Holding the trophy, Sara ___, 'No one can beat my jumps!'",
+       "cue_phrase": "No one can beat",
+       "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads insist, tease charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-say-01-s03",
+       "answer": "boast",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "On the bus, Niko ___, 'I won three races before lunch!'",
+       "cue_phrase": "won three races",
+       "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads insist charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-say-01-s04",
+       "answer": "boast",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Beside his huge sandcastle, Amir ___, 'Mine is taller than everyone else's!'",
+       "cue_phrase": "taller than everyone else's",
+       "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads insist, tease charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-say-01-s05",
+       "answer": "boast",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "After the quiz, Ella ___, 'I finished first without any help!'",
+       "cue_phrase": "finished first",
+       "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads insist charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-say-01-s06",
+       "answer": "boast",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "At the rink, Tom ___, 'My spin was the fastest today!'",
+       "cue_phrase": "fastest today",
+       "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads insist charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-say-01-s07",
+       "answer": "boast",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "During art club, Mei ___, 'My dragon beats every picture here!'",
+       "cue_phrase": "beats every picture",
+       "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads insist, tease charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-say-01-s08",
+       "answer": "boast",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "Ben wanted to ___, 'I am the team's star!'",
+       "cue_phrase": "team's star",
+       "surface": {
+        "boast": "boast",
+        "plead": "plead",
+        "insist": "insist",
+        "confess": "confess",
+        "tease": "tease"
+       }
+      },
+      {
+       "id": "A-say-01-s09",
+       "answer": "plead",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "At bedtime, Noor ___, 'Please, please read one more chapter!'",
+       "cue_phrase": "Please, please",
+       "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads insist charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-say-01-s10",
+       "answer": "plead",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Beside the locked gate, Sam ___, 'Please let me in!'",
+       "cue_phrase": "Please let me",
+       "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads insist charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-say-01-s11",
+       "answer": "plead",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "With watery eyes, Ava ___, 'Let the stray puppy stay tonight!'",
+       "cue_phrase": "Let the stray puppy stay",
+       "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads insist charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-say-01-s12",
+       "answer": "plead",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "In the rain, Luca ___, 'Can we go inside now, please?'",
+       "cue_phrase": "inside now, please",
+       "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads insist charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-say-01-s13",
+       "answer": "plead",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Clutching his ticket, Ravi ___, 'Please don't cancel the trip!'",
+       "cue_phrase": "don't cancel the trip",
+       "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads insist charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-say-01-s14",
+       "answer": "plead",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Mia ___, 'One more chance, please,' after missing the goal.",
+       "cue_phrase": "One more chance",
+       "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads insist charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-say-01-s15",
+       "answer": "plead",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "Nia started to ___, 'Please let that kitten come home!'",
+       "cue_phrase": "kitten come home",
+       "surface": {
+        "boast": "boast",
+        "plead": "plead",
+        "insist": "insist",
+        "confess": "confess",
+        "tease": "tease"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads insist charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-say-01-s16",
+       "answer": "plead",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "When the kite tears, Finn ___, 'Please fix it before sunset!'",
+       "cue_phrase": "Please fix it",
+       "surface": {
+        "boast": "boasts",
+        "plead": "pleads",
+        "insist": "insists",
+        "confess": "confesses",
+        "tease": "teases"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads insist charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-say-01-s17",
+       "answer": "insist",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "At the map, Dan ___, 'North is this way,' and would not change.",
+       "cue_phrase": "would not change",
+       "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+       }
+      },
+      {
+       "id": "A-say-01-s18",
+       "answer": "insist",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "When friends disagreed, Lina ___, 'The answer is twelve,' every time.",
+       "cue_phrase": "every time",
+       "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+       }
+      },
+      {
+       "id": "A-say-01-s19",
+       "answer": "insist",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "After two corrections, Mateo ___, 'The library closes at six.'",
+       "cue_phrase": "After two corrections",
+       "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+       }
+      },
+      {
+       "id": "A-say-01-s20",
+       "answer": "insist",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "During rehearsal, Erin ___, 'My line comes next,' despite the groans.",
+       "cue_phrase": "despite the groans",
+       "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+       }
+      },
+      {
+       "id": "A-say-01-s21",
+       "answer": "insist",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The referee frowned, but Jo ___, 'The ball crossed the line.'",
+       "cue_phrase": "referee frowned",
+       "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads plead charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-say-01-s22",
+       "answer": "insist",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Even with mud on the sign, Kai ___, 'This path is closed.'",
+       "cue_phrase": "path is closed",
+       "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+       }
+      },
+      {
+       "id": "A-say-01-s23",
+       "answer": "insist",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The captain made her ___, 'We turn left,' until all agreed.",
+       "cue_phrase": "until all agreed",
+       "surface": {
+        "boast": "boast",
+        "plead": "plead",
+        "insist": "insist",
+        "confess": "confess",
+        "tease": "tease"
+       }
+      },
+      {
+       "id": "A-say-01-s24",
+       "answer": "insist",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "In council meetings, the mayor ___, 'Rules matter,' through every complaint.",
+       "cue_phrase": "through every complaint",
+       "surface": {
+        "boast": "boasts",
+        "plead": "pleads",
+        "insist": "insists",
+        "confess": "confesses",
+        "tease": "teases"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads plead charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-say-01-s25",
+       "answer": "confess",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "After the vase cracked, Lily ___, 'I kicked the ball indoors.'",
+       "cue_phrase": "kicked the ball indoors",
+       "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+       }
+      },
+      {
+       "id": "A-say-01-s26",
+       "answer": "confess",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "With blue paint on his sleeve, Max ___, 'I spilled it.'",
+       "cue_phrase": "I spilled it",
+       "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+       }
+      },
+      {
+       "id": "A-say-01-s27",
+       "answer": "confess",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "By the broken window, Tara ___, 'My stone hit the glass.'",
+       "cue_phrase": "My stone hit",
+       "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+       }
+      },
+      {
+       "id": "A-say-01-s28",
+       "answer": "confess",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "At lunch, Omar ___, 'I took the last biscuit.'",
+       "cue_phrase": "last biscuit",
+       "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads boast, tease charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "A-say-01-s29",
+       "answer": "confess",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "When the hamster escaped, Bea ___, 'I left the cage open.'",
+       "cue_phrase": "left the cage open",
+       "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+       }
+      },
+      {
+       "id": "A-say-01-s30",
+       "answer": "confess",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Beside the scribbled wall, Noah ___, 'I used the marker there.'",
+       "cue_phrase": "used the marker",
+       "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+       }
+      },
+      {
+       "id": "A-say-01-s31",
+       "answer": "confess",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The note helped Ivy to ___, 'I hid the missing coin.'",
+       "cue_phrase": "hid the missing coin",
+       "surface": {
+        "boast": "boast",
+        "plead": "plead",
+        "insist": "insist",
+        "confess": "confess",
+        "tease": "tease"
+       }
+      },
+      {
+       "id": "A-say-01-s32",
+       "answer": "confess",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "At clean-up, the child ___, 'I dropped the jam jar.'",
+       "cue_phrase": "dropped the jam jar",
+       "surface": {
+        "boast": "boasts",
+        "plead": "pleads",
+        "insist": "insists",
+        "confess": "confesses",
+        "tease": "teases"
+       }
+      },
+      {
+       "id": "A-say-01-s33",
+       "answer": "tease",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Ravi ___, 'Nice giant hat, captain!' and his brother laughed.",
+       "cue_phrase": "brother laughed",
+       "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+       }
+      },
+      {
+       "id": "A-say-01-s34",
+       "answer": "tease",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Mum ___, 'Careful, Sir Snore-a-lot,' and Dad grinned.",
+       "cue_phrase": "Dad grinned",
+       "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+       }
+      },
+      {
+       "id": "A-say-01-s35",
+       "answer": "tease",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "At lunch, Pia ___, 'Your soup moustache looks royal!'",
+       "cue_phrase": "soup moustache looks royal",
+       "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+       }
+      },
+      {
+       "id": "A-say-01-s36",
+       "answer": "tease",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "During football, Lee ___, 'Nice moon kick!' and Ali bowed.",
+       "cue_phrase": "Ali bowed",
+       "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+       }
+      },
+      {
+       "id": "A-say-01-s37",
+       "answer": "tease",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Milo ___, 'Queen of Crumbs!' as Ella brushed her jumper.",
+       "cue_phrase": "Queen of Crumbs",
+       "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+       }
+      },
+      {
+       "id": "A-say-01-s38",
+       "answer": "tease",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "In the tent, Ana ___, 'Brave knight, scared of moths?'",
+       "cue_phrase": "scared of moths",
+       "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+       }
+      },
+      {
+       "id": "A-say-01-s39",
+       "answer": "tease",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The twins started to ___, 'Tiny giant!' and Gran chuckled.",
+       "cue_phrase": "Gran chuckled",
+       "surface": {
+        "boast": "boast",
+        "plead": "plead",
+        "insist": "insist",
+        "confess": "confess",
+        "tease": "tease"
+       }
+      },
+      {
+       "id": "A-say-01-s40",
+       "answer": "tease",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "On silly days, Dad ___, 'Professor Puddles,' when my boots squeak.",
+       "cue_phrase": "Professor Puddles",
+       "surface": {
+        "boast": "boasts",
+        "plead": "pleads",
+        "insist": "insists",
+        "confess": "confesses",
+        "tease": "teases"
+       }
+      }
+     ],
+     "contrasts": [
+      {
+       "answer": "boast",
+       "picked": "plead",
+       "line": "Boast talks yourself up. Plead begs with feeling for help."
+      },
+      {
+       "answer": "boast",
+       "picked": "insist",
+       "line": "Boast lifts your own greatness. Insist will not change a claim."
+      },
+      {
+       "answer": "boast",
+       "picked": "confess",
+       "line": "Boast praises yourself. Confess admits your own fault."
+      },
+      {
+       "answer": "boast",
+       "picked": "tease",
+       "line": "Boast is self-praise. Tease gives a joking poke at someone else."
+      },
+      {
+       "answer": "plead",
+       "picked": "boast",
+       "line": "Plead begs with feeling. Boast talks yourself up."
+      },
+      {
+       "answer": "plead",
+       "picked": "insist",
+       "line": "Plead wants help or mercy. Insist will not change a claim."
+      },
+      {
+       "answer": "plead",
+       "picked": "confess",
+       "line": "Plead begs for a result. Confess admits your own fault."
+      },
+      {
+       "answer": "plead",
+       "picked": "tease",
+       "line": "Plead is serious begging. Tease is a joking poke."
+      },
+      {
+       "answer": "insist",
+       "picked": "boast",
+       "line": "Insist will not change a claim. Boast talks yourself up."
+      },
+      {
+       "answer": "insist",
+       "picked": "plead",
+       "line": "Insist holds a claim. Plead begs with feeling."
+      },
+      {
+       "answer": "insist",
+       "picked": "confess",
+       "line": "Insist stands by a claim. Confess admits your own fault."
+      },
+      {
+       "answer": "insist",
+       "picked": "tease",
+       "line": "Insist is serious and unchanging. Tease is joking."
+      },
+      {
+       "answer": "confess",
+       "picked": "boast",
+       "line": "Confess admits your own fault. Boast praises yourself."
+      },
+      {
+       "answer": "confess",
+       "picked": "plead",
+       "line": "Confess admits your own fault. Plead begs with feeling."
+      },
+      {
+       "answer": "confess",
+       "picked": "insist",
+       "line": "Confess admits fault. Insist will not change a claim."
+      },
+      {
+       "answer": "confess",
+       "picked": "tease",
+       "line": "Confess is serious admission. Tease is a joking poke."
+      },
+      {
+       "answer": "tease",
+       "picked": "boast",
+       "line": "Tease jokes at someone else. Boast talks yourself up."
+      },
+      {
+       "answer": "tease",
+       "picked": "plead",
+       "line": "Tease is joking. Plead begs with feeling."
+      },
+      {
+       "answer": "tease",
+       "picked": "insist",
+       "line": "Tease is light joking. Insist will not change a claim."
+      },
+      {
+       "answer": "tease",
+       "picked": "confess",
+       "line": "Tease jokes at someone. Confess admits your own fault."
+      }
+     ],
+     "meta": {
+      "generated_at": "2026-07-06T05:19:29+00:00",
+      "model": "gpt-5.5",
+      "scrubbed_at": "2026-07-06T08:39:41+00:00",
+      "scrub_note": "Full read; direct-quote staging keeps the speech acts clean; all crossings were single-judge charity."
+     }
+    },
+    {
+     "id": "B-landform-01",
+     "bank": "B",
+     "pos": "noun",
+     "theme": "shapes of the land",
+     "band": 4,
+     "band_override": 4,
+     "computed": {
+      "zipf_min": 3.9,
+      "zipf_mean": 4.34,
+      "tightness": 0.596,
+      "band_suggested": 2,
+      "scored_at": "2026-07-06T05:33:18+00:00"
+     },
+     "words": [
+      {
+       "w": "cliff",
+       "synset": "cliff.n.01",
+       "gloss_source": "wordnet",
+       "gloss": "a steep high face of rock",
+       "zipf": 4.1,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "cliff"
+       },
+       "discriminator": "a vertical rock face",
+       "grade": 2
+      },
+      {
+       "w": "valley",
+       "synset": "valley.n.01",
+       "gloss_source": "wordnet",
+       "gloss": "a long depression in the surface of the land that usually contains a river",
+       "zipf": 4.72,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "valley"
+       },
+       "discriminator": "low ground between hills",
+       "grade": 3
+      },
+      {
+       "w": "plain",
+       "synset": "plain.n.01",
+       "gloss_source": "wordnet",
+       "gloss": "extensive tract of level open land",
+       "zipf": 4.43,
+       "register": "neutral",
+       "senses_at_pos": 2,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "plain"
+       },
+       "discriminator": "wide flat open land",
+       "grade": 5
+      },
+      {
+       "w": "peak",
+       "synset": "peak.n.04",
+       "gloss_source": "wordnet",
+       "gloss": "the top or extreme point of something (usually a mountain or hill)",
+       "zipf": 4.53,
+       "register": "neutral",
+       "senses_at_pos": 7,
+       "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-06",
+        "note": "dominant school-context sense confirmed at vet"
+       },
+       "forms": {
+        "base": "peak"
+       },
+       "discriminator": "the very top point",
+       "grade": 4
+      },
+      {
+       "w": "slope",
+       "synset": "slope.n.01",
+       "gloss_source": "authored",
+       "gloss": "the side of a hill that goes up or down at an angle",
+       "zipf": 3.9,
+       "register": "neutral",
+       "senses_at_pos": 2,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "slope"
+       },
+       "discriminator": "the slanted side you climb or ski",
+       "grade": 3
+      }
+     ],
+     "sentences": [
+      {
+       "id": "B-landform-01-s01",
+       "answer": "cliff",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The ___ dropped almost straight down to the crashing waves.",
+       "cue_phrase": "dropped almost straight down",
+       "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads slope charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "B-landform-01-s02",
+       "answer": "cliff",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "At the ___, a fence warned us away from the sudden drop.",
+       "cue_phrase": "sudden drop",
+       "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads peak charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "B-landform-01-s03",
+       "answer": "cliff",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Gulls nested halfway down the ___, safe above the churning sea.",
+       "cue_phrase": "safe above the churning sea",
+       "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads slope charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "B-landform-01-s04",
+       "answer": "cliff",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The climber's rope hung against the ___ beside the beach.",
+       "cue_phrase": "rope hung against",
+       "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+       }
+      },
+      {
+       "id": "B-landform-01-s05",
+       "answer": "cliff",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Dad pulled us back as loose stones skipped over the ___.",
+       "cue_phrase": "loose stones skipped over",
+       "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-4.1 also reads slope charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "B-landform-01-s06",
+       "answer": "cliff",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Her kite blew over the ___ and dangled far beneath us.",
+       "cue_phrase": "dangled far beneath",
+       "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+       }
+      },
+      {
+       "id": "B-landform-01-s07",
+       "answer": "cliff",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The castle stood on a ___, with waves smashing far below.",
+       "cue_phrase": "waves smashing far below",
+       "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads slope charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "B-landform-01-s08",
+       "answer": "cliff",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "The boat passed beneath the ___, its mast tiny beside the wall.",
+       "cue_phrase": "mast tiny beside",
+       "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+       }
+      },
+      {
+       "id": "B-landform-01-s09",
+       "answer": "valley",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "A train wound through the ___, with hills rising on both sides.",
+       "cue_phrase": "hills rising on both sides",
+       "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+       }
+      },
+      {
+       "id": "B-landform-01-s10",
+       "answer": "valley",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Mist gathered in the low ___ between two green hills.",
+       "cue_phrase": "low ___ between two",
+       "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads plain charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "B-landform-01-s11",
+       "answer": "valley",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Frost stayed longest in the ___ while sunny ridges warmed quickly.",
+       "cue_phrase": "sunny ridges warmed quickly",
+       "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+       }
+      },
+      {
+       "id": "B-landform-01-s12",
+       "answer": "valley",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Our campsite sat in the ___, and echoes came from both hills.",
+       "cue_phrase": "from both hills",
+       "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+       }
+      },
+      {
+       "id": "B-landform-01-s13",
+       "answer": "valley",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The bus descended to the ___ between hills, crossed it, then climbed again.",
+       "cue_phrase": "descended to the ___ between",
+       "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads plain charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "B-landform-01-s14",
+       "answer": "valley",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Rainwater from both ridges ran down into the ___ below.",
+       "cue_phrase": "from both ridges",
+       "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads plain charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "B-landform-01-s15",
+       "answer": "valley",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The village lights dotted the ___ floor after dark.",
+       "cue_phrase": "___ floor after",
+       "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+       }
+      },
+      {
+       "id": "B-landform-01-s16",
+       "answer": "valley",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "Fog filled the ___ first, hiding the farms between the hills.",
+       "cue_phrase": "between the hills",
+       "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+       }
+      },
+      {
+       "id": "B-landform-01-s17",
+       "answer": "plain",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The ___ stretched wide and flat, with no hills in sight.",
+       "cue_phrase": "wide and flat",
+       "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+       }
+      },
+      {
+       "id": "B-landform-01-s18",
+       "answer": "plain",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Cattle crossed the ___, a wide flat space under the big sky.",
+       "cue_phrase": "wide flat space",
+       "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads valley charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "B-landform-01-s19",
+       "answer": "plain",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The football rolled for ages across the ___ without turning downhill.",
+       "cue_phrase": "without turning downhill",
+       "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+       }
+      },
+      {
+       "id": "B-landform-01-s20",
+       "answer": "plain",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "From the wagon, we saw grass to every horizon across the ___.",
+       "cue_phrase": "to every horizon",
+       "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+       }
+      },
+      {
+       "id": "B-landform-01-s21",
+       "answer": "plain",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "With no trees, fences, or hills, the ___ made shadows look tiny.",
+       "cue_phrase": "no trees, fences, or hills",
+       "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+       }
+      },
+      {
+       "id": "B-landform-01-s22",
+       "answer": "plain",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The explorers walked all day across the ___, seeing no hills at all.",
+       "cue_phrase": "seeing no hills",
+       "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+       }
+      },
+      {
+       "id": "B-landform-01-s23",
+       "answer": "plain",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "On the map, the ___ was drawn as one huge flat patch.",
+       "cue_phrase": "huge flat patch",
+       "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+       }
+      },
+      {
+       "id": "B-landform-01-s24",
+       "answer": "plain",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "The picnic blanket lay on the ___, with sky touching grass all round.",
+       "cue_phrase": "sky touching grass all",
+       "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+       }
+      },
+      {
+       "id": "B-landform-01-s25",
+       "answer": "peak",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "We reached the ___, the highest spot for miles.",
+       "cue_phrase": "highest spot",
+       "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+       }
+      },
+      {
+       "id": "B-landform-01-s26",
+       "answer": "peak",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The flag fluttered on the ___, above every ridge nearby.",
+       "cue_phrase": "above every ridge nearby",
+       "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+       }
+      },
+      {
+       "id": "B-landform-01-s27",
+       "answer": "peak",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Clouds brushed the ___ above every ridge while tents stayed below.",
+       "cue_phrase": "tents stayed below",
+       "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+       }
+      },
+      {
+       "id": "B-landform-01-s28",
+       "answer": "peak",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "After hours upward, the last scramble to the ___ made everyone cheer.",
+       "cue_phrase": "After hours upward",
+       "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+       }
+      },
+      {
+       "id": "B-landform-01-s29",
+       "answer": "peak",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The map's tallest triangle marked the ___ where the hikers stopped.",
+       "cue_phrase": "tallest triangle marked",
+       "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+       }
+      },
+      {
+       "id": "B-landform-01-s30",
+       "answer": "peak",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Everyone saved one biscuit for the ___ after the hardest upward stretch.",
+       "cue_phrase": "hardest upward stretch",
+       "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+       }
+      },
+      {
+       "id": "B-landform-01-s31",
+       "answer": "peak",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "An eagle circled the ___, higher than the surrounding ridges.",
+       "cue_phrase": "higher than the surrounding",
+       "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+       }
+      },
+      {
+       "id": "B-landform-01-s32",
+       "answer": "peak",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The compass team placed their marker on the ___ after the final climb.",
+       "cue_phrase": "after the final climb",
+       "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+       }
+      },
+      {
+       "id": "B-landform-01-s33",
+       "answer": "slope",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The ___ was slanted, so the ball rolled down by itself.",
+       "cue_phrase": "ball rolled down",
+       "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+       }
+      },
+      {
+       "id": "B-landform-01-s34",
+       "answer": "slope",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The grassy ___ rose gently from the gate to the barn.",
+       "cue_phrase": "rose gently from",
+       "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+       }
+      },
+      {
+       "id": "B-landform-01-s35",
+       "answer": "slope",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Her sledge raced down the snowy ___ behind the cottage.",
+       "cue_phrase": "sledge raced down",
+       "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads valley charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "B-landform-01-s36",
+       "answer": "slope",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Rain ran down the ___ past our boots and puddled near the fence.",
+       "cue_phrase": "past our boots",
+       "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads valley charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "B-landform-01-s37",
+       "answer": "slope",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Jack zigzagged across the ___ because straight upward steps hurt his calves.",
+       "cue_phrase": "straight upward steps",
+       "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+       }
+      },
+      {
+       "id": "B-landform-01-s38",
+       "answer": "slope",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The goat grazed halfway up the ___, where the grass tilted underfoot.",
+       "cue_phrase": "grass tilted underfoot",
+       "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads peak charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      },
+      {
+       "id": "B-landform-01-s39",
+       "answer": "slope",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "The path across the ___ made the wheelbarrow tip left.",
+       "cue_phrase": "wheelbarrow tip left",
+       "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+       }
+      },
+      {
+       "id": "B-landform-01-s40",
+       "answer": "slope",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "During practice, skiers lined up at the foot of the ___.",
+       "cue_phrase": "skiers lined up at",
+       "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: gpt-5.5 also reads peak charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+         "by": "claude",
+         "at": "2026-07-06"
+        }
+       ]
+      }
+     ],
+     "contrasts": [
+      {
+       "answer": "cliff",
+       "picked": "valley",
+       "line": "A cliff drops almost straight down. A valley is low ground between hills."
+      },
+      {
+       "answer": "cliff",
+       "picked": "plain",
+       "line": "A cliff has a sudden drop. A plain is wide and flat."
+      },
+      {
+       "answer": "cliff",
+       "picked": "peak",
+       "line": "A cliff is a sheer drop. A peak is the highest spot."
+      },
+      {
+       "answer": "cliff",
+       "picked": "slope",
+       "line": "A cliff drops sharply. A slope is slanted ground you can travel along."
+      },
+      {
+       "answer": "valley",
+       "picked": "cliff",
+       "line": "A valley lies low between hills. A cliff is a sharp drop."
+      },
+      {
+       "answer": "valley",
+       "picked": "plain",
+       "line": "A valley is low between hills. A plain spreads wide and flat."
+      },
+      {
+       "answer": "valley",
+       "picked": "peak",
+       "line": "A valley sits below hills. A peak is the highest spot."
+      },
+      {
+       "answer": "valley",
+       "picked": "slope",
+       "line": "A valley is low between hills. A slope is slanted ground."
+      },
+      {
+       "answer": "plain",
+       "picked": "cliff",
+       "line": "A plain is wide and flat. A cliff has a sudden drop."
+      },
+      {
+       "answer": "plain",
+       "picked": "valley",
+       "line": "A plain spreads flat and wide. A valley sits low between hills."
+      },
+      {
+       "answer": "plain",
+       "picked": "peak",
+       "line": "A plain is broad and flat. A peak is the highest spot."
+      },
+      {
+       "answer": "plain",
+       "picked": "slope",
+       "line": "A plain is flat. A slope tilts upward or downward."
+      },
+      {
+       "answer": "peak",
+       "picked": "cliff",
+       "line": "A peak is the highest spot. A cliff is a sharp drop."
+      },
+      {
+       "answer": "peak",
+       "picked": "valley",
+       "line": "A peak is the highest spot. A valley lies low between hills."
+      },
+      {
+       "answer": "peak",
+       "picked": "plain",
+       "line": "A peak is the highest spot. A plain is wide and flat."
+      },
+      {
+       "answer": "peak",
+       "picked": "slope",
+       "line": "A peak is the highest spot. A slope is the slanted way up or down."
+      },
+      {
+       "answer": "slope",
+       "picked": "cliff",
+       "line": "A slope is slanted ground. A cliff drops almost straight down."
+      },
+      {
+       "answer": "slope",
+       "picked": "valley",
+       "line": "A slope tilts up or down. A valley is low between hills."
+      },
+      {
+       "answer": "slope",
+       "picked": "plain",
+       "line": "A slope is slanted. A plain is flat and wide."
+      },
+      {
+       "answer": "slope",
+       "picked": "peak",
+       "line": "A slope is slanted ground. A peak is the highest spot."
+      }
+     ],
+     "meta": {
+      "generated_at": "2026-07-06T05:27:13+00:00",
+      "model": "gpt-5.5",
+      "scrubbed_at": "2026-07-06T08:39:41+00:00",
+      "scrub_note": "Full read; no changes needed - plain's 'no hills in sight' staging and cliff's vertical markers held."
      }
     }
    ]

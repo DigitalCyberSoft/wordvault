@@ -107,7 +107,15 @@
         "plain": "plain",
         "peak": "peak",
         "slope": "slope"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads slope charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "B-landform-01-s02",
@@ -122,7 +130,15 @@
         "plain": "plain",
         "peak": "peak",
         "slope": "slope"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads peak charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "B-landform-01-s03",
@@ -137,7 +153,15 @@
         "plain": "plain",
         "peak": "peak",
         "slope": "slope"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads slope charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "B-landform-01-s04",
@@ -167,7 +191,15 @@
         "plain": "plain",
         "peak": "peak",
         "slope": "slope"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-4.1 also reads slope charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "B-landform-01-s06",
@@ -197,7 +229,15 @@
         "plain": "plain",
         "peak": "peak",
         "slope": "slope"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads slope charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "B-landform-01-s08",
@@ -242,7 +282,15 @@
         "plain": "plain",
         "peak": "peak",
         "slope": "slope"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads plain charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "B-landform-01-s11",
@@ -287,7 +335,15 @@
         "plain": "plain",
         "peak": "peak",
         "slope": "slope"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads plain charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "B-landform-01-s14",
@@ -302,7 +358,15 @@
         "plain": "plain",
         "peak": "peak",
         "slope": "slope"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads plain charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "B-landform-01-s15",
@@ -362,7 +426,15 @@
         "plain": "plain",
         "peak": "peak",
         "slope": "slope"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads valley charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "B-landform-01-s19",
@@ -617,7 +689,15 @@
         "plain": "plain",
         "peak": "peak",
         "slope": "slope"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads valley charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "B-landform-01-s36",
@@ -632,7 +712,15 @@
         "plain": "plain",
         "peak": "peak",
         "slope": "slope"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads valley charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "B-landform-01-s37",
@@ -662,7 +750,15 @@
         "plain": "plain",
         "peak": "peak",
         "slope": "slope"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads peak charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "B-landform-01-s39",
@@ -692,7 +788,15 @@
         "plain": "plain",
         "peak": "peak",
         "slope": "slope"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads peak charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     }
   ],
   "contrasts": [
@@ -800,7 +904,7 @@
   "meta": {
     "generated_at": "2026-07-06T05:27:13+00:00",
     "model": "gpt-5.5",
-    "scrubbed_at": null,
-    "scrub_note": null
+    "scrubbed_at": "2026-07-06T08:39:41+00:00",
+    "scrub_note": "Full read; no changes needed - plain's 'no hills in sight' staging and cliff's vertical markers held."
   }
 }

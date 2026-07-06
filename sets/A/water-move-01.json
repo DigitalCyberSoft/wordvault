@@ -314,7 +314,15 @@
         "drift": "drifted",
         "plunge": "plunged",
         "bob": "bobbed"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads bob charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-water-move-01-s14",
@@ -344,22 +352,38 @@
         "drift": "drift",
         "plunge": "plunge",
         "bob": "bob"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads bob charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-water-move-01-s16",
       "answer": "paddle",
       "cue": "explicit",
       "reserve": true,
-      "text": "The ducklings ___ from a flat stone, churning little rings with orange toes.",
-      "cue_phrase": "churning little rings",
+      "text": "Cousins ___ by the flat stone at the lake edge, giggling at every ripple.",
+      "cue_phrase": "giggling at every ripple",
       "surface": {
         "wade": "waded",
         "paddle": "paddled",
         "drift": "drifted",
         "plunge": "plunged",
         "bob": "bobbed"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds bob, wade; claude-opus-4-8 adds wade): wade co-occurs at a lake edge, but the children stay put at the stone giggling at ripples - playing in place is paddle's staging, wading goes somewhere",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-water-move-01-s17",
@@ -374,7 +398,15 @@
         "drift": "drifted",
         "plunge": "plunged",
         "bob": "bobbed"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads bob charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-water-move-01-s18",
@@ -404,7 +436,15 @@
         "drift": "drifted",
         "plunge": "plunged",
         "bob": "bobbed"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads bob charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-water-move-01-s20",
@@ -419,7 +459,15 @@
         "drift": "drift",
         "plunge": "plunge",
         "bob": "bob"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads bob charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-water-move-01-s21",
@@ -434,7 +482,15 @@
         "drift": "drifted",
         "plunge": "plunged",
         "bob": "bobbed"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads bob charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-water-move-01-s22",
@@ -449,7 +505,15 @@
         "drift": "drifted",
         "plunge": "plunged",
         "bob": "bobbed"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads bob charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-water-move-01-s23",
@@ -464,7 +528,15 @@
         "drift": "drifted",
         "plunge": "plunged",
         "bob": "bobbed"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads bob charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-water-move-01-s24",
@@ -479,7 +551,15 @@
         "drift": "drifts",
         "plunge": "plunges",
         "bob": "bobs"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads bob charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-water-move-01-s25",
@@ -621,8 +701,8 @@
       "answer": "bob",
       "cue": "explicit",
       "reserve": false,
-      "text": "A fishing float ___ up and down whenever tiny waves pass.",
-      "cue_phrase": "up and down",
+      "text": "A fishing float ___ on the spot whenever tiny waves pass.",
+      "cue_phrase": "on the spot",
       "surface": {
         "wade": "wades",
         "paddle": "paddles",
@@ -689,7 +769,15 @@
         "drift": "drifted",
         "plunge": "plunged",
         "bob": "bobbed"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads drift charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-water-move-01-s39",
@@ -827,7 +915,7 @@
   "meta": {
     "generated_at": "2026-07-06T05:24:41+00:00",
     "model": "gpt-5.5",
-    "scrubbed_at": null,
-    "scrub_note": null
+    "scrubbed_at": "2026-07-06T08:40:26+00:00",
+    "scrub_note": "Full read; two toe-tic frames varied; s16 restaged from ducklings (swim sense) to children at play to match the dabble pin. s34 rephrased off the verbatim gloss (M7)."
   }
 }

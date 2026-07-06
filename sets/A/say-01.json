@@ -122,7 +122,15 @@
         "insist": "insisted",
         "confess": "confessed",
         "tease": "teased"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads insist charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-say-01-s02",
@@ -137,7 +145,15 @@
         "insist": "insisted",
         "confess": "confessed",
         "tease": "teased"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads insist, tease charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-say-01-s03",
@@ -152,7 +168,15 @@
         "insist": "insisted",
         "confess": "confessed",
         "tease": "teased"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads insist charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-say-01-s04",
@@ -167,7 +191,15 @@
         "insist": "insisted",
         "confess": "confessed",
         "tease": "teased"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads insist, tease charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-say-01-s05",
@@ -182,7 +214,15 @@
         "insist": "insisted",
         "confess": "confessed",
         "tease": "teased"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads insist charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-say-01-s06",
@@ -197,7 +237,15 @@
         "insist": "insisted",
         "confess": "confessed",
         "tease": "teased"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads insist charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-say-01-s07",
@@ -212,7 +260,15 @@
         "insist": "insisted",
         "confess": "confessed",
         "tease": "teased"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads insist, tease charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-say-01-s08",
@@ -242,7 +298,15 @@
         "insist": "insisted",
         "confess": "confessed",
         "tease": "teased"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads insist charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-say-01-s10",
@@ -257,7 +321,15 @@
         "insist": "insisted",
         "confess": "confessed",
         "tease": "teased"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads insist charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-say-01-s11",
@@ -272,7 +344,15 @@
         "insist": "insisted",
         "confess": "confessed",
         "tease": "teased"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads insist charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-say-01-s12",
@@ -287,7 +367,15 @@
         "insist": "insisted",
         "confess": "confessed",
         "tease": "teased"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads insist charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-say-01-s13",
@@ -302,7 +390,15 @@
         "insist": "insisted",
         "confess": "confessed",
         "tease": "teased"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads insist charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-say-01-s14",
@@ -317,7 +413,15 @@
         "insist": "insisted",
         "confess": "confessed",
         "tease": "teased"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads insist charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-say-01-s15",
@@ -332,7 +436,15 @@
         "insist": "insist",
         "confess": "confess",
         "tease": "tease"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads insist charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-say-01-s16",
@@ -347,7 +459,15 @@
         "insist": "insists",
         "confess": "confesses",
         "tease": "teases"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads insist charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-say-01-s17",
@@ -422,7 +542,15 @@
         "insist": "insisted",
         "confess": "confessed",
         "tease": "teased"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads plead charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-say-01-s22",
@@ -467,7 +595,15 @@
         "insist": "insists",
         "confess": "confesses",
         "tease": "teases"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads plead charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-say-01-s25",
@@ -527,7 +663,15 @@
         "insist": "insisted",
         "confess": "confessed",
         "tease": "teased"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads boast, tease charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-say-01-s29",
@@ -815,7 +959,7 @@
   "meta": {
     "generated_at": "2026-07-06T05:19:29+00:00",
     "model": "gpt-5.5",
-    "scrubbed_at": null,
-    "scrub_note": null
+    "scrubbed_at": "2026-07-06T08:39:41+00:00",
+    "scrub_note": "Full read; direct-quote staging keeps the speech acts clean; all crossings were single-judge charity."
   }
 }

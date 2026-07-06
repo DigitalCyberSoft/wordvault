@@ -36,7 +36,7 @@
       "w": "puddle",
       "synset": "pool.n.06",
       "gloss_source": "authored",
-      "gloss": "a small patch of water lying on the ground after rain",
+      "gloss": "a small patch of water lying on the ground or floor, soon gone",
       "zipf": 3.26,
       "register": "neutral",
       "senses_at_pos": 3,
@@ -242,7 +242,15 @@
         "pond": "pond",
         "waterfall": "waterfall",
         "marsh": "marsh"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads stream charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "B-water-01-s11",
@@ -317,7 +325,15 @@
         "pond": "pond",
         "waterfall": "waterfall",
         "marsh": "marsh"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads pond charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "B-water-01-s16",
@@ -332,7 +348,15 @@
         "pond": "pond",
         "waterfall": "waterfall",
         "marsh": "marsh"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads stream charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "B-water-01-s17",
@@ -377,7 +401,15 @@
         "pond": "pond",
         "waterfall": "waterfall",
         "marsh": "marsh"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads stream charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "B-water-01-s20",
@@ -392,7 +424,15 @@
         "pond": "pond",
         "waterfall": "waterfall",
         "marsh": "marsh"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads marsh charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "B-water-01-s21",
@@ -422,7 +462,15 @@
         "pond": "pond",
         "waterfall": "waterfall",
         "marsh": "marsh"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads puddle, stream charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "B-water-01-s23",
@@ -452,7 +500,15 @@
         "pond": "pond",
         "waterfall": "waterfall",
         "marsh": "marsh"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads stream charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "B-water-01-s25",
@@ -467,7 +523,15 @@
         "pond": "pond",
         "waterfall": "waterfall",
         "marsh": "marsh"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads stream charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "B-water-01-s26",
@@ -602,7 +666,15 @@
         "pond": "pond",
         "waterfall": "waterfall",
         "marsh": "marsh"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds pond; claude-opus-4-8 adds pond): pond co-occurs as heron habitat; standing IN it while birds stalk through reeds is marsh's wet-ground feature",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "B-water-01-s35",
@@ -662,7 +734,15 @@
         "pond": "pond",
         "waterfall": "waterfall",
         "marsh": "marsh"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads puddle, stream charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "B-water-01-s39",
@@ -677,7 +757,15 @@
         "pond": "pond",
         "waterfall": "waterfall",
         "marsh": "marsh"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds pond; claude-opus-4-8 adds pond): pond co-occurs for mosquitoes; reeds brushing your elbows means standing in the wet ground, marsh's feature",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "B-water-01-s40",
@@ -692,7 +780,15 @@
         "pond": "pond",
         "waterfall": "waterfall",
         "marsh": "marsh"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads pond, puddle, stream charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     }
   ],
   "contrasts": [
@@ -800,7 +896,7 @@
   "meta": {
     "generated_at": "2026-07-06T05:29:29+00:00",
     "model": "gpt-5.5",
-    "scrubbed_at": null,
-    "scrub_note": null
+    "scrubbed_at": "2026-07-06T08:39:41+00:00",
+    "scrub_note": "Full read; puddle gloss widened from 'after rain' to any spilt water (WordNet pin includes 'or other liquid') after four indoor frames drew strict-gloss sense flags; full-set FORCE re-judge followed."
   }
 }

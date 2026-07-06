@@ -178,7 +178,15 @@
         "gaze": "gazed",
         "glare": "glared",
         "squint": "squinted"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads peer, squint charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-look-01-s06",
@@ -223,7 +231,15 @@
         "gaze": "gazes",
         "glare": "glares",
         "squint": "squints"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads peer, squint charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-look-01-s09",
@@ -238,7 +254,15 @@
         "gaze": "gazed",
         "glare": "glared",
         "squint": "squinted"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds gaze, squint; claude-opus-4-8 adds squint): squint co-occurs while peering, but narrowing your eyes at a dim jar is counterproductive; the obscured target is peer's staging",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-look-01-s10",
@@ -253,7 +277,15 @@
         "gaze": "gazed",
         "glare": "glared",
         "squint": "squinted"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds squint; claude-opus-4-8 adds squint): squint read is charitable; you do not narrow your eyes INTO a dark cupboard - the hidden target stages peer",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-look-01-s11",
@@ -268,7 +300,15 @@
         "gaze": "gazed",
         "glare": "glared",
         "squint": "squinted"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds gaze, squint; claude-opus-4-8 adds squint): squint co-occurs in mist, but the searched-for marker stages peer's difficulty-of-seeing, not light-defence",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-look-01-s12",
@@ -283,7 +323,15 @@
         "gaze": "gazed",
         "glare": "glared",
         "squint": "squinted"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads gaze, squint charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-look-01-s13",
@@ -298,7 +346,15 @@
         "gaze": "gazed",
         "glare": "glared",
         "squint": "squinted"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads squint charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-look-01-s14",
@@ -328,7 +384,15 @@
         "gaze": "gaze",
         "glare": "glare",
         "squint": "squint"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads squint charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-look-01-s16",
@@ -343,7 +407,15 @@
         "gaze": "gazes",
         "glare": "glares",
         "squint": "squints"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads squint charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-look-01-s17",
@@ -403,7 +475,15 @@
         "gaze": "gazed",
         "glare": "glared",
         "squint": "squinted"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads peer charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-look-01-s21",
@@ -418,7 +498,15 @@
         "gaze": "gazed",
         "glare": "glared",
         "squint": "squinted"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads peer, squint charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-look-01-s22",
@@ -448,7 +536,15 @@
         "gaze": "gaze",
         "glare": "glare",
         "squint": "squint"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads squint charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-look-01-s24",
@@ -463,7 +559,15 @@
         "gaze": "gazes",
         "glare": "glares",
         "squint": "squints"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads peer charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-look-01-s25",
@@ -478,7 +582,15 @@
         "gaze": "gazed",
         "glare": "glared",
         "squint": "squinted"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads glance charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-look-01-s26",
@@ -493,7 +605,15 @@
         "gaze": "gazed",
         "glare": "glared",
         "squint": "squinted"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads glance charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-look-01-s27",
@@ -508,7 +628,15 @@
         "gaze": "gazed",
         "glare": "glared",
         "squint": "squinted"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads glance charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-look-01-s28",
@@ -538,7 +666,15 @@
         "gaze": "gazed",
         "glare": "glared",
         "squint": "squinted"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads glance charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-look-01-s30",
@@ -553,7 +689,15 @@
         "gaze": "gazed",
         "glare": "glared",
         "squint": "squinted"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads glance charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-look-01-s31",
@@ -568,7 +712,15 @@
         "gaze": "gaze",
         "glare": "glare",
         "squint": "squint"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads glance charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-look-01-s32",
@@ -583,7 +735,15 @@
         "gaze": "gazed",
         "glare": "glared",
         "squint": "squinted"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads squint charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-look-01-s33",
@@ -598,7 +758,15 @@
         "gaze": "gazed",
         "glare": "glared",
         "squint": "squinted"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3 (gpt-5.5 adds glance, peer; claude-opus-4-8 adds peer): peer co-occurs on tiny print; the bright sun and pulled-down cap are squint's exclusive trigger",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-look-01-s34",
@@ -643,7 +811,15 @@
         "gaze": "gazed",
         "glare": "glared",
         "squint": "squinted"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads peer charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-look-01-s37",
@@ -673,7 +849,15 @@
         "gaze": "gazed",
         "glare": "glared",
         "squint": "squinted"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads gaze, glance, peer charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-look-01-s39",
@@ -688,7 +872,15 @@
         "gaze": "gaze",
         "glare": "glare",
         "squint": "squint"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads peer charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     },
     {
       "id": "A-look-01-s40",
@@ -703,7 +895,15 @@
         "gaze": "gazed",
         "glare": "glared",
         "squint": "squinted"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also reads glare charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "by": "claude",
+          "at": "2026-07-06"
+        }
+      ]
     }
   ],
   "contrasts": [
@@ -811,7 +1011,7 @@
   "meta": {
     "generated_at": "2026-07-06T05:17:17+00:00",
     "model": "gpt-5.5",
-    "scrubbed_at": null,
-    "scrub_note": null
+    "scrubbed_at": "2026-07-06T08:39:41+00:00",
+    "scrub_note": "Full read; register pass replaced seven 'eyelids' anatomy hedges and two 'one heartbeat' repeats with storybook staging; peer/squint 2-of-3s adjudicated (narrowing eyes in the dark is counterproductive)."
   }
 }
