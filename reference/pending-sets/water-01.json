@@ -1,0 +1,806 @@
+{
+  "id": "B-water-01",
+  "bank": "B",
+  "pos": "noun",
+  "theme": "kinds of water places",
+  "band": 3,
+  "band_override": 3,
+  "computed": {
+    "zipf_min": 3.26,
+    "zipf_mean": 3.85,
+    "tightness": 0.601,
+    "band_suggested": 3,
+    "scored_at": "2026-07-06T05:33:18+00:00"
+  },
+  "words": [
+    {
+      "w": "stream",
+      "synset": "stream.n.01",
+      "gloss_source": "wordnet",
+      "gloss": "a natural body of running water flowing on or under the earth",
+      "zipf": 4.62,
+      "register": "neutral",
+      "senses_at_pos": 5,
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-06",
+        "note": "dominant school-context sense confirmed at vet"
+      },
+      "forms": {
+        "base": "stream"
+      },
+      "discriminator": "narrow running water",
+      "grade": 2
+    },
+    {
+      "w": "puddle",
+      "synset": "pool.n.06",
+      "gloss_source": "authored",
+      "gloss": "a small patch of water lying on the ground after rain",
+      "zipf": 3.26,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "puddle"
+      },
+      "discriminator": "small, shallow, on the ground, soon gone",
+      "grade": 1
+    },
+    {
+      "w": "pond",
+      "synset": "pond.n.01",
+      "gloss_source": "wordnet",
+      "gloss": "a small lake",
+      "zipf": 3.98,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "pond"
+      },
+      "discriminator": "small still water that stays",
+      "grade": 2
+    },
+    {
+      "w": "waterfall",
+      "synset": "waterfall.n.01",
+      "gloss_source": "wordnet",
+      "gloss": "a steep descent of the water of a river",
+      "zipf": 3.54,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "waterfall"
+      },
+      "discriminator": "water falling off a drop",
+      "grade": 2
+    },
+    {
+      "w": "marsh",
+      "synset": "marsh.n.01",
+      "gloss_source": "wordnet",
+      "gloss": "low-lying wet land with grassy vegetation; usually is a transition zone between land and water",
+      "zipf": 3.87,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "marsh"
+      },
+      "discriminator": "wet, grassy, squelchy ground",
+      "grade": 5
+    }
+  ],
+  "sentences": [
+    {
+      "id": "B-water-01-s01",
+      "answer": "stream",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The narrow ___ slipped under the footbridge, carrying leaves past Mia.",
+      "cue_phrase": "carrying leaves past",
+      "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+      }
+    },
+    {
+      "id": "B-water-01-s02",
+      "answer": "stream",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Pebbles clicked as the ___ raced along its winding channel.",
+      "cue_phrase": "raced along its winding",
+      "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+      }
+    },
+    {
+      "id": "B-water-01-s03",
+      "answer": "stream",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Nina followed the ___ through the wood, hearing it chatter.",
+      "cue_phrase": "hearing it chatter",
+      "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+      }
+    },
+    {
+      "id": "B-water-01-s04",
+      "answer": "stream",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The toy boat floated down the ___ and disappeared round a bend.",
+      "cue_phrase": "floated down the",
+      "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+      }
+    },
+    {
+      "id": "B-water-01-s05",
+      "answer": "stream",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "After the hill path, we filled bottles where the ___ crossed our boots.",
+      "cue_phrase": "crossed our boots",
+      "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+      }
+    },
+    {
+      "id": "B-water-01-s06",
+      "answer": "stream",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The map showed a blue thread, so we searched for the ___.",
+      "cue_phrase": "blue thread",
+      "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+      }
+    },
+    {
+      "id": "B-water-01-s07",
+      "answer": "stream",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Ferns leaned over the ___, and tiny fish faced the current.",
+      "cue_phrase": "fish faced the current",
+      "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+      }
+    },
+    {
+      "id": "B-water-01-s08",
+      "answer": "stream",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "We heard the ___ gurgle before seeing it between the stones.",
+      "cue_phrase": "gurgle before seeing",
+      "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+      }
+    },
+    {
+      "id": "B-water-01-s09",
+      "answer": "puddle",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "A shallow ___ on the pavement reflected Jo's red boots.",
+      "cue_phrase": "on the pavement",
+      "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+      }
+    },
+    {
+      "id": "B-water-01-s10",
+      "answer": "puddle",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "After the storm, Sam splashed both shoes in the ___ beside the kerb.",
+      "cue_phrase": "beside the kerb",
+      "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+      }
+    },
+    {
+      "id": "B-water-01-s11",
+      "answer": "puddle",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "By lunchtime, the ___ near the gate had dried in the sun.",
+      "cue_phrase": "dried in the sun",
+      "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+      }
+    },
+    {
+      "id": "B-water-01-s12",
+      "answer": "puddle",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Mum wiped the muddy ___ from the hall tiles with one towel.",
+      "cue_phrase": "from the hall tiles",
+      "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+      }
+    },
+    {
+      "id": "B-water-01-s13",
+      "answer": "puddle",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Lena jumped over the ___ on the kitchen floor with clean socks.",
+      "cue_phrase": "kitchen floor with",
+      "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+      }
+    },
+    {
+      "id": "B-water-01-s14",
+      "answer": "puddle",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The dog shook, and a shiny ___ spread under the chair.",
+      "cue_phrase": "under the chair",
+      "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+      }
+    },
+    {
+      "id": "B-water-01-s15",
+      "answer": "puddle",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Only the ___ in the playground mirrored the clouds after assembly.",
+      "cue_phrase": "in the playground",
+      "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+      }
+    },
+    {
+      "id": "B-water-01-s16",
+      "answer": "puddle",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "Dad placed a bucket under the leak, but a ___ formed.",
+      "cue_phrase": "under the leak",
+      "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+      }
+    },
+    {
+      "id": "B-water-01-s17",
+      "answer": "pond",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Ducks glided across the still ___ behind the school garden.",
+      "cue_phrase": "Ducks glided across",
+      "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+      }
+    },
+    {
+      "id": "B-water-01-s18",
+      "answer": "pond",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Goldfish hid under lily pads in the ___ by Grandad's shed.",
+      "cue_phrase": "Goldfish hid under",
+      "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+      }
+    },
+    {
+      "id": "B-water-01-s19",
+      "answer": "pond",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "We skated on the frozen ___ after the ranger checked the ice.",
+      "cue_phrase": "skated on the frozen",
+      "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+      }
+    },
+    {
+      "id": "B-water-01-s20",
+      "answer": "pond",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The class counted frogspawn at the ___ every week until June.",
+      "cue_phrase": "until June",
+      "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+      }
+    },
+    {
+      "id": "B-water-01-s21",
+      "answer": "pond",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Tariq walked around the ___ and fed ducks from each side.",
+      "cue_phrase": "fed ducks from",
+      "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+      }
+    },
+    {
+      "id": "B-water-01-s22",
+      "answer": "pond",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Dragonflies hovered over the ___, whose surface barely rippled.",
+      "cue_phrase": "surface barely rippled",
+      "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+      }
+    },
+    {
+      "id": "B-water-01-s23",
+      "answer": "pond",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "At the fair, model boats circled the ___ without drifting away.",
+      "cue_phrase": "model boats circled",
+      "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+      }
+    },
+    {
+      "id": "B-water-01-s24",
+      "answer": "pond",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "A toy sailboat crossed the ___, then returned to the same bank.",
+      "cue_phrase": "toy sailboat crossed",
+      "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+      }
+    },
+    {
+      "id": "B-water-01-s25",
+      "answer": "waterfall",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ thundered off the cliff, spraying our picnic blanket.",
+      "cue_phrase": "off the cliff",
+      "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+      }
+    },
+    {
+      "id": "B-water-01-s26",
+      "answer": "waterfall",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "A white curtain plunged from the ledge at the ___.",
+      "cue_phrase": "plunged from the ledge",
+      "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+      }
+    },
+    {
+      "id": "B-water-01-s27",
+      "answer": "waterfall",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "We shouted near the ___ because the roar swallowed every word.",
+      "cue_phrase": "roar swallowed every word",
+      "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+      }
+    },
+    {
+      "id": "B-water-01-s28",
+      "answer": "waterfall",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Mist cooled our cheeks below the ___ at the gorge.",
+      "cue_phrase": "Mist cooled our cheeks",
+      "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+      }
+    },
+    {
+      "id": "B-water-01-s29",
+      "answer": "waterfall",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "We stood below the ___ as spray burst from the cliff.",
+      "cue_phrase": "spray burst from",
+      "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+      }
+    },
+    {
+      "id": "B-water-01-s30",
+      "answer": "waterfall",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Priya saw rainbow colours in spray at the foot of the ___.",
+      "cue_phrase": "at the foot",
+      "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+      }
+    },
+    {
+      "id": "B-water-01-s31",
+      "answer": "waterfall",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Behind the ___, a cave echoed with the crashing sheet.",
+      "cue_phrase": "crashing sheet",
+      "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+      }
+    },
+    {
+      "id": "B-water-01-s32",
+      "answer": "waterfall",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "The ___ fell so loudly that birds lifted from the trees.",
+      "cue_phrase": "fell so loudly",
+      "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+      }
+    },
+    {
+      "id": "B-water-01-s33",
+      "answer": "marsh",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ squelched under our boots, with reeds taller than Sam.",
+      "cue_phrase": "squelched under our boots",
+      "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+      }
+    },
+    {
+      "id": "B-water-01-s34",
+      "answer": "marsh",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Frogs croaked in the ___ where rushes hid the muddy ground.",
+      "cue_phrase": "rushes hid the muddy",
+      "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+      }
+    },
+    {
+      "id": "B-water-01-s35",
+      "answer": "marsh",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Our socks smelled of mud because the ___ sucked at the planks.",
+      "cue_phrase": "sucked at the planks",
+      "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+      }
+    },
+    {
+      "id": "B-water-01-s36",
+      "answer": "marsh",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Birdwatchers waited in the ___ as herons stalked through reeds.",
+      "cue_phrase": "herons stalked through reeds",
+      "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+      }
+    },
+    {
+      "id": "B-water-01-s37",
+      "answer": "marsh",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Each step in the ___ made a soft sucking sound.",
+      "cue_phrase": "soft sucking sound",
+      "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+      }
+    },
+    {
+      "id": "B-water-01-s38",
+      "answer": "marsh",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The pony refused the ___, choosing the firm track instead.",
+      "cue_phrase": "firm track instead",
+      "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+      }
+    },
+    {
+      "id": "B-water-01-s39",
+      "answer": "marsh",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Mosquitoes rose from the ___ while reeds brushed our elbows.",
+      "cue_phrase": "reeds brushed our elbows",
+      "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+      }
+    },
+    {
+      "id": "B-water-01-s40",
+      "answer": "marsh",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "We lost a boot in the ___ before reaching the hide.",
+      "cue_phrase": "lost a boot",
+      "surface": {
+        "stream": "stream",
+        "puddle": "puddle",
+        "pond": "pond",
+        "waterfall": "waterfall",
+        "marsh": "marsh"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "stream",
+      "picked": "puddle",
+      "line": "A stream moves along in a narrow channel. A puddle is shallow, still, and soon gone."
+    },
+    {
+      "answer": "stream",
+      "picked": "pond",
+      "line": "A stream moves along in a narrow channel. A pond is still and stays in one place."
+    },
+    {
+      "answer": "stream",
+      "picked": "waterfall",
+      "line": "A stream moves along in a narrow channel. A waterfall drops from a height."
+    },
+    {
+      "answer": "stream",
+      "picked": "marsh",
+      "line": "A stream moves along in a narrow channel. A marsh is soggy ground with reeds."
+    },
+    {
+      "answer": "puddle",
+      "picked": "stream",
+      "line": "A puddle is shallow and soon gone. A stream keeps moving along a narrow channel."
+    },
+    {
+      "answer": "puddle",
+      "picked": "pond",
+      "line": "A puddle is shallow and soon gone. A pond is deeper, still, and lasts."
+    },
+    {
+      "answer": "puddle",
+      "picked": "waterfall",
+      "line": "A puddle is shallow and soon gone. A waterfall crashes down from a height."
+    },
+    {
+      "answer": "puddle",
+      "picked": "marsh",
+      "line": "A puddle is shallow and soon gone. A marsh is soggy ground with reeds."
+    },
+    {
+      "answer": "pond",
+      "picked": "stream",
+      "line": "A pond is still and lasts. A stream moves along in a narrow channel."
+    },
+    {
+      "answer": "pond",
+      "picked": "puddle",
+      "line": "A pond is still and lasts. A puddle is shallow and soon gone."
+    },
+    {
+      "answer": "pond",
+      "picked": "waterfall",
+      "line": "A pond is still and lasts. A waterfall drops noisily from a height."
+    },
+    {
+      "answer": "pond",
+      "picked": "marsh",
+      "line": "A pond is still and lasts. A marsh is soggy ground with reeds."
+    },
+    {
+      "answer": "waterfall",
+      "picked": "stream",
+      "line": "A waterfall drops from a height. A stream moves along in a narrow channel."
+    },
+    {
+      "answer": "waterfall",
+      "picked": "puddle",
+      "line": "A waterfall drops from a height. A puddle is shallow and soon gone."
+    },
+    {
+      "answer": "waterfall",
+      "picked": "pond",
+      "line": "A waterfall drops from a height. A pond is still and lasts."
+    },
+    {
+      "answer": "waterfall",
+      "picked": "marsh",
+      "line": "A waterfall drops from a height. A marsh is soggy ground with reeds."
+    },
+    {
+      "answer": "marsh",
+      "picked": "stream",
+      "line": "A marsh is soggy ground with reeds. A stream moves along in a narrow channel."
+    },
+    {
+      "answer": "marsh",
+      "picked": "puddle",
+      "line": "A marsh is soggy ground with reeds. A puddle is shallow and soon gone."
+    },
+    {
+      "answer": "marsh",
+      "picked": "pond",
+      "line": "A marsh is soggy ground with reeds. A pond is still and lasts."
+    },
+    {
+      "answer": "marsh",
+      "picked": "waterfall",
+      "line": "A marsh is soggy ground with reeds. A waterfall drops from a height."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-06T05:29:29+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": null,
+    "scrub_note": null
+  }
+}

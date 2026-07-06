@@ -1,0 +1,821 @@
+{
+  "id": "A-say-01",
+  "bank": "A",
+  "pos": "verb",
+  "theme": "ways of speaking up",
+  "band": 4,
+  "band_override": 4,
+  "computed": {
+    "zipf_min": 3.51,
+    "zipf_mean": 3.72,
+    "tightness": 0.188,
+    "band_suggested": 2,
+    "scored_at": "2026-07-06T05:33:18+00:00"
+  },
+  "words": [
+    {
+      "w": "boast",
+      "synset": "boast.v.01",
+      "gloss_source": "wordnet",
+      "gloss": "show off",
+      "zipf": 3.51,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "boast",
+        "third": "boasts",
+        "past": "boasted",
+        "part": "boasting"
+      },
+      "discriminator": "talking yourself up",
+      "grade": 3
+    },
+    {
+      "w": "plead",
+      "synset": "plead.v.01",
+      "gloss_source": "authored",
+      "gloss": "ask for something with your whole heart, almost begging",
+      "zipf": 3.63,
+      "register": "neutral",
+      "senses_at_pos": 4,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "plead",
+        "third": "pleads",
+        "past": "pleaded",
+        "part": "pleading"
+      },
+      "discriminator": "begging with feeling",
+      "grade": 4
+    },
+    {
+      "w": "insist",
+      "synset": "insist.v.01",
+      "gloss_source": "authored",
+      "gloss": "keep saying something firmly and refuse to back down",
+      "zipf": 4.03,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "insist",
+        "third": "insists",
+        "past": "insisted",
+        "part": "insisting"
+      },
+      "discriminator": "will not back down",
+      "grade": 4
+    },
+    {
+      "w": "confess",
+      "synset": "concede.v.01",
+      "gloss_source": "authored",
+      "gloss": "own up to something you did wrong",
+      "zipf": 3.82,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "confess",
+        "third": "confesses",
+        "past": "confessed",
+        "part": "confessing"
+      },
+      "discriminator": "owning up to your own wrong",
+      "grade": 4
+    },
+    {
+      "w": "tease",
+      "synset": "tease.v.08",
+      "gloss_source": "wordnet",
+      "gloss": "mock or make fun of playfully",
+      "zipf": 3.59,
+      "register": "neutral",
+      "senses_at_pos": 9,
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-06",
+        "note": "dominant school-context sense confirmed at vet"
+      },
+      "forms": {
+        "base": "tease",
+        "third": "teases",
+        "past": "teased",
+        "part": "teasing"
+      },
+      "discriminator": "playful poking fun at someone",
+      "grade": 2
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-say-01-s01",
+      "answer": "boast",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "At assembly, Leo ___, 'My poem is the finest in school!'",
+      "cue_phrase": "finest in school",
+      "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+      }
+    },
+    {
+      "id": "A-say-01-s02",
+      "answer": "boast",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Holding the trophy, Sara ___, 'No one can beat my jumps!'",
+      "cue_phrase": "No one can beat",
+      "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+      }
+    },
+    {
+      "id": "A-say-01-s03",
+      "answer": "boast",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "On the bus, Niko ___, 'I won three races before lunch!'",
+      "cue_phrase": "won three races",
+      "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+      }
+    },
+    {
+      "id": "A-say-01-s04",
+      "answer": "boast",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Beside his huge sandcastle, Amir ___, 'Mine is taller than everyone else's!'",
+      "cue_phrase": "taller than everyone else's",
+      "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+      }
+    },
+    {
+      "id": "A-say-01-s05",
+      "answer": "boast",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "After the quiz, Ella ___, 'I finished first without any help!'",
+      "cue_phrase": "finished first",
+      "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+      }
+    },
+    {
+      "id": "A-say-01-s06",
+      "answer": "boast",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "At the rink, Tom ___, 'My spin was the fastest today!'",
+      "cue_phrase": "fastest today",
+      "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+      }
+    },
+    {
+      "id": "A-say-01-s07",
+      "answer": "boast",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "During art club, Mei ___, 'My dragon beats every picture here!'",
+      "cue_phrase": "beats every picture",
+      "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+      }
+    },
+    {
+      "id": "A-say-01-s08",
+      "answer": "boast",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Ben wanted to ___, 'I am the team's star!'",
+      "cue_phrase": "team's star",
+      "surface": {
+        "boast": "boast",
+        "plead": "plead",
+        "insist": "insist",
+        "confess": "confess",
+        "tease": "tease"
+      }
+    },
+    {
+      "id": "A-say-01-s09",
+      "answer": "plead",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "At bedtime, Noor ___, 'Please, please read one more chapter!'",
+      "cue_phrase": "Please, please",
+      "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+      }
+    },
+    {
+      "id": "A-say-01-s10",
+      "answer": "plead",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Beside the locked gate, Sam ___, 'Please let me in!'",
+      "cue_phrase": "Please let me",
+      "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+      }
+    },
+    {
+      "id": "A-say-01-s11",
+      "answer": "plead",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "With watery eyes, Ava ___, 'Let the stray puppy stay tonight!'",
+      "cue_phrase": "Let the stray puppy stay",
+      "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+      }
+    },
+    {
+      "id": "A-say-01-s12",
+      "answer": "plead",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "In the rain, Luca ___, 'Can we go inside now, please?'",
+      "cue_phrase": "inside now, please",
+      "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+      }
+    },
+    {
+      "id": "A-say-01-s13",
+      "answer": "plead",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Clutching his ticket, Ravi ___, 'Please don't cancel the trip!'",
+      "cue_phrase": "don't cancel the trip",
+      "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+      }
+    },
+    {
+      "id": "A-say-01-s14",
+      "answer": "plead",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Mia ___, 'One more chance, please,' after missing the goal.",
+      "cue_phrase": "One more chance",
+      "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+      }
+    },
+    {
+      "id": "A-say-01-s15",
+      "answer": "plead",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Nia started to ___, 'Please let that kitten come home!'",
+      "cue_phrase": "kitten come home",
+      "surface": {
+        "boast": "boast",
+        "plead": "plead",
+        "insist": "insist",
+        "confess": "confess",
+        "tease": "tease"
+      }
+    },
+    {
+      "id": "A-say-01-s16",
+      "answer": "plead",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "When the kite tears, Finn ___, 'Please fix it before sunset!'",
+      "cue_phrase": "Please fix it",
+      "surface": {
+        "boast": "boasts",
+        "plead": "pleads",
+        "insist": "insists",
+        "confess": "confesses",
+        "tease": "teases"
+      }
+    },
+    {
+      "id": "A-say-01-s17",
+      "answer": "insist",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "At the map, Dan ___, 'North is this way,' and would not change.",
+      "cue_phrase": "would not change",
+      "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+      }
+    },
+    {
+      "id": "A-say-01-s18",
+      "answer": "insist",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "When friends disagreed, Lina ___, 'The answer is twelve,' every time.",
+      "cue_phrase": "every time",
+      "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+      }
+    },
+    {
+      "id": "A-say-01-s19",
+      "answer": "insist",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "After two corrections, Mateo ___, 'The library closes at six.'",
+      "cue_phrase": "After two corrections",
+      "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+      }
+    },
+    {
+      "id": "A-say-01-s20",
+      "answer": "insist",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "During rehearsal, Erin ___, 'My line comes next,' despite the groans.",
+      "cue_phrase": "despite the groans",
+      "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+      }
+    },
+    {
+      "id": "A-say-01-s21",
+      "answer": "insist",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The referee frowned, but Jo ___, 'The ball crossed the line.'",
+      "cue_phrase": "referee frowned",
+      "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+      }
+    },
+    {
+      "id": "A-say-01-s22",
+      "answer": "insist",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Even with mud on the sign, Kai ___, 'This path is closed.'",
+      "cue_phrase": "path is closed",
+      "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+      }
+    },
+    {
+      "id": "A-say-01-s23",
+      "answer": "insist",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The captain made her ___, 'We turn left,' until all agreed.",
+      "cue_phrase": "until all agreed",
+      "surface": {
+        "boast": "boast",
+        "plead": "plead",
+        "insist": "insist",
+        "confess": "confess",
+        "tease": "tease"
+      }
+    },
+    {
+      "id": "A-say-01-s24",
+      "answer": "insist",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "In council meetings, the mayor ___, 'Rules matter,' through every complaint.",
+      "cue_phrase": "through every complaint",
+      "surface": {
+        "boast": "boasts",
+        "plead": "pleads",
+        "insist": "insists",
+        "confess": "confesses",
+        "tease": "teases"
+      }
+    },
+    {
+      "id": "A-say-01-s25",
+      "answer": "confess",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "After the vase cracked, Lily ___, 'I kicked the ball indoors.'",
+      "cue_phrase": "kicked the ball indoors",
+      "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+      }
+    },
+    {
+      "id": "A-say-01-s26",
+      "answer": "confess",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "With blue paint on his sleeve, Max ___, 'I spilled it.'",
+      "cue_phrase": "I spilled it",
+      "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+      }
+    },
+    {
+      "id": "A-say-01-s27",
+      "answer": "confess",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "By the broken window, Tara ___, 'My stone hit the glass.'",
+      "cue_phrase": "My stone hit",
+      "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+      }
+    },
+    {
+      "id": "A-say-01-s28",
+      "answer": "confess",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "At lunch, Omar ___, 'I took the last biscuit.'",
+      "cue_phrase": "last biscuit",
+      "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+      }
+    },
+    {
+      "id": "A-say-01-s29",
+      "answer": "confess",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "When the hamster escaped, Bea ___, 'I left the cage open.'",
+      "cue_phrase": "left the cage open",
+      "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+      }
+    },
+    {
+      "id": "A-say-01-s30",
+      "answer": "confess",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Beside the scribbled wall, Noah ___, 'I used the marker there.'",
+      "cue_phrase": "used the marker",
+      "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+      }
+    },
+    {
+      "id": "A-say-01-s31",
+      "answer": "confess",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The note helped Ivy to ___, 'I hid the missing coin.'",
+      "cue_phrase": "hid the missing coin",
+      "surface": {
+        "boast": "boast",
+        "plead": "plead",
+        "insist": "insist",
+        "confess": "confess",
+        "tease": "tease"
+      }
+    },
+    {
+      "id": "A-say-01-s32",
+      "answer": "confess",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "At clean-up, the child ___, 'I dropped the jam jar.'",
+      "cue_phrase": "dropped the jam jar",
+      "surface": {
+        "boast": "boasts",
+        "plead": "pleads",
+        "insist": "insists",
+        "confess": "confesses",
+        "tease": "teases"
+      }
+    },
+    {
+      "id": "A-say-01-s33",
+      "answer": "tease",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Ravi ___, 'Nice giant hat, captain!' and his brother laughed.",
+      "cue_phrase": "brother laughed",
+      "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+      }
+    },
+    {
+      "id": "A-say-01-s34",
+      "answer": "tease",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Mum ___, 'Careful, Sir Snore-a-lot,' and Dad grinned.",
+      "cue_phrase": "Dad grinned",
+      "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+      }
+    },
+    {
+      "id": "A-say-01-s35",
+      "answer": "tease",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "At lunch, Pia ___, 'Your soup moustache looks royal!'",
+      "cue_phrase": "soup moustache looks royal",
+      "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+      }
+    },
+    {
+      "id": "A-say-01-s36",
+      "answer": "tease",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "During football, Lee ___, 'Nice moon kick!' and Ali bowed.",
+      "cue_phrase": "Ali bowed",
+      "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+      }
+    },
+    {
+      "id": "A-say-01-s37",
+      "answer": "tease",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Milo ___, 'Queen of Crumbs!' as Ella brushed her jumper.",
+      "cue_phrase": "Queen of Crumbs",
+      "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+      }
+    },
+    {
+      "id": "A-say-01-s38",
+      "answer": "tease",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "In the tent, Ana ___, 'Brave knight, scared of moths?'",
+      "cue_phrase": "scared of moths",
+      "surface": {
+        "boast": "boasted",
+        "plead": "pleaded",
+        "insist": "insisted",
+        "confess": "confessed",
+        "tease": "teased"
+      }
+    },
+    {
+      "id": "A-say-01-s39",
+      "answer": "tease",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The twins started to ___, 'Tiny giant!' and Gran chuckled.",
+      "cue_phrase": "Gran chuckled",
+      "surface": {
+        "boast": "boast",
+        "plead": "plead",
+        "insist": "insist",
+        "confess": "confess",
+        "tease": "tease"
+      }
+    },
+    {
+      "id": "A-say-01-s40",
+      "answer": "tease",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "On silly days, Dad ___, 'Professor Puddles,' when my boots squeak.",
+      "cue_phrase": "Professor Puddles",
+      "surface": {
+        "boast": "boasts",
+        "plead": "pleads",
+        "insist": "insists",
+        "confess": "confesses",
+        "tease": "teases"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "boast",
+      "picked": "plead",
+      "line": "Boast talks yourself up. Plead begs with feeling for help."
+    },
+    {
+      "answer": "boast",
+      "picked": "insist",
+      "line": "Boast lifts your own greatness. Insist will not change a claim."
+    },
+    {
+      "answer": "boast",
+      "picked": "confess",
+      "line": "Boast praises yourself. Confess admits your own fault."
+    },
+    {
+      "answer": "boast",
+      "picked": "tease",
+      "line": "Boast is self-praise. Tease gives a joking poke at someone else."
+    },
+    {
+      "answer": "plead",
+      "picked": "boast",
+      "line": "Plead begs with feeling. Boast talks yourself up."
+    },
+    {
+      "answer": "plead",
+      "picked": "insist",
+      "line": "Plead wants help or mercy. Insist will not change a claim."
+    },
+    {
+      "answer": "plead",
+      "picked": "confess",
+      "line": "Plead begs for a result. Confess admits your own fault."
+    },
+    {
+      "answer": "plead",
+      "picked": "tease",
+      "line": "Plead is serious begging. Tease is a joking poke."
+    },
+    {
+      "answer": "insist",
+      "picked": "boast",
+      "line": "Insist will not change a claim. Boast talks yourself up."
+    },
+    {
+      "answer": "insist",
+      "picked": "plead",
+      "line": "Insist holds a claim. Plead begs with feeling."
+    },
+    {
+      "answer": "insist",
+      "picked": "confess",
+      "line": "Insist stands by a claim. Confess admits your own fault."
+    },
+    {
+      "answer": "insist",
+      "picked": "tease",
+      "line": "Insist is serious and unchanging. Tease is joking."
+    },
+    {
+      "answer": "confess",
+      "picked": "boast",
+      "line": "Confess admits your own fault. Boast praises yourself."
+    },
+    {
+      "answer": "confess",
+      "picked": "plead",
+      "line": "Confess admits your own fault. Plead begs with feeling."
+    },
+    {
+      "answer": "confess",
+      "picked": "insist",
+      "line": "Confess admits fault. Insist will not change a claim."
+    },
+    {
+      "answer": "confess",
+      "picked": "tease",
+      "line": "Confess is serious admission. Tease is a joking poke."
+    },
+    {
+      "answer": "tease",
+      "picked": "boast",
+      "line": "Tease jokes at someone else. Boast talks yourself up."
+    },
+    {
+      "answer": "tease",
+      "picked": "plead",
+      "line": "Tease is joking. Plead begs with feeling."
+    },
+    {
+      "answer": "tease",
+      "picked": "insist",
+      "line": "Tease is light joking. Insist will not change a claim."
+    },
+    {
+      "answer": "tease",
+      "picked": "confess",
+      "line": "Tease jokes at someone. Confess admits your own fault."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-06T05:19:29+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": null,
+    "scrub_note": null
+  }
+}

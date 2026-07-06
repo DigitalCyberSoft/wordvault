@@ -1,0 +1,806 @@
+{
+  "id": "B-landform-01",
+  "bank": "B",
+  "pos": "noun",
+  "theme": "shapes of the land",
+  "band": 4,
+  "band_override": 4,
+  "computed": {
+    "zipf_min": 3.9,
+    "zipf_mean": 4.34,
+    "tightness": 0.596,
+    "band_suggested": 2,
+    "scored_at": "2026-07-06T05:33:18+00:00"
+  },
+  "words": [
+    {
+      "w": "cliff",
+      "synset": "cliff.n.01",
+      "gloss_source": "wordnet",
+      "gloss": "a steep high face of rock",
+      "zipf": 4.1,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "cliff"
+      },
+      "discriminator": "a vertical rock face",
+      "grade": 2
+    },
+    {
+      "w": "valley",
+      "synset": "valley.n.01",
+      "gloss_source": "wordnet",
+      "gloss": "a long depression in the surface of the land that usually contains a river",
+      "zipf": 4.72,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "valley"
+      },
+      "discriminator": "low ground between hills",
+      "grade": 3
+    },
+    {
+      "w": "plain",
+      "synset": "plain.n.01",
+      "gloss_source": "wordnet",
+      "gloss": "extensive tract of level open land",
+      "zipf": 4.43,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "plain"
+      },
+      "discriminator": "wide flat open land",
+      "grade": 5
+    },
+    {
+      "w": "peak",
+      "synset": "peak.n.04",
+      "gloss_source": "wordnet",
+      "gloss": "the top or extreme point of something (usually a mountain or hill)",
+      "zipf": 4.53,
+      "register": "neutral",
+      "senses_at_pos": 7,
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-06",
+        "note": "dominant school-context sense confirmed at vet"
+      },
+      "forms": {
+        "base": "peak"
+      },
+      "discriminator": "the very top point",
+      "grade": 4
+    },
+    {
+      "w": "slope",
+      "synset": "slope.n.01",
+      "gloss_source": "authored",
+      "gloss": "the side of a hill that goes up or down at an angle",
+      "zipf": 3.9,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "slope"
+      },
+      "discriminator": "the slanted side you climb or ski",
+      "grade": 3
+    }
+  ],
+  "sentences": [
+    {
+      "id": "B-landform-01-s01",
+      "answer": "cliff",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ dropped almost straight down to the crashing waves.",
+      "cue_phrase": "dropped almost straight down",
+      "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+      }
+    },
+    {
+      "id": "B-landform-01-s02",
+      "answer": "cliff",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "At the ___, a fence warned us away from the sudden drop.",
+      "cue_phrase": "sudden drop",
+      "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+      }
+    },
+    {
+      "id": "B-landform-01-s03",
+      "answer": "cliff",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Gulls nested halfway down the ___, safe above the churning sea.",
+      "cue_phrase": "safe above the churning sea",
+      "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+      }
+    },
+    {
+      "id": "B-landform-01-s04",
+      "answer": "cliff",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The climber's rope hung against the ___ beside the beach.",
+      "cue_phrase": "rope hung against",
+      "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+      }
+    },
+    {
+      "id": "B-landform-01-s05",
+      "answer": "cliff",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Dad pulled us back as loose stones skipped over the ___.",
+      "cue_phrase": "loose stones skipped over",
+      "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+      }
+    },
+    {
+      "id": "B-landform-01-s06",
+      "answer": "cliff",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Her kite blew over the ___ and dangled far beneath us.",
+      "cue_phrase": "dangled far beneath",
+      "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+      }
+    },
+    {
+      "id": "B-landform-01-s07",
+      "answer": "cliff",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The castle stood on a ___, with waves smashing far below.",
+      "cue_phrase": "waves smashing far below",
+      "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+      }
+    },
+    {
+      "id": "B-landform-01-s08",
+      "answer": "cliff",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "The boat passed beneath the ___, its mast tiny beside the wall.",
+      "cue_phrase": "mast tiny beside",
+      "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+      }
+    },
+    {
+      "id": "B-landform-01-s09",
+      "answer": "valley",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "A train wound through the ___, with hills rising on both sides.",
+      "cue_phrase": "hills rising on both sides",
+      "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+      }
+    },
+    {
+      "id": "B-landform-01-s10",
+      "answer": "valley",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Mist gathered in the low ___ between two green hills.",
+      "cue_phrase": "low ___ between two",
+      "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+      }
+    },
+    {
+      "id": "B-landform-01-s11",
+      "answer": "valley",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Frost stayed longest in the ___ while sunny ridges warmed quickly.",
+      "cue_phrase": "sunny ridges warmed quickly",
+      "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+      }
+    },
+    {
+      "id": "B-landform-01-s12",
+      "answer": "valley",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Our campsite sat in the ___, and echoes came from both hills.",
+      "cue_phrase": "from both hills",
+      "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+      }
+    },
+    {
+      "id": "B-landform-01-s13",
+      "answer": "valley",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The bus descended to the ___ between hills, crossed it, then climbed again.",
+      "cue_phrase": "descended to the ___ between",
+      "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+      }
+    },
+    {
+      "id": "B-landform-01-s14",
+      "answer": "valley",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Rainwater from both ridges ran down into the ___ below.",
+      "cue_phrase": "from both ridges",
+      "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+      }
+    },
+    {
+      "id": "B-landform-01-s15",
+      "answer": "valley",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The village lights dotted the ___ floor after dark.",
+      "cue_phrase": "___ floor after",
+      "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+      }
+    },
+    {
+      "id": "B-landform-01-s16",
+      "answer": "valley",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Fog filled the ___ first, hiding the farms between the hills.",
+      "cue_phrase": "between the hills",
+      "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+      }
+    },
+    {
+      "id": "B-landform-01-s17",
+      "answer": "plain",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ stretched wide and flat, with no hills in sight.",
+      "cue_phrase": "wide and flat",
+      "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+      }
+    },
+    {
+      "id": "B-landform-01-s18",
+      "answer": "plain",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Cattle crossed the ___, a wide flat space under the big sky.",
+      "cue_phrase": "wide flat space",
+      "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+      }
+    },
+    {
+      "id": "B-landform-01-s19",
+      "answer": "plain",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The football rolled for ages across the ___ without turning downhill.",
+      "cue_phrase": "without turning downhill",
+      "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+      }
+    },
+    {
+      "id": "B-landform-01-s20",
+      "answer": "plain",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "From the wagon, we saw grass to every horizon across the ___.",
+      "cue_phrase": "to every horizon",
+      "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+      }
+    },
+    {
+      "id": "B-landform-01-s21",
+      "answer": "plain",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "With no trees, fences, or hills, the ___ made shadows look tiny.",
+      "cue_phrase": "no trees, fences, or hills",
+      "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+      }
+    },
+    {
+      "id": "B-landform-01-s22",
+      "answer": "plain",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The explorers walked all day across the ___, seeing no hills at all.",
+      "cue_phrase": "seeing no hills",
+      "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+      }
+    },
+    {
+      "id": "B-landform-01-s23",
+      "answer": "plain",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "On the map, the ___ was drawn as one huge flat patch.",
+      "cue_phrase": "huge flat patch",
+      "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+      }
+    },
+    {
+      "id": "B-landform-01-s24",
+      "answer": "plain",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "The picnic blanket lay on the ___, with sky touching grass all round.",
+      "cue_phrase": "sky touching grass all",
+      "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+      }
+    },
+    {
+      "id": "B-landform-01-s25",
+      "answer": "peak",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "We reached the ___, the highest spot for miles.",
+      "cue_phrase": "highest spot",
+      "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+      }
+    },
+    {
+      "id": "B-landform-01-s26",
+      "answer": "peak",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The flag fluttered on the ___, above every ridge nearby.",
+      "cue_phrase": "above every ridge nearby",
+      "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+      }
+    },
+    {
+      "id": "B-landform-01-s27",
+      "answer": "peak",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Clouds brushed the ___ above every ridge while tents stayed below.",
+      "cue_phrase": "tents stayed below",
+      "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+      }
+    },
+    {
+      "id": "B-landform-01-s28",
+      "answer": "peak",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "After hours upward, the last scramble to the ___ made everyone cheer.",
+      "cue_phrase": "After hours upward",
+      "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+      }
+    },
+    {
+      "id": "B-landform-01-s29",
+      "answer": "peak",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The map's tallest triangle marked the ___ where the hikers stopped.",
+      "cue_phrase": "tallest triangle marked",
+      "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+      }
+    },
+    {
+      "id": "B-landform-01-s30",
+      "answer": "peak",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Everyone saved one biscuit for the ___ after the hardest upward stretch.",
+      "cue_phrase": "hardest upward stretch",
+      "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+      }
+    },
+    {
+      "id": "B-landform-01-s31",
+      "answer": "peak",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "An eagle circled the ___, higher than the surrounding ridges.",
+      "cue_phrase": "higher than the surrounding",
+      "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+      }
+    },
+    {
+      "id": "B-landform-01-s32",
+      "answer": "peak",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The compass team placed their marker on the ___ after the final climb.",
+      "cue_phrase": "after the final climb",
+      "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+      }
+    },
+    {
+      "id": "B-landform-01-s33",
+      "answer": "slope",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ was slanted, so the ball rolled down by itself.",
+      "cue_phrase": "ball rolled down",
+      "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+      }
+    },
+    {
+      "id": "B-landform-01-s34",
+      "answer": "slope",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The grassy ___ rose gently from the gate to the barn.",
+      "cue_phrase": "rose gently from",
+      "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+      }
+    },
+    {
+      "id": "B-landform-01-s35",
+      "answer": "slope",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Her sledge raced down the snowy ___ behind the cottage.",
+      "cue_phrase": "sledge raced down",
+      "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+      }
+    },
+    {
+      "id": "B-landform-01-s36",
+      "answer": "slope",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Rain ran down the ___ past our boots and puddled near the fence.",
+      "cue_phrase": "past our boots",
+      "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+      }
+    },
+    {
+      "id": "B-landform-01-s37",
+      "answer": "slope",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Jack zigzagged across the ___ because straight upward steps hurt his calves.",
+      "cue_phrase": "straight upward steps",
+      "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+      }
+    },
+    {
+      "id": "B-landform-01-s38",
+      "answer": "slope",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The goat grazed halfway up the ___, where the grass tilted underfoot.",
+      "cue_phrase": "grass tilted underfoot",
+      "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+      }
+    },
+    {
+      "id": "B-landform-01-s39",
+      "answer": "slope",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "The path across the ___ made the wheelbarrow tip left.",
+      "cue_phrase": "wheelbarrow tip left",
+      "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+      }
+    },
+    {
+      "id": "B-landform-01-s40",
+      "answer": "slope",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "During practice, skiers lined up at the foot of the ___.",
+      "cue_phrase": "skiers lined up at",
+      "surface": {
+        "cliff": "cliff",
+        "valley": "valley",
+        "plain": "plain",
+        "peak": "peak",
+        "slope": "slope"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "cliff",
+      "picked": "valley",
+      "line": "A cliff drops almost straight down. A valley is low ground between hills."
+    },
+    {
+      "answer": "cliff",
+      "picked": "plain",
+      "line": "A cliff has a sudden drop. A plain is wide and flat."
+    },
+    {
+      "answer": "cliff",
+      "picked": "peak",
+      "line": "A cliff is a sheer drop. A peak is the highest spot."
+    },
+    {
+      "answer": "cliff",
+      "picked": "slope",
+      "line": "A cliff drops sharply. A slope is slanted ground you can travel along."
+    },
+    {
+      "answer": "valley",
+      "picked": "cliff",
+      "line": "A valley lies low between hills. A cliff is a sharp drop."
+    },
+    {
+      "answer": "valley",
+      "picked": "plain",
+      "line": "A valley is low between hills. A plain spreads wide and flat."
+    },
+    {
+      "answer": "valley",
+      "picked": "peak",
+      "line": "A valley sits below hills. A peak is the highest spot."
+    },
+    {
+      "answer": "valley",
+      "picked": "slope",
+      "line": "A valley is low between hills. A slope is slanted ground."
+    },
+    {
+      "answer": "plain",
+      "picked": "cliff",
+      "line": "A plain is wide and flat. A cliff has a sudden drop."
+    },
+    {
+      "answer": "plain",
+      "picked": "valley",
+      "line": "A plain spreads flat and wide. A valley sits low between hills."
+    },
+    {
+      "answer": "plain",
+      "picked": "peak",
+      "line": "A plain is broad and flat. A peak is the highest spot."
+    },
+    {
+      "answer": "plain",
+      "picked": "slope",
+      "line": "A plain is flat. A slope tilts upward or downward."
+    },
+    {
+      "answer": "peak",
+      "picked": "cliff",
+      "line": "A peak is the highest spot. A cliff is a sharp drop."
+    },
+    {
+      "answer": "peak",
+      "picked": "valley",
+      "line": "A peak is the highest spot. A valley lies low between hills."
+    },
+    {
+      "answer": "peak",
+      "picked": "plain",
+      "line": "A peak is the highest spot. A plain is wide and flat."
+    },
+    {
+      "answer": "peak",
+      "picked": "slope",
+      "line": "A peak is the highest spot. A slope is the slanted way up or down."
+    },
+    {
+      "answer": "slope",
+      "picked": "cliff",
+      "line": "A slope is slanted ground. A cliff drops almost straight down."
+    },
+    {
+      "answer": "slope",
+      "picked": "valley",
+      "line": "A slope tilts up or down. A valley is low between hills."
+    },
+    {
+      "answer": "slope",
+      "picked": "plain",
+      "line": "A slope is slanted. A plain is flat and wide."
+    },
+    {
+      "answer": "slope",
+      "picked": "peak",
+      "line": "A slope is slanted ground. A peak is the highest spot."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-06T05:27:13+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": null,
+    "scrub_note": null
+  }
+}

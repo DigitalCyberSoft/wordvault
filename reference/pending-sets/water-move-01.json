@@ -1,0 +1,833 @@
+{
+  "id": "A-water-move-01",
+  "bank": "A",
+  "pos": "verb",
+  "theme": "moving through water",
+  "band": 3,
+  "band_override": 3,
+  "computed": {
+    "zipf_min": 3.49,
+    "zipf_mean": 3.88,
+    "tightness": 0.28,
+    "band_suggested": 2,
+    "scored_at": "2026-07-06T05:33:18+00:00"
+  },
+  "words": [
+    {
+      "w": "wade",
+      "synset": "wade.v.01",
+      "gloss_source": "authored",
+      "gloss": "walk through water that is not deep",
+      "zipf": 3.98,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "wade",
+        "third": "wades",
+        "past": "waded",
+        "part": "wading"
+      },
+      "discriminator": "walking through shallow water",
+      "grade": 3
+    },
+    {
+      "w": "paddle",
+      "synset": "dabble.v.02",
+      "gloss_source": "authored",
+      "gloss": "splash and play about in water with hands and feet",
+      "zipf": 3.49,
+      "register": "neutral",
+      "senses_at_pos": 6,
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-06",
+        "note": "dominant school-context sense confirmed at vet"
+      },
+      "forms": {
+        "base": "paddle",
+        "third": "paddles",
+        "past": "paddled",
+        "part": "paddling"
+      },
+      "discriminator": "splashy play at the edge",
+      "grade": 2
+    },
+    {
+      "w": "drift",
+      "synset": "float.v.01",
+      "gloss_source": "wordnet",
+      "gloss": "be in motion due to some air or water current",
+      "zipf": 3.82,
+      "register": "neutral",
+      "senses_at_pos": 10,
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-06",
+        "note": "dominant school-context sense confirmed at vet"
+      },
+      "forms": {
+        "base": "drift",
+        "third": "drifts",
+        "past": "drifted",
+        "part": "drifting"
+      },
+      "discriminator": "carried along by the current",
+      "grade": 4
+    },
+    {
+      "w": "plunge",
+      "synset": "dive.v.01",
+      "gloss_source": "authored",
+      "gloss": "fall or throw yourself suddenly straight down into something",
+      "zipf": 3.49,
+      "register": "neutral",
+      "senses_at_pos": 8,
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-06",
+        "note": "dominant school-context sense confirmed at vet"
+      },
+      "forms": {
+        "base": "plunge",
+        "third": "plunges",
+        "past": "plunged",
+        "part": "plunging"
+      },
+      "discriminator": "sudden dive straight in",
+      "grade": 4
+    },
+    {
+      "w": "bob",
+      "synset": "bob.v.01",
+      "gloss_source": "wordnet",
+      "gloss": "move up and down repeatedly",
+      "zipf": 4.63,
+      "register": "neutral",
+      "senses_at_pos": 5,
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-06",
+        "note": "dominant school-context sense confirmed at vet"
+      },
+      "forms": {
+        "base": "bob",
+        "third": "bobs",
+        "past": "bobbed",
+        "part": "bobbing"
+      },
+      "discriminator": "floating up and down on the spot",
+      "grade": 2
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-water-move-01-s01",
+      "answer": "wade",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Lena ___ across the ankle-high stream, holding her lunchbox above the ripples.",
+      "cue_phrase": "ankle-high stream",
+      "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+      }
+    },
+    {
+      "id": "A-water-move-01-s02",
+      "answer": "wade",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Our class ___ through knee-high puddles after the drain blocked the playground gate.",
+      "cue_phrase": "knee-high puddles",
+      "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+      }
+    },
+    {
+      "id": "A-water-move-01-s03",
+      "answer": "wade",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Mum lifted her skirt and ___ to the stranded football near the reeds.",
+      "cue_phrase": "lifted her skirt",
+      "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+      }
+    },
+    {
+      "id": "A-water-move-01-s04",
+      "answer": "wade",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "With socks stuffed in pockets, the hikers ___ over shiny stones to camp.",
+      "cue_phrase": "socks stuffed in pockets",
+      "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+      }
+    },
+    {
+      "id": "A-water-move-01-s05",
+      "answer": "wade",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Theo's trainers dried by lunchtime after he ___ across the playground puddle.",
+      "cue_phrase": "trainers dried by lunchtime",
+      "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+      }
+    },
+    {
+      "id": "A-water-move-01-s06",
+      "answer": "wade",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The dog kept its collar dry when it ___ through the little brook.",
+      "cue_phrase": "collar dry",
+      "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+      }
+    },
+    {
+      "id": "A-water-move-01-s07",
+      "answer": "wade",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "To rescue the kite, Amira ___ through the marsh with boots on.",
+      "cue_phrase": "with boots on",
+      "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+      }
+    },
+    {
+      "id": "A-water-move-01-s08",
+      "answer": "wade",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "Grandad's trousers were wet below the knees after he ___ through the ford.",
+      "cue_phrase": "wet below the knees",
+      "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+      }
+    },
+    {
+      "id": "A-water-move-01-s09",
+      "answer": "paddle",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The toddlers ___ from the pier steps, kicking tiny arcs over pebbles.",
+      "cue_phrase": "kicking tiny arcs",
+      "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+      }
+    },
+    {
+      "id": "A-water-move-01-s10",
+      "answer": "paddle",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "On warm afternoons, Rafi ___ from the low step, flicking spray with his toes.",
+      "cue_phrase": "flicking spray",
+      "surface": {
+        "wade": "wades",
+        "paddle": "paddles",
+        "drift": "drifts",
+        "plunge": "plunges",
+        "bob": "bobs"
+      }
+    },
+    {
+      "id": "A-water-move-01-s11",
+      "answer": "paddle",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Jess sat laughing and ___ beside the sandcastles, making ripples with her toes.",
+      "cue_phrase": "Jess sat laughing",
+      "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+      }
+    },
+    {
+      "id": "A-water-move-01-s12",
+      "answer": "paddle",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The beach trip let us ___ from the rock ledge, stirring the foam gently.",
+      "cue_phrase": "from the rock ledge",
+      "surface": {
+        "wade": "wade",
+        "paddle": "paddle",
+        "drift": "drift",
+        "plunge": "plunge",
+        "bob": "bob"
+      }
+    },
+    {
+      "id": "A-water-move-01-s13",
+      "answer": "paddle",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "No one went far; the children sat and ___, shrieking at cold foam.",
+      "cue_phrase": "children sat and",
+      "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+      }
+    },
+    {
+      "id": "A-water-move-01-s14",
+      "answer": "paddle",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Maya's shorts stayed dry while she ___ from her seat at the pool edge.",
+      "cue_phrase": "shorts stayed dry",
+      "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+      }
+    },
+    {
+      "id": "A-water-move-01-s15",
+      "answer": "paddle",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Grandma allowed me to ___ on the bottom step while she watched from the towel.",
+      "cue_phrase": "on the bottom step",
+      "surface": {
+        "wade": "wade",
+        "paddle": "paddle",
+        "drift": "drift",
+        "plunge": "plunge",
+        "bob": "bob"
+      }
+    },
+    {
+      "id": "A-water-move-01-s16",
+      "answer": "paddle",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The ducklings ___ from a flat stone, churning little rings with orange toes.",
+      "cue_phrase": "churning little rings",
+      "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+      }
+    },
+    {
+      "id": "A-water-move-01-s17",
+      "answer": "drift",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The paper boat ___ downstream without oars, engine, or anyone pushing.",
+      "cue_phrase": "downstream without oars",
+      "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+      }
+    },
+    {
+      "id": "A-water-move-01-s18",
+      "answer": "drift",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "A leaf ___ ten metres downstream, lying flat and still on the river.",
+      "cue_phrase": "ten metres downstream",
+      "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+      }
+    },
+    {
+      "id": "A-water-move-01-s19",
+      "answer": "drift",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The untied raft ___ away, level as a tray, while everyone argued.",
+      "cue_phrase": "level as a tray",
+      "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+      }
+    },
+    {
+      "id": "A-water-move-01-s20",
+      "answer": "drift",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "We watched the message bottle ___ past the pier, smooth as a leaf.",
+      "cue_phrase": "smooth as a leaf",
+      "surface": {
+        "wade": "wade",
+        "paddle": "paddle",
+        "drift": "drift",
+        "plunge": "plunge",
+        "bob": "bob"
+      }
+    },
+    {
+      "id": "A-water-move-01-s21",
+      "answer": "drift",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "By tea, the lost ball had ___ from our dock to the mill.",
+      "cue_phrase": "from our dock to",
+      "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+      }
+    },
+    {
+      "id": "A-water-move-01-s22",
+      "answer": "drift",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Nobody touched the canoe, yet it ___ from the reeds to midstream.",
+      "cue_phrase": "Nobody touched",
+      "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+      }
+    },
+    {
+      "id": "A-water-move-01-s23",
+      "answer": "drift",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The foam cup ___ downstream smoothly, carried by the brook after the picnic.",
+      "cue_phrase": "downstream smoothly",
+      "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+      }
+    },
+    {
+      "id": "A-water-move-01-s24",
+      "answer": "drift",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "In the story, the sleeping basket ___ past moonlit reeds, with no rower.",
+      "cue_phrase": "with no rower",
+      "surface": {
+        "wade": "wades",
+        "paddle": "paddles",
+        "drift": "drifts",
+        "plunge": "plunges",
+        "bob": "bobs"
+      }
+    },
+    {
+      "id": "A-water-move-01-s25",
+      "answer": "plunge",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "At the whistle, Sam ___ headfirst from the board into the pool.",
+      "cue_phrase": "headfirst from the board",
+      "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+      }
+    },
+    {
+      "id": "A-water-move-01-s26",
+      "answer": "plunge",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The stunt frog ___ from the lily pad into the pond with one leap.",
+      "cue_phrase": "with one leap",
+      "surface": {
+        "wade": "wades",
+        "paddle": "paddles",
+        "drift": "drifts",
+        "plunge": "plunges",
+        "bob": "bobs"
+      }
+    },
+    {
+      "id": "A-water-move-01-s27",
+      "answer": "plunge",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The pirate ___ off the mast, and a tall spray hid his hat.",
+      "cue_phrase": "off the mast",
+      "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+      }
+    },
+    {
+      "id": "A-water-move-01-s28",
+      "answer": "plunge",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The dragon made its rider ___ through the cloud into the lake below.",
+      "cue_phrase": "lake below",
+      "surface": {
+        "wade": "wade",
+        "paddle": "paddle",
+        "drift": "drift",
+        "plunge": "plunge",
+        "bob": "bob"
+      }
+    },
+    {
+      "id": "A-water-move-01-s29",
+      "answer": "plunge",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Everyone gasped when Noor ___; one second later, waves slapped the tiles.",
+      "cue_phrase": "Everyone gasped",
+      "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+      }
+    },
+    {
+      "id": "A-water-move-01-s30",
+      "answer": "plunge",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Kai's towel flew up as he ___, leaving only a round hole.",
+      "cue_phrase": "only a round hole",
+      "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+      }
+    },
+    {
+      "id": "A-water-move-01-s31",
+      "answer": "plunge",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The coach told us to ___ headfirst only in the marked diving lane.",
+      "cue_phrase": "headfirst only",
+      "surface": {
+        "wade": "wade",
+        "paddle": "paddle",
+        "drift": "drift",
+        "plunge": "plunge",
+        "bob": "bob"
+      }
+    },
+    {
+      "id": "A-water-move-01-s32",
+      "answer": "plunge",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The seal ___ off the rock, vanishing beneath white foam.",
+      "cue_phrase": "vanishing beneath",
+      "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+      }
+    },
+    {
+      "id": "A-water-move-01-s33",
+      "answer": "bob",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The cork ___ in place, rising and sinking beside the toy boat.",
+      "cue_phrase": "rising and sinking",
+      "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+      }
+    },
+    {
+      "id": "A-water-move-01-s34",
+      "answer": "bob",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "A fishing float ___ up and down whenever tiny waves pass.",
+      "cue_phrase": "up and down",
+      "surface": {
+        "wade": "wades",
+        "paddle": "paddles",
+        "drift": "drifts",
+        "plunge": "plunges",
+        "bob": "bobs"
+      }
+    },
+    {
+      "id": "A-water-move-01-s35",
+      "answer": "bob",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Milo watched his apple ___ beside the bucket, never leaving the corner.",
+      "cue_phrase": "never leaving the corner",
+      "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+      }
+    },
+    {
+      "id": "A-water-move-01-s36",
+      "answer": "bob",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "We saw the buoy ___ beside the harbour wall after each small wave.",
+      "cue_phrase": "after each small wave",
+      "surface": {
+        "wade": "wade",
+        "paddle": "paddle",
+        "drift": "drift",
+        "plunge": "plunge",
+        "bob": "bob"
+      }
+    },
+    {
+      "id": "A-water-move-01-s37",
+      "answer": "bob",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The bottle cap stayed near my toes while it ___ all afternoon.",
+      "cue_phrase": "stayed near my toes",
+      "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+      }
+    },
+    {
+      "id": "A-water-move-01-s38",
+      "answer": "bob",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Tiny bath waves tapped the duck, but it ___ beside the soap.",
+      "cue_phrase": "waves tapped the duck",
+      "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+      }
+    },
+    {
+      "id": "A-water-move-01-s39",
+      "answer": "bob",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The red ball ___ up, down, up, down inside the rain barrel.",
+      "cue_phrase": "up, down, up",
+      "surface": {
+        "wade": "waded",
+        "paddle": "paddled",
+        "drift": "drifted",
+        "plunge": "plunged",
+        "bob": "bobbed"
+      }
+    },
+    {
+      "id": "A-water-move-01-s40",
+      "answer": "bob",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "In rough weather, the little buoy ___ beside the jetty like a yo-yo.",
+      "cue_phrase": "like a yo-yo",
+      "surface": {
+        "wade": "wades",
+        "paddle": "paddles",
+        "drift": "drifts",
+        "plunge": "plunges",
+        "bob": "bobs"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "wade",
+      "picked": "paddle",
+      "line": "Wade is crossing on foot through shallows. Paddle is playful kicking at the edge."
+    },
+    {
+      "answer": "wade",
+      "picked": "drift",
+      "line": "Wade uses legs to get across a shallow place. Drift is being carried along without steering."
+    },
+    {
+      "answer": "wade",
+      "picked": "plunge",
+      "line": "Wade is slow crossing through shallows. Plunge is a quick headfirst leap in."
+    },
+    {
+      "answer": "wade",
+      "picked": "bob",
+      "line": "Wade travels across a shallow place. Bob stays near one spot, rising and sinking."
+    },
+    {
+      "answer": "paddle",
+      "picked": "wade",
+      "line": "Paddle is playful kicking at the edge. Wade is crossing through shallows to get somewhere."
+    },
+    {
+      "answer": "paddle",
+      "picked": "drift",
+      "line": "Paddle is active fun at the edge. Drift is being carried along without effort."
+    },
+    {
+      "answer": "paddle",
+      "picked": "plunge",
+      "line": "Paddle is gentle edge fun. Plunge is a bold leap in from above."
+    },
+    {
+      "answer": "paddle",
+      "picked": "bob",
+      "line": "Paddle makes little sprays at the edge. Bob rises and sinks near one spot."
+    },
+    {
+      "answer": "drift",
+      "picked": "wade",
+      "line": "Drift means being carried along. Wade means crossing shallows on foot."
+    },
+    {
+      "answer": "drift",
+      "picked": "paddle",
+      "line": "Drift is passive travel with the flow. Paddle is playful kicking at the edge."
+    },
+    {
+      "answer": "drift",
+      "picked": "plunge",
+      "line": "Drift is slow carried travel. Plunge is a quick leap in from above."
+    },
+    {
+      "answer": "drift",
+      "picked": "bob",
+      "line": "Drift goes along with the flow. Bob rises and sinks near the same place."
+    },
+    {
+      "answer": "plunge",
+      "picked": "wade",
+      "line": "Plunge is a quick headfirst leap in. Wade is careful crossing through shallows."
+    },
+    {
+      "answer": "plunge",
+      "picked": "paddle",
+      "line": "Plunge is a bold leap in. Paddle is small, playful kicking at the edge."
+    },
+    {
+      "answer": "plunge",
+      "picked": "drift",
+      "line": "Plunge is a quick entry from above. Drift is being carried along slowly."
+    },
+    {
+      "answer": "plunge",
+      "picked": "bob",
+      "line": "Plunge goes in with a leap. Bob stays afloat, rising and sinking."
+    },
+    {
+      "answer": "bob",
+      "picked": "wade",
+      "line": "Bob rises and sinks near one spot. Wade crosses through shallows on foot."
+    },
+    {
+      "answer": "bob",
+      "picked": "paddle",
+      "line": "Bob is up-and-down floating. Paddle is playful kicking at the edge."
+    },
+    {
+      "answer": "bob",
+      "picked": "drift",
+      "line": "Bob stays near one spot, rising and sinking. Drift travels along with the flow."
+    },
+    {
+      "answer": "bob",
+      "picked": "plunge",
+      "line": "Bob is gentle up-and-down floating. Plunge is a quick leap in from above."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-06T05:24:41+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": null,
+    "scrub_note": null
+  }
+}

@@ -1,0 +1,817 @@
+{
+  "id": "A-look-01",
+  "bank": "A",
+  "pos": "verb",
+  "theme": "ways of looking",
+  "band": 4,
+  "band_override": 4,
+  "computed": {
+    "zipf_min": 2.8,
+    "zipf_mean": 3.58,
+    "tightness": 0.296,
+    "band_suggested": 3,
+    "scored_at": "2026-07-06T05:33:18+00:00"
+  },
+  "words": [
+    {
+      "w": "glance",
+      "synset": "glance.v.01",
+      "gloss_source": "authored",
+      "gloss": "take a quick look that lasts only a moment",
+      "zipf": 3.91,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "glance",
+        "third": "glances",
+        "past": "glanced",
+        "part": "glancing"
+      },
+      "discriminator": "quick, over in a moment",
+      "grade": 3
+    },
+    {
+      "w": "peer",
+      "synset": "peer.v.01",
+      "gloss_source": "authored",
+      "gloss": "look hard at something that is difficult to see",
+      "zipf": 4.14,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "peer",
+        "third": "peers",
+        "past": "peered",
+        "part": "peering"
+      },
+      "discriminator": "straining to make something out",
+      "grade": 4
+    },
+    {
+      "w": "gaze",
+      "synset": "gaze.v.01",
+      "gloss_source": "wordnet",
+      "gloss": "look at with fixed eyes",
+      "zipf": 3.7,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "gaze",
+        "third": "gazes",
+        "past": "gazed",
+        "part": "gazing"
+      },
+      "discriminator": "long, steady, lost in the looking",
+      "grade": 3
+    },
+    {
+      "w": "glare",
+      "synset": "glower.v.01",
+      "gloss_source": "authored",
+      "gloss": "look at someone with a hard, angry face",
+      "zipf": 3.36,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "glare",
+        "third": "glares",
+        "past": "glared",
+        "part": "glaring"
+      },
+      "discriminator": "angry eyes aimed at someone",
+      "grade": 3
+    },
+    {
+      "w": "squint",
+      "synset": "squint.v.03",
+      "gloss_source": "wordnet",
+      "gloss": "partly close one's eyes, as when hit by direct blinding light",
+      "zipf": 2.8,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "squint",
+        "third": "squints",
+        "past": "squinted",
+        "part": "squinting"
+      },
+      "discriminator": "eyes narrowed against light or to focus",
+      "grade": 4
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-look-01-s01",
+      "answer": "glance",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Omar ___ at the timer for one heartbeat before stirring the soup.",
+      "cue_phrase": "for one heartbeat",
+      "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+      }
+    },
+    {
+      "id": "A-look-01-s02",
+      "answer": "glance",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Lily ___ at the note in a flash, then hid it.",
+      "cue_phrase": "in a flash",
+      "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+      }
+    },
+    {
+      "id": "A-look-01-s03",
+      "answer": "glance",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Between two drumbeats, Mia ___ at the map and chose left.",
+      "cue_phrase": "Between two drumbeats",
+      "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+      }
+    },
+    {
+      "id": "A-look-01-s04",
+      "answer": "glance",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "During one skip, Asha ___ at the card, then played hers.",
+      "cue_phrase": "During one skip",
+      "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+      }
+    },
+    {
+      "id": "A-look-01-s05",
+      "answer": "glance",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Rafi ___ at the door number without slowing his bike.",
+      "cue_phrase": "without slowing his bike",
+      "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+      }
+    },
+    {
+      "id": "A-look-01-s06",
+      "answer": "glance",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The teacher ___ at the clock without pausing her story.",
+      "cue_phrase": "without pausing her story",
+      "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+      }
+    },
+    {
+      "id": "A-look-01-s07",
+      "answer": "glance",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The coach's whistle made us ___ at the timer, fast as a blink.",
+      "cue_phrase": "fast as a blink",
+      "surface": {
+        "glance": "glance",
+        "peer": "peer",
+        "gaze": "gaze",
+        "glare": "glare",
+        "squint": "squint"
+      }
+    },
+    {
+      "id": "A-look-01-s08",
+      "answer": "glance",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "During races, Omar ___ at the clock between strides.",
+      "cue_phrase": "between strides",
+      "surface": {
+        "glance": "glances",
+        "peer": "peers",
+        "gaze": "gazes",
+        "glare": "glares",
+        "squint": "squints"
+      }
+    },
+    {
+      "id": "A-look-01-s09",
+      "answer": "peer",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Rosa ___ into the dim jar, trying to make out tadpoles.",
+      "cue_phrase": "trying to make out",
+      "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+      }
+    },
+    {
+      "id": "A-look-01-s10",
+      "answer": "peer",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Maya ___ into the dark cupboard, hunting for the second mitten.",
+      "cue_phrase": "into the dark cupboard",
+      "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+      }
+    },
+    {
+      "id": "A-look-01-s11",
+      "answer": "peer",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Jon ___ through the mist, searching for the next path marker.",
+      "cue_phrase": "through the mist",
+      "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+      }
+    },
+    {
+      "id": "A-look-01-s12",
+      "answer": "peer",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Finn ___ into the shadowy cage, trying to spot the sleeping lizard.",
+      "cue_phrase": "into the shadowy cage",
+      "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+      }
+    },
+    {
+      "id": "A-look-01-s13",
+      "answer": "peer",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "At dusk, Priya ___ beneath the bench, searching for her coin.",
+      "cue_phrase": "searching for her coin",
+      "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+      }
+    },
+    {
+      "id": "A-look-01-s14",
+      "answer": "peer",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The captain ___ through rain-streaked glass, wide-eyed, hunting the island.",
+      "cue_phrase": "wide-eyed, hunting",
+      "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+      }
+    },
+    {
+      "id": "A-look-01-s15",
+      "answer": "peer",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The hidden key had Milo ___ under the tangled roots until dark.",
+      "cue_phrase": "under the tangled roots",
+      "surface": {
+        "glance": "glance",
+        "peer": "peer",
+        "gaze": "gaze",
+        "glare": "glare",
+        "squint": "squint"
+      }
+    },
+    {
+      "id": "A-look-01-s16",
+      "answer": "peer",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "In foggy games, Lia ___ into the bushes, checking every dark corner for hiders.",
+      "cue_phrase": "into the bushes",
+      "surface": {
+        "glance": "glances",
+        "peer": "peers",
+        "gaze": "gazes",
+        "glare": "glares",
+        "squint": "squints"
+      }
+    },
+    {
+      "id": "A-look-01-s17",
+      "answer": "gaze",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Maya ___ at the moonlit castle for several minutes, smiling softly.",
+      "cue_phrase": "for several minutes",
+      "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+      }
+    },
+    {
+      "id": "A-look-01-s18",
+      "answer": "gaze",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Leo ___ at the sleeping puppy, still as a statue.",
+      "cue_phrase": "still as a statue",
+      "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+      }
+    },
+    {
+      "id": "A-look-01-s19",
+      "answer": "gaze",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The class ___ at the rainbow until the playground went quiet.",
+      "cue_phrase": "playground went quiet",
+      "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+      }
+    },
+    {
+      "id": "A-look-01-s20",
+      "answer": "gaze",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Amir ___ at the aquarium fish while his ice cream melted.",
+      "cue_phrase": "ice cream melted",
+      "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+      }
+    },
+    {
+      "id": "A-look-01-s21",
+      "answer": "gaze",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Grandad ___ at the glowing train set until his tea cooled.",
+      "cue_phrase": "tea cooled",
+      "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+      }
+    },
+    {
+      "id": "A-look-01-s22",
+      "answer": "gaze",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The mermaid ___ at the pearl palace, forgetting the song.",
+      "cue_phrase": "forgetting the song",
+      "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+      }
+    },
+    {
+      "id": "A-look-01-s23",
+      "answer": "gaze",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The crystal waterfall made us ___ until our picnic went cold.",
+      "cue_phrase": "picnic went cold",
+      "surface": {
+        "glance": "glance",
+        "peer": "peer",
+        "gaze": "gaze",
+        "glare": "glare",
+        "squint": "squint"
+      }
+    },
+    {
+      "id": "A-look-01-s24",
+      "answer": "gaze",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "On clear nights, Hana ___ at the stars for half an hour.",
+      "cue_phrase": "for half an hour",
+      "surface": {
+        "glance": "glances",
+        "peer": "peers",
+        "gaze": "gazes",
+        "glare": "glares",
+        "squint": "squints"
+      }
+    },
+    {
+      "id": "A-look-01-s25",
+      "answer": "glare",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "After Max stole her seat, Tia ___ at him, fists tight.",
+      "cue_phrase": "fists tight",
+      "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+      }
+    },
+    {
+      "id": "A-look-01-s26",
+      "answer": "glare",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The dragon ___ at the knight, smoke curling from its nose.",
+      "cue_phrase": "smoke curling",
+      "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+      }
+    },
+    {
+      "id": "A-look-01-s27",
+      "answer": "glare",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "When Ben splashed mud on her dress, Ava ___ at him.",
+      "cue_phrase": "splashed mud",
+      "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+      }
+    },
+    {
+      "id": "A-look-01-s28",
+      "answer": "glare",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The cat ___ at the puppy for pawing its bowl.",
+      "cue_phrase": "pawing its bowl",
+      "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+      }
+    },
+    {
+      "id": "A-look-01-s29",
+      "answer": "glare",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Jude ___ at the cheater, and the card table fell silent.",
+      "cue_phrase": "table fell silent",
+      "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+      }
+    },
+    {
+      "id": "A-look-01-s30",
+      "answer": "glare",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The queen ___ at the guard; he backed away from the throne.",
+      "cue_phrase": "backed away",
+      "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+      }
+    },
+    {
+      "id": "A-look-01-s31",
+      "answer": "glare",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The stolen pie made Grandma ___ at the sneaky fox.",
+      "cue_phrase": "stolen pie",
+      "surface": {
+        "glance": "glance",
+        "peer": "peer",
+        "gaze": "gaze",
+        "glare": "glare",
+        "squint": "squint"
+      }
+    },
+    {
+      "id": "A-look-01-s32",
+      "answer": "glare",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "After the rude shove, Kira ___ at the boy with clenched teeth.",
+      "cue_phrase": "clenched teeth",
+      "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+      }
+    },
+    {
+      "id": "A-look-01-s33",
+      "answer": "squint",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "In the bright sun, Luca pulled his cap low and ___ at the tiny map.",
+      "cue_phrase": "in the bright sun",
+      "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+      }
+    },
+    {
+      "id": "A-look-01-s34",
+      "answer": "squint",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "On the glittering snow, Emma ___ all the way to the gate.",
+      "cue_phrase": "on the glittering snow",
+      "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+      }
+    },
+    {
+      "id": "A-look-01-s35",
+      "answer": "squint",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Sun bounced off the water, so Kai ___ under his cap.",
+      "cue_phrase": "Sun bounced off",
+      "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+      }
+    },
+    {
+      "id": "A-look-01-s36",
+      "answer": "squint",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The white pavement shone, and Nora ___ beneath her hat.",
+      "cue_phrase": "pavement shone",
+      "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+      }
+    },
+    {
+      "id": "A-look-01-s37",
+      "answer": "squint",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The torch flashed suddenly, and Poppy ___ behind her shield.",
+      "cue_phrase": "torch flashed suddenly",
+      "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+      }
+    },
+    {
+      "id": "A-look-01-s38",
+      "answer": "squint",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "At noon, Dad ___ at the shimmering road ahead.",
+      "cue_phrase": "at the shimmering road",
+      "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+      }
+    },
+    {
+      "id": "A-look-01-s39",
+      "answer": "squint",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The stage lamps flared, making the actors ___ in a row.",
+      "cue_phrase": "lamps flared",
+      "surface": {
+        "glance": "glance",
+        "peer": "peer",
+        "gaze": "gaze",
+        "glare": "glare",
+        "squint": "squint"
+      }
+    },
+    {
+      "id": "A-look-01-s40",
+      "answer": "squint",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "During the camera flash, I ___ and ruined the royal portrait.",
+      "cue_phrase": "camera flash",
+      "surface": {
+        "glance": "glanced",
+        "peer": "peered",
+        "gaze": "gazed",
+        "glare": "glared",
+        "squint": "squinted"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "glance",
+      "picked": "peer",
+      "line": "A glance is over fast. A peer strains to make out unclear things."
+    },
+    {
+      "answer": "glance",
+      "picked": "gaze",
+      "line": "A glance is brief. A gaze stays steady for a long time."
+    },
+    {
+      "answer": "glance",
+      "picked": "glare",
+      "line": "A glance is brief. A glare shows anger at a person or creature."
+    },
+    {
+      "answer": "glance",
+      "picked": "squint",
+      "line": "A glance is brief. A squint narrows the eyelids against brightness or for focus."
+    },
+    {
+      "answer": "peer",
+      "picked": "glance",
+      "line": "A peer strains to make out unclear things. A glance is over fast."
+    },
+    {
+      "answer": "peer",
+      "picked": "gaze",
+      "line": "A peer works to make out unclear things. A gaze stays calm and long."
+    },
+    {
+      "answer": "peer",
+      "picked": "glare",
+      "line": "A peer tries to make out unclear things. A glare shows anger."
+    },
+    {
+      "answer": "peer",
+      "picked": "squint",
+      "line": "A peer searches through dimness or distance. A squint narrows eyelids against brightness or focus."
+    },
+    {
+      "answer": "gaze",
+      "picked": "glance",
+      "line": "A gaze stays steady for a long time. A glance is over fast."
+    },
+    {
+      "answer": "gaze",
+      "picked": "peer",
+      "line": "A gaze is long and steady. A peer strains to make out unclear things."
+    },
+    {
+      "answer": "gaze",
+      "picked": "glare",
+      "line": "A gaze can be calm or amazed. A glare shows anger."
+    },
+    {
+      "answer": "gaze",
+      "picked": "squint",
+      "line": "A gaze is long and steady. A squint narrows eyelids against brightness or focus."
+    },
+    {
+      "answer": "glare",
+      "picked": "glance",
+      "line": "A glare shows anger. A glance is over fast."
+    },
+    {
+      "answer": "glare",
+      "picked": "peer",
+      "line": "A glare shows anger. A peer strains to make out unclear things."
+    },
+    {
+      "answer": "glare",
+      "picked": "gaze",
+      "line": "A glare shows anger. A gaze is long and steady without that anger."
+    },
+    {
+      "answer": "glare",
+      "picked": "squint",
+      "line": "A glare shows anger. A squint narrows eyelids because of brightness or focus."
+    },
+    {
+      "answer": "squint",
+      "picked": "glance",
+      "line": "A squint narrows eyelids against brightness or focus. A glance is over fast."
+    },
+    {
+      "answer": "squint",
+      "picked": "peer",
+      "line": "A squint narrows eyelids. A peer strains to make out unclear things."
+    },
+    {
+      "answer": "squint",
+      "picked": "gaze",
+      "line": "A squint narrows eyelids. A gaze stays steady for a long time."
+    },
+    {
+      "answer": "squint",
+      "picked": "glare",
+      "line": "A squint narrows eyelids against brightness or focus. A glare shows anger."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-06T05:17:17+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": null,
+    "scrub_note": null
+  }
+}
