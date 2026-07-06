@@ -121,6 +121,12 @@ EVERY sentence is a SCENE, never a definition. Banned shapes (they surfaced in r
 "The guide says ___ means...", "Use ___ for...", "Being ___ means...", "___ describes...".
 If the discriminating feature is hard to stage, put a concrete measurement or comparison in the
 scene ("twice the size of last summer's best") instead of explaining the word.
+
+NATURAL REGISTER, never defensive drafting (real drafts grew these tics and children had to read
+them): no clinical hedges bolted on just to rule a neighbour out ("the kitten's uncovered purr",
+"liquid reached the pocket, but no bead fell off"). Stage the excluding fact as an ordinary part
+of the scene, in words a storybook would use ("the leather stayed stiff", "still heavy that
+night"). A careful reader should reject the nearest neighbour from scene facts, not disclaimers.
 """
     if set_data["bank"] == "C":
         rules += """

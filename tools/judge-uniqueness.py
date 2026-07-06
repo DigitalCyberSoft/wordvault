@@ -32,6 +32,7 @@ import json
 import os
 import random
 import sys
+import time
 import urllib.error
 import urllib.request
 from datetime import datetime, timezone
@@ -181,6 +182,37 @@ def run_judge(vendor: str, model: str, ctx: dict, system: str, user: str) -> dic
     return judge_anthropic(ctx["anthropic"], model, system, user)
 
 
+# Rate-limit bursts and transient 5xx/connection drops killed three overnight
+# runs (2026-07-05); a judged batch is ~90s of ensemble work, so losing a whole
+# run to one blip is not acceptable. Bounded retry, then the final failure
+# propagates - the run must still die loudly on a persistent outage. 429s get
+# a longer ladder: quota windows are per-minute, so sub-minute waits just burn
+# attempts (observed: three 429s in 65s killed a run on 2026-07-06).
+RETRY_WAITS = (5, 15, 45)
+RATE_WAITS = (60, 120, 240)
+
+
+def run_judge_retrying(vendor: str, model: str, ctx: dict, system: str, user: str,
+                       want_ids: set[str]) -> dict:
+    attempts = len(RETRY_WAITS) + 1
+    for attempt in range(attempts):
+        try:
+            result = run_judge(vendor, model, ctx, system, user)
+            got = {item["id"] for item in result["items"]}
+            missing = want_ids - got
+            if missing:
+                raise ValueError(f"{model} returned no verdict for {sorted(missing)}")
+            return result
+        except (urllib.error.URLError, TimeoutError, anthropic.APIError,
+                json.JSONDecodeError, ValueError) as e:
+            if attempt == attempts - 1:
+                raise
+            rate_limited = isinstance(e, urllib.error.HTTPError) and e.code == 429
+            wait = (RATE_WAITS if rate_limited else RETRY_WAITS)[attempt]
+            print(f"  {model}: attempt {attempt + 1} failed ({e}); retrying in {wait}s")
+            time.sleep(wait)
+
+
 def main() -> int:
     force = os.environ.get("FORCE") == "1"
     only = set(filter(None, os.environ.get("SETS_ONLY", "").split(",")))
@@ -216,11 +248,9 @@ def main() -> int:
             by_sentence: dict[str, list] = {s["id"]: [] for s in chunk}
             for vendor, model in JUDGES:
                 user = batch_prompt(set_data, chunk, model)
-                result = run_judge(vendor, model, ctx, SYSTEM, user)
+                result = run_judge_retrying(vendor, model, ctx, SYSTEM, user,
+                                            {s["id"] for s in chunk})
                 got = {item["id"]: item for item in result["items"]}
-                missing = [s["id"] for s in chunk if s["id"] not in got]
-                if missing:
-                    raise SystemExit(f"{model} returned no verdict for {missing}")
                 for s in chunk:
                     item = got[s["id"]]
                     # Judges sometimes answer with the surface form ("marched")
