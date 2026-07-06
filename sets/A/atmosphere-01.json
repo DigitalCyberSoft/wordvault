@@ -1,0 +1,938 @@
+{
+  "id": "A-atmosphere-01",
+  "bank": "A",
+  "pos": "adjective",
+  "theme": "the feel of a place or sound",
+  "band": 5,
+  "band_override": 5,
+  "computed": {
+    "zipf_min": 2.95,
+    "zipf_mean": 3.21,
+    "tightness": null,
+    "band_suggested": 4,
+    "scored_at": "2026-07-06T18:43:21+00:00"
+  },
+  "words": [
+    {
+      "w": "melancholy",
+      "synset": "melancholy.s.01",
+      "gloss_source": "authored",
+      "gloss": "carrying a gentle, lasting sadness",
+      "zipf": 3.39,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "melancholy"
+      },
+      "discriminator": "gentle sadness hanging in the air",
+      "grade": 7
+    },
+    {
+      "w": "tranquil",
+      "synset": "calm.s.01",
+      "gloss_source": "authored",
+      "gloss": "calm and peaceful, with nothing to disturb the quiet",
+      "zipf": 3.14,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "tranquil"
+      },
+      "discriminator": "restful; nothing stirs",
+      "grade": 6
+    },
+    {
+      "w": "monotonous",
+      "synset": "humdrum.s.02",
+      "gloss_source": "authored",
+      "gloss": "continuing in the same dull way, without any change or variety",
+      "zipf": 2.95,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "monotonous"
+      },
+      "discriminator": "unchanging sameness, on and on",
+      "grade": 6
+    },
+    {
+      "w": "desolate",
+      "synset": "bare.s.06",
+      "gloss_source": "authored",
+      "gloss": "empty and bare, with no people or life anywhere",
+      "zipf": 3.17,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "desolate"
+      },
+      "discriminator": "empty of people and life",
+      "grade": 6
+    },
+    {
+      "w": "ominous",
+      "synset": "baleful.s.02",
+      "gloss_source": "authored",
+      "gloss": "giving a strong feeling that something bad is about to happen",
+      "zipf": 3.4,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "ominous"
+      },
+      "discriminator": "something bad is coming",
+      "grade": 6
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-atmosphere-01-s01",
+      "answer": "melancholy",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The old tune was ___, making Mira miss her faraway gran.",
+      "cue_phrase": "miss her faraway gran",
+      "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (desolate); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-atmosphere-01-s02",
+      "answer": "melancholy",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "After the goodbye note, the room felt ___, though the sun shone.",
+      "cue_phrase": "After the goodbye note",
+      "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: goodbye-note sadness with sunshine carries melancholy; desolate is bleak emptiness",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-atmosphere-01-s03",
+      "answer": "melancholy",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "At the fair's end, the dropped ribbon made the music seem ___.",
+      "cue_phrase": "fair's end, the dropped ribbon",
+      "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (desolate); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-atmosphere-01-s04",
+      "answer": "melancholy",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Grandad moved away, yet at busy dinners his empty chair looked ___.",
+      "cue_phrase": "at busy dinners his empty chair",
+      "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (desolate); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-atmosphere-01-s05",
+      "answer": "melancholy",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The torn kite hung in the tree as children walked home, looking ___.",
+      "cue_phrase": "torn kite hung",
+      "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: children's sad mood carries melancholy; desolate overstates to abandonment",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-atmosphere-01-s06",
+      "answer": "melancholy",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The party hat on Mum's suitcase looked ___ after the visit.",
+      "cue_phrase": "Mum's suitcase",
+      "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (desolate); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-atmosphere-01-s07",
+      "answer": "melancholy",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The slow violin was ___ as the lost puppy watched the train leave.",
+      "cue_phrase": "puppy watched the train leave",
+      "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (desolate); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-atmosphere-01-s08",
+      "answer": "melancholy",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "After her friend changed schools, Jaya found the busy playground ___.",
+      "cue_phrase": "her friend changed schools",
+      "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (desolate); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-atmosphere-01-s09",
+      "answer": "tranquil",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The pond was ___, with smooth water and sleeping ducks.",
+      "cue_phrase": "smooth water and sleeping ducks",
+      "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+      }
+    },
+    {
+      "id": "A-atmosphere-01-s10",
+      "answer": "tranquil",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "After snow fell, the garden looked ___, with robins tucked in the hedge.",
+      "cue_phrase": "robins tucked in the hedge",
+      "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+      }
+    },
+    {
+      "id": "A-atmosphere-01-s11",
+      "answer": "tranquil",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Beside the sleeping baby, the lamp-lit room felt ___ all afternoon.",
+      "cue_phrase": "Beside the sleeping baby",
+      "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+      }
+    },
+    {
+      "id": "A-atmosphere-01-s12",
+      "answer": "tranquil",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The boat drifted on glassy water, and Mia smiled as the afternoon stayed ___.",
+      "cue_phrase": "drifted on glassy water",
+      "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+      }
+    },
+    {
+      "id": "A-atmosphere-01-s13",
+      "answer": "tranquil",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "In the meadow, bees hummed softly while Sara read, and the air stayed ___.",
+      "cue_phrase": "Sara read",
+      "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+      }
+    },
+    {
+      "id": "A-atmosphere-01-s14",
+      "answer": "tranquil",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The cat slept by the fire, and the whole cottage seemed ___.",
+      "cue_phrase": "cat slept by the fire",
+      "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+      }
+    },
+    {
+      "id": "A-atmosphere-01-s15",
+      "answer": "tranquil",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Under the moon, the harbour was ___, with boats rocking like cradles.",
+      "cue_phrase": "rocking like cradles",
+      "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+      }
+    },
+    {
+      "id": "A-atmosphere-01-s16",
+      "answer": "tranquil",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "The library corner felt ___ as pages turned and rain tapped softly.",
+      "cue_phrase": "pages turned and rain tapped",
+      "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+      }
+    },
+    {
+      "id": "A-atmosphere-01-s17",
+      "answer": "monotonous",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The drumbeat was ___, thumping one note for ten whole minutes.",
+      "cue_phrase": "one note for ten",
+      "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+      }
+    },
+    {
+      "id": "A-atmosphere-01-s18",
+      "answer": "monotonous",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The worksheet felt ___, with fifty sums all using plus two.",
+      "cue_phrase": "fifty sums all using",
+      "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+      }
+    },
+    {
+      "id": "A-atmosphere-01-s19",
+      "answer": "monotonous",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Grey fence posts, one after another, made the view feel ___.",
+      "cue_phrase": "one after another",
+      "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (melancholy); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-atmosphere-01-s20",
+      "answer": "monotonous",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The computer game beeped every second during practice and became ___.",
+      "cue_phrase": "beeped every second",
+      "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+      }
+    },
+    {
+      "id": "A-atmosphere-01-s21",
+      "answer": "monotonous",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "By lap twenty, the pool tiles and splash sounds were ___.",
+      "cue_phrase": "By lap twenty",
+      "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+      }
+    },
+    {
+      "id": "A-atmosphere-01-s22",
+      "answer": "monotonous",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Each hallway door had brown paint and a round knob, making school feel ___.",
+      "cue_phrase": "Each hallway door had",
+      "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+      }
+    },
+    {
+      "id": "A-atmosphere-01-s23",
+      "answer": "monotonous",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The robot voice read the list in one flat tone, sounding ___.",
+      "cue_phrase": "one flat tone",
+      "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+      }
+    },
+    {
+      "id": "A-atmosphere-01-s24",
+      "answer": "monotonous",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "For six pages, the story used short sentences, so it felt ___.",
+      "cue_phrase": "For six pages",
+      "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+      }
+    },
+    {
+      "id": "A-atmosphere-01-s25",
+      "answer": "desolate",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The island looked ___, with no houses, boats, birds, or trees.",
+      "cue_phrase": "no houses, boats, birds",
+      "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (melancholy); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-atmosphere-01-s26",
+      "answer": "desolate",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The playground was ___; weeds covered the swings and no children came.",
+      "cue_phrase": "no children came",
+      "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (melancholy, ominous); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-atmosphere-01-s27",
+      "answer": "desolate",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Across the cracked plain, no grass grew, so the land seemed ___.",
+      "cue_phrase": "no grass grew",
+      "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (melancholy, ominous); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-atmosphere-01-s28",
+      "answer": "desolate",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The village street looked ___, with shut doors and dust on every bench.",
+      "cue_phrase": "shut doors and dust",
+      "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (melancholy, ominous); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-atmosphere-01-s29",
+      "answer": "desolate",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "At noon, only wind crossed the car park, so it felt ___.",
+      "cue_phrase": "only wind crossed",
+      "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (melancholy); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-atmosphere-01-s30",
+      "answer": "desolate",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The castle courtyard seemed ___, with dry wells and not a single bird.",
+      "cue_phrase": "not a single bird",
+      "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (melancholy, ominous); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-atmosphere-01-s31",
+      "answer": "desolate",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Beyond the station, the road was ___, with boarded windows for miles.",
+      "cue_phrase": "boarded windows for miles",
+      "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (melancholy, monotonous); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-atmosphere-01-s32",
+      "answer": "desolate",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The dried-up aquarium looked ___ after every fish had been moved.",
+      "cue_phrase": "every fish had been moved",
+      "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (melancholy); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-atmosphere-01-s33",
+      "answer": "ominous",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The sky turned green before the storm, and the picnic felt ___.",
+      "cue_phrase": "before the storm",
+      "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+      }
+    },
+    {
+      "id": "A-atmosphere-01-s34",
+      "answer": "ominous",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The warning bell made the hallway sound ___ as smoke curled under the door.",
+      "cue_phrase": "smoke curled under the door",
+      "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+      }
+    },
+    {
+      "id": "A-atmosphere-01-s35",
+      "answer": "ominous",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Deep paw prints circled our campsite, making the dark forest feel ___.",
+      "cue_phrase": "paw prints circled",
+      "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+      }
+    },
+    {
+      "id": "A-atmosphere-01-s36",
+      "answer": "ominous",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The locked gate creaked open by itself, and the path seemed ___.",
+      "cue_phrase": "creaked open by itself",
+      "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+      }
+    },
+    {
+      "id": "A-atmosphere-01-s37",
+      "answer": "ominous",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Thunder growled closer while the small boat rocked, and the sea looked ___.",
+      "cue_phrase": "Thunder growled closer",
+      "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+      }
+    },
+    {
+      "id": "A-atmosphere-01-s38",
+      "answer": "ominous",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "A giant shadow crossed the tent wall, then stopped, making the night feel ___.",
+      "cue_phrase": "giant shadow crossed",
+      "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+      }
+    },
+    {
+      "id": "A-atmosphere-01-s39",
+      "answer": "ominous",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The old bridge groaned under the bus, and the trip felt ___.",
+      "cue_phrase": "bridge groaned under the bus",
+      "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+      }
+    },
+    {
+      "id": "A-atmosphere-01-s40",
+      "answer": "ominous",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "From the cave mouth came a low growl, making the tunnel seem ___.",
+      "cue_phrase": "low growl",
+      "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "melancholy",
+      "picked": "tranquil",
+      "line": "Melancholy has soft sorrow in it. Tranquil is restful and settled."
+    },
+    {
+      "answer": "melancholy",
+      "picked": "monotonous",
+      "line": "Melancholy sounds sorrowful. Monotonous goes on in a flat, repeating pattern."
+    },
+    {
+      "answer": "melancholy",
+      "picked": "desolate",
+      "line": "Melancholy is a sad mood. Desolate is about a place with no company or growth."
+    },
+    {
+      "answer": "melancholy",
+      "picked": "ominous",
+      "line": "Melancholy is soft sorrow filling the air. Ominous warns that trouble may be near."
+    },
+    {
+      "answer": "tranquil",
+      "picked": "melancholy",
+      "line": "Tranquil is restful and settled. Melancholy has soft sorrow in it."
+    },
+    {
+      "answer": "tranquil",
+      "picked": "monotonous",
+      "line": "Tranquil feels restful. Monotonous feels boring because it keeps repeating."
+    },
+    {
+      "answer": "tranquil",
+      "picked": "desolate",
+      "line": "Tranquil can include sleeping ducks or readers. Desolate has no company or growth."
+    },
+    {
+      "answer": "tranquil",
+      "picked": "ominous",
+      "line": "Tranquil feels safe and settled. Ominous hints that trouble may be coming."
+    },
+    {
+      "answer": "monotonous",
+      "picked": "melancholy",
+      "line": "Monotonous repeats again and again. Melancholy has soft sorrow instead."
+    },
+    {
+      "answer": "monotonous",
+      "picked": "tranquil",
+      "line": "Monotonous is flat repetition. Tranquil is restful stillness."
+    },
+    {
+      "answer": "monotonous",
+      "picked": "desolate",
+      "line": "Monotonous is about repetition. Desolate is about no company or growth."
+    },
+    {
+      "answer": "monotonous",
+      "picked": "ominous",
+      "line": "Monotonous keeps repeating. Ominous points toward trouble ahead."
+    },
+    {
+      "answer": "desolate",
+      "picked": "melancholy",
+      "line": "Desolate has no company or growth. Melancholy has soft sorrow."
+    },
+    {
+      "answer": "desolate",
+      "picked": "tranquil",
+      "line": "Desolate lacks company or growth. Tranquil is restful, with living things at ease."
+    },
+    {
+      "answer": "desolate",
+      "picked": "monotonous",
+      "line": "Desolate is deserted. Monotonous is boring because it repeats."
+    },
+    {
+      "answer": "desolate",
+      "picked": "ominous",
+      "line": "Desolate is deserted. Ominous suggests trouble is on the way."
+    },
+    {
+      "answer": "ominous",
+      "picked": "melancholy",
+      "line": "Ominous warns of trouble ahead. Melancholy is soft sorrow about now or before."
+    },
+    {
+      "answer": "ominous",
+      "picked": "tranquil",
+      "line": "Ominous hints at danger. Tranquil feels safe and settled."
+    },
+    {
+      "answer": "ominous",
+      "picked": "monotonous",
+      "line": "Ominous points to trouble ahead. Monotonous just keeps repeating."
+    },
+    {
+      "answer": "ominous",
+      "picked": "desolate",
+      "line": "Ominous warns trouble may come. Desolate means deserted, with no company or growth."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-06T14:18:06+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": "2026-07-07",
+    "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+  }
+}

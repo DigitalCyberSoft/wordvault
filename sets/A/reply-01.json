@@ -1,0 +1,865 @@
+{
+  "id": "A-reply-01",
+  "bank": "A",
+  "pos": "verb",
+  "theme": "ways of saying something",
+  "band": 4,
+  "band_override": 4,
+  "computed": {
+    "zipf_min": 2.82,
+    "zipf_mean": 3.19,
+    "tightness": 0.267,
+    "band_suggested": 3,
+    "scored_at": "2026-07-06T18:43:21+00:00"
+  },
+  "words": [
+    {
+      "w": "retort",
+      "synset": "retort.v.01",
+      "gloss_source": "authored",
+      "gloss": "answer back quickly and sharply",
+      "zipf": 2.89,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "retort",
+        "third": "retorts",
+        "past": "retorted",
+        "part": "retorting"
+      },
+      "discriminator": "sharp comeback to a remark",
+      "grade": 6
+    },
+    {
+      "w": "exclaim",
+      "synset": "exclaim.v.01",
+      "gloss_source": "authored",
+      "gloss": "call out suddenly, with surprise, horror, or joy",
+      "zipf": 2.82,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "exclaim",
+        "third": "exclaims",
+        "past": "exclaimed",
+        "part": "exclaiming"
+      },
+      "discriminator": "sudden emotional outburst",
+      "grade": 4
+    },
+    {
+      "w": "declare",
+      "synset": "declare.v.01",
+      "gloss_source": "authored",
+      "gloss": "state something firmly for everyone to hear",
+      "zipf": 4.05,
+      "register": "neutral",
+      "senses_at_pos": 8,
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-06",
+        "note": "dominant school-context sense confirmed at roster vet"
+      },
+      "forms": {
+        "base": "declare",
+        "third": "declares",
+        "past": "declared",
+        "part": "declaring"
+      },
+      "discriminator": "firm public statement",
+      "grade": 4
+    },
+    {
+      "w": "murmur",
+      "synset": "murmur.v.01",
+      "gloss_source": "wordnet",
+      "gloss": "speak softly or indistinctly",
+      "zipf": 2.92,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "murmur",
+        "third": "murmurs",
+        "past": "murmured",
+        "part": "murmuring"
+      },
+      "discriminator": "low soft voice",
+      "grade": 4
+    },
+    {
+      "w": "recite",
+      "synset": "recite.v.02",
+      "gloss_source": "wordnet",
+      "gloss": "repeat aloud from memory",
+      "zipf": 3.28,
+      "register": "neutral",
+      "senses_at_pos": 5,
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-06",
+        "note": "dominant school-context sense confirmed at roster vet"
+      },
+      "forms": {
+        "base": "recite",
+        "third": "recites",
+        "past": "recited",
+        "part": "reciting"
+      },
+      "discriminator": "delivered from memory",
+      "grade": 5
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-reply-01-s01",
+      "answer": "retort",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "When Leo sneered at her drawing, Ava ___ with a cutting reply.",
+      "cue_phrase": "with a cutting reply",
+      "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+      }
+    },
+    {
+      "id": "A-reply-01-s02",
+      "answer": "retort",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Nina ___, 'At least mine found puddles,' as a snappy reply.",
+      "cue_phrase": "as a snappy reply",
+      "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+      }
+    },
+    {
+      "id": "A-reply-01-s03",
+      "answer": "retort",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Tom said, 'Your cake fell,' and Priya ___, 'Yours never rose.'",
+      "cue_phrase": "Yours never rose",
+      "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+      }
+    },
+    {
+      "id": "A-reply-01-s04",
+      "answer": "retort",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "After Jai laughed, 'Too slow,' Mina ___, 'You still lost.'",
+      "cue_phrase": "You still lost",
+      "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+      }
+    },
+    {
+      "id": "A-reply-01-s05",
+      "answer": "retort",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Eli ___, 'Nice throw, from the bench,' when Rob mocked his pass.",
+      "cue_phrase": "when Rob mocked",
+      "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+      }
+    },
+    {
+      "id": "A-reply-01-s06",
+      "answer": "retort",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Lara ___, 'Great advice from the muddy expert,' after Dan criticised her path.",
+      "cue_phrase": "after Dan criticised",
+      "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+      }
+    },
+    {
+      "id": "A-reply-01-s07",
+      "answer": "retort",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Max ___, 'Maybe they escaped,' with a cheeky reply to Dad.",
+      "cue_phrase": "with a cheeky reply",
+      "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+      }
+    },
+    {
+      "id": "A-reply-01-s08",
+      "answer": "retort",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "When Bea joked, 'Tiny brain,' Noor ___, 'Still bigger than your sandwich.'",
+      "cue_phrase": "When Bea joked",
+      "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+      }
+    },
+    {
+      "id": "A-reply-01-s09",
+      "answer": "exclaim",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Seeing the fireworks bloom, Poppy ___, 'Wow!' with a delighted shout.",
+      "cue_phrase": "with a delighted shout",
+      "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+      }
+    },
+    {
+      "id": "A-reply-01-s10",
+      "answer": "exclaim",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "A frog hopped from the boot, and Ravi ___ with a startled cry.",
+      "cue_phrase": "with a startled cry",
+      "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+      }
+    },
+    {
+      "id": "A-reply-01-s11",
+      "answer": "exclaim",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The treasure chest opened, and Mia ___, 'Gold coins everywhere!'",
+      "cue_phrase": "Gold coins everywhere",
+      "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+      }
+    },
+    {
+      "id": "A-reply-01-s12",
+      "answer": "exclaim",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "When ice slid down his collar, Ben ___, 'That's freezing!'",
+      "cue_phrase": "That's freezing",
+      "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+      }
+    },
+    {
+      "id": "A-reply-01-s13",
+      "answer": "exclaim",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The kitten leapt onto the cake, and Noor ___, 'Oh no!'",
+      "cue_phrase": "Oh no",
+      "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+      }
+    },
+    {
+      "id": "A-reply-01-s14",
+      "answer": "exclaim",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "A rainbow appeared over the tent, so Ella ___, 'Look at that!'",
+      "cue_phrase": "Look at that",
+      "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+      }
+    },
+    {
+      "id": "A-reply-01-s15",
+      "answer": "exclaim",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "When the magician vanished, the twins ___, 'Where did she go?'",
+      "cue_phrase": "the magician vanished",
+      "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+      }
+    },
+    {
+      "id": "A-reply-01-s16",
+      "answer": "exclaim",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "The spicy soup made Amir ___, 'My mouth is on fire!'",
+      "cue_phrase": "My mouth is on fire",
+      "surface": {
+        "retort": "retort",
+        "exclaim": "exclaim",
+        "declare": "declare",
+        "murmur": "murmur",
+        "recite": "recite"
+      }
+    },
+    {
+      "id": "A-reply-01-s17",
+      "answer": "declare",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "At assembly, the mayor ___, 'The park opens today,' in an official voice.",
+      "cue_phrase": "in an official voice",
+      "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+      }
+    },
+    {
+      "id": "A-reply-01-s18",
+      "answer": "declare",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The judge ___, 'The red team wins,' from the centre podium.",
+      "cue_phrase": "from the centre podium",
+      "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+      }
+    },
+    {
+      "id": "A-reply-01-s19",
+      "answer": "declare",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Before the school crowd, Zara ___, 'The fair begins at nine.'",
+      "cue_phrase": "Before the school crowd",
+      "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+      }
+    },
+    {
+      "id": "A-reply-01-s20",
+      "answer": "declare",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "On the castle balcony, the queen ___, 'The bridge is open.'",
+      "cue_phrase": "On the castle balcony",
+      "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+      }
+    },
+    {
+      "id": "A-reply-01-s21",
+      "answer": "declare",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The captain raised the trophy and ___ in a firm voice, 'This match is ours.'",
+      "cue_phrase": "in a firm voice",
+      "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: 'in a firm voice' carries declare; exclaim is sudden and emotional",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-reply-01-s22",
+      "answer": "declare",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "With the microphone ready, Suki ___, 'Lunch will start in five minutes.'",
+      "cue_phrase": "the microphone ready",
+      "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+      }
+    },
+    {
+      "id": "A-reply-01-s23",
+      "answer": "declare",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The council leader ___, 'No bikes inside,' beside the bright notice.",
+      "cue_phrase": "beside the bright notice",
+      "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+      }
+    },
+    {
+      "id": "A-reply-01-s24",
+      "answer": "declare",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "At the meeting, Omar ___, 'Our class will plant three trees.'",
+      "cue_phrase": "At the meeting",
+      "surface": {
+        "retort": "retorts",
+        "exclaim": "exclaims",
+        "declare": "declares",
+        "murmur": "murmurs",
+        "recite": "recites"
+      }
+    },
+    {
+      "id": "A-reply-01-s25",
+      "answer": "murmur",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "During story time, Lily ___, 'Careful,' barely above a whisper.",
+      "cue_phrase": "barely above a whisper",
+      "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+      }
+    },
+    {
+      "id": "A-reply-01-s26",
+      "answer": "murmur",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "In the library, Noah ___, 'I'm here,' in a low voice.",
+      "cue_phrase": "in a low voice",
+      "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+      }
+    },
+    {
+      "id": "A-reply-01-s27",
+      "answer": "murmur",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The baby slept nearby, so Gran ___, 'Close the door.'",
+      "cue_phrase": "The baby slept nearby",
+      "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+      }
+    },
+    {
+      "id": "A-reply-01-s28",
+      "answer": "murmur",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "During the test, Sami ___, 'I found your marble' to Isla.",
+      "cue_phrase": "During the test",
+      "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+      }
+    },
+    {
+      "id": "A-reply-01-s29",
+      "answer": "murmur",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Only the child beside Freya caught 'My tooth is loose' when she ___.",
+      "cue_phrase": "Only the child beside",
+      "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+      }
+    },
+    {
+      "id": "A-reply-01-s30",
+      "answer": "murmur",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The secret sounded like leaves rustling as Kira ___, 'Meet by the oak.'",
+      "cue_phrase": "like leaves rustling",
+      "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+      }
+    },
+    {
+      "id": "A-reply-01-s31",
+      "answer": "murmur",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Behind the curtain, Pip ___, 'The dragon is asleep,' to Tansy.",
+      "cue_phrase": "Behind the curtain",
+      "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+      }
+    },
+    {
+      "id": "A-reply-01-s32",
+      "answer": "murmur",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "Milo ___, 'Don't wake the dog,' without lifting his head.",
+      "cue_phrase": "Don't wake the dog",
+      "surface": {
+        "retort": "retorts",
+        "exclaim": "exclaims",
+        "declare": "declares",
+        "murmur": "murmurs",
+        "recite": "recites"
+      }
+    },
+    {
+      "id": "A-reply-01-s33",
+      "answer": "recite",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "At the concert, Ana ___, 'Twinkle, twinkle, little star,' by heart.",
+      "cue_phrase": "by heart",
+      "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+      }
+    },
+    {
+      "id": "A-reply-01-s34",
+      "answer": "recite",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Without her script, Dev ___, 'To be brave, begin today.'",
+      "cue_phrase": "Without her script",
+      "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (declare, murmur); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-reply-01-s35",
+      "answer": "recite",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The class poem came next, and Finn ___, 'Rain taps roofs.'",
+      "cue_phrase": "The class poem",
+      "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+      }
+    },
+    {
+      "id": "A-reply-01-s36",
+      "answer": "recite",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "In the play, Leila ___, 'First, mix flour, salt, and water.'",
+      "cue_phrase": "In the play",
+      "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (declare, murmur); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-reply-01-s37",
+      "answer": "recite",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "No page lay nearby as Imani ___, 'The moon is silver.'",
+      "cue_phrase": "No page lay nearby",
+      "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (declare, murmur); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-reply-01-s38",
+      "answer": "recite",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "After a week of practice, Toby ___, 'North, south, east, west.'",
+      "cue_phrase": "a week of practice",
+      "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+      }
+    },
+    {
+      "id": "A-reply-01-s39",
+      "answer": "recite",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "The teacher had June ___, 'Seven eights are fifty-six,' without looking.",
+      "cue_phrase": "without looking",
+      "surface": {
+        "retort": "retort",
+        "exclaim": "exclaim",
+        "declare": "declare",
+        "murmur": "murmur",
+        "recite": "recite"
+      }
+    },
+    {
+      "id": "A-reply-01-s40",
+      "answer": "recite",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "At bedtime, Oskar ___, 'Once upon a hill,' with the book shut.",
+      "cue_phrase": "with the book shut",
+      "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (murmur); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "retort",
+      "picked": "exclaim",
+      "line": "Retort is a sharp reply to a remark; exclaim is an emotional burst."
+    },
+    {
+      "answer": "retort",
+      "picked": "declare",
+      "line": "Retort snaps at a remark; declare makes a firm public point."
+    },
+    {
+      "answer": "retort",
+      "picked": "murmur",
+      "line": "Retort has a sting; murmur is low and quiet."
+    },
+    {
+      "answer": "retort",
+      "picked": "recite",
+      "line": "Retort is a sharp reply; recite gives learned words from the head."
+    },
+    {
+      "answer": "exclaim",
+      "picked": "retort",
+      "line": "Exclaim bursts with feeling; retort bites as a reply."
+    },
+    {
+      "answer": "exclaim",
+      "picked": "declare",
+      "line": "Exclaim is an emotional burst; declare is a firm public point."
+    },
+    {
+      "answer": "exclaim",
+      "picked": "murmur",
+      "line": "Exclaim can be loud with feeling; murmur stays low and quiet."
+    },
+    {
+      "answer": "exclaim",
+      "picked": "recite",
+      "line": "Exclaim bursts from feeling; recite gives practised words from the head."
+    },
+    {
+      "answer": "declare",
+      "picked": "retort",
+      "line": "Declare makes a firm public point; retort is a sharp reply to a remark."
+    },
+    {
+      "answer": "declare",
+      "picked": "exclaim",
+      "line": "Declare is a firm public point; exclaim is an emotional burst."
+    },
+    {
+      "answer": "declare",
+      "picked": "murmur",
+      "line": "Declare is meant for a group; murmur is low and private."
+    },
+    {
+      "answer": "declare",
+      "picked": "recite",
+      "line": "Declare gives a firm public point; recite gives learned words from the head."
+    },
+    {
+      "answer": "murmur",
+      "picked": "retort",
+      "line": "Murmur is low and quiet; retort is a sharp reply."
+    },
+    {
+      "answer": "murmur",
+      "picked": "exclaim",
+      "line": "Murmur stays low and quiet; exclaim bursts with feeling."
+    },
+    {
+      "answer": "murmur",
+      "picked": "declare",
+      "line": "Murmur is low and private; declare is firm and public."
+    },
+    {
+      "answer": "murmur",
+      "picked": "recite",
+      "line": "Murmur is low and quiet; recite gives learned words from the head."
+    },
+    {
+      "answer": "recite",
+      "picked": "retort",
+      "line": "Recite gives learned words from the head; retort is a sharp reply."
+    },
+    {
+      "answer": "recite",
+      "picked": "exclaim",
+      "line": "Recite gives practised words from the head; exclaim bursts with feeling."
+    },
+    {
+      "answer": "recite",
+      "picked": "declare",
+      "line": "Recite gives learned words from the head; declare makes a firm public point."
+    },
+    {
+      "answer": "recite",
+      "picked": "murmur",
+      "line": "Recite gives learned words from the head; murmur is low and quiet."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-06T14:44:14+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": "2026-07-07",
+    "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+  }
+}

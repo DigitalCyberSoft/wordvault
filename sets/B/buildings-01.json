@@ -1,0 +1,826 @@
+{
+  "id": "B-buildings-01",
+  "bank": "B",
+  "pos": "noun",
+  "theme": "parts of grand buildings",
+  "band": 4,
+  "band_override": 4,
+  "computed": {
+    "zipf_min": 3.11,
+    "zipf_mean": 3.62,
+    "tightness": 0.466,
+    "band_suggested": 3,
+    "scored_at": "2026-07-06T18:43:21+00:00"
+  },
+  "words": [
+    {
+      "w": "arch",
+      "synset": "arch.n.01",
+      "gloss_source": "wordnet",
+      "gloss": "a curved shape in the vertical plane that spans an opening",
+      "zipf": 4.02,
+      "register": "neutral",
+      "senses_at_pos": 4,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "arch"
+      },
+      "discriminator": "curved span over an opening",
+      "grade": 3
+    },
+    {
+      "w": "dome",
+      "synset": "dome.n.04",
+      "gloss_source": "authored",
+      "gloss": "a rounded roof shaped like half a ball",
+      "zipf": 3.9,
+      "register": "neutral",
+      "senses_at_pos": 4,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "dome"
+      },
+      "discriminator": "rounded half-ball roof",
+      "grade": 4
+    },
+    {
+      "w": "spire",
+      "synset": "steeple.n.01",
+      "gloss_source": "authored",
+      "gloss": "a tall pointed top that narrows to a tip above a tower",
+      "zipf": 3.11,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "spire"
+      },
+      "discriminator": "tapers to a point at the top",
+      "grade": 5
+    },
+    {
+      "w": "turret",
+      "synset": "turret.n.01",
+      "gloss_source": "wordnet",
+      "gloss": "a small tower extending above a building",
+      "zipf": 3.42,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "turret"
+      },
+      "discriminator": "small tower on a corner",
+      "grade": 5
+    },
+    {
+      "w": "courtyard",
+      "synset": "court.n.10",
+      "gloss_source": "wordnet",
+      "gloss": "an area wholly or partly surrounded by walls or buildings",
+      "zipf": 3.65,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "courtyard"
+      },
+      "discriminator": "open unroofed space inside walls",
+      "grade": 4
+    }
+  ],
+  "sentences": [
+    {
+      "id": "B-buildings-01-s01",
+      "answer": "arch",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "At the gate, the stone ___ made an upside-down U.",
+      "cue_phrase": "an upside-down U",
+      "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+      }
+    },
+    {
+      "id": "B-buildings-01-s02",
+      "answer": "arch",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The mason built a ___ that bridged the doorway in a bow.",
+      "cue_phrase": "doorway in a bow",
+      "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+      }
+    },
+    {
+      "id": "B-buildings-01-s03",
+      "answer": "arch",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "We stepped beneath the ___ that framed the oak doorway.",
+      "cue_phrase": "framed the oak doorway",
+      "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+      }
+    },
+    {
+      "id": "B-buildings-01-s04",
+      "answer": "arch",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Lanterns hung from the ___ forming the palace doorway.",
+      "cue_phrase": "forming the palace doorway",
+      "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+      }
+    },
+    {
+      "id": "B-buildings-01-s05",
+      "answer": "arch",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The scout saw daylight under the ___ before reaching the portcullis.",
+      "cue_phrase": "saw daylight under",
+      "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+      }
+    },
+    {
+      "id": "B-buildings-01-s06",
+      "answer": "arch",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Mira's voice echoed when she stood beneath the stone doorway's ___.",
+      "cue_phrase": "stone doorway's",
+      "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+      }
+    },
+    {
+      "id": "B-buildings-01-s07",
+      "answer": "arch",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The garden entrance had a ___ like a giant horseshoe.",
+      "cue_phrase": "a giant horseshoe",
+      "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+      }
+    },
+    {
+      "id": "B-buildings-01-s08",
+      "answer": "arch",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "A swallow nested where the ___ curved over the chapel door.",
+      "cue_phrase": "curved over the chapel door",
+      "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+      }
+    },
+    {
+      "id": "B-buildings-01-s09",
+      "answer": "dome",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "A copper ___ sat on the hall, an upside-down bowl of metal.",
+      "cue_phrase": "upside-down bowl",
+      "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+      }
+    },
+    {
+      "id": "B-buildings-01-s10",
+      "answer": "dome",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Inside, the painted ___ rose over us in one huge shell.",
+      "cue_phrase": "one huge shell",
+      "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+      }
+    },
+    {
+      "id": "B-buildings-01-s11",
+      "answer": "dome",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Rain slid down the ___ in wide rings around the hall.",
+      "cue_phrase": "wide rings around",
+      "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+      }
+    },
+    {
+      "id": "B-buildings-01-s12",
+      "answer": "dome",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Under the ___, our whispers floated around the circular hall.",
+      "cue_phrase": "around the circular hall",
+      "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+      }
+    },
+    {
+      "id": "B-buildings-01-s13",
+      "answer": "dome",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "From afar, the museum wore a silver ___ instead of a flat cap.",
+      "cue_phrase": "instead of a flat cap",
+      "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+      }
+    },
+    {
+      "id": "B-buildings-01-s14",
+      "answer": "dome",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The ceiling inside the bathhouse climbed smoothly into a blue ___.",
+      "cue_phrase": "climbed smoothly into",
+      "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+      }
+    },
+    {
+      "id": "B-buildings-01-s15",
+      "answer": "dome",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The observatory's white ___ resembled an enormous igloo.",
+      "cue_phrase": "an enormous igloo",
+      "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+      }
+    },
+    {
+      "id": "B-buildings-01-s16",
+      "answer": "dome",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Birds circled the golden ___ bulging over the round hall.",
+      "cue_phrase": "bulging over",
+      "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+      }
+    },
+    {
+      "id": "B-buildings-01-s17",
+      "answer": "spire",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The church's ___ ended in a needle against the clouds.",
+      "cue_phrase": "ended in a needle",
+      "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (turret); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-buildings-01-s18",
+      "answer": "spire",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "A silver ___ tapered from wide stone to a sharp tip.",
+      "cue_phrase": "a sharp tip",
+      "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+      }
+    },
+    {
+      "id": "B-buildings-01-s19",
+      "answer": "spire",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The bell house wore a ___ that pricked the evening sky.",
+      "cue_phrase": "pricked the evening sky",
+      "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+      }
+    },
+    {
+      "id": "B-buildings-01-s20",
+      "answer": "spire",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Crows circled the ___ with needle-thin sides beside the bell.",
+      "cue_phrase": "needle-thin sides",
+      "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+      }
+    },
+    {
+      "id": "B-buildings-01-s21",
+      "answer": "spire",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Lina saw the thin dark ___ spearing the sunset before the church.",
+      "cue_phrase": "spearing the sunset",
+      "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+      }
+    },
+    {
+      "id": "B-buildings-01-s22",
+      "answer": "spire",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The model church needed its ___, so Tom rolled a tall paper cone.",
+      "cue_phrase": "tall paper cone",
+      "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+      }
+    },
+    {
+      "id": "B-buildings-01-s23",
+      "answer": "spire",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The icy ___ on the palace glittered like a giant needle.",
+      "cue_phrase": "a giant needle",
+      "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+      }
+    },
+    {
+      "id": "B-buildings-01-s24",
+      "answer": "spire",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Fireworks burst behind the ___, making its tapering sides sparkle.",
+      "cue_phrase": "tapering sides sparkle",
+      "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+      }
+    },
+    {
+      "id": "B-buildings-01-s25",
+      "answer": "turret",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "At the castle corner, the round ___ held one narrow window.",
+      "cue_phrase": "castle corner",
+      "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+      }
+    },
+    {
+      "id": "B-buildings-01-s26",
+      "answer": "turret",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "A tiny stair curled inside the ___ jutting from the manor corner.",
+      "cue_phrase": "manor corner",
+      "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+      }
+    },
+    {
+      "id": "B-buildings-01-s27",
+      "answer": "turret",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The princess waved from the ___, just wide enough for one guard.",
+      "cue_phrase": "one guard",
+      "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+      }
+    },
+    {
+      "id": "B-buildings-01-s28",
+      "answer": "turret",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Ravi counted three arrow slits in the ___ on the castle's corner.",
+      "cue_phrase": "arrow slits",
+      "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+      }
+    },
+    {
+      "id": "B-buildings-01-s29",
+      "answer": "turret",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The guard climbed the curled stair to watch from the round ___.",
+      "cue_phrase": "curled stair",
+      "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+      }
+    },
+    {
+      "id": "B-buildings-01-s30",
+      "answer": "turret",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "From the path, Ali saw a little round ___ with an arrow slit.",
+      "cue_phrase": "an arrow slit",
+      "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+      }
+    },
+    {
+      "id": "B-buildings-01-s31",
+      "answer": "turret",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "A flag fluttered from the ___, the smallest tower on the wall.",
+      "cue_phrase": "smallest tower on the wall",
+      "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+      }
+    },
+    {
+      "id": "B-buildings-01-s32",
+      "answer": "turret",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The toy fortress had a round ___ at each corner.",
+      "cue_phrase": "at each corner",
+      "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (dome); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-buildings-01-s33",
+      "answer": "courtyard",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Lunch tables filled the ___, open to the sky inside the castle.",
+      "cue_phrase": "open to the sky",
+      "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+      }
+    },
+    {
+      "id": "B-buildings-01-s34",
+      "answer": "courtyard",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ had no ceiling, and four stone sides kept out wind.",
+      "cue_phrase": "no ceiling",
+      "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+      }
+    },
+    {
+      "id": "B-buildings-01-s35",
+      "answer": "courtyard",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Children chased pigeons across the ___ between the school wings.",
+      "cue_phrase": "between the school wings",
+      "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+      }
+    },
+    {
+      "id": "B-buildings-01-s36",
+      "answer": "courtyard",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The fountain splashed in the ___ while rooms faced it on every side.",
+      "cue_phrase": "rooms faced it",
+      "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+      }
+    },
+    {
+      "id": "B-buildings-01-s37",
+      "answer": "courtyard",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "After the gate closed, moonlight still fell into the ___.",
+      "cue_phrase": "moonlight still fell",
+      "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (turret); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-buildings-01-s38",
+      "answer": "courtyard",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The cook carried soup across the ___ to the opposite kitchen door.",
+      "cue_phrase": "opposite kitchen door",
+      "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+      }
+    },
+    {
+      "id": "B-buildings-01-s39",
+      "answer": "courtyard",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Snowflakes fell straight into the ___ and whitened its cobbles.",
+      "cue_phrase": "fell straight into",
+      "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+      }
+    },
+    {
+      "id": "B-buildings-01-s40",
+      "answer": "courtyard",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Guests danced in the ___, with balconies looking down from every side.",
+      "cue_phrase": "balconies looking down",
+      "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "arch",
+      "picked": "dome",
+      "line": "An arch bends over a way through; a dome is a round cap over a room."
+    },
+    {
+      "answer": "arch",
+      "picked": "spire",
+      "line": "An arch goes over a doorway; a spire is a thin needle high on a church."
+    },
+    {
+      "answer": "arch",
+      "picked": "turret",
+      "line": "An arch frames a way through; a turret is a little round lookout on a corner."
+    },
+    {
+      "answer": "arch",
+      "picked": "courtyard",
+      "line": "An arch is stone over an entrance; a courtyard is an open place you can stand in."
+    },
+    {
+      "answer": "dome",
+      "picked": "arch",
+      "line": "A dome is a round cap over a hall; an arch is a bent span over a doorway."
+    },
+    {
+      "answer": "dome",
+      "picked": "spire",
+      "line": "A dome is broad and bowl-like; a spire is slim and needle-like."
+    },
+    {
+      "answer": "dome",
+      "picked": "turret",
+      "line": "A dome covers a hall; a turret is a little corner lookout."
+    },
+    {
+      "answer": "dome",
+      "picked": "courtyard",
+      "line": "A dome is overhead cover; a courtyard is open to the sky."
+    },
+    {
+      "answer": "spire",
+      "picked": "arch",
+      "line": "A spire shoots up like a needle; an arch bends over a doorway."
+    },
+    {
+      "answer": "spire",
+      "picked": "dome",
+      "line": "A spire is slim and sharp; a dome is broad and bowl-like."
+    },
+    {
+      "answer": "spire",
+      "picked": "turret",
+      "line": "A spire is a needle-like peak; a turret is a little corner room."
+    },
+    {
+      "answer": "spire",
+      "picked": "courtyard",
+      "line": "A spire rises to the sky; a courtyard is an open place on the ground."
+    },
+    {
+      "answer": "turret",
+      "picked": "arch",
+      "line": "A turret is a little lookout on a corner; an arch frames a doorway."
+    },
+    {
+      "answer": "turret",
+      "picked": "dome",
+      "line": "A turret is a little corner lookout; a dome is a broad round cap."
+    },
+    {
+      "answer": "turret",
+      "picked": "spire",
+      "line": "A turret has room to stand inside; a spire is a thin needle-like peak."
+    },
+    {
+      "answer": "turret",
+      "picked": "courtyard",
+      "line": "A turret is a corner lookout; a courtyard is open ground inside a castle."
+    },
+    {
+      "answer": "courtyard",
+      "picked": "arch",
+      "line": "A courtyard is open ground; an arch is stone over a way through."
+    },
+    {
+      "answer": "courtyard",
+      "picked": "dome",
+      "line": "A courtyard is open to the sky; a dome is a round cover overhead."
+    },
+    {
+      "answer": "courtyard",
+      "picked": "spire",
+      "line": "A courtyard is a place to walk; a spire is a needle-like peak."
+    },
+    {
+      "answer": "courtyard",
+      "picked": "turret",
+      "line": "A courtyard is open ground; a turret is a little lookout on a corner."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-06T14:29:55+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": "2026-07-07",
+    "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+  }
+}

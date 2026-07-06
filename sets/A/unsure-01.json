@@ -1,0 +1,978 @@
+{
+  "id": "A-unsure-01",
+  "bank": "A",
+  "pos": "adjective",
+  "theme": "ways of being unsure",
+  "band": 5,
+  "band_override": 5,
+  "computed": {
+    "zipf_min": 2.9,
+    "zipf_mean": 3.18,
+    "tightness": null,
+    "band_suggested": 4,
+    "scored_at": "2026-07-06T18:43:21+00:00"
+  },
+  "words": [
+    {
+      "w": "disoriented",
+      "synset": "confused.s.03",
+      "gloss_source": "authored",
+      "gloss": "having lost your sense of where you are or which way to go",
+      "zipf": 2.9,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "disoriented"
+      },
+      "discriminator": "unsure WHERE you are",
+      "grade": 6
+    },
+    {
+      "w": "dubious",
+      "synset": "dubious.s.03",
+      "gloss_source": "wordnet",
+      "gloss": "not convinced",
+      "zipf": 3.49,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "dubious"
+      },
+      "discriminator": "unsure whether to believe it",
+      "grade": 7
+    },
+    {
+      "w": "perplexed",
+      "synset": "perplexed.a.01",
+      "gloss_source": "authored",
+      "gloss": "completely puzzled by something you cannot explain",
+      "zipf": 3.05,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "perplexed"
+      },
+      "discriminator": "unsure what it means",
+      "grade": 6
+    },
+    {
+      "w": "ambivalent",
+      "synset": "ambivalent.s.01",
+      "gloss_source": "authored",
+      "gloss": "unsure because you feel two opposite ways at once",
+      "zipf": 3.01,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "ambivalent"
+      },
+      "discriminator": "feeling both ways at once",
+      "grade": 7
+    },
+    {
+      "w": "tentative",
+      "synset": "doubtful.s.03",
+      "gloss_source": "authored",
+      "gloss": "acting in a careful, half-committed way because you are unsure",
+      "zipf": 3.45,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "tentative"
+      },
+      "discriminator": "half-committed in action",
+      "grade": 7
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-unsure-01-s01",
+      "answer": "disoriented",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "After three spins, Priya felt ___ and headed toward the wrong classroom.",
+      "cue_phrase": "wrong classroom",
+      "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+      }
+    },
+    {
+      "id": "A-unsure-01-s02",
+      "answer": "disoriented",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Inside the mirror maze, Ben grew ___ and missed the exit twice.",
+      "cue_phrase": "missed the exit",
+      "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (perplexed); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-unsure-01-s03",
+      "answer": "disoriented",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The fog made the hikers ___; they circled back to the same oak.",
+      "cue_phrase": "same oak",
+      "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (perplexed); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-unsure-01-s04",
+      "answer": "disoriented",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "After the tunnel slide, Noor was ___ and pointed north at the sea.",
+      "cue_phrase": "pointed north at",
+      "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+      }
+    },
+    {
+      "id": "A-unsure-01-s05",
+      "answer": "disoriented",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Jamal woke on the train ___, with no idea which stop came next.",
+      "cue_phrase": "which stop came next",
+      "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (perplexed); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-unsure-01-s06",
+      "answer": "disoriented",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The dark campsite left Ava ___; every tent seemed to face a different path.",
+      "cue_phrase": "different path",
+      "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (perplexed); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-unsure-01-s07",
+      "answer": "disoriented",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "When the lights failed, Dad became ___ and opened the cupboard instead of the door.",
+      "cue_phrase": "instead of the door",
+      "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+      }
+    },
+    {
+      "id": "A-unsure-01-s08",
+      "answer": "disoriented",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "After the cartwheel, Isla stood ___, facing the wall she had started beside.",
+      "cue_phrase": "facing the wall",
+      "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (perplexed); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-unsure-01-s09",
+      "answer": "dubious",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Mum looked ___ when the goldfish was blamed for eating the cake.",
+      "cue_phrase": "goldfish was blamed",
+      "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: a stated claim to doubt, nothing to decode; perplexed is the charitable read",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-unsure-01-s10",
+      "answer": "dubious",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Kai sounded ___ when a flyer promised snow at the beach in January.",
+      "cue_phrase": "snow at the beach in January",
+      "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (perplexed); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-unsure-01-s11",
+      "answer": "dubious",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "At lunch, Sita was ___ about the soup's claim to glow.",
+      "cue_phrase": "claim to glow",
+      "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (perplexed); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-unsure-01-s12",
+      "answer": "dubious",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The coach seemed ___ after Ravi said his shoes made him fly.",
+      "cue_phrase": "made him fly",
+      "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (perplexed); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-unsure-01-s13",
+      "answer": "dubious",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Nell stayed ___, watching the magician's plain hat for hidden pockets.",
+      "cue_phrase": "hidden pockets",
+      "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+      }
+    },
+    {
+      "id": "A-unsure-01-s14",
+      "answer": "dubious",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Tom was ___ after the tiny puppy was called a fierce wolf.",
+      "cue_phrase": "fierce wolf",
+      "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: a stated claim to doubt, nothing to decode; perplexed is the charitable read",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-unsure-01-s15",
+      "answer": "dubious",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Grandad sounded ___ when the radio announced a dragon in the park.",
+      "cue_phrase": "dragon in the park",
+      "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: a stated claim to doubt, nothing to decode; perplexed is the charitable read",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-unsure-01-s16",
+      "answer": "dubious",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "Mira felt ___ about the poster saying carrots make homework vanish.",
+      "cue_phrase": "homework vanish",
+      "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: a stated claim to doubt, nothing to decode; perplexed is the charitable read",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-unsure-01-s17",
+      "answer": "perplexed",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Eli was ___ when the doorbell rang from inside his lunchbox.",
+      "cue_phrase": "inside his lunchbox",
+      "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (disoriented); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-unsure-01-s18",
+      "answer": "perplexed",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The class became ___ when the sum ended with a purple star.",
+      "cue_phrase": "purple star",
+      "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+      }
+    },
+    {
+      "id": "A-unsure-01-s19",
+      "answer": "perplexed",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Rosa stared ___ at the note: 'Bring the square circle tomorrow.'",
+      "cue_phrase": "square circle tomorrow",
+      "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+      }
+    },
+    {
+      "id": "A-unsure-01-s20",
+      "answer": "perplexed",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Max was ___ after the compass needle spun while lying on the desk.",
+      "cue_phrase": "needle spun",
+      "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-4.1 lists a second fit (disoriented); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-unsure-01-s21",
+      "answer": "perplexed",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Lily felt ___ when every library book opened to page zero.",
+      "cue_phrase": "page zero",
+      "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+      }
+    },
+    {
+      "id": "A-unsure-01-s22",
+      "answer": "perplexed",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Owen was ___ by the riddle answer, 'a sandwich with no bread.'",
+      "cue_phrase": "no bread",
+      "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+      }
+    },
+    {
+      "id": "A-unsure-01-s23",
+      "answer": "perplexed",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Nina looked ___ as the music sheet showed a fish instead of notes.",
+      "cue_phrase": "fish instead of notes",
+      "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+      }
+    },
+    {
+      "id": "A-unsure-01-s24",
+      "answer": "perplexed",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "The twins were ___ when their shadows pointed upward at noon.",
+      "cue_phrase": "shadows pointed upward",
+      "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: cognitive puzzle, no loss of bearings; disoriented needs place-confusion",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-unsure-01-s25",
+      "answer": "ambivalent",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Lara was ___ about moving, excited yet sad as friends waved goodbye.",
+      "cue_phrase": "excited yet sad",
+      "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+      }
+    },
+    {
+      "id": "A-unsure-01-s26",
+      "answer": "ambivalent",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Finn was ___ about the play, loving applause but fearing forgotten lines.",
+      "cue_phrase": "loving applause but fearing",
+      "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (tentative); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-unsure-01-s27",
+      "answer": "ambivalent",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Mina stayed ___ about camp, packing marshmallows while worrying about spiders.",
+      "cue_phrase": "packing marshmallows while worrying",
+      "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (tentative); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-unsure-01-s28",
+      "answer": "ambivalent",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Raj was ___ about the puppy, smiling at licks but hating muddy paws.",
+      "cue_phrase": "smiling at licks but hating",
+      "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (dubious, tentative); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-unsure-01-s29",
+      "answer": "ambivalent",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Ella remained ___ after winning the solo, proud yet nervous about Saturday.",
+      "cue_phrase": "proud yet nervous",
+      "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+      }
+    },
+    {
+      "id": "A-unsure-01-s30",
+      "answer": "ambivalent",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Sam was ___ about the roller coaster, cheering loudly while gripping the rail.",
+      "cue_phrase": "cheering loudly while gripping",
+      "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (tentative); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-unsure-01-s31",
+      "answer": "ambivalent",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Ivy looked ___ at the huge cake, hungry but worried about crumbs.",
+      "cue_phrase": "hungry but worried",
+      "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (dubious, tentative); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-unsure-01-s32",
+      "answer": "ambivalent",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "Noah sounded ___ about snow, cheering for sledges but groaning over cold toes.",
+      "cue_phrase": "cheering for sledges but groaning",
+      "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (dubious, tentative); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-unsure-01-s33",
+      "answer": "tentative",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Ari gave a ___ knock, barely louder than a raindrop.",
+      "cue_phrase": "barely louder than",
+      "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+      }
+    },
+    {
+      "id": "A-unsure-01-s34",
+      "answer": "tentative",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Maya made a ___ step onto the creaky bridge, then paused.",
+      "cue_phrase": "then paused",
+      "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+      }
+    },
+    {
+      "id": "A-unsure-01-s35",
+      "answer": "tentative",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Leo raised a ___ hand, lowering it before the teacher looked over.",
+      "cue_phrase": "lowering it before",
+      "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+      }
+    },
+    {
+      "id": "A-unsure-01-s36",
+      "answer": "tentative",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Nina offered a ___ smile, then hid behind her book.",
+      "cue_phrase": "hid behind her book",
+      "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+      }
+    },
+    {
+      "id": "A-unsure-01-s37",
+      "answer": "tentative",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Omar's ___ pencil mark was so faint that the eraser missed it.",
+      "cue_phrase": "so faint",
+      "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+      }
+    },
+    {
+      "id": "A-unsure-01-s38",
+      "answer": "tentative",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Pip gave the door a ___ push, and it moved only an inch.",
+      "cue_phrase": "only an inch",
+      "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+      }
+    },
+    {
+      "id": "A-unsure-01-s39",
+      "answer": "tentative",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Zara took a ___ bite of the new stew, smaller than a pea.",
+      "cue_phrase": "smaller than a pea",
+      "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (dubious); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-unsure-01-s40",
+      "answer": "tentative",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "Ben made a ___ wave from behind the curtain, then pulled back.",
+      "cue_phrase": "then pulled back",
+      "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "disoriented",
+      "picked": "dubious",
+      "line": "Disoriented is about not knowing the route. Dubious is about not believing a claim."
+    },
+    {
+      "answer": "disoriented",
+      "picked": "perplexed",
+      "line": "Disoriented is mixed up about place. Perplexed is mixed up about meaning."
+    },
+    {
+      "answer": "disoriented",
+      "picked": "ambivalent",
+      "line": "Disoriented means place or direction is muddled. Ambivalent means feelings pull both ways."
+    },
+    {
+      "answer": "disoriented",
+      "picked": "tentative",
+      "line": "Disoriented means direction is muddled. Tentative means the action is small or held back."
+    },
+    {
+      "answer": "dubious",
+      "picked": "disoriented",
+      "line": "Dubious is not believing a claim. Disoriented is not knowing where to go."
+    },
+    {
+      "answer": "dubious",
+      "picked": "perplexed",
+      "line": "Dubious doubts a claim. Perplexed cannot make sense of a strange thing."
+    },
+    {
+      "answer": "dubious",
+      "picked": "ambivalent",
+      "line": "Dubious doubts it is true. Ambivalent has both yes and no feelings."
+    },
+    {
+      "answer": "dubious",
+      "picked": "tentative",
+      "line": "Dubious is a doubtful mind. Tentative is a small try, like a soft knock."
+    },
+    {
+      "answer": "perplexed",
+      "picked": "disoriented",
+      "line": "Perplexed means the idea makes no sense. Disoriented means the place or route is unclear."
+    },
+    {
+      "answer": "perplexed",
+      "picked": "dubious",
+      "line": "Perplexed asks, 'How does this make sense?' Dubious asks, 'Is this true?'"
+    },
+    {
+      "answer": "perplexed",
+      "picked": "ambivalent",
+      "line": "Perplexed is confused by meaning. Ambivalent is pulled by mixed feelings."
+    },
+    {
+      "answer": "perplexed",
+      "picked": "tentative",
+      "line": "Perplexed is stuck on meaning. Tentative is a small, not-quite-bold action."
+    },
+    {
+      "answer": "ambivalent",
+      "picked": "disoriented",
+      "line": "Ambivalent has mixed feelings. Disoriented has mixed-up direction."
+    },
+    {
+      "answer": "ambivalent",
+      "picked": "dubious",
+      "line": "Ambivalent likes and dislikes at the same time. Dubious does not quite believe it."
+    },
+    {
+      "answer": "ambivalent",
+      "picked": "perplexed",
+      "line": "Ambivalent is mixed feelings. Perplexed is not understanding a strange clue."
+    },
+    {
+      "answer": "ambivalent",
+      "picked": "tentative",
+      "line": "Ambivalent is split feelings. Tentative is a held-back action."
+    },
+    {
+      "answer": "tentative",
+      "picked": "disoriented",
+      "line": "Tentative is a held-back action. Disoriented is not knowing the direction."
+    },
+    {
+      "answer": "tentative",
+      "picked": "dubious",
+      "line": "Tentative shows a small try. Dubious shows doubt about truth."
+    },
+    {
+      "answer": "tentative",
+      "picked": "perplexed",
+      "line": "Tentative is about doing little. Perplexed is about not understanding."
+    },
+    {
+      "answer": "tentative",
+      "picked": "ambivalent",
+      "line": "Tentative is a cautious action. Ambivalent is mixed feelings."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-06T14:46:05+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": "2026-07-07",
+    "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+  }
+}

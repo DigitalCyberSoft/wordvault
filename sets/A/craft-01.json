@@ -1,0 +1,834 @@
+{
+  "id": "A-craft-01",
+  "bank": "A",
+  "pos": "adjective",
+  "theme": "how carefully it was made or done",
+  "band": 5,
+  "band_override": 5,
+  "computed": {
+    "zipf_min": 2.77,
+    "zipf_mean": 3.4,
+    "tightness": null,
+    "band_suggested": 4,
+    "scored_at": "2026-07-06T18:43:21+00:00"
+  },
+  "words": [
+    {
+      "w": "meticulous",
+      "synset": "meticulous.s.02",
+      "gloss_source": "wordnet",
+      "gloss": "marked by extreme care in treatment of details",
+      "zipf": 3.24,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "meticulous"
+      },
+      "discriminator": "the maker attends to every detail",
+      "grade": 7
+    },
+    {
+      "w": "immaculate",
+      "synset": "immaculate.s.01",
+      "gloss_source": "wordnet",
+      "gloss": "completely neat and clean",
+      "zipf": 3.37,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "immaculate"
+      },
+      "discriminator": "not a speck or smudge on the result",
+      "grade": 6
+    },
+    {
+      "w": "haphazard",
+      "synset": "haphazard.s.01",
+      "gloss_source": "wordnet",
+      "gloss": "dependent upon or characterized by chance",
+      "zipf": 2.77,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "haphazard"
+      },
+      "discriminator": "thrown together with no plan",
+      "grade": 7
+    },
+    {
+      "w": "subtle",
+      "synset": "elusive.s.03",
+      "gloss_source": "authored",
+      "gloss": "so slight and delicate that it is easy to miss",
+      "zipf": 4.08,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "subtle"
+      },
+      "discriminator": "so slight you might miss it",
+      "grade": 6
+    },
+    {
+      "w": "intricate",
+      "synset": "intricate.s.01",
+      "gloss_source": "authored",
+      "gloss": "made of many small parts fitted together in a complex design",
+      "zipf": 3.55,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "intricate"
+      },
+      "discriminator": "many small parts fitted together",
+      "grade": 6
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-craft-01-s01",
+      "answer": "meticulous",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Nina's ___ model had every window counted, painted, and ticked off.",
+      "cue_phrase": "every window counted",
+      "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: counted, painted, ticked off stages the maker's care process; intricate describes the design, not the checking",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-craft-01-s02",
+      "answer": "meticulous",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Omar was ___, testing every number on the chart twice before handing it in.",
+      "cue_phrase": "testing every number twice",
+      "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+      }
+    },
+    {
+      "id": "A-craft-01-s03",
+      "answer": "meticulous",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Lena stayed ___, spacing every star with a ruler.",
+      "cue_phrase": "spacing every star",
+      "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+      }
+    },
+    {
+      "id": "A-craft-01-s04",
+      "answer": "meticulous",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Dad became ___, sorting the screws by size before building.",
+      "cue_phrase": "sorting the screws by size",
+      "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+      }
+    },
+    {
+      "id": "A-craft-01-s05",
+      "answer": "meticulous",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Tom was ___, reopening the envelope to straighten one crooked stamp.",
+      "cue_phrase": "straighten one crooked stamp",
+      "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+      }
+    },
+    {
+      "id": "A-craft-01-s06",
+      "answer": "meticulous",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The goalie was ___, retying both laces before the muddy match.",
+      "cue_phrase": "retying both laces",
+      "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+      }
+    },
+    {
+      "id": "A-craft-01-s07",
+      "answer": "meticulous",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The librarian's ___ list named each missing page and shelf.",
+      "cue_phrase": "each missing page",
+      "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+      }
+    },
+    {
+      "id": "A-craft-01-s08",
+      "answer": "meticulous",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Sofia stayed ___, aligning the puzzle edge pieces by colour.",
+      "cue_phrase": "aligning the puzzle edge",
+      "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+      }
+    },
+    {
+      "id": "A-craft-01-s09",
+      "answer": "immaculate",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ kitchen floor had no crumbs, mud, or sticky footprints.",
+      "cue_phrase": "no crumbs, mud",
+      "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+      }
+    },
+    {
+      "id": "A-craft-01-s10",
+      "answer": "immaculate",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "No speck of chalk remained on the ___ blackboard after Sam wiped it.",
+      "cue_phrase": "No speck of chalk",
+      "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+      }
+    },
+    {
+      "id": "A-craft-01-s11",
+      "answer": "immaculate",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Mum's ___ shirt shone white after the jam stain vanished.",
+      "cue_phrase": "jam stain vanished",
+      "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+      }
+    },
+    {
+      "id": "A-craft-01-s12",
+      "answer": "immaculate",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ window let sunlight through without a single fingerprint.",
+      "cue_phrase": "without a single fingerprint",
+      "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+      }
+    },
+    {
+      "id": "A-craft-01-s13",
+      "answer": "immaculate",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "After the bath, the ___ puppy left no paw prints indoors.",
+      "cue_phrase": "no paw prints indoors",
+      "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+      }
+    },
+    {
+      "id": "A-craft-01-s14",
+      "answer": "immaculate",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The nurse smiled because the ___ tray held no dust or spills.",
+      "cue_phrase": "no dust or spills",
+      "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+      }
+    },
+    {
+      "id": "A-craft-01-s15",
+      "answer": "immaculate",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The ___ teacup had no tea ring inside or lipstick mark.",
+      "cue_phrase": "no tea ring",
+      "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+      }
+    },
+    {
+      "id": "A-craft-01-s16",
+      "answer": "immaculate",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "After scrubbing, Kai's ___ boots showed not one patch of mud.",
+      "cue_phrase": "not one patch",
+      "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+      }
+    },
+    {
+      "id": "A-craft-01-s17",
+      "answer": "haphazard",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ posters tilted everywhere, taped up with no plan.",
+      "cue_phrase": "with no plan",
+      "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+      }
+    },
+    {
+      "id": "A-craft-01-s18",
+      "answer": "haphazard",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Raj's ___ answer grabbed facts in random order.",
+      "cue_phrase": "random order",
+      "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+      }
+    },
+    {
+      "id": "A-craft-01-s19",
+      "answer": "haphazard",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ picnic blanket had cups, socks, and apples scattered across it.",
+      "cue_phrase": "scattered across it",
+      "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+      }
+    },
+    {
+      "id": "A-craft-01-s20",
+      "answer": "haphazard",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Our ___ tower leaned because blocks stuck out on every side.",
+      "cue_phrase": "blocks stuck out",
+      "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+      }
+    },
+    {
+      "id": "A-craft-01-s21",
+      "answer": "haphazard",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Mira's ___ notes jumped from volcanoes to frogs to football scores.",
+      "cue_phrase": "jumped from volcanoes",
+      "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+      }
+    },
+    {
+      "id": "A-craft-01-s22",
+      "answer": "haphazard",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The scarecrow looked ___, with one boot higher than its hat.",
+      "cue_phrase": "one boot higher",
+      "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+      }
+    },
+    {
+      "id": "A-craft-01-s23",
+      "answer": "haphazard",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The ___ shelves mixed paints, spoons, and marbles wherever space appeared.",
+      "cue_phrase": "wherever space appeared",
+      "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+      }
+    },
+    {
+      "id": "A-craft-01-s24",
+      "answer": "haphazard",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Ben's ___ path zigzagged over flowerbeds instead of using the gate.",
+      "cue_phrase": "zigzagged over flowerbeds",
+      "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+      }
+    },
+    {
+      "id": "A-craft-01-s25",
+      "answer": "subtle",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ colour change barely showed along the dragon's wing.",
+      "cue_phrase": "barely showed",
+      "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+      }
+    },
+    {
+      "id": "A-craft-01-s26",
+      "answer": "subtle",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The fox's ___ clue was visible only under moonlight.",
+      "cue_phrase": "visible only under moonlight",
+      "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+      }
+    },
+    {
+      "id": "A-craft-01-s27",
+      "answer": "subtle",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Lila noticed the ___ mint taste after the second sip.",
+      "cue_phrase": "after the second sip",
+      "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+      }
+    },
+    {
+      "id": "A-craft-01-s28",
+      "answer": "subtle",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "On stage, the ___ wink lasted less than a heartbeat.",
+      "cue_phrase": "less than a heartbeat",
+      "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+      }
+    },
+    {
+      "id": "A-craft-01-s29",
+      "answer": "subtle",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Mum's ___ nod was so quick that only Amir saw it.",
+      "cue_phrase": "only Amir saw",
+      "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+      }
+    },
+    {
+      "id": "A-craft-01-s30",
+      "answer": "subtle",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The ___ hum in the cave stopped when everyone held still.",
+      "cue_phrase": "everyone held still",
+      "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+      }
+    },
+    {
+      "id": "A-craft-01-s31",
+      "answer": "subtle",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The ___ stripe on the beetle appeared only when it turned.",
+      "cue_phrase": "appeared only when",
+      "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+      }
+    },
+    {
+      "id": "A-craft-01-s32",
+      "answer": "subtle",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Jae's ___ pinch of spice was something nobody named at lunch.",
+      "cue_phrase": "nobody named",
+      "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+      }
+    },
+    {
+      "id": "A-craft-01-s33",
+      "answer": "intricate",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ clock opened to show dozens of tiny wheels and springs.",
+      "cue_phrase": "dozens of tiny wheels",
+      "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+      }
+    },
+    {
+      "id": "A-craft-01-s34",
+      "answer": "intricate",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ necklace twisted through forty beads, loops, and silver chains.",
+      "cue_phrase": "forty beads, loops",
+      "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+      }
+    },
+    {
+      "id": "A-craft-01-s35",
+      "answer": "intricate",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "We unfolded the ___ map, tracing tunnels crossing under bridges and towers.",
+      "cue_phrase": "tunnels crossing under",
+      "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (meticulous); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-craft-01-s36",
+      "answer": "intricate",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ snowflake drawing had branching arms, dots, and lace-like holes.",
+      "cue_phrase": "branching arms, dots",
+      "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (meticulous); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-craft-01-s37",
+      "answer": "intricate",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "It took Ana an hour to copy the ___ knot on the shield.",
+      "cue_phrase": "hour to copy",
+      "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+      }
+    },
+    {
+      "id": "A-craft-01-s38",
+      "answer": "intricate",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The spider's ___ web trapped dew in rings, spokes, and zigzags.",
+      "cue_phrase": "rings, spokes, and zigzags",
+      "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (meticulous); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-craft-01-s39",
+      "answer": "intricate",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The ___ palace gate used hundreds of curls, bars, and hinges.",
+      "cue_phrase": "hundreds of curls",
+      "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+      }
+    },
+    {
+      "id": "A-craft-01-s40",
+      "answer": "intricate",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Inside the ___ music box, gears turned birds, moons, and waves.",
+      "cue_phrase": "gears turned birds",
+      "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "meticulous",
+      "picked": "immaculate",
+      "line": "Meticulous checks every tiny bit; immaculate has no dirt or smudges."
+    },
+    {
+      "answer": "meticulous",
+      "picked": "haphazard",
+      "line": "Meticulous follows exact steps; haphazard is thrown around with no plan."
+    },
+    {
+      "answer": "meticulous",
+      "picked": "subtle",
+      "line": "Meticulous is careful about tiny bits; subtle is hard to notice."
+    },
+    {
+      "answer": "meticulous",
+      "picked": "intricate",
+      "line": "Meticulous checks each bit; intricate has lots of linked pieces."
+    },
+    {
+      "answer": "immaculate",
+      "picked": "meticulous",
+      "line": "Immaculate has no dirt or smudges; meticulous means every tiny bit was checked."
+    },
+    {
+      "answer": "immaculate",
+      "picked": "haphazard",
+      "line": "Immaculate is spotless; haphazard is messy and unplanned."
+    },
+    {
+      "answer": "immaculate",
+      "picked": "subtle",
+      "line": "Immaculate is spotless; subtle is hard to notice."
+    },
+    {
+      "answer": "immaculate",
+      "picked": "intricate",
+      "line": "Immaculate has no marks; intricate has lots of linked pieces."
+    },
+    {
+      "answer": "haphazard",
+      "picked": "meticulous",
+      "line": "Haphazard is unplanned and messy; meticulous checks each tiny bit."
+    },
+    {
+      "answer": "haphazard",
+      "picked": "immaculate",
+      "line": "Haphazard is messy and unplanned; immaculate is spotless."
+    },
+    {
+      "answer": "haphazard",
+      "picked": "subtle",
+      "line": "Haphazard looks thrown around; subtle is hard to notice."
+    },
+    {
+      "answer": "haphazard",
+      "picked": "intricate",
+      "line": "Haphazard lacks a plan; intricate has lots of linked pieces."
+    },
+    {
+      "answer": "subtle",
+      "picked": "meticulous",
+      "line": "Subtle is hard to notice; meticulous checks each tiny bit."
+    },
+    {
+      "answer": "subtle",
+      "picked": "immaculate",
+      "line": "Subtle is hard to notice; immaculate is spotless."
+    },
+    {
+      "answer": "subtle",
+      "picked": "haphazard",
+      "line": "Subtle is hard to notice; haphazard looks thrown around."
+    },
+    {
+      "answer": "subtle",
+      "picked": "intricate",
+      "line": "Subtle is hard to notice; intricate has lots of linked pieces."
+    },
+    {
+      "answer": "intricate",
+      "picked": "meticulous",
+      "line": "Intricate has lots of linked pieces; meticulous checks each tiny bit."
+    },
+    {
+      "answer": "intricate",
+      "picked": "immaculate",
+      "line": "Intricate has lots of linked pieces; immaculate is spotless."
+    },
+    {
+      "answer": "intricate",
+      "picked": "haphazard",
+      "line": "Intricate has lots of linked pieces; haphazard is unplanned and messy."
+    },
+    {
+      "answer": "intricate",
+      "picked": "subtle",
+      "line": "Intricate has lots of linked pieces; subtle is hard to notice."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-06T14:20:43+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": "2026-07-07",
+    "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+  }
+}

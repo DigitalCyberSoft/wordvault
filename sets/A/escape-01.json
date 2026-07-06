@@ -1,0 +1,985 @@
+{
+  "id": "A-escape-01",
+  "bank": "A",
+  "pos": "verb",
+  "theme": "ways of avoiding danger or capture",
+  "band": 4,
+  "band_override": 4,
+  "computed": {
+    "zipf_min": 2.55,
+    "zipf_mean": 3.4,
+    "tightness": 0.257,
+    "band_suggested": 3,
+    "scored_at": "2026-07-06T18:43:21+00:00"
+  },
+  "words": [
+    {
+      "w": "evade",
+      "synset": "evade.v.04",
+      "gloss_source": "wordnet",
+      "gloss": "use cunning or deceit to escape or avoid",
+      "zipf": 3.39,
+      "register": "neutral",
+      "senses_at_pos": 4,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "evade",
+        "third": "evades",
+        "past": "evaded",
+        "part": "evading"
+      },
+      "discriminator": "escapes by trickery",
+      "grade": 6
+    },
+    {
+      "w": "flee",
+      "synset": "flee.v.01",
+      "gloss_source": "wordnet",
+      "gloss": "run away quickly",
+      "zipf": 3.81,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "flee",
+        "third": "flees",
+        "past": "fled",
+        "part": "fleeing"
+      },
+      "discriminator": "escapes by running",
+      "grade": 4
+    },
+    {
+      "w": "retreat",
+      "synset": "withdraw.v.01",
+      "gloss_source": "authored",
+      "gloss": "pull back from a place in an ordered, deliberate way",
+      "zipf": 4.13,
+      "register": "neutral",
+      "senses_at_pos": 4,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "retreat",
+        "third": "retreats",
+        "past": "retreated",
+        "part": "retreating"
+      },
+      "discriminator": "deliberate ordered pull-back",
+      "grade": 5
+    },
+    {
+      "w": "cower",
+      "synset": "huddle.v.02",
+      "gloss_source": "authored",
+      "gloss": "crouch down and curl up small in fear",
+      "zipf": 2.55,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "cower",
+        "third": "cowers",
+        "past": "cowered",
+        "part": "cowering"
+      },
+      "discriminator": "the fear-crouch, going nowhere",
+      "grade": 5
+    },
+    {
+      "w": "lurk",
+      "synset": "lurk.v.01",
+      "gloss_source": "authored",
+      "gloss": "wait hidden, keeping out of sight",
+      "zipf": 3.1,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "lurk",
+        "third": "lurks",
+        "past": "lurked",
+        "part": "lurking"
+      },
+      "discriminator": "concealed waiting",
+      "grade": 5
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-escape-01-s01",
+      "answer": "evade",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "At the gate, Mara tried to ___ by showing a swapped pass.",
+      "cue_phrase": "showing a swapped pass",
+      "surface": {
+        "evade": "evade",
+        "flee": "flee",
+        "retreat": "retreat",
+        "cower": "cower",
+        "lurk": "lurk"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (flee); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-escape-01-s02",
+      "answer": "evade",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The goblin managed to ___ by painting footprints toward the empty shed.",
+      "cue_phrase": "painting footprints toward",
+      "surface": {
+        "evade": "evade",
+        "flee": "flee",
+        "retreat": "retreat",
+        "cower": "cower",
+        "lurk": "lurk"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (flee); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-escape-01-s03",
+      "answer": "evade",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Jin hoped to ___ the roll call by sending his twin to answer in his place.",
+      "cue_phrase": "sending his twin",
+      "surface": {
+        "evade": "evade",
+        "flee": "flee",
+        "retreat": "retreat",
+        "cower": "cower",
+        "lurk": "lurk"
+      }
+    },
+    {
+      "id": "A-escape-01-s04",
+      "answer": "evade",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The mouse tried to ___ by sending the cat toward a squeaky boot.",
+      "cue_phrase": "sending the cat toward",
+      "surface": {
+        "evade": "evade",
+        "flee": "flee",
+        "retreat": "retreat",
+        "cower": "cower",
+        "lurk": "lurk"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (flee); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-escape-01-s05",
+      "answer": "evade",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Pippa tried to ___ the busy troll by propping her hat on the mop.",
+      "cue_phrase": "propping her hat on the mop",
+      "surface": {
+        "evade": "evade",
+        "flee": "flee",
+        "retreat": "retreat",
+        "cower": "cower",
+        "lurk": "lurk"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (flee); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-escape-01-s06",
+      "answer": "evade",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The hare meant to ___ by doubling its trail, not speeding across the field.",
+      "cue_phrase": "doubling its trail",
+      "surface": {
+        "evade": "evade",
+        "flee": "flee",
+        "retreat": "retreat",
+        "cower": "cower",
+        "lurk": "lurk"
+      }
+    },
+    {
+      "id": "A-escape-01-s07",
+      "answer": "evade",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "In tales, the fox ___ by wearing goose feathers past sleepy hounds.",
+      "cue_phrase": "wearing goose feathers",
+      "surface": {
+        "evade": "evades",
+        "flee": "flees",
+        "retreat": "retreats",
+        "cower": "cowers",
+        "lurk": "lurks"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (flee); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-escape-01-s08",
+      "answer": "evade",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Nora planned to ___ by swapping arrows on the maze signs.",
+      "cue_phrase": "swapping arrows on",
+      "surface": {
+        "evade": "evade",
+        "flee": "flee",
+        "retreat": "retreat",
+        "cower": "cower",
+        "lurk": "lurk"
+      }
+    },
+    {
+      "id": "A-escape-01-s09",
+      "answer": "flee",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "When the boiler hissed, the mice ___, dashing through the kitchen door.",
+      "cue_phrase": "dashing through the kitchen",
+      "surface": {
+        "evade": "evaded",
+        "flee": "fled",
+        "retreat": "retreated",
+        "cower": "cowered",
+        "lurk": "lurked"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: dashing at sudden danger carries flee; retreat is an orderly pull-back",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-escape-01-s10",
+      "answer": "flee",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "At the dragon's roar, villagers ___, sprinting over the bridge.",
+      "cue_phrase": "sprinting over the bridge",
+      "surface": {
+        "evade": "evaded",
+        "flee": "fled",
+        "retreat": "retreated",
+        "cower": "cowered",
+        "lurk": "lurked"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: sprinting at the roar carries flee; retreat is an orderly pull-back",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-escape-01-s11",
+      "answer": "flee",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The goats ___ as the wild dog charged, hooves thundering downhill.",
+      "cue_phrase": "hooves thundering downhill",
+      "surface": {
+        "evade": "evaded",
+        "flee": "fled",
+        "retreat": "retreated",
+        "cower": "cowered",
+        "lurk": "lurked"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (retreat); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-escape-01-s12",
+      "answer": "flee",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "When sparks jumped, Sam and Tariq ___, racing straight to the gate.",
+      "cue_phrase": "racing straight to",
+      "surface": {
+        "evade": "evaded",
+        "flee": "fled",
+        "retreat": "retreated",
+        "cower": "cowered",
+        "lurk": "lurked"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (retreat); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-escape-01-s13",
+      "answer": "flee",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The bull snorted, and the children ___, trainers slapping pavement.",
+      "cue_phrase": "trainers slapping pavement",
+      "surface": {
+        "evade": "evaded",
+        "flee": "fled",
+        "retreat": "retreated",
+        "cower": "cowered",
+        "lurk": "lurked"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (retreat); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-escape-01-s14",
+      "answer": "flee",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "A crash shook the tent, so the scouts ___, legs pumping for camp.",
+      "cue_phrase": "legs pumping for camp",
+      "surface": {
+        "evade": "evaded",
+        "flee": "fled",
+        "retreat": "retreated",
+        "cower": "cowered",
+        "lurk": "lurked"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (retreat); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-escape-01-s15",
+      "answer": "flee",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "When the bees poured out, we ___ shrieking toward the pond at full speed.",
+      "cue_phrase": "shrieking toward the pond",
+      "surface": {
+        "evade": "evade",
+        "flee": "flee",
+        "retreat": "retreat",
+        "cower": "cower",
+        "lurk": "lurk"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (retreat); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-escape-01-s16",
+      "answer": "flee",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The thunderclap made the ponies ___, galloping across the field.",
+      "cue_phrase": "galloping across the field",
+      "surface": {
+        "evade": "evade",
+        "flee": "flee",
+        "retreat": "retreat",
+        "cower": "cower",
+        "lurk": "lurk"
+      }
+    },
+    {
+      "id": "A-escape-01-s17",
+      "answer": "retreat",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "At the captain's signal, the chess soldiers ___ in a neat line.",
+      "cue_phrase": "in a neat line",
+      "surface": {
+        "evade": "evaded",
+        "flee": "fled",
+        "retreat": "retreated",
+        "cower": "cowered",
+        "lurk": "lurked"
+      }
+    },
+    {
+      "id": "A-escape-01-s18",
+      "answer": "retreat",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The hikers ___ step by step when the snow bridge cracked.",
+      "cue_phrase": "step by step",
+      "surface": {
+        "evade": "evaded",
+        "flee": "fled",
+        "retreat": "retreated",
+        "cower": "cowered",
+        "lurk": "lurked"
+      }
+    },
+    {
+      "id": "A-escape-01-s19",
+      "answer": "retreat",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "After the whistle, the swimmers ___ lane by lane to the ropes.",
+      "cue_phrase": "lane by lane",
+      "surface": {
+        "evade": "evaded",
+        "flee": "fled",
+        "retreat": "retreated",
+        "cower": "cowered",
+        "lurk": "lurked"
+      }
+    },
+    {
+      "id": "A-escape-01-s20",
+      "answer": "retreat",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ants ___ in columns as the puddle spread across the path.",
+      "cue_phrase": "in columns as",
+      "surface": {
+        "evade": "evaded",
+        "flee": "fled",
+        "retreat": "retreated",
+        "cower": "cowered",
+        "lurk": "lurked"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (flee); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-escape-01-s21",
+      "answer": "retreat",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Seeing the giant footprint, the party ___ shield by shield to the safe line.",
+      "cue_phrase": "shield by shield",
+      "surface": {
+        "evade": "evaded",
+        "flee": "fled",
+        "retreat": "retreated",
+        "cower": "cowered",
+        "lurk": "lurked"
+      }
+    },
+    {
+      "id": "A-escape-01-s22",
+      "answer": "retreat",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The band ___ three steps at a time while still playing.",
+      "cue_phrase": "while still playing",
+      "surface": {
+        "evade": "evaded",
+        "flee": "fled",
+        "retreat": "retreated",
+        "cower": "cowered",
+        "lurk": "lurked"
+      }
+    },
+    {
+      "id": "A-escape-01-s23",
+      "answer": "retreat",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Coach told the class to ___ from the flooded cones in pairs, at walking pace.",
+      "cue_phrase": "in pairs",
+      "surface": {
+        "evade": "evade",
+        "flee": "flee",
+        "retreat": "retreat",
+        "cower": "cower",
+        "lurk": "lurk"
+      }
+    },
+    {
+      "id": "A-escape-01-s24",
+      "answer": "retreat",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The knights began ___ in formation when the wooden gate groaned.",
+      "cue_phrase": "in formation",
+      "surface": {
+        "evade": "evading",
+        "flee": "fleeing",
+        "retreat": "retreating",
+        "cower": "cowering",
+        "lurk": "lurking"
+      }
+    },
+    {
+      "id": "A-escape-01-s25",
+      "answer": "cower",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "During the fireworks, the puppy ___ under the chair, trembling with chin down.",
+      "cue_phrase": "trembling with chin down",
+      "surface": {
+        "evade": "evaded",
+        "flee": "fled",
+        "retreat": "retreated",
+        "cower": "cowered",
+        "lurk": "lurked"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (flee, retreat); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-escape-01-s26",
+      "answer": "cower",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "When the ogre shouted, Ben ___ behind the barrel, knees against his chest.",
+      "cue_phrase": "knees against his chest",
+      "surface": {
+        "evade": "evaded",
+        "flee": "fled",
+        "retreat": "retreated",
+        "cower": "cowered",
+        "lurk": "lurked"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (flee, retreat); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-escape-01-s27",
+      "answer": "cower",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The kitten ___ beneath the sofa, ears flat, while thunder rattled the windows.",
+      "cue_phrase": "ears flat",
+      "surface": {
+        "evade": "evaded",
+        "flee": "fled",
+        "retreat": "retreated",
+        "cower": "cowered",
+        "lurk": "lurked"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (flee, retreat); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-escape-01-s28",
+      "answer": "cower",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Mina ___ in the corner, arms over her head, as plates smashed.",
+      "cue_phrase": "arms over her head",
+      "surface": {
+        "evade": "evaded",
+        "flee": "fled",
+        "retreat": "retreated",
+        "cower": "cowered",
+        "lurk": "lurked"
+      }
+    },
+    {
+      "id": "A-escape-01-s29",
+      "answer": "cower",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The dragon sneezed sparks, and the squire ___ behind his round shield, shaking.",
+      "cue_phrase": "round shield, shaking",
+      "surface": {
+        "evade": "evaded",
+        "flee": "fled",
+        "retreat": "retreated",
+        "cower": "cowered",
+        "lurk": "lurked"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (retreat); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-escape-01-s30",
+      "answer": "cower",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "After the mask roared, Leo ___ on the floor with knees tucked.",
+      "cue_phrase": "knees tucked",
+      "surface": {
+        "evade": "evaded",
+        "flee": "fled",
+        "retreat": "retreated",
+        "cower": "cowered",
+        "lurk": "lurked"
+      }
+    },
+    {
+      "id": "A-escape-01-s31",
+      "answer": "cower",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The alarm made the rabbits ___ beneath the hutch, pressed together.",
+      "cue_phrase": "pressed together",
+      "surface": {
+        "evade": "evade",
+        "flee": "flee",
+        "retreat": "retreat",
+        "cower": "cower",
+        "lurk": "lurk"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (flee, retreat); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-escape-01-s32",
+      "answer": "cower",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "In the ghost story, the prince began ___ with his blanket over him at each moan.",
+      "cue_phrase": "at each moan",
+      "surface": {
+        "evade": "evading",
+        "flee": "fleeing",
+        "retreat": "retreating",
+        "cower": "cowering",
+        "lurk": "lurking"
+      }
+    },
+    {
+      "id": "A-escape-01-s33",
+      "answer": "lurk",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The tiger ___ among the reeds until the deer bent down.",
+      "cue_phrase": "among the reeds until",
+      "surface": {
+        "evade": "evaded",
+        "flee": "fled",
+        "retreat": "retreated",
+        "cower": "cowered",
+        "lurk": "lurked"
+      }
+    },
+    {
+      "id": "A-escape-01-s34",
+      "answer": "lurk",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "A pirate ___ behind the curtain, ready to grab the treasure map.",
+      "cue_phrase": "behind the curtain",
+      "surface": {
+        "evade": "evaded",
+        "flee": "fled",
+        "retreat": "retreated",
+        "cower": "cowered",
+        "lurk": "lurked"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (retreat); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-escape-01-s35",
+      "answer": "lurk",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The spider ___ under the leaf until a fly landed nearby.",
+      "cue_phrase": "until a fly landed",
+      "surface": {
+        "evade": "evaded",
+        "flee": "fled",
+        "retreat": "retreated",
+        "cower": "cowered",
+        "lurk": "lurked"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (retreat); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-escape-01-s36",
+      "answer": "lurk",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The goalie ___ behind the post until the striker looked left.",
+      "cue_phrase": "until the striker looked",
+      "surface": {
+        "evade": "evaded",
+        "flee": "fled",
+        "retreat": "retreated",
+        "cower": "cowered",
+        "lurk": "lurked"
+      }
+    },
+    {
+      "id": "A-escape-01-s37",
+      "answer": "lurk",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The crocodile ___ just below the log, eyes level with water, as ducks paddled near.",
+      "cue_phrase": "ducks paddled near",
+      "surface": {
+        "evade": "evaded",
+        "flee": "fled",
+        "retreat": "retreated",
+        "cower": "cowered",
+        "lurk": "lurked"
+      }
+    },
+    {
+      "id": "A-escape-01-s38",
+      "answer": "lurk",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "In the dark pantry, a mouse ___ behind flour sacks before midnight snacks.",
+      "cue_phrase": "before midnight snacks",
+      "surface": {
+        "evade": "evaded",
+        "flee": "fled",
+        "retreat": "retreated",
+        "cower": "cowered",
+        "lurk": "lurked"
+      }
+    },
+    {
+      "id": "A-escape-01-s39",
+      "answer": "lurk",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The goblin liked to ___ under bridges until travellers crossed.",
+      "cue_phrase": "until travellers cross",
+      "surface": {
+        "evade": "evade",
+        "flee": "flee",
+        "retreat": "retreat",
+        "cower": "cower",
+        "lurk": "lurk"
+      }
+    },
+    {
+      "id": "A-escape-01-s40",
+      "answer": "lurk",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Something was ___ in the bushes, rustling only when we passed.",
+      "cue_phrase": "when we passed",
+      "surface": {
+        "evade": "evading",
+        "flee": "fleeing",
+        "retreat": "retreating",
+        "cower": "cowering",
+        "lurk": "lurking"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (cower); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "evade",
+      "picked": "flee",
+      "line": "Evade means getting past by a trick; flee means leaving fast."
+    },
+    {
+      "answer": "evade",
+      "picked": "retreat",
+      "line": "Evade uses a trick to slip past; retreat is a planned move to safer ground."
+    },
+    {
+      "answer": "evade",
+      "picked": "cower",
+      "line": "Evade is tricking past danger; cower is huddling low because you are scared."
+    },
+    {
+      "answer": "evade",
+      "picked": "lurk",
+      "line": "Evade tricks past a problem; lurk stays out of view and waits."
+    },
+    {
+      "answer": "flee",
+      "picked": "evade",
+      "line": "Flee is fast movement from danger; evade depends on a trick."
+    },
+    {
+      "answer": "flee",
+      "picked": "retreat",
+      "line": "Flee is hurried; retreat is controlled and planned."
+    },
+    {
+      "answer": "flee",
+      "picked": "cower",
+      "line": "Flee means leaving fast; cower means shrinking down in fright."
+    },
+    {
+      "answer": "flee",
+      "picked": "lurk",
+      "line": "Flee moves fast from danger; lurk stays still out of view."
+    },
+    {
+      "answer": "retreat",
+      "picked": "evade",
+      "line": "Retreat is a planned move to safety; evade gets past by tricking."
+    },
+    {
+      "answer": "retreat",
+      "picked": "flee",
+      "line": "Retreat is steady and controlled; flee is a fast dash from danger."
+    },
+    {
+      "answer": "retreat",
+      "picked": "cower",
+      "line": "Retreat moves to safer ground; cower stays low and scared."
+    },
+    {
+      "answer": "retreat",
+      "picked": "lurk",
+      "line": "Retreat moves as planned; lurk stays out of view and waits."
+    },
+    {
+      "answer": "cower",
+      "picked": "evade",
+      "line": "Cower is huddling low in fright; evade is tricking past trouble."
+    },
+    {
+      "answer": "cower",
+      "picked": "flee",
+      "line": "Cower stays low from fright; flee leaves fast."
+    },
+    {
+      "answer": "cower",
+      "picked": "retreat",
+      "line": "Cower is a scared huddle; retreat is a planned move to safety."
+    },
+    {
+      "answer": "cower",
+      "picked": "lurk",
+      "line": "Cower shows fright; lurk is quiet hiding while waiting."
+    },
+    {
+      "answer": "lurk",
+      "picked": "evade",
+      "line": "Lurk means staying out of view to wait; evade means getting past by a trick."
+    },
+    {
+      "answer": "lurk",
+      "picked": "flee",
+      "line": "Lurk stays out of view; flee leaves fast."
+    },
+    {
+      "answer": "lurk",
+      "picked": "retreat",
+      "line": "Lurk stays out of view and waits; retreat moves to safety as planned."
+    },
+    {
+      "answer": "lurk",
+      "picked": "cower",
+      "line": "Lurk is quiet waiting out of view; cower is huddling in fright."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-06T14:30:09+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": "2026-07-07",
+    "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+  }
+}

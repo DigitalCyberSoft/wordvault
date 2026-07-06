@@ -1,0 +1,834 @@
+{
+  "id": "A-feelings-01",
+  "bank": "A",
+  "pos": "adjective",
+  "theme": "exactly how they felt",
+  "band": 4,
+  "band_override": 4,
+  "computed": {
+    "zipf_min": 2.71,
+    "zipf_mean": 2.98,
+    "tightness": null,
+    "band_suggested": 4,
+    "scored_at": "2026-07-06T18:43:21+00:00"
+  },
+  "words": [
+    {
+      "w": "smug",
+      "synset": "smug.s.01",
+      "gloss_source": "authored",
+      "gloss": "too pleased with yourself, in a way that annoys other people",
+      "zipf": 3.31,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "smug"
+      },
+      "discriminator": "too pleased with yourself",
+      "grade": 5
+    },
+    {
+      "w": "flustered",
+      "synset": "flustered.s.01",
+      "gloss_source": "authored",
+      "gloss": "so rattled and confused that you cannot think straight",
+      "zipf": 2.93,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "flustered"
+      },
+      "discriminator": "too rattled to think",
+      "grade": 5
+    },
+    {
+      "w": "exasperated",
+      "synset": "exasperated.s.01",
+      "gloss_source": "wordnet",
+      "gloss": "greatly annoyed; out of patience",
+      "zipf": 2.94,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "exasperated"
+      },
+      "discriminator": "patience used up by repeats",
+      "grade": 6
+    },
+    {
+      "w": "apprehensive",
+      "synset": "apprehensive.s.03",
+      "gloss_source": "authored",
+      "gloss": "full of fear about something that has not happened yet",
+      "zipf": 3.03,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "apprehensive"
+      },
+      "discriminator": "dreading what is coming",
+      "grade": 7
+    },
+    {
+      "w": "wistful",
+      "synset": "pensive.s.02",
+      "gloss_source": "authored",
+      "gloss": "quietly sad, longing for something that is gone or out of reach",
+      "zipf": 2.71,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "wistful"
+      },
+      "discriminator": "gently longing for what is gone",
+      "grade": 7
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-feelings-01-s01",
+      "answer": "smug",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Leo wore a ___ grin, reminding everyone he had never lost at chess.",
+      "cue_phrase": "reminding everyone he had never lost",
+      "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+      }
+    },
+    {
+      "id": "A-feelings-01-s02",
+      "answer": "smug",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "With a ___ smile, Mia said, 'I knew my tower was best.'",
+      "cue_phrase": "my tower was best",
+      "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+      }
+    },
+    {
+      "id": "A-feelings-01-s03",
+      "answer": "smug",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Sam leaned back, ___, while his gold star shone above the class chart.",
+      "cue_phrase": "gold star shone",
+      "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+      }
+    },
+    {
+      "id": "A-feelings-01-s04",
+      "answer": "smug",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "After scoring, Nia looked ___ and tapped her name at the top.",
+      "cue_phrase": "name at the top",
+      "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+      }
+    },
+    {
+      "id": "A-feelings-01-s05",
+      "answer": "smug",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "When the robot worked, Omar felt ___, bowing as if the prize was his.",
+      "cue_phrase": "prize was his",
+      "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+      }
+    },
+    {
+      "id": "A-feelings-01-s06",
+      "answer": "smug",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Jade felt ___ after whispering, 'Told you,' at the finished puzzle.",
+      "cue_phrase": "Told you",
+      "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+      }
+    },
+    {
+      "id": "A-feelings-01-s07",
+      "answer": "smug",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The captain sounded ___ as he polished the cup before the race ended.",
+      "cue_phrase": "before the race ended",
+      "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+      }
+    },
+    {
+      "id": "A-feelings-01-s08",
+      "answer": "smug",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Ravi feels ___ when he winks at his own perfect test score.",
+      "cue_phrase": "own perfect test score",
+      "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+      }
+    },
+    {
+      "id": "A-feelings-01-s09",
+      "answer": "flustered",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Under the timer, Ben grew ___ and called the cat a kettle.",
+      "cue_phrase": "cat a kettle",
+      "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+      }
+    },
+    {
+      "id": "A-feelings-01-s10",
+      "answer": "flustered",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Asked three questions at once, Lara became ___ and forgot her name.",
+      "cue_phrase": "forgot her name",
+      "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+      }
+    },
+    {
+      "id": "A-feelings-01-s11",
+      "answer": "flustered",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The bell rang early, and Tom felt ___, stuffing homework into his lunchbox.",
+      "cue_phrase": "homework into his lunchbox",
+      "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+      }
+    },
+    {
+      "id": "A-feelings-01-s12",
+      "answer": "flustered",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "On stage, Priya sounded ___, skipping lines and naming the dragon Fred.",
+      "cue_phrase": "skipping lines",
+      "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (apprehensive); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-feelings-01-s13",
+      "answer": "flustered",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "When the lights flashed, Max went ___ and put both shoes on one foot.",
+      "cue_phrase": "both shoes on one",
+      "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+      }
+    },
+    {
+      "id": "A-feelings-01-s14",
+      "answer": "flustered",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "With six hands waving, Ella got ___ and answered the wrong page.",
+      "cue_phrase": "answered the wrong page",
+      "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+      }
+    },
+    {
+      "id": "A-feelings-01-s15",
+      "answer": "flustered",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "During the quiz, Noor was ___, writing her surname in the answer box.",
+      "cue_phrase": "surname in the answer",
+      "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+      }
+    },
+    {
+      "id": "A-feelings-01-s16",
+      "answer": "flustered",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "A surprise visitor made Finn ___; he thanked the chair instead.",
+      "cue_phrase": "thanked the chair instead",
+      "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+      }
+    },
+    {
+      "id": "A-feelings-01-s17",
+      "answer": "exasperated",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "After the fifth interruption, Mum looked ___ and put down her book.",
+      "cue_phrase": "fifth interruption",
+      "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+      }
+    },
+    {
+      "id": "A-feelings-01-s18",
+      "answer": "exasperated",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Mr Hale sounded ___ when the same joke stopped class again.",
+      "cue_phrase": "same joke stopped class",
+      "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+      }
+    },
+    {
+      "id": "A-feelings-01-s19",
+      "answer": "exasperated",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The puppy chewed another slipper, and Dad grew ___ beside the mess.",
+      "cue_phrase": "chewed another slipper",
+      "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+      }
+    },
+    {
+      "id": "A-feelings-01-s20",
+      "answer": "exasperated",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Zara felt ___ after asking her brother twice to close the gate.",
+      "cue_phrase": "asking her brother twice",
+      "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+      }
+    },
+    {
+      "id": "A-feelings-01-s21",
+      "answer": "exasperated",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "By the third false alarm, the guard was ___ and rubbed his face.",
+      "cue_phrase": "third false alarm",
+      "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+      }
+    },
+    {
+      "id": "A-feelings-01-s22",
+      "answer": "exasperated",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "When the tap dripped all night, Grandpa became ___ at breakfast.",
+      "cue_phrase": "dripped all night",
+      "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+      }
+    },
+    {
+      "id": "A-feelings-01-s23",
+      "answer": "exasperated",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The coach looked ___ as the team missed the easy throw again.",
+      "cue_phrase": "easy throw again",
+      "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (flustered); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-feelings-01-s24",
+      "answer": "exasperated",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "After ten reminders, Asha's sister was ___ about the muddy boots.",
+      "cue_phrase": "After ten reminders",
+      "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+      }
+    },
+    {
+      "id": "A-feelings-01-s25",
+      "answer": "apprehensive",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Before the dentist called, I felt ___ and gripped the chair arms.",
+      "cue_phrase": "Before the dentist called",
+      "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+      }
+    },
+    {
+      "id": "A-feelings-01-s26",
+      "answer": "apprehensive",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "At the cave mouth, Mina was ___ about the dark tunnel ahead.",
+      "cue_phrase": "dark tunnel ahead",
+      "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+      }
+    },
+    {
+      "id": "A-feelings-01-s27",
+      "answer": "apprehensive",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The exam paper lay face down, and Hal looked ___ before turning it.",
+      "cue_phrase": "before turning it",
+      "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+      }
+    },
+    {
+      "id": "A-feelings-01-s28",
+      "answer": "apprehensive",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Rain clouds gathered, making the hikers ___ about crossing the bridge later.",
+      "cue_phrase": "crossing the bridge later",
+      "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+      }
+    },
+    {
+      "id": "A-feelings-01-s29",
+      "answer": "apprehensive",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Kit waited ___ outside the head teacher's office, staring at the door.",
+      "cue_phrase": "staring at the door",
+      "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+      }
+    },
+    {
+      "id": "A-feelings-01-s30",
+      "answer": "apprehensive",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Before her solo, Anya felt ___, hearing the hall fill up.",
+      "cue_phrase": "Before her solo",
+      "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (flustered); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-feelings-01-s31",
+      "answer": "apprehensive",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The locked chest made Pip ___; the wizard's warning echoed ahead.",
+      "cue_phrase": "wizard's warning echoed ahead",
+      "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+      }
+    },
+    {
+      "id": "A-feelings-01-s32",
+      "answer": "apprehensive",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "Tom was ___ as the big dog bounded towards the gate.",
+      "cue_phrase": "bounded towards the gate",
+      "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (flustered); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-feelings-01-s33",
+      "answer": "wistful",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Looking at her old skates, Eva felt ___ about winter afternoons.",
+      "cue_phrase": "old skates",
+      "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+      }
+    },
+    {
+      "id": "A-feelings-01-s34",
+      "answer": "wistful",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Grandad sounded ___ as he watched trains leave for his childhood town.",
+      "cue_phrase": "his childhood town",
+      "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+      }
+    },
+    {
+      "id": "A-feelings-01-s35",
+      "answer": "wistful",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "At sunset, Lily grew ___, holding the tiny jumper she once wore.",
+      "cue_phrase": "once wore",
+      "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+      }
+    },
+    {
+      "id": "A-feelings-01-s36",
+      "answer": "wistful",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Rafi was ___ beside the empty kennel, remembering his shaggy old dog.",
+      "cue_phrase": "empty kennel",
+      "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+      }
+    },
+    {
+      "id": "A-feelings-01-s37",
+      "answer": "wistful",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The song made Nan ___, and she touched the faded dance ticket.",
+      "cue_phrase": "faded dance ticket",
+      "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+      }
+    },
+    {
+      "id": "A-feelings-01-s38",
+      "answer": "wistful",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Jo looked ___, smiling faintly at her friend's boat sailing away.",
+      "cue_phrase": "friend's boat sailing away",
+      "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+      }
+    },
+    {
+      "id": "A-feelings-01-s39",
+      "answer": "wistful",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Amir felt ___ when the class photo showed last year's seats.",
+      "cue_phrase": "last year's seats",
+      "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+      }
+    },
+    {
+      "id": "A-feelings-01-s40",
+      "answer": "wistful",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "By the boarded-up sweet shop, Bea felt ___ about Saturday coins.",
+      "cue_phrase": "boarded-up sweet shop",
+      "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "smug",
+      "picked": "flustered",
+      "line": "Smug is a gloating winner; flustered is jumbled and unable to answer calmly."
+    },
+    {
+      "answer": "smug",
+      "picked": "exasperated",
+      "line": "Smug is proud of being right; exasperated is fed up after repeats."
+    },
+    {
+      "answer": "smug",
+      "picked": "apprehensive",
+      "line": "Smug expects praise for success; apprehensive worries about what comes next."
+    },
+    {
+      "answer": "smug",
+      "picked": "wistful",
+      "line": "Smug shows off a win; wistful misses a past or distant thing."
+    },
+    {
+      "answer": "flustered",
+      "picked": "smug",
+      "line": "Flustered mixes up words or actions; smug gloats about doing well."
+    },
+    {
+      "answer": "flustered",
+      "picked": "exasperated",
+      "line": "Flustered cannot sort things out; exasperated has had enough of repeats."
+    },
+    {
+      "answer": "flustered",
+      "picked": "apprehensive",
+      "line": "Flustered is jumbled right now; apprehensive is uneasy about what is coming."
+    },
+    {
+      "answer": "flustered",
+      "picked": "wistful",
+      "line": "Flustered drops the plan under pressure; wistful gently misses what is far away."
+    },
+    {
+      "answer": "exasperated",
+      "picked": "smug",
+      "line": "Exasperated is fed up after the same trouble; smug is showing off success."
+    },
+    {
+      "answer": "exasperated",
+      "picked": "flustered",
+      "line": "Exasperated has run out of calm; flustered is muddled and hurried."
+    },
+    {
+      "answer": "exasperated",
+      "picked": "apprehensive",
+      "line": "Exasperated reacts to repeated bother; apprehensive worries before trouble arrives."
+    },
+    {
+      "answer": "exasperated",
+      "picked": "wistful",
+      "line": "Exasperated is sharp after repeats; wistful is soft about what cannot be back."
+    },
+    {
+      "answer": "apprehensive",
+      "picked": "smug",
+      "line": "Apprehensive is uneasy before an event; smug is sure they have already won."
+    },
+    {
+      "answer": "apprehensive",
+      "picked": "flustered",
+      "line": "Apprehensive dreads what may come; flustered is mixed up in the moment."
+    },
+    {
+      "answer": "apprehensive",
+      "picked": "exasperated",
+      "line": "Apprehensive is worried beforehand; exasperated is fed up afterwards."
+    },
+    {
+      "answer": "apprehensive",
+      "picked": "wistful",
+      "line": "Apprehensive looks ahead with worry; wistful looks back with gentle missing."
+    },
+    {
+      "answer": "wistful",
+      "picked": "smug",
+      "line": "Wistful softly misses what is past; smug gloats about a success now."
+    },
+    {
+      "answer": "wistful",
+      "picked": "flustered",
+      "line": "Wistful is calm missing; flustered is hurried muddling."
+    },
+    {
+      "answer": "wistful",
+      "picked": "exasperated",
+      "line": "Wistful is tender about loss; exasperated is fed up with repeated bother."
+    },
+    {
+      "answer": "wistful",
+      "picked": "apprehensive",
+      "line": "Wistful misses what is past or far; apprehensive worries about what is ahead."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-06T14:32:35+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": "2026-07-07",
+    "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+  }
+}

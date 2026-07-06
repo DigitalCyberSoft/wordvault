@@ -1,0 +1,821 @@
+{
+  "id": "A-fortune-01",
+  "bank": "A",
+  "pos": "verb",
+  "theme": "what happened to it as time passed",
+  "band": 5,
+  "band_override": 5,
+  "computed": {
+    "zipf_min": 2.52,
+    "zipf_mean": 3.11,
+    "tightness": 0.293,
+    "band_suggested": 3,
+    "scored_at": "2026-07-06T18:43:21+00:00"
+  },
+  "words": [
+    {
+      "w": "deteriorate",
+      "synset": "devolve.v.03",
+      "gloss_source": "wordnet",
+      "gloss": "grow worse",
+      "zipf": 3.15,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "deteriorate",
+        "third": "deteriorates",
+        "past": "deteriorated",
+        "part": "deteriorating"
+      },
+      "discriminator": "its condition worsened",
+      "grade": 6
+    },
+    {
+      "w": "dwindle",
+      "synset": "dwindle.v.01",
+      "gloss_source": "wordnet",
+      "gloss": "become smaller or lose substance",
+      "zipf": 2.61,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "dwindle",
+        "third": "dwindles",
+        "past": "dwindled",
+        "part": "dwindling"
+      },
+      "discriminator": "shrank away toward nothing",
+      "grade": 6
+    },
+    {
+      "w": "prosper",
+      "synset": "thrive.v.02",
+      "gloss_source": "authored",
+      "gloss": "do well and succeed, going from strength to strength",
+      "zipf": 3.45,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "prosper",
+        "third": "prospers",
+        "past": "prospered",
+        "part": "prospering"
+      },
+      "discriminator": "went from strength to strength",
+      "grade": 5
+    },
+    {
+      "w": "endure",
+      "synset": "prevail.v.03",
+      "gloss_source": "wordnet",
+      "gloss": "continue to exist",
+      "zipf": 3.82,
+      "register": "neutral",
+      "senses_at_pos": 7,
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-06",
+        "note": "dominant school-context sense confirmed at roster vet"
+      },
+      "forms": {
+        "base": "endure",
+        "third": "endures",
+        "past": "endured",
+        "part": "enduring"
+      },
+      "discriminator": "lasted without giving way",
+      "grade": 5
+    },
+    {
+      "w": "relent",
+      "synset": "yield.v.05",
+      "gloss_source": "authored",
+      "gloss": "finally soften and give way after being harsh or fierce",
+      "zipf": 2.52,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "relent",
+        "third": "relents",
+        "past": "relented",
+        "part": "relenting"
+      },
+      "discriminator": "the harshness finally gave way",
+      "grade": 6
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-fortune-01-s01",
+      "answer": "deteriorate",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "After months outside, the toy car ___: rust spotted every wheel.",
+      "cue_phrase": "rust spotted every wheel",
+      "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+      }
+    },
+    {
+      "id": "A-fortune-01-s02",
+      "answer": "deteriorate",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "By spring, the shed ___, with holes in its roof.",
+      "cue_phrase": "holes in its roof",
+      "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+      }
+    },
+    {
+      "id": "A-fortune-01-s03",
+      "answer": "deteriorate",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The damp cellar made the cardboard castle ___ and sag at the towers.",
+      "cue_phrase": "sag at the towers",
+      "surface": {
+        "deteriorate": "deteriorate",
+        "dwindle": "dwindle",
+        "prosper": "prosper",
+        "endure": "endure",
+        "relent": "relent"
+      }
+    },
+    {
+      "id": "A-fortune-01-s04",
+      "answer": "deteriorate",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The bicycle ___ after winter; its chain stuck and tyres split.",
+      "cue_phrase": "chain stuck and tyres",
+      "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+      }
+    },
+    {
+      "id": "A-fortune-01-s05",
+      "answer": "deteriorate",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Rain made the mural ___; bright faces ran into grey streaks.",
+      "cue_phrase": "ran into grey streaks",
+      "surface": {
+        "deteriorate": "deteriorate",
+        "dwindle": "dwindle",
+        "prosper": "prosper",
+        "endure": "endure",
+        "relent": "relent"
+      }
+    },
+    {
+      "id": "A-fortune-01-s06",
+      "answer": "deteriorate",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "When Leo opened the lunchbox, the forgotten sandwich had ___, smelling sour.",
+      "cue_phrase": "smelling sour",
+      "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+      }
+    },
+    {
+      "id": "A-fortune-01-s07",
+      "answer": "deteriorate",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "In salty air, metal ___ until orange flakes cover it.",
+      "cue_phrase": "orange flakes cover",
+      "surface": {
+        "deteriorate": "deteriorates",
+        "dwindle": "dwindles",
+        "prosper": "prospers",
+        "endure": "endures",
+        "relent": "relents"
+      }
+    },
+    {
+      "id": "A-fortune-01-s08",
+      "answer": "deteriorate",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The picnic blanket ___ in the attic; moth holes covered one corner.",
+      "cue_phrase": "moth holes covered",
+      "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+      }
+    },
+    {
+      "id": "A-fortune-01-s09",
+      "answer": "dwindle",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The biscuit pile ___ from twelve to two by lunchtime.",
+      "cue_phrase": "from twelve to two",
+      "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+      }
+    },
+    {
+      "id": "A-fortune-01-s10",
+      "answer": "dwindle",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "By dusk, the campfire ___ to a few red coals.",
+      "cue_phrase": "few red coals",
+      "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+      }
+    },
+    {
+      "id": "A-fortune-01-s11",
+      "answer": "dwindle",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Sharing with neighbours made our water supply ___ before the hike ended.",
+      "cue_phrase": "Sharing with neighbours",
+      "surface": {
+        "deteriorate": "deteriorate",
+        "dwindle": "dwindle",
+        "prosper": "prosper",
+        "endure": "endure",
+        "relent": "relent"
+      }
+    },
+    {
+      "id": "A-fortune-01-s12",
+      "answer": "dwindle",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "As tickets sold, the stack on the desk ___ fast.",
+      "cue_phrase": "tickets sold",
+      "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+      }
+    },
+    {
+      "id": "A-fortune-01-s13",
+      "answer": "dwindle",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "After the squirrels visited, the birdseed ___ to crumbs in the tray.",
+      "cue_phrase": "squirrels visited",
+      "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+      }
+    },
+    {
+      "id": "A-fortune-01-s14",
+      "answer": "dwindle",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "With every throw, the fort's pile of snowballs ___.",
+      "cue_phrase": "With every throw",
+      "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+      }
+    },
+    {
+      "id": "A-fortune-01-s15",
+      "answer": "dwindle",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "A puddle ___ under hot sun, leaving dry rings on the path.",
+      "cue_phrase": "dry rings",
+      "surface": {
+        "deteriorate": "deteriorates",
+        "dwindle": "dwindles",
+        "prosper": "prospers",
+        "endure": "endures",
+        "relent": "relents"
+      }
+    },
+    {
+      "id": "A-fortune-01-s16",
+      "answer": "dwindle",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The magician made the coin pile ___ until one coin remained.",
+      "cue_phrase": "one coin remained",
+      "surface": {
+        "deteriorate": "deteriorate",
+        "dwindle": "dwindle",
+        "prosper": "prosper",
+        "endure": "endure",
+        "relent": "relent"
+      }
+    },
+    {
+      "id": "A-fortune-01-s17",
+      "answer": "prosper",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The little bakery ___; queues stretched round the corner each morning.",
+      "cue_phrase": "queues stretched round",
+      "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+      }
+    },
+    {
+      "id": "A-fortune-01-s18",
+      "answer": "prosper",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Our school chess club ___, winning trophies and doubling its members.",
+      "cue_phrase": "winning trophies and doubling",
+      "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+      }
+    },
+    {
+      "id": "A-fortune-01-s19",
+      "answer": "prosper",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Good soil helped the bean patch ___, filling baskets every weekend.",
+      "cue_phrase": "filling baskets",
+      "surface": {
+        "deteriorate": "deteriorate",
+        "dwindle": "dwindle",
+        "prosper": "prosper",
+        "endure": "endure",
+        "relent": "relent"
+      }
+    },
+    {
+      "id": "A-fortune-01-s20",
+      "answer": "prosper",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Maya's jam stall ___; she needed a second table for jars.",
+      "cue_phrase": "needed a second table",
+      "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+      }
+    },
+    {
+      "id": "A-fortune-01-s21",
+      "answer": "prosper",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "After the new library opened, the reading club ___; every chair filled.",
+      "cue_phrase": "every chair filled",
+      "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+      }
+    },
+    {
+      "id": "A-fortune-01-s22",
+      "answer": "prosper",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The rescued orchard ___, and bees crowded every white blossom.",
+      "cue_phrase": "bees crowded every",
+      "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+      }
+    },
+    {
+      "id": "A-fortune-01-s23",
+      "answer": "prosper",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The village market ___ as new stalls open along both sides of the square.",
+      "cue_phrase": "new stalls open",
+      "surface": {
+        "deteriorate": "deteriorates",
+        "dwindle": "dwindles",
+        "prosper": "prospers",
+        "endure": "endures",
+        "relent": "relents"
+      }
+    },
+    {
+      "id": "A-fortune-01-s24",
+      "answer": "prosper",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The sunny windowsill let the seedlings ___, with new leaves every morning.",
+      "cue_phrase": "new leaves every morning",
+      "surface": {
+        "deteriorate": "deteriorate",
+        "dwindle": "dwindle",
+        "prosper": "prosper",
+        "endure": "endure",
+        "relent": "relent"
+      }
+    },
+    {
+      "id": "A-fortune-01-s25",
+      "answer": "endure",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The stone tower ___ for centuries, with every wall still straight.",
+      "cue_phrase": "every wall still straight",
+      "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+      }
+    },
+    {
+      "id": "A-fortune-01-s26",
+      "answer": "endure",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Grandad's kite ___ ten summers without a tear in the sail.",
+      "cue_phrase": "without a tear",
+      "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+      }
+    },
+    {
+      "id": "A-fortune-01-s27",
+      "answer": "endure",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The lighthouse ___, its lamp still turning, long after the boat sheds had gone.",
+      "cue_phrase": "its lamp still turning",
+      "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+      }
+    },
+    {
+      "id": "A-fortune-01-s28",
+      "answer": "endure",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The family recipe ___, copied neatly from notebook to notebook.",
+      "cue_phrase": "notebook to notebook",
+      "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+      }
+    },
+    {
+      "id": "A-fortune-01-s29",
+      "answer": "endure",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Through house moves and floods, the blue mug ___ on the shelf.",
+      "cue_phrase": "moves and floods",
+      "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+      }
+    },
+    {
+      "id": "A-fortune-01-s30",
+      "answer": "endure",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Three hundred years on, the stone bridge ___, carrying carts then cars then bikes.",
+      "cue_phrase": "Three hundred years on",
+      "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+      }
+    },
+    {
+      "id": "A-fortune-01-s31",
+      "answer": "endure",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "A good tent ___ years of camping and still keeps rain out.",
+      "cue_phrase": "still keeps rain out",
+      "surface": {
+        "deteriorate": "deteriorates",
+        "dwindle": "dwindles",
+        "prosper": "prospers",
+        "endure": "endures",
+        "relent": "relents"
+      }
+    },
+    {
+      "id": "A-fortune-01-s32",
+      "answer": "endure",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Gran's bedtime song ___ through four generations, its words never changing.",
+      "cue_phrase": "its words never changing",
+      "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+      }
+    },
+    {
+      "id": "A-fortune-01-s33",
+      "answer": "relent",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "After three polite pleas, the guard ___ and opened the gate.",
+      "cue_phrase": "opened the gate",
+      "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+      }
+    },
+    {
+      "id": "A-fortune-01-s34",
+      "answer": "relent",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Mum ___ after bedtime stories, allowing one quiet chapter.",
+      "cue_phrase": "allowing one quiet chapter",
+      "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+      }
+    },
+    {
+      "id": "A-fortune-01-s35",
+      "answer": "relent",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The puppy's sad eyes made Omar ___ about the sofa rule.",
+      "cue_phrase": "puppy's sad eyes",
+      "surface": {
+        "deteriorate": "deteriorate",
+        "dwindle": "dwindle",
+        "prosper": "prosper",
+        "endure": "endure",
+        "relent": "relent"
+      }
+    },
+    {
+      "id": "A-fortune-01-s36",
+      "answer": "relent",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "At last, the captain ___, letting the tired crew rest.",
+      "cue_phrase": "tired crew rest",
+      "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+      }
+    },
+    {
+      "id": "A-fortune-01-s37",
+      "answer": "relent",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Nia kept apologising, and the teacher ___ about the late book.",
+      "cue_phrase": "kept apologising",
+      "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+      }
+    },
+    {
+      "id": "A-fortune-01-s38",
+      "answer": "relent",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The dragon saw the tiny shield shake, sighed out its smoke, and at last ___.",
+      "cue_phrase": "sighed out its smoke",
+      "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+      }
+    },
+    {
+      "id": "A-fortune-01-s39",
+      "answer": "relent",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Dad usually ___ when we ask kindly and finish chores early.",
+      "cue_phrase": "ask kindly",
+      "surface": {
+        "deteriorate": "deteriorates",
+        "dwindle": "dwindles",
+        "prosper": "prospers",
+        "endure": "endures",
+        "relent": "relents"
+      }
+    },
+    {
+      "id": "A-fortune-01-s40",
+      "answer": "relent",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The council agreed to ___, letting games stay in the park.",
+      "cue_phrase": "games stay",
+      "surface": {
+        "deteriorate": "deteriorate",
+        "dwindle": "dwindle",
+        "prosper": "prosper",
+        "endure": "endure",
+        "relent": "relent"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "deteriorate",
+      "picked": "dwindle",
+      "line": "Deteriorate is about damage over time. Dwindle is about having less and less."
+    },
+    {
+      "answer": "deteriorate",
+      "picked": "prosper",
+      "line": "Deteriorate means condition drops. Prosper means things improve and flourish."
+    },
+    {
+      "answer": "deteriorate",
+      "picked": "endure",
+      "line": "Deteriorate shows damage appearing. Endure shows it lasts without breaking."
+    },
+    {
+      "answer": "deteriorate",
+      "picked": "relent",
+      "line": "Deteriorate is getting damaged. Relent is a strict person easing up."
+    },
+    {
+      "answer": "dwindle",
+      "picked": "deteriorate",
+      "line": "Dwindle means the amount shrinks away. Deteriorate means condition is damaged."
+    },
+    {
+      "answer": "dwindle",
+      "picked": "prosper",
+      "line": "Dwindle is less and less. Prosper is more success and plenty."
+    },
+    {
+      "answer": "dwindle",
+      "picked": "endure",
+      "line": "Dwindle is about quantity fading. Endure is about lasting through trouble."
+    },
+    {
+      "answer": "dwindle",
+      "picked": "relent",
+      "line": "Dwindle means there is less of it. Relent means someone stops being strict."
+    },
+    {
+      "answer": "prosper",
+      "picked": "deteriorate",
+      "line": "Prosper means plenty and success. Deteriorate means damage and decline."
+    },
+    {
+      "answer": "prosper",
+      "picked": "dwindle",
+      "line": "Prosper shows things thriving. Dwindle shows the amount shrinking away."
+    },
+    {
+      "answer": "prosper",
+      "picked": "endure",
+      "line": "Prosper means flourishing, not just lasting. Endure means lasting through trouble."
+    },
+    {
+      "answer": "prosper",
+      "picked": "relent",
+      "line": "Prosper is about success increasing. Relent is about strictness easing."
+    },
+    {
+      "answer": "endure",
+      "picked": "deteriorate",
+      "line": "Endure means lasting through trouble. Deteriorate means getting damaged by it."
+    },
+    {
+      "answer": "endure",
+      "picked": "dwindle",
+      "line": "Endure means it lasts. Dwindle means the amount shrinks away."
+    },
+    {
+      "answer": "endure",
+      "picked": "prosper",
+      "line": "Endure is survival through time. Prosper is thriving with success."
+    },
+    {
+      "answer": "endure",
+      "picked": "relent",
+      "line": "Endure means lasting under pressure. Relent means easing after being strict."
+    },
+    {
+      "answer": "relent",
+      "picked": "deteriorate",
+      "line": "Relent means strictness eases. Deteriorate means condition gets damaged."
+    },
+    {
+      "answer": "relent",
+      "picked": "dwindle",
+      "line": "Relent is about easing a refusal. Dwindle is about an amount shrinking."
+    },
+    {
+      "answer": "relent",
+      "picked": "prosper",
+      "line": "Relent means easing up. Prosper means thriving and gaining success."
+    },
+    {
+      "answer": "relent",
+      "picked": "endure",
+      "line": "Relent means strictness eases. Endure means something lasts through trouble."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-06T14:35:24+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": "2026-07-07",
+    "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+  }
+}

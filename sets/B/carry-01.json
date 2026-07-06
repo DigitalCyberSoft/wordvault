@@ -1,0 +1,877 @@
+{
+  "id": "B-carry-01",
+  "bank": "B",
+  "pos": "verb",
+  "theme": "ways to move things by hand",
+  "band": 1,
+  "band_override": 1,
+  "computed": {
+    "zipf_min": 4.5,
+    "zipf_mean": 4.77,
+    "tightness": 0.314,
+    "band_suggested": 1,
+    "scored_at": "2026-07-06T18:43:21+00:00"
+  },
+  "words": [
+    {
+      "w": "push",
+      "synset": "push.v.01",
+      "gloss_source": "authored",
+      "gloss": "press against something to move it forward or away",
+      "zipf": 4.82,
+      "register": "neutral",
+      "senses_at_pos": 10,
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-07",
+        "note": "dominant school-context sense confirmed at roster vet"
+      },
+      "forms": {
+        "base": "push",
+        "third": "pushes",
+        "past": "pushed",
+        "part": "pushing"
+      },
+      "discriminator": "presses it away from you",
+      "grade": 1
+    },
+    {
+      "w": "pull",
+      "synset": "pull.v.01",
+      "gloss_source": "authored",
+      "gloss": "draw something towards yourself",
+      "zipf": 4.82,
+      "register": "neutral",
+      "senses_at_pos": 17,
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-07",
+        "note": "dominant school-context sense confirmed at roster vet"
+      },
+      "forms": {
+        "base": "pull",
+        "third": "pulls",
+        "past": "pulled",
+        "part": "pulling"
+      },
+      "discriminator": "draws it towards you",
+      "grade": 1
+    },
+    {
+      "w": "lift",
+      "synset": "raise.v.02",
+      "gloss_source": "wordnet",
+      "gloss": "raise from a lower to a higher position",
+      "zipf": 4.5,
+      "register": "neutral",
+      "senses_at_pos": 24,
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-07",
+        "note": "dominant school-context sense confirmed at roster vet"
+      },
+      "forms": {
+        "base": "lift",
+        "third": "lifts",
+        "past": "lifted",
+        "part": "lifting"
+      },
+      "discriminator": "raises it upward",
+      "grade": 1
+    },
+    {
+      "w": "carry",
+      "synset": "transport.v.02",
+      "gloss_source": "wordnet",
+      "gloss": "move while supporting, either in a vehicle or in one's hands or on one's body",
+      "zipf": 4.89,
+      "register": "neutral",
+      "senses_at_pos": 40,
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-07",
+        "note": "dominant school-context sense confirmed at roster vet"
+      },
+      "forms": {
+        "base": "carry",
+        "third": "carries",
+        "past": "carried",
+        "part": "carrying"
+      },
+      "discriminator": "keeps hold of it while travelling",
+      "grade": 1
+    },
+    {
+      "w": "throw",
+      "synset": "throw.v.01",
+      "gloss_source": "authored",
+      "gloss": "send something flying through the air",
+      "zipf": 4.83,
+      "register": "neutral",
+      "senses_at_pos": 15,
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-07",
+        "note": "dominant school-context sense confirmed at roster vet"
+      },
+      "forms": {
+        "base": "throw",
+        "third": "throws",
+        "past": "threw",
+        "part": "throwing"
+      },
+      "discriminator": "lets go so it flies",
+      "grade": 1
+    }
+  ],
+  "sentences": [
+    {
+      "id": "B-carry-01-s01",
+      "answer": "push",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Mia ___ the pram from behind with both palms.",
+      "cue_phrase": "with both palms",
+      "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+      }
+    },
+    {
+      "id": "B-carry-01-s02",
+      "answer": "push",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Dad ___ the stuck door open with his shoulder.",
+      "cue_phrase": "with his shoulder",
+      "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (throw); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-carry-01-s03",
+      "answer": "push",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The coach had Ravi ___ the trolley from behind through the gate.",
+      "cue_phrase": "from behind through the gate",
+      "surface": {
+        "push": "push",
+        "pull": "pull",
+        "lift": "lift",
+        "carry": "carry",
+        "throw": "throw"
+      }
+    },
+    {
+      "id": "B-carry-01-s04",
+      "answer": "push",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Ella ___ the sofa nearer the wall using her flat palms.",
+      "cue_phrase": "using her flat palms",
+      "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+      }
+    },
+    {
+      "id": "B-carry-01-s05",
+      "answer": "push",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Noor ___ the heavy button, and the lights flashed green.",
+      "cue_phrase": "the heavy button",
+      "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+      }
+    },
+    {
+      "id": "B-carry-01-s06",
+      "answer": "push",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "When the swing slowed, Leo ___ his sister's back once.",
+      "cue_phrase": "his sister's back",
+      "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+      }
+    },
+    {
+      "id": "B-carry-01-s07",
+      "answer": "push",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Mum ___ the buggy up the ramp from the rear.",
+      "cue_phrase": "from the rear",
+      "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+      }
+    },
+    {
+      "id": "B-carry-01-s08",
+      "answer": "push",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "A player ___ the red button with one finger to start.",
+      "cue_phrase": "with one finger",
+      "surface": {
+        "push": "pushes",
+        "pull": "pulls",
+        "lift": "lifts",
+        "carry": "carries",
+        "throw": "throws"
+      }
+    },
+    {
+      "id": "B-carry-01-s09",
+      "answer": "pull",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Lila ___ the bucket towards her by the rope.",
+      "cue_phrase": "towards her by the rope",
+      "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+      }
+    },
+    {
+      "id": "B-carry-01-s10",
+      "answer": "pull",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Sam ___ the drawer open by its round handle.",
+      "cue_phrase": "by its round handle",
+      "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+      }
+    },
+    {
+      "id": "B-carry-01-s11",
+      "answer": "pull",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The goat ___ the lead until Ada stumbled beside the fence.",
+      "cue_phrase": "Ada stumbled beside the fence",
+      "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+      }
+    },
+    {
+      "id": "B-carry-01-s12",
+      "answer": "pull",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Nia ___ the blanket closer, tucking it under her chin.",
+      "cue_phrase": "under her chin",
+      "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+      }
+    },
+    {
+      "id": "B-carry-01-s13",
+      "answer": "pull",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "A fish bit, and Asha ___ the line towards the bank.",
+      "cue_phrase": "line towards the bank",
+      "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+      }
+    },
+    {
+      "id": "B-carry-01-s14",
+      "answer": "pull",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The curtain stayed shut until Max ___ the cord beside the window.",
+      "cue_phrase": "cord beside the window",
+      "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+      }
+    },
+    {
+      "id": "B-carry-01-s15",
+      "answer": "pull",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Grandad ___ the cork towards his chest; it popped free.",
+      "cue_phrase": "towards his chest",
+      "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+      }
+    },
+    {
+      "id": "B-carry-01-s16",
+      "answer": "pull",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Zara ___ the sledge behind her across the snow.",
+      "cue_phrase": "behind her across the snow",
+      "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+      }
+    },
+    {
+      "id": "B-carry-01-s17",
+      "answer": "lift",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Bo ___ the suitcase straight up onto the top shelf.",
+      "cue_phrase": "straight up onto",
+      "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+      }
+    },
+    {
+      "id": "B-carry-01-s18",
+      "answer": "lift",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Mina ___ the puppy from the puddle into her arms.",
+      "cue_phrase": "into her arms",
+      "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (pull); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-carry-01-s19",
+      "answer": "lift",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "At the award photo, Omar ___ the cup above his head.",
+      "cue_phrase": "above his head",
+      "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+      }
+    },
+    {
+      "id": "B-carry-01-s20",
+      "answer": "lift",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The nurse asked Omar to ___ his chin for the plaster.",
+      "cue_phrase": "his chin for the plaster",
+      "surface": {
+        "push": "push",
+        "pull": "pull",
+        "lift": "lift",
+        "carry": "carry",
+        "throw": "throw"
+      }
+    },
+    {
+      "id": "B-carry-01-s21",
+      "answer": "lift",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The kitten mewed under the crate, so Priya ___ one corner.",
+      "cue_phrase": "under the crate",
+      "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+      }
+    },
+    {
+      "id": "B-carry-01-s22",
+      "answer": "lift",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "To slide blocks underneath, Lee ___ one table leg for a moment.",
+      "cue_phrase": "slide blocks underneath",
+      "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+      }
+    },
+    {
+      "id": "B-carry-01-s23",
+      "answer": "lift",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Gran ___ the baby to her cheek for a giggly hello.",
+      "cue_phrase": "to her cheek",
+      "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (pull); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-carry-01-s24",
+      "answer": "lift",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Ari ___ the basket from the floor onto the counter.",
+      "cue_phrase": "from the floor onto",
+      "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (carry, throw); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-carry-01-s25",
+      "answer": "carry",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Lena ___ the puppy in her arms to the sofa.",
+      "cue_phrase": "in her arms",
+      "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+      }
+    },
+    {
+      "id": "B-carry-01-s26",
+      "answer": "carry",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Tariq ___ the tray across the room with steady arms.",
+      "cue_phrase": "with steady arms",
+      "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+      }
+    },
+    {
+      "id": "B-carry-01-s27",
+      "answer": "carry",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The teacher asked Maya to ___ the books from class to the bus.",
+      "cue_phrase": "from class to the bus",
+      "surface": {
+        "push": "push",
+        "pull": "pull",
+        "lift": "lift",
+        "carry": "carry",
+        "throw": "throw"
+      }
+    },
+    {
+      "id": "B-carry-01-s28",
+      "answer": "carry",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The mouse was safe as Pip ___ it home in a box.",
+      "cue_phrase": "home in a box",
+      "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+      }
+    },
+    {
+      "id": "B-carry-01-s29",
+      "answer": "carry",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "When the sand burned, Jo ___ the puppy across the beach.",
+      "cue_phrase": "across the beach",
+      "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+      }
+    },
+    {
+      "id": "B-carry-01-s30",
+      "answer": "carry",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "After the vase cracked, Noor ___ it gently to the art room.",
+      "cue_phrase": "gently to the art room",
+      "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+      }
+    },
+    {
+      "id": "B-carry-01-s31",
+      "answer": "carry",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "A waiter ___ soup bowls to tables with level arms.",
+      "cue_phrase": "to tables with level arms",
+      "surface": {
+        "push": "pushes",
+        "pull": "pulls",
+        "lift": "lifts",
+        "carry": "carries",
+        "throw": "throws"
+      }
+    },
+    {
+      "id": "B-carry-01-s32",
+      "answer": "carry",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Auntie ___ the sleeping baby upstairs in a soft blanket.",
+      "cue_phrase": "upstairs in a soft blanket",
+      "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+      }
+    },
+    {
+      "id": "B-carry-01-s33",
+      "answer": "throw",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The coach had Kai ___ the beanbag from ten steps back into the hoop.",
+      "cue_phrase": "from ten steps back",
+      "surface": {
+        "push": "push",
+        "pull": "pull",
+        "lift": "lift",
+        "carry": "carry",
+        "throw": "throw"
+      }
+    },
+    {
+      "id": "B-carry-01-s34",
+      "answer": "throw",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Mira ___ the snowball at the cardboard monster.",
+      "cue_phrase": "at the cardboard monster",
+      "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+      }
+    },
+    {
+      "id": "B-carry-01-s35",
+      "answer": "throw",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Jon ___ the pebble from the bridge; it splashed in the pond.",
+      "cue_phrase": "from the bridge",
+      "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+      }
+    },
+    {
+      "id": "B-carry-01-s36",
+      "answer": "throw",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Luca ___ the ball, and his friend caught it near the tree.",
+      "cue_phrase": "his friend caught it",
+      "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+      }
+    },
+    {
+      "id": "B-carry-01-s37",
+      "answer": "throw",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The hoop was far, but Ana ___ the ball straight in.",
+      "cue_phrase": "The hoop was far",
+      "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+      }
+    },
+    {
+      "id": "B-carry-01-s38",
+      "answer": "throw",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "During the game, Ben ___ the dice; they bounced twice.",
+      "cue_phrase": "they bounced twice",
+      "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+      }
+    },
+    {
+      "id": "B-carry-01-s39",
+      "answer": "throw",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Zed ___ the rope over the high branch on his first try.",
+      "cue_phrase": "over the high branch",
+      "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (lift, pull); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-carry-01-s40",
+      "answer": "throw",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Ivy ___ the paper plane, and it glided to the stage.",
+      "cue_phrase": "paper plane",
+      "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "push",
+      "picked": "pull",
+      "line": "Push sends it from you; pull brings it nearer."
+    },
+    {
+      "answer": "push",
+      "picked": "lift",
+      "line": "Push goes forward or sideways; lift goes upward."
+    },
+    {
+      "answer": "push",
+      "picked": "carry",
+      "line": "Push sends it from you; carry keeps it with you while you travel."
+    },
+    {
+      "answer": "push",
+      "picked": "throw",
+      "line": "Push keeps contact; throw lets go so it flies."
+    },
+    {
+      "answer": "pull",
+      "picked": "push",
+      "line": "Pull brings it nearer; push sends it from you."
+    },
+    {
+      "answer": "pull",
+      "picked": "lift",
+      "line": "Pull brings it nearer; lift takes it upward."
+    },
+    {
+      "answer": "pull",
+      "picked": "carry",
+      "line": "Pull may drag it nearer; carry keeps it with you while you travel."
+    },
+    {
+      "answer": "pull",
+      "picked": "throw",
+      "line": "Pull keeps hold and brings it nearer; throw lets go."
+    },
+    {
+      "answer": "lift",
+      "picked": "push",
+      "line": "Lift takes it upward; push sends it forward from you."
+    },
+    {
+      "answer": "lift",
+      "picked": "pull",
+      "line": "Lift takes it upward; pull brings it nearer."
+    },
+    {
+      "answer": "lift",
+      "picked": "carry",
+      "line": "Lift is mainly upward; carry keeps it with you as you travel."
+    },
+    {
+      "answer": "lift",
+      "picked": "throw",
+      "line": "Lift keeps hold; throw lets go so it flies."
+    },
+    {
+      "answer": "carry",
+      "picked": "push",
+      "line": "Carry keeps it with you while you travel; push sends it from you."
+    },
+    {
+      "answer": "carry",
+      "picked": "pull",
+      "line": "Carry keeps it with you while you travel; pull brings it nearer."
+    },
+    {
+      "answer": "carry",
+      "picked": "lift",
+      "line": "Carry travels with it; lift mainly takes it upward."
+    },
+    {
+      "answer": "carry",
+      "picked": "throw",
+      "line": "Carry keeps hold while travelling; throw lets go."
+    },
+    {
+      "answer": "throw",
+      "picked": "push",
+      "line": "Throw lets go; push keeps contact."
+    },
+    {
+      "answer": "throw",
+      "picked": "pull",
+      "line": "Throw lets go; pull brings it nearer."
+    },
+    {
+      "answer": "throw",
+      "picked": "lift",
+      "line": "Throw makes it fly; lift keeps hold upward."
+    },
+    {
+      "answer": "throw",
+      "picked": "carry",
+      "line": "Throw lets go for flight; carry keeps hold while travelling."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-06T18:27:02+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": "2026-07-07",
+    "scrub_note": "Scrubbed by claude 2026-07-07: mechanical sweeps clean (two snow scenes cleared - no month-absurdity cues, AU-safe), all 40 sentences and 20 contrasts read; no defects found."
+  }
+}

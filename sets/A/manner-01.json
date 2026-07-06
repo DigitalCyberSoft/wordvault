@@ -1,0 +1,954 @@
+{
+  "id": "A-manner-01",
+  "bank": "A",
+  "pos": "adjective",
+  "theme": "the way they acted toward others",
+  "band": 5,
+  "band_override": 5,
+  "computed": {
+    "zipf_min": 2.74,
+    "zipf_mean": 2.96,
+    "tightness": null,
+    "band_suggested": 4,
+    "scored_at": "2026-07-06T18:43:21+00:00"
+  },
+  "words": [
+    {
+      "w": "aloof",
+      "synset": "aloof.s.01",
+      "gloss_source": "wordnet",
+      "gloss": "remote in manner",
+      "zipf": 2.99,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "aloof"
+      },
+      "discriminator": "cold distance; will not join in",
+      "grade": 7
+    },
+    {
+      "w": "nonchalant",
+      "synset": "casual.s.01",
+      "gloss_source": "authored",
+      "gloss": "acting as if you do not care at all about what is happening",
+      "zipf": 2.74,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "nonchalant"
+      },
+      "discriminator": "staged calm about an alarming event",
+      "grade": 7
+    },
+    {
+      "w": "sceptical",
+      "synset": "doubting.s.01",
+      "gloss_source": "wordnet",
+      "gloss": "marked by or given to doubt",
+      "zipf": 3.09,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "sceptical"
+      },
+      "discriminator": "withholds belief until shown proof",
+      "grade": 7
+    },
+    {
+      "w": "curt",
+      "synset": "brusque.s.01",
+      "gloss_source": "authored",
+      "gloss": "rudely brief in speech, using no more words than necessary",
+      "zipf": 3.16,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "curt"
+      },
+      "discriminator": "rudely short answers",
+      "grade": 7
+    },
+    {
+      "w": "incredulous",
+      "synset": "incredulous.a.01",
+      "gloss_source": "authored",
+      "gloss": "unable to believe what you have just seen or heard",
+      "zipf": 2.81,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "incredulous"
+      },
+      "discriminator": "jaw-drop disbelief at news",
+      "grade": 7
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-manner-01-s01",
+      "answer": "aloof",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Mira stayed ___, sitting apart and turning from friendly invitations.",
+      "cue_phrase": "sitting apart and turning",
+      "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (nonchalant); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-manner-01-s02",
+      "answer": "aloof",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The prince was ___, refusing the feast and watching from a balcony.",
+      "cue_phrase": "watching from a balcony",
+      "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (nonchalant); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-manner-01-s03",
+      "answer": "aloof",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "During kite-making, Tomas remained ___ by the fence, ignoring the offered string.",
+      "cue_phrase": "ignoring the offered string",
+      "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (nonchalant); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-manner-01-s04",
+      "answer": "aloof",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Grandma waved him into the photo, but Nico stayed ___ behind the tree.",
+      "cue_phrase": "waved him into the photo",
+      "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+      }
+    },
+    {
+      "id": "A-manner-01-s05",
+      "answer": "aloof",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The puppy wagged at Bea, yet she stood ___ outside the circle.",
+      "cue_phrase": "outside the circle",
+      "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (nonchalant); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-manner-01-s06",
+      "answer": "aloof",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Everyone swapped stickers, while Arin remained ___ at the far desk.",
+      "cue_phrase": "at the far desk",
+      "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (nonchalant); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-manner-01-s07",
+      "answer": "aloof",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The fairy invited the troll dancing, but he stood ___ in shadows.",
+      "cue_phrase": "invited the troll dancing",
+      "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (incredulous, nonchalant, sceptical); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-manner-01-s08",
+      "answer": "aloof",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "At breakfast, Leila was ___, answering smiles with a turned shoulder.",
+      "cue_phrase": "turned shoulder",
+      "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (curt, nonchalant, sceptical); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-manner-01-s09",
+      "answer": "nonchalant",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "As the cake caught fire, Omar looked ___ and kept humming.",
+      "cue_phrase": "cake caught fire",
+      "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+      }
+    },
+    {
+      "id": "A-manner-01-s10",
+      "answer": "nonchalant",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Nia stayed ___ while the boat rocked, sipping juice without spilling.",
+      "cue_phrase": "sipping juice without spilling",
+      "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+      }
+    },
+    {
+      "id": "A-manner-01-s11",
+      "answer": "nonchalant",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "During the surprise drill, Finn seemed ___, tying his shoelaces slowly.",
+      "cue_phrase": "tying his shoelaces slowly",
+      "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+      }
+    },
+    {
+      "id": "A-manner-01-s12",
+      "answer": "nonchalant",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Rain poured through the tent; Lila remained ___ and finished her comic.",
+      "cue_phrase": "finished her comic",
+      "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+      }
+    },
+    {
+      "id": "A-manner-01-s13",
+      "answer": "nonchalant",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "A spider landed on his sleeve, and Jay stayed ___, counting clouds.",
+      "cue_phrase": "counting clouds",
+      "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+      }
+    },
+    {
+      "id": "A-manner-01-s14",
+      "answer": "nonchalant",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The goalpost fell nearby; Rosa looked ___ and chewed her sandwich.",
+      "cue_phrase": "chewed her sandwich",
+      "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (incredulous); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-manner-01-s15",
+      "answer": "nonchalant",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "When thunder shook the windows, Ben was ___, sorting pencils by colour.",
+      "cue_phrase": "sorting pencils by colour",
+      "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+      }
+    },
+    {
+      "id": "A-manner-01-s16",
+      "answer": "nonchalant",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "The dragon sneezed sparks, yet Pip seemed ___ and polished his boots.",
+      "cue_phrase": "polished his boots",
+      "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+      }
+    },
+    {
+      "id": "A-manner-01-s17",
+      "answer": "sceptical",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Maya was ___, asking for proof before accepting the magic trick.",
+      "cue_phrase": "proof before accepting",
+      "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (incredulous); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-manner-01-s18",
+      "answer": "sceptical",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "When Uncle described his record-sized fish, Leo stayed ___ and asked for a photograph.",
+      "cue_phrase": "asked for a photograph",
+      "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (incredulous); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-manner-01-s19",
+      "answer": "sceptical",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The advert said the glue was strongest, so Sam felt ___ and tested it.",
+      "cue_phrase": "tested it",
+      "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (incredulous); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-manner-01-s20",
+      "answer": "sceptical",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "When the seed packet promised blue carrots, Priya felt ___ and read reviews.",
+      "cue_phrase": "read reviews",
+      "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (incredulous); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-manner-01-s21",
+      "answer": "sceptical",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Ravi was ___ when Mina suggested the shortcut again after yesterday's delay.",
+      "cue_phrase": "after yesterday's delay",
+      "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: yesterday's delay = reasoned prior-evidence doubt; incredulous needs astonishment",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-manner-01-s22",
+      "answer": "sceptical",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The twins seemed ___ about the magic pebble after spotting the glued switch.",
+      "cue_phrase": "spotting the glued switch",
+      "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (incredulous); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-manner-01-s23",
+      "answer": "sceptical",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Ari looked ___, checking the score against the rules sheet line by line.",
+      "cue_phrase": "line by line",
+      "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: line-by-line checking is systematic doubt; astonishment trigger removed at iteration 1",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-manner-01-s24",
+      "answer": "sceptical",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "The class stayed ___ until the new robot solved three sums correctly.",
+      "cue_phrase": "solved three sums correctly",
+      "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (incredulous, nonchalant); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-manner-01-s25",
+      "answer": "curt",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "When asked about homework, Kai was ___, snapping, 'Done,' and walking off.",
+      "cue_phrase": "snapping, 'Done,'",
+      "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+      }
+    },
+    {
+      "id": "A-manner-01-s26",
+      "answer": "curt",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The guard sounded ___, saying, 'No,' before pointing at the gate.",
+      "cue_phrase": "saying, 'No,' before",
+      "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+      }
+    },
+    {
+      "id": "A-manner-01-s27",
+      "answer": "curt",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Mum asked kindly; Joss became ___, muttered, 'Later,' and slammed the drawer.",
+      "cue_phrase": "muttered, 'Later,' and slammed",
+      "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+      }
+    },
+    {
+      "id": "A-manner-01-s28",
+      "answer": "curt",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "At the counter, the clerk was ___: 'Next,' without looking up.",
+      "cue_phrase": "'Next,' without looking up",
+      "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (aloof, nonchalant); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-manner-01-s29",
+      "answer": "curt",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "After losing, Tia turned ___ and answered every question with 'Nope.'",
+      "cue_phrase": "every question with 'Nope'",
+      "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (aloof); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-manner-01-s30",
+      "answer": "curt",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The captain grew ___, barking, 'Move,' instead of explaining the plan.",
+      "cue_phrase": "barking, 'Move,' instead",
+      "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+      }
+    },
+    {
+      "id": "A-manner-01-s31",
+      "answer": "curt",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "When Milo apologised, Sera sounded ___: 'Fine,' then closed her book.",
+      "cue_phrase": "'Fine,' then closed",
+      "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (aloof); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-manner-01-s32",
+      "answer": "curt",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "The wizard was ___, grunting, 'Go,' at the nervous travellers.",
+      "cue_phrase": "grunting, 'Go,' at",
+      "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+      }
+    },
+    {
+      "id": "A-manner-01-s33",
+      "answer": "incredulous",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Lena looked ___, jaw dropped, when her tiny pumpkin won first prize.",
+      "cue_phrase": "jaw dropped",
+      "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+      }
+    },
+    {
+      "id": "A-manner-01-s34",
+      "answer": "incredulous",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Rory was ___, whispering 'No way!' as the rabbit opened the latch.",
+      "cue_phrase": "whispering 'No way!'",
+      "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+      }
+    },
+    {
+      "id": "A-manner-01-s35",
+      "answer": "incredulous",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The team gasped and looked ___ when the scoreboard showed fifty points for them.",
+      "cue_phrase": "gasped",
+      "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+      }
+    },
+    {
+      "id": "A-manner-01-s36",
+      "answer": "incredulous",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Nana went wide-eyed and ___ as the quiet parrot recited the whole poem.",
+      "cue_phrase": "wide-eyed",
+      "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+      }
+    },
+    {
+      "id": "A-manner-01-s37",
+      "answer": "incredulous",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Ollie was ___; his mouth hung open at the gold egg.",
+      "cue_phrase": "mouth hung open",
+      "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+      }
+    },
+    {
+      "id": "A-manner-01-s38",
+      "answer": "incredulous",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The baker looked ___, rubbing his eyes, when the loaf rose taller than the table.",
+      "cue_phrase": "rubbing his eyes",
+      "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+      }
+    },
+    {
+      "id": "A-manner-01-s39",
+      "answer": "incredulous",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Mina blinked hard and stood ___ as her missing kite floated back carrying cookies.",
+      "cue_phrase": "blinked hard",
+      "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+      }
+    },
+    {
+      "id": "A-manner-01-s40",
+      "answer": "incredulous",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "The knights were ___, swords clattering down, when the dragon asked politely for soup.",
+      "cue_phrase": "swords clattering down",
+      "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "aloof",
+      "picked": "nonchalant",
+      "line": "Aloof keeps coldly apart from others. Nonchalant stays cool during trouble."
+    },
+    {
+      "answer": "aloof",
+      "picked": "sceptical",
+      "line": "Aloof will not join in. Sceptical waits for proof before agreeing."
+    },
+    {
+      "answer": "aloof",
+      "picked": "curt",
+      "line": "Aloof keeps distance from people. Curt gives sharp, tiny replies."
+    },
+    {
+      "answer": "aloof",
+      "picked": "incredulous",
+      "line": "Aloof turns away from company. Incredulous stares because news seems impossible."
+    },
+    {
+      "answer": "nonchalant",
+      "picked": "aloof",
+      "line": "Nonchalant stays cool during trouble. Aloof keeps coldly apart from people."
+    },
+    {
+      "answer": "nonchalant",
+      "picked": "sceptical",
+      "line": "Nonchalant seems unbothered by a scare. Sceptical checks proof before agreeing."
+    },
+    {
+      "answer": "nonchalant",
+      "picked": "curt",
+      "line": "Nonchalant stays cool when things go wrong. Curt answers in sharp, tiny replies."
+    },
+    {
+      "answer": "nonchalant",
+      "picked": "incredulous",
+      "line": "Nonchalant stays cool in a scare. Incredulous shows shocked disbelief."
+    },
+    {
+      "answer": "sceptical",
+      "picked": "aloof",
+      "line": "Sceptical waits for proof. Aloof keeps coldly apart from others."
+    },
+    {
+      "answer": "sceptical",
+      "picked": "nonchalant",
+      "line": "Sceptical checks before agreeing. Nonchalant stays cool during trouble."
+    },
+    {
+      "answer": "sceptical",
+      "picked": "curt",
+      "line": "Sceptical wants proof before agreeing. Curt gives sharp, tiny replies."
+    },
+    {
+      "answer": "sceptical",
+      "picked": "incredulous",
+      "line": "Sceptical holds back until proof appears. Incredulous reacts with shocked disbelief."
+    },
+    {
+      "answer": "curt",
+      "picked": "aloof",
+      "line": "Curt gives sharp, tiny replies. Aloof keeps coldly apart from others."
+    },
+    {
+      "answer": "curt",
+      "picked": "nonchalant",
+      "line": "Curt is sharp and tiny in replies. Nonchalant stays cool during trouble."
+    },
+    {
+      "answer": "curt",
+      "picked": "sceptical",
+      "line": "Curt cuts talk down to a sharp reply. Sceptical waits for proof."
+    },
+    {
+      "answer": "curt",
+      "picked": "incredulous",
+      "line": "Curt gives a sharp, tiny reply. Incredulous shows shocked disbelief at news."
+    },
+    {
+      "answer": "incredulous",
+      "picked": "aloof",
+      "line": "Incredulous shows shocked disbelief. Aloof keeps coldly apart from others."
+    },
+    {
+      "answer": "incredulous",
+      "picked": "nonchalant",
+      "line": "Incredulous is shocked by what happened. Nonchalant stays cool during trouble."
+    },
+    {
+      "answer": "incredulous",
+      "picked": "sceptical",
+      "line": "Incredulous is jaw-dropped disbelief. Sceptical checks proof before agreeing."
+    },
+    {
+      "answer": "incredulous",
+      "picked": "curt",
+      "line": "Incredulous shows shocked disbelief. Curt gives sharp, tiny replies."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-06T14:38:05+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": "2026-07-07",
+    "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+  }
+}

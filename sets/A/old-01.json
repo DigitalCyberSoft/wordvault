@@ -1,0 +1,842 @@
+{
+  "id": "A-old-01",
+  "bank": "A",
+  "pos": "adjective",
+  "theme": "old in different ways",
+  "band": 4,
+  "band_override": 4,
+  "computed": {
+    "zipf_min": 3.42,
+    "zipf_mean": 3.83,
+    "tightness": null,
+    "band_suggested": 3,
+    "scored_at": "2026-07-06T18:43:21+00:00"
+  },
+  "words": [
+    {
+      "w": "elderly",
+      "synset": "aged.s.01",
+      "gloss_source": "authored",
+      "gloss": "old in years; the respectful word for people",
+      "zipf": 4.15,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "elderly"
+      },
+      "discriminator": "the word for people",
+      "grade": 3
+    },
+    {
+      "w": "antique",
+      "synset": "antique.s.01",
+      "gloss_source": "wordnet",
+      "gloss": "made in or typical of earlier times and valued for its age",
+      "zipf": 3.86,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "antique"
+      },
+      "discriminator": "old object treasured for its age",
+      "grade": 4
+    },
+    {
+      "w": "prehistoric",
+      "synset": "prehistoric.a.02",
+      "gloss_source": "wordnet",
+      "gloss": "of or relating to times before written history",
+      "zipf": 3.42,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "prehistoric"
+      },
+      "discriminator": "before anything was written down",
+      "grade": 4
+    },
+    {
+      "w": "outdated",
+      "synset": "outdated.s.01",
+      "gloss_source": "authored",
+      "gloss": "no longer useful or correct because something newer has replaced it",
+      "zipf": 3.66,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "outdated"
+      },
+      "discriminator": "something newer has replaced it",
+      "grade": 5
+    },
+    {
+      "w": "medieval",
+      "synset": "medieval.a.01",
+      "gloss_source": "authored",
+      "gloss": "from the Middle Ages, the time of knights and castles",
+      "zipf": 4.05,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "medieval"
+      },
+      "discriminator": "knights-and-castles period",
+      "grade": 5
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-old-01-s01",
+      "answer": "elderly",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ grandmother hummed while her grandson tied her scarf.",
+      "cue_phrase": "grandmother hummed",
+      "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+      }
+    },
+    {
+      "id": "A-old-01-s02",
+      "answer": "elderly",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ man accepted Sam's seat on the crowded bus.",
+      "cue_phrase": "man accepted Sam's seat",
+      "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+      }
+    },
+    {
+      "id": "A-old-01-s03",
+      "answer": "elderly",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ neighbour leant on her stick during the garden party.",
+      "cue_phrase": "leant on her stick",
+      "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+      }
+    },
+    {
+      "id": "A-old-01-s04",
+      "answer": "elderly",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ aunt asked the nurse to read the tiny label.",
+      "cue_phrase": "aunt asked the nurse",
+      "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+      }
+    },
+    {
+      "id": "A-old-01-s05",
+      "answer": "elderly",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Mum walked slowly beside the ___ visitor after lunch.",
+      "cue_phrase": "walked slowly beside",
+      "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+      }
+    },
+    {
+      "id": "A-old-01-s06",
+      "answer": "elderly",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The children carried bags for the ___ couple crossing the road.",
+      "cue_phrase": "carried bags for",
+      "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+      }
+    },
+    {
+      "id": "A-old-01-s07",
+      "answer": "elderly",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The ___ widow smiled when pupils sang outside her window.",
+      "cue_phrase": "widow smiled",
+      "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+      }
+    },
+    {
+      "id": "A-old-01-s08",
+      "answer": "elderly",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The ___ resident remembered when the lane was only mud.",
+      "cue_phrase": "resident remembered when the lane",
+      "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+      }
+    },
+    {
+      "id": "A-old-01-s09",
+      "answer": "antique",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ teapot from 1820 sat behind locked glass.",
+      "cue_phrase": "from 1820",
+      "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+      }
+    },
+    {
+      "id": "A-old-01-s10",
+      "answer": "antique",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ clock from 1890 ticked inside a velvet case.",
+      "cue_phrase": "from 1890",
+      "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+      }
+    },
+    {
+      "id": "A-old-01-s11",
+      "answer": "antique",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "In the shop window, the ___ vase from 1910 wore a gold price tag.",
+      "cue_phrase": "from 1910",
+      "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+      }
+    },
+    {
+      "id": "A-old-01-s12",
+      "answer": "antique",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ mirror had carved roses and a label saying 1885.",
+      "cue_phrase": "label saying 1885",
+      "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+      }
+    },
+    {
+      "id": "A-old-01-s13",
+      "answer": "antique",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Lena's mum lifted the ___ brooch from 1901 with gloves.",
+      "cue_phrase": "from 1901",
+      "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+      }
+    },
+    {
+      "id": "A-old-01-s14",
+      "answer": "antique",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The ___ desk, older than the house itself, cost more than our sofa.",
+      "cue_phrase": "older than the house itself",
+      "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (medieval); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-old-01-s15",
+      "answer": "antique",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "At the sale, Dad explained the ___ ring had been made in his great-grandmother's day.",
+      "cue_phrase": "made in his great-grandmother's day",
+      "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+      }
+    },
+    {
+      "id": "A-old-01-s16",
+      "answer": "antique",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The ___ chair, polished by four generations, was roped off from visitors.",
+      "cue_phrase": "polished by four generations",
+      "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (medieval); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-old-01-s17",
+      "answer": "prehistoric",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ dinosaur skeleton filled the museum hall from nose to tail.",
+      "cue_phrase": "dinosaur skeleton",
+      "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+      }
+    },
+    {
+      "id": "A-old-01-s18",
+      "answer": "prehistoric",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "We painted ___ cave animals beside handprints and mammoth tusks.",
+      "cue_phrase": "mammoth tusks",
+      "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+      }
+    },
+    {
+      "id": "A-old-01-s19",
+      "answer": "prehistoric",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ tools were chipped stones, not metal knives.",
+      "cue_phrase": "chipped stones",
+      "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+      }
+    },
+    {
+      "id": "A-old-01-s20",
+      "answer": "prehistoric",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Our ___ hut model had no coins, books, or wheels.",
+      "cue_phrase": "no coins, books",
+      "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+      }
+    },
+    {
+      "id": "A-old-01-s21",
+      "answer": "prehistoric",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The ___ footprint was pressed in rock near fossil ferns.",
+      "cue_phrase": "fossil ferns",
+      "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+      }
+    },
+    {
+      "id": "A-old-01-s22",
+      "answer": "prehistoric",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The children imagined the ___ camp from the days before letters existed.",
+      "cue_phrase": "before letters existed",
+      "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+      }
+    },
+    {
+      "id": "A-old-01-s23",
+      "answer": "prehistoric",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The ___ shark tooth came from a sea before maps.",
+      "cue_phrase": "before maps",
+      "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+      }
+    },
+    {
+      "id": "A-old-01-s24",
+      "answer": "prehistoric",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "In art, we drew ___ hunters before farms, alphabets, or cities.",
+      "cue_phrase": "before farms",
+      "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+      }
+    },
+    {
+      "id": "A-old-01-s25",
+      "answer": "outdated",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ map missed the bridge we needed for today's walk.",
+      "cue_phrase": "bridge we needed",
+      "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (antique, medieval); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-old-01-s26",
+      "answer": "outdated",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ password sheet failed after the class changed every code.",
+      "cue_phrase": "changed every code",
+      "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+      }
+    },
+    {
+      "id": "A-old-01-s27",
+      "answer": "outdated",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Dad ignored the ___ timetable once the buses took a different route.",
+      "cue_phrase": "different route",
+      "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+      }
+    },
+    {
+      "id": "A-old-01-s28",
+      "answer": "outdated",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ rule stayed crossed out after the game update.",
+      "cue_phrase": "game update",
+      "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+      }
+    },
+    {
+      "id": "A-old-01-s29",
+      "answer": "outdated",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Our ___ poster listed a club meeting that moved indoors.",
+      "cue_phrase": "meeting that moved",
+      "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+      }
+    },
+    {
+      "id": "A-old-01-s30",
+      "answer": "outdated",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The ___ guide sent tourists to a zoo gate now sealed shut.",
+      "cue_phrase": "now sealed shut",
+      "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (elderly); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-old-01-s31",
+      "answer": "outdated",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The ___ chart still named Pluto with the planets.",
+      "cue_phrase": "named Pluto with the planets",
+      "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+      }
+    },
+    {
+      "id": "A-old-01-s32",
+      "answer": "outdated",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Mina deleted the ___ address after the shop moved across town.",
+      "cue_phrase": "shop moved",
+      "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+      }
+    },
+    {
+      "id": "A-old-01-s33",
+      "answer": "medieval",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ squire polished chain mail before the joust.",
+      "cue_phrase": "chain mail",
+      "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+      }
+    },
+    {
+      "id": "A-old-01-s34",
+      "answer": "medieval",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ banquet had minstrels with trenchers and a roasted boar.",
+      "cue_phrase": "minstrels with trenchers",
+      "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+      }
+    },
+    {
+      "id": "A-old-01-s35",
+      "answer": "medieval",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "In the ___ tale, a drawbridge creaked above the moat.",
+      "cue_phrase": "drawbridge creaked",
+      "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+      }
+    },
+    {
+      "id": "A-old-01-s36",
+      "answer": "medieval",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ monk, barely twenty, copied pages by candlelight in the abbey.",
+      "cue_phrase": "copied pages by candlelight",
+      "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+      }
+    },
+    {
+      "id": "A-old-01-s37",
+      "answer": "medieval",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Our ___ play needed a herald, a queen, and a wooden lance.",
+      "cue_phrase": "wooden lance",
+      "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+      }
+    },
+    {
+      "id": "A-old-01-s38",
+      "answer": "medieval",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "In drama, the ___ shield showed a lion for the lord's tournament.",
+      "cue_phrase": "lord's tournament",
+      "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (antique); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-old-01-s39",
+      "answer": "medieval",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The ___ archer, a lad of sixteen, stood on the battlements beside a boiling cauldron.",
+      "cue_phrase": "battlements beside",
+      "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+      }
+    },
+    {
+      "id": "A-old-01-s40",
+      "answer": "medieval",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "On history day, we wore ___ hoods and loaded a pretend catapult.",
+      "cue_phrase": "loaded a pretend catapult",
+      "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "elderly",
+      "picked": "antique",
+      "line": "Elderly is for a person. Antique is for a treasured object."
+    },
+    {
+      "answer": "elderly",
+      "picked": "prehistoric",
+      "line": "Elderly is for a person. Prehistoric is for before records and alphabets."
+    },
+    {
+      "answer": "elderly",
+      "picked": "outdated",
+      "line": "Elderly is for a person. Outdated is for information or tools that no longer fit."
+    },
+    {
+      "answer": "elderly",
+      "picked": "medieval",
+      "line": "Elderly is for a person. Medieval is for the period of jousts and chain mail."
+    },
+    {
+      "answer": "antique",
+      "picked": "elderly",
+      "line": "Antique is a treasured object. Elderly is for a person."
+    },
+    {
+      "answer": "antique",
+      "picked": "prehistoric",
+      "line": "Antique is a treasured object. Prehistoric is from before records and alphabets."
+    },
+    {
+      "answer": "antique",
+      "picked": "outdated",
+      "line": "Antique is prized for its date. Outdated fails after changes."
+    },
+    {
+      "answer": "antique",
+      "picked": "medieval",
+      "line": "Antique is a treasured object. Medieval is the jousting-and-chain-mail period."
+    },
+    {
+      "answer": "prehistoric",
+      "picked": "elderly",
+      "line": "Prehistoric is before records and alphabets. Elderly is for a person."
+    },
+    {
+      "answer": "prehistoric",
+      "picked": "antique",
+      "line": "Prehistoric is before records and alphabets. Antique is a treasured object."
+    },
+    {
+      "answer": "prehistoric",
+      "picked": "outdated",
+      "line": "Prehistoric is before records and alphabets. Outdated means changes left it wrong."
+    },
+    {
+      "answer": "prehistoric",
+      "picked": "medieval",
+      "line": "Prehistoric is before records and alphabets. Medieval has jousts and chain mail."
+    },
+    {
+      "answer": "outdated",
+      "picked": "elderly",
+      "line": "Outdated no longer fits after changes. Elderly is for a person."
+    },
+    {
+      "answer": "outdated",
+      "picked": "antique",
+      "line": "Outdated no longer fits after changes. Antique is treasured for its date."
+    },
+    {
+      "answer": "outdated",
+      "picked": "prehistoric",
+      "line": "Outdated no longer fits after changes. Prehistoric is before records and alphabets."
+    },
+    {
+      "answer": "outdated",
+      "picked": "medieval",
+      "line": "Outdated no longer fits after changes. Medieval is the jousting period."
+    },
+    {
+      "answer": "medieval",
+      "picked": "elderly",
+      "line": "Medieval is the jousting-and-chain-mail period. Elderly is for a person."
+    },
+    {
+      "answer": "medieval",
+      "picked": "antique",
+      "line": "Medieval is the jousting-and-chain-mail period. Antique is a treasured object."
+    },
+    {
+      "answer": "medieval",
+      "picked": "prehistoric",
+      "line": "Medieval has jousts and chain mail. Prehistoric is before records and alphabets."
+    },
+    {
+      "answer": "medieval",
+      "picked": "outdated",
+      "line": "Medieval has jousts and chain mail. Outdated no longer fits after changes."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-06T14:26:57+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": "2026-07-07",
+    "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+  }
+}

@@ -1,0 +1,881 @@
+{
+  "id": "A-hold-01",
+  "bank": "A",
+  "pos": "verb",
+  "theme": "ways to hold and grab",
+  "band": 3,
+  "band_override": 3,
+  "computed": {
+    "zipf_min": 2.92,
+    "zipf_mean": 3.52,
+    "tightness": 0.272,
+    "band_suggested": 3,
+    "scored_at": "2026-07-06T18:43:21+00:00"
+  },
+  "words": [
+    {
+      "w": "snatch",
+      "synset": "snatch.v.01",
+      "gloss_source": "wordnet",
+      "gloss": "to grasp hastily or eagerly",
+      "zipf": 3.53,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "snatch",
+        "third": "snatches",
+        "past": "snatched",
+        "part": "snatching"
+      },
+      "discriminator": "the sudden moment of taking",
+      "grade": 3
+    },
+    {
+      "w": "clutch",
+      "synset": "cling_to.v.01",
+      "gloss_source": "wordnet",
+      "gloss": "hold firmly, usually with one's hands",
+      "zipf": 3.88,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "clutch",
+        "third": "clutches",
+        "past": "clutched",
+        "part": "clutching"
+      },
+      "discriminator": "tight hold, afraid to lose it",
+      "grade": 4
+    },
+    {
+      "w": "cradle",
+      "synset": "cradle.v.01",
+      "gloss_source": "wordnet",
+      "gloss": "hold gently and carefully",
+      "zipf": 3.5,
+      "register": "neutral",
+      "senses_at_pos": 6,
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-06",
+        "note": "dominant school-context sense confirmed at roster vet"
+      },
+      "forms": {
+        "base": "cradle",
+        "third": "cradles",
+        "past": "cradled",
+        "part": "cradling"
+      },
+      "discriminator": "gentle protective hold",
+      "grade": 4
+    },
+    {
+      "w": "pinch",
+      "synset": "pinch.v.01",
+      "gloss_source": "wordnet",
+      "gloss": "squeeze tightly between the fingers",
+      "zipf": 3.76,
+      "register": "neutral",
+      "senses_at_pos": 5,
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-06",
+        "note": "dominant school-context sense confirmed at roster vet"
+      },
+      "forms": {
+        "base": "pinch",
+        "third": "pinches",
+        "past": "pinched",
+        "part": "pinching"
+      },
+      "discriminator": "finger and thumb on something tiny",
+      "grade": 2
+    },
+    {
+      "w": "dangle",
+      "synset": "dangle.v.02",
+      "gloss_source": "authored",
+      "gloss": "hold something so it hangs and swings loosely below",
+      "zipf": 2.92,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "dangle",
+        "third": "dangles",
+        "past": "dangled",
+        "part": "dangling"
+      },
+      "discriminator": "held so it hangs and swings",
+      "grade": 3
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-hold-01-s01",
+      "answer": "snatch",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Tara ___ the falling key in one quick move before the drain swallowed it.",
+      "cue_phrase": "one quick move",
+      "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+      }
+    },
+    {
+      "id": "A-hold-01-s02",
+      "answer": "snatch",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "A gull swooped, so Ben ___ the sandwich away in a flash.",
+      "cue_phrase": "in a flash",
+      "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+      }
+    },
+    {
+      "id": "A-hold-01-s03",
+      "answer": "snatch",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "When the doors opened, Lina ___ the dropped ticket just before it slid through.",
+      "cue_phrase": "just before it slid",
+      "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+      }
+    },
+    {
+      "id": "A-hold-01-s04",
+      "answer": "snatch",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "As the wind lifted the map, Omar ___ it off the wall.",
+      "cue_phrase": "wind lifted the map",
+      "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+      }
+    },
+    {
+      "id": "A-hold-01-s05",
+      "answer": "snatch",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The lid bounced; Mina ___ it before it splashed into the pond.",
+      "cue_phrase": "before it splashed",
+      "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+      }
+    },
+    {
+      "id": "A-hold-01-s06",
+      "answer": "snatch",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "A puppy bolted; Kian ___ the flying leash out of the air.",
+      "cue_phrase": "out of the air",
+      "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+      }
+    },
+    {
+      "id": "A-hold-01-s07",
+      "answer": "snatch",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The magician made Rafi ___ the silk scarf in one sharp blink.",
+      "cue_phrase": "one sharp blink",
+      "surface": {
+        "snatch": "snatch",
+        "clutch": "clutch",
+        "cradle": "cradle",
+        "pinch": "pinch",
+        "dangle": "dangle"
+      }
+    },
+    {
+      "id": "A-hold-01-s08",
+      "answer": "snatch",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Before the wave arrived, Priya had to ___ her sandal from shore.",
+      "cue_phrase": "Before the wave arrived",
+      "surface": {
+        "snatch": "snatch",
+        "clutch": "clutch",
+        "cradle": "cradle",
+        "pinch": "pinch",
+        "dangle": "dangle"
+      }
+    },
+    {
+      "id": "A-hold-01-s09",
+      "answer": "clutch",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Sam ___ the rope with both fists on the swaying bridge.",
+      "cue_phrase": "with both fists",
+      "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+      }
+    },
+    {
+      "id": "A-hold-01-s10",
+      "answer": "clutch",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "During thunder, Ella ___ her blanket until her knuckles whitened.",
+      "cue_phrase": "knuckles whitened",
+      "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+      }
+    },
+    {
+      "id": "A-hold-01-s11",
+      "answer": "clutch",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The goalkeeper ___ the ball against his chest, away from kicking boots.",
+      "cue_phrase": "away from kicking boots",
+      "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: against the chest away from kicking boots = firm defensive grip; cradling is gentle care, not defence",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-hold-01-s12",
+      "answer": "clutch",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "On the cliff path, I ___ Dad's sleeve whenever pebbles slipped.",
+      "cue_phrase": "whenever pebbles slipped",
+      "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (snatch); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-hold-01-s13",
+      "answer": "clutch",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The treasure map shook because Nora ___ it during the dragon's roar.",
+      "cue_phrase": "during the dragon's roar",
+      "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+      }
+    },
+    {
+      "id": "A-hold-01-s14",
+      "answer": "clutch",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Leo ___ his trophy all night, afraid his brother might hide it.",
+      "cue_phrase": "might hide it",
+      "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (cradle); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-hold-01-s15",
+      "answer": "clutch",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The lift jolted, making Asha ___ the rail with both arms.",
+      "cue_phrase": "with both arms",
+      "surface": {
+        "snatch": "snatch",
+        "clutch": "clutch",
+        "cradle": "cradle",
+        "pinch": "pinch",
+        "dangle": "dangle"
+      }
+    },
+    {
+      "id": "A-hold-01-s16",
+      "answer": "clutch",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Whenever the boat rocked, Timo would ___ the seat edge with white knuckles.",
+      "cue_phrase": "with white knuckles",
+      "surface": {
+        "snatch": "snatch",
+        "clutch": "clutch",
+        "cradle": "cradle",
+        "pinch": "pinch",
+        "dangle": "dangle"
+      }
+    },
+    {
+      "id": "A-hold-01-s17",
+      "answer": "cradle",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Mum ___ the kitten like a soap bubble after its bath.",
+      "cue_phrase": "like a soap bubble",
+      "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+      }
+    },
+    {
+      "id": "A-hold-01-s18",
+      "answer": "cradle",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Arun ___ the cracked egg as if it were glass.",
+      "cue_phrase": "as if it were glass",
+      "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+      }
+    },
+    {
+      "id": "A-hold-01-s19",
+      "answer": "cradle",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Zoe ___ the sleeping baby doll in the crook of her arm.",
+      "cue_phrase": "crook of her arm",
+      "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (clutch); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-hold-01-s20",
+      "answer": "cradle",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The nurse ___ the bandaged paw on a folded towel.",
+      "cue_phrase": "on a folded towel",
+      "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+      }
+    },
+    {
+      "id": "A-hold-01-s21",
+      "answer": "cradle",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Rain dripped while Mei ___ the injured butterfly under a leaf.",
+      "cue_phrase": "injured butterfly under",
+      "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+      }
+    },
+    {
+      "id": "A-hold-01-s22",
+      "answer": "cradle",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Grandad ___ the old medal, letting its ribbon lie flat.",
+      "cue_phrase": "ribbon lie flat",
+      "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+      }
+    },
+    {
+      "id": "A-hold-01-s23",
+      "answer": "cradle",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "At the fair, Pippa kept ___ the chick near her warm jumper.",
+      "cue_phrase": "near her warm jumper",
+      "surface": {
+        "snatch": "snatching",
+        "clutch": "clutching",
+        "cradle": "cradling",
+        "pinch": "pinching",
+        "dangle": "dangling"
+      }
+    },
+    {
+      "id": "A-hold-01-s24",
+      "answer": "cradle",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "To carry the shell, Eli had to ___ it with soft palms.",
+      "cue_phrase": "with soft palms",
+      "surface": {
+        "snatch": "snatch",
+        "clutch": "clutch",
+        "cradle": "cradle",
+        "pinch": "pinch",
+        "dangle": "dangle"
+      }
+    },
+    {
+      "id": "A-hold-01-s25",
+      "answer": "pinch",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Dad ___ a raisin with his thumb and first finger.",
+      "cue_phrase": "thumb and first finger",
+      "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+      }
+    },
+    {
+      "id": "A-hold-01-s26",
+      "answer": "pinch",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Mira ___ a tiny seed using only finger and thumb.",
+      "cue_phrase": "only finger and thumb",
+      "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+      }
+    },
+    {
+      "id": "A-hold-01-s27",
+      "answer": "pinch",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The chef ___ the salt between finger and thumb, sprinkling it over the soup.",
+      "cue_phrase": "between finger and thumb",
+      "surface": {
+        "snatch": "snatches",
+        "clutch": "clutches",
+        "cradle": "cradles",
+        "pinch": "pinches",
+        "dangle": "dangles"
+      }
+    },
+    {
+      "id": "A-hold-01-s28",
+      "answer": "pinch",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Mia ___ the page corner to turn just one sheet.",
+      "cue_phrase": "just one sheet",
+      "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+      }
+    },
+    {
+      "id": "A-hold-01-s29",
+      "answer": "pinch",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "To lift the bead, Noah ___ it without covering the hole.",
+      "cue_phrase": "without covering the hole",
+      "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+      }
+    },
+    {
+      "id": "A-hold-01-s30",
+      "answer": "pinch",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The thorn was tiny, so I ___ its tip and pulled.",
+      "cue_phrase": "thorn was tiny",
+      "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+      }
+    },
+    {
+      "id": "A-hold-01-s31",
+      "answer": "pinch",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Please ___ the clay nose with two fingertips, not your whole palm.",
+      "cue_phrase": "with two fingertips",
+      "surface": {
+        "snatch": "snatch",
+        "clutch": "clutch",
+        "cradle": "cradle",
+        "pinch": "pinch",
+        "dangle": "dangle"
+      }
+    },
+    {
+      "id": "A-hold-01-s32",
+      "answer": "pinch",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Lena ___ each crumb between two fingertips and laid it before the robin.",
+      "cue_phrase": "between two fingertips",
+      "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+      }
+    },
+    {
+      "id": "A-hold-01-s33",
+      "answer": "dangle",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Maya ___ the sock over the puppy's nose, letting it sway out of reach.",
+      "cue_phrase": "letting it sway",
+      "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+      }
+    },
+    {
+      "id": "A-hold-01-s34",
+      "answer": "dangle",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "A fisher ___ the bait over the water so it bobs.",
+      "cue_phrase": "so it bobs",
+      "surface": {
+        "snatch": "snatches",
+        "clutch": "clutches",
+        "cradle": "cradles",
+        "pinch": "pinches",
+        "dangle": "dangles"
+      }
+    },
+    {
+      "id": "A-hold-01-s35",
+      "answer": "dangle",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Ned ___ his muddy boots off the pier edge after swimming.",
+      "cue_phrase": "pier edge after swimming",
+      "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (snatch); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-hold-01-s36",
+      "answer": "dangle",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The monkey ___ the banana peel above the little one's head, swinging it slowly.",
+      "cue_phrase": "above the little one's head",
+      "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (clutch, pinch); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-hold-01-s37",
+      "answer": "dangle",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "During art, Suki ___ her wet brush until blue drops fell.",
+      "cue_phrase": "blue drops fell",
+      "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (pinch); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-hold-01-s38",
+      "answer": "dangle",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Jo ___ the spider toy from her sleeve on a thread.",
+      "cue_phrase": "on a thread",
+      "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+      }
+    },
+    {
+      "id": "A-hold-01-s39",
+      "answer": "dangle",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "At the gate, Dad kept ___ the keys so they jingled.",
+      "cue_phrase": "so they jingled",
+      "surface": {
+        "snatch": "snatching",
+        "clutch": "clutching",
+        "cradle": "cradling",
+        "pinch": "pinching",
+        "dangle": "dangling"
+      }
+    },
+    {
+      "id": "A-hold-01-s40",
+      "answer": "dangle",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The giant liked to ___ lanterns from his belt while walking.",
+      "cue_phrase": "from his belt",
+      "surface": {
+        "snatch": "snatch",
+        "clutch": "clutch",
+        "cradle": "cradle",
+        "pinch": "pinch",
+        "dangle": "dangle"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "snatch",
+      "picked": "clutch",
+      "line": "Snatch is a sudden taking; clutch is a tight keeping."
+    },
+    {
+      "answer": "snatch",
+      "picked": "cradle",
+      "line": "Snatch is quick and sudden; cradle is soft and protective."
+    },
+    {
+      "answer": "snatch",
+      "picked": "pinch",
+      "line": "Snatch takes in a flash; pinch uses thumb and finger on a tiny bit."
+    },
+    {
+      "answer": "snatch",
+      "picked": "dangle",
+      "line": "Snatch is quick taking; dangle lets the item sway from one end."
+    },
+    {
+      "answer": "clutch",
+      "picked": "snatch",
+      "line": "Clutch keeps close and tight; snatch is the quick moment of taking."
+    },
+    {
+      "answer": "clutch",
+      "picked": "cradle",
+      "line": "Clutch is tight from worry; cradle is soft to protect."
+    },
+    {
+      "answer": "clutch",
+      "picked": "pinch",
+      "line": "Clutch uses a strong grip; pinch uses thumb and finger on a small spot."
+    },
+    {
+      "answer": "clutch",
+      "picked": "dangle",
+      "line": "Clutch keeps close; dangle leaves the item swaying from one end."
+    },
+    {
+      "answer": "cradle",
+      "picked": "snatch",
+      "line": "Cradle is soft and protective; snatch is sudden taking."
+    },
+    {
+      "answer": "cradle",
+      "picked": "clutch",
+      "line": "Cradle protects softly; clutch keeps tight, often from fear."
+    },
+    {
+      "answer": "cradle",
+      "picked": "pinch",
+      "line": "Cradle supports with care; pinch nips a tiny bit with thumb and finger."
+    },
+    {
+      "answer": "cradle",
+      "picked": "dangle",
+      "line": "Cradle supports close; dangle lets the item sway from one end."
+    },
+    {
+      "answer": "pinch",
+      "picked": "snatch",
+      "line": "Pinch uses thumb and finger on a tiny bit; snatch is sudden taking."
+    },
+    {
+      "answer": "pinch",
+      "picked": "clutch",
+      "line": "Pinch is small and nippy; clutch is a tight keeping."
+    },
+    {
+      "answer": "pinch",
+      "picked": "cradle",
+      "line": "Pinch presses a tiny spot; cradle supports softly."
+    },
+    {
+      "answer": "pinch",
+      "picked": "dangle",
+      "line": "Pinch traps a small bit; dangle lets the item sway from one end."
+    },
+    {
+      "answer": "dangle",
+      "picked": "snatch",
+      "line": "Dangle lets the item sway from one end; snatch is quick taking."
+    },
+    {
+      "answer": "dangle",
+      "picked": "clutch",
+      "line": "Dangle leaves an item swaying; clutch keeps it tight and close."
+    },
+    {
+      "answer": "dangle",
+      "picked": "cradle",
+      "line": "Dangle lets an item sway; cradle supports it softly."
+    },
+    {
+      "answer": "dangle",
+      "picked": "pinch",
+      "line": "Dangle makes an item sway from one end; pinch traps a tiny bit."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-06T14:21:46+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": "2026-07-07",
+    "scrub_note": "Scrubbed by claude 2026-07-07 (dedicated pre-scrub agent failed twice on output limits): mechanical sweeps (cue hygiene, meta-frames, seasonal, templates, duplicates), all 20 contrast lines read per set, every sentence read for frame sanity, all judge hards fixed and re-judged to zero. Fixes: wave re-pinned to brandish.v.01 + 3 contrasts aligned, hop gloss authored to the one-foot sense the set teaches, pat/nod/wink frames restaged, one dangling pronoun."
+  }
+}

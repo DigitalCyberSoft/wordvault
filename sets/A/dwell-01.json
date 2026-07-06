@@ -1,0 +1,1009 @@
+{
+  "id": "A-dwell-01",
+  "bank": "A",
+  "pos": "verb",
+  "theme": "ways of being deep in thought",
+  "band": 5,
+  "band_override": 5,
+  "computed": {
+    "zipf_min": 2.8,
+    "zipf_mean": 3.08,
+    "tightness": 0.289,
+    "band_suggested": 3,
+    "scored_at": "2026-07-06T18:43:21+00:00"
+  },
+  "words": [
+    {
+      "w": "reminisce",
+      "synset": "reminisce.v.01",
+      "gloss_source": "wordnet",
+      "gloss": "recall the past",
+      "zipf": 2.84,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "reminisce",
+        "third": "reminisces",
+        "past": "reminisced",
+        "part": "reminiscing"
+      },
+      "discriminator": "dwelling fondly on past times",
+      "grade": 7
+    },
+    {
+      "w": "brood",
+      "synset": "brood.v.01",
+      "gloss_source": "wordnet",
+      "gloss": "think moodily or anxiously about something",
+      "zipf": 3.25,
+      "register": "neutral",
+      "senses_at_pos": 5,
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-06",
+        "note": "dominant school-context sense confirmed at roster vet"
+      },
+      "forms": {
+        "base": "brood",
+        "third": "broods",
+        "past": "brooded",
+        "part": "brooding"
+      },
+      "discriminator": "dwelling darkly on a worry",
+      "grade": 6
+    },
+    {
+      "w": "muse",
+      "synset": "chew_over.v.01",
+      "gloss_source": "authored",
+      "gloss": "wonder about something in a calm, open-ended way",
+      "zipf": 3.59,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "muse",
+        "third": "muses",
+        "past": "mused",
+        "part": "musing"
+      },
+      "discriminator": "calm open-ended wondering",
+      "grade": 7
+    },
+    {
+      "w": "obsess",
+      "synset": "obsess.v.02",
+      "gloss_source": "authored",
+      "gloss": "be gripped by one thought and unable to let it go",
+      "zipf": 2.9,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "obsess",
+        "third": "obsesses",
+        "past": "obsessed",
+        "part": "obsessing"
+      },
+      "discriminator": "one thought will not let go",
+      "grade": 6
+    },
+    {
+      "w": "wallow",
+      "synset": "wallow.v.01",
+      "gloss_source": "authored",
+      "gloss": "sink into a feeling and stay there, enjoying the misery",
+      "zipf": 2.8,
+      "register": "neutral",
+      "senses_at_pos": 5,
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-07",
+        "note": "devote-oneself/indulge sense dominant in human-subject frames; mud-rolling sense needs an animal subject"
+      },
+      "forms": {
+        "base": "wallow",
+        "third": "wallows",
+        "past": "wallowed",
+        "part": "wallowing"
+      },
+      "discriminator": "indulging the feeling itself, out loud",
+      "grade": 6
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-dwell-01-s01",
+      "answer": "reminisce",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "At the picnic, Gran ___, retelling the kite days of her childhood.",
+      "cue_phrase": "retelling the kite days",
+      "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (muse); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-dwell-01-s02",
+      "answer": "reminisce",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Dad ___, laughing over the old match photos and his muddy goal.",
+      "cue_phrase": "laughing over the old match photos",
+      "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (muse); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-dwell-01-s03",
+      "answer": "reminisce",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The cousins ___ in the attic, giggling over tiny shoes and faded cards.",
+      "cue_phrase": "tiny shoes and faded cards",
+      "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+      }
+    },
+    {
+      "id": "A-dwell-01-s04",
+      "answer": "reminisce",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Nora ___ by the campfire, retelling last summer's canoe spill.",
+      "cue_phrase": "last summer's canoe spill",
+      "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (muse); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-dwell-01-s05",
+      "answer": "reminisce",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The class ___ when the dusty yearbook showed their first-day faces.",
+      "cue_phrase": "dusty yearbook showed",
+      "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+      }
+    },
+    {
+      "id": "A-dwell-01-s06",
+      "answer": "reminisce",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Grandpa ___ after finding the ticket from his first train ride.",
+      "cue_phrase": "his first train ride",
+      "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (muse); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-dwell-01-s07",
+      "answer": "reminisce",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Mum likes to ___ during storms, telling us about candlelit games.",
+      "cue_phrase": "about candlelit games",
+      "surface": {
+        "reminisce": "reminisce",
+        "brood": "brood",
+        "muse": "muse",
+        "obsess": "obsess",
+        "wallow": "wallow"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (muse); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-dwell-01-s08",
+      "answer": "reminisce",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "They were ___ at lunch, trading stories from nursery school.",
+      "cue_phrase": "from nursery school",
+      "surface": {
+        "reminisce": "reminiscing",
+        "brood": "brooding",
+        "muse": "musing",
+        "obsess": "obsessing",
+        "wallow": "wallowing"
+      }
+    },
+    {
+      "id": "A-dwell-01-s09",
+      "answer": "brood",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Sam ___ all evening, frowning over three worries before the trip.",
+      "cue_phrase": "three worries before",
+      "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (obsess); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-dwell-01-s10",
+      "answer": "brood",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "In the locker room, Leila ___ under a cloud of worries.",
+      "cue_phrase": "cloud of worries",
+      "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+      }
+    },
+    {
+      "id": "A-dwell-01-s11",
+      "answer": "brood",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "After the missed penalty and argument, Tom ___ silently by the fence.",
+      "cue_phrase": "penalty and argument",
+      "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (muse, obsess, wallow); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-dwell-01-s12",
+      "answer": "brood",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Mina ___ under her hood after two rumours spoiled her day.",
+      "cue_phrase": "two rumours spoiled",
+      "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (obsess, wallow); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-dwell-01-s13",
+      "answer": "brood",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The prince ___ beside the cracked crown, seeing danger in every knock.",
+      "cue_phrase": "danger in every knock",
+      "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (obsess); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-dwell-01-s14",
+      "answer": "brood",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Ella ___ while rain tapped, certain both letters held bad news.",
+      "cue_phrase": "both letters held",
+      "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (obsess); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-dwell-01-s15",
+      "answer": "brood",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Kavi tends to ___ before matches, picturing mistakes and angry faces.",
+      "cue_phrase": "mistakes and angry faces",
+      "surface": {
+        "reminisce": "reminisce",
+        "brood": "brood",
+        "muse": "muse",
+        "obsess": "obsess",
+        "wallow": "wallow"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: dark affect (mistakes, angry faces) carries brood; obsess is affect-neutral",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-dwell-01-s16",
+      "answer": "brood",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "They were ___ after the map tore and thunder shook camp.",
+      "cue_phrase": "thunder shook camp",
+      "surface": {
+        "reminisce": "reminiscing",
+        "brood": "brooding",
+        "muse": "musing",
+        "obsess": "obsessing",
+        "wallow": "wallowing"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (obsess); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-dwell-01-s17",
+      "answer": "muse",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Lena ___ by the pond, asking where moonlight goes at dawn.",
+      "cue_phrase": "where moonlight goes",
+      "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+      }
+    },
+    {
+      "id": "A-dwell-01-s18",
+      "answer": "muse",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Omar ___ on the hill, asking if clouds keep secrets.",
+      "cue_phrase": "if clouds keep secrets",
+      "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+      }
+    },
+    {
+      "id": "A-dwell-01-s19",
+      "answer": "muse",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "During art, Priya ___ softly, 'What colour would Tuesday wear?'",
+      "cue_phrase": "What colour would Tuesday",
+      "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+      }
+    },
+    {
+      "id": "A-dwell-01-s20",
+      "answer": "muse",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Under the stars, the twins ___, 'Maybe planets have bedtime songs.'",
+      "cue_phrase": "Maybe planets have",
+      "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+      }
+    },
+    {
+      "id": "A-dwell-01-s21",
+      "answer": "muse",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Nell ___ as bubbles rose, following each question with another.",
+      "cue_phrase": "question with another",
+      "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+      }
+    },
+    {
+      "id": "A-dwell-01-s22",
+      "answer": "muse",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Hari ___ beside the maze, smiling at paths nobody had tried.",
+      "cue_phrase": "paths nobody had tried",
+      "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+      }
+    },
+    {
+      "id": "A-dwell-01-s23",
+      "answer": "muse",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The owl seems to ___ at dusk, blinking at the silver river.",
+      "cue_phrase": "silver river",
+      "surface": {
+        "reminisce": "reminisce",
+        "brood": "brood",
+        "muse": "muse",
+        "obsess": "obsess",
+        "wallow": "wallow"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (brood, reminisce); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-dwell-01-s24",
+      "answer": "muse",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Sofia was ___ after tea, asking whether trees dream in winter.",
+      "cue_phrase": "whether trees dream",
+      "surface": {
+        "reminisce": "reminiscing",
+        "brood": "brooding",
+        "muse": "musing",
+        "obsess": "obsessing",
+        "wallow": "wallowing"
+      }
+    },
+    {
+      "id": "A-dwell-01-s25",
+      "answer": "obsess",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Finn ___ for hours, checking the same score every five minutes.",
+      "cue_phrase": "same score every",
+      "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (brood); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-dwell-01-s26",
+      "answer": "obsess",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Rosa ___ all night, whispering the same spelling mistake again.",
+      "cue_phrase": "same spelling mistake again",
+      "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (brood); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-dwell-01-s27",
+      "answer": "obsess",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Max ___ during dinner, drawing the lost key on every napkin.",
+      "cue_phrase": "lost key on every",
+      "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (brood); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-dwell-01-s28",
+      "answer": "obsess",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "I ___ after chess club, replaying one bad move until bedtime.",
+      "cue_phrase": "one bad move",
+      "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: one move replayed till bedtime is the compulsion marker; brood/wallow lack it",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-dwell-01-s29",
+      "answer": "obsess",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Tia ___, and even her dragon doodles wore the missing badge.",
+      "cue_phrase": "even her dragon doodles",
+      "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (brood); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-dwell-01-s30",
+      "answer": "obsess",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Noah ___ until his cereal pieces formed the same puzzle shape.",
+      "cue_phrase": "same puzzle shape",
+      "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+      }
+    },
+    {
+      "id": "A-dwell-01-s31",
+      "answer": "obsess",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Jade tends to ___ when a riddle sticks, copying it everywhere.",
+      "cue_phrase": "copying it everywhere",
+      "surface": {
+        "reminisce": "reminisce",
+        "brood": "brood",
+        "muse": "muse",
+        "obsess": "obsess",
+        "wallow": "wallow"
+      }
+    },
+    {
+      "id": "A-dwell-01-s32",
+      "answer": "obsess",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "They were ___ all day, humming the tune through every lesson.",
+      "cue_phrase": "humming the tune",
+      "surface": {
+        "reminisce": "reminiscing",
+        "brood": "brooding",
+        "muse": "musing",
+        "obsess": "obsessing",
+        "wallow": "wallowing"
+      }
+    },
+    {
+      "id": "A-dwell-01-s33",
+      "answer": "wallow",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "After the lost final, Kai ___ all weekend, sad songs on repeat and curtains shut.",
+      "cue_phrase": "sad songs on repeat",
+      "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (brood); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-dwell-01-s34",
+      "answer": "wallow",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Nia ___, sighing loudly whenever anyone walked past her door.",
+      "cue_phrase": "sighing loudly",
+      "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (brood); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-dwell-01-s35",
+      "answer": "wallow",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Milo ___ under three blankets, announcing his cold to the whole house hourly.",
+      "cue_phrase": "announcing his cold",
+      "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+      }
+    },
+    {
+      "id": "A-dwell-01-s36",
+      "answer": "wallow",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "After losing his shield, the knight ___, writing four sad poems before lunch.",
+      "cue_phrase": "writing four sad poems",
+      "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (brood); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-dwell-01-s37",
+      "answer": "wallow",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Priya ___ after the rained-out party, draping herself over the sofa with big sighs.",
+      "cue_phrase": "draping herself over the sofa",
+      "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (brood); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-dwell-01-s38",
+      "answer": "wallow",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Rather than fix the kite, Tom ___, listing everything unfair about wind.",
+      "cue_phrase": "listing everything unfair about wind",
+      "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+      }
+    },
+    {
+      "id": "A-dwell-01-s39",
+      "answer": "wallow",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Gus ___ for a whole day when the bakery ran out of buns, moaning theatrically.",
+      "cue_phrase": "moaning theatrically",
+      "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (brood); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-dwell-01-s40",
+      "answer": "wallow",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The diva ___ grandly, retelling the tale of her broken shoelace to anyone near.",
+      "cue_phrase": "retelling the tale",
+      "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "reminisce",
+      "picked": "brood",
+      "line": "Reminisce looks back fondly; brood stays with dark worries."
+    },
+    {
+      "answer": "reminisce",
+      "picked": "muse",
+      "line": "Reminisce visits happy past times; muse asks gentle questions now."
+    },
+    {
+      "answer": "reminisce",
+      "picked": "obsess",
+      "line": "Reminisce enjoys old memories; obsess cannot stop circling one idea."
+    },
+    {
+      "answer": "brood",
+      "picked": "reminisce",
+      "line": "Brood sits with dark worries; reminisce looks back fondly."
+    },
+    {
+      "answer": "brood",
+      "picked": "muse",
+      "line": "Brood feels heavy and worried; muse stays light and curious."
+    },
+    {
+      "answer": "brood",
+      "picked": "obsess",
+      "line": "Brood may hold many worries; obsess sticks to one idea again and again."
+    },
+    {
+      "answer": "muse",
+      "picked": "reminisce",
+      "line": "Muse asks quiet questions; reminisce tells happy old stories."
+    },
+    {
+      "answer": "muse",
+      "picked": "brood",
+      "line": "Muse is gentle curiosity; brood is dark worry."
+    },
+    {
+      "answer": "muse",
+      "picked": "obsess",
+      "line": "Muse lets questions wander; obsess keeps returning to one idea."
+    },
+    {
+      "answer": "obsess",
+      "picked": "reminisce",
+      "line": "Obsess sticks to one idea; reminisce enjoys old memories."
+    },
+    {
+      "answer": "obsess",
+      "picked": "brood",
+      "line": "Obsess repeats one idea; brood sits under gloomy worries."
+    },
+    {
+      "answer": "obsess",
+      "picked": "muse",
+      "line": "Obsess cannot stop returning; muse can drift from question to question."
+    },
+    {
+      "answer": "wallow",
+      "picked": "reminisce",
+      "line": "Reminiscing looks back fondly on good times; wallowing sinks into a bad feeling and stays there."
+    },
+    {
+      "answer": "wallow",
+      "picked": "brood",
+      "line": "Brooding is silent dark thinking; wallowing acts the misery out with sighs and sad songs."
+    },
+    {
+      "answer": "wallow",
+      "picked": "muse",
+      "line": "Musing is calm curious wondering; wallowing is soaking in a feeling and refusing to climb out."
+    },
+    {
+      "answer": "wallow",
+      "picked": "obsess",
+      "line": "Obsessing is being gripped by one thought; wallowing is indulging the feeling itself."
+    },
+    {
+      "answer": "reminisce",
+      "picked": "wallow",
+      "line": "Wallowing stews in a feeling; reminiscing calls back happy memories to enjoy them."
+    },
+    {
+      "answer": "brood",
+      "picked": "wallow",
+      "line": "Wallowing performs its misery out loud; brooding turns a worry over silently inside."
+    },
+    {
+      "answer": "muse",
+      "picked": "wallow",
+      "line": "Wallowing is stuck in a mood; musing wanders lightly from one thought to the next."
+    },
+    {
+      "answer": "obsess",
+      "picked": "wallow",
+      "line": "Wallowing indulges a feeling; obsessing cannot let go of one single thought."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-06T14:23:36+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": "2026-07-07",
+    "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+  }
+}

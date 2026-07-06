@@ -1,0 +1,826 @@
+{
+  "id": "B-journey-01",
+  "bank": "B",
+  "pos": "noun",
+  "theme": "kinds of journeys",
+  "band": 5,
+  "band_override": 5,
+  "computed": {
+    "zipf_min": 2.6,
+    "zipf_mean": 3.38,
+    "tightness": 0.756,
+    "band_suggested": 4,
+    "scored_at": "2026-07-06T18:43:21+00:00"
+  },
+  "words": [
+    {
+      "w": "pilgrimage",
+      "synset": "pilgrimage.n.01",
+      "gloss_source": "wordnet",
+      "gloss": "a journey to a sacred place",
+      "zipf": 3.5,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "pilgrimage"
+      },
+      "discriminator": "journey of devotion to a special place",
+      "grade": 7
+    },
+    {
+      "w": "odyssey",
+      "synset": "odyssey.n.01",
+      "gloss_source": "wordnet",
+      "gloss": "a long wandering and eventful journey",
+      "zipf": 3.55,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "odyssey"
+      },
+      "discriminator": "epic wandering full of turns",
+      "gloss_zipf_waiver": {
+        "words": [
+          "eventful"
+        ],
+        "reason": "event + -ful, a morphologically transparent compound of a very common word",
+        "by": "claude",
+        "at": "2026-07-06"
+      },
+      "grade": 7
+    },
+    {
+      "w": "exodus",
+      "synset": "exodus.n.01",
+      "gloss_source": "authored",
+      "gloss": "a journey made by a large group escaping from a place",
+      "zipf": 3.69,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "exodus"
+      },
+      "discriminator": "a whole crowd leaving to escape",
+      "grade": 7
+    },
+    {
+      "w": "commute",
+      "synset": "commute.n.01",
+      "gloss_source": "authored",
+      "gloss": "the regular there-and-back journey to work or school",
+      "zipf": 3.56,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "commute"
+      },
+      "discriminator": "the routine there-and-back",
+      "grade": 6
+    },
+    {
+      "w": "jaunt",
+      "synset": "excursion.n.01",
+      "gloss_source": "authored",
+      "gloss": "a short trip taken just for fun",
+      "zipf": 2.6,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "jaunt"
+      },
+      "discriminator": "short trip purely for fun",
+      "grade": 7
+    }
+  ],
+  "sentences": [
+    {
+      "id": "B-journey-01-s01",
+      "answer": "pilgrimage",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Nana packed candles for her ___ to pray at the hillside shrine.",
+      "cue_phrase": "pray at the hillside shrine",
+      "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+      }
+    },
+    {
+      "id": "B-journey-01-s02",
+      "answer": "pilgrimage",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Before dawn, Ravi began his ___ towards the temple of healing.",
+      "cue_phrase": "temple of healing",
+      "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+      }
+    },
+    {
+      "id": "B-journey-01-s03",
+      "answer": "pilgrimage",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Mum tied prayer ribbons to our bags before the ___.",
+      "cue_phrase": "prayer ribbons",
+      "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+      }
+    },
+    {
+      "id": "B-journey-01-s04",
+      "answer": "pilgrimage",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Lena walked silently during the ___, carrying flowers for the shrine.",
+      "cue_phrase": "flowers for the shrine",
+      "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+      }
+    },
+    {
+      "id": "B-journey-01-s05",
+      "answer": "pilgrimage",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "After three buses, Grandad's ___ ended with whispered thanks at the holy spring.",
+      "cue_phrase": "holy spring",
+      "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (odyssey); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-journey-01-s06",
+      "answer": "pilgrimage",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The family washed their hands before the ___ up to the abbey.",
+      "cue_phrase": "washed their hands",
+      "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+      }
+    },
+    {
+      "id": "B-journey-01-s07",
+      "answer": "pilgrimage",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Uncle drew a tiny star beside every chapel on his ___ map.",
+      "cue_phrase": "every chapel",
+      "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+      }
+    },
+    {
+      "id": "B-journey-01-s08",
+      "answer": "pilgrimage",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Our class heard how their ___ ended with songs inside the mosque.",
+      "cue_phrase": "songs inside the mosque",
+      "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+      }
+    },
+    {
+      "id": "B-journey-01-s09",
+      "answer": "odyssey",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The sailor's ___ crossed seven seas, two caves, and a dragon bridge.",
+      "cue_phrase": "seven seas, two caves",
+      "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+      }
+    },
+    {
+      "id": "B-journey-01-s10",
+      "answer": "odyssey",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Our game turned into one long ___ of storms, riddles, and giant bees.",
+      "cue_phrase": "storms, riddles, and giant bees",
+      "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+      }
+    },
+    {
+      "id": "B-journey-01-s11",
+      "answer": "odyssey",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "By chapter twelve, the heroes' ___ had crossed six seas and worn out two ships.",
+      "cue_phrase": "crossed six seas",
+      "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (pilgrimage); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-journey-01-s12",
+      "answer": "odyssey",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The captain's ___ zigzagged from island to island before reaching home.",
+      "cue_phrase": "island to island",
+      "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+      }
+    },
+    {
+      "id": "B-journey-01-s13",
+      "answer": "odyssey",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Each doorway led to another puzzle during the twins' ___.",
+      "cue_phrase": "another puzzle",
+      "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+      }
+    },
+    {
+      "id": "B-journey-01-s14",
+      "answer": "odyssey",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Mara returned from her ___ with tales of whirlpools and singing stones.",
+      "cue_phrase": "whirlpools and singing stones",
+      "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+      }
+    },
+    {
+      "id": "B-journey-01-s15",
+      "answer": "odyssey",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The old map promised trolls, deserts, and lost castles on the ___.",
+      "cue_phrase": "trolls, deserts, and lost castles",
+      "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+      }
+    },
+    {
+      "id": "B-journey-01-s16",
+      "answer": "odyssey",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "No one guessed the ___ would include a maze, a storm, and pirates.",
+      "cue_phrase": "maze, a storm",
+      "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+      }
+    },
+    {
+      "id": "B-journey-01-s17",
+      "answer": "exodus",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Sirens wailed, and the town's ___ sent families streaming toward safer hills.",
+      "cue_phrase": "families streaming toward safer",
+      "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+      }
+    },
+    {
+      "id": "B-journey-01-s18",
+      "answer": "exodus",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "When the dam cracked, the valley's ___ filled buses with frightened neighbours.",
+      "cue_phrase": "frightened neighbours",
+      "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+      }
+    },
+    {
+      "id": "B-journey-01-s19",
+      "answer": "exodus",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Goats, carts, and children joined the ___ away from the burning forest.",
+      "cue_phrase": "burning forest",
+      "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+      }
+    },
+    {
+      "id": "B-journey-01-s20",
+      "answer": "exodus",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The stadium lights failed; the ___ of fans hurried through every gate.",
+      "cue_phrase": "fans hurried through every gate",
+      "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+      }
+    },
+    {
+      "id": "B-journey-01-s21",
+      "answer": "exodus",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "By sunrise, every house stood empty after the ___ from the floodplain.",
+      "cue_phrase": "every house stood empty",
+      "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+      }
+    },
+    {
+      "id": "B-journey-01-s22",
+      "answer": "exodus",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The mayor counted wagons for the ___ as smoke swallowed the town.",
+      "cue_phrase": "smoke swallowed the town",
+      "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+      }
+    },
+    {
+      "id": "B-journey-01-s23",
+      "answer": "exodus",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "In the ant farm, the ___ began when water flooded the tunnels.",
+      "cue_phrase": "water flooded the tunnels",
+      "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+      }
+    },
+    {
+      "id": "B-journey-01-s24",
+      "answer": "exodus",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Families carried blankets during the ___ as ash fell on the village.",
+      "cue_phrase": "ash fell on the village",
+      "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+      }
+    },
+    {
+      "id": "B-journey-01-s25",
+      "answer": "commute",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Dad's ___ from home to the office happens every weekday morning.",
+      "cue_phrase": "home to the office",
+      "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+      }
+    },
+    {
+      "id": "B-journey-01-s26",
+      "answer": "commute",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Mina's ___ between her flat and classroom repeats Monday to Friday.",
+      "cue_phrase": "flat and classroom repeats",
+      "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+      }
+    },
+    {
+      "id": "B-journey-01-s27",
+      "answer": "commute",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Rain or shine, the same bus carries Omar to the office on his ___.",
+      "cue_phrase": "same bus carries Omar to the office",
+      "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+      }
+    },
+    {
+      "id": "B-journey-01-s28",
+      "answer": "commute",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "After breakfast, Tia starts her ___, then returns home after lessons.",
+      "cue_phrase": "returns home after lessons",
+      "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+      }
+    },
+    {
+      "id": "B-journey-01-s29",
+      "answer": "commute",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The guard knew Ben's ___ because he passed the office desk at eight.",
+      "cue_phrase": "office desk at eight",
+      "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+      }
+    },
+    {
+      "id": "B-journey-01-s30",
+      "answer": "commute",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Each afternoon, Eli's ___ ends with class books across the kitchen table.",
+      "cue_phrase": "class books across",
+      "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+      }
+    },
+    {
+      "id": "B-journey-01-s31",
+      "answer": "commute",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "A missed train made Mum's ___ to the hospital desk last an hour.",
+      "cue_phrase": "to the hospital desk",
+      "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+      }
+    },
+    {
+      "id": "B-journey-01-s32",
+      "answer": "commute",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Tom packs reading cards for the ___ to his classroom each morning.",
+      "cue_phrase": "classroom each morning",
+      "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+      }
+    },
+    {
+      "id": "B-journey-01-s33",
+      "answer": "jaunt",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The cousins' ___ was a laughing dash to the pond before tea.",
+      "cue_phrase": "laughing dash to the pond",
+      "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+      }
+    },
+    {
+      "id": "B-journey-01-s34",
+      "answer": "jaunt",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "We squeezed in our ___ for ice creams before the film started.",
+      "cue_phrase": "ice creams before the film",
+      "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+      }
+    },
+    {
+      "id": "B-journey-01-s35",
+      "answer": "jaunt",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The puppy's ___ was a tail-wagging loop around the sunny garden.",
+      "cue_phrase": "tail-wagging loop around",
+      "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+      }
+    },
+    {
+      "id": "B-journey-01-s36",
+      "answer": "jaunt",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Grandad's ___ was a cheerful stroll along the riverside before supper.",
+      "cue_phrase": "cheerful stroll along",
+      "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+      }
+    },
+    {
+      "id": "B-journey-01-s37",
+      "answer": "jaunt",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The children giggled home from their ___ before the kettle boiled.",
+      "cue_phrase": "before the kettle boiled",
+      "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+      }
+    },
+    {
+      "id": "B-journey-01-s38",
+      "answer": "jaunt",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Pip brought one biscuit for the ___ to see the ducklings.",
+      "cue_phrase": "see the ducklings",
+      "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+      }
+    },
+    {
+      "id": "B-journey-01-s39",
+      "answer": "jaunt",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Their ___ to the sweet shop ended with sticky smiles by noon.",
+      "cue_phrase": "sticky smiles by noon",
+      "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+      }
+    },
+    {
+      "id": "B-journey-01-s40",
+      "answer": "jaunt",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "We drew silly maps for our short ___ around the little bay.",
+      "cue_phrase": "silly maps",
+      "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "pilgrimage",
+      "picked": "odyssey",
+      "line": "Pilgrimage is for devotion at a holy site; odyssey is a roaming adventure with many turns."
+    },
+    {
+      "answer": "pilgrimage",
+      "picked": "exodus",
+      "line": "Pilgrimage is a devoted visit to a holy site; exodus is a crowd leaving danger."
+    },
+    {
+      "answer": "pilgrimage",
+      "picked": "commute",
+      "line": "Pilgrimage is for prayer or devotion; commute is the usual route to lessons or a job."
+    },
+    {
+      "answer": "pilgrimage",
+      "picked": "jaunt",
+      "line": "Pilgrimage has a holy purpose; jaunt is a quick cheerful outing."
+    },
+    {
+      "answer": "odyssey",
+      "picked": "pilgrimage",
+      "line": "Odyssey is full of twists and adventures; pilgrimage has a holy goal."
+    },
+    {
+      "answer": "odyssey",
+      "picked": "exodus",
+      "line": "Odyssey follows many surprising turns; exodus is many people leaving danger together."
+    },
+    {
+      "answer": "odyssey",
+      "picked": "commute",
+      "line": "Odyssey is an adventure with wild changes; commute is the same daily route."
+    },
+    {
+      "answer": "odyssey",
+      "picked": "jaunt",
+      "line": "Odyssey is big and twisty; jaunt is brief and light-hearted."
+    },
+    {
+      "answer": "exodus",
+      "picked": "pilgrimage",
+      "line": "Exodus is a crowd leaving danger; pilgrimage is a devoted visit to a holy site."
+    },
+    {
+      "answer": "exodus",
+      "picked": "odyssey",
+      "line": "Exodus moves many people away from danger; odyssey follows adventures and surprises."
+    },
+    {
+      "answer": "exodus",
+      "picked": "commute",
+      "line": "Exodus is a crowd leaving danger; commute is a routine route to duties."
+    },
+    {
+      "answer": "exodus",
+      "picked": "jaunt",
+      "line": "Exodus is many people fleeing trouble; jaunt is a quick happy outing."
+    },
+    {
+      "answer": "commute",
+      "picked": "pilgrimage",
+      "line": "Commute is the usual route to lessons or a job; pilgrimage is for devotion."
+    },
+    {
+      "answer": "commute",
+      "picked": "odyssey",
+      "line": "Commute repeats as part of daily life; odyssey is full of surprises."
+    },
+    {
+      "answer": "commute",
+      "picked": "exodus",
+      "line": "Commute is an everyday route; exodus is a crowd leaving danger."
+    },
+    {
+      "answer": "commute",
+      "picked": "jaunt",
+      "line": "Commute is routine and practical; jaunt is brief and cheerful."
+    },
+    {
+      "answer": "jaunt",
+      "picked": "pilgrimage",
+      "line": "Jaunt is quick and cheerful; pilgrimage has a holy purpose."
+    },
+    {
+      "answer": "jaunt",
+      "picked": "odyssey",
+      "line": "Jaunt is small and merry; odyssey is wide, twisty, and adventurous."
+    },
+    {
+      "answer": "jaunt",
+      "picked": "exodus",
+      "line": "Jaunt is for pleasure; exodus is many people leaving danger."
+    },
+    {
+      "answer": "jaunt",
+      "picked": "commute",
+      "line": "Jaunt is a quick happy outing; commute is the usual route to duties."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-06T14:51:06+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": "2026-07-07",
+    "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+  }
+}

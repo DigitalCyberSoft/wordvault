@@ -14,16 +14,23 @@
   'use strict';
   var DATA = {
    "schema_version": 1,
-   "built_at": "2026-07-06T08:40:49Z",
+   "built_at": "2026-07-06T18:44:27Z",
    "builder": "tools/bake-content.js",
-   "source_sha256": "8c32a9a9b615b0ffbc75b5fbc770773626f222832212777436025bf556904f0d",
+   "source_sha256": "1b864d673d643dd453409277dd9c7b5d4d50e2d300c133edaa469236ab24a414",
    "counts": {
-    "sets": 28,
-    "words": 140,
-    "sentences": 1120,
-    "contrasts": 560
+    "sets": 57,
+    "words": 285,
+    "sentences": 2280,
+    "contrasts": 1140
    },
    "bands": {
+    "1": [
+     "B-carry-01",
+     "B-faces-01",
+     "B-hands-01",
+     "B-move-01",
+     "B-sounds-01"
+    ],
     "2": [
      "A-angry-01",
      "A-cry-01",
@@ -41,25 +48,4336 @@
      "A-brave-01",
      "A-dark-01",
      "A-dirty-01",
+     "A-hold-01",
      "A-shine-01",
      "A-smart-01",
      "A-sound-01",
      "A-throw-01",
      "A-tired-01",
      "A-water-move-01",
+     "B-coast-01",
+     "B-river-01",
+     "B-sky-01",
      "B-water-01",
      "B-weather-01",
      "C-borrow-01",
      "C-their-01"
     ],
     "4": [
+     "A-character-01",
+     "A-disrepair-01",
+     "A-effort-01",
+     "A-escape-01",
+     "A-feelings-01",
      "A-look-01",
+     "A-materials-01",
+     "A-old-01",
+     "A-reply-01",
      "A-rough-01",
      "A-say-01",
+     "B-buildings-01",
      "B-landform-01"
+    ],
+    "5": [
+     "A-aftermath-01",
+     "A-atmosphere-01",
+     "A-craft-01",
+     "A-dwell-01",
+     "A-fortune-01",
+     "A-manner-01",
+     "A-ponder-01",
+     "A-qualities-01",
+     "A-unsure-01",
+     "B-bearing-01",
+     "B-journey-01"
     ]
    },
    "sets": [
+    {
+     "id": "B-carry-01",
+     "bank": "B",
+     "pos": "verb",
+     "theme": "ways to move things by hand",
+     "band": 1,
+     "band_override": 1,
+     "computed": {
+      "zipf_min": 4.5,
+      "zipf_mean": 4.77,
+      "tightness": 0.314,
+      "band_suggested": 1,
+      "scored_at": "2026-07-06T18:43:21+00:00"
+     },
+     "words": [
+      {
+       "w": "push",
+       "synset": "push.v.01",
+       "gloss_source": "authored",
+       "gloss": "press against something to move it forward or away",
+       "zipf": 4.82,
+       "register": "neutral",
+       "senses_at_pos": 10,
+       "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-07",
+        "note": "dominant school-context sense confirmed at roster vet"
+       },
+       "forms": {
+        "base": "push",
+        "third": "pushes",
+        "past": "pushed",
+        "part": "pushing"
+       },
+       "discriminator": "presses it away from you",
+       "grade": 1
+      },
+      {
+       "w": "pull",
+       "synset": "pull.v.01",
+       "gloss_source": "authored",
+       "gloss": "draw something towards yourself",
+       "zipf": 4.82,
+       "register": "neutral",
+       "senses_at_pos": 17,
+       "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-07",
+        "note": "dominant school-context sense confirmed at roster vet"
+       },
+       "forms": {
+        "base": "pull",
+        "third": "pulls",
+        "past": "pulled",
+        "part": "pulling"
+       },
+       "discriminator": "draws it towards you",
+       "grade": 1
+      },
+      {
+       "w": "lift",
+       "synset": "raise.v.02",
+       "gloss_source": "wordnet",
+       "gloss": "raise from a lower to a higher position",
+       "zipf": 4.5,
+       "register": "neutral",
+       "senses_at_pos": 24,
+       "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-07",
+        "note": "dominant school-context sense confirmed at roster vet"
+       },
+       "forms": {
+        "base": "lift",
+        "third": "lifts",
+        "past": "lifted",
+        "part": "lifting"
+       },
+       "discriminator": "raises it upward",
+       "grade": 1
+      },
+      {
+       "w": "carry",
+       "synset": "transport.v.02",
+       "gloss_source": "wordnet",
+       "gloss": "move while supporting, either in a vehicle or in one's hands or on one's body",
+       "zipf": 4.89,
+       "register": "neutral",
+       "senses_at_pos": 40,
+       "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-07",
+        "note": "dominant school-context sense confirmed at roster vet"
+       },
+       "forms": {
+        "base": "carry",
+        "third": "carries",
+        "past": "carried",
+        "part": "carrying"
+       },
+       "discriminator": "keeps hold of it while travelling",
+       "grade": 1
+      },
+      {
+       "w": "throw",
+       "synset": "throw.v.01",
+       "gloss_source": "authored",
+       "gloss": "send something flying through the air",
+       "zipf": 4.83,
+       "register": "neutral",
+       "senses_at_pos": 15,
+       "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-07",
+        "note": "dominant school-context sense confirmed at roster vet"
+       },
+       "forms": {
+        "base": "throw",
+        "third": "throws",
+        "past": "threw",
+        "part": "throwing"
+       },
+       "discriminator": "lets go so it flies",
+       "grade": 1
+      }
+     ],
+     "sentences": [
+      {
+       "id": "B-carry-01-s01",
+       "answer": "push",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Mia ___ the pram from behind with both palms.",
+       "cue_phrase": "with both palms",
+       "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+       }
+      },
+      {
+       "id": "B-carry-01-s02",
+       "answer": "push",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Dad ___ the stuck door open with his shoulder.",
+       "cue_phrase": "with his shoulder",
+       "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (throw); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "B-carry-01-s03",
+       "answer": "push",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The coach had Ravi ___ the trolley from behind through the gate.",
+       "cue_phrase": "from behind through the gate",
+       "surface": {
+        "push": "push",
+        "pull": "pull",
+        "lift": "lift",
+        "carry": "carry",
+        "throw": "throw"
+       }
+      },
+      {
+       "id": "B-carry-01-s04",
+       "answer": "push",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Ella ___ the sofa nearer the wall using her flat palms.",
+       "cue_phrase": "using her flat palms",
+       "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+       }
+      },
+      {
+       "id": "B-carry-01-s05",
+       "answer": "push",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Noor ___ the heavy button, and the lights flashed green.",
+       "cue_phrase": "the heavy button",
+       "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+       }
+      },
+      {
+       "id": "B-carry-01-s06",
+       "answer": "push",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "When the swing slowed, Leo ___ his sister's back once.",
+       "cue_phrase": "his sister's back",
+       "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+       }
+      },
+      {
+       "id": "B-carry-01-s07",
+       "answer": "push",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "Mum ___ the buggy up the ramp from the rear.",
+       "cue_phrase": "from the rear",
+       "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+       }
+      },
+      {
+       "id": "B-carry-01-s08",
+       "answer": "push",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "A player ___ the red button with one finger to start.",
+       "cue_phrase": "with one finger",
+       "surface": {
+        "push": "pushes",
+        "pull": "pulls",
+        "lift": "lifts",
+        "carry": "carries",
+        "throw": "throws"
+       }
+      },
+      {
+       "id": "B-carry-01-s09",
+       "answer": "pull",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Lila ___ the bucket towards her by the rope.",
+       "cue_phrase": "towards her by the rope",
+       "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+       }
+      },
+      {
+       "id": "B-carry-01-s10",
+       "answer": "pull",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Sam ___ the drawer open by its round handle.",
+       "cue_phrase": "by its round handle",
+       "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+       }
+      },
+      {
+       "id": "B-carry-01-s11",
+       "answer": "pull",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The goat ___ the lead until Ada stumbled beside the fence.",
+       "cue_phrase": "Ada stumbled beside the fence",
+       "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+       }
+      },
+      {
+       "id": "B-carry-01-s12",
+       "answer": "pull",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Nia ___ the blanket closer, tucking it under her chin.",
+       "cue_phrase": "under her chin",
+       "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+       }
+      },
+      {
+       "id": "B-carry-01-s13",
+       "answer": "pull",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "A fish bit, and Asha ___ the line towards the bank.",
+       "cue_phrase": "line towards the bank",
+       "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+       }
+      },
+      {
+       "id": "B-carry-01-s14",
+       "answer": "pull",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The curtain stayed shut until Max ___ the cord beside the window.",
+       "cue_phrase": "cord beside the window",
+       "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+       }
+      },
+      {
+       "id": "B-carry-01-s15",
+       "answer": "pull",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "Grandad ___ the cork towards his chest; it popped free.",
+       "cue_phrase": "towards his chest",
+       "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+       }
+      },
+      {
+       "id": "B-carry-01-s16",
+       "answer": "pull",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "Zara ___ the sledge behind her across the snow.",
+       "cue_phrase": "behind her across the snow",
+       "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+       }
+      },
+      {
+       "id": "B-carry-01-s17",
+       "answer": "lift",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Bo ___ the suitcase straight up onto the top shelf.",
+       "cue_phrase": "straight up onto",
+       "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+       }
+      },
+      {
+       "id": "B-carry-01-s18",
+       "answer": "lift",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Mina ___ the puppy from the puddle into her arms.",
+       "cue_phrase": "into her arms",
+       "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (pull); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "B-carry-01-s19",
+       "answer": "lift",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "At the award photo, Omar ___ the cup above his head.",
+       "cue_phrase": "above his head",
+       "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+       }
+      },
+      {
+       "id": "B-carry-01-s20",
+       "answer": "lift",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The nurse asked Omar to ___ his chin for the plaster.",
+       "cue_phrase": "his chin for the plaster",
+       "surface": {
+        "push": "push",
+        "pull": "pull",
+        "lift": "lift",
+        "carry": "carry",
+        "throw": "throw"
+       }
+      },
+      {
+       "id": "B-carry-01-s21",
+       "answer": "lift",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The kitten mewed under the crate, so Priya ___ one corner.",
+       "cue_phrase": "under the crate",
+       "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+       }
+      },
+      {
+       "id": "B-carry-01-s22",
+       "answer": "lift",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "To slide blocks underneath, Lee ___ one table leg for a moment.",
+       "cue_phrase": "slide blocks underneath",
+       "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+       }
+      },
+      {
+       "id": "B-carry-01-s23",
+       "answer": "lift",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Gran ___ the baby to her cheek for a giggly hello.",
+       "cue_phrase": "to her cheek",
+       "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (pull); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "B-carry-01-s24",
+       "answer": "lift",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "Ari ___ the basket from the floor onto the counter.",
+       "cue_phrase": "from the floor onto",
+       "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (carry, throw); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "B-carry-01-s25",
+       "answer": "carry",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Lena ___ the puppy in her arms to the sofa.",
+       "cue_phrase": "in her arms",
+       "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+       }
+      },
+      {
+       "id": "B-carry-01-s26",
+       "answer": "carry",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Tariq ___ the tray across the room with steady arms.",
+       "cue_phrase": "with steady arms",
+       "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+       }
+      },
+      {
+       "id": "B-carry-01-s27",
+       "answer": "carry",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The teacher asked Maya to ___ the books from class to the bus.",
+       "cue_phrase": "from class to the bus",
+       "surface": {
+        "push": "push",
+        "pull": "pull",
+        "lift": "lift",
+        "carry": "carry",
+        "throw": "throw"
+       }
+      },
+      {
+       "id": "B-carry-01-s28",
+       "answer": "carry",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The mouse was safe as Pip ___ it home in a box.",
+       "cue_phrase": "home in a box",
+       "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+       }
+      },
+      {
+       "id": "B-carry-01-s29",
+       "answer": "carry",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "When the sand burned, Jo ___ the puppy across the beach.",
+       "cue_phrase": "across the beach",
+       "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+       }
+      },
+      {
+       "id": "B-carry-01-s30",
+       "answer": "carry",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "After the vase cracked, Noor ___ it gently to the art room.",
+       "cue_phrase": "gently to the art room",
+       "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+       }
+      },
+      {
+       "id": "B-carry-01-s31",
+       "answer": "carry",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "A waiter ___ soup bowls to tables with level arms.",
+       "cue_phrase": "to tables with level arms",
+       "surface": {
+        "push": "pushes",
+        "pull": "pulls",
+        "lift": "lifts",
+        "carry": "carries",
+        "throw": "throws"
+       }
+      },
+      {
+       "id": "B-carry-01-s32",
+       "answer": "carry",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Auntie ___ the sleeping baby upstairs in a soft blanket.",
+       "cue_phrase": "upstairs in a soft blanket",
+       "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+       }
+      },
+      {
+       "id": "B-carry-01-s33",
+       "answer": "throw",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The coach had Kai ___ the beanbag from ten steps back into the hoop.",
+       "cue_phrase": "from ten steps back",
+       "surface": {
+        "push": "push",
+        "pull": "pull",
+        "lift": "lift",
+        "carry": "carry",
+        "throw": "throw"
+       }
+      },
+      {
+       "id": "B-carry-01-s34",
+       "answer": "throw",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Mira ___ the snowball at the cardboard monster.",
+       "cue_phrase": "at the cardboard monster",
+       "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+       }
+      },
+      {
+       "id": "B-carry-01-s35",
+       "answer": "throw",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Jon ___ the pebble from the bridge; it splashed in the pond.",
+       "cue_phrase": "from the bridge",
+       "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+       }
+      },
+      {
+       "id": "B-carry-01-s36",
+       "answer": "throw",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Luca ___ the ball, and his friend caught it near the tree.",
+       "cue_phrase": "his friend caught it",
+       "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+       }
+      },
+      {
+       "id": "B-carry-01-s37",
+       "answer": "throw",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The hoop was far, but Ana ___ the ball straight in.",
+       "cue_phrase": "The hoop was far",
+       "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+       }
+      },
+      {
+       "id": "B-carry-01-s38",
+       "answer": "throw",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "During the game, Ben ___ the dice; they bounced twice.",
+       "cue_phrase": "they bounced twice",
+       "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+       }
+      },
+      {
+       "id": "B-carry-01-s39",
+       "answer": "throw",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "Zed ___ the rope over the high branch on his first try.",
+       "cue_phrase": "over the high branch",
+       "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (lift, pull); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "B-carry-01-s40",
+       "answer": "throw",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Ivy ___ the paper plane, and it glided to the stage.",
+       "cue_phrase": "paper plane",
+       "surface": {
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
+       }
+      }
+     ],
+     "contrasts": [
+      {
+       "answer": "push",
+       "picked": "pull",
+       "line": "Push sends it from you; pull brings it nearer."
+      },
+      {
+       "answer": "push",
+       "picked": "lift",
+       "line": "Push goes forward or sideways; lift goes upward."
+      },
+      {
+       "answer": "push",
+       "picked": "carry",
+       "line": "Push sends it from you; carry keeps it with you while you travel."
+      },
+      {
+       "answer": "push",
+       "picked": "throw",
+       "line": "Push keeps contact; throw lets go so it flies."
+      },
+      {
+       "answer": "pull",
+       "picked": "push",
+       "line": "Pull brings it nearer; push sends it from you."
+      },
+      {
+       "answer": "pull",
+       "picked": "lift",
+       "line": "Pull brings it nearer; lift takes it upward."
+      },
+      {
+       "answer": "pull",
+       "picked": "carry",
+       "line": "Pull may drag it nearer; carry keeps it with you while you travel."
+      },
+      {
+       "answer": "pull",
+       "picked": "throw",
+       "line": "Pull keeps hold and brings it nearer; throw lets go."
+      },
+      {
+       "answer": "lift",
+       "picked": "push",
+       "line": "Lift takes it upward; push sends it forward from you."
+      },
+      {
+       "answer": "lift",
+       "picked": "pull",
+       "line": "Lift takes it upward; pull brings it nearer."
+      },
+      {
+       "answer": "lift",
+       "picked": "carry",
+       "line": "Lift is mainly upward; carry keeps it with you as you travel."
+      },
+      {
+       "answer": "lift",
+       "picked": "throw",
+       "line": "Lift keeps hold; throw lets go so it flies."
+      },
+      {
+       "answer": "carry",
+       "picked": "push",
+       "line": "Carry keeps it with you while you travel; push sends it from you."
+      },
+      {
+       "answer": "carry",
+       "picked": "pull",
+       "line": "Carry keeps it with you while you travel; pull brings it nearer."
+      },
+      {
+       "answer": "carry",
+       "picked": "lift",
+       "line": "Carry travels with it; lift mainly takes it upward."
+      },
+      {
+       "answer": "carry",
+       "picked": "throw",
+       "line": "Carry keeps hold while travelling; throw lets go."
+      },
+      {
+       "answer": "throw",
+       "picked": "push",
+       "line": "Throw lets go; push keeps contact."
+      },
+      {
+       "answer": "throw",
+       "picked": "pull",
+       "line": "Throw lets go; pull brings it nearer."
+      },
+      {
+       "answer": "throw",
+       "picked": "lift",
+       "line": "Throw makes it fly; lift keeps hold upward."
+      },
+      {
+       "answer": "throw",
+       "picked": "carry",
+       "line": "Throw lets go for flight; carry keeps hold while travelling."
+      }
+     ],
+     "meta": {
+      "generated_at": "2026-07-06T18:27:02+00:00",
+      "model": "gpt-5.5",
+      "scrubbed_at": "2026-07-07",
+      "scrub_note": "Scrubbed by claude 2026-07-07: mechanical sweeps clean (two snow scenes cleared - no month-absurdity cues, AU-safe), all 40 sentences and 20 contrasts read; no defects found."
+     }
+    },
+    {
+     "id": "B-faces-01",
+     "bank": "B",
+     "pos": "verb",
+     "theme": "faces and gestures",
+     "band": 1,
+     "band_override": 1,
+     "computed": {
+      "zipf_min": 3.07,
+      "zipf_mean": 3.43,
+      "tightness": 0.47,
+      "band_suggested": 3,
+      "scored_at": "2026-07-06T18:43:21+00:00"
+     },
+     "words": [
+      {
+       "w": "grin",
+       "synset": "grin.v.01",
+       "gloss_source": "authored",
+       "gloss": "smile widely, showing your teeth",
+       "zipf": 3.59,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "grin",
+        "third": "grins",
+        "past": "grinned",
+        "part": "grinning"
+       },
+       "discriminator": "the big wide smile",
+       "grade": 2
+      },
+      {
+       "w": "frown",
+       "synset": "frown.v.01",
+       "gloss_source": "authored",
+       "gloss": "pull your eyebrows down to show you are not pleased",
+       "zipf": 3.26,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "frown",
+        "third": "frowns",
+        "past": "frowned",
+        "part": "frowning"
+       },
+       "discriminator": "brows down, displeased",
+       "grade": 2
+      },
+      {
+       "w": "wink",
+       "synset": "wink.v.01",
+       "gloss_source": "authored",
+       "gloss": "close one eye quickly as a signal",
+       "zipf": 3.5,
+       "register": "neutral",
+       "senses_at_pos": 4,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "wink",
+        "third": "winks",
+        "past": "winked",
+        "part": "winking"
+       },
+       "discriminator": "one eye closed as a signal",
+       "grade": 2
+      },
+      {
+       "w": "yawn",
+       "synset": "yawn.v.01",
+       "gloss_source": "authored",
+       "gloss": "open your mouth wide and take a big sleepy breath",
+       "zipf": 3.07,
+       "register": "neutral",
+       "senses_at_pos": 2,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "yawn",
+        "third": "yawns",
+        "past": "yawned",
+        "part": "yawning"
+       },
+       "discriminator": "mouth wide, sleepy breath",
+       "grade": 2
+      },
+      {
+       "w": "nod",
+       "synset": "nod.v.02",
+       "gloss_source": "authored",
+       "gloss": "move your head down and up to say yes",
+       "zipf": 3.74,
+       "register": "neutral",
+       "senses_at_pos": 5,
+       "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-06",
+        "note": "dominant school-context sense confirmed at roster vet"
+       },
+       "forms": {
+        "base": "nod",
+        "third": "nods",
+        "past": "nodded",
+        "part": "nodding"
+       },
+       "discriminator": "head down and up for yes",
+       "grade": 1
+      }
+     ],
+     "sentences": [
+      {
+       "id": "B-faces-01-s01",
+       "answer": "grin",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "When Dad revealed the puppy, Isla ___ from ear to ear.",
+       "cue_phrase": "from ear to ear",
+       "surface": {
+        "grin": "grinned",
+        "frown": "frowned",
+        "wink": "winked",
+        "yawn": "yawned",
+        "nod": "nodded"
+       }
+      },
+      {
+       "id": "B-faces-01-s02",
+       "answer": "grin",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Arlo ___ with a huge, happy beam after scoring the goal.",
+       "cue_phrase": "huge, happy beam",
+       "surface": {
+        "grin": "grinned",
+        "frown": "frowned",
+        "wink": "winked",
+        "yawn": "yawned",
+        "nod": "nodded"
+       }
+      },
+      {
+       "id": "B-faces-01-s03",
+       "answer": "grin",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The surprise cake made Priya ___ with cheek-stretching delight.",
+       "cue_phrase": "cheek-stretching delight",
+       "surface": {
+        "grin": "grin",
+        "frown": "frown",
+        "wink": "wink",
+        "yawn": "yawn",
+        "nod": "nod"
+       }
+      },
+      {
+       "id": "B-faces-01-s04",
+       "answer": "grin",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "A medal on his shirt made Ben ___ until his cheeks ached.",
+       "cue_phrase": "his cheeks ached",
+       "surface": {
+        "grin": "grin",
+        "frown": "frown",
+        "wink": "wink",
+        "yawn": "yawn",
+        "nod": "nod"
+       }
+      },
+      {
+       "id": "B-faces-01-s05",
+       "answer": "grin",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Lila tried to look serious, but the joke made her ___.",
+       "cue_phrase": "tried to look serious",
+       "surface": {
+        "grin": "grin",
+        "frown": "frown",
+        "wink": "wink",
+        "yawn": "yawn",
+        "nod": "nod"
+       }
+      },
+      {
+       "id": "B-faces-01-s06",
+       "answer": "grin",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The magician's joke had Noah ___, with both cheeks lifted.",
+       "cue_phrase": "both cheeks lifted",
+       "surface": {
+        "grin": "grin",
+        "frown": "frown",
+        "wink": "wink",
+        "yawn": "yawn",
+        "nod": "nod"
+       }
+      },
+      {
+       "id": "B-faces-01-s07",
+       "answer": "grin",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "At school photos, Asha ___ in a broad beam for the camera.",
+       "cue_phrase": "broad beam",
+       "surface": {
+        "grin": "grins",
+        "frown": "frowns",
+        "wink": "winks",
+        "yawn": "yawns",
+        "nod": "nods"
+       }
+      },
+      {
+       "id": "B-faces-01-s08",
+       "answer": "grin",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Finding the lost marble made Leo ___ until both cheeks rounded.",
+       "cue_phrase": "both cheeks rounded",
+       "surface": {
+        "grin": "grin",
+        "frown": "frown",
+        "wink": "wink",
+        "yawn": "yawn",
+        "nod": "nod"
+       }
+      },
+      {
+       "id": "B-faces-01-s09",
+       "answer": "frown",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Mina ___, forehead creased, at the spilled paint.",
+       "cue_phrase": "forehead creased",
+       "surface": {
+        "grin": "grinned",
+        "frown": "frowned",
+        "wink": "winked",
+        "yawn": "yawned",
+        "nod": "nodded"
+       }
+      },
+      {
+       "id": "B-faces-01-s10",
+       "answer": "frown",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Ollie ___ with a dark scowl when the tower fell.",
+       "cue_phrase": "dark scowl",
+       "surface": {
+        "grin": "grinned",
+        "frown": "frowned",
+        "wink": "winked",
+        "yawn": "yawned",
+        "nod": "nodded"
+       }
+      },
+      {
+       "id": "B-faces-01-s11",
+       "answer": "frown",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The wrong answer made Max ___, his forehead wrinkling in frustration.",
+       "cue_phrase": "forehead wrinkling",
+       "surface": {
+        "grin": "grin",
+        "frown": "frown",
+        "wink": "wink",
+        "yawn": "yawn",
+        "nod": "nod"
+       }
+      },
+      {
+       "id": "B-faces-01-s12",
+       "answer": "frown",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Rain on the picnic made Nora ___, with folded brows.",
+       "cue_phrase": "folded brows",
+       "surface": {
+        "grin": "grin",
+        "frown": "frown",
+        "wink": "wink",
+        "yawn": "yawn",
+        "nod": "nod"
+       }
+      },
+      {
+       "id": "B-faces-01-s13",
+       "answer": "frown",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The referee cancelled the goal, and Tom's face tightened as he ___.",
+       "cue_phrase": "face tightened",
+       "surface": {
+        "grin": "grinned",
+        "frown": "frowned",
+        "wink": "winked",
+        "yawn": "yawned",
+        "nod": "nodded"
+       }
+      },
+      {
+       "id": "B-faces-01-s14",
+       "answer": "frown",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Seeing extra homework, Ava ___ so hard a wrinkle appeared.",
+       "cue_phrase": "wrinkle appeared",
+       "surface": {
+        "grin": "grinned",
+        "frown": "frowned",
+        "wink": "winked",
+        "yawn": "yawned",
+        "nod": "nodded"
+       }
+      },
+      {
+       "id": "B-faces-01-s15",
+       "answer": "frown",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "Tariq ___ beneath a stormy brow whenever his kite breaks.",
+       "cue_phrase": "stormy brow",
+       "surface": {
+        "grin": "grins",
+        "frown": "frowns",
+        "wink": "winks",
+        "yawn": "yawns",
+        "nod": "nods"
+       }
+      },
+      {
+       "id": "B-faces-01-s16",
+       "answer": "frown",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The bitter lemon made Suki ___ before she set it down.",
+       "cue_phrase": "bitter lemon",
+       "surface": {
+        "grin": "grin",
+        "frown": "frown",
+        "wink": "wink",
+        "yawn": "yawn",
+        "nod": "nod"
+       }
+      },
+      {
+       "id": "B-faces-01-s17",
+       "answer": "wink",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Using one lid, Kai ___ at Tara before hiding the card.",
+       "cue_phrase": "Using one lid",
+       "surface": {
+        "grin": "grinned",
+        "frown": "frowned",
+        "wink": "winked",
+        "yawn": "yawned",
+        "nod": "nodded"
+       }
+      },
+      {
+       "id": "B-faces-01-s18",
+       "answer": "wink",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "With one lid, Grandma ___ before passing the secret note.",
+       "cue_phrase": "With one lid",
+       "surface": {
+        "grin": "grinned",
+        "frown": "frowned",
+        "wink": "winked",
+        "yawn": "yawned",
+        "nod": "nodded"
+       }
+      },
+      {
+       "id": "B-faces-01-s19",
+       "answer": "wink",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "During charades, the pirate had to ___ with his only uncovered lid.",
+       "cue_phrase": "only uncovered lid",
+       "surface": {
+        "grin": "grin",
+        "frown": "frown",
+        "wink": "wink",
+        "yawn": "yawn",
+        "nod": "nod"
+       }
+      },
+      {
+       "id": "B-faces-01-s20",
+       "answer": "wink",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Mum's secret plan made her ___ at Jo with one lid only.",
+       "cue_phrase": "one lid only",
+       "surface": {
+        "grin": "grin",
+        "frown": "frown",
+        "wink": "wink",
+        "yawn": "yawn",
+        "nod": "nod"
+       }
+      },
+      {
+       "id": "B-faces-01-s21",
+       "answer": "wink",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Ben kept the hiding place secret, then ___ with a single lid.",
+       "cue_phrase": "a single lid",
+       "surface": {
+        "grin": "grinned",
+        "frown": "frowned",
+        "wink": "winked",
+        "yawn": "yawned",
+        "nod": "nodded"
+       }
+      },
+      {
+       "id": "B-faces-01-s22",
+       "answer": "wink",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Before the surprise came out, Dad ___ at Mia so she would play along.",
+       "cue_phrase": "so she would play along",
+       "surface": {
+        "grin": "grinned",
+        "frown": "frowned",
+        "wink": "winked",
+        "yawn": "yawned",
+        "nod": "nodded"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (nod); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "B-faces-01-s23",
+       "answer": "wink",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "To warn Sam quietly, Pia had to ___ using just one lid.",
+       "cue_phrase": "using just one lid",
+       "surface": {
+        "grin": "grin",
+        "frown": "frown",
+        "wink": "wink",
+        "yawn": "yawn",
+        "nod": "nod"
+       }
+      },
+      {
+       "id": "B-faces-01-s24",
+       "answer": "wink",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Behind the curtain, Rafi ___ using only a lid at the audience.",
+       "cue_phrase": "using only a lid",
+       "surface": {
+        "grin": "grinned",
+        "frown": "frowned",
+        "wink": "winked",
+        "yawn": "yawned",
+        "nod": "nodded"
+       }
+      },
+      {
+       "id": "B-faces-01-s25",
+       "answer": "yawn",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "After bedtime, Nina ___, making a round O with her lips.",
+       "cue_phrase": "round O",
+       "surface": {
+        "grin": "grinned",
+        "frown": "frowned",
+        "wink": "winked",
+        "yawn": "yawned",
+        "nod": "nodded"
+       }
+      },
+      {
+       "id": "B-faces-01-s26",
+       "answer": "yawn",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Leo ___ so long that his jaw stretched and eyes watered.",
+       "cue_phrase": "jaw stretched",
+       "surface": {
+        "grin": "grinned",
+        "frown": "frowned",
+        "wink": "winked",
+        "yawn": "yawned",
+        "nod": "nodded"
+       }
+      },
+      {
+       "id": "B-faces-01-s27",
+       "answer": "yawn",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The warm bus ride made every player ___ after practice.",
+       "cue_phrase": "every player",
+       "surface": {
+        "grin": "grin",
+        "frown": "frown",
+        "wink": "wink",
+        "yawn": "yawn",
+        "nod": "nod"
+       }
+      },
+      {
+       "id": "B-faces-01-s28",
+       "answer": "yawn",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "During the dull film, Mia had to ___, jaw sagging behind her programme.",
+       "cue_phrase": "jaw sagging",
+       "surface": {
+        "grin": "grin",
+        "frown": "frown",
+        "wink": "wink",
+        "yawn": "yawn",
+        "nod": "nod"
+       }
+      },
+      {
+       "id": "B-faces-01-s29",
+       "answer": "yawn",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "By the campfire's last spark, the tired twins ___ with round lips.",
+       "cue_phrase": "round lips",
+       "surface": {
+        "grin": "grinned",
+        "frown": "frowned",
+        "wink": "winked",
+        "yawn": "yawned",
+        "nod": "nodded"
+       }
+      },
+      {
+       "id": "B-faces-01-s30",
+       "answer": "yawn",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "After three bedtime stories, Sami ___, and his jaw drooped.",
+       "cue_phrase": "jaw drooped",
+       "surface": {
+        "grin": "grinned",
+        "frown": "frowned",
+        "wink": "winked",
+        "yawn": "yawned",
+        "nod": "nodded"
+       }
+      },
+      {
+       "id": "B-faces-01-s31",
+       "answer": "yawn",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "At dawn, the guard ___ with lips forming a silent O.",
+       "cue_phrase": "silent O",
+       "surface": {
+        "grin": "grinned",
+        "frown": "frowned",
+        "wink": "winked",
+        "yawn": "yawned",
+        "nod": "nodded"
+       }
+      },
+      {
+       "id": "B-faces-01-s32",
+       "answer": "yawn",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The long maths test made several pupils ___, jaws drooping in a row.",
+       "cue_phrase": "jaws drooping",
+       "surface": {
+        "grin": "grin",
+        "frown": "frown",
+        "wink": "wink",
+        "yawn": "yawn",
+        "nod": "nod"
+       }
+      },
+      {
+       "id": "B-faces-01-s33",
+       "answer": "nod",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Maya ___ twice, chin down then up, before taking the badge.",
+       "cue_phrase": "chin down then up",
+       "surface": {
+        "grin": "grinned",
+        "frown": "frowned",
+        "wink": "winked",
+        "yawn": "yawned",
+        "nod": "nodded"
+       }
+      },
+      {
+       "id": "B-faces-01-s34",
+       "answer": "nod",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Asked about joining, Omar ___, his chin dipping and rising.",
+       "cue_phrase": "chin dipping and rising",
+       "surface": {
+        "grin": "grinned",
+        "frown": "frowned",
+        "wink": "winked",
+        "yawn": "yawned",
+        "nod": "nodded"
+       }
+      },
+      {
+       "id": "B-faces-01-s35",
+       "answer": "nod",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "When Gran offered more soup, Edie had to ___, chin bobbing.",
+       "cue_phrase": "chin bobbing",
+       "surface": {
+        "grin": "grin",
+        "frown": "frown",
+        "wink": "wink",
+        "yawn": "yawn",
+        "nod": "nod"
+       }
+      },
+      {
+       "id": "B-faces-01-s36",
+       "answer": "nod",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The captain's question made the crew ___ together, chins dipping.",
+       "cue_phrase": "chins dipping",
+       "surface": {
+        "grin": "grin",
+        "frown": "frown",
+        "wink": "wink",
+        "yawn": "yawn",
+        "nod": "nod"
+       }
+      },
+      {
+       "id": "B-faces-01-s37",
+       "answer": "nod",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The teacher asked if Ali understood, and Ali ___, chin dipping once.",
+       "cue_phrase": "asked if Ali understood",
+       "surface": {
+        "grin": "grinned",
+        "frown": "frowned",
+        "wink": "winked",
+        "yawn": "yawned",
+        "nod": "nodded"
+       }
+      },
+      {
+       "id": "B-faces-01-s38",
+       "answer": "nod",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Asked if the water was warm, Bea ___ from across the pool, one quick chin dip.",
+       "cue_phrase": "Asked if the water was warm",
+       "surface": {
+        "grin": "grinned",
+        "frown": "frowned",
+        "wink": "winked",
+        "yawn": "yawned",
+        "nod": "nodded"
+       }
+      },
+      {
+       "id": "B-faces-01-s39",
+       "answer": "nod",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "When Coach asked if they were ready, Luis ___ three times, quick and sure.",
+       "cue_phrase": "asked if they were ready",
+       "surface": {
+        "grin": "grinned",
+        "frown": "frowned",
+        "wink": "winked",
+        "yawn": "yawned",
+        "nod": "nodded"
+       }
+      },
+      {
+       "id": "B-faces-01-s40",
+       "answer": "nod",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "At the vote, Poppy ___, and her chin bounced once.",
+       "cue_phrase": "chin bounced once",
+       "surface": {
+        "grin": "grinned",
+        "frown": "frowned",
+        "wink": "winked",
+        "yawn": "yawned",
+        "nod": "nodded"
+       }
+      }
+     ],
+     "contrasts": [
+      {
+       "answer": "grin",
+       "picked": "frown",
+       "line": "A grin is a big happy face. A frown is an unhappy brow."
+      },
+      {
+       "answer": "grin",
+       "picked": "wink",
+       "line": "A grin uses the whole happy face. A wink uses one lid for a secret hint."
+      },
+      {
+       "answer": "grin",
+       "picked": "yawn",
+       "line": "A grin comes from delight. A yawn comes from tiredness."
+      },
+      {
+       "answer": "grin",
+       "picked": "nod",
+       "line": "A grin is a happy face. A nod is a chin dip for agreement."
+      },
+      {
+       "answer": "frown",
+       "picked": "grin",
+       "line": "A frown has a stormy brow. A grin has a bright, happy face."
+      },
+      {
+       "answer": "frown",
+       "picked": "wink",
+       "line": "A frown shows displeasure. A wink is a one-lid secret hint."
+      },
+      {
+       "answer": "frown",
+       "picked": "yawn",
+       "line": "A frown is unhappy or annoyed. A yawn is tired and jaw-stretchy."
+      },
+      {
+       "answer": "frown",
+       "picked": "nod",
+       "line": "A frown is a cross face. A nod is a chin dip for agreement."
+      },
+      {
+       "answer": "wink",
+       "picked": "grin",
+       "line": "A wink uses one lid for a hint. A grin is a big happy face."
+      },
+      {
+       "answer": "wink",
+       "picked": "frown",
+       "line": "A wink is a one-lid hint. A frown has a stormy brow."
+      },
+      {
+       "answer": "wink",
+       "picked": "yawn",
+       "line": "A wink is a secret one-lid hint. A yawn is a tired jaw stretch."
+      },
+      {
+       "answer": "wink",
+       "picked": "nod",
+       "line": "A wink uses one lid. A nod uses the chin dipping for agreement."
+      },
+      {
+       "answer": "yawn",
+       "picked": "grin",
+       "line": "A yawn is tired and jaw-stretchy. A grin is a happy face."
+      },
+      {
+       "answer": "yawn",
+       "picked": "frown",
+       "line": "A yawn comes from tiredness. A frown comes from displeasure."
+      },
+      {
+       "answer": "yawn",
+       "picked": "wink",
+       "line": "A yawn is a tired jaw stretch. A wink is a one-lid hint."
+      },
+      {
+       "answer": "yawn",
+       "picked": "nod",
+       "line": "A yawn is tired. A nod is a chin dip for agreement."
+      },
+      {
+       "answer": "nod",
+       "picked": "grin",
+       "line": "A nod dips the chin for agreement. A grin is a happy face."
+      },
+      {
+       "answer": "nod",
+       "picked": "frown",
+       "line": "A nod is for agreement. A frown is for displeasure."
+      },
+      {
+       "answer": "nod",
+       "picked": "wink",
+       "line": "A nod uses the chin. A wink uses one lid for a hint."
+      },
+      {
+       "answer": "nod",
+       "picked": "yawn",
+       "line": "A nod agrees with a chin dip. A yawn shows tiredness."
+      }
+     ],
+     "meta": {
+      "generated_at": "2026-07-06T14:34:41+00:00",
+      "model": "gpt-5.5",
+      "scrubbed_at": "2026-07-07",
+      "scrub_note": "Scrubbed by claude 2026-07-07 (dedicated pre-scrub agent failed twice on output limits): mechanical sweeps (cue hygiene, meta-frames, seasonal, templates, duplicates), all 20 contrast lines read per set, every sentence read for frame sanity, all judge hards fixed and re-judged to zero. Fixes: wave re-pinned to brandish.v.01 + 3 contrasts aligned, hop gloss authored to the one-foot sense the set teaches, pat/nod/wink frames restaged, one dangling pronoun."
+     }
+    },
+    {
+     "id": "B-hands-01",
+     "bank": "B",
+     "pos": "verb",
+     "theme": "things hands do",
+     "band": 1,
+     "band_override": 1,
+     "computed": {
+      "zipf_min": 3.54,
+      "zipf_mean": 4.1,
+      "tightness": 0.232,
+      "band_suggested": 2,
+      "scored_at": "2026-07-06T18:43:21+00:00"
+     },
+     "words": [
+      {
+       "w": "grab",
+       "synset": "grab.v.05",
+       "gloss_source": "wordnet",
+       "gloss": "take or grasp suddenly",
+       "zipf": 4.52,
+       "register": "neutral",
+       "senses_at_pos": 6,
+       "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-06",
+        "note": "dominant school-context sense confirmed at roster vet"
+       },
+       "forms": {
+        "base": "grab",
+        "third": "grabs",
+        "past": "grabbed",
+        "part": "grabbing"
+       },
+       "discriminator": "fingers close round it and take it fast",
+       "grade": 1
+      },
+      {
+       "w": "pat",
+       "synset": "dab.v.02",
+       "gloss_source": "authored",
+       "gloss": "touch lightly and gently with a flat hand",
+       "zipf": 4.24,
+       "register": "neutral",
+       "senses_at_pos": 2,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "pat",
+        "third": "pats",
+        "past": "patted",
+        "part": "patting"
+       },
+       "discriminator": "gentle flat-hand taps",
+       "grade": 1
+      },
+      {
+       "w": "poke",
+       "synset": "jab.v.01",
+       "gloss_source": "authored",
+       "gloss": "push at something quickly with a finger or a point",
+       "zipf": 3.6,
+       "register": "neutral",
+       "senses_at_pos": 5,
+       "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-06",
+        "note": "dominant school-context sense confirmed at roster vet"
+       },
+       "forms": {
+        "base": "poke",
+        "third": "pokes",
+        "past": "poked",
+        "part": "poking"
+       },
+       "discriminator": "one fingertip pushed in",
+       "grade": 1
+      },
+      {
+       "w": "wave",
+       "synset": "brandish.v.01",
+       "gloss_source": "wordnet",
+       "gloss": "move or swing back and forth",
+       "zipf": 4.62,
+       "register": "neutral",
+       "senses_at_pos": 5,
+       "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-07",
+        "note": "to-and-fro swinging is the dominant school-context sense; re-pin from the narrower signal sense"
+       },
+       "forms": {
+        "base": "wave",
+        "third": "waves",
+        "past": "waved",
+        "part": "waving"
+       },
+       "discriminator": "swings through the air, touches nothing",
+       "grade": 1
+      },
+      {
+       "w": "clap",
+       "synset": "clap.v.04",
+       "gloss_source": "authored",
+       "gloss": "strike your own two hands together",
+       "zipf": 3.54,
+       "register": "neutral",
+       "senses_at_pos": 7,
+       "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-06",
+        "note": "dominant school-context sense confirmed at roster vet"
+       },
+       "forms": {
+        "base": "clap",
+        "third": "claps",
+        "past": "clapped",
+        "part": "clapping"
+       },
+       "discriminator": "your two hands strike each other",
+       "grade": 1
+      }
+     ],
+     "sentences": [
+      {
+       "id": "B-hands-01-s01",
+       "answer": "grab",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Milo ___ the falling cup by its handle before it smashed.",
+       "cue_phrase": "falling cup by its handle",
+       "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+       }
+      },
+      {
+       "id": "B-hands-01-s02",
+       "answer": "grab",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "As the balloon drifted away, Rina ___ its string tight.",
+       "cue_phrase": "its string tight",
+       "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+       }
+      },
+      {
+       "id": "B-hands-01-s03",
+       "answer": "grab",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Dad ___ Sam's sleeve in the crowd so he stayed close.",
+       "cue_phrase": "so he stayed close",
+       "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+       }
+      },
+      {
+       "id": "B-hands-01-s04",
+       "answer": "grab",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Zoe ___ the last biscuit before the dog reached the plate.",
+       "cue_phrase": "before the dog reached",
+       "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+       }
+      },
+      {
+       "id": "B-hands-01-s05",
+       "answer": "grab",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The cookie jar wobbled, so Ben ___ it against his chest.",
+       "cue_phrase": "against his chest",
+       "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+       }
+      },
+      {
+       "id": "B-hands-01-s06",
+       "answer": "grab",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "When the goat nibbled her map, Ella ___ the corner back.",
+       "cue_phrase": "corner back",
+       "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+       }
+      },
+      {
+       "id": "B-hands-01-s07",
+       "answer": "grab",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "When sweets spill, Tia ___ the biggest one first.",
+       "cue_phrase": "biggest one first",
+       "surface": {
+        "grab": "grabs",
+        "pat": "pats",
+        "poke": "pokes",
+        "wave": "waves",
+        "clap": "claps"
+       }
+      },
+      {
+       "id": "B-hands-01-s08",
+       "answer": "grab",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "The wind made Oli ___ his hat before it flew off.",
+       "cue_phrase": "before it flew off",
+       "surface": {
+        "grab": "grab",
+        "pat": "pat",
+        "poke": "poke",
+        "wave": "wave",
+        "clap": "clap"
+       }
+      },
+      {
+       "id": "B-hands-01-s09",
+       "answer": "pat",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The nurse ___ the puppy's head with a soft open palm.",
+       "cue_phrase": "soft open palm",
+       "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+       }
+      },
+      {
+       "id": "B-hands-01-s10",
+       "answer": "pat",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Gran ___ the sofa cushion in small kind taps.",
+       "cue_phrase": "small kind taps",
+       "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+       }
+      },
+      {
+       "id": "B-hands-01-s11",
+       "answer": "pat",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "After the thunder, Mina ___ the dog's side until its tail wagged.",
+       "cue_phrase": "until its tail wagged",
+       "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+       }
+      },
+      {
+       "id": "B-hands-01-s12",
+       "answer": "pat",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The teacher ___ the clay lid to settle it without denting the pot.",
+       "cue_phrase": "without denting the pot",
+       "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+       }
+      },
+      {
+       "id": "B-hands-01-s13",
+       "answer": "pat",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The shy pony stayed calm as Arlo ___ its neck.",
+       "cue_phrase": "stayed calm",
+       "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+       }
+      },
+      {
+       "id": "B-hands-01-s14",
+       "answer": "pat",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The sleeping cat kept purring while Nia ___ its fur.",
+       "cue_phrase": "kept purring",
+       "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+       }
+      },
+      {
+       "id": "B-hands-01-s15",
+       "answer": "pat",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Please ___ the seed soil until it sits smooth.",
+       "cue_phrase": "until it sits smooth",
+       "surface": {
+        "grab": "grab",
+        "pat": "pat",
+        "poke": "poke",
+        "wave": "wave",
+        "clap": "clap"
+       }
+      },
+      {
+       "id": "B-hands-01-s16",
+       "answer": "pat",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "To calm the rabbit, Sol tried to ___ its back softly.",
+       "cue_phrase": "To calm the rabbit",
+       "surface": {
+        "grab": "grab",
+        "pat": "pat",
+        "poke": "poke",
+        "wave": "wave",
+        "clap": "clap"
+       }
+      },
+      {
+       "id": "B-hands-01-s17",
+       "answer": "poke",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Lina ___ the jelly with one small tip, making a dent.",
+       "cue_phrase": "one small tip",
+       "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+       }
+      },
+      {
+       "id": "B-hands-01-s18",
+       "answer": "poke",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Raj ___ the doorbell with a single knuckle.",
+       "cue_phrase": "single knuckle",
+       "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+       }
+      },
+      {
+       "id": "B-hands-01-s19",
+       "answer": "poke",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The crab hid, so Eva ___ the sand hole with a twig.",
+       "cue_phrase": "with a twig",
+       "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+       }
+      },
+      {
+       "id": "B-hands-01-s20",
+       "answer": "poke",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "To test the cake, Niko ___ the middle with a skewer.",
+       "cue_phrase": "with a skewer",
+       "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+       }
+      },
+      {
+       "id": "B-hands-01-s21",
+       "answer": "poke",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The bubble burst when Mo ___ it with his pencil.",
+       "cue_phrase": "bubble burst",
+       "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+       }
+      },
+      {
+       "id": "B-hands-01-s22",
+       "answer": "poke",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The lift arrived after Sima ___ the tiny button.",
+       "cue_phrase": "tiny button",
+       "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+       }
+      },
+      {
+       "id": "B-hands-01-s23",
+       "answer": "poke",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "Please do not ___ the sleeping bear in the ribs.",
+       "cue_phrase": "in the ribs",
+       "surface": {
+        "grab": "grab",
+        "pat": "pat",
+        "poke": "poke",
+        "wave": "wave",
+        "clap": "clap"
+       }
+      },
+      {
+       "id": "B-hands-01-s24",
+       "answer": "poke",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The map tore when Kavi ___ it with a sharp stick.",
+       "cue_phrase": "sharp stick",
+       "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+       }
+      },
+      {
+       "id": "B-hands-01-s25",
+       "answer": "wave",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Maya ___ her arm high for the ferry crew on deck.",
+       "cue_phrase": "arm high for",
+       "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+       }
+      },
+      {
+       "id": "B-hands-01-s26",
+       "answer": "wave",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Luca ___ his scarf high, and the boat captain nodded.",
+       "cue_phrase": "boat captain nodded",
+       "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+       }
+      },
+      {
+       "id": "B-hands-01-s27",
+       "answer": "wave",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "When the school bus left, Asha ___ her arm until it turned.",
+       "cue_phrase": "school bus left",
+       "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+       }
+      },
+      {
+       "id": "B-hands-01-s28",
+       "answer": "wave",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "At the parade, Nia ___ a flag so her brother spotted her.",
+       "cue_phrase": "brother spotted her",
+       "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+       }
+      },
+      {
+       "id": "B-hands-01-s29",
+       "answer": "wave",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The lost hiker ___ a bright sleeve until the rescue team looked up.",
+       "cue_phrase": "team looked up",
+       "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+       }
+      },
+      {
+       "id": "B-hands-01-s30",
+       "answer": "wave",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Across the river, Ben ___ his cap, and Grandma smiled back.",
+       "cue_phrase": "Grandma smiled back",
+       "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+       }
+      },
+      {
+       "id": "B-hands-01-s31",
+       "answer": "wave",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The queen ___ her arm from the balcony while the crowd cheered below.",
+       "cue_phrase": "from the balcony",
+       "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+       }
+      },
+      {
+       "id": "B-hands-01-s32",
+       "answer": "wave",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "To greet the dragon, Pip had to ___ a white cloth above his head.",
+       "cue_phrase": "above his head",
+       "surface": {
+        "grab": "grab",
+        "pat": "pat",
+        "poke": "poke",
+        "wave": "wave",
+        "clap": "clap"
+       }
+      },
+      {
+       "id": "B-hands-01-s33",
+       "answer": "clap",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "At the finale, Mira ___ her palms, making a sharp smack.",
+       "cue_phrase": "sharp smack",
+       "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+       }
+      },
+      {
+       "id": "B-hands-01-s34",
+       "answer": "clap",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Balloons popped as Omar ___ his palms in loud beats.",
+       "cue_phrase": "loud beats",
+       "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+       }
+      },
+      {
+       "id": "B-hands-01-s35",
+       "answer": "clap",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The audience ___ their palms when the little actors bowed on stage.",
+       "cue_phrase": "actors bowed on stage",
+       "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+       }
+      },
+      {
+       "id": "B-hands-01-s36",
+       "answer": "clap",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "At assembly, everyone ___ their palms for the team until the hall echoed.",
+       "cue_phrase": "hall echoed",
+       "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+       }
+      },
+      {
+       "id": "B-hands-01-s37",
+       "answer": "clap",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The magic spell worked only after Zoe ___ three times, palm against palm.",
+       "cue_phrase": "palm against palm",
+       "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+       }
+      },
+      {
+       "id": "B-hands-01-s38",
+       "answer": "clap",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The baby laughed at the loud smack when Dad ___ his palms.",
+       "cue_phrase": "loud smack",
+       "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+       }
+      },
+      {
+       "id": "B-hands-01-s39",
+       "answer": "clap",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "Please ___ palm against palm with the beat.",
+       "cue_phrase": "palm against palm",
+       "surface": {
+        "grab": "grab",
+        "pat": "pat",
+        "poke": "poke",
+        "wave": "wave",
+        "clap": "clap"
+       }
+      },
+      {
+       "id": "B-hands-01-s40",
+       "answer": "clap",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The coach made us ___ palm against palm before the cheer.",
+       "cue_phrase": "before the cheer",
+       "surface": {
+        "grab": "grab",
+        "pat": "pat",
+        "poke": "poke",
+        "wave": "wave",
+        "clap": "clap"
+       }
+      }
+     ],
+     "contrasts": [
+      {
+       "answer": "grab",
+       "picked": "pat",
+       "line": "Grab closes fingers round an item fast. Pat uses soft palm taps without carrying it off."
+      },
+      {
+       "answer": "grab",
+       "picked": "poke",
+       "line": "Grab gets hold of an item. Poke jabs one small spot and does not carry it away."
+      },
+      {
+       "answer": "grab",
+       "picked": "wave",
+       "line": "Grab closes on an item. Wave swings through the air, touching nothing."
+      },
+      {
+       "answer": "grab",
+       "picked": "clap",
+       "line": "Grab gets hold of one item. Clap makes a sound by bringing palms into contact."
+      },
+      {
+       "answer": "pat",
+       "picked": "grab",
+       "line": "Pat is soft palm tapping. Grab closes fingers round an item and holds it."
+      },
+      {
+       "answer": "pat",
+       "picked": "poke",
+       "line": "Pat uses a broad, soft palm. Poke uses one small tip on one spot."
+      },
+      {
+       "answer": "pat",
+       "picked": "wave",
+       "line": "Pat makes soft contact on a surface. Wave is shown from a distance without contact."
+      },
+      {
+       "answer": "pat",
+       "picked": "clap",
+       "line": "Pat is quiet, soft tapping. Clap is louder palm-to-palm sound, often for cheering."
+      },
+      {
+       "answer": "poke",
+       "picked": "grab",
+       "line": "Poke jabs one small spot. Grab closes round an item and holds it."
+      },
+      {
+       "answer": "poke",
+       "picked": "pat",
+       "line": "Poke uses one small tip. Pat uses a soft palm over a wider place."
+      },
+      {
+       "answer": "poke",
+       "picked": "wave",
+       "line": "Poke presses into one spot. Wave happens where nothing is contacted."
+      },
+      {
+       "answer": "poke",
+       "picked": "clap",
+       "line": "Poke jabs one spot. Clap brings palms into contact to make a sound."
+      },
+      {
+       "answer": "wave",
+       "picked": "grab",
+       "line": "Wave swings back and forth touching nothing. Grab closes on an item and holds it."
+      },
+      {
+       "answer": "wave",
+       "picked": "pat",
+       "line": "Wave touches nothing. Pat uses soft palm contact on a surface."
+      },
+      {
+       "answer": "wave",
+       "picked": "poke",
+       "line": "Wave is seen from away. Poke jabs one small spot with a tip."
+      },
+      {
+       "answer": "wave",
+       "picked": "clap",
+       "line": "Wave is a silent sign through space. Clap makes a palm-to-palm sound."
+      },
+      {
+       "answer": "clap",
+       "picked": "grab",
+       "line": "Clap makes a sound with palms. Grab closes round an item and holds it."
+      },
+      {
+       "answer": "clap",
+       "picked": "pat",
+       "line": "Clap is louder palm-to-palm sound. Pat is soft tapping on another surface."
+      },
+      {
+       "answer": "clap",
+       "picked": "poke",
+       "line": "Clap uses palms meeting for sound. Poke jabs one small spot with a tip."
+      },
+      {
+       "answer": "clap",
+       "picked": "wave",
+       "line": "Clap makes a sound with palms. Wave swings through the air and touches nothing."
+      }
+     ],
+     "meta": {
+      "generated_at": "2026-07-06T14:40:52+00:00",
+      "model": "gpt-5.5",
+      "scrubbed_at": "2026-07-07",
+      "scrub_note": "Scrubbed by claude 2026-07-07 (dedicated pre-scrub agent failed twice on output limits): mechanical sweeps (cue hygiene, meta-frames, seasonal, templates, duplicates), all 20 contrast lines read per set, every sentence read for frame sanity, all judge hards fixed and re-judged to zero. Fixes: wave re-pinned to brandish.v.01 + 3 contrasts aligned, hop gloss authored to the one-foot sense the set teaches, pat/nod/wink frames restaged, one dangling pronoun."
+     }
+    },
+    {
+     "id": "B-move-01",
+     "bank": "B",
+     "pos": "verb",
+     "theme": "ways we move about",
+     "band": 1,
+     "band_override": 1,
+     "computed": {
+      "zipf_min": 3.77,
+      "zipf_mean": 4.32,
+      "tightness": 0.296,
+      "band_suggested": 2,
+      "scored_at": "2026-07-06T18:43:21+00:00"
+     },
+     "words": [
+      {
+       "w": "hop",
+       "synset": "hop.v.01",
+       "gloss_source": "authored",
+       "gloss": "jump along with only one foot touching the ground",
+       "zipf": 4.4,
+       "register": "neutral",
+       "senses_at_pos": 6,
+       "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-06",
+        "note": "dominant school-context sense confirmed at roster vet"
+       },
+       "forms": {
+        "base": "hop",
+        "third": "hops",
+        "past": "hopped",
+        "part": "hopping"
+       },
+       "discriminator": "springs along on one foot",
+       "grade": 1
+      },
+      {
+       "w": "crawl",
+       "synset": "crawl.v.01",
+       "gloss_source": "authored",
+       "gloss": "move along slowly with your body close to the ground",
+       "zipf": 3.77,
+       "register": "neutral",
+       "senses_at_pos": 5,
+       "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-06",
+        "note": "dominant school-context sense confirmed at roster vet"
+       },
+       "forms": {
+        "base": "crawl",
+        "third": "crawls",
+        "past": "crawled",
+        "part": "crawling"
+       },
+       "discriminator": "hands and knees, body low",
+       "grade": 2
+      },
+      {
+       "w": "climb",
+       "synset": "climb.v.01",
+       "gloss_source": "wordnet",
+       "gloss": "go upward with gradual or continuous progress",
+       "zipf": 4.22,
+       "register": "neutral",
+       "senses_at_pos": 6,
+       "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-06",
+        "note": "dominant school-context sense confirmed at roster vet"
+       },
+       "forms": {
+        "base": "climb",
+        "third": "climbs",
+        "past": "climbed",
+        "part": "climbing"
+       },
+       "discriminator": "the only one that goes up",
+       "grade": 2
+      },
+      {
+       "w": "slide",
+       "synset": "slide.v.03",
+       "gloss_source": "wordnet",
+       "gloss": "move smoothly along a surface",
+       "zipf": 4.3,
+       "register": "neutral",
+       "senses_at_pos": 3,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "slide",
+        "third": "slides",
+        "past": "slid",
+        "part": "sliding"
+       },
+       "discriminator": "glides along a smooth surface",
+       "grade": 1
+      },
+      {
+       "w": "dance",
+       "synset": "dance.v.01",
+       "gloss_source": "authored",
+       "gloss": "move your body in time to music, with steps and turns",
+       "zipf": 4.93,
+       "register": "neutral",
+       "senses_at_pos": 3,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "dance",
+        "third": "dances",
+        "past": "danced",
+        "part": "dancing"
+       },
+       "discriminator": "moves in time to music",
+       "grade": 1
+      }
+     ],
+     "sentences": [
+      {
+       "id": "B-move-01-s01",
+       "answer": "hop",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The frog ___ from lily pad to lily pad, landing on one foot each time.",
+       "cue_phrase": "landing on one foot",
+       "surface": {
+        "hop": "hopped",
+        "crawl": "crawled",
+        "climb": "climbed",
+        "slide": "slid",
+        "dance": "danced"
+       }
+      },
+      {
+       "id": "B-move-01-s02",
+       "answer": "hop",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "During the sack race, Rafi had to ___ on one foot to the cone.",
+       "cue_phrase": "on one foot",
+       "surface": {
+        "hop": "hop",
+        "crawl": "crawl",
+        "climb": "climb",
+        "slide": "slide",
+        "dance": "dance"
+       }
+      },
+      {
+       "id": "B-move-01-s03",
+       "answer": "hop",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The broken sandal made Poppy ___, putting only her left foot down.",
+       "cue_phrase": "only her left foot",
+       "surface": {
+        "hop": "hop",
+        "crawl": "crawl",
+        "climb": "climb",
+        "slide": "slide",
+        "dance": "dance"
+       }
+      },
+      {
+       "id": "B-move-01-s04",
+       "answer": "hop",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The chalk-grid rule made Leo ___ from three to four without swapping feet.",
+       "cue_phrase": "without swapping feet",
+       "surface": {
+        "hop": "hop",
+        "crawl": "crawl",
+        "climb": "climb",
+        "slide": "slide",
+        "dance": "dance"
+       }
+      },
+      {
+       "id": "B-move-01-s05",
+       "answer": "hop",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "With a crab pinching one boot, the pirate ___ across the deck on the other.",
+       "cue_phrase": "on the other",
+       "surface": {
+        "hop": "hopped",
+        "crawl": "crawled",
+        "climb": "climbed",
+        "slide": "slid",
+        "dance": "danced"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (dance); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "B-move-01-s06",
+       "answer": "hop",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "With one trainer missing, Sam ___ across the cold tiles to breakfast.",
+       "cue_phrase": "one trainer missing",
+       "surface": {
+        "hop": "hop",
+        "crawl": "crawl",
+        "climb": "climb",
+        "slide": "slide",
+        "dance": "dance"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: one trainer missing points at keeping the bare foot up (one-foot travel); sliding tiles with one shoe on is the weaker read; iteration cap reached",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "B-move-01-s07",
+       "answer": "hop",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "At the relay, Gia had to ___ between cones using just her right foot.",
+       "cue_phrase": "using just her right foot",
+       "surface": {
+        "hop": "hop",
+        "crawl": "crawl",
+        "climb": "climb",
+        "slide": "slide",
+        "dance": "dance"
+       }
+      },
+      {
+       "id": "B-move-01-s08",
+       "answer": "hop",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "The toy rabbit ___ over each line, landing on one back paw.",
+       "cue_phrase": "landing on one back paw",
+       "surface": {
+        "hop": "hopped",
+        "crawl": "crawled",
+        "climb": "climbed",
+        "slide": "slid",
+        "dance": "danced"
+       }
+      },
+      {
+       "id": "B-move-01-s09",
+       "answer": "crawl",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The baby ___ across the rug on hands and knees toward the teddy.",
+       "cue_phrase": "hands and knees",
+       "surface": {
+        "hop": "hopped",
+        "crawl": "crawled",
+        "climb": "climbed",
+        "slide": "slid",
+        "dance": "danced"
+       }
+      },
+      {
+       "id": "B-move-01-s10",
+       "answer": "crawl",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "To pass under the table, I had to ___ on my knees and palms.",
+       "cue_phrase": "my knees and palms",
+       "surface": {
+        "hop": "hop",
+        "crawl": "crawl",
+        "climb": "climb",
+        "slide": "slide",
+        "dance": "dance"
+       }
+      },
+      {
+       "id": "B-move-01-s11",
+       "answer": "crawl",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The tunnel was too low, so we ___ through it on all fours.",
+       "cue_phrase": "on all fours",
+       "surface": {
+        "hop": "hopped",
+        "crawl": "crawled",
+        "climb": "climbed",
+        "slide": "slid",
+        "dance": "danced"
+       }
+      },
+      {
+       "id": "B-move-01-s12",
+       "answer": "crawl",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "During the fire drill game, pupils ___ below smoke signs, elbows brushing carpet.",
+       "cue_phrase": "elbows brushing carpet",
+       "surface": {
+        "hop": "hopped",
+        "crawl": "crawled",
+        "climb": "climbed",
+        "slide": "slid",
+        "dance": "danced"
+       }
+      },
+      {
+       "id": "B-move-01-s13",
+       "answer": "crawl",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The puppy's legs wobbled, and it ___ belly-first across the blanket with paws pulling.",
+       "cue_phrase": "with paws pulling",
+       "surface": {
+        "hop": "hopped",
+        "crawl": "crawled",
+        "climb": "climbed",
+        "slide": "slid",
+        "dance": "danced"
+       }
+      },
+      {
+       "id": "B-move-01-s14",
+       "answer": "crawl",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Under the fence, Tess had to ___ using elbows and knees.",
+       "cue_phrase": "using elbows and knees",
+       "surface": {
+        "hop": "hop",
+        "crawl": "crawl",
+        "climb": "climb",
+        "slide": "slide",
+        "dance": "dance"
+       }
+      },
+      {
+       "id": "B-move-01-s15",
+       "answer": "crawl",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "In the spy game, Omar ___ behind the sofa on knees and palms.",
+       "cue_phrase": "on knees and palms",
+       "surface": {
+        "hop": "hopped",
+        "crawl": "crawled",
+        "climb": "climbed",
+        "slide": "slid",
+        "dance": "danced"
+       }
+      },
+      {
+       "id": "B-move-01-s16",
+       "answer": "crawl",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The beetle costume made Asha ___ across the stage on all fours.",
+       "cue_phrase": "across the stage on all fours",
+       "surface": {
+        "hop": "hop",
+        "crawl": "crawl",
+        "climb": "climb",
+        "slide": "slide",
+        "dance": "dance"
+       }
+      },
+      {
+       "id": "B-move-01-s17",
+       "answer": "climb",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The goat ___ up the rocky path to reach the sweet leaves.",
+       "cue_phrase": "up the rocky path",
+       "surface": {
+        "hop": "hopped",
+        "crawl": "crawled",
+        "climb": "climbed",
+        "slide": "slid",
+        "dance": "danced"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (hop); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "B-move-01-s18",
+       "answer": "climb",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "At camp, we had to ___ up the rope ladder to the treehouse.",
+       "cue_phrase": "up the rope ladder",
+       "surface": {
+        "hop": "hop",
+        "crawl": "crawl",
+        "climb": "climb",
+        "slide": "slide",
+        "dance": "dance"
+       }
+      },
+      {
+       "id": "B-move-01-s19",
+       "answer": "climb",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Lena ___ up the tall frame until her hand reached the top bar.",
+       "cue_phrase": "the top bar",
+       "surface": {
+        "hop": "hopped",
+        "crawl": "crawled",
+        "climb": "climbed",
+        "slide": "slid",
+        "dance": "danced"
+       }
+      },
+      {
+       "id": "B-move-01-s20",
+       "answer": "climb",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The cat ___ up the trellis to reach the shed roof.",
+       "cue_phrase": "up the trellis",
+       "surface": {
+        "hop": "hopped",
+        "crawl": "crawled",
+        "climb": "climbed",
+        "slide": "slid",
+        "dance": "danced"
+       }
+      },
+      {
+       "id": "B-move-01-s21",
+       "answer": "climb",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "From the valley, the hikers ___ until the village looked tiny below.",
+       "cue_phrase": "village looked tiny below",
+       "surface": {
+        "hop": "hopped",
+        "crawl": "crawled",
+        "climb": "climbed",
+        "slide": "slid",
+        "dance": "danced"
+       }
+      },
+      {
+       "id": "B-move-01-s22",
+       "answer": "climb",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The squirrel had to ___ up the drainpipe before hiding in the attic.",
+       "cue_phrase": "up the drainpipe",
+       "surface": {
+        "hop": "hop",
+        "crawl": "crawl",
+        "climb": "climb",
+        "slide": "slide",
+        "dance": "dance"
+       }
+      },
+      {
+       "id": "B-move-01-s23",
+       "answer": "climb",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "On the adventure course, children had to ___ up the cargo net.",
+       "cue_phrase": "up the cargo net",
+       "surface": {
+        "hop": "hop",
+        "crawl": "crawl",
+        "climb": "climb",
+        "slide": "slide",
+        "dance": "dance"
+       }
+      },
+      {
+       "id": "B-move-01-s24",
+       "answer": "climb",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "The knight ___ up the tower wall, gripping stones hand over hand.",
+       "cue_phrase": "hand over hand",
+       "surface": {
+        "hop": "hopped",
+        "crawl": "crawled",
+        "climb": "climbed",
+        "slide": "slid",
+        "dance": "danced"
+       }
+      },
+      {
+       "id": "B-move-01-s25",
+       "answer": "slide",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The penguin ___ on its belly across the icy pond.",
+       "cue_phrase": "the icy pond",
+       "surface": {
+        "hop": "hopped",
+        "crawl": "crawled",
+        "climb": "climbed",
+        "slide": "slid",
+        "dance": "danced"
+       }
+      },
+      {
+       "id": "B-move-01-s26",
+       "answer": "slide",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "At the pool, Mina had to ___ down the wet chute feet first.",
+       "cue_phrase": "the wet chute",
+       "surface": {
+        "hop": "hop",
+        "crawl": "crawl",
+        "climb": "climb",
+        "slide": "slide",
+        "dance": "dance"
+       }
+      },
+      {
+       "id": "B-move-01-s27",
+       "answer": "slide",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The tray ___ across the polished counter without a bump.",
+       "cue_phrase": "the polished counter",
+       "surface": {
+        "hop": "hopped",
+        "crawl": "crawled",
+        "climb": "climbed",
+        "slide": "slid",
+        "dance": "danced"
+       }
+      },
+      {
+       "id": "B-move-01-s28",
+       "answer": "slide",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "After the floor was waxed, socks ___ from door to sofa.",
+       "cue_phrase": "floor was waxed",
+       "surface": {
+        "hop": "hopped",
+        "crawl": "crawled",
+        "climb": "climbed",
+        "slide": "slid",
+        "dance": "danced"
+       }
+      },
+      {
+       "id": "B-move-01-s29",
+       "answer": "slide",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The soap escaped my hand and ___ along the bath's shiny side.",
+       "cue_phrase": "shiny side",
+       "surface": {
+        "hop": "hopped",
+        "crawl": "crawled",
+        "climb": "climbed",
+        "slide": "slid",
+        "dance": "danced"
+       }
+      },
+      {
+       "id": "B-move-01-s30",
+       "answer": "slide",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The sledge ___ downhill after Dad gave one gentle push.",
+       "cue_phrase": "one gentle push",
+       "surface": {
+        "hop": "hopped",
+        "crawl": "crawled",
+        "climb": "climbed",
+        "slide": "slid",
+        "dance": "danced"
+       }
+      },
+      {
+       "id": "B-move-01-s31",
+       "answer": "slide",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The drawer will ___ out if you pull the brass handle.",
+       "cue_phrase": "pull the brass handle",
+       "surface": {
+        "hop": "hop",
+        "crawl": "crawl",
+        "climb": "climb",
+        "slide": "slide",
+        "dance": "dance"
+       }
+      },
+      {
+       "id": "B-move-01-s32",
+       "answer": "slide",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "On ice, the stone can ___ towards the painted target.",
+       "cue_phrase": "On ice",
+       "surface": {
+        "hop": "hop",
+        "crawl": "crawl",
+        "climb": "climb",
+        "slide": "slide",
+        "dance": "dance"
+       }
+      },
+      {
+       "id": "B-move-01-s33",
+       "answer": "dance",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "When the drumbeat started, the twins ___ around the kitchen with twirls and claps.",
+       "cue_phrase": "the drumbeat started",
+       "surface": {
+        "hop": "hopped",
+        "crawl": "crawled",
+        "climb": "climbed",
+        "slide": "slid",
+        "dance": "danced"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (hop, slide); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "B-move-01-s34",
+       "answer": "dance",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "In ballet class, Tia had to ___ across the hall to piano notes.",
+       "cue_phrase": "ballet class",
+       "surface": {
+        "hop": "hop",
+        "crawl": "crawl",
+        "climb": "climb",
+        "slide": "slide",
+        "dance": "dance"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (hop, slide); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "B-move-01-s35",
+       "answer": "dance",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The scarecrow ___ whenever the fiddle played, bowing with every beat.",
+       "cue_phrase": "the fiddle played",
+       "surface": {
+        "hop": "hopped",
+        "crawl": "crawled",
+        "climb": "climbed",
+        "slide": "slid",
+        "dance": "danced"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (hop); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "B-move-01-s36",
+       "answer": "dance",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "In the school show, robots ___ with twirls as the choir sang.",
+       "cue_phrase": "the choir sang",
+       "surface": {
+        "hop": "hopped",
+        "crawl": "crawled",
+        "climb": "climbed",
+        "slide": "slid",
+        "dance": "danced"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (hop, slide); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "B-move-01-s37",
+       "answer": "dance",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Grandad heard the tango tune and began to ___ beside the sofa.",
+       "cue_phrase": "the tango tune",
+       "surface": {
+        "hop": "hop",
+        "crawl": "crawl",
+        "climb": "climb",
+        "slide": "slide",
+        "dance": "dance"
+       }
+      },
+      {
+       "id": "B-move-01-s38",
+       "answer": "dance",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The queen's shoes tapped the beat as she ___ across the ballroom.",
+       "cue_phrase": "tapped the beat",
+       "surface": {
+        "hop": "hopped",
+        "crawl": "crawled",
+        "climb": "climbed",
+        "slide": "slid",
+        "dance": "danced"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (hop, slide); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "B-move-01-s39",
+       "answer": "dance",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Each puppet ___ when the clockwork box played its tiny tune.",
+       "cue_phrase": "tiny tune",
+       "surface": {
+        "hop": "hops",
+        "crawl": "crawls",
+        "climb": "climbs",
+        "slide": "slides",
+        "dance": "dances"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (hop); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "B-move-01-s40",
+       "answer": "dance",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "After supper, the family ___ to the radio's cheerful song.",
+       "cue_phrase": "cheerful song",
+       "surface": {
+        "hop": "hopped",
+        "crawl": "crawled",
+        "climb": "climbed",
+        "slide": "slid",
+        "dance": "danced"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (hop); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      }
+     ],
+     "contrasts": [
+      {
+       "answer": "hop",
+       "picked": "crawl",
+       "line": "Hop springs on one foot; crawl goes on hands and knees low down."
+      },
+      {
+       "answer": "hop",
+       "picked": "climb",
+       "line": "Hop uses one-foot springs; climb goes up something."
+      },
+      {
+       "answer": "hop",
+       "picked": "slide",
+       "line": "Hop lifts off on one foot; slide stays against a slick path."
+      },
+      {
+       "answer": "hop",
+       "picked": "dance",
+       "line": "Hop is a one-foot spring; dance follows a beat or song."
+      },
+      {
+       "answer": "crawl",
+       "picked": "hop",
+       "line": "Crawl uses hands and knees low down; hop springs on one foot."
+      },
+      {
+       "answer": "crawl",
+       "picked": "climb",
+       "line": "Crawl stays low on hands and knees; climb goes up something."
+      },
+      {
+       "answer": "crawl",
+       "picked": "slide",
+       "line": "Crawl uses hands and knees; slide glides along a slick path."
+      },
+      {
+       "answer": "crawl",
+       "picked": "dance",
+       "line": "Crawl is low on hands and knees; dance follows a beat or song."
+      },
+      {
+       "answer": "climb",
+       "picked": "hop",
+       "line": "Climb goes up something; hop springs on one foot."
+      },
+      {
+       "answer": "climb",
+       "picked": "crawl",
+       "line": "Climb goes up something; crawl stays low on hands and knees."
+      },
+      {
+       "answer": "climb",
+       "picked": "slide",
+       "line": "Climb goes up something; slide glides along a slick path."
+      },
+      {
+       "answer": "climb",
+       "picked": "dance",
+       "line": "Climb goes up something; dance follows a beat or song."
+      },
+      {
+       "answer": "slide",
+       "picked": "hop",
+       "line": "Slide glides along a slick path; hop springs on one foot."
+      },
+      {
+       "answer": "slide",
+       "picked": "crawl",
+       "line": "Slide glides along a slick path; crawl uses hands and knees."
+      },
+      {
+       "answer": "slide",
+       "picked": "climb",
+       "line": "Slide glides along a slick path; climb goes up something."
+      },
+      {
+       "answer": "slide",
+       "picked": "dance",
+       "line": "Slide glides along a slick path; dance follows a beat or song."
+      },
+      {
+       "answer": "dance",
+       "picked": "hop",
+       "line": "Dance follows a beat or song; hop springs on one foot."
+      },
+      {
+       "answer": "dance",
+       "picked": "crawl",
+       "line": "Dance follows a beat or song; crawl stays low on hands and knees."
+      },
+      {
+       "answer": "dance",
+       "picked": "climb",
+       "line": "Dance follows a beat or song; climb goes up something."
+      },
+      {
+       "answer": "dance",
+       "picked": "slide",
+       "line": "Dance follows a beat or song; slide glides along a slick path."
+      }
+     ],
+     "meta": {
+      "generated_at": "2026-07-06T14:43:44+00:00",
+      "model": "gpt-5.5",
+      "scrubbed_at": "2026-07-07",
+      "scrub_note": "Scrubbed by claude 2026-07-07 (dedicated pre-scrub agent failed twice on output limits): mechanical sweeps (cue hygiene, meta-frames, seasonal, templates, duplicates), all 20 contrast lines read per set, every sentence read for frame sanity, all judge hards fixed and re-judged to zero. Fixes: wave re-pinned to brandish.v.01 + 3 contrasts aligned, hop gloss authored to the one-foot sense the set teaches, pat/nod/wink frames restaged, one dangling pronoun."
+     }
+    },
+    {
+     "id": "B-sounds-01",
+     "bank": "B",
+     "pos": "verb",
+     "theme": "sounds people make",
+     "band": 1,
+     "band_override": 1,
+     "computed": {
+      "zipf_min": 3.35,
+      "zipf_mean": 3.77,
+      "tightness": 0.273,
+      "band_suggested": 2,
+      "scored_at": "2026-07-06T18:43:21+00:00"
+     },
+     "words": [
+      {
+       "w": "giggle",
+       "synset": "giggle.v.01",
+       "gloss_source": "authored",
+       "gloss": "laugh in a light, silly, bubbling way",
+       "zipf": 3.35,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "giggle",
+        "third": "giggles",
+        "past": "giggled",
+        "part": "giggling"
+       },
+       "discriminator": "a little bubbling laugh",
+       "grade": 2
+      },
+      {
+       "w": "shout",
+       "synset": "shout.v.01",
+       "gloss_source": "authored",
+       "gloss": "say something in a very loud voice",
+       "zipf": 4.06,
+       "register": "neutral",
+       "senses_at_pos": 4,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "shout",
+        "third": "shouts",
+        "past": "shouted",
+        "part": "shouting"
+       },
+       "discriminator": "loud voice carrying words far",
+       "grade": 1
+      },
+      {
+       "w": "hum",
+       "synset": "hum.v.01",
+       "gloss_source": "wordnet",
+       "gloss": "sing with closed lips",
+       "zipf": 3.59,
+       "register": "neutral",
+       "senses_at_pos": 4,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "hum",
+        "third": "hums",
+        "past": "hummed",
+        "part": "humming"
+       },
+       "discriminator": "a tune with lips fully closed",
+       "grade": 2
+      },
+      {
+       "w": "sigh",
+       "synset": "sigh.v.01",
+       "gloss_source": "authored",
+       "gloss": "let out one long deep breath, as when tired or sad",
+       "zipf": 3.95,
+       "register": "neutral",
+       "senses_at_pos": 2,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "sigh",
+        "third": "sighs",
+        "past": "sighed",
+        "part": "sighing"
+       },
+       "discriminator": "one long breath let out",
+       "grade": 3
+      },
+      {
+       "w": "whistle",
+       "synset": "whistle.v.01",
+       "gloss_source": "authored",
+       "gloss": "make a high clear note by blowing air through your lips",
+       "zipf": 3.88,
+       "register": "neutral",
+       "senses_at_pos": 6,
+       "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-06",
+        "note": "dominant school-context sense confirmed at roster vet"
+       },
+       "forms": {
+        "base": "whistle",
+        "third": "whistles",
+        "past": "whistled",
+        "part": "whistling"
+       },
+       "discriminator": "high clear note blown through lips",
+       "grade": 2
+      }
+     ],
+     "sentences": [
+      {
+       "id": "B-sounds-01-s01",
+       "answer": "giggle",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The wobbly jelly made Noor ___ in tiny tee-hees.",
+       "cue_phrase": "tiny tee-hees",
+       "surface": {
+        "giggle": "giggle",
+        "shout": "shout",
+        "hum": "hum",
+        "sigh": "sigh",
+        "whistle": "whistle"
+       }
+      },
+      {
+       "id": "B-sounds-01-s02",
+       "answer": "giggle",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "At the puppet's wink, Ben ___ with small tee-hee sounds.",
+       "cue_phrase": "small tee-hee sounds",
+       "surface": {
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+       }
+      },
+      {
+       "id": "B-sounds-01-s03",
+       "answer": "giggle",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Lena covered her mouth and ___ when the goat wore socks.",
+       "cue_phrase": "goat wore socks",
+       "surface": {
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+       }
+      },
+      {
+       "id": "B-sounds-01-s04",
+       "answer": "giggle",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Two tiny squeaks escaped as Ravi ___ at the upside-down hat.",
+       "cue_phrase": "Two tiny squeaks",
+       "surface": {
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+       }
+      },
+      {
+       "id": "B-sounds-01-s05",
+       "answer": "giggle",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The class tried to stay serious, but the banana crown had them ___.",
+       "cue_phrase": "banana crown",
+       "surface": {
+        "giggle": "giggle",
+        "shout": "shout",
+        "hum": "hum",
+        "sigh": "sigh",
+        "whistle": "whistle"
+       }
+      },
+      {
+       "id": "B-sounds-01-s06",
+       "answer": "giggle",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Under the blanket, the joke book kept Ava ___ after bedtime.",
+       "cue_phrase": "joke book kept",
+       "surface": {
+        "giggle": "giggling",
+        "shout": "shouting",
+        "hum": "humming",
+        "sigh": "sighing",
+        "whistle": "whistling"
+       }
+      },
+      {
+       "id": "B-sounds-01-s07",
+       "answer": "giggle",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The tiny moustache on Dad's photo made Jo ___ into her sleeve.",
+       "cue_phrase": "moustache on Dad's photo",
+       "surface": {
+        "giggle": "giggle",
+        "shout": "shout",
+        "hum": "hum",
+        "sigh": "sigh",
+        "whistle": "whistle"
+       }
+      },
+      {
+       "id": "B-sounds-01-s08",
+       "answer": "giggle",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "Kim ___ so hard at the wobbling cake that her shoulders bounced.",
+       "cue_phrase": "her shoulders bounced",
+       "surface": {
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+       }
+      },
+      {
+       "id": "B-sounds-01-s09",
+       "answer": "shout",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "From the gate, Omar ___ 'Wait!' across the busy playground.",
+       "cue_phrase": "across the busy playground",
+       "surface": {
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+       }
+      },
+      {
+       "id": "B-sounds-01-s10",
+       "answer": "shout",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The lifeguard had to ___ 'Swim back!' over the waves.",
+       "cue_phrase": "over the waves",
+       "surface": {
+        "giggle": "giggle",
+        "shout": "shout",
+        "hum": "hum",
+        "sigh": "sigh",
+        "whistle": "whistle"
+       }
+      },
+      {
+       "id": "B-sounds-01-s11",
+       "answer": "shout",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "When the bus doors opened, Priya ___ 'Here!' from the back.",
+       "cue_phrase": "from the back",
+       "surface": {
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+       }
+      },
+      {
+       "id": "B-sounds-01-s12",
+       "answer": "shout",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The captain cupped both hands and ___ orders across the windy field.",
+       "cue_phrase": "orders across",
+       "surface": {
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+       }
+      },
+      {
+       "id": "B-sounds-01-s13",
+       "answer": "shout",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Tom saw the ball roll into traffic and ___ 'Stop!' instantly.",
+       "cue_phrase": "ball roll into traffic",
+       "surface": {
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+       }
+      },
+      {
+       "id": "B-sounds-01-s14",
+       "answer": "shout",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Across the river, Dad could hear Ella ___ the words, 'Bridge out!'",
+       "cue_phrase": "the words, 'Bridge out!'",
+       "surface": {
+        "giggle": "giggle",
+        "shout": "shout",
+        "hum": "hum",
+        "sigh": "sigh",
+        "whistle": "whistle"
+       }
+      },
+      {
+       "id": "B-sounds-01-s15",
+       "answer": "shout",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "A referee ___ 'Time!' when every runner must freeze.",
+       "cue_phrase": "every runner must freeze",
+       "surface": {
+        "giggle": "giggles",
+        "shout": "shouts",
+        "hum": "hums",
+        "sigh": "sighs",
+        "whistle": "whistles"
+       }
+      },
+      {
+       "id": "B-sounds-01-s16",
+       "answer": "shout",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "To reach the upstairs window, Maya had to ___ Ben's name.",
+       "cue_phrase": "reach the upstairs window",
+       "surface": {
+        "giggle": "giggle",
+        "shout": "shout",
+        "hum": "hum",
+        "sigh": "sigh",
+        "whistle": "whistle"
+       }
+      },
+      {
+       "id": "B-sounds-01-s17",
+       "answer": "hum",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Mouth shut, Asha ___ the tune while washing brushes.",
+       "cue_phrase": "Mouth shut",
+       "surface": {
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+       }
+      },
+      {
+       "id": "B-sounds-01-s18",
+       "answer": "hum",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "During the quiet music, Finn began to ___ with his mouth shut.",
+       "cue_phrase": "with his mouth shut",
+       "surface": {
+        "giggle": "giggle",
+        "shout": "shout",
+        "hum": "hum",
+        "sigh": "sigh",
+        "whistle": "whistle"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (sigh); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "B-sounds-01-s19",
+       "answer": "hum",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Nina's cheeks buzzed as she ___ the bedtime tune.",
+       "cue_phrase": "cheeks buzzed",
+       "surface": {
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+       }
+      },
+      {
+       "id": "B-sounds-01-s20",
+       "answer": "hum",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The tune came from Max's nose while he ___ over the puzzle.",
+       "cue_phrase": "from Max's nose",
+       "surface": {
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+       }
+      },
+      {
+       "id": "B-sounds-01-s21",
+       "answer": "hum",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Sam kept both crackers in his mouth and ___ the marching tune.",
+       "cue_phrase": "crackers in his mouth",
+       "surface": {
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+       }
+      },
+      {
+       "id": "B-sounds-01-s22",
+       "answer": "hum",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Without opening her mouth, Ivy started to ___ along with the cello.",
+       "cue_phrase": "Without opening her mouth",
+       "surface": {
+        "giggle": "giggle",
+        "shout": "shout",
+        "hum": "hum",
+        "sigh": "sigh",
+        "whistle": "whistle"
+       }
+      },
+      {
+       "id": "B-sounds-01-s23",
+       "answer": "hum",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "Grandad kept his mouth shut and ___ a soft tune.",
+       "cue_phrase": "mouth shut",
+       "surface": {
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+       }
+      },
+      {
+       "id": "B-sounds-01-s24",
+       "answer": "hum",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Bo ___ through his nose whenever the cello tune starts.",
+       "cue_phrase": "through his nose",
+       "surface": {
+        "giggle": "giggles",
+        "shout": "shouts",
+        "hum": "hums",
+        "sigh": "sighs",
+        "whistle": "whistles"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (sigh); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "B-sounds-01-s25",
+       "answer": "sigh",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Mia ___, sending one slow puff across her homework.",
+       "cue_phrase": "one slow puff",
+       "surface": {
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+       }
+      },
+      {
+       "id": "B-sounds-01-s26",
+       "answer": "sigh",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Raj ___ once, with a heavy whoosh into the chilly hall.",
+       "cue_phrase": "heavy whoosh",
+       "surface": {
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+       }
+      },
+      {
+       "id": "B-sounds-01-s27",
+       "answer": "sigh",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "After missing the bus, Leo ___, fogging the window glass.",
+       "cue_phrase": "fogging the window glass",
+       "surface": {
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+       }
+      },
+      {
+       "id": "B-sounds-01-s28",
+       "answer": "sigh",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Grandma ___, puffing the loose receipt across the suitcase.",
+       "cue_phrase": "puffing the loose receipt",
+       "surface": {
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+       }
+      },
+      {
+       "id": "B-sounds-01-s29",
+       "answer": "sigh",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Seeing ten more sums, Ava ___ and her shoulders sank.",
+       "cue_phrase": "shoulders sank",
+       "surface": {
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+       }
+      },
+      {
+       "id": "B-sounds-01-s30",
+       "answer": "sigh",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "When rain cancelled football, Jay ___ and stared at his boots.",
+       "cue_phrase": "stared at his boots",
+       "surface": {
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+       }
+      },
+      {
+       "id": "B-sounds-01-s31",
+       "answer": "sigh",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "The wizard ___, sending a weary whoosh through his moustache.",
+       "cue_phrase": "weary whoosh",
+       "surface": {
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+       }
+      },
+      {
+       "id": "B-sounds-01-s32",
+       "answer": "sigh",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "At the empty cake plate, Noor ___ with a weary whoosh.",
+       "cue_phrase": "empty cake plate",
+       "surface": {
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+       }
+      },
+      {
+       "id": "B-sounds-01-s33",
+       "answer": "whistle",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "With two fingers in his mouth, Kai ___ a shrill tune.",
+       "cue_phrase": "two fingers in his mouth",
+       "surface": {
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+       }
+      },
+      {
+       "id": "B-sounds-01-s34",
+       "answer": "whistle",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Pia learned to ___ a piercing tune through her teeth.",
+       "cue_phrase": "through her teeth",
+       "surface": {
+        "giggle": "giggle",
+        "shout": "shout",
+        "hum": "hum",
+        "sigh": "sigh",
+        "whistle": "whistle"
+       }
+      },
+      {
+       "id": "B-sounds-01-s35",
+       "answer": "whistle",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The dog came running when Sam ___ the sharp call through his teeth.",
+       "cue_phrase": "through his teeth",
+       "surface": {
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+       }
+      },
+      {
+       "id": "B-sounds-01-s36",
+       "answer": "whistle",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Bea ___ a shrill tune through two fingers, and the pony turned.",
+       "cue_phrase": "through two fingers",
+       "surface": {
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+       }
+      },
+      {
+       "id": "B-sounds-01-s37",
+       "answer": "whistle",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The kettle's steam shriek taught Omar to ___ just like it.",
+       "cue_phrase": "steam shriek",
+       "surface": {
+        "giggle": "giggle",
+        "shout": "shout",
+        "hum": "hum",
+        "sigh": "sigh",
+        "whistle": "whistle"
+       }
+      },
+      {
+       "id": "B-sounds-01-s38",
+       "answer": "whistle",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Luca tried to ___ the birdcall through his teeth.",
+       "cue_phrase": "birdcall through his teeth",
+       "surface": {
+        "giggle": "giggle",
+        "shout": "shout",
+        "hum": "hum",
+        "sigh": "sigh",
+        "whistle": "whistle"
+       }
+      },
+      {
+       "id": "B-sounds-01-s39",
+       "answer": "whistle",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Two fingers tucked in, Maya ___ and the shepherd looked over.",
+       "cue_phrase": "Two fingers tucked",
+       "surface": {
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+       }
+      },
+      {
+       "id": "B-sounds-01-s40",
+       "answer": "whistle",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Rin ___ a piercing birdcall whenever the shepherd raises his hand.",
+       "cue_phrase": "piercing birdcall",
+       "surface": {
+        "giggle": "giggles",
+        "shout": "shouts",
+        "hum": "hums",
+        "sigh": "sighs",
+        "whistle": "whistles"
+       }
+      }
+     ],
+     "contrasts": [
+      {
+       "answer": "giggle",
+       "picked": "shout",
+       "line": "A giggle is small and amused. A shout is words sent strongly across a space."
+      },
+      {
+       "answer": "giggle",
+       "picked": "hum",
+       "line": "A giggle comes from finding fun. A hum carries a tune with the mouth shut."
+      },
+      {
+       "answer": "giggle",
+       "picked": "sigh",
+       "line": "A giggle is a small amused sound. A sigh is one slow whoosh when feelings sink."
+      },
+      {
+       "answer": "giggle",
+       "picked": "whistle",
+       "line": "A giggle is amused and tiny. A whistle is a sharp tune made through the mouth."
+      },
+      {
+       "answer": "shout",
+       "picked": "giggle",
+       "line": "A shout sends words far. A giggle is small and amused, not meant to carry."
+      },
+      {
+       "answer": "shout",
+       "picked": "hum",
+       "line": "A shout uses words for others to hear. A hum is a tune with the mouth shut."
+      },
+      {
+       "answer": "shout",
+       "picked": "sigh",
+       "line": "A shout sends words out strongly. A sigh is one slow whoosh, not a message."
+      },
+      {
+       "answer": "shout",
+       "picked": "whistle",
+       "line": "A shout carries words. A whistle carries a sharp tune or call without words."
+      },
+      {
+       "answer": "hum",
+       "picked": "giggle",
+       "line": "A hum is a tune with the mouth shut. A giggle is a small amused sound."
+      },
+      {
+       "answer": "hum",
+       "picked": "shout",
+       "line": "A hum is a quiet tune. A shout is words sent strongly to reach someone."
+      },
+      {
+       "answer": "hum",
+       "picked": "sigh",
+       "line": "A hum keeps a tune going. A sigh is one slow whoosh when feelings drop."
+      },
+      {
+       "answer": "hum",
+       "picked": "whistle",
+       "line": "A hum uses a shut mouth for a tune. A whistle is sharper and comes through the mouth."
+      },
+      {
+       "answer": "sigh",
+       "picked": "giggle",
+       "line": "A sigh is one slow whoosh. A giggle is small and amused."
+      },
+      {
+       "answer": "sigh",
+       "picked": "shout",
+       "line": "A sigh is one slow whoosh. A shout is words sent strongly across a space."
+      },
+      {
+       "answer": "sigh",
+       "picked": "hum",
+       "line": "A sigh is one slow whoosh. A hum is a tune with the mouth shut."
+      },
+      {
+       "answer": "sigh",
+       "picked": "whistle",
+       "line": "A sigh is a slow whoosh. A whistle is a sharp tune or call."
+      },
+      {
+       "answer": "whistle",
+       "picked": "giggle",
+       "line": "A whistle is a sharp tune or call. A giggle is small and amused."
+      },
+      {
+       "answer": "whistle",
+       "picked": "shout",
+       "line": "A whistle carries a sharp tune. A shout carries words."
+      },
+      {
+       "answer": "whistle",
+       "picked": "hum",
+       "line": "A whistle is sharp and mouth-made. A hum is a tune with the mouth shut."
+      },
+      {
+       "answer": "whistle",
+       "picked": "sigh",
+       "line": "A whistle is a sharp tune or call. A sigh is one slow whoosh."
+      }
+     ],
+     "meta": {
+      "generated_at": "2026-07-06T14:52:35+00:00",
+      "model": "gpt-5.5",
+      "scrubbed_at": "2026-07-07",
+      "scrub_note": "Scrubbed by claude 2026-07-07 (dedicated pre-scrub agent failed twice on output limits): mechanical sweeps (cue hygiene, meta-frames, seasonal, templates, duplicates), all 20 contrast lines read per set, every sentence read for frame sanity, all judge hards fixed and re-judged to zero. Fixes: wave re-pinned to brandish.v.01 + 3 contrasts aligned, hop gloss authored to the one-foot sense the set teaches, pat/nod/wink frames restaged, one dangling pronoun."
+     }
+    },
     {
      "id": "A-angry-01",
      "bank": "A",
@@ -72,7 +4390,7 @@
       "zipf_mean": 3.75,
       "tightness": null,
       "band_suggested": 4,
-      "scored_at": "2026-07-06T05:33:18+00:00"
+      "scored_at": "2026-07-06T18:43:21+00:00"
      },
      "words": [
       {
@@ -1094,7 +5412,7 @@
       "zipf_mean": 2.8,
       "tightness": 0.5,
       "band_suggested": 4,
-      "scored_at": "2026-07-06T05:33:18+00:00"
+      "scored_at": "2026-07-06T18:43:21+00:00"
      },
      "words": [
       {
@@ -2151,7 +6469,7 @@
       "zipf_mean": 3.07,
       "tightness": 0.241,
       "band_suggested": 3,
-      "scored_at": "2026-07-06T05:33:18+00:00"
+      "scored_at": "2026-07-06T18:43:21+00:00"
      },
      "words": [
       {
@@ -3144,7 +7462,7 @@
       "zipf_mean": 4.15,
       "tightness": null,
       "band_suggested": 2,
-      "scored_at": "2026-07-06T05:33:18+00:00"
+      "scored_at": "2026-07-06T18:43:21+00:00"
      },
      "words": [
       {
@@ -4138,7 +8456,7 @@
       "zipf_mean": 4.3,
       "tightness": null,
       "band_suggested": 3,
-      "scored_at": "2026-07-06T05:33:18+00:00"
+      "scored_at": "2026-07-06T18:43:21+00:00"
      },
      "words": [
       {
@@ -5179,7 +9497,7 @@
       "zipf_mean": 3.92,
       "tightness": null,
       "band_suggested": 4,
-      "scored_at": "2026-07-06T05:33:18+00:00"
+      "scored_at": "2026-07-06T18:43:21+00:00"
      },
      "words": [
       {
@@ -6121,7 +10439,7 @@
       "zipf_mean": 3.48,
       "tightness": null,
       "band_suggested": 3,
-      "scored_at": "2026-07-06T05:33:18+00:00"
+      "scored_at": "2026-07-06T18:43:21+00:00"
      },
      "words": [
       {
@@ -7177,7 +11495,7 @@
       "zipf_mean": 3.62,
       "tightness": null,
       "band_suggested": 3,
-      "scored_at": "2026-07-06T05:33:18+00:00"
+      "scored_at": "2026-07-06T18:43:21+00:00"
      },
      "words": [
       {
@@ -8267,7 +12585,7 @@
       "zipf_mean": 3.42,
       "tightness": 0.693,
       "band_suggested": 4,
-      "scored_at": "2026-07-06T05:33:18+00:00"
+      "scored_at": "2026-07-06T18:43:21+00:00"
      },
      "words": [
       {
@@ -9167,7 +13485,7 @@
       "zipf_mean": 3.45,
       "tightness": 0.667,
       "band_suggested": 5,
-      "scored_at": "2026-07-06T05:33:18+00:00",
+      "scored_at": "2026-07-06T18:43:21+00:00",
       "note": "band_suggested from rarity alone misleads here: tiptoe/trudge are children's-book staples that news corpora undercount. Overridden to 2 by hand."
      },
      "words": [
@@ -10013,7 +14331,7 @@
       "zipf_mean": 3.48,
       "tightness": null,
       "band_suggested": 3,
-      "scored_at": "2026-07-06T05:33:18+00:00"
+      "scored_at": "2026-07-06T18:43:21+00:00"
      },
      "words": [
       {
@@ -11039,7 +15357,7 @@
       "zipf_mean": 3.91,
       "tightness": null,
       "band_suggested": 3,
-      "scored_at": "2026-07-06T05:33:18+00:00"
+      "scored_at": "2026-07-06T18:43:21+00:00"
      },
      "words": [
       {
@@ -12041,7 +16359,7 @@
       "zipf_mean": 3.48,
       "tightness": null,
       "band_suggested": 3,
-      "scored_at": "2026-07-06T05:33:18+00:00"
+      "scored_at": "2026-07-06T18:43:21+00:00"
      },
      "words": [
       {
@@ -12995,7 +17313,7 @@
       "zipf_mean": 3.46,
       "tightness": null,
       "band_suggested": 4,
-      "scored_at": "2026-07-06T05:33:18+00:00"
+      "scored_at": "2026-07-06T18:43:21+00:00"
      },
      "words": [
       {
@@ -13962,6 +18280,887 @@
      }
     },
     {
+     "id": "A-hold-01",
+     "bank": "A",
+     "pos": "verb",
+     "theme": "ways to hold and grab",
+     "band": 3,
+     "band_override": 3,
+     "computed": {
+      "zipf_min": 2.92,
+      "zipf_mean": 3.52,
+      "tightness": 0.272,
+      "band_suggested": 3,
+      "scored_at": "2026-07-06T18:43:21+00:00"
+     },
+     "words": [
+      {
+       "w": "snatch",
+       "synset": "snatch.v.01",
+       "gloss_source": "wordnet",
+       "gloss": "to grasp hastily or eagerly",
+       "zipf": 3.53,
+       "register": "neutral",
+       "senses_at_pos": 3,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "snatch",
+        "third": "snatches",
+        "past": "snatched",
+        "part": "snatching"
+       },
+       "discriminator": "the sudden moment of taking",
+       "grade": 3
+      },
+      {
+       "w": "clutch",
+       "synset": "cling_to.v.01",
+       "gloss_source": "wordnet",
+       "gloss": "hold firmly, usually with one's hands",
+       "zipf": 3.88,
+       "register": "neutral",
+       "senses_at_pos": 3,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "clutch",
+        "third": "clutches",
+        "past": "clutched",
+        "part": "clutching"
+       },
+       "discriminator": "tight hold, afraid to lose it",
+       "grade": 4
+      },
+      {
+       "w": "cradle",
+       "synset": "cradle.v.01",
+       "gloss_source": "wordnet",
+       "gloss": "hold gently and carefully",
+       "zipf": 3.5,
+       "register": "neutral",
+       "senses_at_pos": 6,
+       "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-06",
+        "note": "dominant school-context sense confirmed at roster vet"
+       },
+       "forms": {
+        "base": "cradle",
+        "third": "cradles",
+        "past": "cradled",
+        "part": "cradling"
+       },
+       "discriminator": "gentle protective hold",
+       "grade": 4
+      },
+      {
+       "w": "pinch",
+       "synset": "pinch.v.01",
+       "gloss_source": "wordnet",
+       "gloss": "squeeze tightly between the fingers",
+       "zipf": 3.76,
+       "register": "neutral",
+       "senses_at_pos": 5,
+       "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-06",
+        "note": "dominant school-context sense confirmed at roster vet"
+       },
+       "forms": {
+        "base": "pinch",
+        "third": "pinches",
+        "past": "pinched",
+        "part": "pinching"
+       },
+       "discriminator": "finger and thumb on something tiny",
+       "grade": 2
+      },
+      {
+       "w": "dangle",
+       "synset": "dangle.v.02",
+       "gloss_source": "authored",
+       "gloss": "hold something so it hangs and swings loosely below",
+       "zipf": 2.92,
+       "register": "neutral",
+       "senses_at_pos": 2,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "dangle",
+        "third": "dangles",
+        "past": "dangled",
+        "part": "dangling"
+       },
+       "discriminator": "held so it hangs and swings",
+       "grade": 3
+      }
+     ],
+     "sentences": [
+      {
+       "id": "A-hold-01-s01",
+       "answer": "snatch",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Tara ___ the falling key in one quick move before the drain swallowed it.",
+       "cue_phrase": "one quick move",
+       "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+       }
+      },
+      {
+       "id": "A-hold-01-s02",
+       "answer": "snatch",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "A gull swooped, so Ben ___ the sandwich away in a flash.",
+       "cue_phrase": "in a flash",
+       "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+       }
+      },
+      {
+       "id": "A-hold-01-s03",
+       "answer": "snatch",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "When the doors opened, Lina ___ the dropped ticket just before it slid through.",
+       "cue_phrase": "just before it slid",
+       "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+       }
+      },
+      {
+       "id": "A-hold-01-s04",
+       "answer": "snatch",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "As the wind lifted the map, Omar ___ it off the wall.",
+       "cue_phrase": "wind lifted the map",
+       "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+       }
+      },
+      {
+       "id": "A-hold-01-s05",
+       "answer": "snatch",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The lid bounced; Mina ___ it before it splashed into the pond.",
+       "cue_phrase": "before it splashed",
+       "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+       }
+      },
+      {
+       "id": "A-hold-01-s06",
+       "answer": "snatch",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "A puppy bolted; Kian ___ the flying leash out of the air.",
+       "cue_phrase": "out of the air",
+       "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+       }
+      },
+      {
+       "id": "A-hold-01-s07",
+       "answer": "snatch",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "The magician made Rafi ___ the silk scarf in one sharp blink.",
+       "cue_phrase": "one sharp blink",
+       "surface": {
+        "snatch": "snatch",
+        "clutch": "clutch",
+        "cradle": "cradle",
+        "pinch": "pinch",
+        "dangle": "dangle"
+       }
+      },
+      {
+       "id": "A-hold-01-s08",
+       "answer": "snatch",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Before the wave arrived, Priya had to ___ her sandal from shore.",
+       "cue_phrase": "Before the wave arrived",
+       "surface": {
+        "snatch": "snatch",
+        "clutch": "clutch",
+        "cradle": "cradle",
+        "pinch": "pinch",
+        "dangle": "dangle"
+       }
+      },
+      {
+       "id": "A-hold-01-s09",
+       "answer": "clutch",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Sam ___ the rope with both fists on the swaying bridge.",
+       "cue_phrase": "with both fists",
+       "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+       }
+      },
+      {
+       "id": "A-hold-01-s10",
+       "answer": "clutch",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "During thunder, Ella ___ her blanket until her knuckles whitened.",
+       "cue_phrase": "knuckles whitened",
+       "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+       }
+      },
+      {
+       "id": "A-hold-01-s11",
+       "answer": "clutch",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The goalkeeper ___ the ball against his chest, away from kicking boots.",
+       "cue_phrase": "away from kicking boots",
+       "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: against the chest away from kicking boots = firm defensive grip; cradling is gentle care, not defence",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-hold-01-s12",
+       "answer": "clutch",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "On the cliff path, I ___ Dad's sleeve whenever pebbles slipped.",
+       "cue_phrase": "whenever pebbles slipped",
+       "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (snatch); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-hold-01-s13",
+       "answer": "clutch",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The treasure map shook because Nora ___ it during the dragon's roar.",
+       "cue_phrase": "during the dragon's roar",
+       "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+       }
+      },
+      {
+       "id": "A-hold-01-s14",
+       "answer": "clutch",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Leo ___ his trophy all night, afraid his brother might hide it.",
+       "cue_phrase": "might hide it",
+       "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (cradle); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-hold-01-s15",
+       "answer": "clutch",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "The lift jolted, making Asha ___ the rail with both arms.",
+       "cue_phrase": "with both arms",
+       "surface": {
+        "snatch": "snatch",
+        "clutch": "clutch",
+        "cradle": "cradle",
+        "pinch": "pinch",
+        "dangle": "dangle"
+       }
+      },
+      {
+       "id": "A-hold-01-s16",
+       "answer": "clutch",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Whenever the boat rocked, Timo would ___ the seat edge with white knuckles.",
+       "cue_phrase": "with white knuckles",
+       "surface": {
+        "snatch": "snatch",
+        "clutch": "clutch",
+        "cradle": "cradle",
+        "pinch": "pinch",
+        "dangle": "dangle"
+       }
+      },
+      {
+       "id": "A-hold-01-s17",
+       "answer": "cradle",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Mum ___ the kitten like a soap bubble after its bath.",
+       "cue_phrase": "like a soap bubble",
+       "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+       }
+      },
+      {
+       "id": "A-hold-01-s18",
+       "answer": "cradle",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Arun ___ the cracked egg as if it were glass.",
+       "cue_phrase": "as if it were glass",
+       "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+       }
+      },
+      {
+       "id": "A-hold-01-s19",
+       "answer": "cradle",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Zoe ___ the sleeping baby doll in the crook of her arm.",
+       "cue_phrase": "crook of her arm",
+       "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (clutch); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-hold-01-s20",
+       "answer": "cradle",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The nurse ___ the bandaged paw on a folded towel.",
+       "cue_phrase": "on a folded towel",
+       "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+       }
+      },
+      {
+       "id": "A-hold-01-s21",
+       "answer": "cradle",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Rain dripped while Mei ___ the injured butterfly under a leaf.",
+       "cue_phrase": "injured butterfly under",
+       "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+       }
+      },
+      {
+       "id": "A-hold-01-s22",
+       "answer": "cradle",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Grandad ___ the old medal, letting its ribbon lie flat.",
+       "cue_phrase": "ribbon lie flat",
+       "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+       }
+      },
+      {
+       "id": "A-hold-01-s23",
+       "answer": "cradle",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "At the fair, Pippa kept ___ the chick near her warm jumper.",
+       "cue_phrase": "near her warm jumper",
+       "surface": {
+        "snatch": "snatching",
+        "clutch": "clutching",
+        "cradle": "cradling",
+        "pinch": "pinching",
+        "dangle": "dangling"
+       }
+      },
+      {
+       "id": "A-hold-01-s24",
+       "answer": "cradle",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "To carry the shell, Eli had to ___ it with soft palms.",
+       "cue_phrase": "with soft palms",
+       "surface": {
+        "snatch": "snatch",
+        "clutch": "clutch",
+        "cradle": "cradle",
+        "pinch": "pinch",
+        "dangle": "dangle"
+       }
+      },
+      {
+       "id": "A-hold-01-s25",
+       "answer": "pinch",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Dad ___ a raisin with his thumb and first finger.",
+       "cue_phrase": "thumb and first finger",
+       "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+       }
+      },
+      {
+       "id": "A-hold-01-s26",
+       "answer": "pinch",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Mira ___ a tiny seed using only finger and thumb.",
+       "cue_phrase": "only finger and thumb",
+       "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+       }
+      },
+      {
+       "id": "A-hold-01-s27",
+       "answer": "pinch",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The chef ___ the salt between finger and thumb, sprinkling it over the soup.",
+       "cue_phrase": "between finger and thumb",
+       "surface": {
+        "snatch": "snatches",
+        "clutch": "clutches",
+        "cradle": "cradles",
+        "pinch": "pinches",
+        "dangle": "dangles"
+       }
+      },
+      {
+       "id": "A-hold-01-s28",
+       "answer": "pinch",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Mia ___ the page corner to turn just one sheet.",
+       "cue_phrase": "just one sheet",
+       "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+       }
+      },
+      {
+       "id": "A-hold-01-s29",
+       "answer": "pinch",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "To lift the bead, Noah ___ it without covering the hole.",
+       "cue_phrase": "without covering the hole",
+       "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+       }
+      },
+      {
+       "id": "A-hold-01-s30",
+       "answer": "pinch",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The thorn was tiny, so I ___ its tip and pulled.",
+       "cue_phrase": "thorn was tiny",
+       "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+       }
+      },
+      {
+       "id": "A-hold-01-s31",
+       "answer": "pinch",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "Please ___ the clay nose with two fingertips, not your whole palm.",
+       "cue_phrase": "with two fingertips",
+       "surface": {
+        "snatch": "snatch",
+        "clutch": "clutch",
+        "cradle": "cradle",
+        "pinch": "pinch",
+        "dangle": "dangle"
+       }
+      },
+      {
+       "id": "A-hold-01-s32",
+       "answer": "pinch",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Lena ___ each crumb between two fingertips and laid it before the robin.",
+       "cue_phrase": "between two fingertips",
+       "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+       }
+      },
+      {
+       "id": "A-hold-01-s33",
+       "answer": "dangle",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Maya ___ the sock over the puppy's nose, letting it sway out of reach.",
+       "cue_phrase": "letting it sway",
+       "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+       }
+      },
+      {
+       "id": "A-hold-01-s34",
+       "answer": "dangle",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "A fisher ___ the bait over the water so it bobs.",
+       "cue_phrase": "so it bobs",
+       "surface": {
+        "snatch": "snatches",
+        "clutch": "clutches",
+        "cradle": "cradles",
+        "pinch": "pinches",
+        "dangle": "dangles"
+       }
+      },
+      {
+       "id": "A-hold-01-s35",
+       "answer": "dangle",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Ned ___ his muddy boots off the pier edge after swimming.",
+       "cue_phrase": "pier edge after swimming",
+       "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (snatch); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-hold-01-s36",
+       "answer": "dangle",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The monkey ___ the banana peel above the little one's head, swinging it slowly.",
+       "cue_phrase": "above the little one's head",
+       "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (clutch, pinch); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-hold-01-s37",
+       "answer": "dangle",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "During art, Suki ___ her wet brush until blue drops fell.",
+       "cue_phrase": "blue drops fell",
+       "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (pinch); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-hold-01-s38",
+       "answer": "dangle",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Jo ___ the spider toy from her sleeve on a thread.",
+       "cue_phrase": "on a thread",
+       "surface": {
+        "snatch": "snatched",
+        "clutch": "clutched",
+        "cradle": "cradled",
+        "pinch": "pinched",
+        "dangle": "dangled"
+       }
+      },
+      {
+       "id": "A-hold-01-s39",
+       "answer": "dangle",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "At the gate, Dad kept ___ the keys so they jingled.",
+       "cue_phrase": "so they jingled",
+       "surface": {
+        "snatch": "snatching",
+        "clutch": "clutching",
+        "cradle": "cradling",
+        "pinch": "pinching",
+        "dangle": "dangling"
+       }
+      },
+      {
+       "id": "A-hold-01-s40",
+       "answer": "dangle",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The giant liked to ___ lanterns from his belt while walking.",
+       "cue_phrase": "from his belt",
+       "surface": {
+        "snatch": "snatch",
+        "clutch": "clutch",
+        "cradle": "cradle",
+        "pinch": "pinch",
+        "dangle": "dangle"
+       }
+      }
+     ],
+     "contrasts": [
+      {
+       "answer": "snatch",
+       "picked": "clutch",
+       "line": "Snatch is a sudden taking; clutch is a tight keeping."
+      },
+      {
+       "answer": "snatch",
+       "picked": "cradle",
+       "line": "Snatch is quick and sudden; cradle is soft and protective."
+      },
+      {
+       "answer": "snatch",
+       "picked": "pinch",
+       "line": "Snatch takes in a flash; pinch uses thumb and finger on a tiny bit."
+      },
+      {
+       "answer": "snatch",
+       "picked": "dangle",
+       "line": "Snatch is quick taking; dangle lets the item sway from one end."
+      },
+      {
+       "answer": "clutch",
+       "picked": "snatch",
+       "line": "Clutch keeps close and tight; snatch is the quick moment of taking."
+      },
+      {
+       "answer": "clutch",
+       "picked": "cradle",
+       "line": "Clutch is tight from worry; cradle is soft to protect."
+      },
+      {
+       "answer": "clutch",
+       "picked": "pinch",
+       "line": "Clutch uses a strong grip; pinch uses thumb and finger on a small spot."
+      },
+      {
+       "answer": "clutch",
+       "picked": "dangle",
+       "line": "Clutch keeps close; dangle leaves the item swaying from one end."
+      },
+      {
+       "answer": "cradle",
+       "picked": "snatch",
+       "line": "Cradle is soft and protective; snatch is sudden taking."
+      },
+      {
+       "answer": "cradle",
+       "picked": "clutch",
+       "line": "Cradle protects softly; clutch keeps tight, often from fear."
+      },
+      {
+       "answer": "cradle",
+       "picked": "pinch",
+       "line": "Cradle supports with care; pinch nips a tiny bit with thumb and finger."
+      },
+      {
+       "answer": "cradle",
+       "picked": "dangle",
+       "line": "Cradle supports close; dangle lets the item sway from one end."
+      },
+      {
+       "answer": "pinch",
+       "picked": "snatch",
+       "line": "Pinch uses thumb and finger on a tiny bit; snatch is sudden taking."
+      },
+      {
+       "answer": "pinch",
+       "picked": "clutch",
+       "line": "Pinch is small and nippy; clutch is a tight keeping."
+      },
+      {
+       "answer": "pinch",
+       "picked": "cradle",
+       "line": "Pinch presses a tiny spot; cradle supports softly."
+      },
+      {
+       "answer": "pinch",
+       "picked": "dangle",
+       "line": "Pinch traps a small bit; dangle lets the item sway from one end."
+      },
+      {
+       "answer": "dangle",
+       "picked": "snatch",
+       "line": "Dangle lets the item sway from one end; snatch is quick taking."
+      },
+      {
+       "answer": "dangle",
+       "picked": "clutch",
+       "line": "Dangle leaves an item swaying; clutch keeps it tight and close."
+      },
+      {
+       "answer": "dangle",
+       "picked": "cradle",
+       "line": "Dangle lets an item sway; cradle supports it softly."
+      },
+      {
+       "answer": "dangle",
+       "picked": "pinch",
+       "line": "Dangle makes an item sway from one end; pinch traps a tiny bit."
+      }
+     ],
+     "meta": {
+      "generated_at": "2026-07-06T14:21:46+00:00",
+      "model": "gpt-5.5",
+      "scrubbed_at": "2026-07-07",
+      "scrub_note": "Scrubbed by claude 2026-07-07 (dedicated pre-scrub agent failed twice on output limits): mechanical sweeps (cue hygiene, meta-frames, seasonal, templates, duplicates), all 20 contrast lines read per set, every sentence read for frame sanity, all judge hards fixed and re-judged to zero. Fixes: wave re-pinned to brandish.v.01 + 3 contrasts aligned, hop gloss authored to the one-foot sense the set teaches, pat/nod/wink frames restaged, one dangling pronoun."
+     }
+    },
+    {
      "id": "A-shine-01",
      "bank": "A",
      "pos": "adjective",
@@ -13973,7 +19172,7 @@
       "zipf_mean": 3.33,
       "tightness": null,
       "band_suggested": 4,
-      "scored_at": "2026-07-06T05:33:18+00:00"
+      "scored_at": "2026-07-06T18:43:21+00:00"
      },
      "words": [
       {
@@ -15015,7 +20214,7 @@
       "zipf_mean": 3.95,
       "tightness": null,
       "band_suggested": 3,
-      "scored_at": "2026-07-06T05:33:18+00:00"
+      "scored_at": "2026-07-06T18:43:21+00:00"
      },
      "words": [
       {
@@ -15937,7 +21136,7 @@
       "zipf_mean": 3.38,
       "tightness": null,
       "band_suggested": 3,
-      "scored_at": "2026-07-06T05:33:18+00:00"
+      "scored_at": "2026-07-06T18:43:21+00:00"
      },
      "words": [
       {
@@ -16939,7 +22138,7 @@
       "zipf_mean": 3.91,
       "tightness": 0.374,
       "band_suggested": 3,
-      "scored_at": "2026-07-06T05:33:18+00:00"
+      "scored_at": "2026-07-06T18:43:21+00:00"
      },
      "words": [
       {
@@ -17901,7 +23100,7 @@
       "zipf_mean": 3.27,
       "tightness": null,
       "band_suggested": 4,
-      "scored_at": "2026-07-06T05:33:18+00:00"
+      "scored_at": "2026-07-06T18:43:21+00:00"
      },
      "words": [
       {
@@ -18831,7 +24030,7 @@
       "zipf_mean": 3.88,
       "tightness": 0.28,
       "band_suggested": 2,
-      "scored_at": "2026-07-06T05:33:18+00:00"
+      "scored_at": "2026-07-06T18:43:21+00:00"
      },
      "words": [
       {
@@ -19741,6 +24940,2628 @@
      }
     },
     {
+     "id": "B-coast-01",
+     "bank": "B",
+     "pos": "noun",
+     "theme": "along the coastline",
+     "band": 3,
+     "band_override": 3,
+     "computed": {
+      "zipf_min": 2.69,
+      "zipf_mean": 3.22,
+      "tightness": 0.403,
+      "band_suggested": 3,
+      "scored_at": "2026-07-06T18:43:21+00:00"
+     },
+     "words": [
+      {
+       "w": "cove",
+       "synset": "cove.n.01",
+       "gloss_source": "wordnet",
+       "gloss": "a small inlet",
+       "zipf": 3.64,
+       "register": "neutral",
+       "senses_at_pos": 2,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "cove"
+       },
+       "discriminator": "small sheltered notch of coast",
+       "grade": 5
+      },
+      {
+       "w": "lagoon",
+       "synset": "lagoon.n.01",
+       "gloss_source": "authored",
+       "gloss": "calm shallow water cut off from the sea by sand or coral",
+       "zipf": 3.43,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "lagoon"
+       },
+       "discriminator": "sealed off behind a bar",
+       "grade": 4
+      },
+      {
+       "w": "dune",
+       "synset": "dune.n.01",
+       "gloss_source": "authored",
+       "gloss": "a ridge of loose sand piled up by the wind",
+       "zipf": 3.28,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "dune"
+       },
+       "discriminator": "loose wind-piled sand",
+       "grade": 4
+      },
+      {
+       "w": "headland",
+       "synset": "promontory.n.01",
+       "gloss_source": "authored",
+       "gloss": "a high rocky point of land that sticks out into the sea",
+       "zipf": 2.69,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "headland"
+       },
+       "discriminator": "high rock jutting into the sea",
+       "grade": 5
+      },
+      {
+       "w": "jetty",
+       "synset": "breakwater.n.01",
+       "gloss_source": "authored",
+       "gloss": "a built stone or wooden arm running from the shore out over the water",
+       "zipf": 3.04,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "jetty"
+       },
+       "discriminator": "built arm over the water",
+       "grade": 4
+      }
+     ],
+     "sentences": [
+      {
+       "id": "B-coast-01-s01",
+       "answer": "cove",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "We picnicked in the ___, hidden by cliffs on both sides.",
+       "cue_phrase": "hidden by cliffs",
+       "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+       }
+      },
+      {
+       "id": "B-coast-01-s02",
+       "answer": "cove",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Our boat slipped into the little ___ curled between rocky points.",
+       "cue_phrase": "curled between rocky points",
+       "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+       }
+      },
+      {
+       "id": "B-coast-01-s03",
+       "answer": "cove",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Between two cliff walls, the ___ held three fishing boats overnight.",
+       "cue_phrase": "Between two cliff walls",
+       "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+       }
+      },
+      {
+       "id": "B-coast-01-s04",
+       "answer": "cove",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Mum spread towels in the ___ after the path dipped sharply down.",
+       "cue_phrase": "path dipped sharply down",
+       "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+       }
+      },
+      {
+       "id": "B-coast-01-s05",
+       "answer": "cove",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The treasure map showed a tucked-away ___ behind two steep cliffs.",
+       "cue_phrase": "behind two steep cliffs",
+       "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (dune, lagoon); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "B-coast-01-s06",
+       "answer": "cove",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Gulls circled the ___ where our kayak rested beneath the cliffs.",
+       "cue_phrase": "rested beneath the cliffs",
+       "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (jetty); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "B-coast-01-s07",
+       "answer": "cove",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "At low tide, the ___ looked like a secret pocket in the cliffs.",
+       "cue_phrase": "secret pocket in the cliffs",
+       "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+       }
+      },
+      {
+       "id": "B-coast-01-s08",
+       "answer": "cove",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "We reached the ___ by scrambling down steps carved into the cliff.",
+       "cue_phrase": "down steps carved",
+       "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (jetty, lagoon); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "B-coast-01-s09",
+       "answer": "lagoon",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Fish darted in the ___ behind a long strip of beach.",
+       "cue_phrase": "behind a long strip",
+       "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+       }
+      },
+      {
+       "id": "B-coast-01-s10",
+       "answer": "lagoon",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The ___ stayed apart from the waves beyond the narrow bank.",
+       "cue_phrase": "apart from the waves",
+       "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+       }
+      },
+      {
+       "id": "B-coast-01-s11",
+       "answer": "lagoon",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Herons stood in the ___ while breakers crashed on the far side.",
+       "cue_phrase": "breakers crashed on the far side",
+       "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (cove); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "B-coast-01-s12",
+       "answer": "lagoon",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "We paddled the ___, separated from the surf by a curved bar.",
+       "cue_phrase": "separated from the surf",
+       "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (cove); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "B-coast-01-s13",
+       "answer": "lagoon",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Beyond the beach wall, the ___ barely rippled under the flamingos.",
+       "cue_phrase": "Beyond the beach wall",
+       "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (cove); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "B-coast-01-s14",
+       "answer": "lagoon",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Tiny crabs scuttled round the ___, sheltered behind the outer beach.",
+       "cue_phrase": "behind the outer beach",
+       "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (dune); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "B-coast-01-s15",
+       "answer": "lagoon",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "The pirate camp faced a ___ sealed off by a pale spit.",
+       "cue_phrase": "sealed off by",
+       "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (cove); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "B-coast-01-s16",
+       "answer": "lagoon",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "At sunset, the ___ gleamed quietly inside its ring of pale sand.",
+       "cue_phrase": "ring of pale sand",
+       "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+       }
+      },
+      {
+       "id": "B-coast-01-s17",
+       "answer": "dune",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The children rolled down a ___ that the breeze reshaped each night.",
+       "cue_phrase": "breeze reshaped each night",
+       "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+       }
+      },
+      {
+       "id": "B-coast-01-s18",
+       "answer": "dune",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Grass clung to the ___ as grains blew across our shoes.",
+       "cue_phrase": "grains blew across",
+       "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+       }
+      },
+      {
+       "id": "B-coast-01-s19",
+       "answer": "dune",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "We hid behind the ___, and the blowing grains stung our ankles.",
+       "cue_phrase": "blowing grains stung",
+       "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (headland, jetty); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "B-coast-01-s20",
+       "answer": "dune",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The ranger asked us not to climb the ___ of soft, sliding sand.",
+       "cue_phrase": "soft, sliding sand",
+       "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+       }
+      },
+      {
+       "id": "B-coast-01-s21",
+       "answer": "dune",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Our footprints vanished from the ___ after a blustery afternoon.",
+       "cue_phrase": "footprints vanished",
+       "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+       }
+      },
+      {
+       "id": "B-coast-01-s22",
+       "answer": "dune",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "From the ___, we slid laughing as dry grains sprayed everywhere.",
+       "cue_phrase": "dry grains sprayed everywhere",
+       "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+       }
+      },
+      {
+       "id": "B-coast-01-s23",
+       "answer": "dune",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "A lizard zipped up the sandy ___ and vanished over its windblown crest.",
+       "cue_phrase": "windblown crest",
+       "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+       }
+      },
+      {
+       "id": "B-coast-01-s24",
+       "answer": "dune",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "The castle sat on a ___ that shifted shape after storms.",
+       "cue_phrase": "shifted shape after storms",
+       "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+       }
+      },
+      {
+       "id": "B-coast-01-s25",
+       "answer": "headland",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "We climbed the high rocky ___ to watch gulls wheel over the sea.",
+       "cue_phrase": "high rocky",
+       "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+       }
+      },
+      {
+       "id": "B-coast-01-s26",
+       "answer": "headland",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The lighthouse stood on the ___, far out beyond both bays.",
+       "cue_phrase": "lighthouse stood on",
+       "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (jetty); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "B-coast-01-s27",
+       "answer": "headland",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "From the high rock tip of the ___, the boats looked like toys.",
+       "cue_phrase": "high rock tip",
+       "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+       }
+      },
+      {
+       "id": "B-coast-01-s28",
+       "answer": "headland",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Waves crashed below the ___ where goats nibbled tough grass.",
+       "cue_phrase": "Waves crashed below",
+       "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (dune); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "B-coast-01-s29",
+       "answer": "headland",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The castle ruins crowned a ___ with steep drops on three sides.",
+       "cue_phrase": "steep drops on three sides",
+       "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+       }
+      },
+      {
+       "id": "B-coast-01-s30",
+       "answer": "headland",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "We followed the cliff path until the ___ jutted before us.",
+       "cue_phrase": "cliff path until",
+       "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (jetty); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "B-coast-01-s31",
+       "answer": "headland",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "Fog wrapped the ___, hiding its clifftop beacon from our ferry.",
+       "cue_phrase": "clifftop beacon",
+       "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+       }
+      },
+      {
+       "id": "B-coast-01-s32",
+       "answer": "headland",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Puffins nested on the ___ above the dark crashing waves.",
+       "cue_phrase": "above the dark crashing waves",
+       "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+       }
+      },
+      {
+       "id": "B-coast-01-s33",
+       "answer": "jetty",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Dad tied the boat beside the ___ made of old planks.",
+       "cue_phrase": "made of old planks",
+       "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+       }
+      },
+      {
+       "id": "B-coast-01-s34",
+       "answer": "jetty",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "We walked along the ___ to drop crab lines into the harbour.",
+       "cue_phrase": "walked along the",
+       "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+       }
+      },
+      {
+       "id": "B-coast-01-s35",
+       "answer": "jetty",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Spray splashed through the boards of the ___ under our trainers.",
+       "cue_phrase": "through the boards",
+       "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+       }
+      },
+      {
+       "id": "B-coast-01-s36",
+       "answer": "jetty",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The ___ stretched from the harbour wall, and boats moored beside it.",
+       "cue_phrase": "boats moored beside it",
+       "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+       }
+      },
+      {
+       "id": "B-coast-01-s37",
+       "answer": "jetty",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "We queued on the ___ while gulls eyed our bait buckets.",
+       "cue_phrase": "queued on the",
+       "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+       }
+      },
+      {
+       "id": "B-coast-01-s38",
+       "answer": "jetty",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Barnacles crusted the ___ where the rowing boat was tied.",
+       "cue_phrase": "rowing boat was tied",
+       "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+       }
+      },
+      {
+       "id": "B-coast-01-s39",
+       "answer": "jetty",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "At dawn, fishers pushed trolleys down the ___ toward their boats.",
+       "cue_phrase": "toward their boats",
+       "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+       }
+      },
+      {
+       "id": "B-coast-01-s40",
+       "answer": "jetty",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The storm bent the rail on the ___, but it stayed standing.",
+       "cue_phrase": "bent the rail",
+       "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+       }
+      }
+     ],
+     "contrasts": [
+      {
+       "answer": "cove",
+       "picked": "lagoon",
+       "line": "A cove is a cliff-sheltered bite in the coast. A lagoon lies behind a strip that separates it from the waves."
+      },
+      {
+       "answer": "cove",
+       "picked": "dune",
+       "line": "A cove is a tucked-away place for water between cliffs. A dune is a hill of beach grains."
+      },
+      {
+       "answer": "cove",
+       "picked": "headland",
+       "line": "A cove goes inward and feels tucked in. A headland juts outward into the sea."
+      },
+      {
+       "answer": "cove",
+       "picked": "jetty",
+       "line": "A cove is natural and surrounded by cliffs. A jetty is a man-made walkway for boats."
+      },
+      {
+       "answer": "lagoon",
+       "picked": "cove",
+       "line": "A lagoon sits behind a beach bar, apart from the surf. A cove is a sheltered hollow between cliffs."
+      },
+      {
+       "answer": "lagoon",
+       "picked": "dune",
+       "line": "A lagoon holds water behind a barrier. A dune is dry and made of blown grains."
+      },
+      {
+       "answer": "lagoon",
+       "picked": "headland",
+       "line": "A lagoon is enclosed water near the coast. A headland is land sticking out."
+      },
+      {
+       "answer": "lagoon",
+       "picked": "jetty",
+       "line": "A lagoon is a natural pool behind a barrier. A jetty is a built structure you can walk on."
+      },
+      {
+       "answer": "dune",
+       "picked": "cove",
+       "line": "A dune is a mound of blown beach grains. A cove is a sheltered curve of water."
+      },
+      {
+       "answer": "dune",
+       "picked": "lagoon",
+       "line": "A dune is dry ground shaped by wind. A lagoon is water held behind a barrier."
+      },
+      {
+       "answer": "dune",
+       "picked": "headland",
+       "line": "A dune is soft and shifts shape. A headland is firm cliff land jutting out."
+      },
+      {
+       "answer": "dune",
+       "picked": "jetty",
+       "line": "A dune is natural and sandy underfoot. A jetty is built out for boats."
+      },
+      {
+       "answer": "headland",
+       "picked": "cove",
+       "line": "A headland sticks out from the coast. A cove cuts inward between cliffs."
+      },
+      {
+       "answer": "headland",
+       "picked": "lagoon",
+       "line": "A headland is a tall piece of coast you climb. A lagoon is water lying behind a barrier."
+      },
+      {
+       "answer": "headland",
+       "picked": "dune",
+       "line": "A headland is hard cliff coast with steep drops. A dune is soft, shifting beach ground."
+      },
+      {
+       "answer": "headland",
+       "picked": "jetty",
+       "line": "A headland is natural coast jutting into the sea. A jetty is built from the shore for boats."
+      },
+      {
+       "answer": "jetty",
+       "picked": "cove",
+       "line": "A jetty is a built place to walk beside boats. A cove is a natural sheltered coastal hollow."
+      },
+      {
+       "answer": "jetty",
+       "picked": "lagoon",
+       "line": "A jetty is a structure people stand on. A lagoon is enclosed water behind a beach bar."
+      },
+      {
+       "answer": "jetty",
+       "picked": "dune",
+       "line": "A jetty has boards or stone and reaches out for boats. A dune is a sandy hill."
+      },
+      {
+       "answer": "jetty",
+       "picked": "headland",
+       "line": "A jetty is man-made and used by boats. A headland is natural cliff coast jutting out."
+      }
+     ],
+     "meta": {
+      "generated_at": "2026-07-06T14:31:29+00:00",
+      "model": "gpt-5.4",
+      "scrubbed_at": "2026-07-07",
+      "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+     }
+    },
+    {
+     "id": "B-river-01",
+     "bank": "B",
+     "pos": "noun",
+     "theme": "a river's journey",
+     "band": 3,
+     "band_override": 3,
+     "computed": {
+      "zipf_min": 3.15,
+      "zipf_mean": 3.51,
+      "tightness": 0.458,
+      "band_suggested": 3,
+      "scored_at": "2026-07-06T18:43:21+00:00"
+     },
+     "words": [
+      {
+       "w": "rapids",
+       "synset": "rapid.n.01",
+       "gloss_source": "wordnet",
+       "gloss": "a part of a river where the current is very fast",
+       "zipf": 3.64,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "rapids"
+       },
+       "discriminator": "fast broken white water",
+       "grade": 5
+      },
+      {
+       "w": "gorge",
+       "synset": "gorge.n.01",
+       "gloss_source": "authored",
+       "gloss": "a deep narrow valley with steep rocky sides, cut by a river",
+       "zipf": 3.4,
+       "register": "neutral",
+       "senses_at_pos": 3,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "gorge"
+       },
+       "discriminator": "deep narrow rock walls",
+       "grade": 6
+      },
+      {
+       "w": "tributary",
+       "synset": "feeder.n.03",
+       "gloss_source": "wordnet",
+       "gloss": "a branch that flows into the main stream",
+       "zipf": 3.15,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "tributary"
+       },
+       "discriminator": "smaller river joining the main one",
+       "grade": 6
+      },
+      {
+       "w": "estuary",
+       "synset": "estuary.n.01",
+       "gloss_source": "authored",
+       "gloss": "the wide river mouth where fresh water meets the salty sea",
+       "zipf": 3.26,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "estuary"
+       },
+       "discriminator": "wide tidal mouth, fresh meets salt",
+       "grade": 6
+      },
+      {
+       "w": "delta",
+       "synset": "delta.n.01",
+       "gloss_source": "authored",
+       "gloss": "a fan of low islands where a river splits before entering the sea",
+       "zipf": 4.12,
+       "register": "neutral",
+       "senses_at_pos": 3,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "delta"
+       },
+       "discriminator": "fan of islands where the river splits",
+       "grade": 6
+      }
+     ],
+     "sentences": [
+      {
+       "id": "B-river-01-s01",
+       "answer": "rapids",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The ___ churned white over hidden rocks beside the trail.",
+       "cue_phrase": "churned white over hidden rocks",
+       "surface": {
+        "rapids": "rapids",
+        "gorge": "gorges",
+        "tributary": "tributaries",
+        "estuary": "estuaries",
+        "delta": "deltas"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (tributary); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "B-river-01-s02",
+       "answer": "rapids",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Beside camp, the ___ threw cold spray and rattled every paddle.",
+       "cue_phrase": "threw cold spray",
+       "surface": {
+        "rapids": "rapids",
+        "gorge": "gorges",
+        "tributary": "tributaries",
+        "estuary": "estuaries",
+        "delta": "deltas"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (tributary); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "B-river-01-s03",
+       "answer": "rapids",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The ___ made paddles shake, then stopped at a glassy pool.",
+       "cue_phrase": "paddles shake",
+       "surface": {
+        "rapids": "rapids",
+        "gorge": "gorges",
+        "tributary": "tributaries",
+        "estuary": "estuaries",
+        "delta": "deltas"
+       }
+      },
+      {
+       "id": "B-river-01-s04",
+       "answer": "rapids",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "After the ___, everyone's sleeves dripped, but the boat slid quietly.",
+       "cue_phrase": "boat slid quietly",
+       "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+       }
+      },
+      {
+       "id": "B-river-01-s05",
+       "answer": "rapids",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Before the ___, a sign showed waves, rocks, and a tumbling paddler.",
+       "cue_phrase": "tumbling paddler",
+       "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+       }
+      },
+      {
+       "id": "B-river-01-s06",
+       "answer": "rapids",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "We heard the ___ end when the loud splashing became gentle.",
+       "cue_phrase": "splashing became gentle",
+       "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+       }
+      },
+      {
+       "id": "B-river-01-s07",
+       "answer": "rapids",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The ___ hammered the kayak so loudly that birds lifted from reeds.",
+       "cue_phrase": "hammered the kayak",
+       "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (tributary); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "B-river-01-s08",
+       "answer": "rapids",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "We carried the canoe around the ___, away from the white roar.",
+       "cue_phrase": "white roar",
+       "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (gorge); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "B-river-01-s09",
+       "answer": "gorge",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "From the bridge, the ___ showed tall cliffs and a thread below.",
+       "cue_phrase": "tall cliffs",
+       "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+       }
+      },
+      {
+       "id": "B-river-01-s10",
+       "answer": "gorge",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The path crossed the ___ on a bridge strung between the cliff tops.",
+       "cue_phrase": "strung between the cliff tops",
+       "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (rapids, tributary); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "B-river-01-s11",
+       "answer": "gorge",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Our voices echoed in the ___ where cliffs hid the afternoon sun.",
+       "cue_phrase": "cliffs hid",
+       "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+       }
+      },
+      {
+       "id": "B-river-01-s12",
+       "answer": "gorge",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "At the ___, Mum held my hand near the cliff-edge path.",
+       "cue_phrase": "cliff-edge path",
+       "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (rapids); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "B-river-01-s13",
+       "answer": "gorge",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The train slowed beside the ___, and windows filled with stone walls.",
+       "cue_phrase": "windows filled with stone",
+       "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+       }
+      },
+      {
+       "id": "B-river-01-s14",
+       "answer": "gorge",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "In the ___, a dropped pebble clicked many times before the splash.",
+       "cue_phrase": "clicked many times",
+       "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+       }
+      },
+      {
+       "id": "B-river-01-s15",
+       "answer": "gorge",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "From our lookout, the ___ made the buses look like toy boxes.",
+       "cue_phrase": "toy boxes",
+       "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+       }
+      },
+      {
+       "id": "B-river-01-s16",
+       "answer": "gorge",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "The goat trail zigzagged down into the ___ between shadowy cliffs.",
+       "cue_phrase": "shadowy cliffs",
+       "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+       }
+      },
+      {
+       "id": "B-river-01-s17",
+       "answer": "tributary",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "At the meadow, the ___ joined the broad river under willows.",
+       "cue_phrase": "joined the broad river",
+       "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+       }
+      },
+      {
+       "id": "B-river-01-s18",
+       "answer": "tributary",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Our map marked the ___ as a thin blue line feeding the river.",
+       "cue_phrase": "thin blue line feeding",
+       "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+       }
+      },
+      {
+       "id": "B-river-01-s19",
+       "answer": "tributary",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "We crossed the ankle-deep ___ before reaching the bigger river.",
+       "cue_phrase": "before reaching the bigger river",
+       "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (rapids); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "B-river-01-s20",
+       "answer": "tributary",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Minnows darted in the ___ just before it joined the river.",
+       "cue_phrase": "joined the river",
+       "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+       }
+      },
+      {
+       "id": "B-river-01-s21",
+       "answer": "tributary",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The explorer followed the ___ downhill until it led her to the river.",
+       "cue_phrase": "led her to the river",
+       "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (gorge); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "B-river-01-s22",
+       "answer": "tributary",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Leaves floated from the ___ into the larger waterway near camp.",
+       "cue_phrase": "into the larger waterway",
+       "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+       }
+      },
+      {
+       "id": "B-river-01-s23",
+       "answer": "tributary",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "A frog jumped from the small ___ that trickled into the river.",
+       "cue_phrase": "trickled into the river",
+       "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+       }
+      },
+      {
+       "id": "B-river-01-s24",
+       "answer": "tributary",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "The dog splashed along the ___ that fed the river behind school.",
+       "cue_phrase": "fed the river",
+       "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+       }
+      },
+      {
+       "id": "B-river-01-s25",
+       "answer": "estuary",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The ferry crossed the ___ where the river widened to meet the tide.",
+       "cue_phrase": "widened to meet the tide",
+       "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+       }
+      },
+      {
+       "id": "B-river-01-s26",
+       "answer": "estuary",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Sailboats waited in the ___ between harbour walls as the tide rose.",
+       "cue_phrase": "tide rose",
+       "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+       }
+      },
+      {
+       "id": "B-river-01-s27",
+       "answer": "estuary",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "At low tide, the ___ turned to shining mud with a salty smell.",
+       "cue_phrase": "shining mud with a salty smell",
+       "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (delta); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "B-river-01-s28",
+       "answer": "estuary",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Gulls picked worms in the ___ where the tide had left the mud shiny.",
+       "cue_phrase": "tide had left the mud shiny",
+       "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (delta); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "B-river-01-s29",
+       "answer": "estuary",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Dad tasted salt in the air as the boat motored up the wide ___ toward the hills.",
+       "cue_phrase": "tasted salt in the air",
+       "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+       }
+      },
+      {
+       "id": "B-river-01-s30",
+       "answer": "estuary",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Boats at the ___ rose twice daily in the broad harbour channel.",
+       "cue_phrase": "broad harbour channel",
+       "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+       }
+      },
+      {
+       "id": "B-river-01-s31",
+       "answer": "estuary",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The class dipped nets where the ___ mixed river water with the sea.",
+       "cue_phrase": "mixed river water with the sea",
+       "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+       }
+      },
+      {
+       "id": "B-river-01-s32",
+       "answer": "estuary",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "At dusk, harbour bells rang across the wide ___ as the tide slid out.",
+       "cue_phrase": "tide slid out",
+       "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+       }
+      },
+      {
+       "id": "B-river-01-s33",
+       "answer": "delta",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The map showed the ___ spreading into five channels before the coast.",
+       "cue_phrase": "five channels",
+       "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+       }
+      },
+      {
+       "id": "B-river-01-s34",
+       "answer": "delta",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Herders camped on three sandbanks of the ___, with channels curling around them.",
+       "cue_phrase": "three sandbanks",
+       "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (estuary); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "B-river-01-s35",
+       "answer": "delta",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The boat chose left, then right, through the ___ toward the coast.",
+       "cue_phrase": "left, then right",
+       "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (estuary); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "B-river-01-s36",
+       "answer": "delta",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "On the ___, farms sat on mud bars between winding channels.",
+       "cue_phrase": "between winding channels",
+       "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+       }
+      },
+      {
+       "id": "B-river-01-s37",
+       "answer": "delta",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Our guide counted seven crossings in the ___ before reaching open coast.",
+       "cue_phrase": "seven crossings",
+       "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+       }
+      },
+      {
+       "id": "B-river-01-s38",
+       "answer": "delta",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Pelicans nested where the ___ spread into muddy fingers beyond the town.",
+       "cue_phrase": "muddy fingers",
+       "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (estuary); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "B-river-01-s39",
+       "answer": "delta",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "From the plane, the ___ looked like a hand with blue lines.",
+       "cue_phrase": "hand with blue lines",
+       "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+       }
+      },
+      {
+       "id": "B-river-01-s40",
+       "answer": "delta",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "We got lost in the ___ after three channels rejoined behind us.",
+       "cue_phrase": "three channels rejoined",
+       "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (estuary); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      }
+     ],
+     "contrasts": [
+      {
+       "answer": "rapids",
+       "picked": "gorge",
+       "line": "Rapids are rushing white water. A gorge is a tall-walled gap in the land."
+      },
+      {
+       "answer": "rapids",
+       "picked": "tributary",
+       "line": "Rapids churn and splash. A tributary is a smaller waterway joining a bigger one."
+      },
+      {
+       "answer": "rapids",
+       "picked": "estuary",
+       "line": "Rapids are rough white water. An estuary is a broad tidal place near the coast."
+      },
+      {
+       "answer": "rapids",
+       "picked": "delta",
+       "line": "Rapids toss boats in foam. A delta spreads into many channels and sandbanks."
+      },
+      {
+       "answer": "gorge",
+       "picked": "rapids",
+       "line": "A gorge has high rock walls. Rapids are rough white water."
+      },
+      {
+       "answer": "gorge",
+       "picked": "tributary",
+       "line": "A gorge is a walled gap. A tributary is a smaller waterway joining a bigger one."
+      },
+      {
+       "answer": "gorge",
+       "picked": "estuary",
+       "line": "A gorge has cliffs close around you. An estuary is open, broad, and tidal."
+      },
+      {
+       "answer": "gorge",
+       "picked": "delta",
+       "line": "A gorge is between high walls. A delta spreads out into channels and sandbanks."
+      },
+      {
+       "answer": "tributary",
+       "picked": "rapids",
+       "line": "A tributary joins a bigger waterway. Rapids are rough, foamy water."
+      },
+      {
+       "answer": "tributary",
+       "picked": "gorge",
+       "line": "A tributary joins a bigger waterway. A gorge is a gap with high rock walls."
+      },
+      {
+       "answer": "tributary",
+       "picked": "estuary",
+       "line": "A tributary is smaller and joins another. An estuary is broad and moved by tides."
+      },
+      {
+       "answer": "tributary",
+       "picked": "delta",
+       "line": "A tributary joins one bigger waterway. A delta divides into many channels."
+      },
+      {
+       "answer": "estuary",
+       "picked": "rapids",
+       "line": "An estuary is broad and tidal. Rapids are rough white water."
+      },
+      {
+       "answer": "estuary",
+       "picked": "gorge",
+       "line": "An estuary is open and tidal. A gorge is tight between high rock walls."
+      },
+      {
+       "answer": "estuary",
+       "picked": "tributary",
+       "line": "An estuary is a broad tidal place. A tributary is a smaller waterway joining another."
+      },
+      {
+       "answer": "estuary",
+       "picked": "delta",
+       "line": "An estuary usually has one broad channel. A delta spreads into many channels."
+      },
+      {
+       "answer": "delta",
+       "picked": "rapids",
+       "line": "A delta spreads into many channels. Rapids are rough white water."
+      },
+      {
+       "answer": "delta",
+       "picked": "gorge",
+       "line": "A delta spreads across flat ground. A gorge is held between high rock walls."
+      },
+      {
+       "answer": "delta",
+       "picked": "tributary",
+       "line": "A delta divides into channels. A tributary joins a bigger waterway."
+      },
+      {
+       "answer": "delta",
+       "picked": "estuary",
+       "line": "A delta has many channels and sandbanks. An estuary is one broad tidal place."
+      }
+     ],
+     "meta": {
+      "generated_at": "2026-07-06T14:47:12+00:00",
+      "model": "gpt-5.5",
+      "scrubbed_at": "2026-07-07",
+      "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+     }
+    },
+    {
+     "id": "B-sky-01",
+     "bank": "B",
+     "pos": "noun",
+     "theme": "sights in the night sky",
+     "band": 3,
+     "band_override": 3,
+     "computed": {
+      "zipf_min": 3.37,
+      "zipf_mean": 3.62,
+      "tightness": 0.379,
+      "band_suggested": 2,
+      "scored_at": "2026-07-06T18:43:21+00:00"
+     },
+     "words": [
+      {
+       "w": "comet",
+       "synset": "comet.n.01",
+       "gloss_source": "authored",
+       "gloss": "a frozen body that orbits the sun, showing a long glowing tail",
+       "zipf": 3.64,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "comet"
+       },
+       "discriminator": "returning iceball with a tail, visible for weeks",
+       "grade": 4
+      },
+      {
+       "w": "meteor",
+       "synset": "meteoroid.n.01",
+       "gloss_source": "authored",
+       "gloss": "a space rock that burns in a bright streak as it hits the air",
+       "zipf": 3.55,
+       "register": "neutral",
+       "senses_at_pos": 2,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "meteor"
+       },
+       "discriminator": "a streak burning out in seconds",
+       "grade": 4
+      },
+      {
+       "w": "eclipse",
+       "synset": "eclipse.n.01",
+       "gloss_source": "authored",
+       "gloss": "when one body in space blocks the light of another",
+       "zipf": 3.81,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "eclipse"
+       },
+       "discriminator": "one body blocking another",
+       "grade": 5
+      },
+      {
+       "w": "constellation",
+       "synset": "constellation.n.02",
+       "gloss_source": "wordnet",
+       "gloss": "a configuration of stars as seen from the earth",
+       "zipf": 3.37,
+       "register": "neutral",
+       "senses_at_pos": 2,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "constellation"
+       },
+       "discriminator": "named fixed pattern of stars",
+       "grade": 5
+      },
+      {
+       "w": "aurora",
+       "synset": "aurora.n.02",
+       "gloss_source": "authored",
+       "gloss": "shifting bands of coloured light seen after dark near the poles",
+       "zipf": 3.73,
+       "register": "neutral",
+       "senses_at_pos": 3,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "aurora"
+       },
+       "discriminator": "shifting curtains of coloured light",
+       "grade": 6
+      }
+     ],
+     "sentences": [
+      {
+       "id": "B-sky-01-s01",
+       "answer": "comet",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Through Dad's binoculars, the ___ kept its silver plume for three weeks.",
+       "cue_phrase": "silver plume for three weeks",
+       "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+       }
+      },
+      {
+       "id": "B-sky-01-s02",
+       "answer": "comet",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The old chart said the ___ would visit again in seventy-six years.",
+       "cue_phrase": "again in seventy-six years",
+       "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+       }
+      },
+      {
+       "id": "B-sky-01-s03",
+       "answer": "comet",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Grandma remembered the ___ from childhood, now back with a hazy streamer.",
+       "cue_phrase": "with a hazy streamer",
+       "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+       }
+      },
+      {
+       "id": "B-sky-01-s04",
+       "answer": "comet",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "For ten evenings, Mia sketched the ___ with its widening misty plume.",
+       "cue_phrase": "widening misty plume",
+       "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+       }
+      },
+      {
+       "id": "B-sky-01-s05",
+       "answer": "comet",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The newspaper tracked the ___ moving between fixed dots every week that month.",
+       "cue_phrase": "moving between fixed dots",
+       "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+       }
+      },
+      {
+       "id": "B-sky-01-s06",
+       "answer": "comet",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "By Friday, the ___ was still there, beside different fixed dots.",
+       "cue_phrase": "beside different fixed dots",
+       "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+       }
+      },
+      {
+       "id": "B-sky-01-s07",
+       "answer": "comet",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "In the telescope, the ___ looked fuzzy around a tiny icy centre.",
+       "cue_phrase": "tiny icy centre",
+       "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+       }
+      },
+      {
+       "id": "B-sky-01-s08",
+       "answer": "comet",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "All month, Ravi checked the ___ before bed and saw its plume grow.",
+       "cue_phrase": "plume grow",
+       "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+       }
+      },
+      {
+       "id": "B-sky-01-s09",
+       "answer": "meteor",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The ___ flashed once, then vanished before Sam counted to three.",
+       "cue_phrase": "vanished before Sam counted",
+       "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+       }
+      },
+      {
+       "id": "B-sky-01-s10",
+       "answer": "meteor",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The class gasped as the ___ zipped across and was gone instantly.",
+       "cue_phrase": "was gone instantly",
+       "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+       }
+      },
+      {
+       "id": "B-sky-01-s11",
+       "answer": "meteor",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "During the campout, the ___ made everyone point, then quickly disappeared.",
+       "cue_phrase": "then quickly disappeared",
+       "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+       }
+      },
+      {
+       "id": "B-sky-01-s12",
+       "answer": "meteor",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "On the hill, the ___ drew a sudden white line, then nothing.",
+       "cue_phrase": "then nothing",
+       "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+       }
+      },
+      {
+       "id": "B-sky-01-s13",
+       "answer": "meteor",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Tara missed the ___ because she blinked at the wrong moment.",
+       "cue_phrase": "blinked at the wrong",
+       "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-4.1 lists a second fit (eclipse); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "B-sky-01-s14",
+       "answer": "meteor",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Everyone cheered after the ___ crossed the window in one heartbeat.",
+       "cue_phrase": "in one heartbeat",
+       "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+       }
+      },
+      {
+       "id": "B-sky-01-s15",
+       "answer": "meteor",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The ___ was so quick that Noor asked if anyone else saw it.",
+       "cue_phrase": "so quick",
+       "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+       }
+      },
+      {
+       "id": "B-sky-01-s16",
+       "answer": "meteor",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "The ___ burned out before Leo could even lift his camera.",
+       "cue_phrase": "burned out",
+       "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+       }
+      },
+      {
+       "id": "B-sky-01-s17",
+       "answer": "eclipse",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "At noon, the ___ made the sun look like a bitten biscuit.",
+       "cue_phrase": "sun look like",
+       "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+       }
+      },
+      {
+       "id": "B-sky-01-s18",
+       "answer": "eclipse",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The ___ turned day dim when the moon covered the sun.",
+       "cue_phrase": "moon covered the sun",
+       "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+       }
+      },
+      {
+       "id": "B-sky-01-s19",
+       "answer": "eclipse",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "We wore special dark glasses as the ___ slowly hid the sun.",
+       "cue_phrase": "special dark glasses",
+       "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+       }
+      },
+      {
+       "id": "B-sky-01-s20",
+       "answer": "eclipse",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The playground went dusky during the ___, though lunchtime had just begun.",
+       "cue_phrase": "lunchtime had just begun",
+       "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+       }
+      },
+      {
+       "id": "B-sky-01-s21",
+       "answer": "eclipse",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Birds quietened when the ___ made afternoon feel like early evening.",
+       "cue_phrase": "afternoon feel like early",
+       "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+       }
+      },
+      {
+       "id": "B-sky-01-s22",
+       "answer": "eclipse",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The class watched the ___ make a round shadow crawl across the moon.",
+       "cue_phrase": "round shadow crawl",
+       "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+       }
+      },
+      {
+       "id": "B-sky-01-s23",
+       "answer": "eclipse",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "During the ___, our pinhole card made tiny crescent suns.",
+       "cue_phrase": "tiny crescent suns",
+       "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+       }
+      },
+      {
+       "id": "B-sky-01-s24",
+       "answer": "eclipse",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "The ___ paused football practice because staring upward was unsafe.",
+       "cue_phrase": "staring upward was unsafe",
+       "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+       }
+      },
+      {
+       "id": "B-sky-01-s25",
+       "answer": "constellation",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "On the chart, the ___ was named Dragon and never changed shape.",
+       "cue_phrase": "named Dragon",
+       "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+       }
+      },
+      {
+       "id": "B-sky-01-s26",
+       "answer": "constellation",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Jess joined the dots to copy the ___ above the tent.",
+       "cue_phrase": "joined the dots",
+       "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+       }
+      },
+      {
+       "id": "B-sky-01-s27",
+       "answer": "constellation",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "At camp, we found the ___ by matching seven dots on our map.",
+       "cue_phrase": "matching seven dots",
+       "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+       }
+      },
+      {
+       "id": "B-sky-01-s28",
+       "answer": "constellation",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The ___ looked like a saucepan, just as the guidebook picture promised.",
+       "cue_phrase": "like a saucepan",
+       "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+       }
+      },
+      {
+       "id": "B-sky-01-s29",
+       "answer": "constellation",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Even after an hour, the ___ kept the same dot-to-dot shape.",
+       "cue_phrase": "same dot-to-dot shape",
+       "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+       }
+      },
+      {
+       "id": "B-sky-01-s30",
+       "answer": "constellation",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Leila used the ___ to find north from her bedroom window.",
+       "cue_phrase": "to find north",
+       "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+       }
+      },
+      {
+       "id": "B-sky-01-s31",
+       "answer": "constellation",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Grandad pointed to the ___ and told a story about hunters.",
+       "cue_phrase": "story about hunters",
+       "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+       }
+      },
+      {
+       "id": "B-sky-01-s32",
+       "answer": "constellation",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "Sam copied the ___ as six pinholes in black card.",
+       "cue_phrase": "six pinholes",
+       "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+       }
+      },
+      {
+       "id": "B-sky-01-s33",
+       "answer": "aurora",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Green curtains of the ___ rippled above the snowy village.",
+       "cue_phrase": "Green curtains",
+       "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+       }
+      },
+      {
+       "id": "B-sky-01-s34",
+       "answer": "aurora",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The ___ spread purple veils over the Arctic cabin.",
+       "cue_phrase": "purple veils",
+       "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+       }
+      },
+      {
+       "id": "B-sky-01-s35",
+       "answer": "aurora",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Dogs slept while the ___ waved green ribbons over the tent.",
+       "cue_phrase": "waved green ribbons",
+       "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+       }
+      },
+      {
+       "id": "B-sky-01-s36",
+       "answer": "aurora",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "From the sled, the ___ shimmered like curtains across the dark.",
+       "cue_phrase": "shimmered like curtains",
+       "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+       }
+      },
+      {
+       "id": "B-sky-01-s37",
+       "answer": "aurora",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Mum's photo caught the ___ dancing in green folds over snow.",
+       "cue_phrase": "dancing in green folds",
+       "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+       }
+      },
+      {
+       "id": "B-sky-01-s38",
+       "answer": "aurora",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The village cheered when the ___ painted the night sky pink and green.",
+       "cue_phrase": "pink and green",
+       "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+       }
+      },
+      {
+       "id": "B-sky-01-s39",
+       "answer": "aurora",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Outside the lodge, the ___ flickered like silk scarves in the dark.",
+       "cue_phrase": "like silk scarves",
+       "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+       }
+      },
+      {
+       "id": "B-sky-01-s40",
+       "answer": "aurora",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "The ___ waved violet sheets above our mittened hands.",
+       "cue_phrase": "violet sheets",
+       "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+       }
+      }
+     ],
+     "contrasts": [
+      {
+       "answer": "comet",
+       "picked": "meteor",
+       "line": "A comet can linger for weeks with a plume. A meteor flashes and is gone in seconds."
+      },
+      {
+       "answer": "comet",
+       "picked": "eclipse",
+       "line": "A comet is a visitor with a plume. An eclipse is one world covering another's shine."
+      },
+      {
+       "answer": "comet",
+       "picked": "constellation",
+       "line": "A comet moves from week to week. A constellation is a fixed dot pattern."
+      },
+      {
+       "answer": "comet",
+       "picked": "aurora",
+       "line": "A comet has one plume and lasts for weeks. An aurora waves like coloured curtains."
+      },
+      {
+       "answer": "meteor",
+       "picked": "comet",
+       "line": "A meteor is a quick flash. A comet stays visible for many nights with a plume."
+      },
+      {
+       "answer": "meteor",
+       "picked": "eclipse",
+       "line": "A meteor shoots by fast. An eclipse makes one round thing cover another."
+      },
+      {
+       "answer": "meteor",
+       "picked": "constellation",
+       "line": "A meteor appears for a moment. A constellation keeps the same dot pattern."
+      },
+      {
+       "answer": "meteor",
+       "picked": "aurora",
+       "line": "A meteor is a single quick flash. An aurora spreads in moving curtains."
+      },
+      {
+       "answer": "eclipse",
+       "picked": "comet",
+       "line": "An eclipse is a covering that dims a round face. A comet is a traveller with a plume."
+      },
+      {
+       "answer": "eclipse",
+       "picked": "meteor",
+       "line": "An eclipse lasts as a slow covering. A meteor is a sudden flash."
+      },
+      {
+       "answer": "eclipse",
+       "picked": "constellation",
+       "line": "An eclipse changes a round face for a while. A constellation is a steady dot pattern."
+      },
+      {
+       "answer": "eclipse",
+       "picked": "aurora",
+       "line": "An eclipse is one thing covering another. An aurora is waving colour in the dark."
+      },
+      {
+       "answer": "constellation",
+       "picked": "comet",
+       "line": "A constellation keeps its dot shape. A comet drifts and may have a plume."
+      },
+      {
+       "answer": "constellation",
+       "picked": "meteor",
+       "line": "A constellation is a fixed dot picture. A meteor vanishes almost at once."
+      },
+      {
+       "answer": "constellation",
+       "picked": "eclipse",
+       "line": "A constellation stays in the same pattern. An eclipse is a temporary covering."
+      },
+      {
+       "answer": "constellation",
+       "picked": "aurora",
+       "line": "A constellation has a fixed dot pattern. An aurora moves like curtains."
+      },
+      {
+       "answer": "aurora",
+       "picked": "comet",
+       "line": "An aurora ripples in curtains. A comet is a visitor with a plume."
+      },
+      {
+       "answer": "aurora",
+       "picked": "meteor",
+       "line": "An aurora can wave for a while. A meteor flashes out in seconds."
+      },
+      {
+       "answer": "aurora",
+       "picked": "eclipse",
+       "line": "An aurora glows in moving colours. An eclipse covers and dims a round face."
+      },
+      {
+       "answer": "aurora",
+       "picked": "constellation",
+       "line": "An aurora changes shape as it waves. A constellation keeps a dot pattern."
+      }
+     ],
+     "meta": {
+      "generated_at": "2026-07-06T14:49:37+00:00",
+      "model": "gpt-5.5",
+      "scrubbed_at": "2026-07-07",
+      "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+     }
+    },
+    {
      "id": "B-water-01",
      "bank": "B",
      "pos": "noun",
@@ -19752,7 +27573,7 @@
       "zipf_mean": 3.85,
       "tightness": 0.601,
       "band_suggested": 3,
-      "scored_at": "2026-07-06T05:33:18+00:00"
+      "scored_at": "2026-07-06T18:43:21+00:00"
      },
      "words": [
       {
@@ -20654,7 +28475,7 @@
       "zipf_mean": 3.33,
       "tightness": 0.77,
       "band_suggested": 4,
-      "scored_at": "2026-07-06T05:33:18+00:00"
+      "scored_at": "2026-07-06T18:43:21+00:00"
      },
      "words": [
       {
@@ -21552,7 +29373,7 @@
       "zipf_mean": 4.95,
       "tightness": null,
       "band_suggested": 2,
-      "scored_at": "2026-07-06T05:33:18+00:00"
+      "scored_at": "2026-07-06T18:43:21+00:00"
      },
      "words": [
       {
@@ -22369,7 +30190,7 @@
       "zipf_mean": 6.06,
       "tightness": null,
       "band_suggested": 1,
-      "scored_at": "2026-07-06T05:33:18+00:00"
+      "scored_at": "2026-07-06T18:43:21+00:00"
      },
      "words": [
       {
@@ -23160,6 +30981,4750 @@
      }
     },
     {
+     "id": "A-character-01",
+     "bank": "A",
+     "pos": "adjective",
+     "theme": "character under pressure",
+     "band": 4,
+     "band_override": 4,
+     "computed": {
+      "zipf_min": 3.21,
+      "zipf_mean": 3.7,
+      "tightness": null,
+      "band_suggested": 3,
+      "scored_at": "2026-07-06T18:43:21+00:00"
+     },
+     "words": [
+      {
+       "w": "reluctant",
+       "synset": "loath.s.01",
+       "gloss_source": "authored",
+       "gloss": "not wanting to do something, holding back even if you end up doing it",
+       "zipf": 3.81,
+       "register": "neutral",
+       "senses_at_pos": 3,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "reluctant"
+       },
+       "discriminator": "does not want to do it",
+       "grade": 5
+      },
+      {
+       "w": "wary",
+       "synset": "wary.a.01",
+       "gloss_source": "authored",
+       "gloss": "careful and alert in case of danger or a trick",
+       "zipf": 3.57,
+       "register": "neutral",
+       "senses_at_pos": 2,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "wary"
+       },
+       "discriminator": "watching for danger or a trick",
+       "grade": 4
+      },
+      {
+       "w": "defiant",
+       "synset": "defiant.a.01",
+       "gloss_source": "wordnet",
+       "gloss": "boldly resisting authority or an opposing force",
+       "zipf": 3.21,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "defiant"
+       },
+       "discriminator": "openly refuses to obey",
+       "grade": 6
+      },
+      {
+       "w": "earnest",
+       "synset": "earnest.s.01",
+       "gloss_source": "authored",
+       "gloss": "completely serious and sincere, meaning every word",
+       "zipf": 3.66,
+       "register": "neutral",
+       "senses_at_pos": 3,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "earnest"
+       },
+       "discriminator": "seriously means it",
+       "grade": 6
+      },
+      {
+       "w": "composed",
+       "synset": "composed.a.01",
+       "gloss_source": "authored",
+       "gloss": "staying calm and steady when everything goes wrong",
+       "zipf": 4.27,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "composed"
+       },
+       "discriminator": "calm when it all goes wrong",
+       "grade": 6
+      }
+     ],
+     "sentences": [
+      {
+       "id": "A-character-01-s01",
+       "answer": "reluctant",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Mila was ___ before singing, and needed three gentle invitations.",
+       "cue_phrase": "needed three gentle invitations",
+       "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+       }
+      },
+      {
+       "id": "A-character-01-s02",
+       "answer": "reluctant",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Sam felt ___ about the dance, so his sister coaxed him twice.",
+       "cue_phrase": "coaxed him twice",
+       "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (wary); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-character-01-s03",
+       "answer": "reluctant",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "At bedtime, Nia stood ___ by the cold bath, then climbed in groaning.",
+       "cue_phrase": "then climbed in groaning",
+       "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+       }
+      },
+      {
+       "id": "A-character-01-s04",
+       "answer": "reluctant",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Leo stayed ___ at the stage steps until his friends cheered softly.",
+       "cue_phrase": "friends cheered softly",
+       "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+       }
+      },
+      {
+       "id": "A-character-01-s05",
+       "answer": "reluctant",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The goat was ___ near the puddle, nibbling grass rather than crossing.",
+       "cue_phrase": "rather than crossing",
+       "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (wary); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-character-01-s06",
+       "answer": "reluctant",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Tom was ___ about the costume, leaving it folded while others dressed.",
+       "cue_phrase": "leaving it folded",
+       "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (defiant, wary); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-character-01-s07",
+       "answer": "reluctant",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The kitten seemed ___ about the paper crown, wearing it only after much coaxing.",
+       "cue_phrase": "only after much coaxing",
+       "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: wearing it only after much coaxing = holds back then complies, the gloss's own clause; wary needs a staged danger or trick",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-character-01-s08",
+       "answer": "reluctant",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "Asha became ___ when asked to read, whispering, \"Maybe later, please.\"",
+       "cue_phrase": "Maybe later, please",
+       "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+       }
+      },
+      {
+       "id": "A-character-01-s09",
+       "answer": "wary",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Rafi was ___ on the old bridge, watching for cracked planks.",
+       "cue_phrase": "watching for cracked planks",
+       "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+       }
+      },
+      {
+       "id": "A-character-01-s10",
+       "answer": "wary",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The hen grew ___ near the fox, keeping one eye on him.",
+       "cue_phrase": "one eye on him",
+       "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+       }
+      },
+      {
+       "id": "A-character-01-s11",
+       "answer": "wary",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Mina was ___ in the cave after stones clattered ahead.",
+       "cue_phrase": "stones clattered ahead",
+       "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+       }
+      },
+      {
+       "id": "A-character-01-s12",
+       "answer": "wary",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Pip felt ___ beside the smiling pirate, whose coin kept vanishing.",
+       "cue_phrase": "coin kept vanishing",
+       "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+       }
+      },
+      {
+       "id": "A-character-01-s13",
+       "answer": "wary",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "On the frozen pond, Idris was ___ and tested each step first.",
+       "cue_phrase": "tested each step first",
+       "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (reluctant); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-character-01-s14",
+       "answer": "wary",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The deer was ___ at the clearing, ears turning toward every twig.",
+       "cue_phrase": "ears turning toward",
+       "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+       }
+      },
+      {
+       "id": "A-character-01-s15",
+       "answer": "wary",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Tala stayed ___ when the stranger offered sweets, watching his hands.",
+       "cue_phrase": "watching his hands",
+       "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (reluctant); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-character-01-s16",
+       "answer": "wary",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "The pony looked ___ at the rattling gate and sniffed before passing.",
+       "cue_phrase": "sniffed before passing",
+       "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (reluctant); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-character-01-s17",
+       "answer": "defiant",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Kira was ___ when the captain ordered silence, shouting, \"No, listen!\"",
+       "cue_phrase": "shouting, \"No, listen!\"",
+       "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+       }
+      },
+      {
+       "id": "A-character-01-s18",
+       "answer": "defiant",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Ben was ___ after the teacher's order, crossing his arms and refusing.",
+       "cue_phrase": "crossing his arms",
+       "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (reluctant); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-character-01-s19",
+       "answer": "defiant",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The dragon stayed ___ as the king commanded kneeling; smoke spelled NO.",
+       "cue_phrase": "smoke spelled NO",
+       "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (reluctant); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-character-01-s20",
+       "answer": "defiant",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Lena remained ___ during detention, tapping after each warning to stop.",
+       "cue_phrase": "after each warning",
+       "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (reluctant); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-character-01-s21",
+       "answer": "defiant",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The robot became ___, rolling past the red line despite Dad's command.",
+       "cue_phrase": "despite Dad's command",
+       "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+       }
+      },
+      {
+       "id": "A-character-01-s22",
+       "answer": "defiant",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Juno stayed ___, writing her name after the guard said stop.",
+       "cue_phrase": "guard said stop",
+       "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+       }
+      },
+      {
+       "id": "A-character-01-s23",
+       "answer": "defiant",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "The prince sounded ___, telling the giant, \"I will not bow.\"",
+       "cue_phrase": "will not bow",
+       "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (composed, earnest); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-character-01-s24",
+       "answer": "defiant",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Mara was ___ at clean-up time, kicking blocks after Dad said no.",
+       "cue_phrase": "Dad said no",
+       "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (reluctant); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-character-01-s25",
+       "answer": "earnest",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Omar sounded ___, saying, \"I promise I broke it by accident.\"",
+       "cue_phrase": "I promise",
+       "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+       }
+      },
+      {
+       "id": "A-character-01-s26",
+       "answer": "earnest",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The fairy looked ___ as she begged, \"Please save my tiny forest.\"",
+       "cue_phrase": "Please save my",
+       "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+       }
+      },
+      {
+       "id": "A-character-01-s27",
+       "answer": "earnest",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Nell was ___ in her apology, fixing the vase without being asked.",
+       "cue_phrase": "without being asked",
+       "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+       }
+      },
+      {
+       "id": "A-character-01-s28",
+       "answer": "earnest",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Adi was ___ during the promise, looking into Gran's eyes without giggling.",
+       "cue_phrase": "without giggling",
+       "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (composed); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-character-01-s29",
+       "answer": "earnest",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The knight was ___, offering his only blanket to prove his apology.",
+       "cue_phrase": "only blanket",
+       "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+       }
+      },
+      {
+       "id": "A-character-01-s30",
+       "answer": "earnest",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Suki's note felt ___ because she rewrote it until it sounded true.",
+       "cue_phrase": "sounded true",
+       "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+       }
+      },
+      {
+       "id": "A-character-01-s31",
+       "answer": "earnest",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Finn was ___ at the club table, asking how to help before playing.",
+       "cue_phrase": "asking how to help",
+       "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+       }
+      },
+      {
+       "id": "A-character-01-s32",
+       "answer": "earnest",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "The mermaid seemed ___, handing over her pearl as a promise.",
+       "cue_phrase": "as a promise",
+       "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (reluctant); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-character-01-s33",
+       "answer": "composed",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Nora was ___ as plates crashed, speaking softly and sweeping glass.",
+       "cue_phrase": "speaking softly",
+       "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (wary); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-character-01-s34",
+       "answer": "composed",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The captain remained ___ during the storm, giving orders in a level voice.",
+       "cue_phrase": "level voice",
+       "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (wary); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-character-01-s35",
+       "answer": "composed",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "When the cake fell, Priya was ___ and cut neat squares anyway.",
+       "cue_phrase": "cut neat squares",
+       "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (defiant, reluctant); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-character-01-s36",
+       "answer": "composed",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The goalie felt ___ after the miss, breathing slowly before the next kick.",
+       "cue_phrase": "breathing slowly",
+       "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (wary); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-character-01-s37",
+       "answer": "composed",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The microphone squealed, but Hana was ___ and began her poem again.",
+       "cue_phrase": "began her poem again",
+       "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (defiant); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-character-01-s38",
+       "answer": "composed",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The test pages mixed up, yet Yusuf was ___ and sorted them quietly.",
+       "cue_phrase": "sorted them quietly",
+       "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+       }
+      },
+      {
+       "id": "A-character-01-s39",
+       "answer": "composed",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The baby cried, milk spilled, and Auntie was ___ with both hands busy.",
+       "cue_phrase": "both hands busy",
+       "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+       }
+      },
+      {
+       "id": "A-character-01-s40",
+       "answer": "composed",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "After the costume ripped, Ezra was ___ and tied a neat sash.",
+       "cue_phrase": "tied a neat sash",
+       "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (defiant); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      }
+     ],
+     "contrasts": [
+      {
+       "answer": "reluctant",
+       "picked": "wary",
+       "line": "Reluctant holds off because it doesn't want to; wary watches because trouble might be near."
+      },
+      {
+       "answer": "reluctant",
+       "picked": "defiant",
+       "line": "Reluctant may need coaxing; defiant openly says no to being told what to do."
+      },
+      {
+       "answer": "reluctant",
+       "picked": "earnest",
+       "line": "Reluctant drags its feet; earnest shows a true, deep feeling."
+      },
+      {
+       "answer": "reluctant",
+       "picked": "composed",
+       "line": "Reluctant shows unwillingness; composed stays cool when a mess happens."
+      },
+      {
+       "answer": "wary",
+       "picked": "reluctant",
+       "line": "Wary keeps watch for trouble; reluctant simply doesn't want to start."
+      },
+      {
+       "answer": "wary",
+       "picked": "defiant",
+       "line": "Wary checks for risk; defiant refuses a command out in the open."
+      },
+      {
+       "answer": "wary",
+       "picked": "earnest",
+       "line": "Wary is on guard; earnest speaks or acts with true feeling."
+      },
+      {
+       "answer": "wary",
+       "picked": "composed",
+       "line": "Wary scans for trouble; composed stays cool while trouble is already happening."
+      },
+      {
+       "answer": "defiant",
+       "picked": "reluctant",
+       "line": "Defiant openly refuses; reluctant may dislike the task but can still be coaxed."
+      },
+      {
+       "answer": "defiant",
+       "picked": "wary",
+       "line": "Defiant says no to orders; wary watches for possible trouble."
+      },
+      {
+       "answer": "defiant",
+       "picked": "earnest",
+       "line": "Defiant challenges a command; earnest shows real belief or feeling."
+      },
+      {
+       "answer": "defiant",
+       "picked": "composed",
+       "line": "Defiant pushes against being told; composed keeps cool under pressure."
+      },
+      {
+       "answer": "earnest",
+       "picked": "reluctant",
+       "line": "Earnest truly means it; reluctant is unsure or unwilling to begin."
+      },
+      {
+       "answer": "earnest",
+       "picked": "wary",
+       "line": "Earnest is heartfelt; wary is watchful for trouble."
+      },
+      {
+       "answer": "earnest",
+       "picked": "defiant",
+       "line": "Earnest speaks from true feeling; defiant openly refuses to obey."
+      },
+      {
+       "answer": "earnest",
+       "picked": "composed",
+       "line": "Earnest is heartfelt; composed is cool and controlled during a mess."
+      },
+      {
+       "answer": "composed",
+       "picked": "reluctant",
+       "line": "Composed stays cool under pressure; reluctant hangs back from a task."
+      },
+      {
+       "answer": "composed",
+       "picked": "wary",
+       "line": "Composed stays cool in a mess; wary keeps watch for trouble before it hits."
+      },
+      {
+       "answer": "composed",
+       "picked": "defiant",
+       "line": "Composed keeps control; defiant openly refuses a command."
+      },
+      {
+       "answer": "composed",
+       "picked": "earnest",
+       "line": "Composed stays cool during pressure; earnest shows true feeling."
+      }
+     ],
+     "meta": {
+      "generated_at": "2026-07-06T14:16:24+00:00",
+      "model": "gpt-5.5",
+      "scrubbed_at": "2026-07-07",
+      "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+     }
+    },
+    {
+     "id": "A-disrepair-01",
+     "bank": "A",
+     "pos": "adjective",
+     "theme": "the old abandoned house",
+     "band": 4,
+     "band_override": 4,
+     "computed": {
+      "zipf_min": 2.68,
+      "zipf_mean": 2.96,
+      "tightness": null,
+      "band_suggested": 4,
+      "scored_at": "2026-07-06T18:43:21+00:00"
+     },
+     "words": [
+      {
+       "w": "rickety",
+       "synset": "rickety.s.01",
+       "gloss_source": "wordnet",
+       "gloss": "inclined to shake as from weakness or defect",
+       "zipf": 2.68,
+       "register": "neutral",
+       "senses_at_pos": 3,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "rickety"
+       },
+       "discriminator": "wobbles when weight goes on",
+       "grade": 4
+      },
+      {
+       "w": "tattered",
+       "synset": "tattered.s.01",
+       "gloss_source": "authored",
+       "gloss": "torn into ragged strips and shreds",
+       "zipf": 2.83,
+       "register": "neutral",
+       "senses_at_pos": 2,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "tattered"
+       },
+       "discriminator": "torn to ragged strips",
+       "grade": 5
+      },
+      {
+       "w": "warped",
+       "synset": "warped.s.01",
+       "gloss_source": "authored",
+       "gloss": "bent and twisted out of its true shape, as by damp",
+       "zipf": 3.35,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "warped"
+       },
+       "discriminator": "bent out of true",
+       "grade": 5
+      },
+      {
+       "w": "musty",
+       "synset": "moldy.s.01",
+       "gloss_source": "authored",
+       "gloss": "smelling stale and damp, like a room shut up for years",
+       "zipf": 2.83,
+       "register": "neutral",
+       "senses_at_pos": 2,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "musty"
+       },
+       "discriminator": "the stale shut-up smell",
+       "grade": 5
+      },
+      {
+       "w": "derelict",
+       "synset": "abandoned.s.01",
+       "gloss_source": "authored",
+       "gloss": "abandoned by its owners and left to fall apart",
+       "zipf": 3.1,
+       "register": "neutral",
+       "senses_at_pos": 4,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "derelict"
+       },
+       "discriminator": "everyone has abandoned it",
+       "grade": 7
+      }
+     ],
+     "sentences": [
+      {
+       "id": "A-disrepair-01-s01",
+       "answer": "rickety",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Ben grabbed the ___ railing, and it wobbled under his hand.",
+       "cue_phrase": "wobbled under his hand",
+       "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+       }
+      },
+      {
+       "id": "A-disrepair-01-s02",
+       "answer": "rickety",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The ___ chair had legs that jiggled when Gran sat down.",
+       "cue_phrase": "legs that jiggled",
+       "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+       }
+      },
+      {
+       "id": "A-disrepair-01-s03",
+       "answer": "rickety",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The ___ step shifted on its loose nails, so we skipped it.",
+       "cue_phrase": "loose nails",
+       "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+       }
+      },
+      {
+       "id": "A-disrepair-01-s04",
+       "answer": "rickety",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The ___ stool made Mum grab the table as its legs danced.",
+       "cue_phrase": "legs danced",
+       "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+       }
+      },
+      {
+       "id": "A-disrepair-01-s05",
+       "answer": "rickety",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Nora chose the floor after the ___ bench jiggled beneath her bag.",
+       "cue_phrase": "jiggled beneath her bag",
+       "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+       }
+      },
+      {
+       "id": "A-disrepair-01-s06",
+       "answer": "rickety",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "On the porch, the ___ table's loose joints clacked when anyone leaned on it.",
+       "cue_phrase": "loose joints clacked",
+       "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+       }
+      },
+      {
+       "id": "A-disrepair-01-s07",
+       "answer": "rickety",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The ___ ladder swayed so much that Dad climbed back down.",
+       "cue_phrase": "swayed so much",
+       "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+       }
+      },
+      {
+       "id": "A-disrepair-01-s08",
+       "answer": "rickety",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "Poppy pushed the ___ gate, and it rattled on its hinges.",
+       "cue_phrase": "rattled on its hinges",
+       "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+       }
+      },
+      {
+       "id": "A-disrepair-01-s09",
+       "answer": "tattered",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The ___ curtain hung in long uneven pieces over the dusty window.",
+       "cue_phrase": "long uneven pieces",
+       "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+       }
+      },
+      {
+       "id": "A-disrepair-01-s10",
+       "answer": "tattered",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The ___ flag had frayed edges and holes where the wind pulled.",
+       "cue_phrase": "frayed edges and holes",
+       "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+       }
+      },
+      {
+       "id": "A-disrepair-01-s11",
+       "answer": "tattered",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Maya's sleeve snagged on the ___ wallpaper, peeling in thin flaps.",
+       "cue_phrase": "peeling in thin flaps",
+       "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+       }
+      },
+      {
+       "id": "A-disrepair-01-s12",
+       "answer": "tattered",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The ___ map showed the kitchen only in dangling paper pieces.",
+       "cue_phrase": "dangling paper pieces",
+       "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+       }
+      },
+      {
+       "id": "A-disrepair-01-s13",
+       "answer": "tattered",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Light came through many holes in the ___ sheet over the sofa.",
+       "cue_phrase": "many holes",
+       "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+       }
+      },
+      {
+       "id": "A-disrepair-01-s14",
+       "answer": "tattered",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Moths had chewed the ___ blanket until its edges fluttered in bits.",
+       "cue_phrase": "edges fluttered in bits",
+       "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+       }
+      },
+      {
+       "id": "A-disrepair-01-s15",
+       "answer": "tattered",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The ___ coat on the hook had cuffs hanging by threads.",
+       "cue_phrase": "hanging by threads",
+       "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+       }
+      },
+      {
+       "id": "A-disrepair-01-s16",
+       "answer": "tattered",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "Above the hall, the ___ banner split into fluttering pieces.",
+       "cue_phrase": "fluttering pieces",
+       "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+       }
+      },
+      {
+       "id": "A-disrepair-01-s17",
+       "answer": "warped",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The ___ door bowed so much that the latch missed the hole.",
+       "cue_phrase": "latch missed the hole",
+       "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+       }
+      },
+      {
+       "id": "A-disrepair-01-s18",
+       "answer": "warped",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The ___ floorboards rose in humps where rain had leaked.",
+       "cue_phrase": "rose in humps",
+       "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+       }
+      },
+      {
+       "id": "A-disrepair-01-s19",
+       "answer": "warped",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The ___ window frame no longer held the glass square.",
+       "cue_phrase": "glass square",
+       "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+       }
+      },
+      {
+       "id": "A-disrepair-01-s20",
+       "answer": "warped",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The ___ cupboard door curved outward and would not close.",
+       "cue_phrase": "curved outward",
+       "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+       }
+      },
+      {
+       "id": "A-disrepair-01-s21",
+       "answer": "warped",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Tom rolled a marble across the ___ table; it veered into a groove.",
+       "cue_phrase": "veered into a groove",
+       "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+       }
+      },
+      {
+       "id": "A-disrepair-01-s22",
+       "answer": "warped",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The ___ picture frame looked crooked, though both nails were level.",
+       "cue_phrase": "both nails were level",
+       "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+       }
+      },
+      {
+       "id": "A-disrepair-01-s23",
+       "answer": "warped",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The ___ gate scraped the ground in the middle, not at the ends.",
+       "cue_phrase": "middle, not at the ends",
+       "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+       }
+      },
+      {
+       "id": "A-disrepair-01-s24",
+       "answer": "warped",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "The ___ shelf curled upward, tipping the toy soldiers together.",
+       "cue_phrase": "curled upward",
+       "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+       }
+      },
+      {
+       "id": "A-disrepair-01-s25",
+       "answer": "musty",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The ___ cupboard gave off an old cellar odour when opened.",
+       "cue_phrase": "old cellar odour",
+       "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+       }
+      },
+      {
+       "id": "A-disrepair-01-s26",
+       "answer": "musty",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The ___ air made Leila sniff and think of wet cardboard.",
+       "cue_phrase": "think of wet cardboard",
+       "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+       }
+      },
+      {
+       "id": "A-disrepair-01-s27",
+       "answer": "musty",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "After opening the attic trunk, a ___ odour clung to our jumpers.",
+       "cue_phrase": "odour clung",
+       "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+       }
+      },
+      {
+       "id": "A-disrepair-01-s28",
+       "answer": "musty",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The ___ library corner made everyone wrinkle their noses during reading time.",
+       "cue_phrase": "wrinkle their noses",
+       "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+       }
+      },
+      {
+       "id": "A-disrepair-01-s29",
+       "answer": "musty",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Sam found dry comics, but the ___ box still made him cough.",
+       "cue_phrase": "made him cough",
+       "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+       }
+      },
+      {
+       "id": "A-disrepair-01-s30",
+       "answer": "musty",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The basement cupboard was ___; even the biscuits tasted of cellar air.",
+       "cue_phrase": "tasted of cellar air",
+       "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+       }
+      },
+      {
+       "id": "A-disrepair-01-s31",
+       "answer": "musty",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "The ___ suitcase released a sour old odour when Grace unclasped it.",
+       "cue_phrase": "sour old odour",
+       "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (tattered); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-disrepair-01-s32",
+       "answer": "musty",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Our costumes seemed ___ and made us sneeze after weeks in storage.",
+       "cue_phrase": "made us sneeze",
+       "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+       }
+      },
+      {
+       "id": "A-disrepair-01-s33",
+       "answer": "derelict",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "No one lived in the ___ house, and letters piled by the door.",
+       "cue_phrase": "No one lived",
+       "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (musty, rickety); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-disrepair-01-s34",
+       "answer": "derelict",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The ___ cottage had boarded windows and no name on the gate.",
+       "cue_phrase": "boarded windows",
+       "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (musty, rickety); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-disrepair-01-s35",
+       "answer": "derelict",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Weeds filled the ___ playground, and nobody came to mend the swings.",
+       "cue_phrase": "nobody came to mend",
+       "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (rickety); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-disrepair-01-s36",
+       "answer": "derelict",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The ___ station had no trains, tickets, or caretaker anymore.",
+       "cue_phrase": "no trains, tickets",
+       "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (musty); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-disrepair-01-s37",
+       "answer": "derelict",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Foxes slept inside the ___ chapel because people had stopped visiting.",
+       "cue_phrase": "people had stopped visiting",
+       "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (musty, rickety); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-disrepair-01-s38",
+       "answer": "derelict",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The ___ mill stood silent, with grass growing through the office floor.",
+       "cue_phrase": "grass growing through",
+       "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (musty, rickety); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-disrepair-01-s39",
+       "answer": "derelict",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Kids dared each other to enter the ___ hotel with boarded doors.",
+       "cue_phrase": "boarded doors",
+       "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (musty, rickety); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-disrepair-01-s40",
+       "answer": "derelict",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "Kids peered through the fence at the ___ cinema no one had entered for years.",
+       "cue_phrase": "no one had entered for years",
+       "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (musty, rickety); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      }
+     ],
+     "contrasts": [
+      {
+       "answer": "rickety",
+       "picked": "tattered",
+       "line": "Rickety wobbles when weight goes on; tattered hangs in ripped, uneven pieces."
+      },
+      {
+       "answer": "rickety",
+       "picked": "warped",
+       "line": "Rickety has loose parts that wobble; warped has gone crooked or curved out of line."
+      },
+      {
+       "answer": "rickety",
+       "picked": "musty",
+       "line": "Rickety is about wobbling under weight; musty is about an old, cellar sort of odour."
+      },
+      {
+       "answer": "rickety",
+       "picked": "derelict",
+       "line": "Rickety may still be used but wobbles; derelict has been given up and uncared for."
+      },
+      {
+       "answer": "tattered",
+       "picked": "rickety",
+       "line": "Tattered means ripped into hanging pieces; rickety means wobbly under weight."
+      },
+      {
+       "answer": "tattered",
+       "picked": "warped",
+       "line": "Tattered is full of holes and frayed pieces; warped is curved or crooked out of line."
+      },
+      {
+       "answer": "tattered",
+       "picked": "musty",
+       "line": "Tattered is about ripped cloth or paper; musty is about an old, closed-up odour."
+      },
+      {
+       "answer": "tattered",
+       "picked": "derelict",
+       "line": "Tattered things are ripped into pieces; derelict places are empty and uncared for."
+      },
+      {
+       "answer": "warped",
+       "picked": "rickety",
+       "line": "Warped has curved out of line; rickety wobbles because its parts are loose."
+      },
+      {
+       "answer": "warped",
+       "picked": "tattered",
+       "line": "Warped wood is no longer straight; tattered cloth or paper is ripped into pieces."
+      },
+      {
+       "answer": "warped",
+       "picked": "musty",
+       "line": "Warped is about a crooked surface or frame; musty is about an old cellar odour."
+      },
+      {
+       "answer": "warped",
+       "picked": "derelict",
+       "line": "Warped means bent out of line; derelict means empty, unused, and uncared for."
+      },
+      {
+       "answer": "musty",
+       "picked": "rickety",
+       "line": "Musty is an old cellar odour; rickety is a wobble when weight goes on."
+      },
+      {
+       "answer": "musty",
+       "picked": "tattered",
+       "line": "Musty is about odour; tattered is about ripped, hanging pieces."
+      },
+      {
+       "answer": "musty",
+       "picked": "warped",
+       "line": "Musty tells what your nose notices; warped tells how something has gone crooked."
+      },
+      {
+       "answer": "musty",
+       "picked": "derelict",
+       "line": "Musty means an old closed-up odour; derelict means empty and uncared for."
+      },
+      {
+       "answer": "derelict",
+       "picked": "rickety",
+       "line": "Derelict places are empty and uncared for; rickety things wobble under weight."
+      },
+      {
+       "answer": "derelict",
+       "picked": "tattered",
+       "line": "Derelict is about no one caring for a place; tattered is about ripped pieces."
+      },
+      {
+       "answer": "derelict",
+       "picked": "warped",
+       "line": "Derelict means unused and uncared for; warped means curved or crooked out of line."
+      },
+      {
+       "answer": "derelict",
+       "picked": "musty",
+       "line": "Derelict is about a place being unused; musty is about an old cellar odour."
+      }
+     ],
+     "meta": {
+      "generated_at": "2026-07-06T14:18:42+00:00",
+      "model": "gpt-5.5",
+      "scrubbed_at": "2026-07-07",
+      "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+     }
+    },
+    {
+     "id": "A-effort-01",
+     "bank": "A",
+     "pos": "verb",
+     "theme": "ways of working at something",
+     "band": 4,
+     "band_override": 4,
+     "computed": {
+      "zipf_min": 2.96,
+      "zipf_mean": 3.2,
+      "tightness": 0.252,
+      "band_suggested": 3,
+      "scored_at": "2026-07-06T18:43:21+00:00"
+     },
+     "words": [
+      {
+       "w": "strive",
+       "synset": "endeavor.v.01",
+       "gloss_source": "authored",
+       "gloss": "try as hard as you can toward a goal",
+       "zipf": 3.72,
+       "register": "neutral",
+       "senses_at_pos": 2,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "strive",
+        "third": "strives",
+        "past": "strove",
+        "part": "striving"
+       },
+       "discriminator": "all-out effort toward a goal",
+       "grade": 5
+      },
+      {
+       "w": "toil",
+       "synset": "labor.v.02",
+       "gloss_source": "wordnet",
+       "gloss": "work hard",
+       "zipf": 3.03,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "toil",
+        "third": "toils",
+        "past": "toiled",
+        "part": "toiling"
+       },
+       "discriminator": "long exhausting labour",
+       "grade": 5
+      },
+      {
+       "w": "tinker",
+       "synset": "tinker.v.03",
+       "gloss_source": "wordnet",
+       "gloss": "try to fix or mend",
+       "zipf": 3.28,
+       "register": "neutral",
+       "senses_at_pos": 3,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "tinker",
+        "third": "tinkers",
+        "past": "tinkered",
+        "part": "tinkering"
+       },
+       "discriminator": "small trial-and-error repairs",
+       "grade": 5
+      },
+      {
+       "w": "persevere",
+       "synset": "persevere.v.01",
+       "gloss_source": "authored",
+       "gloss": "keep going and refuse to give up, however hard it gets",
+       "zipf": 2.96,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "persevere",
+        "third": "perseveres",
+        "past": "persevered",
+        "part": "persevering"
+       },
+       "discriminator": "refuses to quit",
+       "grade": 5
+      },
+      {
+       "w": "improvise",
+       "synset": "improvise.v.02",
+       "gloss_source": "wordnet",
+       "gloss": "manage in a makeshift way; do with whatever is at hand",
+       "zipf": 3.02,
+       "register": "neutral",
+       "senses_at_pos": 2,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "improvise",
+        "third": "improvises",
+        "past": "improvised",
+        "part": "improvising"
+       },
+       "discriminator": "making do on the spot without a plan",
+       "grade": 6
+      }
+     ],
+     "sentences": [
+      {
+       "id": "A-effort-01-s01",
+       "answer": "strive",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "In the final lap, Amira ___ for first place with pumping arms.",
+       "cue_phrase": "for first place",
+       "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+       }
+      },
+      {
+       "id": "A-effort-01-s02",
+       "answer": "strive",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The young knight had to ___ for the silver crown, muscles shaking.",
+       "cue_phrase": "for the silver crown",
+       "surface": {
+        "strive": "strive",
+        "toil": "toil",
+        "tinker": "tinker",
+        "persevere": "persevere",
+        "improvise": "improvise"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (persevere, toil); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-effort-01-s03",
+       "answer": "strive",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "In the boat race, our crew ___ for the flag, oars splashing wildly.",
+       "cue_phrase": "for the flag",
+       "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (persevere, toil); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-effort-01-s04",
+       "answer": "strive",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Ben ___ for a record, cheeks red after every jump.",
+       "cue_phrase": "for a record",
+       "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (persevere, toil); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-effort-01-s05",
+       "answer": "strive",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The cub ___ for the highest peach, leaping with all four paws.",
+       "cue_phrase": "for the highest peach",
+       "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (persevere); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-effort-01-s06",
+       "answer": "strive",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "At chess club, Rafi ___ for victory, planning three moves ahead.",
+       "cue_phrase": "for victory",
+       "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (toil); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-effort-01-s07",
+       "answer": "strive",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Every sports day, Lee ___ for the ribbon, lungs burning near the line.",
+       "cue_phrase": "for the ribbon",
+       "surface": {
+        "strive": "strives",
+        "toil": "toils",
+        "tinker": "tinkers",
+        "persevere": "perseveres",
+        "improvise": "improvises"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (persevere, toil); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-effort-01-s08",
+       "answer": "strive",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "The mermaid ___ for the pearl prize, racing through the foamy tunnel.",
+       "cue_phrase": "pearl prize",
+       "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+       }
+      },
+      {
+       "id": "A-effort-01-s09",
+       "answer": "toil",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "All afternoon, the farmers ___ in mud until their backs ached.",
+       "cue_phrase": "backs ached",
+       "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (persevere); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-effort-01-s10",
+       "answer": "toil",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "For six hours, the crew had to ___, hauling stones with aching shoulders.",
+       "cue_phrase": "six hours",
+       "surface": {
+        "strive": "strive",
+        "toil": "toil",
+        "tinker": "tinker",
+        "persevere": "persevere",
+        "improvise": "improvise"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (persevere); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-effort-01-s11",
+       "answer": "toil",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Mum and I ___ beside the hot oven from dawn, baking pies.",
+       "cue_phrase": "hot oven from dawn",
+       "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (persevere); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-effort-01-s12",
+       "answer": "toil",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The miners ___ below the hill, faces dusty when the lamps were lit.",
+       "cue_phrase": "faces dusty",
+       "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (persevere); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-effort-01-s13",
+       "answer": "toil",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "By moonrise, the helpers ___ through a mountain of muddy boots.",
+       "cue_phrase": "mountain of muddy boots",
+       "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: volume-of-labour staging (mountain of boots, by moonrise); no setback or quit-urge staged for persevere",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-effort-01-s14",
+       "answer": "toil",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The dock team ___ on the wharf, stacking crates until midnight.",
+       "cue_phrase": "stacking crates until midnight",
+       "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (persevere); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-effort-01-s15",
+       "answer": "toil",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "In summer heat, Priya ___ among weeds until her shirt drips.",
+       "cue_phrase": "shirt drips",
+       "surface": {
+        "strive": "strives",
+        "toil": "toils",
+        "tinker": "tinkers",
+        "persevere": "perseveres",
+        "improvise": "improvises"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (persevere); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-effort-01-s16",
+       "answer": "toil",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "After the flood, neighbours ___ with shovels till every path cleared.",
+       "cue_phrase": "with shovels",
+       "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (persevere, strive); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-effort-01-s17",
+       "answer": "tinker",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Milo ___ with tiny screws until the toy train rolled again.",
+       "cue_phrase": "tiny screws",
+       "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (persevere, toil); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-effort-01-s18",
+       "answer": "tinker",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Grandad had to ___ inside the radio, swapping wires until music crackled out.",
+       "cue_phrase": "swapping wires",
+       "surface": {
+        "strive": "strive",
+        "toil": "toil",
+        "tinker": "tinker",
+        "persevere": "persevere",
+        "improvise": "improvise"
+       }
+      },
+      {
+       "id": "A-effort-01-s19",
+       "answer": "tinker",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Jia ___ with the leaky pen, turning the nib and cap.",
+       "cue_phrase": "turning the nib",
+       "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (persevere); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-effort-01-s20",
+       "answer": "tinker",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The robot club ___ with the loose bolts, twisting each until the wheels spun.",
+       "cue_phrase": "twisting each",
+       "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (persevere, toil); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-effort-01-s21",
+       "answer": "tinker",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Ari ___ with the kite's string knot, then the tail fluttered straight.",
+       "cue_phrase": "tail fluttered straight",
+       "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (persevere, toil); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-effort-01-s22",
+       "answer": "tinker",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Nina ___ under the sink, nudging pipes until the drip stopped.",
+       "cue_phrase": "drip stopped",
+       "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (persevere, toil); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-effort-01-s23",
+       "answer": "tinker",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The goblin ___ with the squeaky clock, nudging one gear tooth at a time.",
+       "cue_phrase": "squeaky clock",
+       "surface": {
+        "strive": "strives",
+        "toil": "toils",
+        "tinker": "tinkers",
+        "persevere": "perseveres",
+        "improvise": "improvises"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (persevere, toil); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-effort-01-s24",
+       "answer": "tinker",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Sam ___ around the stuck drawer, shaving a sliver from the runner.",
+       "cue_phrase": "stuck drawer",
+       "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+       }
+      },
+      {
+       "id": "A-effort-01-s25",
+       "answer": "persevere",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "After three falls, Omar ___ and finished the icy hill race.",
+       "cue_phrase": "After three falls",
+       "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (toil); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-effort-01-s26",
+       "answer": "persevere",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Even when the sum looked hopeless, Bea had to ___ past bedtime.",
+       "cue_phrase": "sum looked hopeless",
+       "surface": {
+        "strive": "strive",
+        "toil": "toil",
+        "tinker": "tinker",
+        "persevere": "persevere",
+        "improvise": "improvise"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: 'looked hopeless' stages the quit-urge persevere resists; toil is bare labour without it",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-effort-01-s27",
+       "answer": "persevere",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The snail ___ after the rain washed it back to the gate.",
+       "cue_phrase": "washed it back",
+       "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (toil); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-effort-01-s28",
+       "answer": "persevere",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Kai ___ through wrong answers, erasing each one without quitting.",
+       "cue_phrase": "without quitting",
+       "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: 'without quitting' is the gloss's own refuse-to-give-up feature; toil reads only the effort",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-effort-01-s29",
+       "answer": "persevere",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Mina ___ at the pottery wheel, starting the bowl again after every collapse.",
+       "cue_phrase": "again after every collapse",
+       "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (strive, toil); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-effort-01-s30",
+       "answer": "persevere",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Lena ___ despite nine wrong guesses, smiling at the tenth clue.",
+       "cue_phrase": "nine wrong guesses",
+       "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (strive, toil); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-effort-01-s31",
+       "answer": "persevere",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "When a rocket flops, the class ___ and launches another.",
+       "cue_phrase": "launches another",
+       "surface": {
+        "strive": "strives",
+        "toil": "toils",
+        "tinker": "tinkers",
+        "persevere": "perseveres",
+        "improvise": "improvises"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (tinker); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-effort-01-s32",
+       "answer": "persevere",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "After every slipped stitch, Gran ___ and restarted the scarf.",
+       "cue_phrase": "restarted the scarf",
+       "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+       }
+      },
+      {
+       "id": "A-effort-01-s33",
+       "answer": "improvise",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "When the speakers died, the band ___, drumming out the beat on buckets.",
+       "cue_phrase": "drumming out the beat on buckets",
+       "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (persevere); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-effort-01-s34",
+       "answer": "improvise",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Mia's kite string snapped, so she ___, knotting on a spare shoelace instead.",
+       "cue_phrase": "a spare shoelace instead",
+       "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (persevere, tinker); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-effort-01-s35",
+       "answer": "improvise",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The recipe called for eggs we did not have, so Dad simply ___ with mashed banana.",
+       "cue_phrase": "mashed banana",
+       "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+       }
+      },
+      {
+       "id": "A-effort-01-s36",
+       "answer": "improvise",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Their tent poles were missing, so the scouts ___, lashing branches together instead.",
+       "cue_phrase": "lashing branches together",
+       "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (persevere, toil); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-effort-01-s37",
+       "answer": "improvise",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "No cake tin could be found, so Gran ___, baking the cake in a saucepan.",
+       "cue_phrase": "baking the cake in a saucepan",
+       "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (persevere); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-effort-01-s38",
+       "answer": "improvise",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The puppet's string snapped mid-show, and Leo ___, turning it into a fainting scene.",
+       "cue_phrase": "turning it into a fainting scene",
+       "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (persevere); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-effort-01-s39",
+       "answer": "improvise",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Rain flooded the stage plan, so the teachers ___, moving the whole concert indoors.",
+       "cue_phrase": "moving the whole concert indoors",
+       "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (persevere, toil); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-effort-01-s40",
+       "answer": "improvise",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "With no paintbrushes left, the twins ___, printing leaves dipped in paint.",
+       "cue_phrase": "printing leaves dipped in paint",
+       "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (persevere); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      }
+     ],
+     "contrasts": [
+      {
+       "answer": "strive",
+       "picked": "toil",
+       "line": "Strive means pushing with all your effort for a prize; toil means long, tiring labour."
+      },
+      {
+       "answer": "strive",
+       "picked": "tinker",
+       "line": "Strive aims all your effort at winning or reaching something; tinker means small repair changes."
+      },
+      {
+       "answer": "strive",
+       "picked": "persevere",
+       "line": "Strive is all-out effort toward a target; persevere means not quitting after trouble."
+      },
+      {
+       "answer": "toil",
+       "picked": "strive",
+       "line": "Toil is long, tiring labour; strive is effort aimed at reaching a prize or result."
+      },
+      {
+       "answer": "toil",
+       "picked": "tinker",
+       "line": "Toil means heavy, tiring labour; tinker means small changes to make something work."
+      },
+      {
+       "answer": "toil",
+       "picked": "persevere",
+       "line": "Toil focuses on exhausting labour; persevere focuses on not quitting after setbacks."
+      },
+      {
+       "answer": "tinker",
+       "picked": "strive",
+       "line": "Tinker means making small repair changes; strive means pushing strongly toward a result."
+      },
+      {
+       "answer": "tinker",
+       "picked": "toil",
+       "line": "Tinker is little repair adjustments; toil is long, tiring labour."
+      },
+      {
+       "answer": "tinker",
+       "picked": "persevere",
+       "line": "Tinker changes parts bit by bit; persevere means carrying on after problems."
+      },
+      {
+       "answer": "persevere",
+       "picked": "strive",
+       "line": "Persevere means not quitting after trouble; strive means using all effort for a result."
+      },
+      {
+       "answer": "persevere",
+       "picked": "toil",
+       "line": "Persevere is staying with it after setbacks; toil is long, tiring labour."
+      },
+      {
+       "answer": "persevere",
+       "picked": "tinker",
+       "line": "Persevere means not quitting; tinker means making small repair changes."
+      },
+      {
+       "answer": "improvise",
+       "picked": "strive",
+       "line": "Striving is straining hard toward a goal; improvising is making do on the spot with what is there."
+      },
+      {
+       "answer": "improvise",
+       "picked": "toil",
+       "line": "Toiling is long exhausting work; improvising is a quick clever fix without preparation."
+      },
+      {
+       "answer": "improvise",
+       "picked": "tinker",
+       "line": "Tinkering fiddles and adjusts over time; improvising invents in the moment when plans fall through."
+      },
+      {
+       "answer": "improvise",
+       "picked": "persevere",
+       "line": "Persevering keeps going at the same task; improvising switches to whatever is at hand."
+      },
+      {
+       "answer": "strive",
+       "picked": "improvise",
+       "line": "Improvising is unprepared and in the moment; striving is a determined push toward a goal."
+      },
+      {
+       "answer": "toil",
+       "picked": "improvise",
+       "line": "Improvising is quick and unplanned; toiling is heavy work that goes on and on."
+      },
+      {
+       "answer": "tinker",
+       "picked": "improvise",
+       "line": "Improvising happens when there is no plan; tinkering is patient fiddling to make something work."
+      },
+      {
+       "answer": "persevere",
+       "picked": "improvise",
+       "line": "Improvising is a burst of quick invention; persevering is refusing to quit over the long haul."
+      }
+     ],
+     "meta": {
+      "generated_at": "2026-07-06T14:27:01+00:00",
+      "model": "gpt-5.5",
+      "scrubbed_at": "2026-07-07",
+      "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+     }
+    },
+    {
+     "id": "A-escape-01",
+     "bank": "A",
+     "pos": "verb",
+     "theme": "ways of avoiding danger or capture",
+     "band": 4,
+     "band_override": 4,
+     "computed": {
+      "zipf_min": 2.55,
+      "zipf_mean": 3.4,
+      "tightness": 0.257,
+      "band_suggested": 3,
+      "scored_at": "2026-07-06T18:43:21+00:00"
+     },
+     "words": [
+      {
+       "w": "evade",
+       "synset": "evade.v.04",
+       "gloss_source": "wordnet",
+       "gloss": "use cunning or deceit to escape or avoid",
+       "zipf": 3.39,
+       "register": "neutral",
+       "senses_at_pos": 4,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "evade",
+        "third": "evades",
+        "past": "evaded",
+        "part": "evading"
+       },
+       "discriminator": "escapes by trickery",
+       "grade": 6
+      },
+      {
+       "w": "flee",
+       "synset": "flee.v.01",
+       "gloss_source": "wordnet",
+       "gloss": "run away quickly",
+       "zipf": 3.81,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "flee",
+        "third": "flees",
+        "past": "fled",
+        "part": "fleeing"
+       },
+       "discriminator": "escapes by running",
+       "grade": 4
+      },
+      {
+       "w": "retreat",
+       "synset": "withdraw.v.01",
+       "gloss_source": "authored",
+       "gloss": "pull back from a place in an ordered, deliberate way",
+       "zipf": 4.13,
+       "register": "neutral",
+       "senses_at_pos": 4,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "retreat",
+        "third": "retreats",
+        "past": "retreated",
+        "part": "retreating"
+       },
+       "discriminator": "deliberate ordered pull-back",
+       "grade": 5
+      },
+      {
+       "w": "cower",
+       "synset": "huddle.v.02",
+       "gloss_source": "authored",
+       "gloss": "crouch down and curl up small in fear",
+       "zipf": 2.55,
+       "register": "neutral",
+       "senses_at_pos": 2,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "cower",
+        "third": "cowers",
+        "past": "cowered",
+        "part": "cowering"
+       },
+       "discriminator": "the fear-crouch, going nowhere",
+       "grade": 5
+      },
+      {
+       "w": "lurk",
+       "synset": "lurk.v.01",
+       "gloss_source": "authored",
+       "gloss": "wait hidden, keeping out of sight",
+       "zipf": 3.1,
+       "register": "neutral",
+       "senses_at_pos": 3,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "lurk",
+        "third": "lurks",
+        "past": "lurked",
+        "part": "lurking"
+       },
+       "discriminator": "concealed waiting",
+       "grade": 5
+      }
+     ],
+     "sentences": [
+      {
+       "id": "A-escape-01-s01",
+       "answer": "evade",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "At the gate, Mara tried to ___ by showing a swapped pass.",
+       "cue_phrase": "showing a swapped pass",
+       "surface": {
+        "evade": "evade",
+        "flee": "flee",
+        "retreat": "retreat",
+        "cower": "cower",
+        "lurk": "lurk"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (flee); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-escape-01-s02",
+       "answer": "evade",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The goblin managed to ___ by painting footprints toward the empty shed.",
+       "cue_phrase": "painting footprints toward",
+       "surface": {
+        "evade": "evade",
+        "flee": "flee",
+        "retreat": "retreat",
+        "cower": "cower",
+        "lurk": "lurk"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (flee); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-escape-01-s03",
+       "answer": "evade",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Jin hoped to ___ the roll call by sending his twin to answer in his place.",
+       "cue_phrase": "sending his twin",
+       "surface": {
+        "evade": "evade",
+        "flee": "flee",
+        "retreat": "retreat",
+        "cower": "cower",
+        "lurk": "lurk"
+       }
+      },
+      {
+       "id": "A-escape-01-s04",
+       "answer": "evade",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The mouse tried to ___ by sending the cat toward a squeaky boot.",
+       "cue_phrase": "sending the cat toward",
+       "surface": {
+        "evade": "evade",
+        "flee": "flee",
+        "retreat": "retreat",
+        "cower": "cower",
+        "lurk": "lurk"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (flee); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-escape-01-s05",
+       "answer": "evade",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Pippa tried to ___ the busy troll by propping her hat on the mop.",
+       "cue_phrase": "propping her hat on the mop",
+       "surface": {
+        "evade": "evade",
+        "flee": "flee",
+        "retreat": "retreat",
+        "cower": "cower",
+        "lurk": "lurk"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (flee); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-escape-01-s06",
+       "answer": "evade",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The hare meant to ___ by doubling its trail, not speeding across the field.",
+       "cue_phrase": "doubling its trail",
+       "surface": {
+        "evade": "evade",
+        "flee": "flee",
+        "retreat": "retreat",
+        "cower": "cower",
+        "lurk": "lurk"
+       }
+      },
+      {
+       "id": "A-escape-01-s07",
+       "answer": "evade",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "In tales, the fox ___ by wearing goose feathers past sleepy hounds.",
+       "cue_phrase": "wearing goose feathers",
+       "surface": {
+        "evade": "evades",
+        "flee": "flees",
+        "retreat": "retreats",
+        "cower": "cowers",
+        "lurk": "lurks"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (flee); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-escape-01-s08",
+       "answer": "evade",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "Nora planned to ___ by swapping arrows on the maze signs.",
+       "cue_phrase": "swapping arrows on",
+       "surface": {
+        "evade": "evade",
+        "flee": "flee",
+        "retreat": "retreat",
+        "cower": "cower",
+        "lurk": "lurk"
+       }
+      },
+      {
+       "id": "A-escape-01-s09",
+       "answer": "flee",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "When the boiler hissed, the mice ___, dashing through the kitchen door.",
+       "cue_phrase": "dashing through the kitchen",
+       "surface": {
+        "evade": "evaded",
+        "flee": "fled",
+        "retreat": "retreated",
+        "cower": "cowered",
+        "lurk": "lurked"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: dashing at sudden danger carries flee; retreat is an orderly pull-back",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-escape-01-s10",
+       "answer": "flee",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "At the dragon's roar, villagers ___, sprinting over the bridge.",
+       "cue_phrase": "sprinting over the bridge",
+       "surface": {
+        "evade": "evaded",
+        "flee": "fled",
+        "retreat": "retreated",
+        "cower": "cowered",
+        "lurk": "lurked"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: sprinting at the roar carries flee; retreat is an orderly pull-back",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-escape-01-s11",
+       "answer": "flee",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The goats ___ as the wild dog charged, hooves thundering downhill.",
+       "cue_phrase": "hooves thundering downhill",
+       "surface": {
+        "evade": "evaded",
+        "flee": "fled",
+        "retreat": "retreated",
+        "cower": "cowered",
+        "lurk": "lurked"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (retreat); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-escape-01-s12",
+       "answer": "flee",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "When sparks jumped, Sam and Tariq ___, racing straight to the gate.",
+       "cue_phrase": "racing straight to",
+       "surface": {
+        "evade": "evaded",
+        "flee": "fled",
+        "retreat": "retreated",
+        "cower": "cowered",
+        "lurk": "lurked"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (retreat); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-escape-01-s13",
+       "answer": "flee",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The bull snorted, and the children ___, trainers slapping pavement.",
+       "cue_phrase": "trainers slapping pavement",
+       "surface": {
+        "evade": "evaded",
+        "flee": "fled",
+        "retreat": "retreated",
+        "cower": "cowered",
+        "lurk": "lurked"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (retreat); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-escape-01-s14",
+       "answer": "flee",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "A crash shook the tent, so the scouts ___, legs pumping for camp.",
+       "cue_phrase": "legs pumping for camp",
+       "surface": {
+        "evade": "evaded",
+        "flee": "fled",
+        "retreat": "retreated",
+        "cower": "cowered",
+        "lurk": "lurked"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (retreat); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-escape-01-s15",
+       "answer": "flee",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "When the bees poured out, we ___ shrieking toward the pond at full speed.",
+       "cue_phrase": "shrieking toward the pond",
+       "surface": {
+        "evade": "evade",
+        "flee": "flee",
+        "retreat": "retreat",
+        "cower": "cower",
+        "lurk": "lurk"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (retreat); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-escape-01-s16",
+       "answer": "flee",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "The thunderclap made the ponies ___, galloping across the field.",
+       "cue_phrase": "galloping across the field",
+       "surface": {
+        "evade": "evade",
+        "flee": "flee",
+        "retreat": "retreat",
+        "cower": "cower",
+        "lurk": "lurk"
+       }
+      },
+      {
+       "id": "A-escape-01-s17",
+       "answer": "retreat",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "At the captain's signal, the chess soldiers ___ in a neat line.",
+       "cue_phrase": "in a neat line",
+       "surface": {
+        "evade": "evaded",
+        "flee": "fled",
+        "retreat": "retreated",
+        "cower": "cowered",
+        "lurk": "lurked"
+       }
+      },
+      {
+       "id": "A-escape-01-s18",
+       "answer": "retreat",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The hikers ___ step by step when the snow bridge cracked.",
+       "cue_phrase": "step by step",
+       "surface": {
+        "evade": "evaded",
+        "flee": "fled",
+        "retreat": "retreated",
+        "cower": "cowered",
+        "lurk": "lurked"
+       }
+      },
+      {
+       "id": "A-escape-01-s19",
+       "answer": "retreat",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "After the whistle, the swimmers ___ lane by lane to the ropes.",
+       "cue_phrase": "lane by lane",
+       "surface": {
+        "evade": "evaded",
+        "flee": "fled",
+        "retreat": "retreated",
+        "cower": "cowered",
+        "lurk": "lurked"
+       }
+      },
+      {
+       "id": "A-escape-01-s20",
+       "answer": "retreat",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The ants ___ in columns as the puddle spread across the path.",
+       "cue_phrase": "in columns as",
+       "surface": {
+        "evade": "evaded",
+        "flee": "fled",
+        "retreat": "retreated",
+        "cower": "cowered",
+        "lurk": "lurked"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (flee); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-escape-01-s21",
+       "answer": "retreat",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Seeing the giant footprint, the party ___ shield by shield to the safe line.",
+       "cue_phrase": "shield by shield",
+       "surface": {
+        "evade": "evaded",
+        "flee": "fled",
+        "retreat": "retreated",
+        "cower": "cowered",
+        "lurk": "lurked"
+       }
+      },
+      {
+       "id": "A-escape-01-s22",
+       "answer": "retreat",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The band ___ three steps at a time while still playing.",
+       "cue_phrase": "while still playing",
+       "surface": {
+        "evade": "evaded",
+        "flee": "fled",
+        "retreat": "retreated",
+        "cower": "cowered",
+        "lurk": "lurked"
+       }
+      },
+      {
+       "id": "A-escape-01-s23",
+       "answer": "retreat",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "Coach told the class to ___ from the flooded cones in pairs, at walking pace.",
+       "cue_phrase": "in pairs",
+       "surface": {
+        "evade": "evade",
+        "flee": "flee",
+        "retreat": "retreat",
+        "cower": "cower",
+        "lurk": "lurk"
+       }
+      },
+      {
+       "id": "A-escape-01-s24",
+       "answer": "retreat",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "The knights began ___ in formation when the wooden gate groaned.",
+       "cue_phrase": "in formation",
+       "surface": {
+        "evade": "evading",
+        "flee": "fleeing",
+        "retreat": "retreating",
+        "cower": "cowering",
+        "lurk": "lurking"
+       }
+      },
+      {
+       "id": "A-escape-01-s25",
+       "answer": "cower",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "During the fireworks, the puppy ___ under the chair, trembling with chin down.",
+       "cue_phrase": "trembling with chin down",
+       "surface": {
+        "evade": "evaded",
+        "flee": "fled",
+        "retreat": "retreated",
+        "cower": "cowered",
+        "lurk": "lurked"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (flee, retreat); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-escape-01-s26",
+       "answer": "cower",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "When the ogre shouted, Ben ___ behind the barrel, knees against his chest.",
+       "cue_phrase": "knees against his chest",
+       "surface": {
+        "evade": "evaded",
+        "flee": "fled",
+        "retreat": "retreated",
+        "cower": "cowered",
+        "lurk": "lurked"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (flee, retreat); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-escape-01-s27",
+       "answer": "cower",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The kitten ___ beneath the sofa, ears flat, while thunder rattled the windows.",
+       "cue_phrase": "ears flat",
+       "surface": {
+        "evade": "evaded",
+        "flee": "fled",
+        "retreat": "retreated",
+        "cower": "cowered",
+        "lurk": "lurked"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (flee, retreat); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-escape-01-s28",
+       "answer": "cower",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Mina ___ in the corner, arms over her head, as plates smashed.",
+       "cue_phrase": "arms over her head",
+       "surface": {
+        "evade": "evaded",
+        "flee": "fled",
+        "retreat": "retreated",
+        "cower": "cowered",
+        "lurk": "lurked"
+       }
+      },
+      {
+       "id": "A-escape-01-s29",
+       "answer": "cower",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The dragon sneezed sparks, and the squire ___ behind his round shield, shaking.",
+       "cue_phrase": "round shield, shaking",
+       "surface": {
+        "evade": "evaded",
+        "flee": "fled",
+        "retreat": "retreated",
+        "cower": "cowered",
+        "lurk": "lurked"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (retreat); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-escape-01-s30",
+       "answer": "cower",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "After the mask roared, Leo ___ on the floor with knees tucked.",
+       "cue_phrase": "knees tucked",
+       "surface": {
+        "evade": "evaded",
+        "flee": "fled",
+        "retreat": "retreated",
+        "cower": "cowered",
+        "lurk": "lurked"
+       }
+      },
+      {
+       "id": "A-escape-01-s31",
+       "answer": "cower",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The alarm made the rabbits ___ beneath the hutch, pressed together.",
+       "cue_phrase": "pressed together",
+       "surface": {
+        "evade": "evade",
+        "flee": "flee",
+        "retreat": "retreat",
+        "cower": "cower",
+        "lurk": "lurk"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (flee, retreat); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-escape-01-s32",
+       "answer": "cower",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "In the ghost story, the prince began ___ with his blanket over him at each moan.",
+       "cue_phrase": "at each moan",
+       "surface": {
+        "evade": "evading",
+        "flee": "fleeing",
+        "retreat": "retreating",
+        "cower": "cowering",
+        "lurk": "lurking"
+       }
+      },
+      {
+       "id": "A-escape-01-s33",
+       "answer": "lurk",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The tiger ___ among the reeds until the deer bent down.",
+       "cue_phrase": "among the reeds until",
+       "surface": {
+        "evade": "evaded",
+        "flee": "fled",
+        "retreat": "retreated",
+        "cower": "cowered",
+        "lurk": "lurked"
+       }
+      },
+      {
+       "id": "A-escape-01-s34",
+       "answer": "lurk",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "A pirate ___ behind the curtain, ready to grab the treasure map.",
+       "cue_phrase": "behind the curtain",
+       "surface": {
+        "evade": "evaded",
+        "flee": "fled",
+        "retreat": "retreated",
+        "cower": "cowered",
+        "lurk": "lurked"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (retreat); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-escape-01-s35",
+       "answer": "lurk",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The spider ___ under the leaf until a fly landed nearby.",
+       "cue_phrase": "until a fly landed",
+       "surface": {
+        "evade": "evaded",
+        "flee": "fled",
+        "retreat": "retreated",
+        "cower": "cowered",
+        "lurk": "lurked"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (retreat); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-escape-01-s36",
+       "answer": "lurk",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The goalie ___ behind the post until the striker looked left.",
+       "cue_phrase": "until the striker looked",
+       "surface": {
+        "evade": "evaded",
+        "flee": "fled",
+        "retreat": "retreated",
+        "cower": "cowered",
+        "lurk": "lurked"
+       }
+      },
+      {
+       "id": "A-escape-01-s37",
+       "answer": "lurk",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The crocodile ___ just below the log, eyes level with water, as ducks paddled near.",
+       "cue_phrase": "ducks paddled near",
+       "surface": {
+        "evade": "evaded",
+        "flee": "fled",
+        "retreat": "retreated",
+        "cower": "cowered",
+        "lurk": "lurked"
+       }
+      },
+      {
+       "id": "A-escape-01-s38",
+       "answer": "lurk",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "In the dark pantry, a mouse ___ behind flour sacks before midnight snacks.",
+       "cue_phrase": "before midnight snacks",
+       "surface": {
+        "evade": "evaded",
+        "flee": "fled",
+        "retreat": "retreated",
+        "cower": "cowered",
+        "lurk": "lurked"
+       }
+      },
+      {
+       "id": "A-escape-01-s39",
+       "answer": "lurk",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The goblin liked to ___ under bridges until travellers crossed.",
+       "cue_phrase": "until travellers cross",
+       "surface": {
+        "evade": "evade",
+        "flee": "flee",
+        "retreat": "retreat",
+        "cower": "cower",
+        "lurk": "lurk"
+       }
+      },
+      {
+       "id": "A-escape-01-s40",
+       "answer": "lurk",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Something was ___ in the bushes, rustling only when we passed.",
+       "cue_phrase": "when we passed",
+       "surface": {
+        "evade": "evading",
+        "flee": "fleeing",
+        "retreat": "retreating",
+        "cower": "cowering",
+        "lurk": "lurking"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (cower); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      }
+     ],
+     "contrasts": [
+      {
+       "answer": "evade",
+       "picked": "flee",
+       "line": "Evade means getting past by a trick; flee means leaving fast."
+      },
+      {
+       "answer": "evade",
+       "picked": "retreat",
+       "line": "Evade uses a trick to slip past; retreat is a planned move to safer ground."
+      },
+      {
+       "answer": "evade",
+       "picked": "cower",
+       "line": "Evade is tricking past danger; cower is huddling low because you are scared."
+      },
+      {
+       "answer": "evade",
+       "picked": "lurk",
+       "line": "Evade tricks past a problem; lurk stays out of view and waits."
+      },
+      {
+       "answer": "flee",
+       "picked": "evade",
+       "line": "Flee is fast movement from danger; evade depends on a trick."
+      },
+      {
+       "answer": "flee",
+       "picked": "retreat",
+       "line": "Flee is hurried; retreat is controlled and planned."
+      },
+      {
+       "answer": "flee",
+       "picked": "cower",
+       "line": "Flee means leaving fast; cower means shrinking down in fright."
+      },
+      {
+       "answer": "flee",
+       "picked": "lurk",
+       "line": "Flee moves fast from danger; lurk stays still out of view."
+      },
+      {
+       "answer": "retreat",
+       "picked": "evade",
+       "line": "Retreat is a planned move to safety; evade gets past by tricking."
+      },
+      {
+       "answer": "retreat",
+       "picked": "flee",
+       "line": "Retreat is steady and controlled; flee is a fast dash from danger."
+      },
+      {
+       "answer": "retreat",
+       "picked": "cower",
+       "line": "Retreat moves to safer ground; cower stays low and scared."
+      },
+      {
+       "answer": "retreat",
+       "picked": "lurk",
+       "line": "Retreat moves as planned; lurk stays out of view and waits."
+      },
+      {
+       "answer": "cower",
+       "picked": "evade",
+       "line": "Cower is huddling low in fright; evade is tricking past trouble."
+      },
+      {
+       "answer": "cower",
+       "picked": "flee",
+       "line": "Cower stays low from fright; flee leaves fast."
+      },
+      {
+       "answer": "cower",
+       "picked": "retreat",
+       "line": "Cower is a scared huddle; retreat is a planned move to safety."
+      },
+      {
+       "answer": "cower",
+       "picked": "lurk",
+       "line": "Cower shows fright; lurk is quiet hiding while waiting."
+      },
+      {
+       "answer": "lurk",
+       "picked": "evade",
+       "line": "Lurk means staying out of view to wait; evade means getting past by a trick."
+      },
+      {
+       "answer": "lurk",
+       "picked": "flee",
+       "line": "Lurk stays out of view; flee leaves fast."
+      },
+      {
+       "answer": "lurk",
+       "picked": "retreat",
+       "line": "Lurk stays out of view and waits; retreat moves to safety as planned."
+      },
+      {
+       "answer": "lurk",
+       "picked": "cower",
+       "line": "Lurk is quiet waiting out of view; cower is huddling in fright."
+      }
+     ],
+     "meta": {
+      "generated_at": "2026-07-06T14:30:09+00:00",
+      "model": "gpt-5.5",
+      "scrubbed_at": "2026-07-07",
+      "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+     }
+    },
+    {
+     "id": "A-feelings-01",
+     "bank": "A",
+     "pos": "adjective",
+     "theme": "exactly how they felt",
+     "band": 4,
+     "band_override": 4,
+     "computed": {
+      "zipf_min": 2.71,
+      "zipf_mean": 2.98,
+      "tightness": null,
+      "band_suggested": 4,
+      "scored_at": "2026-07-06T18:43:21+00:00"
+     },
+     "words": [
+      {
+       "w": "smug",
+       "synset": "smug.s.01",
+       "gloss_source": "authored",
+       "gloss": "too pleased with yourself, in a way that annoys other people",
+       "zipf": 3.31,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "smug"
+       },
+       "discriminator": "too pleased with yourself",
+       "grade": 5
+      },
+      {
+       "w": "flustered",
+       "synset": "flustered.s.01",
+       "gloss_source": "authored",
+       "gloss": "so rattled and confused that you cannot think straight",
+       "zipf": 2.93,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "flustered"
+       },
+       "discriminator": "too rattled to think",
+       "grade": 5
+      },
+      {
+       "w": "exasperated",
+       "synset": "exasperated.s.01",
+       "gloss_source": "wordnet",
+       "gloss": "greatly annoyed; out of patience",
+       "zipf": 2.94,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "exasperated"
+       },
+       "discriminator": "patience used up by repeats",
+       "grade": 6
+      },
+      {
+       "w": "apprehensive",
+       "synset": "apprehensive.s.03",
+       "gloss_source": "authored",
+       "gloss": "full of fear about something that has not happened yet",
+       "zipf": 3.03,
+       "register": "neutral",
+       "senses_at_pos": 3,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "apprehensive"
+       },
+       "discriminator": "dreading what is coming",
+       "grade": 7
+      },
+      {
+       "w": "wistful",
+       "synset": "pensive.s.02",
+       "gloss_source": "authored",
+       "gloss": "quietly sad, longing for something that is gone or out of reach",
+       "zipf": 2.71,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "wistful"
+       },
+       "discriminator": "gently longing for what is gone",
+       "grade": 7
+      }
+     ],
+     "sentences": [
+      {
+       "id": "A-feelings-01-s01",
+       "answer": "smug",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Leo wore a ___ grin, reminding everyone he had never lost at chess.",
+       "cue_phrase": "reminding everyone he had never lost",
+       "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+       }
+      },
+      {
+       "id": "A-feelings-01-s02",
+       "answer": "smug",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "With a ___ smile, Mia said, 'I knew my tower was best.'",
+       "cue_phrase": "my tower was best",
+       "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+       }
+      },
+      {
+       "id": "A-feelings-01-s03",
+       "answer": "smug",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Sam leaned back, ___, while his gold star shone above the class chart.",
+       "cue_phrase": "gold star shone",
+       "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+       }
+      },
+      {
+       "id": "A-feelings-01-s04",
+       "answer": "smug",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "After scoring, Nia looked ___ and tapped her name at the top.",
+       "cue_phrase": "name at the top",
+       "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+       }
+      },
+      {
+       "id": "A-feelings-01-s05",
+       "answer": "smug",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "When the robot worked, Omar felt ___, bowing as if the prize was his.",
+       "cue_phrase": "prize was his",
+       "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+       }
+      },
+      {
+       "id": "A-feelings-01-s06",
+       "answer": "smug",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Jade felt ___ after whispering, 'Told you,' at the finished puzzle.",
+       "cue_phrase": "Told you",
+       "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+       }
+      },
+      {
+       "id": "A-feelings-01-s07",
+       "answer": "smug",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The captain sounded ___ as he polished the cup before the race ended.",
+       "cue_phrase": "before the race ended",
+       "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+       }
+      },
+      {
+       "id": "A-feelings-01-s08",
+       "answer": "smug",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "Ravi feels ___ when he winks at his own perfect test score.",
+       "cue_phrase": "own perfect test score",
+       "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+       }
+      },
+      {
+       "id": "A-feelings-01-s09",
+       "answer": "flustered",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Under the timer, Ben grew ___ and called the cat a kettle.",
+       "cue_phrase": "cat a kettle",
+       "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+       }
+      },
+      {
+       "id": "A-feelings-01-s10",
+       "answer": "flustered",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Asked three questions at once, Lara became ___ and forgot her name.",
+       "cue_phrase": "forgot her name",
+       "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+       }
+      },
+      {
+       "id": "A-feelings-01-s11",
+       "answer": "flustered",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The bell rang early, and Tom felt ___, stuffing homework into his lunchbox.",
+       "cue_phrase": "homework into his lunchbox",
+       "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+       }
+      },
+      {
+       "id": "A-feelings-01-s12",
+       "answer": "flustered",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "On stage, Priya sounded ___, skipping lines and naming the dragon Fred.",
+       "cue_phrase": "skipping lines",
+       "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (apprehensive); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-feelings-01-s13",
+       "answer": "flustered",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "When the lights flashed, Max went ___ and put both shoes on one foot.",
+       "cue_phrase": "both shoes on one",
+       "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+       }
+      },
+      {
+       "id": "A-feelings-01-s14",
+       "answer": "flustered",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "With six hands waving, Ella got ___ and answered the wrong page.",
+       "cue_phrase": "answered the wrong page",
+       "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+       }
+      },
+      {
+       "id": "A-feelings-01-s15",
+       "answer": "flustered",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "During the quiz, Noor was ___, writing her surname in the answer box.",
+       "cue_phrase": "surname in the answer",
+       "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+       }
+      },
+      {
+       "id": "A-feelings-01-s16",
+       "answer": "flustered",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "A surprise visitor made Finn ___; he thanked the chair instead.",
+       "cue_phrase": "thanked the chair instead",
+       "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+       }
+      },
+      {
+       "id": "A-feelings-01-s17",
+       "answer": "exasperated",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "After the fifth interruption, Mum looked ___ and put down her book.",
+       "cue_phrase": "fifth interruption",
+       "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+       }
+      },
+      {
+       "id": "A-feelings-01-s18",
+       "answer": "exasperated",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Mr Hale sounded ___ when the same joke stopped class again.",
+       "cue_phrase": "same joke stopped class",
+       "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+       }
+      },
+      {
+       "id": "A-feelings-01-s19",
+       "answer": "exasperated",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The puppy chewed another slipper, and Dad grew ___ beside the mess.",
+       "cue_phrase": "chewed another slipper",
+       "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+       }
+      },
+      {
+       "id": "A-feelings-01-s20",
+       "answer": "exasperated",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Zara felt ___ after asking her brother twice to close the gate.",
+       "cue_phrase": "asking her brother twice",
+       "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+       }
+      },
+      {
+       "id": "A-feelings-01-s21",
+       "answer": "exasperated",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "By the third false alarm, the guard was ___ and rubbed his face.",
+       "cue_phrase": "third false alarm",
+       "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+       }
+      },
+      {
+       "id": "A-feelings-01-s22",
+       "answer": "exasperated",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "When the tap dripped all night, Grandpa became ___ at breakfast.",
+       "cue_phrase": "dripped all night",
+       "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+       }
+      },
+      {
+       "id": "A-feelings-01-s23",
+       "answer": "exasperated",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The coach looked ___ as the team missed the easy throw again.",
+       "cue_phrase": "easy throw again",
+       "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (flustered); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-feelings-01-s24",
+       "answer": "exasperated",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "After ten reminders, Asha's sister was ___ about the muddy boots.",
+       "cue_phrase": "After ten reminders",
+       "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+       }
+      },
+      {
+       "id": "A-feelings-01-s25",
+       "answer": "apprehensive",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Before the dentist called, I felt ___ and gripped the chair arms.",
+       "cue_phrase": "Before the dentist called",
+       "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+       }
+      },
+      {
+       "id": "A-feelings-01-s26",
+       "answer": "apprehensive",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "At the cave mouth, Mina was ___ about the dark tunnel ahead.",
+       "cue_phrase": "dark tunnel ahead",
+       "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+       }
+      },
+      {
+       "id": "A-feelings-01-s27",
+       "answer": "apprehensive",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The exam paper lay face down, and Hal looked ___ before turning it.",
+       "cue_phrase": "before turning it",
+       "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+       }
+      },
+      {
+       "id": "A-feelings-01-s28",
+       "answer": "apprehensive",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Rain clouds gathered, making the hikers ___ about crossing the bridge later.",
+       "cue_phrase": "crossing the bridge later",
+       "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+       }
+      },
+      {
+       "id": "A-feelings-01-s29",
+       "answer": "apprehensive",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Kit waited ___ outside the head teacher's office, staring at the door.",
+       "cue_phrase": "staring at the door",
+       "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+       }
+      },
+      {
+       "id": "A-feelings-01-s30",
+       "answer": "apprehensive",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Before her solo, Anya felt ___, hearing the hall fill up.",
+       "cue_phrase": "Before her solo",
+       "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (flustered); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-feelings-01-s31",
+       "answer": "apprehensive",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The locked chest made Pip ___; the wizard's warning echoed ahead.",
+       "cue_phrase": "wizard's warning echoed ahead",
+       "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+       }
+      },
+      {
+       "id": "A-feelings-01-s32",
+       "answer": "apprehensive",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "Tom was ___ as the big dog bounded towards the gate.",
+       "cue_phrase": "bounded towards the gate",
+       "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (flustered); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-feelings-01-s33",
+       "answer": "wistful",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Looking at her old skates, Eva felt ___ about winter afternoons.",
+       "cue_phrase": "old skates",
+       "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+       }
+      },
+      {
+       "id": "A-feelings-01-s34",
+       "answer": "wistful",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Grandad sounded ___ as he watched trains leave for his childhood town.",
+       "cue_phrase": "his childhood town",
+       "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+       }
+      },
+      {
+       "id": "A-feelings-01-s35",
+       "answer": "wistful",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "At sunset, Lily grew ___, holding the tiny jumper she once wore.",
+       "cue_phrase": "once wore",
+       "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+       }
+      },
+      {
+       "id": "A-feelings-01-s36",
+       "answer": "wistful",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Rafi was ___ beside the empty kennel, remembering his shaggy old dog.",
+       "cue_phrase": "empty kennel",
+       "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+       }
+      },
+      {
+       "id": "A-feelings-01-s37",
+       "answer": "wistful",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The song made Nan ___, and she touched the faded dance ticket.",
+       "cue_phrase": "faded dance ticket",
+       "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+       }
+      },
+      {
+       "id": "A-feelings-01-s38",
+       "answer": "wistful",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Jo looked ___, smiling faintly at her friend's boat sailing away.",
+       "cue_phrase": "friend's boat sailing away",
+       "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+       }
+      },
+      {
+       "id": "A-feelings-01-s39",
+       "answer": "wistful",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Amir felt ___ when the class photo showed last year's seats.",
+       "cue_phrase": "last year's seats",
+       "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+       }
+      },
+      {
+       "id": "A-feelings-01-s40",
+       "answer": "wistful",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "By the boarded-up sweet shop, Bea felt ___ about Saturday coins.",
+       "cue_phrase": "boarded-up sweet shop",
+       "surface": {
+        "smug": "smug",
+        "flustered": "flustered",
+        "exasperated": "exasperated",
+        "apprehensive": "apprehensive",
+        "wistful": "wistful"
+       }
+      }
+     ],
+     "contrasts": [
+      {
+       "answer": "smug",
+       "picked": "flustered",
+       "line": "Smug is a gloating winner; flustered is jumbled and unable to answer calmly."
+      },
+      {
+       "answer": "smug",
+       "picked": "exasperated",
+       "line": "Smug is proud of being right; exasperated is fed up after repeats."
+      },
+      {
+       "answer": "smug",
+       "picked": "apprehensive",
+       "line": "Smug expects praise for success; apprehensive worries about what comes next."
+      },
+      {
+       "answer": "smug",
+       "picked": "wistful",
+       "line": "Smug shows off a win; wistful misses a past or distant thing."
+      },
+      {
+       "answer": "flustered",
+       "picked": "smug",
+       "line": "Flustered mixes up words or actions; smug gloats about doing well."
+      },
+      {
+       "answer": "flustered",
+       "picked": "exasperated",
+       "line": "Flustered cannot sort things out; exasperated has had enough of repeats."
+      },
+      {
+       "answer": "flustered",
+       "picked": "apprehensive",
+       "line": "Flustered is jumbled right now; apprehensive is uneasy about what is coming."
+      },
+      {
+       "answer": "flustered",
+       "picked": "wistful",
+       "line": "Flustered drops the plan under pressure; wistful gently misses what is far away."
+      },
+      {
+       "answer": "exasperated",
+       "picked": "smug",
+       "line": "Exasperated is fed up after the same trouble; smug is showing off success."
+      },
+      {
+       "answer": "exasperated",
+       "picked": "flustered",
+       "line": "Exasperated has run out of calm; flustered is muddled and hurried."
+      },
+      {
+       "answer": "exasperated",
+       "picked": "apprehensive",
+       "line": "Exasperated reacts to repeated bother; apprehensive worries before trouble arrives."
+      },
+      {
+       "answer": "exasperated",
+       "picked": "wistful",
+       "line": "Exasperated is sharp after repeats; wistful is soft about what cannot be back."
+      },
+      {
+       "answer": "apprehensive",
+       "picked": "smug",
+       "line": "Apprehensive is uneasy before an event; smug is sure they have already won."
+      },
+      {
+       "answer": "apprehensive",
+       "picked": "flustered",
+       "line": "Apprehensive dreads what may come; flustered is mixed up in the moment."
+      },
+      {
+       "answer": "apprehensive",
+       "picked": "exasperated",
+       "line": "Apprehensive is worried beforehand; exasperated is fed up afterwards."
+      },
+      {
+       "answer": "apprehensive",
+       "picked": "wistful",
+       "line": "Apprehensive looks ahead with worry; wistful looks back with gentle missing."
+      },
+      {
+       "answer": "wistful",
+       "picked": "smug",
+       "line": "Wistful softly misses what is past; smug gloats about a success now."
+      },
+      {
+       "answer": "wistful",
+       "picked": "flustered",
+       "line": "Wistful is calm missing; flustered is hurried muddling."
+      },
+      {
+       "answer": "wistful",
+       "picked": "exasperated",
+       "line": "Wistful is tender about loss; exasperated is fed up with repeated bother."
+      },
+      {
+       "answer": "wistful",
+       "picked": "apprehensive",
+       "line": "Wistful misses what is past or far; apprehensive worries about what is ahead."
+      }
+     ],
+     "meta": {
+      "generated_at": "2026-07-06T14:32:35+00:00",
+      "model": "gpt-5.5",
+      "scrubbed_at": "2026-07-07",
+      "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+     }
+    },
+    {
      "id": "A-look-01",
      "bank": "A",
      "pos": "verb",
@@ -23171,7 +35736,7 @@
       "zipf_mean": 3.58,
       "tightness": 0.296,
       "band_suggested": 3,
-      "scored_at": "2026-07-06T05:33:18+00:00"
+      "scored_at": "2026-07-06T18:43:21+00:00"
      },
      "words": [
       {
@@ -24177,6 +36742,2539 @@
      }
     },
     {
+     "id": "A-materials-01",
+     "bank": "A",
+     "pos": "adjective",
+     "theme": "how materials behave",
+     "band": 4,
+     "band_override": 4,
+     "computed": {
+      "zipf_min": 2.98,
+      "zipf_mean": 3.36,
+      "tightness": null,
+      "band_suggested": 4,
+      "scored_at": "2026-07-06T18:43:21+00:00"
+     },
+     "words": [
+      {
+       "w": "transparent",
+       "synset": "crystalline.s.02",
+       "gloss_source": "authored",
+       "gloss": "so clear that you can see straight through it",
+       "zipf": 4.01,
+       "register": "neutral",
+       "senses_at_pos": 4,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "transparent"
+       },
+       "discriminator": "you can see through it",
+       "grade": 4
+      },
+      {
+       "w": "flammable",
+       "synset": "flammable.s.01",
+       "gloss_source": "authored",
+       "gloss": "catching fire very easily",
+       "zipf": 3.17,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "flammable"
+       },
+       "discriminator": "catches fire easily",
+       "grade": 5
+      },
+      {
+       "w": "brittle",
+       "synset": "brittle.s.01",
+       "gloss_source": "authored",
+       "gloss": "so stiff that it snaps instead of bending",
+       "zipf": 3.28,
+       "register": "neutral",
+       "senses_at_pos": 3,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "brittle"
+       },
+       "discriminator": "snaps instead of bending",
+       "grade": 5
+      },
+      {
+       "w": "buoyant",
+       "synset": "buoyant.s.01",
+       "gloss_source": "authored",
+       "gloss": "tending to float on water or rise in the air",
+       "zipf": 2.98,
+       "register": "neutral",
+       "senses_at_pos": 2,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "buoyant"
+       },
+       "discriminator": "floats",
+       "grade": 6
+      },
+      {
+       "w": "porous",
+       "synset": "porous.s.01",
+       "gloss_source": "authored",
+       "gloss": "full of tiny holes that let liquid soak in",
+       "zipf": 3.37,
+       "register": "neutral",
+       "senses_at_pos": 3,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "porous"
+       },
+       "discriminator": "liquid soaks into it",
+       "grade": 6
+      }
+     ],
+     "sentences": [
+      {
+       "id": "A-materials-01-s01",
+       "answer": "transparent",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Mia read the map through the ___ plastic cover.",
+       "cue_phrase": "read the map through",
+       "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+       }
+      },
+      {
+       "id": "A-materials-01-s02",
+       "answer": "transparent",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Through the ___ lid, Omar counted every biscuit inside.",
+       "cue_phrase": "counted every biscuit inside",
+       "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+       }
+      },
+      {
+       "id": "A-materials-01-s03",
+       "answer": "transparent",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The drawing underneath showed through the ___ wrapping paper.",
+       "cue_phrase": "underneath showed through",
+       "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+       }
+      },
+      {
+       "id": "A-materials-01-s04",
+       "answer": "transparent",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Dad traced the coin under the ___ baking sheet.",
+       "cue_phrase": "traced the coin under",
+       "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+       }
+      },
+      {
+       "id": "A-materials-01-s05",
+       "answer": "transparent",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The goldfish hid behind the ___ wall, yet Leo named its stripes.",
+       "cue_phrase": "named its stripes",
+       "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+       }
+      },
+      {
+       "id": "A-materials-01-s06",
+       "answer": "transparent",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "From outside the ___ box, Priya read the note folded inside.",
+       "cue_phrase": "read the note folded inside",
+       "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+       }
+      },
+      {
+       "id": "A-materials-01-s07",
+       "answer": "transparent",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Sam spotted the spider behind the ___ jar without lifting it.",
+       "cue_phrase": "spotted the spider behind",
+       "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+       }
+      },
+      {
+       "id": "A-materials-01-s08",
+       "answer": "transparent",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "Under the ___ ruler, the pencil line matched the tick marks.",
+       "cue_phrase": "line matched the tick marks",
+       "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+       }
+      },
+      {
+       "id": "A-materials-01-s09",
+       "answer": "flammable",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "A stray spark made the ___ curtain blaze at once.",
+       "cue_phrase": "spark made the",
+       "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+       }
+      },
+      {
+       "id": "A-materials-01-s10",
+       "answer": "flammable",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Near the candle, the ___ ribbon burned before Tom could shout.",
+       "cue_phrase": "ribbon burned before",
+       "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+       }
+      },
+      {
+       "id": "A-materials-01-s11",
+       "answer": "flammable",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The scout kept the ___ blanket far from the camp stove.",
+       "cue_phrase": "far from the camp stove",
+       "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+       }
+      },
+      {
+       "id": "A-materials-01-s12",
+       "answer": "flammable",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Mum moved the ___ spray away before lighting the grill.",
+       "cue_phrase": "away before lighting the grill",
+       "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+       }
+      },
+      {
+       "id": "A-materials-01-s13",
+       "answer": "flammable",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "One spark touched the ___ straw, and orange flames raced along.",
+       "cue_phrase": "orange flames raced along",
+       "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (brittle); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-materials-01-s14",
+       "answer": "flammable",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "At the barbecue, the ___ scraps vanished in a quick whoosh.",
+       "cue_phrase": "vanished in a quick whoosh",
+       "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+       }
+      },
+      {
+       "id": "A-materials-01-s15",
+       "answer": "flammable",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "One drop of the ___ glue near the burner lit with a pop.",
+       "cue_phrase": "lit with a pop",
+       "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+       }
+      },
+      {
+       "id": "A-materials-01-s16",
+       "answer": "flammable",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "A tiny match set the ___ paper roaring in seconds.",
+       "cue_phrase": "match set the",
+       "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (brittle); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-materials-01-s17",
+       "answer": "brittle",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "When Ava pressed it, the ___ twig broke into three pieces.",
+       "cue_phrase": "broke into three pieces",
+       "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+       }
+      },
+      {
+       "id": "A-materials-01-s18",
+       "answer": "brittle",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The ___ biscuit shattered when it fell from the tin.",
+       "cue_phrase": "biscuit shattered when it fell",
+       "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+       }
+      },
+      {
+       "id": "A-materials-01-s19",
+       "answer": "brittle",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The old rubber band was ___ and cracked when Lila stretched it.",
+       "cue_phrase": "cracked when Lila stretched",
+       "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+       }
+      },
+      {
+       "id": "A-materials-01-s20",
+       "answer": "brittle",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Ben chose fresh clay because the ___ slab crumbled under his thumb.",
+       "cue_phrase": "crumbled under his thumb",
+       "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (porous); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-materials-01-s21",
+       "answer": "brittle",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The ___ reed split during weaving after days in the sun.",
+       "cue_phrase": "split during weaving",
+       "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+       }
+      },
+      {
+       "id": "A-materials-01-s22",
+       "answer": "brittle",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "After years in the shed, the ___ hose cracked all over.",
+       "cue_phrase": "hose cracked all over",
+       "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+       }
+      },
+      {
+       "id": "A-materials-01-s23",
+       "answer": "brittle",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The dragon's ___ claw broke off when the door slammed.",
+       "cue_phrase": "claw broke off",
+       "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+       }
+      },
+      {
+       "id": "A-materials-01-s24",
+       "answer": "brittle",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "Jaya's model mast turned ___ and split at the first tug.",
+       "cue_phrase": "split at the first tug",
+       "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+       }
+      },
+      {
+       "id": "A-materials-01-s25",
+       "answer": "buoyant",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The ___ cork bobbed on the pond while stones sank.",
+       "cue_phrase": "bobbed on the pond",
+       "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+       }
+      },
+      {
+       "id": "A-materials-01-s26",
+       "answer": "buoyant",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "In the bath, the ___ toy stayed on top.",
+       "cue_phrase": "stayed on top",
+       "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+       }
+      },
+      {
+       "id": "A-materials-01-s27",
+       "answer": "buoyant",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Maya tied the ___ barrels under the raft before crossing.",
+       "cue_phrase": "barrels under the raft",
+       "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+       }
+      },
+      {
+       "id": "A-materials-01-s28",
+       "answer": "buoyant",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The fisherman trusted the ___ ring after his boat tipped.",
+       "cue_phrase": "after his boat tipped",
+       "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+       }
+      },
+      {
+       "id": "A-materials-01-s29",
+       "answer": "buoyant",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Even with a shell aboard, the ___ boat did not sink.",
+       "cue_phrase": "did not sink",
+       "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+       }
+      },
+      {
+       "id": "A-materials-01-s30",
+       "answer": "buoyant",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Ravi dropped the ___ ball in the pool, and it popped up.",
+       "cue_phrase": "popped up",
+       "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+       }
+      },
+      {
+       "id": "A-materials-01-s31",
+       "answer": "buoyant",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The ___ log carried three beetles across the puddle.",
+       "cue_phrase": "carried three beetles across",
+       "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+       }
+      },
+      {
+       "id": "A-materials-01-s32",
+       "answer": "buoyant",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "Grandma's ___ cushion kept the picnic basket on the river's surface.",
+       "cue_phrase": "on the river's surface",
+       "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+       }
+      },
+      {
+       "id": "A-materials-01-s33",
+       "answer": "porous",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The ___ sponge drank up the spill before it reached the floor.",
+       "cue_phrase": "drank up the spill",
+       "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+       }
+      },
+      {
+       "id": "A-materials-01-s34",
+       "answer": "porous",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Rain disappeared into the ___ brick, leaving the path dry.",
+       "cue_phrase": "Rain disappeared into",
+       "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+       }
+      },
+      {
+       "id": "A-materials-01-s35",
+       "answer": "porous",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Nora's ___ towel grew heavy after one wipe of the sink.",
+       "cue_phrase": "grew heavy after one wipe",
+       "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+       }
+      },
+      {
+       "id": "A-materials-01-s36",
+       "answer": "porous",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The gardener watered the ___ soil twice because puddles vanished fast.",
+       "cue_phrase": "puddles vanished fast",
+       "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+       }
+      },
+      {
+       "id": "A-materials-01-s37",
+       "answer": "porous",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Dad set a plate under the ___ pot before tea dripped through.",
+       "cue_phrase": "tea dripped through",
+       "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+       }
+      },
+      {
+       "id": "A-materials-01-s38",
+       "answer": "porous",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "After the rain, the ___ stone was dark and heavier.",
+       "cue_phrase": "dark and heavier",
+       "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+       }
+      },
+      {
+       "id": "A-materials-01-s39",
+       "answer": "porous",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The ___ chalk sucked colour from the paintbrush tip.",
+       "cue_phrase": "sucked colour from",
+       "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+       }
+      },
+      {
+       "id": "A-materials-01-s40",
+       "answer": "porous",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "Juice spread inside the ___ coaster, making a purple circle.",
+       "cue_phrase": "spread inside the",
+       "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+       }
+      }
+     ],
+     "contrasts": [
+      {
+       "answer": "transparent",
+       "picked": "flammable",
+       "line": "Transparent lets a view through. Flammable burns fast near a spark."
+      },
+      {
+       "answer": "transparent",
+       "picked": "brittle",
+       "line": "Transparent lets a view through. Brittle breaks when pressed or dropped."
+      },
+      {
+       "answer": "transparent",
+       "picked": "buoyant",
+       "line": "Transparent lets a view through. Buoyant stays on top in a pond or pool."
+      },
+      {
+       "answer": "transparent",
+       "picked": "porous",
+       "line": "Transparent lets a view through. Porous takes spills inside itself."
+      },
+      {
+       "answer": "flammable",
+       "picked": "transparent",
+       "line": "Flammable burns fast near a spark. Transparent lets a view through."
+      },
+      {
+       "answer": "flammable",
+       "picked": "brittle",
+       "line": "Flammable burns fast near a spark. Brittle breaks when pressed or dropped."
+      },
+      {
+       "answer": "flammable",
+       "picked": "buoyant",
+       "line": "Flammable burns fast near a spark. Buoyant stays on top in a pond or pool."
+      },
+      {
+       "answer": "flammable",
+       "picked": "porous",
+       "line": "Flammable burns fast near a spark. Porous takes spills inside itself."
+      },
+      {
+       "answer": "brittle",
+       "picked": "transparent",
+       "line": "Brittle breaks when pressed or dropped. Transparent lets a view through."
+      },
+      {
+       "answer": "brittle",
+       "picked": "flammable",
+       "line": "Brittle breaks when pressed or dropped. Flammable burns fast near a spark."
+      },
+      {
+       "answer": "brittle",
+       "picked": "buoyant",
+       "line": "Brittle breaks when pressed or dropped. Buoyant stays on top in a pond or pool."
+      },
+      {
+       "answer": "brittle",
+       "picked": "porous",
+       "line": "Brittle breaks when pressed or dropped. Porous takes spills inside itself."
+      },
+      {
+       "answer": "buoyant",
+       "picked": "transparent",
+       "line": "Buoyant stays on top in a pond or pool. Transparent lets a view through."
+      },
+      {
+       "answer": "buoyant",
+       "picked": "flammable",
+       "line": "Buoyant stays on top in a pond or pool. Flammable burns fast near a spark."
+      },
+      {
+       "answer": "buoyant",
+       "picked": "brittle",
+       "line": "Buoyant stays on top in a pond or pool. Brittle breaks when pressed or dropped."
+      },
+      {
+       "answer": "buoyant",
+       "picked": "porous",
+       "line": "Buoyant stays on top in a pond or pool. Porous takes spills inside itself."
+      },
+      {
+       "answer": "porous",
+       "picked": "transparent",
+       "line": "Porous takes spills inside itself. Transparent lets a view through."
+      },
+      {
+       "answer": "porous",
+       "picked": "flammable",
+       "line": "Porous takes spills inside itself. Flammable burns fast near a spark."
+      },
+      {
+       "answer": "porous",
+       "picked": "brittle",
+       "line": "Porous takes spills inside itself. Brittle breaks when pressed or dropped."
+      },
+      {
+       "answer": "porous",
+       "picked": "buoyant",
+       "line": "Porous takes spills inside itself. Buoyant stays on top in a pond or pool."
+      }
+     ],
+     "meta": {
+      "generated_at": "2026-07-06T14:24:12+00:00",
+      "model": "gpt-5.5",
+      "scrubbed_at": "2026-07-07",
+      "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+     }
+    },
+    {
+     "id": "A-old-01",
+     "bank": "A",
+     "pos": "adjective",
+     "theme": "old in different ways",
+     "band": 4,
+     "band_override": 4,
+     "computed": {
+      "zipf_min": 3.42,
+      "zipf_mean": 3.83,
+      "tightness": null,
+      "band_suggested": 3,
+      "scored_at": "2026-07-06T18:43:21+00:00"
+     },
+     "words": [
+      {
+       "w": "elderly",
+       "synset": "aged.s.01",
+       "gloss_source": "authored",
+       "gloss": "old in years; the respectful word for people",
+       "zipf": 4.15,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "elderly"
+       },
+       "discriminator": "the word for people",
+       "grade": 3
+      },
+      {
+       "w": "antique",
+       "synset": "antique.s.01",
+       "gloss_source": "wordnet",
+       "gloss": "made in or typical of earlier times and valued for its age",
+       "zipf": 3.86,
+       "register": "neutral",
+       "senses_at_pos": 3,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "antique"
+       },
+       "discriminator": "old object treasured for its age",
+       "grade": 4
+      },
+      {
+       "w": "prehistoric",
+       "synset": "prehistoric.a.02",
+       "gloss_source": "wordnet",
+       "gloss": "of or relating to times before written history",
+       "zipf": 3.42,
+       "register": "neutral",
+       "senses_at_pos": 3,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "prehistoric"
+       },
+       "discriminator": "before anything was written down",
+       "grade": 4
+      },
+      {
+       "w": "outdated",
+       "synset": "outdated.s.01",
+       "gloss_source": "authored",
+       "gloss": "no longer useful or correct because something newer has replaced it",
+       "zipf": 3.66,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "outdated"
+       },
+       "discriminator": "something newer has replaced it",
+       "grade": 5
+      },
+      {
+       "w": "medieval",
+       "synset": "medieval.a.01",
+       "gloss_source": "authored",
+       "gloss": "from the Middle Ages, the time of knights and castles",
+       "zipf": 4.05,
+       "register": "neutral",
+       "senses_at_pos": 3,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "medieval"
+       },
+       "discriminator": "knights-and-castles period",
+       "grade": 5
+      }
+     ],
+     "sentences": [
+      {
+       "id": "A-old-01-s01",
+       "answer": "elderly",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The ___ grandmother hummed while her grandson tied her scarf.",
+       "cue_phrase": "grandmother hummed",
+       "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+       }
+      },
+      {
+       "id": "A-old-01-s02",
+       "answer": "elderly",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The ___ man accepted Sam's seat on the crowded bus.",
+       "cue_phrase": "man accepted Sam's seat",
+       "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+       }
+      },
+      {
+       "id": "A-old-01-s03",
+       "answer": "elderly",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The ___ neighbour leant on her stick during the garden party.",
+       "cue_phrase": "leant on her stick",
+       "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+       }
+      },
+      {
+       "id": "A-old-01-s04",
+       "answer": "elderly",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The ___ aunt asked the nurse to read the tiny label.",
+       "cue_phrase": "aunt asked the nurse",
+       "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+       }
+      },
+      {
+       "id": "A-old-01-s05",
+       "answer": "elderly",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Mum walked slowly beside the ___ visitor after lunch.",
+       "cue_phrase": "walked slowly beside",
+       "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+       }
+      },
+      {
+       "id": "A-old-01-s06",
+       "answer": "elderly",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The children carried bags for the ___ couple crossing the road.",
+       "cue_phrase": "carried bags for",
+       "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+       }
+      },
+      {
+       "id": "A-old-01-s07",
+       "answer": "elderly",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "The ___ widow smiled when pupils sang outside her window.",
+       "cue_phrase": "widow smiled",
+       "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+       }
+      },
+      {
+       "id": "A-old-01-s08",
+       "answer": "elderly",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The ___ resident remembered when the lane was only mud.",
+       "cue_phrase": "resident remembered when the lane",
+       "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+       }
+      },
+      {
+       "id": "A-old-01-s09",
+       "answer": "antique",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The ___ teapot from 1820 sat behind locked glass.",
+       "cue_phrase": "from 1820",
+       "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+       }
+      },
+      {
+       "id": "A-old-01-s10",
+       "answer": "antique",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The ___ clock from 1890 ticked inside a velvet case.",
+       "cue_phrase": "from 1890",
+       "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+       }
+      },
+      {
+       "id": "A-old-01-s11",
+       "answer": "antique",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "In the shop window, the ___ vase from 1910 wore a gold price tag.",
+       "cue_phrase": "from 1910",
+       "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+       }
+      },
+      {
+       "id": "A-old-01-s12",
+       "answer": "antique",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The ___ mirror had carved roses and a label saying 1885.",
+       "cue_phrase": "label saying 1885",
+       "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+       }
+      },
+      {
+       "id": "A-old-01-s13",
+       "answer": "antique",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Lena's mum lifted the ___ brooch from 1901 with gloves.",
+       "cue_phrase": "from 1901",
+       "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+       }
+      },
+      {
+       "id": "A-old-01-s14",
+       "answer": "antique",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The ___ desk, older than the house itself, cost more than our sofa.",
+       "cue_phrase": "older than the house itself",
+       "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (medieval); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-old-01-s15",
+       "answer": "antique",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "At the sale, Dad explained the ___ ring had been made in his great-grandmother's day.",
+       "cue_phrase": "made in his great-grandmother's day",
+       "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+       }
+      },
+      {
+       "id": "A-old-01-s16",
+       "answer": "antique",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The ___ chair, polished by four generations, was roped off from visitors.",
+       "cue_phrase": "polished by four generations",
+       "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (medieval); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-old-01-s17",
+       "answer": "prehistoric",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The ___ dinosaur skeleton filled the museum hall from nose to tail.",
+       "cue_phrase": "dinosaur skeleton",
+       "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+       }
+      },
+      {
+       "id": "A-old-01-s18",
+       "answer": "prehistoric",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "We painted ___ cave animals beside handprints and mammoth tusks.",
+       "cue_phrase": "mammoth tusks",
+       "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+       }
+      },
+      {
+       "id": "A-old-01-s19",
+       "answer": "prehistoric",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The ___ tools were chipped stones, not metal knives.",
+       "cue_phrase": "chipped stones",
+       "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+       }
+      },
+      {
+       "id": "A-old-01-s20",
+       "answer": "prehistoric",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Our ___ hut model had no coins, books, or wheels.",
+       "cue_phrase": "no coins, books",
+       "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+       }
+      },
+      {
+       "id": "A-old-01-s21",
+       "answer": "prehistoric",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The ___ footprint was pressed in rock near fossil ferns.",
+       "cue_phrase": "fossil ferns",
+       "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+       }
+      },
+      {
+       "id": "A-old-01-s22",
+       "answer": "prehistoric",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The children imagined the ___ camp from the days before letters existed.",
+       "cue_phrase": "before letters existed",
+       "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+       }
+      },
+      {
+       "id": "A-old-01-s23",
+       "answer": "prehistoric",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "The ___ shark tooth came from a sea before maps.",
+       "cue_phrase": "before maps",
+       "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+       }
+      },
+      {
+       "id": "A-old-01-s24",
+       "answer": "prehistoric",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "In art, we drew ___ hunters before farms, alphabets, or cities.",
+       "cue_phrase": "before farms",
+       "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+       }
+      },
+      {
+       "id": "A-old-01-s25",
+       "answer": "outdated",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The ___ map missed the bridge we needed for today's walk.",
+       "cue_phrase": "bridge we needed",
+       "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (antique, medieval); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-old-01-s26",
+       "answer": "outdated",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The ___ password sheet failed after the class changed every code.",
+       "cue_phrase": "changed every code",
+       "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+       }
+      },
+      {
+       "id": "A-old-01-s27",
+       "answer": "outdated",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Dad ignored the ___ timetable once the buses took a different route.",
+       "cue_phrase": "different route",
+       "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+       }
+      },
+      {
+       "id": "A-old-01-s28",
+       "answer": "outdated",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The ___ rule stayed crossed out after the game update.",
+       "cue_phrase": "game update",
+       "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+       }
+      },
+      {
+       "id": "A-old-01-s29",
+       "answer": "outdated",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Our ___ poster listed a club meeting that moved indoors.",
+       "cue_phrase": "meeting that moved",
+       "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+       }
+      },
+      {
+       "id": "A-old-01-s30",
+       "answer": "outdated",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The ___ guide sent tourists to a zoo gate now sealed shut.",
+       "cue_phrase": "now sealed shut",
+       "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (elderly); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-old-01-s31",
+       "answer": "outdated",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "The ___ chart still named Pluto with the planets.",
+       "cue_phrase": "named Pluto with the planets",
+       "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+       }
+      },
+      {
+       "id": "A-old-01-s32",
+       "answer": "outdated",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Mina deleted the ___ address after the shop moved across town.",
+       "cue_phrase": "shop moved",
+       "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+       }
+      },
+      {
+       "id": "A-old-01-s33",
+       "answer": "medieval",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The ___ squire polished chain mail before the joust.",
+       "cue_phrase": "chain mail",
+       "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+       }
+      },
+      {
+       "id": "A-old-01-s34",
+       "answer": "medieval",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The ___ banquet had minstrels with trenchers and a roasted boar.",
+       "cue_phrase": "minstrels with trenchers",
+       "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+       }
+      },
+      {
+       "id": "A-old-01-s35",
+       "answer": "medieval",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "In the ___ tale, a drawbridge creaked above the moat.",
+       "cue_phrase": "drawbridge creaked",
+       "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+       }
+      },
+      {
+       "id": "A-old-01-s36",
+       "answer": "medieval",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The ___ monk, barely twenty, copied pages by candlelight in the abbey.",
+       "cue_phrase": "copied pages by candlelight",
+       "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+       }
+      },
+      {
+       "id": "A-old-01-s37",
+       "answer": "medieval",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Our ___ play needed a herald, a queen, and a wooden lance.",
+       "cue_phrase": "wooden lance",
+       "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+       }
+      },
+      {
+       "id": "A-old-01-s38",
+       "answer": "medieval",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "In drama, the ___ shield showed a lion for the lord's tournament.",
+       "cue_phrase": "lord's tournament",
+       "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (antique); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-old-01-s39",
+       "answer": "medieval",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "The ___ archer, a lad of sixteen, stood on the battlements beside a boiling cauldron.",
+       "cue_phrase": "battlements beside",
+       "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+       }
+      },
+      {
+       "id": "A-old-01-s40",
+       "answer": "medieval",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "On history day, we wore ___ hoods and loaded a pretend catapult.",
+       "cue_phrase": "loaded a pretend catapult",
+       "surface": {
+        "elderly": "elderly",
+        "antique": "antique",
+        "prehistoric": "prehistoric",
+        "outdated": "outdated",
+        "medieval": "medieval"
+       }
+      }
+     ],
+     "contrasts": [
+      {
+       "answer": "elderly",
+       "picked": "antique",
+       "line": "Elderly is for a person. Antique is for a treasured object."
+      },
+      {
+       "answer": "elderly",
+       "picked": "prehistoric",
+       "line": "Elderly is for a person. Prehistoric is for before records and alphabets."
+      },
+      {
+       "answer": "elderly",
+       "picked": "outdated",
+       "line": "Elderly is for a person. Outdated is for information or tools that no longer fit."
+      },
+      {
+       "answer": "elderly",
+       "picked": "medieval",
+       "line": "Elderly is for a person. Medieval is for the period of jousts and chain mail."
+      },
+      {
+       "answer": "antique",
+       "picked": "elderly",
+       "line": "Antique is a treasured object. Elderly is for a person."
+      },
+      {
+       "answer": "antique",
+       "picked": "prehistoric",
+       "line": "Antique is a treasured object. Prehistoric is from before records and alphabets."
+      },
+      {
+       "answer": "antique",
+       "picked": "outdated",
+       "line": "Antique is prized for its date. Outdated fails after changes."
+      },
+      {
+       "answer": "antique",
+       "picked": "medieval",
+       "line": "Antique is a treasured object. Medieval is the jousting-and-chain-mail period."
+      },
+      {
+       "answer": "prehistoric",
+       "picked": "elderly",
+       "line": "Prehistoric is before records and alphabets. Elderly is for a person."
+      },
+      {
+       "answer": "prehistoric",
+       "picked": "antique",
+       "line": "Prehistoric is before records and alphabets. Antique is a treasured object."
+      },
+      {
+       "answer": "prehistoric",
+       "picked": "outdated",
+       "line": "Prehistoric is before records and alphabets. Outdated means changes left it wrong."
+      },
+      {
+       "answer": "prehistoric",
+       "picked": "medieval",
+       "line": "Prehistoric is before records and alphabets. Medieval has jousts and chain mail."
+      },
+      {
+       "answer": "outdated",
+       "picked": "elderly",
+       "line": "Outdated no longer fits after changes. Elderly is for a person."
+      },
+      {
+       "answer": "outdated",
+       "picked": "antique",
+       "line": "Outdated no longer fits after changes. Antique is treasured for its date."
+      },
+      {
+       "answer": "outdated",
+       "picked": "prehistoric",
+       "line": "Outdated no longer fits after changes. Prehistoric is before records and alphabets."
+      },
+      {
+       "answer": "outdated",
+       "picked": "medieval",
+       "line": "Outdated no longer fits after changes. Medieval is the jousting period."
+      },
+      {
+       "answer": "medieval",
+       "picked": "elderly",
+       "line": "Medieval is the jousting-and-chain-mail period. Elderly is for a person."
+      },
+      {
+       "answer": "medieval",
+       "picked": "antique",
+       "line": "Medieval is the jousting-and-chain-mail period. Antique is a treasured object."
+      },
+      {
+       "answer": "medieval",
+       "picked": "prehistoric",
+       "line": "Medieval has jousts and chain mail. Prehistoric is before records and alphabets."
+      },
+      {
+       "answer": "medieval",
+       "picked": "outdated",
+       "line": "Medieval has jousts and chain mail. Outdated no longer fits after changes."
+      }
+     ],
+     "meta": {
+      "generated_at": "2026-07-06T14:26:57+00:00",
+      "model": "gpt-5.5",
+      "scrubbed_at": "2026-07-07",
+      "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+     }
+    },
+    {
+     "id": "A-reply-01",
+     "bank": "A",
+     "pos": "verb",
+     "theme": "ways of saying something",
+     "band": 4,
+     "band_override": 4,
+     "computed": {
+      "zipf_min": 2.82,
+      "zipf_mean": 3.19,
+      "tightness": 0.267,
+      "band_suggested": 3,
+      "scored_at": "2026-07-06T18:43:21+00:00"
+     },
+     "words": [
+      {
+       "w": "retort",
+       "synset": "retort.v.01",
+       "gloss_source": "authored",
+       "gloss": "answer back quickly and sharply",
+       "zipf": 2.89,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "retort",
+        "third": "retorts",
+        "past": "retorted",
+        "part": "retorting"
+       },
+       "discriminator": "sharp comeback to a remark",
+       "grade": 6
+      },
+      {
+       "w": "exclaim",
+       "synset": "exclaim.v.01",
+       "gloss_source": "authored",
+       "gloss": "call out suddenly, with surprise, horror, or joy",
+       "zipf": 2.82,
+       "register": "neutral",
+       "senses_at_pos": 2,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "exclaim",
+        "third": "exclaims",
+        "past": "exclaimed",
+        "part": "exclaiming"
+       },
+       "discriminator": "sudden emotional outburst",
+       "grade": 4
+      },
+      {
+       "w": "declare",
+       "synset": "declare.v.01",
+       "gloss_source": "authored",
+       "gloss": "state something firmly for everyone to hear",
+       "zipf": 4.05,
+       "register": "neutral",
+       "senses_at_pos": 8,
+       "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-06",
+        "note": "dominant school-context sense confirmed at roster vet"
+       },
+       "forms": {
+        "base": "declare",
+        "third": "declares",
+        "past": "declared",
+        "part": "declaring"
+       },
+       "discriminator": "firm public statement",
+       "grade": 4
+      },
+      {
+       "w": "murmur",
+       "synset": "murmur.v.01",
+       "gloss_source": "wordnet",
+       "gloss": "speak softly or indistinctly",
+       "zipf": 2.92,
+       "register": "neutral",
+       "senses_at_pos": 2,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "murmur",
+        "third": "murmurs",
+        "past": "murmured",
+        "part": "murmuring"
+       },
+       "discriminator": "low soft voice",
+       "grade": 4
+      },
+      {
+       "w": "recite",
+       "synset": "recite.v.02",
+       "gloss_source": "wordnet",
+       "gloss": "repeat aloud from memory",
+       "zipf": 3.28,
+       "register": "neutral",
+       "senses_at_pos": 5,
+       "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-06",
+        "note": "dominant school-context sense confirmed at roster vet"
+       },
+       "forms": {
+        "base": "recite",
+        "third": "recites",
+        "past": "recited",
+        "part": "reciting"
+       },
+       "discriminator": "delivered from memory",
+       "grade": 5
+      }
+     ],
+     "sentences": [
+      {
+       "id": "A-reply-01-s01",
+       "answer": "retort",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "When Leo sneered at her drawing, Ava ___ with a cutting reply.",
+       "cue_phrase": "with a cutting reply",
+       "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+       }
+      },
+      {
+       "id": "A-reply-01-s02",
+       "answer": "retort",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Nina ___, 'At least mine found puddles,' as a snappy reply.",
+       "cue_phrase": "as a snappy reply",
+       "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+       }
+      },
+      {
+       "id": "A-reply-01-s03",
+       "answer": "retort",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Tom said, 'Your cake fell,' and Priya ___, 'Yours never rose.'",
+       "cue_phrase": "Yours never rose",
+       "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+       }
+      },
+      {
+       "id": "A-reply-01-s04",
+       "answer": "retort",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "After Jai laughed, 'Too slow,' Mina ___, 'You still lost.'",
+       "cue_phrase": "You still lost",
+       "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+       }
+      },
+      {
+       "id": "A-reply-01-s05",
+       "answer": "retort",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Eli ___, 'Nice throw, from the bench,' when Rob mocked his pass.",
+       "cue_phrase": "when Rob mocked",
+       "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+       }
+      },
+      {
+       "id": "A-reply-01-s06",
+       "answer": "retort",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Lara ___, 'Great advice from the muddy expert,' after Dan criticised her path.",
+       "cue_phrase": "after Dan criticised",
+       "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+       }
+      },
+      {
+       "id": "A-reply-01-s07",
+       "answer": "retort",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "Max ___, 'Maybe they escaped,' with a cheeky reply to Dad.",
+       "cue_phrase": "with a cheeky reply",
+       "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+       }
+      },
+      {
+       "id": "A-reply-01-s08",
+       "answer": "retort",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "When Bea joked, 'Tiny brain,' Noor ___, 'Still bigger than your sandwich.'",
+       "cue_phrase": "When Bea joked",
+       "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+       }
+      },
+      {
+       "id": "A-reply-01-s09",
+       "answer": "exclaim",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Seeing the fireworks bloom, Poppy ___, 'Wow!' with a delighted shout.",
+       "cue_phrase": "with a delighted shout",
+       "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+       }
+      },
+      {
+       "id": "A-reply-01-s10",
+       "answer": "exclaim",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "A frog hopped from the boot, and Ravi ___ with a startled cry.",
+       "cue_phrase": "with a startled cry",
+       "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+       }
+      },
+      {
+       "id": "A-reply-01-s11",
+       "answer": "exclaim",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The treasure chest opened, and Mia ___, 'Gold coins everywhere!'",
+       "cue_phrase": "Gold coins everywhere",
+       "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+       }
+      },
+      {
+       "id": "A-reply-01-s12",
+       "answer": "exclaim",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "When ice slid down his collar, Ben ___, 'That's freezing!'",
+       "cue_phrase": "That's freezing",
+       "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+       }
+      },
+      {
+       "id": "A-reply-01-s13",
+       "answer": "exclaim",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The kitten leapt onto the cake, and Noor ___, 'Oh no!'",
+       "cue_phrase": "Oh no",
+       "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+       }
+      },
+      {
+       "id": "A-reply-01-s14",
+       "answer": "exclaim",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "A rainbow appeared over the tent, so Ella ___, 'Look at that!'",
+       "cue_phrase": "Look at that",
+       "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+       }
+      },
+      {
+       "id": "A-reply-01-s15",
+       "answer": "exclaim",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "When the magician vanished, the twins ___, 'Where did she go?'",
+       "cue_phrase": "the magician vanished",
+       "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+       }
+      },
+      {
+       "id": "A-reply-01-s16",
+       "answer": "exclaim",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "The spicy soup made Amir ___, 'My mouth is on fire!'",
+       "cue_phrase": "My mouth is on fire",
+       "surface": {
+        "retort": "retort",
+        "exclaim": "exclaim",
+        "declare": "declare",
+        "murmur": "murmur",
+        "recite": "recite"
+       }
+      },
+      {
+       "id": "A-reply-01-s17",
+       "answer": "declare",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "At assembly, the mayor ___, 'The park opens today,' in an official voice.",
+       "cue_phrase": "in an official voice",
+       "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+       }
+      },
+      {
+       "id": "A-reply-01-s18",
+       "answer": "declare",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The judge ___, 'The red team wins,' from the centre podium.",
+       "cue_phrase": "from the centre podium",
+       "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+       }
+      },
+      {
+       "id": "A-reply-01-s19",
+       "answer": "declare",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Before the school crowd, Zara ___, 'The fair begins at nine.'",
+       "cue_phrase": "Before the school crowd",
+       "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+       }
+      },
+      {
+       "id": "A-reply-01-s20",
+       "answer": "declare",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "On the castle balcony, the queen ___, 'The bridge is open.'",
+       "cue_phrase": "On the castle balcony",
+       "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+       }
+      },
+      {
+       "id": "A-reply-01-s21",
+       "answer": "declare",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The captain raised the trophy and ___ in a firm voice, 'This match is ours.'",
+       "cue_phrase": "in a firm voice",
+       "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: 'in a firm voice' carries declare; exclaim is sudden and emotional",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-reply-01-s22",
+       "answer": "declare",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "With the microphone ready, Suki ___, 'Lunch will start in five minutes.'",
+       "cue_phrase": "the microphone ready",
+       "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+       }
+      },
+      {
+       "id": "A-reply-01-s23",
+       "answer": "declare",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The council leader ___, 'No bikes inside,' beside the bright notice.",
+       "cue_phrase": "beside the bright notice",
+       "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+       }
+      },
+      {
+       "id": "A-reply-01-s24",
+       "answer": "declare",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "At the meeting, Omar ___, 'Our class will plant three trees.'",
+       "cue_phrase": "At the meeting",
+       "surface": {
+        "retort": "retorts",
+        "exclaim": "exclaims",
+        "declare": "declares",
+        "murmur": "murmurs",
+        "recite": "recites"
+       }
+      },
+      {
+       "id": "A-reply-01-s25",
+       "answer": "murmur",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "During story time, Lily ___, 'Careful,' barely above a whisper.",
+       "cue_phrase": "barely above a whisper",
+       "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+       }
+      },
+      {
+       "id": "A-reply-01-s26",
+       "answer": "murmur",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "In the library, Noah ___, 'I'm here,' in a low voice.",
+       "cue_phrase": "in a low voice",
+       "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+       }
+      },
+      {
+       "id": "A-reply-01-s27",
+       "answer": "murmur",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The baby slept nearby, so Gran ___, 'Close the door.'",
+       "cue_phrase": "The baby slept nearby",
+       "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+       }
+      },
+      {
+       "id": "A-reply-01-s28",
+       "answer": "murmur",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "During the test, Sami ___, 'I found your marble' to Isla.",
+       "cue_phrase": "During the test",
+       "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+       }
+      },
+      {
+       "id": "A-reply-01-s29",
+       "answer": "murmur",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Only the child beside Freya caught 'My tooth is loose' when she ___.",
+       "cue_phrase": "Only the child beside",
+       "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+       }
+      },
+      {
+       "id": "A-reply-01-s30",
+       "answer": "murmur",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The secret sounded like leaves rustling as Kira ___, 'Meet by the oak.'",
+       "cue_phrase": "like leaves rustling",
+       "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+       }
+      },
+      {
+       "id": "A-reply-01-s31",
+       "answer": "murmur",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Behind the curtain, Pip ___, 'The dragon is asleep,' to Tansy.",
+       "cue_phrase": "Behind the curtain",
+       "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+       }
+      },
+      {
+       "id": "A-reply-01-s32",
+       "answer": "murmur",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "Milo ___, 'Don't wake the dog,' without lifting his head.",
+       "cue_phrase": "Don't wake the dog",
+       "surface": {
+        "retort": "retorts",
+        "exclaim": "exclaims",
+        "declare": "declares",
+        "murmur": "murmurs",
+        "recite": "recites"
+       }
+      },
+      {
+       "id": "A-reply-01-s33",
+       "answer": "recite",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "At the concert, Ana ___, 'Twinkle, twinkle, little star,' by heart.",
+       "cue_phrase": "by heart",
+       "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+       }
+      },
+      {
+       "id": "A-reply-01-s34",
+       "answer": "recite",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Without her script, Dev ___, 'To be brave, begin today.'",
+       "cue_phrase": "Without her script",
+       "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (declare, murmur); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-reply-01-s35",
+       "answer": "recite",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The class poem came next, and Finn ___, 'Rain taps roofs.'",
+       "cue_phrase": "The class poem",
+       "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+       }
+      },
+      {
+       "id": "A-reply-01-s36",
+       "answer": "recite",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "In the play, Leila ___, 'First, mix flour, salt, and water.'",
+       "cue_phrase": "In the play",
+       "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (declare, murmur); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-reply-01-s37",
+       "answer": "recite",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "No page lay nearby as Imani ___, 'The moon is silver.'",
+       "cue_phrase": "No page lay nearby",
+       "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (declare, murmur); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-reply-01-s38",
+       "answer": "recite",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "After a week of practice, Toby ___, 'North, south, east, west.'",
+       "cue_phrase": "a week of practice",
+       "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+       }
+      },
+      {
+       "id": "A-reply-01-s39",
+       "answer": "recite",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "The teacher had June ___, 'Seven eights are fifty-six,' without looking.",
+       "cue_phrase": "without looking",
+       "surface": {
+        "retort": "retort",
+        "exclaim": "exclaim",
+        "declare": "declare",
+        "murmur": "murmur",
+        "recite": "recite"
+       }
+      },
+      {
+       "id": "A-reply-01-s40",
+       "answer": "recite",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "At bedtime, Oskar ___, 'Once upon a hill,' with the book shut.",
+       "cue_phrase": "with the book shut",
+       "surface": {
+        "retort": "retorted",
+        "exclaim": "exclaimed",
+        "declare": "declared",
+        "murmur": "murmured",
+        "recite": "recited"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (murmur); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      }
+     ],
+     "contrasts": [
+      {
+       "answer": "retort",
+       "picked": "exclaim",
+       "line": "Retort is a sharp reply to a remark; exclaim is an emotional burst."
+      },
+      {
+       "answer": "retort",
+       "picked": "declare",
+       "line": "Retort snaps at a remark; declare makes a firm public point."
+      },
+      {
+       "answer": "retort",
+       "picked": "murmur",
+       "line": "Retort has a sting; murmur is low and quiet."
+      },
+      {
+       "answer": "retort",
+       "picked": "recite",
+       "line": "Retort is a sharp reply; recite gives learned words from the head."
+      },
+      {
+       "answer": "exclaim",
+       "picked": "retort",
+       "line": "Exclaim bursts with feeling; retort bites as a reply."
+      },
+      {
+       "answer": "exclaim",
+       "picked": "declare",
+       "line": "Exclaim is an emotional burst; declare is a firm public point."
+      },
+      {
+       "answer": "exclaim",
+       "picked": "murmur",
+       "line": "Exclaim can be loud with feeling; murmur stays low and quiet."
+      },
+      {
+       "answer": "exclaim",
+       "picked": "recite",
+       "line": "Exclaim bursts from feeling; recite gives practised words from the head."
+      },
+      {
+       "answer": "declare",
+       "picked": "retort",
+       "line": "Declare makes a firm public point; retort is a sharp reply to a remark."
+      },
+      {
+       "answer": "declare",
+       "picked": "exclaim",
+       "line": "Declare is a firm public point; exclaim is an emotional burst."
+      },
+      {
+       "answer": "declare",
+       "picked": "murmur",
+       "line": "Declare is meant for a group; murmur is low and private."
+      },
+      {
+       "answer": "declare",
+       "picked": "recite",
+       "line": "Declare gives a firm public point; recite gives learned words from the head."
+      },
+      {
+       "answer": "murmur",
+       "picked": "retort",
+       "line": "Murmur is low and quiet; retort is a sharp reply."
+      },
+      {
+       "answer": "murmur",
+       "picked": "exclaim",
+       "line": "Murmur stays low and quiet; exclaim bursts with feeling."
+      },
+      {
+       "answer": "murmur",
+       "picked": "declare",
+       "line": "Murmur is low and private; declare is firm and public."
+      },
+      {
+       "answer": "murmur",
+       "picked": "recite",
+       "line": "Murmur is low and quiet; recite gives learned words from the head."
+      },
+      {
+       "answer": "recite",
+       "picked": "retort",
+       "line": "Recite gives learned words from the head; retort is a sharp reply."
+      },
+      {
+       "answer": "recite",
+       "picked": "exclaim",
+       "line": "Recite gives practised words from the head; exclaim bursts with feeling."
+      },
+      {
+       "answer": "recite",
+       "picked": "declare",
+       "line": "Recite gives learned words from the head; declare makes a firm public point."
+      },
+      {
+       "answer": "recite",
+       "picked": "murmur",
+       "line": "Recite gives learned words from the head; murmur is low and quiet."
+      }
+     ],
+     "meta": {
+      "generated_at": "2026-07-06T14:44:14+00:00",
+      "model": "gpt-5.5",
+      "scrubbed_at": "2026-07-07",
+      "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+     }
+    },
+    {
      "id": "A-rough-01",
      "bank": "A",
      "pos": "adjective",
@@ -24188,7 +39286,7 @@
       "zipf_mean": 3.11,
       "tightness": null,
       "band_suggested": 4,
-      "scored_at": "2026-07-06T05:33:18+00:00"
+      "scored_at": "2026-07-06T18:43:21+00:00"
      },
      "words": [
       {
@@ -25102,7 +40200,7 @@
       "zipf_mean": 3.72,
       "tightness": 0.188,
       "band_suggested": 2,
-      "scored_at": "2026-07-06T05:33:18+00:00"
+      "scored_at": "2026-07-06T18:43:21+00:00"
      },
      "words": [
       {
@@ -26056,6 +41154,832 @@
      }
     },
     {
+     "id": "B-buildings-01",
+     "bank": "B",
+     "pos": "noun",
+     "theme": "parts of grand buildings",
+     "band": 4,
+     "band_override": 4,
+     "computed": {
+      "zipf_min": 3.11,
+      "zipf_mean": 3.62,
+      "tightness": 0.466,
+      "band_suggested": 3,
+      "scored_at": "2026-07-06T18:43:21+00:00"
+     },
+     "words": [
+      {
+       "w": "arch",
+       "synset": "arch.n.01",
+       "gloss_source": "wordnet",
+       "gloss": "a curved shape in the vertical plane that spans an opening",
+       "zipf": 4.02,
+       "register": "neutral",
+       "senses_at_pos": 4,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "arch"
+       },
+       "discriminator": "curved span over an opening",
+       "grade": 3
+      },
+      {
+       "w": "dome",
+       "synset": "dome.n.04",
+       "gloss_source": "authored",
+       "gloss": "a rounded roof shaped like half a ball",
+       "zipf": 3.9,
+       "register": "neutral",
+       "senses_at_pos": 4,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "dome"
+       },
+       "discriminator": "rounded half-ball roof",
+       "grade": 4
+      },
+      {
+       "w": "spire",
+       "synset": "steeple.n.01",
+       "gloss_source": "authored",
+       "gloss": "a tall pointed top that narrows to a tip above a tower",
+       "zipf": 3.11,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "spire"
+       },
+       "discriminator": "tapers to a point at the top",
+       "grade": 5
+      },
+      {
+       "w": "turret",
+       "synset": "turret.n.01",
+       "gloss_source": "wordnet",
+       "gloss": "a small tower extending above a building",
+       "zipf": 3.42,
+       "register": "neutral",
+       "senses_at_pos": 2,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "turret"
+       },
+       "discriminator": "small tower on a corner",
+       "grade": 5
+      },
+      {
+       "w": "courtyard",
+       "synset": "court.n.10",
+       "gloss_source": "wordnet",
+       "gloss": "an area wholly or partly surrounded by walls or buildings",
+       "zipf": 3.65,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "courtyard"
+       },
+       "discriminator": "open unroofed space inside walls",
+       "grade": 4
+      }
+     ],
+     "sentences": [
+      {
+       "id": "B-buildings-01-s01",
+       "answer": "arch",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "At the gate, the stone ___ made an upside-down U.",
+       "cue_phrase": "an upside-down U",
+       "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+       }
+      },
+      {
+       "id": "B-buildings-01-s02",
+       "answer": "arch",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The mason built a ___ that bridged the doorway in a bow.",
+       "cue_phrase": "doorway in a bow",
+       "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+       }
+      },
+      {
+       "id": "B-buildings-01-s03",
+       "answer": "arch",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "We stepped beneath the ___ that framed the oak doorway.",
+       "cue_phrase": "framed the oak doorway",
+       "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+       }
+      },
+      {
+       "id": "B-buildings-01-s04",
+       "answer": "arch",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Lanterns hung from the ___ forming the palace doorway.",
+       "cue_phrase": "forming the palace doorway",
+       "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+       }
+      },
+      {
+       "id": "B-buildings-01-s05",
+       "answer": "arch",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The scout saw daylight under the ___ before reaching the portcullis.",
+       "cue_phrase": "saw daylight under",
+       "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+       }
+      },
+      {
+       "id": "B-buildings-01-s06",
+       "answer": "arch",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Mira's voice echoed when she stood beneath the stone doorway's ___.",
+       "cue_phrase": "stone doorway's",
+       "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+       }
+      },
+      {
+       "id": "B-buildings-01-s07",
+       "answer": "arch",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "The garden entrance had a ___ like a giant horseshoe.",
+       "cue_phrase": "a giant horseshoe",
+       "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+       }
+      },
+      {
+       "id": "B-buildings-01-s08",
+       "answer": "arch",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "A swallow nested where the ___ curved over the chapel door.",
+       "cue_phrase": "curved over the chapel door",
+       "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+       }
+      },
+      {
+       "id": "B-buildings-01-s09",
+       "answer": "dome",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "A copper ___ sat on the hall, an upside-down bowl of metal.",
+       "cue_phrase": "upside-down bowl",
+       "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+       }
+      },
+      {
+       "id": "B-buildings-01-s10",
+       "answer": "dome",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Inside, the painted ___ rose over us in one huge shell.",
+       "cue_phrase": "one huge shell",
+       "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+       }
+      },
+      {
+       "id": "B-buildings-01-s11",
+       "answer": "dome",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Rain slid down the ___ in wide rings around the hall.",
+       "cue_phrase": "wide rings around",
+       "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+       }
+      },
+      {
+       "id": "B-buildings-01-s12",
+       "answer": "dome",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Under the ___, our whispers floated around the circular hall.",
+       "cue_phrase": "around the circular hall",
+       "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+       }
+      },
+      {
+       "id": "B-buildings-01-s13",
+       "answer": "dome",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "From afar, the museum wore a silver ___ instead of a flat cap.",
+       "cue_phrase": "instead of a flat cap",
+       "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+       }
+      },
+      {
+       "id": "B-buildings-01-s14",
+       "answer": "dome",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The ceiling inside the bathhouse climbed smoothly into a blue ___.",
+       "cue_phrase": "climbed smoothly into",
+       "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+       }
+      },
+      {
+       "id": "B-buildings-01-s15",
+       "answer": "dome",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "The observatory's white ___ resembled an enormous igloo.",
+       "cue_phrase": "an enormous igloo",
+       "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+       }
+      },
+      {
+       "id": "B-buildings-01-s16",
+       "answer": "dome",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Birds circled the golden ___ bulging over the round hall.",
+       "cue_phrase": "bulging over",
+       "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+       }
+      },
+      {
+       "id": "B-buildings-01-s17",
+       "answer": "spire",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The church's ___ ended in a needle against the clouds.",
+       "cue_phrase": "ended in a needle",
+       "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (turret); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "B-buildings-01-s18",
+       "answer": "spire",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "A silver ___ tapered from wide stone to a sharp tip.",
+       "cue_phrase": "a sharp tip",
+       "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+       }
+      },
+      {
+       "id": "B-buildings-01-s19",
+       "answer": "spire",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The bell house wore a ___ that pricked the evening sky.",
+       "cue_phrase": "pricked the evening sky",
+       "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+       }
+      },
+      {
+       "id": "B-buildings-01-s20",
+       "answer": "spire",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Crows circled the ___ with needle-thin sides beside the bell.",
+       "cue_phrase": "needle-thin sides",
+       "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+       }
+      },
+      {
+       "id": "B-buildings-01-s21",
+       "answer": "spire",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Lina saw the thin dark ___ spearing the sunset before the church.",
+       "cue_phrase": "spearing the sunset",
+       "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+       }
+      },
+      {
+       "id": "B-buildings-01-s22",
+       "answer": "spire",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The model church needed its ___, so Tom rolled a tall paper cone.",
+       "cue_phrase": "tall paper cone",
+       "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+       }
+      },
+      {
+       "id": "B-buildings-01-s23",
+       "answer": "spire",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "The icy ___ on the palace glittered like a giant needle.",
+       "cue_phrase": "a giant needle",
+       "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+       }
+      },
+      {
+       "id": "B-buildings-01-s24",
+       "answer": "spire",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Fireworks burst behind the ___, making its tapering sides sparkle.",
+       "cue_phrase": "tapering sides sparkle",
+       "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+       }
+      },
+      {
+       "id": "B-buildings-01-s25",
+       "answer": "turret",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "At the castle corner, the round ___ held one narrow window.",
+       "cue_phrase": "castle corner",
+       "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+       }
+      },
+      {
+       "id": "B-buildings-01-s26",
+       "answer": "turret",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "A tiny stair curled inside the ___ jutting from the manor corner.",
+       "cue_phrase": "manor corner",
+       "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+       }
+      },
+      {
+       "id": "B-buildings-01-s27",
+       "answer": "turret",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The princess waved from the ___, just wide enough for one guard.",
+       "cue_phrase": "one guard",
+       "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+       }
+      },
+      {
+       "id": "B-buildings-01-s28",
+       "answer": "turret",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Ravi counted three arrow slits in the ___ on the castle's corner.",
+       "cue_phrase": "arrow slits",
+       "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+       }
+      },
+      {
+       "id": "B-buildings-01-s29",
+       "answer": "turret",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The guard climbed the curled stair to watch from the round ___.",
+       "cue_phrase": "curled stair",
+       "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+       }
+      },
+      {
+       "id": "B-buildings-01-s30",
+       "answer": "turret",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "From the path, Ali saw a little round ___ with an arrow slit.",
+       "cue_phrase": "an arrow slit",
+       "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+       }
+      },
+      {
+       "id": "B-buildings-01-s31",
+       "answer": "turret",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "A flag fluttered from the ___, the smallest tower on the wall.",
+       "cue_phrase": "smallest tower on the wall",
+       "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+       }
+      },
+      {
+       "id": "B-buildings-01-s32",
+       "answer": "turret",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The toy fortress had a round ___ at each corner.",
+       "cue_phrase": "at each corner",
+       "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (dome); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "B-buildings-01-s33",
+       "answer": "courtyard",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Lunch tables filled the ___, open to the sky inside the castle.",
+       "cue_phrase": "open to the sky",
+       "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+       }
+      },
+      {
+       "id": "B-buildings-01-s34",
+       "answer": "courtyard",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The ___ had no ceiling, and four stone sides kept out wind.",
+       "cue_phrase": "no ceiling",
+       "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+       }
+      },
+      {
+       "id": "B-buildings-01-s35",
+       "answer": "courtyard",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Children chased pigeons across the ___ between the school wings.",
+       "cue_phrase": "between the school wings",
+       "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+       }
+      },
+      {
+       "id": "B-buildings-01-s36",
+       "answer": "courtyard",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The fountain splashed in the ___ while rooms faced it on every side.",
+       "cue_phrase": "rooms faced it",
+       "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+       }
+      },
+      {
+       "id": "B-buildings-01-s37",
+       "answer": "courtyard",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "After the gate closed, moonlight still fell into the ___.",
+       "cue_phrase": "moonlight still fell",
+       "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (turret); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "B-buildings-01-s38",
+       "answer": "courtyard",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The cook carried soup across the ___ to the opposite kitchen door.",
+       "cue_phrase": "opposite kitchen door",
+       "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+       }
+      },
+      {
+       "id": "B-buildings-01-s39",
+       "answer": "courtyard",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "Snowflakes fell straight into the ___ and whitened its cobbles.",
+       "cue_phrase": "fell straight into",
+       "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+       }
+      },
+      {
+       "id": "B-buildings-01-s40",
+       "answer": "courtyard",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Guests danced in the ___, with balconies looking down from every side.",
+       "cue_phrase": "balconies looking down",
+       "surface": {
+        "arch": "arch",
+        "dome": "dome",
+        "spire": "spire",
+        "turret": "turret",
+        "courtyard": "courtyard"
+       }
+      }
+     ],
+     "contrasts": [
+      {
+       "answer": "arch",
+       "picked": "dome",
+       "line": "An arch bends over a way through; a dome is a round cap over a room."
+      },
+      {
+       "answer": "arch",
+       "picked": "spire",
+       "line": "An arch goes over a doorway; a spire is a thin needle high on a church."
+      },
+      {
+       "answer": "arch",
+       "picked": "turret",
+       "line": "An arch frames a way through; a turret is a little round lookout on a corner."
+      },
+      {
+       "answer": "arch",
+       "picked": "courtyard",
+       "line": "An arch is stone over an entrance; a courtyard is an open place you can stand in."
+      },
+      {
+       "answer": "dome",
+       "picked": "arch",
+       "line": "A dome is a round cap over a hall; an arch is a bent span over a doorway."
+      },
+      {
+       "answer": "dome",
+       "picked": "spire",
+       "line": "A dome is broad and bowl-like; a spire is slim and needle-like."
+      },
+      {
+       "answer": "dome",
+       "picked": "turret",
+       "line": "A dome covers a hall; a turret is a little corner lookout."
+      },
+      {
+       "answer": "dome",
+       "picked": "courtyard",
+       "line": "A dome is overhead cover; a courtyard is open to the sky."
+      },
+      {
+       "answer": "spire",
+       "picked": "arch",
+       "line": "A spire shoots up like a needle; an arch bends over a doorway."
+      },
+      {
+       "answer": "spire",
+       "picked": "dome",
+       "line": "A spire is slim and sharp; a dome is broad and bowl-like."
+      },
+      {
+       "answer": "spire",
+       "picked": "turret",
+       "line": "A spire is a needle-like peak; a turret is a little corner room."
+      },
+      {
+       "answer": "spire",
+       "picked": "courtyard",
+       "line": "A spire rises to the sky; a courtyard is an open place on the ground."
+      },
+      {
+       "answer": "turret",
+       "picked": "arch",
+       "line": "A turret is a little lookout on a corner; an arch frames a doorway."
+      },
+      {
+       "answer": "turret",
+       "picked": "dome",
+       "line": "A turret is a little corner lookout; a dome is a broad round cap."
+      },
+      {
+       "answer": "turret",
+       "picked": "spire",
+       "line": "A turret has room to stand inside; a spire is a thin needle-like peak."
+      },
+      {
+       "answer": "turret",
+       "picked": "courtyard",
+       "line": "A turret is a corner lookout; a courtyard is open ground inside a castle."
+      },
+      {
+       "answer": "courtyard",
+       "picked": "arch",
+       "line": "A courtyard is open ground; an arch is stone over a way through."
+      },
+      {
+       "answer": "courtyard",
+       "picked": "dome",
+       "line": "A courtyard is open to the sky; a dome is a round cover overhead."
+      },
+      {
+       "answer": "courtyard",
+       "picked": "spire",
+       "line": "A courtyard is a place to walk; a spire is a needle-like peak."
+      },
+      {
+       "answer": "courtyard",
+       "picked": "turret",
+       "line": "A courtyard is open ground; a turret is a little lookout on a corner."
+      }
+     ],
+     "meta": {
+      "generated_at": "2026-07-06T14:29:55+00:00",
+      "model": "gpt-5.5",
+      "scrubbed_at": "2026-07-07",
+      "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+     }
+    },
+    {
      "id": "B-landform-01",
      "bank": "B",
      "pos": "noun",
@@ -26067,7 +41991,7 @@
       "zipf_mean": 4.34,
       "tightness": 0.596,
       "band_suggested": 2,
-      "scored_at": "2026-07-06T05:33:18+00:00"
+      "scored_at": "2026-07-06T18:43:21+00:00"
      },
      "words": [
       {
@@ -26963,6 +42887,9789 @@
       "model": "gpt-5.5",
       "scrubbed_at": "2026-07-06T08:39:41+00:00",
       "scrub_note": "Full read; no changes needed - plain's 'no hills in sight' staging and cliff's vertical markers held."
+     }
+    },
+    {
+     "id": "A-aftermath-01",
+     "bank": "A",
+     "pos": "adjective",
+     "theme": "feelings after it happened",
+     "band": 5,
+     "band_override": 5,
+     "computed": {
+      "zipf_min": 2.6,
+      "zipf_mean": 2.87,
+      "tightness": null,
+      "band_suggested": 4,
+      "scored_at": "2026-07-06T18:43:21+00:00"
+     },
+     "words": [
+      {
+       "w": "nostalgic",
+       "synset": "nostalgic.s.01",
+       "gloss_source": "authored",
+       "gloss": "remembering happy times in the past and wishing you could have them back",
+       "zipf": 3.45,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "nostalgic"
+       },
+       "discriminator": "sweet longing for a happy past",
+       "grade": 6
+      },
+      {
+       "w": "remorseful",
+       "synset": "contrite.s.01",
+       "gloss_source": "authored",
+       "gloss": "deeply sorry for a wrong you yourself did",
+       "zipf": 2.6,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "remorseful"
+       },
+       "discriminator": "guilt over your own wrong",
+       "grade": 6
+      },
+      {
+       "w": "mortified",
+       "synset": "embarrassed.s.02",
+       "gloss_source": "wordnet",
+       "gloss": "made to feel uncomfortable because of shame or wounded pride",
+       "zipf": 2.97,
+       "register": "neutral",
+       "senses_at_pos": 2,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "mortified"
+       },
+       "discriminator": "burning public embarrassment",
+       "grade": 6
+      },
+      {
+       "w": "despondent",
+       "synset": "despondent.s.01",
+       "gloss_source": "wordnet",
+       "gloss": "without or almost without hope",
+       "zipf": 2.68,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "despondent"
+       },
+       "discriminator": "hope drained away",
+       "grade": 7
+      },
+      {
+       "w": "jubilant",
+       "synset": "exultant.s.01",
+       "gloss_source": "wordnet",
+       "gloss": "joyful and proud especially because of triumph or success",
+       "zipf": 2.63,
+       "register": "neutral",
+       "senses_at_pos": 2,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "jubilant"
+       },
+       "discriminator": "joy and pride after a victory",
+       "grade": 6
+      }
+     ],
+     "sentences": [
+      {
+       "id": "A-aftermath-01-s01",
+       "answer": "nostalgic",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "After the picnic, Mina felt ___, missing last year's warmer seaside days.",
+       "cue_phrase": "missing last year's warmer",
+       "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+       }
+      },
+      {
+       "id": "A-aftermath-01-s02",
+       "answer": "nostalgic",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The old lullaby made Dad ___, longing for Grandma's kitchen again.",
+       "cue_phrase": "longing for Grandma's kitchen",
+       "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+       }
+      },
+      {
+       "id": "A-aftermath-01-s03",
+       "answer": "nostalgic",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "When camp ended, Sam felt ___, smiling while sniffing the smoky jumper.",
+       "cue_phrase": "smiling while sniffing",
+       "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+       }
+      },
+      {
+       "id": "A-aftermath-01-s04",
+       "answer": "nostalgic",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "After moving house, Leila grew ___ whenever the old garden gate creaked.",
+       "cue_phrase": "old garden gate creaked",
+       "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (despondent); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-aftermath-01-s05",
+       "answer": "nostalgic",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Theo reread his yearbook and became ___, tracing names from sunny clubs.",
+       "cue_phrase": "tracing names from sunny",
+       "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+       }
+      },
+      {
+       "id": "A-aftermath-01-s06",
+       "answer": "nostalgic",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The empty treehouse made Priya ___; she packed its rope ladder, smiling.",
+       "cue_phrase": "rope ladder, smiling",
+       "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+       }
+      },
+      {
+       "id": "A-aftermath-01-s07",
+       "answer": "nostalgic",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "At the reunion, the class was ___ over chalk dust and playground songs.",
+       "cue_phrase": "chalk dust and playground",
+       "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+       }
+      },
+      {
+       "id": "A-aftermath-01-s08",
+       "answer": "nostalgic",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "After finding the tiny shoes, Gran felt ___, smiling at their scuffed toes.",
+       "cue_phrase": "smiling at their scuffed",
+       "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+       }
+      },
+      {
+       "id": "A-aftermath-01-s09",
+       "answer": "remorseful",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "After admitting he lied, Ben felt ___ and returned the stolen pencil.",
+       "cue_phrase": "returned the stolen pencil",
+       "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (mortified); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-aftermath-01-s10",
+       "answer": "remorseful",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Maya was ___ after she blamed the spill on her little brother.",
+       "cue_phrase": "blamed the spill on",
+       "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (mortified); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-aftermath-01-s11",
+       "answer": "remorseful",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "I felt ___, so I fixed the torn poster I had hidden.",
+       "cue_phrase": "poster I had hidden",
+       "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+       }
+      },
+      {
+       "id": "A-aftermath-01-s12",
+       "answer": "remorseful",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "After tripping Max on purpose, Noor felt ___ and offered her prize sticker.",
+       "cue_phrase": "tripping Max on purpose",
+       "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+       }
+      },
+      {
+       "id": "A-aftermath-01-s13",
+       "answer": "remorseful",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Eli felt ___, left a note by the bike he scratched, and emptied his coin jar.",
+       "cue_phrase": "bike he scratched",
+       "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+       }
+      },
+      {
+       "id": "A-aftermath-01-s14",
+       "answer": "remorseful",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "After copying Ava's answer, Leo felt ___ and told the teacher at lunch.",
+       "cue_phrase": "copying Ava's answer",
+       "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+       }
+      },
+      {
+       "id": "A-aftermath-01-s15",
+       "answer": "remorseful",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The broken vase made Poppy ___; her football had flown through it.",
+       "cue_phrase": "football had flown",
+       "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+       }
+      },
+      {
+       "id": "A-aftermath-01-s16",
+       "answer": "remorseful",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "Omar felt ___ after teasing Kim, then saved her a seat.",
+       "cue_phrase": "after teasing Kim",
+       "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+       }
+      },
+      {
+       "id": "A-aftermath-01-s17",
+       "answer": "mortified",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "When his trousers split onstage, Ravi felt ___ as the hall gasped.",
+       "cue_phrase": "trousers split onstage",
+       "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+       }
+      },
+      {
+       "id": "A-aftermath-01-s18",
+       "answer": "mortified",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Lina was ___ after calling her teacher Mum and hearing the class giggle.",
+       "cue_phrase": "hearing the class giggle",
+       "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+       }
+      },
+      {
+       "id": "A-aftermath-01-s19",
+       "answer": "mortified",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "I felt ___ when my false moustache fell off during the play.",
+       "cue_phrase": "during the play",
+       "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+       }
+      },
+      {
+       "id": "A-aftermath-01-s20",
+       "answer": "mortified",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The microphone made Finn ___ by sharing his hiccup with the assembly.",
+       "cue_phrase": "hiccup with the assembly",
+       "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+       }
+      },
+      {
+       "id": "A-aftermath-01-s21",
+       "answer": "mortified",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Zara turned ___ when every dancer noticed her skirt tucked into tights.",
+       "cue_phrase": "every dancer noticed",
+       "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+       }
+      },
+      {
+       "id": "A-aftermath-01-s22",
+       "answer": "mortified",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "After the burp echoed round the library, Oscar felt ___ and hid.",
+       "cue_phrase": "burp echoed round",
+       "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+       }
+      },
+      {
+       "id": "A-aftermath-01-s23",
+       "answer": "mortified",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Nia became ___ when her costume tail dropped off before the audience.",
+       "cue_phrase": "before the audience",
+       "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+       }
+      },
+      {
+       "id": "A-aftermath-01-s24",
+       "answer": "mortified",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "Jay felt ___ after reading the poem meant for his diary aloud to the club.",
+       "cue_phrase": "diary aloud to the club",
+       "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+       }
+      },
+      {
+       "id": "A-aftermath-01-s25",
+       "answer": "despondent",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "After the rescue boat passed by, the castaways felt ___ and stopped waving.",
+       "cue_phrase": "stopped waving",
+       "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+       }
+      },
+      {
+       "id": "A-aftermath-01-s26",
+       "answer": "despondent",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Nell grew ___ when the last seedling died before the fair.",
+       "cue_phrase": "last seedling died",
+       "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+       }
+      },
+      {
+       "id": "A-aftermath-01-s27",
+       "answer": "despondent",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The team was ___ at halftime, thirty points down in pouring rain.",
+       "cue_phrase": "thirty points down",
+       "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (mortified); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-aftermath-01-s28",
+       "answer": "despondent",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "After three failed spells, the apprentice felt ___ and closed the spellbook.",
+       "cue_phrase": "closed the spellbook",
+       "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+       }
+      },
+      {
+       "id": "A-aftermath-01-s29",
+       "answer": "despondent",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Mum found Tia ___ under the table, saying the kitten would never return.",
+       "cue_phrase": "would never return",
+       "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+       }
+      },
+      {
+       "id": "A-aftermath-01-s30",
+       "answer": "despondent",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "When the bridge washed away, the hikers became ___ and sat silently.",
+       "cue_phrase": "sat silently",
+       "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+       }
+      },
+      {
+       "id": "A-aftermath-01-s31",
+       "answer": "despondent",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The robot looked ___ after its tiny rocket crashed for the ninth time.",
+       "cue_phrase": "ninth time",
+       "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (mortified); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-aftermath-01-s32",
+       "answer": "despondent",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "After the frost killed every bloom, Grandpa stayed ___ all afternoon.",
+       "cue_phrase": "killed every bloom",
+       "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+       }
+      },
+      {
+       "id": "A-aftermath-01-s33",
+       "answer": "jubilant",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "After winning the final race, Amira felt ___ and leapt over puddles.",
+       "cue_phrase": "winning the final race",
+       "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+       }
+      },
+      {
+       "id": "A-aftermath-01-s34",
+       "answer": "jubilant",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The class was ___ when their tower beat the school record.",
+       "cue_phrase": "beat the school record",
+       "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+       }
+      },
+      {
+       "id": "A-aftermath-01-s35",
+       "answer": "jubilant",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Dad became ___ as the scoreboard flashed our team's winning goal.",
+       "cue_phrase": "team's winning goal",
+       "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+       }
+      },
+      {
+       "id": "A-aftermath-01-s36",
+       "answer": "jubilant",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "After the dragon fled, the villagers felt ___ and rang every bell.",
+       "cue_phrase": "rang every bell",
+       "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+       }
+      },
+      {
+       "id": "A-aftermath-01-s37",
+       "answer": "jubilant",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Maya felt ___, waving her medal while friends chanted her name.",
+       "cue_phrase": "waving her medal",
+       "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+       }
+      },
+      {
+       "id": "A-aftermath-01-s38",
+       "answer": "jubilant",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "When his robot finally climbed the ramp, Toby turned ___ and danced.",
+       "cue_phrase": "finally climbed the ramp",
+       "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+       }
+      },
+      {
+       "id": "A-aftermath-01-s39",
+       "answer": "jubilant",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The players were ___ after the penalty save sealed the cup.",
+       "cue_phrase": "sealed the cup",
+       "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+       }
+      },
+      {
+       "id": "A-aftermath-01-s40",
+       "answer": "jubilant",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "After solving the last clue, Bea felt ___ and high-fived the captain.",
+       "cue_phrase": "high-fived the captain",
+       "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+       }
+      }
+     ],
+     "contrasts": [
+      {
+       "answer": "nostalgic",
+       "picked": "remorseful",
+       "line": "Nostalgic means missing a sweet earlier day. Remorseful means feeling bad about your own mistake."
+      },
+      {
+       "answer": "nostalgic",
+       "picked": "mortified",
+       "line": "Nostalgic looks fondly at the past. Mortified feels hot and small in public."
+      },
+      {
+       "answer": "nostalgic",
+       "picked": "despondent",
+       "line": "Nostalgic is a warm ache for old days. Despondent has given up on things improving."
+      },
+      {
+       "answer": "nostalgic",
+       "picked": "jubilant",
+       "line": "Nostalgic is gentle missing. Jubilant is loud delight after a win."
+      },
+      {
+       "answer": "remorseful",
+       "picked": "nostalgic",
+       "line": "Remorseful is guilt for something you did. Nostalgic is missing a pleasant old moment."
+      },
+      {
+       "answer": "remorseful",
+       "picked": "mortified",
+       "line": "Remorseful wants to repair harm. Mortified wants to hide after public shame."
+      },
+      {
+       "answer": "remorseful",
+       "picked": "despondent",
+       "line": "Remorseful feels bad about a choice. Despondent feels sure nothing will get better."
+      },
+      {
+       "answer": "remorseful",
+       "picked": "jubilant",
+       "line": "Remorseful follows a hurtful act. Jubilant follows a win or big achievement."
+      },
+      {
+       "answer": "mortified",
+       "picked": "nostalgic",
+       "line": "Mortified is public shame. Nostalgic is warm missing for earlier good days."
+      },
+      {
+       "answer": "mortified",
+       "picked": "remorseful",
+       "line": "Mortified comes from being seen or laughed at. Remorseful comes from guilt over your act."
+      },
+      {
+       "answer": "mortified",
+       "picked": "despondent",
+       "line": "Mortified wants to hide from eyes. Despondent has lost heart about the future."
+      },
+      {
+       "answer": "mortified",
+       "picked": "jubilant",
+       "line": "Mortified shrinks after a public blunder. Jubilant celebrates after winning."
+      },
+      {
+       "answer": "despondent",
+       "picked": "nostalgic",
+       "line": "Despondent thinks things cannot improve. Nostalgic misses something lovely from before."
+      },
+      {
+       "answer": "despondent",
+       "picked": "remorseful",
+       "line": "Despondent has lost heart. Remorseful feels guilty and wants to make amends."
+      },
+      {
+       "answer": "despondent",
+       "picked": "mortified",
+       "line": "Despondent feels defeated inside. Mortified feels exposed and ashamed in public."
+      },
+      {
+       "answer": "despondent",
+       "picked": "jubilant",
+       "line": "Despondent sits low after failure. Jubilant bursts high after victory."
+      },
+      {
+       "answer": "jubilant",
+       "picked": "nostalgic",
+       "line": "Jubilant cheers after a win. Nostalgic smiles sadly over something long ago."
+      },
+      {
+       "answer": "jubilant",
+       "picked": "remorseful",
+       "line": "Jubilant celebrates an achievement. Remorseful regrets causing harm."
+      },
+      {
+       "answer": "jubilant",
+       "picked": "mortified",
+       "line": "Jubilant stands tall after winning. Mortified wants to disappear after public shame."
+      },
+      {
+       "answer": "jubilant",
+       "picked": "despondent",
+       "line": "Jubilant celebrates a fresh victory. Despondent feels beaten and out of heart."
+      }
+     ],
+     "meta": {
+      "generated_at": "2026-07-06T14:15:52+00:00",
+      "model": "gpt-5.5",
+      "scrubbed_at": "2026-07-07",
+      "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+     }
+    },
+    {
+     "id": "A-atmosphere-01",
+     "bank": "A",
+     "pos": "adjective",
+     "theme": "the feel of a place or sound",
+     "band": 5,
+     "band_override": 5,
+     "computed": {
+      "zipf_min": 2.95,
+      "zipf_mean": 3.21,
+      "tightness": null,
+      "band_suggested": 4,
+      "scored_at": "2026-07-06T18:43:21+00:00"
+     },
+     "words": [
+      {
+       "w": "melancholy",
+       "synset": "melancholy.s.01",
+       "gloss_source": "authored",
+       "gloss": "carrying a gentle, lasting sadness",
+       "zipf": 3.39,
+       "register": "neutral",
+       "senses_at_pos": 2,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "melancholy"
+       },
+       "discriminator": "gentle sadness hanging in the air",
+       "grade": 7
+      },
+      {
+       "w": "tranquil",
+       "synset": "calm.s.01",
+       "gloss_source": "authored",
+       "gloss": "calm and peaceful, with nothing to disturb the quiet",
+       "zipf": 3.14,
+       "register": "neutral",
+       "senses_at_pos": 2,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "tranquil"
+       },
+       "discriminator": "restful; nothing stirs",
+       "grade": 6
+      },
+      {
+       "w": "monotonous",
+       "synset": "humdrum.s.02",
+       "gloss_source": "authored",
+       "gloss": "continuing in the same dull way, without any change or variety",
+       "zipf": 2.95,
+       "register": "neutral",
+       "senses_at_pos": 2,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "monotonous"
+       },
+       "discriminator": "unchanging sameness, on and on",
+       "grade": 6
+      },
+      {
+       "w": "desolate",
+       "synset": "bare.s.06",
+       "gloss_source": "authored",
+       "gloss": "empty and bare, with no people or life anywhere",
+       "zipf": 3.17,
+       "register": "neutral",
+       "senses_at_pos": 2,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "desolate"
+       },
+       "discriminator": "empty of people and life",
+       "grade": 6
+      },
+      {
+       "w": "ominous",
+       "synset": "baleful.s.02",
+       "gloss_source": "authored",
+       "gloss": "giving a strong feeling that something bad is about to happen",
+       "zipf": 3.4,
+       "register": "neutral",
+       "senses_at_pos": 2,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "ominous"
+       },
+       "discriminator": "something bad is coming",
+       "grade": 6
+      }
+     ],
+     "sentences": [
+      {
+       "id": "A-atmosphere-01-s01",
+       "answer": "melancholy",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The old tune was ___, making Mira miss her faraway gran.",
+       "cue_phrase": "miss her faraway gran",
+       "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (desolate); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-atmosphere-01-s02",
+       "answer": "melancholy",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "After the goodbye note, the room felt ___, though the sun shone.",
+       "cue_phrase": "After the goodbye note",
+       "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: goodbye-note sadness with sunshine carries melancholy; desolate is bleak emptiness",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-atmosphere-01-s03",
+       "answer": "melancholy",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "At the fair's end, the dropped ribbon made the music seem ___.",
+       "cue_phrase": "fair's end, the dropped ribbon",
+       "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (desolate); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-atmosphere-01-s04",
+       "answer": "melancholy",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Grandad moved away, yet at busy dinners his empty chair looked ___.",
+       "cue_phrase": "at busy dinners his empty chair",
+       "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (desolate); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-atmosphere-01-s05",
+       "answer": "melancholy",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The torn kite hung in the tree as children walked home, looking ___.",
+       "cue_phrase": "torn kite hung",
+       "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: children's sad mood carries melancholy; desolate overstates to abandonment",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-atmosphere-01-s06",
+       "answer": "melancholy",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The party hat on Mum's suitcase looked ___ after the visit.",
+       "cue_phrase": "Mum's suitcase",
+       "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (desolate); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-atmosphere-01-s07",
+       "answer": "melancholy",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The slow violin was ___ as the lost puppy watched the train leave.",
+       "cue_phrase": "puppy watched the train leave",
+       "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (desolate); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-atmosphere-01-s08",
+       "answer": "melancholy",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "After her friend changed schools, Jaya found the busy playground ___.",
+       "cue_phrase": "her friend changed schools",
+       "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (desolate); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-atmosphere-01-s09",
+       "answer": "tranquil",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The pond was ___, with smooth water and sleeping ducks.",
+       "cue_phrase": "smooth water and sleeping ducks",
+       "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+       }
+      },
+      {
+       "id": "A-atmosphere-01-s10",
+       "answer": "tranquil",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "After snow fell, the garden looked ___, with robins tucked in the hedge.",
+       "cue_phrase": "robins tucked in the hedge",
+       "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+       }
+      },
+      {
+       "id": "A-atmosphere-01-s11",
+       "answer": "tranquil",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Beside the sleeping baby, the lamp-lit room felt ___ all afternoon.",
+       "cue_phrase": "Beside the sleeping baby",
+       "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+       }
+      },
+      {
+       "id": "A-atmosphere-01-s12",
+       "answer": "tranquil",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The boat drifted on glassy water, and Mia smiled as the afternoon stayed ___.",
+       "cue_phrase": "drifted on glassy water",
+       "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+       }
+      },
+      {
+       "id": "A-atmosphere-01-s13",
+       "answer": "tranquil",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "In the meadow, bees hummed softly while Sara read, and the air stayed ___.",
+       "cue_phrase": "Sara read",
+       "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+       }
+      },
+      {
+       "id": "A-atmosphere-01-s14",
+       "answer": "tranquil",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The cat slept by the fire, and the whole cottage seemed ___.",
+       "cue_phrase": "cat slept by the fire",
+       "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+       }
+      },
+      {
+       "id": "A-atmosphere-01-s15",
+       "answer": "tranquil",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Under the moon, the harbour was ___, with boats rocking like cradles.",
+       "cue_phrase": "rocking like cradles",
+       "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+       }
+      },
+      {
+       "id": "A-atmosphere-01-s16",
+       "answer": "tranquil",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "The library corner felt ___ as pages turned and rain tapped softly.",
+       "cue_phrase": "pages turned and rain tapped",
+       "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+       }
+      },
+      {
+       "id": "A-atmosphere-01-s17",
+       "answer": "monotonous",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The drumbeat was ___, thumping one note for ten whole minutes.",
+       "cue_phrase": "one note for ten",
+       "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+       }
+      },
+      {
+       "id": "A-atmosphere-01-s18",
+       "answer": "monotonous",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The worksheet felt ___, with fifty sums all using plus two.",
+       "cue_phrase": "fifty sums all using",
+       "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+       }
+      },
+      {
+       "id": "A-atmosphere-01-s19",
+       "answer": "monotonous",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Grey fence posts, one after another, made the view feel ___.",
+       "cue_phrase": "one after another",
+       "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (melancholy); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-atmosphere-01-s20",
+       "answer": "monotonous",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The computer game beeped every second during practice and became ___.",
+       "cue_phrase": "beeped every second",
+       "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+       }
+      },
+      {
+       "id": "A-atmosphere-01-s21",
+       "answer": "monotonous",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "By lap twenty, the pool tiles and splash sounds were ___.",
+       "cue_phrase": "By lap twenty",
+       "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+       }
+      },
+      {
+       "id": "A-atmosphere-01-s22",
+       "answer": "monotonous",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Each hallway door had brown paint and a round knob, making school feel ___.",
+       "cue_phrase": "Each hallway door had",
+       "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+       }
+      },
+      {
+       "id": "A-atmosphere-01-s23",
+       "answer": "monotonous",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "The robot voice read the list in one flat tone, sounding ___.",
+       "cue_phrase": "one flat tone",
+       "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+       }
+      },
+      {
+       "id": "A-atmosphere-01-s24",
+       "answer": "monotonous",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "For six pages, the story used short sentences, so it felt ___.",
+       "cue_phrase": "For six pages",
+       "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+       }
+      },
+      {
+       "id": "A-atmosphere-01-s25",
+       "answer": "desolate",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The island looked ___, with no houses, boats, birds, or trees.",
+       "cue_phrase": "no houses, boats, birds",
+       "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (melancholy); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-atmosphere-01-s26",
+       "answer": "desolate",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The playground was ___; weeds covered the swings and no children came.",
+       "cue_phrase": "no children came",
+       "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (melancholy, ominous); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-atmosphere-01-s27",
+       "answer": "desolate",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Across the cracked plain, no grass grew, so the land seemed ___.",
+       "cue_phrase": "no grass grew",
+       "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (melancholy, ominous); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-atmosphere-01-s28",
+       "answer": "desolate",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The village street looked ___, with shut doors and dust on every bench.",
+       "cue_phrase": "shut doors and dust",
+       "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (melancholy, ominous); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-atmosphere-01-s29",
+       "answer": "desolate",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "At noon, only wind crossed the car park, so it felt ___.",
+       "cue_phrase": "only wind crossed",
+       "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (melancholy); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-atmosphere-01-s30",
+       "answer": "desolate",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The castle courtyard seemed ___, with dry wells and not a single bird.",
+       "cue_phrase": "not a single bird",
+       "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (melancholy, ominous); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-atmosphere-01-s31",
+       "answer": "desolate",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Beyond the station, the road was ___, with boarded windows for miles.",
+       "cue_phrase": "boarded windows for miles",
+       "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (melancholy, monotonous); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-atmosphere-01-s32",
+       "answer": "desolate",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "The dried-up aquarium looked ___ after every fish had been moved.",
+       "cue_phrase": "every fish had been moved",
+       "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (melancholy); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-atmosphere-01-s33",
+       "answer": "ominous",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The sky turned green before the storm, and the picnic felt ___.",
+       "cue_phrase": "before the storm",
+       "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+       }
+      },
+      {
+       "id": "A-atmosphere-01-s34",
+       "answer": "ominous",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The warning bell made the hallway sound ___ as smoke curled under the door.",
+       "cue_phrase": "smoke curled under the door",
+       "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+       }
+      },
+      {
+       "id": "A-atmosphere-01-s35",
+       "answer": "ominous",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Deep paw prints circled our campsite, making the dark forest feel ___.",
+       "cue_phrase": "paw prints circled",
+       "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+       }
+      },
+      {
+       "id": "A-atmosphere-01-s36",
+       "answer": "ominous",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The locked gate creaked open by itself, and the path seemed ___.",
+       "cue_phrase": "creaked open by itself",
+       "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+       }
+      },
+      {
+       "id": "A-atmosphere-01-s37",
+       "answer": "ominous",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Thunder growled closer while the small boat rocked, and the sea looked ___.",
+       "cue_phrase": "Thunder growled closer",
+       "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+       }
+      },
+      {
+       "id": "A-atmosphere-01-s38",
+       "answer": "ominous",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "A giant shadow crossed the tent wall, then stopped, making the night feel ___.",
+       "cue_phrase": "giant shadow crossed",
+       "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+       }
+      },
+      {
+       "id": "A-atmosphere-01-s39",
+       "answer": "ominous",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The old bridge groaned under the bus, and the trip felt ___.",
+       "cue_phrase": "bridge groaned under the bus",
+       "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+       }
+      },
+      {
+       "id": "A-atmosphere-01-s40",
+       "answer": "ominous",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "From the cave mouth came a low growl, making the tunnel seem ___.",
+       "cue_phrase": "low growl",
+       "surface": {
+        "melancholy": "melancholy",
+        "tranquil": "tranquil",
+        "monotonous": "monotonous",
+        "desolate": "desolate",
+        "ominous": "ominous"
+       }
+      }
+     ],
+     "contrasts": [
+      {
+       "answer": "melancholy",
+       "picked": "tranquil",
+       "line": "Melancholy has soft sorrow in it. Tranquil is restful and settled."
+      },
+      {
+       "answer": "melancholy",
+       "picked": "monotonous",
+       "line": "Melancholy sounds sorrowful. Monotonous goes on in a flat, repeating pattern."
+      },
+      {
+       "answer": "melancholy",
+       "picked": "desolate",
+       "line": "Melancholy is a sad mood. Desolate is about a place with no company or growth."
+      },
+      {
+       "answer": "melancholy",
+       "picked": "ominous",
+       "line": "Melancholy is soft sorrow filling the air. Ominous warns that trouble may be near."
+      },
+      {
+       "answer": "tranquil",
+       "picked": "melancholy",
+       "line": "Tranquil is restful and settled. Melancholy has soft sorrow in it."
+      },
+      {
+       "answer": "tranquil",
+       "picked": "monotonous",
+       "line": "Tranquil feels restful. Monotonous feels boring because it keeps repeating."
+      },
+      {
+       "answer": "tranquil",
+       "picked": "desolate",
+       "line": "Tranquil can include sleeping ducks or readers. Desolate has no company or growth."
+      },
+      {
+       "answer": "tranquil",
+       "picked": "ominous",
+       "line": "Tranquil feels safe and settled. Ominous hints that trouble may be coming."
+      },
+      {
+       "answer": "monotonous",
+       "picked": "melancholy",
+       "line": "Monotonous repeats again and again. Melancholy has soft sorrow instead."
+      },
+      {
+       "answer": "monotonous",
+       "picked": "tranquil",
+       "line": "Monotonous is flat repetition. Tranquil is restful stillness."
+      },
+      {
+       "answer": "monotonous",
+       "picked": "desolate",
+       "line": "Monotonous is about repetition. Desolate is about no company or growth."
+      },
+      {
+       "answer": "monotonous",
+       "picked": "ominous",
+       "line": "Monotonous keeps repeating. Ominous points toward trouble ahead."
+      },
+      {
+       "answer": "desolate",
+       "picked": "melancholy",
+       "line": "Desolate has no company or growth. Melancholy has soft sorrow."
+      },
+      {
+       "answer": "desolate",
+       "picked": "tranquil",
+       "line": "Desolate lacks company or growth. Tranquil is restful, with living things at ease."
+      },
+      {
+       "answer": "desolate",
+       "picked": "monotonous",
+       "line": "Desolate is deserted. Monotonous is boring because it repeats."
+      },
+      {
+       "answer": "desolate",
+       "picked": "ominous",
+       "line": "Desolate is deserted. Ominous suggests trouble is on the way."
+      },
+      {
+       "answer": "ominous",
+       "picked": "melancholy",
+       "line": "Ominous warns of trouble ahead. Melancholy is soft sorrow about now or before."
+      },
+      {
+       "answer": "ominous",
+       "picked": "tranquil",
+       "line": "Ominous hints at danger. Tranquil feels safe and settled."
+      },
+      {
+       "answer": "ominous",
+       "picked": "monotonous",
+       "line": "Ominous points to trouble ahead. Monotonous just keeps repeating."
+      },
+      {
+       "answer": "ominous",
+       "picked": "desolate",
+       "line": "Ominous warns trouble may come. Desolate means deserted, with no company or growth."
+      }
+     ],
+     "meta": {
+      "generated_at": "2026-07-06T14:18:06+00:00",
+      "model": "gpt-5.5",
+      "scrubbed_at": "2026-07-07",
+      "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+     }
+    },
+    {
+     "id": "A-craft-01",
+     "bank": "A",
+     "pos": "adjective",
+     "theme": "how carefully it was made or done",
+     "band": 5,
+     "band_override": 5,
+     "computed": {
+      "zipf_min": 2.77,
+      "zipf_mean": 3.4,
+      "tightness": null,
+      "band_suggested": 4,
+      "scored_at": "2026-07-06T18:43:21+00:00"
+     },
+     "words": [
+      {
+       "w": "meticulous",
+       "synset": "meticulous.s.02",
+       "gloss_source": "wordnet",
+       "gloss": "marked by extreme care in treatment of details",
+       "zipf": 3.24,
+       "register": "neutral",
+       "senses_at_pos": 2,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "meticulous"
+       },
+       "discriminator": "the maker attends to every detail",
+       "grade": 7
+      },
+      {
+       "w": "immaculate",
+       "synset": "immaculate.s.01",
+       "gloss_source": "wordnet",
+       "gloss": "completely neat and clean",
+       "zipf": 3.37,
+       "register": "neutral",
+       "senses_at_pos": 3,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "immaculate"
+       },
+       "discriminator": "not a speck or smudge on the result",
+       "grade": 6
+      },
+      {
+       "w": "haphazard",
+       "synset": "haphazard.s.01",
+       "gloss_source": "wordnet",
+       "gloss": "dependent upon or characterized by chance",
+       "zipf": 2.77,
+       "register": "neutral",
+       "senses_at_pos": 2,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "haphazard"
+       },
+       "discriminator": "thrown together with no plan",
+       "grade": 7
+      },
+      {
+       "w": "subtle",
+       "synset": "elusive.s.03",
+       "gloss_source": "authored",
+       "gloss": "so slight and delicate that it is easy to miss",
+       "zipf": 4.08,
+       "register": "neutral",
+       "senses_at_pos": 3,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "subtle"
+       },
+       "discriminator": "so slight you might miss it",
+       "grade": 6
+      },
+      {
+       "w": "intricate",
+       "synset": "intricate.s.01",
+       "gloss_source": "authored",
+       "gloss": "made of many small parts fitted together in a complex design",
+       "zipf": 3.55,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "intricate"
+       },
+       "discriminator": "many small parts fitted together",
+       "grade": 6
+      }
+     ],
+     "sentences": [
+      {
+       "id": "A-craft-01-s01",
+       "answer": "meticulous",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Nina's ___ model had every window counted, painted, and ticked off.",
+       "cue_phrase": "every window counted",
+       "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: counted, painted, ticked off stages the maker's care process; intricate describes the design, not the checking",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-craft-01-s02",
+       "answer": "meticulous",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Omar was ___, testing every number on the chart twice before handing it in.",
+       "cue_phrase": "testing every number twice",
+       "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+       }
+      },
+      {
+       "id": "A-craft-01-s03",
+       "answer": "meticulous",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Lena stayed ___, spacing every star with a ruler.",
+       "cue_phrase": "spacing every star",
+       "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+       }
+      },
+      {
+       "id": "A-craft-01-s04",
+       "answer": "meticulous",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Dad became ___, sorting the screws by size before building.",
+       "cue_phrase": "sorting the screws by size",
+       "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+       }
+      },
+      {
+       "id": "A-craft-01-s05",
+       "answer": "meticulous",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Tom was ___, reopening the envelope to straighten one crooked stamp.",
+       "cue_phrase": "straighten one crooked stamp",
+       "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+       }
+      },
+      {
+       "id": "A-craft-01-s06",
+       "answer": "meticulous",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The goalie was ___, retying both laces before the muddy match.",
+       "cue_phrase": "retying both laces",
+       "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+       }
+      },
+      {
+       "id": "A-craft-01-s07",
+       "answer": "meticulous",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "The librarian's ___ list named each missing page and shelf.",
+       "cue_phrase": "each missing page",
+       "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+       }
+      },
+      {
+       "id": "A-craft-01-s08",
+       "answer": "meticulous",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Sofia stayed ___, aligning the puzzle edge pieces by colour.",
+       "cue_phrase": "aligning the puzzle edge",
+       "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+       }
+      },
+      {
+       "id": "A-craft-01-s09",
+       "answer": "immaculate",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The ___ kitchen floor had no crumbs, mud, or sticky footprints.",
+       "cue_phrase": "no crumbs, mud",
+       "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+       }
+      },
+      {
+       "id": "A-craft-01-s10",
+       "answer": "immaculate",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "No speck of chalk remained on the ___ blackboard after Sam wiped it.",
+       "cue_phrase": "No speck of chalk",
+       "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+       }
+      },
+      {
+       "id": "A-craft-01-s11",
+       "answer": "immaculate",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Mum's ___ shirt shone white after the jam stain vanished.",
+       "cue_phrase": "jam stain vanished",
+       "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+       }
+      },
+      {
+       "id": "A-craft-01-s12",
+       "answer": "immaculate",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The ___ window let sunlight through without a single fingerprint.",
+       "cue_phrase": "without a single fingerprint",
+       "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+       }
+      },
+      {
+       "id": "A-craft-01-s13",
+       "answer": "immaculate",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "After the bath, the ___ puppy left no paw prints indoors.",
+       "cue_phrase": "no paw prints indoors",
+       "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+       }
+      },
+      {
+       "id": "A-craft-01-s14",
+       "answer": "immaculate",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The nurse smiled because the ___ tray held no dust or spills.",
+       "cue_phrase": "no dust or spills",
+       "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+       }
+      },
+      {
+       "id": "A-craft-01-s15",
+       "answer": "immaculate",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "The ___ teacup had no tea ring inside or lipstick mark.",
+       "cue_phrase": "no tea ring",
+       "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+       }
+      },
+      {
+       "id": "A-craft-01-s16",
+       "answer": "immaculate",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "After scrubbing, Kai's ___ boots showed not one patch of mud.",
+       "cue_phrase": "not one patch",
+       "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+       }
+      },
+      {
+       "id": "A-craft-01-s17",
+       "answer": "haphazard",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The ___ posters tilted everywhere, taped up with no plan.",
+       "cue_phrase": "with no plan",
+       "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+       }
+      },
+      {
+       "id": "A-craft-01-s18",
+       "answer": "haphazard",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Raj's ___ answer grabbed facts in random order.",
+       "cue_phrase": "random order",
+       "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+       }
+      },
+      {
+       "id": "A-craft-01-s19",
+       "answer": "haphazard",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The ___ picnic blanket had cups, socks, and apples scattered across it.",
+       "cue_phrase": "scattered across it",
+       "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+       }
+      },
+      {
+       "id": "A-craft-01-s20",
+       "answer": "haphazard",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Our ___ tower leaned because blocks stuck out on every side.",
+       "cue_phrase": "blocks stuck out",
+       "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+       }
+      },
+      {
+       "id": "A-craft-01-s21",
+       "answer": "haphazard",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Mira's ___ notes jumped from volcanoes to frogs to football scores.",
+       "cue_phrase": "jumped from volcanoes",
+       "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+       }
+      },
+      {
+       "id": "A-craft-01-s22",
+       "answer": "haphazard",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The scarecrow looked ___, with one boot higher than its hat.",
+       "cue_phrase": "one boot higher",
+       "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+       }
+      },
+      {
+       "id": "A-craft-01-s23",
+       "answer": "haphazard",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "The ___ shelves mixed paints, spoons, and marbles wherever space appeared.",
+       "cue_phrase": "wherever space appeared",
+       "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+       }
+      },
+      {
+       "id": "A-craft-01-s24",
+       "answer": "haphazard",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Ben's ___ path zigzagged over flowerbeds instead of using the gate.",
+       "cue_phrase": "zigzagged over flowerbeds",
+       "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+       }
+      },
+      {
+       "id": "A-craft-01-s25",
+       "answer": "subtle",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The ___ colour change barely showed along the dragon's wing.",
+       "cue_phrase": "barely showed",
+       "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+       }
+      },
+      {
+       "id": "A-craft-01-s26",
+       "answer": "subtle",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The fox's ___ clue was visible only under moonlight.",
+       "cue_phrase": "visible only under moonlight",
+       "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+       }
+      },
+      {
+       "id": "A-craft-01-s27",
+       "answer": "subtle",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Lila noticed the ___ mint taste after the second sip.",
+       "cue_phrase": "after the second sip",
+       "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+       }
+      },
+      {
+       "id": "A-craft-01-s28",
+       "answer": "subtle",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "On stage, the ___ wink lasted less than a heartbeat.",
+       "cue_phrase": "less than a heartbeat",
+       "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+       }
+      },
+      {
+       "id": "A-craft-01-s29",
+       "answer": "subtle",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Mum's ___ nod was so quick that only Amir saw it.",
+       "cue_phrase": "only Amir saw",
+       "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+       }
+      },
+      {
+       "id": "A-craft-01-s30",
+       "answer": "subtle",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The ___ hum in the cave stopped when everyone held still.",
+       "cue_phrase": "everyone held still",
+       "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+       }
+      },
+      {
+       "id": "A-craft-01-s31",
+       "answer": "subtle",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "The ___ stripe on the beetle appeared only when it turned.",
+       "cue_phrase": "appeared only when",
+       "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+       }
+      },
+      {
+       "id": "A-craft-01-s32",
+       "answer": "subtle",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Jae's ___ pinch of spice was something nobody named at lunch.",
+       "cue_phrase": "nobody named",
+       "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+       }
+      },
+      {
+       "id": "A-craft-01-s33",
+       "answer": "intricate",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The ___ clock opened to show dozens of tiny wheels and springs.",
+       "cue_phrase": "dozens of tiny wheels",
+       "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+       }
+      },
+      {
+       "id": "A-craft-01-s34",
+       "answer": "intricate",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The ___ necklace twisted through forty beads, loops, and silver chains.",
+       "cue_phrase": "forty beads, loops",
+       "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+       }
+      },
+      {
+       "id": "A-craft-01-s35",
+       "answer": "intricate",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "We unfolded the ___ map, tracing tunnels crossing under bridges and towers.",
+       "cue_phrase": "tunnels crossing under",
+       "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (meticulous); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-craft-01-s36",
+       "answer": "intricate",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The ___ snowflake drawing had branching arms, dots, and lace-like holes.",
+       "cue_phrase": "branching arms, dots",
+       "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (meticulous); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-craft-01-s37",
+       "answer": "intricate",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "It took Ana an hour to copy the ___ knot on the shield.",
+       "cue_phrase": "hour to copy",
+       "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+       }
+      },
+      {
+       "id": "A-craft-01-s38",
+       "answer": "intricate",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The spider's ___ web trapped dew in rings, spokes, and zigzags.",
+       "cue_phrase": "rings, spokes, and zigzags",
+       "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (meticulous); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-craft-01-s39",
+       "answer": "intricate",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "The ___ palace gate used hundreds of curls, bars, and hinges.",
+       "cue_phrase": "hundreds of curls",
+       "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+       }
+      },
+      {
+       "id": "A-craft-01-s40",
+       "answer": "intricate",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Inside the ___ music box, gears turned birds, moons, and waves.",
+       "cue_phrase": "gears turned birds",
+       "surface": {
+        "meticulous": "meticulous",
+        "immaculate": "immaculate",
+        "haphazard": "haphazard",
+        "subtle": "subtle",
+        "intricate": "intricate"
+       }
+      }
+     ],
+     "contrasts": [
+      {
+       "answer": "meticulous",
+       "picked": "immaculate",
+       "line": "Meticulous checks every tiny bit; immaculate has no dirt or smudges."
+      },
+      {
+       "answer": "meticulous",
+       "picked": "haphazard",
+       "line": "Meticulous follows exact steps; haphazard is thrown around with no plan."
+      },
+      {
+       "answer": "meticulous",
+       "picked": "subtle",
+       "line": "Meticulous is careful about tiny bits; subtle is hard to notice."
+      },
+      {
+       "answer": "meticulous",
+       "picked": "intricate",
+       "line": "Meticulous checks each bit; intricate has lots of linked pieces."
+      },
+      {
+       "answer": "immaculate",
+       "picked": "meticulous",
+       "line": "Immaculate has no dirt or smudges; meticulous means every tiny bit was checked."
+      },
+      {
+       "answer": "immaculate",
+       "picked": "haphazard",
+       "line": "Immaculate is spotless; haphazard is messy and unplanned."
+      },
+      {
+       "answer": "immaculate",
+       "picked": "subtle",
+       "line": "Immaculate is spotless; subtle is hard to notice."
+      },
+      {
+       "answer": "immaculate",
+       "picked": "intricate",
+       "line": "Immaculate has no marks; intricate has lots of linked pieces."
+      },
+      {
+       "answer": "haphazard",
+       "picked": "meticulous",
+       "line": "Haphazard is unplanned and messy; meticulous checks each tiny bit."
+      },
+      {
+       "answer": "haphazard",
+       "picked": "immaculate",
+       "line": "Haphazard is messy and unplanned; immaculate is spotless."
+      },
+      {
+       "answer": "haphazard",
+       "picked": "subtle",
+       "line": "Haphazard looks thrown around; subtle is hard to notice."
+      },
+      {
+       "answer": "haphazard",
+       "picked": "intricate",
+       "line": "Haphazard lacks a plan; intricate has lots of linked pieces."
+      },
+      {
+       "answer": "subtle",
+       "picked": "meticulous",
+       "line": "Subtle is hard to notice; meticulous checks each tiny bit."
+      },
+      {
+       "answer": "subtle",
+       "picked": "immaculate",
+       "line": "Subtle is hard to notice; immaculate is spotless."
+      },
+      {
+       "answer": "subtle",
+       "picked": "haphazard",
+       "line": "Subtle is hard to notice; haphazard looks thrown around."
+      },
+      {
+       "answer": "subtle",
+       "picked": "intricate",
+       "line": "Subtle is hard to notice; intricate has lots of linked pieces."
+      },
+      {
+       "answer": "intricate",
+       "picked": "meticulous",
+       "line": "Intricate has lots of linked pieces; meticulous checks each tiny bit."
+      },
+      {
+       "answer": "intricate",
+       "picked": "immaculate",
+       "line": "Intricate has lots of linked pieces; immaculate is spotless."
+      },
+      {
+       "answer": "intricate",
+       "picked": "haphazard",
+       "line": "Intricate has lots of linked pieces; haphazard is unplanned and messy."
+      },
+      {
+       "answer": "intricate",
+       "picked": "subtle",
+       "line": "Intricate has lots of linked pieces; subtle is hard to notice."
+      }
+     ],
+     "meta": {
+      "generated_at": "2026-07-06T14:20:43+00:00",
+      "model": "gpt-5.5",
+      "scrubbed_at": "2026-07-07",
+      "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+     }
+    },
+    {
+     "id": "A-dwell-01",
+     "bank": "A",
+     "pos": "verb",
+     "theme": "ways of being deep in thought",
+     "band": 5,
+     "band_override": 5,
+     "computed": {
+      "zipf_min": 2.8,
+      "zipf_mean": 3.08,
+      "tightness": 0.289,
+      "band_suggested": 3,
+      "scored_at": "2026-07-06T18:43:21+00:00"
+     },
+     "words": [
+      {
+       "w": "reminisce",
+       "synset": "reminisce.v.01",
+       "gloss_source": "wordnet",
+       "gloss": "recall the past",
+       "zipf": 2.84,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "reminisce",
+        "third": "reminisces",
+        "past": "reminisced",
+        "part": "reminiscing"
+       },
+       "discriminator": "dwelling fondly on past times",
+       "grade": 7
+      },
+      {
+       "w": "brood",
+       "synset": "brood.v.01",
+       "gloss_source": "wordnet",
+       "gloss": "think moodily or anxiously about something",
+       "zipf": 3.25,
+       "register": "neutral",
+       "senses_at_pos": 5,
+       "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-06",
+        "note": "dominant school-context sense confirmed at roster vet"
+       },
+       "forms": {
+        "base": "brood",
+        "third": "broods",
+        "past": "brooded",
+        "part": "brooding"
+       },
+       "discriminator": "dwelling darkly on a worry",
+       "grade": 6
+      },
+      {
+       "w": "muse",
+       "synset": "chew_over.v.01",
+       "gloss_source": "authored",
+       "gloss": "wonder about something in a calm, open-ended way",
+       "zipf": 3.59,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "muse",
+        "third": "muses",
+        "past": "mused",
+        "part": "musing"
+       },
+       "discriminator": "calm open-ended wondering",
+       "grade": 7
+      },
+      {
+       "w": "obsess",
+       "synset": "obsess.v.02",
+       "gloss_source": "authored",
+       "gloss": "be gripped by one thought and unable to let it go",
+       "zipf": 2.9,
+       "register": "neutral",
+       "senses_at_pos": 2,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "obsess",
+        "third": "obsesses",
+        "past": "obsessed",
+        "part": "obsessing"
+       },
+       "discriminator": "one thought will not let go",
+       "grade": 6
+      },
+      {
+       "w": "wallow",
+       "synset": "wallow.v.01",
+       "gloss_source": "authored",
+       "gloss": "sink into a feeling and stay there, enjoying the misery",
+       "zipf": 2.8,
+       "register": "neutral",
+       "senses_at_pos": 5,
+       "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-07",
+        "note": "devote-oneself/indulge sense dominant in human-subject frames; mud-rolling sense needs an animal subject"
+       },
+       "forms": {
+        "base": "wallow",
+        "third": "wallows",
+        "past": "wallowed",
+        "part": "wallowing"
+       },
+       "discriminator": "indulging the feeling itself, out loud",
+       "grade": 6
+      }
+     ],
+     "sentences": [
+      {
+       "id": "A-dwell-01-s01",
+       "answer": "reminisce",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "At the picnic, Gran ___, retelling the kite days of her childhood.",
+       "cue_phrase": "retelling the kite days",
+       "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (muse); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-dwell-01-s02",
+       "answer": "reminisce",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Dad ___, laughing over the old match photos and his muddy goal.",
+       "cue_phrase": "laughing over the old match photos",
+       "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (muse); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-dwell-01-s03",
+       "answer": "reminisce",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The cousins ___ in the attic, giggling over tiny shoes and faded cards.",
+       "cue_phrase": "tiny shoes and faded cards",
+       "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+       }
+      },
+      {
+       "id": "A-dwell-01-s04",
+       "answer": "reminisce",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Nora ___ by the campfire, retelling last summer's canoe spill.",
+       "cue_phrase": "last summer's canoe spill",
+       "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (muse); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-dwell-01-s05",
+       "answer": "reminisce",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The class ___ when the dusty yearbook showed their first-day faces.",
+       "cue_phrase": "dusty yearbook showed",
+       "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+       }
+      },
+      {
+       "id": "A-dwell-01-s06",
+       "answer": "reminisce",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Grandpa ___ after finding the ticket from his first train ride.",
+       "cue_phrase": "his first train ride",
+       "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (muse); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-dwell-01-s07",
+       "answer": "reminisce",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Mum likes to ___ during storms, telling us about candlelit games.",
+       "cue_phrase": "about candlelit games",
+       "surface": {
+        "reminisce": "reminisce",
+        "brood": "brood",
+        "muse": "muse",
+        "obsess": "obsess",
+        "wallow": "wallow"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (muse); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-dwell-01-s08",
+       "answer": "reminisce",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "They were ___ at lunch, trading stories from nursery school.",
+       "cue_phrase": "from nursery school",
+       "surface": {
+        "reminisce": "reminiscing",
+        "brood": "brooding",
+        "muse": "musing",
+        "obsess": "obsessing",
+        "wallow": "wallowing"
+       }
+      },
+      {
+       "id": "A-dwell-01-s09",
+       "answer": "brood",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Sam ___ all evening, frowning over three worries before the trip.",
+       "cue_phrase": "three worries before",
+       "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (obsess); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-dwell-01-s10",
+       "answer": "brood",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "In the locker room, Leila ___ under a cloud of worries.",
+       "cue_phrase": "cloud of worries",
+       "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+       }
+      },
+      {
+       "id": "A-dwell-01-s11",
+       "answer": "brood",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "After the missed penalty and argument, Tom ___ silently by the fence.",
+       "cue_phrase": "penalty and argument",
+       "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (muse, obsess, wallow); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-dwell-01-s12",
+       "answer": "brood",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Mina ___ under her hood after two rumours spoiled her day.",
+       "cue_phrase": "two rumours spoiled",
+       "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (obsess, wallow); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-dwell-01-s13",
+       "answer": "brood",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The prince ___ beside the cracked crown, seeing danger in every knock.",
+       "cue_phrase": "danger in every knock",
+       "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (obsess); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-dwell-01-s14",
+       "answer": "brood",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Ella ___ while rain tapped, certain both letters held bad news.",
+       "cue_phrase": "both letters held",
+       "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (obsess); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-dwell-01-s15",
+       "answer": "brood",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Kavi tends to ___ before matches, picturing mistakes and angry faces.",
+       "cue_phrase": "mistakes and angry faces",
+       "surface": {
+        "reminisce": "reminisce",
+        "brood": "brood",
+        "muse": "muse",
+        "obsess": "obsess",
+        "wallow": "wallow"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: dark affect (mistakes, angry faces) carries brood; obsess is affect-neutral",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-dwell-01-s16",
+       "answer": "brood",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "They were ___ after the map tore and thunder shook camp.",
+       "cue_phrase": "thunder shook camp",
+       "surface": {
+        "reminisce": "reminiscing",
+        "brood": "brooding",
+        "muse": "musing",
+        "obsess": "obsessing",
+        "wallow": "wallowing"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (obsess); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-dwell-01-s17",
+       "answer": "muse",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Lena ___ by the pond, asking where moonlight goes at dawn.",
+       "cue_phrase": "where moonlight goes",
+       "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+       }
+      },
+      {
+       "id": "A-dwell-01-s18",
+       "answer": "muse",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Omar ___ on the hill, asking if clouds keep secrets.",
+       "cue_phrase": "if clouds keep secrets",
+       "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+       }
+      },
+      {
+       "id": "A-dwell-01-s19",
+       "answer": "muse",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "During art, Priya ___ softly, 'What colour would Tuesday wear?'",
+       "cue_phrase": "What colour would Tuesday",
+       "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+       }
+      },
+      {
+       "id": "A-dwell-01-s20",
+       "answer": "muse",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Under the stars, the twins ___, 'Maybe planets have bedtime songs.'",
+       "cue_phrase": "Maybe planets have",
+       "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+       }
+      },
+      {
+       "id": "A-dwell-01-s21",
+       "answer": "muse",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Nell ___ as bubbles rose, following each question with another.",
+       "cue_phrase": "question with another",
+       "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+       }
+      },
+      {
+       "id": "A-dwell-01-s22",
+       "answer": "muse",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Hari ___ beside the maze, smiling at paths nobody had tried.",
+       "cue_phrase": "paths nobody had tried",
+       "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+       }
+      },
+      {
+       "id": "A-dwell-01-s23",
+       "answer": "muse",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The owl seems to ___ at dusk, blinking at the silver river.",
+       "cue_phrase": "silver river",
+       "surface": {
+        "reminisce": "reminisce",
+        "brood": "brood",
+        "muse": "muse",
+        "obsess": "obsess",
+        "wallow": "wallow"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (brood, reminisce); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-dwell-01-s24",
+       "answer": "muse",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "Sofia was ___ after tea, asking whether trees dream in winter.",
+       "cue_phrase": "whether trees dream",
+       "surface": {
+        "reminisce": "reminiscing",
+        "brood": "brooding",
+        "muse": "musing",
+        "obsess": "obsessing",
+        "wallow": "wallowing"
+       }
+      },
+      {
+       "id": "A-dwell-01-s25",
+       "answer": "obsess",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Finn ___ for hours, checking the same score every five minutes.",
+       "cue_phrase": "same score every",
+       "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (brood); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-dwell-01-s26",
+       "answer": "obsess",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Rosa ___ all night, whispering the same spelling mistake again.",
+       "cue_phrase": "same spelling mistake again",
+       "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (brood); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-dwell-01-s27",
+       "answer": "obsess",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Max ___ during dinner, drawing the lost key on every napkin.",
+       "cue_phrase": "lost key on every",
+       "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (brood); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-dwell-01-s28",
+       "answer": "obsess",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "I ___ after chess club, replaying one bad move until bedtime.",
+       "cue_phrase": "one bad move",
+       "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: one move replayed till bedtime is the compulsion marker; brood/wallow lack it",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-dwell-01-s29",
+       "answer": "obsess",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Tia ___, and even her dragon doodles wore the missing badge.",
+       "cue_phrase": "even her dragon doodles",
+       "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (brood); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-dwell-01-s30",
+       "answer": "obsess",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Noah ___ until his cereal pieces formed the same puzzle shape.",
+       "cue_phrase": "same puzzle shape",
+       "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+       }
+      },
+      {
+       "id": "A-dwell-01-s31",
+       "answer": "obsess",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Jade tends to ___ when a riddle sticks, copying it everywhere.",
+       "cue_phrase": "copying it everywhere",
+       "surface": {
+        "reminisce": "reminisce",
+        "brood": "brood",
+        "muse": "muse",
+        "obsess": "obsess",
+        "wallow": "wallow"
+       }
+      },
+      {
+       "id": "A-dwell-01-s32",
+       "answer": "obsess",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "They were ___ all day, humming the tune through every lesson.",
+       "cue_phrase": "humming the tune",
+       "surface": {
+        "reminisce": "reminiscing",
+        "brood": "brooding",
+        "muse": "musing",
+        "obsess": "obsessing",
+        "wallow": "wallowing"
+       }
+      },
+      {
+       "id": "A-dwell-01-s33",
+       "answer": "wallow",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "After the lost final, Kai ___ all weekend, sad songs on repeat and curtains shut.",
+       "cue_phrase": "sad songs on repeat",
+       "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (brood); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-dwell-01-s34",
+       "answer": "wallow",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Nia ___, sighing loudly whenever anyone walked past her door.",
+       "cue_phrase": "sighing loudly",
+       "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (brood); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-dwell-01-s35",
+       "answer": "wallow",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Milo ___ under three blankets, announcing his cold to the whole house hourly.",
+       "cue_phrase": "announcing his cold",
+       "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+       }
+      },
+      {
+       "id": "A-dwell-01-s36",
+       "answer": "wallow",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "After losing his shield, the knight ___, writing four sad poems before lunch.",
+       "cue_phrase": "writing four sad poems",
+       "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (brood); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-dwell-01-s37",
+       "answer": "wallow",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Priya ___ after the rained-out party, draping herself over the sofa with big sighs.",
+       "cue_phrase": "draping herself over the sofa",
+       "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (brood); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-dwell-01-s38",
+       "answer": "wallow",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Rather than fix the kite, Tom ___, listing everything unfair about wind.",
+       "cue_phrase": "listing everything unfair about wind",
+       "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+       }
+      },
+      {
+       "id": "A-dwell-01-s39",
+       "answer": "wallow",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Gus ___ for a whole day when the bakery ran out of buns, moaning theatrically.",
+       "cue_phrase": "moaning theatrically",
+       "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (brood); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-dwell-01-s40",
+       "answer": "wallow",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "The diva ___ grandly, retelling the tale of her broken shoelace to anyone near.",
+       "cue_phrase": "retelling the tale",
+       "surface": {
+        "reminisce": "reminisced",
+        "brood": "brooded",
+        "muse": "mused",
+        "obsess": "obsessed",
+        "wallow": "wallowed"
+       }
+      }
+     ],
+     "contrasts": [
+      {
+       "answer": "reminisce",
+       "picked": "brood",
+       "line": "Reminisce looks back fondly; brood stays with dark worries."
+      },
+      {
+       "answer": "reminisce",
+       "picked": "muse",
+       "line": "Reminisce visits happy past times; muse asks gentle questions now."
+      },
+      {
+       "answer": "reminisce",
+       "picked": "obsess",
+       "line": "Reminisce enjoys old memories; obsess cannot stop circling one idea."
+      },
+      {
+       "answer": "brood",
+       "picked": "reminisce",
+       "line": "Brood sits with dark worries; reminisce looks back fondly."
+      },
+      {
+       "answer": "brood",
+       "picked": "muse",
+       "line": "Brood feels heavy and worried; muse stays light and curious."
+      },
+      {
+       "answer": "brood",
+       "picked": "obsess",
+       "line": "Brood may hold many worries; obsess sticks to one idea again and again."
+      },
+      {
+       "answer": "muse",
+       "picked": "reminisce",
+       "line": "Muse asks quiet questions; reminisce tells happy old stories."
+      },
+      {
+       "answer": "muse",
+       "picked": "brood",
+       "line": "Muse is gentle curiosity; brood is dark worry."
+      },
+      {
+       "answer": "muse",
+       "picked": "obsess",
+       "line": "Muse lets questions wander; obsess keeps returning to one idea."
+      },
+      {
+       "answer": "obsess",
+       "picked": "reminisce",
+       "line": "Obsess sticks to one idea; reminisce enjoys old memories."
+      },
+      {
+       "answer": "obsess",
+       "picked": "brood",
+       "line": "Obsess repeats one idea; brood sits under gloomy worries."
+      },
+      {
+       "answer": "obsess",
+       "picked": "muse",
+       "line": "Obsess cannot stop returning; muse can drift from question to question."
+      },
+      {
+       "answer": "wallow",
+       "picked": "reminisce",
+       "line": "Reminiscing looks back fondly on good times; wallowing sinks into a bad feeling and stays there."
+      },
+      {
+       "answer": "wallow",
+       "picked": "brood",
+       "line": "Brooding is silent dark thinking; wallowing acts the misery out with sighs and sad songs."
+      },
+      {
+       "answer": "wallow",
+       "picked": "muse",
+       "line": "Musing is calm curious wondering; wallowing is soaking in a feeling and refusing to climb out."
+      },
+      {
+       "answer": "wallow",
+       "picked": "obsess",
+       "line": "Obsessing is being gripped by one thought; wallowing is indulging the feeling itself."
+      },
+      {
+       "answer": "reminisce",
+       "picked": "wallow",
+       "line": "Wallowing stews in a feeling; reminiscing calls back happy memories to enjoy them."
+      },
+      {
+       "answer": "brood",
+       "picked": "wallow",
+       "line": "Wallowing performs its misery out loud; brooding turns a worry over silently inside."
+      },
+      {
+       "answer": "muse",
+       "picked": "wallow",
+       "line": "Wallowing is stuck in a mood; musing wanders lightly from one thought to the next."
+      },
+      {
+       "answer": "obsess",
+       "picked": "wallow",
+       "line": "Wallowing indulges a feeling; obsessing cannot let go of one single thought."
+      }
+     ],
+     "meta": {
+      "generated_at": "2026-07-06T14:23:36+00:00",
+      "model": "gpt-5.5",
+      "scrubbed_at": "2026-07-07",
+      "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+     }
+    },
+    {
+     "id": "A-fortune-01",
+     "bank": "A",
+     "pos": "verb",
+     "theme": "what happened to it as time passed",
+     "band": 5,
+     "band_override": 5,
+     "computed": {
+      "zipf_min": 2.52,
+      "zipf_mean": 3.11,
+      "tightness": 0.293,
+      "band_suggested": 3,
+      "scored_at": "2026-07-06T18:43:21+00:00"
+     },
+     "words": [
+      {
+       "w": "deteriorate",
+       "synset": "devolve.v.03",
+       "gloss_source": "wordnet",
+       "gloss": "grow worse",
+       "zipf": 3.15,
+       "register": "neutral",
+       "senses_at_pos": 2,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "deteriorate",
+        "third": "deteriorates",
+        "past": "deteriorated",
+        "part": "deteriorating"
+       },
+       "discriminator": "its condition worsened",
+       "grade": 6
+      },
+      {
+       "w": "dwindle",
+       "synset": "dwindle.v.01",
+       "gloss_source": "wordnet",
+       "gloss": "become smaller or lose substance",
+       "zipf": 2.61,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "dwindle",
+        "third": "dwindles",
+        "past": "dwindled",
+        "part": "dwindling"
+       },
+       "discriminator": "shrank away toward nothing",
+       "grade": 6
+      },
+      {
+       "w": "prosper",
+       "synset": "thrive.v.02",
+       "gloss_source": "authored",
+       "gloss": "do well and succeed, going from strength to strength",
+       "zipf": 3.45,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "prosper",
+        "third": "prospers",
+        "past": "prospered",
+        "part": "prospering"
+       },
+       "discriminator": "went from strength to strength",
+       "grade": 5
+      },
+      {
+       "w": "endure",
+       "synset": "prevail.v.03",
+       "gloss_source": "wordnet",
+       "gloss": "continue to exist",
+       "zipf": 3.82,
+       "register": "neutral",
+       "senses_at_pos": 7,
+       "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-06",
+        "note": "dominant school-context sense confirmed at roster vet"
+       },
+       "forms": {
+        "base": "endure",
+        "third": "endures",
+        "past": "endured",
+        "part": "enduring"
+       },
+       "discriminator": "lasted without giving way",
+       "grade": 5
+      },
+      {
+       "w": "relent",
+       "synset": "yield.v.05",
+       "gloss_source": "authored",
+       "gloss": "finally soften and give way after being harsh or fierce",
+       "zipf": 2.52,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "relent",
+        "third": "relents",
+        "past": "relented",
+        "part": "relenting"
+       },
+       "discriminator": "the harshness finally gave way",
+       "grade": 6
+      }
+     ],
+     "sentences": [
+      {
+       "id": "A-fortune-01-s01",
+       "answer": "deteriorate",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "After months outside, the toy car ___: rust spotted every wheel.",
+       "cue_phrase": "rust spotted every wheel",
+       "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+       }
+      },
+      {
+       "id": "A-fortune-01-s02",
+       "answer": "deteriorate",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "By spring, the shed ___, with holes in its roof.",
+       "cue_phrase": "holes in its roof",
+       "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+       }
+      },
+      {
+       "id": "A-fortune-01-s03",
+       "answer": "deteriorate",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The damp cellar made the cardboard castle ___ and sag at the towers.",
+       "cue_phrase": "sag at the towers",
+       "surface": {
+        "deteriorate": "deteriorate",
+        "dwindle": "dwindle",
+        "prosper": "prosper",
+        "endure": "endure",
+        "relent": "relent"
+       }
+      },
+      {
+       "id": "A-fortune-01-s04",
+       "answer": "deteriorate",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The bicycle ___ after winter; its chain stuck and tyres split.",
+       "cue_phrase": "chain stuck and tyres",
+       "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+       }
+      },
+      {
+       "id": "A-fortune-01-s05",
+       "answer": "deteriorate",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Rain made the mural ___; bright faces ran into grey streaks.",
+       "cue_phrase": "ran into grey streaks",
+       "surface": {
+        "deteriorate": "deteriorate",
+        "dwindle": "dwindle",
+        "prosper": "prosper",
+        "endure": "endure",
+        "relent": "relent"
+       }
+      },
+      {
+       "id": "A-fortune-01-s06",
+       "answer": "deteriorate",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "When Leo opened the lunchbox, the forgotten sandwich had ___, smelling sour.",
+       "cue_phrase": "smelling sour",
+       "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+       }
+      },
+      {
+       "id": "A-fortune-01-s07",
+       "answer": "deteriorate",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "In salty air, metal ___ until orange flakes cover it.",
+       "cue_phrase": "orange flakes cover",
+       "surface": {
+        "deteriorate": "deteriorates",
+        "dwindle": "dwindles",
+        "prosper": "prospers",
+        "endure": "endures",
+        "relent": "relents"
+       }
+      },
+      {
+       "id": "A-fortune-01-s08",
+       "answer": "deteriorate",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The picnic blanket ___ in the attic; moth holes covered one corner.",
+       "cue_phrase": "moth holes covered",
+       "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+       }
+      },
+      {
+       "id": "A-fortune-01-s09",
+       "answer": "dwindle",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The biscuit pile ___ from twelve to two by lunchtime.",
+       "cue_phrase": "from twelve to two",
+       "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+       }
+      },
+      {
+       "id": "A-fortune-01-s10",
+       "answer": "dwindle",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "By dusk, the campfire ___ to a few red coals.",
+       "cue_phrase": "few red coals",
+       "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+       }
+      },
+      {
+       "id": "A-fortune-01-s11",
+       "answer": "dwindle",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Sharing with neighbours made our water supply ___ before the hike ended.",
+       "cue_phrase": "Sharing with neighbours",
+       "surface": {
+        "deteriorate": "deteriorate",
+        "dwindle": "dwindle",
+        "prosper": "prosper",
+        "endure": "endure",
+        "relent": "relent"
+       }
+      },
+      {
+       "id": "A-fortune-01-s12",
+       "answer": "dwindle",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "As tickets sold, the stack on the desk ___ fast.",
+       "cue_phrase": "tickets sold",
+       "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+       }
+      },
+      {
+       "id": "A-fortune-01-s13",
+       "answer": "dwindle",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "After the squirrels visited, the birdseed ___ to crumbs in the tray.",
+       "cue_phrase": "squirrels visited",
+       "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+       }
+      },
+      {
+       "id": "A-fortune-01-s14",
+       "answer": "dwindle",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "With every throw, the fort's pile of snowballs ___.",
+       "cue_phrase": "With every throw",
+       "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+       }
+      },
+      {
+       "id": "A-fortune-01-s15",
+       "answer": "dwindle",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "A puddle ___ under hot sun, leaving dry rings on the path.",
+       "cue_phrase": "dry rings",
+       "surface": {
+        "deteriorate": "deteriorates",
+        "dwindle": "dwindles",
+        "prosper": "prospers",
+        "endure": "endures",
+        "relent": "relents"
+       }
+      },
+      {
+       "id": "A-fortune-01-s16",
+       "answer": "dwindle",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "The magician made the coin pile ___ until one coin remained.",
+       "cue_phrase": "one coin remained",
+       "surface": {
+        "deteriorate": "deteriorate",
+        "dwindle": "dwindle",
+        "prosper": "prosper",
+        "endure": "endure",
+        "relent": "relent"
+       }
+      },
+      {
+       "id": "A-fortune-01-s17",
+       "answer": "prosper",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The little bakery ___; queues stretched round the corner each morning.",
+       "cue_phrase": "queues stretched round",
+       "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+       }
+      },
+      {
+       "id": "A-fortune-01-s18",
+       "answer": "prosper",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Our school chess club ___, winning trophies and doubling its members.",
+       "cue_phrase": "winning trophies and doubling",
+       "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+       }
+      },
+      {
+       "id": "A-fortune-01-s19",
+       "answer": "prosper",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Good soil helped the bean patch ___, filling baskets every weekend.",
+       "cue_phrase": "filling baskets",
+       "surface": {
+        "deteriorate": "deteriorate",
+        "dwindle": "dwindle",
+        "prosper": "prosper",
+        "endure": "endure",
+        "relent": "relent"
+       }
+      },
+      {
+       "id": "A-fortune-01-s20",
+       "answer": "prosper",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Maya's jam stall ___; she needed a second table for jars.",
+       "cue_phrase": "needed a second table",
+       "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+       }
+      },
+      {
+       "id": "A-fortune-01-s21",
+       "answer": "prosper",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "After the new library opened, the reading club ___; every chair filled.",
+       "cue_phrase": "every chair filled",
+       "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+       }
+      },
+      {
+       "id": "A-fortune-01-s22",
+       "answer": "prosper",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The rescued orchard ___, and bees crowded every white blossom.",
+       "cue_phrase": "bees crowded every",
+       "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+       }
+      },
+      {
+       "id": "A-fortune-01-s23",
+       "answer": "prosper",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "The village market ___ as new stalls open along both sides of the square.",
+       "cue_phrase": "new stalls open",
+       "surface": {
+        "deteriorate": "deteriorates",
+        "dwindle": "dwindles",
+        "prosper": "prospers",
+        "endure": "endures",
+        "relent": "relents"
+       }
+      },
+      {
+       "id": "A-fortune-01-s24",
+       "answer": "prosper",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The sunny windowsill let the seedlings ___, with new leaves every morning.",
+       "cue_phrase": "new leaves every morning",
+       "surface": {
+        "deteriorate": "deteriorate",
+        "dwindle": "dwindle",
+        "prosper": "prosper",
+        "endure": "endure",
+        "relent": "relent"
+       }
+      },
+      {
+       "id": "A-fortune-01-s25",
+       "answer": "endure",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The stone tower ___ for centuries, with every wall still straight.",
+       "cue_phrase": "every wall still straight",
+       "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+       }
+      },
+      {
+       "id": "A-fortune-01-s26",
+       "answer": "endure",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Grandad's kite ___ ten summers without a tear in the sail.",
+       "cue_phrase": "without a tear",
+       "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+       }
+      },
+      {
+       "id": "A-fortune-01-s27",
+       "answer": "endure",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The lighthouse ___, its lamp still turning, long after the boat sheds had gone.",
+       "cue_phrase": "its lamp still turning",
+       "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+       }
+      },
+      {
+       "id": "A-fortune-01-s28",
+       "answer": "endure",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The family recipe ___, copied neatly from notebook to notebook.",
+       "cue_phrase": "notebook to notebook",
+       "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+       }
+      },
+      {
+       "id": "A-fortune-01-s29",
+       "answer": "endure",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Through house moves and floods, the blue mug ___ on the shelf.",
+       "cue_phrase": "moves and floods",
+       "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+       }
+      },
+      {
+       "id": "A-fortune-01-s30",
+       "answer": "endure",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Three hundred years on, the stone bridge ___, carrying carts then cars then bikes.",
+       "cue_phrase": "Three hundred years on",
+       "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+       }
+      },
+      {
+       "id": "A-fortune-01-s31",
+       "answer": "endure",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "A good tent ___ years of camping and still keeps rain out.",
+       "cue_phrase": "still keeps rain out",
+       "surface": {
+        "deteriorate": "deteriorates",
+        "dwindle": "dwindles",
+        "prosper": "prospers",
+        "endure": "endures",
+        "relent": "relents"
+       }
+      },
+      {
+       "id": "A-fortune-01-s32",
+       "answer": "endure",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Gran's bedtime song ___ through four generations, its words never changing.",
+       "cue_phrase": "its words never changing",
+       "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+       }
+      },
+      {
+       "id": "A-fortune-01-s33",
+       "answer": "relent",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "After three polite pleas, the guard ___ and opened the gate.",
+       "cue_phrase": "opened the gate",
+       "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+       }
+      },
+      {
+       "id": "A-fortune-01-s34",
+       "answer": "relent",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Mum ___ after bedtime stories, allowing one quiet chapter.",
+       "cue_phrase": "allowing one quiet chapter",
+       "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+       }
+      },
+      {
+       "id": "A-fortune-01-s35",
+       "answer": "relent",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The puppy's sad eyes made Omar ___ about the sofa rule.",
+       "cue_phrase": "puppy's sad eyes",
+       "surface": {
+        "deteriorate": "deteriorate",
+        "dwindle": "dwindle",
+        "prosper": "prosper",
+        "endure": "endure",
+        "relent": "relent"
+       }
+      },
+      {
+       "id": "A-fortune-01-s36",
+       "answer": "relent",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "At last, the captain ___, letting the tired crew rest.",
+       "cue_phrase": "tired crew rest",
+       "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+       }
+      },
+      {
+       "id": "A-fortune-01-s37",
+       "answer": "relent",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Nia kept apologising, and the teacher ___ about the late book.",
+       "cue_phrase": "kept apologising",
+       "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+       }
+      },
+      {
+       "id": "A-fortune-01-s38",
+       "answer": "relent",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The dragon saw the tiny shield shake, sighed out its smoke, and at last ___.",
+       "cue_phrase": "sighed out its smoke",
+       "surface": {
+        "deteriorate": "deteriorated",
+        "dwindle": "dwindled",
+        "prosper": "prospered",
+        "endure": "endured",
+        "relent": "relented"
+       }
+      },
+      {
+       "id": "A-fortune-01-s39",
+       "answer": "relent",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Dad usually ___ when we ask kindly and finish chores early.",
+       "cue_phrase": "ask kindly",
+       "surface": {
+        "deteriorate": "deteriorates",
+        "dwindle": "dwindles",
+        "prosper": "prospers",
+        "endure": "endures",
+        "relent": "relents"
+       }
+      },
+      {
+       "id": "A-fortune-01-s40",
+       "answer": "relent",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "The council agreed to ___, letting games stay in the park.",
+       "cue_phrase": "games stay",
+       "surface": {
+        "deteriorate": "deteriorate",
+        "dwindle": "dwindle",
+        "prosper": "prosper",
+        "endure": "endure",
+        "relent": "relent"
+       }
+      }
+     ],
+     "contrasts": [
+      {
+       "answer": "deteriorate",
+       "picked": "dwindle",
+       "line": "Deteriorate is about damage over time. Dwindle is about having less and less."
+      },
+      {
+       "answer": "deteriorate",
+       "picked": "prosper",
+       "line": "Deteriorate means condition drops. Prosper means things improve and flourish."
+      },
+      {
+       "answer": "deteriorate",
+       "picked": "endure",
+       "line": "Deteriorate shows damage appearing. Endure shows it lasts without breaking."
+      },
+      {
+       "answer": "deteriorate",
+       "picked": "relent",
+       "line": "Deteriorate is getting damaged. Relent is a strict person easing up."
+      },
+      {
+       "answer": "dwindle",
+       "picked": "deteriorate",
+       "line": "Dwindle means the amount shrinks away. Deteriorate means condition is damaged."
+      },
+      {
+       "answer": "dwindle",
+       "picked": "prosper",
+       "line": "Dwindle is less and less. Prosper is more success and plenty."
+      },
+      {
+       "answer": "dwindle",
+       "picked": "endure",
+       "line": "Dwindle is about quantity fading. Endure is about lasting through trouble."
+      },
+      {
+       "answer": "dwindle",
+       "picked": "relent",
+       "line": "Dwindle means there is less of it. Relent means someone stops being strict."
+      },
+      {
+       "answer": "prosper",
+       "picked": "deteriorate",
+       "line": "Prosper means plenty and success. Deteriorate means damage and decline."
+      },
+      {
+       "answer": "prosper",
+       "picked": "dwindle",
+       "line": "Prosper shows things thriving. Dwindle shows the amount shrinking away."
+      },
+      {
+       "answer": "prosper",
+       "picked": "endure",
+       "line": "Prosper means flourishing, not just lasting. Endure means lasting through trouble."
+      },
+      {
+       "answer": "prosper",
+       "picked": "relent",
+       "line": "Prosper is about success increasing. Relent is about strictness easing."
+      },
+      {
+       "answer": "endure",
+       "picked": "deteriorate",
+       "line": "Endure means lasting through trouble. Deteriorate means getting damaged by it."
+      },
+      {
+       "answer": "endure",
+       "picked": "dwindle",
+       "line": "Endure means it lasts. Dwindle means the amount shrinks away."
+      },
+      {
+       "answer": "endure",
+       "picked": "prosper",
+       "line": "Endure is survival through time. Prosper is thriving with success."
+      },
+      {
+       "answer": "endure",
+       "picked": "relent",
+       "line": "Endure means lasting under pressure. Relent means easing after being strict."
+      },
+      {
+       "answer": "relent",
+       "picked": "deteriorate",
+       "line": "Relent means strictness eases. Deteriorate means condition gets damaged."
+      },
+      {
+       "answer": "relent",
+       "picked": "dwindle",
+       "line": "Relent is about easing a refusal. Dwindle is about an amount shrinking."
+      },
+      {
+       "answer": "relent",
+       "picked": "prosper",
+       "line": "Relent means easing up. Prosper means thriving and gaining success."
+      },
+      {
+       "answer": "relent",
+       "picked": "endure",
+       "line": "Relent means strictness eases. Endure means something lasts through trouble."
+      }
+     ],
+     "meta": {
+      "generated_at": "2026-07-06T14:35:24+00:00",
+      "model": "gpt-5.5",
+      "scrubbed_at": "2026-07-07",
+      "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+     }
+    },
+    {
+     "id": "A-manner-01",
+     "bank": "A",
+     "pos": "adjective",
+     "theme": "the way they acted toward others",
+     "band": 5,
+     "band_override": 5,
+     "computed": {
+      "zipf_min": 2.74,
+      "zipf_mean": 2.96,
+      "tightness": null,
+      "band_suggested": 4,
+      "scored_at": "2026-07-06T18:43:21+00:00"
+     },
+     "words": [
+      {
+       "w": "aloof",
+       "synset": "aloof.s.01",
+       "gloss_source": "wordnet",
+       "gloss": "remote in manner",
+       "zipf": 2.99,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "aloof"
+       },
+       "discriminator": "cold distance; will not join in",
+       "grade": 7
+      },
+      {
+       "w": "nonchalant",
+       "synset": "casual.s.01",
+       "gloss_source": "authored",
+       "gloss": "acting as if you do not care at all about what is happening",
+       "zipf": 2.74,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "nonchalant"
+       },
+       "discriminator": "staged calm about an alarming event",
+       "grade": 7
+      },
+      {
+       "w": "sceptical",
+       "synset": "doubting.s.01",
+       "gloss_source": "wordnet",
+       "gloss": "marked by or given to doubt",
+       "zipf": 3.09,
+       "register": "neutral",
+       "senses_at_pos": 2,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "sceptical"
+       },
+       "discriminator": "withholds belief until shown proof",
+       "grade": 7
+      },
+      {
+       "w": "curt",
+       "synset": "brusque.s.01",
+       "gloss_source": "authored",
+       "gloss": "rudely brief in speech, using no more words than necessary",
+       "zipf": 3.16,
+       "register": "neutral",
+       "senses_at_pos": 2,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "curt"
+       },
+       "discriminator": "rudely short answers",
+       "grade": 7
+      },
+      {
+       "w": "incredulous",
+       "synset": "incredulous.a.01",
+       "gloss_source": "authored",
+       "gloss": "unable to believe what you have just seen or heard",
+       "zipf": 2.81,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "incredulous"
+       },
+       "discriminator": "jaw-drop disbelief at news",
+       "grade": 7
+      }
+     ],
+     "sentences": [
+      {
+       "id": "A-manner-01-s01",
+       "answer": "aloof",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Mira stayed ___, sitting apart and turning from friendly invitations.",
+       "cue_phrase": "sitting apart and turning",
+       "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (nonchalant); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-manner-01-s02",
+       "answer": "aloof",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The prince was ___, refusing the feast and watching from a balcony.",
+       "cue_phrase": "watching from a balcony",
+       "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (nonchalant); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-manner-01-s03",
+       "answer": "aloof",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "During kite-making, Tomas remained ___ by the fence, ignoring the offered string.",
+       "cue_phrase": "ignoring the offered string",
+       "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (nonchalant); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-manner-01-s04",
+       "answer": "aloof",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Grandma waved him into the photo, but Nico stayed ___ behind the tree.",
+       "cue_phrase": "waved him into the photo",
+       "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+       }
+      },
+      {
+       "id": "A-manner-01-s05",
+       "answer": "aloof",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The puppy wagged at Bea, yet she stood ___ outside the circle.",
+       "cue_phrase": "outside the circle",
+       "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (nonchalant); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-manner-01-s06",
+       "answer": "aloof",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Everyone swapped stickers, while Arin remained ___ at the far desk.",
+       "cue_phrase": "at the far desk",
+       "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (nonchalant); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-manner-01-s07",
+       "answer": "aloof",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The fairy invited the troll dancing, but he stood ___ in shadows.",
+       "cue_phrase": "invited the troll dancing",
+       "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (incredulous, nonchalant, sceptical); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-manner-01-s08",
+       "answer": "aloof",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "At breakfast, Leila was ___, answering smiles with a turned shoulder.",
+       "cue_phrase": "turned shoulder",
+       "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (curt, nonchalant, sceptical); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-manner-01-s09",
+       "answer": "nonchalant",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "As the cake caught fire, Omar looked ___ and kept humming.",
+       "cue_phrase": "cake caught fire",
+       "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+       }
+      },
+      {
+       "id": "A-manner-01-s10",
+       "answer": "nonchalant",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Nia stayed ___ while the boat rocked, sipping juice without spilling.",
+       "cue_phrase": "sipping juice without spilling",
+       "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+       }
+      },
+      {
+       "id": "A-manner-01-s11",
+       "answer": "nonchalant",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "During the surprise drill, Finn seemed ___, tying his shoelaces slowly.",
+       "cue_phrase": "tying his shoelaces slowly",
+       "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+       }
+      },
+      {
+       "id": "A-manner-01-s12",
+       "answer": "nonchalant",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Rain poured through the tent; Lila remained ___ and finished her comic.",
+       "cue_phrase": "finished her comic",
+       "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+       }
+      },
+      {
+       "id": "A-manner-01-s13",
+       "answer": "nonchalant",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "A spider landed on his sleeve, and Jay stayed ___, counting clouds.",
+       "cue_phrase": "counting clouds",
+       "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+       }
+      },
+      {
+       "id": "A-manner-01-s14",
+       "answer": "nonchalant",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The goalpost fell nearby; Rosa looked ___ and chewed her sandwich.",
+       "cue_phrase": "chewed her sandwich",
+       "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (incredulous); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-manner-01-s15",
+       "answer": "nonchalant",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "When thunder shook the windows, Ben was ___, sorting pencils by colour.",
+       "cue_phrase": "sorting pencils by colour",
+       "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+       }
+      },
+      {
+       "id": "A-manner-01-s16",
+       "answer": "nonchalant",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "The dragon sneezed sparks, yet Pip seemed ___ and polished his boots.",
+       "cue_phrase": "polished his boots",
+       "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+       }
+      },
+      {
+       "id": "A-manner-01-s17",
+       "answer": "sceptical",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Maya was ___, asking for proof before accepting the magic trick.",
+       "cue_phrase": "proof before accepting",
+       "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (incredulous); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-manner-01-s18",
+       "answer": "sceptical",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "When Uncle described his record-sized fish, Leo stayed ___ and asked for a photograph.",
+       "cue_phrase": "asked for a photograph",
+       "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (incredulous); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-manner-01-s19",
+       "answer": "sceptical",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The advert said the glue was strongest, so Sam felt ___ and tested it.",
+       "cue_phrase": "tested it",
+       "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (incredulous); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-manner-01-s20",
+       "answer": "sceptical",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "When the seed packet promised blue carrots, Priya felt ___ and read reviews.",
+       "cue_phrase": "read reviews",
+       "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (incredulous); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-manner-01-s21",
+       "answer": "sceptical",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Ravi was ___ when Mina suggested the shortcut again after yesterday's delay.",
+       "cue_phrase": "after yesterday's delay",
+       "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: yesterday's delay = reasoned prior-evidence doubt; incredulous needs astonishment",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-manner-01-s22",
+       "answer": "sceptical",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The twins seemed ___ about the magic pebble after spotting the glued switch.",
+       "cue_phrase": "spotting the glued switch",
+       "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (incredulous); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-manner-01-s23",
+       "answer": "sceptical",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Ari looked ___, checking the score against the rules sheet line by line.",
+       "cue_phrase": "line by line",
+       "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: line-by-line checking is systematic doubt; astonishment trigger removed at iteration 1",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-manner-01-s24",
+       "answer": "sceptical",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "The class stayed ___ until the new robot solved three sums correctly.",
+       "cue_phrase": "solved three sums correctly",
+       "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (incredulous, nonchalant); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-manner-01-s25",
+       "answer": "curt",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "When asked about homework, Kai was ___, snapping, 'Done,' and walking off.",
+       "cue_phrase": "snapping, 'Done,'",
+       "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+       }
+      },
+      {
+       "id": "A-manner-01-s26",
+       "answer": "curt",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The guard sounded ___, saying, 'No,' before pointing at the gate.",
+       "cue_phrase": "saying, 'No,' before",
+       "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+       }
+      },
+      {
+       "id": "A-manner-01-s27",
+       "answer": "curt",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Mum asked kindly; Joss became ___, muttered, 'Later,' and slammed the drawer.",
+       "cue_phrase": "muttered, 'Later,' and slammed",
+       "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+       }
+      },
+      {
+       "id": "A-manner-01-s28",
+       "answer": "curt",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "At the counter, the clerk was ___: 'Next,' without looking up.",
+       "cue_phrase": "'Next,' without looking up",
+       "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (aloof, nonchalant); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-manner-01-s29",
+       "answer": "curt",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "After losing, Tia turned ___ and answered every question with 'Nope.'",
+       "cue_phrase": "every question with 'Nope'",
+       "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (aloof); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-manner-01-s30",
+       "answer": "curt",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The captain grew ___, barking, 'Move,' instead of explaining the plan.",
+       "cue_phrase": "barking, 'Move,' instead",
+       "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+       }
+      },
+      {
+       "id": "A-manner-01-s31",
+       "answer": "curt",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "When Milo apologised, Sera sounded ___: 'Fine,' then closed her book.",
+       "cue_phrase": "'Fine,' then closed",
+       "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (aloof); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-manner-01-s32",
+       "answer": "curt",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "The wizard was ___, grunting, 'Go,' at the nervous travellers.",
+       "cue_phrase": "grunting, 'Go,' at",
+       "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+       }
+      },
+      {
+       "id": "A-manner-01-s33",
+       "answer": "incredulous",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Lena looked ___, jaw dropped, when her tiny pumpkin won first prize.",
+       "cue_phrase": "jaw dropped",
+       "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+       }
+      },
+      {
+       "id": "A-manner-01-s34",
+       "answer": "incredulous",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Rory was ___, whispering 'No way!' as the rabbit opened the latch.",
+       "cue_phrase": "whispering 'No way!'",
+       "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+       }
+      },
+      {
+       "id": "A-manner-01-s35",
+       "answer": "incredulous",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The team gasped and looked ___ when the scoreboard showed fifty points for them.",
+       "cue_phrase": "gasped",
+       "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+       }
+      },
+      {
+       "id": "A-manner-01-s36",
+       "answer": "incredulous",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Nana went wide-eyed and ___ as the quiet parrot recited the whole poem.",
+       "cue_phrase": "wide-eyed",
+       "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+       }
+      },
+      {
+       "id": "A-manner-01-s37",
+       "answer": "incredulous",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Ollie was ___; his mouth hung open at the gold egg.",
+       "cue_phrase": "mouth hung open",
+       "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+       }
+      },
+      {
+       "id": "A-manner-01-s38",
+       "answer": "incredulous",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The baker looked ___, rubbing his eyes, when the loaf rose taller than the table.",
+       "cue_phrase": "rubbing his eyes",
+       "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+       }
+      },
+      {
+       "id": "A-manner-01-s39",
+       "answer": "incredulous",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Mina blinked hard and stood ___ as her missing kite floated back carrying cookies.",
+       "cue_phrase": "blinked hard",
+       "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+       }
+      },
+      {
+       "id": "A-manner-01-s40",
+       "answer": "incredulous",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "The knights were ___, swords clattering down, when the dragon asked politely for soup.",
+       "cue_phrase": "swords clattering down",
+       "surface": {
+        "aloof": "aloof",
+        "nonchalant": "nonchalant",
+        "sceptical": "sceptical",
+        "curt": "curt",
+        "incredulous": "incredulous"
+       }
+      }
+     ],
+     "contrasts": [
+      {
+       "answer": "aloof",
+       "picked": "nonchalant",
+       "line": "Aloof keeps coldly apart from others. Nonchalant stays cool during trouble."
+      },
+      {
+       "answer": "aloof",
+       "picked": "sceptical",
+       "line": "Aloof will not join in. Sceptical waits for proof before agreeing."
+      },
+      {
+       "answer": "aloof",
+       "picked": "curt",
+       "line": "Aloof keeps distance from people. Curt gives sharp, tiny replies."
+      },
+      {
+       "answer": "aloof",
+       "picked": "incredulous",
+       "line": "Aloof turns away from company. Incredulous stares because news seems impossible."
+      },
+      {
+       "answer": "nonchalant",
+       "picked": "aloof",
+       "line": "Nonchalant stays cool during trouble. Aloof keeps coldly apart from people."
+      },
+      {
+       "answer": "nonchalant",
+       "picked": "sceptical",
+       "line": "Nonchalant seems unbothered by a scare. Sceptical checks proof before agreeing."
+      },
+      {
+       "answer": "nonchalant",
+       "picked": "curt",
+       "line": "Nonchalant stays cool when things go wrong. Curt answers in sharp, tiny replies."
+      },
+      {
+       "answer": "nonchalant",
+       "picked": "incredulous",
+       "line": "Nonchalant stays cool in a scare. Incredulous shows shocked disbelief."
+      },
+      {
+       "answer": "sceptical",
+       "picked": "aloof",
+       "line": "Sceptical waits for proof. Aloof keeps coldly apart from others."
+      },
+      {
+       "answer": "sceptical",
+       "picked": "nonchalant",
+       "line": "Sceptical checks before agreeing. Nonchalant stays cool during trouble."
+      },
+      {
+       "answer": "sceptical",
+       "picked": "curt",
+       "line": "Sceptical wants proof before agreeing. Curt gives sharp, tiny replies."
+      },
+      {
+       "answer": "sceptical",
+       "picked": "incredulous",
+       "line": "Sceptical holds back until proof appears. Incredulous reacts with shocked disbelief."
+      },
+      {
+       "answer": "curt",
+       "picked": "aloof",
+       "line": "Curt gives sharp, tiny replies. Aloof keeps coldly apart from others."
+      },
+      {
+       "answer": "curt",
+       "picked": "nonchalant",
+       "line": "Curt is sharp and tiny in replies. Nonchalant stays cool during trouble."
+      },
+      {
+       "answer": "curt",
+       "picked": "sceptical",
+       "line": "Curt cuts talk down to a sharp reply. Sceptical waits for proof."
+      },
+      {
+       "answer": "curt",
+       "picked": "incredulous",
+       "line": "Curt gives a sharp, tiny reply. Incredulous shows shocked disbelief at news."
+      },
+      {
+       "answer": "incredulous",
+       "picked": "aloof",
+       "line": "Incredulous shows shocked disbelief. Aloof keeps coldly apart from others."
+      },
+      {
+       "answer": "incredulous",
+       "picked": "nonchalant",
+       "line": "Incredulous is shocked by what happened. Nonchalant stays cool during trouble."
+      },
+      {
+       "answer": "incredulous",
+       "picked": "sceptical",
+       "line": "Incredulous is jaw-dropped disbelief. Sceptical checks proof before agreeing."
+      },
+      {
+       "answer": "incredulous",
+       "picked": "curt",
+       "line": "Incredulous shows shocked disbelief. Curt gives sharp, tiny replies."
+      }
+     ],
+     "meta": {
+      "generated_at": "2026-07-06T14:38:05+00:00",
+      "model": "gpt-5.5",
+      "scrubbed_at": "2026-07-07",
+      "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+     }
+    },
+    {
+     "id": "A-ponder-01",
+     "bank": "A",
+     "pos": "verb",
+     "theme": "ways of thinking it through",
+     "band": 5,
+     "band_override": 5,
+     "computed": {
+      "zipf_min": 2.24,
+      "zipf_mean": 3.25,
+      "tightness": 0.273,
+      "band_suggested": 4,
+      "scored_at": "2026-07-06T18:43:21+00:00"
+     },
+     "words": [
+      {
+       "w": "scrutinise",
+       "synset": "size_up.v.01",
+       "gloss_source": "wordnet",
+       "gloss": "to look at critically or searchingly, or in minute detail",
+       "zipf": 2.24,
+       "register": "neutral",
+       "senses_at_pos": 2,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "scrutinise",
+        "third": "scrutinises",
+        "past": "scrutinised",
+        "part": "scrutinising"
+       },
+       "discriminator": "pores over the fine detail",
+       "grade": 7
+      },
+      {
+       "w": "speculate",
+       "synset": "speculate.v.01",
+       "gloss_source": "authored",
+       "gloss": "make a guess about something that cannot yet be known",
+       "zipf": 3.48,
+       "register": "neutral",
+       "senses_at_pos": 4,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "speculate",
+        "third": "speculates",
+        "past": "speculated",
+        "part": "speculating"
+       },
+       "discriminator": "guessing without the facts",
+       "grade": 7
+      },
+      {
+       "w": "deliberate",
+       "synset": "consider.v.05",
+       "gloss_source": "wordnet",
+       "gloss": "think about carefully; weigh",
+       "zipf": 3.82,
+       "register": "neutral",
+       "senses_at_pos": 2,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "deliberate",
+        "third": "deliberates",
+        "past": "deliberated",
+        "part": "deliberating"
+       },
+       "discriminator": "weighing a choice before deciding",
+       "grade": 6
+      },
+      {
+       "w": "evaluate",
+       "synset": "evaluate.v.02",
+       "gloss_source": "wordnet",
+       "gloss": "form a critical opinion of",
+       "zipf": 4.01,
+       "register": "neutral",
+       "senses_at_pos": 2,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "evaluate",
+        "third": "evaluates",
+        "past": "evaluated",
+        "part": "evaluating"
+       },
+       "discriminator": "judging how good something is",
+       "grade": 6
+      },
+      {
+       "w": "envisage",
+       "synset": "imagine.v.01",
+       "gloss_source": "authored",
+       "gloss": "picture in your mind something that is not yet real",
+       "zipf": 2.7,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "envisage",
+        "third": "envisages",
+        "past": "envisaged",
+        "part": "envisaging"
+       },
+       "discriminator": "picturing what is not yet real",
+       "grade": 7
+      }
+     ],
+     "sentences": [
+      {
+       "id": "A-ponder-01-s01",
+       "answer": "scrutinise",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "At the museum, we used magnifiers to ___ tiny cracks in the old vase.",
+       "cue_phrase": "used magnifiers to",
+       "surface": {
+        "scrutinise": "scrutinise",
+        "speculate": "speculate",
+        "deliberate": "deliberate",
+        "evaluate": "evaluate",
+        "envisage": "envisage"
+       }
+      },
+      {
+       "id": "A-ponder-01-s02",
+       "answer": "scrutinise",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The referee ___ the photo, checking whether the ball crossed the line.",
+       "cue_phrase": "checking whether",
+       "surface": {
+        "scrutinise": "scrutinised",
+        "speculate": "speculated",
+        "deliberate": "deliberated",
+        "evaluate": "evaluated",
+        "envisage": "envisaged"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: binary fact-check (did it cross) carries scrutinise; no worth-judgment staged",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-ponder-01-s03",
+       "answer": "scrutinise",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Mina bent over the stamp album to ___ the tiny printing.",
+       "cue_phrase": "the tiny printing",
+       "surface": {
+        "scrutinise": "scrutinise",
+        "speculate": "speculate",
+        "deliberate": "deliberate",
+        "evaluate": "evaluate",
+        "envisage": "envisage"
+       }
+      },
+      {
+       "id": "A-ponder-01-s04",
+       "answer": "scrutinise",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Dad ___ each map symbol before choosing the safe path downhill.",
+       "cue_phrase": "each map symbol",
+       "surface": {
+        "scrutinise": "scrutinised",
+        "speculate": "speculated",
+        "deliberate": "deliberated",
+        "evaluate": "evaluated",
+        "envisage": "envisaged"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: close reading of each symbol carries scrutinise; choosing happens after the blank",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-ponder-01-s05",
+       "answer": "scrutinise",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "She held the shell under the lamp to ___ faint spiral marks.",
+       "cue_phrase": "under the lamp",
+       "surface": {
+        "scrutinise": "scrutinise",
+        "speculate": "speculate",
+        "deliberate": "deliberate",
+        "evaluate": "evaluate",
+        "envisage": "envisage"
+       }
+      },
+      {
+       "id": "A-ponder-01-s06",
+       "answer": "scrutinise",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Ben ___ the code letter by letter until he spotted one smudged number.",
+       "cue_phrase": "letter by letter",
+       "surface": {
+        "scrutinise": "scrutinised",
+        "speculate": "speculated",
+        "deliberate": "deliberated",
+        "evaluate": "evaluated",
+        "envisage": "envisaged"
+       }
+      },
+      {
+       "id": "A-ponder-01-s07",
+       "answer": "scrutinise",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "To ___ the insect wing, Nia counted the silver veins twice.",
+       "cue_phrase": "counted the silver veins",
+       "surface": {
+        "scrutinise": "scrutinise",
+        "speculate": "speculate",
+        "deliberate": "deliberate",
+        "evaluate": "evaluate",
+        "envisage": "envisage"
+       }
+      },
+      {
+       "id": "A-ponder-01-s08",
+       "answer": "scrutinise",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The jeweller ___ the clasp for hairline scratches beneath the bright lamp.",
+       "cue_phrase": "hairline scratches",
+       "surface": {
+        "scrutinise": "scrutinised",
+        "speculate": "speculated",
+        "deliberate": "deliberated",
+        "evaluate": "evaluated",
+        "envisage": "envisaged"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (evaluate); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-ponder-01-s09",
+       "answer": "speculate",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "While clouds hid the moon, we ___ about what made the thumping.",
+       "cue_phrase": "clouds hid the moon",
+       "surface": {
+        "scrutinise": "scrutinised",
+        "speculate": "speculated",
+        "deliberate": "deliberated",
+        "evaluate": "evaluated",
+        "envisage": "envisaged"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (deliberate); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-ponder-01-s10",
+       "answer": "speculate",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The class ___ about who sent the mystery postcard with no name.",
+       "cue_phrase": "mystery postcard with no name",
+       "surface": {
+        "scrutinise": "scrutinised",
+        "speculate": "speculated",
+        "deliberate": "deliberated",
+        "evaluate": "evaluated",
+        "envisage": "envisaged"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (deliberate); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-ponder-01-s11",
+       "answer": "speculate",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "When the headteacher whispered, children began to ___ about the surprise.",
+       "cue_phrase": "whispered",
+       "surface": {
+        "scrutinise": "scrutinise",
+        "speculate": "speculate",
+        "deliberate": "deliberate",
+        "evaluate": "evaluate",
+        "envisage": "envisage"
+       }
+      },
+      {
+       "id": "A-ponder-01-s12",
+       "answer": "speculate",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Villagers ___ about the cave noise before anyone reached the hilltop.",
+       "cue_phrase": "before anyone reached",
+       "surface": {
+        "scrutinise": "scrutinised",
+        "speculate": "speculated",
+        "deliberate": "deliberated",
+        "evaluate": "evaluated",
+        "envisage": "envisaged"
+       }
+      },
+      {
+       "id": "A-ponder-01-s13",
+       "answer": "speculate",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "With the box still shut, we could only ___ about its contents.",
+       "cue_phrase": "box still shut",
+       "surface": {
+        "scrutinise": "scrutinise",
+        "speculate": "speculate",
+        "deliberate": "deliberate",
+        "evaluate": "evaluate",
+        "envisage": "envisage"
+       }
+      },
+      {
+       "id": "A-ponder-01-s14",
+       "answer": "speculate",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Before the race results arrived, fans ___ wildly about the winner.",
+       "cue_phrase": "before the race results arrived",
+       "surface": {
+        "scrutinise": "scrutinised",
+        "speculate": "speculated",
+        "deliberate": "deliberated",
+        "evaluate": "evaluated",
+        "envisage": "envisaged"
+       }
+      },
+      {
+       "id": "A-ponder-01-s15",
+       "answer": "speculate",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "At the campfire, they ___ about which animal left those prints.",
+       "cue_phrase": "which animal left",
+       "surface": {
+        "scrutinise": "scrutinised",
+        "speculate": "speculated",
+        "deliberate": "deliberated",
+        "evaluate": "evaluated",
+        "envisage": "envisaged"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (deliberate); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-ponder-01-s16",
+       "answer": "speculate",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "No one knew why the hall lights flickered, so Mia began to ___.",
+       "cue_phrase": "No one knew why",
+       "surface": {
+        "scrutinise": "scrutinise",
+        "speculate": "speculate",
+        "deliberate": "deliberate",
+        "evaluate": "evaluate",
+        "envisage": "envisage"
+       }
+      },
+      {
+       "id": "A-ponder-01-s17",
+       "answer": "deliberate",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The council had one hour to ___ before choosing the new playground.",
+       "cue_phrase": "before choosing",
+       "surface": {
+        "scrutinise": "scrutinise",
+        "speculate": "speculate",
+        "deliberate": "deliberate",
+        "evaluate": "evaluate",
+        "envisage": "envisage"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (evaluate); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-ponder-01-s18",
+       "answer": "deliberate",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "I ___ between the blue bike and the red scooter all afternoon.",
+       "cue_phrase": "between the blue bike",
+       "surface": {
+        "scrutinise": "scrutinised",
+        "speculate": "speculated",
+        "deliberate": "deliberated",
+        "evaluate": "evaluated",
+        "envisage": "envisaged"
+       }
+      },
+      {
+       "id": "A-ponder-01-s19",
+       "answer": "deliberate",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Before voting, the team will ___ over two designs for the flag.",
+       "cue_phrase": "over two designs",
+       "surface": {
+        "scrutinise": "scrutinise",
+        "speculate": "speculate",
+        "deliberate": "deliberate",
+        "evaluate": "evaluate",
+        "envisage": "envisage"
+       }
+      },
+      {
+       "id": "A-ponder-01-s20",
+       "answer": "deliberate",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Nan ___ a long while before deciding which seeds to plant.",
+       "cue_phrase": "before deciding which seeds",
+       "surface": {
+        "scrutinise": "scrutinised",
+        "speculate": "speculated",
+        "deliberate": "deliberated",
+        "evaluate": "evaluated",
+        "envisage": "envisaged"
+       }
+      },
+      {
+       "id": "A-ponder-01-s21",
+       "answer": "deliberate",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "With both routes marked, we sat quietly to ___ our next move.",
+       "cue_phrase": "both routes marked",
+       "surface": {
+        "scrutinise": "scrutinise",
+        "speculate": "speculate",
+        "deliberate": "deliberate",
+        "evaluate": "evaluate",
+        "envisage": "envisage"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (evaluate); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-ponder-01-s22",
+       "answer": "deliberate",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The judges ___ for ages, then finally picked the winning poster.",
+       "cue_phrase": "then finally picked",
+       "surface": {
+        "scrutinise": "scrutinised",
+        "speculate": "speculated",
+        "deliberate": "deliberated",
+        "evaluate": "evaluated",
+        "envisage": "envisaged"
+       }
+      },
+      {
+       "id": "A-ponder-01-s23",
+       "answer": "deliberate",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "Pausing at the fork, the hikers ___ about taking the steeper track.",
+       "cue_phrase": "taking the steeper track",
+       "surface": {
+        "scrutinise": "scrutinised",
+        "speculate": "speculated",
+        "deliberate": "deliberated",
+        "evaluate": "evaluated",
+        "envisage": "envisaged"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (speculate); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-ponder-01-s24",
+       "answer": "deliberate",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "To ___, Zara listed reasons for each club on scrap paper.",
+       "cue_phrase": "reasons for each club",
+       "surface": {
+        "scrutinise": "scrutinise",
+        "speculate": "speculate",
+        "deliberate": "deliberate",
+        "evaluate": "evaluate",
+        "envisage": "envisage"
+       }
+      },
+      {
+       "id": "A-ponder-01-s25",
+       "answer": "evaluate",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The coach asked us to ___ each routine out of ten.",
+       "cue_phrase": "out of ten",
+       "surface": {
+        "scrutinise": "scrutinise",
+        "speculate": "speculate",
+        "deliberate": "deliberate",
+        "evaluate": "evaluate",
+        "envisage": "envisage"
+       }
+      },
+      {
+       "id": "A-ponder-01-s26",
+       "answer": "evaluate",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "After the tasting, judges ___ the soups for flavour and texture.",
+       "cue_phrase": "for flavour and texture",
+       "surface": {
+        "scrutinise": "scrutinised",
+        "speculate": "speculated",
+        "deliberate": "deliberated",
+        "evaluate": "evaluated",
+        "envisage": "envisaged"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (scrutinise); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-ponder-01-s27",
+       "answer": "evaluate",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Teachers ___ the projects using neat charts and star totals.",
+       "cue_phrase": "star totals",
+       "surface": {
+        "scrutinise": "scrutinised",
+        "speculate": "speculated",
+        "deliberate": "deliberated",
+        "evaluate": "evaluated",
+        "envisage": "envisaged"
+       }
+      },
+      {
+       "id": "A-ponder-01-s28",
+       "answer": "evaluate",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "To ___ the play, the class compared acting, costumes, and singing.",
+       "cue_phrase": "compared acting, costumes, and singing",
+       "surface": {
+        "scrutinise": "scrutinise",
+        "speculate": "speculate",
+        "deliberate": "deliberate",
+        "evaluate": "evaluate",
+        "envisage": "envisage"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (scrutinise); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-ponder-01-s29",
+       "answer": "evaluate",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Mum ___ the second-hand bike by testing brakes, bell, and gears.",
+       "cue_phrase": "testing brakes, bell, and gears",
+       "surface": {
+        "scrutinise": "scrutinised",
+        "speculate": "speculated",
+        "deliberate": "deliberated",
+        "evaluate": "evaluated",
+        "envisage": "envisaged"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (scrutinise); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-ponder-01-s30",
+       "answer": "evaluate",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Before prizes were given, the panel had to ___ every painting.",
+       "cue_phrase": "Before prizes were given",
+       "surface": {
+        "scrutinise": "scrutinise",
+        "speculate": "speculate",
+        "deliberate": "deliberate",
+        "evaluate": "evaluate",
+        "envisage": "envisage"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: prize-ranking context carries evaluate; scrutiny is the method, not the act",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-ponder-01-s31",
+       "answer": "evaluate",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "Our scout leader ___ the shelter after the rainstorm and gave points.",
+       "cue_phrase": "gave points",
+       "surface": {
+        "scrutinise": "scrutinised",
+        "speculate": "speculated",
+        "deliberate": "deliberated",
+        "evaluate": "evaluated",
+        "envisage": "envisaged"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (scrutinise); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-ponder-01-s32",
+       "answer": "evaluate",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "We use scorecards to ___ entries at the village cake fair.",
+       "cue_phrase": "use scorecards",
+       "surface": {
+        "scrutinise": "scrutinise",
+        "speculate": "speculate",
+        "deliberate": "deliberate",
+        "evaluate": "evaluate",
+        "envisage": "envisage"
+       }
+      },
+      {
+       "id": "A-ponder-01-s33",
+       "answer": "envisage",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Standing on the empty field, I tried to ___ a castle there.",
+       "cue_phrase": "empty field",
+       "surface": {
+        "scrutinise": "scrutinise",
+        "speculate": "speculate",
+        "deliberate": "deliberate",
+        "evaluate": "evaluate",
+        "envisage": "envisage"
+       }
+      },
+      {
+       "id": "A-ponder-01-s34",
+       "answer": "envisage",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The inventor ___ how the treehouse might look with rope bridges.",
+       "cue_phrase": "how the treehouse might look",
+       "surface": {
+        "scrutinise": "scrutinised",
+        "speculate": "speculated",
+        "deliberate": "deliberated",
+        "evaluate": "evaluated",
+        "envisage": "envisaged"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (evaluate, speculate); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-ponder-01-s35",
+       "answer": "envisage",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Before building, the twins would ___ bedrooms above the bakery shop.",
+       "cue_phrase": "Before building",
+       "surface": {
+        "scrutinise": "scrutinise",
+        "speculate": "speculate",
+        "deliberate": "deliberate",
+        "evaluate": "evaluate",
+        "envisage": "envisage"
+       }
+      },
+      {
+       "id": "A-ponder-01-s36",
+       "answer": "envisage",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "She ___ the garden in spring, full of beans and yellow tulips.",
+       "cue_phrase": "garden in spring",
+       "surface": {
+        "scrutinise": "scrutinised",
+        "speculate": "speculated",
+        "deliberate": "deliberated",
+        "evaluate": "evaluated",
+        "envisage": "envisaged"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (evaluate, scrutinise); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-ponder-01-s37",
+       "answer": "envisage",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "With only muddy ground outside, we began to ___ a skating rink.",
+       "cue_phrase": "only muddy ground outside",
+       "surface": {
+        "scrutinise": "scrutinise",
+        "speculate": "speculate",
+        "deliberate": "deliberate",
+        "evaluate": "evaluate",
+        "envisage": "envisage"
+       }
+      },
+      {
+       "id": "A-ponder-01-s38",
+       "answer": "envisage",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The architect ___ bright windows where the old wall still stood.",
+       "cue_phrase": "old wall still stood",
+       "surface": {
+        "scrutinise": "scrutinised",
+        "speculate": "speculated",
+        "deliberate": "deliberated",
+        "evaluate": "evaluated",
+        "envisage": "envisaged"
+       }
+      },
+      {
+       "id": "A-ponder-01-s39",
+       "answer": "envisage",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "To ___ life underwater, Leo drew glass tunnels beneath the waves.",
+       "cue_phrase": "life underwater",
+       "surface": {
+        "scrutinise": "scrutinise",
+        "speculate": "speculate",
+        "deliberate": "deliberate",
+        "evaluate": "evaluate",
+        "envisage": "envisage"
+       }
+      },
+      {
+       "id": "A-ponder-01-s40",
+       "answer": "envisage",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "During art club, we ___ a mural covering the plain brick wall.",
+       "cue_phrase": "covering the plain brick wall",
+       "surface": {
+        "scrutinise": "scrutinised",
+        "speculate": "speculated",
+        "deliberate": "deliberated",
+        "evaluate": "evaluated",
+        "envisage": "envisaged"
+       }
+      }
+     ],
+     "contrasts": [
+      {
+       "answer": "scrutinise",
+       "picked": "speculate",
+       "line": "Scrutinise is about close inspection. Speculate is about wondering when facts are missing."
+      },
+      {
+       "answer": "scrutinise",
+       "picked": "deliberate",
+       "line": "Scrutinise studies the object closely. Deliberate weighs choices before deciding."
+      },
+      {
+       "answer": "scrutinise",
+       "picked": "evaluate",
+       "line": "Scrutinise notices tiny features. Evaluate judges how good or suitable something is."
+      },
+      {
+       "answer": "scrutinise",
+       "picked": "envisage",
+       "line": "Scrutinise examines what is there. Envisage imagines what could be there."
+      },
+      {
+       "answer": "speculate",
+       "picked": "scrutinise",
+       "line": "Speculate wonders without proof. Scrutinise checks closely for clues in front of you."
+      },
+      {
+       "answer": "speculate",
+       "picked": "deliberate",
+       "line": "Speculate is a maybe-type idea. Deliberate is choosing between options."
+      },
+      {
+       "answer": "speculate",
+       "picked": "evaluate",
+       "line": "Speculate wonders what might be true. Evaluate rates how good something is."
+      },
+      {
+       "answer": "speculate",
+       "picked": "envisage",
+       "line": "Speculate asks what might be happening. Envisage creates a future scene or design."
+      },
+      {
+       "answer": "deliberate",
+       "picked": "scrutinise",
+       "line": "Deliberate is about making a choice. Scrutinise is about close examination."
+      },
+      {
+       "answer": "deliberate",
+       "picked": "speculate",
+       "line": "Deliberate compares options before deciding. Speculate tosses out possibilities without enough facts."
+      },
+      {
+       "answer": "deliberate",
+       "picked": "evaluate",
+       "line": "Deliberate leads to a decision between choices. Evaluate scores or judges quality."
+      },
+      {
+       "answer": "deliberate",
+       "picked": "envisage",
+       "line": "Deliberate chooses a path. Envisage imagines a scene that is not there now."
+      },
+      {
+       "answer": "evaluate",
+       "picked": "scrutinise",
+       "line": "Evaluate judges quality or score. Scrutinise focuses on tiny parts and signs."
+      },
+      {
+       "answer": "evaluate",
+       "picked": "speculate",
+       "line": "Evaluate uses evidence to judge. Speculate fills gaps when evidence is missing."
+      },
+      {
+       "answer": "evaluate",
+       "picked": "deliberate",
+       "line": "Evaluate measures how good something is. Deliberate is about deciding between options."
+      },
+      {
+       "answer": "evaluate",
+       "picked": "envisage",
+       "line": "Evaluate judges an actual item. Envisage imagines a possible one."
+      },
+      {
+       "answer": "envisage",
+       "picked": "scrutinise",
+       "line": "Envisage imagines what is not there yet. Scrutinise inspects what is already there."
+      },
+      {
+       "answer": "envisage",
+       "picked": "speculate",
+       "line": "Envisage builds a mental scene. Speculate wonders which explanation might be right."
+      },
+      {
+       "answer": "envisage",
+       "picked": "deliberate",
+       "line": "Envisage imagines a future result. Deliberate considers choices before acting."
+      },
+      {
+       "answer": "envisage",
+       "picked": "evaluate",
+       "line": "Envisage creates an idea of what could exist. Evaluate judges how good something is."
+      }
+     ],
+     "meta": {
+      "generated_at": "2026-07-06T14:39:32+00:00",
+      "model": "gpt-5.4",
+      "scrubbed_at": "2026-07-07",
+      "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+     }
+    },
+    {
+     "id": "A-qualities-01",
+     "bank": "A",
+     "pos": "adjective",
+     "theme": "qualities people admire",
+     "band": 5,
+     "band_override": 5,
+     "computed": {
+      "zipf_min": 2.66,
+      "zipf_mean": 3.11,
+      "tightness": null,
+      "band_suggested": 4,
+      "scored_at": "2026-07-06T18:43:21+00:00"
+     },
+     "words": [
+      {
+       "w": "affable",
+       "synset": "affable.s.01",
+       "gloss_source": "authored",
+       "gloss": "warm and friendly to everyone",
+       "zipf": 2.66,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "affable"
+       },
+       "discriminator": "easy warmth with everyone",
+       "grade": 7
+      },
+      {
+       "w": "candid",
+       "synset": "blunt.s.03",
+       "gloss_source": "authored",
+       "gloss": "saying what you really think, plainly and honestly",
+       "zipf": 3.45,
+       "register": "neutral",
+       "senses_at_pos": 3,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "candid"
+       },
+       "discriminator": "plain honest speech",
+       "grade": 7
+      },
+      {
+       "w": "eloquent",
+       "synset": "eloquent.s.01",
+       "gloss_source": "wordnet",
+       "gloss": "expressing yourself readily, clearly, effectively",
+       "zipf": 3.21,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "eloquent"
+       },
+       "discriminator": "words that move people",
+       "grade": 7
+      },
+      {
+       "w": "astute",
+       "synset": "astute.s.01",
+       "gloss_source": "authored",
+       "gloss": "quick to see how things really stand and turn them to advantage",
+       "zipf": 3.1,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "astute"
+       },
+       "discriminator": "sees the clever angle",
+       "grade": 7
+      },
+      {
+       "w": "resolute",
+       "synset": "resolute.a.01",
+       "gloss_source": "authored",
+       "gloss": "firm in purpose or belief",
+       "zipf": 3.12,
+       "register": "neutral",
+       "senses_at_pos": 2,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "resolute"
+       },
+       "discriminator": "will not be turned aside",
+       "grade": 7
+      }
+     ],
+     "sentences": [
+      {
+       "id": "A-qualities-01-s01",
+       "answer": "affable",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "At lunch, the ___ monitor saved seats and greeted each child by name.",
+       "cue_phrase": "greeted each child",
+       "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+       }
+      },
+      {
+       "id": "A-qualities-01-s02",
+       "answer": "affable",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The ___ shopkeeper laughed with toddlers, parents, and the tired postman.",
+       "cue_phrase": "laughed with toddlers",
+       "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+       }
+      },
+      {
+       "id": "A-qualities-01-s03",
+       "answer": "affable",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "On the bus, our ___ driver welcomed nervous pupils aboard with jokes.",
+       "cue_phrase": "welcomed nervous pupils",
+       "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+       }
+      },
+      {
+       "id": "A-qualities-01-s04",
+       "answer": "affable",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The ___ neighbour waved, shared biscuits, and remembered every dog's name.",
+       "cue_phrase": "remembered every dog's name",
+       "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+       }
+      },
+      {
+       "id": "A-qualities-01-s05",
+       "answer": "affable",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "By sunset, the ___ camp leader had made the shy twins giggle.",
+       "cue_phrase": "shy twins giggle",
+       "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+       }
+      },
+      {
+       "id": "A-qualities-01-s06",
+       "answer": "affable",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "When visitors arrived, the ___ cat strolled over and rubbed their shoes.",
+       "cue_phrase": "rubbed their shoes",
+       "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+       }
+      },
+      {
+       "id": "A-qualities-01-s07",
+       "answer": "affable",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The ___ librarian smiled at quarrelling teams and found seats for both.",
+       "cue_phrase": "found seats for both",
+       "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+       }
+      },
+      {
+       "id": "A-qualities-01-s08",
+       "answer": "affable",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "During registration, the ___ coach learned names and high-fived latecomers.",
+       "cue_phrase": "high-fived latecomers",
+       "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+       }
+      },
+      {
+       "id": "A-qualities-01-s09",
+       "answer": "candid",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "After breaking the vase, Mira gave a ___ answer: 'I did it.'",
+       "cue_phrase": "I did it",
+       "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+       }
+      },
+      {
+       "id": "A-qualities-01-s10",
+       "answer": "candid",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The ___ witness told the court, 'No, the gate was open.'",
+       "cue_phrase": "the gate was open",
+       "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+       }
+      },
+      {
+       "id": "A-qualities-01-s11",
+       "answer": "candid",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Rafi's ___ note admitted the model looked crooked on one side.",
+       "cue_phrase": "admitted the model looked crooked",
+       "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+       }
+      },
+      {
+       "id": "A-qualities-01-s12",
+       "answer": "candid",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "In the meeting, the ___ pupil called her own plan unfair.",
+       "cue_phrase": "her own plan unfair",
+       "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+       }
+      },
+      {
+       "id": "A-qualities-01-s13",
+       "answer": "candid",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Lena's ___ reply named the missing pages instead of making excuses.",
+       "cue_phrase": "instead of making excuses",
+       "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+       }
+      },
+      {
+       "id": "A-qualities-01-s14",
+       "answer": "candid",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Asked about the soup, the ___ guest said it needed salt.",
+       "cue_phrase": "needed salt",
+       "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+       }
+      },
+      {
+       "id": "A-qualities-01-s15",
+       "answer": "candid",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The ___ captain owned up to the foul before the referee asked.",
+       "cue_phrase": "owned up",
+       "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+       }
+      },
+      {
+       "id": "A-qualities-01-s16",
+       "answer": "candid",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Her ___ diary entry crossed out 'great' and wrote 'messy'.",
+       "cue_phrase": "wrote 'messy'",
+       "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+       }
+      },
+      {
+       "id": "A-qualities-01-s17",
+       "answer": "eloquent",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The ___ speaker's words filled the hall, and even fidgety pupils listened.",
+       "cue_phrase": "even fidgety pupils listened",
+       "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+       }
+      },
+      {
+       "id": "A-qualities-01-s18",
+       "answer": "eloquent",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "With a ___ toast, Grandad made Auntie laugh, cry, then clap.",
+       "cue_phrase": "laugh, cry, then clap",
+       "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+       }
+      },
+      {
+       "id": "A-qualities-01-s19",
+       "answer": "eloquent",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The ___ poem about home left the noisy classroom completely still.",
+       "cue_phrase": "classroom completely still",
+       "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+       }
+      },
+      {
+       "id": "A-qualities-01-s20",
+       "answer": "eloquent",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "His ___ letter, full of graceful sentences, persuaded the council to save the park.",
+       "cue_phrase": "full of graceful sentences",
+       "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+       }
+      },
+      {
+       "id": "A-qualities-01-s21",
+       "answer": "eloquent",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "After Nia's ___ speech, three classmates signed up to plant trees.",
+       "cue_phrase": "signed up to plant trees",
+       "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (astute, candid, resolute); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-qualities-01-s22",
+       "answer": "eloquent",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The ___ storyteller made the dragon's cave sound bright and terrifying.",
+       "cue_phrase": "sound bright and terrifying",
+       "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+       }
+      },
+      {
+       "id": "A-qualities-01-s23",
+       "answer": "eloquent",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "A ___ plea from the sailor softened the pirate queen's scowl.",
+       "cue_phrase": "softened the pirate queen's scowl",
+       "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (astute, candid, resolute); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-qualities-01-s24",
+       "answer": "eloquent",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The ___ message on the banner made the crowd sing louder.",
+       "cue_phrase": "made the crowd sing louder",
+       "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (resolute); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-qualities-01-s25",
+       "answer": "astute",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The ___ chess player spotted the fork and won the queen next move.",
+       "cue_phrase": "spotted the fork",
+       "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+       }
+      },
+      {
+       "id": "A-qualities-01-s26",
+       "answer": "astute",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "A ___ shopper noticed the cheaper bundle hid extra pencils inside.",
+       "cue_phrase": "cheaper bundle hid",
+       "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+       }
+      },
+      {
+       "id": "A-qualities-01-s27",
+       "answer": "astute",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The ___ goalie read the striker's eyes and dived left early.",
+       "cue_phrase": "read the striker's eyes",
+       "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+       }
+      },
+      {
+       "id": "A-qualities-01-s28",
+       "answer": "astute",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Our ___ captain saved the fastest runner for the muddy final lap.",
+       "cue_phrase": "saved the fastest runner",
+       "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+       }
+      },
+      {
+       "id": "A-qualities-01-s29",
+       "answer": "astute",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Maya's ___ trade gave one shiny marble and gained three rare ones.",
+       "cue_phrase": "gained three rare ones",
+       "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+       }
+      },
+      {
+       "id": "A-qualities-01-s30",
+       "answer": "astute",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The ___ fox waited by the narrow gap where the hens passed.",
+       "cue_phrase": "narrow gap where",
+       "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+       }
+      },
+      {
+       "id": "A-qualities-01-s31",
+       "answer": "astute",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The ___ detective noticed fresh mud on only one boot.",
+       "cue_phrase": "only one boot",
+       "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+       }
+      },
+      {
+       "id": "A-qualities-01-s32",
+       "answer": "astute",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "At cards, the ___ aunt kept the joker until the last round.",
+       "cue_phrase": "kept the joker",
+       "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+       }
+      },
+      {
+       "id": "A-qualities-01-s33",
+       "answer": "resolute",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Despite boos, the ___ dancer finished the routine without missing a step.",
+       "cue_phrase": "Despite boos",
+       "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+       }
+      },
+      {
+       "id": "A-qualities-01-s34",
+       "answer": "resolute",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The ___ climber kept going after wind tore the flag away.",
+       "cue_phrase": "kept going",
+       "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+       }
+      },
+      {
+       "id": "A-qualities-01-s35",
+       "answer": "resolute",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "When the puzzle grew hard, the ___ twins stayed until midnight.",
+       "cue_phrase": "stayed until midnight",
+       "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+       }
+      },
+      {
+       "id": "A-qualities-01-s36",
+       "answer": "resolute",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The ___ goalkeeper faced five shots and refused to leave the net.",
+       "cue_phrase": "refused to leave",
+       "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+       }
+      },
+      {
+       "id": "A-qualities-01-s37",
+       "answer": "resolute",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "With mud covering her boots, the ___ scout still reached the beacon.",
+       "cue_phrase": "still reached the beacon",
+       "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+       }
+      },
+      {
+       "id": "A-qualities-01-s38",
+       "answer": "resolute",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "After three no votes, the ___ proposer brought the garden plan again.",
+       "cue_phrase": "three no votes",
+       "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+       }
+      },
+      {
+       "id": "A-qualities-01-s39",
+       "answer": "resolute",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The ___ swimmer ignored the cold and crossed the whole lake.",
+       "cue_phrase": "crossed the whole lake",
+       "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+       }
+      },
+      {
+       "id": "A-qualities-01-s40",
+       "answer": "resolute",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Even sleepy, the ___ drummer practised until the tricky beat worked.",
+       "cue_phrase": "practised until",
+       "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+       }
+      }
+     ],
+     "contrasts": [
+      {
+       "answer": "affable",
+       "picked": "candid",
+       "line": "Affable is easy to talk to and welcoming; candid is truthful, even when awkward."
+      },
+      {
+       "answer": "affable",
+       "picked": "eloquent",
+       "line": "Affable puts people at ease; eloquent uses words that move a crowd."
+      },
+      {
+       "answer": "affable",
+       "picked": "astute",
+       "line": "Affable is pleasant company; astute spots the smart move."
+      },
+      {
+       "answer": "affable",
+       "picked": "resolute",
+       "line": "Affable greets people kindly; resolute keeps going and will not give up."
+      },
+      {
+       "answer": "candid",
+       "picked": "affable",
+       "line": "Candid tells the truth directly; affable makes people feel welcome."
+      },
+      {
+       "answer": "candid",
+       "picked": "eloquent",
+       "line": "Candid gives a straight truth; eloquent speaks in a powerful, moving way."
+      },
+      {
+       "answer": "candid",
+       "picked": "astute",
+       "line": "Candid is open truth-telling; astute is noticing the clever choice."
+      },
+      {
+       "answer": "candid",
+       "picked": "resolute",
+       "line": "Candid admits the truth; resolute sticks with a task despite trouble."
+      },
+      {
+       "answer": "eloquent",
+       "picked": "affable",
+       "line": "Eloquent words stir feelings; affable behaviour makes people feel welcome."
+      },
+      {
+       "answer": "eloquent",
+       "picked": "candid",
+       "line": "Eloquent speech moves listeners; candid speech tells the truth directly."
+      },
+      {
+       "answer": "eloquent",
+       "picked": "astute",
+       "line": "Eloquent wins hearts with words; astute wins by spotting the smart angle."
+      },
+      {
+       "answer": "eloquent",
+       "picked": "resolute",
+       "line": "Eloquent can inspire a crowd; resolute keeps going when it is hard."
+      },
+      {
+       "answer": "astute",
+       "picked": "affable",
+       "line": "Astute notices the best move; affable is pleasant and welcoming with people."
+      },
+      {
+       "answer": "astute",
+       "picked": "candid",
+       "line": "Astute spots a clever chance; candid tells the truth without hiding it."
+      },
+      {
+       "answer": "astute",
+       "picked": "eloquent",
+       "line": "Astute finds the smart plan; eloquent uses words that move listeners."
+      },
+      {
+       "answer": "astute",
+       "picked": "resolute",
+       "line": "Astute works out the clever move; resolute refuses to stop."
+      },
+      {
+       "answer": "resolute",
+       "picked": "affable",
+       "line": "Resolute keeps going despite trouble; affable puts people at ease."
+      },
+      {
+       "answer": "resolute",
+       "picked": "candid",
+       "line": "Resolute does not give up; candid tells the truth directly."
+      },
+      {
+       "answer": "resolute",
+       "picked": "eloquent",
+       "line": "Resolute sticks with the task; eloquent moves people with words."
+      },
+      {
+       "answer": "resolute",
+       "picked": "astute",
+       "line": "Resolute keeps going through difficulty; astute spots the clever move."
+      }
+     ],
+     "meta": {
+      "generated_at": "2026-07-06T18:23:51+00:00",
+      "model": "gpt-5.5",
+      "scrubbed_at": "2026-07-07",
+      "scrub_note": "Scrubbed by claude 2026-07-07: mechanical sweeps clean (two snow scenes cleared - no month-absurdity cues, AU-safe), all 40 sentences and 20 contrasts read; no defects found."
+     }
+    },
+    {
+     "id": "A-unsure-01",
+     "bank": "A",
+     "pos": "adjective",
+     "theme": "ways of being unsure",
+     "band": 5,
+     "band_override": 5,
+     "computed": {
+      "zipf_min": 2.9,
+      "zipf_mean": 3.18,
+      "tightness": null,
+      "band_suggested": 4,
+      "scored_at": "2026-07-06T18:43:21+00:00"
+     },
+     "words": [
+      {
+       "w": "disoriented",
+       "synset": "confused.s.03",
+       "gloss_source": "authored",
+       "gloss": "having lost your sense of where you are or which way to go",
+       "zipf": 2.9,
+       "register": "neutral",
+       "senses_at_pos": 2,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "disoriented"
+       },
+       "discriminator": "unsure WHERE you are",
+       "grade": 6
+      },
+      {
+       "w": "dubious",
+       "synset": "dubious.s.03",
+       "gloss_source": "wordnet",
+       "gloss": "not convinced",
+       "zipf": 3.49,
+       "register": "neutral",
+       "senses_at_pos": 3,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "dubious"
+       },
+       "discriminator": "unsure whether to believe it",
+       "grade": 7
+      },
+      {
+       "w": "perplexed",
+       "synset": "perplexed.a.01",
+       "gloss_source": "authored",
+       "gloss": "completely puzzled by something you cannot explain",
+       "zipf": 3.05,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "perplexed"
+       },
+       "discriminator": "unsure what it means",
+       "grade": 6
+      },
+      {
+       "w": "ambivalent",
+       "synset": "ambivalent.s.01",
+       "gloss_source": "authored",
+       "gloss": "unsure because you feel two opposite ways at once",
+       "zipf": 3.01,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "ambivalent"
+       },
+       "discriminator": "feeling both ways at once",
+       "grade": 7
+      },
+      {
+       "w": "tentative",
+       "synset": "doubtful.s.03",
+       "gloss_source": "authored",
+       "gloss": "acting in a careful, half-committed way because you are unsure",
+       "zipf": 3.45,
+       "register": "neutral",
+       "senses_at_pos": 2,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "tentative"
+       },
+       "discriminator": "half-committed in action",
+       "grade": 7
+      }
+     ],
+     "sentences": [
+      {
+       "id": "A-unsure-01-s01",
+       "answer": "disoriented",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "After three spins, Priya felt ___ and headed toward the wrong classroom.",
+       "cue_phrase": "wrong classroom",
+       "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+       }
+      },
+      {
+       "id": "A-unsure-01-s02",
+       "answer": "disoriented",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Inside the mirror maze, Ben grew ___ and missed the exit twice.",
+       "cue_phrase": "missed the exit",
+       "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (perplexed); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-unsure-01-s03",
+       "answer": "disoriented",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The fog made the hikers ___; they circled back to the same oak.",
+       "cue_phrase": "same oak",
+       "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (perplexed); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-unsure-01-s04",
+       "answer": "disoriented",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "After the tunnel slide, Noor was ___ and pointed north at the sea.",
+       "cue_phrase": "pointed north at",
+       "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+       }
+      },
+      {
+       "id": "A-unsure-01-s05",
+       "answer": "disoriented",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Jamal woke on the train ___, with no idea which stop came next.",
+       "cue_phrase": "which stop came next",
+       "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (perplexed); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-unsure-01-s06",
+       "answer": "disoriented",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The dark campsite left Ava ___; every tent seemed to face a different path.",
+       "cue_phrase": "different path",
+       "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (perplexed); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-unsure-01-s07",
+       "answer": "disoriented",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "When the lights failed, Dad became ___ and opened the cupboard instead of the door.",
+       "cue_phrase": "instead of the door",
+       "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+       }
+      },
+      {
+       "id": "A-unsure-01-s08",
+       "answer": "disoriented",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "After the cartwheel, Isla stood ___, facing the wall she had started beside.",
+       "cue_phrase": "facing the wall",
+       "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (perplexed); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-unsure-01-s09",
+       "answer": "dubious",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Mum looked ___ when the goldfish was blamed for eating the cake.",
+       "cue_phrase": "goldfish was blamed",
+       "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: a stated claim to doubt, nothing to decode; perplexed is the charitable read",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-unsure-01-s10",
+       "answer": "dubious",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Kai sounded ___ when a flyer promised snow at the beach in January.",
+       "cue_phrase": "snow at the beach in January",
+       "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (perplexed); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-unsure-01-s11",
+       "answer": "dubious",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "At lunch, Sita was ___ about the soup's claim to glow.",
+       "cue_phrase": "claim to glow",
+       "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (perplexed); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-unsure-01-s12",
+       "answer": "dubious",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The coach seemed ___ after Ravi said his shoes made him fly.",
+       "cue_phrase": "made him fly",
+       "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (perplexed); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-unsure-01-s13",
+       "answer": "dubious",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Nell stayed ___, watching the magician's plain hat for hidden pockets.",
+       "cue_phrase": "hidden pockets",
+       "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+       }
+      },
+      {
+       "id": "A-unsure-01-s14",
+       "answer": "dubious",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Tom was ___ after the tiny puppy was called a fierce wolf.",
+       "cue_phrase": "fierce wolf",
+       "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: a stated claim to doubt, nothing to decode; perplexed is the charitable read",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-unsure-01-s15",
+       "answer": "dubious",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Grandad sounded ___ when the radio announced a dragon in the park.",
+       "cue_phrase": "dragon in the park",
+       "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: a stated claim to doubt, nothing to decode; perplexed is the charitable read",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-unsure-01-s16",
+       "answer": "dubious",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "Mira felt ___ about the poster saying carrots make homework vanish.",
+       "cue_phrase": "homework vanish",
+       "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: a stated claim to doubt, nothing to decode; perplexed is the charitable read",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-unsure-01-s17",
+       "answer": "perplexed",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Eli was ___ when the doorbell rang from inside his lunchbox.",
+       "cue_phrase": "inside his lunchbox",
+       "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (disoriented); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-unsure-01-s18",
+       "answer": "perplexed",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The class became ___ when the sum ended with a purple star.",
+       "cue_phrase": "purple star",
+       "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+       }
+      },
+      {
+       "id": "A-unsure-01-s19",
+       "answer": "perplexed",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Rosa stared ___ at the note: 'Bring the square circle tomorrow.'",
+       "cue_phrase": "square circle tomorrow",
+       "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+       }
+      },
+      {
+       "id": "A-unsure-01-s20",
+       "answer": "perplexed",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Max was ___ after the compass needle spun while lying on the desk.",
+       "cue_phrase": "needle spun",
+       "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-4.1 lists a second fit (disoriented); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-unsure-01-s21",
+       "answer": "perplexed",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Lily felt ___ when every library book opened to page zero.",
+       "cue_phrase": "page zero",
+       "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+       }
+      },
+      {
+       "id": "A-unsure-01-s22",
+       "answer": "perplexed",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Owen was ___ by the riddle answer, 'a sandwich with no bread.'",
+       "cue_phrase": "no bread",
+       "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+       }
+      },
+      {
+       "id": "A-unsure-01-s23",
+       "answer": "perplexed",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Nina looked ___ as the music sheet showed a fish instead of notes.",
+       "cue_phrase": "fish instead of notes",
+       "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+       }
+      },
+      {
+       "id": "A-unsure-01-s24",
+       "answer": "perplexed",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "The twins were ___ when their shadows pointed upward at noon.",
+       "cue_phrase": "shadows pointed upward",
+       "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: cognitive puzzle, no loss of bearings; disoriented needs place-confusion",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-unsure-01-s25",
+       "answer": "ambivalent",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Lara was ___ about moving, excited yet sad as friends waved goodbye.",
+       "cue_phrase": "excited yet sad",
+       "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+       }
+      },
+      {
+       "id": "A-unsure-01-s26",
+       "answer": "ambivalent",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Finn was ___ about the play, loving applause but fearing forgotten lines.",
+       "cue_phrase": "loving applause but fearing",
+       "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (tentative); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-unsure-01-s27",
+       "answer": "ambivalent",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Mina stayed ___ about camp, packing marshmallows while worrying about spiders.",
+       "cue_phrase": "packing marshmallows while worrying",
+       "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (tentative); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-unsure-01-s28",
+       "answer": "ambivalent",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Raj was ___ about the puppy, smiling at licks but hating muddy paws.",
+       "cue_phrase": "smiling at licks but hating",
+       "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (dubious, tentative); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-unsure-01-s29",
+       "answer": "ambivalent",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Ella remained ___ after winning the solo, proud yet nervous about Saturday.",
+       "cue_phrase": "proud yet nervous",
+       "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+       }
+      },
+      {
+       "id": "A-unsure-01-s30",
+       "answer": "ambivalent",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Sam was ___ about the roller coaster, cheering loudly while gripping the rail.",
+       "cue_phrase": "cheering loudly while gripping",
+       "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (tentative); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-unsure-01-s31",
+       "answer": "ambivalent",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Ivy looked ___ at the huge cake, hungry but worried about crumbs.",
+       "cue_phrase": "hungry but worried",
+       "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (dubious, tentative); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-unsure-01-s32",
+       "answer": "ambivalent",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "Noah sounded ___ about snow, cheering for sledges but groaning over cold toes.",
+       "cue_phrase": "cheering for sledges but groaning",
+       "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (dubious, tentative); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-unsure-01-s33",
+       "answer": "tentative",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Ari gave a ___ knock, barely louder than a raindrop.",
+       "cue_phrase": "barely louder than",
+       "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+       }
+      },
+      {
+       "id": "A-unsure-01-s34",
+       "answer": "tentative",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Maya made a ___ step onto the creaky bridge, then paused.",
+       "cue_phrase": "then paused",
+       "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+       }
+      },
+      {
+       "id": "A-unsure-01-s35",
+       "answer": "tentative",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Leo raised a ___ hand, lowering it before the teacher looked over.",
+       "cue_phrase": "lowering it before",
+       "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+       }
+      },
+      {
+       "id": "A-unsure-01-s36",
+       "answer": "tentative",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Nina offered a ___ smile, then hid behind her book.",
+       "cue_phrase": "hid behind her book",
+       "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+       }
+      },
+      {
+       "id": "A-unsure-01-s37",
+       "answer": "tentative",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Omar's ___ pencil mark was so faint that the eraser missed it.",
+       "cue_phrase": "so faint",
+       "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+       }
+      },
+      {
+       "id": "A-unsure-01-s38",
+       "answer": "tentative",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Pip gave the door a ___ push, and it moved only an inch.",
+       "cue_phrase": "only an inch",
+       "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+       }
+      },
+      {
+       "id": "A-unsure-01-s39",
+       "answer": "tentative",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Zara took a ___ bite of the new stew, smaller than a pea.",
+       "cue_phrase": "smaller than a pea",
+       "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (dubious); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "A-unsure-01-s40",
+       "answer": "tentative",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "Ben made a ___ wave from behind the curtain, then pulled back.",
+       "cue_phrase": "then pulled back",
+       "surface": {
+        "disoriented": "disoriented",
+        "dubious": "dubious",
+        "perplexed": "perplexed",
+        "ambivalent": "ambivalent",
+        "tentative": "tentative"
+       }
+      }
+     ],
+     "contrasts": [
+      {
+       "answer": "disoriented",
+       "picked": "dubious",
+       "line": "Disoriented is about not knowing the route. Dubious is about not believing a claim."
+      },
+      {
+       "answer": "disoriented",
+       "picked": "perplexed",
+       "line": "Disoriented is mixed up about place. Perplexed is mixed up about meaning."
+      },
+      {
+       "answer": "disoriented",
+       "picked": "ambivalent",
+       "line": "Disoriented means place or direction is muddled. Ambivalent means feelings pull both ways."
+      },
+      {
+       "answer": "disoriented",
+       "picked": "tentative",
+       "line": "Disoriented means direction is muddled. Tentative means the action is small or held back."
+      },
+      {
+       "answer": "dubious",
+       "picked": "disoriented",
+       "line": "Dubious is not believing a claim. Disoriented is not knowing where to go."
+      },
+      {
+       "answer": "dubious",
+       "picked": "perplexed",
+       "line": "Dubious doubts a claim. Perplexed cannot make sense of a strange thing."
+      },
+      {
+       "answer": "dubious",
+       "picked": "ambivalent",
+       "line": "Dubious doubts it is true. Ambivalent has both yes and no feelings."
+      },
+      {
+       "answer": "dubious",
+       "picked": "tentative",
+       "line": "Dubious is a doubtful mind. Tentative is a small try, like a soft knock."
+      },
+      {
+       "answer": "perplexed",
+       "picked": "disoriented",
+       "line": "Perplexed means the idea makes no sense. Disoriented means the place or route is unclear."
+      },
+      {
+       "answer": "perplexed",
+       "picked": "dubious",
+       "line": "Perplexed asks, 'How does this make sense?' Dubious asks, 'Is this true?'"
+      },
+      {
+       "answer": "perplexed",
+       "picked": "ambivalent",
+       "line": "Perplexed is confused by meaning. Ambivalent is pulled by mixed feelings."
+      },
+      {
+       "answer": "perplexed",
+       "picked": "tentative",
+       "line": "Perplexed is stuck on meaning. Tentative is a small, not-quite-bold action."
+      },
+      {
+       "answer": "ambivalent",
+       "picked": "disoriented",
+       "line": "Ambivalent has mixed feelings. Disoriented has mixed-up direction."
+      },
+      {
+       "answer": "ambivalent",
+       "picked": "dubious",
+       "line": "Ambivalent likes and dislikes at the same time. Dubious does not quite believe it."
+      },
+      {
+       "answer": "ambivalent",
+       "picked": "perplexed",
+       "line": "Ambivalent is mixed feelings. Perplexed is not understanding a strange clue."
+      },
+      {
+       "answer": "ambivalent",
+       "picked": "tentative",
+       "line": "Ambivalent is split feelings. Tentative is a held-back action."
+      },
+      {
+       "answer": "tentative",
+       "picked": "disoriented",
+       "line": "Tentative is a held-back action. Disoriented is not knowing the direction."
+      },
+      {
+       "answer": "tentative",
+       "picked": "dubious",
+       "line": "Tentative shows a small try. Dubious shows doubt about truth."
+      },
+      {
+       "answer": "tentative",
+       "picked": "perplexed",
+       "line": "Tentative is about doing little. Perplexed is about not understanding."
+      },
+      {
+       "answer": "tentative",
+       "picked": "ambivalent",
+       "line": "Tentative is a cautious action. Ambivalent is mixed feelings."
+      }
+     ],
+     "meta": {
+      "generated_at": "2026-07-06T14:46:05+00:00",
+      "model": "gpt-5.5",
+      "scrubbed_at": "2026-07-07",
+      "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+     }
+    },
+    {
+     "id": "B-bearing-01",
+     "bank": "B",
+     "pos": "noun",
+     "theme": "how a body is built and carried",
+     "band": 5,
+     "band_override": 5,
+     "computed": {
+      "zipf_min": 3.04,
+      "zipf_mean": 3.38,
+      "tightness": 0.453,
+      "band_suggested": 3,
+      "scored_at": "2026-07-06T18:43:21+00:00"
+     },
+     "words": [
+      {
+       "w": "gait",
+       "synset": "gait.n.03",
+       "gloss_source": "wordnet",
+       "gloss": "a person's manner of walking",
+       "zipf": 3.09,
+       "register": "neutral",
+       "senses_at_pos": 3,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "gait"
+       },
+       "discriminator": "the pattern of how you walk",
+       "grade": 7
+      },
+      {
+       "w": "stance",
+       "synset": "stance.n.01",
+       "gloss_source": "wordnet",
+       "gloss": "standing posture",
+       "zipf": 4.05,
+       "register": "neutral",
+       "senses_at_pos": 2,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "stance"
+       },
+       "discriminator": "how you plant yourself to stand",
+       "grade": 6
+      },
+      {
+       "w": "stature",
+       "synset": "stature.n.02",
+       "gloss_source": "authored",
+       "gloss": "how tall a person stands, from head to foot",
+       "zipf": 3.45,
+       "register": "neutral",
+       "senses_at_pos": 2,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "stature"
+       },
+       "discriminator": "your standing height",
+       "grade": 7
+      },
+      {
+       "w": "physique",
+       "synset": "physique.n.01",
+       "gloss_source": "authored",
+       "gloss": "the build and shape of a person's body",
+       "zipf": 3.29,
+       "register": "neutral",
+       "senses_at_pos": 2,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "physique"
+       },
+       "discriminator": "the body's build and shape",
+       "grade": 7
+      },
+      {
+       "w": "poise",
+       "synset": "aplomb.n.01",
+       "gloss_source": "authored",
+       "gloss": "calm, steady control of how you hold and carry yourself",
+       "zipf": 3.04,
+       "register": "neutral",
+       "senses_at_pos": 3,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "poise"
+       },
+       "discriminator": "calm balanced self-control",
+       "grade": 6
+      }
+     ],
+     "sentences": [
+      {
+       "id": "B-bearing-01-s01",
+       "answer": "gait",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The coach spotted Lena's ___: tiny steps, then one long lurch.",
+       "cue_phrase": "tiny steps, then one long lurch",
+       "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+       }
+      },
+      {
+       "id": "B-bearing-01-s02",
+       "answer": "gait",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "On the muddy path, Ravi's ___ left zigzag prints between puddles.",
+       "cue_phrase": "zigzag prints between puddles",
+       "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+       }
+      },
+      {
+       "id": "B-bearing-01-s03",
+       "answer": "gait",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Even in fog, Mum knew Sam's ___ by the uneven tap-tap.",
+       "cue_phrase": "uneven tap-tap",
+       "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+       }
+      },
+      {
+       "id": "B-bearing-01-s04",
+       "answer": "gait",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The pirate's ___ made his wooden leg thump every third step.",
+       "cue_phrase": "thump every third step",
+       "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+       }
+      },
+      {
+       "id": "B-bearing-01-s05",
+       "answer": "gait",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "After the race, everyone's ___ turned slow and shuffling at once.",
+       "cue_phrase": "slow and shuffling at once",
+       "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+       }
+      },
+      {
+       "id": "B-bearing-01-s06",
+       "answer": "gait",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "With one shoe untied, Maya's ___ became a careful, flapping shuffle.",
+       "cue_phrase": "flapping shuffle",
+       "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+       }
+      },
+      {
+       "id": "B-bearing-01-s07",
+       "answer": "gait",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "After dance camp, Ruby's ___ changed from stiff stomps to bouncy skips.",
+       "cue_phrase": "stiff stomps to bouncy skips",
+       "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+       }
+      },
+      {
+       "id": "B-bearing-01-s08",
+       "answer": "gait",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "Grandad's ___ gave him away: two quick steps, then a rest.",
+       "cue_phrase": "two quick steps, then a rest",
+       "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+       }
+      },
+      {
+       "id": "B-bearing-01-s09",
+       "answer": "stance",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "For the penalty kick, Noor's ___ set both feet wide apart.",
+       "cue_phrase": "both feet wide apart",
+       "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+       }
+      },
+      {
+       "id": "B-bearing-01-s10",
+       "answer": "stance",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The surfer's ___ kept one foot forward and knees bent.",
+       "cue_phrase": "one foot forward",
+       "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+       }
+      },
+      {
+       "id": "B-bearing-01-s11",
+       "answer": "stance",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "At the easel, Tom's ___ shifted until his shoes gripped the tiles.",
+       "cue_phrase": "shoes gripped the tiles",
+       "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+       }
+      },
+      {
+       "id": "B-bearing-01-s12",
+       "answer": "stance",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Before batting, Aisha widened her ___ and dug her toes into dust.",
+       "cue_phrase": "dug her toes into dust",
+       "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+       }
+      },
+      {
+       "id": "B-bearing-01-s13",
+       "answer": "stance",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The striker ran up, and the keeper's ___ spread both boots wide.",
+       "cue_phrase": "spread both boots wide",
+       "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+       }
+      },
+      {
+       "id": "B-bearing-01-s14",
+       "answer": "stance",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "During tug-of-war, Ben's ___ failed when his heels slid together.",
+       "cue_phrase": "heels slid together",
+       "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+       }
+      },
+      {
+       "id": "B-bearing-01-s15",
+       "answer": "stance",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The knight's ___ looked ready, with boots braced beside the drawbridge.",
+       "cue_phrase": "boots braced beside",
+       "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+       }
+      },
+      {
+       "id": "B-bearing-01-s16",
+       "answer": "stance",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "On the beam, Lily changed her ___, placing one heel sideways.",
+       "cue_phrase": "one heel sideways",
+       "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+       }
+      },
+      {
+       "id": "B-bearing-01-s17",
+       "answer": "stature",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Mia's ___ reached 140 centimetres on the nurse's wall chart.",
+       "cue_phrase": "140 centimetres",
+       "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+       }
+      },
+      {
+       "id": "B-bearing-01-s18",
+       "answer": "stature",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "By June, Omar's ___ passed the pencil mark above the cupboard handle.",
+       "cue_phrase": "pencil mark above",
+       "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+       }
+      },
+      {
+       "id": "B-bearing-01-s19",
+       "answer": "stature",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The cape dragged because Eva's ___ was below the label's 130 centimetres.",
+       "cue_phrase": "below the label's 130 centimetres",
+       "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+       }
+      },
+      {
+       "id": "B-bearing-01-s20",
+       "answer": "stature",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Dad lowered the bike seat after Jo's ___ measured 128 centimetres.",
+       "cue_phrase": "measured 128 centimetres",
+       "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+       }
+      },
+      {
+       "id": "B-bearing-01-s21",
+       "answer": "stature",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "At the photo board, Max's ___ barely reached the painted dragon's chin.",
+       "cue_phrase": "reached the painted dragon's chin",
+       "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+       }
+      },
+      {
+       "id": "B-bearing-01-s22",
+       "answer": "stature",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The doorway ruler showed Nia's ___ had grown three centimetres since spring.",
+       "cue_phrase": "grown three centimetres",
+       "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+       }
+      },
+      {
+       "id": "B-bearing-01-s23",
+       "answer": "stature",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "For the ride, Ellis's ___ missed the line by two centimetres.",
+       "cue_phrase": "missed the line",
+       "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+       }
+      },
+      {
+       "id": "B-bearing-01-s24",
+       "answer": "stature",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "Gran gasped when Priya's ___ topped last year's ribbon on the doorframe.",
+       "cue_phrase": "topped last year's ribbon",
+       "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+       }
+      },
+      {
+       "id": "B-bearing-01-s25",
+       "answer": "physique",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "After swimming lessons, Leo's ___ showed broader shoulders and stronger arms.",
+       "cue_phrase": "broader shoulders and stronger arms",
+       "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+       }
+      },
+      {
+       "id": "B-bearing-01-s26",
+       "answer": "physique",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The superhero costume gave Mira's ___ a square chest and huge arms.",
+       "cue_phrase": "square chest and huge arms",
+       "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+       }
+      },
+      {
+       "id": "B-bearing-01-s27",
+       "answer": "physique",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The tailor changed the jacket because Tane's ___ had widened across the shoulders.",
+       "cue_phrase": "widened across the shoulders",
+       "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+       }
+      },
+      {
+       "id": "B-bearing-01-s28",
+       "answer": "physique",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "In the mirror, Zoe's ___ looked leaner after months of climbing.",
+       "cue_phrase": "looked leaner",
+       "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+       }
+      },
+      {
+       "id": "B-bearing-01-s29",
+       "answer": "physique",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The armour fitted Pip's ___ only after the smith widened the chest.",
+       "cue_phrase": "widened the chest",
+       "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+       }
+      },
+      {
+       "id": "B-bearing-01-s30",
+       "answer": "physique",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Everyone chose Nala to lift logs, trusting her powerful ___ and thick arms.",
+       "cue_phrase": "thick arms",
+       "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+       }
+      },
+      {
+       "id": "B-bearing-01-s31",
+       "answer": "physique",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The puppet maker carved Ren's ___ with narrow hips and chunky arms.",
+       "cue_phrase": "narrow hips and chunky arms",
+       "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+       }
+      },
+      {
+       "id": "B-bearing-01-s32",
+       "answer": "physique",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "After the growth spurt, Ivo's ___ stayed wiry, not bulky.",
+       "cue_phrase": "wiry, not bulky",
+       "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+       }
+      },
+      {
+       "id": "B-bearing-01-s33",
+       "answer": "poise",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Despite the wobbling tray, Suri's ___ kept her smile easy.",
+       "cue_phrase": "smile easy",
+       "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+       }
+      },
+      {
+       "id": "B-bearing-01-s34",
+       "answer": "poise",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "On stage, Malik's ___ made his bow smooth after the stumble.",
+       "cue_phrase": "bow smooth after the stumble",
+       "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+       }
+      },
+      {
+       "id": "B-bearing-01-s35",
+       "answer": "poise",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "When lights failed, Ana's ___ kept her voice gentle.",
+       "cue_phrase": "voice gentle",
+       "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+       }
+      },
+      {
+       "id": "B-bearing-01-s36",
+       "answer": "poise",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Theo dropped his hat mid-song, but his ___ never cracked.",
+       "cue_phrase": "never cracked",
+       "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+       }
+      },
+      {
+       "id": "B-bearing-01-s37",
+       "answer": "poise",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "A gull swooped near, but Isla's ___ left the tray level and her face peaceful.",
+       "cue_phrase": "face peaceful",
+       "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+       }
+      },
+      {
+       "id": "B-bearing-01-s38",
+       "answer": "poise",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "During questions, Rafi's ___ shone when his voice never shook.",
+       "cue_phrase": "voice never shook",
+       "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+       }
+      },
+      {
+       "id": "B-bearing-01-s39",
+       "answer": "poise",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The queen's ___ silenced giggles with one unruffled nod.",
+       "cue_phrase": "unruffled nod",
+       "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (stature); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "B-bearing-01-s40",
+       "answer": "poise",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "At the recital, Mei's ___ returned after one slow breath.",
+       "cue_phrase": "one slow breath",
+       "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+       }
+      }
+     ],
+     "contrasts": [
+      {
+       "answer": "gait",
+       "picked": "stance",
+       "line": "Gait is the pattern of steps; stance is where the feet are planted while still."
+      },
+      {
+       "answer": "gait",
+       "picked": "stature",
+       "line": "Gait shows movement in steps; stature is a height measure."
+      },
+      {
+       "answer": "gait",
+       "picked": "physique",
+       "line": "Gait is a step pattern; physique is the body's overall build."
+      },
+      {
+       "answer": "gait",
+       "picked": "poise",
+       "line": "Gait is step rhythm; poise is calm balance under pressure."
+      },
+      {
+       "answer": "stance",
+       "picked": "gait",
+       "line": "Stance is foot placement while still; gait is the pattern of steps in motion."
+      },
+      {
+       "answer": "stance",
+       "picked": "stature",
+       "line": "Stance is how feet are set; stature is how high someone measures."
+      },
+      {
+       "answer": "stance",
+       "picked": "physique",
+       "line": "Stance is a planted position; physique is the body's build."
+      },
+      {
+       "answer": "stance",
+       "picked": "poise",
+       "line": "Stance is where the feet go; poise is calm, balanced self-control."
+      },
+      {
+       "answer": "stature",
+       "picked": "gait",
+       "line": "Stature is height; gait is the way steps move."
+      },
+      {
+       "answer": "stature",
+       "picked": "stance",
+       "line": "Stature is height; stance is the way feet are planted."
+      },
+      {
+       "answer": "stature",
+       "picked": "physique",
+       "line": "Stature is height; physique is the body's build and shape."
+      },
+      {
+       "answer": "stature",
+       "picked": "poise",
+       "line": "Stature is height; poise is calm balance and self-control."
+      },
+      {
+       "answer": "physique",
+       "picked": "gait",
+       "line": "Physique is the body's build; gait is the pattern of steps."
+      },
+      {
+       "answer": "physique",
+       "picked": "stance",
+       "line": "Physique is the body's build; stance is foot placement while still."
+      },
+      {
+       "answer": "physique",
+       "picked": "stature",
+       "line": "Physique is the body's build; stature is height."
+      },
+      {
+       "answer": "physique",
+       "picked": "poise",
+       "line": "Physique is the body's build; poise is calm balance under pressure."
+      },
+      {
+       "answer": "poise",
+       "picked": "gait",
+       "line": "Poise is calm balance; gait is the pattern of steps."
+      },
+      {
+       "answer": "poise",
+       "picked": "stance",
+       "line": "Poise is calm balance; stance is where the feet are planted."
+      },
+      {
+       "answer": "poise",
+       "picked": "stature",
+       "line": "Poise is calm balance; stature is height."
+      },
+      {
+       "answer": "poise",
+       "picked": "physique",
+       "line": "Poise is calm balance; physique is the body's build."
+      }
+     ],
+     "meta": {
+      "generated_at": "2026-07-06T14:48:27+00:00",
+      "model": "gpt-5.5",
+      "scrubbed_at": "2026-07-07",
+      "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+     }
+    },
+    {
+     "id": "B-journey-01",
+     "bank": "B",
+     "pos": "noun",
+     "theme": "kinds of journeys",
+     "band": 5,
+     "band_override": 5,
+     "computed": {
+      "zipf_min": 2.6,
+      "zipf_mean": 3.38,
+      "tightness": 0.756,
+      "band_suggested": 4,
+      "scored_at": "2026-07-06T18:43:21+00:00"
+     },
+     "words": [
+      {
+       "w": "pilgrimage",
+       "synset": "pilgrimage.n.01",
+       "gloss_source": "wordnet",
+       "gloss": "a journey to a sacred place",
+       "zipf": 3.5,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "pilgrimage"
+       },
+       "discriminator": "journey of devotion to a special place",
+       "grade": 7
+      },
+      {
+       "w": "odyssey",
+       "synset": "odyssey.n.01",
+       "gloss_source": "wordnet",
+       "gloss": "a long wandering and eventful journey",
+       "zipf": 3.55,
+       "register": "neutral",
+       "senses_at_pos": 2,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "odyssey"
+       },
+       "discriminator": "epic wandering full of turns",
+       "gloss_zipf_waiver": {
+        "words": [
+         "eventful"
+        ],
+        "reason": "event + -ful, a morphologically transparent compound of a very common word",
+        "by": "claude",
+        "at": "2026-07-06"
+       },
+       "grade": 7
+      },
+      {
+       "w": "exodus",
+       "synset": "exodus.n.01",
+       "gloss_source": "authored",
+       "gloss": "a journey made by a large group escaping from a place",
+       "zipf": 3.69,
+       "register": "neutral",
+       "senses_at_pos": 2,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "exodus"
+       },
+       "discriminator": "a whole crowd leaving to escape",
+       "grade": 7
+      },
+      {
+       "w": "commute",
+       "synset": "commute.n.01",
+       "gloss_source": "authored",
+       "gloss": "the regular there-and-back journey to work or school",
+       "zipf": 3.56,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "commute"
+       },
+       "discriminator": "the routine there-and-back",
+       "grade": 6
+      },
+      {
+       "w": "jaunt",
+       "synset": "excursion.n.01",
+       "gloss_source": "authored",
+       "gloss": "a short trip taken just for fun",
+       "zipf": 2.6,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "jaunt"
+       },
+       "discriminator": "short trip purely for fun",
+       "grade": 7
+      }
+     ],
+     "sentences": [
+      {
+       "id": "B-journey-01-s01",
+       "answer": "pilgrimage",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Nana packed candles for her ___ to pray at the hillside shrine.",
+       "cue_phrase": "pray at the hillside shrine",
+       "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+       }
+      },
+      {
+       "id": "B-journey-01-s02",
+       "answer": "pilgrimage",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Before dawn, Ravi began his ___ towards the temple of healing.",
+       "cue_phrase": "temple of healing",
+       "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+       }
+      },
+      {
+       "id": "B-journey-01-s03",
+       "answer": "pilgrimage",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Mum tied prayer ribbons to our bags before the ___.",
+       "cue_phrase": "prayer ribbons",
+       "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+       }
+      },
+      {
+       "id": "B-journey-01-s04",
+       "answer": "pilgrimage",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Lena walked silently during the ___, carrying flowers for the shrine.",
+       "cue_phrase": "flowers for the shrine",
+       "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+       }
+      },
+      {
+       "id": "B-journey-01-s05",
+       "answer": "pilgrimage",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "After three buses, Grandad's ___ ended with whispered thanks at the holy spring.",
+       "cue_phrase": "holy spring",
+       "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (odyssey); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "B-journey-01-s06",
+       "answer": "pilgrimage",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The family washed their hands before the ___ up to the abbey.",
+       "cue_phrase": "washed their hands",
+       "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+       }
+      },
+      {
+       "id": "B-journey-01-s07",
+       "answer": "pilgrimage",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Uncle drew a tiny star beside every chapel on his ___ map.",
+       "cue_phrase": "every chapel",
+       "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+       }
+      },
+      {
+       "id": "B-journey-01-s08",
+       "answer": "pilgrimage",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "Our class heard how their ___ ended with songs inside the mosque.",
+       "cue_phrase": "songs inside the mosque",
+       "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+       }
+      },
+      {
+       "id": "B-journey-01-s09",
+       "answer": "odyssey",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The sailor's ___ crossed seven seas, two caves, and a dragon bridge.",
+       "cue_phrase": "seven seas, two caves",
+       "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+       }
+      },
+      {
+       "id": "B-journey-01-s10",
+       "answer": "odyssey",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Our game turned into one long ___ of storms, riddles, and giant bees.",
+       "cue_phrase": "storms, riddles, and giant bees",
+       "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+       }
+      },
+      {
+       "id": "B-journey-01-s11",
+       "answer": "odyssey",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "By chapter twelve, the heroes' ___ had crossed six seas and worn out two ships.",
+       "cue_phrase": "crossed six seas",
+       "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (pilgrimage); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-07"
+        }
+       ]
+      },
+      {
+       "id": "B-journey-01-s12",
+       "answer": "odyssey",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The captain's ___ zigzagged from island to island before reaching home.",
+       "cue_phrase": "island to island",
+       "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+       }
+      },
+      {
+       "id": "B-journey-01-s13",
+       "answer": "odyssey",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Each doorway led to another puzzle during the twins' ___.",
+       "cue_phrase": "another puzzle",
+       "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+       }
+      },
+      {
+       "id": "B-journey-01-s14",
+       "answer": "odyssey",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Mara returned from her ___ with tales of whirlpools and singing stones.",
+       "cue_phrase": "whirlpools and singing stones",
+       "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+       }
+      },
+      {
+       "id": "B-journey-01-s15",
+       "answer": "odyssey",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The old map promised trolls, deserts, and lost castles on the ___.",
+       "cue_phrase": "trolls, deserts, and lost castles",
+       "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+       }
+      },
+      {
+       "id": "B-journey-01-s16",
+       "answer": "odyssey",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "No one guessed the ___ would include a maze, a storm, and pirates.",
+       "cue_phrase": "maze, a storm",
+       "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+       }
+      },
+      {
+       "id": "B-journey-01-s17",
+       "answer": "exodus",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Sirens wailed, and the town's ___ sent families streaming toward safer hills.",
+       "cue_phrase": "families streaming toward safer",
+       "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+       }
+      },
+      {
+       "id": "B-journey-01-s18",
+       "answer": "exodus",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "When the dam cracked, the valley's ___ filled buses with frightened neighbours.",
+       "cue_phrase": "frightened neighbours",
+       "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+       }
+      },
+      {
+       "id": "B-journey-01-s19",
+       "answer": "exodus",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Goats, carts, and children joined the ___ away from the burning forest.",
+       "cue_phrase": "burning forest",
+       "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+       }
+      },
+      {
+       "id": "B-journey-01-s20",
+       "answer": "exodus",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The stadium lights failed; the ___ of fans hurried through every gate.",
+       "cue_phrase": "fans hurried through every gate",
+       "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+       }
+      },
+      {
+       "id": "B-journey-01-s21",
+       "answer": "exodus",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "By sunrise, every house stood empty after the ___ from the floodplain.",
+       "cue_phrase": "every house stood empty",
+       "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+       }
+      },
+      {
+       "id": "B-journey-01-s22",
+       "answer": "exodus",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The mayor counted wagons for the ___ as smoke swallowed the town.",
+       "cue_phrase": "smoke swallowed the town",
+       "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+       }
+      },
+      {
+       "id": "B-journey-01-s23",
+       "answer": "exodus",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "In the ant farm, the ___ began when water flooded the tunnels.",
+       "cue_phrase": "water flooded the tunnels",
+       "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+       }
+      },
+      {
+       "id": "B-journey-01-s24",
+       "answer": "exodus",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "Families carried blankets during the ___ as ash fell on the village.",
+       "cue_phrase": "ash fell on the village",
+       "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+       }
+      },
+      {
+       "id": "B-journey-01-s25",
+       "answer": "commute",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Dad's ___ from home to the office happens every weekday morning.",
+       "cue_phrase": "home to the office",
+       "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+       }
+      },
+      {
+       "id": "B-journey-01-s26",
+       "answer": "commute",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Mina's ___ between her flat and classroom repeats Monday to Friday.",
+       "cue_phrase": "flat and classroom repeats",
+       "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+       }
+      },
+      {
+       "id": "B-journey-01-s27",
+       "answer": "commute",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Rain or shine, the same bus carries Omar to the office on his ___.",
+       "cue_phrase": "same bus carries Omar to the office",
+       "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+       }
+      },
+      {
+       "id": "B-journey-01-s28",
+       "answer": "commute",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "After breakfast, Tia starts her ___, then returns home after lessons.",
+       "cue_phrase": "returns home after lessons",
+       "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+       }
+      },
+      {
+       "id": "B-journey-01-s29",
+       "answer": "commute",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The guard knew Ben's ___ because he passed the office desk at eight.",
+       "cue_phrase": "office desk at eight",
+       "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+       }
+      },
+      {
+       "id": "B-journey-01-s30",
+       "answer": "commute",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Each afternoon, Eli's ___ ends with class books across the kitchen table.",
+       "cue_phrase": "class books across",
+       "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+       }
+      },
+      {
+       "id": "B-journey-01-s31",
+       "answer": "commute",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "A missed train made Mum's ___ to the hospital desk last an hour.",
+       "cue_phrase": "to the hospital desk",
+       "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+       }
+      },
+      {
+       "id": "B-journey-01-s32",
+       "answer": "commute",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "Tom packs reading cards for the ___ to his classroom each morning.",
+       "cue_phrase": "classroom each morning",
+       "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+       }
+      },
+      {
+       "id": "B-journey-01-s33",
+       "answer": "jaunt",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The cousins' ___ was a laughing dash to the pond before tea.",
+       "cue_phrase": "laughing dash to the pond",
+       "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+       }
+      },
+      {
+       "id": "B-journey-01-s34",
+       "answer": "jaunt",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "We squeezed in our ___ for ice creams before the film started.",
+       "cue_phrase": "ice creams before the film",
+       "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+       }
+      },
+      {
+       "id": "B-journey-01-s35",
+       "answer": "jaunt",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The puppy's ___ was a tail-wagging loop around the sunny garden.",
+       "cue_phrase": "tail-wagging loop around",
+       "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+       }
+      },
+      {
+       "id": "B-journey-01-s36",
+       "answer": "jaunt",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Grandad's ___ was a cheerful stroll along the riverside before supper.",
+       "cue_phrase": "cheerful stroll along",
+       "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+       }
+      },
+      {
+       "id": "B-journey-01-s37",
+       "answer": "jaunt",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The children giggled home from their ___ before the kettle boiled.",
+       "cue_phrase": "before the kettle boiled",
+       "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+       }
+      },
+      {
+       "id": "B-journey-01-s38",
+       "answer": "jaunt",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Pip brought one biscuit for the ___ to see the ducklings.",
+       "cue_phrase": "see the ducklings",
+       "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+       }
+      },
+      {
+       "id": "B-journey-01-s39",
+       "answer": "jaunt",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Their ___ to the sweet shop ended with sticky smiles by noon.",
+       "cue_phrase": "sticky smiles by noon",
+       "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+       }
+      },
+      {
+       "id": "B-journey-01-s40",
+       "answer": "jaunt",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "We drew silly maps for our short ___ around the little bay.",
+       "cue_phrase": "silly maps",
+       "surface": {
+        "pilgrimage": "pilgrimage",
+        "odyssey": "odyssey",
+        "exodus": "exodus",
+        "commute": "commute",
+        "jaunt": "jaunt"
+       }
+      }
+     ],
+     "contrasts": [
+      {
+       "answer": "pilgrimage",
+       "picked": "odyssey",
+       "line": "Pilgrimage is for devotion at a holy site; odyssey is a roaming adventure with many turns."
+      },
+      {
+       "answer": "pilgrimage",
+       "picked": "exodus",
+       "line": "Pilgrimage is a devoted visit to a holy site; exodus is a crowd leaving danger."
+      },
+      {
+       "answer": "pilgrimage",
+       "picked": "commute",
+       "line": "Pilgrimage is for prayer or devotion; commute is the usual route to lessons or a job."
+      },
+      {
+       "answer": "pilgrimage",
+       "picked": "jaunt",
+       "line": "Pilgrimage has a holy purpose; jaunt is a quick cheerful outing."
+      },
+      {
+       "answer": "odyssey",
+       "picked": "pilgrimage",
+       "line": "Odyssey is full of twists and adventures; pilgrimage has a holy goal."
+      },
+      {
+       "answer": "odyssey",
+       "picked": "exodus",
+       "line": "Odyssey follows many surprising turns; exodus is many people leaving danger together."
+      },
+      {
+       "answer": "odyssey",
+       "picked": "commute",
+       "line": "Odyssey is an adventure with wild changes; commute is the same daily route."
+      },
+      {
+       "answer": "odyssey",
+       "picked": "jaunt",
+       "line": "Odyssey is big and twisty; jaunt is brief and light-hearted."
+      },
+      {
+       "answer": "exodus",
+       "picked": "pilgrimage",
+       "line": "Exodus is a crowd leaving danger; pilgrimage is a devoted visit to a holy site."
+      },
+      {
+       "answer": "exodus",
+       "picked": "odyssey",
+       "line": "Exodus moves many people away from danger; odyssey follows adventures and surprises."
+      },
+      {
+       "answer": "exodus",
+       "picked": "commute",
+       "line": "Exodus is a crowd leaving danger; commute is a routine route to duties."
+      },
+      {
+       "answer": "exodus",
+       "picked": "jaunt",
+       "line": "Exodus is many people fleeing trouble; jaunt is a quick happy outing."
+      },
+      {
+       "answer": "commute",
+       "picked": "pilgrimage",
+       "line": "Commute is the usual route to lessons or a job; pilgrimage is for devotion."
+      },
+      {
+       "answer": "commute",
+       "picked": "odyssey",
+       "line": "Commute repeats as part of daily life; odyssey is full of surprises."
+      },
+      {
+       "answer": "commute",
+       "picked": "exodus",
+       "line": "Commute is an everyday route; exodus is a crowd leaving danger."
+      },
+      {
+       "answer": "commute",
+       "picked": "jaunt",
+       "line": "Commute is routine and practical; jaunt is brief and cheerful."
+      },
+      {
+       "answer": "jaunt",
+       "picked": "pilgrimage",
+       "line": "Jaunt is quick and cheerful; pilgrimage has a holy purpose."
+      },
+      {
+       "answer": "jaunt",
+       "picked": "odyssey",
+       "line": "Jaunt is small and merry; odyssey is wide, twisty, and adventurous."
+      },
+      {
+       "answer": "jaunt",
+       "picked": "exodus",
+       "line": "Jaunt is for pleasure; exodus is many people leaving danger."
+      },
+      {
+       "answer": "jaunt",
+       "picked": "commute",
+       "line": "Jaunt is a quick happy outing; commute is the usual route to duties."
+      }
+     ],
+     "meta": {
+      "generated_at": "2026-07-06T14:51:06+00:00",
+      "model": "gpt-5.5",
+      "scrubbed_at": "2026-07-07",
+      "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
      }
     }
    ]

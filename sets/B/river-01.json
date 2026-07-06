@@ -1,0 +1,914 @@
+{
+  "id": "B-river-01",
+  "bank": "B",
+  "pos": "noun",
+  "theme": "a river's journey",
+  "band": 3,
+  "band_override": 3,
+  "computed": {
+    "zipf_min": 3.15,
+    "zipf_mean": 3.51,
+    "tightness": 0.458,
+    "band_suggested": 3,
+    "scored_at": "2026-07-06T18:43:21+00:00"
+  },
+  "words": [
+    {
+      "w": "rapids",
+      "synset": "rapid.n.01",
+      "gloss_source": "wordnet",
+      "gloss": "a part of a river where the current is very fast",
+      "zipf": 3.64,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "rapids"
+      },
+      "discriminator": "fast broken white water",
+      "grade": 5
+    },
+    {
+      "w": "gorge",
+      "synset": "gorge.n.01",
+      "gloss_source": "authored",
+      "gloss": "a deep narrow valley with steep rocky sides, cut by a river",
+      "zipf": 3.4,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "gorge"
+      },
+      "discriminator": "deep narrow rock walls",
+      "grade": 6
+    },
+    {
+      "w": "tributary",
+      "synset": "feeder.n.03",
+      "gloss_source": "wordnet",
+      "gloss": "a branch that flows into the main stream",
+      "zipf": 3.15,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "tributary"
+      },
+      "discriminator": "smaller river joining the main one",
+      "grade": 6
+    },
+    {
+      "w": "estuary",
+      "synset": "estuary.n.01",
+      "gloss_source": "authored",
+      "gloss": "the wide river mouth where fresh water meets the salty sea",
+      "zipf": 3.26,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "estuary"
+      },
+      "discriminator": "wide tidal mouth, fresh meets salt",
+      "grade": 6
+    },
+    {
+      "w": "delta",
+      "synset": "delta.n.01",
+      "gloss_source": "authored",
+      "gloss": "a fan of low islands where a river splits before entering the sea",
+      "zipf": 4.12,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "delta"
+      },
+      "discriminator": "fan of islands where the river splits",
+      "grade": 6
+    }
+  ],
+  "sentences": [
+    {
+      "id": "B-river-01-s01",
+      "answer": "rapids",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ churned white over hidden rocks beside the trail.",
+      "cue_phrase": "churned white over hidden rocks",
+      "surface": {
+        "rapids": "rapids",
+        "gorge": "gorges",
+        "tributary": "tributaries",
+        "estuary": "estuaries",
+        "delta": "deltas"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (tributary); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-river-01-s02",
+      "answer": "rapids",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Beside camp, the ___ threw cold spray and rattled every paddle.",
+      "cue_phrase": "threw cold spray",
+      "surface": {
+        "rapids": "rapids",
+        "gorge": "gorges",
+        "tributary": "tributaries",
+        "estuary": "estuaries",
+        "delta": "deltas"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (tributary); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-river-01-s03",
+      "answer": "rapids",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ made paddles shake, then stopped at a glassy pool.",
+      "cue_phrase": "paddles shake",
+      "surface": {
+        "rapids": "rapids",
+        "gorge": "gorges",
+        "tributary": "tributaries",
+        "estuary": "estuaries",
+        "delta": "deltas"
+      }
+    },
+    {
+      "id": "B-river-01-s04",
+      "answer": "rapids",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "After the ___, everyone's sleeves dripped, but the boat slid quietly.",
+      "cue_phrase": "boat slid quietly",
+      "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+      }
+    },
+    {
+      "id": "B-river-01-s05",
+      "answer": "rapids",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Before the ___, a sign showed waves, rocks, and a tumbling paddler.",
+      "cue_phrase": "tumbling paddler",
+      "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+      }
+    },
+    {
+      "id": "B-river-01-s06",
+      "answer": "rapids",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "We heard the ___ end when the loud splashing became gentle.",
+      "cue_phrase": "splashing became gentle",
+      "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+      }
+    },
+    {
+      "id": "B-river-01-s07",
+      "answer": "rapids",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The ___ hammered the kayak so loudly that birds lifted from reeds.",
+      "cue_phrase": "hammered the kayak",
+      "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (tributary); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-river-01-s08",
+      "answer": "rapids",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "We carried the canoe around the ___, away from the white roar.",
+      "cue_phrase": "white roar",
+      "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (gorge); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-river-01-s09",
+      "answer": "gorge",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "From the bridge, the ___ showed tall cliffs and a thread below.",
+      "cue_phrase": "tall cliffs",
+      "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+      }
+    },
+    {
+      "id": "B-river-01-s10",
+      "answer": "gorge",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The path crossed the ___ on a bridge strung between the cliff tops.",
+      "cue_phrase": "strung between the cliff tops",
+      "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (rapids, tributary); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-river-01-s11",
+      "answer": "gorge",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Our voices echoed in the ___ where cliffs hid the afternoon sun.",
+      "cue_phrase": "cliffs hid",
+      "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+      }
+    },
+    {
+      "id": "B-river-01-s12",
+      "answer": "gorge",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "At the ___, Mum held my hand near the cliff-edge path.",
+      "cue_phrase": "cliff-edge path",
+      "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (rapids); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-river-01-s13",
+      "answer": "gorge",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The train slowed beside the ___, and windows filled with stone walls.",
+      "cue_phrase": "windows filled with stone",
+      "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+      }
+    },
+    {
+      "id": "B-river-01-s14",
+      "answer": "gorge",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "In the ___, a dropped pebble clicked many times before the splash.",
+      "cue_phrase": "clicked many times",
+      "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+      }
+    },
+    {
+      "id": "B-river-01-s15",
+      "answer": "gorge",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "From our lookout, the ___ made the buses look like toy boxes.",
+      "cue_phrase": "toy boxes",
+      "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+      }
+    },
+    {
+      "id": "B-river-01-s16",
+      "answer": "gorge",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The goat trail zigzagged down into the ___ between shadowy cliffs.",
+      "cue_phrase": "shadowy cliffs",
+      "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+      }
+    },
+    {
+      "id": "B-river-01-s17",
+      "answer": "tributary",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "At the meadow, the ___ joined the broad river under willows.",
+      "cue_phrase": "joined the broad river",
+      "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+      }
+    },
+    {
+      "id": "B-river-01-s18",
+      "answer": "tributary",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Our map marked the ___ as a thin blue line feeding the river.",
+      "cue_phrase": "thin blue line feeding",
+      "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+      }
+    },
+    {
+      "id": "B-river-01-s19",
+      "answer": "tributary",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "We crossed the ankle-deep ___ before reaching the bigger river.",
+      "cue_phrase": "before reaching the bigger river",
+      "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (rapids); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-river-01-s20",
+      "answer": "tributary",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Minnows darted in the ___ just before it joined the river.",
+      "cue_phrase": "joined the river",
+      "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+      }
+    },
+    {
+      "id": "B-river-01-s21",
+      "answer": "tributary",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The explorer followed the ___ downhill until it led her to the river.",
+      "cue_phrase": "led her to the river",
+      "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (gorge); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-river-01-s22",
+      "answer": "tributary",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Leaves floated from the ___ into the larger waterway near camp.",
+      "cue_phrase": "into the larger waterway",
+      "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+      }
+    },
+    {
+      "id": "B-river-01-s23",
+      "answer": "tributary",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "A frog jumped from the small ___ that trickled into the river.",
+      "cue_phrase": "trickled into the river",
+      "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+      }
+    },
+    {
+      "id": "B-river-01-s24",
+      "answer": "tributary",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The dog splashed along the ___ that fed the river behind school.",
+      "cue_phrase": "fed the river",
+      "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+      }
+    },
+    {
+      "id": "B-river-01-s25",
+      "answer": "estuary",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ferry crossed the ___ where the river widened to meet the tide.",
+      "cue_phrase": "widened to meet the tide",
+      "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+      }
+    },
+    {
+      "id": "B-river-01-s26",
+      "answer": "estuary",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Sailboats waited in the ___ between harbour walls as the tide rose.",
+      "cue_phrase": "tide rose",
+      "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+      }
+    },
+    {
+      "id": "B-river-01-s27",
+      "answer": "estuary",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "At low tide, the ___ turned to shining mud with a salty smell.",
+      "cue_phrase": "shining mud with a salty smell",
+      "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (delta); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-river-01-s28",
+      "answer": "estuary",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Gulls picked worms in the ___ where the tide had left the mud shiny.",
+      "cue_phrase": "tide had left the mud shiny",
+      "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (delta); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-river-01-s29",
+      "answer": "estuary",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Dad tasted salt in the air as the boat motored up the wide ___ toward the hills.",
+      "cue_phrase": "tasted salt in the air",
+      "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+      }
+    },
+    {
+      "id": "B-river-01-s30",
+      "answer": "estuary",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Boats at the ___ rose twice daily in the broad harbour channel.",
+      "cue_phrase": "broad harbour channel",
+      "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+      }
+    },
+    {
+      "id": "B-river-01-s31",
+      "answer": "estuary",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The class dipped nets where the ___ mixed river water with the sea.",
+      "cue_phrase": "mixed river water with the sea",
+      "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+      }
+    },
+    {
+      "id": "B-river-01-s32",
+      "answer": "estuary",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "At dusk, harbour bells rang across the wide ___ as the tide slid out.",
+      "cue_phrase": "tide slid out",
+      "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+      }
+    },
+    {
+      "id": "B-river-01-s33",
+      "answer": "delta",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The map showed the ___ spreading into five channels before the coast.",
+      "cue_phrase": "five channels",
+      "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+      }
+    },
+    {
+      "id": "B-river-01-s34",
+      "answer": "delta",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Herders camped on three sandbanks of the ___, with channels curling around them.",
+      "cue_phrase": "three sandbanks",
+      "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (estuary); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-river-01-s35",
+      "answer": "delta",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The boat chose left, then right, through the ___ toward the coast.",
+      "cue_phrase": "left, then right",
+      "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (estuary); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-river-01-s36",
+      "answer": "delta",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "On the ___, farms sat on mud bars between winding channels.",
+      "cue_phrase": "between winding channels",
+      "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+      }
+    },
+    {
+      "id": "B-river-01-s37",
+      "answer": "delta",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Our guide counted seven crossings in the ___ before reaching open coast.",
+      "cue_phrase": "seven crossings",
+      "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+      }
+    },
+    {
+      "id": "B-river-01-s38",
+      "answer": "delta",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Pelicans nested where the ___ spread into muddy fingers beyond the town.",
+      "cue_phrase": "muddy fingers",
+      "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (estuary); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-river-01-s39",
+      "answer": "delta",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "From the plane, the ___ looked like a hand with blue lines.",
+      "cue_phrase": "hand with blue lines",
+      "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+      }
+    },
+    {
+      "id": "B-river-01-s40",
+      "answer": "delta",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "We got lost in the ___ after three channels rejoined behind us.",
+      "cue_phrase": "three channels rejoined",
+      "surface": {
+        "rapids": "rapids",
+        "gorge": "gorge",
+        "tributary": "tributary",
+        "estuary": "estuary",
+        "delta": "delta"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (estuary); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "rapids",
+      "picked": "gorge",
+      "line": "Rapids are rushing white water. A gorge is a tall-walled gap in the land."
+    },
+    {
+      "answer": "rapids",
+      "picked": "tributary",
+      "line": "Rapids churn and splash. A tributary is a smaller waterway joining a bigger one."
+    },
+    {
+      "answer": "rapids",
+      "picked": "estuary",
+      "line": "Rapids are rough white water. An estuary is a broad tidal place near the coast."
+    },
+    {
+      "answer": "rapids",
+      "picked": "delta",
+      "line": "Rapids toss boats in foam. A delta spreads into many channels and sandbanks."
+    },
+    {
+      "answer": "gorge",
+      "picked": "rapids",
+      "line": "A gorge has high rock walls. Rapids are rough white water."
+    },
+    {
+      "answer": "gorge",
+      "picked": "tributary",
+      "line": "A gorge is a walled gap. A tributary is a smaller waterway joining a bigger one."
+    },
+    {
+      "answer": "gorge",
+      "picked": "estuary",
+      "line": "A gorge has cliffs close around you. An estuary is open, broad, and tidal."
+    },
+    {
+      "answer": "gorge",
+      "picked": "delta",
+      "line": "A gorge is between high walls. A delta spreads out into channels and sandbanks."
+    },
+    {
+      "answer": "tributary",
+      "picked": "rapids",
+      "line": "A tributary joins a bigger waterway. Rapids are rough, foamy water."
+    },
+    {
+      "answer": "tributary",
+      "picked": "gorge",
+      "line": "A tributary joins a bigger waterway. A gorge is a gap with high rock walls."
+    },
+    {
+      "answer": "tributary",
+      "picked": "estuary",
+      "line": "A tributary is smaller and joins another. An estuary is broad and moved by tides."
+    },
+    {
+      "answer": "tributary",
+      "picked": "delta",
+      "line": "A tributary joins one bigger waterway. A delta divides into many channels."
+    },
+    {
+      "answer": "estuary",
+      "picked": "rapids",
+      "line": "An estuary is broad and tidal. Rapids are rough white water."
+    },
+    {
+      "answer": "estuary",
+      "picked": "gorge",
+      "line": "An estuary is open and tidal. A gorge is tight between high rock walls."
+    },
+    {
+      "answer": "estuary",
+      "picked": "tributary",
+      "line": "An estuary is a broad tidal place. A tributary is a smaller waterway joining another."
+    },
+    {
+      "answer": "estuary",
+      "picked": "delta",
+      "line": "An estuary usually has one broad channel. A delta spreads into many channels."
+    },
+    {
+      "answer": "delta",
+      "picked": "rapids",
+      "line": "A delta spreads into many channels. Rapids are rough white water."
+    },
+    {
+      "answer": "delta",
+      "picked": "gorge",
+      "line": "A delta spreads across flat ground. A gorge is held between high rock walls."
+    },
+    {
+      "answer": "delta",
+      "picked": "tributary",
+      "line": "A delta divides into channels. A tributary joins a bigger waterway."
+    },
+    {
+      "answer": "delta",
+      "picked": "estuary",
+      "line": "A delta has many channels and sandbanks. An estuary is one broad tidal place."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-06T14:47:12+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": "2026-07-07",
+    "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+  }
+}

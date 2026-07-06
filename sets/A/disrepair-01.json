@@ -1,0 +1,874 @@
+{
+  "id": "A-disrepair-01",
+  "bank": "A",
+  "pos": "adjective",
+  "theme": "the old abandoned house",
+  "band": 4,
+  "band_override": 4,
+  "computed": {
+    "zipf_min": 2.68,
+    "zipf_mean": 2.96,
+    "tightness": null,
+    "band_suggested": 4,
+    "scored_at": "2026-07-06T18:43:21+00:00"
+  },
+  "words": [
+    {
+      "w": "rickety",
+      "synset": "rickety.s.01",
+      "gloss_source": "wordnet",
+      "gloss": "inclined to shake as from weakness or defect",
+      "zipf": 2.68,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "rickety"
+      },
+      "discriminator": "wobbles when weight goes on",
+      "grade": 4
+    },
+    {
+      "w": "tattered",
+      "synset": "tattered.s.01",
+      "gloss_source": "authored",
+      "gloss": "torn into ragged strips and shreds",
+      "zipf": 2.83,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "tattered"
+      },
+      "discriminator": "torn to ragged strips",
+      "grade": 5
+    },
+    {
+      "w": "warped",
+      "synset": "warped.s.01",
+      "gloss_source": "authored",
+      "gloss": "bent and twisted out of its true shape, as by damp",
+      "zipf": 3.35,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "warped"
+      },
+      "discriminator": "bent out of true",
+      "grade": 5
+    },
+    {
+      "w": "musty",
+      "synset": "moldy.s.01",
+      "gloss_source": "authored",
+      "gloss": "smelling stale and damp, like a room shut up for years",
+      "zipf": 2.83,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "musty"
+      },
+      "discriminator": "the stale shut-up smell",
+      "grade": 5
+    },
+    {
+      "w": "derelict",
+      "synset": "abandoned.s.01",
+      "gloss_source": "authored",
+      "gloss": "abandoned by its owners and left to fall apart",
+      "zipf": 3.1,
+      "register": "neutral",
+      "senses_at_pos": 4,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "derelict"
+      },
+      "discriminator": "everyone has abandoned it",
+      "grade": 7
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-disrepair-01-s01",
+      "answer": "rickety",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Ben grabbed the ___ railing, and it wobbled under his hand.",
+      "cue_phrase": "wobbled under his hand",
+      "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+      }
+    },
+    {
+      "id": "A-disrepair-01-s02",
+      "answer": "rickety",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ chair had legs that jiggled when Gran sat down.",
+      "cue_phrase": "legs that jiggled",
+      "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+      }
+    },
+    {
+      "id": "A-disrepair-01-s03",
+      "answer": "rickety",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ step shifted on its loose nails, so we skipped it.",
+      "cue_phrase": "loose nails",
+      "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+      }
+    },
+    {
+      "id": "A-disrepair-01-s04",
+      "answer": "rickety",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ stool made Mum grab the table as its legs danced.",
+      "cue_phrase": "legs danced",
+      "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+      }
+    },
+    {
+      "id": "A-disrepair-01-s05",
+      "answer": "rickety",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Nora chose the floor after the ___ bench jiggled beneath her bag.",
+      "cue_phrase": "jiggled beneath her bag",
+      "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+      }
+    },
+    {
+      "id": "A-disrepair-01-s06",
+      "answer": "rickety",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "On the porch, the ___ table's loose joints clacked when anyone leaned on it.",
+      "cue_phrase": "loose joints clacked",
+      "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+      }
+    },
+    {
+      "id": "A-disrepair-01-s07",
+      "answer": "rickety",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The ___ ladder swayed so much that Dad climbed back down.",
+      "cue_phrase": "swayed so much",
+      "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+      }
+    },
+    {
+      "id": "A-disrepair-01-s08",
+      "answer": "rickety",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "Poppy pushed the ___ gate, and it rattled on its hinges.",
+      "cue_phrase": "rattled on its hinges",
+      "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+      }
+    },
+    {
+      "id": "A-disrepair-01-s09",
+      "answer": "tattered",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ curtain hung in long uneven pieces over the dusty window.",
+      "cue_phrase": "long uneven pieces",
+      "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+      }
+    },
+    {
+      "id": "A-disrepair-01-s10",
+      "answer": "tattered",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ flag had frayed edges and holes where the wind pulled.",
+      "cue_phrase": "frayed edges and holes",
+      "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+      }
+    },
+    {
+      "id": "A-disrepair-01-s11",
+      "answer": "tattered",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Maya's sleeve snagged on the ___ wallpaper, peeling in thin flaps.",
+      "cue_phrase": "peeling in thin flaps",
+      "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+      }
+    },
+    {
+      "id": "A-disrepair-01-s12",
+      "answer": "tattered",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ map showed the kitchen only in dangling paper pieces.",
+      "cue_phrase": "dangling paper pieces",
+      "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+      }
+    },
+    {
+      "id": "A-disrepair-01-s13",
+      "answer": "tattered",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Light came through many holes in the ___ sheet over the sofa.",
+      "cue_phrase": "many holes",
+      "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+      }
+    },
+    {
+      "id": "A-disrepair-01-s14",
+      "answer": "tattered",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Moths had chewed the ___ blanket until its edges fluttered in bits.",
+      "cue_phrase": "edges fluttered in bits",
+      "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+      }
+    },
+    {
+      "id": "A-disrepair-01-s15",
+      "answer": "tattered",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The ___ coat on the hook had cuffs hanging by threads.",
+      "cue_phrase": "hanging by threads",
+      "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+      }
+    },
+    {
+      "id": "A-disrepair-01-s16",
+      "answer": "tattered",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "Above the hall, the ___ banner split into fluttering pieces.",
+      "cue_phrase": "fluttering pieces",
+      "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+      }
+    },
+    {
+      "id": "A-disrepair-01-s17",
+      "answer": "warped",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ door bowed so much that the latch missed the hole.",
+      "cue_phrase": "latch missed the hole",
+      "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+      }
+    },
+    {
+      "id": "A-disrepair-01-s18",
+      "answer": "warped",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ floorboards rose in humps where rain had leaked.",
+      "cue_phrase": "rose in humps",
+      "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+      }
+    },
+    {
+      "id": "A-disrepair-01-s19",
+      "answer": "warped",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ window frame no longer held the glass square.",
+      "cue_phrase": "glass square",
+      "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+      }
+    },
+    {
+      "id": "A-disrepair-01-s20",
+      "answer": "warped",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ cupboard door curved outward and would not close.",
+      "cue_phrase": "curved outward",
+      "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+      }
+    },
+    {
+      "id": "A-disrepair-01-s21",
+      "answer": "warped",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Tom rolled a marble across the ___ table; it veered into a groove.",
+      "cue_phrase": "veered into a groove",
+      "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+      }
+    },
+    {
+      "id": "A-disrepair-01-s22",
+      "answer": "warped",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The ___ picture frame looked crooked, though both nails were level.",
+      "cue_phrase": "both nails were level",
+      "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+      }
+    },
+    {
+      "id": "A-disrepair-01-s23",
+      "answer": "warped",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The ___ gate scraped the ground in the middle, not at the ends.",
+      "cue_phrase": "middle, not at the ends",
+      "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+      }
+    },
+    {
+      "id": "A-disrepair-01-s24",
+      "answer": "warped",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "The ___ shelf curled upward, tipping the toy soldiers together.",
+      "cue_phrase": "curled upward",
+      "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+      }
+    },
+    {
+      "id": "A-disrepair-01-s25",
+      "answer": "musty",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ cupboard gave off an old cellar odour when opened.",
+      "cue_phrase": "old cellar odour",
+      "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+      }
+    },
+    {
+      "id": "A-disrepair-01-s26",
+      "answer": "musty",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ air made Leila sniff and think of wet cardboard.",
+      "cue_phrase": "think of wet cardboard",
+      "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+      }
+    },
+    {
+      "id": "A-disrepair-01-s27",
+      "answer": "musty",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "After opening the attic trunk, a ___ odour clung to our jumpers.",
+      "cue_phrase": "odour clung",
+      "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+      }
+    },
+    {
+      "id": "A-disrepair-01-s28",
+      "answer": "musty",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ library corner made everyone wrinkle their noses during reading time.",
+      "cue_phrase": "wrinkle their noses",
+      "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+      }
+    },
+    {
+      "id": "A-disrepair-01-s29",
+      "answer": "musty",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Sam found dry comics, but the ___ box still made him cough.",
+      "cue_phrase": "made him cough",
+      "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+      }
+    },
+    {
+      "id": "A-disrepair-01-s30",
+      "answer": "musty",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The basement cupboard was ___; even the biscuits tasted of cellar air.",
+      "cue_phrase": "tasted of cellar air",
+      "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+      }
+    },
+    {
+      "id": "A-disrepair-01-s31",
+      "answer": "musty",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The ___ suitcase released a sour old odour when Grace unclasped it.",
+      "cue_phrase": "sour old odour",
+      "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (tattered); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-disrepair-01-s32",
+      "answer": "musty",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Our costumes seemed ___ and made us sneeze after weeks in storage.",
+      "cue_phrase": "made us sneeze",
+      "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+      }
+    },
+    {
+      "id": "A-disrepair-01-s33",
+      "answer": "derelict",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "No one lived in the ___ house, and letters piled by the door.",
+      "cue_phrase": "No one lived",
+      "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (musty, rickety); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-disrepair-01-s34",
+      "answer": "derelict",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ cottage had boarded windows and no name on the gate.",
+      "cue_phrase": "boarded windows",
+      "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (musty, rickety); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-disrepair-01-s35",
+      "answer": "derelict",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Weeds filled the ___ playground, and nobody came to mend the swings.",
+      "cue_phrase": "nobody came to mend",
+      "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (rickety); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-disrepair-01-s36",
+      "answer": "derelict",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ station had no trains, tickets, or caretaker anymore.",
+      "cue_phrase": "no trains, tickets",
+      "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (musty); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-disrepair-01-s37",
+      "answer": "derelict",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Foxes slept inside the ___ chapel because people had stopped visiting.",
+      "cue_phrase": "people had stopped visiting",
+      "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (musty, rickety); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-disrepair-01-s38",
+      "answer": "derelict",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The ___ mill stood silent, with grass growing through the office floor.",
+      "cue_phrase": "grass growing through",
+      "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (musty, rickety); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-disrepair-01-s39",
+      "answer": "derelict",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Kids dared each other to enter the ___ hotel with boarded doors.",
+      "cue_phrase": "boarded doors",
+      "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (musty, rickety); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-disrepair-01-s40",
+      "answer": "derelict",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "Kids peered through the fence at the ___ cinema no one had entered for years.",
+      "cue_phrase": "no one had entered for years",
+      "surface": {
+        "rickety": "rickety",
+        "tattered": "tattered",
+        "warped": "warped",
+        "musty": "musty",
+        "derelict": "derelict"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (musty, rickety); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "rickety",
+      "picked": "tattered",
+      "line": "Rickety wobbles when weight goes on; tattered hangs in ripped, uneven pieces."
+    },
+    {
+      "answer": "rickety",
+      "picked": "warped",
+      "line": "Rickety has loose parts that wobble; warped has gone crooked or curved out of line."
+    },
+    {
+      "answer": "rickety",
+      "picked": "musty",
+      "line": "Rickety is about wobbling under weight; musty is about an old, cellar sort of odour."
+    },
+    {
+      "answer": "rickety",
+      "picked": "derelict",
+      "line": "Rickety may still be used but wobbles; derelict has been given up and uncared for."
+    },
+    {
+      "answer": "tattered",
+      "picked": "rickety",
+      "line": "Tattered means ripped into hanging pieces; rickety means wobbly under weight."
+    },
+    {
+      "answer": "tattered",
+      "picked": "warped",
+      "line": "Tattered is full of holes and frayed pieces; warped is curved or crooked out of line."
+    },
+    {
+      "answer": "tattered",
+      "picked": "musty",
+      "line": "Tattered is about ripped cloth or paper; musty is about an old, closed-up odour."
+    },
+    {
+      "answer": "tattered",
+      "picked": "derelict",
+      "line": "Tattered things are ripped into pieces; derelict places are empty and uncared for."
+    },
+    {
+      "answer": "warped",
+      "picked": "rickety",
+      "line": "Warped has curved out of line; rickety wobbles because its parts are loose."
+    },
+    {
+      "answer": "warped",
+      "picked": "tattered",
+      "line": "Warped wood is no longer straight; tattered cloth or paper is ripped into pieces."
+    },
+    {
+      "answer": "warped",
+      "picked": "musty",
+      "line": "Warped is about a crooked surface or frame; musty is about an old cellar odour."
+    },
+    {
+      "answer": "warped",
+      "picked": "derelict",
+      "line": "Warped means bent out of line; derelict means empty, unused, and uncared for."
+    },
+    {
+      "answer": "musty",
+      "picked": "rickety",
+      "line": "Musty is an old cellar odour; rickety is a wobble when weight goes on."
+    },
+    {
+      "answer": "musty",
+      "picked": "tattered",
+      "line": "Musty is about odour; tattered is about ripped, hanging pieces."
+    },
+    {
+      "answer": "musty",
+      "picked": "warped",
+      "line": "Musty tells what your nose notices; warped tells how something has gone crooked."
+    },
+    {
+      "answer": "musty",
+      "picked": "derelict",
+      "line": "Musty means an old closed-up odour; derelict means empty and uncared for."
+    },
+    {
+      "answer": "derelict",
+      "picked": "rickety",
+      "line": "Derelict places are empty and uncared for; rickety things wobble under weight."
+    },
+    {
+      "answer": "derelict",
+      "picked": "tattered",
+      "line": "Derelict is about no one caring for a place; tattered is about ripped pieces."
+    },
+    {
+      "answer": "derelict",
+      "picked": "warped",
+      "line": "Derelict means unused and uncared for; warped means curved or crooked out of line."
+    },
+    {
+      "answer": "derelict",
+      "picked": "musty",
+      "line": "Derelict is about a place being unused; musty is about an old cellar odour."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-06T14:18:42+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": "2026-07-07",
+    "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+  }
+}

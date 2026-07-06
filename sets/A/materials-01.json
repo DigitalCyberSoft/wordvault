@@ -1,0 +1,826 @@
+{
+  "id": "A-materials-01",
+  "bank": "A",
+  "pos": "adjective",
+  "theme": "how materials behave",
+  "band": 4,
+  "band_override": 4,
+  "computed": {
+    "zipf_min": 2.98,
+    "zipf_mean": 3.36,
+    "tightness": null,
+    "band_suggested": 4,
+    "scored_at": "2026-07-06T18:43:21+00:00"
+  },
+  "words": [
+    {
+      "w": "transparent",
+      "synset": "crystalline.s.02",
+      "gloss_source": "authored",
+      "gloss": "so clear that you can see straight through it",
+      "zipf": 4.01,
+      "register": "neutral",
+      "senses_at_pos": 4,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "transparent"
+      },
+      "discriminator": "you can see through it",
+      "grade": 4
+    },
+    {
+      "w": "flammable",
+      "synset": "flammable.s.01",
+      "gloss_source": "authored",
+      "gloss": "catching fire very easily",
+      "zipf": 3.17,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "flammable"
+      },
+      "discriminator": "catches fire easily",
+      "grade": 5
+    },
+    {
+      "w": "brittle",
+      "synset": "brittle.s.01",
+      "gloss_source": "authored",
+      "gloss": "so stiff that it snaps instead of bending",
+      "zipf": 3.28,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "brittle"
+      },
+      "discriminator": "snaps instead of bending",
+      "grade": 5
+    },
+    {
+      "w": "buoyant",
+      "synset": "buoyant.s.01",
+      "gloss_source": "authored",
+      "gloss": "tending to float on water or rise in the air",
+      "zipf": 2.98,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "buoyant"
+      },
+      "discriminator": "floats",
+      "grade": 6
+    },
+    {
+      "w": "porous",
+      "synset": "porous.s.01",
+      "gloss_source": "authored",
+      "gloss": "full of tiny holes that let liquid soak in",
+      "zipf": 3.37,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "porous"
+      },
+      "discriminator": "liquid soaks into it",
+      "grade": 6
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-materials-01-s01",
+      "answer": "transparent",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Mia read the map through the ___ plastic cover.",
+      "cue_phrase": "read the map through",
+      "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+      }
+    },
+    {
+      "id": "A-materials-01-s02",
+      "answer": "transparent",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Through the ___ lid, Omar counted every biscuit inside.",
+      "cue_phrase": "counted every biscuit inside",
+      "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+      }
+    },
+    {
+      "id": "A-materials-01-s03",
+      "answer": "transparent",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The drawing underneath showed through the ___ wrapping paper.",
+      "cue_phrase": "underneath showed through",
+      "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+      }
+    },
+    {
+      "id": "A-materials-01-s04",
+      "answer": "transparent",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Dad traced the coin under the ___ baking sheet.",
+      "cue_phrase": "traced the coin under",
+      "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+      }
+    },
+    {
+      "id": "A-materials-01-s05",
+      "answer": "transparent",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The goldfish hid behind the ___ wall, yet Leo named its stripes.",
+      "cue_phrase": "named its stripes",
+      "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+      }
+    },
+    {
+      "id": "A-materials-01-s06",
+      "answer": "transparent",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "From outside the ___ box, Priya read the note folded inside.",
+      "cue_phrase": "read the note folded inside",
+      "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+      }
+    },
+    {
+      "id": "A-materials-01-s07",
+      "answer": "transparent",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Sam spotted the spider behind the ___ jar without lifting it.",
+      "cue_phrase": "spotted the spider behind",
+      "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+      }
+    },
+    {
+      "id": "A-materials-01-s08",
+      "answer": "transparent",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "Under the ___ ruler, the pencil line matched the tick marks.",
+      "cue_phrase": "line matched the tick marks",
+      "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+      }
+    },
+    {
+      "id": "A-materials-01-s09",
+      "answer": "flammable",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "A stray spark made the ___ curtain blaze at once.",
+      "cue_phrase": "spark made the",
+      "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+      }
+    },
+    {
+      "id": "A-materials-01-s10",
+      "answer": "flammable",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Near the candle, the ___ ribbon burned before Tom could shout.",
+      "cue_phrase": "ribbon burned before",
+      "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+      }
+    },
+    {
+      "id": "A-materials-01-s11",
+      "answer": "flammable",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The scout kept the ___ blanket far from the camp stove.",
+      "cue_phrase": "far from the camp stove",
+      "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+      }
+    },
+    {
+      "id": "A-materials-01-s12",
+      "answer": "flammable",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Mum moved the ___ spray away before lighting the grill.",
+      "cue_phrase": "away before lighting the grill",
+      "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+      }
+    },
+    {
+      "id": "A-materials-01-s13",
+      "answer": "flammable",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "One spark touched the ___ straw, and orange flames raced along.",
+      "cue_phrase": "orange flames raced along",
+      "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (brittle); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-materials-01-s14",
+      "answer": "flammable",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "At the barbecue, the ___ scraps vanished in a quick whoosh.",
+      "cue_phrase": "vanished in a quick whoosh",
+      "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+      }
+    },
+    {
+      "id": "A-materials-01-s15",
+      "answer": "flammable",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "One drop of the ___ glue near the burner lit with a pop.",
+      "cue_phrase": "lit with a pop",
+      "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+      }
+    },
+    {
+      "id": "A-materials-01-s16",
+      "answer": "flammable",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "A tiny match set the ___ paper roaring in seconds.",
+      "cue_phrase": "match set the",
+      "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (brittle); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-materials-01-s17",
+      "answer": "brittle",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "When Ava pressed it, the ___ twig broke into three pieces.",
+      "cue_phrase": "broke into three pieces",
+      "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+      }
+    },
+    {
+      "id": "A-materials-01-s18",
+      "answer": "brittle",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ biscuit shattered when it fell from the tin.",
+      "cue_phrase": "biscuit shattered when it fell",
+      "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+      }
+    },
+    {
+      "id": "A-materials-01-s19",
+      "answer": "brittle",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The old rubber band was ___ and cracked when Lila stretched it.",
+      "cue_phrase": "cracked when Lila stretched",
+      "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+      }
+    },
+    {
+      "id": "A-materials-01-s20",
+      "answer": "brittle",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Ben chose fresh clay because the ___ slab crumbled under his thumb.",
+      "cue_phrase": "crumbled under his thumb",
+      "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (porous); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-materials-01-s21",
+      "answer": "brittle",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The ___ reed split during weaving after days in the sun.",
+      "cue_phrase": "split during weaving",
+      "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+      }
+    },
+    {
+      "id": "A-materials-01-s22",
+      "answer": "brittle",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "After years in the shed, the ___ hose cracked all over.",
+      "cue_phrase": "hose cracked all over",
+      "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+      }
+    },
+    {
+      "id": "A-materials-01-s23",
+      "answer": "brittle",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The dragon's ___ claw broke off when the door slammed.",
+      "cue_phrase": "claw broke off",
+      "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+      }
+    },
+    {
+      "id": "A-materials-01-s24",
+      "answer": "brittle",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "Jaya's model mast turned ___ and split at the first tug.",
+      "cue_phrase": "split at the first tug",
+      "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+      }
+    },
+    {
+      "id": "A-materials-01-s25",
+      "answer": "buoyant",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ cork bobbed on the pond while stones sank.",
+      "cue_phrase": "bobbed on the pond",
+      "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+      }
+    },
+    {
+      "id": "A-materials-01-s26",
+      "answer": "buoyant",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "In the bath, the ___ toy stayed on top.",
+      "cue_phrase": "stayed on top",
+      "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+      }
+    },
+    {
+      "id": "A-materials-01-s27",
+      "answer": "buoyant",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Maya tied the ___ barrels under the raft before crossing.",
+      "cue_phrase": "barrels under the raft",
+      "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+      }
+    },
+    {
+      "id": "A-materials-01-s28",
+      "answer": "buoyant",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The fisherman trusted the ___ ring after his boat tipped.",
+      "cue_phrase": "after his boat tipped",
+      "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+      }
+    },
+    {
+      "id": "A-materials-01-s29",
+      "answer": "buoyant",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Even with a shell aboard, the ___ boat did not sink.",
+      "cue_phrase": "did not sink",
+      "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+      }
+    },
+    {
+      "id": "A-materials-01-s30",
+      "answer": "buoyant",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Ravi dropped the ___ ball in the pool, and it popped up.",
+      "cue_phrase": "popped up",
+      "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+      }
+    },
+    {
+      "id": "A-materials-01-s31",
+      "answer": "buoyant",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The ___ log carried three beetles across the puddle.",
+      "cue_phrase": "carried three beetles across",
+      "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+      }
+    },
+    {
+      "id": "A-materials-01-s32",
+      "answer": "buoyant",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "Grandma's ___ cushion kept the picnic basket on the river's surface.",
+      "cue_phrase": "on the river's surface",
+      "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+      }
+    },
+    {
+      "id": "A-materials-01-s33",
+      "answer": "porous",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ sponge drank up the spill before it reached the floor.",
+      "cue_phrase": "drank up the spill",
+      "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+      }
+    },
+    {
+      "id": "A-materials-01-s34",
+      "answer": "porous",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Rain disappeared into the ___ brick, leaving the path dry.",
+      "cue_phrase": "Rain disappeared into",
+      "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+      }
+    },
+    {
+      "id": "A-materials-01-s35",
+      "answer": "porous",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Nora's ___ towel grew heavy after one wipe of the sink.",
+      "cue_phrase": "grew heavy after one wipe",
+      "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+      }
+    },
+    {
+      "id": "A-materials-01-s36",
+      "answer": "porous",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The gardener watered the ___ soil twice because puddles vanished fast.",
+      "cue_phrase": "puddles vanished fast",
+      "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+      }
+    },
+    {
+      "id": "A-materials-01-s37",
+      "answer": "porous",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Dad set a plate under the ___ pot before tea dripped through.",
+      "cue_phrase": "tea dripped through",
+      "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+      }
+    },
+    {
+      "id": "A-materials-01-s38",
+      "answer": "porous",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "After the rain, the ___ stone was dark and heavier.",
+      "cue_phrase": "dark and heavier",
+      "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+      }
+    },
+    {
+      "id": "A-materials-01-s39",
+      "answer": "porous",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The ___ chalk sucked colour from the paintbrush tip.",
+      "cue_phrase": "sucked colour from",
+      "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+      }
+    },
+    {
+      "id": "A-materials-01-s40",
+      "answer": "porous",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "Juice spread inside the ___ coaster, making a purple circle.",
+      "cue_phrase": "spread inside the",
+      "surface": {
+        "transparent": "transparent",
+        "flammable": "flammable",
+        "brittle": "brittle",
+        "buoyant": "buoyant",
+        "porous": "porous"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "transparent",
+      "picked": "flammable",
+      "line": "Transparent lets a view through. Flammable burns fast near a spark."
+    },
+    {
+      "answer": "transparent",
+      "picked": "brittle",
+      "line": "Transparent lets a view through. Brittle breaks when pressed or dropped."
+    },
+    {
+      "answer": "transparent",
+      "picked": "buoyant",
+      "line": "Transparent lets a view through. Buoyant stays on top in a pond or pool."
+    },
+    {
+      "answer": "transparent",
+      "picked": "porous",
+      "line": "Transparent lets a view through. Porous takes spills inside itself."
+    },
+    {
+      "answer": "flammable",
+      "picked": "transparent",
+      "line": "Flammable burns fast near a spark. Transparent lets a view through."
+    },
+    {
+      "answer": "flammable",
+      "picked": "brittle",
+      "line": "Flammable burns fast near a spark. Brittle breaks when pressed or dropped."
+    },
+    {
+      "answer": "flammable",
+      "picked": "buoyant",
+      "line": "Flammable burns fast near a spark. Buoyant stays on top in a pond or pool."
+    },
+    {
+      "answer": "flammable",
+      "picked": "porous",
+      "line": "Flammable burns fast near a spark. Porous takes spills inside itself."
+    },
+    {
+      "answer": "brittle",
+      "picked": "transparent",
+      "line": "Brittle breaks when pressed or dropped. Transparent lets a view through."
+    },
+    {
+      "answer": "brittle",
+      "picked": "flammable",
+      "line": "Brittle breaks when pressed or dropped. Flammable burns fast near a spark."
+    },
+    {
+      "answer": "brittle",
+      "picked": "buoyant",
+      "line": "Brittle breaks when pressed or dropped. Buoyant stays on top in a pond or pool."
+    },
+    {
+      "answer": "brittle",
+      "picked": "porous",
+      "line": "Brittle breaks when pressed or dropped. Porous takes spills inside itself."
+    },
+    {
+      "answer": "buoyant",
+      "picked": "transparent",
+      "line": "Buoyant stays on top in a pond or pool. Transparent lets a view through."
+    },
+    {
+      "answer": "buoyant",
+      "picked": "flammable",
+      "line": "Buoyant stays on top in a pond or pool. Flammable burns fast near a spark."
+    },
+    {
+      "answer": "buoyant",
+      "picked": "brittle",
+      "line": "Buoyant stays on top in a pond or pool. Brittle breaks when pressed or dropped."
+    },
+    {
+      "answer": "buoyant",
+      "picked": "porous",
+      "line": "Buoyant stays on top in a pond or pool. Porous takes spills inside itself."
+    },
+    {
+      "answer": "porous",
+      "picked": "transparent",
+      "line": "Porous takes spills inside itself. Transparent lets a view through."
+    },
+    {
+      "answer": "porous",
+      "picked": "flammable",
+      "line": "Porous takes spills inside itself. Flammable burns fast near a spark."
+    },
+    {
+      "answer": "porous",
+      "picked": "brittle",
+      "line": "Porous takes spills inside itself. Brittle breaks when pressed or dropped."
+    },
+    {
+      "answer": "porous",
+      "picked": "buoyant",
+      "line": "Porous takes spills inside itself. Buoyant stays on top in a pond or pool."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-06T14:24:12+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": "2026-07-07",
+    "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+  }
+}

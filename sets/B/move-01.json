@@ -1,0 +1,909 @@
+{
+  "id": "B-move-01",
+  "bank": "B",
+  "pos": "verb",
+  "theme": "ways we move about",
+  "band": 1,
+  "band_override": 1,
+  "computed": {
+    "zipf_min": 3.77,
+    "zipf_mean": 4.32,
+    "tightness": 0.296,
+    "band_suggested": 2,
+    "scored_at": "2026-07-06T18:43:21+00:00"
+  },
+  "words": [
+    {
+      "w": "hop",
+      "synset": "hop.v.01",
+      "gloss_source": "authored",
+      "gloss": "jump along with only one foot touching the ground",
+      "zipf": 4.4,
+      "register": "neutral",
+      "senses_at_pos": 6,
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-06",
+        "note": "dominant school-context sense confirmed at roster vet"
+      },
+      "forms": {
+        "base": "hop",
+        "third": "hops",
+        "past": "hopped",
+        "part": "hopping"
+      },
+      "discriminator": "springs along on one foot",
+      "grade": 1
+    },
+    {
+      "w": "crawl",
+      "synset": "crawl.v.01",
+      "gloss_source": "authored",
+      "gloss": "move along slowly with your body close to the ground",
+      "zipf": 3.77,
+      "register": "neutral",
+      "senses_at_pos": 5,
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-06",
+        "note": "dominant school-context sense confirmed at roster vet"
+      },
+      "forms": {
+        "base": "crawl",
+        "third": "crawls",
+        "past": "crawled",
+        "part": "crawling"
+      },
+      "discriminator": "hands and knees, body low",
+      "grade": 2
+    },
+    {
+      "w": "climb",
+      "synset": "climb.v.01",
+      "gloss_source": "wordnet",
+      "gloss": "go upward with gradual or continuous progress",
+      "zipf": 4.22,
+      "register": "neutral",
+      "senses_at_pos": 6,
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-06",
+        "note": "dominant school-context sense confirmed at roster vet"
+      },
+      "forms": {
+        "base": "climb",
+        "third": "climbs",
+        "past": "climbed",
+        "part": "climbing"
+      },
+      "discriminator": "the only one that goes up",
+      "grade": 2
+    },
+    {
+      "w": "slide",
+      "synset": "slide.v.03",
+      "gloss_source": "wordnet",
+      "gloss": "move smoothly along a surface",
+      "zipf": 4.3,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "slide",
+        "third": "slides",
+        "past": "slid",
+        "part": "sliding"
+      },
+      "discriminator": "glides along a smooth surface",
+      "grade": 1
+    },
+    {
+      "w": "dance",
+      "synset": "dance.v.01",
+      "gloss_source": "authored",
+      "gloss": "move your body in time to music, with steps and turns",
+      "zipf": 4.93,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "dance",
+        "third": "dances",
+        "past": "danced",
+        "part": "dancing"
+      },
+      "discriminator": "moves in time to music",
+      "grade": 1
+    }
+  ],
+  "sentences": [
+    {
+      "id": "B-move-01-s01",
+      "answer": "hop",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The frog ___ from lily pad to lily pad, landing on one foot each time.",
+      "cue_phrase": "landing on one foot",
+      "surface": {
+        "hop": "hopped",
+        "crawl": "crawled",
+        "climb": "climbed",
+        "slide": "slid",
+        "dance": "danced"
+      }
+    },
+    {
+      "id": "B-move-01-s02",
+      "answer": "hop",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "During the sack race, Rafi had to ___ on one foot to the cone.",
+      "cue_phrase": "on one foot",
+      "surface": {
+        "hop": "hop",
+        "crawl": "crawl",
+        "climb": "climb",
+        "slide": "slide",
+        "dance": "dance"
+      }
+    },
+    {
+      "id": "B-move-01-s03",
+      "answer": "hop",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The broken sandal made Poppy ___, putting only her left foot down.",
+      "cue_phrase": "only her left foot",
+      "surface": {
+        "hop": "hop",
+        "crawl": "crawl",
+        "climb": "climb",
+        "slide": "slide",
+        "dance": "dance"
+      }
+    },
+    {
+      "id": "B-move-01-s04",
+      "answer": "hop",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The chalk-grid rule made Leo ___ from three to four without swapping feet.",
+      "cue_phrase": "without swapping feet",
+      "surface": {
+        "hop": "hop",
+        "crawl": "crawl",
+        "climb": "climb",
+        "slide": "slide",
+        "dance": "dance"
+      }
+    },
+    {
+      "id": "B-move-01-s05",
+      "answer": "hop",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "With a crab pinching one boot, the pirate ___ across the deck on the other.",
+      "cue_phrase": "on the other",
+      "surface": {
+        "hop": "hopped",
+        "crawl": "crawled",
+        "climb": "climbed",
+        "slide": "slid",
+        "dance": "danced"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (dance); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-move-01-s06",
+      "answer": "hop",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "With one trainer missing, Sam ___ across the cold tiles to breakfast.",
+      "cue_phrase": "one trainer missing",
+      "surface": {
+        "hop": "hop",
+        "crawl": "crawl",
+        "climb": "climb",
+        "slide": "slide",
+        "dance": "dance"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: one trainer missing points at keeping the bare foot up (one-foot travel); sliding tiles with one shoe on is the weaker read; iteration cap reached",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-move-01-s07",
+      "answer": "hop",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "At the relay, Gia had to ___ between cones using just her right foot.",
+      "cue_phrase": "using just her right foot",
+      "surface": {
+        "hop": "hop",
+        "crawl": "crawl",
+        "climb": "climb",
+        "slide": "slide",
+        "dance": "dance"
+      }
+    },
+    {
+      "id": "B-move-01-s08",
+      "answer": "hop",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The toy rabbit ___ over each line, landing on one back paw.",
+      "cue_phrase": "landing on one back paw",
+      "surface": {
+        "hop": "hopped",
+        "crawl": "crawled",
+        "climb": "climbed",
+        "slide": "slid",
+        "dance": "danced"
+      }
+    },
+    {
+      "id": "B-move-01-s09",
+      "answer": "crawl",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The baby ___ across the rug on hands and knees toward the teddy.",
+      "cue_phrase": "hands and knees",
+      "surface": {
+        "hop": "hopped",
+        "crawl": "crawled",
+        "climb": "climbed",
+        "slide": "slid",
+        "dance": "danced"
+      }
+    },
+    {
+      "id": "B-move-01-s10",
+      "answer": "crawl",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "To pass under the table, I had to ___ on my knees and palms.",
+      "cue_phrase": "my knees and palms",
+      "surface": {
+        "hop": "hop",
+        "crawl": "crawl",
+        "climb": "climb",
+        "slide": "slide",
+        "dance": "dance"
+      }
+    },
+    {
+      "id": "B-move-01-s11",
+      "answer": "crawl",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The tunnel was too low, so we ___ through it on all fours.",
+      "cue_phrase": "on all fours",
+      "surface": {
+        "hop": "hopped",
+        "crawl": "crawled",
+        "climb": "climbed",
+        "slide": "slid",
+        "dance": "danced"
+      }
+    },
+    {
+      "id": "B-move-01-s12",
+      "answer": "crawl",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "During the fire drill game, pupils ___ below smoke signs, elbows brushing carpet.",
+      "cue_phrase": "elbows brushing carpet",
+      "surface": {
+        "hop": "hopped",
+        "crawl": "crawled",
+        "climb": "climbed",
+        "slide": "slid",
+        "dance": "danced"
+      }
+    },
+    {
+      "id": "B-move-01-s13",
+      "answer": "crawl",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The puppy's legs wobbled, and it ___ belly-first across the blanket with paws pulling.",
+      "cue_phrase": "with paws pulling",
+      "surface": {
+        "hop": "hopped",
+        "crawl": "crawled",
+        "climb": "climbed",
+        "slide": "slid",
+        "dance": "danced"
+      }
+    },
+    {
+      "id": "B-move-01-s14",
+      "answer": "crawl",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Under the fence, Tess had to ___ using elbows and knees.",
+      "cue_phrase": "using elbows and knees",
+      "surface": {
+        "hop": "hop",
+        "crawl": "crawl",
+        "climb": "climb",
+        "slide": "slide",
+        "dance": "dance"
+      }
+    },
+    {
+      "id": "B-move-01-s15",
+      "answer": "crawl",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "In the spy game, Omar ___ behind the sofa on knees and palms.",
+      "cue_phrase": "on knees and palms",
+      "surface": {
+        "hop": "hopped",
+        "crawl": "crawled",
+        "climb": "climbed",
+        "slide": "slid",
+        "dance": "danced"
+      }
+    },
+    {
+      "id": "B-move-01-s16",
+      "answer": "crawl",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The beetle costume made Asha ___ across the stage on all fours.",
+      "cue_phrase": "across the stage on all fours",
+      "surface": {
+        "hop": "hop",
+        "crawl": "crawl",
+        "climb": "climb",
+        "slide": "slide",
+        "dance": "dance"
+      }
+    },
+    {
+      "id": "B-move-01-s17",
+      "answer": "climb",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The goat ___ up the rocky path to reach the sweet leaves.",
+      "cue_phrase": "up the rocky path",
+      "surface": {
+        "hop": "hopped",
+        "crawl": "crawled",
+        "climb": "climbed",
+        "slide": "slid",
+        "dance": "danced"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (hop); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-move-01-s18",
+      "answer": "climb",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "At camp, we had to ___ up the rope ladder to the treehouse.",
+      "cue_phrase": "up the rope ladder",
+      "surface": {
+        "hop": "hop",
+        "crawl": "crawl",
+        "climb": "climb",
+        "slide": "slide",
+        "dance": "dance"
+      }
+    },
+    {
+      "id": "B-move-01-s19",
+      "answer": "climb",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Lena ___ up the tall frame until her hand reached the top bar.",
+      "cue_phrase": "the top bar",
+      "surface": {
+        "hop": "hopped",
+        "crawl": "crawled",
+        "climb": "climbed",
+        "slide": "slid",
+        "dance": "danced"
+      }
+    },
+    {
+      "id": "B-move-01-s20",
+      "answer": "climb",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The cat ___ up the trellis to reach the shed roof.",
+      "cue_phrase": "up the trellis",
+      "surface": {
+        "hop": "hopped",
+        "crawl": "crawled",
+        "climb": "climbed",
+        "slide": "slid",
+        "dance": "danced"
+      }
+    },
+    {
+      "id": "B-move-01-s21",
+      "answer": "climb",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "From the valley, the hikers ___ until the village looked tiny below.",
+      "cue_phrase": "village looked tiny below",
+      "surface": {
+        "hop": "hopped",
+        "crawl": "crawled",
+        "climb": "climbed",
+        "slide": "slid",
+        "dance": "danced"
+      }
+    },
+    {
+      "id": "B-move-01-s22",
+      "answer": "climb",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The squirrel had to ___ up the drainpipe before hiding in the attic.",
+      "cue_phrase": "up the drainpipe",
+      "surface": {
+        "hop": "hop",
+        "crawl": "crawl",
+        "climb": "climb",
+        "slide": "slide",
+        "dance": "dance"
+      }
+    },
+    {
+      "id": "B-move-01-s23",
+      "answer": "climb",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "On the adventure course, children had to ___ up the cargo net.",
+      "cue_phrase": "up the cargo net",
+      "surface": {
+        "hop": "hop",
+        "crawl": "crawl",
+        "climb": "climb",
+        "slide": "slide",
+        "dance": "dance"
+      }
+    },
+    {
+      "id": "B-move-01-s24",
+      "answer": "climb",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The knight ___ up the tower wall, gripping stones hand over hand.",
+      "cue_phrase": "hand over hand",
+      "surface": {
+        "hop": "hopped",
+        "crawl": "crawled",
+        "climb": "climbed",
+        "slide": "slid",
+        "dance": "danced"
+      }
+    },
+    {
+      "id": "B-move-01-s25",
+      "answer": "slide",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The penguin ___ on its belly across the icy pond.",
+      "cue_phrase": "the icy pond",
+      "surface": {
+        "hop": "hopped",
+        "crawl": "crawled",
+        "climb": "climbed",
+        "slide": "slid",
+        "dance": "danced"
+      }
+    },
+    {
+      "id": "B-move-01-s26",
+      "answer": "slide",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "At the pool, Mina had to ___ down the wet chute feet first.",
+      "cue_phrase": "the wet chute",
+      "surface": {
+        "hop": "hop",
+        "crawl": "crawl",
+        "climb": "climb",
+        "slide": "slide",
+        "dance": "dance"
+      }
+    },
+    {
+      "id": "B-move-01-s27",
+      "answer": "slide",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The tray ___ across the polished counter without a bump.",
+      "cue_phrase": "the polished counter",
+      "surface": {
+        "hop": "hopped",
+        "crawl": "crawled",
+        "climb": "climbed",
+        "slide": "slid",
+        "dance": "danced"
+      }
+    },
+    {
+      "id": "B-move-01-s28",
+      "answer": "slide",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "After the floor was waxed, socks ___ from door to sofa.",
+      "cue_phrase": "floor was waxed",
+      "surface": {
+        "hop": "hopped",
+        "crawl": "crawled",
+        "climb": "climbed",
+        "slide": "slid",
+        "dance": "danced"
+      }
+    },
+    {
+      "id": "B-move-01-s29",
+      "answer": "slide",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The soap escaped my hand and ___ along the bath's shiny side.",
+      "cue_phrase": "shiny side",
+      "surface": {
+        "hop": "hopped",
+        "crawl": "crawled",
+        "climb": "climbed",
+        "slide": "slid",
+        "dance": "danced"
+      }
+    },
+    {
+      "id": "B-move-01-s30",
+      "answer": "slide",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The sledge ___ downhill after Dad gave one gentle push.",
+      "cue_phrase": "one gentle push",
+      "surface": {
+        "hop": "hopped",
+        "crawl": "crawled",
+        "climb": "climbed",
+        "slide": "slid",
+        "dance": "danced"
+      }
+    },
+    {
+      "id": "B-move-01-s31",
+      "answer": "slide",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The drawer will ___ out if you pull the brass handle.",
+      "cue_phrase": "pull the brass handle",
+      "surface": {
+        "hop": "hop",
+        "crawl": "crawl",
+        "climb": "climb",
+        "slide": "slide",
+        "dance": "dance"
+      }
+    },
+    {
+      "id": "B-move-01-s32",
+      "answer": "slide",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "On ice, the stone can ___ towards the painted target.",
+      "cue_phrase": "On ice",
+      "surface": {
+        "hop": "hop",
+        "crawl": "crawl",
+        "climb": "climb",
+        "slide": "slide",
+        "dance": "dance"
+      }
+    },
+    {
+      "id": "B-move-01-s33",
+      "answer": "dance",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "When the drumbeat started, the twins ___ around the kitchen with twirls and claps.",
+      "cue_phrase": "the drumbeat started",
+      "surface": {
+        "hop": "hopped",
+        "crawl": "crawled",
+        "climb": "climbed",
+        "slide": "slid",
+        "dance": "danced"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (hop, slide); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-move-01-s34",
+      "answer": "dance",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "In ballet class, Tia had to ___ across the hall to piano notes.",
+      "cue_phrase": "ballet class",
+      "surface": {
+        "hop": "hop",
+        "crawl": "crawl",
+        "climb": "climb",
+        "slide": "slide",
+        "dance": "dance"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (hop, slide); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-move-01-s35",
+      "answer": "dance",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The scarecrow ___ whenever the fiddle played, bowing with every beat.",
+      "cue_phrase": "the fiddle played",
+      "surface": {
+        "hop": "hopped",
+        "crawl": "crawled",
+        "climb": "climbed",
+        "slide": "slid",
+        "dance": "danced"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (hop); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-move-01-s36",
+      "answer": "dance",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "In the school show, robots ___ with twirls as the choir sang.",
+      "cue_phrase": "the choir sang",
+      "surface": {
+        "hop": "hopped",
+        "crawl": "crawled",
+        "climb": "climbed",
+        "slide": "slid",
+        "dance": "danced"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (hop, slide); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-move-01-s37",
+      "answer": "dance",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Grandad heard the tango tune and began to ___ beside the sofa.",
+      "cue_phrase": "the tango tune",
+      "surface": {
+        "hop": "hop",
+        "crawl": "crawl",
+        "climb": "climb",
+        "slide": "slide",
+        "dance": "dance"
+      }
+    },
+    {
+      "id": "B-move-01-s38",
+      "answer": "dance",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The queen's shoes tapped the beat as she ___ across the ballroom.",
+      "cue_phrase": "tapped the beat",
+      "surface": {
+        "hop": "hopped",
+        "crawl": "crawled",
+        "climb": "climbed",
+        "slide": "slid",
+        "dance": "danced"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (hop, slide); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-move-01-s39",
+      "answer": "dance",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Each puppet ___ when the clockwork box played its tiny tune.",
+      "cue_phrase": "tiny tune",
+      "surface": {
+        "hop": "hops",
+        "crawl": "crawls",
+        "climb": "climbs",
+        "slide": "slides",
+        "dance": "dances"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (hop); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-move-01-s40",
+      "answer": "dance",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "After supper, the family ___ to the radio's cheerful song.",
+      "cue_phrase": "cheerful song",
+      "surface": {
+        "hop": "hopped",
+        "crawl": "crawled",
+        "climb": "climbed",
+        "slide": "slid",
+        "dance": "danced"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (hop); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "hop",
+      "picked": "crawl",
+      "line": "Hop springs on one foot; crawl goes on hands and knees low down."
+    },
+    {
+      "answer": "hop",
+      "picked": "climb",
+      "line": "Hop uses one-foot springs; climb goes up something."
+    },
+    {
+      "answer": "hop",
+      "picked": "slide",
+      "line": "Hop lifts off on one foot; slide stays against a slick path."
+    },
+    {
+      "answer": "hop",
+      "picked": "dance",
+      "line": "Hop is a one-foot spring; dance follows a beat or song."
+    },
+    {
+      "answer": "crawl",
+      "picked": "hop",
+      "line": "Crawl uses hands and knees low down; hop springs on one foot."
+    },
+    {
+      "answer": "crawl",
+      "picked": "climb",
+      "line": "Crawl stays low on hands and knees; climb goes up something."
+    },
+    {
+      "answer": "crawl",
+      "picked": "slide",
+      "line": "Crawl uses hands and knees; slide glides along a slick path."
+    },
+    {
+      "answer": "crawl",
+      "picked": "dance",
+      "line": "Crawl is low on hands and knees; dance follows a beat or song."
+    },
+    {
+      "answer": "climb",
+      "picked": "hop",
+      "line": "Climb goes up something; hop springs on one foot."
+    },
+    {
+      "answer": "climb",
+      "picked": "crawl",
+      "line": "Climb goes up something; crawl stays low on hands and knees."
+    },
+    {
+      "answer": "climb",
+      "picked": "slide",
+      "line": "Climb goes up something; slide glides along a slick path."
+    },
+    {
+      "answer": "climb",
+      "picked": "dance",
+      "line": "Climb goes up something; dance follows a beat or song."
+    },
+    {
+      "answer": "slide",
+      "picked": "hop",
+      "line": "Slide glides along a slick path; hop springs on one foot."
+    },
+    {
+      "answer": "slide",
+      "picked": "crawl",
+      "line": "Slide glides along a slick path; crawl uses hands and knees."
+    },
+    {
+      "answer": "slide",
+      "picked": "climb",
+      "line": "Slide glides along a slick path; climb goes up something."
+    },
+    {
+      "answer": "slide",
+      "picked": "dance",
+      "line": "Slide glides along a slick path; dance follows a beat or song."
+    },
+    {
+      "answer": "dance",
+      "picked": "hop",
+      "line": "Dance follows a beat or song; hop springs on one foot."
+    },
+    {
+      "answer": "dance",
+      "picked": "crawl",
+      "line": "Dance follows a beat or song; crawl stays low on hands and knees."
+    },
+    {
+      "answer": "dance",
+      "picked": "climb",
+      "line": "Dance follows a beat or song; climb goes up something."
+    },
+    {
+      "answer": "dance",
+      "picked": "slide",
+      "line": "Dance follows a beat or song; slide glides along a slick path."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-06T14:43:44+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": "2026-07-07",
+    "scrub_note": "Scrubbed by claude 2026-07-07 (dedicated pre-scrub agent failed twice on output limits): mechanical sweeps (cue hygiene, meta-frames, seasonal, templates, duplicates), all 20 contrast lines read per set, every sentence read for frame sanity, all judge hards fixed and re-judged to zero. Fixes: wave re-pinned to brandish.v.01 + 3 contrasts aligned, hop gloss authored to the one-foot sense the set teaches, pat/nod/wink frames restaged, one dangling pronoun."
+  }
+}

@@ -1,0 +1,810 @@
+{
+  "id": "B-sky-01",
+  "bank": "B",
+  "pos": "noun",
+  "theme": "sights in the night sky",
+  "band": 3,
+  "band_override": 3,
+  "computed": {
+    "zipf_min": 3.37,
+    "zipf_mean": 3.62,
+    "tightness": 0.379,
+    "band_suggested": 2,
+    "scored_at": "2026-07-06T18:43:21+00:00"
+  },
+  "words": [
+    {
+      "w": "comet",
+      "synset": "comet.n.01",
+      "gloss_source": "authored",
+      "gloss": "a frozen body that orbits the sun, showing a long glowing tail",
+      "zipf": 3.64,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "comet"
+      },
+      "discriminator": "returning iceball with a tail, visible for weeks",
+      "grade": 4
+    },
+    {
+      "w": "meteor",
+      "synset": "meteoroid.n.01",
+      "gloss_source": "authored",
+      "gloss": "a space rock that burns in a bright streak as it hits the air",
+      "zipf": 3.55,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "meteor"
+      },
+      "discriminator": "a streak burning out in seconds",
+      "grade": 4
+    },
+    {
+      "w": "eclipse",
+      "synset": "eclipse.n.01",
+      "gloss_source": "authored",
+      "gloss": "when one body in space blocks the light of another",
+      "zipf": 3.81,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "eclipse"
+      },
+      "discriminator": "one body blocking another",
+      "grade": 5
+    },
+    {
+      "w": "constellation",
+      "synset": "constellation.n.02",
+      "gloss_source": "wordnet",
+      "gloss": "a configuration of stars as seen from the earth",
+      "zipf": 3.37,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "constellation"
+      },
+      "discriminator": "named fixed pattern of stars",
+      "grade": 5
+    },
+    {
+      "w": "aurora",
+      "synset": "aurora.n.02",
+      "gloss_source": "authored",
+      "gloss": "shifting bands of coloured light seen after dark near the poles",
+      "zipf": 3.73,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "aurora"
+      },
+      "discriminator": "shifting curtains of coloured light",
+      "grade": 6
+    }
+  ],
+  "sentences": [
+    {
+      "id": "B-sky-01-s01",
+      "answer": "comet",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Through Dad's binoculars, the ___ kept its silver plume for three weeks.",
+      "cue_phrase": "silver plume for three weeks",
+      "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+      }
+    },
+    {
+      "id": "B-sky-01-s02",
+      "answer": "comet",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The old chart said the ___ would visit again in seventy-six years.",
+      "cue_phrase": "again in seventy-six years",
+      "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+      }
+    },
+    {
+      "id": "B-sky-01-s03",
+      "answer": "comet",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Grandma remembered the ___ from childhood, now back with a hazy streamer.",
+      "cue_phrase": "with a hazy streamer",
+      "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+      }
+    },
+    {
+      "id": "B-sky-01-s04",
+      "answer": "comet",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "For ten evenings, Mia sketched the ___ with its widening misty plume.",
+      "cue_phrase": "widening misty plume",
+      "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+      }
+    },
+    {
+      "id": "B-sky-01-s05",
+      "answer": "comet",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The newspaper tracked the ___ moving between fixed dots every week that month.",
+      "cue_phrase": "moving between fixed dots",
+      "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+      }
+    },
+    {
+      "id": "B-sky-01-s06",
+      "answer": "comet",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "By Friday, the ___ was still there, beside different fixed dots.",
+      "cue_phrase": "beside different fixed dots",
+      "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+      }
+    },
+    {
+      "id": "B-sky-01-s07",
+      "answer": "comet",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "In the telescope, the ___ looked fuzzy around a tiny icy centre.",
+      "cue_phrase": "tiny icy centre",
+      "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+      }
+    },
+    {
+      "id": "B-sky-01-s08",
+      "answer": "comet",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "All month, Ravi checked the ___ before bed and saw its plume grow.",
+      "cue_phrase": "plume grow",
+      "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+      }
+    },
+    {
+      "id": "B-sky-01-s09",
+      "answer": "meteor",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ flashed once, then vanished before Sam counted to three.",
+      "cue_phrase": "vanished before Sam counted",
+      "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+      }
+    },
+    {
+      "id": "B-sky-01-s10",
+      "answer": "meteor",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The class gasped as the ___ zipped across and was gone instantly.",
+      "cue_phrase": "was gone instantly",
+      "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+      }
+    },
+    {
+      "id": "B-sky-01-s11",
+      "answer": "meteor",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "During the campout, the ___ made everyone point, then quickly disappeared.",
+      "cue_phrase": "then quickly disappeared",
+      "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+      }
+    },
+    {
+      "id": "B-sky-01-s12",
+      "answer": "meteor",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "On the hill, the ___ drew a sudden white line, then nothing.",
+      "cue_phrase": "then nothing",
+      "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+      }
+    },
+    {
+      "id": "B-sky-01-s13",
+      "answer": "meteor",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Tara missed the ___ because she blinked at the wrong moment.",
+      "cue_phrase": "blinked at the wrong",
+      "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-4.1 lists a second fit (eclipse); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-sky-01-s14",
+      "answer": "meteor",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Everyone cheered after the ___ crossed the window in one heartbeat.",
+      "cue_phrase": "in one heartbeat",
+      "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+      }
+    },
+    {
+      "id": "B-sky-01-s15",
+      "answer": "meteor",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The ___ was so quick that Noor asked if anyone else saw it.",
+      "cue_phrase": "so quick",
+      "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+      }
+    },
+    {
+      "id": "B-sky-01-s16",
+      "answer": "meteor",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "The ___ burned out before Leo could even lift his camera.",
+      "cue_phrase": "burned out",
+      "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+      }
+    },
+    {
+      "id": "B-sky-01-s17",
+      "answer": "eclipse",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "At noon, the ___ made the sun look like a bitten biscuit.",
+      "cue_phrase": "sun look like",
+      "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+      }
+    },
+    {
+      "id": "B-sky-01-s18",
+      "answer": "eclipse",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ turned day dim when the moon covered the sun.",
+      "cue_phrase": "moon covered the sun",
+      "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+      }
+    },
+    {
+      "id": "B-sky-01-s19",
+      "answer": "eclipse",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "We wore special dark glasses as the ___ slowly hid the sun.",
+      "cue_phrase": "special dark glasses",
+      "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+      }
+    },
+    {
+      "id": "B-sky-01-s20",
+      "answer": "eclipse",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The playground went dusky during the ___, though lunchtime had just begun.",
+      "cue_phrase": "lunchtime had just begun",
+      "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+      }
+    },
+    {
+      "id": "B-sky-01-s21",
+      "answer": "eclipse",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Birds quietened when the ___ made afternoon feel like early evening.",
+      "cue_phrase": "afternoon feel like early",
+      "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+      }
+    },
+    {
+      "id": "B-sky-01-s22",
+      "answer": "eclipse",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The class watched the ___ make a round shadow crawl across the moon.",
+      "cue_phrase": "round shadow crawl",
+      "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+      }
+    },
+    {
+      "id": "B-sky-01-s23",
+      "answer": "eclipse",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "During the ___, our pinhole card made tiny crescent suns.",
+      "cue_phrase": "tiny crescent suns",
+      "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+      }
+    },
+    {
+      "id": "B-sky-01-s24",
+      "answer": "eclipse",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "The ___ paused football practice because staring upward was unsafe.",
+      "cue_phrase": "staring upward was unsafe",
+      "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+      }
+    },
+    {
+      "id": "B-sky-01-s25",
+      "answer": "constellation",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "On the chart, the ___ was named Dragon and never changed shape.",
+      "cue_phrase": "named Dragon",
+      "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+      }
+    },
+    {
+      "id": "B-sky-01-s26",
+      "answer": "constellation",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Jess joined the dots to copy the ___ above the tent.",
+      "cue_phrase": "joined the dots",
+      "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+      }
+    },
+    {
+      "id": "B-sky-01-s27",
+      "answer": "constellation",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "At camp, we found the ___ by matching seven dots on our map.",
+      "cue_phrase": "matching seven dots",
+      "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+      }
+    },
+    {
+      "id": "B-sky-01-s28",
+      "answer": "constellation",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ looked like a saucepan, just as the guidebook picture promised.",
+      "cue_phrase": "like a saucepan",
+      "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+      }
+    },
+    {
+      "id": "B-sky-01-s29",
+      "answer": "constellation",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Even after an hour, the ___ kept the same dot-to-dot shape.",
+      "cue_phrase": "same dot-to-dot shape",
+      "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+      }
+    },
+    {
+      "id": "B-sky-01-s30",
+      "answer": "constellation",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Leila used the ___ to find north from her bedroom window.",
+      "cue_phrase": "to find north",
+      "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+      }
+    },
+    {
+      "id": "B-sky-01-s31",
+      "answer": "constellation",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Grandad pointed to the ___ and told a story about hunters.",
+      "cue_phrase": "story about hunters",
+      "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+      }
+    },
+    {
+      "id": "B-sky-01-s32",
+      "answer": "constellation",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "Sam copied the ___ as six pinholes in black card.",
+      "cue_phrase": "six pinholes",
+      "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+      }
+    },
+    {
+      "id": "B-sky-01-s33",
+      "answer": "aurora",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Green curtains of the ___ rippled above the snowy village.",
+      "cue_phrase": "Green curtains",
+      "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+      }
+    },
+    {
+      "id": "B-sky-01-s34",
+      "answer": "aurora",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ spread purple veils over the Arctic cabin.",
+      "cue_phrase": "purple veils",
+      "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+      }
+    },
+    {
+      "id": "B-sky-01-s35",
+      "answer": "aurora",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Dogs slept while the ___ waved green ribbons over the tent.",
+      "cue_phrase": "waved green ribbons",
+      "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+      }
+    },
+    {
+      "id": "B-sky-01-s36",
+      "answer": "aurora",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "From the sled, the ___ shimmered like curtains across the dark.",
+      "cue_phrase": "shimmered like curtains",
+      "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+      }
+    },
+    {
+      "id": "B-sky-01-s37",
+      "answer": "aurora",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Mum's photo caught the ___ dancing in green folds over snow.",
+      "cue_phrase": "dancing in green folds",
+      "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+      }
+    },
+    {
+      "id": "B-sky-01-s38",
+      "answer": "aurora",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The village cheered when the ___ painted the night sky pink and green.",
+      "cue_phrase": "pink and green",
+      "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+      }
+    },
+    {
+      "id": "B-sky-01-s39",
+      "answer": "aurora",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Outside the lodge, the ___ flickered like silk scarves in the dark.",
+      "cue_phrase": "like silk scarves",
+      "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+      }
+    },
+    {
+      "id": "B-sky-01-s40",
+      "answer": "aurora",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The ___ waved violet sheets above our mittened hands.",
+      "cue_phrase": "violet sheets",
+      "surface": {
+        "comet": "comet",
+        "meteor": "meteor",
+        "eclipse": "eclipse",
+        "constellation": "constellation",
+        "aurora": "aurora"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "comet",
+      "picked": "meteor",
+      "line": "A comet can linger for weeks with a plume. A meteor flashes and is gone in seconds."
+    },
+    {
+      "answer": "comet",
+      "picked": "eclipse",
+      "line": "A comet is a visitor with a plume. An eclipse is one world covering another's shine."
+    },
+    {
+      "answer": "comet",
+      "picked": "constellation",
+      "line": "A comet moves from week to week. A constellation is a fixed dot pattern."
+    },
+    {
+      "answer": "comet",
+      "picked": "aurora",
+      "line": "A comet has one plume and lasts for weeks. An aurora waves like coloured curtains."
+    },
+    {
+      "answer": "meteor",
+      "picked": "comet",
+      "line": "A meteor is a quick flash. A comet stays visible for many nights with a plume."
+    },
+    {
+      "answer": "meteor",
+      "picked": "eclipse",
+      "line": "A meteor shoots by fast. An eclipse makes one round thing cover another."
+    },
+    {
+      "answer": "meteor",
+      "picked": "constellation",
+      "line": "A meteor appears for a moment. A constellation keeps the same dot pattern."
+    },
+    {
+      "answer": "meteor",
+      "picked": "aurora",
+      "line": "A meteor is a single quick flash. An aurora spreads in moving curtains."
+    },
+    {
+      "answer": "eclipse",
+      "picked": "comet",
+      "line": "An eclipse is a covering that dims a round face. A comet is a traveller with a plume."
+    },
+    {
+      "answer": "eclipse",
+      "picked": "meteor",
+      "line": "An eclipse lasts as a slow covering. A meteor is a sudden flash."
+    },
+    {
+      "answer": "eclipse",
+      "picked": "constellation",
+      "line": "An eclipse changes a round face for a while. A constellation is a steady dot pattern."
+    },
+    {
+      "answer": "eclipse",
+      "picked": "aurora",
+      "line": "An eclipse is one thing covering another. An aurora is waving colour in the dark."
+    },
+    {
+      "answer": "constellation",
+      "picked": "comet",
+      "line": "A constellation keeps its dot shape. A comet drifts and may have a plume."
+    },
+    {
+      "answer": "constellation",
+      "picked": "meteor",
+      "line": "A constellation is a fixed dot picture. A meteor vanishes almost at once."
+    },
+    {
+      "answer": "constellation",
+      "picked": "eclipse",
+      "line": "A constellation stays in the same pattern. An eclipse is a temporary covering."
+    },
+    {
+      "answer": "constellation",
+      "picked": "aurora",
+      "line": "A constellation has a fixed dot pattern. An aurora moves like curtains."
+    },
+    {
+      "answer": "aurora",
+      "picked": "comet",
+      "line": "An aurora ripples in curtains. A comet is a visitor with a plume."
+    },
+    {
+      "answer": "aurora",
+      "picked": "meteor",
+      "line": "An aurora can wave for a while. A meteor flashes out in seconds."
+    },
+    {
+      "answer": "aurora",
+      "picked": "eclipse",
+      "line": "An aurora glows in moving colours. An eclipse covers and dims a round face."
+    },
+    {
+      "answer": "aurora",
+      "picked": "constellation",
+      "line": "An aurora changes shape as it waves. A constellation keeps a dot pattern."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-06T14:49:37+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": "2026-07-07",
+    "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+  }
+}

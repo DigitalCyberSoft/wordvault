@@ -1,0 +1,1089 @@
+{
+  "id": "A-effort-01",
+  "bank": "A",
+  "pos": "verb",
+  "theme": "ways of working at something",
+  "band": 4,
+  "band_override": 4,
+  "computed": {
+    "zipf_min": 2.96,
+    "zipf_mean": 3.2,
+    "tightness": 0.252,
+    "band_suggested": 3,
+    "scored_at": "2026-07-06T18:43:21+00:00"
+  },
+  "words": [
+    {
+      "w": "strive",
+      "synset": "endeavor.v.01",
+      "gloss_source": "authored",
+      "gloss": "try as hard as you can toward a goal",
+      "zipf": 3.72,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "strive",
+        "third": "strives",
+        "past": "strove",
+        "part": "striving"
+      },
+      "discriminator": "all-out effort toward a goal",
+      "grade": 5
+    },
+    {
+      "w": "toil",
+      "synset": "labor.v.02",
+      "gloss_source": "wordnet",
+      "gloss": "work hard",
+      "zipf": 3.03,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "toil",
+        "third": "toils",
+        "past": "toiled",
+        "part": "toiling"
+      },
+      "discriminator": "long exhausting labour",
+      "grade": 5
+    },
+    {
+      "w": "tinker",
+      "synset": "tinker.v.03",
+      "gloss_source": "wordnet",
+      "gloss": "try to fix or mend",
+      "zipf": 3.28,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "tinker",
+        "third": "tinkers",
+        "past": "tinkered",
+        "part": "tinkering"
+      },
+      "discriminator": "small trial-and-error repairs",
+      "grade": 5
+    },
+    {
+      "w": "persevere",
+      "synset": "persevere.v.01",
+      "gloss_source": "authored",
+      "gloss": "keep going and refuse to give up, however hard it gets",
+      "zipf": 2.96,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "persevere",
+        "third": "perseveres",
+        "past": "persevered",
+        "part": "persevering"
+      },
+      "discriminator": "refuses to quit",
+      "grade": 5
+    },
+    {
+      "w": "improvise",
+      "synset": "improvise.v.02",
+      "gloss_source": "wordnet",
+      "gloss": "manage in a makeshift way; do with whatever is at hand",
+      "zipf": 3.02,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "improvise",
+        "third": "improvises",
+        "past": "improvised",
+        "part": "improvising"
+      },
+      "discriminator": "making do on the spot without a plan",
+      "grade": 6
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-effort-01-s01",
+      "answer": "strive",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "In the final lap, Amira ___ for first place with pumping arms.",
+      "cue_phrase": "for first place",
+      "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+      }
+    },
+    {
+      "id": "A-effort-01-s02",
+      "answer": "strive",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The young knight had to ___ for the silver crown, muscles shaking.",
+      "cue_phrase": "for the silver crown",
+      "surface": {
+        "strive": "strive",
+        "toil": "toil",
+        "tinker": "tinker",
+        "persevere": "persevere",
+        "improvise": "improvise"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (persevere, toil); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-effort-01-s03",
+      "answer": "strive",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "In the boat race, our crew ___ for the flag, oars splashing wildly.",
+      "cue_phrase": "for the flag",
+      "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (persevere, toil); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-effort-01-s04",
+      "answer": "strive",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Ben ___ for a record, cheeks red after every jump.",
+      "cue_phrase": "for a record",
+      "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (persevere, toil); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-effort-01-s05",
+      "answer": "strive",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The cub ___ for the highest peach, leaping with all four paws.",
+      "cue_phrase": "for the highest peach",
+      "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (persevere); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-effort-01-s06",
+      "answer": "strive",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "At chess club, Rafi ___ for victory, planning three moves ahead.",
+      "cue_phrase": "for victory",
+      "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (toil); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-effort-01-s07",
+      "answer": "strive",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Every sports day, Lee ___ for the ribbon, lungs burning near the line.",
+      "cue_phrase": "for the ribbon",
+      "surface": {
+        "strive": "strives",
+        "toil": "toils",
+        "tinker": "tinkers",
+        "persevere": "perseveres",
+        "improvise": "improvises"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (persevere, toil); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-effort-01-s08",
+      "answer": "strive",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The mermaid ___ for the pearl prize, racing through the foamy tunnel.",
+      "cue_phrase": "pearl prize",
+      "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+      }
+    },
+    {
+      "id": "A-effort-01-s09",
+      "answer": "toil",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "All afternoon, the farmers ___ in mud until their backs ached.",
+      "cue_phrase": "backs ached",
+      "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (persevere); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-effort-01-s10",
+      "answer": "toil",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "For six hours, the crew had to ___, hauling stones with aching shoulders.",
+      "cue_phrase": "six hours",
+      "surface": {
+        "strive": "strive",
+        "toil": "toil",
+        "tinker": "tinker",
+        "persevere": "persevere",
+        "improvise": "improvise"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (persevere); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-effort-01-s11",
+      "answer": "toil",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Mum and I ___ beside the hot oven from dawn, baking pies.",
+      "cue_phrase": "hot oven from dawn",
+      "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (persevere); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-effort-01-s12",
+      "answer": "toil",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The miners ___ below the hill, faces dusty when the lamps were lit.",
+      "cue_phrase": "faces dusty",
+      "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (persevere); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-effort-01-s13",
+      "answer": "toil",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "By moonrise, the helpers ___ through a mountain of muddy boots.",
+      "cue_phrase": "mountain of muddy boots",
+      "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: volume-of-labour staging (mountain of boots, by moonrise); no setback or quit-urge staged for persevere",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-effort-01-s14",
+      "answer": "toil",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The dock team ___ on the wharf, stacking crates until midnight.",
+      "cue_phrase": "stacking crates until midnight",
+      "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (persevere); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-effort-01-s15",
+      "answer": "toil",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "In summer heat, Priya ___ among weeds until her shirt drips.",
+      "cue_phrase": "shirt drips",
+      "surface": {
+        "strive": "strives",
+        "toil": "toils",
+        "tinker": "tinkers",
+        "persevere": "perseveres",
+        "improvise": "improvises"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (persevere); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-effort-01-s16",
+      "answer": "toil",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "After the flood, neighbours ___ with shovels till every path cleared.",
+      "cue_phrase": "with shovels",
+      "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (persevere, strive); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-effort-01-s17",
+      "answer": "tinker",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Milo ___ with tiny screws until the toy train rolled again.",
+      "cue_phrase": "tiny screws",
+      "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (persevere, toil); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-effort-01-s18",
+      "answer": "tinker",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Grandad had to ___ inside the radio, swapping wires until music crackled out.",
+      "cue_phrase": "swapping wires",
+      "surface": {
+        "strive": "strive",
+        "toil": "toil",
+        "tinker": "tinker",
+        "persevere": "persevere",
+        "improvise": "improvise"
+      }
+    },
+    {
+      "id": "A-effort-01-s19",
+      "answer": "tinker",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Jia ___ with the leaky pen, turning the nib and cap.",
+      "cue_phrase": "turning the nib",
+      "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (persevere); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-effort-01-s20",
+      "answer": "tinker",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The robot club ___ with the loose bolts, twisting each until the wheels spun.",
+      "cue_phrase": "twisting each",
+      "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (persevere, toil); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-effort-01-s21",
+      "answer": "tinker",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Ari ___ with the kite's string knot, then the tail fluttered straight.",
+      "cue_phrase": "tail fluttered straight",
+      "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (persevere, toil); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-effort-01-s22",
+      "answer": "tinker",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Nina ___ under the sink, nudging pipes until the drip stopped.",
+      "cue_phrase": "drip stopped",
+      "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (persevere, toil); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-effort-01-s23",
+      "answer": "tinker",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The goblin ___ with the squeaky clock, nudging one gear tooth at a time.",
+      "cue_phrase": "squeaky clock",
+      "surface": {
+        "strive": "strives",
+        "toil": "toils",
+        "tinker": "tinkers",
+        "persevere": "perseveres",
+        "improvise": "improvises"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (persevere, toil); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-effort-01-s24",
+      "answer": "tinker",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Sam ___ around the stuck drawer, shaving a sliver from the runner.",
+      "cue_phrase": "stuck drawer",
+      "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+      }
+    },
+    {
+      "id": "A-effort-01-s25",
+      "answer": "persevere",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "After three falls, Omar ___ and finished the icy hill race.",
+      "cue_phrase": "After three falls",
+      "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (toil); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-effort-01-s26",
+      "answer": "persevere",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Even when the sum looked hopeless, Bea had to ___ past bedtime.",
+      "cue_phrase": "sum looked hopeless",
+      "surface": {
+        "strive": "strive",
+        "toil": "toil",
+        "tinker": "tinker",
+        "persevere": "persevere",
+        "improvise": "improvise"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: 'looked hopeless' stages the quit-urge persevere resists; toil is bare labour without it",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-effort-01-s27",
+      "answer": "persevere",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The snail ___ after the rain washed it back to the gate.",
+      "cue_phrase": "washed it back",
+      "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (toil); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-effort-01-s28",
+      "answer": "persevere",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Kai ___ through wrong answers, erasing each one without quitting.",
+      "cue_phrase": "without quitting",
+      "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: 'without quitting' is the gloss's own refuse-to-give-up feature; toil reads only the effort",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-effort-01-s29",
+      "answer": "persevere",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Mina ___ at the pottery wheel, starting the bowl again after every collapse.",
+      "cue_phrase": "again after every collapse",
+      "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (strive, toil); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-effort-01-s30",
+      "answer": "persevere",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Lena ___ despite nine wrong guesses, smiling at the tenth clue.",
+      "cue_phrase": "nine wrong guesses",
+      "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (strive, toil); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-effort-01-s31",
+      "answer": "persevere",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "When a rocket flops, the class ___ and launches another.",
+      "cue_phrase": "launches another",
+      "surface": {
+        "strive": "strives",
+        "toil": "toils",
+        "tinker": "tinkers",
+        "persevere": "perseveres",
+        "improvise": "improvises"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (tinker); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-effort-01-s32",
+      "answer": "persevere",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "After every slipped stitch, Gran ___ and restarted the scarf.",
+      "cue_phrase": "restarted the scarf",
+      "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+      }
+    },
+    {
+      "id": "A-effort-01-s33",
+      "answer": "improvise",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "When the speakers died, the band ___, drumming out the beat on buckets.",
+      "cue_phrase": "drumming out the beat on buckets",
+      "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (persevere); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-effort-01-s34",
+      "answer": "improvise",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Mia's kite string snapped, so she ___, knotting on a spare shoelace instead.",
+      "cue_phrase": "a spare shoelace instead",
+      "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (persevere, tinker); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-effort-01-s35",
+      "answer": "improvise",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The recipe called for eggs we did not have, so Dad simply ___ with mashed banana.",
+      "cue_phrase": "mashed banana",
+      "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+      }
+    },
+    {
+      "id": "A-effort-01-s36",
+      "answer": "improvise",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Their tent poles were missing, so the scouts ___, lashing branches together instead.",
+      "cue_phrase": "lashing branches together",
+      "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (persevere, toil); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-effort-01-s37",
+      "answer": "improvise",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "No cake tin could be found, so Gran ___, baking the cake in a saucepan.",
+      "cue_phrase": "baking the cake in a saucepan",
+      "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (persevere); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-effort-01-s38",
+      "answer": "improvise",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The puppet's string snapped mid-show, and Leo ___, turning it into a fainting scene.",
+      "cue_phrase": "turning it into a fainting scene",
+      "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (persevere); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-effort-01-s39",
+      "answer": "improvise",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Rain flooded the stage plan, so the teachers ___, moving the whole concert indoors.",
+      "cue_phrase": "moving the whole concert indoors",
+      "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (persevere, toil); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-effort-01-s40",
+      "answer": "improvise",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "With no paintbrushes left, the twins ___, printing leaves dipped in paint.",
+      "cue_phrase": "printing leaves dipped in paint",
+      "surface": {
+        "strive": "strove",
+        "toil": "toiled",
+        "tinker": "tinkered",
+        "persevere": "persevered",
+        "improvise": "improvised"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (persevere); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "strive",
+      "picked": "toil",
+      "line": "Strive means pushing with all your effort for a prize; toil means long, tiring labour."
+    },
+    {
+      "answer": "strive",
+      "picked": "tinker",
+      "line": "Strive aims all your effort at winning or reaching something; tinker means small repair changes."
+    },
+    {
+      "answer": "strive",
+      "picked": "persevere",
+      "line": "Strive is all-out effort toward a target; persevere means not quitting after trouble."
+    },
+    {
+      "answer": "toil",
+      "picked": "strive",
+      "line": "Toil is long, tiring labour; strive is effort aimed at reaching a prize or result."
+    },
+    {
+      "answer": "toil",
+      "picked": "tinker",
+      "line": "Toil means heavy, tiring labour; tinker means small changes to make something work."
+    },
+    {
+      "answer": "toil",
+      "picked": "persevere",
+      "line": "Toil focuses on exhausting labour; persevere focuses on not quitting after setbacks."
+    },
+    {
+      "answer": "tinker",
+      "picked": "strive",
+      "line": "Tinker means making small repair changes; strive means pushing strongly toward a result."
+    },
+    {
+      "answer": "tinker",
+      "picked": "toil",
+      "line": "Tinker is little repair adjustments; toil is long, tiring labour."
+    },
+    {
+      "answer": "tinker",
+      "picked": "persevere",
+      "line": "Tinker changes parts bit by bit; persevere means carrying on after problems."
+    },
+    {
+      "answer": "persevere",
+      "picked": "strive",
+      "line": "Persevere means not quitting after trouble; strive means using all effort for a result."
+    },
+    {
+      "answer": "persevere",
+      "picked": "toil",
+      "line": "Persevere is staying with it after setbacks; toil is long, tiring labour."
+    },
+    {
+      "answer": "persevere",
+      "picked": "tinker",
+      "line": "Persevere means not quitting; tinker means making small repair changes."
+    },
+    {
+      "answer": "improvise",
+      "picked": "strive",
+      "line": "Striving is straining hard toward a goal; improvising is making do on the spot with what is there."
+    },
+    {
+      "answer": "improvise",
+      "picked": "toil",
+      "line": "Toiling is long exhausting work; improvising is a quick clever fix without preparation."
+    },
+    {
+      "answer": "improvise",
+      "picked": "tinker",
+      "line": "Tinkering fiddles and adjusts over time; improvising invents in the moment when plans fall through."
+    },
+    {
+      "answer": "improvise",
+      "picked": "persevere",
+      "line": "Persevering keeps going at the same task; improvising switches to whatever is at hand."
+    },
+    {
+      "answer": "strive",
+      "picked": "improvise",
+      "line": "Improvising is unprepared and in the moment; striving is a determined push toward a goal."
+    },
+    {
+      "answer": "toil",
+      "picked": "improvise",
+      "line": "Improvising is quick and unplanned; toiling is heavy work that goes on and on."
+    },
+    {
+      "answer": "tinker",
+      "picked": "improvise",
+      "line": "Improvising happens when there is no plan; tinkering is patient fiddling to make something work."
+    },
+    {
+      "answer": "persevere",
+      "picked": "improvise",
+      "line": "Improvising is a burst of quick invention; persevering is refusing to quit over the long haul."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-06T14:27:01+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": "2026-07-07",
+    "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+  }
+}

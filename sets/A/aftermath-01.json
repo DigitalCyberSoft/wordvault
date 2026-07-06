@@ -1,0 +1,842 @@
+{
+  "id": "A-aftermath-01",
+  "bank": "A",
+  "pos": "adjective",
+  "theme": "feelings after it happened",
+  "band": 5,
+  "band_override": 5,
+  "computed": {
+    "zipf_min": 2.6,
+    "zipf_mean": 2.87,
+    "tightness": null,
+    "band_suggested": 4,
+    "scored_at": "2026-07-06T18:43:21+00:00"
+  },
+  "words": [
+    {
+      "w": "nostalgic",
+      "synset": "nostalgic.s.01",
+      "gloss_source": "authored",
+      "gloss": "remembering happy times in the past and wishing you could have them back",
+      "zipf": 3.45,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "nostalgic"
+      },
+      "discriminator": "sweet longing for a happy past",
+      "grade": 6
+    },
+    {
+      "w": "remorseful",
+      "synset": "contrite.s.01",
+      "gloss_source": "authored",
+      "gloss": "deeply sorry for a wrong you yourself did",
+      "zipf": 2.6,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "remorseful"
+      },
+      "discriminator": "guilt over your own wrong",
+      "grade": 6
+    },
+    {
+      "w": "mortified",
+      "synset": "embarrassed.s.02",
+      "gloss_source": "wordnet",
+      "gloss": "made to feel uncomfortable because of shame or wounded pride",
+      "zipf": 2.97,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "mortified"
+      },
+      "discriminator": "burning public embarrassment",
+      "grade": 6
+    },
+    {
+      "w": "despondent",
+      "synset": "despondent.s.01",
+      "gloss_source": "wordnet",
+      "gloss": "without or almost without hope",
+      "zipf": 2.68,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "despondent"
+      },
+      "discriminator": "hope drained away",
+      "grade": 7
+    },
+    {
+      "w": "jubilant",
+      "synset": "exultant.s.01",
+      "gloss_source": "wordnet",
+      "gloss": "joyful and proud especially because of triumph or success",
+      "zipf": 2.63,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "jubilant"
+      },
+      "discriminator": "joy and pride after a victory",
+      "grade": 6
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-aftermath-01-s01",
+      "answer": "nostalgic",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "After the picnic, Mina felt ___, missing last year's warmer seaside days.",
+      "cue_phrase": "missing last year's warmer",
+      "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+      }
+    },
+    {
+      "id": "A-aftermath-01-s02",
+      "answer": "nostalgic",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The old lullaby made Dad ___, longing for Grandma's kitchen again.",
+      "cue_phrase": "longing for Grandma's kitchen",
+      "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+      }
+    },
+    {
+      "id": "A-aftermath-01-s03",
+      "answer": "nostalgic",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "When camp ended, Sam felt ___, smiling while sniffing the smoky jumper.",
+      "cue_phrase": "smiling while sniffing",
+      "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+      }
+    },
+    {
+      "id": "A-aftermath-01-s04",
+      "answer": "nostalgic",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "After moving house, Leila grew ___ whenever the old garden gate creaked.",
+      "cue_phrase": "old garden gate creaked",
+      "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (despondent); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-aftermath-01-s05",
+      "answer": "nostalgic",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Theo reread his yearbook and became ___, tracing names from sunny clubs.",
+      "cue_phrase": "tracing names from sunny",
+      "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+      }
+    },
+    {
+      "id": "A-aftermath-01-s06",
+      "answer": "nostalgic",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The empty treehouse made Priya ___; she packed its rope ladder, smiling.",
+      "cue_phrase": "rope ladder, smiling",
+      "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+      }
+    },
+    {
+      "id": "A-aftermath-01-s07",
+      "answer": "nostalgic",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "At the reunion, the class was ___ over chalk dust and playground songs.",
+      "cue_phrase": "chalk dust and playground",
+      "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+      }
+    },
+    {
+      "id": "A-aftermath-01-s08",
+      "answer": "nostalgic",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "After finding the tiny shoes, Gran felt ___, smiling at their scuffed toes.",
+      "cue_phrase": "smiling at their scuffed",
+      "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+      }
+    },
+    {
+      "id": "A-aftermath-01-s09",
+      "answer": "remorseful",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "After admitting he lied, Ben felt ___ and returned the stolen pencil.",
+      "cue_phrase": "returned the stolen pencil",
+      "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (mortified); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-aftermath-01-s10",
+      "answer": "remorseful",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Maya was ___ after she blamed the spill on her little brother.",
+      "cue_phrase": "blamed the spill on",
+      "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (mortified); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-aftermath-01-s11",
+      "answer": "remorseful",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "I felt ___, so I fixed the torn poster I had hidden.",
+      "cue_phrase": "poster I had hidden",
+      "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+      }
+    },
+    {
+      "id": "A-aftermath-01-s12",
+      "answer": "remorseful",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "After tripping Max on purpose, Noor felt ___ and offered her prize sticker.",
+      "cue_phrase": "tripping Max on purpose",
+      "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+      }
+    },
+    {
+      "id": "A-aftermath-01-s13",
+      "answer": "remorseful",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Eli felt ___, left a note by the bike he scratched, and emptied his coin jar.",
+      "cue_phrase": "bike he scratched",
+      "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+      }
+    },
+    {
+      "id": "A-aftermath-01-s14",
+      "answer": "remorseful",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "After copying Ava's answer, Leo felt ___ and told the teacher at lunch.",
+      "cue_phrase": "copying Ava's answer",
+      "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+      }
+    },
+    {
+      "id": "A-aftermath-01-s15",
+      "answer": "remorseful",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The broken vase made Poppy ___; her football had flown through it.",
+      "cue_phrase": "football had flown",
+      "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+      }
+    },
+    {
+      "id": "A-aftermath-01-s16",
+      "answer": "remorseful",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "Omar felt ___ after teasing Kim, then saved her a seat.",
+      "cue_phrase": "after teasing Kim",
+      "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+      }
+    },
+    {
+      "id": "A-aftermath-01-s17",
+      "answer": "mortified",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "When his trousers split onstage, Ravi felt ___ as the hall gasped.",
+      "cue_phrase": "trousers split onstage",
+      "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+      }
+    },
+    {
+      "id": "A-aftermath-01-s18",
+      "answer": "mortified",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Lina was ___ after calling her teacher Mum and hearing the class giggle.",
+      "cue_phrase": "hearing the class giggle",
+      "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+      }
+    },
+    {
+      "id": "A-aftermath-01-s19",
+      "answer": "mortified",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "I felt ___ when my false moustache fell off during the play.",
+      "cue_phrase": "during the play",
+      "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+      }
+    },
+    {
+      "id": "A-aftermath-01-s20",
+      "answer": "mortified",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The microphone made Finn ___ by sharing his hiccup with the assembly.",
+      "cue_phrase": "hiccup with the assembly",
+      "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+      }
+    },
+    {
+      "id": "A-aftermath-01-s21",
+      "answer": "mortified",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Zara turned ___ when every dancer noticed her skirt tucked into tights.",
+      "cue_phrase": "every dancer noticed",
+      "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+      }
+    },
+    {
+      "id": "A-aftermath-01-s22",
+      "answer": "mortified",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "After the burp echoed round the library, Oscar felt ___ and hid.",
+      "cue_phrase": "burp echoed round",
+      "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+      }
+    },
+    {
+      "id": "A-aftermath-01-s23",
+      "answer": "mortified",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Nia became ___ when her costume tail dropped off before the audience.",
+      "cue_phrase": "before the audience",
+      "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+      }
+    },
+    {
+      "id": "A-aftermath-01-s24",
+      "answer": "mortified",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "Jay felt ___ after reading the poem meant for his diary aloud to the club.",
+      "cue_phrase": "diary aloud to the club",
+      "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+      }
+    },
+    {
+      "id": "A-aftermath-01-s25",
+      "answer": "despondent",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "After the rescue boat passed by, the castaways felt ___ and stopped waving.",
+      "cue_phrase": "stopped waving",
+      "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+      }
+    },
+    {
+      "id": "A-aftermath-01-s26",
+      "answer": "despondent",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Nell grew ___ when the last seedling died before the fair.",
+      "cue_phrase": "last seedling died",
+      "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+      }
+    },
+    {
+      "id": "A-aftermath-01-s27",
+      "answer": "despondent",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The team was ___ at halftime, thirty points down in pouring rain.",
+      "cue_phrase": "thirty points down",
+      "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (mortified); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-aftermath-01-s28",
+      "answer": "despondent",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "After three failed spells, the apprentice felt ___ and closed the spellbook.",
+      "cue_phrase": "closed the spellbook",
+      "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+      }
+    },
+    {
+      "id": "A-aftermath-01-s29",
+      "answer": "despondent",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Mum found Tia ___ under the table, saying the kitten would never return.",
+      "cue_phrase": "would never return",
+      "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+      }
+    },
+    {
+      "id": "A-aftermath-01-s30",
+      "answer": "despondent",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "When the bridge washed away, the hikers became ___ and sat silently.",
+      "cue_phrase": "sat silently",
+      "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+      }
+    },
+    {
+      "id": "A-aftermath-01-s31",
+      "answer": "despondent",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The robot looked ___ after its tiny rocket crashed for the ninth time.",
+      "cue_phrase": "ninth time",
+      "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (mortified); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-aftermath-01-s32",
+      "answer": "despondent",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "After the frost killed every bloom, Grandpa stayed ___ all afternoon.",
+      "cue_phrase": "killed every bloom",
+      "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+      }
+    },
+    {
+      "id": "A-aftermath-01-s33",
+      "answer": "jubilant",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "After winning the final race, Amira felt ___ and leapt over puddles.",
+      "cue_phrase": "winning the final race",
+      "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+      }
+    },
+    {
+      "id": "A-aftermath-01-s34",
+      "answer": "jubilant",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The class was ___ when their tower beat the school record.",
+      "cue_phrase": "beat the school record",
+      "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+      }
+    },
+    {
+      "id": "A-aftermath-01-s35",
+      "answer": "jubilant",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Dad became ___ as the scoreboard flashed our team's winning goal.",
+      "cue_phrase": "team's winning goal",
+      "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+      }
+    },
+    {
+      "id": "A-aftermath-01-s36",
+      "answer": "jubilant",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "After the dragon fled, the villagers felt ___ and rang every bell.",
+      "cue_phrase": "rang every bell",
+      "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+      }
+    },
+    {
+      "id": "A-aftermath-01-s37",
+      "answer": "jubilant",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Maya felt ___, waving her medal while friends chanted her name.",
+      "cue_phrase": "waving her medal",
+      "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+      }
+    },
+    {
+      "id": "A-aftermath-01-s38",
+      "answer": "jubilant",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "When his robot finally climbed the ramp, Toby turned ___ and danced.",
+      "cue_phrase": "finally climbed the ramp",
+      "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+      }
+    },
+    {
+      "id": "A-aftermath-01-s39",
+      "answer": "jubilant",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The players were ___ after the penalty save sealed the cup.",
+      "cue_phrase": "sealed the cup",
+      "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+      }
+    },
+    {
+      "id": "A-aftermath-01-s40",
+      "answer": "jubilant",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "After solving the last clue, Bea felt ___ and high-fived the captain.",
+      "cue_phrase": "high-fived the captain",
+      "surface": {
+        "nostalgic": "nostalgic",
+        "remorseful": "remorseful",
+        "mortified": "mortified",
+        "despondent": "despondent",
+        "jubilant": "jubilant"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "nostalgic",
+      "picked": "remorseful",
+      "line": "Nostalgic means missing a sweet earlier day. Remorseful means feeling bad about your own mistake."
+    },
+    {
+      "answer": "nostalgic",
+      "picked": "mortified",
+      "line": "Nostalgic looks fondly at the past. Mortified feels hot and small in public."
+    },
+    {
+      "answer": "nostalgic",
+      "picked": "despondent",
+      "line": "Nostalgic is a warm ache for old days. Despondent has given up on things improving."
+    },
+    {
+      "answer": "nostalgic",
+      "picked": "jubilant",
+      "line": "Nostalgic is gentle missing. Jubilant is loud delight after a win."
+    },
+    {
+      "answer": "remorseful",
+      "picked": "nostalgic",
+      "line": "Remorseful is guilt for something you did. Nostalgic is missing a pleasant old moment."
+    },
+    {
+      "answer": "remorseful",
+      "picked": "mortified",
+      "line": "Remorseful wants to repair harm. Mortified wants to hide after public shame."
+    },
+    {
+      "answer": "remorseful",
+      "picked": "despondent",
+      "line": "Remorseful feels bad about a choice. Despondent feels sure nothing will get better."
+    },
+    {
+      "answer": "remorseful",
+      "picked": "jubilant",
+      "line": "Remorseful follows a hurtful act. Jubilant follows a win or big achievement."
+    },
+    {
+      "answer": "mortified",
+      "picked": "nostalgic",
+      "line": "Mortified is public shame. Nostalgic is warm missing for earlier good days."
+    },
+    {
+      "answer": "mortified",
+      "picked": "remorseful",
+      "line": "Mortified comes from being seen or laughed at. Remorseful comes from guilt over your act."
+    },
+    {
+      "answer": "mortified",
+      "picked": "despondent",
+      "line": "Mortified wants to hide from eyes. Despondent has lost heart about the future."
+    },
+    {
+      "answer": "mortified",
+      "picked": "jubilant",
+      "line": "Mortified shrinks after a public blunder. Jubilant celebrates after winning."
+    },
+    {
+      "answer": "despondent",
+      "picked": "nostalgic",
+      "line": "Despondent thinks things cannot improve. Nostalgic misses something lovely from before."
+    },
+    {
+      "answer": "despondent",
+      "picked": "remorseful",
+      "line": "Despondent has lost heart. Remorseful feels guilty and wants to make amends."
+    },
+    {
+      "answer": "despondent",
+      "picked": "mortified",
+      "line": "Despondent feels defeated inside. Mortified feels exposed and ashamed in public."
+    },
+    {
+      "answer": "despondent",
+      "picked": "jubilant",
+      "line": "Despondent sits low after failure. Jubilant bursts high after victory."
+    },
+    {
+      "answer": "jubilant",
+      "picked": "nostalgic",
+      "line": "Jubilant cheers after a win. Nostalgic smiles sadly over something long ago."
+    },
+    {
+      "answer": "jubilant",
+      "picked": "remorseful",
+      "line": "Jubilant celebrates an achievement. Remorseful regrets causing harm."
+    },
+    {
+      "answer": "jubilant",
+      "picked": "mortified",
+      "line": "Jubilant stands tall after winning. Mortified wants to disappear after public shame."
+    },
+    {
+      "answer": "jubilant",
+      "picked": "despondent",
+      "line": "Jubilant celebrates a fresh victory. Despondent feels beaten and out of heart."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-06T14:15:52+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": "2026-07-07",
+    "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+  }
+}

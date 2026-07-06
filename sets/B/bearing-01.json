@@ -1,0 +1,810 @@
+{
+  "id": "B-bearing-01",
+  "bank": "B",
+  "pos": "noun",
+  "theme": "how a body is built and carried",
+  "band": 5,
+  "band_override": 5,
+  "computed": {
+    "zipf_min": 3.04,
+    "zipf_mean": 3.38,
+    "tightness": 0.453,
+    "band_suggested": 3,
+    "scored_at": "2026-07-06T18:43:21+00:00"
+  },
+  "words": [
+    {
+      "w": "gait",
+      "synset": "gait.n.03",
+      "gloss_source": "wordnet",
+      "gloss": "a person's manner of walking",
+      "zipf": 3.09,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "gait"
+      },
+      "discriminator": "the pattern of how you walk",
+      "grade": 7
+    },
+    {
+      "w": "stance",
+      "synset": "stance.n.01",
+      "gloss_source": "wordnet",
+      "gloss": "standing posture",
+      "zipf": 4.05,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "stance"
+      },
+      "discriminator": "how you plant yourself to stand",
+      "grade": 6
+    },
+    {
+      "w": "stature",
+      "synset": "stature.n.02",
+      "gloss_source": "authored",
+      "gloss": "how tall a person stands, from head to foot",
+      "zipf": 3.45,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "stature"
+      },
+      "discriminator": "your standing height",
+      "grade": 7
+    },
+    {
+      "w": "physique",
+      "synset": "physique.n.01",
+      "gloss_source": "authored",
+      "gloss": "the build and shape of a person's body",
+      "zipf": 3.29,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "physique"
+      },
+      "discriminator": "the body's build and shape",
+      "grade": 7
+    },
+    {
+      "w": "poise",
+      "synset": "aplomb.n.01",
+      "gloss_source": "authored",
+      "gloss": "calm, steady control of how you hold and carry yourself",
+      "zipf": 3.04,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "poise"
+      },
+      "discriminator": "calm balanced self-control",
+      "grade": 6
+    }
+  ],
+  "sentences": [
+    {
+      "id": "B-bearing-01-s01",
+      "answer": "gait",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The coach spotted Lena's ___: tiny steps, then one long lurch.",
+      "cue_phrase": "tiny steps, then one long lurch",
+      "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+      }
+    },
+    {
+      "id": "B-bearing-01-s02",
+      "answer": "gait",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "On the muddy path, Ravi's ___ left zigzag prints between puddles.",
+      "cue_phrase": "zigzag prints between puddles",
+      "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+      }
+    },
+    {
+      "id": "B-bearing-01-s03",
+      "answer": "gait",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Even in fog, Mum knew Sam's ___ by the uneven tap-tap.",
+      "cue_phrase": "uneven tap-tap",
+      "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+      }
+    },
+    {
+      "id": "B-bearing-01-s04",
+      "answer": "gait",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The pirate's ___ made his wooden leg thump every third step.",
+      "cue_phrase": "thump every third step",
+      "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+      }
+    },
+    {
+      "id": "B-bearing-01-s05",
+      "answer": "gait",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "After the race, everyone's ___ turned slow and shuffling at once.",
+      "cue_phrase": "slow and shuffling at once",
+      "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+      }
+    },
+    {
+      "id": "B-bearing-01-s06",
+      "answer": "gait",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "With one shoe untied, Maya's ___ became a careful, flapping shuffle.",
+      "cue_phrase": "flapping shuffle",
+      "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+      }
+    },
+    {
+      "id": "B-bearing-01-s07",
+      "answer": "gait",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "After dance camp, Ruby's ___ changed from stiff stomps to bouncy skips.",
+      "cue_phrase": "stiff stomps to bouncy skips",
+      "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+      }
+    },
+    {
+      "id": "B-bearing-01-s08",
+      "answer": "gait",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Grandad's ___ gave him away: two quick steps, then a rest.",
+      "cue_phrase": "two quick steps, then a rest",
+      "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+      }
+    },
+    {
+      "id": "B-bearing-01-s09",
+      "answer": "stance",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "For the penalty kick, Noor's ___ set both feet wide apart.",
+      "cue_phrase": "both feet wide apart",
+      "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+      }
+    },
+    {
+      "id": "B-bearing-01-s10",
+      "answer": "stance",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The surfer's ___ kept one foot forward and knees bent.",
+      "cue_phrase": "one foot forward",
+      "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+      }
+    },
+    {
+      "id": "B-bearing-01-s11",
+      "answer": "stance",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "At the easel, Tom's ___ shifted until his shoes gripped the tiles.",
+      "cue_phrase": "shoes gripped the tiles",
+      "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+      }
+    },
+    {
+      "id": "B-bearing-01-s12",
+      "answer": "stance",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Before batting, Aisha widened her ___ and dug her toes into dust.",
+      "cue_phrase": "dug her toes into dust",
+      "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+      }
+    },
+    {
+      "id": "B-bearing-01-s13",
+      "answer": "stance",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The striker ran up, and the keeper's ___ spread both boots wide.",
+      "cue_phrase": "spread both boots wide",
+      "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+      }
+    },
+    {
+      "id": "B-bearing-01-s14",
+      "answer": "stance",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "During tug-of-war, Ben's ___ failed when his heels slid together.",
+      "cue_phrase": "heels slid together",
+      "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+      }
+    },
+    {
+      "id": "B-bearing-01-s15",
+      "answer": "stance",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The knight's ___ looked ready, with boots braced beside the drawbridge.",
+      "cue_phrase": "boots braced beside",
+      "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+      }
+    },
+    {
+      "id": "B-bearing-01-s16",
+      "answer": "stance",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "On the beam, Lily changed her ___, placing one heel sideways.",
+      "cue_phrase": "one heel sideways",
+      "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+      }
+    },
+    {
+      "id": "B-bearing-01-s17",
+      "answer": "stature",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Mia's ___ reached 140 centimetres on the nurse's wall chart.",
+      "cue_phrase": "140 centimetres",
+      "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+      }
+    },
+    {
+      "id": "B-bearing-01-s18",
+      "answer": "stature",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "By June, Omar's ___ passed the pencil mark above the cupboard handle.",
+      "cue_phrase": "pencil mark above",
+      "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+      }
+    },
+    {
+      "id": "B-bearing-01-s19",
+      "answer": "stature",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The cape dragged because Eva's ___ was below the label's 130 centimetres.",
+      "cue_phrase": "below the label's 130 centimetres",
+      "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+      }
+    },
+    {
+      "id": "B-bearing-01-s20",
+      "answer": "stature",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Dad lowered the bike seat after Jo's ___ measured 128 centimetres.",
+      "cue_phrase": "measured 128 centimetres",
+      "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+      }
+    },
+    {
+      "id": "B-bearing-01-s21",
+      "answer": "stature",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "At the photo board, Max's ___ barely reached the painted dragon's chin.",
+      "cue_phrase": "reached the painted dragon's chin",
+      "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+      }
+    },
+    {
+      "id": "B-bearing-01-s22",
+      "answer": "stature",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The doorway ruler showed Nia's ___ had grown three centimetres since spring.",
+      "cue_phrase": "grown three centimetres",
+      "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+      }
+    },
+    {
+      "id": "B-bearing-01-s23",
+      "answer": "stature",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "For the ride, Ellis's ___ missed the line by two centimetres.",
+      "cue_phrase": "missed the line",
+      "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+      }
+    },
+    {
+      "id": "B-bearing-01-s24",
+      "answer": "stature",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "Gran gasped when Priya's ___ topped last year's ribbon on the doorframe.",
+      "cue_phrase": "topped last year's ribbon",
+      "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+      }
+    },
+    {
+      "id": "B-bearing-01-s25",
+      "answer": "physique",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "After swimming lessons, Leo's ___ showed broader shoulders and stronger arms.",
+      "cue_phrase": "broader shoulders and stronger arms",
+      "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+      }
+    },
+    {
+      "id": "B-bearing-01-s26",
+      "answer": "physique",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The superhero costume gave Mira's ___ a square chest and huge arms.",
+      "cue_phrase": "square chest and huge arms",
+      "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+      }
+    },
+    {
+      "id": "B-bearing-01-s27",
+      "answer": "physique",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The tailor changed the jacket because Tane's ___ had widened across the shoulders.",
+      "cue_phrase": "widened across the shoulders",
+      "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+      }
+    },
+    {
+      "id": "B-bearing-01-s28",
+      "answer": "physique",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "In the mirror, Zoe's ___ looked leaner after months of climbing.",
+      "cue_phrase": "looked leaner",
+      "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+      }
+    },
+    {
+      "id": "B-bearing-01-s29",
+      "answer": "physique",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The armour fitted Pip's ___ only after the smith widened the chest.",
+      "cue_phrase": "widened the chest",
+      "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+      }
+    },
+    {
+      "id": "B-bearing-01-s30",
+      "answer": "physique",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Everyone chose Nala to lift logs, trusting her powerful ___ and thick arms.",
+      "cue_phrase": "thick arms",
+      "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+      }
+    },
+    {
+      "id": "B-bearing-01-s31",
+      "answer": "physique",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The puppet maker carved Ren's ___ with narrow hips and chunky arms.",
+      "cue_phrase": "narrow hips and chunky arms",
+      "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+      }
+    },
+    {
+      "id": "B-bearing-01-s32",
+      "answer": "physique",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "After the growth spurt, Ivo's ___ stayed wiry, not bulky.",
+      "cue_phrase": "wiry, not bulky",
+      "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+      }
+    },
+    {
+      "id": "B-bearing-01-s33",
+      "answer": "poise",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Despite the wobbling tray, Suri's ___ kept her smile easy.",
+      "cue_phrase": "smile easy",
+      "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+      }
+    },
+    {
+      "id": "B-bearing-01-s34",
+      "answer": "poise",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "On stage, Malik's ___ made his bow smooth after the stumble.",
+      "cue_phrase": "bow smooth after the stumble",
+      "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+      }
+    },
+    {
+      "id": "B-bearing-01-s35",
+      "answer": "poise",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "When lights failed, Ana's ___ kept her voice gentle.",
+      "cue_phrase": "voice gentle",
+      "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+      }
+    },
+    {
+      "id": "B-bearing-01-s36",
+      "answer": "poise",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Theo dropped his hat mid-song, but his ___ never cracked.",
+      "cue_phrase": "never cracked",
+      "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+      }
+    },
+    {
+      "id": "B-bearing-01-s37",
+      "answer": "poise",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "A gull swooped near, but Isla's ___ left the tray level and her face peaceful.",
+      "cue_phrase": "face peaceful",
+      "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+      }
+    },
+    {
+      "id": "B-bearing-01-s38",
+      "answer": "poise",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "During questions, Rafi's ___ shone when his voice never shook.",
+      "cue_phrase": "voice never shook",
+      "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+      }
+    },
+    {
+      "id": "B-bearing-01-s39",
+      "answer": "poise",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The queen's ___ silenced giggles with one unruffled nod.",
+      "cue_phrase": "unruffled nod",
+      "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (stature); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-bearing-01-s40",
+      "answer": "poise",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "At the recital, Mei's ___ returned after one slow breath.",
+      "cue_phrase": "one slow breath",
+      "surface": {
+        "gait": "gait",
+        "stance": "stance",
+        "stature": "stature",
+        "physique": "physique",
+        "poise": "poise"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "gait",
+      "picked": "stance",
+      "line": "Gait is the pattern of steps; stance is where the feet are planted while still."
+    },
+    {
+      "answer": "gait",
+      "picked": "stature",
+      "line": "Gait shows movement in steps; stature is a height measure."
+    },
+    {
+      "answer": "gait",
+      "picked": "physique",
+      "line": "Gait is a step pattern; physique is the body's overall build."
+    },
+    {
+      "answer": "gait",
+      "picked": "poise",
+      "line": "Gait is step rhythm; poise is calm balance under pressure."
+    },
+    {
+      "answer": "stance",
+      "picked": "gait",
+      "line": "Stance is foot placement while still; gait is the pattern of steps in motion."
+    },
+    {
+      "answer": "stance",
+      "picked": "stature",
+      "line": "Stance is how feet are set; stature is how high someone measures."
+    },
+    {
+      "answer": "stance",
+      "picked": "physique",
+      "line": "Stance is a planted position; physique is the body's build."
+    },
+    {
+      "answer": "stance",
+      "picked": "poise",
+      "line": "Stance is where the feet go; poise is calm, balanced self-control."
+    },
+    {
+      "answer": "stature",
+      "picked": "gait",
+      "line": "Stature is height; gait is the way steps move."
+    },
+    {
+      "answer": "stature",
+      "picked": "stance",
+      "line": "Stature is height; stance is the way feet are planted."
+    },
+    {
+      "answer": "stature",
+      "picked": "physique",
+      "line": "Stature is height; physique is the body's build and shape."
+    },
+    {
+      "answer": "stature",
+      "picked": "poise",
+      "line": "Stature is height; poise is calm balance and self-control."
+    },
+    {
+      "answer": "physique",
+      "picked": "gait",
+      "line": "Physique is the body's build; gait is the pattern of steps."
+    },
+    {
+      "answer": "physique",
+      "picked": "stance",
+      "line": "Physique is the body's build; stance is foot placement while still."
+    },
+    {
+      "answer": "physique",
+      "picked": "stature",
+      "line": "Physique is the body's build; stature is height."
+    },
+    {
+      "answer": "physique",
+      "picked": "poise",
+      "line": "Physique is the body's build; poise is calm balance under pressure."
+    },
+    {
+      "answer": "poise",
+      "picked": "gait",
+      "line": "Poise is calm balance; gait is the pattern of steps."
+    },
+    {
+      "answer": "poise",
+      "picked": "stance",
+      "line": "Poise is calm balance; stance is where the feet are planted."
+    },
+    {
+      "answer": "poise",
+      "picked": "stature",
+      "line": "Poise is calm balance; stature is height."
+    },
+    {
+      "answer": "poise",
+      "picked": "physique",
+      "line": "Poise is calm balance; physique is the body's build."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-06T14:48:27+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": "2026-07-07",
+    "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+  }
+}

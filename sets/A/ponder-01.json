@@ -1,0 +1,945 @@
+{
+  "id": "A-ponder-01",
+  "bank": "A",
+  "pos": "verb",
+  "theme": "ways of thinking it through",
+  "band": 5,
+  "band_override": 5,
+  "computed": {
+    "zipf_min": 2.24,
+    "zipf_mean": 3.25,
+    "tightness": 0.273,
+    "band_suggested": 4,
+    "scored_at": "2026-07-06T18:43:21+00:00"
+  },
+  "words": [
+    {
+      "w": "scrutinise",
+      "synset": "size_up.v.01",
+      "gloss_source": "wordnet",
+      "gloss": "to look at critically or searchingly, or in minute detail",
+      "zipf": 2.24,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "scrutinise",
+        "third": "scrutinises",
+        "past": "scrutinised",
+        "part": "scrutinising"
+      },
+      "discriminator": "pores over the fine detail",
+      "grade": 7
+    },
+    {
+      "w": "speculate",
+      "synset": "speculate.v.01",
+      "gloss_source": "authored",
+      "gloss": "make a guess about something that cannot yet be known",
+      "zipf": 3.48,
+      "register": "neutral",
+      "senses_at_pos": 4,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "speculate",
+        "third": "speculates",
+        "past": "speculated",
+        "part": "speculating"
+      },
+      "discriminator": "guessing without the facts",
+      "grade": 7
+    },
+    {
+      "w": "deliberate",
+      "synset": "consider.v.05",
+      "gloss_source": "wordnet",
+      "gloss": "think about carefully; weigh",
+      "zipf": 3.82,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "deliberate",
+        "third": "deliberates",
+        "past": "deliberated",
+        "part": "deliberating"
+      },
+      "discriminator": "weighing a choice before deciding",
+      "grade": 6
+    },
+    {
+      "w": "evaluate",
+      "synset": "evaluate.v.02",
+      "gloss_source": "wordnet",
+      "gloss": "form a critical opinion of",
+      "zipf": 4.01,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "evaluate",
+        "third": "evaluates",
+        "past": "evaluated",
+        "part": "evaluating"
+      },
+      "discriminator": "judging how good something is",
+      "grade": 6
+    },
+    {
+      "w": "envisage",
+      "synset": "imagine.v.01",
+      "gloss_source": "authored",
+      "gloss": "picture in your mind something that is not yet real",
+      "zipf": 2.7,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "envisage",
+        "third": "envisages",
+        "past": "envisaged",
+        "part": "envisaging"
+      },
+      "discriminator": "picturing what is not yet real",
+      "grade": 7
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-ponder-01-s01",
+      "answer": "scrutinise",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "At the museum, we used magnifiers to ___ tiny cracks in the old vase.",
+      "cue_phrase": "used magnifiers to",
+      "surface": {
+        "scrutinise": "scrutinise",
+        "speculate": "speculate",
+        "deliberate": "deliberate",
+        "evaluate": "evaluate",
+        "envisage": "envisage"
+      }
+    },
+    {
+      "id": "A-ponder-01-s02",
+      "answer": "scrutinise",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The referee ___ the photo, checking whether the ball crossed the line.",
+      "cue_phrase": "checking whether",
+      "surface": {
+        "scrutinise": "scrutinised",
+        "speculate": "speculated",
+        "deliberate": "deliberated",
+        "evaluate": "evaluated",
+        "envisage": "envisaged"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: binary fact-check (did it cross) carries scrutinise; no worth-judgment staged",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-ponder-01-s03",
+      "answer": "scrutinise",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Mina bent over the stamp album to ___ the tiny printing.",
+      "cue_phrase": "the tiny printing",
+      "surface": {
+        "scrutinise": "scrutinise",
+        "speculate": "speculate",
+        "deliberate": "deliberate",
+        "evaluate": "evaluate",
+        "envisage": "envisage"
+      }
+    },
+    {
+      "id": "A-ponder-01-s04",
+      "answer": "scrutinise",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Dad ___ each map symbol before choosing the safe path downhill.",
+      "cue_phrase": "each map symbol",
+      "surface": {
+        "scrutinise": "scrutinised",
+        "speculate": "speculated",
+        "deliberate": "deliberated",
+        "evaluate": "evaluated",
+        "envisage": "envisaged"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: close reading of each symbol carries scrutinise; choosing happens after the blank",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-ponder-01-s05",
+      "answer": "scrutinise",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "She held the shell under the lamp to ___ faint spiral marks.",
+      "cue_phrase": "under the lamp",
+      "surface": {
+        "scrutinise": "scrutinise",
+        "speculate": "speculate",
+        "deliberate": "deliberate",
+        "evaluate": "evaluate",
+        "envisage": "envisage"
+      }
+    },
+    {
+      "id": "A-ponder-01-s06",
+      "answer": "scrutinise",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Ben ___ the code letter by letter until he spotted one smudged number.",
+      "cue_phrase": "letter by letter",
+      "surface": {
+        "scrutinise": "scrutinised",
+        "speculate": "speculated",
+        "deliberate": "deliberated",
+        "evaluate": "evaluated",
+        "envisage": "envisaged"
+      }
+    },
+    {
+      "id": "A-ponder-01-s07",
+      "answer": "scrutinise",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "To ___ the insect wing, Nia counted the silver veins twice.",
+      "cue_phrase": "counted the silver veins",
+      "surface": {
+        "scrutinise": "scrutinise",
+        "speculate": "speculate",
+        "deliberate": "deliberate",
+        "evaluate": "evaluate",
+        "envisage": "envisage"
+      }
+    },
+    {
+      "id": "A-ponder-01-s08",
+      "answer": "scrutinise",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The jeweller ___ the clasp for hairline scratches beneath the bright lamp.",
+      "cue_phrase": "hairline scratches",
+      "surface": {
+        "scrutinise": "scrutinised",
+        "speculate": "speculated",
+        "deliberate": "deliberated",
+        "evaluate": "evaluated",
+        "envisage": "envisaged"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (evaluate); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-ponder-01-s09",
+      "answer": "speculate",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "While clouds hid the moon, we ___ about what made the thumping.",
+      "cue_phrase": "clouds hid the moon",
+      "surface": {
+        "scrutinise": "scrutinised",
+        "speculate": "speculated",
+        "deliberate": "deliberated",
+        "evaluate": "evaluated",
+        "envisage": "envisaged"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (deliberate); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-ponder-01-s10",
+      "answer": "speculate",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The class ___ about who sent the mystery postcard with no name.",
+      "cue_phrase": "mystery postcard with no name",
+      "surface": {
+        "scrutinise": "scrutinised",
+        "speculate": "speculated",
+        "deliberate": "deliberated",
+        "evaluate": "evaluated",
+        "envisage": "envisaged"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (deliberate); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-ponder-01-s11",
+      "answer": "speculate",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "When the headteacher whispered, children began to ___ about the surprise.",
+      "cue_phrase": "whispered",
+      "surface": {
+        "scrutinise": "scrutinise",
+        "speculate": "speculate",
+        "deliberate": "deliberate",
+        "evaluate": "evaluate",
+        "envisage": "envisage"
+      }
+    },
+    {
+      "id": "A-ponder-01-s12",
+      "answer": "speculate",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Villagers ___ about the cave noise before anyone reached the hilltop.",
+      "cue_phrase": "before anyone reached",
+      "surface": {
+        "scrutinise": "scrutinised",
+        "speculate": "speculated",
+        "deliberate": "deliberated",
+        "evaluate": "evaluated",
+        "envisage": "envisaged"
+      }
+    },
+    {
+      "id": "A-ponder-01-s13",
+      "answer": "speculate",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "With the box still shut, we could only ___ about its contents.",
+      "cue_phrase": "box still shut",
+      "surface": {
+        "scrutinise": "scrutinise",
+        "speculate": "speculate",
+        "deliberate": "deliberate",
+        "evaluate": "evaluate",
+        "envisage": "envisage"
+      }
+    },
+    {
+      "id": "A-ponder-01-s14",
+      "answer": "speculate",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Before the race results arrived, fans ___ wildly about the winner.",
+      "cue_phrase": "before the race results arrived",
+      "surface": {
+        "scrutinise": "scrutinised",
+        "speculate": "speculated",
+        "deliberate": "deliberated",
+        "evaluate": "evaluated",
+        "envisage": "envisaged"
+      }
+    },
+    {
+      "id": "A-ponder-01-s15",
+      "answer": "speculate",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "At the campfire, they ___ about which animal left those prints.",
+      "cue_phrase": "which animal left",
+      "surface": {
+        "scrutinise": "scrutinised",
+        "speculate": "speculated",
+        "deliberate": "deliberated",
+        "evaluate": "evaluated",
+        "envisage": "envisaged"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (deliberate); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-ponder-01-s16",
+      "answer": "speculate",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "No one knew why the hall lights flickered, so Mia began to ___.",
+      "cue_phrase": "No one knew why",
+      "surface": {
+        "scrutinise": "scrutinise",
+        "speculate": "speculate",
+        "deliberate": "deliberate",
+        "evaluate": "evaluate",
+        "envisage": "envisage"
+      }
+    },
+    {
+      "id": "A-ponder-01-s17",
+      "answer": "deliberate",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The council had one hour to ___ before choosing the new playground.",
+      "cue_phrase": "before choosing",
+      "surface": {
+        "scrutinise": "scrutinise",
+        "speculate": "speculate",
+        "deliberate": "deliberate",
+        "evaluate": "evaluate",
+        "envisage": "envisage"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (evaluate); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-ponder-01-s18",
+      "answer": "deliberate",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "I ___ between the blue bike and the red scooter all afternoon.",
+      "cue_phrase": "between the blue bike",
+      "surface": {
+        "scrutinise": "scrutinised",
+        "speculate": "speculated",
+        "deliberate": "deliberated",
+        "evaluate": "evaluated",
+        "envisage": "envisaged"
+      }
+    },
+    {
+      "id": "A-ponder-01-s19",
+      "answer": "deliberate",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Before voting, the team will ___ over two designs for the flag.",
+      "cue_phrase": "over two designs",
+      "surface": {
+        "scrutinise": "scrutinise",
+        "speculate": "speculate",
+        "deliberate": "deliberate",
+        "evaluate": "evaluate",
+        "envisage": "envisage"
+      }
+    },
+    {
+      "id": "A-ponder-01-s20",
+      "answer": "deliberate",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Nan ___ a long while before deciding which seeds to plant.",
+      "cue_phrase": "before deciding which seeds",
+      "surface": {
+        "scrutinise": "scrutinised",
+        "speculate": "speculated",
+        "deliberate": "deliberated",
+        "evaluate": "evaluated",
+        "envisage": "envisaged"
+      }
+    },
+    {
+      "id": "A-ponder-01-s21",
+      "answer": "deliberate",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "With both routes marked, we sat quietly to ___ our next move.",
+      "cue_phrase": "both routes marked",
+      "surface": {
+        "scrutinise": "scrutinise",
+        "speculate": "speculate",
+        "deliberate": "deliberate",
+        "evaluate": "evaluate",
+        "envisage": "envisage"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (evaluate); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-ponder-01-s22",
+      "answer": "deliberate",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The judges ___ for ages, then finally picked the winning poster.",
+      "cue_phrase": "then finally picked",
+      "surface": {
+        "scrutinise": "scrutinised",
+        "speculate": "speculated",
+        "deliberate": "deliberated",
+        "evaluate": "evaluated",
+        "envisage": "envisaged"
+      }
+    },
+    {
+      "id": "A-ponder-01-s23",
+      "answer": "deliberate",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Pausing at the fork, the hikers ___ about taking the steeper track.",
+      "cue_phrase": "taking the steeper track",
+      "surface": {
+        "scrutinise": "scrutinised",
+        "speculate": "speculated",
+        "deliberate": "deliberated",
+        "evaluate": "evaluated",
+        "envisage": "envisaged"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (speculate); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-ponder-01-s24",
+      "answer": "deliberate",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "To ___, Zara listed reasons for each club on scrap paper.",
+      "cue_phrase": "reasons for each club",
+      "surface": {
+        "scrutinise": "scrutinise",
+        "speculate": "speculate",
+        "deliberate": "deliberate",
+        "evaluate": "evaluate",
+        "envisage": "envisage"
+      }
+    },
+    {
+      "id": "A-ponder-01-s25",
+      "answer": "evaluate",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The coach asked us to ___ each routine out of ten.",
+      "cue_phrase": "out of ten",
+      "surface": {
+        "scrutinise": "scrutinise",
+        "speculate": "speculate",
+        "deliberate": "deliberate",
+        "evaluate": "evaluate",
+        "envisage": "envisage"
+      }
+    },
+    {
+      "id": "A-ponder-01-s26",
+      "answer": "evaluate",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "After the tasting, judges ___ the soups for flavour and texture.",
+      "cue_phrase": "for flavour and texture",
+      "surface": {
+        "scrutinise": "scrutinised",
+        "speculate": "speculated",
+        "deliberate": "deliberated",
+        "evaluate": "evaluated",
+        "envisage": "envisaged"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (scrutinise); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-ponder-01-s27",
+      "answer": "evaluate",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Teachers ___ the projects using neat charts and star totals.",
+      "cue_phrase": "star totals",
+      "surface": {
+        "scrutinise": "scrutinised",
+        "speculate": "speculated",
+        "deliberate": "deliberated",
+        "evaluate": "evaluated",
+        "envisage": "envisaged"
+      }
+    },
+    {
+      "id": "A-ponder-01-s28",
+      "answer": "evaluate",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "To ___ the play, the class compared acting, costumes, and singing.",
+      "cue_phrase": "compared acting, costumes, and singing",
+      "surface": {
+        "scrutinise": "scrutinise",
+        "speculate": "speculate",
+        "deliberate": "deliberate",
+        "evaluate": "evaluate",
+        "envisage": "envisage"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (scrutinise); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-ponder-01-s29",
+      "answer": "evaluate",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Mum ___ the second-hand bike by testing brakes, bell, and gears.",
+      "cue_phrase": "testing brakes, bell, and gears",
+      "surface": {
+        "scrutinise": "scrutinised",
+        "speculate": "speculated",
+        "deliberate": "deliberated",
+        "evaluate": "evaluated",
+        "envisage": "envisaged"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (scrutinise); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-ponder-01-s30",
+      "answer": "evaluate",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Before prizes were given, the panel had to ___ every painting.",
+      "cue_phrase": "Before prizes were given",
+      "surface": {
+        "scrutinise": "scrutinise",
+        "speculate": "speculate",
+        "deliberate": "deliberate",
+        "evaluate": "evaluate",
+        "envisage": "envisage"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: prize-ranking context carries evaluate; scrutiny is the method, not the act",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-ponder-01-s31",
+      "answer": "evaluate",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Our scout leader ___ the shelter after the rainstorm and gave points.",
+      "cue_phrase": "gave points",
+      "surface": {
+        "scrutinise": "scrutinised",
+        "speculate": "speculated",
+        "deliberate": "deliberated",
+        "evaluate": "evaluated",
+        "envisage": "envisaged"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (scrutinise); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-ponder-01-s32",
+      "answer": "evaluate",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "We use scorecards to ___ entries at the village cake fair.",
+      "cue_phrase": "use scorecards",
+      "surface": {
+        "scrutinise": "scrutinise",
+        "speculate": "speculate",
+        "deliberate": "deliberate",
+        "evaluate": "evaluate",
+        "envisage": "envisage"
+      }
+    },
+    {
+      "id": "A-ponder-01-s33",
+      "answer": "envisage",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Standing on the empty field, I tried to ___ a castle there.",
+      "cue_phrase": "empty field",
+      "surface": {
+        "scrutinise": "scrutinise",
+        "speculate": "speculate",
+        "deliberate": "deliberate",
+        "evaluate": "evaluate",
+        "envisage": "envisage"
+      }
+    },
+    {
+      "id": "A-ponder-01-s34",
+      "answer": "envisage",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The inventor ___ how the treehouse might look with rope bridges.",
+      "cue_phrase": "how the treehouse might look",
+      "surface": {
+        "scrutinise": "scrutinised",
+        "speculate": "speculated",
+        "deliberate": "deliberated",
+        "evaluate": "evaluated",
+        "envisage": "envisaged"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (evaluate, speculate); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-ponder-01-s35",
+      "answer": "envisage",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Before building, the twins would ___ bedrooms above the bakery shop.",
+      "cue_phrase": "Before building",
+      "surface": {
+        "scrutinise": "scrutinise",
+        "speculate": "speculate",
+        "deliberate": "deliberate",
+        "evaluate": "evaluate",
+        "envisage": "envisage"
+      }
+    },
+    {
+      "id": "A-ponder-01-s36",
+      "answer": "envisage",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "She ___ the garden in spring, full of beans and yellow tulips.",
+      "cue_phrase": "garden in spring",
+      "surface": {
+        "scrutinise": "scrutinised",
+        "speculate": "speculated",
+        "deliberate": "deliberated",
+        "evaluate": "evaluated",
+        "envisage": "envisaged"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (evaluate, scrutinise); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-ponder-01-s37",
+      "answer": "envisage",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "With only muddy ground outside, we began to ___ a skating rink.",
+      "cue_phrase": "only muddy ground outside",
+      "surface": {
+        "scrutinise": "scrutinise",
+        "speculate": "speculate",
+        "deliberate": "deliberate",
+        "evaluate": "evaluate",
+        "envisage": "envisage"
+      }
+    },
+    {
+      "id": "A-ponder-01-s38",
+      "answer": "envisage",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The architect ___ bright windows where the old wall still stood.",
+      "cue_phrase": "old wall still stood",
+      "surface": {
+        "scrutinise": "scrutinised",
+        "speculate": "speculated",
+        "deliberate": "deliberated",
+        "evaluate": "evaluated",
+        "envisage": "envisaged"
+      }
+    },
+    {
+      "id": "A-ponder-01-s39",
+      "answer": "envisage",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "To ___ life underwater, Leo drew glass tunnels beneath the waves.",
+      "cue_phrase": "life underwater",
+      "surface": {
+        "scrutinise": "scrutinise",
+        "speculate": "speculate",
+        "deliberate": "deliberate",
+        "evaluate": "evaluate",
+        "envisage": "envisage"
+      }
+    },
+    {
+      "id": "A-ponder-01-s40",
+      "answer": "envisage",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "During art club, we ___ a mural covering the plain brick wall.",
+      "cue_phrase": "covering the plain brick wall",
+      "surface": {
+        "scrutinise": "scrutinised",
+        "speculate": "speculated",
+        "deliberate": "deliberated",
+        "evaluate": "evaluated",
+        "envisage": "envisaged"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "scrutinise",
+      "picked": "speculate",
+      "line": "Scrutinise is about close inspection. Speculate is about wondering when facts are missing."
+    },
+    {
+      "answer": "scrutinise",
+      "picked": "deliberate",
+      "line": "Scrutinise studies the object closely. Deliberate weighs choices before deciding."
+    },
+    {
+      "answer": "scrutinise",
+      "picked": "evaluate",
+      "line": "Scrutinise notices tiny features. Evaluate judges how good or suitable something is."
+    },
+    {
+      "answer": "scrutinise",
+      "picked": "envisage",
+      "line": "Scrutinise examines what is there. Envisage imagines what could be there."
+    },
+    {
+      "answer": "speculate",
+      "picked": "scrutinise",
+      "line": "Speculate wonders without proof. Scrutinise checks closely for clues in front of you."
+    },
+    {
+      "answer": "speculate",
+      "picked": "deliberate",
+      "line": "Speculate is a maybe-type idea. Deliberate is choosing between options."
+    },
+    {
+      "answer": "speculate",
+      "picked": "evaluate",
+      "line": "Speculate wonders what might be true. Evaluate rates how good something is."
+    },
+    {
+      "answer": "speculate",
+      "picked": "envisage",
+      "line": "Speculate asks what might be happening. Envisage creates a future scene or design."
+    },
+    {
+      "answer": "deliberate",
+      "picked": "scrutinise",
+      "line": "Deliberate is about making a choice. Scrutinise is about close examination."
+    },
+    {
+      "answer": "deliberate",
+      "picked": "speculate",
+      "line": "Deliberate compares options before deciding. Speculate tosses out possibilities without enough facts."
+    },
+    {
+      "answer": "deliberate",
+      "picked": "evaluate",
+      "line": "Deliberate leads to a decision between choices. Evaluate scores or judges quality."
+    },
+    {
+      "answer": "deliberate",
+      "picked": "envisage",
+      "line": "Deliberate chooses a path. Envisage imagines a scene that is not there now."
+    },
+    {
+      "answer": "evaluate",
+      "picked": "scrutinise",
+      "line": "Evaluate judges quality or score. Scrutinise focuses on tiny parts and signs."
+    },
+    {
+      "answer": "evaluate",
+      "picked": "speculate",
+      "line": "Evaluate uses evidence to judge. Speculate fills gaps when evidence is missing."
+    },
+    {
+      "answer": "evaluate",
+      "picked": "deliberate",
+      "line": "Evaluate measures how good something is. Deliberate is about deciding between options."
+    },
+    {
+      "answer": "evaluate",
+      "picked": "envisage",
+      "line": "Evaluate judges an actual item. Envisage imagines a possible one."
+    },
+    {
+      "answer": "envisage",
+      "picked": "scrutinise",
+      "line": "Envisage imagines what is not there yet. Scrutinise inspects what is already there."
+    },
+    {
+      "answer": "envisage",
+      "picked": "speculate",
+      "line": "Envisage builds a mental scene. Speculate wonders which explanation might be right."
+    },
+    {
+      "answer": "envisage",
+      "picked": "deliberate",
+      "line": "Envisage imagines a future result. Deliberate considers choices before acting."
+    },
+    {
+      "answer": "envisage",
+      "picked": "evaluate",
+      "line": "Envisage creates an idea of what could exist. Evaluate judges how good something is."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-06T14:39:32+00:00",
+    "model": "gpt-5.4",
+    "scrubbed_at": "2026-07-07",
+    "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+  }
+}

@@ -1,0 +1,898 @@
+{
+  "id": "B-coast-01",
+  "bank": "B",
+  "pos": "noun",
+  "theme": "along the coastline",
+  "band": 3,
+  "band_override": 3,
+  "computed": {
+    "zipf_min": 2.69,
+    "zipf_mean": 3.22,
+    "tightness": 0.403,
+    "band_suggested": 3,
+    "scored_at": "2026-07-06T18:43:21+00:00"
+  },
+  "words": [
+    {
+      "w": "cove",
+      "synset": "cove.n.01",
+      "gloss_source": "wordnet",
+      "gloss": "a small inlet",
+      "zipf": 3.64,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "cove"
+      },
+      "discriminator": "small sheltered notch of coast",
+      "grade": 5
+    },
+    {
+      "w": "lagoon",
+      "synset": "lagoon.n.01",
+      "gloss_source": "authored",
+      "gloss": "calm shallow water cut off from the sea by sand or coral",
+      "zipf": 3.43,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "lagoon"
+      },
+      "discriminator": "sealed off behind a bar",
+      "grade": 4
+    },
+    {
+      "w": "dune",
+      "synset": "dune.n.01",
+      "gloss_source": "authored",
+      "gloss": "a ridge of loose sand piled up by the wind",
+      "zipf": 3.28,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "dune"
+      },
+      "discriminator": "loose wind-piled sand",
+      "grade": 4
+    },
+    {
+      "w": "headland",
+      "synset": "promontory.n.01",
+      "gloss_source": "authored",
+      "gloss": "a high rocky point of land that sticks out into the sea",
+      "zipf": 2.69,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "headland"
+      },
+      "discriminator": "high rock jutting into the sea",
+      "grade": 5
+    },
+    {
+      "w": "jetty",
+      "synset": "breakwater.n.01",
+      "gloss_source": "authored",
+      "gloss": "a built stone or wooden arm running from the shore out over the water",
+      "zipf": 3.04,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "jetty"
+      },
+      "discriminator": "built arm over the water",
+      "grade": 4
+    }
+  ],
+  "sentences": [
+    {
+      "id": "B-coast-01-s01",
+      "answer": "cove",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "We picnicked in the ___, hidden by cliffs on both sides.",
+      "cue_phrase": "hidden by cliffs",
+      "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+      }
+    },
+    {
+      "id": "B-coast-01-s02",
+      "answer": "cove",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Our boat slipped into the little ___ curled between rocky points.",
+      "cue_phrase": "curled between rocky points",
+      "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+      }
+    },
+    {
+      "id": "B-coast-01-s03",
+      "answer": "cove",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Between two cliff walls, the ___ held three fishing boats overnight.",
+      "cue_phrase": "Between two cliff walls",
+      "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+      }
+    },
+    {
+      "id": "B-coast-01-s04",
+      "answer": "cove",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Mum spread towels in the ___ after the path dipped sharply down.",
+      "cue_phrase": "path dipped sharply down",
+      "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+      }
+    },
+    {
+      "id": "B-coast-01-s05",
+      "answer": "cove",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The treasure map showed a tucked-away ___ behind two steep cliffs.",
+      "cue_phrase": "behind two steep cliffs",
+      "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (dune, lagoon); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-coast-01-s06",
+      "answer": "cove",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Gulls circled the ___ where our kayak rested beneath the cliffs.",
+      "cue_phrase": "rested beneath the cliffs",
+      "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (jetty); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-coast-01-s07",
+      "answer": "cove",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "At low tide, the ___ looked like a secret pocket in the cliffs.",
+      "cue_phrase": "secret pocket in the cliffs",
+      "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+      }
+    },
+    {
+      "id": "B-coast-01-s08",
+      "answer": "cove",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "We reached the ___ by scrambling down steps carved into the cliff.",
+      "cue_phrase": "down steps carved",
+      "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (jetty, lagoon); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-coast-01-s09",
+      "answer": "lagoon",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Fish darted in the ___ behind a long strip of beach.",
+      "cue_phrase": "behind a long strip",
+      "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+      }
+    },
+    {
+      "id": "B-coast-01-s10",
+      "answer": "lagoon",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ stayed apart from the waves beyond the narrow bank.",
+      "cue_phrase": "apart from the waves",
+      "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+      }
+    },
+    {
+      "id": "B-coast-01-s11",
+      "answer": "lagoon",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Herons stood in the ___ while breakers crashed on the far side.",
+      "cue_phrase": "breakers crashed on the far side",
+      "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (cove); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-coast-01-s12",
+      "answer": "lagoon",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "We paddled the ___, separated from the surf by a curved bar.",
+      "cue_phrase": "separated from the surf",
+      "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (cove); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-coast-01-s13",
+      "answer": "lagoon",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Beyond the beach wall, the ___ barely rippled under the flamingos.",
+      "cue_phrase": "Beyond the beach wall",
+      "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (cove); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-coast-01-s14",
+      "answer": "lagoon",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Tiny crabs scuttled round the ___, sheltered behind the outer beach.",
+      "cue_phrase": "behind the outer beach",
+      "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (dune); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-coast-01-s15",
+      "answer": "lagoon",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The pirate camp faced a ___ sealed off by a pale spit.",
+      "cue_phrase": "sealed off by",
+      "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (cove); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-coast-01-s16",
+      "answer": "lagoon",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "At sunset, the ___ gleamed quietly inside its ring of pale sand.",
+      "cue_phrase": "ring of pale sand",
+      "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+      }
+    },
+    {
+      "id": "B-coast-01-s17",
+      "answer": "dune",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The children rolled down a ___ that the breeze reshaped each night.",
+      "cue_phrase": "breeze reshaped each night",
+      "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+      }
+    },
+    {
+      "id": "B-coast-01-s18",
+      "answer": "dune",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Grass clung to the ___ as grains blew across our shoes.",
+      "cue_phrase": "grains blew across",
+      "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+      }
+    },
+    {
+      "id": "B-coast-01-s19",
+      "answer": "dune",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "We hid behind the ___, and the blowing grains stung our ankles.",
+      "cue_phrase": "blowing grains stung",
+      "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (headland, jetty); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-coast-01-s20",
+      "answer": "dune",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ranger asked us not to climb the ___ of soft, sliding sand.",
+      "cue_phrase": "soft, sliding sand",
+      "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+      }
+    },
+    {
+      "id": "B-coast-01-s21",
+      "answer": "dune",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Our footprints vanished from the ___ after a blustery afternoon.",
+      "cue_phrase": "footprints vanished",
+      "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+      }
+    },
+    {
+      "id": "B-coast-01-s22",
+      "answer": "dune",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "From the ___, we slid laughing as dry grains sprayed everywhere.",
+      "cue_phrase": "dry grains sprayed everywhere",
+      "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+      }
+    },
+    {
+      "id": "B-coast-01-s23",
+      "answer": "dune",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "A lizard zipped up the sandy ___ and vanished over its windblown crest.",
+      "cue_phrase": "windblown crest",
+      "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+      }
+    },
+    {
+      "id": "B-coast-01-s24",
+      "answer": "dune",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "The castle sat on a ___ that shifted shape after storms.",
+      "cue_phrase": "shifted shape after storms",
+      "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+      }
+    },
+    {
+      "id": "B-coast-01-s25",
+      "answer": "headland",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "We climbed the high rocky ___ to watch gulls wheel over the sea.",
+      "cue_phrase": "high rocky",
+      "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+      }
+    },
+    {
+      "id": "B-coast-01-s26",
+      "answer": "headland",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The lighthouse stood on the ___, far out beyond both bays.",
+      "cue_phrase": "lighthouse stood on",
+      "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (jetty); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-coast-01-s27",
+      "answer": "headland",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "From the high rock tip of the ___, the boats looked like toys.",
+      "cue_phrase": "high rock tip",
+      "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+      }
+    },
+    {
+      "id": "B-coast-01-s28",
+      "answer": "headland",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Waves crashed below the ___ where goats nibbled tough grass.",
+      "cue_phrase": "Waves crashed below",
+      "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (dune); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-coast-01-s29",
+      "answer": "headland",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The castle ruins crowned a ___ with steep drops on three sides.",
+      "cue_phrase": "steep drops on three sides",
+      "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+      }
+    },
+    {
+      "id": "B-coast-01-s30",
+      "answer": "headland",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "We followed the cliff path until the ___ jutted before us.",
+      "cue_phrase": "cliff path until",
+      "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (jetty); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-coast-01-s31",
+      "answer": "headland",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Fog wrapped the ___, hiding its clifftop beacon from our ferry.",
+      "cue_phrase": "clifftop beacon",
+      "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+      }
+    },
+    {
+      "id": "B-coast-01-s32",
+      "answer": "headland",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Puffins nested on the ___ above the dark crashing waves.",
+      "cue_phrase": "above the dark crashing waves",
+      "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+      }
+    },
+    {
+      "id": "B-coast-01-s33",
+      "answer": "jetty",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Dad tied the boat beside the ___ made of old planks.",
+      "cue_phrase": "made of old planks",
+      "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+      }
+    },
+    {
+      "id": "B-coast-01-s34",
+      "answer": "jetty",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "We walked along the ___ to drop crab lines into the harbour.",
+      "cue_phrase": "walked along the",
+      "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+      }
+    },
+    {
+      "id": "B-coast-01-s35",
+      "answer": "jetty",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Spray splashed through the boards of the ___ under our trainers.",
+      "cue_phrase": "through the boards",
+      "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+      }
+    },
+    {
+      "id": "B-coast-01-s36",
+      "answer": "jetty",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ stretched from the harbour wall, and boats moored beside it.",
+      "cue_phrase": "boats moored beside it",
+      "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+      }
+    },
+    {
+      "id": "B-coast-01-s37",
+      "answer": "jetty",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "We queued on the ___ while gulls eyed our bait buckets.",
+      "cue_phrase": "queued on the",
+      "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+      }
+    },
+    {
+      "id": "B-coast-01-s38",
+      "answer": "jetty",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Barnacles crusted the ___ where the rowing boat was tied.",
+      "cue_phrase": "rowing boat was tied",
+      "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+      }
+    },
+    {
+      "id": "B-coast-01-s39",
+      "answer": "jetty",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "At dawn, fishers pushed trolleys down the ___ toward their boats.",
+      "cue_phrase": "toward their boats",
+      "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+      }
+    },
+    {
+      "id": "B-coast-01-s40",
+      "answer": "jetty",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The storm bent the rail on the ___, but it stayed standing.",
+      "cue_phrase": "bent the rail",
+      "surface": {
+        "cove": "cove",
+        "lagoon": "lagoon",
+        "dune": "dune",
+        "headland": "headland",
+        "jetty": "jetty"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "cove",
+      "picked": "lagoon",
+      "line": "A cove is a cliff-sheltered bite in the coast. A lagoon lies behind a strip that separates it from the waves."
+    },
+    {
+      "answer": "cove",
+      "picked": "dune",
+      "line": "A cove is a tucked-away place for water between cliffs. A dune is a hill of beach grains."
+    },
+    {
+      "answer": "cove",
+      "picked": "headland",
+      "line": "A cove goes inward and feels tucked in. A headland juts outward into the sea."
+    },
+    {
+      "answer": "cove",
+      "picked": "jetty",
+      "line": "A cove is natural and surrounded by cliffs. A jetty is a man-made walkway for boats."
+    },
+    {
+      "answer": "lagoon",
+      "picked": "cove",
+      "line": "A lagoon sits behind a beach bar, apart from the surf. A cove is a sheltered hollow between cliffs."
+    },
+    {
+      "answer": "lagoon",
+      "picked": "dune",
+      "line": "A lagoon holds water behind a barrier. A dune is dry and made of blown grains."
+    },
+    {
+      "answer": "lagoon",
+      "picked": "headland",
+      "line": "A lagoon is enclosed water near the coast. A headland is land sticking out."
+    },
+    {
+      "answer": "lagoon",
+      "picked": "jetty",
+      "line": "A lagoon is a natural pool behind a barrier. A jetty is a built structure you can walk on."
+    },
+    {
+      "answer": "dune",
+      "picked": "cove",
+      "line": "A dune is a mound of blown beach grains. A cove is a sheltered curve of water."
+    },
+    {
+      "answer": "dune",
+      "picked": "lagoon",
+      "line": "A dune is dry ground shaped by wind. A lagoon is water held behind a barrier."
+    },
+    {
+      "answer": "dune",
+      "picked": "headland",
+      "line": "A dune is soft and shifts shape. A headland is firm cliff land jutting out."
+    },
+    {
+      "answer": "dune",
+      "picked": "jetty",
+      "line": "A dune is natural and sandy underfoot. A jetty is built out for boats."
+    },
+    {
+      "answer": "headland",
+      "picked": "cove",
+      "line": "A headland sticks out from the coast. A cove cuts inward between cliffs."
+    },
+    {
+      "answer": "headland",
+      "picked": "lagoon",
+      "line": "A headland is a tall piece of coast you climb. A lagoon is water lying behind a barrier."
+    },
+    {
+      "answer": "headland",
+      "picked": "dune",
+      "line": "A headland is hard cliff coast with steep drops. A dune is soft, shifting beach ground."
+    },
+    {
+      "answer": "headland",
+      "picked": "jetty",
+      "line": "A headland is natural coast jutting into the sea. A jetty is built from the shore for boats."
+    },
+    {
+      "answer": "jetty",
+      "picked": "cove",
+      "line": "A jetty is a built place to walk beside boats. A cove is a natural sheltered coastal hollow."
+    },
+    {
+      "answer": "jetty",
+      "picked": "lagoon",
+      "line": "A jetty is a structure people stand on. A lagoon is enclosed water behind a beach bar."
+    },
+    {
+      "answer": "jetty",
+      "picked": "dune",
+      "line": "A jetty has boards or stone and reaches out for boats. A dune is a sandy hill."
+    },
+    {
+      "answer": "jetty",
+      "picked": "headland",
+      "line": "A jetty is man-made and used by boats. A headland is natural cliff coast jutting out."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-06T14:31:29+00:00",
+    "model": "gpt-5.4",
+    "scrubbed_at": "2026-07-07",
+    "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+  }
+}

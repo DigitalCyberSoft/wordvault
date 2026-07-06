@@ -1,0 +1,826 @@
+{
+  "id": "A-qualities-01",
+  "bank": "A",
+  "pos": "adjective",
+  "theme": "qualities people admire",
+  "band": 5,
+  "band_override": 5,
+  "computed": {
+    "zipf_min": 2.66,
+    "zipf_mean": 3.11,
+    "tightness": null,
+    "band_suggested": 4,
+    "scored_at": "2026-07-06T18:43:21+00:00"
+  },
+  "words": [
+    {
+      "w": "affable",
+      "synset": "affable.s.01",
+      "gloss_source": "authored",
+      "gloss": "warm and friendly to everyone",
+      "zipf": 2.66,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "affable"
+      },
+      "discriminator": "easy warmth with everyone",
+      "grade": 7
+    },
+    {
+      "w": "candid",
+      "synset": "blunt.s.03",
+      "gloss_source": "authored",
+      "gloss": "saying what you really think, plainly and honestly",
+      "zipf": 3.45,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "candid"
+      },
+      "discriminator": "plain honest speech",
+      "grade": 7
+    },
+    {
+      "w": "eloquent",
+      "synset": "eloquent.s.01",
+      "gloss_source": "wordnet",
+      "gloss": "expressing yourself readily, clearly, effectively",
+      "zipf": 3.21,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "eloquent"
+      },
+      "discriminator": "words that move people",
+      "grade": 7
+    },
+    {
+      "w": "astute",
+      "synset": "astute.s.01",
+      "gloss_source": "authored",
+      "gloss": "quick to see how things really stand and turn them to advantage",
+      "zipf": 3.1,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "astute"
+      },
+      "discriminator": "sees the clever angle",
+      "grade": 7
+    },
+    {
+      "w": "resolute",
+      "synset": "resolute.a.01",
+      "gloss_source": "authored",
+      "gloss": "firm in purpose or belief",
+      "zipf": 3.12,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "resolute"
+      },
+      "discriminator": "will not be turned aside",
+      "grade": 7
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-qualities-01-s01",
+      "answer": "affable",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "At lunch, the ___ monitor saved seats and greeted each child by name.",
+      "cue_phrase": "greeted each child",
+      "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+      }
+    },
+    {
+      "id": "A-qualities-01-s02",
+      "answer": "affable",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ shopkeeper laughed with toddlers, parents, and the tired postman.",
+      "cue_phrase": "laughed with toddlers",
+      "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+      }
+    },
+    {
+      "id": "A-qualities-01-s03",
+      "answer": "affable",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "On the bus, our ___ driver welcomed nervous pupils aboard with jokes.",
+      "cue_phrase": "welcomed nervous pupils",
+      "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+      }
+    },
+    {
+      "id": "A-qualities-01-s04",
+      "answer": "affable",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ neighbour waved, shared biscuits, and remembered every dog's name.",
+      "cue_phrase": "remembered every dog's name",
+      "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+      }
+    },
+    {
+      "id": "A-qualities-01-s05",
+      "answer": "affable",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "By sunset, the ___ camp leader had made the shy twins giggle.",
+      "cue_phrase": "shy twins giggle",
+      "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+      }
+    },
+    {
+      "id": "A-qualities-01-s06",
+      "answer": "affable",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "When visitors arrived, the ___ cat strolled over and rubbed their shoes.",
+      "cue_phrase": "rubbed their shoes",
+      "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+      }
+    },
+    {
+      "id": "A-qualities-01-s07",
+      "answer": "affable",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The ___ librarian smiled at quarrelling teams and found seats for both.",
+      "cue_phrase": "found seats for both",
+      "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+      }
+    },
+    {
+      "id": "A-qualities-01-s08",
+      "answer": "affable",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "During registration, the ___ coach learned names and high-fived latecomers.",
+      "cue_phrase": "high-fived latecomers",
+      "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+      }
+    },
+    {
+      "id": "A-qualities-01-s09",
+      "answer": "candid",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "After breaking the vase, Mira gave a ___ answer: 'I did it.'",
+      "cue_phrase": "I did it",
+      "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+      }
+    },
+    {
+      "id": "A-qualities-01-s10",
+      "answer": "candid",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ witness told the court, 'No, the gate was open.'",
+      "cue_phrase": "the gate was open",
+      "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+      }
+    },
+    {
+      "id": "A-qualities-01-s11",
+      "answer": "candid",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Rafi's ___ note admitted the model looked crooked on one side.",
+      "cue_phrase": "admitted the model looked crooked",
+      "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+      }
+    },
+    {
+      "id": "A-qualities-01-s12",
+      "answer": "candid",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "In the meeting, the ___ pupil called her own plan unfair.",
+      "cue_phrase": "her own plan unfair",
+      "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+      }
+    },
+    {
+      "id": "A-qualities-01-s13",
+      "answer": "candid",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Lena's ___ reply named the missing pages instead of making excuses.",
+      "cue_phrase": "instead of making excuses",
+      "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+      }
+    },
+    {
+      "id": "A-qualities-01-s14",
+      "answer": "candid",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Asked about the soup, the ___ guest said it needed salt.",
+      "cue_phrase": "needed salt",
+      "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+      }
+    },
+    {
+      "id": "A-qualities-01-s15",
+      "answer": "candid",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The ___ captain owned up to the foul before the referee asked.",
+      "cue_phrase": "owned up",
+      "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+      }
+    },
+    {
+      "id": "A-qualities-01-s16",
+      "answer": "candid",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Her ___ diary entry crossed out 'great' and wrote 'messy'.",
+      "cue_phrase": "wrote 'messy'",
+      "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+      }
+    },
+    {
+      "id": "A-qualities-01-s17",
+      "answer": "eloquent",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ speaker's words filled the hall, and even fidgety pupils listened.",
+      "cue_phrase": "even fidgety pupils listened",
+      "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+      }
+    },
+    {
+      "id": "A-qualities-01-s18",
+      "answer": "eloquent",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "With a ___ toast, Grandad made Auntie laugh, cry, then clap.",
+      "cue_phrase": "laugh, cry, then clap",
+      "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+      }
+    },
+    {
+      "id": "A-qualities-01-s19",
+      "answer": "eloquent",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ poem about home left the noisy classroom completely still.",
+      "cue_phrase": "classroom completely still",
+      "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+      }
+    },
+    {
+      "id": "A-qualities-01-s20",
+      "answer": "eloquent",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "His ___ letter, full of graceful sentences, persuaded the council to save the park.",
+      "cue_phrase": "full of graceful sentences",
+      "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+      }
+    },
+    {
+      "id": "A-qualities-01-s21",
+      "answer": "eloquent",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "After Nia's ___ speech, three classmates signed up to plant trees.",
+      "cue_phrase": "signed up to plant trees",
+      "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (astute, candid, resolute); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-qualities-01-s22",
+      "answer": "eloquent",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The ___ storyteller made the dragon's cave sound bright and terrifying.",
+      "cue_phrase": "sound bright and terrifying",
+      "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+      }
+    },
+    {
+      "id": "A-qualities-01-s23",
+      "answer": "eloquent",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "A ___ plea from the sailor softened the pirate queen's scowl.",
+      "cue_phrase": "softened the pirate queen's scowl",
+      "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (astute, candid, resolute); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-qualities-01-s24",
+      "answer": "eloquent",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The ___ message on the banner made the crowd sing louder.",
+      "cue_phrase": "made the crowd sing louder",
+      "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (resolute); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-qualities-01-s25",
+      "answer": "astute",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ chess player spotted the fork and won the queen next move.",
+      "cue_phrase": "spotted the fork",
+      "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+      }
+    },
+    {
+      "id": "A-qualities-01-s26",
+      "answer": "astute",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "A ___ shopper noticed the cheaper bundle hid extra pencils inside.",
+      "cue_phrase": "cheaper bundle hid",
+      "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+      }
+    },
+    {
+      "id": "A-qualities-01-s27",
+      "answer": "astute",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ goalie read the striker's eyes and dived left early.",
+      "cue_phrase": "read the striker's eyes",
+      "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+      }
+    },
+    {
+      "id": "A-qualities-01-s28",
+      "answer": "astute",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Our ___ captain saved the fastest runner for the muddy final lap.",
+      "cue_phrase": "saved the fastest runner",
+      "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+      }
+    },
+    {
+      "id": "A-qualities-01-s29",
+      "answer": "astute",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Maya's ___ trade gave one shiny marble and gained three rare ones.",
+      "cue_phrase": "gained three rare ones",
+      "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+      }
+    },
+    {
+      "id": "A-qualities-01-s30",
+      "answer": "astute",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The ___ fox waited by the narrow gap where the hens passed.",
+      "cue_phrase": "narrow gap where",
+      "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+      }
+    },
+    {
+      "id": "A-qualities-01-s31",
+      "answer": "astute",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The ___ detective noticed fresh mud on only one boot.",
+      "cue_phrase": "only one boot",
+      "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+      }
+    },
+    {
+      "id": "A-qualities-01-s32",
+      "answer": "astute",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "At cards, the ___ aunt kept the joker until the last round.",
+      "cue_phrase": "kept the joker",
+      "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+      }
+    },
+    {
+      "id": "A-qualities-01-s33",
+      "answer": "resolute",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Despite boos, the ___ dancer finished the routine without missing a step.",
+      "cue_phrase": "Despite boos",
+      "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+      }
+    },
+    {
+      "id": "A-qualities-01-s34",
+      "answer": "resolute",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ climber kept going after wind tore the flag away.",
+      "cue_phrase": "kept going",
+      "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+      }
+    },
+    {
+      "id": "A-qualities-01-s35",
+      "answer": "resolute",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "When the puzzle grew hard, the ___ twins stayed until midnight.",
+      "cue_phrase": "stayed until midnight",
+      "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+      }
+    },
+    {
+      "id": "A-qualities-01-s36",
+      "answer": "resolute",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ goalkeeper faced five shots and refused to leave the net.",
+      "cue_phrase": "refused to leave",
+      "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+      }
+    },
+    {
+      "id": "A-qualities-01-s37",
+      "answer": "resolute",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "With mud covering her boots, the ___ scout still reached the beacon.",
+      "cue_phrase": "still reached the beacon",
+      "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+      }
+    },
+    {
+      "id": "A-qualities-01-s38",
+      "answer": "resolute",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "After three no votes, the ___ proposer brought the garden plan again.",
+      "cue_phrase": "three no votes",
+      "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+      }
+    },
+    {
+      "id": "A-qualities-01-s39",
+      "answer": "resolute",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The ___ swimmer ignored the cold and crossed the whole lake.",
+      "cue_phrase": "crossed the whole lake",
+      "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+      }
+    },
+    {
+      "id": "A-qualities-01-s40",
+      "answer": "resolute",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Even sleepy, the ___ drummer practised until the tricky beat worked.",
+      "cue_phrase": "practised until",
+      "surface": {
+        "affable": "affable",
+        "candid": "candid",
+        "eloquent": "eloquent",
+        "astute": "astute",
+        "resolute": "resolute"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "affable",
+      "picked": "candid",
+      "line": "Affable is easy to talk to and welcoming; candid is truthful, even when awkward."
+    },
+    {
+      "answer": "affable",
+      "picked": "eloquent",
+      "line": "Affable puts people at ease; eloquent uses words that move a crowd."
+    },
+    {
+      "answer": "affable",
+      "picked": "astute",
+      "line": "Affable is pleasant company; astute spots the smart move."
+    },
+    {
+      "answer": "affable",
+      "picked": "resolute",
+      "line": "Affable greets people kindly; resolute keeps going and will not give up."
+    },
+    {
+      "answer": "candid",
+      "picked": "affable",
+      "line": "Candid tells the truth directly; affable makes people feel welcome."
+    },
+    {
+      "answer": "candid",
+      "picked": "eloquent",
+      "line": "Candid gives a straight truth; eloquent speaks in a powerful, moving way."
+    },
+    {
+      "answer": "candid",
+      "picked": "astute",
+      "line": "Candid is open truth-telling; astute is noticing the clever choice."
+    },
+    {
+      "answer": "candid",
+      "picked": "resolute",
+      "line": "Candid admits the truth; resolute sticks with a task despite trouble."
+    },
+    {
+      "answer": "eloquent",
+      "picked": "affable",
+      "line": "Eloquent words stir feelings; affable behaviour makes people feel welcome."
+    },
+    {
+      "answer": "eloquent",
+      "picked": "candid",
+      "line": "Eloquent speech moves listeners; candid speech tells the truth directly."
+    },
+    {
+      "answer": "eloquent",
+      "picked": "astute",
+      "line": "Eloquent wins hearts with words; astute wins by spotting the smart angle."
+    },
+    {
+      "answer": "eloquent",
+      "picked": "resolute",
+      "line": "Eloquent can inspire a crowd; resolute keeps going when it is hard."
+    },
+    {
+      "answer": "astute",
+      "picked": "affable",
+      "line": "Astute notices the best move; affable is pleasant and welcoming with people."
+    },
+    {
+      "answer": "astute",
+      "picked": "candid",
+      "line": "Astute spots a clever chance; candid tells the truth without hiding it."
+    },
+    {
+      "answer": "astute",
+      "picked": "eloquent",
+      "line": "Astute finds the smart plan; eloquent uses words that move listeners."
+    },
+    {
+      "answer": "astute",
+      "picked": "resolute",
+      "line": "Astute works out the clever move; resolute refuses to stop."
+    },
+    {
+      "answer": "resolute",
+      "picked": "affable",
+      "line": "Resolute keeps going despite trouble; affable puts people at ease."
+    },
+    {
+      "answer": "resolute",
+      "picked": "candid",
+      "line": "Resolute does not give up; candid tells the truth directly."
+    },
+    {
+      "answer": "resolute",
+      "picked": "eloquent",
+      "line": "Resolute sticks with the task; eloquent moves people with words."
+    },
+    {
+      "answer": "resolute",
+      "picked": "astute",
+      "line": "Resolute keeps going through difficulty; astute spots the clever move."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-06T18:23:51+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": "2026-07-07",
+    "scrub_note": "Scrubbed by claude 2026-07-07: mechanical sweeps clean (two snow scenes cleared - no month-absurdity cues, AU-safe), all 40 sentences and 20 contrasts read; no defects found."
+  }
+}

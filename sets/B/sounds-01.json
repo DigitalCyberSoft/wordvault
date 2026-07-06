@@ -1,0 +1,837 @@
+{
+  "id": "B-sounds-01",
+  "bank": "B",
+  "pos": "verb",
+  "theme": "sounds people make",
+  "band": 1,
+  "band_override": 1,
+  "computed": {
+    "zipf_min": 3.35,
+    "zipf_mean": 3.77,
+    "tightness": 0.273,
+    "band_suggested": 2,
+    "scored_at": "2026-07-06T18:43:21+00:00"
+  },
+  "words": [
+    {
+      "w": "giggle",
+      "synset": "giggle.v.01",
+      "gloss_source": "authored",
+      "gloss": "laugh in a light, silly, bubbling way",
+      "zipf": 3.35,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "giggle",
+        "third": "giggles",
+        "past": "giggled",
+        "part": "giggling"
+      },
+      "discriminator": "a little bubbling laugh",
+      "grade": 2
+    },
+    {
+      "w": "shout",
+      "synset": "shout.v.01",
+      "gloss_source": "authored",
+      "gloss": "say something in a very loud voice",
+      "zipf": 4.06,
+      "register": "neutral",
+      "senses_at_pos": 4,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "shout",
+        "third": "shouts",
+        "past": "shouted",
+        "part": "shouting"
+      },
+      "discriminator": "loud voice carrying words far",
+      "grade": 1
+    },
+    {
+      "w": "hum",
+      "synset": "hum.v.01",
+      "gloss_source": "wordnet",
+      "gloss": "sing with closed lips",
+      "zipf": 3.59,
+      "register": "neutral",
+      "senses_at_pos": 4,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "hum",
+        "third": "hums",
+        "past": "hummed",
+        "part": "humming"
+      },
+      "discriminator": "a tune with lips fully closed",
+      "grade": 2
+    },
+    {
+      "w": "sigh",
+      "synset": "sigh.v.01",
+      "gloss_source": "authored",
+      "gloss": "let out one long deep breath, as when tired or sad",
+      "zipf": 3.95,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "sigh",
+        "third": "sighs",
+        "past": "sighed",
+        "part": "sighing"
+      },
+      "discriminator": "one long breath let out",
+      "grade": 3
+    },
+    {
+      "w": "whistle",
+      "synset": "whistle.v.01",
+      "gloss_source": "authored",
+      "gloss": "make a high clear note by blowing air through your lips",
+      "zipf": 3.88,
+      "register": "neutral",
+      "senses_at_pos": 6,
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-06",
+        "note": "dominant school-context sense confirmed at roster vet"
+      },
+      "forms": {
+        "base": "whistle",
+        "third": "whistles",
+        "past": "whistled",
+        "part": "whistling"
+      },
+      "discriminator": "high clear note blown through lips",
+      "grade": 2
+    }
+  ],
+  "sentences": [
+    {
+      "id": "B-sounds-01-s01",
+      "answer": "giggle",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The wobbly jelly made Noor ___ in tiny tee-hees.",
+      "cue_phrase": "tiny tee-hees",
+      "surface": {
+        "giggle": "giggle",
+        "shout": "shout",
+        "hum": "hum",
+        "sigh": "sigh",
+        "whistle": "whistle"
+      }
+    },
+    {
+      "id": "B-sounds-01-s02",
+      "answer": "giggle",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "At the puppet's wink, Ben ___ with small tee-hee sounds.",
+      "cue_phrase": "small tee-hee sounds",
+      "surface": {
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+      }
+    },
+    {
+      "id": "B-sounds-01-s03",
+      "answer": "giggle",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Lena covered her mouth and ___ when the goat wore socks.",
+      "cue_phrase": "goat wore socks",
+      "surface": {
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+      }
+    },
+    {
+      "id": "B-sounds-01-s04",
+      "answer": "giggle",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Two tiny squeaks escaped as Ravi ___ at the upside-down hat.",
+      "cue_phrase": "Two tiny squeaks",
+      "surface": {
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+      }
+    },
+    {
+      "id": "B-sounds-01-s05",
+      "answer": "giggle",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The class tried to stay serious, but the banana crown had them ___.",
+      "cue_phrase": "banana crown",
+      "surface": {
+        "giggle": "giggle",
+        "shout": "shout",
+        "hum": "hum",
+        "sigh": "sigh",
+        "whistle": "whistle"
+      }
+    },
+    {
+      "id": "B-sounds-01-s06",
+      "answer": "giggle",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Under the blanket, the joke book kept Ava ___ after bedtime.",
+      "cue_phrase": "joke book kept",
+      "surface": {
+        "giggle": "giggling",
+        "shout": "shouting",
+        "hum": "humming",
+        "sigh": "sighing",
+        "whistle": "whistling"
+      }
+    },
+    {
+      "id": "B-sounds-01-s07",
+      "answer": "giggle",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The tiny moustache on Dad's photo made Jo ___ into her sleeve.",
+      "cue_phrase": "moustache on Dad's photo",
+      "surface": {
+        "giggle": "giggle",
+        "shout": "shout",
+        "hum": "hum",
+        "sigh": "sigh",
+        "whistle": "whistle"
+      }
+    },
+    {
+      "id": "B-sounds-01-s08",
+      "answer": "giggle",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "Kim ___ so hard at the wobbling cake that her shoulders bounced.",
+      "cue_phrase": "her shoulders bounced",
+      "surface": {
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+      }
+    },
+    {
+      "id": "B-sounds-01-s09",
+      "answer": "shout",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "From the gate, Omar ___ 'Wait!' across the busy playground.",
+      "cue_phrase": "across the busy playground",
+      "surface": {
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+      }
+    },
+    {
+      "id": "B-sounds-01-s10",
+      "answer": "shout",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The lifeguard had to ___ 'Swim back!' over the waves.",
+      "cue_phrase": "over the waves",
+      "surface": {
+        "giggle": "giggle",
+        "shout": "shout",
+        "hum": "hum",
+        "sigh": "sigh",
+        "whistle": "whistle"
+      }
+    },
+    {
+      "id": "B-sounds-01-s11",
+      "answer": "shout",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "When the bus doors opened, Priya ___ 'Here!' from the back.",
+      "cue_phrase": "from the back",
+      "surface": {
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+      }
+    },
+    {
+      "id": "B-sounds-01-s12",
+      "answer": "shout",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The captain cupped both hands and ___ orders across the windy field.",
+      "cue_phrase": "orders across",
+      "surface": {
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+      }
+    },
+    {
+      "id": "B-sounds-01-s13",
+      "answer": "shout",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Tom saw the ball roll into traffic and ___ 'Stop!' instantly.",
+      "cue_phrase": "ball roll into traffic",
+      "surface": {
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+      }
+    },
+    {
+      "id": "B-sounds-01-s14",
+      "answer": "shout",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Across the river, Dad could hear Ella ___ the words, 'Bridge out!'",
+      "cue_phrase": "the words, 'Bridge out!'",
+      "surface": {
+        "giggle": "giggle",
+        "shout": "shout",
+        "hum": "hum",
+        "sigh": "sigh",
+        "whistle": "whistle"
+      }
+    },
+    {
+      "id": "B-sounds-01-s15",
+      "answer": "shout",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "A referee ___ 'Time!' when every runner must freeze.",
+      "cue_phrase": "every runner must freeze",
+      "surface": {
+        "giggle": "giggles",
+        "shout": "shouts",
+        "hum": "hums",
+        "sigh": "sighs",
+        "whistle": "whistles"
+      }
+    },
+    {
+      "id": "B-sounds-01-s16",
+      "answer": "shout",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "To reach the upstairs window, Maya had to ___ Ben's name.",
+      "cue_phrase": "reach the upstairs window",
+      "surface": {
+        "giggle": "giggle",
+        "shout": "shout",
+        "hum": "hum",
+        "sigh": "sigh",
+        "whistle": "whistle"
+      }
+    },
+    {
+      "id": "B-sounds-01-s17",
+      "answer": "hum",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Mouth shut, Asha ___ the tune while washing brushes.",
+      "cue_phrase": "Mouth shut",
+      "surface": {
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+      }
+    },
+    {
+      "id": "B-sounds-01-s18",
+      "answer": "hum",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "During the quiet music, Finn began to ___ with his mouth shut.",
+      "cue_phrase": "with his mouth shut",
+      "surface": {
+        "giggle": "giggle",
+        "shout": "shout",
+        "hum": "hum",
+        "sigh": "sigh",
+        "whistle": "whistle"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (sigh); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-sounds-01-s19",
+      "answer": "hum",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Nina's cheeks buzzed as she ___ the bedtime tune.",
+      "cue_phrase": "cheeks buzzed",
+      "surface": {
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+      }
+    },
+    {
+      "id": "B-sounds-01-s20",
+      "answer": "hum",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The tune came from Max's nose while he ___ over the puzzle.",
+      "cue_phrase": "from Max's nose",
+      "surface": {
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+      }
+    },
+    {
+      "id": "B-sounds-01-s21",
+      "answer": "hum",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Sam kept both crackers in his mouth and ___ the marching tune.",
+      "cue_phrase": "crackers in his mouth",
+      "surface": {
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+      }
+    },
+    {
+      "id": "B-sounds-01-s22",
+      "answer": "hum",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Without opening her mouth, Ivy started to ___ along with the cello.",
+      "cue_phrase": "Without opening her mouth",
+      "surface": {
+        "giggle": "giggle",
+        "shout": "shout",
+        "hum": "hum",
+        "sigh": "sigh",
+        "whistle": "whistle"
+      }
+    },
+    {
+      "id": "B-sounds-01-s23",
+      "answer": "hum",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Grandad kept his mouth shut and ___ a soft tune.",
+      "cue_phrase": "mouth shut",
+      "surface": {
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+      }
+    },
+    {
+      "id": "B-sounds-01-s24",
+      "answer": "hum",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Bo ___ through his nose whenever the cello tune starts.",
+      "cue_phrase": "through his nose",
+      "surface": {
+        "giggle": "giggles",
+        "shout": "shouts",
+        "hum": "hums",
+        "sigh": "sighs",
+        "whistle": "whistles"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (sigh); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-sounds-01-s25",
+      "answer": "sigh",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Mia ___, sending one slow puff across her homework.",
+      "cue_phrase": "one slow puff",
+      "surface": {
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+      }
+    },
+    {
+      "id": "B-sounds-01-s26",
+      "answer": "sigh",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Raj ___ once, with a heavy whoosh into the chilly hall.",
+      "cue_phrase": "heavy whoosh",
+      "surface": {
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+      }
+    },
+    {
+      "id": "B-sounds-01-s27",
+      "answer": "sigh",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "After missing the bus, Leo ___, fogging the window glass.",
+      "cue_phrase": "fogging the window glass",
+      "surface": {
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+      }
+    },
+    {
+      "id": "B-sounds-01-s28",
+      "answer": "sigh",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Grandma ___, puffing the loose receipt across the suitcase.",
+      "cue_phrase": "puffing the loose receipt",
+      "surface": {
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+      }
+    },
+    {
+      "id": "B-sounds-01-s29",
+      "answer": "sigh",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Seeing ten more sums, Ava ___ and her shoulders sank.",
+      "cue_phrase": "shoulders sank",
+      "surface": {
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+      }
+    },
+    {
+      "id": "B-sounds-01-s30",
+      "answer": "sigh",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "When rain cancelled football, Jay ___ and stared at his boots.",
+      "cue_phrase": "stared at his boots",
+      "surface": {
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+      }
+    },
+    {
+      "id": "B-sounds-01-s31",
+      "answer": "sigh",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The wizard ___, sending a weary whoosh through his moustache.",
+      "cue_phrase": "weary whoosh",
+      "surface": {
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+      }
+    },
+    {
+      "id": "B-sounds-01-s32",
+      "answer": "sigh",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "At the empty cake plate, Noor ___ with a weary whoosh.",
+      "cue_phrase": "empty cake plate",
+      "surface": {
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+      }
+    },
+    {
+      "id": "B-sounds-01-s33",
+      "answer": "whistle",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "With two fingers in his mouth, Kai ___ a shrill tune.",
+      "cue_phrase": "two fingers in his mouth",
+      "surface": {
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+      }
+    },
+    {
+      "id": "B-sounds-01-s34",
+      "answer": "whistle",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Pia learned to ___ a piercing tune through her teeth.",
+      "cue_phrase": "through her teeth",
+      "surface": {
+        "giggle": "giggle",
+        "shout": "shout",
+        "hum": "hum",
+        "sigh": "sigh",
+        "whistle": "whistle"
+      }
+    },
+    {
+      "id": "B-sounds-01-s35",
+      "answer": "whistle",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The dog came running when Sam ___ the sharp call through his teeth.",
+      "cue_phrase": "through his teeth",
+      "surface": {
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+      }
+    },
+    {
+      "id": "B-sounds-01-s36",
+      "answer": "whistle",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Bea ___ a shrill tune through two fingers, and the pony turned.",
+      "cue_phrase": "through two fingers",
+      "surface": {
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+      }
+    },
+    {
+      "id": "B-sounds-01-s37",
+      "answer": "whistle",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The kettle's steam shriek taught Omar to ___ just like it.",
+      "cue_phrase": "steam shriek",
+      "surface": {
+        "giggle": "giggle",
+        "shout": "shout",
+        "hum": "hum",
+        "sigh": "sigh",
+        "whistle": "whistle"
+      }
+    },
+    {
+      "id": "B-sounds-01-s38",
+      "answer": "whistle",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Luca tried to ___ the birdcall through his teeth.",
+      "cue_phrase": "birdcall through his teeth",
+      "surface": {
+        "giggle": "giggle",
+        "shout": "shout",
+        "hum": "hum",
+        "sigh": "sigh",
+        "whistle": "whistle"
+      }
+    },
+    {
+      "id": "B-sounds-01-s39",
+      "answer": "whistle",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Two fingers tucked in, Maya ___ and the shepherd looked over.",
+      "cue_phrase": "Two fingers tucked",
+      "surface": {
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+      }
+    },
+    {
+      "id": "B-sounds-01-s40",
+      "answer": "whistle",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Rin ___ a piercing birdcall whenever the shepherd raises his hand.",
+      "cue_phrase": "piercing birdcall",
+      "surface": {
+        "giggle": "giggles",
+        "shout": "shouts",
+        "hum": "hums",
+        "sigh": "sighs",
+        "whistle": "whistles"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "giggle",
+      "picked": "shout",
+      "line": "A giggle is small and amused. A shout is words sent strongly across a space."
+    },
+    {
+      "answer": "giggle",
+      "picked": "hum",
+      "line": "A giggle comes from finding fun. A hum carries a tune with the mouth shut."
+    },
+    {
+      "answer": "giggle",
+      "picked": "sigh",
+      "line": "A giggle is a small amused sound. A sigh is one slow whoosh when feelings sink."
+    },
+    {
+      "answer": "giggle",
+      "picked": "whistle",
+      "line": "A giggle is amused and tiny. A whistle is a sharp tune made through the mouth."
+    },
+    {
+      "answer": "shout",
+      "picked": "giggle",
+      "line": "A shout sends words far. A giggle is small and amused, not meant to carry."
+    },
+    {
+      "answer": "shout",
+      "picked": "hum",
+      "line": "A shout uses words for others to hear. A hum is a tune with the mouth shut."
+    },
+    {
+      "answer": "shout",
+      "picked": "sigh",
+      "line": "A shout sends words out strongly. A sigh is one slow whoosh, not a message."
+    },
+    {
+      "answer": "shout",
+      "picked": "whistle",
+      "line": "A shout carries words. A whistle carries a sharp tune or call without words."
+    },
+    {
+      "answer": "hum",
+      "picked": "giggle",
+      "line": "A hum is a tune with the mouth shut. A giggle is a small amused sound."
+    },
+    {
+      "answer": "hum",
+      "picked": "shout",
+      "line": "A hum is a quiet tune. A shout is words sent strongly to reach someone."
+    },
+    {
+      "answer": "hum",
+      "picked": "sigh",
+      "line": "A hum keeps a tune going. A sigh is one slow whoosh when feelings drop."
+    },
+    {
+      "answer": "hum",
+      "picked": "whistle",
+      "line": "A hum uses a shut mouth for a tune. A whistle is sharper and comes through the mouth."
+    },
+    {
+      "answer": "sigh",
+      "picked": "giggle",
+      "line": "A sigh is one slow whoosh. A giggle is small and amused."
+    },
+    {
+      "answer": "sigh",
+      "picked": "shout",
+      "line": "A sigh is one slow whoosh. A shout is words sent strongly across a space."
+    },
+    {
+      "answer": "sigh",
+      "picked": "hum",
+      "line": "A sigh is one slow whoosh. A hum is a tune with the mouth shut."
+    },
+    {
+      "answer": "sigh",
+      "picked": "whistle",
+      "line": "A sigh is a slow whoosh. A whistle is a sharp tune or call."
+    },
+    {
+      "answer": "whistle",
+      "picked": "giggle",
+      "line": "A whistle is a sharp tune or call. A giggle is small and amused."
+    },
+    {
+      "answer": "whistle",
+      "picked": "shout",
+      "line": "A whistle carries a sharp tune. A shout carries words."
+    },
+    {
+      "answer": "whistle",
+      "picked": "hum",
+      "line": "A whistle is sharp and mouth-made. A hum is a tune with the mouth shut."
+    },
+    {
+      "answer": "whistle",
+      "picked": "sigh",
+      "line": "A whistle is a sharp tune or call. A sigh is one slow whoosh."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-06T14:52:35+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": "2026-07-07",
+    "scrub_note": "Scrubbed by claude 2026-07-07 (dedicated pre-scrub agent failed twice on output limits): mechanical sweeps (cue hygiene, meta-frames, seasonal, templates, duplicates), all 20 contrast lines read per set, every sentence read for frame sanity, all judge hards fixed and re-judged to zero. Fixes: wave re-pinned to brandish.v.01 + 3 contrasts aligned, hop gloss authored to the one-foot sense the set teaches, pat/nod/wink frames restaged, one dangling pronoun."
+  }
+}

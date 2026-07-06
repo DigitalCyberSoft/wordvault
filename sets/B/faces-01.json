@@ -1,0 +1,829 @@
+{
+  "id": "B-faces-01",
+  "bank": "B",
+  "pos": "verb",
+  "theme": "faces and gestures",
+  "band": 1,
+  "band_override": 1,
+  "computed": {
+    "zipf_min": 3.07,
+    "zipf_mean": 3.43,
+    "tightness": 0.47,
+    "band_suggested": 3,
+    "scored_at": "2026-07-06T18:43:21+00:00"
+  },
+  "words": [
+    {
+      "w": "grin",
+      "synset": "grin.v.01",
+      "gloss_source": "authored",
+      "gloss": "smile widely, showing your teeth",
+      "zipf": 3.59,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "grin",
+        "third": "grins",
+        "past": "grinned",
+        "part": "grinning"
+      },
+      "discriminator": "the big wide smile",
+      "grade": 2
+    },
+    {
+      "w": "frown",
+      "synset": "frown.v.01",
+      "gloss_source": "authored",
+      "gloss": "pull your eyebrows down to show you are not pleased",
+      "zipf": 3.26,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "frown",
+        "third": "frowns",
+        "past": "frowned",
+        "part": "frowning"
+      },
+      "discriminator": "brows down, displeased",
+      "grade": 2
+    },
+    {
+      "w": "wink",
+      "synset": "wink.v.01",
+      "gloss_source": "authored",
+      "gloss": "close one eye quickly as a signal",
+      "zipf": 3.5,
+      "register": "neutral",
+      "senses_at_pos": 4,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "wink",
+        "third": "winks",
+        "past": "winked",
+        "part": "winking"
+      },
+      "discriminator": "one eye closed as a signal",
+      "grade": 2
+    },
+    {
+      "w": "yawn",
+      "synset": "yawn.v.01",
+      "gloss_source": "authored",
+      "gloss": "open your mouth wide and take a big sleepy breath",
+      "zipf": 3.07,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "yawn",
+        "third": "yawns",
+        "past": "yawned",
+        "part": "yawning"
+      },
+      "discriminator": "mouth wide, sleepy breath",
+      "grade": 2
+    },
+    {
+      "w": "nod",
+      "synset": "nod.v.02",
+      "gloss_source": "authored",
+      "gloss": "move your head down and up to say yes",
+      "zipf": 3.74,
+      "register": "neutral",
+      "senses_at_pos": 5,
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-06",
+        "note": "dominant school-context sense confirmed at roster vet"
+      },
+      "forms": {
+        "base": "nod",
+        "third": "nods",
+        "past": "nodded",
+        "part": "nodding"
+      },
+      "discriminator": "head down and up for yes",
+      "grade": 1
+    }
+  ],
+  "sentences": [
+    {
+      "id": "B-faces-01-s01",
+      "answer": "grin",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "When Dad revealed the puppy, Isla ___ from ear to ear.",
+      "cue_phrase": "from ear to ear",
+      "surface": {
+        "grin": "grinned",
+        "frown": "frowned",
+        "wink": "winked",
+        "yawn": "yawned",
+        "nod": "nodded"
+      }
+    },
+    {
+      "id": "B-faces-01-s02",
+      "answer": "grin",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Arlo ___ with a huge, happy beam after scoring the goal.",
+      "cue_phrase": "huge, happy beam",
+      "surface": {
+        "grin": "grinned",
+        "frown": "frowned",
+        "wink": "winked",
+        "yawn": "yawned",
+        "nod": "nodded"
+      }
+    },
+    {
+      "id": "B-faces-01-s03",
+      "answer": "grin",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The surprise cake made Priya ___ with cheek-stretching delight.",
+      "cue_phrase": "cheek-stretching delight",
+      "surface": {
+        "grin": "grin",
+        "frown": "frown",
+        "wink": "wink",
+        "yawn": "yawn",
+        "nod": "nod"
+      }
+    },
+    {
+      "id": "B-faces-01-s04",
+      "answer": "grin",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "A medal on his shirt made Ben ___ until his cheeks ached.",
+      "cue_phrase": "his cheeks ached",
+      "surface": {
+        "grin": "grin",
+        "frown": "frown",
+        "wink": "wink",
+        "yawn": "yawn",
+        "nod": "nod"
+      }
+    },
+    {
+      "id": "B-faces-01-s05",
+      "answer": "grin",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Lila tried to look serious, but the joke made her ___.",
+      "cue_phrase": "tried to look serious",
+      "surface": {
+        "grin": "grin",
+        "frown": "frown",
+        "wink": "wink",
+        "yawn": "yawn",
+        "nod": "nod"
+      }
+    },
+    {
+      "id": "B-faces-01-s06",
+      "answer": "grin",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The magician's joke had Noah ___, with both cheeks lifted.",
+      "cue_phrase": "both cheeks lifted",
+      "surface": {
+        "grin": "grin",
+        "frown": "frown",
+        "wink": "wink",
+        "yawn": "yawn",
+        "nod": "nod"
+      }
+    },
+    {
+      "id": "B-faces-01-s07",
+      "answer": "grin",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "At school photos, Asha ___ in a broad beam for the camera.",
+      "cue_phrase": "broad beam",
+      "surface": {
+        "grin": "grins",
+        "frown": "frowns",
+        "wink": "winks",
+        "yawn": "yawns",
+        "nod": "nods"
+      }
+    },
+    {
+      "id": "B-faces-01-s08",
+      "answer": "grin",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Finding the lost marble made Leo ___ until both cheeks rounded.",
+      "cue_phrase": "both cheeks rounded",
+      "surface": {
+        "grin": "grin",
+        "frown": "frown",
+        "wink": "wink",
+        "yawn": "yawn",
+        "nod": "nod"
+      }
+    },
+    {
+      "id": "B-faces-01-s09",
+      "answer": "frown",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Mina ___, forehead creased, at the spilled paint.",
+      "cue_phrase": "forehead creased",
+      "surface": {
+        "grin": "grinned",
+        "frown": "frowned",
+        "wink": "winked",
+        "yawn": "yawned",
+        "nod": "nodded"
+      }
+    },
+    {
+      "id": "B-faces-01-s10",
+      "answer": "frown",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Ollie ___ with a dark scowl when the tower fell.",
+      "cue_phrase": "dark scowl",
+      "surface": {
+        "grin": "grinned",
+        "frown": "frowned",
+        "wink": "winked",
+        "yawn": "yawned",
+        "nod": "nodded"
+      }
+    },
+    {
+      "id": "B-faces-01-s11",
+      "answer": "frown",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The wrong answer made Max ___, his forehead wrinkling in frustration.",
+      "cue_phrase": "forehead wrinkling",
+      "surface": {
+        "grin": "grin",
+        "frown": "frown",
+        "wink": "wink",
+        "yawn": "yawn",
+        "nod": "nod"
+      }
+    },
+    {
+      "id": "B-faces-01-s12",
+      "answer": "frown",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Rain on the picnic made Nora ___, with folded brows.",
+      "cue_phrase": "folded brows",
+      "surface": {
+        "grin": "grin",
+        "frown": "frown",
+        "wink": "wink",
+        "yawn": "yawn",
+        "nod": "nod"
+      }
+    },
+    {
+      "id": "B-faces-01-s13",
+      "answer": "frown",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The referee cancelled the goal, and Tom's face tightened as he ___.",
+      "cue_phrase": "face tightened",
+      "surface": {
+        "grin": "grinned",
+        "frown": "frowned",
+        "wink": "winked",
+        "yawn": "yawned",
+        "nod": "nodded"
+      }
+    },
+    {
+      "id": "B-faces-01-s14",
+      "answer": "frown",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Seeing extra homework, Ava ___ so hard a wrinkle appeared.",
+      "cue_phrase": "wrinkle appeared",
+      "surface": {
+        "grin": "grinned",
+        "frown": "frowned",
+        "wink": "winked",
+        "yawn": "yawned",
+        "nod": "nodded"
+      }
+    },
+    {
+      "id": "B-faces-01-s15",
+      "answer": "frown",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Tariq ___ beneath a stormy brow whenever his kite breaks.",
+      "cue_phrase": "stormy brow",
+      "surface": {
+        "grin": "grins",
+        "frown": "frowns",
+        "wink": "winks",
+        "yawn": "yawns",
+        "nod": "nods"
+      }
+    },
+    {
+      "id": "B-faces-01-s16",
+      "answer": "frown",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The bitter lemon made Suki ___ before she set it down.",
+      "cue_phrase": "bitter lemon",
+      "surface": {
+        "grin": "grin",
+        "frown": "frown",
+        "wink": "wink",
+        "yawn": "yawn",
+        "nod": "nod"
+      }
+    },
+    {
+      "id": "B-faces-01-s17",
+      "answer": "wink",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Using one lid, Kai ___ at Tara before hiding the card.",
+      "cue_phrase": "Using one lid",
+      "surface": {
+        "grin": "grinned",
+        "frown": "frowned",
+        "wink": "winked",
+        "yawn": "yawned",
+        "nod": "nodded"
+      }
+    },
+    {
+      "id": "B-faces-01-s18",
+      "answer": "wink",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "With one lid, Grandma ___ before passing the secret note.",
+      "cue_phrase": "With one lid",
+      "surface": {
+        "grin": "grinned",
+        "frown": "frowned",
+        "wink": "winked",
+        "yawn": "yawned",
+        "nod": "nodded"
+      }
+    },
+    {
+      "id": "B-faces-01-s19",
+      "answer": "wink",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "During charades, the pirate had to ___ with his only uncovered lid.",
+      "cue_phrase": "only uncovered lid",
+      "surface": {
+        "grin": "grin",
+        "frown": "frown",
+        "wink": "wink",
+        "yawn": "yawn",
+        "nod": "nod"
+      }
+    },
+    {
+      "id": "B-faces-01-s20",
+      "answer": "wink",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Mum's secret plan made her ___ at Jo with one lid only.",
+      "cue_phrase": "one lid only",
+      "surface": {
+        "grin": "grin",
+        "frown": "frown",
+        "wink": "wink",
+        "yawn": "yawn",
+        "nod": "nod"
+      }
+    },
+    {
+      "id": "B-faces-01-s21",
+      "answer": "wink",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Ben kept the hiding place secret, then ___ with a single lid.",
+      "cue_phrase": "a single lid",
+      "surface": {
+        "grin": "grinned",
+        "frown": "frowned",
+        "wink": "winked",
+        "yawn": "yawned",
+        "nod": "nodded"
+      }
+    },
+    {
+      "id": "B-faces-01-s22",
+      "answer": "wink",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Before the surprise came out, Dad ___ at Mia so she would play along.",
+      "cue_phrase": "so she would play along",
+      "surface": {
+        "grin": "grinned",
+        "frown": "frowned",
+        "wink": "winked",
+        "yawn": "yawned",
+        "nod": "nodded"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (nod); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-faces-01-s23",
+      "answer": "wink",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "To warn Sam quietly, Pia had to ___ using just one lid.",
+      "cue_phrase": "using just one lid",
+      "surface": {
+        "grin": "grin",
+        "frown": "frown",
+        "wink": "wink",
+        "yawn": "yawn",
+        "nod": "nod"
+      }
+    },
+    {
+      "id": "B-faces-01-s24",
+      "answer": "wink",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Behind the curtain, Rafi ___ using only a lid at the audience.",
+      "cue_phrase": "using only a lid",
+      "surface": {
+        "grin": "grinned",
+        "frown": "frowned",
+        "wink": "winked",
+        "yawn": "yawned",
+        "nod": "nodded"
+      }
+    },
+    {
+      "id": "B-faces-01-s25",
+      "answer": "yawn",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "After bedtime, Nina ___, making a round O with her lips.",
+      "cue_phrase": "round O",
+      "surface": {
+        "grin": "grinned",
+        "frown": "frowned",
+        "wink": "winked",
+        "yawn": "yawned",
+        "nod": "nodded"
+      }
+    },
+    {
+      "id": "B-faces-01-s26",
+      "answer": "yawn",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Leo ___ so long that his jaw stretched and eyes watered.",
+      "cue_phrase": "jaw stretched",
+      "surface": {
+        "grin": "grinned",
+        "frown": "frowned",
+        "wink": "winked",
+        "yawn": "yawned",
+        "nod": "nodded"
+      }
+    },
+    {
+      "id": "B-faces-01-s27",
+      "answer": "yawn",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The warm bus ride made every player ___ after practice.",
+      "cue_phrase": "every player",
+      "surface": {
+        "grin": "grin",
+        "frown": "frown",
+        "wink": "wink",
+        "yawn": "yawn",
+        "nod": "nod"
+      }
+    },
+    {
+      "id": "B-faces-01-s28",
+      "answer": "yawn",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "During the dull film, Mia had to ___, jaw sagging behind her programme.",
+      "cue_phrase": "jaw sagging",
+      "surface": {
+        "grin": "grin",
+        "frown": "frown",
+        "wink": "wink",
+        "yawn": "yawn",
+        "nod": "nod"
+      }
+    },
+    {
+      "id": "B-faces-01-s29",
+      "answer": "yawn",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "By the campfire's last spark, the tired twins ___ with round lips.",
+      "cue_phrase": "round lips",
+      "surface": {
+        "grin": "grinned",
+        "frown": "frowned",
+        "wink": "winked",
+        "yawn": "yawned",
+        "nod": "nodded"
+      }
+    },
+    {
+      "id": "B-faces-01-s30",
+      "answer": "yawn",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "After three bedtime stories, Sami ___, and his jaw drooped.",
+      "cue_phrase": "jaw drooped",
+      "surface": {
+        "grin": "grinned",
+        "frown": "frowned",
+        "wink": "winked",
+        "yawn": "yawned",
+        "nod": "nodded"
+      }
+    },
+    {
+      "id": "B-faces-01-s31",
+      "answer": "yawn",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "At dawn, the guard ___ with lips forming a silent O.",
+      "cue_phrase": "silent O",
+      "surface": {
+        "grin": "grinned",
+        "frown": "frowned",
+        "wink": "winked",
+        "yawn": "yawned",
+        "nod": "nodded"
+      }
+    },
+    {
+      "id": "B-faces-01-s32",
+      "answer": "yawn",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The long maths test made several pupils ___, jaws drooping in a row.",
+      "cue_phrase": "jaws drooping",
+      "surface": {
+        "grin": "grin",
+        "frown": "frown",
+        "wink": "wink",
+        "yawn": "yawn",
+        "nod": "nod"
+      }
+    },
+    {
+      "id": "B-faces-01-s33",
+      "answer": "nod",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Maya ___ twice, chin down then up, before taking the badge.",
+      "cue_phrase": "chin down then up",
+      "surface": {
+        "grin": "grinned",
+        "frown": "frowned",
+        "wink": "winked",
+        "yawn": "yawned",
+        "nod": "nodded"
+      }
+    },
+    {
+      "id": "B-faces-01-s34",
+      "answer": "nod",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Asked about joining, Omar ___, his chin dipping and rising.",
+      "cue_phrase": "chin dipping and rising",
+      "surface": {
+        "grin": "grinned",
+        "frown": "frowned",
+        "wink": "winked",
+        "yawn": "yawned",
+        "nod": "nodded"
+      }
+    },
+    {
+      "id": "B-faces-01-s35",
+      "answer": "nod",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "When Gran offered more soup, Edie had to ___, chin bobbing.",
+      "cue_phrase": "chin bobbing",
+      "surface": {
+        "grin": "grin",
+        "frown": "frown",
+        "wink": "wink",
+        "yawn": "yawn",
+        "nod": "nod"
+      }
+    },
+    {
+      "id": "B-faces-01-s36",
+      "answer": "nod",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The captain's question made the crew ___ together, chins dipping.",
+      "cue_phrase": "chins dipping",
+      "surface": {
+        "grin": "grin",
+        "frown": "frown",
+        "wink": "wink",
+        "yawn": "yawn",
+        "nod": "nod"
+      }
+    },
+    {
+      "id": "B-faces-01-s37",
+      "answer": "nod",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The teacher asked if Ali understood, and Ali ___, chin dipping once.",
+      "cue_phrase": "asked if Ali understood",
+      "surface": {
+        "grin": "grinned",
+        "frown": "frowned",
+        "wink": "winked",
+        "yawn": "yawned",
+        "nod": "nodded"
+      }
+    },
+    {
+      "id": "B-faces-01-s38",
+      "answer": "nod",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Asked if the water was warm, Bea ___ from across the pool, one quick chin dip.",
+      "cue_phrase": "Asked if the water was warm",
+      "surface": {
+        "grin": "grinned",
+        "frown": "frowned",
+        "wink": "winked",
+        "yawn": "yawned",
+        "nod": "nodded"
+      }
+    },
+    {
+      "id": "B-faces-01-s39",
+      "answer": "nod",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "When Coach asked if they were ready, Luis ___ three times, quick and sure.",
+      "cue_phrase": "asked if they were ready",
+      "surface": {
+        "grin": "grinned",
+        "frown": "frowned",
+        "wink": "winked",
+        "yawn": "yawned",
+        "nod": "nodded"
+      }
+    },
+    {
+      "id": "B-faces-01-s40",
+      "answer": "nod",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "At the vote, Poppy ___, and her chin bounced once.",
+      "cue_phrase": "chin bounced once",
+      "surface": {
+        "grin": "grinned",
+        "frown": "frowned",
+        "wink": "winked",
+        "yawn": "yawned",
+        "nod": "nodded"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "grin",
+      "picked": "frown",
+      "line": "A grin is a big happy face. A frown is an unhappy brow."
+    },
+    {
+      "answer": "grin",
+      "picked": "wink",
+      "line": "A grin uses the whole happy face. A wink uses one lid for a secret hint."
+    },
+    {
+      "answer": "grin",
+      "picked": "yawn",
+      "line": "A grin comes from delight. A yawn comes from tiredness."
+    },
+    {
+      "answer": "grin",
+      "picked": "nod",
+      "line": "A grin is a happy face. A nod is a chin dip for agreement."
+    },
+    {
+      "answer": "frown",
+      "picked": "grin",
+      "line": "A frown has a stormy brow. A grin has a bright, happy face."
+    },
+    {
+      "answer": "frown",
+      "picked": "wink",
+      "line": "A frown shows displeasure. A wink is a one-lid secret hint."
+    },
+    {
+      "answer": "frown",
+      "picked": "yawn",
+      "line": "A frown is unhappy or annoyed. A yawn is tired and jaw-stretchy."
+    },
+    {
+      "answer": "frown",
+      "picked": "nod",
+      "line": "A frown is a cross face. A nod is a chin dip for agreement."
+    },
+    {
+      "answer": "wink",
+      "picked": "grin",
+      "line": "A wink uses one lid for a hint. A grin is a big happy face."
+    },
+    {
+      "answer": "wink",
+      "picked": "frown",
+      "line": "A wink is a one-lid hint. A frown has a stormy brow."
+    },
+    {
+      "answer": "wink",
+      "picked": "yawn",
+      "line": "A wink is a secret one-lid hint. A yawn is a tired jaw stretch."
+    },
+    {
+      "answer": "wink",
+      "picked": "nod",
+      "line": "A wink uses one lid. A nod uses the chin dipping for agreement."
+    },
+    {
+      "answer": "yawn",
+      "picked": "grin",
+      "line": "A yawn is tired and jaw-stretchy. A grin is a happy face."
+    },
+    {
+      "answer": "yawn",
+      "picked": "frown",
+      "line": "A yawn comes from tiredness. A frown comes from displeasure."
+    },
+    {
+      "answer": "yawn",
+      "picked": "wink",
+      "line": "A yawn is a tired jaw stretch. A wink is a one-lid hint."
+    },
+    {
+      "answer": "yawn",
+      "picked": "nod",
+      "line": "A yawn is tired. A nod is a chin dip for agreement."
+    },
+    {
+      "answer": "nod",
+      "picked": "grin",
+      "line": "A nod dips the chin for agreement. A grin is a happy face."
+    },
+    {
+      "answer": "nod",
+      "picked": "frown",
+      "line": "A nod is for agreement. A frown is for displeasure."
+    },
+    {
+      "answer": "nod",
+      "picked": "wink",
+      "line": "A nod uses the chin. A wink uses one lid for a hint."
+    },
+    {
+      "answer": "nod",
+      "picked": "yawn",
+      "line": "A nod agrees with a chin dip. A yawn shows tiredness."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-06T14:34:41+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": "2026-07-07",
+    "scrub_note": "Scrubbed by claude 2026-07-07 (dedicated pre-scrub agent failed twice on output limits): mechanical sweeps (cue hygiene, meta-frames, seasonal, templates, duplicates), all 20 contrast lines read per set, every sentence read for frame sanity, all judge hards fixed and re-judged to zero. Fixes: wave re-pinned to brandish.v.01 + 3 contrasts aligned, hop gloss authored to the one-foot sense the set teaches, pat/nod/wink frames restaged, one dangling pronoun."
+  }
+}

@@ -1,0 +1,962 @@
+{
+  "id": "A-character-01",
+  "bank": "A",
+  "pos": "adjective",
+  "theme": "character under pressure",
+  "band": 4,
+  "band_override": 4,
+  "computed": {
+    "zipf_min": 3.21,
+    "zipf_mean": 3.7,
+    "tightness": null,
+    "band_suggested": 3,
+    "scored_at": "2026-07-06T18:43:21+00:00"
+  },
+  "words": [
+    {
+      "w": "reluctant",
+      "synset": "loath.s.01",
+      "gloss_source": "authored",
+      "gloss": "not wanting to do something, holding back even if you end up doing it",
+      "zipf": 3.81,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "reluctant"
+      },
+      "discriminator": "does not want to do it",
+      "grade": 5
+    },
+    {
+      "w": "wary",
+      "synset": "wary.a.01",
+      "gloss_source": "authored",
+      "gloss": "careful and alert in case of danger or a trick",
+      "zipf": 3.57,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "wary"
+      },
+      "discriminator": "watching for danger or a trick",
+      "grade": 4
+    },
+    {
+      "w": "defiant",
+      "synset": "defiant.a.01",
+      "gloss_source": "wordnet",
+      "gloss": "boldly resisting authority or an opposing force",
+      "zipf": 3.21,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "defiant"
+      },
+      "discriminator": "openly refuses to obey",
+      "grade": 6
+    },
+    {
+      "w": "earnest",
+      "synset": "earnest.s.01",
+      "gloss_source": "authored",
+      "gloss": "completely serious and sincere, meaning every word",
+      "zipf": 3.66,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "earnest"
+      },
+      "discriminator": "seriously means it",
+      "grade": 6
+    },
+    {
+      "w": "composed",
+      "synset": "composed.a.01",
+      "gloss_source": "authored",
+      "gloss": "staying calm and steady when everything goes wrong",
+      "zipf": 4.27,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "composed"
+      },
+      "discriminator": "calm when it all goes wrong",
+      "grade": 6
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-character-01-s01",
+      "answer": "reluctant",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Mila was ___ before singing, and needed three gentle invitations.",
+      "cue_phrase": "needed three gentle invitations",
+      "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+      }
+    },
+    {
+      "id": "A-character-01-s02",
+      "answer": "reluctant",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Sam felt ___ about the dance, so his sister coaxed him twice.",
+      "cue_phrase": "coaxed him twice",
+      "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (wary); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-character-01-s03",
+      "answer": "reluctant",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "At bedtime, Nia stood ___ by the cold bath, then climbed in groaning.",
+      "cue_phrase": "then climbed in groaning",
+      "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+      }
+    },
+    {
+      "id": "A-character-01-s04",
+      "answer": "reluctant",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Leo stayed ___ at the stage steps until his friends cheered softly.",
+      "cue_phrase": "friends cheered softly",
+      "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+      }
+    },
+    {
+      "id": "A-character-01-s05",
+      "answer": "reluctant",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The goat was ___ near the puddle, nibbling grass rather than crossing.",
+      "cue_phrase": "rather than crossing",
+      "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (wary); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-character-01-s06",
+      "answer": "reluctant",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Tom was ___ about the costume, leaving it folded while others dressed.",
+      "cue_phrase": "leaving it folded",
+      "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (defiant, wary); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-character-01-s07",
+      "answer": "reluctant",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The kitten seemed ___ about the paper crown, wearing it only after much coaxing.",
+      "cue_phrase": "only after much coaxing",
+      "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: wearing it only after much coaxing = holds back then complies, the gloss's own clause; wary needs a staged danger or trick",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-character-01-s08",
+      "answer": "reluctant",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Asha became ___ when asked to read, whispering, \"Maybe later, please.\"",
+      "cue_phrase": "Maybe later, please",
+      "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+      }
+    },
+    {
+      "id": "A-character-01-s09",
+      "answer": "wary",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Rafi was ___ on the old bridge, watching for cracked planks.",
+      "cue_phrase": "watching for cracked planks",
+      "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+      }
+    },
+    {
+      "id": "A-character-01-s10",
+      "answer": "wary",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The hen grew ___ near the fox, keeping one eye on him.",
+      "cue_phrase": "one eye on him",
+      "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+      }
+    },
+    {
+      "id": "A-character-01-s11",
+      "answer": "wary",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Mina was ___ in the cave after stones clattered ahead.",
+      "cue_phrase": "stones clattered ahead",
+      "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+      }
+    },
+    {
+      "id": "A-character-01-s12",
+      "answer": "wary",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Pip felt ___ beside the smiling pirate, whose coin kept vanishing.",
+      "cue_phrase": "coin kept vanishing",
+      "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+      }
+    },
+    {
+      "id": "A-character-01-s13",
+      "answer": "wary",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "On the frozen pond, Idris was ___ and tested each step first.",
+      "cue_phrase": "tested each step first",
+      "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (reluctant); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-character-01-s14",
+      "answer": "wary",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The deer was ___ at the clearing, ears turning toward every twig.",
+      "cue_phrase": "ears turning toward",
+      "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+      }
+    },
+    {
+      "id": "A-character-01-s15",
+      "answer": "wary",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Tala stayed ___ when the stranger offered sweets, watching his hands.",
+      "cue_phrase": "watching his hands",
+      "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (reluctant); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-character-01-s16",
+      "answer": "wary",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "The pony looked ___ at the rattling gate and sniffed before passing.",
+      "cue_phrase": "sniffed before passing",
+      "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (reluctant); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-character-01-s17",
+      "answer": "defiant",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Kira was ___ when the captain ordered silence, shouting, \"No, listen!\"",
+      "cue_phrase": "shouting, \"No, listen!\"",
+      "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+      }
+    },
+    {
+      "id": "A-character-01-s18",
+      "answer": "defiant",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Ben was ___ after the teacher's order, crossing his arms and refusing.",
+      "cue_phrase": "crossing his arms",
+      "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (reluctant); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-character-01-s19",
+      "answer": "defiant",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The dragon stayed ___ as the king commanded kneeling; smoke spelled NO.",
+      "cue_phrase": "smoke spelled NO",
+      "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (reluctant); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-character-01-s20",
+      "answer": "defiant",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Lena remained ___ during detention, tapping after each warning to stop.",
+      "cue_phrase": "after each warning",
+      "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (reluctant); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-character-01-s21",
+      "answer": "defiant",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The robot became ___, rolling past the red line despite Dad's command.",
+      "cue_phrase": "despite Dad's command",
+      "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+      }
+    },
+    {
+      "id": "A-character-01-s22",
+      "answer": "defiant",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Juno stayed ___, writing her name after the guard said stop.",
+      "cue_phrase": "guard said stop",
+      "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+      }
+    },
+    {
+      "id": "A-character-01-s23",
+      "answer": "defiant",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The prince sounded ___, telling the giant, \"I will not bow.\"",
+      "cue_phrase": "will not bow",
+      "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (composed, earnest); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-character-01-s24",
+      "answer": "defiant",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Mara was ___ at clean-up time, kicking blocks after Dad said no.",
+      "cue_phrase": "Dad said no",
+      "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (reluctant); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-character-01-s25",
+      "answer": "earnest",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Omar sounded ___, saying, \"I promise I broke it by accident.\"",
+      "cue_phrase": "I promise",
+      "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+      }
+    },
+    {
+      "id": "A-character-01-s26",
+      "answer": "earnest",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The fairy looked ___ as she begged, \"Please save my tiny forest.\"",
+      "cue_phrase": "Please save my",
+      "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+      }
+    },
+    {
+      "id": "A-character-01-s27",
+      "answer": "earnest",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Nell was ___ in her apology, fixing the vase without being asked.",
+      "cue_phrase": "without being asked",
+      "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+      }
+    },
+    {
+      "id": "A-character-01-s28",
+      "answer": "earnest",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Adi was ___ during the promise, looking into Gran's eyes without giggling.",
+      "cue_phrase": "without giggling",
+      "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (composed); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-character-01-s29",
+      "answer": "earnest",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The knight was ___, offering his only blanket to prove his apology.",
+      "cue_phrase": "only blanket",
+      "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+      }
+    },
+    {
+      "id": "A-character-01-s30",
+      "answer": "earnest",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Suki's note felt ___ because she rewrote it until it sounded true.",
+      "cue_phrase": "sounded true",
+      "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+      }
+    },
+    {
+      "id": "A-character-01-s31",
+      "answer": "earnest",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Finn was ___ at the club table, asking how to help before playing.",
+      "cue_phrase": "asking how to help",
+      "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+      }
+    },
+    {
+      "id": "A-character-01-s32",
+      "answer": "earnest",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "The mermaid seemed ___, handing over her pearl as a promise.",
+      "cue_phrase": "as a promise",
+      "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (reluctant); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-character-01-s33",
+      "answer": "composed",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Nora was ___ as plates crashed, speaking softly and sweeping glass.",
+      "cue_phrase": "speaking softly",
+      "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (wary); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-character-01-s34",
+      "answer": "composed",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The captain remained ___ during the storm, giving orders in a level voice.",
+      "cue_phrase": "level voice",
+      "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (wary); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-character-01-s35",
+      "answer": "composed",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "When the cake fell, Priya was ___ and cut neat squares anyway.",
+      "cue_phrase": "cut neat squares",
+      "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (defiant, reluctant); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-character-01-s36",
+      "answer": "composed",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The goalie felt ___ after the miss, breathing slowly before the next kick.",
+      "cue_phrase": "breathing slowly",
+      "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (wary); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-character-01-s37",
+      "answer": "composed",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The microphone squealed, but Hana was ___ and began her poem again.",
+      "cue_phrase": "began her poem again",
+      "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (defiant); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-character-01-s38",
+      "answer": "composed",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The test pages mixed up, yet Yusuf was ___ and sorted them quietly.",
+      "cue_phrase": "sorted them quietly",
+      "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+      }
+    },
+    {
+      "id": "A-character-01-s39",
+      "answer": "composed",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The baby cried, milk spilled, and Auntie was ___ with both hands busy.",
+      "cue_phrase": "both hands busy",
+      "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+      }
+    },
+    {
+      "id": "A-character-01-s40",
+      "answer": "composed",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "After the costume ripped, Ezra was ___ and tied a neat sash.",
+      "cue_phrase": "tied a neat sash",
+      "surface": {
+        "reluctant": "reluctant",
+        "wary": "wary",
+        "defiant": "defiant",
+        "earnest": "earnest",
+        "composed": "composed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (defiant); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "reluctant",
+      "picked": "wary",
+      "line": "Reluctant holds off because it doesn't want to; wary watches because trouble might be near."
+    },
+    {
+      "answer": "reluctant",
+      "picked": "defiant",
+      "line": "Reluctant may need coaxing; defiant openly says no to being told what to do."
+    },
+    {
+      "answer": "reluctant",
+      "picked": "earnest",
+      "line": "Reluctant drags its feet; earnest shows a true, deep feeling."
+    },
+    {
+      "answer": "reluctant",
+      "picked": "composed",
+      "line": "Reluctant shows unwillingness; composed stays cool when a mess happens."
+    },
+    {
+      "answer": "wary",
+      "picked": "reluctant",
+      "line": "Wary keeps watch for trouble; reluctant simply doesn't want to start."
+    },
+    {
+      "answer": "wary",
+      "picked": "defiant",
+      "line": "Wary checks for risk; defiant refuses a command out in the open."
+    },
+    {
+      "answer": "wary",
+      "picked": "earnest",
+      "line": "Wary is on guard; earnest speaks or acts with true feeling."
+    },
+    {
+      "answer": "wary",
+      "picked": "composed",
+      "line": "Wary scans for trouble; composed stays cool while trouble is already happening."
+    },
+    {
+      "answer": "defiant",
+      "picked": "reluctant",
+      "line": "Defiant openly refuses; reluctant may dislike the task but can still be coaxed."
+    },
+    {
+      "answer": "defiant",
+      "picked": "wary",
+      "line": "Defiant says no to orders; wary watches for possible trouble."
+    },
+    {
+      "answer": "defiant",
+      "picked": "earnest",
+      "line": "Defiant challenges a command; earnest shows real belief or feeling."
+    },
+    {
+      "answer": "defiant",
+      "picked": "composed",
+      "line": "Defiant pushes against being told; composed keeps cool under pressure."
+    },
+    {
+      "answer": "earnest",
+      "picked": "reluctant",
+      "line": "Earnest truly means it; reluctant is unsure or unwilling to begin."
+    },
+    {
+      "answer": "earnest",
+      "picked": "wary",
+      "line": "Earnest is heartfelt; wary is watchful for trouble."
+    },
+    {
+      "answer": "earnest",
+      "picked": "defiant",
+      "line": "Earnest speaks from true feeling; defiant openly refuses to obey."
+    },
+    {
+      "answer": "earnest",
+      "picked": "composed",
+      "line": "Earnest is heartfelt; composed is cool and controlled during a mess."
+    },
+    {
+      "answer": "composed",
+      "picked": "reluctant",
+      "line": "Composed stays cool under pressure; reluctant hangs back from a task."
+    },
+    {
+      "answer": "composed",
+      "picked": "wary",
+      "line": "Composed stays cool in a mess; wary keeps watch for trouble before it hits."
+    },
+    {
+      "answer": "composed",
+      "picked": "defiant",
+      "line": "Composed keeps control; defiant openly refuses a command."
+    },
+    {
+      "answer": "composed",
+      "picked": "earnest",
+      "line": "Composed stays cool during pressure; earnest shows true feeling."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-06T14:16:24+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": "2026-07-07",
+    "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+  }
+}

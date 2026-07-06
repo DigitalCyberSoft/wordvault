@@ -1,0 +1,833 @@
+{
+  "id": "B-hands-01",
+  "bank": "B",
+  "pos": "verb",
+  "theme": "things hands do",
+  "band": 1,
+  "band_override": 1,
+  "computed": {
+    "zipf_min": 3.54,
+    "zipf_mean": 4.1,
+    "tightness": 0.232,
+    "band_suggested": 2,
+    "scored_at": "2026-07-06T18:43:21+00:00"
+  },
+  "words": [
+    {
+      "w": "grab",
+      "synset": "grab.v.05",
+      "gloss_source": "wordnet",
+      "gloss": "take or grasp suddenly",
+      "zipf": 4.52,
+      "register": "neutral",
+      "senses_at_pos": 6,
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-06",
+        "note": "dominant school-context sense confirmed at roster vet"
+      },
+      "forms": {
+        "base": "grab",
+        "third": "grabs",
+        "past": "grabbed",
+        "part": "grabbing"
+      },
+      "discriminator": "fingers close round it and take it fast",
+      "grade": 1
+    },
+    {
+      "w": "pat",
+      "synset": "dab.v.02",
+      "gloss_source": "authored",
+      "gloss": "touch lightly and gently with a flat hand",
+      "zipf": 4.24,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "pat",
+        "third": "pats",
+        "past": "patted",
+        "part": "patting"
+      },
+      "discriminator": "gentle flat-hand taps",
+      "grade": 1
+    },
+    {
+      "w": "poke",
+      "synset": "jab.v.01",
+      "gloss_source": "authored",
+      "gloss": "push at something quickly with a finger or a point",
+      "zipf": 3.6,
+      "register": "neutral",
+      "senses_at_pos": 5,
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-06",
+        "note": "dominant school-context sense confirmed at roster vet"
+      },
+      "forms": {
+        "base": "poke",
+        "third": "pokes",
+        "past": "poked",
+        "part": "poking"
+      },
+      "discriminator": "one fingertip pushed in",
+      "grade": 1
+    },
+    {
+      "w": "wave",
+      "synset": "brandish.v.01",
+      "gloss_source": "wordnet",
+      "gloss": "move or swing back and forth",
+      "zipf": 4.62,
+      "register": "neutral",
+      "senses_at_pos": 5,
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-07",
+        "note": "to-and-fro swinging is the dominant school-context sense; re-pin from the narrower signal sense"
+      },
+      "forms": {
+        "base": "wave",
+        "third": "waves",
+        "past": "waved",
+        "part": "waving"
+      },
+      "discriminator": "swings through the air, touches nothing",
+      "grade": 1
+    },
+    {
+      "w": "clap",
+      "synset": "clap.v.04",
+      "gloss_source": "authored",
+      "gloss": "strike your own two hands together",
+      "zipf": 3.54,
+      "register": "neutral",
+      "senses_at_pos": 7,
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-06",
+        "note": "dominant school-context sense confirmed at roster vet"
+      },
+      "forms": {
+        "base": "clap",
+        "third": "claps",
+        "past": "clapped",
+        "part": "clapping"
+      },
+      "discriminator": "your two hands strike each other",
+      "grade": 1
+    }
+  ],
+  "sentences": [
+    {
+      "id": "B-hands-01-s01",
+      "answer": "grab",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Milo ___ the falling cup by its handle before it smashed.",
+      "cue_phrase": "falling cup by its handle",
+      "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+      }
+    },
+    {
+      "id": "B-hands-01-s02",
+      "answer": "grab",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "As the balloon drifted away, Rina ___ its string tight.",
+      "cue_phrase": "its string tight",
+      "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+      }
+    },
+    {
+      "id": "B-hands-01-s03",
+      "answer": "grab",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Dad ___ Sam's sleeve in the crowd so he stayed close.",
+      "cue_phrase": "so he stayed close",
+      "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+      }
+    },
+    {
+      "id": "B-hands-01-s04",
+      "answer": "grab",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Zoe ___ the last biscuit before the dog reached the plate.",
+      "cue_phrase": "before the dog reached",
+      "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+      }
+    },
+    {
+      "id": "B-hands-01-s05",
+      "answer": "grab",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The cookie jar wobbled, so Ben ___ it against his chest.",
+      "cue_phrase": "against his chest",
+      "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+      }
+    },
+    {
+      "id": "B-hands-01-s06",
+      "answer": "grab",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "When the goat nibbled her map, Ella ___ the corner back.",
+      "cue_phrase": "corner back",
+      "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+      }
+    },
+    {
+      "id": "B-hands-01-s07",
+      "answer": "grab",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "When sweets spill, Tia ___ the biggest one first.",
+      "cue_phrase": "biggest one first",
+      "surface": {
+        "grab": "grabs",
+        "pat": "pats",
+        "poke": "pokes",
+        "wave": "waves",
+        "clap": "claps"
+      }
+    },
+    {
+      "id": "B-hands-01-s08",
+      "answer": "grab",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "The wind made Oli ___ his hat before it flew off.",
+      "cue_phrase": "before it flew off",
+      "surface": {
+        "grab": "grab",
+        "pat": "pat",
+        "poke": "poke",
+        "wave": "wave",
+        "clap": "clap"
+      }
+    },
+    {
+      "id": "B-hands-01-s09",
+      "answer": "pat",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The nurse ___ the puppy's head with a soft open palm.",
+      "cue_phrase": "soft open palm",
+      "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+      }
+    },
+    {
+      "id": "B-hands-01-s10",
+      "answer": "pat",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Gran ___ the sofa cushion in small kind taps.",
+      "cue_phrase": "small kind taps",
+      "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+      }
+    },
+    {
+      "id": "B-hands-01-s11",
+      "answer": "pat",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "After the thunder, Mina ___ the dog's side until its tail wagged.",
+      "cue_phrase": "until its tail wagged",
+      "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+      }
+    },
+    {
+      "id": "B-hands-01-s12",
+      "answer": "pat",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The teacher ___ the clay lid to settle it without denting the pot.",
+      "cue_phrase": "without denting the pot",
+      "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+      }
+    },
+    {
+      "id": "B-hands-01-s13",
+      "answer": "pat",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The shy pony stayed calm as Arlo ___ its neck.",
+      "cue_phrase": "stayed calm",
+      "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+      }
+    },
+    {
+      "id": "B-hands-01-s14",
+      "answer": "pat",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The sleeping cat kept purring while Nia ___ its fur.",
+      "cue_phrase": "kept purring",
+      "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+      }
+    },
+    {
+      "id": "B-hands-01-s15",
+      "answer": "pat",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Please ___ the seed soil until it sits smooth.",
+      "cue_phrase": "until it sits smooth",
+      "surface": {
+        "grab": "grab",
+        "pat": "pat",
+        "poke": "poke",
+        "wave": "wave",
+        "clap": "clap"
+      }
+    },
+    {
+      "id": "B-hands-01-s16",
+      "answer": "pat",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "To calm the rabbit, Sol tried to ___ its back softly.",
+      "cue_phrase": "To calm the rabbit",
+      "surface": {
+        "grab": "grab",
+        "pat": "pat",
+        "poke": "poke",
+        "wave": "wave",
+        "clap": "clap"
+      }
+    },
+    {
+      "id": "B-hands-01-s17",
+      "answer": "poke",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Lina ___ the jelly with one small tip, making a dent.",
+      "cue_phrase": "one small tip",
+      "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+      }
+    },
+    {
+      "id": "B-hands-01-s18",
+      "answer": "poke",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Raj ___ the doorbell with a single knuckle.",
+      "cue_phrase": "single knuckle",
+      "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+      }
+    },
+    {
+      "id": "B-hands-01-s19",
+      "answer": "poke",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The crab hid, so Eva ___ the sand hole with a twig.",
+      "cue_phrase": "with a twig",
+      "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+      }
+    },
+    {
+      "id": "B-hands-01-s20",
+      "answer": "poke",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "To test the cake, Niko ___ the middle with a skewer.",
+      "cue_phrase": "with a skewer",
+      "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+      }
+    },
+    {
+      "id": "B-hands-01-s21",
+      "answer": "poke",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The bubble burst when Mo ___ it with his pencil.",
+      "cue_phrase": "bubble burst",
+      "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+      }
+    },
+    {
+      "id": "B-hands-01-s22",
+      "answer": "poke",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The lift arrived after Sima ___ the tiny button.",
+      "cue_phrase": "tiny button",
+      "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+      }
+    },
+    {
+      "id": "B-hands-01-s23",
+      "answer": "poke",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "Please do not ___ the sleeping bear in the ribs.",
+      "cue_phrase": "in the ribs",
+      "surface": {
+        "grab": "grab",
+        "pat": "pat",
+        "poke": "poke",
+        "wave": "wave",
+        "clap": "clap"
+      }
+    },
+    {
+      "id": "B-hands-01-s24",
+      "answer": "poke",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The map tore when Kavi ___ it with a sharp stick.",
+      "cue_phrase": "sharp stick",
+      "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+      }
+    },
+    {
+      "id": "B-hands-01-s25",
+      "answer": "wave",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Maya ___ her arm high for the ferry crew on deck.",
+      "cue_phrase": "arm high for",
+      "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+      }
+    },
+    {
+      "id": "B-hands-01-s26",
+      "answer": "wave",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Luca ___ his scarf high, and the boat captain nodded.",
+      "cue_phrase": "boat captain nodded",
+      "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+      }
+    },
+    {
+      "id": "B-hands-01-s27",
+      "answer": "wave",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "When the school bus left, Asha ___ her arm until it turned.",
+      "cue_phrase": "school bus left",
+      "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+      }
+    },
+    {
+      "id": "B-hands-01-s28",
+      "answer": "wave",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "At the parade, Nia ___ a flag so her brother spotted her.",
+      "cue_phrase": "brother spotted her",
+      "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+      }
+    },
+    {
+      "id": "B-hands-01-s29",
+      "answer": "wave",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The lost hiker ___ a bright sleeve until the rescue team looked up.",
+      "cue_phrase": "team looked up",
+      "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+      }
+    },
+    {
+      "id": "B-hands-01-s30",
+      "answer": "wave",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Across the river, Ben ___ his cap, and Grandma smiled back.",
+      "cue_phrase": "Grandma smiled back",
+      "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+      }
+    },
+    {
+      "id": "B-hands-01-s31",
+      "answer": "wave",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The queen ___ her arm from the balcony while the crowd cheered below.",
+      "cue_phrase": "from the balcony",
+      "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+      }
+    },
+    {
+      "id": "B-hands-01-s32",
+      "answer": "wave",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "To greet the dragon, Pip had to ___ a white cloth above his head.",
+      "cue_phrase": "above his head",
+      "surface": {
+        "grab": "grab",
+        "pat": "pat",
+        "poke": "poke",
+        "wave": "wave",
+        "clap": "clap"
+      }
+    },
+    {
+      "id": "B-hands-01-s33",
+      "answer": "clap",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "At the finale, Mira ___ her palms, making a sharp smack.",
+      "cue_phrase": "sharp smack",
+      "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+      }
+    },
+    {
+      "id": "B-hands-01-s34",
+      "answer": "clap",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Balloons popped as Omar ___ his palms in loud beats.",
+      "cue_phrase": "loud beats",
+      "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+      }
+    },
+    {
+      "id": "B-hands-01-s35",
+      "answer": "clap",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The audience ___ their palms when the little actors bowed on stage.",
+      "cue_phrase": "actors bowed on stage",
+      "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+      }
+    },
+    {
+      "id": "B-hands-01-s36",
+      "answer": "clap",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "At assembly, everyone ___ their palms for the team until the hall echoed.",
+      "cue_phrase": "hall echoed",
+      "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+      }
+    },
+    {
+      "id": "B-hands-01-s37",
+      "answer": "clap",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The magic spell worked only after Zoe ___ three times, palm against palm.",
+      "cue_phrase": "palm against palm",
+      "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+      }
+    },
+    {
+      "id": "B-hands-01-s38",
+      "answer": "clap",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The baby laughed at the loud smack when Dad ___ his palms.",
+      "cue_phrase": "loud smack",
+      "surface": {
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
+      }
+    },
+    {
+      "id": "B-hands-01-s39",
+      "answer": "clap",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Please ___ palm against palm with the beat.",
+      "cue_phrase": "palm against palm",
+      "surface": {
+        "grab": "grab",
+        "pat": "pat",
+        "poke": "poke",
+        "wave": "wave",
+        "clap": "clap"
+      }
+    },
+    {
+      "id": "B-hands-01-s40",
+      "answer": "clap",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The coach made us ___ palm against palm before the cheer.",
+      "cue_phrase": "before the cheer",
+      "surface": {
+        "grab": "grab",
+        "pat": "pat",
+        "poke": "poke",
+        "wave": "wave",
+        "clap": "clap"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "grab",
+      "picked": "pat",
+      "line": "Grab closes fingers round an item fast. Pat uses soft palm taps without carrying it off."
+    },
+    {
+      "answer": "grab",
+      "picked": "poke",
+      "line": "Grab gets hold of an item. Poke jabs one small spot and does not carry it away."
+    },
+    {
+      "answer": "grab",
+      "picked": "wave",
+      "line": "Grab closes on an item. Wave swings through the air, touching nothing."
+    },
+    {
+      "answer": "grab",
+      "picked": "clap",
+      "line": "Grab gets hold of one item. Clap makes a sound by bringing palms into contact."
+    },
+    {
+      "answer": "pat",
+      "picked": "grab",
+      "line": "Pat is soft palm tapping. Grab closes fingers round an item and holds it."
+    },
+    {
+      "answer": "pat",
+      "picked": "poke",
+      "line": "Pat uses a broad, soft palm. Poke uses one small tip on one spot."
+    },
+    {
+      "answer": "pat",
+      "picked": "wave",
+      "line": "Pat makes soft contact on a surface. Wave is shown from a distance without contact."
+    },
+    {
+      "answer": "pat",
+      "picked": "clap",
+      "line": "Pat is quiet, soft tapping. Clap is louder palm-to-palm sound, often for cheering."
+    },
+    {
+      "answer": "poke",
+      "picked": "grab",
+      "line": "Poke jabs one small spot. Grab closes round an item and holds it."
+    },
+    {
+      "answer": "poke",
+      "picked": "pat",
+      "line": "Poke uses one small tip. Pat uses a soft palm over a wider place."
+    },
+    {
+      "answer": "poke",
+      "picked": "wave",
+      "line": "Poke presses into one spot. Wave happens where nothing is contacted."
+    },
+    {
+      "answer": "poke",
+      "picked": "clap",
+      "line": "Poke jabs one spot. Clap brings palms into contact to make a sound."
+    },
+    {
+      "answer": "wave",
+      "picked": "grab",
+      "line": "Wave swings back and forth touching nothing. Grab closes on an item and holds it."
+    },
+    {
+      "answer": "wave",
+      "picked": "pat",
+      "line": "Wave touches nothing. Pat uses soft palm contact on a surface."
+    },
+    {
+      "answer": "wave",
+      "picked": "poke",
+      "line": "Wave is seen from away. Poke jabs one small spot with a tip."
+    },
+    {
+      "answer": "wave",
+      "picked": "clap",
+      "line": "Wave is a silent sign through space. Clap makes a palm-to-palm sound."
+    },
+    {
+      "answer": "clap",
+      "picked": "grab",
+      "line": "Clap makes a sound with palms. Grab closes round an item and holds it."
+    },
+    {
+      "answer": "clap",
+      "picked": "pat",
+      "line": "Clap is louder palm-to-palm sound. Pat is soft tapping on another surface."
+    },
+    {
+      "answer": "clap",
+      "picked": "poke",
+      "line": "Clap uses palms meeting for sound. Poke jabs one small spot with a tip."
+    },
+    {
+      "answer": "clap",
+      "picked": "wave",
+      "line": "Clap makes a sound with palms. Wave swings through the air and touches nothing."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-06T14:40:52+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": "2026-07-07",
+    "scrub_note": "Scrubbed by claude 2026-07-07 (dedicated pre-scrub agent failed twice on output limits): mechanical sweeps (cue hygiene, meta-frames, seasonal, templates, duplicates), all 20 contrast lines read per set, every sentence read for frame sanity, all judge hards fixed and re-judged to zero. Fixes: wave re-pinned to brandish.v.01 + 3 contrasts aligned, hop gloss authored to the one-foot sense the set teaches, pat/nod/wink frames restaged, one dangling pronoun."
+  }
+}
