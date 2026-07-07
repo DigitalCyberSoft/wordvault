@@ -9,6 +9,11 @@
   'use strict';
   var C = window.Core;
   var CONTENT = window.Content;
+  // the holo vault renderer; a no-op stand-in keeps every call site safe if
+  // game-fx.js is missing or WebGL never comes up (the SVG vault then renders)
+  var noop = function () {};
+  var FX = window.FX || { supported: function () { return false; }, mounted: function () { return false; },
+                          mount: function () { return false; }, unmount: noop, set: noop, pulse: noop };
 
   function el(id) { return document.getElementById(id); }
   function show(id) { el(id).classList.add('show'); }
@@ -66,7 +71,10 @@
     get encounter() { return jsonGet('wordvault.encounter', null); },
     set encounter(v) { if (v) lsSet('wordvault.encounter', JSON.stringify(v)); else lsDel('wordvault.encounter'); },
     get capLevel() { var v = parseInt(lsGet('wordvault.cap'), 10); return (isFinite(v) && v >= 1) ? v : 0; },
-    set capLevel(v) { lsSet('wordvault.cap', v); }
+    set capLevel(v) { lsSet('wordvault.cap', v); },
+    // holo vault preference; a display setting like mute, so it survives New Game
+    get fxWanted() { return lsGet('wordvault.fx') !== 'off'; },
+    set fxWanted(v) { lsSet('wordvault.fx', v ? 'on' : 'off'); }
   };
 
   // ---- audio ----
@@ -226,6 +234,7 @@
     });
     renderPins();
     renderDoor(false);
+    FX.pulse('boot');
     el('slip-text').textContent = '';
     renderTilesBlank();
     show('ready-overlay');
@@ -301,8 +310,11 @@
       lamps[j].classList.toggle('on', j < S.enc.misses);
     }
     if (S.enc.misses === 0) el('vault').classList.remove('alarm');
+    FX.set({ need: S.enc.need, seated: S.enc.correctInRun, misses: S.enc.misses });
   }
   function springPins() {
+    FX.pulse('spring');
+    FX.set({ seated: 0 });
     var pins = el('mech').querySelectorAll('.pinstack');
     for (var i = 0; i < pins.length; i++) {
       if (pins[i].classList.contains('seated')) pins[i].classList.add('spring');
@@ -315,6 +327,7 @@
   function renderDoor(open) {
     if (!open) el('vault').classList.remove('unbolted');
     el('vault').classList.toggle('open', !!open);
+    FX.set({ door: !!open });
   }
   // juice: the dial accumulates a quarter-turn per seated pin (whole turns on
   // the crack), and the mech panel takes a 2px thunk on every seat. The turn
@@ -323,6 +336,7 @@
   function dialTurn(quarters) {
     dialTurns += quarters;
     el('dial').style.setProperty('--turns', dialTurns);
+    FX.pulse('dial', quarters);
   }
   function mechThunk() {
     var m = el('mech');
@@ -334,6 +348,7 @@
   // swings and the interior light blooms
   function openVault(cb) {
     el('vault').classList.add('unbolted');
+    FX.pulse('open');
     Snd.relock();
     dialTurn(8);
     afterMs(680, function () {
@@ -435,8 +450,11 @@
             el('stage').classList.remove('dimmed');
             if (res.state === 'miss') showMissCard(sentence, word, true);
             else if (res.state === 'exhausted') {
-              // third lamp is lit: ring the klaxon, then the card
+              // light the third lamp NOW (renderPins otherwise waits for the
+              // next ready screen), then ring the klaxon and show the card
+              renderPins();
               el('vault').classList.add('alarm');
+              FX.pulse('alarm');
               Snd.alarm();
               afterMs(750, function () { showMissCard(sentence, word, false); });
             }
@@ -681,6 +699,7 @@
     if (cos.skin) cls.push('skin-' + cos.skin);
     if (cos.pins) cls.push('pins-' + cos.pins);
     document.body.className = cls.join(' ');
+    FX.set({ cosmetic: cos }); // earned skins recolour the hologram too
   }
   function toggleCosmetic(cosmetic) {
     var cos = LS.cosmetic;
@@ -739,6 +758,9 @@
     el('set-sound-val').classList.toggle('off', LS.muted);
     el('set-cap-val').textContent = LS.capLevel ? 'Level ' + LS.capLevel : 'Off';
     el('set-cap-val').classList.toggle('off', !LS.capLevel);
+    var fxv = !FX.supported() ? 'No WebGL' : LS.fxWanted ? 'On' : 'Off';
+    el('set-fx-val').textContent = fxv;
+    el('set-fx-val').classList.toggle('off', fxv !== 'On');
   }
   function wipeProgress() {
     ['coins', 'difficulty', 'bestlevel', 'streak', 'collectibles', 'cosmetic',
@@ -794,7 +816,8 @@
 
   function init() {
     preloadClips();
-    applyCosmetics();
+    if (LS.fxWanted && FX.supported()) FX.mount(el('fx'));
+    applyCosmetics(); // after mount so the hologram picks up worn cosmetics
     refreshHud();
     refreshSettings();
 
@@ -828,6 +851,18 @@
     el('set-cap').addEventListener('click', function () {
       var idx = CAPS.indexOf(LS.capLevel);
       LS.capLevel = CAPS[(idx + 1) % CAPS.length];
+      refreshSettings();
+    });
+    el('set-fx').addEventListener('click', function () {
+      if (!FX.supported()) { refreshSettings(); return; }
+      LS.fxWanted = !LS.fxWanted;
+      if (LS.fxWanted) {
+        FX.mount(el('fx'));
+        FX.set({ cosmetic: LS.cosmetic });
+        if (S && S.enc) renderPins(); // sync a mid-encounter lock state
+      } else {
+        FX.unmount();
+      }
       refreshSettings();
     });
     el('set-newgame').addEventListener('click', function () {

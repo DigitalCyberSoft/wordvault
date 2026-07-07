@@ -36,6 +36,9 @@
     </section>
 
     <section id="vault-wrap">
+      <!-- the holographic vault: game-fx.js draws the whole lock in a shader
+           when WebGL is available; otherwise the SVG below renders as always -->
+      <canvas id="fx" aria-hidden="true"></canvas>
       <svg id="vault" viewBox="0 0 640 420" aria-hidden="true">
         <defs>
           <linearGradient id="brassV" x1="0" y1="0" x2="0" y2="1">
@@ -245,6 +248,7 @@
       <div class="set-list">
         <button class="set-row" id="set-sound"><span>Sound</span><span class="set-val" id="set-sound-val">On</span></button>
         <button class="set-row" id="set-cap"><span>Top level cap <small>(for grown-ups)</small></span><span class="set-val" id="set-cap-val">Off</span></button>
+        <button class="set-row" id="set-fx"><span>Holo vault <small>(needs a capable screen)</small></span><span class="set-val" id="set-fx-val">On</span></button>
         <button class="set-row" id="set-howto"><span>How to play</span><span class="set-val">→</span></button>
         <button class="set-row" id="set-newgame"><span>New game <small>(wipes progress)</small></span><span class="set-val">→</span></button>
       </div>
@@ -255,12 +259,20 @@
   <div class="overlay" id="howto-overlay">
     <div class="card">
       <h2>How to play</h2>
-      <p style="text-align:left;font-weight:600;line-height:1.55">
+      <p class="howto-classic" style="text-align:left;font-weight:600;line-height:1.55">
         Five words are carved on the brass tiles. The paper slip shows a sentence with a hole in it.
         <b>Tap the one word that truly fits.</b> Every correct word seats one tumbler pin —
         seat them all in a row and the vault swings open. Bigger vaults need more pins as you
         level up. One wrong word and all the pins spring back: that run is over, a lamp lights
         on the alarm, and three wrong answers ring the alarm — that safe stays shut for now.
+        Press and hold a tile to peek at what a word means (on lower levels).
+      </p>
+      <p class="howto-holo" style="text-align:left;font-weight:600;line-height:1.55">
+        Five words glow on the holo tiles. The screen shows a sentence with a gap in it.
+        <b>Tap the one word that truly fits.</b> Every correct word charges one energy pin —
+        charge them all in a row and the vault iris spins open. Bigger vaults need more pins as
+        you level up. One wrong word and the charge drains: that run is over, a warning lamp
+        lights, and three wrong answers trip the alarm — that vault stays sealed for now.
         Press and hold a tile to peek at what a word means (on lower levels).
       </p>
       <p><button class="big" id="howto-close">Got it</button></p>
@@ -271,6 +283,7 @@
 
   <script src="game-content.js"></script>
   <script src="game-core.js"></script>
+  <script src="game-fx.js"></script>
   <script src="game-ui.js"></script>
 </body>
 </html>

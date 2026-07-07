@@ -365,6 +365,108 @@ body.pins-copper .pinstack.seated .keypin { fill: url(#copperV); }
 body.pins-copper .pinstack .setline { stroke: #ffc9a3; }
 .shelf h3 button { border: none; background: #fff; border-radius: 999px; padding: 3px 12px; font-family: inherit; font-weight: 700; cursor: pointer; color: var(--brass-dark); margin-left: 8px; font-size: .85rem; }
 
+/* ---- Holo mode: the WebGL vault (game-fx.js) plus a matching future skin ----
+   Everything here is scoped under html.fx, which game-fx.js sets ONLY after a
+   shader actually compiles: a device without WebGL keeps the coherent warm
+   brass look above, never a half-themed mix. Same layout, same motion budget,
+   same no-red-for-wrong rule (the alarm klaxon was already red). */
+#fx { position: absolute; inset: 0; width: 100%; height: 100%; display: none; pointer-events: none; }
+html.fx #fx { display: block; }
+html.fx #vault { display: none; }
+
+html.fx body {
+  --fx-line: rgba(70,230,255,.30);
+  --fx-glow: rgba(70,230,255,.14);
+  --fx-text: #eaf6ff;
+  --fx-bg-tint: #101c33;
+  background-color: #060b16;
+  background-image:
+    repeating-linear-gradient(0deg, rgba(70,230,255,.045) 0 1px, transparent 1px 46px),
+    repeating-linear-gradient(90deg, rgba(70,230,255,.045) 0 1px, transparent 1px 46px),
+    radial-gradient(120% 100% at 50% 0%, var(--fx-bg-tint) 0%, #060b16 64%);
+  color: var(--fx-text);
+}
+/* earned backdrops shift the space, not the wall */
+html.fx body.backdrop-expedition { --fx-bg-tint: #2b2110; --fx-line: rgba(255,196,90,.30); --fx-glow: rgba(255,196,90,.14); }
+html.fx body.backdrop-night { --fx-bg-tint: #221a3f; --fx-line: rgba(150,130,255,.32); --fx-glow: rgba(150,130,255,.15); }
+
+html.fx #hud { background: rgba(7,13,25,.92); border-bottom: 1px solid var(--fx-line); box-shadow: 0 4px 18px rgba(0,0,0,.5); }
+html.fx #hud .stat { background: rgba(70,230,255,.10); box-shadow: inset 0 0 0 1px var(--fx-line); }
+html.fx #hud .stat.coins { background: rgba(240,180,41,.16); box-shadow: inset 0 0 0 1px rgba(240,180,41,.55); }
+html.fx #hud .stat.year { background: rgba(139,123,255,.18); box-shadow: inset 0 0 0 1px rgba(139,123,255,.6); }
+html.fx #hud button.toggle { background: rgba(70,230,255,.12); color: var(--fx-text); box-shadow: inset 0 0 0 1px var(--fx-line); }
+
+/* the slip becomes a holo terminal: same reading surface, light-on-dark */
+html.fx #slip {
+  background: linear-gradient(180deg, #0e1a30 0%, #0b1526 100%);
+  color: var(--fx-text);
+  transform: none; border-radius: 12px;
+  box-shadow: 0 0 0 1px var(--fx-line), 0 0 34px var(--fx-glow), 0 10px 24px rgba(0,0,0,.5), inset 0 0 30px rgba(70,230,255,.05);
+}
+html.fx #slip:before { /* projector bar instead of sticky tape */
+  width: 150px; height: 3px; top: -7px; transform: translateX(-50%);
+  background: linear-gradient(90deg, transparent, rgba(70,230,255,.9), transparent);
+  box-shadow: 0 0 12px rgba(70,230,255,.8);
+}
+html.fx #blank {
+  border-bottom-color: #46e6ff; background: rgba(70,230,255,.08); color: #fff;
+  box-shadow: inset 0 -2px 8px rgba(70,230,255,.25);
+}
+html.fx #blank.filled { background: none; box-shadow: none; }
+
+/* word tiles: engraved brass becomes edge-lit glass */
+html.fx .tile {
+  background: linear-gradient(180deg, rgba(24,44,74,.96) 0%, rgba(11,21,38,.96) 100%);
+  color: #d9f4ff; text-shadow: 0 0 10px rgba(70,230,255,.55);
+  box-shadow: inset 0 0 0 1px var(--fx-line), inset 0 -10px 20px rgba(70,230,255,.07), 0 5px 0 #071626, 0 9px 16px rgba(0,0,0,.5);
+}
+html.fx .tile:hover { filter: brightness(1.25); }
+html.fx .tile.held, html.fx .tile:active { box-shadow: inset 0 0 0 1px var(--fx-line), inset 0 0 22px rgba(70,230,255,.18), 0 1px 0 #071626, 0 2px 5px rgba(0,0,0,.5); }
+html.fx .tile:focus-visible { box-shadow: inset 0 0 0 1px var(--fx-line), 0 5px 0 #071626, 0 0 0 4px #0b1526, 0 0 0 7px #46e6ff; }
+html.fx #tile-ghost { text-shadow: 0 0 14px rgba(70,230,255,.9); }
+
+/* cards and menus: dark glass panels with the same chunky bones */
+html.fx .card {
+  background: linear-gradient(180deg, rgba(14,26,48,.97) 0%, rgba(8,15,28,.98) 100%);
+  border-color: rgba(70,230,255,.55); color: var(--fx-text);
+  box-shadow: 0 0 0 1px var(--fx-line), 0 0 48px var(--fx-glow), var(--shadow);
+}
+html.fx .card h2 { text-shadow: 0 0 16px rgba(70,230,255,.45); }
+html.fx .overlay { background: radial-gradient(125% 90% at 50% 36%, rgba(4,10,22,.45) 0%, rgba(2,5,12,.82) 78%); }
+html.fx .menu-btn { --face: rgba(16,30,54,.95); --edge: #071626; color: var(--fx-text); box-shadow: inset 0 0 0 1px var(--fx-line), 0 5px 0 var(--edge), 0 9px 14px rgba(0,0,0,.5); }
+html.fx .menu-btn.primary { --face: #0e5e74; box-shadow: inset 0 0 0 1px rgba(70,230,255,.6), 0 5px 0 var(--edge), 0 9px 14px rgba(0,0,0,.5); }
+html.fx button.big { --face: #0fa3c4; --edge: #075a70; }
+html.fx button.big.brass { --face: #c98f2d; --edge: #7a5416; }
+html.fx .set-row { background: rgba(14,26,48,.9); border-color: var(--fx-line); color: var(--fx-text); }
+html.fx .set-row .set-val { color: #46e6ff; }
+html.fx .set-row .set-val.off { color: #6f7f93; }
+
+/* gloss cards, chips, badges, popover */
+html.fx .gloss-card { background: rgba(12,22,40,.9); border-color: rgba(70,230,255,.35); }
+html.fx .gloss-card b { color: #7be6ff; }
+html.fx .gloss-card .year-chip { background: rgba(139,123,255,.85); box-shadow: 0 0 10px rgba(139,123,255,.5); }
+html.fx .year-badge { background: rgba(70,230,255,.14); color: var(--fx-text); border-color: #46e6ff; box-shadow: 0 0 18px var(--fx-glow); }
+html.fx #gloss-pop { background: #0e1a30; border-color: #46e6ff; color: var(--fx-text); box-shadow: 0 0 24px var(--fx-glow); }
+html.fx #gloss-pop b { color: #7be6ff; }
+
+/* contrast card: gold stays the truth colour, wrong stays dim, never red */
+html.fx .contrast-cols .right-col { background: rgba(240,180,41,.10); border-color: var(--gold); }
+html.fx .contrast-cols .picked-col { background: rgba(120,134,150,.10); border-color: #55657a; }
+html.fx .contrast-cols .right-col .cword { color: var(--gold); }
+html.fx .contrast-cols h3 { color: #8fa5bd; }
+html.fx .contrast-line { background: rgba(70,230,255,.08); border-color: var(--fx-line); }
+html.fx .cue-line b { background: rgba(240,180,41,.22); }
+html.fx .shelf { background: rgba(12,22,40,.9); border-color: var(--fx-line); }
+html.fx .shelf h3 { color: #7be6ff; }
+html.fx .shelf h3 button { background: rgba(70,230,255,.14); color: #7be6ff; }
+html.fx .shelf .items .slot { background: rgba(70,230,255,.06); box-shadow: inset 0 0 0 1px rgba(70,230,255,.18); }
+html.fx #rotate-note { background: #060b16; }
+
+/* the how-to speaks the player's vault: brass copy or holo copy */
+.howto-holo { display: none; }
+html.fx .howto-holo { display: block; }
+html.fx .howto-classic { display: none; }
+
 /* ---- Portrait nudge: the game is laid out for tablet landscape ---- */
 #rotate-note { display: none; position: fixed; inset: 0; z-index: 200; background: var(--steel-deep); color: #fff; text-align: center; align-items: center; justify-content: center; font-size: 1.3rem; font-weight: 800; padding: 30px; }
 @media (orientation: portrait) and (max-width: 720px) { #rotate-note { display: flex; } }
