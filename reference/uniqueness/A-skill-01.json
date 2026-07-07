@@ -1,0 +1,1146 @@
+{
+  "set_id": "A-skill-01",
+  "sentences": {
+    "A-skill-01-s01": {
+      "text_sha256": "34bdcd5a4d81b093471700bb38c235fe694678ddb5f9cef73b855589694dd611",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "stamina"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "stamina"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "stamina"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:55:18+00:00"
+    },
+    "A-skill-01-s02": {
+      "text_sha256": "d1f3d963b7a5236b22cc833be91b78e513c1e26596e255dec1bf3e843924b50f",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "stamina"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "stamina"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "stamina"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:55:18+00:00"
+    },
+    "A-skill-01-s03": {
+      "text_sha256": "64c1fb75b3fe9734b3c0eeadd7d76bdc9df5b6a648d0f7cbbda343095c34b00d",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "stamina"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "stamina"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "stamina"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:55:18+00:00"
+    },
+    "A-skill-01-s04": {
+      "text_sha256": "c4fbb94439965237320145d8cdb8dac0f1cf7316b4b2e87c5037c607ec29e07b",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "stamina"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "stamina"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "stamina"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:55:18+00:00"
+    },
+    "A-skill-01-s05": {
+      "text_sha256": "ac5c6c873d41bc5aae5da2159d680ab8b11a9343982b0717bbc2a587e5c4b406",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "stamina"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "stamina"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "stamina"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:55:18+00:00"
+    },
+    "A-skill-01-s06": {
+      "text_sha256": "aea8cc9d59ee839e1b67d1dc5d5a66b9551945492192037727c0cf9c308f6b70",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "stamina"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "stamina"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "stamina"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:55:18+00:00"
+    },
+    "A-skill-01-s07": {
+      "text_sha256": "43e4c37a535ef52df39113dc821b8415bf292b1b0079488fd02f9d44887c079b",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "stamina"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "stamina"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "stamina"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:55:18+00:00"
+    },
+    "A-skill-01-s08": {
+      "text_sha256": "65b24daf98e16d36e7d7644ecdfce7da8a7c184e42b7ec14e8a8b105bc471144",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "stamina"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "stamina"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "stamina"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:55:18+00:00"
+    },
+    "A-skill-01-s09": {
+      "text_sha256": "ce248c2b4aa34c207b343147b9a844d8fd92016825f9fd0b9c631bf3dc14cc47",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "agility"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "agility"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "agility"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:55:18+00:00"
+    },
+    "A-skill-01-s10": {
+      "text_sha256": "ec50e98b4221566dc835797c66bca8fd4be04e96eb4e29b314fe706235db1dbd",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "agility"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "agility"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "agility"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:55:18+00:00"
+    },
+    "A-skill-01-s11": {
+      "text_sha256": "23ebe69f20f22ad2aff33020cc8068a24041ae3eac1368178aca40bc0f37f3a3",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "agility",
+            "intuition"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "agility"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "agility"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:57:00+00:00"
+    },
+    "A-skill-01-s12": {
+      "text_sha256": "db5fa73369aa26c0ea8359627571046285c547610bc23697631ddfb2acc63115",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "agility",
+            "dexterity",
+            "finesse"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "agility"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "agility"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:57:00+00:00"
+    },
+    "A-skill-01-s13": {
+      "text_sha256": "6605aa467ce489c520dc07d033bc77c22114ad4df97b5451fe42442309793a85",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "agility"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "agility"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "agility"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:57:00+00:00"
+    },
+    "A-skill-01-s14": {
+      "text_sha256": "d475a20992e56b4e6c27714e7065da3fa4aa3e7afba26d64e34ca4be973768e7",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "agility"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "agility"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "agility"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:57:00+00:00"
+    },
+    "A-skill-01-s15": {
+      "text_sha256": "0b60c66aece8a4d03868615a6f9c7e58dfe18233f3ced846d5969512e35cb94a",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "agility"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "agility"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "agility"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:57:00+00:00"
+    },
+    "A-skill-01-s16": {
+      "text_sha256": "f785c723dfaf72b54d7643cdb35d5c26f6d30509c5040ac13f7139143c6b59f8",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "agility",
+            "dexterity",
+            "finesse"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "agility"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "agility"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:57:00+00:00"
+    },
+    "A-skill-01-s17": {
+      "text_sha256": "e825406a16d3c8693c0430462bd988e5565d4b148804572d0ba6ab206c48c7be",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "dexterity",
+            "finesse"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "dexterity"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "dexterity"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:57:00+00:00"
+    },
+    "A-skill-01-s18": {
+      "text_sha256": "401e080224ebb0a911a05ec7274e6c80520725f8eb905a6e2e2b374a09aa4165",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "dexterity",
+            "finesse"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "dexterity"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "dexterity"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:57:00+00:00"
+    },
+    "A-skill-01-s19": {
+      "text_sha256": "d78f7e4faa07d97eb3e825bb531dc9bacbc12de2aa8de2f2838610f7d1b7cdf8",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "dexterity",
+            "finesse"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "dexterity"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "dexterity"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:57:00+00:00"
+    },
+    "A-skill-01-s20": {
+      "text_sha256": "7ed0bac8ff27088b3b53fbece9cba7da019c120186ecb0886f280a7ccc6f5a34",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "dexterity",
+            "finesse"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "dexterity"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "dexterity"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:57:00+00:00"
+    },
+    "A-skill-01-s21": {
+      "text_sha256": "1210e6961a38ffbfc11490ed26416c3bc36c54ee15e6051fd906e4c2f503fdd8",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "dexterity",
+            "finesse"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "dexterity"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "dexterity"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:58:12+00:00"
+    },
+    "A-skill-01-s22": {
+      "text_sha256": "34e69c29fce091cbd3ebe9ca91feb4b8bef6aae65f47157f59af049faeed92a7",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "dexterity",
+            "finesse"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "dexterity"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "dexterity"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:58:12+00:00"
+    },
+    "A-skill-01-s23": {
+      "text_sha256": "6505e9086323f2a49180ebbe786a348a1ca06159c541b3aa1ce95f9b82bdb55d",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "agility",
+            "dexterity"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "dexterity"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "dexterity"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:58:12+00:00"
+    },
+    "A-skill-01-s24": {
+      "text_sha256": "1aaa5b34c6186879f47433c3a5472a0e4e4767e682110d2d534fed699316624e",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "dexterity",
+            "finesse"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "dexterity"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "dexterity"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:58:12+00:00"
+    },
+    "A-skill-01-s25": {
+      "text_sha256": "f0e82b521781488477673b426b0f7dec47e11e70fc54bf03ccc2817254baa4fc",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "dexterity",
+            "finesse"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "finesse"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "finesse"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:58:12+00:00"
+    },
+    "A-skill-01-s26": {
+      "text_sha256": "a0f763c554e6b5dafb37a7f9b76057558c9418ce1013c35673c7cfc24631ef7b",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "finesse",
+            "intuition"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "finesse"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "finesse"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:58:12+00:00"
+    },
+    "A-skill-01-s27": {
+      "text_sha256": "5109bfe4030ad8c484524a971d91ac36d4aa9ed523bbbbb61de97fffdbb76384",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "dexterity",
+            "finesse"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "finesse"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "finesse"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:58:12+00:00"
+    },
+    "A-skill-01-s28": {
+      "text_sha256": "6524a872ee08efa31ae0fcb360ebac5267638a04c67dc2fb948cb1b3abd1dc8e",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "dexterity",
+            "finesse"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "finesse"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "finesse"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:58:12+00:00"
+    },
+    "A-skill-01-s29": {
+      "text_sha256": "f540357399f7c4984ed50fb907358dd1765c2c4c5b5207b07d0077aad6850bbe",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "dexterity",
+            "finesse"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "finesse"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "finesse"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:58:12+00:00"
+    },
+    "A-skill-01-s30": {
+      "text_sha256": "0101459fc6e77a558e975e07bf4e44c5906605589faeb120b78df6141c20766f",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "finesse"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "finesse"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "finesse"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:58:12+00:00"
+    },
+    "A-skill-01-s31": {
+      "text_sha256": "310410a3be657cb61cae5c956a444c261f328c1bb6283c83e81745abd2c037bf",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "dexterity",
+            "finesse"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "finesse"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "finesse"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:59:02+00:00"
+    },
+    "A-skill-01-s32": {
+      "text_sha256": "b0e5e1d57abe065fcb59de7b1f7e96b8b97da34605fd050156489427080a4a0d",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "dexterity",
+            "finesse"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "finesse"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "dexterity",
+            "finesse"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:59:02+00:00"
+    },
+    "A-skill-01-s33": {
+      "text_sha256": "7daf0fd6d48d32b1c6961a0cec10dda047669b798bd3f4411af58b60e7ef4e35",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "intuition"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "intuition"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "intuition"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:59:02+00:00"
+    },
+    "A-skill-01-s34": {
+      "text_sha256": "38a0ceb96af6d755fb105ed5c3faa86b68b8e97481e3eb90dc807d07e539b523",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "intuition"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "intuition"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "intuition"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:59:02+00:00"
+    },
+    "A-skill-01-s35": {
+      "text_sha256": "4c61ead5e6e645d0f22fff25efc66c13b434d1e555fa95c24c5ef6c9dcd36667",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "intuition"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "intuition"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "intuition"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:59:02+00:00"
+    },
+    "A-skill-01-s36": {
+      "text_sha256": "34b5b3edd97046ad59adb861d0dbbe55a98151bec2ba0f5c5785eb47e21f72f7",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "intuition"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "intuition"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "intuition"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:59:02+00:00"
+    },
+    "A-skill-01-s37": {
+      "text_sha256": "207ced6f62eec2ae199a090527ca4a6b15d911a4e928cf7575972364be9a8661",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "intuition"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "intuition"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "intuition"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:59:02+00:00"
+    },
+    "A-skill-01-s38": {
+      "text_sha256": "0041e5899e5e0c8668561c2089950758fff5c4deafd0d5a23e7088b0d99d8d5a",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "intuition"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "intuition"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "intuition"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:59:02+00:00"
+    },
+    "A-skill-01-s39": {
+      "text_sha256": "48352507437531d32b862e4f7d711c61a979260d259457f3855ee4c5c06f1aad",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "intuition"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "intuition"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "intuition"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:59:02+00:00"
+    },
+    "A-skill-01-s40": {
+      "text_sha256": "4cdd3105f7f5ff0d44d6e654f1234573b1ee862c1cb957e1749bc4f50f0d11c4",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "intuition"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "intuition"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "intuition"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:59:02+00:00"
+    }
+  }
+}

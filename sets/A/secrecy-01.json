@@ -1,0 +1,994 @@
+{
+  "id": "A-secrecy-01",
+  "bank": "A",
+  "pos": "adjective",
+  "theme": "secret behaviour",
+  "band": 5,
+  "band_override": 5,
+  "computed": {
+    "zipf_min": 2.79,
+    "zipf_mean": 3.2,
+    "tightness": null,
+    "band_suggested": 4,
+    "scored_at": "2026-07-07T06:01:38+00:00"
+  },
+  "words": [
+    {
+      "w": "stealthy",
+      "synset": "furtive.s.01",
+      "gloss_source": "wordnet",
+      "gloss": "marked by quiet and caution and secrecy; taking pains to avoid being observed",
+      "zipf": 2.79,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "stealthy"
+      },
+      "discriminator": "silent unseen movement",
+      "grade": 4
+    },
+    {
+      "w": "devious",
+      "synset": "devious.s.02",
+      "gloss_source": "authored",
+      "gloss": "achieving what you want by dishonest tricks",
+      "zipf": 3.03,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "devious"
+      },
+      "discriminator": "scheming and dishonest",
+      "grade": 6
+    },
+    {
+      "w": "discreet",
+      "synset": "discreet.a.01",
+      "gloss_source": "authored",
+      "gloss": "careful not to attract attention or cause embarrassment",
+      "zipf": 3.43,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "discreet"
+      },
+      "discriminator": "tactfully low-key",
+      "grade": 6
+    },
+    {
+      "w": "cryptic",
+      "synset": "cabalistic.s.01",
+      "gloss_source": "authored",
+      "gloss": "having a secret or hidden meaning",
+      "zipf": 3.23,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "cryptic"
+      },
+      "discriminator": "meaning is hidden in it",
+      "grade": 7
+    },
+    {
+      "w": "covert",
+      "synset": "covert.a.01",
+      "gloss_source": "authored",
+      "gloss": "kept secret; not done in the open",
+      "zipf": 3.54,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "covert"
+      },
+      "discriminator": "officially hidden from view",
+      "grade": 7
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-secrecy-01-s01",
+      "answer": "stealthy",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ cat crossed the kitchen without jingling its silver bell.",
+      "cue_phrase": "without jingling its",
+      "surface": {
+        "stealthy": "stealthy",
+        "devious": "devious",
+        "discreet": "discreet",
+        "cryptic": "cryptic",
+        "covert": "covert"
+      }
+    },
+    {
+      "id": "A-secrecy-01-s02",
+      "answer": "stealthy",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "A ___ mouse reached the cheese, and no floorboard creaked.",
+      "cue_phrase": "no floorboard creaked",
+      "surface": {
+        "stealthy": "stealthy",
+        "devious": "devious",
+        "discreet": "discreet",
+        "cryptic": "cryptic",
+        "covert": "covert"
+      }
+    },
+    {
+      "id": "A-secrecy-01-s03",
+      "answer": "stealthy",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Mira practised a ___ crawl behind the sofa, unseen by the guard.",
+      "cue_phrase": "unseen by the guard",
+      "surface": {
+        "stealthy": "stealthy",
+        "devious": "devious",
+        "discreet": "discreet",
+        "cryptic": "cryptic",
+        "covert": "covert"
+      }
+    },
+    {
+      "id": "A-secrecy-01-s04",
+      "answer": "stealthy",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The fox made a ___ dash through leaves without a rustle.",
+      "cue_phrase": "without a rustle",
+      "surface": {
+        "stealthy": "stealthy",
+        "devious": "devious",
+        "discreet": "discreet",
+        "cryptic": "cryptic",
+        "covert": "covert"
+      }
+    },
+    {
+      "id": "A-secrecy-01-s05",
+      "answer": "stealthy",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "During hide-and-seek, his ___ steps left the baby asleep.",
+      "cue_phrase": "left the baby asleep",
+      "surface": {
+        "stealthy": "stealthy",
+        "devious": "devious",
+        "discreet": "discreet",
+        "cryptic": "cryptic",
+        "covert": "covert"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (discreet); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-secrecy-01-s06",
+      "answer": "stealthy",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The dragon's ___ glide passed the sentries before their lanterns turned.",
+      "cue_phrase": "before their lanterns turned",
+      "surface": {
+        "stealthy": "stealthy",
+        "devious": "devious",
+        "discreet": "discreet",
+        "cryptic": "cryptic",
+        "covert": "covert"
+      }
+    },
+    {
+      "id": "A-secrecy-01-s07",
+      "answer": "stealthy",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Her ___ tiptoe carried the sleepy kitten past Dad's chair at midnight.",
+      "cue_phrase": "tiptoe carried",
+      "surface": {
+        "stealthy": "stealthy",
+        "devious": "devious",
+        "discreet": "discreet",
+        "cryptic": "cryptic",
+        "covert": "covert"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (discreet); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-secrecy-01-s08",
+      "answer": "stealthy",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "The ___ owl swooped over camp, and the sleepers never stirred.",
+      "cue_phrase": "sleepers never stirred",
+      "surface": {
+        "stealthy": "stealthy",
+        "devious": "devious",
+        "discreet": "discreet",
+        "cryptic": "cryptic",
+        "covert": "covert"
+      }
+    },
+    {
+      "id": "A-secrecy-01-s09",
+      "answer": "devious",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ player moved the finish line while everyone watched.",
+      "cue_phrase": "moved the finish line",
+      "surface": {
+        "stealthy": "stealthy",
+        "devious": "devious",
+        "discreet": "discreet",
+        "cryptic": "cryptic",
+        "covert": "covert"
+      }
+    },
+    {
+      "id": "A-secrecy-01-s10",
+      "answer": "devious",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "A ___ excuse blamed the broken vase on a sleeping dog.",
+      "cue_phrase": "blamed the broken vase",
+      "surface": {
+        "stealthy": "stealthy",
+        "devious": "devious",
+        "discreet": "discreet",
+        "cryptic": "cryptic",
+        "covert": "covert"
+      }
+    },
+    {
+      "id": "A-secrecy-01-s11",
+      "answer": "devious",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ plan used a fake map in front of the judges.",
+      "cue_phrase": "fake map",
+      "surface": {
+        "stealthy": "stealthy",
+        "devious": "devious",
+        "discreet": "discreet",
+        "cryptic": "cryptic",
+        "covert": "covert"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (covert); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-secrecy-01-s12",
+      "answer": "devious",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Lena's ___ grin followed her lie about the cracked egg.",
+      "cue_phrase": "her lie about",
+      "surface": {
+        "stealthy": "stealthy",
+        "devious": "devious",
+        "discreet": "discreet",
+        "cryptic": "cryptic",
+        "covert": "covert"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (cryptic); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-secrecy-01-s13",
+      "answer": "devious",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The ___ fox praised Crow's singing until the cheese dropped.",
+      "cue_phrase": "until the cheese dropped",
+      "surface": {
+        "stealthy": "stealthy",
+        "devious": "devious",
+        "discreet": "discreet",
+        "cryptic": "cryptic",
+        "covert": "covert"
+      }
+    },
+    {
+      "id": "A-secrecy-01-s14",
+      "answer": "devious",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "His ___ rules let only his team score double points.",
+      "cue_phrase": "only his team",
+      "surface": {
+        "stealthy": "stealthy",
+        "devious": "devious",
+        "discreet": "discreet",
+        "cryptic": "cryptic",
+        "covert": "covert"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (covert); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-secrecy-01-s15",
+      "answer": "devious",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The ___ shopkeeper put pebbles under the apples on the scales.",
+      "cue_phrase": "pebbles under the apples",
+      "surface": {
+        "stealthy": "stealthy",
+        "devious": "devious",
+        "discreet": "discreet",
+        "cryptic": "cryptic",
+        "covert": "covert"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (stealthy); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-secrecy-01-s16",
+      "answer": "devious",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "A ___ promise sounded friendly, but the small print took her marbles.",
+      "cue_phrase": "small print took",
+      "surface": {
+        "stealthy": "stealthy",
+        "devious": "devious",
+        "discreet": "discreet",
+        "cryptic": "cryptic",
+        "covert": "covert"
+      }
+    },
+    {
+      "id": "A-secrecy-01-s17",
+      "answer": "discreet",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ teacher whispered, 'Check your zip,' where only Maya heard.",
+      "cue_phrase": "only Maya heard",
+      "surface": {
+        "stealthy": "stealthy",
+        "devious": "devious",
+        "discreet": "discreet",
+        "cryptic": "cryptic",
+        "covert": "covert"
+      }
+    },
+    {
+      "id": "A-secrecy-01-s18",
+      "answer": "discreet",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Dad gave a ___ nod when noodles hung from Tia's chin.",
+      "cue_phrase": "noodles hung",
+      "surface": {
+        "stealthy": "stealthy",
+        "devious": "devious",
+        "discreet": "discreet",
+        "cryptic": "cryptic",
+        "covert": "covert"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (covert); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-secrecy-01-s19",
+      "answer": "discreet",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ note said Sam's trousers were muddy, then folded shut.",
+      "cue_phrase": "Sam's trousers were muddy",
+      "surface": {
+        "stealthy": "stealthy",
+        "devious": "devious",
+        "discreet": "discreet",
+        "cryptic": "cryptic",
+        "covert": "covert"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (covert); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-secrecy-01-s20",
+      "answer": "discreet",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "A ___ reminder about Grandma's nap came as one soft tap.",
+      "cue_phrase": "one soft tap",
+      "surface": {
+        "stealthy": "stealthy",
+        "devious": "devious",
+        "discreet": "discreet",
+        "cryptic": "cryptic",
+        "covert": "covert"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (covert); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-secrecy-01-s21",
+      "answer": "discreet",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "When Kai forgot his lines, Jo murmured a ___ prompt so he didn't blush.",
+      "cue_phrase": "didn't blush",
+      "surface": {
+        "stealthy": "stealthy",
+        "devious": "devious",
+        "discreet": "discreet",
+        "cryptic": "cryptic",
+        "covert": "covert"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (covert); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-secrecy-01-s22",
+      "answer": "discreet",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "At lunch, Amira's ___ wave sent the spinach warning just to Noor.",
+      "cue_phrase": "spinach warning",
+      "surface": {
+        "stealthy": "stealthy",
+        "devious": "devious",
+        "discreet": "discreet",
+        "cryptic": "cryptic",
+        "covert": "covert"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (covert, stealthy); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-secrecy-01-s23",
+      "answer": "discreet",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The nurse used a ___ voice about the torn trousers after PE.",
+      "cue_phrase": "torn trousers",
+      "surface": {
+        "stealthy": "stealthy",
+        "devious": "devious",
+        "discreet": "discreet",
+        "cryptic": "cryptic",
+        "covert": "covert"
+      }
+    },
+    {
+      "id": "A-secrecy-01-s24",
+      "answer": "discreet",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "Ravi made a ___ cough, then pointed to the high price tag.",
+      "cue_phrase": "high price tag",
+      "surface": {
+        "stealthy": "stealthy",
+        "devious": "devious",
+        "discreet": "discreet",
+        "cryptic": "cryptic",
+        "covert": "covert"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (covert); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-secrecy-01-s25",
+      "answer": "cryptic",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ clue read, 'I am wet but never drink.'",
+      "cue_phrase": "wet but never drink",
+      "surface": {
+        "stealthy": "stealthy",
+        "devious": "devious",
+        "discreet": "discreet",
+        "cryptic": "cryptic",
+        "covert": "covert"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (devious); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-secrecy-01-s26",
+      "answer": "cryptic",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "On the map, a ___ symbol puzzled every scout.",
+      "cue_phrase": "puzzled every scout",
+      "surface": {
+        "stealthy": "stealthy",
+        "devious": "devious",
+        "discreet": "discreet",
+        "cryptic": "cryptic",
+        "covert": "covert"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (covert); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-secrecy-01-s27",
+      "answer": "cryptic",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The wizard's ___ note, read aloud, said, 'Three moons eat the key.'",
+      "cue_phrase": "Three moons eat",
+      "surface": {
+        "stealthy": "stealthy",
+        "devious": "devious",
+        "discreet": "discreet",
+        "cryptic": "cryptic",
+        "covert": "covert"
+      }
+    },
+    {
+      "id": "A-secrecy-01-s28",
+      "answer": "cryptic",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "A ___ message on the cake read, 'The spoon sleeps north.'",
+      "cue_phrase": "spoon sleeps north",
+      "surface": {
+        "stealthy": "stealthy",
+        "devious": "devious",
+        "discreet": "discreet",
+        "cryptic": "cryptic",
+        "covert": "covert"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (covert); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-secrecy-01-s29",
+      "answer": "cryptic",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Tara stared at the ___ riddle until breakfast went cold.",
+      "cue_phrase": "breakfast went cold",
+      "surface": {
+        "stealthy": "stealthy",
+        "devious": "devious",
+        "discreet": "discreet",
+        "cryptic": "cryptic",
+        "covert": "covert"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (devious); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-secrecy-01-s30",
+      "answer": "cryptic",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The ___ chalk marks on the front wall looked like arrows and half a fish.",
+      "cue_phrase": "arrows and half",
+      "surface": {
+        "stealthy": "stealthy",
+        "devious": "devious",
+        "discreet": "discreet",
+        "cryptic": "cryptic",
+        "covert": "covert"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (covert); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-secrecy-01-s31",
+      "answer": "cryptic",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Grandad's ___ postcard said, 'Plant the moon before tea.'",
+      "cue_phrase": "Plant the moon",
+      "surface": {
+        "stealthy": "stealthy",
+        "devious": "devious",
+        "discreet": "discreet",
+        "cryptic": "cryptic",
+        "covert": "covert"
+      }
+    },
+    {
+      "id": "A-secrecy-01-s32",
+      "answer": "cryptic",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "On the puzzle box, a ___ label read, 'Feathers unlock thunder.'",
+      "cue_phrase": "Feathers unlock thunder",
+      "surface": {
+        "stealthy": "stealthy",
+        "devious": "devious",
+        "discreet": "discreet",
+        "cryptic": "cryptic",
+        "covert": "covert"
+      }
+    },
+    {
+      "id": "A-secrecy-01-s33",
+      "answer": "covert",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ tunnel under town hall had no sign above its door.",
+      "cue_phrase": "no sign above",
+      "surface": {
+        "stealthy": "stealthy",
+        "devious": "devious",
+        "discreet": "discreet",
+        "cryptic": "cryptic",
+        "covert": "covert"
+      }
+    },
+    {
+      "id": "A-secrecy-01-s34",
+      "answer": "covert",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "A ___ ranger base sat behind the waterfall, away from visitors.",
+      "cue_phrase": "away from visitors",
+      "surface": {
+        "stealthy": "stealthy",
+        "devious": "devious",
+        "discreet": "discreet",
+        "cryptic": "cryptic",
+        "covert": "covert"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (discreet); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-secrecy-01-s35",
+      "answer": "covert",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The mayor approved a ___ radio room beneath the old library.",
+      "cue_phrase": "mayor approved",
+      "surface": {
+        "stealthy": "stealthy",
+        "devious": "devious",
+        "discreet": "discreet",
+        "cryptic": "cryptic",
+        "covert": "covert"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (discreet); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-secrecy-01-s36",
+      "answer": "covert",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ rescue route ran through basements beneath the palace guards.",
+      "cue_phrase": "through basements beneath",
+      "surface": {
+        "stealthy": "stealthy",
+        "devious": "devious",
+        "discreet": "discreet",
+        "cryptic": "cryptic",
+        "covert": "covert"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (devious, discreet, stealthy); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-secrecy-01-s37",
+      "answer": "covert",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Only three councillors knew about the ___ storage room below the pool.",
+      "cue_phrase": "Only three councillors",
+      "surface": {
+        "stealthy": "stealthy",
+        "devious": "devious",
+        "discreet": "discreet",
+        "cryptic": "cryptic",
+        "covert": "covert"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (discreet); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-secrecy-01-s38",
+      "answer": "covert",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The ___ meeting used the back staircase while reporters waited outside.",
+      "cue_phrase": "reporters waited outside",
+      "surface": {
+        "stealthy": "stealthy",
+        "devious": "devious",
+        "discreet": "discreet",
+        "cryptic": "cryptic",
+        "covert": "covert"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: reporters waiting outside is press-avoidance: covert hides the activity itself; discreet spares feelings",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-secrecy-01-s39",
+      "answer": "covert",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Under the castle, the ___ laboratory had a door behind shelves.",
+      "cue_phrase": "door behind shelves",
+      "surface": {
+        "stealthy": "stealthy",
+        "devious": "devious",
+        "discreet": "discreet",
+        "cryptic": "cryptic",
+        "covert": "covert"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (discreet); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-secrecy-01-s40",
+      "answer": "covert",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The ___ spy network passed reports through a bakery cellar.",
+      "cue_phrase": "spy network",
+      "surface": {
+        "stealthy": "stealthy",
+        "devious": "devious",
+        "discreet": "discreet",
+        "cryptic": "cryptic",
+        "covert": "covert"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (devious, discreet, stealthy); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "stealthy",
+      "picked": "devious",
+      "line": "Stealthy is about moving unheard and unseen; devious is about unfair scheming."
+    },
+    {
+      "answer": "stealthy",
+      "picked": "discreet",
+      "line": "Stealthy is silent movement; discreet is a tactful, low-key way to spare feelings."
+    },
+    {
+      "answer": "stealthy",
+      "picked": "cryptic",
+      "line": "Stealthy is a way of moving; cryptic is a puzzle-like message."
+    },
+    {
+      "answer": "stealthy",
+      "picked": "covert",
+      "line": "Stealthy is moving unnoticed; covert is an activity or place kept from public view."
+    },
+    {
+      "answer": "devious",
+      "picked": "stealthy",
+      "line": "Devious means unfair scheming; stealthy means moving without being seen or heard."
+    },
+    {
+      "answer": "devious",
+      "picked": "discreet",
+      "line": "Devious is unfair or sneaky; discreet is kind and low-key."
+    },
+    {
+      "answer": "devious",
+      "picked": "cryptic",
+      "line": "Devious is about cheating plans; cryptic is about puzzling words or signs."
+    },
+    {
+      "answer": "devious",
+      "picked": "covert",
+      "line": "Devious is unfair scheming; covert is simply out of public sight."
+    },
+    {
+      "answer": "discreet",
+      "picked": "stealthy",
+      "line": "Discreet is tactful and low-key; stealthy is silent, unseen movement."
+    },
+    {
+      "answer": "discreet",
+      "picked": "devious",
+      "line": "Discreet tries to spare feelings; devious tries to cheat or fool someone."
+    },
+    {
+      "answer": "discreet",
+      "picked": "cryptic",
+      "line": "Discreet is low-key kindness; cryptic is hard-to-solve wording or signs."
+    },
+    {
+      "answer": "discreet",
+      "picked": "covert",
+      "line": "Discreet keeps things gentle and low-key; covert keeps an activity out of view."
+    },
+    {
+      "answer": "cryptic",
+      "picked": "stealthy",
+      "line": "Cryptic has puzzling wording or signs; stealthy is about silent movement."
+    },
+    {
+      "answer": "cryptic",
+      "picked": "devious",
+      "line": "Cryptic is hard to understand; devious is unfair and scheming."
+    },
+    {
+      "answer": "cryptic",
+      "picked": "discreet",
+      "line": "Cryptic puzzles the reader; discreet spares someone with a low-key action."
+    },
+    {
+      "answer": "cryptic",
+      "picked": "covert",
+      "line": "Cryptic hides sense inside words or signs; covert hides an activity or place."
+    },
+    {
+      "answer": "covert",
+      "picked": "stealthy",
+      "line": "Covert is out of public view; stealthy is moving unheard and unseen."
+    },
+    {
+      "answer": "covert",
+      "picked": "devious",
+      "line": "Covert is concealed from public view; devious is unfair scheming."
+    },
+    {
+      "answer": "covert",
+      "picked": "discreet",
+      "line": "Covert hides an operation or place; discreet is tactful and low-key."
+    },
+    {
+      "answer": "covert",
+      "picked": "cryptic",
+      "line": "Covert is about a concealed activity; cryptic is about puzzling words or signs."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-07T03:33:54+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": "2026-07-07",
+    "scrub_note": "Scrubbed by claude 2026-07-07: mechanical sweeps clean (one purple-snow frame cleared - colour absurdity, not calendar), all 40 sentences, all 20 contrasts, and mixed-tense surface maps read per set; no defects."
+  }
+}

@@ -1,0 +1,1155 @@
+{
+  "set_id": "A-secrecy-01",
+  "sentences": {
+    "A-secrecy-01-s01": {
+      "text_sha256": "bd50d9854aaf12858d5ca6ab8d567ee709de51b8efd129c8afe71c0e480c9849",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "stealthy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "stealthy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "stealthy"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:48:09+00:00"
+    },
+    "A-secrecy-01-s02": {
+      "text_sha256": "31ba12db0435775f1d24279e5b62b94216b05bd2a1c0fe992fed64e2e3fa5dc3",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "stealthy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "stealthy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "stealthy"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:48:09+00:00"
+    },
+    "A-secrecy-01-s03": {
+      "text_sha256": "dd95e66b1716dd1ad384966a1b9542293d4b768a0272ab019f27ae7c56a055d2",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "stealthy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "stealthy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "stealthy"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:48:09+00:00"
+    },
+    "A-secrecy-01-s04": {
+      "text_sha256": "b3758a744ee85f892fb3496ba1fe81dbdc0ba80dd431fa23e796d709e081f8e9",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "stealthy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "stealthy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "stealthy"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:48:09+00:00"
+    },
+    "A-secrecy-01-s05": {
+      "text_sha256": "e3a5e9bc677768903b75ff5e5b121476d38cdf12a4548426b66805cdfa1c0daa",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "discreet",
+            "stealthy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "stealthy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "stealthy"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:48:09+00:00"
+    },
+    "A-secrecy-01-s06": {
+      "text_sha256": "5052591dce5c711f3159a59d642ee17968499e8b196cb6410a5cfd94dee5b12c",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "stealthy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "stealthy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "stealthy"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:48:09+00:00"
+    },
+    "A-secrecy-01-s07": {
+      "text_sha256": "a52750d4927aadce49d83227bce099b003c959db217072df1c19711f651c1b52",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "discreet",
+            "stealthy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "stealthy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "stealthy"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:48:09+00:00"
+    },
+    "A-secrecy-01-s08": {
+      "text_sha256": "ad03f6375dd4c44e4f884cf672845ea07307441317d86480561a0277c275d8b2",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "stealthy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "stealthy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "stealthy"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:48:09+00:00"
+    },
+    "A-secrecy-01-s09": {
+      "text_sha256": "49e698988fdfd1fa1250aad121473f311f12d0c5209b611cfad4eb873c462f14",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "devious"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "devious"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "devious"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:48:09+00:00"
+    },
+    "A-secrecy-01-s10": {
+      "text_sha256": "52cc67a20ba4bac7ac1ae820b9fb24f9d94454bd3913bb2a5cbefcb77effe295",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "devious"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "devious"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "devious"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:48:09+00:00"
+    },
+    "A-secrecy-01-s11": {
+      "text_sha256": "0975837620483f66056df3c03006db3112b1fc512f3c2d1dc5dc1e7f51fbe270",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "covert",
+            "devious"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "devious"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "devious"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:50:02+00:00"
+    },
+    "A-secrecy-01-s12": {
+      "text_sha256": "2e5ba50b92a4457a95baafdc28aeec248148e646f1b6f3f143de12231114a2df",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "cryptic",
+            "devious"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "devious"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "devious"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:50:02+00:00"
+    },
+    "A-secrecy-01-s13": {
+      "text_sha256": "1eec1a170d4100e19982e35cdb0ebd2b7bb1801ddce2445c5541a2875945db87",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "devious"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "devious"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "devious"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:50:02+00:00"
+    },
+    "A-secrecy-01-s14": {
+      "text_sha256": "562f6087962638c61323563410aa6e78b05be3a12ee68a5930eb018416e318c3",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "covert",
+            "devious"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "devious"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "devious"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:50:02+00:00"
+    },
+    "A-secrecy-01-s15": {
+      "text_sha256": "89d88b0e73d3acea4d0ca2c373625b3d1782c3257267ca8aa5050de2eed34c56",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "devious",
+            "stealthy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "devious"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "devious"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:50:02+00:00"
+    },
+    "A-secrecy-01-s16": {
+      "text_sha256": "e46303be04541629f0c02a9e1328aa2e58b9956f9a08c0c14b4ac12180d4e51b",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "devious"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "devious"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "devious"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:50:02+00:00"
+    },
+    "A-secrecy-01-s17": {
+      "text_sha256": "b5f054c0220208b7fb20f2a772353374b91a457145add338aca1fc381d0e88ac",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "discreet"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "discreet"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "discreet"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:50:02+00:00"
+    },
+    "A-secrecy-01-s18": {
+      "text_sha256": "7a59dc3790c1b4d0c6ee3a323c8648dfa2e1bb4773218d6908725b3fef25c138",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "covert",
+            "discreet"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "discreet"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "discreet"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:50:02+00:00"
+    },
+    "A-secrecy-01-s19": {
+      "text_sha256": "b0b2f4e5d4510f41bf4945978b8df3ddbab9fac66a6167728edf3c30f6d00853",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "covert",
+            "discreet"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "discreet"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "discreet"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:50:02+00:00"
+    },
+    "A-secrecy-01-s20": {
+      "text_sha256": "001dde25b4ad9ae53c1d8e166a5b8004835388e70e1e777573dd74336713707d",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "covert",
+            "discreet"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "discreet"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "discreet"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:50:02+00:00"
+    },
+    "A-secrecy-01-s21": {
+      "text_sha256": "a583ddd82a0698d58e783494af2760430400ca2d31be3ce4545f8b921c043f45",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "covert",
+            "discreet"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "discreet"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "discreet"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:51:59+00:00"
+    },
+    "A-secrecy-01-s22": {
+      "text_sha256": "eebc4c5465884ff1b155550bb68a458048626a3e9bc22a91f1bb2aeafaa82101",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "covert",
+            "discreet",
+            "stealthy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "discreet"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "discreet"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:51:59+00:00"
+    },
+    "A-secrecy-01-s23": {
+      "text_sha256": "9ce1a2d9c7e8e2df1e510e9ffbec82501effcbbc968c4cde1afecf89c131cf5a",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "discreet"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "discreet"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "discreet"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:51:59+00:00"
+    },
+    "A-secrecy-01-s24": {
+      "text_sha256": "2a8693a6953decbb10ec6833c90fff8b12950118dc40e95e184af285bbcd1294",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "covert",
+            "discreet"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "discreet"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "discreet"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:51:59+00:00"
+    },
+    "A-secrecy-01-s25": {
+      "text_sha256": "38bd803cc861539a00fbdc33421d0f9bb7640c3745f3bb5c23f2a4816cca6906",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "cryptic",
+            "devious"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "cryptic"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "cryptic"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:51:59+00:00"
+    },
+    "A-secrecy-01-s26": {
+      "text_sha256": "e9ba8b6cec5cf4d0509b1630a8601e36e433e5fe4fe9ab92fb7383ef48229437",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "covert",
+            "cryptic"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "cryptic"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "cryptic"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:51:59+00:00"
+    },
+    "A-secrecy-01-s27": {
+      "text_sha256": "894a38b14954de9ed69ce7e661318000b65036666889a1c6df0654b3771f0644",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "cryptic"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "cryptic"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "cryptic"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:51:59+00:00"
+    },
+    "A-secrecy-01-s28": {
+      "text_sha256": "e72d958a29b19a331d27e5f870a543a4423e6ab87be21849b50da59fa184da45",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "covert",
+            "cryptic"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "cryptic"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "cryptic"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:51:59+00:00"
+    },
+    "A-secrecy-01-s29": {
+      "text_sha256": "63d7116c0b6b0bd9976a25f4e00cd0d2601d721a4f73196759c86fdf261f17f8",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "cryptic",
+            "devious"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "cryptic"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "cryptic"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:51:59+00:00"
+    },
+    "A-secrecy-01-s30": {
+      "text_sha256": "30f5b2c595534cf4ab1acd92a4c17a3526f0004ea83e2c10455abc80954efaf5",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "covert",
+            "cryptic"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "cryptic"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "cryptic"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:51:59+00:00"
+    },
+    "A-secrecy-01-s31": {
+      "text_sha256": "6946d19f1cc049c73c534ce9fb58d254262c385163162a52c5469c9f98c58e79",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "cryptic"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "cryptic"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "cryptic"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:53:49+00:00"
+    },
+    "A-secrecy-01-s32": {
+      "text_sha256": "11691612aacc1e88a44777622e11b194a115f5f9c18a298c9e6f631ab36c7666",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "cryptic"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "cryptic"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "cryptic"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:53:49+00:00"
+    },
+    "A-secrecy-01-s33": {
+      "text_sha256": "38f30ddf487bb67b2b91bda882c1f25ac0ba45dabc1d3ef236bbddbf6799eaea",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "covert"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "covert"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "covert"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:53:49+00:00"
+    },
+    "A-secrecy-01-s34": {
+      "text_sha256": "927c98f4b5dab48df9d4ce2feb0691e406de8d30581ac341d332f5b646c44287",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "covert",
+            "discreet"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "covert"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "covert"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:53:49+00:00"
+    },
+    "A-secrecy-01-s35": {
+      "text_sha256": "74d659ce1306f22091e2cf4a8d016133fef6e40d0f1970a07af2158a7543667c",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "covert",
+            "discreet"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "covert"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "covert"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:53:49+00:00"
+    },
+    "A-secrecy-01-s36": {
+      "text_sha256": "ea0d4919b65d59726be4dcd1ff0a8877034208eb6da44f0dcd1b7118f4edbfd6",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "covert",
+            "devious",
+            "discreet",
+            "stealthy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "covert"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "covert"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:53:49+00:00"
+    },
+    "A-secrecy-01-s37": {
+      "text_sha256": "879fb24058f7948e89df4628ac09dff2b88f11a83394004355ce8cf3087d9144",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "covert",
+            "discreet"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "covert"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "covert"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:53:49+00:00"
+    },
+    "A-secrecy-01-s38": {
+      "text_sha256": "c783596ebcbc40d22415511c4a0ecce7205e6bc9866258c4c40fc33043ed9b2d",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "covert",
+            "discreet"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "covert"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "covert",
+            "discreet"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:53:49+00:00"
+    },
+    "A-secrecy-01-s39": {
+      "text_sha256": "46db94601c7027e07c60750a862a872fe21f8f3019bf44b6b859782c7f5f20a5",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "covert",
+            "discreet"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "covert"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "covert"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:53:49+00:00"
+    },
+    "A-secrecy-01-s40": {
+      "text_sha256": "d15f35b54aa42c254657f4f3e987777a1b8104448ca78e4c95190dc440864e35",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "covert",
+            "devious",
+            "discreet",
+            "stealthy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "covert"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "covert"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-07-07T03:53:49+00:00"
+    }
+  }
+}

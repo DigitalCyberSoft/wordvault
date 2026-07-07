@@ -1,0 +1,938 @@
+{
+  "id": "A-statements-01",
+  "bank": "A",
+  "pos": "adjective",
+  "theme": "kinds of statements",
+  "band": 5,
+  "band_override": 5,
+  "computed": {
+    "zipf_min": 3.09,
+    "zipf_mean": 3.62,
+    "tightness": null,
+    "band_suggested": 3,
+    "scored_at": "2026-07-07T06:01:38+00:00"
+  },
+  "words": [
+    {
+      "w": "precise",
+      "synset": "precise.a.01",
+      "gloss_source": "authored",
+      "gloss": "exact and accurate in every detail",
+      "zipf": 4.13,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "precise"
+      },
+      "discriminator": "every detail exact",
+      "grade": 4
+    },
+    {
+      "w": "vague",
+      "synset": "obscure.s.01",
+      "gloss_source": "authored",
+      "gloss": "not clearly expressed or understood",
+      "zipf": 3.87,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "vague"
+      },
+      "discriminator": "fuzzy, no clear detail",
+      "grade": 5
+    },
+    {
+      "w": "ambiguous",
+      "synset": "ambiguous.a.02",
+      "gloss_source": "wordnet",
+      "gloss": "having more than one possible meaning",
+      "zipf": 3.57,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "ambiguous"
+      },
+      "discriminator": "two readings at once",
+      "grade": 7
+    },
+    {
+      "w": "concise",
+      "synset": "concise.a.01",
+      "gloss_source": "wordnet",
+      "gloss": "expressing much in few words",
+      "zipf": 3.46,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "concise"
+      },
+      "discriminator": "short but complete",
+      "grade": 6
+    },
+    {
+      "w": "emphatic",
+      "synset": "emphatic.s.03",
+      "gloss_source": "wordnet",
+      "gloss": "forceful and definite in expression or action",
+      "zipf": 3.09,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "emphatic"
+      },
+      "discriminator": "delivered with force",
+      "grade": 7
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-statements-01-s01",
+      "answer": "precise",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Amira's ___ weather log filled three pages with times, temperatures, and wind directions.",
+      "cue_phrase": "times, temperatures, and wind directions",
+      "surface": {
+        "precise": "precise",
+        "vague": "vague",
+        "ambiguous": "ambiguous",
+        "concise": "concise",
+        "emphatic": "emphatic"
+      }
+    },
+    {
+      "id": "A-statements-01-s02",
+      "answer": "precise",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ recipe card crowded in 185 degrees, twelve minutes, and shelf height.",
+      "cue_phrase": "185 degrees, twelve minutes",
+      "surface": {
+        "precise": "precise",
+        "vague": "vague",
+        "ambiguous": "ambiguous",
+        "concise": "concise",
+        "emphatic": "emphatic"
+      }
+    },
+    {
+      "id": "A-statements-01-s03",
+      "answer": "precise",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Before sawing, Dad's ___ note covered the board with 42-centimetre marks.",
+      "cue_phrase": "42-centimetre marks",
+      "surface": {
+        "precise": "precise",
+        "vague": "vague",
+        "ambiguous": "ambiguous",
+        "concise": "concise",
+        "emphatic": "emphatic"
+      }
+    },
+    {
+      "id": "A-statements-01-s04",
+      "answer": "precise",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "In the treasure game, Lee's lengthy ___ clue named the third oak and seven steps.",
+      "cue_phrase": "third oak and seven steps",
+      "surface": {
+        "precise": "precise",
+        "vague": "vague",
+        "ambiguous": "ambiguous",
+        "concise": "concise",
+        "emphatic": "emphatic"
+      }
+    },
+    {
+      "id": "A-statements-01-s05",
+      "answer": "precise",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The class trusted the ___ timetable's rows of platform numbers and 09:07 times.",
+      "cue_phrase": "platform numbers and 09:07",
+      "surface": {
+        "precise": "precise",
+        "vague": "vague",
+        "ambiguous": "ambiguous",
+        "concise": "concise",
+        "emphatic": "emphatic"
+      }
+    },
+    {
+      "id": "A-statements-01-s06",
+      "answer": "precise",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The tailor followed the long ___ order: two red buttons, 3 centimetres apart.",
+      "cue_phrase": "3 centimetres apart",
+      "surface": {
+        "precise": "precise",
+        "vague": "vague",
+        "ambiguous": "ambiguous",
+        "concise": "concise",
+        "emphatic": "emphatic"
+      }
+    },
+    {
+      "id": "A-statements-01-s07",
+      "answer": "precise",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "On the rocket model, Sal's ___ instruction sheet named bolt B7 under the silver fin.",
+      "cue_phrase": "bolt B7 under the silver fin",
+      "surface": {
+        "precise": "precise",
+        "vague": "vague",
+        "ambiguous": "ambiguous",
+        "concise": "concise",
+        "emphatic": "emphatic"
+      }
+    },
+    {
+      "id": "A-statements-01-s08",
+      "answer": "precise",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The ___ drawing showed three whiskers on each cheek and a chipped bell.",
+      "cue_phrase": "three whiskers on each cheek",
+      "surface": {
+        "precise": "precise",
+        "vague": "vague",
+        "ambiguous": "ambiguous",
+        "concise": "concise",
+        "emphatic": "emphatic"
+      }
+    },
+    {
+      "id": "A-statements-01-s09",
+      "answer": "vague",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Tariq's ___ invitation said the party was 'sometime near the park'.",
+      "cue_phrase": "sometime near the park",
+      "surface": {
+        "precise": "precise",
+        "vague": "vague",
+        "ambiguous": "ambiguous",
+        "concise": "concise",
+        "emphatic": "emphatic"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (ambiguous); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-statements-01-s10",
+      "answer": "vague",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ homework note only said to bring 'stuff for later'.",
+      "cue_phrase": "stuff for later",
+      "surface": {
+        "precise": "precise",
+        "vague": "vague",
+        "ambiguous": "ambiguous",
+        "concise": "concise",
+        "emphatic": "emphatic"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (ambiguous); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-statements-01-s11",
+      "answer": "vague",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "By the fountain, Mina's ___ directions said 'somewhere past trees' and we wandered.",
+      "cue_phrase": "somewhere past trees",
+      "surface": {
+        "precise": "precise",
+        "vague": "vague",
+        "ambiguous": "ambiguous",
+        "concise": "concise",
+        "emphatic": "emphatic"
+      }
+    },
+    {
+      "id": "A-statements-01-s12",
+      "answer": "vague",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ poster promised a prize 'soon', so nobody knew the day.",
+      "cue_phrase": "nobody knew the day",
+      "surface": {
+        "precise": "precise",
+        "vague": "vague",
+        "ambiguous": "ambiguous",
+        "concise": "concise",
+        "emphatic": "emphatic"
+      }
+    },
+    {
+      "id": "A-statements-01-s13",
+      "answer": "vague",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Leo frowned at the ___ message: 'Do the thing before it gets late.'",
+      "cue_phrase": "Do the thing",
+      "surface": {
+        "precise": "precise",
+        "vague": "vague",
+        "ambiguous": "ambiguous",
+        "concise": "concise",
+        "emphatic": "emphatic"
+      }
+    },
+    {
+      "id": "A-statements-01-s14",
+      "answer": "vague",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Without a house number, the ___ address left the parcel in the van.",
+      "cue_phrase": "Without a house number",
+      "surface": {
+        "precise": "precise",
+        "vague": "vague",
+        "ambiguous": "ambiguous",
+        "concise": "concise",
+        "emphatic": "emphatic"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (ambiguous); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-statements-01-s15",
+      "answer": "vague",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The team's ___ plan was 'go over there and fix everything somehow'.",
+      "cue_phrase": "over there and fix",
+      "surface": {
+        "precise": "precise",
+        "vague": "vague",
+        "ambiguous": "ambiguous",
+        "concise": "concise",
+        "emphatic": "emphatic"
+      }
+    },
+    {
+      "id": "A-statements-01-s16",
+      "answer": "vague",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Nora's ___ answer was 'lots', though the jar held sixty-two beads.",
+      "cue_phrase": "jar held sixty-two beads",
+      "surface": {
+        "precise": "precise",
+        "vague": "vague",
+        "ambiguous": "ambiguous",
+        "concise": "concise",
+        "emphatic": "emphatic"
+      }
+    },
+    {
+      "id": "A-statements-01-s17",
+      "answer": "ambiguous",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ poster covered a wall: 'Watch the crane,' beside a bird and a machine.",
+      "cue_phrase": "bird and a machine",
+      "surface": {
+        "precise": "precise",
+        "vague": "vague",
+        "ambiguous": "ambiguous",
+        "concise": "concise",
+        "emphatic": "emphatic"
+      }
+    },
+    {
+      "id": "A-statements-01-s18",
+      "answer": "ambiguous",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The crowded ___ notice read 'Seal tank,' between aquarium tape and a pup drawing.",
+      "cue_phrase": "aquarium tape and a pup",
+      "surface": {
+        "precise": "precise",
+        "vague": "vague",
+        "ambiguous": "ambiguous",
+        "concise": "concise",
+        "emphatic": "emphatic"
+      }
+    },
+    {
+      "id": "A-statements-01-s19",
+      "answer": "ambiguous",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "At the castle fair, the paragraph-long ___ sign about 'bat training' sat by clubs and cages.",
+      "cue_phrase": "clubs and cages",
+      "surface": {
+        "precise": "precise",
+        "vague": "vague",
+        "ambiguous": "ambiguous",
+        "concise": "concise",
+        "emphatic": "emphatic"
+      }
+    },
+    {
+      "id": "A-statements-01-s20",
+      "answer": "ambiguous",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The chalkboard's sprawling ___ menu line, 'Kids eat free after farmers arrive,' puzzled goats and children.",
+      "cue_phrase": "goats and children",
+      "surface": {
+        "precise": "precise",
+        "vague": "vague",
+        "ambiguous": "ambiguous",
+        "concise": "concise",
+        "emphatic": "emphatic"
+      }
+    },
+    {
+      "id": "A-statements-01-s21",
+      "answer": "ambiguous",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Mum laughed at the crowded ___ label 'light feathers' on lamps and pillows.",
+      "cue_phrase": "lamps and pillows",
+      "surface": {
+        "precise": "precise",
+        "vague": "vague",
+        "ambiguous": "ambiguous",
+        "concise": "concise",
+        "emphatic": "emphatic"
+      }
+    },
+    {
+      "id": "A-statements-01-s22",
+      "answer": "ambiguous",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The long ___ riddle said, 'I saw her duck,' near a girl and pond.",
+      "cue_phrase": "girl and pond",
+      "surface": {
+        "precise": "precise",
+        "vague": "vague",
+        "ambiguous": "ambiguous",
+        "concise": "concise",
+        "emphatic": "emphatic"
+      }
+    },
+    {
+      "id": "A-statements-01-s23",
+      "answer": "ambiguous",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "On stage, a rambling ___ line, 'Paint the bow,' confused archers and sailors.",
+      "cue_phrase": "archers and sailors",
+      "surface": {
+        "precise": "precise",
+        "vague": "vague",
+        "ambiguous": "ambiguous",
+        "concise": "concise",
+        "emphatic": "emphatic"
+      }
+    },
+    {
+      "id": "A-statements-01-s24",
+      "answer": "ambiguous",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "The rambling ___ classroom note, 'Draw the ruler,' made Sam sketch a king.",
+      "cue_phrase": "sketch a king",
+      "surface": {
+        "precise": "precise",
+        "vague": "vague",
+        "ambiguous": "ambiguous",
+        "concise": "concise",
+        "emphatic": "emphatic"
+      }
+    },
+    {
+      "id": "A-statements-01-s25",
+      "answer": "concise",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Mia's ___ note fitted on one line and still got everyone ready.",
+      "cue_phrase": "one line and still",
+      "surface": {
+        "precise": "precise",
+        "vague": "vague",
+        "ambiguous": "ambiguous",
+        "concise": "concise",
+        "emphatic": "emphatic"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (precise); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-statements-01-s26",
+      "answer": "concise",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ recap used two calm sentences, yet nobody missed the plot.",
+      "cue_phrase": "two calm sentences",
+      "surface": {
+        "precise": "precise",
+        "vague": "vague",
+        "ambiguous": "ambiguous",
+        "concise": "concise",
+        "emphatic": "emphatic"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (precise); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-statements-01-s27",
+      "answer": "concise",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "After cutting three paragraphs, the ___ report still answered all questions.",
+      "cue_phrase": "still answered all questions",
+      "surface": {
+        "precise": "precise",
+        "vague": "vague",
+        "ambiguous": "ambiguous",
+        "concise": "concise",
+        "emphatic": "emphatic"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (precise); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-statements-01-s28",
+      "answer": "concise",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Jen made her ___ speech fit the timer without dropping any thank-yous.",
+      "cue_phrase": "without dropping any thank-yous",
+      "surface": {
+        "precise": "precise",
+        "vague": "vague",
+        "ambiguous": "ambiguous",
+        "concise": "concise",
+        "emphatic": "emphatic"
+      }
+    },
+    {
+      "id": "A-statements-01-s29",
+      "answer": "concise",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The captain's calm ___ order, 'Pack food, maps, coats,' got the crew moving.",
+      "cue_phrase": "Pack food, maps, coats",
+      "surface": {
+        "precise": "precise",
+        "vague": "vague",
+        "ambiguous": "ambiguous",
+        "concise": "concise",
+        "emphatic": "emphatic"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (emphatic, precise); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-statements-01-s30",
+      "answer": "concise",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Grandad's ___ story summary filled one postcard, and I knew the ending.",
+      "cue_phrase": "filled one postcard",
+      "surface": {
+        "precise": "precise",
+        "vague": "vague",
+        "ambiguous": "ambiguous",
+        "concise": "concise",
+        "emphatic": "emphatic"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (precise); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-statements-01-s31",
+      "answer": "concise",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The ___ fridge reminder fitted two words: 'Hens. Gate.'",
+      "cue_phrase": "fitted two words",
+      "surface": {
+        "precise": "precise",
+        "vague": "vague",
+        "ambiguous": "ambiguous",
+        "concise": "concise",
+        "emphatic": "emphatic"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (ambiguous, vague); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-statements-01-s32",
+      "answer": "concise",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Pia's calm ___ answer took one breath where others explained for minutes.",
+      "cue_phrase": "took one breath",
+      "surface": {
+        "precise": "precise",
+        "vague": "vague",
+        "ambiguous": "ambiguous",
+        "concise": "concise",
+        "emphatic": "emphatic"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (precise); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-statements-01-s33",
+      "answer": "emphatic",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "With a table-thump, Ava's ___ refusal shook the cups: 'I will not!'",
+      "cue_phrase": "shook the cups",
+      "surface": {
+        "precise": "precise",
+        "vague": "vague",
+        "ambiguous": "ambiguous",
+        "concise": "concise",
+        "emphatic": "emphatic"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (concise); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-statements-01-s34",
+      "answer": "emphatic",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The coach's ___ warning boomed across the pool and silenced the splashers.",
+      "cue_phrase": "boomed across the pool",
+      "surface": {
+        "precise": "precise",
+        "vague": "vague",
+        "ambiguous": "ambiguous",
+        "concise": "concise",
+        "emphatic": "emphatic"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (concise, precise); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-statements-01-s35",
+      "answer": "emphatic",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "At dinner, Dad's ___ 'No pets on tables!' made the kitten leap down.",
+      "cue_phrase": "kitten leap down",
+      "surface": {
+        "precise": "precise",
+        "vague": "vague",
+        "ambiguous": "ambiguous",
+        "concise": "concise",
+        "emphatic": "emphatic"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (concise, precise); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-statements-01-s36",
+      "answer": "emphatic",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The queen's ___ command rang through the hall, and guards snapped upright.",
+      "cue_phrase": "guards snapped upright",
+      "surface": {
+        "precise": "precise",
+        "vague": "vague",
+        "ambiguous": "ambiguous",
+        "concise": "concise",
+        "emphatic": "emphatic"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (concise, precise); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-statements-01-s37",
+      "answer": "emphatic",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "When Sam slammed the door, his ___ answer made the room go quiet.",
+      "cue_phrase": "slammed the door",
+      "surface": {
+        "precise": "precise",
+        "vague": "vague",
+        "ambiguous": "ambiguous",
+        "concise": "concise",
+        "emphatic": "emphatic"
+      }
+    },
+    {
+      "id": "A-statements-01-s38",
+      "answer": "emphatic",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The dragon's ___ promise came with smoke blasts: 'I shall guard this bridge!'",
+      "cue_phrase": "smoke blasts",
+      "surface": {
+        "precise": "precise",
+        "vague": "vague",
+        "ambiguous": "ambiguous",
+        "concise": "concise",
+        "emphatic": "emphatic"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (concise, precise); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-statements-01-s39",
+      "answer": "emphatic",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The teacher's ___ correction cracked like a drumbeat across the noisy classroom.",
+      "cue_phrase": "cracked like a drumbeat",
+      "surface": {
+        "precise": "precise",
+        "vague": "vague",
+        "ambiguous": "ambiguous",
+        "concise": "concise",
+        "emphatic": "emphatic"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (concise, precise); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-statements-01-s40",
+      "answer": "emphatic",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The giant's ___ announcement thundered from the hill: 'Leave our goats alone!'",
+      "cue_phrase": "thundered from the hill",
+      "surface": {
+        "precise": "precise",
+        "vague": "vague",
+        "ambiguous": "ambiguous",
+        "concise": "concise",
+        "emphatic": "emphatic"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (concise); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "precise",
+      "picked": "vague",
+      "line": "Precise gives the right small facts; vague leaves the facts fuzzy."
+    },
+    {
+      "answer": "precise",
+      "picked": "ambiguous",
+      "line": "Precise pins one thing down; ambiguous can be read two ways."
+    },
+    {
+      "answer": "precise",
+      "picked": "concise",
+      "line": "Precise cares about being right in small facts; concise cares about being short and complete."
+    },
+    {
+      "answer": "precise",
+      "picked": "emphatic",
+      "line": "Precise gives careful facts; emphatic delivers the message with power."
+    },
+    {
+      "answer": "vague",
+      "picked": "precise",
+      "line": "Vague leaves you unsure; precise gives careful facts you can follow."
+    },
+    {
+      "answer": "vague",
+      "picked": "ambiguous",
+      "line": "Vague is fuzzy or missing facts; ambiguous has two readings at once."
+    },
+    {
+      "answer": "vague",
+      "picked": "concise",
+      "line": "Vague leaves things out; concise is short but still complete."
+    },
+    {
+      "answer": "vague",
+      "picked": "emphatic",
+      "line": "Vague is unclear; emphatic is strong and hard-hitting."
+    },
+    {
+      "answer": "ambiguous",
+      "picked": "precise",
+      "line": "Ambiguous has two readings; precise points to one careful answer."
+    },
+    {
+      "answer": "ambiguous",
+      "picked": "vague",
+      "line": "Ambiguous can go two ways; vague is just fuzzy or lacking facts."
+    },
+    {
+      "answer": "ambiguous",
+      "picked": "concise",
+      "line": "Ambiguous may confuse by two readings; concise is short and complete."
+    },
+    {
+      "answer": "ambiguous",
+      "picked": "emphatic",
+      "line": "Ambiguous turns on two readings; emphatic turns on strong delivery."
+    },
+    {
+      "answer": "concise",
+      "picked": "precise",
+      "line": "Concise is short and complete; precise is about careful facts."
+    },
+    {
+      "answer": "concise",
+      "picked": "vague",
+      "line": "Concise says enough in little space; vague does not say enough."
+    },
+    {
+      "answer": "concise",
+      "picked": "ambiguous",
+      "line": "Concise is short and complete; ambiguous can be read two ways."
+    },
+    {
+      "answer": "concise",
+      "picked": "emphatic",
+      "line": "Concise saves space; emphatic adds strength or punch."
+    },
+    {
+      "answer": "emphatic",
+      "picked": "precise",
+      "line": "Emphatic sounds strong; precise gives careful facts."
+    },
+    {
+      "answer": "emphatic",
+      "picked": "vague",
+      "line": "Emphatic is bold and strong; vague is fuzzy or incomplete."
+    },
+    {
+      "answer": "emphatic",
+      "picked": "ambiguous",
+      "line": "Emphatic has strong delivery; ambiguous has two readings."
+    },
+    {
+      "answer": "emphatic",
+      "picked": "concise",
+      "line": "Emphatic hits hard; concise is short and complete."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-07T03:39:27+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": "2026-07-07",
+    "scrub_note": "Scrubbed by claude 2026-07-07: mechanical sweeps clean (one purple-snow frame cleared - colour absurdity, not calendar), all 40 sentences, all 20 contrasts, and mixed-tense surface maps read per set; no defects."
+  }
+}

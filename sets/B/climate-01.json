@@ -1,0 +1,986 @@
+{
+  "id": "B-climate-01",
+  "bank": "B",
+  "pos": "adjective",
+  "theme": "kinds of weather",
+  "band": 4,
+  "band_override": 4,
+  "computed": {
+    "zipf_min": 2.6,
+    "zipf_mean": 3.12,
+    "tightness": null,
+    "band_suggested": 4,
+    "scored_at": "2026-07-07T06:01:38+00:00"
+  },
+  "words": [
+    {
+      "w": "sweltering",
+      "synset": "sweltering.s.01",
+      "gloss_source": "authored",
+      "gloss": "uncomfortably hot, with heavy sticky air",
+      "zipf": 2.6,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "sweltering"
+      },
+      "discriminator": "oppressive heat",
+      "grade": 5
+    },
+    {
+      "w": "arid",
+      "synset": "arid.s.01",
+      "gloss_source": "wordnet",
+      "gloss": "lacking sufficient water or rainfall",
+      "zipf": 3.37,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "arid"
+      },
+      "discriminator": "dry, almost no rain",
+      "grade": 5
+    },
+    {
+      "w": "brisk",
+      "synset": "bracing.s.01",
+      "gloss_source": "authored",
+      "gloss": "pleasantly cool and fresh, waking you up",
+      "zipf": 3.2,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "brisk"
+      },
+      "discriminator": "cold but lively",
+      "grade": 5
+    },
+    {
+      "w": "frigid",
+      "synset": "arctic.s.02",
+      "gloss_source": "wordnet",
+      "gloss": "extremely cold",
+      "zipf": 2.98,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "frigid"
+      },
+      "discriminator": "hard freezing cold",
+      "grade": 6
+    },
+    {
+      "w": "bleak",
+      "synset": "bleak.s.03",
+      "gloss_source": "wordnet",
+      "gloss": "unpleasantly cold and damp",
+      "zipf": 3.43,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "bleak"
+      },
+      "discriminator": "grey, damp and cheerless",
+      "grade": 6
+    }
+  ],
+  "sentences": [
+    {
+      "id": "B-climate-01-s01",
+      "answer": "sweltering",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "In the ___ classroom, sweat ran down necks while the fan groaned.",
+      "cue_phrase": "sweat ran down necks",
+      "surface": {
+        "sweltering": "sweltering",
+        "arid": "arid",
+        "brisk": "brisk",
+        "frigid": "frigid",
+        "bleak": "bleak"
+      }
+    },
+    {
+      "id": "B-climate-01-s02",
+      "answer": "sweltering",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ bus made everyone's shirt cling before the first stop.",
+      "cue_phrase": "shirt cling",
+      "surface": {
+        "sweltering": "sweltering",
+        "arid": "arid",
+        "brisk": "brisk",
+        "frigid": "frigid",
+        "bleak": "bleak"
+      }
+    },
+    {
+      "id": "B-climate-01-s03",
+      "answer": "sweltering",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Mum opened every window in the ___ attic, but we still dripped.",
+      "cue_phrase": "still dripped",
+      "surface": {
+        "sweltering": "sweltering",
+        "arid": "arid",
+        "brisk": "brisk",
+        "frigid": "frigid",
+        "bleak": "bleak"
+      }
+    },
+    {
+      "id": "B-climate-01-s04",
+      "answer": "sweltering",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The greenhouse felt ___; my glasses fogged and we begged to leave.",
+      "cue_phrase": "my glasses fogged",
+      "surface": {
+        "sweltering": "sweltering",
+        "arid": "arid",
+        "brisk": "brisk",
+        "frigid": "frigid",
+        "bleak": "bleak"
+      }
+    },
+    {
+      "id": "B-climate-01-s05",
+      "answer": "sweltering",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Even the dog refused the ___ patio and sprawled beside the freezer.",
+      "cue_phrase": "beside the freezer",
+      "surface": {
+        "sweltering": "sweltering",
+        "arid": "arid",
+        "brisk": "brisk",
+        "frigid": "frigid",
+        "bleak": "bleak"
+      }
+    },
+    {
+      "id": "B-climate-01-s06",
+      "answer": "sweltering",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The assembly was ___, so three teachers waved papers as fans.",
+      "cue_phrase": "waved papers as fans",
+      "surface": {
+        "sweltering": "sweltering",
+        "arid": "arid",
+        "brisk": "brisk",
+        "frigid": "frigid",
+        "bleak": "bleak"
+      }
+    },
+    {
+      "id": "B-climate-01-s07",
+      "answer": "sweltering",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The ___ tent smelled of sun cream, and our pillows felt warm.",
+      "cue_phrase": "pillows felt warm",
+      "surface": {
+        "sweltering": "sweltering",
+        "arid": "arid",
+        "brisk": "brisk",
+        "frigid": "frigid",
+        "bleak": "bleak"
+      }
+    },
+    {
+      "id": "B-climate-01-s08",
+      "answer": "sweltering",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The ___ market sent sweat trickling under our sun hats.",
+      "cue_phrase": "sweat trickling",
+      "surface": {
+        "sweltering": "sweltering",
+        "arid": "arid",
+        "brisk": "brisk",
+        "frigid": "frigid",
+        "bleak": "bleak"
+      }
+    },
+    {
+      "id": "B-climate-01-s09",
+      "answer": "arid",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "On the ___ plain, cracked earth stretched past the cactus fence.",
+      "cue_phrase": "cracked earth",
+      "surface": {
+        "sweltering": "sweltering",
+        "arid": "arid",
+        "brisk": "brisk",
+        "frigid": "frigid",
+        "bleak": "bleak"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (bleak, sweltering); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-climate-01-s10",
+      "answer": "arid",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ village kept boats on sand where the lake had vanished.",
+      "cue_phrase": "lake had vanished",
+      "surface": {
+        "sweltering": "sweltering",
+        "arid": "arid",
+        "brisk": "brisk",
+        "frigid": "frigid",
+        "bleak": "bleak"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (bleak, sweltering); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-climate-01-s11",
+      "answer": "arid",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Camels crossed the ___ valley, raising dust with every step.",
+      "cue_phrase": "raising dust",
+      "surface": {
+        "sweltering": "sweltering",
+        "arid": "arid",
+        "brisk": "brisk",
+        "frigid": "frigid",
+        "bleak": "bleak"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (bleak, sweltering); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-climate-01-s12",
+      "answer": "arid",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "In the ___ garden, the hosepipe lay useless beside shrivelled beans.",
+      "cue_phrase": "shrivelled beans",
+      "surface": {
+        "sweltering": "sweltering",
+        "arid": "arid",
+        "brisk": "brisk",
+        "frigid": "frigid",
+        "bleak": "bleak"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (bleak, frigid, sweltering); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-climate-01-s13",
+      "answer": "arid",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Our route looked ___, with wells marked many miles apart.",
+      "cue_phrase": "wells marked many miles",
+      "surface": {
+        "sweltering": "sweltering",
+        "arid": "arid",
+        "brisk": "brisk",
+        "frigid": "frigid",
+        "bleak": "bleak"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: bleak's pinned sense is cold-and-damp; a dry desert route only fits the unpinned hopeless sense",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-climate-01-s14",
+      "answer": "arid",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The ___ riverbed rang under Maya's shoes like a drum.",
+      "cue_phrase": "riverbed rang",
+      "surface": {
+        "sweltering": "sweltering",
+        "arid": "arid",
+        "brisk": "brisk",
+        "frigid": "frigid",
+        "bleak": "bleak"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (bleak, sweltering); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-climate-01-s15",
+      "answer": "arid",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Only thorn bushes survived on the ___ hill behind the goats.",
+      "cue_phrase": "thorn bushes survived",
+      "surface": {
+        "sweltering": "sweltering",
+        "arid": "arid",
+        "brisk": "brisk",
+        "frigid": "frigid",
+        "bleak": "bleak"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: no damp or heat staged; arid's no-rain feature carried by the surviving thorn bushes",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-climate-01-s16",
+      "answer": "arid",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The ___ campsite left dust on our plates before breakfast.",
+      "cue_phrase": "dust on our plates",
+      "surface": {
+        "sweltering": "sweltering",
+        "arid": "arid",
+        "brisk": "brisk",
+        "frigid": "frigid",
+        "bleak": "bleak"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (bleak, sweltering); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-climate-01-s17",
+      "answer": "brisk",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ breeze felt cool and bright, making us skip faster.",
+      "cue_phrase": "cool and bright",
+      "surface": {
+        "sweltering": "sweltering",
+        "arid": "arid",
+        "brisk": "brisk",
+        "frigid": "frigid",
+        "bleak": "bleak"
+      }
+    },
+    {
+      "id": "B-climate-01-s18",
+      "answer": "brisk",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ sea wind nipped our cheeks awake, and we laughed the whole walk.",
+      "cue_phrase": "laughed the whole walk",
+      "surface": {
+        "sweltering": "sweltering",
+        "arid": "arid",
+        "brisk": "brisk",
+        "frigid": "frigid",
+        "bleak": "bleak"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: laughing the whole walk carries pleasant-cool; frigid's own frames freeze things solid (degree-adjacency, gigantic precedent)",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-climate-01-s19",
+      "answer": "brisk",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "A ___ gust pinked our noses while we jogged along the seafront.",
+      "cue_phrase": "pinked our noses",
+      "surface": {
+        "sweltering": "sweltering",
+        "arid": "arid",
+        "brisk": "brisk",
+        "frigid": "frigid",
+        "bleak": "bleak"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: jogging happily along the seafront carries pleasant-cool; no freeze staged for frigid (degree-adjacency)",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-climate-01-s20",
+      "answer": "brisk",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ morning made the class chatter and stamp happily before football.",
+      "cue_phrase": "stamp happily",
+      "surface": {
+        "sweltering": "sweltering",
+        "arid": "arid",
+        "brisk": "brisk",
+        "frigid": "frigid",
+        "bleak": "bleak"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (frigid); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-climate-01-s21",
+      "answer": "brisk",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The morning air felt ___; Liam's cheeks glowed and his steps bounced.",
+      "cue_phrase": "steps bounced",
+      "surface": {
+        "sweltering": "sweltering",
+        "arid": "arid",
+        "brisk": "brisk",
+        "frigid": "frigid",
+        "bleak": "bleak"
+      }
+    },
+    {
+      "id": "B-climate-01-s22",
+      "answer": "brisk",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The hilltop air felt ___, my scarf flying as I grinned.",
+      "cue_phrase": "scarf flying as I grinned",
+      "surface": {
+        "sweltering": "sweltering",
+        "arid": "arid",
+        "brisk": "brisk",
+        "frigid": "frigid",
+        "bleak": "bleak"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: scarf flying while grinning carries pleasant-cool; no freeze staged for frigid (degree-adjacency)",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-climate-01-s23",
+      "answer": "brisk",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "We chose the path with the ___ gusts because they kept us awake.",
+      "cue_phrase": "kept us awake",
+      "surface": {
+        "sweltering": "sweltering",
+        "arid": "arid",
+        "brisk": "brisk",
+        "frigid": "frigid",
+        "bleak": "bleak"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: gusts chosen because they keep you awake carries invigorating-cool; no freeze staged for frigid (degree-adjacency)",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-climate-01-s24",
+      "answer": "brisk",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The ___ harbour breeze made bells jingle and our picnic feel lively.",
+      "cue_phrase": "picnic feel lively",
+      "surface": {
+        "sweltering": "sweltering",
+        "arid": "arid",
+        "brisk": "brisk",
+        "frigid": "frigid",
+        "bleak": "bleak"
+      }
+    },
+    {
+      "id": "B-climate-01-s25",
+      "answer": "frigid",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ night froze the birdbath solid behind our kitchen.",
+      "cue_phrase": "froze the birdbath solid",
+      "surface": {
+        "sweltering": "sweltering",
+        "arid": "arid",
+        "brisk": "brisk",
+        "frigid": "frigid",
+        "bleak": "bleak"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (bleak); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-climate-01-s26",
+      "answer": "frigid",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The wind was ___; spilled juice turned to ice on the path.",
+      "cue_phrase": "turned to ice",
+      "surface": {
+        "sweltering": "sweltering",
+        "arid": "arid",
+        "brisk": "brisk",
+        "frigid": "frigid",
+        "bleak": "bleak"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (bleak); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-climate-01-s27",
+      "answer": "frigid",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "In the ___ shed, our breath clouded while frost coated every shelf.",
+      "cue_phrase": "frost coated every shelf",
+      "surface": {
+        "sweltering": "sweltering",
+        "arid": "arid",
+        "brisk": "brisk",
+        "frigid": "frigid",
+        "bleak": "bleak"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (bleak); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-climate-01-s28",
+      "answer": "frigid",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The playground felt ___ when the slide glittered with ice.",
+      "cue_phrase": "slide glittered with ice",
+      "surface": {
+        "sweltering": "sweltering",
+        "arid": "arid",
+        "brisk": "brisk",
+        "frigid": "frigid",
+        "bleak": "bleak"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (bleak, brisk); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-climate-01-s29",
+      "answer": "frigid",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Dad tapped the ___ pond; it sounded like a wooden floor.",
+      "cue_phrase": "like a wooden floor",
+      "surface": {
+        "sweltering": "sweltering",
+        "arid": "arid",
+        "brisk": "brisk",
+        "frigid": "frigid",
+        "bleak": "bleak"
+      }
+    },
+    {
+      "id": "B-climate-01-s30",
+      "answer": "frigid",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The ___ cave kept our sandwiches stiff as boards by lunchtime.",
+      "cue_phrase": "stiff as boards",
+      "surface": {
+        "sweltering": "sweltering",
+        "arid": "arid",
+        "brisk": "brisk",
+        "frigid": "frigid",
+        "bleak": "bleak"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (bleak); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-climate-01-s31",
+      "answer": "frigid",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Under the ___ stars, the tent zip froze shut before dawn.",
+      "cue_phrase": "zip froze shut",
+      "surface": {
+        "sweltering": "sweltering",
+        "arid": "arid",
+        "brisk": "brisk",
+        "frigid": "frigid",
+        "bleak": "bleak"
+      }
+    },
+    {
+      "id": "B-climate-01-s32",
+      "answer": "frigid",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The lane was ___; my eyelashes sparkled with tiny crystals.",
+      "cue_phrase": "eyelashes sparkled",
+      "surface": {
+        "sweltering": "sweltering",
+        "arid": "arid",
+        "brisk": "brisk",
+        "frigid": "frigid",
+        "bleak": "bleak"
+      }
+    },
+    {
+      "id": "B-climate-01-s33",
+      "answer": "bleak",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ afternoon turned the playground grey, soggy, and silent.",
+      "cue_phrase": "grey, soggy, and silent",
+      "surface": {
+        "sweltering": "sweltering",
+        "arid": "arid",
+        "brisk": "brisk",
+        "frigid": "frigid",
+        "bleak": "bleak"
+      }
+    },
+    {
+      "id": "B-climate-01-s34",
+      "answer": "bleak",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "A ___ drizzle blurred the windows while everyone sighed indoors.",
+      "cue_phrase": "drizzle blurred the windows",
+      "surface": {
+        "sweltering": "sweltering",
+        "arid": "arid",
+        "brisk": "brisk",
+        "frigid": "frigid",
+        "bleak": "bleak"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (frigid); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-climate-01-s35",
+      "answer": "bleak",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "On the ___ moor, wet grass soaked our socks under a grey sky.",
+      "cue_phrase": "wet grass soaked",
+      "surface": {
+        "sweltering": "sweltering",
+        "arid": "arid",
+        "brisk": "brisk",
+        "frigid": "frigid",
+        "bleak": "bleak"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (frigid); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-climate-01-s36",
+      "answer": "bleak",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The bus stop looked ___, with puddles, dull clouds, and no chatter.",
+      "cue_phrase": "puddles, dull clouds",
+      "surface": {
+        "sweltering": "sweltering",
+        "arid": "arid",
+        "brisk": "brisk",
+        "frigid": "frigid",
+        "bleak": "bleak"
+      }
+    },
+    {
+      "id": "B-climate-01-s37",
+      "answer": "bleak",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Even the ducks left the ___ pond as grey rain needled down.",
+      "cue_phrase": "grey rain needled",
+      "surface": {
+        "sweltering": "sweltering",
+        "arid": "arid",
+        "brisk": "brisk",
+        "frigid": "frigid",
+        "bleak": "bleak"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (frigid); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-climate-01-s38",
+      "answer": "bleak",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "At the ___ harbour, ropes dripped while fog hid the boats.",
+      "cue_phrase": "fog hid the boats",
+      "surface": {
+        "sweltering": "sweltering",
+        "arid": "arid",
+        "brisk": "brisk",
+        "frigid": "frigid",
+        "bleak": "bleak"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (frigid); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-climate-01-s39",
+      "answer": "bleak",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The campsite felt ___ as our comics curled under grey drizzle.",
+      "cue_phrase": "grey drizzle",
+      "surface": {
+        "sweltering": "sweltering",
+        "arid": "arid",
+        "brisk": "brisk",
+        "frigid": "frigid",
+        "bleak": "bleak"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (frigid); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-climate-01-s40",
+      "answer": "bleak",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The ___ lane squelched underfoot, with colourless clouds pressing low.",
+      "cue_phrase": "colourless clouds pressing",
+      "surface": {
+        "sweltering": "sweltering",
+        "arid": "arid",
+        "brisk": "brisk",
+        "frigid": "frigid",
+        "bleak": "bleak"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "sweltering",
+      "picked": "arid",
+      "line": "Sweltering is sweaty, pressing heat. Arid is dry, with almost no rain."
+    },
+    {
+      "answer": "sweltering",
+      "picked": "brisk",
+      "line": "Sweltering makes people droop from heat. Brisk feels cool and lively."
+    },
+    {
+      "answer": "sweltering",
+      "picked": "frigid",
+      "line": "Sweltering is too warm and sweaty. Frigid is freezing and harsh."
+    },
+    {
+      "answer": "sweltering",
+      "picked": "bleak",
+      "line": "Sweltering is sweaty heat. Bleak is grey, wet, and cheerless."
+    },
+    {
+      "answer": "arid",
+      "picked": "sweltering",
+      "line": "Arid means dry land with hardly any rain. Sweltering means sweaty heat."
+    },
+    {
+      "answer": "arid",
+      "picked": "brisk",
+      "line": "Arid is dusty and dry. Brisk is cool, lively weather."
+    },
+    {
+      "answer": "arid",
+      "picked": "frigid",
+      "line": "Arid has little rain. Frigid is freezing, not just dry."
+    },
+    {
+      "answer": "arid",
+      "picked": "bleak",
+      "line": "Arid is dry and dusty. Bleak is grey, wet, and gloomy."
+    },
+    {
+      "answer": "brisk",
+      "picked": "sweltering",
+      "line": "Brisk is cool and lively. Sweltering is sweaty heat."
+    },
+    {
+      "answer": "brisk",
+      "picked": "arid",
+      "line": "Brisk feels cool and wakeful. Arid is dry with hardly any rain."
+    },
+    {
+      "answer": "brisk",
+      "picked": "frigid",
+      "line": "Brisk is cool but lively. Frigid is freezing and much harsher."
+    },
+    {
+      "answer": "brisk",
+      "picked": "bleak",
+      "line": "Brisk makes you feel awake. Bleak feels grey, wet, and sad."
+    },
+    {
+      "answer": "frigid",
+      "picked": "sweltering",
+      "line": "Frigid is freezing and harsh. Sweltering is sweaty heat."
+    },
+    {
+      "answer": "frigid",
+      "picked": "arid",
+      "line": "Frigid can freeze things solid. Arid is dry from little rain."
+    },
+    {
+      "answer": "frigid",
+      "picked": "brisk",
+      "line": "Frigid is harsh freezing weather. Brisk is only cool and lively."
+    },
+    {
+      "answer": "frigid",
+      "picked": "bleak",
+      "line": "Frigid is freezing hard. Bleak is grey, wet, and cheerless."
+    },
+    {
+      "answer": "bleak",
+      "picked": "sweltering",
+      "line": "Bleak is grey, wet, and gloomy. Sweltering is sweaty heat."
+    },
+    {
+      "answer": "bleak",
+      "picked": "arid",
+      "line": "Bleak is grey and wet. Arid is dry, with hardly any rain."
+    },
+    {
+      "answer": "bleak",
+      "picked": "brisk",
+      "line": "Bleak feels grey and cheerless. Brisk feels cool and lively."
+    },
+    {
+      "answer": "bleak",
+      "picked": "frigid",
+      "line": "Bleak is wet and gloomy. Frigid is freezing hard."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-07T03:41:57+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": "2026-07-07",
+    "scrub_note": "Scrubbed by claude 2026-07-07: mechanical sweeps clean (one purple-snow frame cleared - colour absurdity, not calendar), all 40 sentences, all 20 contrasts, and mixed-tense surface maps read per set; no defects."
+  }
+}

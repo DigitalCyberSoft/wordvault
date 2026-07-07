@@ -1,0 +1,946 @@
+{
+  "id": "A-skill-01",
+  "bank": "A",
+  "pos": "noun",
+  "theme": "kinds of skill",
+  "band": 5,
+  "band_override": 5,
+  "computed": {
+    "zipf_min": 3.07,
+    "zipf_mean": 3.3,
+    "tightness": 0.347,
+    "band_suggested": 2,
+    "scored_at": "2026-07-07T06:01:38+00:00"
+  },
+  "words": [
+    {
+      "w": "stamina",
+      "synset": "stamina.n.01",
+      "gloss_source": "wordnet",
+      "gloss": "enduring strength and energy",
+      "zipf": 3.39,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "stamina"
+      },
+      "discriminator": "keeps going and going",
+      "grade": 5
+    },
+    {
+      "w": "agility",
+      "synset": "agility.n.01",
+      "gloss_source": "authored",
+      "gloss": "the ability to move quickly and easily",
+      "zipf": 3.33,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "agility"
+      },
+      "discriminator": "quick, easy whole-body movement",
+      "grade": 5
+    },
+    {
+      "w": "dexterity",
+      "synset": "dexterity.n.01",
+      "gloss_source": "authored",
+      "gloss": "skill and speed with the hands",
+      "zipf": 3.07,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "dexterity"
+      },
+      "discriminator": "clever fast hands",
+      "grade": 7
+    },
+    {
+      "w": "finesse",
+      "synset": "delicacy.n.06",
+      "gloss_source": "authored",
+      "gloss": "handling something tricky with delicate care",
+      "zipf": 3.18,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "finesse"
+      },
+      "discriminator": "delicate, just-right handling",
+      "grade": 7
+    },
+    {
+      "w": "intuition",
+      "synset": "intuition.n.01",
+      "gloss_source": "authored",
+      "gloss": "knowing something without reasoning it out",
+      "zipf": 3.54,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "intuition"
+      },
+      "discriminator": "knows without working it out",
+      "grade": 7
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-skill-01-s01",
+      "answer": "stamina",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "After six laps, Mia still had ___ to run two more.",
+      "cue_phrase": "six laps, Mia still had",
+      "surface": {
+        "stamina": "stamina",
+        "agility": "agility",
+        "dexterity": "dexterity",
+        "finesse": "finesse",
+        "intuition": "intuition"
+      }
+    },
+    {
+      "id": "A-skill-01-s02",
+      "answer": "stamina",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The hikers needed ___ to climb all morning without stopping.",
+      "cue_phrase": "all morning without stopping",
+      "surface": {
+        "stamina": "stamina",
+        "agility": "agility",
+        "dexterity": "dexterity",
+        "finesse": "finesse",
+        "intuition": "intuition"
+      }
+    },
+    {
+      "id": "A-skill-01-s03",
+      "answer": "stamina",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Even after the long dance show, Noor's ___ kept her smiling backstage.",
+      "cue_phrase": "after the long dance show",
+      "surface": {
+        "stamina": "stamina",
+        "agility": "agility",
+        "dexterity": "dexterity",
+        "finesse": "finesse",
+        "intuition": "intuition"
+      }
+    },
+    {
+      "id": "A-skill-01-s04",
+      "answer": "stamina",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Dad's ___ lasted through washing the car, mowing, and shopping.",
+      "cue_phrase": "lasted through washing",
+      "surface": {
+        "stamina": "stamina",
+        "agility": "agility",
+        "dexterity": "dexterity",
+        "finesse": "finesse",
+        "intuition": "intuition"
+      }
+    },
+    {
+      "id": "A-skill-01-s05",
+      "answer": "stamina",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "By sunset, the twins quit pedalling, but Lee's ___ carried him home.",
+      "cue_phrase": "twins quit pedalling",
+      "surface": {
+        "stamina": "stamina",
+        "agility": "agility",
+        "dexterity": "dexterity",
+        "finesse": "finesse",
+        "intuition": "intuition"
+      }
+    },
+    {
+      "id": "A-skill-01-s06",
+      "answer": "stamina",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "When the match reached extra time, Izzie's ___ still filled every stride.",
+      "cue_phrase": "reached extra time",
+      "surface": {
+        "stamina": "stamina",
+        "agility": "agility",
+        "dexterity": "dexterity",
+        "finesse": "finesse",
+        "intuition": "intuition"
+      }
+    },
+    {
+      "id": "A-skill-01-s07",
+      "answer": "stamina",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Gran's ___ let her weed the whole garden before lunch.",
+      "cue_phrase": "whole garden before lunch",
+      "surface": {
+        "stamina": "stamina",
+        "agility": "agility",
+        "dexterity": "dexterity",
+        "finesse": "finesse",
+        "intuition": "intuition"
+      }
+    },
+    {
+      "id": "A-skill-01-s08",
+      "answer": "stamina",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The drummer showed ___ by playing every song in the parade.",
+      "cue_phrase": "every song in the parade",
+      "surface": {
+        "stamina": "stamina",
+        "agility": "agility",
+        "dexterity": "dexterity",
+        "finesse": "finesse",
+        "intuition": "intuition"
+      }
+    },
+    {
+      "id": "A-skill-01-s09",
+      "answer": "agility",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The squirrel's ___ let it dart between branches and land neatly.",
+      "cue_phrase": "dart between branches",
+      "surface": {
+        "stamina": "stamina",
+        "agility": "agility",
+        "dexterity": "dexterity",
+        "finesse": "finesse",
+        "intuition": "intuition"
+      }
+    },
+    {
+      "id": "A-skill-01-s10",
+      "answer": "agility",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "In tag, Ava used ___ to duck, spin, and sprint away.",
+      "cue_phrase": "duck, spin, and sprint",
+      "surface": {
+        "stamina": "stamina",
+        "agility": "agility",
+        "dexterity": "dexterity",
+        "finesse": "finesse",
+        "intuition": "intuition"
+      }
+    },
+    {
+      "id": "A-skill-01-s11",
+      "answer": "agility",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The goalkeeper's ___ helped him spring sideways before the ball crossed.",
+      "cue_phrase": "spring sideways before",
+      "surface": {
+        "stamina": "stamina",
+        "agility": "agility",
+        "dexterity": "dexterity",
+        "finesse": "finesse",
+        "intuition": "intuition"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (intuition); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-skill-01-s12",
+      "answer": "agility",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "With ___, the cat slipped under the chair and leapt onto the shelf.",
+      "cue_phrase": "slipped under the chair",
+      "surface": {
+        "stamina": "stamina",
+        "agility": "agility",
+        "dexterity": "dexterity",
+        "finesse": "finesse",
+        "intuition": "intuition"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (dexterity, finesse); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-skill-01-s13",
+      "answer": "agility",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "When hoops rolled at her feet, Jaya's ___ kept her hopping clear.",
+      "cue_phrase": "kept her hopping clear",
+      "surface": {
+        "stamina": "stamina",
+        "agility": "agility",
+        "dexterity": "dexterity",
+        "finesse": "finesse",
+        "intuition": "intuition"
+      }
+    },
+    {
+      "id": "A-skill-01-s14",
+      "answer": "agility",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The fox's ___ got it over the fence before the dog reached.",
+      "cue_phrase": "over the fence before",
+      "surface": {
+        "stamina": "stamina",
+        "agility": "agility",
+        "dexterity": "dexterity",
+        "finesse": "finesse",
+        "intuition": "intuition"
+      }
+    },
+    {
+      "id": "A-skill-01-s15",
+      "answer": "agility",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "During the obstacle race, Ben's ___ sent him zigzagging through cones.",
+      "cue_phrase": "zigzagging through cones",
+      "surface": {
+        "stamina": "stamina",
+        "agility": "agility",
+        "dexterity": "dexterity",
+        "finesse": "finesse",
+        "intuition": "intuition"
+      }
+    },
+    {
+      "id": "A-skill-01-s16",
+      "answer": "agility",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The monkey needed ___ to swing, twist, and land on the rope.",
+      "cue_phrase": "swing, twist, and land",
+      "surface": {
+        "stamina": "stamina",
+        "agility": "agility",
+        "dexterity": "dexterity",
+        "finesse": "finesse",
+        "intuition": "intuition"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (dexterity, finesse); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-skill-01-s17",
+      "answer": "dexterity",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Omar's ___ made his fingers zip through three tiny buttons.",
+      "cue_phrase": "fingers zip through",
+      "surface": {
+        "stamina": "stamina",
+        "agility": "agility",
+        "dexterity": "dexterity",
+        "finesse": "finesse",
+        "intuition": "intuition"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (finesse); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-skill-01-s18",
+      "answer": "dexterity",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The magician's ___ made coins flip between his fingers in a blur.",
+      "cue_phrase": "fingers in a blur",
+      "surface": {
+        "stamina": "stamina",
+        "agility": "agility",
+        "dexterity": "dexterity",
+        "finesse": "finesse",
+        "intuition": "intuition"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (finesse); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-skill-01-s19",
+      "answer": "dexterity",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Nina's ___ showed when her fingers sorted tiny beads before anyone else.",
+      "cue_phrase": "fingers sorted tiny beads",
+      "surface": {
+        "stamina": "stamina",
+        "agility": "agility",
+        "dexterity": "dexterity",
+        "finesse": "finesse",
+        "intuition": "intuition"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (finesse); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-skill-01-s20",
+      "answer": "dexterity",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Tariq's ___ helped him fold six paper cranes while others finished one.",
+      "cue_phrase": "six paper cranes",
+      "surface": {
+        "stamina": "stamina",
+        "agility": "agility",
+        "dexterity": "dexterity",
+        "finesse": "finesse",
+        "intuition": "intuition"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (finesse); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-skill-01-s21",
+      "answer": "dexterity",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The jar was narrow, but Eva's ___ plucked ten marbles with chopsticks before the timer beeped.",
+      "cue_phrase": "before the timer beeped",
+      "surface": {
+        "stamina": "stamina",
+        "agility": "agility",
+        "dexterity": "dexterity",
+        "finesse": "finesse",
+        "intuition": "intuition"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (finesse); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-skill-01-s22",
+      "answer": "dexterity",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "During the game, Mo's ___ stacked slippery cards into towers fastest.",
+      "cue_phrase": "into towers fastest",
+      "surface": {
+        "stamina": "stamina",
+        "agility": "agility",
+        "dexterity": "dexterity",
+        "finesse": "finesse",
+        "intuition": "intuition"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (finesse); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-skill-01-s23",
+      "answer": "dexterity",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Pip's ___ let his thumbs tap the game code before the clock beeped.",
+      "cue_phrase": "thumbs tap the game",
+      "surface": {
+        "stamina": "stamina",
+        "agility": "agility",
+        "dexterity": "dexterity",
+        "finesse": "finesse",
+        "intuition": "intuition"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (agility); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-skill-01-s24",
+      "answer": "dexterity",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Auntie's ___ turned a ball of wool into neat loops during one song.",
+      "cue_phrase": "during one song",
+      "surface": {
+        "stamina": "stamina",
+        "agility": "agility",
+        "dexterity": "dexterity",
+        "finesse": "finesse",
+        "intuition": "intuition"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (finesse); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-skill-01-s25",
+      "answer": "finesse",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "With ___, Rosa eased the torn page flat, millimetre by millimetre.",
+      "cue_phrase": "millimetre by millimetre",
+      "surface": {
+        "stamina": "stamina",
+        "agility": "agility",
+        "dexterity": "dexterity",
+        "finesse": "finesse",
+        "intuition": "intuition"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (dexterity); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-skill-01-s26",
+      "answer": "finesse",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The cook used ___, giving the wobbly cake just enough push.",
+      "cue_phrase": "just enough push",
+      "surface": {
+        "stamina": "stamina",
+        "agility": "agility",
+        "dexterity": "dexterity",
+        "finesse": "finesse",
+        "intuition": "intuition"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (intuition); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-skill-01-s27",
+      "answer": "finesse",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Mum's ___ loosened the knot bit by bit, leaving the necklace unbent.",
+      "cue_phrase": "bit by bit",
+      "surface": {
+        "stamina": "stamina",
+        "agility": "agility",
+        "dexterity": "dexterity",
+        "finesse": "finesse",
+        "intuition": "intuition"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (dexterity); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-skill-01-s28",
+      "answer": "finesse",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Kai's ___ balanced the egg on the spoon after one tiny tilt.",
+      "cue_phrase": "one tiny tilt",
+      "surface": {
+        "stamina": "stamina",
+        "agility": "agility",
+        "dexterity": "dexterity",
+        "finesse": "finesse",
+        "intuition": "intuition"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (dexterity); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-skill-01-s29",
+      "answer": "finesse",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The glass tower shook, so Hana's ___ placed the last block softly.",
+      "cue_phrase": "glass tower shook",
+      "surface": {
+        "stamina": "stamina",
+        "agility": "agility",
+        "dexterity": "dexterity",
+        "finesse": "finesse",
+        "intuition": "intuition"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (dexterity); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-skill-01-s30",
+      "answer": "finesse",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The frightened bird stayed calm when Arun's ___ lifted the latch softly.",
+      "cue_phrase": "frightened bird stayed calm",
+      "surface": {
+        "stamina": "stamina",
+        "agility": "agility",
+        "dexterity": "dexterity",
+        "finesse": "finesse",
+        "intuition": "intuition"
+      }
+    },
+    {
+      "id": "A-skill-01-s31",
+      "answer": "finesse",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Sam's ___ saved the clay bowl with a touch lighter than breath.",
+      "cue_phrase": "touch lighter than breath",
+      "surface": {
+        "stamina": "stamina",
+        "agility": "agility",
+        "dexterity": "dexterity",
+        "finesse": "finesse",
+        "intuition": "intuition"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (dexterity); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-skill-01-s32",
+      "answer": "finesse",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "One wrong tug could snap the thread, but Bea's ___ freed it.",
+      "cue_phrase": "wrong tug could snap",
+      "surface": {
+        "stamina": "stamina",
+        "agility": "agility",
+        "dexterity": "dexterity",
+        "finesse": "finesse",
+        "intuition": "intuition"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: one wrong tug could snap = fragility demanding a just-right touch (finesse); no finger speed staged for dexterity",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-skill-01-s33",
+      "answer": "intuition",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Before opening the box, Lina's ___ told her the kitten hid inside.",
+      "cue_phrase": "Before opening the box",
+      "surface": {
+        "stamina": "stamina",
+        "agility": "agility",
+        "dexterity": "dexterity",
+        "finesse": "finesse",
+        "intuition": "intuition"
+      }
+    },
+    {
+      "id": "A-skill-01-s34",
+      "answer": "intuition",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Tom's ___ picked the safe path before he saw the loose stones.",
+      "cue_phrase": "before he saw",
+      "surface": {
+        "stamina": "stamina",
+        "agility": "agility",
+        "dexterity": "dexterity",
+        "finesse": "finesse",
+        "intuition": "intuition"
+      }
+    },
+    {
+      "id": "A-skill-01-s35",
+      "answer": "intuition",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "No map helped, yet Priya's ___ led the group back to camp.",
+      "cue_phrase": "No map helped",
+      "surface": {
+        "stamina": "stamina",
+        "agility": "agility",
+        "dexterity": "dexterity",
+        "finesse": "finesse",
+        "intuition": "intuition"
+      }
+    },
+    {
+      "id": "A-skill-01-s36",
+      "answer": "intuition",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Milo's ___ made him choose the quiet door, just before bells rang.",
+      "cue_phrase": "just before bells rang",
+      "surface": {
+        "stamina": "stamina",
+        "agility": "agility",
+        "dexterity": "dexterity",
+        "finesse": "finesse",
+        "intuition": "intuition"
+      }
+    },
+    {
+      "id": "A-skill-01-s37",
+      "answer": "intuition",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The riddle had no clues, but Zara's ___ landed on the right answer.",
+      "cue_phrase": "no clues",
+      "surface": {
+        "stamina": "stamina",
+        "agility": "agility",
+        "dexterity": "dexterity",
+        "finesse": "finesse",
+        "intuition": "intuition"
+      }
+    },
+    {
+      "id": "A-skill-01-s38",
+      "answer": "intuition",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Before the dog barked, Erin's ___ sent her to the gate.",
+      "cue_phrase": "Before the dog barked",
+      "surface": {
+        "stamina": "stamina",
+        "agility": "agility",
+        "dexterity": "dexterity",
+        "finesse": "finesse",
+        "intuition": "intuition"
+      }
+    },
+    {
+      "id": "A-skill-01-s39",
+      "answer": "intuition",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Nobody spoke, yet Finn's ___ told him the surprise was for Mum.",
+      "cue_phrase": "Nobody spoke",
+      "surface": {
+        "stamina": "stamina",
+        "agility": "agility",
+        "dexterity": "dexterity",
+        "finesse": "finesse",
+        "intuition": "intuition"
+      }
+    },
+    {
+      "id": "A-skill-01-s40",
+      "answer": "intuition",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "At chess club, Nia's ___ warned her that the shiny move was a trap.",
+      "cue_phrase": "shiny move was a trap",
+      "surface": {
+        "stamina": "stamina",
+        "agility": "agility",
+        "dexterity": "dexterity",
+        "finesse": "finesse",
+        "intuition": "intuition"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "stamina",
+      "picked": "agility",
+      "line": "Stamina keeps going for ages; agility is fast, light whole-body action."
+    },
+    {
+      "answer": "stamina",
+      "picked": "dexterity",
+      "line": "Stamina lasts through a long effort; dexterity is clever, fast finger work."
+    },
+    {
+      "answer": "stamina",
+      "picked": "finesse",
+      "line": "Stamina keeps a person going; finesse is a gentle, just-right touch."
+    },
+    {
+      "answer": "stamina",
+      "picked": "intuition",
+      "line": "Stamina lasts through hard effort; intuition is a sudden inner answer."
+    },
+    {
+      "answer": "agility",
+      "picked": "stamina",
+      "line": "Agility dodges and leaps fast; stamina keeps going for a long time."
+    },
+    {
+      "answer": "agility",
+      "picked": "dexterity",
+      "line": "Agility is whole-body dodging; dexterity is clever, fast finger work."
+    },
+    {
+      "answer": "agility",
+      "picked": "finesse",
+      "line": "Agility is quick body action; finesse is a gentle, just-right touch."
+    },
+    {
+      "answer": "agility",
+      "picked": "intuition",
+      "line": "Agility shows in leaps and turns; intuition is a sudden inner answer."
+    },
+    {
+      "answer": "dexterity",
+      "picked": "stamina",
+      "line": "Dexterity is clever, fast finger work; stamina keeps going for a long time."
+    },
+    {
+      "answer": "dexterity",
+      "picked": "agility",
+      "line": "Dexterity works through fingers; agility uses the whole body to dodge or leap."
+    },
+    {
+      "answer": "dexterity",
+      "picked": "finesse",
+      "line": "Dexterity can be fast finger work; finesse is slow, gentle, just-right touch."
+    },
+    {
+      "answer": "dexterity",
+      "picked": "intuition",
+      "line": "Dexterity shows in finger work; intuition is a sudden inner answer."
+    },
+    {
+      "answer": "finesse",
+      "picked": "stamina",
+      "line": "Finesse is gentle, just-right touch; stamina keeps going for a long time."
+    },
+    {
+      "answer": "finesse",
+      "picked": "agility",
+      "line": "Finesse is careful touch; agility is quick body dodging and leaping."
+    },
+    {
+      "answer": "finesse",
+      "picked": "dexterity",
+      "line": "Finesse is just-right gentle touch; dexterity is clever, fast finger work."
+    },
+    {
+      "answer": "finesse",
+      "picked": "intuition",
+      "line": "Finesse uses a just-right touch; intuition is a sudden inner answer."
+    },
+    {
+      "answer": "intuition",
+      "picked": "stamina",
+      "line": "Intuition is a sudden inner answer; stamina keeps going for a long time."
+    },
+    {
+      "answer": "intuition",
+      "picked": "agility",
+      "line": "Intuition is an inner answer; agility is quick body dodging or leaping."
+    },
+    {
+      "answer": "intuition",
+      "picked": "dexterity",
+      "line": "Intuition is an inner answer; dexterity is clever, fast finger work."
+    },
+    {
+      "answer": "intuition",
+      "picked": "finesse",
+      "line": "Intuition is an inner answer; finesse is gentle, just-right touch."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-07T03:36:24+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": "2026-07-07",
+    "scrub_note": "Scrubbed by claude 2026-07-07: mechanical sweeps clean (one purple-snow frame cleared - colour absurdity, not calendar), all 40 sentences, all 20 contrasts, and mixed-tense surface maps read per set; no defects."
+  }
+}

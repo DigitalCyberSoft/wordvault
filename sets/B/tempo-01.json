@@ -1,0 +1,906 @@
+{
+  "id": "B-tempo-01",
+  "bank": "B",
+  "pos": "adjective",
+  "theme": "how things happen over time",
+  "band": 5,
+  "band_override": 5,
+  "computed": {
+    "zipf_min": 3.32,
+    "zipf_mean": 3.39,
+    "tightness": null,
+    "band_suggested": 3,
+    "scored_at": "2026-07-07T06:01:38+00:00"
+  },
+  "words": [
+    {
+      "w": "abrupt",
+      "synset": "abrupt.s.02",
+      "gloss_source": "wordnet",
+      "gloss": "exceedingly sudden and unexpected",
+      "zipf": 3.38,
+      "register": "neutral",
+      "senses_at_pos": 4,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "abrupt"
+      },
+      "discriminator": "one sudden change, no warning",
+      "grade": 5
+    },
+    {
+      "w": "fleeting",
+      "synset": "fleeting.s.01",
+      "gloss_source": "wordnet",
+      "gloss": "lasting for a markedly brief time",
+      "zipf": 3.32,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "fleeting"
+      },
+      "discriminator": "here for a moment, then gone",
+      "grade": 6
+    },
+    {
+      "w": "relentless",
+      "synset": "persistent.s.01",
+      "gloss_source": "authored",
+      "gloss": "never stopping or easing off",
+      "zipf": 3.51,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "relentless"
+      },
+      "discriminator": "keeps pressing without a break",
+      "grade": 6
+    },
+    {
+      "w": "intermittent",
+      "synset": "intermittent.s.01",
+      "gloss_source": "authored",
+      "gloss": "stopping and starting at intervals",
+      "zipf": 3.39,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "intermittent"
+      },
+      "discriminator": "comes and goes in bursts",
+      "grade": 7
+    },
+    {
+      "w": "erratic",
+      "synset": "erratic.s.02",
+      "gloss_source": "wordnet",
+      "gloss": "having no fixed course",
+      "zipf": 3.34,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "erratic"
+      },
+      "discriminator": "wanders with no pattern",
+      "grade": 7
+    }
+  ],
+  "sentences": [
+    {
+      "id": "B-tempo-01-s01",
+      "answer": "abrupt",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ blackout came without any warning during the shadow-puppet show.",
+      "cue_phrase": "without any warning",
+      "surface": {
+        "abrupt": "abrupt",
+        "fleeting": "fleeting",
+        "relentless": "relentless",
+        "intermittent": "intermittent",
+        "erratic": "erratic"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (fleeting, intermittent); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-tempo-01-s02",
+      "answer": "abrupt",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "With no hint beforehand, the ___ turn sent Ben's marble under the sofa.",
+      "cue_phrase": "no hint beforehand",
+      "surface": {
+        "abrupt": "abrupt",
+        "fleeting": "fleeting",
+        "relentless": "relentless",
+        "intermittent": "intermittent",
+        "erratic": "erratic"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (erratic); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-tempo-01-s03",
+      "answer": "abrupt",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ silence hit the room the instant the drumstick snapped.",
+      "cue_phrase": "the instant the",
+      "surface": {
+        "abrupt": "abrupt",
+        "fleeting": "fleeting",
+        "relentless": "relentless",
+        "intermittent": "intermittent",
+        "erratic": "erratic"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (fleeting, relentless); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-tempo-01-s04",
+      "answer": "abrupt",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The door's ___ slam cut off the giggles in one sharp bang.",
+      "cue_phrase": "one sharp bang",
+      "surface": {
+        "abrupt": "abrupt",
+        "fleeting": "fleeting",
+        "relentless": "relentless",
+        "intermittent": "intermittent",
+        "erratic": "erratic"
+      }
+    },
+    {
+      "id": "B-tempo-01-s05",
+      "answer": "abrupt",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Mia was laughing until the ___ change of plans froze her smile.",
+      "cue_phrase": "froze her smile",
+      "surface": {
+        "abrupt": "abrupt",
+        "fleeting": "fleeting",
+        "relentless": "relentless",
+        "intermittent": "intermittent",
+        "erratic": "erratic"
+      }
+    },
+    {
+      "id": "B-tempo-01-s06",
+      "answer": "abrupt",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The ride's ___ start snapped our heads back before the bell finished.",
+      "cue_phrase": "snapped our heads back",
+      "surface": {
+        "abrupt": "abrupt",
+        "fleeting": "fleeting",
+        "relentless": "relentless",
+        "intermittent": "intermittent",
+        "erratic": "erratic"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (erratic); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-tempo-01-s07",
+      "answer": "abrupt",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The ___ ending left three pages blank in Niko's mystery comic.",
+      "cue_phrase": "three pages blank",
+      "surface": {
+        "abrupt": "abrupt",
+        "fleeting": "fleeting",
+        "relentless": "relentless",
+        "intermittent": "intermittent",
+        "erratic": "erratic"
+      }
+    },
+    {
+      "id": "B-tempo-01-s08",
+      "answer": "abrupt",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "The ___ halt jolted the carriage while our snacks flew upward.",
+      "cue_phrase": "snacks flew upward",
+      "surface": {
+        "abrupt": "abrupt",
+        "fleeting": "fleeting",
+        "relentless": "relentless",
+        "intermittent": "intermittent",
+        "erratic": "erratic"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (erratic); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-tempo-01-s09",
+      "answer": "fleeting",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "A ___ rainbow shimmered for one minute, then faded behind the hill.",
+      "cue_phrase": "one minute, then faded",
+      "surface": {
+        "abrupt": "abrupt",
+        "fleeting": "fleeting",
+        "relentless": "relentless",
+        "intermittent": "intermittent",
+        "erratic": "erratic"
+      }
+    },
+    {
+      "id": "B-tempo-01-s10",
+      "answer": "fleeting",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ smile crossed Asha's face and vanished before anyone waved.",
+      "cue_phrase": "vanished before anyone waved",
+      "surface": {
+        "abrupt": "abrupt",
+        "fleeting": "fleeting",
+        "relentless": "relentless",
+        "intermittent": "intermittent",
+        "erratic": "erratic"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (abrupt); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-tempo-01-s11",
+      "answer": "fleeting",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ patch of sunlight slipped away before Leo warmed his hands.",
+      "cue_phrase": "before Leo warmed",
+      "surface": {
+        "abrupt": "abrupt",
+        "fleeting": "fleeting",
+        "relentless": "relentless",
+        "intermittent": "intermittent",
+        "erratic": "erratic"
+      }
+    },
+    {
+      "id": "B-tempo-01-s12",
+      "answer": "fleeting",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Pip saw a ___ sparkle on the pond, gone by his second step.",
+      "cue_phrase": "gone by his",
+      "surface": {
+        "abrupt": "abrupt",
+        "fleeting": "fleeting",
+        "relentless": "relentless",
+        "intermittent": "intermittent",
+        "erratic": "erratic"
+      }
+    },
+    {
+      "id": "B-tempo-01-s13",
+      "answer": "fleeting",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The ___ taste of mint disappeared before Noor swallowed the biscuit.",
+      "cue_phrase": "before Noor swallowed",
+      "surface": {
+        "abrupt": "abrupt",
+        "fleeting": "fleeting",
+        "relentless": "relentless",
+        "intermittent": "intermittent",
+        "erratic": "erratic"
+      }
+    },
+    {
+      "id": "B-tempo-01-s14",
+      "answer": "fleeting",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Only one page showed the ___ glow before the magic ink dulled.",
+      "cue_phrase": "before the magic ink dulled",
+      "surface": {
+        "abrupt": "abrupt",
+        "fleeting": "fleeting",
+        "relentless": "relentless",
+        "intermittent": "intermittent",
+        "erratic": "erratic"
+      }
+    },
+    {
+      "id": "B-tempo-01-s15",
+      "answer": "fleeting",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The ___ echo bounced once in the tunnel and left us listening.",
+      "cue_phrase": "bounced once",
+      "surface": {
+        "abrupt": "abrupt",
+        "fleeting": "fleeting",
+        "relentless": "relentless",
+        "intermittent": "intermittent",
+        "erratic": "erratic"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (abrupt); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-tempo-01-s16",
+      "answer": "fleeting",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "A ___ shadow crossed the moon and vanished beyond the chimney.",
+      "cue_phrase": "vanished beyond",
+      "surface": {
+        "abrupt": "abrupt",
+        "fleeting": "fleeting",
+        "relentless": "relentless",
+        "intermittent": "intermittent",
+        "erratic": "erratic"
+      }
+    },
+    {
+      "id": "B-tempo-01-s17",
+      "answer": "relentless",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "In storm week, ___ rain drums on our roof without a pause.",
+      "cue_phrase": "without a pause",
+      "surface": {
+        "abrupt": "abrupt",
+        "fleeting": "fleeting",
+        "relentless": "relentless",
+        "intermittent": "intermittent",
+        "erratic": "erratic"
+      }
+    },
+    {
+      "id": "B-tempo-01-s18",
+      "answer": "relentless",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Her ___ questions kept coming through breakfast, lunch, and the bus ride.",
+      "cue_phrase": "kept coming through",
+      "surface": {
+        "abrupt": "abrupt",
+        "fleeting": "fleeting",
+        "relentless": "relentless",
+        "intermittent": "intermittent",
+        "erratic": "erratic"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (abrupt, erratic, intermittent); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-tempo-01-s19",
+      "answer": "relentless",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ wind pushed the tent ropes hour after hour.",
+      "cue_phrase": "hour after hour",
+      "surface": {
+        "abrupt": "abrupt",
+        "fleeting": "fleeting",
+        "relentless": "relentless",
+        "intermittent": "intermittent",
+        "erratic": "erratic"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (erratic, intermittent); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-tempo-01-s20",
+      "answer": "relentless",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "A ___ chant followed the runners from the gate to the finish.",
+      "cue_phrase": "gate to the finish",
+      "surface": {
+        "abrupt": "abrupt",
+        "fleeting": "fleeting",
+        "relentless": "relentless",
+        "intermittent": "intermittent",
+        "erratic": "erratic"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (erratic, intermittent); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-tempo-01-s21",
+      "answer": "relentless",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The ___ hum filled the room from lunch until bedtime.",
+      "cue_phrase": "from lunch until bedtime",
+      "surface": {
+        "abrupt": "abrupt",
+        "fleeting": "fleeting",
+        "relentless": "relentless",
+        "intermittent": "intermittent",
+        "erratic": "erratic"
+      }
+    },
+    {
+      "id": "B-tempo-01-s22",
+      "answer": "relentless",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The ___ roar of the waterfall followed us along the whole path.",
+      "cue_phrase": "whole path",
+      "surface": {
+        "abrupt": "abrupt",
+        "fleeting": "fleeting",
+        "relentless": "relentless",
+        "intermittent": "intermittent",
+        "erratic": "erratic"
+      }
+    },
+    {
+      "id": "B-tempo-01-s23",
+      "answer": "relentless",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The ___ sun beat on the field through the whole match.",
+      "cue_phrase": "through the whole match",
+      "surface": {
+        "abrupt": "abrupt",
+        "fleeting": "fleeting",
+        "relentless": "relentless",
+        "intermittent": "intermittent",
+        "erratic": "erratic"
+      }
+    },
+    {
+      "id": "B-tempo-01-s24",
+      "answer": "relentless",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The ___ knocking had no quiet gap until the dragon blinked.",
+      "cue_phrase": "no quiet gap",
+      "surface": {
+        "abrupt": "abrupt",
+        "fleeting": "fleeting",
+        "relentless": "relentless",
+        "intermittent": "intermittent",
+        "erratic": "erratic"
+      }
+    },
+    {
+      "id": "B-tempo-01-s25",
+      "answer": "intermittent",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ lamp blinked on every ten seconds, went dark between flashes.",
+      "cue_phrase": "between flashes",
+      "surface": {
+        "abrupt": "abrupt",
+        "fleeting": "fleeting",
+        "relentless": "relentless",
+        "intermittent": "intermittent",
+        "erratic": "erratic"
+      }
+    },
+    {
+      "id": "B-tempo-01-s26",
+      "answer": "intermittent",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ showers arrived after each bell, with dry playgrounds between them.",
+      "cue_phrase": "dry playgrounds between",
+      "surface": {
+        "abrupt": "abrupt",
+        "fleeting": "fleeting",
+        "relentless": "relentless",
+        "intermittent": "intermittent",
+        "erratic": "erratic"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (fleeting); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-tempo-01-s27",
+      "answer": "intermittent",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "During maths, the ___ buzzing sounded twice, rested, then sounded twice more.",
+      "cue_phrase": "rested, then sounded",
+      "surface": {
+        "abrupt": "abrupt",
+        "fleeting": "fleeting",
+        "relentless": "relentless",
+        "intermittent": "intermittent",
+        "erratic": "erratic"
+      }
+    },
+    {
+      "id": "B-tempo-01-s28",
+      "answer": "intermittent",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ wipers swept once, waited, then swept again as drops gathered.",
+      "cue_phrase": "swept once, waited, then swept again",
+      "surface": {
+        "abrupt": "abrupt",
+        "fleeting": "fleeting",
+        "relentless": "relentless",
+        "intermittent": "intermittent",
+        "erratic": "erratic"
+      }
+    },
+    {
+      "id": "B-tempo-01-s29",
+      "answer": "intermittent",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The ___ drizzle wet our hats, paused for each chorus, then returned.",
+      "cue_phrase": "paused for each chorus",
+      "surface": {
+        "abrupt": "abrupt",
+        "fleeting": "fleeting",
+        "relentless": "relentless",
+        "intermittent": "intermittent",
+        "erratic": "erratic"
+      }
+    },
+    {
+      "id": "B-tempo-01-s30",
+      "answer": "intermittent",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Sam timed the ___ squeak: three silent swings, then one squeal.",
+      "cue_phrase": "three silent swings",
+      "surface": {
+        "abrupt": "abrupt",
+        "fleeting": "fleeting",
+        "relentless": "relentless",
+        "intermittent": "intermittent",
+        "erratic": "erratic"
+      }
+    },
+    {
+      "id": "B-tempo-01-s31",
+      "answer": "intermittent",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The ___ torch shone for five counts, faded, then shone again.",
+      "cue_phrase": "five counts, faded",
+      "surface": {
+        "abrupt": "abrupt",
+        "fleeting": "fleeting",
+        "relentless": "relentless",
+        "intermittent": "intermittent",
+        "erratic": "erratic"
+      }
+    },
+    {
+      "id": "B-tempo-01-s32",
+      "answer": "intermittent",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "At camp, the ___ signal appeared each hour, with blank screens between.",
+      "cue_phrase": "blank screens between",
+      "surface": {
+        "abrupt": "abrupt",
+        "fleeting": "fleeting",
+        "relentless": "relentless",
+        "intermittent": "intermittent",
+        "erratic": "erratic"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (fleeting); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-tempo-01-s33",
+      "answer": "erratic",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "On windy afternoons, the ___ kite zigzags with no pattern above the field.",
+      "cue_phrase": "with no pattern",
+      "surface": {
+        "abrupt": "abrupt",
+        "fleeting": "fleeting",
+        "relentless": "relentless",
+        "intermittent": "intermittent",
+        "erratic": "erratic"
+      }
+    },
+    {
+      "id": "B-tempo-01-s34",
+      "answer": "erratic",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Our ___ robot rolled left, right, backwards, with no order.",
+      "cue_phrase": "with no order",
+      "surface": {
+        "abrupt": "abrupt",
+        "fleeting": "fleeting",
+        "relentless": "relentless",
+        "intermittent": "intermittent",
+        "erratic": "erratic"
+      }
+    },
+    {
+      "id": "B-tempo-01-s35",
+      "answer": "erratic",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ snail trail looped, crossed itself, and ended under a leaf.",
+      "cue_phrase": "looped, crossed itself",
+      "surface": {
+        "abrupt": "abrupt",
+        "fleeting": "fleeting",
+        "relentless": "relentless",
+        "intermittent": "intermittent",
+        "erratic": "erratic"
+      }
+    },
+    {
+      "id": "B-tempo-01-s36",
+      "answer": "erratic",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "A ___ line of ants wandered around crumbs instead of following one track.",
+      "cue_phrase": "instead of following",
+      "surface": {
+        "abrupt": "abrupt",
+        "fleeting": "fleeting",
+        "relentless": "relentless",
+        "intermittent": "intermittent",
+        "erratic": "erratic"
+      }
+    },
+    {
+      "id": "B-tempo-01-s37",
+      "answer": "erratic",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Tara missed the ___ ball as it bounced sideways, high, then low.",
+      "cue_phrase": "sideways, high, then",
+      "surface": {
+        "abrupt": "abrupt",
+        "fleeting": "fleeting",
+        "relentless": "relentless",
+        "intermittent": "intermittent",
+        "erratic": "erratic"
+      }
+    },
+    {
+      "id": "B-tempo-01-s38",
+      "answer": "erratic",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The wizard's ___ spell shot sparks north, down, and behind him.",
+      "cue_phrase": "north, down, and",
+      "surface": {
+        "abrupt": "abrupt",
+        "fleeting": "fleeting",
+        "relentless": "relentless",
+        "intermittent": "intermittent",
+        "erratic": "erratic"
+      }
+    },
+    {
+      "id": "B-tempo-01-s39",
+      "answer": "erratic",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The moth's ___ flight circled the lamp, darted away, then wove back again.",
+      "cue_phrase": "darted away, then wove back",
+      "surface": {
+        "abrupt": "abrupt",
+        "fleeting": "fleeting",
+        "relentless": "relentless",
+        "intermittent": "intermittent",
+        "erratic": "erratic"
+      }
+    },
+    {
+      "id": "B-tempo-01-s40",
+      "answer": "erratic",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "Our ___ puppy chased leaves, socks, then its own tail.",
+      "cue_phrase": "leaves, socks, then",
+      "surface": {
+        "abrupt": "abrupt",
+        "fleeting": "fleeting",
+        "relentless": "relentless",
+        "intermittent": "intermittent",
+        "erratic": "erratic"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (relentless); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "abrupt",
+      "picked": "fleeting",
+      "line": "Abrupt is one sharp change with no warning. Fleeting is here only a little while."
+    },
+    {
+      "answer": "abrupt",
+      "picked": "relentless",
+      "line": "Abrupt happens at once. Relentless keeps pushing on and on."
+    },
+    {
+      "answer": "abrupt",
+      "picked": "intermittent",
+      "line": "Abrupt is one quick change. Intermittent comes and goes in bursts."
+    },
+    {
+      "answer": "abrupt",
+      "picked": "erratic",
+      "line": "Abrupt is a single no-warning change. Erratic moves around with no pattern."
+    },
+    {
+      "answer": "fleeting",
+      "picked": "abrupt",
+      "line": "Fleeting is soon gone. Abrupt is about a no-warning change."
+    },
+    {
+      "answer": "fleeting",
+      "picked": "relentless",
+      "line": "Fleeting lasts only a little while. Relentless keeps going for ages."
+    },
+    {
+      "answer": "fleeting",
+      "picked": "intermittent",
+      "line": "Fleeting happens once and is soon gone. Intermittent returns again and again."
+    },
+    {
+      "answer": "fleeting",
+      "picked": "erratic",
+      "line": "Fleeting is about being soon gone. Erratic is about no clear pattern."
+    },
+    {
+      "answer": "relentless",
+      "picked": "abrupt",
+      "line": "Relentless keeps pressing on. Abrupt is one sharp change with no warning."
+    },
+    {
+      "answer": "relentless",
+      "picked": "fleeting",
+      "line": "Relentless goes on and on. Fleeting is gone very soon."
+    },
+    {
+      "answer": "relentless",
+      "picked": "intermittent",
+      "line": "Relentless has no break. Intermittent has breaks between bursts."
+    },
+    {
+      "answer": "relentless",
+      "picked": "erratic",
+      "line": "Relentless keeps going steadily. Erratic has no steady pattern."
+    },
+    {
+      "answer": "intermittent",
+      "picked": "abrupt",
+      "line": "Intermittent comes and goes. Abrupt is one no-warning change."
+    },
+    {
+      "answer": "intermittent",
+      "picked": "fleeting",
+      "line": "Intermittent returns after gaps. Fleeting is simply soon gone."
+    },
+    {
+      "answer": "intermittent",
+      "picked": "relentless",
+      "line": "Intermittent has breaks. Relentless keeps going without a break."
+    },
+    {
+      "answer": "intermittent",
+      "picked": "erratic",
+      "line": "Intermittent has on-and-off bursts. Erratic has no clear pattern."
+    },
+    {
+      "answer": "erratic",
+      "picked": "abrupt",
+      "line": "Erratic has no pattern. Abrupt is one sharp change with no warning."
+    },
+    {
+      "answer": "erratic",
+      "picked": "fleeting",
+      "line": "Erratic wanders without a pattern. Fleeting is gone very soon."
+    },
+    {
+      "answer": "erratic",
+      "picked": "relentless",
+      "line": "Erratic has no clear pattern. Relentless keeps pressing on."
+    },
+    {
+      "answer": "erratic",
+      "picked": "intermittent",
+      "line": "Erratic has no pattern. Intermittent comes and goes in bursts."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-07T05:44:30+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": "2026-07-07",
+    "scrub_note": "Scrubbed by claude 2026-07-07: sweeps clean, all 40 sentences and 20 contrasts read; s06 restaged (cave drop staged the steep sense of abrupt, not the pinned sudden-event sense). Post-judge hard fixes s05/s28/s39: abrupt-change collocation, wiper cycle interval marker, moth course-reversal (pinned-sense dimension)."
+  }
+}

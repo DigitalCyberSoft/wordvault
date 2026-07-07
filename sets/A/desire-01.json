@@ -1,0 +1,913 @@
+{
+  "id": "A-desire-01",
+  "bank": "A",
+  "pos": "verb",
+  "theme": "wanting and losing",
+  "band": 5,
+  "band_override": 5,
+  "computed": {
+    "zipf_min": 2.82,
+    "zipf_mean": 3.34,
+    "tightness": 0.277,
+    "band_suggested": 3,
+    "scored_at": "2026-07-07T06:01:38+00:00"
+  },
+  "words": [
+    {
+      "w": "envy",
+      "synset": "envy.v.01",
+      "gloss_source": "authored",
+      "gloss": "wish you had what someone else has",
+      "zipf": 3.84,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "envy",
+        "third": "envies",
+        "past": "envied",
+        "part": "envying"
+      },
+      "discriminator": "aimed at what another person has",
+      "grade": 4
+    },
+    {
+      "w": "relish",
+      "synset": "enjoy.v.01",
+      "gloss_source": "authored",
+      "gloss": "enjoy something greatly",
+      "zipf": 3.32,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "relish",
+        "third": "relishes",
+        "past": "relished",
+        "part": "relishing"
+      },
+      "discriminator": "delights in it",
+      "grade": 5
+    },
+    {
+      "w": "crave",
+      "synset": "crave.v.01",
+      "gloss_source": "authored",
+      "gloss": "want something with your whole body",
+      "zipf": 3.47,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "crave",
+        "third": "craves",
+        "past": "craved",
+        "part": "craving"
+      },
+      "discriminator": "urgent bodily want",
+      "grade": 4
+    },
+    {
+      "w": "covet",
+      "synset": "covet.v.01",
+      "gloss_source": "authored",
+      "gloss": "long to possess something belonging to another",
+      "zipf": 2.82,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "covet",
+        "third": "covets",
+        "past": "coveted",
+        "part": "coveting"
+      },
+      "discriminator": "longs to own that exact thing",
+      "grade": 7
+    },
+    {
+      "w": "lament",
+      "synset": "lament.v.01",
+      "gloss_source": "wordnet",
+      "gloss": "express grief verbally",
+      "zipf": 3.25,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "lament",
+        "third": "laments",
+        "past": "lamented",
+        "part": "lamenting"
+      },
+      "discriminator": "sorrow spoken aloud over a loss",
+      "grade": 6
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-desire-01-s01",
+      "answer": "envy",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Nia ___ Tom for winning two prizes while she clapped softly.",
+      "cue_phrase": "for winning two prizes",
+      "surface": {
+        "envy": "envied",
+        "relish": "relished",
+        "crave": "craved",
+        "covet": "coveted",
+        "lament": "lamented"
+      }
+    },
+    {
+      "id": "A-desire-01-s02",
+      "answer": "envy",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Sam ___ Lila for getting the solo he practised all week.",
+      "cue_phrase": "for getting the solo",
+      "surface": {
+        "envy": "envied",
+        "relish": "relished",
+        "crave": "craved",
+        "covet": "coveted",
+        "lament": "lamented"
+      }
+    },
+    {
+      "id": "A-desire-01-s03",
+      "answer": "envy",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "As Ben showed his gold badge, Omar ___ him from the back row.",
+      "cue_phrase": "showed his gold badge",
+      "surface": {
+        "envy": "envied",
+        "relish": "relished",
+        "crave": "craved",
+        "covet": "coveted",
+        "lament": "lamented"
+      }
+    },
+    {
+      "id": "A-desire-01-s04",
+      "answer": "envy",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "When Priya's kite soared highest, Dan ___ her until his own dipped.",
+      "cue_phrase": "kite soared highest",
+      "surface": {
+        "envy": "envied",
+        "relish": "relished",
+        "crave": "craved",
+        "covet": "coveted",
+        "lament": "lamented"
+      }
+    },
+    {
+      "id": "A-desire-01-s05",
+      "answer": "envy",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Iris smiled at Rose's huge bedroom, then ___ Rose all evening.",
+      "cue_phrase": "Rose's huge bedroom",
+      "surface": {
+        "envy": "envied",
+        "relish": "relished",
+        "crave": "craved",
+        "covet": "coveted",
+        "lament": "lamented"
+      }
+    },
+    {
+      "id": "A-desire-01-s06",
+      "answer": "envy",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "After Kai was chosen captain, Leo ___ him behind a grin.",
+      "cue_phrase": "chosen captain",
+      "surface": {
+        "envy": "envied",
+        "relish": "relished",
+        "crave": "craved",
+        "covet": "coveted",
+        "lament": "lamented"
+      }
+    },
+    {
+      "id": "A-desire-01-s07",
+      "answer": "envy",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Maya ___ Jen for the shiny braces that made everyone stare.",
+      "cue_phrase": "for the shiny braces",
+      "surface": {
+        "envy": "envied",
+        "relish": "relished",
+        "crave": "craved",
+        "covet": "coveted",
+        "lament": "lamented"
+      }
+    },
+    {
+      "id": "A-desire-01-s08",
+      "answer": "envy",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "At prize time, Ella ___ the pupil holding the tallest trophy.",
+      "cue_phrase": "holding the tallest trophy",
+      "surface": {
+        "envy": "envies",
+        "relish": "relishes",
+        "crave": "craves",
+        "covet": "covets",
+        "lament": "laments"
+      }
+    },
+    {
+      "id": "A-desire-01-s09",
+      "answer": "relish",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Mina ___ the hot soup, humming after every spoonful.",
+      "cue_phrase": "humming after every spoonful",
+      "surface": {
+        "envy": "envied",
+        "relish": "relished",
+        "crave": "craved",
+        "covet": "coveted",
+        "lament": "lamented"
+      }
+    },
+    {
+      "id": "A-desire-01-s10",
+      "answer": "relish",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The twins ___ the muddy slide, cheering with every splash.",
+      "cue_phrase": "cheering with every splash",
+      "surface": {
+        "envy": "envied",
+        "relish": "relished",
+        "crave": "craved",
+        "covet": "coveted",
+        "lament": "lamented"
+      }
+    },
+    {
+      "id": "A-desire-01-s11",
+      "answer": "relish",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "During story time, Dad ___ the dragon voices and asked for more pages.",
+      "cue_phrase": "asked for more pages",
+      "surface": {
+        "envy": "envied",
+        "relish": "relished",
+        "crave": "craved",
+        "covet": "coveted",
+        "lament": "lamented"
+      }
+    },
+    {
+      "id": "A-desire-01-s12",
+      "answer": "relish",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Lena ___ the puzzle's tricky ending, laughing when the last piece clicked.",
+      "cue_phrase": "laughing when the last",
+      "surface": {
+        "envy": "envied",
+        "relish": "relished",
+        "crave": "craved",
+        "covet": "coveted",
+        "lament": "lamented"
+      }
+    },
+    {
+      "id": "A-desire-01-s13",
+      "answer": "relish",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Max slowed each bite of pie and ___ the cinnamon smell.",
+      "cue_phrase": "slowed each bite",
+      "surface": {
+        "envy": "envied",
+        "relish": "relished",
+        "crave": "craved",
+        "covet": "coveted",
+        "lament": "lamented"
+      }
+    },
+    {
+      "id": "A-desire-01-s14",
+      "answer": "relish",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The class ___ the surprise song, clapping before the final note.",
+      "cue_phrase": "clapping before the final",
+      "surface": {
+        "envy": "envied",
+        "relish": "relished",
+        "crave": "craved",
+        "covet": "coveted",
+        "lament": "lamented"
+      }
+    },
+    {
+      "id": "A-desire-01-s15",
+      "answer": "relish",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Grandpa stopped to ___ the sea wind, eyes closed and smiling.",
+      "cue_phrase": "eyes closed and smiling",
+      "surface": {
+        "envy": "envy",
+        "relish": "relish",
+        "crave": "crave",
+        "covet": "covet",
+        "lament": "lament"
+      }
+    },
+    {
+      "id": "A-desire-01-s16",
+      "answer": "relish",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "On cold mornings, Tara ___ warm socks, wiggling her toes happily.",
+      "cue_phrase": "wiggling her toes happily",
+      "surface": {
+        "envy": "envies",
+        "relish": "relishes",
+        "crave": "craves",
+        "covet": "covets",
+        "lament": "laments"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (crave); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-desire-01-s17",
+      "answer": "crave",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "After the desert hike, Tia ___ water so badly her hands shook.",
+      "cue_phrase": "her hands shook",
+      "surface": {
+        "envy": "envied",
+        "relish": "relished",
+        "crave": "craved",
+        "covet": "coveted",
+        "lament": "lamented"
+      }
+    },
+    {
+      "id": "A-desire-01-s18",
+      "answer": "crave",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "All morning, Ravi ___ sleep, yawning until his eyes watered.",
+      "cue_phrase": "yawning until his eyes",
+      "surface": {
+        "envy": "envied",
+        "relish": "relished",
+        "crave": "craved",
+        "covet": "coveted",
+        "lament": "lamented"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (covet); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-desire-01-s19",
+      "answer": "crave",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "By lunchtime, Nora ___ a sandwich and stared at every lunchbox.",
+      "cue_phrase": "stared at every lunchbox",
+      "surface": {
+        "envy": "envied",
+        "relish": "relished",
+        "crave": "craved",
+        "covet": "coveted",
+        "lament": "lamented"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (covet); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-desire-01-s20",
+      "answer": "crave",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "After the race, Ben ___ air, gulping with both hands on knees.",
+      "cue_phrase": "hands on knees",
+      "surface": {
+        "envy": "envied",
+        "relish": "relished",
+        "crave": "craved",
+        "covet": "coveted",
+        "lament": "lamented"
+      }
+    },
+    {
+      "id": "A-desire-01-s21",
+      "answer": "crave",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The salty crisps made Omar ___ water before the game ended.",
+      "cue_phrase": "salty crisps made",
+      "surface": {
+        "envy": "envy",
+        "relish": "relish",
+        "crave": "crave",
+        "covet": "covet",
+        "lament": "lament"
+      }
+    },
+    {
+      "id": "A-desire-01-s22",
+      "answer": "crave",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Pip smelled the bakery air and ___ bread before seeing a loaf.",
+      "cue_phrase": "before seeing a loaf",
+      "surface": {
+        "envy": "envied",
+        "relish": "relished",
+        "crave": "craved",
+        "covet": "coveted",
+        "lament": "lamented"
+      }
+    },
+    {
+      "id": "A-desire-01-s23",
+      "answer": "crave",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "After swimming, Asha ___ a towel and shivered beside the pool.",
+      "cue_phrase": "shivered beside the pool",
+      "surface": {
+        "envy": "envied",
+        "relish": "relished",
+        "crave": "craved",
+        "covet": "coveted",
+        "lament": "lamented"
+      }
+    },
+    {
+      "id": "A-desire-01-s24",
+      "answer": "crave",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "A teething puppy ___ rubber toys when its gums ache.",
+      "cue_phrase": "gums ache",
+      "surface": {
+        "envy": "envies",
+        "relish": "relishes",
+        "crave": "craves",
+        "covet": "covets",
+        "lament": "laments"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (relish); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-desire-01-s25",
+      "answer": "covet",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Nell ___ Pip's crown and dreamed of keeping that exact crown.",
+      "cue_phrase": "keeping that exact crown",
+      "surface": {
+        "envy": "envied",
+        "relish": "relished",
+        "crave": "craved",
+        "covet": "coveted",
+        "lament": "lamented"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: exact-item fixation (that one, not any) is covet's feature; no bodily need staged for crave, no person-target for envy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-desire-01-s26",
+      "answer": "covet",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Mara ___ Jo's telescope, whispering, 'I must own that one.'",
+      "cue_phrase": "own that one",
+      "surface": {
+        "envy": "envied",
+        "relish": "relished",
+        "crave": "craved",
+        "covet": "coveted",
+        "lament": "lamented"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: exact-item fixation (that one, not any) is covet's feature; no bodily need staged for crave, no person-target for envy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-desire-01-s27",
+      "answer": "covet",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "At the fair, I ___ Bea's painted drum, not any drum on sale.",
+      "cue_phrase": "not any drum",
+      "surface": {
+        "envy": "envied",
+        "relish": "relished",
+        "crave": "craved",
+        "covet": "coveted",
+        "lament": "lamented"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: exact-item fixation (that one, not any) is covet's feature; no bodily need staged for crave, no person-target for envy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-desire-01-s28",
+      "answer": "covet",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Luca began to ___ Ed's skates, refusing the newer pair.",
+      "cue_phrase": "refusing the newer pair",
+      "surface": {
+        "envy": "envy",
+        "relish": "relish",
+        "crave": "crave",
+        "covet": "covet",
+        "lament": "lament"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: exact-item fixation (that one, not any) is covet's feature; no bodily need staged for crave, no person-target for envy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-desire-01-s29",
+      "answer": "covet",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The pirate ___ the queen's ruby, planning a velvet case for it.",
+      "cue_phrase": "velvet case for it",
+      "surface": {
+        "envy": "envied",
+        "relish": "relished",
+        "crave": "craved",
+        "covet": "coveted",
+        "lament": "lamented"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: exact-item fixation (that one, not any) is covet's feature; no bodily need staged for crave, no person-target for envy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-desire-01-s30",
+      "answer": "covet",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Jin ___ Noor's chess set and cleared a shelf at home.",
+      "cue_phrase": "cleared a shelf",
+      "surface": {
+        "envy": "envied",
+        "relish": "relished",
+        "crave": "craved",
+        "covet": "coveted",
+        "lament": "lamented"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: exact-item fixation (that one, not any) is covet's feature; no bodily need staged for crave, no person-target for envy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-desire-01-s31",
+      "answer": "covet",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "In the story, goblins ___ the wizard's moonstone for their own chest.",
+      "cue_phrase": "for their own chest",
+      "surface": {
+        "envy": "envied",
+        "relish": "relished",
+        "crave": "craved",
+        "covet": "coveted",
+        "lament": "lamented"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: exact-item fixation (that one, not any) is covet's feature; no bodily need staged for crave, no person-target for envy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-desire-01-s32",
+      "answer": "covet",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "Every match, Pete ___ Kim's lucky bat, ignoring all spare bats.",
+      "cue_phrase": "ignoring all spare bats",
+      "surface": {
+        "envy": "envies",
+        "relish": "relishes",
+        "crave": "craves",
+        "covet": "covets",
+        "lament": "laments"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: exact-item fixation (that one, not any) is covet's feature; no bodily need staged for crave, no person-target for envy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "A-desire-01-s33",
+      "answer": "lament",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Mina ___ the lost rabbit, sobbing, 'My pet is gone!'",
+      "cue_phrase": "My pet is gone!",
+      "surface": {
+        "envy": "envied",
+        "relish": "relished",
+        "crave": "craved",
+        "covet": "coveted",
+        "lament": "lamented"
+      }
+    },
+    {
+      "id": "A-desire-01-s34",
+      "answer": "lament",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The villagers ___ the fallen bridge, crying, 'How will we cross?'",
+      "cue_phrase": "How will we cross?",
+      "surface": {
+        "envy": "envied",
+        "relish": "relished",
+        "crave": "craved",
+        "covet": "coveted",
+        "lament": "lamented"
+      }
+    },
+    {
+      "id": "A-desire-01-s35",
+      "answer": "lament",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "At sunset, Gran ___ the empty chair and told stories through tears.",
+      "cue_phrase": "told stories through tears",
+      "surface": {
+        "envy": "envied",
+        "relish": "relished",
+        "crave": "craved",
+        "covet": "coveted",
+        "lament": "lamented"
+      }
+    },
+    {
+      "id": "A-desire-01-s36",
+      "answer": "lament",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The team ___ the broken cup, saying sorry in small voices.",
+      "cue_phrase": "saying sorry in small voices",
+      "surface": {
+        "envy": "envied",
+        "relish": "relished",
+        "crave": "craved",
+        "covet": "coveted",
+        "lament": "lamented"
+      }
+    },
+    {
+      "id": "A-desire-01-s37",
+      "answer": "lament",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "When the old tree fell, children ___ it with sad songs.",
+      "cue_phrase": "with sad songs",
+      "surface": {
+        "envy": "envied",
+        "relish": "relished",
+        "crave": "craved",
+        "covet": "coveted",
+        "lament": "lamented"
+      }
+    },
+    {
+      "id": "A-desire-01-s38",
+      "answer": "lament",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "After the flood, Mum ___ the ruined photos, naming every face.",
+      "cue_phrase": "naming every face",
+      "surface": {
+        "envy": "envied",
+        "relish": "relished",
+        "crave": "craved",
+        "covet": "coveted",
+        "lament": "lamented"
+      }
+    },
+    {
+      "id": "A-desire-01-s39",
+      "answer": "lament",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The knight ___ his cracked shield, moaning about battles now lost.",
+      "cue_phrase": "moaning about battles",
+      "surface": {
+        "envy": "envied",
+        "relish": "relished",
+        "crave": "craved",
+        "covet": "coveted",
+        "lament": "lamented"
+      }
+    },
+    {
+      "id": "A-desire-01-s40",
+      "answer": "lament",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "Each autumn, the scarecrow ___ the fallen leaves in a creaky song.",
+      "cue_phrase": "creaky song",
+      "surface": {
+        "envy": "envies",
+        "relish": "relishes",
+        "crave": "craves",
+        "covet": "covets",
+        "lament": "laments"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "envy",
+      "picked": "relish",
+      "line": "Envy points at another person's prize. Relish is happy while tasting or doing."
+    },
+    {
+      "answer": "envy",
+      "picked": "crave",
+      "line": "Envy looks at another person's good thing. Crave is a strong need inside oneself."
+    },
+    {
+      "answer": "envy",
+      "picked": "covet",
+      "line": "Envy notices another person's good fortune. Covet aims to own one exact item."
+    },
+    {
+      "answer": "envy",
+      "picked": "lament",
+      "line": "Envy looks toward another person's good thing. Lament speaks sadly about a loss."
+    },
+    {
+      "answer": "relish",
+      "picked": "envy",
+      "line": "Relish is happy in the moment. Envy watches another person's good thing."
+    },
+    {
+      "answer": "relish",
+      "picked": "crave",
+      "line": "Relish happens during pleasure. Crave is the ache before getting relief."
+    },
+    {
+      "answer": "relish",
+      "picked": "covet",
+      "line": "Relish enjoys an experience. Covet fixes on owning one exact item."
+    },
+    {
+      "answer": "relish",
+      "picked": "lament",
+      "line": "Relish is pleasure. Lament is sad speech after a loss."
+    },
+    {
+      "answer": "crave",
+      "picked": "envy",
+      "line": "Crave is a strong need in oneself. Envy points at another person's good thing."
+    },
+    {
+      "answer": "crave",
+      "picked": "relish",
+      "line": "Crave comes before relief. Relish is delight during the taste or activity."
+    },
+    {
+      "answer": "crave",
+      "picked": "covet",
+      "line": "Crave can be for water or sleep. Covet is about owning an exact item."
+    },
+    {
+      "answer": "crave",
+      "picked": "lament",
+      "line": "Crave reaches for relief. Lament speaks sadness about what is gone."
+    },
+    {
+      "answer": "covet",
+      "picked": "envy",
+      "line": "Covet aims to own that exact item. Envy is about another person's good fortune."
+    },
+    {
+      "answer": "covet",
+      "picked": "relish",
+      "line": "Covet focuses on getting and keeping. Relish is happy use or taste."
+    },
+    {
+      "answer": "covet",
+      "picked": "crave",
+      "line": "Covet chooses one exact item to own. Crave is an urgent need like thirst."
+    },
+    {
+      "answer": "covet",
+      "picked": "lament",
+      "line": "Covet reaches for ownership. Lament speaks sorrow over a loss."
+    },
+    {
+      "answer": "lament",
+      "picked": "envy",
+      "line": "Lament is sad speech about loss. Envy looks at another person's good thing."
+    },
+    {
+      "answer": "lament",
+      "picked": "relish",
+      "line": "Lament is sorrow said aloud. Relish is taking pleasure in the moment."
+    },
+    {
+      "answer": "lament",
+      "picked": "crave",
+      "line": "Lament looks back at a loss. Crave pushes toward relief now."
+    },
+    {
+      "answer": "lament",
+      "picked": "covet",
+      "line": "Lament mourns what is gone. Covet seeks to own one exact item."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-07T03:31:06+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": "2026-07-07",
+    "scrub_note": "Scrubbed by claude 2026-07-07: mechanical sweeps clean (one purple-snow frame cleared - colour absurdity, not calendar), all 40 sentences, all 20 contrasts, and mixed-tense surface maps read per set; no defects."
+  }
+}

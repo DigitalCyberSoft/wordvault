@@ -1,0 +1,1002 @@
+{
+  "id": "B-tricks-01",
+  "bank": "B",
+  "pos": "noun",
+  "theme": "tricks and cover stories",
+  "band": 4,
+  "band_override": 4,
+  "computed": {
+    "zipf_min": 3.04,
+    "zipf_mean": 3.28,
+    "tightness": 0.226,
+    "band_suggested": 2,
+    "scored_at": "2026-07-07T06:01:38+00:00"
+  },
+  "words": [
+    {
+      "w": "hoax",
+      "synset": "fraud.n.03",
+      "gloss_source": "authored",
+      "gloss": "a fake meant to fool many people",
+      "zipf": 3.53,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "hoax"
+      },
+      "discriminator": "public fake, fools a crowd",
+      "grade": 5
+    },
+    {
+      "w": "bluff",
+      "synset": "bluff.n.02",
+      "gloss_source": "authored",
+      "gloss": "a show of pretend confidence to fool someone",
+      "zipf": 3.58,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "bluff"
+      },
+      "discriminator": "acting stronger than you are",
+      "grade": 5
+    },
+    {
+      "w": "decoy",
+      "synset": "decoy.n.01",
+      "gloss_source": "authored",
+      "gloss": "a fake target that draws attention away from the real thing",
+      "zipf": 3.04,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "decoy"
+      },
+      "discriminator": "draws attention elsewhere",
+      "grade": 5
+    },
+    {
+      "w": "ruse",
+      "synset": "ruse.n.01",
+      "gloss_source": "wordnet",
+      "gloss": "a deceptive maneuver (especially to avoid capture)",
+      "zipf": 3.16,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "ruse"
+      },
+      "discriminator": "small trick to distract",
+      "grade": 7
+    },
+    {
+      "w": "alibi",
+      "synset": "alibi.n.01",
+      "gloss_source": "authored",
+      "gloss": "proof or a story that you were somewhere else when it happened",
+      "zipf": 3.1,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "alibi"
+      },
+      "discriminator": "the being-elsewhere story",
+      "grade": 6
+    }
+  ],
+  "sentences": [
+    {
+      "id": "B-tricks-01-s01",
+      "answer": "hoax",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ had the whole town digging for dragons under the library.",
+      "cue_phrase": "whole town digging",
+      "surface": {
+        "hoax": "hoax",
+        "bluff": "bluff",
+        "decoy": "decoy",
+        "ruse": "ruse",
+        "alibi": "alibi"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (ruse); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-tricks-01-s02",
+      "answer": "hoax",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ made every class rush outside to see purple snow.",
+      "cue_phrase": "every class rush outside",
+      "surface": {
+        "hoax": "hoax",
+        "bluff": "bluff",
+        "decoy": "decoy",
+        "ruse": "ruse",
+        "alibi": "alibi"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (ruse); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-tricks-01-s03",
+      "answer": "hoax",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "By lunchtime, the ___ about a talking moon had filled the playground.",
+      "cue_phrase": "talking moon had filled",
+      "surface": {
+        "hoax": "hoax",
+        "bluff": "bluff",
+        "decoy": "decoy",
+        "ruse": "ruse",
+        "alibi": "alibi"
+      }
+    },
+    {
+      "id": "B-tricks-01-s04",
+      "answer": "hoax",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ closed the fair after loud rumours of a lake monster.",
+      "cue_phrase": "rumours of a lake monster",
+      "surface": {
+        "hoax": "hoax",
+        "bluff": "bluff",
+        "decoy": "decoy",
+        "ruse": "ruse",
+        "alibi": "alibi"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (ruse); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-tricks-01-s05",
+      "answer": "hoax",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The ___ brought fifty neighbours with nets to hunt the lake monster.",
+      "cue_phrase": "fifty neighbours with nets",
+      "surface": {
+        "hoax": "hoax",
+        "bluff": "bluff",
+        "decoy": "decoy",
+        "ruse": "ruse",
+        "alibi": "alibi"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (ruse); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-tricks-01-s06",
+      "answer": "hoax",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Posters promised a flying cow, and the ___ packed the park.",
+      "cue_phrase": "flying cow",
+      "surface": {
+        "hoax": "hoax",
+        "bluff": "bluff",
+        "decoy": "decoy",
+        "ruse": "ruse",
+        "alibi": "alibi"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (ruse); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-tricks-01-s07",
+      "answer": "hoax",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The ___ filled the hall with children waiting for the invisible horse.",
+      "cue_phrase": "children waiting for",
+      "surface": {
+        "hoax": "hoax",
+        "bluff": "bluff",
+        "decoy": "decoy",
+        "ruse": "ruse",
+        "alibi": "alibi"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (ruse); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-tricks-01-s08",
+      "answer": "hoax",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "Everyone cheered when the ___ about talking trees was exposed.",
+      "cue_phrase": "talking trees was exposed",
+      "surface": {
+        "hoax": "hoax",
+        "bluff": "bluff",
+        "decoy": "decoy",
+        "ruse": "ruse",
+        "alibi": "alibi"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (ruse); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-tricks-01-s09",
+      "answer": "bluff",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Mia's ___ made the bully back off, though her knees shook.",
+      "cue_phrase": "though her knees shook",
+      "surface": {
+        "hoax": "hoax",
+        "bluff": "bluff",
+        "decoy": "decoy",
+        "ruse": "ruse",
+        "alibi": "alibi"
+      }
+    },
+    {
+      "id": "B-tricks-01-s10",
+      "answer": "bluff",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "His ___ was saying he knew karate while hiding behind Max.",
+      "cue_phrase": "knew karate while hiding",
+      "surface": {
+        "hoax": "hoax",
+        "bluff": "bluff",
+        "decoy": "decoy",
+        "ruse": "ruse",
+        "alibi": "alibi"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (ruse); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-tricks-01-s11",
+      "answer": "bluff",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "At cards, Ravi's ___ made his weak hand look unbeatable.",
+      "cue_phrase": "weak hand look unbeatable",
+      "surface": {
+        "hoax": "hoax",
+        "bluff": "bluff",
+        "decoy": "decoy",
+        "ruse": "ruse",
+        "alibi": "alibi"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (ruse); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-tricks-01-s12",
+      "answer": "bluff",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The fox's ___ was a roar, though it was smaller than hens.",
+      "cue_phrase": "roar, though it was smaller",
+      "surface": {
+        "hoax": "hoax",
+        "bluff": "bluff",
+        "decoy": "decoy",
+        "ruse": "ruse",
+        "alibi": "alibi"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (ruse); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-tricks-01-s13",
+      "answer": "bluff",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Her ___ was a bold 'I've beaten bigger dragons!' while her sword hand trembled.",
+      "cue_phrase": "her sword hand trembled",
+      "surface": {
+        "hoax": "hoax",
+        "bluff": "bluff",
+        "decoy": "decoy",
+        "ruse": "ruse",
+        "alibi": "alibi"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (ruse); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-tricks-01-s14",
+      "answer": "bluff",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Tom's ___ sounded brave until his voice squeaked at the gate.",
+      "cue_phrase": "voice squeaked at the gate",
+      "surface": {
+        "hoax": "hoax",
+        "bluff": "bluff",
+        "decoy": "decoy",
+        "ruse": "ruse",
+        "alibi": "alibi"
+      }
+    },
+    {
+      "id": "B-tricks-01-s15",
+      "answer": "bluff",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The pirate's ___ scared the crew, though his cannon was painted wood.",
+      "cue_phrase": "cannon was painted wood",
+      "surface": {
+        "hoax": "hoax",
+        "bluff": "bluff",
+        "decoy": "decoy",
+        "ruse": "ruse",
+        "alibi": "alibi"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (hoax, ruse); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-tricks-01-s16",
+      "answer": "bluff",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "Sara's ___ dared the giant while her feet edged toward the exit.",
+      "cue_phrase": "feet edged toward the exit",
+      "surface": {
+        "hoax": "hoax",
+        "bluff": "bluff",
+        "decoy": "decoy",
+        "ruse": "ruse",
+        "alibi": "alibi"
+      }
+    },
+    {
+      "id": "B-tricks-01-s17",
+      "answer": "decoy",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ was a straw fox that the hound chased, not the hens.",
+      "cue_phrase": "straw fox that the hound",
+      "surface": {
+        "hoax": "hoax",
+        "bluff": "bluff",
+        "decoy": "decoy",
+        "ruse": "ruse",
+        "alibi": "alibi"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (ruse); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-tricks-01-s18",
+      "answer": "decoy",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "A wooden duck served as the ___ while the nest stayed hidden.",
+      "cue_phrase": "wooden duck served",
+      "surface": {
+        "hoax": "hoax",
+        "bluff": "bluff",
+        "decoy": "decoy",
+        "ruse": "ruse",
+        "alibi": "alibi"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (ruse); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-tricks-01-s19",
+      "answer": "decoy",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The dummy chest was the ___, pulling the guard away from Grandma's jewels.",
+      "cue_phrase": "pulling the guard away",
+      "surface": {
+        "hoax": "hoax",
+        "bluff": "bluff",
+        "decoy": "decoy",
+        "ruse": "ruse",
+        "alibi": "alibi"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (hoax, ruse); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-tricks-01-s20",
+      "answer": "decoy",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Mum set a plastic ham as the ___, and the dog left our lunch alone.",
+      "cue_phrase": "left our lunch alone",
+      "surface": {
+        "hoax": "hoax",
+        "bluff": "bluff",
+        "decoy": "decoy",
+        "ruse": "ruse",
+        "alibi": "alibi"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (ruse); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-tricks-01-s21",
+      "answer": "decoy",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The stuffed knight was the ___; the dragon snapped at it while the prince slipped past.",
+      "cue_phrase": "while the prince slipped past",
+      "surface": {
+        "hoax": "hoax",
+        "bluff": "bluff",
+        "decoy": "decoy",
+        "ruse": "ruse",
+        "alibi": "alibi"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (ruse); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-tricks-01-s22",
+      "answer": "decoy",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The painted berries were the ___, keeping birds off Nan's strawberries for pudding.",
+      "cue_phrase": "keeping birds off Nan's strawberries",
+      "surface": {
+        "hoax": "hoax",
+        "bluff": "bluff",
+        "decoy": "decoy",
+        "ruse": "ruse",
+        "alibi": "alibi"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (ruse); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-tricks-01-s23",
+      "answer": "decoy",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The ___ was the yarn mouse; the hamster slept safely nearby.",
+      "cue_phrase": "yarn mouse",
+      "surface": {
+        "hoax": "hoax",
+        "bluff": "bluff",
+        "decoy": "decoy",
+        "ruse": "ruse",
+        "alibi": "alibi"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (ruse); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-tricks-01-s24",
+      "answer": "decoy",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "A paper crown became the ___ while Bo kept the silver ring.",
+      "cue_phrase": "paper crown became",
+      "surface": {
+        "hoax": "hoax",
+        "bluff": "bluff",
+        "decoy": "decoy",
+        "ruse": "ruse",
+        "alibi": "alibi"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (ruse); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-tricks-01-s25",
+      "answer": "ruse",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ was tossing pebbles left, then slipping right past the guard.",
+      "cue_phrase": "tossing pebbles left",
+      "surface": {
+        "hoax": "hoax",
+        "bluff": "bluff",
+        "decoy": "decoy",
+        "ruse": "ruse",
+        "alibi": "alibi"
+      }
+    },
+    {
+      "id": "B-tricks-01-s26",
+      "answer": "ruse",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Her ___ made the goblin chase echoes while she climbed the wall.",
+      "cue_phrase": "chase echoes while",
+      "surface": {
+        "hoax": "hoax",
+        "bluff": "bluff",
+        "decoy": "decoy",
+        "ruse": "ruse",
+        "alibi": "alibi"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (decoy); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-tricks-01-s27",
+      "answer": "ruse",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "With a cough at the window, Ben's ___ emptied the corridor.",
+      "cue_phrase": "cough at the window",
+      "surface": {
+        "hoax": "hoax",
+        "bluff": "bluff",
+        "decoy": "decoy",
+        "ruse": "ruse",
+        "alibi": "alibi"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (decoy); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-tricks-01-s28",
+      "answer": "ruse",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The rabbit's ___ sent the fox sniffing one path as it took another.",
+      "cue_phrase": "one path as it took another",
+      "surface": {
+        "hoax": "hoax",
+        "bluff": "bluff",
+        "decoy": "decoy",
+        "ruse": "ruse",
+        "alibi": "alibi"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (decoy); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-tricks-01-s29",
+      "answer": "ruse",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Nia's ___ was dropping marbles at the corner while she slipped out the side door.",
+      "cue_phrase": "slipped out the side door",
+      "surface": {
+        "hoax": "hoax",
+        "bluff": "bluff",
+        "decoy": "decoy",
+        "ruse": "ruse",
+        "alibi": "alibi"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (decoy); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-tricks-01-s30",
+      "answer": "ruse",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The mouse's ___ was ringing the bell, buying it time to squeeze under the door.",
+      "cue_phrase": "buying it time",
+      "surface": {
+        "hoax": "hoax",
+        "bluff": "bluff",
+        "decoy": "decoy",
+        "ruse": "ruse",
+        "alibi": "alibi"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-4.1 lists a second fit (bluff); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-07"
+        }
+      ]
+    },
+    {
+      "id": "B-tricks-01-s31",
+      "answer": "ruse",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "A sudden sneeze from the cupboard was Pip's ___ to slip outside.",
+      "cue_phrase": "sneeze from the cupboard",
+      "surface": {
+        "hoax": "hoax",
+        "bluff": "bluff",
+        "decoy": "decoy",
+        "ruse": "ruse",
+        "alibi": "alibi"
+      }
+    },
+    {
+      "id": "B-tricks-01-s32",
+      "answer": "ruse",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "The thief's ___ was shouting 'Fireflies!' before ducking into the reeds.",
+      "cue_phrase": "before ducking into",
+      "surface": {
+        "hoax": "hoax",
+        "bluff": "bluff",
+        "decoy": "decoy",
+        "ruse": "ruse",
+        "alibi": "alibi"
+      }
+    },
+    {
+      "id": "B-tricks-01-s33",
+      "answer": "alibi",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Marco's ___ was the library stamp showing he was two suburbs away.",
+      "cue_phrase": "the library stamp",
+      "surface": {
+        "hoax": "hoax",
+        "bluff": "bluff",
+        "decoy": "decoy",
+        "ruse": "ruse",
+        "alibi": "alibi"
+      }
+    },
+    {
+      "id": "B-tricks-01-s34",
+      "answer": "alibi",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Her ___ for the missing cake was the dentist note timed at noon.",
+      "cue_phrase": "dentist note timed at noon",
+      "surface": {
+        "hoax": "hoax",
+        "bluff": "bluff",
+        "decoy": "decoy",
+        "ruse": "ruse",
+        "alibi": "alibi"
+      }
+    },
+    {
+      "id": "B-tricks-01-s35",
+      "answer": "alibi",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The knight's ___ held up: three bakers swore he was buying bread.",
+      "cue_phrase": "three bakers swore",
+      "surface": {
+        "hoax": "hoax",
+        "bluff": "bluff",
+        "decoy": "decoy",
+        "ruse": "ruse",
+        "alibi": "alibi"
+      }
+    },
+    {
+      "id": "B-tricks-01-s36",
+      "answer": "alibi",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Nobody blamed Rio once his ___ showed him on the ferry all afternoon.",
+      "cue_phrase": "on the ferry all afternoon",
+      "surface": {
+        "hoax": "hoax",
+        "bluff": "bluff",
+        "decoy": "decoy",
+        "ruse": "ruse",
+        "alibi": "alibi"
+      }
+    },
+    {
+      "id": "B-tricks-01-s37",
+      "answer": "alibi",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Dad claimed he was out walking, but the parrot's midnight squawk broke his ___.",
+      "cue_phrase": "claimed he was out walking",
+      "surface": {
+        "hoax": "hoax",
+        "bluff": "bluff",
+        "decoy": "decoy",
+        "ruse": "ruse",
+        "alibi": "alibi"
+      }
+    },
+    {
+      "id": "B-tricks-01-s38",
+      "answer": "alibi",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Detective Iris checked the ___ and found the train had never run that day.",
+      "cue_phrase": "the train had never run",
+      "surface": {
+        "hoax": "hoax",
+        "bluff": "bluff",
+        "decoy": "decoy",
+        "ruse": "ruse",
+        "alibi": "alibi"
+      }
+    },
+    {
+      "id": "B-tricks-01-s39",
+      "answer": "alibi",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "His ___ was Gran's photo of him washing her dog across town.",
+      "cue_phrase": "washing her dog across town",
+      "surface": {
+        "hoax": "hoax",
+        "bluff": "bluff",
+        "decoy": "decoy",
+        "ruse": "ruse",
+        "alibi": "alibi"
+      }
+    },
+    {
+      "id": "B-tricks-01-s40",
+      "answer": "alibi",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "The goblin's ___ crumbled when mud from the vault stuck to its boots.",
+      "cue_phrase": "mud from the vault",
+      "surface": {
+        "hoax": "hoax",
+        "bluff": "bluff",
+        "decoy": "decoy",
+        "ruse": "ruse",
+        "alibi": "alibi"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "hoax",
+      "picked": "bluff",
+      "line": "A hoax spreads a false story to a crowd. A bluff is acting stronger than you are."
+    },
+    {
+      "answer": "hoax",
+      "picked": "decoy",
+      "line": "A hoax fools a crowd with a false story. A decoy is an object set in the wrong place."
+    },
+    {
+      "answer": "hoax",
+      "picked": "ruse",
+      "line": "A hoax spreads to a crowd. A ruse is a small sneaky act during escape."
+    },
+    {
+      "answer": "hoax",
+      "picked": "alibi",
+      "line": "A hoax is a false story to excite a crowd. An alibi is a story of being elsewhere."
+    },
+    {
+      "answer": "bluff",
+      "picked": "hoax",
+      "line": "A bluff is acting stronger than you are. A hoax is a false story for a crowd."
+    },
+    {
+      "answer": "bluff",
+      "picked": "decoy",
+      "line": "A bluff uses brave acting. A decoy is an object that pulls eyes elsewhere."
+    },
+    {
+      "answer": "bluff",
+      "picked": "ruse",
+      "line": "A bluff is bold acting when you feel weak. A ruse is a quick sneaky act."
+    },
+    {
+      "answer": "bluff",
+      "picked": "alibi",
+      "line": "A bluff acts strong in the moment. An alibi explains where you were instead."
+    },
+    {
+      "answer": "decoy",
+      "picked": "hoax",
+      "line": "A decoy is an object placed to pull eyes elsewhere. A hoax is a false story for a crowd."
+    },
+    {
+      "answer": "decoy",
+      "picked": "bluff",
+      "line": "A decoy is a wrong object to chase. A bluff is acting stronger than you are."
+    },
+    {
+      "answer": "decoy",
+      "picked": "ruse",
+      "line": "A decoy is a lure object. A ruse is a small sneaky act, often while escaping."
+    },
+    {
+      "answer": "decoy",
+      "picked": "alibi",
+      "line": "A decoy pulls attention to the wrong spot. An alibi is the being-elsewhere story."
+    },
+    {
+      "answer": "ruse",
+      "picked": "hoax",
+      "line": "A ruse is a small sneaky act during escape. A hoax spreads a false story to a crowd."
+    },
+    {
+      "answer": "ruse",
+      "picked": "bluff",
+      "line": "A ruse is a quick sneaky act. A bluff is acting stronger than you are."
+    },
+    {
+      "answer": "ruse",
+      "picked": "decoy",
+      "line": "A ruse is a sneaky act to slip free. A decoy is an object used as a lure."
+    },
+    {
+      "answer": "ruse",
+      "picked": "alibi",
+      "line": "A ruse is a quick trick during the act. An alibi covers you after or instead."
+    },
+    {
+      "answer": "alibi",
+      "picked": "hoax",
+      "line": "An alibi says 'I was elsewhere.' A hoax spreads a false story to a crowd."
+    },
+    {
+      "answer": "alibi",
+      "picked": "bluff",
+      "line": "An alibi is a where-I-was story. A bluff is acting stronger than you feel."
+    },
+    {
+      "answer": "alibi",
+      "picked": "decoy",
+      "line": "An alibi is a story about being elsewhere. A decoy is an object that pulls eyes away."
+    },
+    {
+      "answer": "alibi",
+      "picked": "ruse",
+      "line": "An alibi is the cover story. A ruse is the sneaky act itself."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-07T03:44:12+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": "2026-07-07",
+    "scrub_note": "Scrubbed by claude 2026-07-07: mechanical sweeps clean (one purple-snow frame cleared - colour absurdity, not calendar), all 40 sentences, all 20 contrasts, and mixed-tense surface maps read per set; no defects."
+  }
+}
