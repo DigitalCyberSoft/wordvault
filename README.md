@@ -109,6 +109,8 @@ for a pass/fail banner over the shipped content.
 | `#demo` | Auto-answer correctly on a timer (watch a crack) |
 | `#wrongdemo` | Auto-answer wrongly (watch the three-run exhaustion flow) |
 | `#missdemo` | Miss once on the final pin, then crack on run 2 |
+| `#timerdemo` | Never answer: watch the lock timer expire and the timeout card |
+| `#settings` | Open Settings |
 | `#cabinet` | Open the Curio Cabinet |
 | `#selftest` | Run the content check in-page |
 

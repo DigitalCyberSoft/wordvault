@@ -4,47 +4,54 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Parents &amp; Teachers Guide — 🔐 Word Vault</title>
-  <meta name="description" content="What Word Vault teaches: precision word choice among confusable words, ages 8-12, with the band-by-band curriculum and the honesty rules behind the content.">
+  <meta name="description" content="What Word Vault teaches: precision word choice among confusable words, ages 8-12, with the year-by-year curriculum and the honesty rules behind the content.">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="canonical" href="https://digitalcybersoft.github.io/wordvault/parents.html">
   <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#2f6db0">
+  <meta name="theme-color" content="#060b16">
   <style>
-    :root { --ink: #3a2a16; --parent: #2f6db0; --steel: #46505a; --brass-dark: #96702c;
-      --shadow: 0 8px 0 rgba(0,0,0,.10), 0 18px 34px rgba(0,0,0,.16); }
+    :root { --text: #eaf6ff; --dim: #b9cbdd; --accent: #46e6ff; --accent-soft: rgba(70,230,255,.30);
+      --glow: rgba(70,230,255,.14); --glass: rgba(13,24,44,.92); --gold: #f0b429;
+      --shadow: 0 8px 0 rgba(0,0,0,.25), 0 18px 34px rgba(0,0,0,.45); }
     * { box-sizing: border-box; }
     @font-face { font-family: 'Baloo 2'; font-style: normal; font-weight: 400 800; font-display: swap;
       src: url('assets/fonts/Baloo2-latin-var.woff2') format('woff2'); }
-    body { margin: 0; color: var(--ink);
+    body { margin: 0; color: var(--text);
       font-family: 'Baloo 2', 'Comic Sans MS', 'Trebuchet MS', system-ui, sans-serif;
-      background: radial-gradient(1200px 600px at 80% -10%, #cfe2f5 0%, transparent 60%),
-        radial-gradient(900px 500px at -10% 10%, #ffd98c 0%, transparent 55%),
-        linear-gradient(160deg, #f3e2c4 0%, #f3f7fc 60%, #e7eff8 100%);
+      background-color: #060b16;
+      background-image:
+        repeating-linear-gradient(0deg, rgba(70,230,255,.045) 0 1px, transparent 1px 46px),
+        repeating-linear-gradient(90deg, rgba(70,230,255,.045) 0 1px, transparent 1px 46px),
+        radial-gradient(900px 500px at 80% -10%, rgba(139,123,255,.16) 0%, transparent 60%),
+        radial-gradient(120% 100% at 50% 0%, #101c33 0%, #060b16 64%);
       min-height: 100vh; }
     .wrap { max-width: 940px; margin: 0 auto; padding: 0 18px; }
     .top { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 16px 0; flex-wrap: wrap; }
-    .top .home { text-decoration: none; color: var(--ink); font-weight: 800; font-size: 1.15rem; }
-    .top .links a { text-decoration: none; font-weight: 700; margin-left: 14px; color: var(--brass-dark); }
-    .top .play { background: #2aa877; color: #fff; padding: 9px 20px; border-radius: 13px; }
+    .top .home { text-decoration: none; color: var(--text); font-weight: 800; font-size: 1.15rem; }
+    .top .links a { text-decoration: none; font-weight: 700; margin-left: 14px; color: #7be6ff; }
+    .top .play { background: #0fa3c4; color: #fff; padding: 9px 20px; border-radius: 13px;
+      box-shadow: inset 0 2px 0 rgba(255,255,255,.3), 0 4px 0 #075a70; }
     header.hero { text-align: center; padding: 22px 0 6px; }
-    header.hero h1 { font-size: clamp(1.9rem, 5vw, 2.7rem); margin: 0 0 6px; color: var(--parent); }
-    header.hero p { font-size: clamp(1.05rem, 2.5vw, 1.25rem); font-weight: 600; max-width: 740px; margin: 0 auto; }
-    .panel { background: #fff; border-radius: 22px; padding: 26px 28px; box-shadow: var(--shadow); margin: 22px 0; }
-    .panel h2 { font-size: clamp(1.35rem, 3.2vw, 1.8rem); margin: 0 0 10px; color: var(--parent); }
+    header.hero h1 { font-size: clamp(1.9rem, 5vw, 2.7rem); margin: 0 0 6px; color: var(--text);
+      text-shadow: 0 0 22px rgba(70,230,255,.45); }
+    header.hero p { font-size: clamp(1.05rem, 2.5vw, 1.25rem); font-weight: 600; max-width: 740px; margin: 0 auto; color: var(--dim); }
+    .panel { background: var(--glass); border: 1px solid var(--accent-soft); border-radius: 22px;
+      padding: 26px 28px; box-shadow: 0 0 44px var(--glow), var(--shadow); margin: 22px 0; }
+    .panel h2 { font-size: clamp(1.35rem, 3.2vw, 1.8rem); margin: 0 0 10px; color: #7be6ff; }
     .panel p, .panel li { font-size: 1.02rem; line-height: 1.55; }
     .panel ul { padding-left: 20px; }
-    .examples { background: #faf6ee; border: 2px dashed #e7cfa6; border-radius: 14px; padding: 12px 16px; margin: 12px 0; }
+    .examples { background: rgba(70,230,255,.06); border: 2px dashed var(--accent-soft); border-radius: 14px; padding: 12px 16px; margin: 12px 0; }
     .examples p { margin: 6px 0; }
-    .examples .lab { font-weight: 800; color: var(--brass-dark); }
+    .examples .lab { font-weight: 800; color: var(--gold); }
     .examples .q { font-style: italic; }
-    .safe { background: #eafff5; border: 2px solid #bfe9d7; border-radius: 14px; padding: 14px 16px; }
-    .safe b { color: #1f8a5c; }
-    .note { background: #eef5fc; border: 2px solid #cfe2f5; border-radius: 14px; padding: 14px 16px; }
+    .safe { background: rgba(15,163,196,.10); border: 2px solid rgba(77,230,176,.4); border-radius: 14px; padding: 14px 16px; }
+    .safe b { color: #4de6b0; }
+    .note { background: rgba(139,123,255,.10); border: 2px solid rgba(139,123,255,.35); border-radius: 14px; padding: 14px 16px; }
     table { border-collapse: collapse; width: 100%; font-size: .98rem; }
-    th, td { text-align: left; padding: 8px 10px; border-bottom: 2px solid #f0e2c4; vertical-align: top; }
-    th { color: var(--parent); }
-    footer { text-align: center; margin: 40px 0 56px; font-size: .92rem; font-weight: 600; opacity: .85; }
-    footer a { color: var(--brass-dark); }
+    th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--accent-soft); vertical-align: top; }
+    th { color: #7be6ff; }
+    footer { text-align: center; margin: 40px 0 56px; font-size: .92rem; font-weight: 600; opacity: .9; color: var(--dim); }
+    footer a { color: #7be6ff; }
   </style>
 </head>
 <body>
@@ -111,7 +118,7 @@
       <div class="examples">
         <p><span class="lab">Explicit cue (low levels):</span> <span class="q">"Careful not to wake the baby, Ana ___ past the crib without a sound."</span></p>
         <p><span class="lab">Inferential cue (higher levels):</span> <span class="q">"You could hear the guards before you saw them: every footstep landing together as they ___ past."</span></p>
-        <p><span class="lab">Usage (band 3+):</span> <span class="q">"___ going to need ___ coats — it's colder over ___."</span> — one blank at a time, but this is the territory.</p>
+        <p><span class="lab">Usage (year 3+):</span> <span class="q">"___ going to need ___ coats — it's colder over ___."</span> — one blank at a time, but this is the territory.</p>
       </div>
     </section>
 

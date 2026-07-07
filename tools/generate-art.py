@@ -50,6 +50,14 @@ ART["night"] = ("assets/backdrop/night.png",
 ART["logo"] = ("assets/logo/logo.png",
                "game logo art: a round steel vault door with brass dial slightly open with warm golden "
                "light spilling out, " + STYLE, "1024x1024")
+# title art for the holo theme (game-fx.js): same subject, hologram rendering
+ART["logo-holo"] = ("assets/logo/logo-holo.png",
+                    "game logo art: a glowing holographic round vault door hovering, translucent neon "
+                    "cyan energy rings and tick marks, bright plasma core behind an eight-blade iris, "
+                    "small gold light sparks, dark space background kept fully transparent, futuristic "
+                    "hologram projection style with crisp light lines, "
+                    "flat chunky children's game art, thick clean glowing outlines, no text, "
+                    "no watermark, single centred subject", "1024x1024")
 
 COLLECTIBLES = {
     "compass": "an antique brass pocket compass",

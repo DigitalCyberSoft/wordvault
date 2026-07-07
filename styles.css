@@ -303,6 +303,19 @@ button.plain { --face: #fff; --edge: #d9c6a0; color: var(--ink); }
 /* ---- Title menu (pizzashop system) ---- */
 .title-menu { display: flex; flex-direction: column; align-items: center; gap: 16px; width: 90%; max-width: 420px; }
 .title-logo { width: min(320px, 80%); height: auto; filter: drop-shadow(0 6px 0 rgba(0,0,0,.18)); }
+/* two title emblems, one per theme; the holo one glows instead of casting */
+.title-logo.logo-holo { display: none; }
+html.fx .title-logo.logo-holo { display: block; width: min(280px, 70%); margin-bottom: -6px;
+  filter: drop-shadow(0 0 28px rgba(70,230,255,.5)); }
+html.fx .title-logo.logo-classic { display: none; }
+.title-wordmark {
+  font-weight: 800; font-size: clamp(2rem, 6vw, 2.7rem); letter-spacing: .14em;
+  color: #fff; text-shadow: 0 3px 0 rgba(0,0,0,.25); margin-top: -8px;
+}
+html.fx .title-wordmark {
+  color: var(--fx-text, #eaf6ff);
+  text-shadow: 0 0 18px rgba(70,230,255,.75), 0 0 46px rgba(70,230,255,.35);
+}
 .menu-btns { display: flex; flex-direction: column; gap: 14px; width: 100%; }
 .menu-btn {
   --face: #fff; --edge: #d9c6a0;
