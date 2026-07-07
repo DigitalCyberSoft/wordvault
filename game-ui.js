@@ -181,6 +181,24 @@
     showReady();
   }
 
+  // A gloss card: the word, its card gloss, and a Year chip so the child can
+  // see which school year each word belongs to.
+  function glossCard(word) {
+    var card = document.createElement('div');
+    card.className = 'gloss-card';
+    var b = document.createElement('b'); b.textContent = word.w;
+    var span = document.createElement('span'); span.textContent = word.gloss;
+    card.appendChild(b); card.appendChild(span);
+    if (typeof word.grade === 'number') {
+      var chip = document.createElement('i');
+      chip.className = 'year-chip';
+      chip.textContent = 'Y' + word.grade;
+      chip.title = 'Year ' + word.grade + ' word';
+      card.appendChild(chip);
+    }
+    return card;
+  }
+
   // ---- Get Ready ----
   function showReady() {
     var enc = S.enc, set = S.set;
@@ -192,6 +210,11 @@
       ? '1 run · 3 pins to open · one miss and it stays shut'
       : (enc.misses ? 'Run ' + (enc.runIndex + 1) + ' of ' + enc.runsAllowed + ' · fresh sentences this run'
                     : enc.runsAllowed + ' runs · ' + enc.need + ' in a row cracks it');
+    var yr = C.yearRange(set);
+    el('ready-year').hidden = !yr;
+    if (yr) el('ready-year').textContent = '🎓 ' + yr.label + ' words';
+    el('year-stat').hidden = !yr;
+    if (yr) el('year-pill').textContent = yr.label;
     var box = el('ready-glosses');
     box.innerHTML = '';
     // Gloss cards in the authored order: the semantic gradient, not the
@@ -199,12 +222,7 @@
     C.gradientOrder(set).forEach(function (w) {
       var word = null;
       for (var i = 0; i < set.words.length; i++) if (set.words[i].w === w) word = set.words[i];
-      var card = document.createElement('div');
-      card.className = 'gloss-card';
-      var b = document.createElement('b'); b.textContent = word.w;
-      var span = document.createElement('span'); span.textContent = word.gloss;
-      card.appendChild(b); card.appendChild(span);
-      box.appendChild(card);
+      box.appendChild(glossCard(word));
     });
     renderPins();
     renderDoor(false);
@@ -550,12 +568,7 @@
     var box = el('exhaust-words');
     box.innerHTML = '';
     C.missedWords(S.enc, S.set).forEach(function (w) {
-      var card = document.createElement('div');
-      card.className = 'gloss-card';
-      var b = document.createElement('b'); b.textContent = w.w;
-      var span = document.createElement('span'); span.textContent = w.gloss;
-      card.appendChild(b); card.appendChild(span);
-      box.appendChild(card);
+      box.appendChild(glossCard(w));
     });
     show('exhaust-overlay');
     if (S.auto) autoContinue('exhaust-next');
@@ -823,6 +836,7 @@
       hide('settings-overlay');
       show('title-overlay');
       el('continue-btn').style.display = 'none';
+      el('year-stat').hidden = true;
     });
 
     el('ready-btn').addEventListener('click', function () { Snd.tap(); startRun(); });

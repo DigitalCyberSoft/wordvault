@@ -319,6 +319,19 @@
   // it, play uses enc.tileOrder.
   function gradientOrder(set) { return wordsOf(set); }
 
+  // School-year span of a set's words (Australian Year 1-7; gate M18 puts an
+  // integer grade on every shipped word). Sets mix years, so the honest label
+  // is a range; null only if no word carries a numeric grade.
+  function yearRange(set) {
+    var lo = 8, hi = 0;
+    for (var i = 0; i < set.words.length; i++) {
+      var g = set.words[i].grade;
+      if (typeof g === 'number') { if (g < lo) lo = g; if (g > hi) hi = g; }
+    }
+    if (!hi) return null;
+    return { min: lo, max: hi, label: lo === hi ? 'Year ' + lo : 'Years ' + lo + '-' + hi };
+  }
+
   // ---------------------------------------------------------------------------
   // Adaptive difficulty. Difficulty IS the level, a persisted float. Driven only
   // by performance, never by speed: there are no timers in this game, and a slow
@@ -437,6 +450,7 @@
     newEncounter: newEncounter, startRun: startRun, drawSentence: drawSentence,
     sentenceById: sentenceById, fillText: fillText, answer: answer, isClean: isClean,
     contrastFor: contrastFor, missedWords: missedWords, gradientOrder: gradientOrder,
+    yearRange: yearRange,
     neededStreak: neededStreak, adjustDifficulty: adjustDifficulty, levelOf: levelOf,
     coinsFor: coinsFor, speedBonus: speedBonus,
     reviewDue: reviewDue, pushReview: pushReview, pickReview: pickReview, settleReview: settleReview,

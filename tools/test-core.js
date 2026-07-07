@@ -342,5 +342,20 @@ var alwaysWrong = function (s) { return s.answer === 'alpha' ? 'bravo' : 'alpha'
 })();
 
 // ---------------------------------------------------------------------------
+// yearRange: the school-year badge data
+(function () {
+  var set = makeSet('A-year-01');
+  set.words.forEach(function (w, i) { w.grade = [2, 4, 3, 2, 4][i]; });
+  var yr = C.yearRange(set);
+  eq(yr.min, 2, 'yearRange finds the lowest year');
+  eq(yr.max, 4, 'yearRange finds the highest year');
+  eq(yr.label, 'Years 2-4', 'mixed set labels as a range');
+  set.words.forEach(function (w) { w.grade = 5; });
+  eq(C.yearRange(set).label, 'Year 5', 'uniform set labels as a single year');
+  set.words.forEach(function (w) { delete w.grade; });
+  eq(C.yearRange(set), null, 'ungraded fixture words yield null, not a fake range');
+})();
+
+// ---------------------------------------------------------------------------
 console.log(passed + ' passed, ' + failed + ' failed');
 process.exit(failed ? 1 : 0);

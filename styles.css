@@ -68,6 +68,7 @@ body {
 #hud .stat { background: rgba(255,255,255,.16); border-radius: 999px; padding: 4px 12px; font-weight: 700; }
 #hud .stat b { font-variant-numeric: tabular-nums; }
 #hud .stat.coins { background: var(--brass-dark); box-shadow: 0 0 0 2px rgba(255,255,255,.4) inset; }
+#hud .stat.year { background: var(--brass); color: #fff; box-shadow: 0 0 0 2px rgba(255,255,255,.35) inset; }
 #hud .spacer { flex: 1; }
 #hud button.toggle { border: none; border-radius: 999px; padding: 10px 14px; font-weight: 700; cursor: pointer; background: #fff; color: var(--steel-deep); font-family: inherit; }
 
@@ -295,6 +296,19 @@ button.plain { --face: #fff; --edge: #d9c6a0; color: var(--ink); }
 .gloss-card { display: flex; align-items: baseline; gap: 12px; background: #faf6ee; border: 2px dashed #e7cfa6; border-radius: var(--r-md); padding: 10px 14px; }
 .gloss-card b { font-size: 1.2rem; color: var(--brass-dark); min-width: 7ch; }
 .gloss-card span { font-weight: 600; line-height: 1.35; }
+/* per-word school-year chip: right-aligned, steel plate so it reads as info, not reward */
+.gloss-card .year-chip {
+  margin-left: auto; flex: none; align-self: center; font-style: normal; font-weight: 800;
+  font-size: .82rem; color: #fff; background: var(--steel-dark);
+  border-radius: 999px; padding: 3px 9px; box-shadow: 0 2px 0 rgba(0,0,0,.18);
+}
+/* the set's year banner on Get Ready: the loudest "what am I learning" signal */
+.year-badge {
+  display: inline-block; margin: 2px auto 6px; padding: 6px 18px;
+  background: var(--brass-bright); color: var(--ink); border: 3px solid var(--brass-dark);
+  border-radius: 999px; font-weight: 800; font-size: 1.15rem; letter-spacing: .3px;
+  box-shadow: 0 3px 0 var(--brass-dark);
+}
 /* long-press popover over a tile (below the help threshold only) */
 #gloss-pop {
   position: fixed; z-index: 92; max-width: 340px; background: var(--paper); border: 3px solid var(--ink);
