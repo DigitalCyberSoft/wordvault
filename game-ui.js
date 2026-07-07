@@ -39,8 +39,15 @@
   var LS = {
     get coins() { var v = parseInt(lsGet('wordvault.coins'), 10); return isFinite(v) && v >= 0 ? v : 0; },
     set coins(v) { lsSet('wordvault.coins', v); },
-    get difficulty() { var v = parseFloat(lsGet('wordvault.difficulty')); return (isFinite(v) && v >= 1) ? v : 1; },
+    // A fresh game opens at the chosen starting year's first level (a grown-up
+    // knob, like the cap): difficulty defaults to that level until play moves it.
+    get difficulty() {
+      var v = parseFloat(lsGet('wordvault.difficulty'));
+      return (isFinite(v) && v >= 1) ? v : (this.startYear - 1) * 4 + 1;
+    },
     set difficulty(v) { lsSet('wordvault.difficulty', v); },
+    get startYear() { var v = parseInt(lsGet('wordvault.startyear'), 10); return (isFinite(v) && v >= 1 && v <= 7) ? v : 1; },
+    set startYear(v) { lsSet('wordvault.startyear', v); },
     // Highest level ever reached. The Level Up screen fires only on a new
     // record, never on re-climbing a level after a drop. Defaults to the
     // current level so a returning player isn't congratulated for standing
@@ -74,7 +81,10 @@
     set capLevel(v) { lsSet('wordvault.cap', v); },
     // holo vault preference; a display setting like mute, so it survives New Game
     get fxWanted() { return lsGet('wordvault.fx') !== 'off'; },
-    set fxWanted(v) { lsSet('wordvault.fx', v ? 'on' : 'off'); }
+    set fxWanted(v) { lsSet('wordvault.fx', v ? 'on' : 'off'); },
+    // the lock timer; a grown-up can switch it off for slower readers
+    get timerOn() { return lsGet('wordvault.timer') !== 'off'; },
+    set timerOn(v) { lsSet('wordvault.timer', v ? 'on' : 'off'); }
   };
 
   // ---- audio ----
@@ -124,15 +134,16 @@
   function currentLevel() { return C.levelOf(LS.difficulty); }
   function refreshHud() {
     el('coins').textContent = LS.coins;
-    el('level-pill').textContent = 'Level ' + currentLevel();
+    var lvl = currentLevel();
+    el('level-pill').textContent = 'Level ' + lvl + ' · Y' + C.yearOf(lvl);
     el('beststreak').textContent = LS.bestStreak;
     el('mute-toggle').textContent = LS.muted ? '🔇 Sound off' : '🔊 Sound on';
   }
   function rankFor(level) {
-    return level >= 17 ? 'Master of the Vault'
-      : level >= 13 ? 'Safecracker'
-      : level >= 9 ? 'Combination Wiz'
-      : level >= 5 ? 'Tumbler Turner'
+    return level >= 25 ? 'Master of the Vault'
+      : level >= 19 ? 'Safecracker'
+      : level >= 13 ? 'Combination Wiz'
+      : level >= 7 ? 'Tumbler Turner'
       : 'Lockpick Apprentice';
   }
 
@@ -235,6 +246,7 @@
     renderPins();
     renderDoor(false);
     FX.pulse('boot');
+    timerStop();
     el('slip-text').textContent = '';
     renderTilesBlank();
     show('ready-overlay');
@@ -258,6 +270,7 @@
     renderTiles(s);
     renderPins();
     S.busy = false;
+    timerStart();
     if (S.auto) autoAnswer(s);
   }
 
@@ -385,6 +398,86 @@
     })(i);
   }
 
+  // ---- the lock timer ----
+  // Core.LOCK_TIMER_MS on the clock per sentence; running out is a miss
+  // (Core.timeout). The clock runs ONLY while a sentence is up - overlays,
+  // cards and the ready screen all stop it - and it pauses while the tab is
+  // hidden, so switching away never fails a lock on return. Under reduced
+  // motion the bar steps once a second instead of animating.
+  var timer = { deadline: 0, raf: 0, left: 0 };
+  function timerStop() {
+    cancelAnimationFrame(timer.raf);
+    clearTimeout(timer.raf);
+    timer.deadline = 0;
+    el('timer-wrap').hidden = true;
+    FX.set({ clock: -1 });
+  }
+  function timerStart() {
+    timerStop();
+    if (!LS.timerOn) return;
+    timer.deadline = Date.now() + C.LOCK_TIMER_MS;
+    el('timer-wrap').hidden = false;
+    timerTick();
+  }
+  function timerTick() {
+    if (!timer.deadline) return;
+    var left = timer.deadline - Date.now();
+    if (left <= 0) { onTimeout(); return; }
+    var f = left / C.LOCK_TIMER_MS;
+    el('timer-fill').style.transform = 'scaleX(' + f.toFixed(4) + ')';
+    el('timer-num').textContent = Math.ceil(left / 1000);
+    el('timer-wrap').classList.toggle('low', left < 5000);
+    FX.set({ clock: f });
+    timer.raf = reducedMotion()
+      ? setTimeout(timerTick, 250)
+      : requestAnimationFrame(timerTick);
+  }
+  document.addEventListener('visibilitychange', function () {
+    if (!timer.deadline) return;
+    if (document.hidden) {
+      timer.left = Math.max(0, timer.deadline - Date.now());
+      cancelAnimationFrame(timer.raf);
+      clearTimeout(timer.raf);
+    } else {
+      timer.deadline = Date.now() + Math.max(timer.left, 1500); // a beat to re-orient
+      timerTick();
+    }
+  });
+
+  function onTimeout() {
+    timerStop();
+    if (!S || S.busy || S.enc.state !== 'run') return;
+    S.busy = true;
+    var sentence = currentSentence();
+    var res = C.timeout(S.enc, S.set);
+    Snd.drop();
+    el('stage').classList.add('dimmed');
+    FX.pulse('fail', 1); // timeout flavour: discharge + rings wind back
+    vaultShudder();
+    springPins();
+    afterMs(620, function () {
+      el('stage').classList.remove('dimmed');
+      if (res.state === 'miss') showTimeoutCard(sentence, true);
+      else if (res.state === 'exhausted') {
+        renderPins();
+        el('vault').classList.add('alarm');
+        FX.pulse('alarm');
+        Snd.alarm();
+        afterMs(750, function () { showTimeoutCard(sentence, false); });
+      } else {
+        onReviewTimeout(sentence);
+      }
+    });
+  }
+  // classic-vault failure animation: the whole door takes a shudder
+  function vaultShudder() {
+    var v = el('vault');
+    v.classList.remove('shudder');
+    void document.body.offsetWidth;
+    v.classList.add('shudder');
+    setTimeout(function () { v.classList.remove('shudder'); }, reducedMotion() ? 0 : 620);
+  }
+
   // ---- the flying tile ----
   function afterMs(ms, fn) { setTimeout(fn, reducedMotion() ? 0 : ms); }
   function flyGhost(fromEl, toEl, cb) {
@@ -421,6 +514,7 @@
   function answerWith(word, tileEl) {
     if (!S || S.busy || S.enc.state !== 'run') return;
     S.busy = true;
+    timerStop(); // the commit beats the clock; grading animation runs untimed
     var sentence = currentSentence();
     Snd.whoosh();
     flyGhost(tileEl, el('blank'), function (ghost) {
@@ -443,6 +537,8 @@
       } else {
         Snd.drop();
         el('stage').classList.add('dimmed');
+        FX.pulse('fail', 0); // wrong-word flavour: discharge and power flicker
+        vaultShudder();
         dropGhostBack(ghost, tileEl, function () {
           Snd.relock();
           springPins();
@@ -467,6 +563,8 @@
 
   // ---- miss card (contrastive feedback) ----
   function fillMissCard(sentence, picked) {
+    el('miss-title').textContent = 'The tumblers reset';
+    el('miss-picked-h').textContent = 'You picked';
     var con = C.contrastFor(S.set, sentence, picked);
     el('miss-cue').innerHTML = '';
     var read = document.createElement('span');
@@ -500,6 +598,53 @@
     hide('miss-overlay');
     if (S.missWasFinal) { onExhausted(); return; }
     showReady(); // the relock is a beat: re-show the gloss cards, then run again
+  }
+
+  // ---- timeout card: same overlay, but there is no picked word to contrast ----
+  function fillTimeoutCard(sentence) {
+    el('miss-title').textContent = '⏱ Too slow — the lock re-sealed';
+    el('miss-picked-h').textContent = 'The clock';
+    var right = null;
+    S.set.words.forEach(function (x) { if (x.w === sentence.answer) right = x; });
+    el('miss-cue').innerHTML = '';
+    var read = document.createElement('span');
+    read.appendChild(document.createTextNode('The slip wanted: “'));
+    var strong = document.createElement('b');
+    strong.textContent = C.fillText(sentence, sentence.answer);
+    read.appendChild(strong);
+    read.appendChild(document.createTextNode('” — the cue was “' + (sentence.cue_phrase || '') + '”.'));
+    el('miss-cue').appendChild(read);
+    el('miss-right-word').textContent = sentence.surface[sentence.answer];
+    el('miss-right-gloss').textContent = right ? right.gloss : '';
+    el('miss-picked-word').textContent = '⏱ ' + Math.round(C.LOCK_TIMER_MS / 1000) + 's';
+    el('miss-picked-gloss').textContent = 'The timer ran out before a word was chosen.';
+    el('miss-line').textContent = 'Read the cue first, then scan the tiles — fifteen seconds is plenty once you know what you’re hunting for.';
+  }
+  function showTimeoutCard(sentence, runsRemain) {
+    fillTimeoutCard(sentence);
+    var left = S.enc.runsAllowed - S.enc.misses;
+    el('miss-runs-left').textContent = runsRemain
+      ? (left === 1 ? 'Last run. Cue first, then tiles.' : left + ' runs left.')
+      : 'That was the last run for this safe.';
+    el('miss-next').textContent = runsRemain ? 'Try the next run ▶' : 'See the words ▶';
+    S.missWasFinal = !runsRemain;
+    persistEncounter();
+    Snd.page();
+    show('miss-overlay');
+    if (S.auto) autoContinue('miss-next');
+  }
+  function onReviewTimeout(sentence) {
+    LS.review = C.settleReview(LS.review, S.reviewEntry, false);
+    LS.reviewedAt = LS.setsCount;
+    LS.encounter = null;
+    fillTimeoutCard(sentence);
+    el('miss-runs-left').textContent = 'The lockbox stays shut this time - it will come back around.';
+    el('miss-next').textContent = 'Onward ▶';
+    S.missWasFinal = false;
+    S.reviewDone = true;
+    Snd.page();
+    show('miss-overlay');
+    if (S.auto) autoContinue('miss-next');
   }
 
   // ---- outcomes ----
@@ -752,16 +897,28 @@
   }
 
   // ---- settings ----
-  var CAPS = [0, 4, 8, 12, 16, 20];
+  var CAPS = [0, 4, 8, 12, 16, 20, 24, 28];
   function refreshSettings() {
     el('set-sound-val').textContent = LS.muted ? 'Off' : 'On';
     el('set-sound-val').classList.toggle('off', LS.muted);
+    el('set-year-val').textContent = 'Year ' + LS.startYear;
     el('set-cap-val').textContent = LS.capLevel ? 'Level ' + LS.capLevel : 'Off';
     el('set-cap-val').classList.toggle('off', !LS.capLevel);
     var fxv = !FX.supported() ? 'No WebGL' : LS.fxWanted ? 'On' : 'Off';
     el('set-fx-val').textContent = fxv;
     el('set-fx-val').classList.toggle('off', fxv !== 'On');
+    el('set-timer-val').textContent = LS.timerOn ? Math.round(C.LOCK_TIMER_MS / 1000) + 's' : 'Off';
+    el('set-timer-val').classList.toggle('off', !LS.timerOn);
   }
+  // in-game confirm: the same overlay system as everything else, because a
+  // native confirm() dialog yanks the child out of the vault
+  var confirmYes = null;
+  function askConfirm(onYes) {
+    confirmYes = onYes;
+    Snd.page();
+    show('confirm-overlay');
+  }
+
   function wipeProgress() {
     ['coins', 'difficulty', 'bestlevel', 'streak', 'collectibles', 'cosmetic',
       'review', 'history', 'setscount', 'reviewedat', 'encounter'].forEach(function (k) {
@@ -779,6 +936,7 @@
     setTimeout(function () {
       if (!S || S.busy || S.enc.state !== 'run') return;
       var mode = S.auto;
+      if (mode === 'stall') return; // #timerdemo: never answer, let the clock run out
       var want = sentence.answer;
       if (mode === 'wrong' || (mode === 'miss' && S.enc.correctInRun === S.enc.need - 1)) {
         want = S.enc.tileOrder.filter(function (w) { return w !== sentence.answer; })[0];
@@ -832,10 +990,21 @@
     el('newgame-btn').addEventListener('click', function () {
       Snd.tap();
       if (LS.encounter || LS.setsCount > 0) {
-        if (!window.confirm('Start over? This wipes coins, level and the cabinet for a new player.')) return;
-        wipeProgress();
+        askConfirm(function () { wipeProgress(); startGame(false); });
+        return;
       }
       startGame(false);
+    });
+    el('confirm-yes').addEventListener('click', function () {
+      Snd.tap();
+      hide('confirm-overlay');
+      var fn = confirmYes; confirmYes = null;
+      if (fn) fn();
+    });
+    el('confirm-no').addEventListener('click', function () {
+      Snd.tap();
+      confirmYes = null;
+      hide('confirm-overlay');
     });
     el('howto-btn').addEventListener('click', function () { Snd.page(); show('howto-overlay'); });
     el('howto-close').addEventListener('click', function () { hide('howto-overlay'); });
@@ -853,6 +1022,21 @@
       LS.capLevel = CAPS[(idx + 1) % CAPS.length];
       refreshSettings();
     });
+    el('set-year').addEventListener('click', function () {
+      // cycling the starting year MOVES the game there, both directions: it is
+      // the grown-up placing the child, streak and all
+      LS.startYear = (LS.startYear % 7) + 1;
+      LS.difficulty = (LS.startYear - 1) * 4 + 1;
+      LS.streak = 0;
+      refreshHud();
+      refreshSettings();
+    });
+    el('set-timer').addEventListener('click', function () {
+      LS.timerOn = !LS.timerOn;
+      if (!LS.timerOn) timerStop();
+      else if (S && S.enc && S.enc.state === 'run' && !S.busy) timerStart();
+      refreshSettings();
+    });
     el('set-fx').addEventListener('click', function () {
       if (!FX.supported()) { refreshSettings(); return; }
       LS.fxWanted = !LS.fxWanted;
@@ -866,12 +1050,13 @@
       refreshSettings();
     });
     el('set-newgame').addEventListener('click', function () {
-      if (!window.confirm('Start over? This wipes coins, level and the cabinet for a new player.')) return;
-      wipeProgress();
-      hide('settings-overlay');
-      show('title-overlay');
-      el('continue-btn').style.display = 'none';
-      el('year-stat').hidden = true;
+      askConfirm(function () {
+        wipeProgress();
+        hide('settings-overlay');
+        show('title-overlay');
+        el('continue-btn').style.display = 'none';
+        el('year-stat').hidden = true;
+      });
     });
 
     el('ready-btn').addEventListener('click', function () { Snd.tap(); startRun(); });
@@ -894,13 +1079,16 @@
 
     // dev hooks (documented in README): #play skips the title; #demo answers
     // correctly on a timer; #wrongdemo always misses; #missdemo misses once on
-    // pin 3 then cracks; #cabinet opens the cabinet; #selftest banners the
-    // content check
+    // pin 3 then cracks; #timerdemo stalls until the lock timer expires;
+    // #settings opens Settings; #cabinet opens the cabinet; #selftest banners
+    // the content check
     var hash = (location.hash || '').replace('#', '');
     if (hash === 'selftest') runSelftest();
     if (hash === 'cabinet') { renderCabinet(); show('cabinet-overlay'); }
-    if (hash === 'play' || hash === 'demo' || hash === 'wrongdemo' || hash === 'missdemo') {
-      S = { auto: hash === 'demo' ? 'right' : hash === 'wrongdemo' ? 'wrong' : hash === 'missdemo' ? 'miss' : null };
+    if (hash === 'settings') { refreshSettings(); show('settings-overlay'); }
+    if (hash === 'play' || hash === 'demo' || hash === 'wrongdemo' || hash === 'missdemo' || hash === 'timerdemo') {
+      S = { auto: hash === 'demo' ? 'right' : hash === 'wrongdemo' ? 'wrong'
+              : hash === 'missdemo' ? 'miss' : hash === 'timerdemo' ? 'stall' : null };
       startGame(!!LS.encounter);
     }
   }

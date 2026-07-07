@@ -48,6 +48,9 @@
     'uniform float u_springT;',// seconds since a relock drain
     'uniform float u_alarmT;', // seconds since the klaxon
     'uniform float u_openT;',  // seconds since the crack began
+    'uniform float u_clock;',  // lock-timer fraction remaining; negative = no clock
+    'uniform float u_failT;',  // seconds since a lock failure (wrong word or timeout)
+    'uniform float u_failK;',  // failure flavour: 0 wrong word, 1 timed out
     'uniform vec3 u_accent;',  // holo tint (cosmetic skins recolour this)
     'uniform vec3 u_pinc;',    // seated-cell tint (pins cosmetic)',
     '',
@@ -85,7 +88,7 @@
     '  float aa = 1.2 / scale;',
     '',
     // glitch: row shear during relock (small) and alarm (big), decaying
-    '  float gAmp = 9.0 * exp(-u_springT * 7.0) + 26.0 * exp(-u_alarmT * 3.0);',
+    '  float gAmp = 9.0 * exp(-u_springT * 7.0) + 26.0 * exp(-u_alarmT * 3.0) + 16.0 * exp(-u_failT * 5.0);',
     '  float row = floor((p.y + 500.0) / 13.0);',
     '  float gRnd = hash11(row + floor(mod(t, 60.0) * 24.0) * 7.0);',
     '  p.x += (gRnd - 0.5) * gAmp * step(0.4, gRnd);',
@@ -144,15 +147,35 @@
     '      float st = u_seatT;',
     '      face += gold * line(length(q) - (24.0 + st * 190.0), 3.0, aa + st * 4.0) * exp(-st * 5.0);',
     '    }',
+    // lock failure: charge arcs violently down the conduit while the cell drains
+    '    float dis = exp(-u_failT * 6.0) * lv;',
+    '    if (dis > 0.02) {',
+    '      vec2 jp = p;',
+    '      jp.x += (hash21(vec2(floor(p.y / 7.0), floor(mod(t, 10.0) * 40.0))) - 0.5) * 9.0;',
+    '      float darc = sdSeg(jp, c - vec2(0.0, 22.0), endc);',
+    '      face += vec3(1.0, 0.9, 0.6) * glow(darc, 1.4) * dis * 1.6;',
+    '    }',
     '  }',
     '',
     // tick ring: 24 static graduations, the instrument face
     '  float ticks = step(0.82, fract(ang / TAU * 24.0)) * line(rc - 128.0, 5.0, aa);',
     '  face += accent * ticks * 0.35;',
     '',
-    // three segmented rings; the dial spring turns them opposite ways
+    // the lock-timer arc: a cyan fuse burning clockwise from the top; goes
+    // amber and pulses when time runs short
+    '  if (u_clock >= 0.0) {',
+    '    float c01 = fract(atan(pc.x, pc.y) / TAU);',
+    '    float lit = 1.0 - step(u_clock, c01);',
+    '    vec3 cc = mix(vec3(1.0, 0.72, 0.30), accent, smoothstep(0.20, 0.50, u_clock));',
+    '    float urge = u_clock < 0.33 ? 0.72 + 0.28 * sin(t * 10.0) : 1.0;',
+    '    face += cc * lit * line(rc - 138.0, 3.0, aa) * urge;',
+    '    face += cc * lit * glow(abs(rc - 138.0), 2.0) * 0.30 * urge;',
+    '  }',
+    '',
+    // three segmented rings; the dial spring turns them opposite ways. A
+    // timeout winds them BACKWARDS: the lock re-seals itself.
     '  float turn = u_dial * 1.5708;',
-    '  float spinUp = exp(-u_boot * 1.8) * 6.0 + exp(-u_openT * 1.2) * 9.0;',
+    '  float spinUp = exp(-u_boot * 1.8) * 6.0 + exp(-u_openT * 1.2) * 9.0 - 7.0 * exp(-u_failT * 2.0) * u_failK;',
     '  for (int k = 0; k < 3; k++) {',
     '    float fk = float(k);',
     '    float R = 112.0 - fk * 23.0;',
@@ -216,6 +239,11 @@
     // ---- the iris door ----
     // the front face rides the door: it is visible outside the aperture. Inside,
     // golden light and rays: the same reveal the SVG door-swing gave.
+    // lock failure: the whole face browns out and flickers for a beat; a
+    // timeout adds an amber wash while the rings wind back
+    '  face *= 1.0 - 0.45 * exp(-u_failT * 5.0) * (0.5 + 0.5 * sin(u_failT * 60.0));',
+    '  face += vec3(1.0, 0.65, 0.2) * 0.15 * exp(-u_failT * 2.5) * u_failK;',
+    '',
     '  float blades = 1.0 - u_iris;',
     '  float serr = abs(fract(ang / TAU * 8.0) - 0.5) * 2.0;',
     '  float aperture = u_iris * 420.0 + serr * 16.0 * blades * u_iris;',
@@ -251,8 +279,9 @@
     tw: [null, null, null, null, null],        // per-pin tweens
     charge: 0,
     dial: 0, dialTarget: 0, dialVel: 0,
-    ev: { boot: -1e3, seat: -1e3, spring: -1e3, alarm: -1e3, open: -1e3 },
-    seatI: 0,
+    ev: { boot: -1e3, seat: -1e3, spring: -1e3, alarm: -1e3, open: -1e3, fail: -1e3 },
+    seatI: 0, failK: 0,
+    clock: -1,                                 // lock-timer fraction; -1 = no clock
     accent: [0.28, 0.90, 1.00],
     pinc: [0.45, 1.00, 0.95]
   };
@@ -330,6 +359,9 @@
     gl.uniform1f(u.u_springT, clampT(t - st.ev.spring));
     gl.uniform1f(u.u_alarmT, clampT(t - st.ev.alarm));
     gl.uniform1f(u.u_openT, clampT(t - st.ev.open));
+    gl.uniform1f(u.u_clock, st.clock);
+    gl.uniform1f(u.u_failT, clampT(t - st.ev.fail));
+    gl.uniform1f(u.u_failK, st.failK);
     gl.uniform3fv(u.u_accent, st.accent);
     gl.uniform3fv(u.u_pinc, st.pinc);
     gl.clearColor(0, 0, 0, 0);
@@ -399,7 +431,8 @@
       var uni = {};
       ['u_res', 'u_time', 'u_anim', 'u_need', 'u_pins', 'u_misses', 'u_charge',
        'u_dial', 'u_bolt', 'u_iris', 'u_boot', 'u_seatT', 'u_seatI', 'u_springT',
-       'u_alarmT', 'u_openT', 'u_accent', 'u_pinc'].forEach(function (n) {
+       'u_alarmT', 'u_openT', 'u_clock', 'u_failT', 'u_failK',
+       'u_accent', 'u_pinc'].forEach(function (n) {
         uni[n] = gl.getUniformLocation(prog, n);
       });
       G = { gl: gl, canvas: canvas, uni: uni, raf: 0, reduced: reduced(), last: 0 };
@@ -436,6 +469,7 @@
       }
       if (typeof o.need === 'number') st.need = o.need;
       if (typeof o.misses === 'number') st.misses = o.misses;
+      if (typeof o.clock === 'number') st.clock = o.clock;
       if (typeof o.seated === 'number' && o.seated !== st.seated) {
         var t = now();
         if (o.seated > st.seated) {          // a pin seats: overshoot up
@@ -464,6 +498,7 @@
       if (kind === 'boot') st.ev.boot = t;
       else if (kind === 'spring') st.ev.spring = t;
       else if (kind === 'alarm') st.ev.alarm = t;
+      else if (kind === 'fail') { st.ev.fail = t; st.failK = arg ? 1 : 0; }
       else if (kind === 'dial') st.dialTarget += (arg || 1);
       else if (kind === 'open') { st.ev.open = t; st.door = true; }
       if (G && G.reduced) snapAndDraw();

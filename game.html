@@ -14,6 +14,20 @@
   <meta property="og:title" content="Word Vault — the game">
   <meta property="og:description" content="Five confusable words, one sentence with a blank. Five right in a row cracks the safe.">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <script>
+  // Decide the theme BEFORE first paint so the wall never flashes warm->holo:
+  // same probe game-fx.js runs, minus the shader. Mount still owns the final
+  // say (a failed mount removes the class and the SVG vault returns).
+  (function () {
+    try {
+      if (localStorage.getItem('wordvault.fx') === 'off') return;
+      var c = document.createElement('canvas');
+      if (c.getContext('webgl') || c.getContext('experimental-webgl')) {
+        document.documentElement.classList.add('fx');
+      }
+    } catch (e) { /* storage or GL blocked: boot classic, mount may upgrade */ }
+  })();
+  </script>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -33,6 +47,9 @@
   <div id="stage">
     <section id="slip-wrap">
       <div id="slip"><span id="slip-text"></span></div>
+      <!-- the lock timer: LOCK_TIMER_MS per sentence; hidden when a grown-up
+           switches the timer off in Settings -->
+      <div id="timer-wrap" hidden aria-hidden="true"><div id="timer-fill"></div><b id="timer-num">15</b></div>
     </section>
 
     <section id="vault-wrap">
@@ -194,11 +211,11 @@
 
   <div class="overlay" id="miss-overlay">
     <div class="card">
-      <h2>The tumblers reset</h2>
+      <h2 id="miss-title">The tumblers reset</h2>
       <p class="cue-line" id="miss-cue"></p>
       <div class="contrast-cols">
         <div class="right-col"><h3>The word that fits</h3><div class="cword" id="miss-right-word"></div><p id="miss-right-gloss"></p></div>
-        <div class="picked-col"><h3>You picked</h3><div class="cword" id="miss-picked-word"></div><p id="miss-picked-gloss"></p></div>
+        <div class="picked-col"><h3 id="miss-picked-h">You picked</h3><div class="cword" id="miss-picked-word"></div><p id="miss-picked-gloss"></p></div>
       </div>
       <p class="contrast-line" id="miss-line"></p>
       <p id="miss-runs-left" style="font-weight:700"></p>
@@ -247,6 +264,8 @@
       <h2>⚙️ Settings</h2>
       <div class="set-list">
         <button class="set-row" id="set-sound"><span>Sound</span><span class="set-val" id="set-sound-val">On</span></button>
+        <button class="set-row" id="set-year"><span>Starting year <small>(school year 1–7)</small></span><span class="set-val" id="set-year-val">Year 1</span></button>
+        <button class="set-row" id="set-timer"><span>Lock timer <small>(15 seconds per sentence)</small></span><span class="set-val" id="set-timer-val">On</span></button>
         <button class="set-row" id="set-cap"><span>Top level cap <small>(for grown-ups)</small></span><span class="set-val" id="set-cap-val">Off</span></button>
         <button class="set-row" id="set-fx"><span>Holo vault <small>(needs a capable screen)</small></span><span class="set-val" id="set-fx-val">On</span></button>
         <button class="set-row" id="set-howto"><span>How to play</span><span class="set-val">→</span></button>
@@ -261,21 +280,34 @@
       <h2>How to play</h2>
       <p class="howto-classic" style="text-align:left;font-weight:600;line-height:1.55">
         Five words are carved on the brass tiles. The paper slip shows a sentence with a hole in it.
-        <b>Tap the one word that truly fits.</b> Every correct word seats one tumbler pin —
-        seat them all in a row and the vault swings open. Bigger vaults need more pins as you
-        level up. One wrong word and all the pins spring back: that run is over, a lamp lights
-        on the alarm, and three wrong answers ring the alarm — that safe stays shut for now.
-        Press and hold a tile to peek at what a word means (on lower levels).
+        <b>Tap the one word that truly fits — you have 15 seconds before the lock re-seals.</b>
+        Every correct word seats one tumbler pin; seat them all in a row and the vault swings open.
+        Each school year's vaults grow from 2 pins up to 5. One wrong word (or an empty clock) and
+        all the pins spring back: that run is over, a lamp lights on the alarm, and three misses
+        ring the alarm — that safe stays shut for now. Press and hold a tile to peek at what a
+        word means (on lower levels).
       </p>
       <p class="howto-holo" style="text-align:left;font-weight:600;line-height:1.55">
         Five words glow on the holo tiles. The screen shows a sentence with a gap in it.
-        <b>Tap the one word that truly fits.</b> Every correct word charges one energy pin —
-        charge them all in a row and the vault iris spins open. Bigger vaults need more pins as
-        you level up. One wrong word and the charge drains: that run is over, a warning lamp
-        lights, and three wrong answers trip the alarm — that vault stays sealed for now.
-        Press and hold a tile to peek at what a word means (on lower levels).
+        <b>Tap the one word that truly fits — the fuse around the lock burns for 15 seconds.</b>
+        Every correct word charges one energy pin; charge them all in a row and the vault iris
+        spins open. Each school year's vaults grow from 2 pins up to 5. One wrong word (or a
+        burnt-out fuse) and the charge arcs away: that run is over, a warning lamp lights, and
+        three misses trip the alarm — that vault stays sealed for now. Press and hold a tile to
+        peek at what a word means (on lower levels).
       </p>
       <p><button class="big" id="howto-close">Got it</button></p>
+    </div>
+  </div>
+
+  <div class="overlay" id="confirm-overlay">
+    <div class="card confirm-card">
+      <h2>💥 Start over?</h2>
+      <p style="font-weight:600">This wipes coins, level and the cabinet for a new player.<br>The best-streak trophy stays on the wall.</p>
+      <div class="confirm-btns">
+        <button class="big plain" id="confirm-no">Keep my game</button>
+        <button class="big brass" id="confirm-yes">Start over</button>
+      </div>
     </div>
   </div>
 

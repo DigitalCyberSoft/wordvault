@@ -4,10 +4,12 @@ A vocabulary game disguised as safe-cracking, in the same family as
 [Pizza Palace](https://github.com/DigitalCyberSoft/pizzashop). Five confusable
 words are engraved on brass tiles; a paper slip shows a sentence with a hole in
 it; the child taps the one word that truly fits. Every correct word seats a
-tumbler pin - seat them all and the vault swings open (locks grow from 2 pins
-at band 1 to 5 from band 4). One wrong word springs
-every pin back out: that run is over, and a safe grants three runs before it
-keeps its secret and the game moves on (gently, a level down).
+tumbler pin - seat them all and the vault swings open. The ladder is seven
+Australian school years of four levels each (28 levels), and within every year
+the locks grow from 2 pins to the full 5 before the next year's words arrive.
+One wrong word - or letting the 15-second lock timer run out - springs every
+pin back out: that run is over, and a safe grants three runs before it keeps
+its secret and the game moves on (gently, a level down).
 
 The difficulty lives in the language: word rarity rises, the cue drifts from
 explicit ("cried very loudly") to inferential, and the words in a set close in
@@ -26,8 +28,12 @@ on each other (walk-family first, scalding-vs-boiling later).
   Retention practice, never a level change.
 - **It adapts by itself.** Clean cracks (no misses) raise the level, exhausted
   safes lower it, and it settles where the child is challenged but not stuck.
-  There are no timers anywhere: a slow correct answer is a correct answer.
+  Speed never moves the level: `adjustDifficulty` takes no time input.
   A **Level Up** fires only on a genuine personal best.
+- **The lock timer.** 15 seconds per sentence (`Core.LOCK_TIMER_MS`); expiry
+  is a miss with its own teaching card. Settings offers a grown-up off-switch
+  for slower readers, and a **Starting year** knob (Year 1-7) places a new
+  player at their school year.
 - **The Curio Cabinet.** Every crack pays a few coins and one collectible;
   five related treasures complete a shelf.
 

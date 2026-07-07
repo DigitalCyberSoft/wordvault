@@ -166,22 +166,24 @@ var alwaysWrong = function (s) { return s.answer === 'alpha' ? 'bravo' : 'alpha'
 
 // 5. Adaptivity curve.
 (function () {
-  eq(C.neededStreak(1), 1, 'streak needed below 10 is 1');
-  eq(C.neededStreak(9), 1, 'streak needed at 9 is 1');
-  eq(C.neededStreak(10), 2, 'streak needed at 10 is 2');
-  eq(C.neededStreak(15), 2, 'streak needed at 15 is 2');
-  eq(C.neededStreak(16), 3, 'streak needed at 16 is 3');
-  eq(C.neededStreak(20), 3, 'streak needed at 20 is 3');
+  // curve re-anchored to the 28-level year ladder: 1 through year 3 (<=12),
+  // 2 across years 4-5 (13-20), 3 in years 6-7 (21+)
+  eq(C.neededStreak(1), 1, 'streak needed in years 1-3 is 1');
+  eq(C.neededStreak(12), 1, 'streak needed at 12 (year 3 top) is 1');
+  eq(C.neededStreak(13), 2, 'streak needed at 13 (year 4) is 2');
+  eq(C.neededStreak(20), 2, 'streak needed at 20 (year 5 top) is 2');
+  eq(C.neededStreak(21), 3, 'streak needed at 21 (year 6) is 3');
+  eq(C.neededStreak(28), 3, 'streak needed at 28 is 3');
   var r = C.adjustDifficulty(1, 'clean-crack', 0, 0);
   ok(Math.abs(r.difficulty - 1.7) < 1e-9 && r.streak === 0, 'level 1 climbs on a single clean crack');
-  r = C.adjustDifficulty(12, 'clean-crack', 0, 0);
-  ok(r.difficulty === 12 && r.streak === 1, 'level 12 needs a second clean crack');
-  r = C.adjustDifficulty(12, 'clean-crack', 1, 0);
-  ok(Math.abs(r.difficulty - 12.7) < 1e-9 && r.streak === 0, 'level 12 climbs on the second');
-  r = C.adjustDifficulty(12, 'crack', 1, 0);
-  ok(r.difficulty === 12 && r.streak === 0, 'scrappy crack holds level, breaks streak');
-  r = C.adjustDifficulty(12, 'exhausted', 2, 0);
-  ok(Math.abs(r.difficulty - 11.2) < 1e-9 && r.streak === 0, 'exhaustion drops 0.8');
+  r = C.adjustDifficulty(15, 'clean-crack', 0, 0);
+  ok(r.difficulty === 15 && r.streak === 1, 'level 15 needs a second clean crack');
+  r = C.adjustDifficulty(15, 'clean-crack', 1, 0);
+  ok(Math.abs(r.difficulty - 15.7) < 1e-9 && r.streak === 0, 'level 15 climbs on the second');
+  r = C.adjustDifficulty(15, 'crack', 1, 0);
+  ok(r.difficulty === 15 && r.streak === 0, 'scrappy crack holds level, breaks streak');
+  r = C.adjustDifficulty(15, 'exhausted', 2, 0);
+  ok(Math.abs(r.difficulty - 14.2) < 1e-9 && r.streak === 0, 'exhaustion drops 0.8');
   r = C.adjustDifficulty(1, 'exhausted', 0, 0);
   eq(r.difficulty, 1, 'difficulty clamps at 1');
   r = C.adjustDifficulty(C.MAX_LEVEL + 0.9, 'clean-crack', 2, 0);
@@ -192,7 +194,7 @@ var alwaysWrong = function (s) { return s.answer === 'alpha' ? 'bravo' : 'alpha'
   ok(r.difficulty === 9 && r.streak === 2, 'review-opened moves nothing');
   r = C.adjustDifficulty(9, 'review-failed', 2, 0);
   ok(r.difficulty === 9 && r.streak === 2, 'review-failed moves nothing');
-  throws(function () { C.adjustDifficulty(9, 'tipped', 0, 0); }, 'unknown outcome throws (no timer outcomes exist)');
+  throws(function () { C.adjustDifficulty(9, 'tipped', 0, 0); }, 'unknown outcome throws (the lock timer feeds miss/exhausted; speed is never an outcome)');
   var d = 3, s = 0, i;
   for (i = 0; i < 40; i++) { var up = C.adjustDifficulty(d, 'clean-crack', s, 0); ok(up.difficulty >= d, 'clean-crack never lowers'); d = up.difficulty; s = up.streak; }
   for (i = 0; i < 40; i++) { var dn = C.adjustDifficulty(d, 'exhausted', s, 0); ok(dn.difficulty <= d, 'exhaustion never raises'); d = dn.difficulty; s = dn.streak; }
@@ -317,14 +319,20 @@ var alwaysWrong = function (s) { return s.answer === 'alpha' ? 'bravo' : 'alpha'
   eq(C.speedBonus(1000, 0), 0, 'zero answers earns 0');
 })();
 
-// 12. Progressive pins: locks grow with the band; leveling still needs streaks.
+// 12. Progressive pins: every school year climbs 2 to 5 pins; streaks still gate levels.
 (function () {
-  eq(C.crackNeedFor(1), 2, 'band 1 locks take 2 pins');
-  eq(C.crackNeedFor(4), 2, 'level 4 still band 1');
-  eq(C.crackNeedFor(5), 3, 'band 2 locks take 3 pins');
-  eq(C.crackNeedFor(9), 4, 'band 3 locks take 4 pins');
-  eq(C.crackNeedFor(13), 5, 'band 4 locks take the full 5');
-  eq(C.crackNeedFor(20), 5, 'pin count is capped at 5');
+  eq(C.crackNeedFor(1), 2, 'year 1 starts at 2 pins');
+  eq(C.crackNeedFor(2), 3, 'level 2 takes 3 pins');
+  eq(C.crackNeedFor(4), 5, 'year 1 tops out at the full 5');
+  eq(C.crackNeedFor(5), 2, 'year 2 resets to 2 pins with its new words');
+  eq(C.crackNeedFor(12), 5, 'year 3 tops out at 5');
+  eq(C.crackNeedFor(25), 2, 'year 7 also starts at 2');
+  eq(C.crackNeedFor(28), 5, 'the top of the ladder is a 5-pin vault');
+  eq(C.yearOf(1), 1, 'levels 1-4 are year 1');
+  eq(C.yearOf(4), 1, 'level 4 is still year 1');
+  eq(C.yearOf(5), 2, 'level 5 opens year 2');
+  eq(C.yearOf(28), 7, 'level 28 is year 7');
+  eq(C.yearOf(999), 7, 'yearOf clamps to year 7');
   var set = makeSet('A-test-01');
   var rng = C.makeRng(11);
   var enc = C.newEncounter(set, { level: 1 }, rng);
@@ -354,6 +362,53 @@ var alwaysWrong = function (s) { return s.answer === 'alpha' ? 'bravo' : 'alpha'
   eq(C.yearRange(set).label, 'Year 5', 'uniform set labels as a single year');
   set.words.forEach(function (w) { delete w.grade; });
   eq(C.yearRange(set), null, 'ungraded fixture words yield null, not a fake range');
+})();
+
+// ---------------------------------------------------------------------------
+// setsForLevel: year-first selection with the bank-C floor
+(function () {
+  function graded(id, maxYear, bank) {
+    var s = makeSet(id);
+    if (bank) s.bank = bank;
+    s.words.forEach(function (w) { w.grade = maxYear; });
+    s.words[0].grade = 1;
+    return s;
+  }
+  var content = { sets: [graded('A-y1-01', 1), graded('A-y2-01', 2),
+                         graded('A-y5-01', 5), graded('C-y2-01', 2, 'C')],
+                  shelves: C.SHELVES };
+  eq(C.setYearOf(graded('A-x-01', 5)), 5, 'a set is pitched at its hardest word');
+  eq(C.setYearOf(makeSet('A-f-01')), 4, 'ungraded sets fall back to a band estimate');
+  var ids = C.setsForLevel(content, 1);
+  ok(ids.indexOf('A-y1-01') !== -1, 'year 1 serves year-1 sets');
+  ok(ids.indexOf('A-y5-01') === -1, 'year 1 does not reach year-5 sets');
+  ok(ids.indexOf('C-y2-01') === -1, 'bank C never serves below year 3');
+  ids = C.setsForLevel(content, 9);
+  ok(ids.indexOf('C-y2-01') !== -1, 'bank C joins from year 3');
+  ids = C.setsForLevel(content, 17);
+  eq(JSON.stringify(ids), JSON.stringify(['A-y5-01']), 'year 5 draws exactly the year-5 set');
+})();
+
+// ---------------------------------------------------------------------------
+// timeout: the lock timer expiring is a miss in everything but the tap
+(function () {
+  var rng = C.makeRng(31);
+  var enc = C.newEncounter(SET, { level: 1 }, rng);
+  throws(function () { C.timeout(enc, SET); }, 'timeout() outside a run throws');
+  C.startRun(enc);
+  var s = C.drawSentence(enc, SET, rng);
+  var r = C.timeout(enc, SET);
+  ok(!r.correct && r.timedOut, 'timeout grades as an incorrect, timed-out result');
+  eq(r.state, 'miss', 'first timeout ends the run');
+  eq(enc.misses, 1, 'timeout counts a miss');
+  eq(enc.missed[0], s.answer, 'the un-answered word joins the missed list');
+  C.startRun(enc); C.drawSentence(enc, SET, rng); C.timeout(enc, SET);
+  C.startRun(enc); C.drawSentence(enc, SET, rng);
+  eq(C.timeout(enc, SET).state, 'exhausted', 'third timeout exhausts the safe');
+  var rev = C.newEncounter(SET, { review: true }, rng);
+  C.startRun(rev); C.drawSentence(rev, SET, rng);
+  eq(C.timeout(rev, SET).state, 'failed', 'a review timeout fails the lockbox');
+  eq(C.LOCK_TIMER_MS, 15000, 'the lock clock is 15 seconds');
 })();
 
 // ---------------------------------------------------------------------------

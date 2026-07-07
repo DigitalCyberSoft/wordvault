@@ -20,28 +20,42 @@ answers for is a shipping bug, because it punishes a correct answer.
 | 1 | Word rarity | zipf_min ≥ 4.2 → below 2.5 (tier-2 words); every word also carries an Australian school year `grade` 1-7 (tools/grade-words.py) as the human-readable rarity check |
 | 2 | Set tightness | distinct categories (hiss / moo) → adjacent rungs of one scale (gleaming / twinkling) |
 | 3 | Cue mix *served* | explicit-heavy → inferential-heavy (authoring is uniform 2/2/2; the runtime shifts what it draws - a future knob, v1 serves uniformly) |
-| 4 | Bank mix | A+B only → bank C (their/there, borrow/lend) from band 3 |
-| 5 | Sentence length | short frames dominate low bands (review-lane flag above 15 words in bands 1-2) |
+| 4 | Bank mix | A+B only → bank C (their/there, borrow/lend) from year 3 |
+| 5 | Sentence length | short frames dominate low years (review-lane flag above 15 words in bands 1-2; bands remain authoring metadata) |
 | 6 | Review pressure | lockboxes interleave after every 4th set at all levels |
 
-Fixed non-levers: 3 runs per safe, 5 tiles, no timers. (Crack length is a
-lever since the band-scaling change: see Bands below.)
+Fixed non-levers: 3 runs per safe, 5 tiles. The lock timer (below) is a
+failure condition, not a difficulty input: speed never moves the level.
 
-## Bands
+## The year ladder
 
-Five bands of four levels each (`MAX_LEVEL = 20`). The crack requirement grows
-with the band - 2 pins at band 1, 3 at band 2, 4 at band 3, 5 from band 4
-(`crackNeedFor`; review lockboxes stay at 3) - so higher vaults are structurally
-harder as well as lexically harder. Leveling is still gated on clean-crack
+Seven Australian school years of four levels each (`MAX_LEVEL = 28`). WITHIN
+every year the crack requirement climbs - 2 pins at the year's first level,
+then 3, 4, and the full 5 as its exit exam (`crackNeedFor` cycles; review
+lockboxes stay at 3) - so each year's new vocabulary gets fast early wins and
+ends on a structurally hard vault. Leveling is still gated on clean-crack
 streaks, never on a single success.
 
-| Band | Levels | Feel | Banks | Example sets |
+Sets are pitched at the school year of their HARDEST word (`setYearOf`: the
+max of the per-word `grade` fields; the child must know all five). Selection
+widens one year at a time if a year is thin. Bank C never serves below year 3.
+
+| Years | Levels | Feel | Banks | Example sets |
 |---|---|---|---|---|
-| 1 | 1-4 | Highest-frequency similarity families | A | (served by band-2 fallback in the pilot) |
-| 2 | 5-8 | Similar words split by one everyday feature | A, B | kinds of happy, ways of being big, cry, eat, ways of walking |
-| 3 | 9-12 | Rarer members, one-shade gaps, usage traps begin | A, B, C | ways of being brave, kinds of tired, kinds of shine, their/there, borrow/lend |
-| 4 | 13-16 | Tier-2 vocabulary, inferential cues carry more | A, B, C | (post-pilot authoring) |
-| 5 | 17-20 | Adjacent-rung sets, cue buried or fully inferential | A, B, C | (post-pilot authoring) |
+| 1-2 | 1-8 | Everyday similarity families, manner splits | A, B | ways to move things, sounds people make, cry, eat |
+| 3-4 | 9-16 | Rarer members, one-shade gaps, usage traps begin | A, B, C | brave, tired, shine, their/there, borrow/lend |
+| 5-6 | 17-24 | Tier-2 vocabulary, inferential cues carry more | A, B, C | climate, tricks, secrecy, skill |
+| 7 | 25-28 | Literary-register abstractions, cue buried or fully inferential | A, B, C | statements, tempo, desire |
+
+## The lock timer
+
+`LOCK_TIMER_MS` (15 s) per sentence, enforced by the UI, graded by
+`Core.timeout()`: expiry is a MISS in everything but the tap (run ends, lamp
+lights, same difficulty math, its own teaching card). The clock pauses while
+the tab is hidden and stops the moment an answer is committed. Settings
+carries a grown-up off-switch; with the timer off nothing else changes.
+`adjustDifficulty` still takes no time input - the timer is a per-sentence
+failure condition, never a speed reward.
 
 ## Banding algorithm
 
@@ -70,12 +84,14 @@ via light, not via each other).
 
 ## Runtime adaptivity (for reference; the code is game-core.js)
 
-Difficulty is a float; level = round(difficulty), clamped to 1-20. The only way
+Difficulty is a float; level = round(difficulty), clamped to 1-28. The only way
 up is a **clean crack** (no misses), and climbing needs a consecutive run of
-them that lengthens with level: 1 below 10, 2 from 10-15, 3 from 16. Up-step
-+0.7; set exhaustion (three misses) steps -0.8; scrappy cracks hold. Review
-lockboxes never move the level. A parent cap clamps the top. The Level Up
-screen fires only on a first-ever reach of a level.
+them that lengthens with level: 1 through year 3 (levels 1-12), 2 across years
+4-5 (13-20), 3 in years 6-7 (21-28). Up-step +0.7; set exhaustion (three
+misses) steps -0.8; scrappy cracks hold. Review lockboxes never move the
+level. A parent cap clamps the top, and **Starting year** (Settings) places a
+new player at their school year's first level. The Level Up screen fires only
+on a first-ever reach of a level.
 
 ## Exhaustion and review
 
@@ -87,9 +103,9 @@ seen in normal play), coins only.
 
 ## Knobs deliberately left tunable
 
-Runs per set (3), the crack-length band curve (2/3/4/5, `crackNeedFor`),
-review cadence (4) and lockbox length (3),
-the help threshold (long-press glosses below level 12), the needed-streak
+Runs per set (3), the per-year crack curve (2/3/4/5, `crackNeedFor`), the
+lock timer (`LOCK_TIMER_MS`, 15 s), review cadence (4) and lockbox length (3),
+the help threshold (long-press glosses below level 17), the needed-streak
 curve, bank mix targets (65/20/15), the served cue-mix curve (lever 3), and
 the M11 length thresholds. All are constants in game-core.js or gates in
 tools/, one line each.

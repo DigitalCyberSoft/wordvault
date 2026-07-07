@@ -196,6 +196,48 @@ body {
 @keyframes coin-tick { 0% { transform: scale(1); } 40% { transform: scale(1.22); } 100% { transform: scale(1); } }
 @keyframes blank-glow { 0% { box-shadow: 0 0 0 0 var(--gold-glow); } 100% { box-shadow: 0 0 0 14px rgba(240,180,41,0); } }
 
+/* ---- The lock timer: a fuse under the slip, thinning left as time runs ---- */
+#timer-wrap {
+  position: relative; margin: 8px auto 0; width: min(560px, 80%); height: 12px;
+  background: rgba(0,0,0,.14); border-radius: 999px; overflow: visible;
+  box-shadow: inset 0 2px 3px rgba(0,0,0,.18);
+}
+#timer-wrap[hidden] { display: none; }
+#timer-fill {
+  position: absolute; inset: 0; border-radius: 999px; transform-origin: left center;
+  background: linear-gradient(90deg, var(--brass-bright), var(--brass));
+  box-shadow: 0 0 8px rgba(240,180,41,.5);
+}
+#timer-wrap.low #timer-fill { background: linear-gradient(90deg, #ffb24d, #e07b1f); box-shadow: 0 0 10px rgba(224,123,31,.8); }
+#timer-num {
+  position: absolute; right: -34px; top: 50%; transform: translateY(-50%);
+  font-size: .95rem; font-weight: 800; color: var(--ink); min-width: 28px; text-align: left;
+  font-variant-numeric: tabular-nums;
+}
+#timer-wrap.low #timer-num { color: #b45309; }
+html.fx #timer-wrap { background: rgba(70,230,255,.08); box-shadow: inset 0 0 0 1px var(--fx-line); }
+html.fx #timer-fill { background: linear-gradient(90deg, #46e6ff, #2b9dc4); box-shadow: 0 0 10px rgba(70,230,255,.55); }
+html.fx #timer-wrap.low #timer-fill { background: linear-gradient(90deg, #ffc35c, #e0821f); box-shadow: 0 0 12px rgba(255,180,77,.8); }
+html.fx #timer-num { color: var(--fx-text); }
+html.fx #timer-wrap.low #timer-num { color: #ffc35c; }
+
+/* lock-failure shudder: the classic door takes the hit bodily (the holo vault
+   plays its own shader discharge instead, but both worlds get the shake) */
+#vault.shudder { animation: vault-shudder 560ms cubic-bezier(.36,.07,.19,.97) both; }
+@keyframes vault-shudder {
+  0%, 100% { transform: translate(0, 0) rotate(0); }
+  15% { transform: translate(-7px, 2px) rotate(-.5deg); }
+  30% { transform: translate(6px, -2px) rotate(.4deg); }
+  45% { transform: translate(-5px, 1px) rotate(-.3deg); }
+  60% { transform: translate(4px, -1px) rotate(.25deg); }
+  75% { transform: translate(-2px, 1px) rotate(-.15deg); }
+}
+
+/* the in-game confirm sits above settings, below nothing */
+#confirm-overlay { z-index: 70; }
+.confirm-card { max-width: 440px; }
+.confirm-btns { display: flex; gap: 12px; justify-content: center; margin-top: 14px; }
+
 /* the whole stage dims for a beat on a miss: desaturation IS the wrong-colour */
 #stage.dimmed #vault-wrap, #stage.dimmed #slip-wrap { filter: saturate(.45) brightness(.94); transition: filter .25s ease; }
 
@@ -475,7 +517,7 @@ html.fx .howto-classic { display: none; }
 @media (prefers-reduced-motion: reduce) {
   .overlay.show, .overlay.show > *, .bob, .pinstack.spring .stack, #tile-ghost.shake, #blank.glow, .coin-pop,
   #vault.open #door-leaf, #vault.open #rays, .pinstack.seated .ring, #mech.thunk, #slip.deal, #hud .stat.coins.tick,
-  #vault.alarm, #vault.alarm #alarm-bell { animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
+  #vault.alarm, #vault.alarm #alarm-bell, #vault.shudder { animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
   #door-leaf, #tile-ghost, button.big, .menu-btn, .tile, #mech .stack, #bolt, .pinstack .keypin, .pinstack .setline,
   #dial, #handle, #rays, .coin-fly, #alarm-box .lamp { transition: none; }
 }
