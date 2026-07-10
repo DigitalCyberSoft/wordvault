@@ -22,7 +22,11 @@ on each other (walk-family first, scalding-vs-boiling later).
   run 2 can't be passed on memory of run 1's pairings.
 - **A miss teaches.** The card shows the word that fits and the word you
   picked side by side - both with their dictionary meanings - plus the cue and
-  one line on the difference. Failure is where the vocabulary lands.
+  one line on the difference. Failure is where the vocabulary lands. Ladder
+  sets (the time words: yesterday→tomorrow, never→always, morning→night) add
+  a **when-line** under the cards - five ticks in order, the fitting word lit
+  gold, the picked word crossed out - so the child sees *where on the scale*
+  the two words sit, not just that they differ.
 - **Review lockboxes.** Cracked and failed safes come back later as smaller
   lockboxes with fresh sentences: three in a row to open, one run only.
   Retention practice, never a level change.
@@ -110,6 +114,8 @@ for a pass/fail banner over the shipped content.
 | `#wrongdemo` | Auto-answer wrongly (watch the three-run exhaustion flow) |
 | `#missdemo` | Miss once on the final pin, then crack on run 2 |
 | `#timerdemo` | Never answer: watch the lock timer expire and the timeout card |
+| `#dialdemo` | Auto-crack wearing the Timekeepers clock-face dial |
+| `#missdemo=B-time-deixis-01` | Any demo hook takes `=<set-id>` to pin its first safe |
 | `#settings` | Open Settings |
 | `#cabinet` | Open the Curio Cabinet |
 | `#selftest` | Run the content check in-page |

@@ -169,6 +169,12 @@
 
   // ---- picking what comes next ----
   function pickNext() {
+    // dev hooks may pin the first safe to a named set (#missdemo=B-time-deixis-01)
+    if (S && S.forceSetId) {
+      var forced = CONTENT.byId(S.forceSetId);
+      S.forceSetId = null;
+      if (forced) { beginEncounter(forced, {}); return; }
+    }
     var queue = LS.review;
     if (C.reviewDue(LS.setsCount, queue) && LS.reviewedAt !== LS.setsCount) {
       var pick = C.pickReview(queue);
@@ -194,7 +200,8 @@
       answered: 0,
       busy: false,
       queuedLevelUp: 0,
-      auto: S ? S.auto : null
+      auto: S ? S.auto : null,
+      holdCards: S ? !!S.holdCards : false
     };
     persistEncounter();
     showReady();
@@ -562,6 +569,30 @@
   }
 
   // ---- miss card (contrastive feedback) ----
+  // Scaled sets (the time ladders) draw a when-line under the word cards:
+  // five ticks in gradient order, the fitting word lit gold, the picked word
+  // dimmed. Sets without a scale never show it.
+  function fillWhenline(answer, picked) {
+    var wl = el('whenline');
+    var scale = S.set && S.set.scale;
+    if (!scale) { wl.hidden = true; return; }
+    el('wl-left').textContent = scale.left;
+    el('wl-right').textContent = scale.right;
+    var rail = el('wl-rail');
+    rail.innerHTML = '';
+    S.set.words.forEach(function (w) {
+      var tick = document.createElement('span');
+      tick.className = 'wl-tick' +
+        (w.w === answer ? ' is-right' : '') +
+        (picked && w.w === picked ? ' is-picked' : '');
+      tick.appendChild(document.createElement('i'));
+      var lab = document.createElement('em');
+      lab.textContent = w.w;
+      tick.appendChild(lab);
+      rail.appendChild(tick);
+    });
+    wl.hidden = false;
+  }
   function fillMissCard(sentence, picked) {
     el('miss-title').textContent = 'The tumblers reset';
     el('miss-picked-h').textContent = 'You picked';
@@ -579,6 +610,7 @@
     el('miss-picked-word').textContent = con.picked.surface;
     el('miss-picked-gloss').textContent = con.picked.gloss;
     el('miss-line').textContent = con.line;
+    fillWhenline(sentence.answer, picked);
   }
   function showMissCard(sentence, picked, runsRemain) {
     fillMissCard(sentence, picked);
@@ -592,7 +624,7 @@
     // history counts every miss so the review queue can prioritise
     Snd.page();
     show('miss-overlay');
-    if (S.auto) autoContinue('miss-next');
+    if (S.auto && !S.holdCards) autoContinue('miss-next');
   }
   function missNext() {
     hide('miss-overlay');
@@ -619,6 +651,7 @@
     el('miss-picked-word').textContent = '⏱ ' + Math.round(C.LOCK_TIMER_MS / 1000) + 's';
     el('miss-picked-gloss').textContent = 'The timer ran out before a word was chosen.';
     el('miss-line').textContent = 'Read the cue first, then scan the tiles — fifteen seconds is plenty once you know what you’re hunting for.';
+    fillWhenline(sentence.answer, null);
   }
   function showTimeoutCard(sentence, runsRemain) {
     fillTimeoutCard(sentence);
@@ -631,7 +664,7 @@
     persistEncounter();
     Snd.page();
     show('miss-overlay');
-    if (S.auto) autoContinue('miss-next');
+    if (S.auto && !S.holdCards) autoContinue('miss-next');
   }
   function onReviewTimeout(sentence) {
     LS.review = C.settleReview(LS.review, S.reviewEntry, false);
@@ -644,7 +677,7 @@
     S.reviewDone = true;
     Snd.page();
     show('miss-overlay');
-    if (S.auto) autoContinue('miss-next');
+    if (S.auto && !S.holdCards) autoContinue('miss-next');
   }
 
   // ---- outcomes ----
@@ -763,7 +796,7 @@
     S.reviewDone = true;
     Snd.page();
     show('miss-overlay');
-    if (S.auto) autoContinue('miss-next');
+    if (S.auto && !S.holdCards) autoContinue('miss-next');
   }
 
   // ---- input: tap answers, long-press peeks (below the help threshold) ----
@@ -843,6 +876,7 @@
     if (cos.backdrop) cls.push('backdrop-' + cos.backdrop);
     if (cos.skin) cls.push('skin-' + cos.skin);
     if (cos.pins) cls.push('pins-' + cos.pins);
+    if (cos.dial) cls.push('dial-' + cos.dial);
     document.body.className = cls.join(' ');
     FX.set({ cosmetic: cos }); // earned skins recolour the hologram too
   }
@@ -1080,15 +1114,25 @@
     // dev hooks (documented in README): #play skips the title; #demo answers
     // correctly on a timer; #wrongdemo always misses; #missdemo misses once on
     // pin 3 then cracks; #timerdemo stalls until the lock timer expires;
+    // #dialdemo plays wearing the Timekeepers clock dial; a demo hook may pin
+    // its first safe with =<set-id> (#missdemo=B-time-deixis-01);
     // #settings opens Settings; #cabinet opens the cabinet; #selftest banners
     // the content check
     var hash = (location.hash || '').replace('#', '');
-    if (hash === 'selftest') runSelftest();
-    if (hash === 'cabinet') { renderCabinet(); show('cabinet-overlay'); }
-    if (hash === 'settings') { refreshSettings(); show('settings-overlay'); }
-    if (hash === 'play' || hash === 'demo' || hash === 'wrongdemo' || hash === 'missdemo' || hash === 'timerdemo') {
-      S = { auto: hash === 'demo' ? 'right' : hash === 'wrongdemo' ? 'wrong'
-              : hash === 'missdemo' ? 'miss' : hash === 'timerdemo' ? 'stall' : null };
+    var eq = hash.indexOf('=');
+    var base = eq === -1 ? hash : hash.slice(0, eq);
+    var arg = eq === -1 ? null : decodeURIComponent(hash.slice(eq + 1));
+    if (base === 'selftest') runSelftest();
+    if (base === 'cabinet') { renderCabinet(); show('cabinet-overlay'); }
+    if (base === 'settings') { refreshSettings(); show('settings-overlay'); }
+    if (base === 'dialdemo') { LS.cosmetic = { dial: 'clock' }; applyCosmetics(); }
+    if (base === 'play' || base === 'demo' || base === 'wrongdemo' || base === 'missdemo' ||
+        base === 'timerdemo' || base === 'dialdemo') {
+      // a trailing ! on the set id holds teaching cards open (screenshot rigs)
+      var hold = !!arg && arg.charAt(arg.length - 1) === '!';
+      S = { auto: base === 'demo' || base === 'dialdemo' ? 'right' : base === 'wrongdemo' ? 'wrong'
+              : base === 'missdemo' ? 'miss' : base === 'timerdemo' ? 'stall' : null,
+            forceSetId: hold ? arg.slice(0, -1) : arg, holdCards: hold };
       startGame(!!LS.encounter);
     }
   }

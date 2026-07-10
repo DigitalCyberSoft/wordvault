@@ -379,6 +379,20 @@ html.fx .title-wordmark {
 .contrast-cols .picked-col { background: #efece6; border: 3px solid var(--dim); filter: saturate(.8); }
 .contrast-cols h3 { margin: 0 0 4px; font-size: .85rem; text-transform: uppercase; letter-spacing: .5px; color: var(--dim-ink); }
 .contrast-cols .cword { font-size: 1.35rem; font-weight: 800; }
+
+/* ---- When-line: the time ladder drawn on miss/timeout cards (scaled sets) ---- */
+.whenline { display: flex; align-items: flex-start; gap: 10px; margin: 2px 0 10px; }
+.whenline[hidden] { display: none; }
+.wl-end { font-size: .68rem; font-weight: 700; color: var(--dim-ink); white-space: nowrap; padding-top: 3px; }
+.wl-rail { flex: 1; position: relative; display: flex; justify-content: space-between; }
+.wl-rail::before { content: ''; position: absolute; left: 4px; right: 4px; top: 7px; height: 3px; border-radius: 2px; background: var(--dim); }
+.wl-tick { position: relative; display: flex; flex-direction: column; align-items: center; min-width: 0; }
+.wl-tick i { width: 12px; height: 12px; border-radius: 50%; background: var(--steel); border: 2px solid var(--panel); box-shadow: 0 1px 2px rgba(0,0,0,.2); z-index: 1; }
+.wl-tick em { font-style: normal; font-size: .66rem; color: var(--dim-ink); margin-top: 3px; max-width: 9ch; overflow: hidden; text-overflow: ellipsis; }
+.wl-tick.is-right i { background: var(--gold); transform: scale(1.3); box-shadow: 0 0 0 4px var(--gold-glow); }
+.wl-tick.is-right em { color: var(--ink); font-weight: 800; }
+.wl-tick.is-picked i { background: var(--dim); filter: saturate(.7); }
+.wl-tick.is-picked em { font-weight: 700; text-decoration: line-through; }
 .contrast-cols .right-col .cword { color: var(--brass-dark); }
 .contrast-cols p { margin: 6px 0 0; font-weight: 600; font-size: .95rem; line-height: 1.4; }
 .contrast-line { font-weight: 700; background: #eafff5; border: 2px solid #bfe9d7; border-radius: var(--r-sm); padding: 8px 12px; margin: 10px 0 4px; }
@@ -521,6 +535,18 @@ html.fx #rotate-note { background: #060b16; }
 .howto-holo { display: none; }
 html.fx .howto-holo { display: block; }
 html.fx .howto-classic { display: none; }
+
+/* when-line, holo dress */
+html.fx .wl-rail::before { background: var(--fx-line); }
+html.fx .wl-tick i { background: rgba(70,230,255,.35); border-color: rgba(6,11,22,.9); }
+html.fx .wl-tick em, html.fx .wl-end { color: #9ad7e8; }
+html.fx .wl-tick.is-right i { background: var(--gold); box-shadow: 0 0 10px var(--gold-glow), 0 0 0 4px rgba(240,180,41,.25); }
+html.fx .wl-tick.is-right em { color: #ffe9b0; }
+html.fx .wl-tick.is-picked i { background: rgba(122,138,160,.8); }
+
+/* Timekeepers dial on the classic vault: the brass crosshair goes gold clock marks */
+body.dial-clock #dial line { stroke: var(--gold); }
+body.dial-clock #dial { stroke-width: 6; }
 
 /* ---- Portrait nudge: the game is laid out for tablet landscape ---- */
 #rotate-note { display: none; position: fixed; inset: 0; z-index: 200; background: var(--steel-deep); color: #fff; text-align: center; align-items: center; justify-content: center; font-size: 1.3rem; font-weight: 800; padding: 30px; }

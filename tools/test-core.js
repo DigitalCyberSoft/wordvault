@@ -262,7 +262,7 @@ var alwaysWrong = function (s) { return s.answer === 'alpha' ? 'bravo' : 'alpha'
   eq(st2[0].owned, 4, 'partial shelf counts 4');
   ok(!st2[0].complete, 'shelf of 4/5 is not complete');
   var cos = C.cosmeticsUnlocked(owned);
-  ok(cos.skins.length + cos.backdrops.length + cos.pins.length === C.SHELVES.length, 'every shelf unlocks exactly one cosmetic');
+  ok(cos.skins.length + cos.backdrops.length + cos.pins.length + cos.dials.length === C.SHELVES.length, 'every shelf unlocks exactly one cosmetic');
   eq(C.cosmeticsUnlocked([]).skins.length, 0, 'no cosmetics with empty cabinet');
 })();
 

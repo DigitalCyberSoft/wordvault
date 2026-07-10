@@ -53,6 +53,7 @@
     'uniform float u_failK;',  // failure flavour: 0 wrong word, 1 timed out
     'uniform vec3 u_accent;',  // holo tint (cosmetic skins recolour this)
     'uniform vec3 u_pinc;',    // seated-cell tint (pins cosmetic)',
+    'uniform float u_dialskin;', // 1 = Timekeepers clock-face dial cosmetic
     '',
     'float hash11(float n){ return fract(sin(n * 127.1) * 43758.5453); }',
     'float hash21(vec2 p){ return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453); }',
@@ -157,9 +158,11 @@
     '    }',
     '  }',
     '',
-    // tick ring: 24 static graduations, the instrument face
-    '  float ticks = step(0.82, fract(ang / TAU * 24.0)) * line(rc - 128.0, 5.0, aa);',
-    '  face += accent * ticks * 0.35;',
+    // tick ring: 24 static graduations, the instrument face - or 12 bold
+    // hour marks when the Timekeepers clock dial is worn
+    '  float tickN = mix(24.0, 12.0, u_dialskin);',
+    '  float ticks = step(0.82, fract(ang / TAU * tickN)) * line(rc - 128.0, mix(5.0, 8.0, u_dialskin), aa);',
+    '  face += accent * ticks * (0.35 + 0.25 * u_dialskin);',
     '',
     // the lock-timer arc: a cyan fuse burning clockwise from the top; goes
     // amber and pulses when time runs short
@@ -186,6 +189,18 @@
     '    float bright = 0.45 + 0.55 * u_charge;',
     '    face += accent * seg * line(dr, 3.2, aa) * bright;',
     '    face += accent * seg * glow(dr, 2.2) * 0.30 * bright;',
+    '  }',
+    '',
+    // Timekeepers cosmetic: two clock hands geared to the same spring as the
+    // rings, plus a hub - the dial literally becomes a clock face
+    '  if (u_dialskin > 0.5) {',
+    '    float aM = turn * 3.0 + it * 0.06 + spinUp * 0.5;',
+    '    float aH = aM / 12.0 + 1.1;',
+    '    float dm = sdSeg(pc, vec2(0.0, 0.0), vec2(sin(aM), cos(aM)) * 98.0);',
+    '    float dh = sdSeg(pc, vec2(0.0, 0.0), vec2(sin(aH), cos(aH)) * 60.0);',
+    '    face += accent * line(dm, 2.6, aa) * 0.9;',
+    '    face += mix(accent, gold, 0.5) * line(dh, 3.6, aa) * 0.9;',
+    '    face += accent * fill(rc - 7.0, aa) * 0.9;',
     '  }',
     '',
     // plasma core: swirled noise inside the innermost ring, fed by charge
@@ -283,7 +298,8 @@
     seatI: 0, failK: 0,
     clock: -1,                                 // lock-timer fraction; -1 = no clock
     accent: [0.28, 0.90, 1.00],
-    pinc: [0.45, 1.00, 0.95]
+    pinc: [0.45, 1.00, 0.95],
+    dialskin: 0                                // 1 = Timekeepers clock-face dial
   };
 
   function now() { return performance.now() / 1000; }
@@ -364,6 +380,7 @@
     gl.uniform1f(u.u_failK, st.failK);
     gl.uniform3fv(u.u_accent, st.accent);
     gl.uniform3fv(u.u_pinc, st.pinc);
+    gl.uniform1f(u.u_dialskin, st.dialskin);
     gl.clearColor(0, 0, 0, 0);
     gl.clear(gl.COLOR_BUFFER_BIT);
     gl.drawArrays(gl.TRIANGLES, 0, 3);
@@ -432,7 +449,7 @@
       ['u_res', 'u_time', 'u_anim', 'u_need', 'u_pins', 'u_misses', 'u_charge',
        'u_dial', 'u_bolt', 'u_iris', 'u_boot', 'u_seatT', 'u_seatI', 'u_springT',
        'u_alarmT', 'u_openT', 'u_clock', 'u_failT', 'u_failK',
-       'u_accent', 'u_pinc'].forEach(function (n) {
+       'u_accent', 'u_pinc', 'u_dialskin'].forEach(function (n) {
         uni[n] = gl.getUniformLocation(prog, n);
       });
       G = { gl: gl, canvas: canvas, uni: uni, raf: 0, reduced: reduced(), last: 0 };
@@ -466,6 +483,7 @@
       if (o.cosmetic !== undefined) {
         st.accent = o.cosmetic.skin === 'bronze' ? [1.00, 0.72, 0.30] : [0.28, 0.90, 1.00];
         st.pinc = o.cosmetic.pins === 'copper' ? [1.00, 0.62, 0.38] : [0.45, 1.00, 0.95];
+        st.dialskin = o.cosmetic.dial === 'clock' ? 1 : 0;
       }
       if (typeof o.need === 'number') st.need = o.need;
       if (typeof o.misses === 'number') st.misses = o.misses;

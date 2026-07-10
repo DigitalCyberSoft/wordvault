@@ -80,6 +80,11 @@ COLLECTIBLES = {
     "feather": "a single golden feather",
     "gem": "a brilliant cut blue gem",
     "orb": "a swirling purple fortune-teller's orb on a stand",
+    "hourglass": "a wooden hourglass with golden sand mid-pour",
+    "sundial": "a small round stone sundial with a brass gnomon",
+    "pocketwatch": "an open antique gold pocket watch on a chain",
+    "cuckoo": "a tiny carved wooden cuckoo clock with the bird popping out",
+    "calendar": "a small wooden flip calendar with one page mid-turn",
 }
 for cid, desc in COLLECTIBLES.items():
     ART[cid] = ("assets/collectibles/%s.png" % cid,

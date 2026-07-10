@@ -66,7 +66,14 @@
         { id: 'gargoyle', name: 'Stone gargoyle', emoji: '🗿' },
         { id: 'feather', name: 'Golden feather', emoji: '🪶' },
         { id: 'gem', name: 'Cut gem', emoji: '💎' },
-        { id: 'orb', name: 'Fortune orb', emoji: '🔮' } ] }
+        { id: 'orb', name: 'Fortune orb', emoji: '🔮' } ] },
+    { id: 'timekeepers', name: 'Timekeepers Shelf', cosmetic: { kind: 'dial', id: 'clock' },
+      items: [
+        { id: 'hourglass', name: 'Hourglass', emoji: '⏳' },
+        { id: 'sundial', name: 'Stone sundial', emoji: '🌞' },
+        { id: 'pocketwatch', name: 'Pocket watch', emoji: '⌚' },
+        { id: 'cuckoo', name: 'Cuckoo clock', emoji: '🕰️' },
+        { id: 'calendar', name: 'Flip calendar', emoji: '📅' } ] }
   ];
 
   // ---------------------------------------------------------------------------
@@ -164,6 +171,11 @@
         if (!w.gloss) bad(id, w.w + ': missing gloss');
         if (w.gloss_source === 'wordnet' && !w.synset) bad(id, w.w + ': wordnet gloss without pinned synset');
       });
+      // ladder sets: the when-line renders scale labels unchecked, so the
+      // contract insists they are complete when present
+      if (set.scale != null && !(set.scale.left && set.scale.right)) {
+        bad(id, 'scale present but missing left/right labels');
+      }
       // all 20 directed contrast pairs, exactly once each
       var pairs = {};
       (set.contrasts || []).forEach(function (c) {
@@ -463,12 +475,13 @@
     });
   }
   function cosmeticsUnlocked(owned) {
-    var out = { skins: [], backdrops: [], pins: [] };
+    var out = { skins: [], backdrops: [], pins: [], dials: [] };
     shelfState(owned).forEach(function (s) {
       if (!s.complete) return;
       if (s.cosmetic.kind === 'skin') out.skins.push(s.cosmetic.id);
       else if (s.cosmetic.kind === 'backdrop') out.backdrops.push(s.cosmetic.id);
       else if (s.cosmetic.kind === 'pins') out.pins.push(s.cosmetic.id);
+      else if (s.cosmetic.kind === 'dial') out.dials.push(s.cosmetic.id);
     });
     return out;
   }
