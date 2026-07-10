@@ -74,6 +74,13 @@ files.forEach(function (entry) {
   ['pos', 'theme', 'words', 'sentences', 'contrasts', 'meta'].forEach(function (k) {
     if (!(k in set)) H(id, 'M1', 'missing field ' + k);
   });
+  // optional ladder labels: when present they must be short and complete,
+  // because the runtime draws the when-line from them unchecked
+  if (set.scale != null) {
+    var scaleOk = typeof set.scale.left === 'string' && set.scale.left.trim() && set.scale.left.length <= 24 &&
+                  typeof set.scale.right === 'string' && set.scale.right.trim() && set.scale.right.length <= 24;
+    if (!scaleOk) H(id, 'M1', 'scale must carry left/right labels of 1-24 chars');
+  }
   if (!set.words || !set.sentences || !set.contrasts) return;
 
   // M2 exactly five unique words

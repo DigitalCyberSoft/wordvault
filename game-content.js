@@ -14,22 +14,25 @@
   'use strict';
   var DATA = {
    "schema_version": 1,
-   "built_at": "2026-07-07T06:04:01Z",
+   "built_at": "2026-07-10T05:33:08Z",
    "builder": "tools/bake-content.js",
-   "source_sha256": "affd91debf10c7a503b08ccbe338820bb689a143ce6a7c5c9cf93769261a743c",
+   "source_sha256": "aa5bf22526b3cbe87d268864f4c822e5e359049a51d9a725e7548915dd832a27",
    "counts": {
-    "sets": 64,
-    "words": 320,
-    "sentences": 2560,
-    "contrasts": 1280
+    "sets": 69,
+    "words": 345,
+    "sentences": 2760,
+    "contrasts": 1380
    },
    "bands": {
     "1": [
+     "A-time-frequency-01",
      "B-carry-01",
      "B-faces-01",
      "B-hands-01",
      "B-move-01",
-     "B-sounds-01"
+     "B-sounds-01",
+     "B-time-day-01",
+     "B-time-deixis-01"
     ],
     "2": [
      "A-angry-01",
@@ -41,8 +44,10 @@
      "A-scared-01",
      "A-size-01",
      "A-talk-01",
+     "A-time-nearness-01",
      "A-walk-manner-01",
-     "A-wet-01"
+     "A-wet-01",
+     "B-time-order-01"
     ],
     "3": [
      "A-brave-01",
@@ -100,6 +105,872 @@
     ]
    },
    "sets": [
+    {
+     "id": "A-time-frequency-01",
+     "bank": "A",
+     "pos": "adverb",
+     "theme": "how often it happens",
+     "band": 1,
+     "band_override": 1,
+     "words": [
+      {
+       "w": "never",
+       "synset": "never.r.01",
+       "gloss_source": "wordnet",
+       "gloss": "not ever; at no time in the past or future",
+       "zipf": 5.91,
+       "register": "neutral",
+       "senses_at_pos": 2,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "never"
+       },
+       "discriminator": "not once, at no time at all",
+       "grade": 1
+      },
+      {
+       "w": "rarely",
+       "synset": "rarely.r.01",
+       "gloss_source": "wordnet",
+       "gloss": "not often",
+       "zipf": 4.42,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "rarely"
+       },
+       "discriminator": "only once in a long while",
+       "grade": 3
+      },
+      {
+       "w": "sometimes",
+       "synset": "sometimes.r.01",
+       "gloss_source": "authored",
+       "gloss": "on certain occasions but not on every occasion",
+       "zipf": 5.28,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "sometimes"
+       },
+       "discriminator": "on some occasions, neither most nor none",
+       "grade": 1
+      },
+      {
+       "w": "usually",
+       "synset": "normally.r.01",
+       "gloss_source": "wordnet",
+       "gloss": "under normal conditions",
+       "zipf": 5.15,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "usually"
+       },
+       "discriminator": "on most occasions, though not all",
+       "grade": 2
+      },
+      {
+       "w": "always",
+       "synset": "always.r.01",
+       "gloss_source": "wordnet",
+       "gloss": "at all times; all the time and on every occasion",
+       "zipf": 5.76,
+       "register": "neutral",
+       "senses_at_pos": 5,
+       "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-10",
+        "note": "pinned r.01 at-all-times frequency sense; the forever and in-every-case senses (constantly.r.01/02, r.04, r.05) are adjacent but the frames stage countable frequency - vet 2026-07-10"
+       },
+       "forms": {
+        "base": "always"
+       },
+       "discriminator": "every time without exception",
+       "grade": 1
+      }
+     ],
+     "sentences": [
+      {
+       "id": "A-time-frequency-01-s01",
+       "answer": "never",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Ari ___ left his reader at home, not even once this term.",
+       "cue_phrase": "not even once",
+       "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+       }
+      },
+      {
+       "id": "A-time-frequency-01-s02",
+       "answer": "never",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The class ___ skipped tidy-up, zero days in all of January.",
+       "cue_phrase": "zero days",
+       "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+       }
+      },
+      {
+       "id": "A-time-frequency-01-s03",
+       "answer": "never",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Lila ___ spilt paint on her desk; the chart shows no marks.",
+       "cue_phrase": "shows no marks",
+       "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+       }
+      },
+      {
+       "id": "A-time-frequency-01-s04",
+       "answer": "never",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Ben ___ rode the bus, with no bus ticks beside his name.",
+       "cue_phrase": "no bus ticks",
+       "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+       }
+      },
+      {
+       "id": "A-time-frequency-01-s05",
+       "answer": "never",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Our fish ___ missed breakfast; its bowl was empty after each feed.",
+       "cue_phrase": "after each feed",
+       "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+       }
+      },
+      {
+       "id": "A-time-frequency-01-s06",
+       "answer": "never",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Mum ___ found socks under Jo's bed; all seven checks were clear.",
+       "cue_phrase": "all seven checks were clear",
+       "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+       }
+      },
+      {
+       "id": "A-time-frequency-01-s07",
+       "answer": "never",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "The dog ___ barked during reading, not once this week.",
+       "cue_phrase": "not once this week",
+       "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+       }
+      },
+      {
+       "id": "A-time-frequency-01-s08",
+       "answer": "never",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Nina ___ opened her lunch early; the list has zero warnings.",
+       "cue_phrase": "zero warnings",
+       "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+       }
+      },
+      {
+       "id": "A-time-frequency-01-s09",
+       "answer": "rarely",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Hugo ___ forgets his hat, only once or twice all year.",
+       "cue_phrase": "only once or twice",
+       "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (sometimes); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "A-time-frequency-01-s10",
+       "answer": "rarely",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Our class ___ gets icy poles, just two Fridays this term.",
+       "cue_phrase": "just two Fridays",
+       "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (sometimes); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "A-time-frequency-01-s11",
+       "answer": "rarely",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Maya ___ visits the library at lunch; her card shows three dates this term.",
+       "cue_phrase": "three dates this term",
+       "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (sometimes); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "A-time-frequency-01-s12",
+       "answer": "rarely",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The canteen ___ serves soup, only one day in January.",
+       "cue_phrase": "only one day",
+       "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+       }
+      },
+      {
+       "id": "A-time-frequency-01-s13",
+       "answer": "rarely",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Dad ___ lets us camp outside; the tent came out twice last year.",
+       "cue_phrase": "twice last year",
+       "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (sometimes); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "A-time-frequency-01-s14",
+       "answer": "rarely",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Sofia ___ wins class bingo; her name appeared once this term.",
+       "cue_phrase": "once this term",
+       "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (sometimes); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "A-time-frequency-01-s15",
+       "answer": "rarely",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "The bus ___ arrives late, only two mornings since school began.",
+       "cue_phrase": "only two mornings",
+       "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (sometimes); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "A-time-frequency-01-s16",
+       "answer": "rarely",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "My brother ___ tries peas, one dinner in a month.",
+       "cue_phrase": "one dinner in a month",
+       "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (sometimes); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "A-time-frequency-01-s17",
+       "answer": "sometimes",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Tess ___ wears sandals; some days yes and some days no.",
+       "cue_phrase": "some days yes",
+       "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+       }
+      },
+      {
+       "id": "A-time-frequency-01-s18",
+       "answer": "sometimes",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Our class ___ draws outside, on three days out of ten.",
+       "cue_phrase": "three days out of ten",
+       "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+       }
+      },
+      {
+       "id": "A-time-frequency-01-s19",
+       "answer": "sometimes",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Milo ___ chooses yoghurt; this week has two ticks and three gaps.",
+       "cue_phrase": "two ticks and three gaps",
+       "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+       }
+      },
+      {
+       "id": "A-time-frequency-01-s20",
+       "answer": "sometimes",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Ruby ___ reads on the mat; two days she did, three she didn't.",
+       "cue_phrase": "two days she did",
+       "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+       }
+      },
+      {
+       "id": "A-time-frequency-01-s21",
+       "answer": "sometimes",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The chooks ___ lay eggs; three mornings had eggs, three had none.",
+       "cue_phrase": "three mornings had eggs",
+       "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+       }
+      },
+      {
+       "id": "A-time-frequency-01-s22",
+       "answer": "sometimes",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Liam ___ takes the front seat; he had it Monday, not Tuesday.",
+       "cue_phrase": "Monday, not Tuesday",
+       "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+       }
+      },
+      {
+       "id": "A-time-frequency-01-s23",
+       "answer": "sometimes",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "Nana ___ bakes muffins; some weekends yes and some weekends no.",
+       "cue_phrase": "some weekends yes",
+       "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+       }
+      },
+      {
+       "id": "A-time-frequency-01-s24",
+       "answer": "sometimes",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The sprinkler ___ runs after school, on two afternoons out of five.",
+       "cue_phrase": "two afternoons out of five",
+       "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+       }
+      },
+      {
+       "id": "A-time-frequency-01-s25",
+       "answer": "usually",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Grace ___ packs fruit, most days but not all.",
+       "cue_phrase": "most days but not all",
+       "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+       }
+      },
+      {
+       "id": "A-time-frequency-01-s26",
+       "answer": "usually",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The bell ___ rings at nine, on four days out of five.",
+       "cue_phrase": "four days out of five",
+       "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+       }
+      },
+      {
+       "id": "A-time-frequency-01-s27",
+       "answer": "usually",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Ollie ___ sits near Max; his chart shows eight days out of ten.",
+       "cue_phrase": "eight days out of ten",
+       "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+       }
+      },
+      {
+       "id": "A-time-frequency-01-s28",
+       "answer": "usually",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Our teacher ___ reads after lunch, four days each week, not sport day.",
+       "cue_phrase": "four days each week",
+       "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+       }
+      },
+      {
+       "id": "A-time-frequency-01-s29",
+       "answer": "usually",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The puppy ___ naps after play; only Saturday was skipped this week.",
+       "cue_phrase": "only Saturday was skipped",
+       "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+       }
+      },
+      {
+       "id": "A-time-frequency-01-s30",
+       "answer": "usually",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Dad ___ makes pancakes in January; six breakfasts had them, one didn't.",
+       "cue_phrase": "six breakfasts had them",
+       "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+       }
+      },
+      {
+       "id": "A-time-frequency-01-s31",
+       "answer": "usually",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "The class ___ lines up quietly, most mornings, but not all.",
+       "cue_phrase": "most mornings, but not all",
+       "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+       }
+      },
+      {
+       "id": "A-time-frequency-01-s32",
+       "answer": "usually",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Ella ___ finishes her reading sheet, nine tries out of ten.",
+       "cue_phrase": "nine tries out of ten",
+       "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+       }
+      },
+      {
+       "id": "A-time-frequency-01-s33",
+       "answer": "always",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Kai ___ says please, without fail, on all ten turns.",
+       "cue_phrase": "without fail",
+       "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+       }
+      },
+      {
+       "id": "A-time-frequency-01-s34",
+       "answer": "always",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The taps ___ drip after lunch, on all five school days.",
+       "cue_phrase": "all five school days",
+       "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+       }
+      },
+      {
+       "id": "A-time-frequency-01-s35",
+       "answer": "always",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Zoe ___ hangs her bag up; all five peg checks had it there.",
+       "cue_phrase": "all five peg checks",
+       "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+       }
+      },
+      {
+       "id": "A-time-frequency-01-s36",
+       "answer": "always",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Our rabbit ___ hops to carrot bits; all seven bits vanished.",
+       "cue_phrase": "all seven bits",
+       "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+       }
+      },
+      {
+       "id": "A-time-frequency-01-s37",
+       "answer": "always",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The twins ___ share crayons; all six turns ended with no one left out.",
+       "cue_phrase": "all six turns",
+       "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+       }
+      },
+      {
+       "id": "A-time-frequency-01-s38",
+       "answer": "always",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Sam ___ washes hands before lunch; all five stamps rubbed off.",
+       "cue_phrase": "all five stamps",
+       "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+       }
+      },
+      {
+       "id": "A-time-frequency-01-s39",
+       "answer": "always",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "The class ___ sings the anthem, without fail on all assemblies.",
+       "cue_phrase": "all assemblies",
+       "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+       }
+      },
+      {
+       "id": "A-time-frequency-01-s40",
+       "answer": "always",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Mia ___ checks the gate; all six latches were safe.",
+       "cue_phrase": "all six latches",
+       "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+       }
+      }
+     ],
+     "contrasts": [
+      {
+       "answer": "never",
+       "picked": "rarely",
+       "line": "never is zero. rarely is a tiny number, like one or two in a long stretch."
+      },
+      {
+       "answer": "never",
+       "picked": "sometimes",
+       "line": "never is zero. sometimes has some yes days and some no days."
+      },
+      {
+       "answer": "never",
+       "picked": "usually",
+       "line": "never is zero. usually happens on most days, but not all."
+      },
+      {
+       "answer": "never",
+       "picked": "always",
+       "line": "never is zero. always happens on all tries, with no misses."
+      },
+      {
+       "answer": "rarely",
+       "picked": "never",
+       "line": "rarely means a tiny number, like once or twice. never means zero."
+      },
+      {
+       "answer": "rarely",
+       "picked": "sometimes",
+       "line": "rarely is only a tiny number. sometimes has a fair mix of yes and no."
+      },
+      {
+       "answer": "rarely",
+       "picked": "usually",
+       "line": "rarely is only a tiny number. usually means most days."
+      },
+      {
+       "answer": "rarely",
+       "picked": "always",
+       "line": "rarely is only a tiny number. always means all tries."
+      },
+      {
+       "answer": "sometimes",
+       "picked": "never",
+       "line": "sometimes has yes and no days. never has zero yes days."
+      },
+      {
+       "answer": "sometimes",
+       "picked": "rarely",
+       "line": "sometimes has a fair mix of yes and no. rarely is only one or two."
+      },
+      {
+       "answer": "sometimes",
+       "picked": "usually",
+       "line": "sometimes is not most days. usually is most days, but not all."
+      },
+      {
+       "answer": "sometimes",
+       "picked": "always",
+       "line": "sometimes has yes days and no days. always is yes every single time."
+      },
+      {
+       "answer": "usually",
+       "picked": "never",
+       "line": "usually means most days, but not all. never means zero."
+      },
+      {
+       "answer": "usually",
+       "picked": "rarely",
+       "line": "usually means most days. rarely means only one or two."
+      },
+      {
+       "answer": "usually",
+       "picked": "sometimes",
+       "line": "usually means most days. sometimes is a fair mix of yes and no."
+      },
+      {
+       "answer": "usually",
+       "picked": "always",
+       "line": "usually has a miss now and then. always has no misses."
+      },
+      {
+       "answer": "always",
+       "picked": "never",
+       "line": "always means all tries, with no misses. never means zero."
+      },
+      {
+       "answer": "always",
+       "picked": "rarely",
+       "line": "always means all tries. rarely means only one or two."
+      },
+      {
+       "answer": "always",
+       "picked": "sometimes",
+       "line": "always means all tries. sometimes has both yes days and no days."
+      },
+      {
+       "answer": "always",
+       "picked": "usually",
+       "line": "always means all tries. usually means most days, with a miss now and then."
+      }
+     ],
+     "meta": {
+      "generated_at": "2026-07-10T04:36:31+00:00",
+      "model": "gpt-5.5",
+      "scrubbed_at": "2026-07-10",
+      "scrub_note": "Scrubbed by claude 2026-07-10: all 40 sentences and 20 contrasts read; every frame carries an explicit countable rate; no edits needed."
+     },
+     "scale": {
+      "left": "not at all",
+      "right": "every time"
+     },
+     "computed": {
+      "zipf_min": 4.42,
+      "zipf_mean": 5.3,
+      "tightness": null,
+      "band_suggested": 1,
+      "scored_at": "2026-07-10T04:55:33+00:00"
+     }
+    },
     {
      "id": "B-carry-01",
      "bank": "B",
@@ -4383,6 +5254,1962 @@
       "model": "gpt-5.5",
       "scrubbed_at": "2026-07-07",
       "scrub_note": "Scrubbed by claude 2026-07-07 (dedicated pre-scrub agent failed twice on output limits): mechanical sweeps (cue hygiene, meta-frames, seasonal, templates, duplicates), all 20 contrast lines read per set, every sentence read for frame sanity, all judge hards fixed and re-judged to zero. Fixes: wave re-pinned to brandish.v.01 + 3 contrasts aligned, hop gloss authored to the one-foot sense the set teaches, pat/nod/wink frames restaged, one dangling pronoun."
+     }
+    },
+    {
+     "id": "B-time-day-01",
+     "bank": "B",
+     "pos": "noun",
+     "theme": "times of the day",
+     "band": 1,
+     "band_override": 1,
+     "words": [
+      {
+       "w": "morning",
+       "synset": "morning.n.01",
+       "gloss_source": "wordnet",
+       "gloss": "the time period between dawn and noon",
+       "zipf": 5.33,
+       "register": "neutral",
+       "senses_at_pos": 4,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "morning"
+       },
+       "discriminator": "from first light until the middle of the day",
+       "grade": 1
+      },
+      {
+       "w": "midday",
+       "synset": "noon.n.01",
+       "gloss_source": "wordnet",
+       "gloss": "the middle of the day",
+       "zipf": 3.37,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "midday"
+       },
+       "discriminator": "the very middle of the day, sun at its highest",
+       "grade": 2
+      },
+      {
+       "w": "afternoon",
+       "synset": "afternoon.n.01",
+       "gloss_source": "authored",
+       "gloss": "the part of the day between noon and sunset",
+       "zipf": 4.72,
+       "register": "neutral",
+       "senses_at_pos": 2,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "afternoon"
+       },
+       "discriminator": "after lunch, before the sun sinks low",
+       "grade": 1
+      },
+      {
+       "w": "evening",
+       "synset": "evening.n.01",
+       "gloss_source": "authored",
+       "gloss": "the end of the day, when it starts to get dark",
+       "zipf": 4.86,
+       "register": "neutral",
+       "senses_at_pos": 3,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "evening"
+       },
+       "discriminator": "between the sun going down and bedtime",
+       "grade": 2
+      },
+      {
+       "w": "night",
+       "synset": "night.n.01",
+       "gloss_source": "wordnet",
+       "gloss": "the time after sunset and before sunrise while it is dark outside",
+       "zipf": 5.61,
+       "register": "neutral",
+       "senses_at_pos": 8,
+       "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-10",
+        "note": "pinned n.01 dark-hours period; n.02-n.07 are extended or figurative senses - vet 2026-07-10"
+       },
+       "forms": {
+        "base": "night"
+       },
+       "discriminator": "the dark hours while people are asleep",
+       "grade": 1
+      }
+     ],
+     "sentences": [
+      {
+       "id": "B-time-day-01-s01",
+       "answer": "morning",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "___ brought first sunlight, yawns, and breakfast cereal bowls.",
+       "cue_phrase": "first sunlight",
+       "surface": {
+        "morning": "morning",
+        "midday": "midday",
+        "afternoon": "afternoon",
+        "evening": "evening",
+        "night": "night"
+       }
+      },
+      {
+       "id": "B-time-day-01-s02",
+       "answer": "morning",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "___ began with waking faces and toast before school.",
+       "cue_phrase": "waking faces",
+       "surface": {
+        "morning": "morning",
+        "midday": "midday",
+        "afternoon": "afternoon",
+        "evening": "evening",
+        "night": "night"
+       }
+      },
+      {
+       "id": "B-time-day-01-s03",
+       "answer": "morning",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The ___ rush packed lunchboxes before the class bell rang.",
+       "cue_phrase": "rush packed lunchboxes",
+       "surface": {
+        "morning": "morning",
+        "midday": "midday",
+        "afternoon": "afternoon",
+        "evening": "evening",
+        "night": "night"
+       }
+      },
+      {
+       "id": "B-time-day-01-s04",
+       "answer": "morning",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Dad poured our cereal while the ___ was still pale and cool.",
+       "cue_phrase": "still pale and cool",
+       "surface": {
+        "morning": "morning",
+        "midday": "midday",
+        "afternoon": "afternoon",
+        "evening": "evening",
+        "night": "night"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (evening); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-day-01-s05",
+       "answer": "morning",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "By ___, pyjamas lay folded and school shirts were on.",
+       "cue_phrase": "school shirts were on",
+       "surface": {
+        "morning": "morning",
+        "midday": "midday",
+        "afternoon": "afternoon",
+        "evening": "evening",
+        "night": "night"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (afternoon, midday); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-day-01-s06",
+       "answer": "morning",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "___ made the kitchen smell like toast after the alarm.",
+       "cue_phrase": "after the alarm",
+       "surface": {
+        "morning": "morning",
+        "midday": "midday",
+        "afternoon": "afternoon",
+        "evening": "evening",
+        "night": "night"
+       }
+      },
+      {
+       "id": "B-time-day-01-s07",
+       "answer": "morning",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "We opened the curtains to pale gold ___ light and yawned.",
+       "cue_phrase": "pale gold light",
+       "surface": {
+        "morning": "morning",
+        "midday": "midday",
+        "afternoon": "afternoon",
+        "evening": "evening",
+        "night": "night"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (afternoon, evening); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-day-01-s08",
+       "answer": "morning",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Teeth were brushed and school hats found before the ___ bus came.",
+       "cue_phrase": "Teeth were brushed",
+       "surface": {
+        "morning": "morning",
+        "midday": "midday",
+        "afternoon": "afternoon",
+        "evening": "evening",
+        "night": "night"
+       }
+      },
+      {
+       "id": "B-time-day-01-s09",
+       "answer": "midday",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The sun stood straight overhead, and our ___ sandwiches came out.",
+       "cue_phrase": "sun stood straight overhead",
+       "surface": {
+        "morning": "morning",
+        "midday": "midday",
+        "afternoon": "afternoon",
+        "evening": "evening",
+        "night": "night"
+       }
+      },
+      {
+       "id": "B-time-day-01-s10",
+       "answer": "midday",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "By ___, shadows were shortest and sandwiches were unwrapped.",
+       "cue_phrase": "shadows were shortest",
+       "surface": {
+        "morning": "morning",
+        "midday": "midday",
+        "afternoon": "afternoon",
+        "evening": "evening",
+        "night": "night"
+       }
+      },
+      {
+       "id": "B-time-day-01-s11",
+       "answer": "midday",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The lunch bell rang across the playground as ___ arrived.",
+       "cue_phrase": "lunch bell rang",
+       "surface": {
+        "morning": "morning",
+        "midday": "midday",
+        "afternoon": "afternoon",
+        "evening": "evening",
+        "night": "night"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: gpt-5.5 and gpt-4.1 cross to afternoon; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-day-01-s12",
+       "answer": "midday",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Children ate their bread rolls under the high sun of ___.",
+       "cue_phrase": "high sun",
+       "surface": {
+        "morning": "morning",
+        "midday": "midday",
+        "afternoon": "afternoon",
+        "evening": "evening",
+        "night": "night"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (afternoon); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-day-01-s13",
+       "answer": "midday",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The flagpole shadow shrank to almost nothing by ___.",
+       "cue_phrase": "shadow shrank to almost nothing",
+       "surface": {
+        "morning": "morning",
+        "midday": "midday",
+        "afternoon": "afternoon",
+        "evening": "evening",
+        "night": "night"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (afternoon); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-day-01-s14",
+       "answer": "midday",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Our shadows hid right under our shoes when ___ came.",
+       "cue_phrase": "shadows hid right under our shoes",
+       "surface": {
+        "morning": "morning",
+        "midday": "midday",
+        "afternoon": "afternoon",
+        "evening": "evening",
+        "night": "night"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (afternoon); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-day-01-s15",
+       "answer": "midday",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Lunch orders sat ready at the canteen window as ___ neared.",
+       "cue_phrase": "Lunch orders sat ready",
+       "surface": {
+        "morning": "morning",
+        "midday": "midday",
+        "afternoon": "afternoon",
+        "evening": "evening",
+        "night": "night"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (afternoon); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-day-01-s16",
+       "answer": "midday",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "By ___, the sun sat highest above the netball court.",
+       "cue_phrase": "sun sat highest",
+       "surface": {
+        "morning": "morning",
+        "midday": "midday",
+        "afternoon": "afternoon",
+        "evening": "evening",
+        "night": "night"
+       }
+      },
+      {
+       "id": "B-time-day-01-s17",
+       "answer": "afternoon",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "___ came after lunch, when carers waited at school.",
+       "cue_phrase": "after lunch",
+       "surface": {
+        "morning": "morning",
+        "midday": "midday",
+        "afternoon": "afternoon",
+        "evening": "evening",
+        "night": "night"
+       }
+      },
+      {
+       "id": "B-time-day-01-s18",
+       "answer": "afternoon",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "By ___, school pickup crowded the front gate.",
+       "cue_phrase": "school pickup",
+       "surface": {
+        "morning": "morning",
+        "midday": "midday",
+        "afternoon": "afternoon",
+        "evening": "evening",
+        "night": "night"
+       }
+      },
+      {
+       "id": "B-time-day-01-s19",
+       "answer": "afternoon",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The ___ slipped by with sleepy kids carrying paintings home.",
+       "cue_phrase": "sleepy kids carrying paintings",
+       "surface": {
+        "morning": "morning",
+        "midday": "midday",
+        "afternoon": "afternoon",
+        "evening": "evening",
+        "night": "night"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (evening); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-day-01-s20",
+       "answer": "afternoon",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Lunch crumbs were long gone, and readers sat in bags by ___.",
+       "cue_phrase": "Lunch crumbs were long gone",
+       "surface": {
+        "morning": "morning",
+        "midday": "midday",
+        "afternoon": "afternoon",
+        "evening": "evening",
+        "night": "night"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (evening, night); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-day-01-s21",
+       "answer": "afternoon",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "___ stretched long shadows across the playground before tea.",
+       "cue_phrase": "before tea",
+       "surface": {
+        "morning": "morning",
+        "midday": "midday",
+        "afternoon": "afternoon",
+        "evening": "evening",
+        "night": "night"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: gpt-5.5 and gpt-4.1 cross to evening; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-day-01-s22",
+       "answer": "afternoon",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "___ let us play after lessons, while the sun stayed warm.",
+       "cue_phrase": "after lessons",
+       "surface": {
+        "morning": "morning",
+        "midday": "midday",
+        "afternoon": "afternoon",
+        "evening": "evening",
+        "night": "night"
+       }
+      },
+      {
+       "id": "B-time-day-01-s23",
+       "answer": "afternoon",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "___ sent the bus home once the last bell rang.",
+       "cue_phrase": "last bell rang",
+       "surface": {
+        "morning": "morning",
+        "midday": "midday",
+        "afternoon": "afternoon",
+        "evening": "evening",
+        "night": "night"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-4.1 lists a second fit (evening); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-day-01-s24",
+       "answer": "afternoon",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The final bell rang at three, and backpacks thumped home through the ___.",
+       "cue_phrase": "rang at three",
+       "surface": {
+        "morning": "morning",
+        "midday": "midday",
+        "afternoon": "afternoon",
+        "evening": "evening",
+        "night": "night"
+       }
+      },
+      {
+       "id": "B-time-day-01-s25",
+       "answer": "evening",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "___ painted the sky orange while tea sat ready.",
+       "cue_phrase": "sky orange",
+       "surface": {
+        "morning": "morning",
+        "midday": "midday",
+        "afternoon": "afternoon",
+        "evening": "evening",
+        "night": "night"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (afternoon, morning); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-day-01-s26",
+       "answer": "evening",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "___ brought soft lamp light before bedtime stories.",
+       "cue_phrase": "before bedtime stories",
+       "surface": {
+        "morning": "morning",
+        "midday": "midday",
+        "afternoon": "afternoon",
+        "evening": "evening",
+        "night": "night"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (night); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-day-01-s27",
+       "answer": "evening",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Plates of tea sat waiting on the table as ___ drew in.",
+       "cue_phrase": "Plates of tea sat waiting",
+       "surface": {
+        "morning": "morning",
+        "midday": "midday",
+        "afternoon": "afternoon",
+        "evening": "evening",
+        "night": "night"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: gpt-5.5 and claude-opus-4-8 cross to night; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-day-01-s28",
+       "answer": "evening",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Families washed the tea dishes under a pink sky as ___ settled.",
+       "cue_phrase": "pink sky",
+       "surface": {
+        "morning": "morning",
+        "midday": "midday",
+        "afternoon": "afternoon",
+        "evening": "evening",
+        "night": "night"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (night); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-day-01-s29",
+       "answer": "evening",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "By ___, bikes were parked and bath water splashed.",
+       "cue_phrase": "bath water splashed",
+       "surface": {
+        "morning": "morning",
+        "midday": "midday",
+        "afternoon": "afternoon",
+        "evening": "evening",
+        "night": "night"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (night); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-day-01-s30",
+       "answer": "evening",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "___ settled while children chose pyjamas, not yet asleep.",
+       "cue_phrase": "not yet asleep",
+       "surface": {
+        "morning": "morning",
+        "midday": "midday",
+        "afternoon": "afternoon",
+        "evening": "evening",
+        "night": "night"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (night); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-day-01-s31",
+       "answer": "evening",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Warm soup steamed on the table as ___ crept in, homework not yet done.",
+       "cue_phrase": "homework not yet done",
+       "surface": {
+        "morning": "morning",
+        "midday": "midday",
+        "afternoon": "afternoon",
+        "evening": "evening",
+        "night": "night"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: gpt-5.5 and claude-opus-4-8 cross to night; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-day-01-s32",
+       "answer": "evening",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "Orange clouds stacked up as neighbours ate tea and ___ arrived.",
+       "cue_phrase": "Orange clouds stacked up",
+       "surface": {
+        "morning": "morning",
+        "midday": "midday",
+        "afternoon": "afternoon",
+        "evening": "evening",
+        "night": "night"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (night); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-day-01-s33",
+       "answer": "night",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "___ filled the sky with stars as everyone slept.",
+       "cue_phrase": "stars as everyone slept",
+       "surface": {
+        "morning": "morning",
+        "midday": "midday",
+        "afternoon": "afternoon",
+        "evening": "evening",
+        "night": "night"
+       }
+      },
+      {
+       "id": "B-time-day-01-s34",
+       "answer": "night",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "By ___, the moon shone and houses were quiet.",
+       "cue_phrase": "houses were quiet",
+       "surface": {
+        "morning": "morning",
+        "midday": "midday",
+        "afternoon": "afternoon",
+        "evening": "evening",
+        "night": "night"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (evening); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-day-01-s35",
+       "answer": "night",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Owls called across the paddock while children slept through the ___.",
+       "cue_phrase": "Owls called",
+       "surface": {
+        "morning": "morning",
+        "midday": "midday",
+        "afternoon": "afternoon",
+        "evening": "evening",
+        "night": "night"
+       }
+      },
+      {
+       "id": "B-time-day-01-s36",
+       "answer": "night",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The streetlights glowed over silent bedrooms all through the ___.",
+       "cue_phrase": "streetlights glowed",
+       "surface": {
+        "morning": "morning",
+        "midday": "midday",
+        "afternoon": "afternoon",
+        "evening": "evening",
+        "night": "night"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (evening); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-day-01-s37",
+       "answer": "night",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "___ kept the playground empty until the first birds sang.",
+       "cue_phrase": "until the first birds",
+       "surface": {
+        "morning": "morning",
+        "midday": "midday",
+        "afternoon": "afternoon",
+        "evening": "evening",
+        "night": "night"
+       }
+      },
+      {
+       "id": "B-time-day-01-s38",
+       "answer": "night",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Torches glowed under the doona long after everyone else slept, deep into the ___.",
+       "cue_phrase": "long after everyone else slept",
+       "surface": {
+        "morning": "morning",
+        "midday": "midday",
+        "afternoon": "afternoon",
+        "evening": "evening",
+        "night": "night"
+       }
+      },
+      {
+       "id": "B-time-day-01-s39",
+       "answer": "night",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "___ wrapped the farm in quiet after all beds filled.",
+       "cue_phrase": "all beds filled",
+       "surface": {
+        "morning": "morning",
+        "midday": "midday",
+        "afternoon": "afternoon",
+        "evening": "evening",
+        "night": "night"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (evening); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-day-01-s40",
+       "answer": "night",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "___ hid the garden, and only the moon showed.",
+       "cue_phrase": "only the moon showed",
+       "surface": {
+        "morning": "morning",
+        "midday": "midday",
+        "afternoon": "afternoon",
+        "evening": "evening",
+        "night": "night"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (evening); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      }
+     ],
+     "contrasts": [
+      {
+       "answer": "morning",
+       "picked": "midday",
+       "line": "Morning has first light and waking. Midday has the sun highest and lunch."
+      },
+      {
+       "answer": "morning",
+       "picked": "afternoon",
+       "line": "Morning is when the house wakes. Afternoon comes after lunch and school pickup."
+      },
+      {
+       "answer": "morning",
+       "picked": "evening",
+       "line": "Morning opens with breakfast. Evening has orange sky and tea."
+      },
+      {
+       "answer": "morning",
+       "picked": "night",
+       "line": "Morning has waking and school shoes. Night has stars and sleeping."
+      },
+      {
+       "answer": "midday",
+       "picked": "morning",
+       "line": "Midday has the sun highest and lunch. Morning has first light and waking."
+      },
+      {
+       "answer": "midday",
+       "picked": "afternoon",
+       "line": "Midday is lunch with the sun highest. Afternoon is after lunch and pickup."
+      },
+      {
+       "answer": "midday",
+       "picked": "evening",
+       "line": "Midday has the shortest shadows. Evening has orange sky and tea."
+      },
+      {
+       "answer": "midday",
+       "picked": "night",
+       "line": "Midday is bright lunch hour. Night has stars, moon, and sleeping."
+      },
+      {
+       "answer": "afternoon",
+       "picked": "morning",
+       "line": "Afternoon comes after lunch. Morning has waking, breakfast, and school starting."
+      },
+      {
+       "answer": "afternoon",
+       "picked": "midday",
+       "line": "Afternoon is after lunch and lessons. Midday has lunch and the highest sun."
+      },
+      {
+       "answer": "afternoon",
+       "picked": "evening",
+       "line": "Afternoon has pickup after lessons. Evening has tea and orange sky."
+      },
+      {
+       "answer": "afternoon",
+       "picked": "night",
+       "line": "Afternoon still has play after school. Night has sleeping under stars."
+      },
+      {
+       "answer": "evening",
+       "picked": "morning",
+       "line": "Evening has tea and orange sky. Morning has first light and breakfast."
+      },
+      {
+       "answer": "evening",
+       "picked": "midday",
+       "line": "Evening has lamps and tea. Midday has lunch with the sun highest."
+      },
+      {
+       "answer": "evening",
+       "picked": "afternoon",
+       "line": "Evening comes with tea and baths. Afternoon has pickup after lessons."
+      },
+      {
+       "answer": "evening",
+       "picked": "night",
+       "line": "Evening is before sleep, with lamps on. Night has everyone asleep."
+      },
+      {
+       "answer": "night",
+       "picked": "morning",
+       "line": "Night has stars and sleeping. Morning has waking and breakfast."
+      },
+      {
+       "answer": "night",
+       "picked": "midday",
+       "line": "Night has moonlight and quiet beds. Midday has lunch and the highest sun."
+      },
+      {
+       "answer": "night",
+       "picked": "afternoon",
+       "line": "Night has sleeping houses. Afternoon has after-lunch play and pickup."
+      },
+      {
+       "answer": "night",
+       "picked": "evening",
+       "line": "Night is full of sleep and stars. Evening still has tea and lamps."
+      }
+     ],
+     "meta": {
+      "generated_at": "2026-07-10T04:40:37+00:00",
+      "model": "gpt-5.5",
+      "scrubbed_at": "2026-07-10",
+      "scrub_note": "Scrubbed by claude 2026-07-10: all 40 read. Restaged 20 time-noun-as-agent personifications ('Morning put clean teeth by the door') into parity-safe slots; kept the storybook-legal ones (brought/came/settled/painted/wrapped). Midday frames re-anchored on sun position and shortest shadows, evening on tea and pink sky, night on sleep. Post-judge fixes s24, s31: trailing-adverb rejections, an evening/night co-fit (3-of-3), a now-crossing, and a warm-afternoon leak re-anchored (clock time, homework marker, will-future, span subject)."
+     },
+     "scale": {
+      "left": "first light",
+      "right": "deep dark"
+     },
+     "computed": {
+      "zipf_min": 3.37,
+      "zipf_mean": 4.78,
+      "tightness": 0.574,
+      "band_suggested": 3,
+      "scored_at": "2026-07-10T04:55:33+00:00"
+     }
+    },
+    {
+     "id": "B-time-deixis-01",
+     "bank": "B",
+     "pos": "adverb",
+     "theme": "when it happened",
+     "band": 1,
+     "band_override": 1,
+     "words": [
+      {
+       "w": "yesterday",
+       "synset": "yesterday.r.01",
+       "gloss_source": "authored",
+       "gloss": "on the day before this one",
+       "zipf": 4.91,
+       "register": "neutral",
+       "senses_at_pos": 2,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "yesterday"
+       },
+       "discriminator": "the day before this one, already over",
+       "grade": 1
+      },
+      {
+       "w": "today",
+       "synset": "today.r.02",
+       "gloss_source": "authored",
+       "gloss": "on this very day",
+       "zipf": 5.55,
+       "register": "neutral",
+       "senses_at_pos": 2,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "today"
+       },
+       "discriminator": "this whole day we are in",
+       "grade": 1
+      },
+      {
+       "w": "now",
+       "synset": "now.r.04",
+       "gloss_source": "wordnet",
+       "gloss": "at the present moment",
+       "zipf": 6.18,
+       "register": "neutral",
+       "senses_at_pos": 7,
+       "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-10",
+        "note": "pinned r.04 at-the-present-moment; r.01 is the narrative-historical sense and r.03/r.06 are discourse prefaces - vet 2026-07-10"
+       },
+       "forms": {
+        "base": "now"
+       },
+       "discriminator": "this exact moment, not the whole day",
+       "grade": 1
+      },
+      {
+       "w": "tonight",
+       "synset": "tonight.r.01",
+       "gloss_source": "wordnet",
+       "gloss": "during the night of the present day",
+       "zipf": 5.03,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "tonight"
+       },
+       "discriminator": "the night of this same day, still ahead",
+       "grade": 1
+      },
+      {
+       "w": "tomorrow",
+       "synset": "tomorrow.r.01",
+       "gloss_source": "wordnet",
+       "gloss": "the next day, the day after, following the present day",
+       "zipf": 5.02,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "tomorrow"
+       },
+       "discriminator": "the day after this one, after a sleep",
+       "grade": 1
+      }
+     ],
+     "sentences": [
+      {
+       "id": "B-time-deixis-01-s01",
+       "answer": "yesterday",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "We ran the big race one sleep ago, ___, and my knees still ache.",
+       "cue_phrase": "one sleep ago",
+       "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+       }
+      },
+      {
+       "id": "B-time-deixis-01-s02",
+       "answer": "yesterday",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Crumbs are still on the bench from the party we held ___ evening.",
+       "cue_phrase": "party we held",
+       "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+       }
+      },
+      {
+       "id": "B-time-deixis-01-s03",
+       "answer": "yesterday",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Playtime mud is still on my shoes at breakfast; we played outside ___.",
+       "cue_phrase": "still on my shoes at breakfast",
+       "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+       }
+      },
+      {
+       "id": "B-time-deixis-01-s04",
+       "answer": "yesterday",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Party glitter still shines in my hair before school; we danced ___.",
+       "cue_phrase": "still shines before school",
+       "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+       }
+      },
+      {
+       "id": "B-time-deixis-01-s05",
+       "answer": "yesterday",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The banana I forgot in my lunchbox ___ still stinks at breakfast.",
+       "cue_phrase": "still stinks at breakfast",
+       "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+       }
+      },
+      {
+       "id": "B-time-deixis-01-s06",
+       "answer": "yesterday",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The kit I wore ___ is still drying by the heater this morning.",
+       "cue_phrase": "still drying this morning",
+       "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (today); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-deixis-01-s07",
+       "answer": "yesterday",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The sticker I earned at school ___ is still there at breakfast.",
+       "cue_phrase": "still there at breakfast",
+       "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+       }
+      },
+      {
+       "id": "B-time-deixis-01-s08",
+       "answer": "yesterday",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Sand from the beach is still in my bag before school; we swam ___.",
+       "cue_phrase": "still in my bag before school",
+       "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+       }
+      },
+      {
+       "id": "B-time-deixis-01-s09",
+       "answer": "today",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "I wear my helper badge from first bell to home time ___.",
+       "cue_phrase": "first bell to home time",
+       "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (now, tomorrow); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-deixis-01-s10",
+       "answer": "today",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "My painting has stayed wet from this morning to lunch ___.",
+       "cue_phrase": "from this morning to lunch",
+       "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+       }
+      },
+      {
+       "id": "B-time-deixis-01-s11",
+       "answer": "today",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "My school trip bracelet stays on through lessons and tea ___.",
+       "cue_phrase": "through lessons and tea",
+       "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (tomorrow); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-deixis-01-s12",
+       "answer": "today",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "We get to wear free dress ___, so I am in my dinosaur shirt.",
+       "cue_phrase": "so I am in my dinosaur shirt",
+       "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (now); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-deixis-01-s13",
+       "answer": "today",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "It is only lunchtime, yet I have filled my water bottle twice ___.",
+       "cue_phrase": "only lunchtime",
+       "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: gpt-5.5 and claude-opus-4-8 cross to now; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-deixis-01-s14",
+       "answer": "today",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "I have already lost two jumpers ___, and it is not even lunch.",
+       "cue_phrase": "not even lunch",
+       "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (now); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-deixis-01-s15",
+       "answer": "today",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "We have library ___; my bag is by the door and we line up after maths.",
+       "cue_phrase": "line up after maths",
+       "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (tomorrow); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-deixis-01-s16",
+       "answer": "today",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "We have filled the compost bin right up ___, between drop-off and pickup.",
+       "cue_phrase": "between drop-off and pickup",
+       "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (now, tonight); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-deixis-01-s17",
+       "answer": "now",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The bus doors are closing; we must hop on ___.",
+       "cue_phrase": "doors are closing",
+       "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+       }
+      },
+      {
+       "id": "B-time-deixis-01-s18",
+       "answer": "now",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Milk is spilling; I grab the cloth ___.",
+       "cue_phrase": "Milk is spilling",
+       "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+       }
+      },
+      {
+       "id": "B-time-deixis-01-s19",
+       "answer": "now",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The teacher is pointing at me; I must answer ___.",
+       "cue_phrase": "pointing at me",
+       "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+       }
+      },
+      {
+       "id": "B-time-deixis-01-s20",
+       "answer": "now",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "My ice lolly is dripping onto my hand; I must lick it ___.",
+       "cue_phrase": "dripping onto my hand",
+       "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+       }
+      },
+      {
+       "id": "B-time-deixis-01-s21",
+       "answer": "now",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The kettle whistles, so Dad lifts it off ___.",
+       "cue_phrase": "kettle whistles",
+       "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+       }
+      },
+      {
+       "id": "B-time-deixis-01-s22",
+       "answer": "now",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The baby wakes, and Mum picks her up ___.",
+       "cue_phrase": "baby wakes",
+       "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+       }
+      },
+      {
+       "id": "B-time-deixis-01-s23",
+       "answer": "now",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The ball is rolling at the road; we have to grab it ___.",
+       "cue_phrase": "rolling at the road",
+       "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+       }
+      },
+      {
+       "id": "B-time-deixis-01-s24",
+       "answer": "now",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "My glue is drying, so I press the card ___.",
+       "cue_phrase": "glue is drying",
+       "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+       }
+      },
+      {
+       "id": "B-time-deixis-01-s25",
+       "answer": "tonight",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "It is getting dark outside, and we will spot the moon ___.",
+       "cue_phrase": "getting dark outside",
+       "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (now); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-deixis-01-s26",
+       "answer": "tonight",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The sky is going pink; I will wear my owl pyjamas ___.",
+       "cue_phrase": "sky is going pink",
+       "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (now); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-deixis-01-s27",
+       "answer": "tonight",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Grandma is here, and she will read the long dragon story before bed ___.",
+       "cue_phrase": "Grandma is here",
+       "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (today, tomorrow); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-deixis-01-s28",
+       "answer": "tonight",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "After tea we are hanging paper stars by my window ___.",
+       "cue_phrase": "After tea",
+       "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (now, today, tomorrow); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-deixis-01-s29",
+       "answer": "tonight",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The moon is out already, and I will watch it from bed ___.",
+       "cue_phrase": "moon is out already",
+       "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (now); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-deixis-01-s30",
+       "answer": "tonight",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Dad is checking my torch for the garden walk after supper ___.",
+       "cue_phrase": "after supper",
+       "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (now, today, tomorrow); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-deixis-01-s31",
+       "answer": "tonight",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The lamps are on, and I am choosing the book I will read in bed ___.",
+       "cue_phrase": "will read in bed",
+       "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (now); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-deixis-01-s32",
+       "answer": "tonight",
+       "cue": "inferential",
+       "reserve": true,
+       "text": "The curtains are closed, and we will listen for owls ___.",
+       "cue_phrase": "curtains are closed",
+       "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (now); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-deixis-01-s33",
+       "answer": "tomorrow",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "___ we have sport, just one more sleep, so my PE kit is ready.",
+       "cue_phrase": "one more sleep",
+       "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+       }
+      },
+      {
+       "id": "B-time-deixis-01-s34",
+       "answer": "tomorrow",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Just one sleep until the zoo; we ride the bus ___.",
+       "cue_phrase": "one sleep until the zoo",
+       "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+       }
+      },
+      {
+       "id": "B-time-deixis-01-s35",
+       "answer": "tomorrow",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Before bed I stack my library books to return ___.",
+       "cue_phrase": "stack my library books",
+       "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+       }
+      },
+      {
+       "id": "B-time-deixis-01-s36",
+       "answer": "tomorrow",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Before bed I sharpen both pencils for the spelling test ___.",
+       "cue_phrase": "for the spelling test",
+       "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+       }
+      },
+      {
+       "id": "B-time-deixis-01-s37",
+       "answer": "tomorrow",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "I packed my towel before sleep; the swimming carnival is ___.",
+       "cue_phrase": "packed before sleep",
+       "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (today); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-deixis-01-s38",
+       "answer": "tomorrow",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "We set the alarm at bedtime because the class trip leaves ___.",
+       "cue_phrase": "alarm at bedtime",
+       "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (tonight); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-deixis-01-s39",
+       "answer": "tomorrow",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "I hang my book bag up before sleep, ready for the first bell ___.",
+       "cue_phrase": "ready for the first bell",
+       "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+       }
+      },
+      {
+       "id": "B-time-deixis-01-s40",
+       "answer": "tomorrow",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "Dad is freezing a juice box at bedtime for my lunch ___.",
+       "cue_phrase": "freezing a juice box at bedtime",
+       "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+       }
+      }
+     ],
+     "contrasts": [
+      {
+       "answer": "yesterday",
+       "picked": "today",
+       "line": "Yesterday is finished before this morning. Today is the whole day we are in."
+      },
+      {
+       "answer": "yesterday",
+       "picked": "now",
+       "line": "Yesterday is already over. Now is this exact second."
+      },
+      {
+       "answer": "yesterday",
+       "picked": "tonight",
+       "line": "Yesterday happened before this morning. Tonight is still ahead after dark."
+      },
+      {
+       "answer": "yesterday",
+       "picked": "tomorrow",
+       "line": "Yesterday is before this day began. Tomorrow comes after a sleep."
+      },
+      {
+       "answer": "today",
+       "picked": "yesterday",
+       "line": "Today is the day we are in. Yesterday was already over before this morning."
+      },
+      {
+       "answer": "today",
+       "picked": "now",
+       "line": "Today can stretch from morning to hometime. Now is only this exact second."
+      },
+      {
+       "answer": "today",
+       "picked": "tonight",
+       "line": "Today is the whole day we are in. Tonight is only the dark part still ahead."
+      },
+      {
+       "answer": "today",
+       "picked": "tomorrow",
+       "line": "Today is before the next sleep. Tomorrow is after that sleep."
+      },
+      {
+       "answer": "now",
+       "picked": "yesterday",
+       "line": "Now is this exact second. Yesterday is already over."
+      },
+      {
+       "answer": "now",
+       "picked": "today",
+       "line": "Now means right this second. Today can mean any time in this day."
+      },
+      {
+       "answer": "now",
+       "picked": "tonight",
+       "line": "Now is happening right away. Tonight waits until it gets dark."
+      },
+      {
+       "answer": "now",
+       "picked": "tomorrow",
+       "line": "Now is right this second. Tomorrow is after a sleep."
+      },
+      {
+       "answer": "tonight",
+       "picked": "yesterday",
+       "line": "Tonight is after dark on this same day. Yesterday is already over."
+      },
+      {
+       "answer": "tonight",
+       "picked": "today",
+       "line": "Tonight is the dark part still ahead. Today is the whole day we are in."
+      },
+      {
+       "answer": "tonight",
+       "picked": "now",
+       "line": "Tonight waits until after dark. Now is this exact second."
+      },
+      {
+       "answer": "tonight",
+       "picked": "tomorrow",
+       "line": "Tonight comes before this sleep. Tomorrow comes after a sleep."
+      },
+      {
+       "answer": "tomorrow",
+       "picked": "yesterday",
+       "line": "Tomorrow comes after a sleep. Yesterday was before this day began."
+      },
+      {
+       "answer": "tomorrow",
+       "picked": "today",
+       "line": "Tomorrow is after a sleep. Today is the day we are in."
+      },
+      {
+       "answer": "tomorrow",
+       "picked": "now",
+       "line": "Tomorrow is after a sleep. Now is this exact second."
+      },
+      {
+       "answer": "tomorrow",
+       "picked": "tonight",
+       "line": "Tomorrow comes after a sleep. Tonight is the dark part before that sleep."
+      }
+     ],
+     "meta": {
+      "generated_at": "2026-07-10T04:42:52+00:00",
+      "model": "gpt-5.5",
+      "scrubbed_at": "2026-07-10",
+      "scrub_note": "Scrubbed by claude 2026-07-10: all 40 read. Killed the trailing ', ___.' append template (32 frames) - restaged into natural adverb positions with same-day/finished-day/after-sleep anchors; every frame keeps at least two grammar-survivors so tense prunes but never picks. Post-judge fixes s16: trailing-adverb rejections, an evening/night co-fit (3-of-3), a now-crossing, and a warm-afternoon leak re-anchored (clock time, homework marker, will-future, span subject)."
+     },
+     "scale": {
+      "left": "already past",
+      "right": "still to come"
+     },
+     "computed": {
+      "zipf_min": 4.91,
+      "zipf_mean": 5.34,
+      "tightness": null,
+      "band_suggested": 1,
+      "scored_at": "2026-07-10T04:55:33+00:00"
      }
     },
     {
@@ -13481,6 +16308,1060 @@
      }
     },
     {
+     "id": "A-time-nearness-01",
+     "bank": "A",
+     "pos": "adverb",
+     "theme": "how soon it will happen",
+     "band": 2,
+     "band_override": 2,
+     "words": [
+      {
+       "w": "immediately",
+       "synset": "immediately.r.01",
+       "gloss_source": "wordnet",
+       "gloss": "without delay or hesitation; with no time intervening",
+       "zipf": 4.98,
+       "register": "neutral",
+       "senses_at_pos": 3,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "immediately"
+       },
+       "discriminator": "with no wait at all, this instant",
+       "grade": 3
+      },
+      {
+       "w": "soon",
+       "synset": "soon.r.01",
+       "gloss_source": "wordnet",
+       "gloss": "in the near future",
+       "zipf": 5.32,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "soon"
+       },
+       "discriminator": "after only a short wait",
+       "grade": 1
+      },
+      {
+       "w": "later",
+       "synset": "by_and_by.r.01",
+       "gloss_source": "authored",
+       "gloss": "at a time after this one",
+       "zipf": 5.49,
+       "register": "neutral",
+       "senses_at_pos": 3,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "later"
+       },
+       "discriminator": "after a while, not straight away",
+       "grade": 1
+      },
+      {
+       "w": "eventually",
+       "synset": "finally.r.01",
+       "gloss_source": "wordnet",
+       "gloss": "after an unspecified period of time or an especially long delay",
+       "zipf": 4.88,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "eventually"
+       },
+       "discriminator": "in the end, after a long slow process",
+       "grade": 4
+      },
+      {
+       "w": "someday",
+       "synset": "someday.r.01",
+       "gloss_source": "wordnet",
+       "gloss": "some unspecified time in the future",
+       "zipf": 4.05,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "someday"
+       },
+       "discriminator": "on some unknown day far ahead",
+       "grade": 2
+      }
+     ],
+     "sentences": [
+      {
+       "id": "A-time-nearness-01-s01",
+       "answer": "immediately",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Catch the tipping glass ___, not a second to spare!",
+       "cue_phrase": "not a second to spare",
+       "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+       }
+      },
+      {
+       "id": "A-time-nearness-01-s02",
+       "answer": "immediately",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "Drop the spluttering sparkler into the bucket ___, this very second!",
+       "cue_phrase": "this very second",
+       "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+       }
+      },
+      {
+       "id": "A-time-nearness-01-s03",
+       "answer": "immediately",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The soup boiled over, so Lin switched off the hob ___.",
+       "cue_phrase": "soup boiled over",
+       "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (soon); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "A-time-nearness-01-s04",
+       "answer": "immediately",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The dog ran toward the road, and Sam called it back ___.",
+       "cue_phrase": "toward the road",
+       "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+       }
+      },
+      {
+       "id": "A-time-nearness-01-s05",
+       "answer": "immediately",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "When the alarm bell rang, the class left the building ___.",
+       "cue_phrase": "alarm bell rang",
+       "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (soon); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "A-time-nearness-01-s06",
+       "answer": "immediately",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The goalkeeper saw the ball by the line and dived ___.",
+       "cue_phrase": "by the line",
+       "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+       }
+      },
+      {
+       "id": "A-time-nearness-01-s07",
+       "answer": "immediately",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "___, Nina pulled her hand away from the sizzling tray.",
+       "cue_phrase": "sizzling tray",
+       "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (soon); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "A-time-nearness-01-s08",
+       "answer": "immediately",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The tap was flooding the sink, so I turned it off ___.",
+       "cue_phrase": "flooding the sink",
+       "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (soon); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "A-time-nearness-01-s09",
+       "answer": "soon",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The egg timer has one minute left; we will eat ___.",
+       "cue_phrase": "one minute left",
+       "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+       }
+      },
+      {
+       "id": "A-time-nearness-01-s10",
+       "answer": "soon",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "The board shows two minutes; the bus will arrive ___.",
+       "cue_phrase": "shows two minutes",
+       "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+       }
+      },
+      {
+       "id": "A-time-nearness-01-s11",
+       "answer": "soon",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The toast is browning; breakfast will be ready ___.",
+       "cue_phrase": "toast is browning",
+       "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: gpt-5.5 and gpt-4.1 cross to eventually, immediately, later; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "A-time-nearness-01-s12",
+       "answer": "soon",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The last song is playing, so the concert ends ___.",
+       "cue_phrase": "last song is playing",
+       "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: gpt-5.5 and gpt-4.1 cross to eventually, immediately, later; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "A-time-nearness-01-s13",
+       "answer": "soon",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The first raindrops hit the path; heavier rain would start ___.",
+       "cue_phrase": "first raindrops hit",
+       "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: gpt-5.5 and gpt-4.1 cross to eventually, immediately, later; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "A-time-nearness-01-s14",
+       "answer": "soon",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Only three puzzle pieces remained, so we would finish ___.",
+       "cue_phrase": "three puzzle pieces remained",
+       "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: gpt-5.5 and gpt-4.1 cross to eventually, immediately, later; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "A-time-nearness-01-s15",
+       "answer": "soon",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The kettle is humming louder; the water will boil ___.",
+       "cue_phrase": "humming louder",
+       "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-4.1 lists a second fit (eventually, immediately, later); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "A-time-nearness-01-s16",
+       "answer": "soon",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The cinema lights dimmed, and the cartoon would begin ___.",
+       "cue_phrase": "lights dimmed",
+       "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: gpt-5.5 and gpt-4.1 and claude-opus-4-8 cross to eventually, immediately, later; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "A-time-nearness-01-s17",
+       "answer": "later",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "We can paint the cardboard castle ___, after lunch.",
+       "cue_phrase": "after lunch",
+       "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: gpt-5.5 and gpt-4.1 cross to eventually, soon; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "A-time-nearness-01-s18",
+       "answer": "later",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "___, after the shopping, Dad will mend the kite.",
+       "cue_phrase": "after the shopping",
+       "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (eventually, soon); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "A-time-nearness-01-s19",
+       "answer": "later",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The cake is still oven-hot; we can ice it ___, after our bike ride.",
+       "cue_phrase": "after our bike ride",
+       "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: gpt-5.5 and claude-opus-4-8 cross to soon; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "A-time-nearness-01-s20",
+       "answer": "later",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Your boots are muddy; you can clean them ___, after supper.",
+       "cue_phrase": "after supper",
+       "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (soon); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "A-time-nearness-01-s21",
+       "answer": "later",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The library opens after assembly, so we will borrow books ___.",
+       "cue_phrase": "after assembly",
+       "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: gpt-5.5 and claude-opus-4-8 cross to immediately, soon; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "A-time-nearness-01-s22",
+       "answer": "later",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "The paint is still wet; add the toy wheels ___, after dinner.",
+       "cue_phrase": "after dinner",
+       "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (soon); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "A-time-nearness-01-s23",
+       "answer": "later",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "The moon comes out tonight, so we can test the telescope ___.",
+       "cue_phrase": "comes out tonight",
+       "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: gpt-5.5 and claude-opus-4-8 cross to soon; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "A-time-nearness-01-s24",
+       "answer": "later",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Finish homework and your bath; you may feed the hens ___.",
+       "cue_phrase": "homework and your bath",
+       "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (immediately, soon); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "A-time-nearness-01-s25",
+       "answer": "eventually",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "After many months, the tiny oak ___ filled the pot.",
+       "cue_phrase": "After many months",
+       "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+       }
+      },
+      {
+       "id": "A-time-nearness-01-s26",
+       "answer": "eventually",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "___, after weeks of practice, Jaya played the tune cleanly.",
+       "cue_phrase": "weeks of practice",
+       "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (later); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "A-time-nearness-01-s27",
+       "answer": "eventually",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Brick by brick, over the school year, the new library ___ opened.",
+       "cue_phrase": "over the school year",
+       "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (later); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "A-time-nearness-01-s28",
+       "answer": "eventually",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The caterpillars ate leaves for weeks and ___ became butterflies.",
+       "cue_phrase": "for weeks",
+       "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: gpt-5.5 and claude-opus-4-8 cross to later, soon; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "A-time-nearness-01-s29",
+       "answer": "eventually",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Each rainy week filled the pond a little, until the ducks ___ returned.",
+       "cue_phrase": "filled the pond a little",
+       "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (later); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "A-time-nearness-01-s30",
+       "answer": "eventually",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "Page by page all month, Mara ___ finished the thick novel.",
+       "cue_phrase": "Page by page all month",
+       "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (later); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "A-time-nearness-01-s31",
+       "answer": "eventually",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Over many winter evenings, the castle puzzle ___ stood complete.",
+       "cue_phrase": "many winter evenings",
+       "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+       }
+      },
+      {
+       "id": "A-time-nearness-01-s32",
+       "answer": "eventually",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "After a season of careful polishing, the rusty bike ___ shone.",
+       "cue_phrase": "a season of careful polishing",
+       "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (later); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "A-time-nearness-01-s33",
+       "answer": "someday",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "When I am grown up, I might sail around the world ___.",
+       "cue_phrase": "When I am grown",
+       "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: gpt-5.5 and claude-opus-4-8 cross to eventually, later; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "A-time-nearness-01-s34",
+       "answer": "someday",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "___, if castles float, I will sleep in a tower cloud.",
+       "cue_phrase": "if castles float",
+       "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+       }
+      },
+      {
+       "id": "A-time-nearness-01-s35",
+       "answer": "someday",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "Mia keeps a blank rocket ticket for a trip to Mars ___.",
+       "cue_phrase": "blank rocket ticket",
+       "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: gpt-5.5 and claude-opus-4-8 cross to eventually, later, soon; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "A-time-nearness-01-s36",
+       "answer": "someday",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "In my dream diary, I will own a library on the moon ___.",
+       "cue_phrase": "dream diary",
+       "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: gpt-5.5 and claude-opus-4-8 cross to eventually, soon; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "A-time-nearness-01-s37",
+       "answer": "someday",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "No one has built dragon saddles, but I hope to ride one ___.",
+       "cue_phrase": "No one has built",
+       "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: gpt-5.5 and claude-opus-4-8 cross to eventually, later, soon; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "A-time-nearness-01-s38",
+       "answer": "someday",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "If mermaids invite classes, our school could visit the reef ___.",
+       "cue_phrase": "If mermaids invite",
+       "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: gpt-5.5 and claude-opus-4-8 cross to eventually, immediately, later, soon; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "A-time-nearness-01-s39",
+       "answer": "someday",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "I might have a beach house ___, when I am as old as Nana.",
+       "cue_phrase": "as old as Nana",
+       "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: gpt-5.5 and claude-opus-4-8 cross to eventually, later; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "A-time-nearness-01-s40",
+       "answer": "someday",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Maybe dragons will join school trips, and we can fly ___.",
+       "cue_phrase": "Maybe dragons",
+       "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: gpt-5.5 and claude-opus-4-8 cross to eventually, later, soon; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      }
+     ],
+     "contrasts": [
+      {
+       "answer": "immediately",
+       "picked": "soon",
+       "line": "immediately has no wait at all; soon has a short wait already starting."
+      },
+      {
+       "answer": "immediately",
+       "picked": "later",
+       "line": "immediately is this instant; later is after a real wait."
+      },
+      {
+       "answer": "immediately",
+       "picked": "eventually",
+       "line": "immediately happens at once; eventually comes after slow progress."
+      },
+      {
+       "answer": "immediately",
+       "picked": "someday",
+       "line": "immediately is for right now; someday is for a far-off wish."
+      },
+      {
+       "answer": "soon",
+       "picked": "immediately",
+       "line": "soon has a brief wait; immediately has none."
+      },
+      {
+       "answer": "soon",
+       "picked": "later",
+       "line": "soon is close, like a countdown; later is an unhurried wait."
+      },
+      {
+       "answer": "soon",
+       "picked": "eventually",
+       "line": "soon is a short wait; eventually follows a slow build-up."
+      },
+      {
+       "answer": "soon",
+       "picked": "someday",
+       "line": "soon is coming shortly; someday is an unknown far-off wish."
+      },
+      {
+       "answer": "later",
+       "picked": "immediately",
+       "line": "later waits a while; immediately happens at once."
+      },
+      {
+       "answer": "later",
+       "picked": "soon",
+       "line": "later is an unhurried wait; soon is just a brief wait."
+      },
+      {
+       "answer": "later",
+       "picked": "eventually",
+       "line": "later can be after chores today; eventually needs slow progress."
+      },
+      {
+       "answer": "later",
+       "picked": "someday",
+       "line": "later is a real wait you can plan; someday is far and uncertain."
+      },
+      {
+       "answer": "eventually",
+       "picked": "immediately",
+       "line": "eventually ends a slow process; immediately has no wait."
+      },
+      {
+       "answer": "eventually",
+       "picked": "soon",
+       "line": "eventually comes after steady progress; soon is only a short wait."
+      },
+      {
+       "answer": "eventually",
+       "picked": "later",
+       "line": "eventually follows a slow build-up; later is just after a while."
+      },
+      {
+       "answer": "eventually",
+       "picked": "someday",
+       "line": "eventually has progress already going; someday is only a far-off wish."
+      },
+      {
+       "answer": "someday",
+       "picked": "immediately",
+       "line": "someday is a far-off wish; immediately is right now."
+      },
+      {
+       "answer": "someday",
+       "picked": "soon",
+       "line": "someday is unknown and far away; soon is shortly."
+      },
+      {
+       "answer": "someday",
+       "picked": "later",
+       "line": "someday is a far-off dream; later is a wait you can plan."
+      },
+      {
+       "answer": "someday",
+       "picked": "eventually",
+       "line": "someday has no process started; eventually finishes one."
+      }
+     ],
+     "meta": {
+      "generated_at": "2026-07-10T04:38:47+00:00",
+      "model": "gpt-5.5",
+      "scrubbed_at": "2026-07-10",
+      "scrub_note": "Scrubbed by claude 2026-07-10: all 40 read. Fixed dup 'right now'/'when I am grown' cues (s01/s02/s39); moved eventually block to pre-verb slots killing redundant double adverbials (s25-s32); later frames recast as natural appositions (s17/s20/s22). Post-judge fixes s19, s31, s36: trailing-adverb rejections, an evening/night co-fit (3-of-3), a now-crossing, and a warm-afternoon leak re-anchored (clock time, homework marker, will-future, span subject)."
+     },
+     "scale": {
+      "left": "no wait",
+      "right": "far away"
+     },
+     "computed": {
+      "zipf_min": 4.05,
+      "zipf_mean": 4.94,
+      "tightness": null,
+      "band_suggested": 2,
+      "scored_at": "2026-07-10T04:55:33+00:00"
+     }
+    },
+    {
      "id": "A-walk-manner-01",
      "bank": "A",
      "pos": "verb",
@@ -15350,6 +19231,1036 @@
       "model": "gpt-5.5",
       "scrubbed_at": "2026-07-05T13:42:27+00:00",
       "scrub_note": "soaked frames s01/s02/s04-s07 rewritten out of defensive register ('no bead fell') keeping the absorption-evidence logic. Full read + judge triage."
+     }
+    },
+    {
+     "id": "B-time-order-01",
+     "bank": "B",
+     "pos": "adverb",
+     "theme": "the order things happened",
+     "band": 2,
+     "band_override": 2,
+     "words": [
+      {
+       "w": "earlier",
+       "synset": "earlier.r.01",
+       "gloss_source": "wordnet",
+       "gloss": "earlier in time; previously",
+       "zipf": 4.98,
+       "register": "neutral",
+       "senses_at_pos": 3,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "earlier"
+       },
+       "discriminator": "at a time before this one, already past",
+       "grade": 2
+      },
+      {
+       "w": "beforehand",
+       "synset": "ahead.r.04",
+       "gloss_source": "wordnet",
+       "gloss": "ahead of time; in anticipation",
+       "zipf": 3.62,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "beforehand"
+       },
+       "discriminator": "ahead of an event, on purpose, to be ready",
+       "grade": 4
+      },
+      {
+       "w": "meanwhile",
+       "synset": "meanwhile.r.02",
+       "gloss_source": "wordnet",
+       "gloss": "during the intervening time",
+       "zipf": 4.48,
+       "register": "neutral",
+       "senses_at_pos": 2,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "meanwhile"
+       },
+       "discriminator": "during the wait, while something else goes on",
+       "grade": 4
+      },
+      {
+       "w": "afterwards",
+       "synset": "subsequently.r.01",
+       "gloss_source": "wordnet",
+       "gloss": "happening at a time subsequent to a reference time",
+       "zipf": 4.42,
+       "register": "neutral",
+       "senses_at_pos": 1,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "afterwards"
+       },
+       "discriminator": "once the event has finished",
+       "grade": 3
+      },
+      {
+       "w": "finally",
+       "synset": "finally.r.01",
+       "gloss_source": "wordnet",
+       "gloss": "after an unspecified period of time or an especially long delay",
+       "zipf": 5.17,
+       "register": "neutral",
+       "senses_at_pos": 3,
+       "dominant_sense_ok": null,
+       "forms": {
+        "base": "finally"
+       },
+       "discriminator": "at the very end of a long chain of steps",
+       "grade": 2
+      }
+     ],
+     "sentences": [
+      {
+       "id": "B-time-order-01-s01",
+       "answer": "earlier",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "___, a squirrel knocked acorns down before the school concert began.",
+       "cue_phrase": "before the school concert",
+       "surface": {
+        "earlier": "earlier",
+        "beforehand": "beforehand",
+        "meanwhile": "meanwhile",
+        "afterwards": "afterwards",
+        "finally": "finally"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (beforehand); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-order-01-s02",
+       "answer": "earlier",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "___, a frog splashed into the pond before the big race.",
+       "cue_phrase": "before the big race",
+       "surface": {
+        "earlier": "earlier",
+        "beforehand": "beforehand",
+        "meanwhile": "meanwhile",
+        "afterwards": "afterwards",
+        "finally": "finally"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (beforehand); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-order-01-s03",
+       "answer": "earlier",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The birthday picnic is this afternoon, but Dad spilt the flour ___.",
+       "cue_phrase": "picnic is this afternoon",
+       "surface": {
+        "earlier": "earlier",
+        "beforehand": "beforehand",
+        "meanwhile": "meanwhile",
+        "afterwards": "afterwards",
+        "finally": "finally"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (beforehand); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-order-01-s04",
+       "answer": "earlier",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "___, the classroom clock stopped before the spelling test.",
+       "cue_phrase": "before the spelling test",
+       "surface": {
+        "earlier": "earlier",
+        "beforehand": "beforehand",
+        "meanwhile": "meanwhile",
+        "afterwards": "afterwards",
+        "finally": "finally"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (beforehand); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-order-01-s05",
+       "answer": "earlier",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "When the concert began, Sam's glove was already in the bin; it vanished ___.",
+       "cue_phrase": "already in the bin",
+       "surface": {
+        "earlier": "earlier",
+        "beforehand": "beforehand",
+        "meanwhile": "meanwhile",
+        "afterwards": "afterwards",
+        "finally": "finally"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (beforehand); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-order-01-s06",
+       "answer": "earlier",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "When the big race started, the track was already soaked; rain had fallen ___.",
+       "cue_phrase": "already soaked",
+       "surface": {
+        "earlier": "earlier",
+        "beforehand": "beforehand",
+        "meanwhile": "meanwhile",
+        "afterwards": "afterwards",
+        "finally": "finally"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (beforehand); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-order-01-s07",
+       "answer": "earlier",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "My sandwich had already gone ___, well before the museum trip.",
+       "cue_phrase": "had already gone",
+       "surface": {
+        "earlier": "earlier",
+        "beforehand": "beforehand",
+        "meanwhile": "meanwhile",
+        "afterwards": "afterwards",
+        "finally": "finally"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (beforehand); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-order-01-s08",
+       "answer": "earlier",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "___, the kite tore before the beach contest opened.",
+       "cue_phrase": "before the beach contest",
+       "surface": {
+        "earlier": "earlier",
+        "beforehand": "beforehand",
+        "meanwhile": "meanwhile",
+        "afterwards": "afterwards",
+        "finally": "finally"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (beforehand); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-order-01-s09",
+       "answer": "beforehand",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "___, we packed torches for the cave play so we were ready.",
+       "cue_phrase": "so we were ready",
+       "surface": {
+        "earlier": "earlier",
+        "beforehand": "beforehand",
+        "meanwhile": "meanwhile",
+        "afterwards": "afterwards",
+        "finally": "finally"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: gpt-5.5 and claude-opus-4-8 cross to earlier, finally; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-order-01-s10",
+       "answer": "beforehand",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "We laid out costumes for the school concert ___, to avoid panic.",
+       "cue_phrase": "to avoid panic",
+       "surface": {
+        "earlier": "earlier",
+        "beforehand": "beforehand",
+        "meanwhile": "meanwhile",
+        "afterwards": "afterwards",
+        "finally": "finally"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: gpt-5.5 and claude-opus-4-8 cross to earlier; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-order-01-s11",
+       "answer": "beforehand",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "___, Mina filled bottles for the big race so everyone could drink.",
+       "cue_phrase": "so everyone could drink",
+       "surface": {
+        "earlier": "earlier",
+        "beforehand": "beforehand",
+        "meanwhile": "meanwhile",
+        "afterwards": "afterwards",
+        "finally": "finally"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: gpt-5.5 and claude-opus-4-8 cross to afterwards, earlier, finally; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-order-01-s12",
+       "answer": "beforehand",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "The class labelled paints for the art show ___, ready for Monday.",
+       "cue_phrase": "ready for Monday",
+       "surface": {
+        "earlier": "earlier",
+        "beforehand": "beforehand",
+        "meanwhile": "meanwhile",
+        "afterwards": "afterwards",
+        "finally": "finally"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: gpt-5.5 and claude-opus-4-8 cross to earlier; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-order-01-s13",
+       "answer": "beforehand",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "___, Gran charged the lanterns for the storm, and none went dark.",
+       "cue_phrase": "none went dark",
+       "surface": {
+        "earlier": "earlier",
+        "beforehand": "beforehand",
+        "meanwhile": "meanwhile",
+        "afterwards": "afterwards",
+        "finally": "finally"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: gpt-5.5 and claude-opus-4-8 cross to earlier, finally; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-order-01-s14",
+       "answer": "beforehand",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "We practised the song for assembly ___, and remembered every verse.",
+       "cue_phrase": "remembered every verse",
+       "surface": {
+        "earlier": "earlier",
+        "beforehand": "beforehand",
+        "meanwhile": "meanwhile",
+        "afterwards": "afterwards",
+        "finally": "finally"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: gpt-5.5 and claude-opus-4-8 cross to earlier; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-order-01-s15",
+       "answer": "beforehand",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "___, Dad froze juice for the picnic, so cups stayed cold.",
+       "cue_phrase": "cups stayed cold",
+       "surface": {
+        "earlier": "earlier",
+        "beforehand": "beforehand",
+        "meanwhile": "meanwhile",
+        "afterwards": "afterwards",
+        "finally": "finally"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: gpt-5.5 and claude-opus-4-8 cross to earlier, finally; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-order-01-s16",
+       "answer": "beforehand",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "Leah sharpened pencils for the maths quiz ___, ready on her desk.",
+       "cue_phrase": "ready on her desk",
+       "surface": {
+        "earlier": "earlier",
+        "beforehand": "beforehand",
+        "meanwhile": "meanwhile",
+        "afterwards": "afterwards",
+        "finally": "finally"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "ADJACENCY-2OF3: gpt-5.5 and claude-opus-4-8 cross to earlier; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-order-01-s17",
+       "answer": "meanwhile",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "___, Mum baked bread while the school concert carried on.",
+       "cue_phrase": "while the school concert",
+       "surface": {
+        "earlier": "earlier",
+        "beforehand": "beforehand",
+        "meanwhile": "meanwhile",
+        "afterwards": "afterwards",
+        "finally": "finally"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (earlier); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-order-01-s18",
+       "answer": "meanwhile",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "___, the dog sleeps under a tree while the big race carries on.",
+       "cue_phrase": "while the big race",
+       "surface": {
+        "earlier": "earlier",
+        "beforehand": "beforehand",
+        "meanwhile": "meanwhile",
+        "afterwards": "afterwards",
+        "finally": "finally"
+       }
+      },
+      {
+       "id": "B-time-order-01-s19",
+       "answer": "meanwhile",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "___, rain tapped the windows as the puppet show rolled on.",
+       "cue_phrase": "puppet show rolled on",
+       "surface": {
+        "earlier": "earlier",
+        "beforehand": "beforehand",
+        "meanwhile": "meanwhile",
+        "afterwards": "afterwards",
+        "finally": "finally"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (earlier); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-order-01-s20",
+       "answer": "meanwhile",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "___, the baby giggles in the hall as the spelling test goes on.",
+       "cue_phrase": "test goes on",
+       "surface": {
+        "earlier": "earlier",
+        "beforehand": "beforehand",
+        "meanwhile": "meanwhile",
+        "afterwards": "afterwards",
+        "finally": "finally"
+       }
+      },
+      {
+       "id": "B-time-order-01-s21",
+       "answer": "meanwhile",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "___, smoke curled from chimneys while the snow fair stayed open.",
+       "cue_phrase": "while the snow fair",
+       "surface": {
+        "earlier": "earlier",
+        "beforehand": "beforehand",
+        "meanwhile": "meanwhile",
+        "afterwards": "afterwards",
+        "finally": "finally"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (earlier); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-order-01-s22",
+       "answer": "meanwhile",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "___, the caretaker sweeps leaves as the football match carries on.",
+       "cue_phrase": "football match carries on",
+       "surface": {
+        "earlier": "earlier",
+        "beforehand": "beforehand",
+        "meanwhile": "meanwhile",
+        "afterwards": "afterwards",
+        "finally": "finally"
+       }
+      },
+      {
+       "id": "B-time-order-01-s23",
+       "answer": "meanwhile",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "___, Ravi drew dragons while the train journey kept rumbling.",
+       "cue_phrase": "while the train journey",
+       "surface": {
+        "earlier": "earlier",
+        "beforehand": "beforehand",
+        "meanwhile": "meanwhile",
+        "afterwards": "afterwards",
+        "finally": "finally"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (earlier); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-order-01-s24",
+       "answer": "meanwhile",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "___, the cat chases dust as the birthday party sings upstairs.",
+       "cue_phrase": "birthday party sings",
+       "surface": {
+        "earlier": "earlier",
+        "beforehand": "beforehand",
+        "meanwhile": "meanwhile",
+        "afterwards": "afterwards",
+        "finally": "finally"
+       }
+      },
+      {
+       "id": "B-time-order-01-s25",
+       "answer": "afterwards",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "___, we ate sandwiches once the school concert ended.",
+       "cue_phrase": "once the school concert",
+       "surface": {
+        "earlier": "earlier",
+        "beforehand": "beforehand",
+        "meanwhile": "meanwhile",
+        "afterwards": "afterwards",
+        "finally": "finally"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (earlier, finally); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-order-01-s26",
+       "answer": "afterwards",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "___, the runners drank water once the big race was over.",
+       "cue_phrase": "race was over",
+       "surface": {
+        "earlier": "earlier",
+        "beforehand": "beforehand",
+        "meanwhile": "meanwhile",
+        "afterwards": "afterwards",
+        "finally": "finally"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (earlier, finally); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-order-01-s27",
+       "answer": "afterwards",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "___, the hall grew quiet when the disco ended.",
+       "cue_phrase": "when the disco ended",
+       "surface": {
+        "earlier": "earlier",
+        "beforehand": "beforehand",
+        "meanwhile": "meanwhile",
+        "afterwards": "afterwards",
+        "finally": "finally"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (earlier, finally); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-order-01-s28",
+       "answer": "afterwards",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "___, we collected paper hats once the birthday party was over.",
+       "cue_phrase": "party was over",
+       "surface": {
+        "earlier": "earlier",
+        "beforehand": "beforehand",
+        "meanwhile": "meanwhile",
+        "afterwards": "afterwards",
+        "finally": "finally"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (earlier, finally); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-order-01-s29",
+       "answer": "afterwards",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "___, muddy boots lined the porch once the hike ended.",
+       "cue_phrase": "once the hike ended",
+       "surface": {
+        "earlier": "earlier",
+        "beforehand": "beforehand",
+        "meanwhile": "meanwhile",
+        "afterwards": "afterwards",
+        "finally": "finally"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (earlier, finally); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-order-01-s30",
+       "answer": "afterwards",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "___, the classroom smelt of glue when the craft fair closed.",
+       "cue_phrase": "craft fair closed",
+       "surface": {
+        "earlier": "earlier",
+        "beforehand": "beforehand",
+        "meanwhile": "meanwhile",
+        "afterwards": "afterwards",
+        "finally": "finally"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (earlier, finally); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-order-01-s31",
+       "answer": "afterwards",
+       "cue": "explicit",
+       "reserve": true,
+       "text": "___, we waved goodbye once the puppet show finished.",
+       "cue_phrase": "puppet show finished",
+       "surface": {
+        "earlier": "earlier",
+        "beforehand": "beforehand",
+        "meanwhile": "meanwhile",
+        "afterwards": "afterwards",
+        "finally": "finally"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (finally); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-order-01-s32",
+       "answer": "afterwards",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "___, the team cheered when the football match was over.",
+       "cue_phrase": "match was over",
+       "surface": {
+        "earlier": "earlier",
+        "beforehand": "beforehand",
+        "meanwhile": "meanwhile",
+        "afterwards": "afterwards",
+        "finally": "finally"
+       },
+       "waivers": [
+        {
+         "check": "UNIQUENESS-REVIEW",
+         "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (finally); single-judge charity lane per triage policy",
+         "by": "claude",
+         "at": "2026-07-10"
+        }
+       ]
+      },
+      {
+       "id": "B-time-order-01-s33",
+       "answer": "finally",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "After ten clues in the treasure hunt, ___, we found the key.",
+       "cue_phrase": "After ten clues",
+       "surface": {
+        "earlier": "earlier",
+        "beforehand": "beforehand",
+        "meanwhile": "meanwhile",
+        "afterwards": "afterwards",
+        "finally": "finally"
+       }
+      },
+      {
+       "id": "B-time-order-01-s34",
+       "answer": "finally",
+       "cue": "explicit",
+       "reserve": false,
+       "text": "After eight laps in the big race, ___, Nia crossed the line.",
+       "cue_phrase": "After eight laps",
+       "surface": {
+        "earlier": "earlier",
+        "beforehand": "beforehand",
+        "meanwhile": "meanwhile",
+        "afterwards": "afterwards",
+        "finally": "finally"
+       }
+      },
+      {
+       "id": "B-time-order-01-s35",
+       "answer": "finally",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "___, after all morning at the bake sale, the last cake sold.",
+       "cue_phrase": "after all morning",
+       "surface": {
+        "earlier": "earlier",
+        "beforehand": "beforehand",
+        "meanwhile": "meanwhile",
+        "afterwards": "afterwards",
+        "finally": "finally"
+       }
+      },
+      {
+       "id": "B-time-order-01-s36",
+       "answer": "finally",
+       "cue": "contextual",
+       "reserve": false,
+       "text": "After seven riddles in the door quest, ___, the gate swung open.",
+       "cue_phrase": "After seven riddles",
+       "surface": {
+        "earlier": "earlier",
+        "beforehand": "beforehand",
+        "meanwhile": "meanwhile",
+        "afterwards": "afterwards",
+        "finally": "finally"
+       }
+      },
+      {
+       "id": "B-time-order-01-s37",
+       "answer": "finally",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "___, after three wobbly tries at the school play, the curtain rose.",
+       "cue_phrase": "after three wobbly tries",
+       "surface": {
+        "earlier": "earlier",
+        "beforehand": "beforehand",
+        "meanwhile": "meanwhile",
+        "afterwards": "afterwards",
+        "finally": "finally"
+       }
+      },
+      {
+       "id": "B-time-order-01-s38",
+       "answer": "finally",
+       "cue": "inferential",
+       "reserve": false,
+       "text": "After queuing since breakfast for the fair ride, ___, Omar climbed aboard.",
+       "cue_phrase": "queuing since breakfast",
+       "surface": {
+        "earlier": "earlier",
+        "beforehand": "beforehand",
+        "meanwhile": "meanwhile",
+        "afterwards": "afterwards",
+        "finally": "finally"
+       }
+      },
+      {
+       "id": "B-time-order-01-s39",
+       "answer": "finally",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "___, after nine practice shots in the archery contest, Jo hit gold.",
+       "cue_phrase": "after nine practice shots",
+       "surface": {
+        "earlier": "earlier",
+        "beforehand": "beforehand",
+        "meanwhile": "meanwhile",
+        "afterwards": "afterwards",
+        "finally": "finally"
+       }
+      },
+      {
+       "id": "B-time-order-01-s40",
+       "answer": "finally",
+       "cue": "contextual",
+       "reserve": true,
+       "text": "After a whole week of the model castle build, ___, the flag flew.",
+       "cue_phrase": "whole week of",
+       "surface": {
+        "earlier": "earlier",
+        "beforehand": "beforehand",
+        "meanwhile": "meanwhile",
+        "afterwards": "afterwards",
+        "finally": "finally"
+       }
+      }
+     ],
+     "contrasts": [
+      {
+       "answer": "earlier",
+       "picked": "beforehand",
+       "line": "Earlier is just before the event; beforehand is before it on purpose to be ready."
+      },
+      {
+       "answer": "earlier",
+       "picked": "meanwhile",
+       "line": "Earlier is before the event; meanwhile is while it is going on."
+      },
+      {
+       "answer": "earlier",
+       "picked": "afterwards",
+       "line": "Earlier is before the event; afterwards is when the event is over."
+      },
+      {
+       "answer": "earlier",
+       "picked": "finally",
+       "line": "Earlier is before the event; finally is the last step after a big wait."
+      },
+      {
+       "answer": "beforehand",
+       "picked": "earlier",
+       "line": "Beforehand is before on purpose to get ready; earlier is just before."
+      },
+      {
+       "answer": "beforehand",
+       "picked": "meanwhile",
+       "line": "Beforehand is done to get ready; meanwhile is while the event goes on."
+      },
+      {
+       "answer": "beforehand",
+       "picked": "afterwards",
+       "line": "Beforehand gets ready before the event; afterwards comes when it is over."
+      },
+      {
+       "answer": "beforehand",
+       "picked": "finally",
+       "line": "Beforehand prepares for the event; finally is the last step after a big wait."
+      },
+      {
+       "answer": "meanwhile",
+       "picked": "earlier",
+       "line": "Meanwhile is while the event goes on; earlier is before it."
+      },
+      {
+       "answer": "meanwhile",
+       "picked": "beforehand",
+       "line": "Meanwhile is while the event goes on; beforehand is preparation before it."
+      },
+      {
+       "answer": "meanwhile",
+       "picked": "afterwards",
+       "line": "Meanwhile is while the event goes on; afterwards is when it is over."
+      },
+      {
+       "answer": "meanwhile",
+       "picked": "finally",
+       "line": "Meanwhile is at the same moment; finally is the last step after much waiting."
+      },
+      {
+       "answer": "afterwards",
+       "picked": "earlier",
+       "line": "Afterwards is when the event is over; earlier is before it."
+      },
+      {
+       "answer": "afterwards",
+       "picked": "beforehand",
+       "line": "Afterwards comes when the event is over; beforehand gets ready before it."
+      },
+      {
+       "answer": "afterwards",
+       "picked": "meanwhile",
+       "line": "Afterwards comes when the event is over; meanwhile is while it goes on."
+      },
+      {
+       "answer": "afterwards",
+       "picked": "finally",
+       "line": "Afterwards is simply after the event; finally needs a big wait or many steps."
+      },
+      {
+       "answer": "finally",
+       "picked": "earlier",
+       "line": "Finally is the last step after a big wait; earlier is before the event."
+      },
+      {
+       "answer": "finally",
+       "picked": "beforehand",
+       "line": "Finally ends a big wait; beforehand prepares before the event."
+      },
+      {
+       "answer": "finally",
+       "picked": "meanwhile",
+       "line": "Finally ends a big wait; meanwhile is while the event goes on."
+      },
+      {
+       "answer": "finally",
+       "picked": "afterwards",
+       "line": "Finally needs a big wait or many steps; afterwards is simply after the event."
+      }
+     ],
+     "meta": {
+      "generated_at": "2026-07-10T04:44:44+00:00",
+      "model": "gpt-5.5",
+      "scrubbed_at": "2026-07-10",
+      "scrub_note": "Scrubbed by claude 2026-07-10: all 40 read. Fixed broken mid-sentence appositions (s03/s05/s06/s07), dropped a doubled 'before' (s09), moved trailing meanwhile/afterwards to sentence-initial position, meanwhile trailing frames recast in present tense so earlier dies on tense, not luck (s18-s24 even ids, s26-s32 even ids)."
+     },
+     "scale": {
+      "left": "long before",
+      "right": "the very end"
+     },
+     "computed": {
+      "zipf_min": 3.62,
+      "zipf_mean": 4.53,
+      "tightness": null,
+      "band_suggested": 2,
+      "scored_at": "2026-07-10T04:55:33+00:00"
      }
     },
     {

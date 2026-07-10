@@ -15,7 +15,7 @@ word), draft sentences with `tools/consult-sentences.py`, then run the gates:
 |---|---|
 | `id` | `^[ABC]-[a-z0-9-]+$`, bank prefix must match the directory |
 | `bank` | `A` gradient near-synonyms · `B` same-category, one clean feature each · `C` school-usage confusions (authored glosses, band ≥ 3) |
-| `pos` | `verb` / `adjective` / `noun` / `usage` (bank C) |
+| `pos` | `verb` / `adjective` / `noun` / `adverb` / `usage` (bank C) |
 | `theme` | Short child-facing label, shown on the Get Ready screen |
 | `band` | 1-5; must equal `band_override ?? computed.band_suggested` (gate M15) |
 | `band_override` | The human banding word; corpus frequency undercounts children's-book words, so overrides are normal |
@@ -24,6 +24,8 @@ word), draft sentences with `tools/consult-sentences.py`, then run the gates:
 | `sentences` | 8 per word: 2 explicit + 2 contextual + 2 inferential active, 2 reserve (the review-lockbox pool) |
 | `contrasts` | All 20 directed pairs `{answer, picked, line}`, ≤140 chars, mention only the pair |
 | `meta` | `generated_at`/`model` (drafting provenance) + `scrubbed_at`/`scrub_note` — unscrubbed machine output never bakes (gate M12) |
+| `drafting_notes` | Optional. Set-specific authoring rules appended verbatim to the consult prompt (e.g. the time sets' tense-prunes-never-picks law and anchor menus). Stripped at bake |
+| `scale` | Optional `{left, right}` end labels, 1-24 chars each (gate M1). Marks the set as a ladder: miss/timeout cards draw a when-line with the five words in gradient order, so `words` order must BE the ladder |
 
 ## A word
 
@@ -52,9 +54,11 @@ word), draft sentences with `tools/consult-sentences.py`, then run the gates:
   sense**. Assigned by `tools/grade-words.py` (gpt-5.5 + claude-opus-4-8
   consensus; splits of 2+ years are adjudicated by hand in
   `reference/grade-overrides.json`). Gate M18 refuses ungraded words.
-- Bank A words MAY pin a synset and still carry `gloss_source: "authored"`.
+- Bank A and B words MAY pin a synset and still carry `gloss_source: "authored"`.
   This is the sanctioned escape for scale families WordNet defines circularly
-  (dim = "not bright") or with words below the opacity floor: the synset stays
+  (dim = "not bright"), for closed relational systems whose members define each
+  other (deictic time words: yesterday's WordNet gloss contains "today", gate
+  G4), or for words below the opacity floor: the synset stays
   pinned (it anchors the sense for G3/G7/G8 and the judge's sense check), only
   the card text is authored. Authored glosses are dictionary-register, never
   kiddified, and every gloss gate except G2 verbatim (G4 siblings, G5 opacity,

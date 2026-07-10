@@ -1,0 +1,867 @@
+{
+  "id": "A-time-frequency-01",
+  "bank": "A",
+  "pos": "adverb",
+  "theme": "how often it happens",
+  "band": 1,
+  "band_override": 1,
+  "drafting_notes": "AUDIENCE: Year 1-2 (ages 6-8). Short everyday frames, home and school. Australian register: school terms, summer in January.\nEVERY frame must carry an explicit rate the child can count: 'every single time', 'most mornings', 'once or twice all year', 'not even once', 'some days yes and some days no'. A habit with no stated rate fits several of these words and will be rejected by the judges.\nTHE LADDER runs 0% to 100%: never < rarely < sometimes < usually < always. The stated rate must land clearly on ONE rung: 'not even once' = never; 'only once or twice a year' = rarely; 'some days yes, some days no' = sometimes; 'most days, but not all' = usually; 'every single time, without fail' = always.\nSLOTS: place the blank where all five adverbs scan: before the main verb ('She ___ walks to school') or after is/are ('He is ___ first to finish').\nSURFACES: adverbs; the surface form of every candidate is the word itself, unchanged, in every frame.",
+  "words": [
+    {
+      "w": "never",
+      "synset": "never.r.01",
+      "gloss_source": "wordnet",
+      "gloss": "not ever; at no time in the past or future",
+      "zipf": 5.91,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "never"
+      },
+      "discriminator": "not once, at no time at all",
+      "grade": 1
+    },
+    {
+      "w": "rarely",
+      "synset": "rarely.r.01",
+      "gloss_source": "wordnet",
+      "gloss": "not often",
+      "zipf": 4.42,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "rarely"
+      },
+      "discriminator": "only once in a long while",
+      "grade": 3
+    },
+    {
+      "w": "sometimes",
+      "synset": "sometimes.r.01",
+      "gloss_source": "authored",
+      "gloss": "on certain occasions but not on every occasion",
+      "zipf": 5.28,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "sometimes"
+      },
+      "discriminator": "on some occasions, neither most nor none",
+      "grade": 1
+    },
+    {
+      "w": "usually",
+      "synset": "normally.r.01",
+      "gloss_source": "wordnet",
+      "gloss": "under normal conditions",
+      "zipf": 5.15,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "usually"
+      },
+      "discriminator": "on most occasions, though not all",
+      "grade": 2
+    },
+    {
+      "w": "always",
+      "synset": "always.r.01",
+      "gloss_source": "wordnet",
+      "gloss": "at all times; all the time and on every occasion",
+      "zipf": 5.76,
+      "register": "neutral",
+      "senses_at_pos": 5,
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-10",
+        "note": "pinned r.01 at-all-times frequency sense; the forever and in-every-case senses (constantly.r.01/02, r.04, r.05) are adjacent but the frames stage countable frequency - vet 2026-07-10"
+      },
+      "forms": {
+        "base": "always"
+      },
+      "discriminator": "every time without exception",
+      "grade": 1
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-time-frequency-01-s01",
+      "answer": "never",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Ari ___ left his reader at home, not even once this term.",
+      "cue_phrase": "not even once",
+      "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+      }
+    },
+    {
+      "id": "A-time-frequency-01-s02",
+      "answer": "never",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The class ___ skipped tidy-up, zero days in all of January.",
+      "cue_phrase": "zero days",
+      "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+      }
+    },
+    {
+      "id": "A-time-frequency-01-s03",
+      "answer": "never",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Lila ___ spilt paint on her desk; the chart shows no marks.",
+      "cue_phrase": "shows no marks",
+      "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+      }
+    },
+    {
+      "id": "A-time-frequency-01-s04",
+      "answer": "never",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Ben ___ rode the bus, with no bus ticks beside his name.",
+      "cue_phrase": "no bus ticks",
+      "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+      }
+    },
+    {
+      "id": "A-time-frequency-01-s05",
+      "answer": "never",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Our fish ___ missed breakfast; its bowl was empty after each feed.",
+      "cue_phrase": "after each feed",
+      "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+      }
+    },
+    {
+      "id": "A-time-frequency-01-s06",
+      "answer": "never",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Mum ___ found socks under Jo's bed; all seven checks were clear.",
+      "cue_phrase": "all seven checks were clear",
+      "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+      }
+    },
+    {
+      "id": "A-time-frequency-01-s07",
+      "answer": "never",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The dog ___ barked during reading, not once this week.",
+      "cue_phrase": "not once this week",
+      "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+      }
+    },
+    {
+      "id": "A-time-frequency-01-s08",
+      "answer": "never",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Nina ___ opened her lunch early; the list has zero warnings.",
+      "cue_phrase": "zero warnings",
+      "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+      }
+    },
+    {
+      "id": "A-time-frequency-01-s09",
+      "answer": "rarely",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Hugo ___ forgets his hat, only once or twice all year.",
+      "cue_phrase": "only once or twice",
+      "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (sometimes); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "A-time-frequency-01-s10",
+      "answer": "rarely",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Our class ___ gets icy poles, just two Fridays this term.",
+      "cue_phrase": "just two Fridays",
+      "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (sometimes); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "A-time-frequency-01-s11",
+      "answer": "rarely",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Maya ___ visits the library at lunch; her card shows three dates this term.",
+      "cue_phrase": "three dates this term",
+      "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (sometimes); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "A-time-frequency-01-s12",
+      "answer": "rarely",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The canteen ___ serves soup, only one day in January.",
+      "cue_phrase": "only one day",
+      "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+      }
+    },
+    {
+      "id": "A-time-frequency-01-s13",
+      "answer": "rarely",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Dad ___ lets us camp outside; the tent came out twice last year.",
+      "cue_phrase": "twice last year",
+      "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (sometimes); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "A-time-frequency-01-s14",
+      "answer": "rarely",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Sofia ___ wins class bingo; her name appeared once this term.",
+      "cue_phrase": "once this term",
+      "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (sometimes); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "A-time-frequency-01-s15",
+      "answer": "rarely",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The bus ___ arrives late, only two mornings since school began.",
+      "cue_phrase": "only two mornings",
+      "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (sometimes); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "A-time-frequency-01-s16",
+      "answer": "rarely",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "My brother ___ tries peas, one dinner in a month.",
+      "cue_phrase": "one dinner in a month",
+      "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (sometimes); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "A-time-frequency-01-s17",
+      "answer": "sometimes",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Tess ___ wears sandals; some days yes and some days no.",
+      "cue_phrase": "some days yes",
+      "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+      }
+    },
+    {
+      "id": "A-time-frequency-01-s18",
+      "answer": "sometimes",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Our class ___ draws outside, on three days out of ten.",
+      "cue_phrase": "three days out of ten",
+      "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+      }
+    },
+    {
+      "id": "A-time-frequency-01-s19",
+      "answer": "sometimes",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Milo ___ chooses yoghurt; this week has two ticks and three gaps.",
+      "cue_phrase": "two ticks and three gaps",
+      "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+      }
+    },
+    {
+      "id": "A-time-frequency-01-s20",
+      "answer": "sometimes",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Ruby ___ reads on the mat; two days she did, three she didn't.",
+      "cue_phrase": "two days she did",
+      "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+      }
+    },
+    {
+      "id": "A-time-frequency-01-s21",
+      "answer": "sometimes",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The chooks ___ lay eggs; three mornings had eggs, three had none.",
+      "cue_phrase": "three mornings had eggs",
+      "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+      }
+    },
+    {
+      "id": "A-time-frequency-01-s22",
+      "answer": "sometimes",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Liam ___ takes the front seat; he had it Monday, not Tuesday.",
+      "cue_phrase": "Monday, not Tuesday",
+      "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+      }
+    },
+    {
+      "id": "A-time-frequency-01-s23",
+      "answer": "sometimes",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Nana ___ bakes muffins; some weekends yes and some weekends no.",
+      "cue_phrase": "some weekends yes",
+      "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+      }
+    },
+    {
+      "id": "A-time-frequency-01-s24",
+      "answer": "sometimes",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The sprinkler ___ runs after school, on two afternoons out of five.",
+      "cue_phrase": "two afternoons out of five",
+      "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+      }
+    },
+    {
+      "id": "A-time-frequency-01-s25",
+      "answer": "usually",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Grace ___ packs fruit, most days but not all.",
+      "cue_phrase": "most days but not all",
+      "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+      }
+    },
+    {
+      "id": "A-time-frequency-01-s26",
+      "answer": "usually",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The bell ___ rings at nine, on four days out of five.",
+      "cue_phrase": "four days out of five",
+      "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+      }
+    },
+    {
+      "id": "A-time-frequency-01-s27",
+      "answer": "usually",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Ollie ___ sits near Max; his chart shows eight days out of ten.",
+      "cue_phrase": "eight days out of ten",
+      "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+      }
+    },
+    {
+      "id": "A-time-frequency-01-s28",
+      "answer": "usually",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Our teacher ___ reads after lunch, four days each week, not sport day.",
+      "cue_phrase": "four days each week",
+      "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+      }
+    },
+    {
+      "id": "A-time-frequency-01-s29",
+      "answer": "usually",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The puppy ___ naps after play; only Saturday was skipped this week.",
+      "cue_phrase": "only Saturday was skipped",
+      "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+      }
+    },
+    {
+      "id": "A-time-frequency-01-s30",
+      "answer": "usually",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Dad ___ makes pancakes in January; six breakfasts had them, one didn't.",
+      "cue_phrase": "six breakfasts had them",
+      "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+      }
+    },
+    {
+      "id": "A-time-frequency-01-s31",
+      "answer": "usually",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The class ___ lines up quietly, most mornings, but not all.",
+      "cue_phrase": "most mornings, but not all",
+      "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+      }
+    },
+    {
+      "id": "A-time-frequency-01-s32",
+      "answer": "usually",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Ella ___ finishes her reading sheet, nine tries out of ten.",
+      "cue_phrase": "nine tries out of ten",
+      "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+      }
+    },
+    {
+      "id": "A-time-frequency-01-s33",
+      "answer": "always",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Kai ___ says please, without fail, on all ten turns.",
+      "cue_phrase": "without fail",
+      "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+      }
+    },
+    {
+      "id": "A-time-frequency-01-s34",
+      "answer": "always",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The taps ___ drip after lunch, on all five school days.",
+      "cue_phrase": "all five school days",
+      "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+      }
+    },
+    {
+      "id": "A-time-frequency-01-s35",
+      "answer": "always",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Zoe ___ hangs her bag up; all five peg checks had it there.",
+      "cue_phrase": "all five peg checks",
+      "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+      }
+    },
+    {
+      "id": "A-time-frequency-01-s36",
+      "answer": "always",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Our rabbit ___ hops to carrot bits; all seven bits vanished.",
+      "cue_phrase": "all seven bits",
+      "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+      }
+    },
+    {
+      "id": "A-time-frequency-01-s37",
+      "answer": "always",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The twins ___ share crayons; all six turns ended with no one left out.",
+      "cue_phrase": "all six turns",
+      "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+      }
+    },
+    {
+      "id": "A-time-frequency-01-s38",
+      "answer": "always",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Sam ___ washes hands before lunch; all five stamps rubbed off.",
+      "cue_phrase": "all five stamps",
+      "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+      }
+    },
+    {
+      "id": "A-time-frequency-01-s39",
+      "answer": "always",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The class ___ sings the anthem, without fail on all assemblies.",
+      "cue_phrase": "all assemblies",
+      "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+      }
+    },
+    {
+      "id": "A-time-frequency-01-s40",
+      "answer": "always",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Mia ___ checks the gate; all six latches were safe.",
+      "cue_phrase": "all six latches",
+      "surface": {
+        "never": "never",
+        "rarely": "rarely",
+        "sometimes": "sometimes",
+        "usually": "usually",
+        "always": "always"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "never",
+      "picked": "rarely",
+      "line": "never is zero. rarely is a tiny number, like one or two in a long stretch."
+    },
+    {
+      "answer": "never",
+      "picked": "sometimes",
+      "line": "never is zero. sometimes has some yes days and some no days."
+    },
+    {
+      "answer": "never",
+      "picked": "usually",
+      "line": "never is zero. usually happens on most days, but not all."
+    },
+    {
+      "answer": "never",
+      "picked": "always",
+      "line": "never is zero. always happens on all tries, with no misses."
+    },
+    {
+      "answer": "rarely",
+      "picked": "never",
+      "line": "rarely means a tiny number, like once or twice. never means zero."
+    },
+    {
+      "answer": "rarely",
+      "picked": "sometimes",
+      "line": "rarely is only a tiny number. sometimes has a fair mix of yes and no."
+    },
+    {
+      "answer": "rarely",
+      "picked": "usually",
+      "line": "rarely is only a tiny number. usually means most days."
+    },
+    {
+      "answer": "rarely",
+      "picked": "always",
+      "line": "rarely is only a tiny number. always means all tries."
+    },
+    {
+      "answer": "sometimes",
+      "picked": "never",
+      "line": "sometimes has yes and no days. never has zero yes days."
+    },
+    {
+      "answer": "sometimes",
+      "picked": "rarely",
+      "line": "sometimes has a fair mix of yes and no. rarely is only one or two."
+    },
+    {
+      "answer": "sometimes",
+      "picked": "usually",
+      "line": "sometimes is not most days. usually is most days, but not all."
+    },
+    {
+      "answer": "sometimes",
+      "picked": "always",
+      "line": "sometimes has yes days and no days. always is yes every single time."
+    },
+    {
+      "answer": "usually",
+      "picked": "never",
+      "line": "usually means most days, but not all. never means zero."
+    },
+    {
+      "answer": "usually",
+      "picked": "rarely",
+      "line": "usually means most days. rarely means only one or two."
+    },
+    {
+      "answer": "usually",
+      "picked": "sometimes",
+      "line": "usually means most days. sometimes is a fair mix of yes and no."
+    },
+    {
+      "answer": "usually",
+      "picked": "always",
+      "line": "usually has a miss now and then. always has no misses."
+    },
+    {
+      "answer": "always",
+      "picked": "never",
+      "line": "always means all tries, with no misses. never means zero."
+    },
+    {
+      "answer": "always",
+      "picked": "rarely",
+      "line": "always means all tries. rarely means only one or two."
+    },
+    {
+      "answer": "always",
+      "picked": "sometimes",
+      "line": "always means all tries. sometimes has both yes days and no days."
+    },
+    {
+      "answer": "always",
+      "picked": "usually",
+      "line": "always means all tries. usually means most days, with a miss now and then."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-10T04:36:31+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": "2026-07-10",
+    "scrub_note": "Scrubbed by claude 2026-07-10: all 40 sentences and 20 contrasts read; every frame carries an explicit countable rate; no edits needed."
+  },
+  "scale": {
+    "left": "not at all",
+    "right": "every time"
+  },
+  "computed": {
+    "zipf_min": 4.42,
+    "zipf_mean": 5.3,
+    "tightness": null,
+    "band_suggested": 1,
+    "scored_at": "2026-07-10T04:55:33+00:00"
+  }
+}

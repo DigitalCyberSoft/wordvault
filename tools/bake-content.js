@@ -39,6 +39,8 @@ var sets = files.map(function (f) {
   manifest.update(crypto.createHash('sha256').update(raw).digest('hex'));
   return JSON.parse(raw);
 });
+// authoring-only fields never ship to the runtime
+sets.forEach(function (s) { delete s.drafting_notes; });
 sets.sort(function (a, b) { return (a.band - b.band) || (a.id < b.id ? -1 : 1); });
 
 var bands = {};

@@ -1,0 +1,1055 @@
+{
+  "id": "A-time-nearness-01",
+  "bank": "A",
+  "pos": "adverb",
+  "theme": "how soon it will happen",
+  "band": 2,
+  "band_override": 2,
+  "drafting_notes": "AUDIENCE: Year 2-3 (ages 7-9).\nTHE LADDER measures how long the wait is: immediately (no wait at all) < soon (short wait) < later (a real wait) < eventually (long slow process) < someday (unknown far future). Every frame must stage HOW LONG the wait is with a physical or calendar fact: 'the kettle is already whistling' (no wait), 'before the ice cream melts' (short), 'once the shopping is done' (a real wait), 'brick by brick over many months' (long process), 'when I am grown up' (far future dream).\nSECOND-FIT TRAPS: soon vs later (give soon a visible countdown already running; give later an unhurried same-day wait); eventually vs someday (eventually ends an ONGOING process already in motion; someday is a wish with no process started); immediately vs soon (immediately is a zero-gap response, mid-emergency or mid-command).\nTENSE LAW: at least two candidates must survive grammar in every frame; the wait-length fact picks the answer.\nSLOTS: clause-final ('We can leave ___') or sentence-initial with a comma work for all five.\nSURFACES: adverbs; the surface form of every candidate is the word itself, unchanged, in every frame.",
+  "words": [
+    {
+      "w": "immediately",
+      "synset": "immediately.r.01",
+      "gloss_source": "wordnet",
+      "gloss": "without delay or hesitation; with no time intervening",
+      "zipf": 4.98,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "immediately"
+      },
+      "discriminator": "with no wait at all, this instant",
+      "grade": 3
+    },
+    {
+      "w": "soon",
+      "synset": "soon.r.01",
+      "gloss_source": "wordnet",
+      "gloss": "in the near future",
+      "zipf": 5.32,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "soon"
+      },
+      "discriminator": "after only a short wait",
+      "grade": 1
+    },
+    {
+      "w": "later",
+      "synset": "by_and_by.r.01",
+      "gloss_source": "authored",
+      "gloss": "at a time after this one",
+      "zipf": 5.49,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "later"
+      },
+      "discriminator": "after a while, not straight away",
+      "grade": 1
+    },
+    {
+      "w": "eventually",
+      "synset": "finally.r.01",
+      "gloss_source": "wordnet",
+      "gloss": "after an unspecified period of time or an especially long delay",
+      "zipf": 4.88,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "eventually"
+      },
+      "discriminator": "in the end, after a long slow process",
+      "grade": 4
+    },
+    {
+      "w": "someday",
+      "synset": "someday.r.01",
+      "gloss_source": "wordnet",
+      "gloss": "some unspecified time in the future",
+      "zipf": 4.05,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "someday"
+      },
+      "discriminator": "on some unknown day far ahead",
+      "grade": 2
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-time-nearness-01-s01",
+      "answer": "immediately",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Catch the tipping glass ___, not a second to spare!",
+      "cue_phrase": "not a second to spare",
+      "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+      }
+    },
+    {
+      "id": "A-time-nearness-01-s02",
+      "answer": "immediately",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Drop the spluttering sparkler into the bucket ___, this very second!",
+      "cue_phrase": "this very second",
+      "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+      }
+    },
+    {
+      "id": "A-time-nearness-01-s03",
+      "answer": "immediately",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The soup boiled over, so Lin switched off the hob ___.",
+      "cue_phrase": "soup boiled over",
+      "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (soon); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "A-time-nearness-01-s04",
+      "answer": "immediately",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The dog ran toward the road, and Sam called it back ___.",
+      "cue_phrase": "toward the road",
+      "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+      }
+    },
+    {
+      "id": "A-time-nearness-01-s05",
+      "answer": "immediately",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "When the alarm bell rang, the class left the building ___.",
+      "cue_phrase": "alarm bell rang",
+      "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (soon); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "A-time-nearness-01-s06",
+      "answer": "immediately",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The goalkeeper saw the ball by the line and dived ___.",
+      "cue_phrase": "by the line",
+      "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+      }
+    },
+    {
+      "id": "A-time-nearness-01-s07",
+      "answer": "immediately",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "___, Nina pulled her hand away from the sizzling tray.",
+      "cue_phrase": "sizzling tray",
+      "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (soon); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "A-time-nearness-01-s08",
+      "answer": "immediately",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The tap was flooding the sink, so I turned it off ___.",
+      "cue_phrase": "flooding the sink",
+      "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (soon); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "A-time-nearness-01-s09",
+      "answer": "soon",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The egg timer has one minute left; we will eat ___.",
+      "cue_phrase": "one minute left",
+      "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+      }
+    },
+    {
+      "id": "A-time-nearness-01-s10",
+      "answer": "soon",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The board shows two minutes; the bus will arrive ___.",
+      "cue_phrase": "shows two minutes",
+      "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+      }
+    },
+    {
+      "id": "A-time-nearness-01-s11",
+      "answer": "soon",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The toast is browning; breakfast will be ready ___.",
+      "cue_phrase": "toast is browning",
+      "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: gpt-5.5 and gpt-4.1 cross to eventually, immediately, later; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "A-time-nearness-01-s12",
+      "answer": "soon",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The last song is playing, so the concert ends ___.",
+      "cue_phrase": "last song is playing",
+      "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: gpt-5.5 and gpt-4.1 cross to eventually, immediately, later; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "A-time-nearness-01-s13",
+      "answer": "soon",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The first raindrops hit the path; heavier rain would start ___.",
+      "cue_phrase": "first raindrops hit",
+      "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: gpt-5.5 and gpt-4.1 cross to eventually, immediately, later; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "A-time-nearness-01-s14",
+      "answer": "soon",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Only three puzzle pieces remained, so we would finish ___.",
+      "cue_phrase": "three puzzle pieces remained",
+      "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: gpt-5.5 and gpt-4.1 cross to eventually, immediately, later; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "A-time-nearness-01-s15",
+      "answer": "soon",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The kettle is humming louder; the water will boil ___.",
+      "cue_phrase": "humming louder",
+      "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-4.1 lists a second fit (eventually, immediately, later); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "A-time-nearness-01-s16",
+      "answer": "soon",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The cinema lights dimmed, and the cartoon would begin ___.",
+      "cue_phrase": "lights dimmed",
+      "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: gpt-5.5 and gpt-4.1 and claude-opus-4-8 cross to eventually, immediately, later; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "A-time-nearness-01-s17",
+      "answer": "later",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "We can paint the cardboard castle ___, after lunch.",
+      "cue_phrase": "after lunch",
+      "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: gpt-5.5 and gpt-4.1 cross to eventually, soon; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "A-time-nearness-01-s18",
+      "answer": "later",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "___, after the shopping, Dad will mend the kite.",
+      "cue_phrase": "after the shopping",
+      "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (eventually, soon); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "A-time-nearness-01-s19",
+      "answer": "later",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The cake is still oven-hot; we can ice it ___, after our bike ride.",
+      "cue_phrase": "after our bike ride",
+      "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: gpt-5.5 and claude-opus-4-8 cross to soon; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "A-time-nearness-01-s20",
+      "answer": "later",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Your boots are muddy; you can clean them ___, after supper.",
+      "cue_phrase": "after supper",
+      "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (soon); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "A-time-nearness-01-s21",
+      "answer": "later",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The library opens after assembly, so we will borrow books ___.",
+      "cue_phrase": "after assembly",
+      "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: gpt-5.5 and claude-opus-4-8 cross to immediately, soon; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "A-time-nearness-01-s22",
+      "answer": "later",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The paint is still wet; add the toy wheels ___, after dinner.",
+      "cue_phrase": "after dinner",
+      "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (soon); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "A-time-nearness-01-s23",
+      "answer": "later",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The moon comes out tonight, so we can test the telescope ___.",
+      "cue_phrase": "comes out tonight",
+      "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: gpt-5.5 and claude-opus-4-8 cross to soon; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "A-time-nearness-01-s24",
+      "answer": "later",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Finish homework and your bath; you may feed the hens ___.",
+      "cue_phrase": "homework and your bath",
+      "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (immediately, soon); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "A-time-nearness-01-s25",
+      "answer": "eventually",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "After many months, the tiny oak ___ filled the pot.",
+      "cue_phrase": "After many months",
+      "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+      }
+    },
+    {
+      "id": "A-time-nearness-01-s26",
+      "answer": "eventually",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "___, after weeks of practice, Jaya played the tune cleanly.",
+      "cue_phrase": "weeks of practice",
+      "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (later); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "A-time-nearness-01-s27",
+      "answer": "eventually",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Brick by brick, over the school year, the new library ___ opened.",
+      "cue_phrase": "over the school year",
+      "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (later); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "A-time-nearness-01-s28",
+      "answer": "eventually",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The caterpillars ate leaves for weeks and ___ became butterflies.",
+      "cue_phrase": "for weeks",
+      "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: gpt-5.5 and claude-opus-4-8 cross to later, soon; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "A-time-nearness-01-s29",
+      "answer": "eventually",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Each rainy week filled the pond a little, until the ducks ___ returned.",
+      "cue_phrase": "filled the pond a little",
+      "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (later); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "A-time-nearness-01-s30",
+      "answer": "eventually",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Page by page all month, Mara ___ finished the thick novel.",
+      "cue_phrase": "Page by page all month",
+      "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (later); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "A-time-nearness-01-s31",
+      "answer": "eventually",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Over many winter evenings, the castle puzzle ___ stood complete.",
+      "cue_phrase": "many winter evenings",
+      "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+      }
+    },
+    {
+      "id": "A-time-nearness-01-s32",
+      "answer": "eventually",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "After a season of careful polishing, the rusty bike ___ shone.",
+      "cue_phrase": "a season of careful polishing",
+      "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (later); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "A-time-nearness-01-s33",
+      "answer": "someday",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "When I am grown up, I might sail around the world ___.",
+      "cue_phrase": "When I am grown",
+      "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: gpt-5.5 and claude-opus-4-8 cross to eventually, later; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "A-time-nearness-01-s34",
+      "answer": "someday",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "___, if castles float, I will sleep in a tower cloud.",
+      "cue_phrase": "if castles float",
+      "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+      }
+    },
+    {
+      "id": "A-time-nearness-01-s35",
+      "answer": "someday",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Mia keeps a blank rocket ticket for a trip to Mars ___.",
+      "cue_phrase": "blank rocket ticket",
+      "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: gpt-5.5 and claude-opus-4-8 cross to eventually, later, soon; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "A-time-nearness-01-s36",
+      "answer": "someday",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "In my dream diary, I will own a library on the moon ___.",
+      "cue_phrase": "dream diary",
+      "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: gpt-5.5 and claude-opus-4-8 cross to eventually, soon; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "A-time-nearness-01-s37",
+      "answer": "someday",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "No one has built dragon saddles, but I hope to ride one ___.",
+      "cue_phrase": "No one has built",
+      "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: gpt-5.5 and claude-opus-4-8 cross to eventually, later, soon; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "A-time-nearness-01-s38",
+      "answer": "someday",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "If mermaids invite classes, our school could visit the reef ___.",
+      "cue_phrase": "If mermaids invite",
+      "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: gpt-5.5 and claude-opus-4-8 cross to eventually, immediately, later, soon; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "A-time-nearness-01-s39",
+      "answer": "someday",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "I might have a beach house ___, when I am as old as Nana.",
+      "cue_phrase": "as old as Nana",
+      "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: gpt-5.5 and claude-opus-4-8 cross to eventually, later; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "A-time-nearness-01-s40",
+      "answer": "someday",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Maybe dragons will join school trips, and we can fly ___.",
+      "cue_phrase": "Maybe dragons",
+      "surface": {
+        "immediately": "immediately",
+        "soon": "soon",
+        "later": "later",
+        "eventually": "eventually",
+        "someday": "someday"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: gpt-5.5 and claude-opus-4-8 cross to eventually, later, soon; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "immediately",
+      "picked": "soon",
+      "line": "immediately has no wait at all; soon has a short wait already starting."
+    },
+    {
+      "answer": "immediately",
+      "picked": "later",
+      "line": "immediately is this instant; later is after a real wait."
+    },
+    {
+      "answer": "immediately",
+      "picked": "eventually",
+      "line": "immediately happens at once; eventually comes after slow progress."
+    },
+    {
+      "answer": "immediately",
+      "picked": "someday",
+      "line": "immediately is for right now; someday is for a far-off wish."
+    },
+    {
+      "answer": "soon",
+      "picked": "immediately",
+      "line": "soon has a brief wait; immediately has none."
+    },
+    {
+      "answer": "soon",
+      "picked": "later",
+      "line": "soon is close, like a countdown; later is an unhurried wait."
+    },
+    {
+      "answer": "soon",
+      "picked": "eventually",
+      "line": "soon is a short wait; eventually follows a slow build-up."
+    },
+    {
+      "answer": "soon",
+      "picked": "someday",
+      "line": "soon is coming shortly; someday is an unknown far-off wish."
+    },
+    {
+      "answer": "later",
+      "picked": "immediately",
+      "line": "later waits a while; immediately happens at once."
+    },
+    {
+      "answer": "later",
+      "picked": "soon",
+      "line": "later is an unhurried wait; soon is just a brief wait."
+    },
+    {
+      "answer": "later",
+      "picked": "eventually",
+      "line": "later can be after chores today; eventually needs slow progress."
+    },
+    {
+      "answer": "later",
+      "picked": "someday",
+      "line": "later is a real wait you can plan; someday is far and uncertain."
+    },
+    {
+      "answer": "eventually",
+      "picked": "immediately",
+      "line": "eventually ends a slow process; immediately has no wait."
+    },
+    {
+      "answer": "eventually",
+      "picked": "soon",
+      "line": "eventually comes after steady progress; soon is only a short wait."
+    },
+    {
+      "answer": "eventually",
+      "picked": "later",
+      "line": "eventually follows a slow build-up; later is just after a while."
+    },
+    {
+      "answer": "eventually",
+      "picked": "someday",
+      "line": "eventually has progress already going; someday is only a far-off wish."
+    },
+    {
+      "answer": "someday",
+      "picked": "immediately",
+      "line": "someday is a far-off wish; immediately is right now."
+    },
+    {
+      "answer": "someday",
+      "picked": "soon",
+      "line": "someday is unknown and far away; soon is shortly."
+    },
+    {
+      "answer": "someday",
+      "picked": "later",
+      "line": "someday is a far-off dream; later is a wait you can plan."
+    },
+    {
+      "answer": "someday",
+      "picked": "eventually",
+      "line": "someday has no process started; eventually finishes one."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-10T04:38:47+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": "2026-07-10",
+    "scrub_note": "Scrubbed by claude 2026-07-10: all 40 read. Fixed dup 'right now'/'when I am grown' cues (s01/s02/s39); moved eventually block to pre-verb slots killing redundant double adverbials (s25-s32); later frames recast as natural appositions (s17/s20/s22). Post-judge fixes s19, s31, s36: trailing-adverb rejections, an evening/night co-fit (3-of-3), a now-crossing, and a warm-afternoon leak re-anchored (clock time, homework marker, will-future, span subject)."
+  },
+  "scale": {
+    "left": "no wait",
+    "right": "far away"
+  },
+  "computed": {
+    "zipf_min": 4.05,
+    "zipf_mean": 4.94,
+    "tightness": null,
+    "band_suggested": 2,
+    "scored_at": "2026-07-10T04:55:33+00:00"
+  }
+}

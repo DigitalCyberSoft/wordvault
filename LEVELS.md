@@ -47,6 +47,29 @@ widens one year at a time if a year is thin. Bank C never serves below year 3.
 | 5-6 | 17-24 | Tier-2 vocabulary, inferential cues carry more | A, B, C | climate, tricks, secrecy, skill |
 | 7 | 25-28 | Literary-register abstractions, cue buried or fully inferential | A, B, C | statements, tempo, desire |
 
+## The time ladders
+
+Five sets teach time vocabulary as ordered scales, threaded through the early
+years: **deixis** (yesterday · today · now · tonight · tomorrow, Y1),
+**times of day** (morning → night, Y2), **frequency** (never → always, Y3),
+**nearness** (immediately → someday, Y4) and **order** (earlier → finally, Y4).
+Their `words` array order IS the ladder, and a `scale` field labels its ends;
+miss and timeout cards draw a **when-line** from it (five ticks, fitting word
+lit, picked word crossed out) so the child learns the geometry of the scale,
+not just pairwise contrasts.
+
+Two authoring laws specific to these sets, learned at the gates:
+
+- **Tense prunes, never picks.** Deictic words interact with tense, but every
+  frame keeps at least two grammatically live candidates; a scene fact (still
+  wet paint, one more sleep, a whistling kettle) makes the final choice.
+  Grammar alone must never grade - that is the closed-set invariant.
+- **Closed relational systems need authored glosses.** WordNet defines time
+  words in terms of each other (yesterday's gloss contains "today"; sometimes'
+  contains "always") - gate G4 rightly rejects that on a tile card. Such words
+  pin their synset for sense anchoring and carry an authored dictionary-register
+  gloss instead (`gloss_source: "authored"`, sanctioned in FORMAT.md).
+
 ## The lock timer
 
 `LOCK_TIMER_MS` (15 s) per sentence, enforced by the UI, graded by

@@ -49,6 +49,20 @@ ok(indexed === data.sets.length, 'every set appears in the band index exactly on
 ok(Content.byId(data.sets[0].id) === data.sets[0], 'byId returns the set');
 ok(Content.byId('A-no-such-set') === null, 'byId returns null on a miss');
 
+// Ladder sets ship complete scales, and the five time ladders are aboard.
+var laddered = data.sets.filter(function (s) { return s.scale != null; });
+laddered.forEach(function (s) {
+  ok(typeof s.scale.left === 'string' && s.scale.left.length > 0 &&
+     typeof s.scale.right === 'string' && s.scale.right.length > 0,
+     s.id + ' scale labels complete');
+  ok(s.drafting_notes === undefined, s.id + ' authoring notes stripped at bake');
+});
+['B-time-deixis-01', 'B-time-day-01', 'B-time-order-01',
+ 'A-time-frequency-01', 'A-time-nearness-01'].forEach(function (id) {
+  var s = Content.byId(id);
+  ok(!!s && !!s.scale, id + ' shipped with its scale');
+});
+
 // The engine can actually run a full encounter on every shipped set.
 data.sets.forEach(function (set) {
   var rng = Core.makeRng(42);

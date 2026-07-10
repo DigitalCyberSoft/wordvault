@@ -1,0 +1,955 @@
+{
+  "id": "B-time-deixis-01",
+  "bank": "B",
+  "pos": "adverb",
+  "theme": "when it happened",
+  "band": 1,
+  "band_override": 1,
+  "drafting_notes": "AUDIENCE: Year 1 (ages 6-7). Frames 6-12 words, everyday home and school scenes, simple vocabulary, spoken in the present: first person and present-anchored main clauses work best, because these words all point from TODAY.\nTENSE LAW: tense may PRUNE candidates but never PICK the answer. In every frame at least TWO of the five must stay grammatically possible, and a scene fact must make the final choice. A frame where four words die on tense alone is broken.\nANCHORS come from outside the set: 'this morning', 'before bed', 'after one more sleep', 'at breakfast', 'still' plus visible evidence. Per word: yesterday = aftermath still visible from the finished day ('legs still sore from the race'); today = evidence spanning this same day ('the painting from art class is still wet'); now = this-second urgency mid-action ('the bus doors are closing'); tonight = the dark end of this same day, still ahead ('once it gets dark', after-dinner plans); tomorrow = after a sleep, packing and preparing.\nSECOND-FIT TRAPS: now vs today (day-scale evidence for today, second-scale for now); tonight vs tomorrow (tonight belongs to THIS day's darkness); yesterday vs today (yesterday needs finished-before-this-day-began evidence).\nSLOTS: place the blank at the start or end of the sentence, where all five deictic adverbs scan naturally.\nSURFACES: these are adverbs; the surface form of every candidate is the word itself, unchanged, in every frame.",
+  "words": [
+    {
+      "w": "yesterday",
+      "synset": "yesterday.r.01",
+      "gloss_source": "authored",
+      "gloss": "on the day before this one",
+      "zipf": 4.91,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "yesterday"
+      },
+      "discriminator": "the day before this one, already over",
+      "grade": 1
+    },
+    {
+      "w": "today",
+      "synset": "today.r.02",
+      "gloss_source": "authored",
+      "gloss": "on this very day",
+      "zipf": 5.55,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "today"
+      },
+      "discriminator": "this whole day we are in",
+      "grade": 1
+    },
+    {
+      "w": "now",
+      "synset": "now.r.04",
+      "gloss_source": "wordnet",
+      "gloss": "at the present moment",
+      "zipf": 6.18,
+      "register": "neutral",
+      "senses_at_pos": 7,
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-07-10",
+        "note": "pinned r.04 at-the-present-moment; r.01 is the narrative-historical sense and r.03/r.06 are discourse prefaces - vet 2026-07-10"
+      },
+      "forms": {
+        "base": "now"
+      },
+      "discriminator": "this exact moment, not the whole day",
+      "grade": 1
+    },
+    {
+      "w": "tonight",
+      "synset": "tonight.r.01",
+      "gloss_source": "wordnet",
+      "gloss": "during the night of the present day",
+      "zipf": 5.03,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "tonight"
+      },
+      "discriminator": "the night of this same day, still ahead",
+      "grade": 1
+    },
+    {
+      "w": "tomorrow",
+      "synset": "tomorrow.r.01",
+      "gloss_source": "wordnet",
+      "gloss": "the next day, the day after, following the present day",
+      "zipf": 5.02,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "tomorrow"
+      },
+      "discriminator": "the day after this one, after a sleep",
+      "grade": 1
+    }
+  ],
+  "sentences": [
+    {
+      "id": "B-time-deixis-01-s01",
+      "answer": "yesterday",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "We ran the big race one sleep ago, ___, and my knees still ache.",
+      "cue_phrase": "one sleep ago",
+      "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+      }
+    },
+    {
+      "id": "B-time-deixis-01-s02",
+      "answer": "yesterday",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Crumbs are still on the bench from the party we held ___ evening.",
+      "cue_phrase": "party we held",
+      "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+      }
+    },
+    {
+      "id": "B-time-deixis-01-s03",
+      "answer": "yesterday",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Playtime mud is still on my shoes at breakfast; we played outside ___.",
+      "cue_phrase": "still on my shoes at breakfast",
+      "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+      }
+    },
+    {
+      "id": "B-time-deixis-01-s04",
+      "answer": "yesterday",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Party glitter still shines in my hair before school; we danced ___.",
+      "cue_phrase": "still shines before school",
+      "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+      }
+    },
+    {
+      "id": "B-time-deixis-01-s05",
+      "answer": "yesterday",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The banana I forgot in my lunchbox ___ still stinks at breakfast.",
+      "cue_phrase": "still stinks at breakfast",
+      "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+      }
+    },
+    {
+      "id": "B-time-deixis-01-s06",
+      "answer": "yesterday",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The kit I wore ___ is still drying by the heater this morning.",
+      "cue_phrase": "still drying this morning",
+      "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (today); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "B-time-deixis-01-s07",
+      "answer": "yesterday",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The sticker I earned at school ___ is still there at breakfast.",
+      "cue_phrase": "still there at breakfast",
+      "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+      }
+    },
+    {
+      "id": "B-time-deixis-01-s08",
+      "answer": "yesterday",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Sand from the beach is still in my bag before school; we swam ___.",
+      "cue_phrase": "still in my bag before school",
+      "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+      }
+    },
+    {
+      "id": "B-time-deixis-01-s09",
+      "answer": "today",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "I wear my helper badge from first bell to home time ___.",
+      "cue_phrase": "first bell to home time",
+      "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (now, tomorrow); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "B-time-deixis-01-s10",
+      "answer": "today",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "My painting has stayed wet from this morning to lunch ___.",
+      "cue_phrase": "from this morning to lunch",
+      "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+      }
+    },
+    {
+      "id": "B-time-deixis-01-s11",
+      "answer": "today",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "My school trip bracelet stays on through lessons and tea ___.",
+      "cue_phrase": "through lessons and tea",
+      "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (tomorrow); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "B-time-deixis-01-s12",
+      "answer": "today",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "We get to wear free dress ___, so I am in my dinosaur shirt.",
+      "cue_phrase": "so I am in my dinosaur shirt",
+      "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (now); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "B-time-deixis-01-s13",
+      "answer": "today",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "It is only lunchtime, yet I have filled my water bottle twice ___.",
+      "cue_phrase": "only lunchtime",
+      "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "ADJACENCY-2OF3: gpt-5.5 and claude-opus-4-8 cross to now; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "B-time-deixis-01-s14",
+      "answer": "today",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "I have already lost two jumpers ___, and it is not even lunch.",
+      "cue_phrase": "not even lunch",
+      "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (now); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "B-time-deixis-01-s15",
+      "answer": "today",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "We have library ___; my bag is by the door and we line up after maths.",
+      "cue_phrase": "line up after maths",
+      "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (tomorrow); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "B-time-deixis-01-s16",
+      "answer": "today",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "We have filled the compost bin right up ___, between drop-off and pickup.",
+      "cue_phrase": "between drop-off and pickup",
+      "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (now, tonight); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "B-time-deixis-01-s17",
+      "answer": "now",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The bus doors are closing; we must hop on ___.",
+      "cue_phrase": "doors are closing",
+      "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+      }
+    },
+    {
+      "id": "B-time-deixis-01-s18",
+      "answer": "now",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Milk is spilling; I grab the cloth ___.",
+      "cue_phrase": "Milk is spilling",
+      "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+      }
+    },
+    {
+      "id": "B-time-deixis-01-s19",
+      "answer": "now",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The teacher is pointing at me; I must answer ___.",
+      "cue_phrase": "pointing at me",
+      "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+      }
+    },
+    {
+      "id": "B-time-deixis-01-s20",
+      "answer": "now",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "My ice lolly is dripping onto my hand; I must lick it ___.",
+      "cue_phrase": "dripping onto my hand",
+      "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+      }
+    },
+    {
+      "id": "B-time-deixis-01-s21",
+      "answer": "now",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The kettle whistles, so Dad lifts it off ___.",
+      "cue_phrase": "kettle whistles",
+      "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+      }
+    },
+    {
+      "id": "B-time-deixis-01-s22",
+      "answer": "now",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The baby wakes, and Mum picks her up ___.",
+      "cue_phrase": "baby wakes",
+      "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+      }
+    },
+    {
+      "id": "B-time-deixis-01-s23",
+      "answer": "now",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The ball is rolling at the road; we have to grab it ___.",
+      "cue_phrase": "rolling at the road",
+      "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+      }
+    },
+    {
+      "id": "B-time-deixis-01-s24",
+      "answer": "now",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "My glue is drying, so I press the card ___.",
+      "cue_phrase": "glue is drying",
+      "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+      }
+    },
+    {
+      "id": "B-time-deixis-01-s25",
+      "answer": "tonight",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "It is getting dark outside, and we will spot the moon ___.",
+      "cue_phrase": "getting dark outside",
+      "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (now); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "B-time-deixis-01-s26",
+      "answer": "tonight",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The sky is going pink; I will wear my owl pyjamas ___.",
+      "cue_phrase": "sky is going pink",
+      "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (now); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "B-time-deixis-01-s27",
+      "answer": "tonight",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Grandma is here, and she will read the long dragon story before bed ___.",
+      "cue_phrase": "Grandma is here",
+      "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (today, tomorrow); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "B-time-deixis-01-s28",
+      "answer": "tonight",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "After tea we are hanging paper stars by my window ___.",
+      "cue_phrase": "After tea",
+      "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (now, today, tomorrow); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "B-time-deixis-01-s29",
+      "answer": "tonight",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The moon is out already, and I will watch it from bed ___.",
+      "cue_phrase": "moon is out already",
+      "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (now); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "B-time-deixis-01-s30",
+      "answer": "tonight",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Dad is checking my torch for the garden walk after supper ___.",
+      "cue_phrase": "after supper",
+      "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (now, today, tomorrow); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "B-time-deixis-01-s31",
+      "answer": "tonight",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The lamps are on, and I am choosing the book I will read in bed ___.",
+      "cue_phrase": "will read in bed",
+      "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (now); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "B-time-deixis-01-s32",
+      "answer": "tonight",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "The curtains are closed, and we will listen for owls ___.",
+      "cue_phrase": "curtains are closed",
+      "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (now); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "B-time-deixis-01-s33",
+      "answer": "tomorrow",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "___ we have sport, just one more sleep, so my PE kit is ready.",
+      "cue_phrase": "one more sleep",
+      "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+      }
+    },
+    {
+      "id": "B-time-deixis-01-s34",
+      "answer": "tomorrow",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Just one sleep until the zoo; we ride the bus ___.",
+      "cue_phrase": "one sleep until the zoo",
+      "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+      }
+    },
+    {
+      "id": "B-time-deixis-01-s35",
+      "answer": "tomorrow",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Before bed I stack my library books to return ___.",
+      "cue_phrase": "stack my library books",
+      "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+      }
+    },
+    {
+      "id": "B-time-deixis-01-s36",
+      "answer": "tomorrow",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Before bed I sharpen both pencils for the spelling test ___.",
+      "cue_phrase": "for the spelling test",
+      "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+      }
+    },
+    {
+      "id": "B-time-deixis-01-s37",
+      "answer": "tomorrow",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "I packed my towel before sleep; the swimming carnival is ___.",
+      "cue_phrase": "packed before sleep",
+      "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (today); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "B-time-deixis-01-s38",
+      "answer": "tomorrow",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "We set the alarm at bedtime because the class trip leaves ___.",
+      "cue_phrase": "alarm at bedtime",
+      "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (tonight); single-judge charity lane per triage policy",
+          "by": "claude",
+          "at": "2026-07-10"
+        }
+      ]
+    },
+    {
+      "id": "B-time-deixis-01-s39",
+      "answer": "tomorrow",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "I hang my book bag up before sleep, ready for the first bell ___.",
+      "cue_phrase": "ready for the first bell",
+      "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+      }
+    },
+    {
+      "id": "B-time-deixis-01-s40",
+      "answer": "tomorrow",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Dad is freezing a juice box at bedtime for my lunch ___.",
+      "cue_phrase": "freezing a juice box at bedtime",
+      "surface": {
+        "yesterday": "yesterday",
+        "today": "today",
+        "now": "now",
+        "tonight": "tonight",
+        "tomorrow": "tomorrow"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "yesterday",
+      "picked": "today",
+      "line": "Yesterday is finished before this morning. Today is the whole day we are in."
+    },
+    {
+      "answer": "yesterday",
+      "picked": "now",
+      "line": "Yesterday is already over. Now is this exact second."
+    },
+    {
+      "answer": "yesterday",
+      "picked": "tonight",
+      "line": "Yesterday happened before this morning. Tonight is still ahead after dark."
+    },
+    {
+      "answer": "yesterday",
+      "picked": "tomorrow",
+      "line": "Yesterday is before this day began. Tomorrow comes after a sleep."
+    },
+    {
+      "answer": "today",
+      "picked": "yesterday",
+      "line": "Today is the day we are in. Yesterday was already over before this morning."
+    },
+    {
+      "answer": "today",
+      "picked": "now",
+      "line": "Today can stretch from morning to hometime. Now is only this exact second."
+    },
+    {
+      "answer": "today",
+      "picked": "tonight",
+      "line": "Today is the whole day we are in. Tonight is only the dark part still ahead."
+    },
+    {
+      "answer": "today",
+      "picked": "tomorrow",
+      "line": "Today is before the next sleep. Tomorrow is after that sleep."
+    },
+    {
+      "answer": "now",
+      "picked": "yesterday",
+      "line": "Now is this exact second. Yesterday is already over."
+    },
+    {
+      "answer": "now",
+      "picked": "today",
+      "line": "Now means right this second. Today can mean any time in this day."
+    },
+    {
+      "answer": "now",
+      "picked": "tonight",
+      "line": "Now is happening right away. Tonight waits until it gets dark."
+    },
+    {
+      "answer": "now",
+      "picked": "tomorrow",
+      "line": "Now is right this second. Tomorrow is after a sleep."
+    },
+    {
+      "answer": "tonight",
+      "picked": "yesterday",
+      "line": "Tonight is after dark on this same day. Yesterday is already over."
+    },
+    {
+      "answer": "tonight",
+      "picked": "today",
+      "line": "Tonight is the dark part still ahead. Today is the whole day we are in."
+    },
+    {
+      "answer": "tonight",
+      "picked": "now",
+      "line": "Tonight waits until after dark. Now is this exact second."
+    },
+    {
+      "answer": "tonight",
+      "picked": "tomorrow",
+      "line": "Tonight comes before this sleep. Tomorrow comes after a sleep."
+    },
+    {
+      "answer": "tomorrow",
+      "picked": "yesterday",
+      "line": "Tomorrow comes after a sleep. Yesterday was before this day began."
+    },
+    {
+      "answer": "tomorrow",
+      "picked": "today",
+      "line": "Tomorrow is after a sleep. Today is the day we are in."
+    },
+    {
+      "answer": "tomorrow",
+      "picked": "now",
+      "line": "Tomorrow is after a sleep. Now is this exact second."
+    },
+    {
+      "answer": "tomorrow",
+      "picked": "tonight",
+      "line": "Tomorrow comes after a sleep. Tonight is the dark part before that sleep."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-07-10T04:42:52+00:00",
+    "model": "gpt-5.5",
+    "scrubbed_at": "2026-07-10",
+    "scrub_note": "Scrubbed by claude 2026-07-10: all 40 read. Killed the trailing ', ___.' append template (32 frames) - restaged into natural adverb positions with same-day/finished-day/after-sleep anchors; every frame keeps at least two grammar-survivors so tense prunes but never picks. Post-judge fixes s16: trailing-adverb rejections, an evening/night co-fit (3-of-3), a now-crossing, and a warm-afternoon leak re-anchored (clock time, homework marker, will-future, span subject)."
+  },
+  "scale": {
+    "left": "already past",
+    "right": "still to come"
+  },
+  "computed": {
+    "zipf_min": 4.91,
+    "zipf_mean": 5.34,
+    "tightness": null,
+    "band_suggested": 1,
+    "scored_at": "2026-07-10T04:55:33+00:00"
+  }
+}

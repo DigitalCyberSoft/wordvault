@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-07-07T06:04:01+00:00",
+  "checked_at": "2026-07-10T05:33:08+00:00",
   "files": {
     "sets/A/aftermath-01.json": "783a33aaac03847ac4f960b34cf5d8a61a59a362694c37d91b0fbdad861a1d80",
     "sets/A/angry-01.json": "5f52537db70f93c19bb268fe5b4f3e8c7ba291fe19a241f883490b09e90429f7",
@@ -41,6 +41,8 @@
     "sets/A/statements-01.json": "272a39e5eb86f5a99d3b01282229503a3e01b50e236ac9ccda08a37e28b83657",
     "sets/A/talk-01.json": "2e9fe817564c587c3bf9ac22f5ffc1684fb5efe97968439cde2d2d62d50dc992",
     "sets/A/throw-01.json": "88390469a3649c8bf48c70031693066e64f8ad7d48d9c5d586f2c2ccb836ea07",
+    "sets/A/time-frequency-01.json": "235b04120ac20fa08d7ce3449061fc4973ac71577a05fb9c177d479bb27efdfd",
+    "sets/A/time-nearness-01.json": "09db7145e1dad4f800a355b95dcf06ceb7e91f9ada398c1f3939fa70cb6aa721",
     "sets/A/tired-01.json": "e789758528d14f798e40539f4ab13a554beb61dda0939b4325a65f46d6482bc5",
     "sets/A/unsure-01.json": "5779675857b8ebdd52880c76178ad906cee8d2a990f4757c884e6c7c24fb77f9",
     "sets/A/walk-manner-01.json": "b785e460bfb55aa5bbecaf4396695ecafff622db12be74a0f5aabc18a892c3d1",
@@ -60,6 +62,9 @@
     "sets/B/sky-01.json": "5f4bc67e0d596a64d485de8ae6eb14d78595543d8394dc908ba68201d47254e5",
     "sets/B/sounds-01.json": "fc48f565813947a82c6d5344d7eb110f0a65360ac46f9d9b1996d0f80bf667b1",
     "sets/B/tempo-01.json": "c13f3e1fca4594657b4f614f383cea38d66c8a010e7749ba34974300444d3836",
+    "sets/B/time-day-01.json": "1d9c41e97f82d8cee0cd7603e76017df53350bdbafeecacc73d5d65fb3b0cb7e",
+    "sets/B/time-deixis-01.json": "3bac4fa40c46706c17e7e5bba32b6dca9bf560dc8e0f32400896275d094e08e1",
+    "sets/B/time-order-01.json": "586bea7d0206e315dd09005e84ff9a8843cb5906f5ce22eff99aa714c8c92512",
     "sets/B/tricks-01.json": "1b98b915e608244b6cb2c516c96178657334fc33ea0d487758450f7e75c6fd0f",
     "sets/B/water-01.json": "cb5bf26f4597fbbd15069d0871ad4c482f2d64a1509550be697f36a229cf4741",
     "sets/B/weather-01.json": "326dd1a8f63498885154ccab62382aa7ec9396b93110405c701f887491a85194",

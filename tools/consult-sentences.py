@@ -146,6 +146,8 @@ BANK-C EXTRA RULES (usage confusions) - the first draft of sets like this failed
 - Homophone sets (their/there/they're/then/than): the frame's grammar must admit only one spelling
   to a fluent reader ("___ going to be late" / "over ___ by the gate" / "colder ___ yesterday").
 """
+    if set_data.get("drafting_notes"):
+        rules += "\nSET-SPECIFIC RULES for this set (obey exactly):\n" + set_data["drafting_notes"].strip() + "\n"
     return rules + "\nWORD DATA:\n" + json.dumps(per_word, ensure_ascii=False, indent=1)
 
 
