@@ -408,8 +408,8 @@
       "answer": "brood",
       "cue": "contextual",
       "reserve": true,
-      "text": "Kavi tends to ___ before matches, picturing mistakes and angry faces.",
-      "cue_phrase": "mistakes and angry faces",
+      "text": "Since losing the captaincy, Kavi tends to ___ silently in his room, scowling at the wall.",
+      "cue_phrase": "losing the captaincy; silently; scowling at the wall",
       "surface": {
         "reminisce": "reminisce",
         "brood": "brood",
@@ -651,8 +651,8 @@
       "answer": "obsess",
       "cue": "contextual",
       "reserve": false,
-      "text": "I ___ after chess club, replaying one bad move until bedtime.",
-      "cue_phrase": "one bad move",
+      "text": "I ___ over the new chess opening all week, setting up the same six moves everywhere.",
+      "cue_phrase": "same six moves everywhere",
       "surface": {
         "reminisce": "reminisced",
         "brood": "brooded",
@@ -1004,6 +1004,6 @@
     "generated_at": "2026-07-06T14:23:36+00:00",
     "model": "gpt-5.5",
     "scrubbed_at": "2026-07-07",
-    "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+    "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite). Fairness pass by claude 2026-11-12: brood s15 is now a silent, scowling sulk with no fixed thought (obsess); obsess s28 is now a neutral fixation on a new chess opening, not a dark replay (brood)."
   }
 }

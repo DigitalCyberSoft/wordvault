@@ -585,8 +585,8 @@
       "answer": "gigantic",
       "cue": "contextual",
       "reserve": true,
-      "text": "In the tale, the wizard's hat grew ___, swallowing the whole market square by morning.",
-      "cue_phrase": "swallowing the whole market square",
+      "text": "In the tale, the wizard's pet frog grew ___ and squashed the town hall flat.",
+      "cue_phrase": "pet frog; squashed the town hall flat",
       "surface": {
         "vast": "vast",
         "towering": "towering",
@@ -868,8 +868,8 @@
       "answer": "spacious",
       "cue": "contextual",
       "reserve": false,
-      "text": "The ___ hall let both classes dance without bumping elbows.",
-      "cue_phrase": "without bumping elbows",
+      "text": "Our new car was surprisingly ___, with room for five kids and the dog.",
+      "cue_phrase": "surprisingly; room for five kids and the dog",
       "surface": {
         "vast": "vast",
         "towering": "towering",
@@ -960,8 +960,8 @@
       "answer": "spacious",
       "cue": "inferential",
       "reserve": true,
-      "text": "The ___ cave let our whole group sit in a circle.",
-      "cue_phrase": "whole group sit",
+      "text": "The caravan looked small outside, but inside it was ___ enough for all six of us.",
+      "cue_phrase": "looked small outside, but inside",
       "surface": {
         "vast": "vast",
         "towering": "towering",
@@ -1085,6 +1085,6 @@
     "generated_at": "2026-07-05T11:09:29+00:00",
     "model": "gpt-5.5",
     "scrubbed_at": "2026-07-05T13:42:27+00:00",
-    "scrub_note": "towering s11/s12 restaged thin-tall, gigantic s21/s23/s24 onto solid objects, bulky s25/s29/s30 given hard size caps, all to exclude the bare-size genus. Full read + judge triage."
+    "scrub_note": "towering s11/s12 restaged thin-tall, gigantic s21/s23/s24 onto solid objects, bulky s25/s29/s30 given hard size caps, all to exclude the bare-size genus. Full read + judge triage. Fairness pass by claude 2026-11-12: gigantic s23 is now a frog the size of a building, not something spreading over a square (vast); spacious s36/s40 are now an ordinary car and a small-looking caravan with room inside, so vast/gigantic drop out."
   }
 }

@@ -209,8 +209,8 @@
       "answer": "reluctant",
       "cue": "contextual",
       "reserve": true,
-      "text": "The kitten seemed ___ about the paper crown, wearing it only after much coaxing.",
-      "cue_phrase": "only after much coaxing",
+      "text": "With a heavy sigh, a ___ Tom finally shuffled onto the dance floor after much coaxing.",
+      "cue_phrase": "heavy sigh; after much coaxing",
       "surface": {
         "reluctant": "reluctant",
         "wary": "wary",
@@ -957,6 +957,6 @@
     "generated_at": "2026-07-06T14:16:24+00:00",
     "model": "gpt-5.5",
     "scrubbed_at": "2026-07-07",
-    "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+    "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite). Fairness pass by claude 2026-11-12: reluctant s07 is now Tom sighing onto the dance floor after coaxing; the kitten scene had read as wary."
   }
 }

@@ -407,14 +407,14 @@
       "judged_at": "2026-07-06T16:33:32+00:00"
     },
     "A-dwell-01-s15": {
-      "text_sha256": "e89b56946738f44272f151cc30ed248bbd0964cfeefcfea93bd6e14005a3cd88",
+      "text_sha256": "c5652cbef8fa6058a11cf76ba9d57df87d6aa38ea71371f195e7a4b9ebf3d789",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
             "brood",
-            "obsess"
+            "wallow"
           ],
           "sense_match": true
         },
@@ -428,13 +428,12 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "brood",
-            "obsess"
+            "brood"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-06T16:33:32+00:00"
+      "judged_at": "2026-11-12T12:13:06+00:00"
     },
     "A-dwell-01-s16": {
       "text_sha256": "d4abd2a24d17fe6bf8a4ceddf5a1df3abf0e29bc27c9bfa8b49aa323dea59171",
@@ -779,15 +778,14 @@
       "judged_at": "2026-07-06T16:35:32+00:00"
     },
     "A-dwell-01-s28": {
-      "text_sha256": "1a80b130c42850427df8c04324cfeeea9b53d58f125a932de02cdb7fd2582115",
+      "text_sha256": "89a82ca8b7630c28d6ba0a57124d6e71590a5a4244b3595b10fe1e1199c7e8bf",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "brood",
-            "obsess",
-            "wallow"
+            "muse",
+            "obsess"
           ],
           "sense_match": true
         },
@@ -801,13 +799,12 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "brood",
             "obsess"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-06T16:35:32+00:00"
+      "judged_at": "2026-11-12T12:13:06+00:00"
     },
     "A-dwell-01-s29": {
       "text_sha256": "a4ff480e56d7d6a56827d7eaf22824f9acef3cfcf429822ac21e18a025ed7521",

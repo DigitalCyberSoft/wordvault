@@ -2,13 +2,12 @@
   "set_id": "A-craft-01",
   "sentences": {
     "A-craft-01-s01": {
-      "text_sha256": "864ddaca3ad70836c79f8c8286d628340a5fe147fed7b4f59bc8b3cd2f895160",
-      "verdict": "review",
+      "text_sha256": "773bce31a2251724ad1351a7e9a9c1bf931123cb2d0a3bd6f6c50fc72d7eeb97",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "intricate",
             "meticulous"
           ],
           "sense_match": true
@@ -23,13 +22,12 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "intricate",
             "meticulous"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-06T16:24:17+00:00"
+      "judged_at": "2026-11-12T12:10:56+00:00"
     },
     "A-craft-01-s02": {
       "text_sha256": "66667080094058e61d0a81bee6d68c28bf470fdee6cab34bc8e2161f3dbad103",

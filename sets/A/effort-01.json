@@ -370,8 +370,8 @@
       "answer": "toil",
       "cue": "inferential",
       "reserve": false,
-      "text": "By moonrise, the helpers ___ through a mountain of muddy boots.",
-      "cue_phrase": "mountain of muddy boots",
+      "text": "In the old flour mill, children ___ twelve hours a day hauling heavy sacks.",
+      "cue_phrase": "twelve hours a day hauling heavy sacks",
       "surface": {
         "strive": "strove",
         "toil": "toiled",
@@ -653,8 +653,8 @@
       "answer": "persevere",
       "cue": "explicit",
       "reserve": false,
-      "text": "Even when the sum looked hopeless, Bea had to ___ past bedtime.",
-      "cue_phrase": "sum looked hopeless",
+      "text": "Bea failed the swimming test twice but decided to ___, and passed on her third try.",
+      "cue_phrase": "failed the swimming test twice; passed on her third try",
       "surface": {
         "strive": "strive",
         "toil": "toil",
@@ -699,8 +699,8 @@
       "answer": "persevere",
       "cue": "contextual",
       "reserve": false,
-      "text": "Kai ___ through wrong answers, erasing each one without quitting.",
-      "cue_phrase": "without quitting",
+      "text": "Kai forgot his lines at every rehearsal, but he ___ and spoke them perfectly on opening night.",
+      "cue_phrase": "forgot his lines at every rehearsal; perfectly on opening night",
       "surface": {
         "strive": "strove",
         "toil": "toiled",
@@ -1084,6 +1084,6 @@
     "generated_at": "2026-07-06T14:27:01+00:00",
     "model": "gpt-5.5",
     "scrubbed_at": "2026-07-07",
-    "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+    "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite). Fairness pass by claude 2026-11-12: toil s13 is now historical mill labour (no setback to overcome); persevere s26/s28 now hinge on repeated failure then success, so neither is plain hard labour."
   }
 }

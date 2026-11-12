@@ -658,8 +658,8 @@
       "answer": "marsh",
       "cue": "explicit",
       "reserve": false,
-      "text": "Frogs croaked in the ___ where rushes hid the muddy ground.",
-      "cue_phrase": "rushes hid the muddy",
+      "text": "Our boots sank and squelched as we tramped across the grassy, soggy ___.",
+      "cue_phrase": "tramped across the grassy, soggy",
       "surface": {
         "stream": "stream",
         "puddle": "puddle",
@@ -749,8 +749,8 @@
       "answer": "marsh",
       "cue": "contextual",
       "reserve": true,
-      "text": "Mosquitoes rose from the ___ while reeds brushed our elbows.",
-      "cue_phrase": "reeds brushed our elbows",
+      "text": "The wooden boardwalk zigzagged across the ___, over squelchy ground thick with reeds and grass.",
+      "cue_phrase": "over squelchy ground thick with reeds and grass",
       "surface": {
         "stream": "stream",
         "puddle": "puddle",
@@ -897,6 +897,6 @@
     "generated_at": "2026-07-06T05:29:29+00:00",
     "model": "gpt-5.5",
     "scrubbed_at": "2026-07-06T08:39:41+00:00",
-    "scrub_note": "Full read; puddle gloss widened from 'after rain' to any spilt water (WordNet pin includes 'or other liquid') after four indoor frames drew strict-gloss sense flags; full-set FORCE re-judge followed."
+    "scrub_note": "Full read; puddle gloss widened from 'after rain' to any spilt water (WordNet pin includes 'or other liquid') after four indoor frames drew strict-gloss sense flags; full-set FORCE re-judge followed. Fairness pass by claude 2026-11-12: marsh s34/s39 are now crossed on foot or by boardwalk over squelchy grassy ground, so pond (open still water) is excluded."
   }
 }

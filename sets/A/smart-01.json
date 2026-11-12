@@ -378,8 +378,8 @@
       "answer": "wise",
       "cue": "inferential",
       "reserve": false,
-      "text": "The ___ squirrel stored nuts early, knowing winter would be hard.",
-      "cue_phrase": "winter would be hard",
+      "text": "The ___ old coach told the angry striker to sleep on it before quitting.",
+      "cue_phrase": "old coach; sleep on it before quitting",
       "surface": {
         "clever": "clever",
         "wise": "wise",
@@ -917,6 +917,6 @@
     "generated_at": "2026-07-05T11:11:28+00:00",
     "model": "gpt-5.5",
     "scrubbed_at": "2026-07-05T13:42:27+00:00",
-    "scrub_note": "Full read after the inventive->knowledgeable swap; generic-subject frames reviewed and kept (usage frames, not definitional)."
+    "scrub_note": "Full read after the inventive->knowledgeable swap; generic-subject frames reviewed and kept (usage frames, not definitional). Fairness pass by claude 2026-11-12: wise s14 is now an old coach's sleep-on-it advice, not a squirrel's clever plan."
   }
 }

@@ -93,8 +93,8 @@
       "answer": "morning",
       "cue": "explicit",
       "reserve": false,
-      "text": "___ brought first sunlight, yawns, and breakfast cereal bowls.",
-      "cue_phrase": "first sunlight",
+      "text": "___ came with the first sunlight and bowls of cereal.",
+      "cue_phrase": "first sunlight; bowls of cereal",
       "surface": {
         "morning": "morning",
         "midday": "midday",
@@ -108,8 +108,8 @@
       "answer": "morning",
       "cue": "explicit",
       "reserve": false,
-      "text": "___ began with waking faces and toast before school.",
-      "cue_phrase": "waking faces",
+      "text": "___ began with sleepy faces and toast before school.",
+      "cue_phrase": "sleepy faces and toast before school",
       "surface": {
         "morning": "morning",
         "midday": "midday",
@@ -267,46 +267,30 @@
       "answer": "midday",
       "cue": "contextual",
       "reserve": false,
-      "text": "The lunch bell rang across the playground as ___ arrived.",
-      "cue_phrase": "lunch bell rang",
+      "text": "The town clock chimed twelve, and the ___ sun shone straight down.",
+      "cue_phrase": "chimed twelve; straight down",
       "surface": {
         "morning": "morning",
         "midday": "midday",
         "afternoon": "afternoon",
         "evening": "evening",
         "night": "night"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "ADJACENCY-2OF3: gpt-5.5 and gpt-4.1 cross to afternoon; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
-          "by": "claude",
-          "at": "2026-07-10"
-        }
-      ]
+      }
     },
     {
       "id": "B-time-day-01-s12",
       "answer": "midday",
       "cue": "contextual",
       "reserve": false,
-      "text": "Children ate their bread rolls under the high sun of ___.",
-      "cue_phrase": "high sun",
+      "text": "We ate lunch while the ___ sun stood highest in the sky.",
+      "cue_phrase": "sun stood highest",
       "surface": {
         "morning": "morning",
         "midday": "midday",
         "afternoon": "afternoon",
         "evening": "evening",
         "night": "night"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (afternoon); single-judge charity lane per triage policy",
-          "by": "claude",
-          "at": "2026-07-10"
-        }
-      ]
+      }
     },
     {
       "id": "B-time-day-01-s13",
@@ -397,8 +381,8 @@
       "answer": "afternoon",
       "cue": "explicit",
       "reserve": false,
-      "text": "___ came after lunch, when carers waited at school.",
-      "cue_phrase": "after lunch",
+      "text": "___ came after lunch, with two more lessons before home time.",
+      "cue_phrase": "after lunch; two more lessons",
       "surface": {
         "morning": "morning",
         "midday": "midday",
@@ -473,23 +457,15 @@
       "answer": "afternoon",
       "cue": "inferential",
       "reserve": false,
-      "text": "___ stretched long shadows across the playground before tea.",
-      "cue_phrase": "before tea",
+      "text": "At four o'clock, we played in the warm ___ sun.",
+      "cue_phrase": "At four o'clock",
       "surface": {
         "morning": "morning",
         "midday": "midday",
         "afternoon": "afternoon",
         "evening": "evening",
         "night": "night"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "ADJACENCY-2OF3: gpt-5.5 and gpt-4.1 cross to evening; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
-          "by": "claude",
-          "at": "2026-07-10"
-        }
-      ]
+      }
     },
     {
       "id": "B-time-day-01-s22",
@@ -511,7 +487,7 @@
       "answer": "afternoon",
       "cue": "contextual",
       "reserve": true,
-      "text": "___ sent the bus home once the last bell rang.",
+      "text": "The last bell rang, and the ___ bus took us home.",
       "cue_phrase": "last bell rang",
       "surface": {
         "morning": "morning",
@@ -519,23 +495,15 @@
         "afternoon": "afternoon",
         "evening": "evening",
         "night": "night"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: only gpt-4.1 lists a second fit (evening); single-judge charity lane per triage policy",
-          "by": "claude",
-          "at": "2026-07-10"
-        }
-      ]
+      }
     },
     {
       "id": "B-time-day-01-s24",
       "answer": "afternoon",
       "cue": "contextual",
       "reserve": true,
-      "text": "The final bell rang at three, and backpacks thumped home through the ___.",
-      "cue_phrase": "rang at three",
+      "text": "School ended at three, and we walked home in the ___ sun.",
+      "cue_phrase": "ended at three",
       "surface": {
         "morning": "morning",
         "midday": "midday",
@@ -595,23 +563,15 @@
       "answer": "evening",
       "cue": "contextual",
       "reserve": false,
-      "text": "Plates of tea sat waiting on the table as ___ drew in.",
-      "cue_phrase": "Plates of tea sat waiting",
+      "text": "___ turned the sky pink as Dad lit the barbecue.",
+      "cue_phrase": "turned the sky pink",
       "surface": {
         "morning": "morning",
         "midday": "midday",
         "afternoon": "afternoon",
         "evening": "evening",
         "night": "night"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "ADJACENCY-2OF3: gpt-5.5 and claude-opus-4-8 cross to night; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
-          "by": "claude",
-          "at": "2026-07-10"
-        }
-      ]
+      }
     },
     {
       "id": "B-time-day-01-s28",
@@ -687,23 +647,15 @@
       "answer": "evening",
       "cue": "contextual",
       "reserve": true,
-      "text": "Warm soup steamed on the table as ___ crept in, homework not yet done.",
-      "cue_phrase": "homework not yet done",
+      "text": "We watched the ___ sky fade from orange to grey.",
+      "cue_phrase": "fade from orange to grey",
       "surface": {
         "morning": "morning",
         "midday": "midday",
         "afternoon": "afternoon",
         "evening": "evening",
         "night": "night"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "ADJACENCY-2OF3: gpt-5.5 and claude-opus-4-8 cross to night; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
-          "by": "claude",
-          "at": "2026-07-10"
-        }
-      ]
+      }
     },
     {
       "id": "B-time-day-01-s32",
@@ -824,8 +776,8 @@
       "answer": "night",
       "cue": "inferential",
       "reserve": false,
-      "text": "Torches glowed under the doona long after everyone else slept, deep into the ___.",
-      "cue_phrase": "long after everyone else slept",
+      "text": "Ella read by torchlight deep into the ___, long after bedtime.",
+      "cue_phrase": "long after bedtime",
       "surface": {
         "morning": "morning",
         "midday": "midday",
@@ -839,23 +791,15 @@
       "answer": "night",
       "cue": "contextual",
       "reserve": true,
-      "text": "___ wrapped the farm in quiet after all beds filled.",
-      "cue_phrase": "all beds filled",
+      "text": "___ wrapped the farm in quiet once everyone was asleep.",
+      "cue_phrase": "once everyone was asleep",
       "surface": {
         "morning": "morning",
         "midday": "midday",
         "afternoon": "afternoon",
         "evening": "evening",
         "night": "night"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (evening); single-judge charity lane per triage policy",
-          "by": "claude",
-          "at": "2026-07-10"
-        }
-      ]
+      }
     },
     {
       "id": "B-time-day-01-s40",
@@ -987,7 +931,7 @@
     "generated_at": "2026-07-10T04:40:37+00:00",
     "model": "gpt-5.5",
     "scrubbed_at": "2026-07-10",
-    "scrub_note": "Scrubbed by claude 2026-07-10: all 40 read. Restaged 20 time-noun-as-agent personifications ('Morning put clean teeth by the door') into parity-safe slots; kept the storybook-legal ones (brought/came/settled/painted/wrapped). Midday frames re-anchored on sun position and shortest shadows, evening on tea and pink sky, night on sleep. Post-judge fixes s24, s31: trailing-adverb rejections, an evening/night co-fit (3-of-3), a now-crossing, and a warm-afternoon leak re-anchored (clock time, homework marker, will-future, span subject)."
+    "scrub_note": "Scrubbed by claude 2026-07-10: all 40 read. Restaged 20 time-noun-as-agent personifications ('Morning put clean teeth by the door') into parity-safe slots; kept the storybook-legal ones (brought/came/settled/painted/wrapped). Midday frames re-anchored on sun position and shortest shadows, evening on tea and pink sky, night on sleep. Post-judge fixes s24, s31: trailing-adverb rejections, an evening/night co-fit (3-of-3), a now-crossing, and a warm-afternoon leak re-anchored (clock time, homework marker, will-future, span subject). Year 2 readability pass by claude 2026-11-12: rewrote 12 sentences under the drafting_notes slots, so every frame still has all five nouns grammatically live and tense prunes, never picks. Fixed the four two-fits. s11 (the lunch bell let afternoon in) is now anchored on the clock chiming twelve with the sun straight down. s21 (before tea let evening in) is now anchored on four o'clock. s27 and s31 (tea and homework let night in) are now anchored on a pink sky and an orange-to-grey fade. Also simplified 'carers', 'drew in' and the personified bus."
   },
   "scale": {
     "left": "first light",

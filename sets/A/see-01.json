@@ -1,0 +1,864 @@
+{
+  "id": "A-see-01",
+  "bank": "A",
+  "pos": "verb",
+  "theme": "ways of using your eyes",
+  "band": 1,
+  "band_override": 1,
+  "computed": {
+    "zipf_min": 3.73,
+    "zipf_mean": 5.3,
+    "tightness": 0.301,
+    "band_suggested": 2,
+    "scored_at": "2026-11-12T12:10:51+00:00"
+  },
+  "words": [
+    {
+      "w": "see",
+      "synset": "see.v.01",
+      "gloss_source": "authored",
+      "gloss": "become aware of something with the eyes, often without trying",
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-11-12"
+      },
+      "zipf": 6.1,
+      "register": "neutral",
+      "senses_at_pos": 24,
+      "forms": {
+        "base": "see",
+        "third": "sees",
+        "past": "saw",
+        "part": "seeing"
+      },
+      "discriminator": "it just reaches your eyes, no trying needed",
+      "grade": 1
+    },
+    {
+      "w": "look",
+      "synset": "look.v.01",
+      "gloss_source": "authored",
+      "gloss": "turn one's eyes towards something on purpose",
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-11-12"
+      },
+      "zipf": 5.81,
+      "register": "neutral",
+      "senses_at_pos": 10,
+      "forms": {
+        "base": "look",
+        "third": "looks",
+        "past": "looked",
+        "part": "looking"
+      },
+      "discriminator": "turning your eyes to something on purpose",
+      "grade": 1
+    },
+    {
+      "w": "watch",
+      "synset": "watch.v.02",
+      "gloss_source": "authored",
+      "gloss": "keep one's eyes on something that moves or changes, for a while",
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-11-12"
+      },
+      "zipf": 5.34,
+      "register": "neutral",
+      "senses_at_pos": 7,
+      "forms": {
+        "base": "watch",
+        "third": "watches",
+        "past": "watched",
+        "part": "watching"
+      },
+      "discriminator": "keeping your eyes on something that moves or changes",
+      "grade": 1
+    },
+    {
+      "w": "read",
+      "synset": "read.v.01",
+      "gloss_source": "authored",
+      "gloss": "take in and understand written words, aloud or silently",
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-11-12"
+      },
+      "zipf": 5.54,
+      "register": "neutral",
+      "senses_at_pos": 11,
+      "forms": {
+        "base": "read",
+        "third": "reads",
+        "past": "read",
+        "part": "reading"
+      },
+      "discriminator": "taking in written words",
+      "grade": 1
+    },
+    {
+      "w": "blink",
+      "synset": "blink.v.01",
+      "gloss_source": "authored",
+      "gloss": "shut and open both eyes very quickly",
+      "zipf": 3.73,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "blink",
+        "third": "blinks",
+        "past": "blinked",
+        "part": "blinking"
+      },
+      "discriminator": "shutting and opening your eyes fast",
+      "grade": 2
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-see-01-s01",
+      "answer": "see",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "It was too dark for Ivy to ___ her hand.",
+      "cue_phrase": "too dark",
+      "surface": {
+        "see": "see",
+        "look": "look at",
+        "watch": "watch",
+        "read": "read",
+        "blink": "blink at"
+      }
+    },
+    {
+      "id": "A-see-01-s02",
+      "answer": "see",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Nan's new glasses help her ___ every tiny crumb.",
+      "cue_phrase": "new glasses help her",
+      "surface": {
+        "see": "see",
+        "look": "look at",
+        "watch": "watch",
+        "read": "read",
+        "blink": "blink at"
+      }
+    },
+    {
+      "id": "A-see-01-s03",
+      "answer": "see",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Found you! I can ___ your feet under the curtain!",
+      "cue_phrase": "Found you!; under the curtain",
+      "surface": {
+        "see": "see",
+        "look": "look at",
+        "watch": "watch",
+        "read": "read",
+        "blink": "blink at"
+      }
+    },
+    {
+      "id": "A-see-01-s04",
+      "answer": "see",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "From the hilltop, Ben could just ___ his house.",
+      "cue_phrase": "from the hilltop; could just",
+      "surface": {
+        "see": "see",
+        "look": "look at",
+        "watch": "watch",
+        "read": "read",
+        "blink": "blink at"
+      }
+    },
+    {
+      "id": "A-see-01-s05",
+      "answer": "see",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "In the thick fog, we couldn't ___ the shed.",
+      "cue_phrase": "in the thick fog",
+      "surface": {
+        "see": "see",
+        "look": "look at",
+        "watch": "watch",
+        "read": "read",
+        "blink": "blink at"
+      }
+    },
+    {
+      "id": "A-see-01-s06",
+      "answer": "see",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The stick insect hid so well that Jack never ___ it.",
+      "cue_phrase": "hid so well; never",
+      "surface": {
+        "see": "saw",
+        "look": "looked at",
+        "watch": "watched",
+        "read": "read",
+        "blink": "blinked at"
+      }
+    },
+    {
+      "id": "A-see-01-s07",
+      "answer": "see",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "With the light on, Leo could ___ his lost sock.",
+      "cue_phrase": "with the light on; could",
+      "surface": {
+        "see": "see",
+        "look": "look at",
+        "watch": "watch",
+        "read": "read",
+        "blink": "blink at"
+      }
+    },
+    {
+      "id": "A-see-01-s08",
+      "answer": "see",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "The shell was half buried, but sharp-eyed Pia ___ it.",
+      "cue_phrase": "half buried, but sharp-eyed",
+      "surface": {
+        "see": "saw",
+        "look": "looked at",
+        "watch": "watched",
+        "read": "read",
+        "blink": "blinked at"
+      }
+    },
+    {
+      "id": "A-see-01-s09",
+      "answer": "look",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Ollie ___ the shell in his hand for a long time.",
+      "cue_phrase": "in his hand for a long time",
+      "surface": {
+        "see": "saw",
+        "look": "looked at",
+        "watch": "watched",
+        "read": "read",
+        "blink": "blinked at"
+      }
+    },
+    {
+      "id": "A-see-01-s10",
+      "answer": "look",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Mum ___ my cut knee very closely to check it.",
+      "cue_phrase": "very closely to check it",
+      "surface": {
+        "see": "saw",
+        "look": "looked at",
+        "watch": "watched",
+        "read": "read",
+        "blink": "blinked at"
+      }
+    },
+    {
+      "id": "A-see-01-s11",
+      "answer": "look",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "At the museum, we ___ the dinosaur bones for ages.",
+      "cue_phrase": "museum; bones for ages",
+      "surface": {
+        "see": "saw",
+        "look": "looked at",
+        "watch": "watched",
+        "read": "read",
+        "blink": "blinked at"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists see; seeing is not done 'for ages' at a museum exhibit on purpose, the duration marks looking",
+          "by": "claude",
+          "at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "id": "A-see-01-s12",
+      "answer": "look",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Smile and ___ the camera, said the photo man.",
+      "cue_phrase": "Smile and; the camera",
+      "surface": {
+        "see": "see",
+        "look": "look at",
+        "watch": "watch",
+        "read": "read",
+        "blink": "blink at"
+      }
+    },
+    {
+      "id": "A-see-01-s13",
+      "answer": "look",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "With his magnifying glass, Sam ___ the leaf for ages.",
+      "cue_phrase": "magnifying glass",
+      "surface": {
+        "see": "saw",
+        "look": "looked at",
+        "watch": "watched",
+        "read": "read",
+        "blink": "blinked at"
+      }
+    },
+    {
+      "id": "A-see-01-s14",
+      "answer": "look",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Sam ___ each picture carefully to find the odd one.",
+      "cue_phrase": "carefully to find the odd one",
+      "surface": {
+        "see": "saw",
+        "look": "looked at",
+        "watch": "watched",
+        "read": "read",
+        "blink": "blinked at"
+      }
+    },
+    {
+      "id": "A-see-01-s15",
+      "answer": "look",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Kai ___ the old tree's twisty bark for ages.",
+      "cue_phrase": "twisty bark for ages",
+      "surface": {
+        "see": "saw",
+        "look": "looked at",
+        "watch": "watched",
+        "read": "read",
+        "blink": "blinked at"
+      }
+    },
+    {
+      "id": "A-see-01-s16",
+      "answer": "look",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Pip ___ her new shoes very carefully, all over.",
+      "cue_phrase": "very carefully, all over",
+      "surface": {
+        "see": "saw",
+        "look": "looked at",
+        "watch": "watched",
+        "read": "read",
+        "blink": "blinked at"
+      }
+    },
+    {
+      "id": "A-see-01-s17",
+      "answer": "watch",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Please ___ the puppy so he doesn't run off.",
+      "cue_phrase": "so he doesn't run off",
+      "surface": {
+        "see": "see",
+        "look": "look at",
+        "watch": "watch",
+        "read": "read",
+        "blink": "blink at"
+      }
+    },
+    {
+      "id": "A-see-01-s18",
+      "answer": "watch",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The lifeguard ___ the swimmers so nobody got into trouble.",
+      "cue_phrase": "lifeguard; so nobody got into trouble",
+      "surface": {
+        "see": "saw",
+        "look": "looked at",
+        "watch": "watched",
+        "read": "read",
+        "blink": "blinked at"
+      }
+    },
+    {
+      "id": "A-see-01-s19",
+      "answer": "watch",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Can you ___ the bath so it doesn't overflow?",
+      "cue_phrase": "so it doesn't overflow",
+      "surface": {
+        "see": "see",
+        "look": "look at",
+        "watch": "watch",
+        "read": "read",
+        "blink": "blink at"
+      }
+    },
+    {
+      "id": "A-see-01-s20",
+      "answer": "watch",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Jai had to ___ the pot so it wouldn't boil over.",
+      "cue_phrase": "so it wouldn't boil over",
+      "surface": {
+        "see": "see",
+        "look": "look at",
+        "watch": "watch",
+        "read": "read",
+        "blink": "blink at"
+      }
+    },
+    {
+      "id": "A-see-01-s21",
+      "answer": "watch",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Ella ___ the snail all the way across the path.",
+      "cue_phrase": "all the way across the path",
+      "surface": {
+        "see": "saw",
+        "look": "looked at",
+        "watch": "watched",
+        "read": "read",
+        "blink": "blinked at"
+      }
+    },
+    {
+      "id": "A-see-01-s22",
+      "answer": "watch",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The farm dog ___ the sheep so none ran off.",
+      "cue_phrase": "so none ran off",
+      "surface": {
+        "see": "saw",
+        "look": "looked at",
+        "watch": "watched",
+        "read": "read",
+        "blink": "blinked at"
+      }
+    },
+    {
+      "id": "A-see-01-s23",
+      "answer": "watch",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Zoe ___ the toast under the grill so it wouldn't burn.",
+      "cue_phrase": "under the grill so it wouldn't burn",
+      "surface": {
+        "see": "saw",
+        "look": "looked at",
+        "watch": "watched",
+        "read": "read",
+        "blink": "blinked at"
+      }
+    },
+    {
+      "id": "A-see-01-s24",
+      "answer": "watch",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Pop ___ the sausages on the barbie so none burnt.",
+      "cue_phrase": "so none burnt",
+      "surface": {
+        "see": "saw",
+        "look": "looked at",
+        "watch": "watched",
+        "read": "read",
+        "blink": "blinked at"
+      }
+    },
+    {
+      "id": "A-see-01-s25",
+      "answer": "read",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Dad ___ the bedtime story out loud in funny voices.",
+      "cue_phrase": "out loud in funny voices",
+      "surface": {
+        "see": "saw",
+        "look": "looked at",
+        "watch": "watched",
+        "read": "read",
+        "blink": "blinked at"
+      }
+    },
+    {
+      "id": "A-see-01-s26",
+      "answer": "read",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Mia ___ her chapter book right to the end.",
+      "cue_phrase": "chapter book right to the end",
+      "surface": {
+        "see": "saw",
+        "look": "looked at",
+        "watch": "watched",
+        "read": "read",
+        "blink": "blinked at"
+      }
+    },
+    {
+      "id": "A-see-01-s27",
+      "answer": "read",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Each night, Grandpa ___ two pages to me.",
+      "cue_phrase": "two pages to me",
+      "surface": {
+        "see": "saw",
+        "look": "looked at",
+        "watch": "watched",
+        "read": "read",
+        "blink": "blinked at"
+      }
+    },
+    {
+      "id": "A-see-01-s28",
+      "answer": "read",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Ella ___ her chapter book under the covers by torchlight.",
+      "cue_phrase": "chapter book; by torchlight",
+      "surface": {
+        "see": "saw",
+        "look": "looked at",
+        "watch": "watched",
+        "read": "read",
+        "blink": "blinked at"
+      }
+    },
+    {
+      "id": "A-see-01-s29",
+      "answer": "read",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Tom can't ___ the storybook yet, so he enjoys the pictures.",
+      "cue_phrase": "so he enjoys the pictures",
+      "surface": {
+        "see": "see",
+        "look": "look at",
+        "watch": "watch",
+        "read": "read",
+        "blink": "blink at"
+      }
+    },
+    {
+      "id": "A-see-01-s30",
+      "answer": "read",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Ella ___ her poem so well the class clapped.",
+      "cue_phrase": "poem; the class clapped",
+      "surface": {
+        "see": "saw",
+        "look": "looked at",
+        "watch": "watched",
+        "read": "read",
+        "blink": "blinked at"
+      }
+    },
+    {
+      "id": "A-see-01-s31",
+      "answer": "read",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Ben ___ Nan's card out loud to everyone.",
+      "cue_phrase": "card out loud",
+      "surface": {
+        "see": "saw",
+        "look": "looked at",
+        "watch": "watched",
+        "read": "read",
+        "blink": "blinked at"
+      }
+    },
+    {
+      "id": "A-see-01-s32",
+      "answer": "read",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Before bed, Pia ___ one more chapter.",
+      "cue_phrase": "one more chapter",
+      "surface": {
+        "see": "saw",
+        "look": "looked at",
+        "watch": "watched",
+        "read": "read",
+        "blink": "blinked at"
+      }
+    },
+    {
+      "id": "A-see-01-s33",
+      "answer": "blink",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Sand blew in Max's eyes, and he ___ fast.",
+      "cue_phrase": "sand blew in Max's eyes",
+      "surface": {
+        "see": "saw",
+        "look": "looked",
+        "watch": "watched",
+        "read": "read",
+        "blink": "blinked"
+      },
+      "waivers": [
+        {
+          "check": "GLOSS-WORD-ECHO",
+          "word": "eyes",
+          "note": "'eyes' is the everyday Year-1 word for the scene fact; the gloss line is a dictionary definition, the sentence is a scene",
+          "by": "claude",
+          "at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "id": "A-see-01-s34",
+      "answer": "blink",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "In the staring game, Leo ___ first, so Ivy won.",
+      "cue_phrase": "staring game; first, so Ivy won",
+      "surface": {
+        "see": "saw",
+        "look": "looked",
+        "watch": "watched",
+        "read": "read",
+        "blink": "blinked"
+      }
+    },
+    {
+      "id": "A-see-01-s35",
+      "answer": "blink",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Leaving the dark cinema, we ___ in the bright sun.",
+      "cue_phrase": "leaving the dark cinema; bright sun",
+      "surface": {
+        "see": "saw",
+        "look": "looked",
+        "watch": "watched",
+        "read": "read",
+        "blink": "blinked"
+      }
+    },
+    {
+      "id": "A-see-01-s36",
+      "answer": "blink",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Campfire smoke made Dad ___ and rub his face.",
+      "cue_phrase": "campfire smoke",
+      "surface": {
+        "see": "see",
+        "look": "look",
+        "watch": "watch",
+        "read": "read",
+        "blink": "blink"
+      }
+    },
+    {
+      "id": "A-see-01-s37",
+      "answer": "blink",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Tim's eyes were so dry that he ___ a lot.",
+      "cue_phrase": "so dry",
+      "surface": {
+        "see": "saw",
+        "look": "looked",
+        "watch": "watched",
+        "read": "read",
+        "blink": "blinked"
+      },
+      "waivers": [
+        {
+          "check": "GLOSS-WORD-ECHO",
+          "word": "eyes",
+          "note": "'eyes' is the everyday Year-1 word for the scene fact; the gloss line is a dictionary definition, the sentence is a scene",
+          "by": "claude",
+          "at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "id": "A-see-01-s38",
+      "answer": "blink",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "A bubble popped on the baby's nose, and she ___ fast.",
+      "cue_phrase": "bubble popped on the baby's nose",
+      "surface": {
+        "see": "saw",
+        "look": "looked",
+        "watch": "watched",
+        "read": "read",
+        "blink": "blinked"
+      }
+    },
+    {
+      "id": "A-see-01-s39",
+      "answer": "blink",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Waking in bright sunshine, the baby ___ a few times.",
+      "cue_phrase": "waking in bright sunshine",
+      "surface": {
+        "see": "saw",
+        "look": "looked",
+        "watch": "watched",
+        "read": "read",
+        "blink": "blinked"
+      }
+    },
+    {
+      "id": "A-see-01-s40",
+      "answer": "blink",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "The bright pool hurt Ivy's eyes, so she kept ___.",
+      "cue_phrase": "hurt Ivy's eyes",
+      "surface": {
+        "see": "seeing",
+        "look": "looking",
+        "watch": "watching",
+        "read": "reading",
+        "blink": "blinking"
+      },
+      "waivers": [
+        {
+          "check": "GLOSS-WORD-ECHO",
+          "word": "eyes",
+          "note": "'eyes' is the everyday Year-1 word for the scene fact; the gloss line is a dictionary definition, the sentence is a scene",
+          "by": "claude",
+          "at": "2026-11-12"
+        }
+      ]
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "see",
+      "picked": "look",
+      "line": "Seeing just happens. Looking is turning your eyes to something on purpose."
+    },
+    {
+      "answer": "see",
+      "picked": "watch",
+      "line": "Seeing can happen in a moment. Watching keeps your eyes on something that moves."
+    },
+    {
+      "answer": "see",
+      "picked": "read",
+      "line": "Seeing is about things. Reading is about words."
+    },
+    {
+      "answer": "see",
+      "picked": "blink",
+      "line": "Seeing takes in the world. Blinking shuts your eyes for a moment."
+    },
+    {
+      "answer": "look",
+      "picked": "see",
+      "line": "Looking is something you choose to do, for a while. Seeing can just happen."
+    },
+    {
+      "answer": "look",
+      "picked": "watch",
+      "line": "Looking suits something that stays still. Watching follows something that moves or changes."
+    },
+    {
+      "answer": "look",
+      "picked": "read",
+      "line": "Looking takes in a thing. Reading takes in words."
+    },
+    {
+      "answer": "look",
+      "picked": "blink",
+      "line": "Looking keeps your eyes open on purpose. Blinking shuts them fast."
+    },
+    {
+      "answer": "watch",
+      "picked": "see",
+      "line": "Watching goes on for a while to keep things safe. Seeing can be over in a moment."
+    },
+    {
+      "answer": "watch",
+      "picked": "look",
+      "line": "Watching keeps your eyes on something that moves or might change. Looking suits still things."
+    },
+    {
+      "answer": "watch",
+      "picked": "read",
+      "line": "Watching follows things that move. Reading follows words."
+    },
+    {
+      "answer": "watch",
+      "picked": "blink",
+      "line": "Watching keeps your eyes open on something. Blinking shuts them fast."
+    },
+    {
+      "answer": "read",
+      "picked": "see",
+      "line": "Reading takes in words and what they mean. Seeing just notices something is there."
+    },
+    {
+      "answer": "read",
+      "picked": "look",
+      "line": "Reading is for words in a book or card. Looking is for any thing."
+    },
+    {
+      "answer": "read",
+      "picked": "watch",
+      "line": "Reading is for words. Watching is for things that move."
+    },
+    {
+      "answer": "read",
+      "picked": "blink",
+      "line": "Reading takes in words. Blinking shuts your eyes for a moment."
+    },
+    {
+      "answer": "blink",
+      "picked": "see",
+      "line": "Blinking shuts and opens your eyes fast. Seeing takes in what is there."
+    },
+    {
+      "answer": "blink",
+      "picked": "look",
+      "line": "Blinking is fast, and you often can't stop it. Looking is a choice."
+    },
+    {
+      "answer": "blink",
+      "picked": "watch",
+      "line": "Blinking is a quick shut of the eyes. Watching keeps them open."
+    },
+    {
+      "answer": "blink",
+      "picked": "read",
+      "line": "Blinking shuts your eyes fast. Reading takes in words."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-11-12T12:15:18+00:00",
+    "model": "claude-opus-5-5",
+    "scrubbed_at": "2026-11-12",
+    "scrub_note": "Scrubbed by claude 2026-11-12: all 40 sentences and 20 contrasts authored and read aloud at Year-1 level (<=12 words); members changed from the planned look/see/watch/stare/peek because stare and peek both grade 2 (Year 2) - peek is a hyponym of look, so read (Y1) and blink (Y2 stretch) replaced them; five judge rounds - rewrote 3 babysitting-sense watch items, then one watch slot four times (goalie, ice block, TV cricket, chooks) until all three judges passed it, and a sparkle/blink item where look fitted; 1 single-judge dissent recorded as a waiver."
+  }
+}

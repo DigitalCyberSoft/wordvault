@@ -460,8 +460,8 @@
       "answer": "adore",
       "cue": "contextual",
       "reserve": false,
-      "text": "Maya ___ every puppy she met, beaming and whispering, 'You're perfect!'",
-      "cue_phrase": "beaming and whispering",
+      "text": "Maya ___ her grandpa, racing down the driveway shrieking whenever his car pulled in.",
+      "cue_phrase": "racing down the driveway shrieking",
       "surface": {
         "enjoy": "enjoyed",
         "admire": "admired",
@@ -529,8 +529,8 @@
       "answer": "adore",
       "cue": "inferential",
       "reserve": false,
-      "text": "The baby ___ the moon, waving both hands whenever it rose.",
-      "cue_phrase": "waving both hands",
+      "text": "The baby ___ her big brother, squealing and reaching for him whenever he walked in.",
+      "cue_phrase": "squealing and reaching for him",
       "surface": {
         "enjoy": "enjoyed",
         "admire": "admired",
@@ -575,8 +575,8 @@
       "answer": "adore",
       "cue": "contextual",
       "reserve": true,
-      "text": "The twins ___ their swimming teacher, racing to hug her at every lesson.",
-      "cue_phrase": "racing to hug her",
+      "text": "The twins ___ Uncle Raf, shrieking his name and hugging his legs whenever he visits.",
+      "cue_phrase": "shrieking his name and hugging his legs",
       "surface": {
         "enjoy": "enjoy",
         "admire": "admire",
@@ -736,14 +736,14 @@
       "answer": "cherish",
       "cue": "contextual",
       "reserve": true,
-      "text": "Families often ___ photographs that hold important days close.",
-      "cue_phrase": "important days close",
+      "text": "Nan still ___ the faded letter Grandpa wrote her in 1968, folded inside her purse.",
+      "cue_phrase": "faded letter; folded inside her purse",
       "surface": {
-        "enjoy": "enjoy",
-        "admire": "admire",
-        "adore": "adore",
-        "cherish": "cherish",
-        "miss": "miss"
+        "enjoy": "enjoys",
+        "admire": "admires",
+        "adore": "adores",
+        "cherish": "cherishes",
+        "miss": "misses"
       },
       "waivers": [
         {
@@ -1036,6 +1036,6 @@
     "generated_at": "2026-07-05T11:06:12+00:00",
     "model": "gpt-5.5",
     "scrubbed_at": "2026-07-05T13:42:27+00:00",
-    "scrub_note": "adore s17/s19/s20/s24 restaged as active intense affection (drafts leaked into cherish's attachment territory). Full read + judge triage."
+    "scrub_note": "adore s17/s19/s20/s24 restaged as active intense affection (drafts leaked into cherish's attachment territory). Full read + judge triage. Fairness pass by claude 2026-11-12: adore s19/s22/s24 rewritten as over-the-moon greetings and squeals for family members (no skill to look up to, no keepsake holding), so admire/cherish drop out; cherish s31 is now a 1968 letter kept in a purse."
   }
 }

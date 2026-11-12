@@ -95,8 +95,8 @@
       "answer": "meticulous",
       "cue": "explicit",
       "reserve": false,
-      "text": "Nina's ___ model had every window counted, painted, and ticked off.",
-      "cue_phrase": "every window counted",
+      "text": "Nina was ___ with her model, counting, painting and ticking off every single window.",
+      "cue_phrase": "counting, painting and ticking off every single window",
       "surface": {
         "meticulous": "meticulous",
         "immaculate": "immaculate",
@@ -829,6 +829,6 @@
     "generated_at": "2026-07-06T14:20:43+00:00",
     "model": "gpt-5.5",
     "scrubbed_at": "2026-07-07",
-    "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+    "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite). Fairness pass by claude 2026-11-12: meticulous s01 now describes the maker's care (Nina was ___ with her model), not the object, so intricate is excluded."
   }
 }

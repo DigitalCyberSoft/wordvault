@@ -218,8 +218,8 @@
       "answer": "toss",
       "cue": "inferential",
       "reserve": false,
-      "text": "From her pillow, Jo could ___ the hair-tie onto the dresser without sitting up.",
-      "cue_phrase": "from her pillow; without sitting up",
+      "text": "With a careless flick, Jo would ___ each sweet wrapper aside and keep reading.",
+      "cue_phrase": "careless flick; aside",
       "surface": {
         "toss": "toss",
         "hurl": "hurl",
@@ -492,8 +492,8 @@
       "answer": "lob",
       "cue": "contextual",
       "reserve": false,
-      "text": "From the ditch, Priya ___ the rope bag up over the branch in a gentle curve.",
-      "cue_phrase": "up over the branch",
+      "text": "When her rival rushed the net, Priya ___ the shuttle high to the back line.",
+      "cue_phrase": "rival rushed the net; high to the back line",
       "surface": {
         "toss": "tossed",
         "hurl": "hurled",
@@ -515,14 +515,14 @@
       "answer": "lob",
       "cue": "inferential",
       "reserve": false,
-      "text": "When a straight pass was blocked, Noor chose to ___ it over everyone.",
-      "cue_phrase": "straight pass was blocked",
+      "text": "Seeing the goalie off her line, Noor ___ the ball over her with a soft kick.",
+      "cue_phrase": "goalie off her line; with a soft kick",
       "surface": {
-        "toss": "toss",
-        "hurl": "hurl",
-        "lob": "lob",
-        "drop": "drop",
-        "roll": "roll"
+        "toss": "tossed",
+        "hurl": "hurled",
+        "lob": "lobbed",
+        "drop": "dropped",
+        "roll": "rolled"
       },
       "waivers": [
         {
@@ -538,14 +538,14 @@
       "answer": "lob",
       "cue": "inferential",
       "reserve": false,
-      "text": "To reach behind the tall screen, June had to ___ the beanbag upward.",
-      "cue_phrase": "behind the tall screen",
+      "text": "With a soft tap of her bat, June ___ the ball high over the bowler.",
+      "cue_phrase": "soft tap of her bat; high over the bowler",
       "surface": {
-        "toss": "toss",
-        "hurl": "hurl",
-        "lob": "lob",
-        "drop": "drop",
-        "roll": "roll"
+        "toss": "tossed",
+        "hurl": "hurled",
+        "lob": "lobbed",
+        "drop": "dropped",
+        "roll": "rolled"
       },
       "waivers": [
         {
@@ -584,8 +584,8 @@
       "answer": "lob",
       "cue": "contextual",
       "reserve": true,
-      "text": "During rounders, Kay ___ the ball softly over the fielder's head.",
-      "cue_phrase": "over the fielder's head",
+      "text": "With her wedge club, Kay ___ the golf ball high over the bunker.",
+      "cue_phrase": "wedge club; high over the bunker",
       "surface": {
         "toss": "tossed",
         "hurl": "hurled",
@@ -957,6 +957,6 @@
     "generated_at": "2026-07-05T07:24:44+00:00",
     "model": "gpt-5.5",
     "scrubbed_at": "2026-07-05",
-    "scrub_note": "Full read by claude during judge triage: every flagged sentence adjudicated (rewrite or recorded waiver), unflagged sentences read for frame sanity."
+    "scrub_note": "Full read by claude during judge triage: every flagged sentence adjudicated (rewrite or recorded waiver), unflagged sentences read for frame sanity. Fairness pass by claude 2026-11-12: lob s20-s24 now need a racquet, bat, kick or golf wedge, so toss (a light hand flick) is excluded; toss s06 is now a careless flick aside, not an arc onto furniture."
   }
 }

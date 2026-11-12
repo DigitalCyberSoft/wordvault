@@ -424,15 +424,13 @@
       "judged_at": "2026-07-06T08:11:43+00:00"
     },
     "A-water-move-01-s16": {
-      "text_sha256": "1a98fa76ae3c501ba4a1d47a96f79d940fa197b7fb5fb1d5cc0252dd71c37230",
-      "verdict": "review",
+      "text_sha256": "3f21c3c4f9b8bab179bd590756cf0843a54c214b918ffa87bb7558b7fe17d5a1",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "bob",
-            "paddle",
-            "wade"
+            "paddle"
           ],
           "sense_match": true
         },
@@ -446,13 +444,12 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "paddle",
-            "wade"
+            "paddle"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-06T08:37:09+00:00"
+      "judged_at": "2026-11-12T12:19:58+00:00"
     },
     "A-water-move-01-s17": {
       "text_sha256": "6a55170b9b4cfd8207017687d06714c4b29d099213e2eea3f0d8d957f3c69e51",

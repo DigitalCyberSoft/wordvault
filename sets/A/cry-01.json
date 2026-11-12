@@ -240,8 +240,8 @@
       "answer": "whimper",
       "cue": "explicit",
       "reserve": true,
-      "text": "The scared puppy ___ in tiny squeaks instead of big noise.",
-      "cue_phrase": "in tiny squeaks",
+      "text": "The scared puppy hid under the bed and ___ in tiny, trembling squeaks.",
+      "cue_phrase": "tiny, trembling squeaks",
       "surface": {
         "whimper": "whimpered",
         "sob": "sobbed",
@@ -293,21 +293,21 @@
       "answer": "sob",
       "cue": "explicit",
       "reserve": false,
-      "text": "Maya was ___, each breath jerking before the next.",
-      "cue_phrase": "breath jerking before",
+      "text": "Maya ___ into Mum's shoulder, each breath coming in jerky gulps.",
+      "cue_phrase": "each breath coming in jerky gulps",
       "surface": {
-        "whimper": "whimpering",
-        "sob": "sobbing",
-        "blubber": "blubbering",
-        "bawl": "bawling",
-        "howl": "howling"
+        "whimper": "whimpered",
+        "sob": "sobbed",
+        "blubber": "blubbered",
+        "bawl": "bawled",
+        "howl": "howled"
       },
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: gpt-5.5 also reads bawl, blubber charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (bawl, blubber); read and rejected: jerky gulping breaths into a shoulder is a sob; nothing in the frame is loud (bawl) or snuffly with words (blubber)",
           "by": "claude",
-          "at": "2026-07-05"
+          "at": "2026-11-12"
         }
       ]
     },
@@ -316,83 +316,59 @@
       "answer": "sob",
       "cue": "contextual",
       "reserve": false,
-      "text": "When his best friend moved away, Omar ___ almost silently, shoulders shaking with each breath.",
-      "cue_phrase": "almost silently; shoulders shaking",
+      "text": "When his best friend moved away, Omar ___ without a sound, his shoulders shaking.",
+      "cue_phrase": "without a sound",
       "surface": {
         "whimper": "whimpered",
         "sob": "sobbed",
         "blubber": "blubbered",
         "bawl": "bawled",
         "howl": "howled"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "ADJACENCY-2OF3 (gpt-5.5 adds whimper; gpt-4.1 adds whimper): whimper co-occurs with quiet crying; shoulders shaking with each breath is sob's convulsive feature",
-          "by": "claude",
-          "at": "2026-07-05"
-        }
-      ]
+      }
     },
     {
       "id": "A-cry-01-s12",
       "answer": "sob",
       "cue": "contextual",
       "reserve": false,
-      "text": "The sad ending made our teacher ___ softly between gulps of air.",
-      "cue_phrase": "softly between gulps of air",
-      "surface": {
-        "whimper": "whimper",
-        "sob": "sob",
-        "blubber": "blubber",
-        "bawl": "bawl",
-        "howl": "howl"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "ADJACENCY-2OF3 (gpt-5.5 adds whimper; gpt-4.1 adds whimper): whimper co-occurs; gulps of air stage sob's convulsive breathing, whimper is a thin whine without it",
-          "by": "claude",
-          "at": "2026-07-05"
-        }
-      ]
-    },
-    {
-      "id": "A-cry-01-s13",
-      "answer": "sob",
-      "cue": "inferential",
-      "reserve": false,
-      "text": "Jade's shoulders bounced with each quiet breath as she ___ over the broken castle.",
-      "cue_phrase": "shoulders bounced; quiet breath",
+      "text": "At the sad ending, our teacher ___ silently behind her book, her shoulders shaking.",
+      "cue_phrase": "silently behind her book",
       "surface": {
         "whimper": "whimpered",
         "sob": "sobbed",
         "blubber": "blubbered",
         "bawl": "bawled",
         "howl": "howled"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "ADJACENCY-2OF3 (gpt-5.5 adds whimper; gpt-4.1 adds whimper): whimper co-occurs; bouncing shoulders with each breath is sob's convulsive feature",
-          "by": "claude",
-          "at": "2026-07-05"
-        }
-      ]
+      }
+    },
+    {
+      "id": "A-cry-01-s13",
+      "answer": "sob",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Jade's shoulders shook in silent heaves as she ___ over the broken sandcastle.",
+      "cue_phrase": "silent heaves",
+      "surface": {
+        "whimper": "whimpered",
+        "sob": "sobbed",
+        "blubber": "blubbered",
+        "bawl": "bawled",
+        "howl": "howled"
+      }
     },
     {
       "id": "A-cry-01-s14",
       "answer": "sob",
       "cue": "inferential",
       "reserve": false,
-      "text": "In quiet scenes, he ___ when sorrow shakes his chest.",
-      "cue_phrase": "sorrow shakes his chest",
+      "text": "Reading the last page, Gran ___ silently, her shoulders jumping with each breath.",
+      "cue_phrase": "shoulders jumping with each breath",
       "surface": {
-        "whimper": "whimpers",
-        "sob": "sobs",
-        "blubber": "blubbers",
-        "bawl": "bawls",
-        "howl": "howls"
+        "whimper": "whimpered",
+        "sob": "sobbed",
+        "blubber": "blubbered",
+        "bawl": "bawled",
+        "howl": "howled"
       }
     },
     {
@@ -400,46 +376,30 @@
       "answer": "sob",
       "cue": "explicit",
       "reserve": true,
-      "text": "Lily ___ quietly after the race, gulping air between tears.",
-      "cue_phrase": "quietly; gulping air",
+      "text": "After losing the final, Lily ___ silently into her towel, gulping air between tears.",
+      "cue_phrase": "gulping air between tears",
       "surface": {
         "whimper": "whimpered",
         "sob": "sobbed",
         "blubber": "blubbered",
         "bawl": "bawled",
         "howl": "howled"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "ADJACENCY-2OF3 (gpt-5.5 adds whimper; gpt-4.1 adds whimper): whimper co-occurs; gulping air between tears is sob's convulsive feature",
-          "by": "claude",
-          "at": "2026-07-05"
-        }
-      ]
+      }
     },
     {
       "id": "A-cry-01-s16",
       "answer": "sob",
       "cue": "inferential",
       "reserve": true,
-      "text": "The news made Theo ___ under his breath, his whole chest jumping.",
-      "cue_phrase": "under his breath; chest jumping",
+      "text": "Theo made no sound at all, but his chest jerked with every breath as he ___.",
+      "cue_phrase": "chest jerked with every breath",
       "surface": {
-        "whimper": "whimper",
-        "sob": "sob",
-        "blubber": "blubber",
-        "bawl": "bawl",
-        "howl": "howl"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "ADJACENCY-2OF3 (gpt-5.5 adds whimper; gpt-4.1 adds whimper): whimper co-occurs; the jumping chest stages sob's convulsions",
-          "by": "claude",
-          "at": "2026-07-05"
-        }
-      ]
+        "whimper": "whimpered",
+        "sob": "sobbed",
+        "blubber": "blubbered",
+        "bawl": "bawled",
+        "howl": "howled"
+      }
     },
     {
       "id": "A-cry-01-s17",
@@ -768,8 +728,8 @@
       "answer": "bawl",
       "cue": "explicit",
       "reserve": true,
-      "text": "The toddler ___ in full-volume tantrum bursts near the biscuits.",
-      "cue_phrase": "full-volume tantrum bursts",
+      "text": "On the long car trip, the baby ___ in loud, yelling bursts that filled the car.",
+      "cue_phrase": "loud, yelling bursts",
       "surface": {
         "whimper": "whimpered",
         "sob": "sobbed",
@@ -780,9 +740,9 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "ADJACENCY-2OF3 (gpt-5.5 adds blubber, howl, sob; claude-opus-4-8 adds howl): howl co-occurs with full-volume crying; burst-pattern tantrum wailing is bawl's canonical staging",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (howl); read and rejected: the crying comes in short loud yelling bursts, not one long drawn-out wail, so howl does not fit",
           "by": "claude",
-          "at": "2026-07-05"
+          "at": "2026-11-12"
         }
       ]
     },
@@ -791,8 +751,8 @@
       "answer": "bawl",
       "cue": "contextual",
       "reserve": true,
-      "text": "Losing at snakes and ladders made Ollie ___ in ear-splitting bursts.",
-      "cue_phrase": "ear-splitting bursts",
+      "text": "The toddler ___ for her lost dummy in short, yelling bursts that filled the house.",
+      "cue_phrase": "for her lost dummy",
       "surface": {
         "whimper": "whimpered",
         "sob": "sobbed",
@@ -803,9 +763,9 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "ADJACENCY-2OF3 (gpt-5.5 adds blubber, howl, sob; claude-opus-4-8 adds blubber, howl): howl co-occurs; ear-splitting burst crying at a game loss is bawl's home ground",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (howl); read and rejected: the crying comes in short loud yelling bursts, not one long drawn-out wail, so howl does not fit",
           "by": "claude",
-          "at": "2026-07-05"
+          "at": "2026-11-12"
         }
       ]
     },
@@ -897,14 +857,14 @@
       "answer": "howl",
       "cue": "inferential",
       "reserve": false,
-      "text": "The siren made the dog ___ until the sound matched it.",
-      "cue_phrase": "sound matched it",
+      "text": "When the fire siren wailed, our dog lifted her nose and ___ right along with it.",
+      "cue_phrase": "lifted her nose",
       "surface": {
-        "whimper": "whimper",
-        "sob": "sob",
-        "blubber": "blubber",
-        "bawl": "bawl",
-        "howl": "howl"
+        "whimper": "whimpered",
+        "sob": "sobbed",
+        "blubber": "blubbered",
+        "bawl": "bawled",
+        "howl": "howled"
       }
     },
     {
@@ -927,8 +887,8 @@
       "answer": "howl",
       "cue": "contextual",
       "reserve": true,
-      "text": "From the tower, the monster ___ with a wail crossing the forest.",
-      "cue_phrase": "wail crossing the forest",
+      "text": "From the tower, the monster ___ a wail that rolled on and on across the forest.",
+      "cue_phrase": "rolled on and on",
       "surface": {
         "whimper": "whimpered",
         "sob": "sobbed",
@@ -939,9 +899,9 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: gpt-5.5 also reads bawl charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (bawl); read and rejected: a monster's single wail rolling across a forest is a howl, not a child's crying, so bawl does not fit",
           "by": "claude",
-          "at": "2026-07-05"
+          "at": "2026-11-12"
         }
       ]
     }
@@ -970,12 +930,12 @@
     {
       "answer": "sob",
       "picked": "whimper",
-      "line": "Sob has big shaky breaths. Whimper is tiny and scared."
+      "line": "Sob shakes the whole chest, even with no sound. Whimper is a tiny scared sound."
     },
     {
       "answer": "sob",
       "picked": "blubber",
-      "line": "Sob shakes the chest with big breaths. Blubber is messy, with sniffles."
+      "line": "Sob shakes the chest, even silently. Blubber is messy and noisy, with sniffles."
     },
     {
       "answer": "sob",
@@ -1052,6 +1012,6 @@
     "generated_at": "2026-07-05T07:18:49+00:00",
     "model": "gpt-5.5",
     "scrubbed_at": "2026-07-05",
-    "scrub_note": "Full read by claude during judge triage: every flagged sentence adjudicated (rewrite or recorded waiver), unflagged sentences read for frame sanity."
+    "scrub_note": "Full read by claude during judge triage: every flagged sentence adjudicated (rewrite or recorded waiver), unflagged sentences read for frame sanity. Fairness pass by claude 2026-11-12: the 'quiet sob' frames let whimper in (2 judges) and the reserve bawl frames let howl in, so sob s11-s16 now stage silent, shoulder-shaking sobs (a whimper is a sound, blubber is noisy) and bawl s31/s32 stage short loud yelling bursts rather than one long wail. Also smoothed s07 (defensive 'instead of big noise'), s10, s38 and s40. Two sob contrast lines updated. Single gpt-5.5 dissents read and waived."
   }
 }

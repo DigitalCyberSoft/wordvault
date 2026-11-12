@@ -164,42 +164,54 @@ var alwaysWrong = function (s) { return s.answer === 'alpha' ? 'bravo' : 'alpha'
   throws(function () { C.startRun(C.startRun(enc)); }, 'startRun() twice without a miss throws');
 })();
 
-// 5. Adaptivity curve.
+// 5. Progression: integer levels; a year is passed with four clean cracks IN A ROW.
 (function () {
-  // curve re-anchored to the 28-level year ladder: 1 through year 3 (<=12),
-  // 2 across years 4-5 (13-20), 3 in years 6-7 (21+)
-  eq(C.neededStreak(1), 1, 'streak needed in years 1-3 is 1');
-  eq(C.neededStreak(12), 1, 'streak needed at 12 (year 3 top) is 1');
-  eq(C.neededStreak(13), 2, 'streak needed at 13 (year 4) is 2');
-  eq(C.neededStreak(20), 2, 'streak needed at 20 (year 5 top) is 2');
-  eq(C.neededStreak(21), 3, 'streak needed at 21 (year 6) is 3');
-  eq(C.neededStreak(28), 3, 'streak needed at 28 is 3');
-  var r = C.adjustDifficulty(1, 'clean-crack', 0, 0);
-  ok(Math.abs(r.difficulty - 1.7) < 1e-9 && r.streak === 0, 'level 1 climbs on a single clean crack');
-  r = C.adjustDifficulty(15, 'clean-crack', 0, 0);
-  ok(r.difficulty === 15 && r.streak === 1, 'level 15 needs a second clean crack');
-  r = C.adjustDifficulty(15, 'clean-crack', 1, 0);
-  ok(Math.abs(r.difficulty - 15.7) < 1e-9 && r.streak === 0, 'level 15 climbs on the second');
-  r = C.adjustDifficulty(15, 'crack', 1, 0);
-  ok(r.difficulty === 15 && r.streak === 0, 'scrappy crack holds level, breaks streak');
-  r = C.adjustDifficulty(15, 'exhausted', 2, 0);
-  ok(Math.abs(r.difficulty - 14.2) < 1e-9 && r.streak === 0, 'exhaustion drops 0.8');
-  r = C.adjustDifficulty(1, 'exhausted', 0, 0);
-  eq(r.difficulty, 1, 'difficulty clamps at 1');
-  r = C.adjustDifficulty(C.MAX_LEVEL + 0.9, 'clean-crack', 2, 0);
-  ok(r.difficulty <= C.MAX_LEVEL + 0.99, 'difficulty clamps at MAX_LEVEL+0.99');
-  r = C.adjustDifficulty(8, 'clean-crack', 0, 6);
-  ok(r.difficulty <= 6.99, 'parent cap clamps');
-  r = C.adjustDifficulty(9, 'review-opened', 2, 0);
-  ok(r.difficulty === 9 && r.streak === 2, 'review-opened moves nothing');
-  r = C.adjustDifficulty(9, 'review-failed', 2, 0);
-  ok(r.difficulty === 9 && r.streak === 2, 'review-failed moves nothing');
-  throws(function () { C.adjustDifficulty(9, 'tipped', 0, 0); }, 'unknown outcome throws (the lock timer feeds miss/exhausted; speed is never an outcome)');
-  var d = 3, s = 0, i;
-  for (i = 0; i < 40; i++) { var up = C.adjustDifficulty(d, 'clean-crack', s, 0); ok(up.difficulty >= d, 'clean-crack never lowers'); d = up.difficulty; s = up.streak; }
-  for (i = 0; i < 40; i++) { var dn = C.adjustDifficulty(d, 'exhausted', s, 0); ok(dn.difficulty <= d, 'exhaustion never raises'); d = dn.difficulty; s = dn.streak; }
+  function adj(l, o, sl, cap) { return C.adjustDifficulty(l, o, sl || 0, cap || 0); }
+  var r = adj(1, 'clean-crack');
+  ok(r.difficulty === 2 && r.event === 'step', 'every clean crack is one whole step (no dead 0.7 climbs)');
+  var lv = 1, sl = 0, i, events = [];
+  for (i = 0; i < 4; i++) { r = adj(lv, 'clean-crack', sl); lv = r.difficulty; sl = r.slips; events.push(r.event); }
+  eq(lv, 5, 'four clean cracks in a row pass Year 1');
+  eq(events.join(','), 'step,step,step,promoted', 'the fourth clean crack is the promotion');
+  eq(C.yearOf(lv), 2, 'promotion lands in Year 2');
+  eq(C.crackNeedFor(lv), 2, 'a new year starts at 2 pins');
+  r = adj(7, 'crack');
+  ok(r.difficulty === 5 && r.event === 'reset', 'a scrappy crack breaks the run: back to the year start');
+  r = adj(5, 'crack');
+  ok(r.difficulty === 5 && r.event === 'hold', 'a scrappy crack at the year start holds');
+  r = adj(8, 'exhausted', 0);
+  ok(r.difficulty === 5 && r.slips === 1 && r.event === 'reset', 'one exhausted safe: back to the year start, never a year lost');
+  r = adj(5, 'exhausted', 1);
+  ok(r.difficulty === 1 && r.slips === 0 && r.event === 'demoted', 'two exhausted safes in a row step down to the start of the year below');
+  r = adj(2, 'exhausted', 1);
+  ok(r.difficulty === 1 && r.event !== 'demoted', 'Year 1 cannot drop further');
+  r = adj(6, 'crack', 1);
+  eq(r.slips, 0, 'any crack clears the slips');
+  r = adj(6, 'clean-crack', 1);
+  eq(r.slips, 0, 'a clean crack clears the slips');
+  r = adj(C.MAX_LEVEL, 'clean-crack');
+  ok(r.difficulty === C.MAX_LEVEL && r.event === 'top', 'the top of the ladder holds');
+  r = adj(8, 'clean-crack', 0, 8);
+  ok(r.difficulty === 8 && r.event === 'top', 'the grown-up cap holds at its year (no off-by-one past it)');
+  r = adj(12, 'crack', 0, 8);
+  ok(r.difficulty <= 8, 'a level above a newly set cap is clamped');
+  r = adj(9, 'review-opened', 1);
+  ok(r.difficulty === 9 && r.slips === 1 && r.event === 'hold', 'review-opened moves nothing');
+  r = adj(9, 'review-failed', 1);
+  ok(r.difficulty === 9 && r.slips === 1, 'review-failed moves nothing');
+  throws(function () { adj(9, 'tipped'); }, 'unknown outcome throws (the lock timer feeds miss/exhausted; speed is never an outcome)');
+  lv = 3; sl = 0;
+  for (i = 0; i < 40; i++) { r = adj(lv, 'clean-crack', sl); ok(r.difficulty >= lv && r.difficulty === Math.round(r.difficulty), 'clean-crack never lowers, levels stay integers'); lv = r.difficulty; sl = r.slips; }
+  eq(lv, C.MAX_LEVEL, 'enough clean cracks reach the top');
+  for (i = 0; i < 40; i++) { r = adj(lv, 'exhausted', sl); ok(r.difficulty <= lv, 'exhaustion never raises'); lv = r.difficulty; sl = r.slips; }
+  eq(lv, 1, 'repeated exhaustion bottoms out at level 1');
   eq(C.levelOf(0.2), 1, 'levelOf clamps low');
   eq(C.levelOf(999), C.MAX_LEVEL, 'levelOf clamps high');
+  eq(C.levelOf(4.4), 4, 'old float saves round onto the integer ladder');
+  eq(C.levelOf('junk'), 1, 'unparseable saves start at level 1');
+  eq(C.cleanToPass(1), 4, 'a year start needs four clean cracks');
+  eq(C.cleanToPass(4), 1, 'the 5-pin vault needs one');
+  eq(C.yearStart(3), 9, 'Year 3 starts at level 9');
 })();
 
 // 6. Determinism.
@@ -365,28 +377,37 @@ var alwaysWrong = function (s) { return s.answer === 'alpha' ? 'bravo' : 'alpha'
 })();
 
 // ---------------------------------------------------------------------------
-// setsForLevel: year-first selection with the bank-C floor
+// setsForLevel: year-first selection, gifted pitch, bank-C floor, thin-year widening
 (function () {
-  function graded(id, maxYear, bank) {
+  function graded(id, grades, bank) {
     var s = makeSet(id);
     if (bank) s.bank = bank;
-    s.words.forEach(function (w) { w.grade = maxYear; });
-    s.words[0].grade = 1;
+    s.words.forEach(function (w, i) { w.grade = grades[i]; });
     return s;
   }
-  var content = { sets: [graded('A-y1-01', 1), graded('A-y2-01', 2),
-                         graded('A-y5-01', 5), graded('C-y2-01', 2, 'C')],
-                  shelves: C.SHELVES };
-  eq(C.setYearOf(graded('A-x-01', 5)), 5, 'a set is pitched at its hardest word');
+  eq(C.setYearOf(graded('A-x-01', [1, 1, 1, 1, 2])), 1, 'one stretch word one year up keeps the set in the lower year');
+  eq(C.setYearOf(graded('A-x-01', [1, 1, 1, 1, 4])), 3, 'a far stretch word lifts the set to within one year of it');
+  eq(C.setYearOf(graded('A-x-01', [1, 2, 2, 5, 5])), 5, 'two hard words pitch at the hard year');
+  eq(C.setYearOf(graded('C-x-01', [1, 1, 2, 2, 2], 'C')), 3, 'bank C never pitches below year 3');
   eq(C.setYearOf(makeSet('A-f-01')), 4, 'ungraded sets fall back to a band estimate');
+  function many(prefix, n, grades) {
+    var out = [];
+    for (var i = 0; i < n; i++) out.push(graded(prefix + i + '-01', grades));
+    return out;
+  }
+  var content = { sets: [].concat(many('A-ya', 4, [1, 1, 1, 1, 1]), many('A-yb', 4, [2, 2, 2, 2, 2]),
+                                  many('A-ye', 4, [5, 5, 5, 5, 5]), [graded('C-y-01', [2, 2, 2, 2, 2], 'C')]),
+                  shelves: C.SHELVES };
   var ids = C.setsForLevel(content, 1);
-  ok(ids.indexOf('A-y1-01') !== -1, 'year 1 serves year-1 sets');
-  ok(ids.indexOf('A-y5-01') === -1, 'year 1 does not reach year-5 sets');
-  ok(ids.indexOf('C-y2-01') === -1, 'bank C never serves below year 3');
-  ids = C.setsForLevel(content, 9);
-  ok(ids.indexOf('C-y2-01') !== -1, 'bank C joins from year 3');
+  eq(ids.length, 4, 'a full year draws only its own sets');
+  ok(ids.every(function (id) { return /^A-ya/.test(id); }), 'year 1 serves year-1 sets');
+  ok(C.setsForLevel(content, 5).indexOf('C-y-01') === -1, 'bank C is not served in year 2');
+  ok(C.setsForLevel(content, 9).indexOf('C-y-01') !== -1, 'bank C IS served from year 3 (it used to be stranded)');
   ids = C.setsForLevel(content, 17);
-  eq(JSON.stringify(ids), JSON.stringify(['A-y5-01']), 'year 5 draws exactly the year-5 set');
+  eq(ids.length, 4, 'year 5 draws exactly its four sets');
+  var thin = { sets: [].concat(many('A-ya', 2, [1, 1, 1, 1, 1]), many('A-yb', 4, [2, 2, 2, 2, 2])), shelves: C.SHELVES };
+  ids = C.setsForLevel(thin, 1);
+  ok(ids.length >= C.MIN_POOL, 'a thin year borrows from the neighbouring year instead of looping two safes');
 })();
 
 // ---------------------------------------------------------------------------
@@ -409,6 +430,9 @@ var alwaysWrong = function (s) { return s.answer === 'alpha' ? 'bravo' : 'alpha'
   C.startRun(rev); C.drawSentence(rev, SET, rng);
   eq(C.timeout(rev, SET).state, 'failed', 'a review timeout fails the lockbox');
   eq(C.LOCK_TIMER_MS, 15000, 'the lock clock is 15 seconds');
+  eq(C.lockTimerFor(1), 20000, 'Year 1 readers get 20 seconds');
+  eq(C.lockTimerFor(8), 20000, 'Year 2 still gets 20 seconds');
+  eq(C.lockTimerFor(9), 15000, 'Year 3 up gets the standard 15 seconds');
 })();
 
 // ---------------------------------------------------------------------------

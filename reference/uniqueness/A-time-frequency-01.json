@@ -30,7 +30,7 @@
       "judged_at": "2026-07-10T04:55:22+00:00"
     },
     "A-time-frequency-01-s02": {
-      "text_sha256": "6216857ae8da9658b3ebbfe3c0af374d2e50eda051758b9ed2e2debee6fc3dfc",
+      "text_sha256": "afbc80e3b46db05bd66df3c084c2e4822d765e2009633cfaa3c233871f59afbc",
       "verdict": "pass",
       "judges": [
         {
@@ -55,10 +55,10 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-10T04:55:22+00:00"
+      "judged_at": "2026-11-12T12:16:07+00:00"
     },
     "A-time-frequency-01-s03": {
-      "text_sha256": "149067186f77547b54847cdcd7752ed640e4b1d102dc53c0e7e5dfe364bc6228",
+      "text_sha256": "6bcd925a023dc77103654770bde4ab1ce6a85c3775e8def0fdc99b3c48693c0c",
       "verdict": "pass",
       "judges": [
         {
@@ -83,10 +83,10 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-10T04:55:22+00:00"
+      "judged_at": "2026-11-12T12:16:07+00:00"
     },
     "A-time-frequency-01-s04": {
-      "text_sha256": "5abde3a912ae7d1eaa921c769fd41356590991f59c85e51131549ebe0d2be8ef",
+      "text_sha256": "375da7ed2ee230e1052b5cd75446575b11b01eb8673bb3f7c46f8bb117bda3f9",
       "verdict": "pass",
       "judges": [
         {
@@ -111,10 +111,10 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-10T04:55:22+00:00"
+      "judged_at": "2026-11-12T12:35:21+00:00"
     },
     "A-time-frequency-01-s05": {
-      "text_sha256": "64054ac6886742d1bda71c146df250c9cd9b349bb176edd0ed93b300e47fa2a9",
+      "text_sha256": "65778f8e22156ab175edac725079239b3ee9be473cd19e7d2f40e1f9bab9af8f",
       "verdict": "pass",
       "judges": [
         {
@@ -139,10 +139,10 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-10T04:55:22+00:00"
+      "judged_at": "2026-11-12T12:31:06+00:00"
     },
     "A-time-frequency-01-s06": {
-      "text_sha256": "c14e4bce18bd4c7f9abc886fcae686d99c5e55cb2583323480c2bf504fd170bb",
+      "text_sha256": "4c7b70ca05409218ba3463d62baf20dc874c783087856d5feb6848e7144a7ad1",
       "verdict": "pass",
       "judges": [
         {
@@ -167,7 +167,7 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-10T04:55:22+00:00"
+      "judged_at": "2026-11-12T12:35:21+00:00"
     },
     "A-time-frequency-01-s07": {
       "text_sha256": "f33b2b7b73acdb65a711824915da20496c1190c154b8c9bcb425d165ccb4d12c",
@@ -198,7 +198,7 @@
       "judged_at": "2026-07-10T04:55:22+00:00"
     },
     "A-time-frequency-01-s08": {
-      "text_sha256": "4632151abdb692f40f3cdf9182d4e0b2144b6db5869d77cc1573985fe5810fc2",
+      "text_sha256": "f314c49ecf6261d68865c0a47de7abad65ef33d303bb8f94a5908b34253f0b03",
       "verdict": "pass",
       "judges": [
         {
@@ -223,7 +223,7 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-10T04:55:22+00:00"
+      "judged_at": "2026-11-12T12:35:21+00:00"
     },
     "A-time-frequency-01-s09": {
       "text_sha256": "dd80e60a135aa6a88c07d1fd856519af11d14bb8ae291220d6e5fdea8b6e18c0",
@@ -284,36 +284,7 @@
       "judged_at": "2026-07-10T04:55:22+00:00"
     },
     "A-time-frequency-01-s11": {
-      "text_sha256": "d2a427be4da7139761a2427675652f73aecba26c114591d74add2b654d0fa1f5",
-      "verdict": "review",
-      "judges": [
-        {
-          "model": "gpt-5.5",
-          "fits": [
-            "rarely",
-            "sometimes"
-          ],
-          "sense_match": true
-        },
-        {
-          "model": "gpt-4.1",
-          "fits": [
-            "rarely"
-          ],
-          "sense_match": true
-        },
-        {
-          "model": "claude-opus-4-8",
-          "fits": [
-            "rarely"
-          ],
-          "sense_match": true
-        }
-      ],
-      "judged_at": "2026-07-10T04:56:14+00:00"
-    },
-    "A-time-frequency-01-s12": {
-      "text_sha256": "872cf052d0c5b7ce93a540efcff711741534300e05d8b43fe3acb79d48c4d9c1",
+      "text_sha256": "4efabc33ec172299ecb72ccf3d1454c2ce0664e7782351d386c8ae9edb1d2a39",
       "verdict": "pass",
       "judges": [
         {
@@ -338,10 +309,39 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-10T04:56:14+00:00"
+      "judged_at": "2026-11-12T12:35:21+00:00"
+    },
+    "A-time-frequency-01-s12": {
+      "text_sha256": "feece7567339494dec31d5b57c6a14830e37aacd1991e0b345f8537c8913ab5b",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "rarely",
+            "sometimes"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "rarely"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "rarely"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-11-12T12:16:07+00:00"
     },
     "A-time-frequency-01-s13": {
-      "text_sha256": "77345b85d09bc7de5f4a417a4e4781a211c433cc5b96a102d4c19e219d77565f",
+      "text_sha256": "730e9b332c8815223182bbd8ade941a93f26aec4ea629e51c604adcc329eeb2b",
       "verdict": "review",
       "judges": [
         {
@@ -367,10 +367,10 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-10T04:56:14+00:00"
+      "judged_at": "2026-11-12T12:16:07+00:00"
     },
     "A-time-frequency-01-s14": {
-      "text_sha256": "2584b01b97f43417c6c23e196dac789748e75eb400f42e5aa82ab71bfa033e61",
+      "text_sha256": "3db5a232a7be1fae711d984321a726dd1449241f973406a252f8171b53252e92",
       "verdict": "review",
       "judges": [
         {
@@ -396,7 +396,7 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-10T04:56:14+00:00"
+      "judged_at": "2026-11-12T12:16:07+00:00"
     },
     "A-time-frequency-01-s15": {
       "text_sha256": "f81d82f4341374be54b5f81bf34e742df53379c071a03d7bee8ba959dd7e0a07",
@@ -428,7 +428,7 @@
       "judged_at": "2026-07-10T04:56:14+00:00"
     },
     "A-time-frequency-01-s16": {
-      "text_sha256": "9d17abed8c21fbcae593cff55e44e378cbf0fa0a2b33fca0d3c909be9b75874a",
+      "text_sha256": "891a0af502109a42a7be6a47d108edcfef2916f2dd63b97010270716e5f690fc",
       "verdict": "review",
       "judges": [
         {
@@ -454,7 +454,7 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-10T04:56:14+00:00"
+      "judged_at": "2026-11-12T12:17:53+00:00"
     },
     "A-time-frequency-01-s17": {
       "text_sha256": "5e05ce153f2549d428c56778880a112b11296f4314c58394f029e2e4b9783b4f",
@@ -513,7 +513,7 @@
       "judged_at": "2026-07-10T04:56:14+00:00"
     },
     "A-time-frequency-01-s19": {
-      "text_sha256": "daf8b95dc88b8ebc6cdabc4d89da0236cd6270c068fd739b60875eb284f005ba",
+      "text_sha256": "8d5a97f56d88835edb564268e3b97d14f39a128f7c882feb8ee9b2cd4eb460f3",
       "verdict": "pass",
       "judges": [
         {
@@ -538,7 +538,7 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-10T04:56:14+00:00"
+      "judged_at": "2026-11-12T12:17:53+00:00"
     },
     "A-time-frequency-01-s20": {
       "text_sha256": "2390ee9e565655c10e444df4fcaa20ae3f83901499f922b0c573f10cfec0479d",
@@ -737,7 +737,7 @@
       "judged_at": "2026-07-10T04:57:18+00:00"
     },
     "A-time-frequency-01-s27": {
-      "text_sha256": "fa26be4121cc71aa5a0cd8cb3e88a1ef9b88aa1d158fa6fa236c343078af8ebf",
+      "text_sha256": "bef694cfc40aba3a9709d4988e4bdbf368a1e3000aad459418bebfa22e28c805",
       "verdict": "pass",
       "judges": [
         {
@@ -762,15 +762,16 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-10T04:57:18+00:00"
+      "judged_at": "2026-11-12T12:17:53+00:00"
     },
     "A-time-frequency-01-s28": {
-      "text_sha256": "0ea53ba3a6e4afc32887e2160f355ef0e97ddd2f34497f7687382c6063a096e2",
-      "verdict": "pass",
+      "text_sha256": "cffcc4f5aa7ea34253c6a0779e51146a67b640aa7f9801a0fc62b42ed7e1f0b5",
+      "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
+            "always",
             "usually"
           ],
           "sense_match": true
@@ -790,15 +791,16 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-10T04:57:18+00:00"
+      "judged_at": "2026-11-12T12:17:53+00:00"
     },
     "A-time-frequency-01-s29": {
-      "text_sha256": "348d986c977e96c818d8b6a6793f451968e50d3348277198221a4e9c38ee4b52",
-      "verdict": "pass",
+      "text_sha256": "114698479c4f961d5873bc8d6437ca313e6d2ddd7cb06606c90336778b81d0e8",
+      "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
+            "always",
             "usually"
           ],
           "sense_match": true
@@ -818,10 +820,10 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-10T04:57:18+00:00"
+      "judged_at": "2026-11-12T12:17:53+00:00"
     },
     "A-time-frequency-01-s30": {
-      "text_sha256": "e864ece12ccff5c88146f5fa7ba9a7a1412e5178589ad0454cb9dd22b0a4f319",
+      "text_sha256": "902ce2ccb73496282b3944c9762e7d435efbf9652192b9e642920200c57a4bf5",
       "verdict": "pass",
       "judges": [
         {
@@ -846,7 +848,7 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-10T04:57:18+00:00"
+      "judged_at": "2026-11-12T12:17:53+00:00"
     },
     "A-time-frequency-01-s31": {
       "text_sha256": "88ae7864b4e173d2d8ab667ffd1f4852d036230f88a36ae35734ceb9d392629b",
@@ -905,7 +907,7 @@
       "judged_at": "2026-07-10T04:59:01+00:00"
     },
     "A-time-frequency-01-s33": {
-      "text_sha256": "b1cc6651575eebb69bc85c5d0dbb41aa1d502e0a3c4a3b39910a684108e06e01",
+      "text_sha256": "8b8fd191c8a86e254f9155a8d3c6d18d2e13d5cfb3a32d6f2ede6bcfe085ed8e",
       "verdict": "pass",
       "judges": [
         {
@@ -930,10 +932,10 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-10T04:59:01+00:00"
+      "judged_at": "2026-11-12T12:17:53+00:00"
     },
     "A-time-frequency-01-s34": {
-      "text_sha256": "44d35f3e198cea48947e53e7414789b6093352280f519235c3c640ff5a0fac26",
+      "text_sha256": "408c58d5a6ff05ea1527db1a500497d33878f71829ef9609aeeac5c5b9438bc0",
       "verdict": "pass",
       "judges": [
         {
@@ -958,10 +960,10 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-10T04:59:01+00:00"
+      "judged_at": "2026-11-12T12:17:53+00:00"
     },
     "A-time-frequency-01-s35": {
-      "text_sha256": "496c66eee93201e3ddc961974f9de72113e4f1700ddb16c49729497496190990",
+      "text_sha256": "f13580df9884be6319fdbd19112290056361c8f091061f4e0efcf679246deaf4",
       "verdict": "pass",
       "judges": [
         {
@@ -986,10 +988,10 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-10T04:59:01+00:00"
+      "judged_at": "2026-11-12T12:17:53+00:00"
     },
     "A-time-frequency-01-s36": {
-      "text_sha256": "85f783e6e15c5b24d43910d1576480e71cd651ee174cd7b732513ac80b8bbf7e",
+      "text_sha256": "bc747d7524838da2c823ff77837127c9d15f1974b07a2687946c0de57f971639",
       "verdict": "pass",
       "judges": [
         {
@@ -1014,10 +1016,10 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-10T04:59:01+00:00"
+      "judged_at": "2026-11-12T12:17:53+00:00"
     },
     "A-time-frequency-01-s37": {
-      "text_sha256": "934e959104695d37b20d038775afaa4490a6d26afc63a129f966b1bacad1e37d",
+      "text_sha256": "04ccdc5e09b04f3082615ced64c2ef4c66967cb6e09b44d1be316559c05fd170",
       "verdict": "pass",
       "judges": [
         {
@@ -1042,10 +1044,10 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-10T04:59:01+00:00"
+      "judged_at": "2026-11-12T12:18:18+00:00"
     },
     "A-time-frequency-01-s38": {
-      "text_sha256": "caf01b21dcabc278eab783415e87fcfb37ba822dae4cb15961a6db9184305ff4",
+      "text_sha256": "5ea2a7150ed5e028727b5bc07256f39c14d2a8b9769c9b954b0b5503a4a45e9e",
       "verdict": "pass",
       "judges": [
         {
@@ -1070,10 +1072,10 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-10T04:59:01+00:00"
+      "judged_at": "2026-11-12T12:18:18+00:00"
     },
     "A-time-frequency-01-s39": {
-      "text_sha256": "3f21733eec870cb99bd65b317eca8c45ef53115b990fcb165b6a2cb9c34bed23",
+      "text_sha256": "4caaca279d8725381b7194fb721c90641b2680f0799c8ef0cd72e4cbae62934c",
       "verdict": "pass",
       "judges": [
         {
@@ -1098,10 +1100,10 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-10T04:59:01+00:00"
+      "judged_at": "2026-11-12T12:18:18+00:00"
     },
     "A-time-frequency-01-s40": {
-      "text_sha256": "1dcfee7efc6fded1279b64af290efd513e5f5c3967b0a87846c520b6e2ade00a",
+      "text_sha256": "914b96e444a835790783b9c0dfc860a5fda07a4ec8e6a892611a50fb64a887db",
       "verdict": "pass",
       "judges": [
         {
@@ -1126,7 +1128,7 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-10T04:59:01+00:00"
+      "judged_at": "2026-11-12T12:18:18+00:00"
     }
   }
 }

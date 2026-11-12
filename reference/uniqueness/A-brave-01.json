@@ -58,15 +58,13 @@
       "judged_at": "2026-07-05T12:13:48+00:00"
     },
     "A-brave-01-s03": {
-      "text_sha256": "2eeb879ee8873045c61ba4200eca4ffbf635c0ed58ad7b7d6670e9f5bdb8928b",
-      "verdict": "review",
+      "text_sha256": "400c30b1d708b803103ab25f5e9d03bc907e304c248f978ea325a8b41fc0d908",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "daring",
-            "determined",
-            "fearless"
+            "determined"
           ],
           "sense_match": true
         },
@@ -80,14 +78,12 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "daring",
-            "determined",
-            "fearless"
+            "determined"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:13:48+00:00"
+      "judged_at": "2026-11-12T12:10:30+00:00"
     },
     "A-brave-01-s04": {
       "text_sha256": "3c9e7d8b24bccc938196c9ecc32543f42bf9b0fff2e167d30cdf1d1f71ab34c8",
@@ -287,35 +283,33 @@
       "judged_at": "2026-07-05T12:13:48+00:00"
     },
     "A-brave-01-s11": {
-      "text_sha256": "f9865e5c5ab8dba923687af5afdd6102a3b85ea94bf80c8005778b2d88d9a95f",
+      "text_sha256": "9c8b910f9f39158fcaa3b57ef5f1cc00a3a9916fe0dd770e59fc80fc0ac79c09",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
-          "fits": [
-            "daring",
-            "determined",
-            "fearless"
-          ],
-          "sense_match": true
-        },
-        {
-          "model": "gpt-4.1",
           "fits": [
             "daring"
           ],
           "sense_match": true
         },
         {
-          "model": "claude-opus-4-8",
+          "model": "gpt-4.1",
           "fits": [
             "daring",
-            "determined"
+            "fearless"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "daring"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:15:44+00:00"
+      "judged_at": "2026-11-12T12:10:30+00:00"
     },
     "A-brave-01-s12": {
       "text_sha256": "8bbf4d9957b8eeb98e8f73cb5acebf1155ee1ba3c72c25b17eac4890275e4fad",
@@ -406,35 +400,33 @@
       "judged_at": "2026-07-05T12:15:44+00:00"
     },
     "A-brave-01-s15": {
-      "text_sha256": "5de26144facd99639c009b61bef802c02292e0426260fffb8c488c072e7448dd",
+      "text_sha256": "c53eaad64af2a8cba1c16ea247ae3cffec8e5aa57a2dfd4140b7ad18516a5915",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
-          "fits": [
-            "daring",
-            "determined",
-            "fearless"
-          ],
-          "sense_match": true
-        },
-        {
-          "model": "gpt-4.1",
           "fits": [
             "daring"
           ],
           "sense_match": true
         },
         {
-          "model": "claude-opus-4-8",
+          "model": "gpt-4.1",
           "fits": [
             "daring",
-            "determined"
+            "fearless"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "daring"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:15:44+00:00"
+      "judged_at": "2026-11-12T12:10:30+00:00"
     },
     "A-brave-01-s16": {
       "text_sha256": "d10b6dd8dbfa0aaa838b31622f653b836383986ead1cfcc7199a086fe2d74d42",
@@ -722,14 +714,12 @@
       "judged_at": "2026-07-05T12:18:44+00:00"
     },
     "A-brave-01-s26": {
-      "text_sha256": "56ef665b13ab22f612f71d26d53e731b1daad9478717f4cd66f75c2e901c97e1",
-      "verdict": "review",
+      "text_sha256": "6304943ea73523d102efe4be6bed13bc7f22dbe564c4e3e238073820062aba9e",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "daring",
-            "fearless",
             "reckless"
           ],
           "sense_match": true
@@ -744,13 +734,12 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "daring",
             "reckless"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T13:05:17+00:00"
+      "judged_at": "2026-11-12T12:10:30+00:00"
     },
     "A-brave-01-s27": {
       "text_sha256": "172fd5cc42b11993bc8137f90355bd5ea1f098d615b4f437469cf90e1e22da57",
@@ -842,15 +831,12 @@
       "judged_at": "2026-07-05T12:18:44+00:00"
     },
     "A-brave-01-s30": {
-      "text_sha256": "cc8fa5ec193962647bfc394e775cf5032e661a0d7f51860ca3edf733491ed24c",
-      "verdict": "review",
+      "text_sha256": "98d4fe567c578f88995fe0880d8fb5545e291cc810041ac85ad6a7912f2d606a",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "daring",
-            "determined",
-            "fearless",
             "reckless"
           ],
           "sense_match": true
@@ -865,13 +851,12 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "determined",
             "reckless"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T12:18:44+00:00"
+      "judged_at": "2026-11-12T12:10:30+00:00"
     },
     "A-brave-01-s31": {
       "text_sha256": "a8fc3d507019eae20a8aa3af722a552c358a8645beb022cf437896bc265dd643",

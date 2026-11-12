@@ -491,8 +491,8 @@
       "answer": "sceptical",
       "cue": "inferential",
       "reserve": false,
-      "text": "Ravi was ___ when Mina suggested the shortcut again after yesterday's delay.",
-      "cue_phrase": "after yesterday's delay",
+      "text": "Ravi stayed ___ about Mina's shortcut, calmly asking to see it on the map before agreeing.",
+      "cue_phrase": "calmly asking to see it on the map before agreeing",
       "surface": {
         "aloof": "aloof",
         "nonchalant": "nonchalant",
@@ -537,8 +537,8 @@
       "answer": "sceptical",
       "cue": "contextual",
       "reserve": true,
-      "text": "Ari looked ___, checking the score against the rules sheet line by line.",
-      "cue_phrase": "line by line",
+      "text": "Ari stayed ___ about the miracle glue, saying she'd trust it once it held a brick.",
+      "cue_phrase": "she'd trust it once it held a brick",
       "surface": {
         "aloof": "aloof",
         "nonchalant": "nonchalant",
@@ -949,6 +949,6 @@
     "generated_at": "2026-07-06T14:38:05+00:00",
     "model": "gpt-5.5",
     "scrubbed_at": "2026-07-07",
-    "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+    "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite). Fairness pass by claude 2026-11-12: sceptical s21/s23 now calmly ask for evidence, which rules out jaw-drop incredulous."
   }
 }

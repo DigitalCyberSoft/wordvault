@@ -402,6 +402,8 @@ html.fx .title-wordmark {
 /* ---- Crack / exhaust / cabinet ---- */
 .reward-art { width: 128px; height: 128px; object-fit: contain; margin: 6px auto; display: block; filter: drop-shadow(0 4px 0 rgba(0,0,0,.12)); }
 .shelfline { font-weight: 700; color: var(--dim-ink); margin: 8px 0 0; }
+.progress-line { font-weight: 800; margin: 10px 0 4px; line-height: 1.4; }
+.progress-line:empty { display: none; }
 .cabinet-card { max-width: 760px; }
 #shelves { display: flex; flex-direction: column; gap: 12px; max-height: 56vh; overflow-y: auto; text-align: left; }
 .shelf { background: #f6ead2; border: 3px solid var(--brass-dark); border-radius: var(--r-md); padding: 10px 14px; }

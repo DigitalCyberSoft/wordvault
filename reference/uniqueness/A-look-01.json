@@ -230,15 +230,13 @@
       "judged_at": "2026-07-06T05:34:43+00:00"
     },
     "A-look-01-s09": {
-      "text_sha256": "933a16278f1aaf6a513883920437e4cbd50cc9a768d52dd309eaa49898604d2b",
-      "verdict": "review",
+      "text_sha256": "63a92b4b38f854887cbb214797b52bbc44b5a1d16d615e5af58734db968dbc07",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "gaze",
-            "peer",
-            "squint"
+            "peer"
           ],
           "sense_match": true
         },
@@ -252,23 +250,21 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "peer",
-            "squint"
+            "peer"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-06T05:34:43+00:00"
+      "judged_at": "2026-11-12T12:15:15+00:00"
     },
     "A-look-01-s10": {
-      "text_sha256": "40c6f85ede938fb57dcede1c32e3881e7d0d53d17245ea51fe4396937d9c3f97",
-      "verdict": "review",
+      "text_sha256": "14f9821e4e870dc364ecaf49b189384f6c1c134aeba0a7fa6558d1a54902b06b",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "peer",
-            "squint"
+            "peer"
           ],
           "sense_match": true
         },
@@ -282,24 +278,21 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "peer",
-            "squint"
+            "peer"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-06T05:34:43+00:00"
+      "judged_at": "2026-11-12T12:15:15+00:00"
     },
     "A-look-01-s11": {
-      "text_sha256": "14225717c8a838827b9e23b1d375138b0e3f36a4cc6637298e0f3ebbbb89ab16",
-      "verdict": "review",
+      "text_sha256": "c0dc1684f6610ad57273ef0569f0779a73ba12da7f96c899d5b700ec38c6e24e",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "gaze",
-            "peer",
-            "squint"
+            "peer"
           ],
           "sense_match": true
         },
@@ -313,13 +306,12 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "peer",
-            "squint"
+            "peer"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-06T07:56:45+00:00"
+      "judged_at": "2026-11-12T12:15:15+00:00"
     },
     "A-look-01-s12": {
       "text_sha256": "344ceaf09faa4edd6ba6fb1ab29e641533d7ad0afcc85ebea75ef85b96168101",
@@ -927,14 +919,12 @@
       "judged_at": "2026-07-06T08:01:26+00:00"
     },
     "A-look-01-s33": {
-      "text_sha256": "067840fa01279d27410abd3e7f92c53b7158bd1ecf147509516d73e52646bfc0",
-      "verdict": "review",
+      "text_sha256": "9b54f125b8a63c59ed1b0dfa8b3ab2db09b4fc649a5be5ed68ec98a36e2600a3",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "glance",
-            "peer",
             "squint"
           ],
           "sense_match": true
@@ -949,13 +939,12 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "peer",
             "squint"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-06T08:01:26+00:00"
+      "judged_at": "2026-11-12T12:15:15+00:00"
     },
     "A-look-01-s34": {
       "text_sha256": "c82a68b80a65600c95bd1a03f9c8328354f4c113effbfc946c14672c3c5a809b",

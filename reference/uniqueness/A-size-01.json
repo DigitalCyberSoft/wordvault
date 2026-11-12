@@ -638,7 +638,7 @@
       "judged_at": "2026-07-05T12:38:50+00:00"
     },
     "A-size-01-s23": {
-      "text_sha256": "00487c94572b9f9abc75bc85061704bd9117fd94899cf562e42b5a78ec6f1502",
+      "text_sha256": "997a67ec4b29bb961093f0da539e88d0e3e5062699cc361e258b3d3f0d53554f",
       "verdict": "review",
       "judges": [
         {
@@ -652,8 +652,7 @@
         {
           "model": "gpt-4.1",
           "fits": [
-            "gigantic",
-            "vast"
+            "gigantic"
           ],
           "sense_match": true
         },
@@ -665,7 +664,7 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T13:37:22+00:00"
+      "judged_at": "2026-11-12T12:18:08+00:00"
     },
     "A-size-01-s24": {
       "text_sha256": "937f7dad68cbf5f7017bdfa5af09d66ef40952b5512fa77c787b5ed55749d60d",
@@ -1019,15 +1018,13 @@
       "judged_at": "2026-07-05T13:11:38+00:00"
     },
     "A-size-01-s36": {
-      "text_sha256": "a54ee1e0fe2197dd30ff49b0c1f7d88b2f2728f36fdfbdf31eb8c2022e85f841",
-      "verdict": "review",
+      "text_sha256": "c0732d5433b67e0a38445d4d59683237e6d9352e3950738bfed3e68fda1d9022",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "gigantic",
-            "spacious",
-            "vast"
+            "spacious"
           ],
           "sense_match": true
         },
@@ -1041,13 +1038,12 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "spacious",
-            "vast"
+            "spacious"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T13:11:38+00:00"
+      "judged_at": "2026-11-12T12:18:08+00:00"
     },
     "A-size-01-s37": {
       "text_sha256": "4c220799daea7817953f96474254275748ccdda34a29be5f5dfab2d603ded046",
@@ -1140,15 +1136,13 @@
       "judged_at": "2026-07-05T13:11:38+00:00"
     },
     "A-size-01-s40": {
-      "text_sha256": "ac5e679f59d053ed773e98abc36b3e4215d04c40e97a5dd2155e071244eee12c",
-      "verdict": "review",
+      "text_sha256": "9cc7ae37031489343be86e59289b3fbf3429e19ed545e71643f058ced27ad39a",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "gigantic",
-            "spacious",
-            "vast"
+            "spacious"
           ],
           "sense_match": true
         },
@@ -1162,13 +1156,12 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "spacious",
-            "vast"
+            "spacious"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T13:11:38+00:00"
+      "judged_at": "2026-11-12T12:18:08+00:00"
     }
   }
 }

@@ -198,7 +198,7 @@
       "answer": "lonely",
       "cue": "inferential",
       "reserve": false,
-      "text": "With his best friend away all summer, Jack talked to the goldfish more each day, feeling ___.",
+      "text": "With his best friend away all summer, Jack talked to the goldfish, feeling ___.",
       "cue_phrase": "talked to the goldfish",
       "surface": {
         "heartbroken": "heartbroken",
@@ -357,23 +357,15 @@
       "answer": "guilty",
       "cue": "contextual",
       "reserve": true,
-      "text": "Ravi had promised to practise and had not, and he sat ___ on the quiet bus.",
-      "cue_phrase": "had promised to practise and had not",
+      "text": "Ravi had promised to practise but didn't, and he sat ___ on the bus.",
+      "cue_phrase": "promised to practise but didn't",
       "surface": {
         "heartbroken": "heartbroken",
         "disappointed": "disappointed",
         "homesick": "homesick",
         "lonely": "lonely",
         "guilty": "guilty"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: gpt-5.5 also reads disappointed charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
-          "by": "claude",
-          "at": "2026-07-05"
-        }
-      ]
+      }
     },
     {
       "id": "A-sad-01-s16",
@@ -441,7 +433,7 @@
       "answer": "heartbroken",
       "cue": "contextual",
       "reserve": false,
-      "text": "Lily looked ___ as she washed the little food bowl her rabbit would never need again.",
+      "text": "Lily looked ___ as she washed the bowl her rabbit would never need again.",
       "cue_phrase": "would never need again",
       "surface": {
         "heartbroken": "heartbroken",
@@ -449,15 +441,7 @@
         "homesick": "homesick",
         "lonely": "lonely",
         "guilty": "guilty"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: gpt-5.5 also reads lonely charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
-          "by": "claude",
-          "at": "2026-07-05"
-        }
-      ]
+      }
     },
     {
       "id": "A-sad-01-s20",
@@ -706,23 +690,15 @@
       "answer": "homesick",
       "cue": "explicit",
       "reserve": false,
-      "text": "Far from her family, Bea was ___ and wanted her bedroom.",
-      "cue_phrase": "Far from her family",
+      "text": "Even with friends all around her at camp, Bea felt ___ for her own bed.",
+      "cue_phrase": "for her own bed",
       "surface": {
         "heartbroken": "heartbroken",
         "disappointed": "disappointed",
         "homesick": "homesick",
         "lonely": "lonely",
         "guilty": "guilty"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "ADJACENCY-2OF3 (gpt-5.5 adds lonely; claude-opus-4-8 adds lonely): lonely co-occurs with homesickness; away-from-home plus home-object longing is homesick's exclusive feature",
-          "by": "claude",
-          "at": "2026-07-05"
-        }
-      ]
+      }
     },
     {
       "id": "A-sad-01-s35",
@@ -744,23 +720,15 @@
       "answer": "homesick",
       "cue": "contextual",
       "reserve": false,
-      "text": "On the island trip, Zara felt ___ each night without her family.",
-      "cue_phrase": "without her family",
+      "text": "Zara loved the trip with friends, but felt ___ whenever she pictured Mum's kitchen.",
+      "cue_phrase": "pictured Mum's kitchen",
       "surface": {
         "heartbroken": "heartbroken",
         "disappointed": "disappointed",
         "homesick": "homesick",
         "lonely": "lonely",
         "guilty": "guilty"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "ADJACENCY-2OF3 (gpt-5.5 adds lonely; claude-opus-4-8 adds lonely): lonely co-occurs; the frame's longing is pinned to home, homesick's feature",
-          "by": "claude",
-          "at": "2026-07-05"
-        }
-      ]
+      }
     },
     {
       "id": "A-sad-01-s37",
@@ -937,6 +905,6 @@
     "generated_at": "2026-07-05T11:25:26+00:00",
     "model": "gpt-5.5",
     "scrubbed_at": "2026-07-05T13:42:27+00:00",
-    "scrub_note": "Donor surgery: gloomy->lonely, miserable->guilty (mutual generics); two gloomy sense drifts removed with the word; heartbroken s18/s19 restaged off companionship losses. Full read + judge triage."
+    "scrub_note": "Donor surgery: gloomy->lonely, miserable->guilty (mutual generics); two gloomy sense drifts removed with the word; heartbroken s18/s19 restaged off companionship losses. Full read + judge triage. Fairness pass by claude 2026-11-12: homesick s34/s36 let lonely in, so the child is now surrounded by friends while missing home; trimmed s06/s15/s19 toward the Year 3 length."
   }
 }

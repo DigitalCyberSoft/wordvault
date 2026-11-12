@@ -130,8 +130,8 @@
       "answer": "push",
       "cue": "explicit",
       "reserve": false,
-      "text": "Mia ___ the pram from behind with both palms.",
-      "cue_phrase": "with both palms",
+      "text": "Mia ___ the pram along, walking behind it.",
+      "cue_phrase": "walking behind it",
       "surface": {
         "push": "pushed",
         "pull": "pulled",
@@ -145,7 +145,7 @@
       "answer": "push",
       "cue": "explicit",
       "reserve": false,
-      "text": "Dad ___ the stuck door open with his shoulder.",
+      "text": "Dad ___ hard on the stuck door with his shoulder.",
       "cue_phrase": "with his shoulder",
       "surface": {
         "push": "pushed",
@@ -168,14 +168,14 @@
       "answer": "push",
       "cue": "contextual",
       "reserve": false,
-      "text": "The coach had Ravi ___ the trolley from behind through the gate.",
-      "cue_phrase": "from behind through the gate",
+      "text": "Ravi ___ the trolley ahead of him down the aisle.",
+      "cue_phrase": "ahead of him",
       "surface": {
-        "push": "push",
-        "pull": "pull",
-        "lift": "lift",
-        "carry": "carry",
-        "throw": "throw"
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
       }
     },
     {
@@ -183,8 +183,8 @@
       "answer": "push",
       "cue": "contextual",
       "reserve": false,
-      "text": "Ella ___ the sofa nearer the wall using her flat palms.",
-      "cue_phrase": "using her flat palms",
+      "text": "Ella leaned on the box and ___ it to the wall.",
+      "cue_phrase": "leaned on the box",
       "surface": {
         "push": "pushed",
         "pull": "pulled",
@@ -198,8 +198,8 @@
       "answer": "push",
       "cue": "inferential",
       "reserve": false,
-      "text": "Noor ___ the heavy button, and the lights flashed green.",
-      "cue_phrase": "the heavy button",
+      "text": "Noor ___ the big button, and the lights flashed green.",
+      "cue_phrase": "the big button",
       "surface": {
         "push": "pushed",
         "pull": "pulled",
@@ -228,8 +228,8 @@
       "answer": "push",
       "cue": "explicit",
       "reserve": true,
-      "text": "Mum ___ the buggy up the ramp from the rear.",
-      "cue_phrase": "from the rear",
+      "text": "Tom ___ the gate shut with one flat hand.",
+      "cue_phrase": "with one flat hand",
       "surface": {
         "push": "pushed",
         "pull": "pulled",
@@ -243,14 +243,14 @@
       "answer": "push",
       "cue": "explicit",
       "reserve": true,
-      "text": "A player ___ the red button with one finger to start.",
+      "text": "Kim ___ the doorbell with one finger.",
       "cue_phrase": "with one finger",
       "surface": {
-        "push": "pushes",
-        "pull": "pulls",
-        "lift": "lifts",
-        "carry": "carries",
-        "throw": "throws"
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
       }
     },
     {
@@ -288,8 +288,8 @@
       "answer": "pull",
       "cue": "contextual",
       "reserve": false,
-      "text": "The goat ___ the lead until Ada stumbled beside the fence.",
-      "cue_phrase": "Ada stumbled beside the fence",
+      "text": "The puppy on its lead ___ Ada along the path.",
+      "cue_phrase": "on its lead",
       "surface": {
         "push": "pushed",
         "pull": "pulled",
@@ -318,8 +318,8 @@
       "answer": "pull",
       "cue": "inferential",
       "reserve": false,
-      "text": "A fish bit, and Asha ___ the line towards the bank.",
-      "cue_phrase": "line towards the bank",
+      "text": "A fish bit, so Asha ___ hard on the line.",
+      "cue_phrase": "hard on the line",
       "surface": {
         "push": "pushed",
         "pull": "pulled",
@@ -333,8 +333,8 @@
       "answer": "pull",
       "cue": "inferential",
       "reserve": false,
-      "text": "The curtain stayed shut until Max ___ the cord beside the window.",
-      "cue_phrase": "cord beside the window",
+      "text": "Max ___ the cord, and the curtains slid open.",
+      "cue_phrase": "the cord",
       "surface": {
         "push": "pushed",
         "pull": "pulled",
@@ -348,8 +348,8 @@
       "answer": "pull",
       "cue": "explicit",
       "reserve": true,
-      "text": "Grandad ___ the cork towards his chest; it popped free.",
-      "cue_phrase": "towards his chest",
+      "text": "Grandad ___ hard on the cork, and it popped out.",
+      "cue_phrase": "hard on the cork; popped out",
       "surface": {
         "push": "pushed",
         "pull": "pulled",
@@ -363,8 +363,8 @@
       "answer": "pull",
       "cue": "explicit",
       "reserve": true,
-      "text": "Zara ___ the sledge behind her across the snow.",
-      "cue_phrase": "behind her across the snow",
+      "text": "Zara ___ her toy cart behind her to the park.",
+      "cue_phrase": "behind her",
       "surface": {
         "push": "pushed",
         "pull": "pulled",
@@ -393,8 +393,8 @@
       "answer": "lift",
       "cue": "explicit",
       "reserve": false,
-      "text": "Mina ___ the puppy from the puddle into her arms.",
-      "cue_phrase": "into her arms",
+      "text": "Mina ___ her cup to her lips and drank.",
+      "cue_phrase": "to her lips",
       "surface": {
         "push": "pushed",
         "pull": "pulled",
@@ -416,7 +416,7 @@
       "answer": "lift",
       "cue": "contextual",
       "reserve": false,
-      "text": "At the award photo, Omar ___ the cup above his head.",
+      "text": "Omar ___ the gold cup above his head for the photo.",
       "cue_phrase": "above his head",
       "surface": {
         "push": "pushed",
@@ -431,14 +431,14 @@
       "answer": "lift",
       "cue": "contextual",
       "reserve": false,
-      "text": "The nurse asked Omar to ___ his chin for the plaster.",
-      "cue_phrase": "his chin for the plaster",
+      "text": "Jai ___ his feet so Mum could sweep under them.",
+      "cue_phrase": "sweep under them",
       "surface": {
-        "push": "push",
-        "pull": "pull",
-        "lift": "lift",
-        "carry": "carry",
-        "throw": "throw"
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
       }
     },
     {
@@ -446,8 +446,8 @@
       "answer": "lift",
       "cue": "inferential",
       "reserve": false,
-      "text": "The kitten mewed under the crate, so Priya ___ one corner.",
-      "cue_phrase": "under the crate",
+      "text": "A kitten mewed under the box, so Priya ___ one corner.",
+      "cue_phrase": "under the box",
       "surface": {
         "push": "pushed",
         "pull": "pulled",
@@ -461,8 +461,8 @@
       "answer": "lift",
       "cue": "inferential",
       "reserve": false,
-      "text": "To slide blocks underneath, Lee ___ one table leg for a moment.",
-      "cue_phrase": "slide blocks underneath",
+      "text": "Ellie ___ her chin so Mum could reach her button.",
+      "cue_phrase": "her chin",
       "surface": {
         "push": "pushed",
         "pull": "pulled",
@@ -476,8 +476,8 @@
       "answer": "lift",
       "cue": "contextual",
       "reserve": true,
-      "text": "Gran ___ the baby to her cheek for a giggly hello.",
-      "cue_phrase": "to her cheek",
+      "text": "Gran ___ the teapot lid to peek inside.",
+      "cue_phrase": "lid to peek inside",
       "surface": {
         "push": "pushed",
         "pull": "pulled",
@@ -499,8 +499,8 @@
       "answer": "lift",
       "cue": "explicit",
       "reserve": true,
-      "text": "Ari ___ the basket from the floor onto the counter.",
-      "cue_phrase": "from the floor onto",
+      "text": "Ari ___ his foot high to step over the log.",
+      "cue_phrase": "high to step over",
       "surface": {
         "push": "pushed",
         "pull": "pulled",
@@ -522,7 +522,7 @@
       "answer": "carry",
       "cue": "explicit",
       "reserve": false,
-      "text": "Lena ___ the puppy in her arms to the sofa.",
+      "text": "Lena ___ the puppy in her arms to the couch.",
       "cue_phrase": "in her arms",
       "surface": {
         "push": "pushed",
@@ -537,8 +537,8 @@
       "answer": "carry",
       "cue": "explicit",
       "reserve": false,
-      "text": "Tariq ___ the tray across the room with steady arms.",
-      "cue_phrase": "with steady arms",
+      "text": "Tariq ___ the tray of drinks out to the garden.",
+      "cue_phrase": "out to the garden",
       "surface": {
         "push": "pushed",
         "pull": "pulled",
@@ -552,14 +552,14 @@
       "answer": "carry",
       "cue": "contextual",
       "reserve": false,
-      "text": "The teacher asked Maya to ___ the books from class to the bus.",
-      "cue_phrase": "from class to the bus",
+      "text": "Maya ___ her library books home in her school bag.",
+      "cue_phrase": "home in her school bag",
       "surface": {
-        "push": "push",
-        "pull": "pull",
-        "lift": "lift",
-        "carry": "carry",
-        "throw": "throw"
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
       }
     },
     {
@@ -567,8 +567,8 @@
       "answer": "carry",
       "cue": "contextual",
       "reserve": false,
-      "text": "The mouse was safe as Pip ___ it home in a box.",
-      "cue_phrase": "home in a box",
+      "text": "Pip ___ the baby bird to the vet in a box.",
+      "cue_phrase": "to the vet in a box",
       "surface": {
         "push": "pushed",
         "pull": "pulled",
@@ -582,8 +582,8 @@
       "answer": "carry",
       "cue": "inferential",
       "reserve": false,
-      "text": "When the sand burned, Jo ___ the puppy across the beach.",
-      "cue_phrase": "across the beach",
+      "text": "Jo ___ the puppy over the hot sand to the water.",
+      "cue_phrase": "over the hot sand",
       "surface": {
         "push": "pushed",
         "pull": "pulled",
@@ -597,8 +597,8 @@
       "answer": "carry",
       "cue": "inferential",
       "reserve": false,
-      "text": "After the vase cracked, Noor ___ it gently to the art room.",
-      "cue_phrase": "gently to the art room",
+      "text": "Noor ___ the birthday cake slowly down the hall.",
+      "cue_phrase": "slowly down the hall",
       "surface": {
         "push": "pushed",
         "pull": "pulled",
@@ -612,14 +612,14 @@
       "answer": "carry",
       "cue": "explicit",
       "reserve": true,
-      "text": "A waiter ___ soup bowls to tables with level arms.",
-      "cue_phrase": "to tables with level arms",
+      "text": "The waiter ___ two bowls of soup to our table.",
+      "cue_phrase": "to our table",
       "surface": {
-        "push": "pushes",
-        "pull": "pulls",
-        "lift": "lifts",
-        "carry": "carries",
-        "throw": "throws"
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
       }
     },
     {
@@ -627,8 +627,8 @@
       "answer": "carry",
       "cue": "contextual",
       "reserve": true,
-      "text": "Auntie ___ the sleeping baby upstairs in a soft blanket.",
-      "cue_phrase": "upstairs in a soft blanket",
+      "text": "Auntie ___ the sleeping baby up the stairs to bed.",
+      "cue_phrase": "up the stairs to bed",
       "surface": {
         "push": "pushed",
         "pull": "pulled",
@@ -642,14 +642,14 @@
       "answer": "throw",
       "cue": "explicit",
       "reserve": false,
-      "text": "The coach had Kai ___ the beanbag from ten steps back into the hoop.",
-      "cue_phrase": "from ten steps back",
+      "text": "Kai ___ the beanbag into the hoop from ten steps away.",
+      "cue_phrase": "from ten steps away",
       "surface": {
-        "push": "push",
-        "pull": "pull",
-        "lift": "lift",
-        "carry": "carry",
-        "throw": "throw"
+        "push": "pushed",
+        "pull": "pulled",
+        "lift": "lifted",
+        "carry": "carried",
+        "throw": "threw"
       }
     },
     {
@@ -672,8 +672,8 @@
       "answer": "throw",
       "cue": "contextual",
       "reserve": false,
-      "text": "Jon ___ the pebble from the bridge; it splashed in the pond.",
-      "cue_phrase": "from the bridge",
+      "text": "Jon ___ a pebble far out into the pond.",
+      "cue_phrase": "far out into the pond",
       "surface": {
         "push": "pushed",
         "pull": "pulled",
@@ -687,7 +687,7 @@
       "answer": "throw",
       "cue": "contextual",
       "reserve": false,
-      "text": "Luca ___ the ball, and his friend caught it near the tree.",
+      "text": "Luca ___ the ball, and his friend caught it.",
       "cue_phrase": "his friend caught it",
       "surface": {
         "push": "pushed",
@@ -702,8 +702,8 @@
       "answer": "throw",
       "cue": "inferential",
       "reserve": false,
-      "text": "The hoop was far, but Ana ___ the ball straight in.",
-      "cue_phrase": "The hoop was far",
+      "text": "Ana ___ the stick, and the dog raced after it.",
+      "cue_phrase": "the dog raced after it",
       "surface": {
         "push": "pushed",
         "pull": "pulled",
@@ -717,8 +717,8 @@
       "answer": "throw",
       "cue": "inferential",
       "reserve": false,
-      "text": "During the game, Ben ___ the dice; they bounced twice.",
-      "cue_phrase": "they bounced twice",
+      "text": "Ben ___ the ball, and it landed on the roof.",
+      "cue_phrase": "landed on the roof",
       "surface": {
         "push": "pushed",
         "pull": "pulled",
@@ -732,8 +732,8 @@
       "answer": "throw",
       "cue": "explicit",
       "reserve": true,
-      "text": "Zed ___ the rope over the high branch on his first try.",
-      "cue_phrase": "over the high branch",
+      "text": "Zed ___ the ball over the fence from across the yard.",
+      "cue_phrase": "from across the yard",
       "surface": {
         "push": "pushed",
         "pull": "pulled",
@@ -755,8 +755,8 @@
       "answer": "throw",
       "cue": "contextual",
       "reserve": true,
-      "text": "Ivy ___ the paper plane, and it glided to the stage.",
-      "cue_phrase": "paper plane",
+      "text": "Ivy ___ her paper plane, and it zoomed away.",
+      "cue_phrase": "it zoomed away",
       "surface": {
         "push": "pushed",
         "pull": "pulled",
@@ -770,108 +770,108 @@
     {
       "answer": "push",
       "picked": "pull",
-      "line": "Push sends it from you; pull brings it nearer."
+      "line": "Push sends it away from you. Pull brings it close to you."
     },
     {
       "answer": "push",
       "picked": "lift",
-      "line": "Push goes forward or sideways; lift goes upward."
+      "line": "Push moves it along. Lift moves it up."
     },
     {
       "answer": "push",
       "picked": "carry",
-      "line": "Push sends it from you; carry keeps it with you while you travel."
+      "line": "Push moves it away from you. Carry keeps it in your hands as you walk."
     },
     {
       "answer": "push",
       "picked": "throw",
-      "line": "Push keeps contact; throw lets go so it flies."
+      "line": "Push keeps your hands on it. Throw lets it go so it flies."
     },
     {
       "answer": "pull",
       "picked": "push",
-      "line": "Pull brings it nearer; push sends it from you."
+      "line": "Pull brings it close to you. Push sends it away from you."
     },
     {
       "answer": "pull",
       "picked": "lift",
-      "line": "Pull brings it nearer; lift takes it upward."
+      "line": "Pull brings it close to you. Lift moves it up."
     },
     {
       "answer": "pull",
       "picked": "carry",
-      "line": "Pull may drag it nearer; carry keeps it with you while you travel."
+      "line": "Pull drags it towards you. Carry holds it off the ground as you walk."
     },
     {
       "answer": "pull",
       "picked": "throw",
-      "line": "Pull keeps hold and brings it nearer; throw lets go."
+      "line": "Pull keeps hold and brings it close. Throw lets it go so it flies."
     },
     {
       "answer": "lift",
       "picked": "push",
-      "line": "Lift takes it upward; push sends it forward from you."
+      "line": "Lift moves it up. Push moves it away from you."
     },
     {
       "answer": "lift",
       "picked": "pull",
-      "line": "Lift takes it upward; pull brings it nearer."
+      "line": "Lift moves it up. Pull brings it close to you."
     },
     {
       "answer": "lift",
       "picked": "carry",
-      "line": "Lift is mainly upward; carry keeps it with you as you travel."
+      "line": "Lift moves it up. Carry takes it with you as you walk."
     },
     {
       "answer": "lift",
       "picked": "throw",
-      "line": "Lift keeps hold; throw lets go so it flies."
+      "line": "Lift keeps hold as it goes up. Throw lets it go so it flies."
     },
     {
       "answer": "carry",
       "picked": "push",
-      "line": "Carry keeps it with you while you travel; push sends it from you."
+      "line": "Carry holds it as you walk. Push moves it away from you."
     },
     {
       "answer": "carry",
       "picked": "pull",
-      "line": "Carry keeps it with you while you travel; pull brings it nearer."
+      "line": "Carry holds it off the ground as you walk. Pull drags it towards you."
     },
     {
       "answer": "carry",
       "picked": "lift",
-      "line": "Carry travels with it; lift mainly takes it upward."
+      "line": "Carry takes it with you as you walk. Lift just moves it up."
     },
     {
       "answer": "carry",
       "picked": "throw",
-      "line": "Carry keeps hold while travelling; throw lets go."
+      "line": "Carry keeps hold as you walk. Throw lets it go so it flies."
     },
     {
       "answer": "throw",
       "picked": "push",
-      "line": "Throw lets go; push keeps contact."
+      "line": "Throw lets it go so it flies. Push keeps your hands on it."
     },
     {
       "answer": "throw",
       "picked": "pull",
-      "line": "Throw lets go; pull brings it nearer."
+      "line": "Throw sends it flying away. Pull brings it close to you."
     },
     {
       "answer": "throw",
       "picked": "lift",
-      "line": "Throw makes it fly; lift keeps hold upward."
+      "line": "Throw lets it go so it flies. Lift keeps hold as it goes up."
     },
     {
       "answer": "throw",
       "picked": "carry",
-      "line": "Throw lets go for flight; carry keeps hold while travelling."
+      "line": "Throw lets it fly away. Carry keeps hold as you walk."
     }
   ],
   "meta": {
     "generated_at": "2026-07-06T18:27:02+00:00",
     "model": "gpt-5.5",
     "scrubbed_at": "2026-07-07",
-    "scrub_note": "Scrubbed by claude 2026-07-07: mechanical sweeps clean (two snow scenes cleared - no month-absurdity cues, AU-safe), all 40 sentences and 20 contrasts read; no defects found."
+    "scrub_note": "Scrubbed by claude 2026-07-07: mechanical sweeps clean (two snow scenes cleared - no month-absurdity cues, AU-safe), all 40 sentences and 20 contrasts read; no defects found. Year-1 rewrite by claude 2026-11-12: 34 of 40 sentences re-staged for gifted 6-7 year olds (max 11 words, was up to 14; semicolons, 'rear', 'level arms', 'sofa nearer the wall' and similar dropped), push/pull/lift ambiguities fixed (pram 'from behind', cork, shoulders, threw-the-door-open idiom, dice-as-roll sense), all 20 contrasts simplified to Year-1 words; re-judged: 0 hard, one single gpt-4.1 dissent kept on s03 (a trolley ahead of you cannot be pulled)."
   }
 }

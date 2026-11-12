@@ -1,0 +1,831 @@
+{
+  "id": "A-cook-01",
+  "bank": "A",
+  "pos": "verb",
+  "theme": "ways to cook",
+  "band": 2,
+  "band_override": 2,
+  "computed": {
+    "zipf_min": 3.48,
+    "zipf_mean": 3.93,
+    "tightness": 0.395,
+    "band_suggested": 2,
+    "scored_at": "2026-11-12T12:30:33+00:00"
+  },
+  "words": [
+    {
+      "w": "bake",
+      "synset": "bake.v.02",
+      "gloss_source": "wordnet",
+      "gloss": "prepare with dry heat in an oven",
+      "zipf": 3.91,
+      "register": "neutral",
+      "senses_at_pos": 4,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "bake",
+        "third": "bakes",
+        "past": "baked",
+        "part": "baking"
+      },
+      "discriminator": "dry heat inside an oven",
+      "grade": 1
+    },
+    {
+      "w": "fry",
+      "synset": "fry.v.02",
+      "gloss_source": "wordnet",
+      "gloss": "cook on a hot surface using fat",
+      "zipf": 3.89,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "fry",
+        "third": "fries",
+        "past": "fried",
+        "part": "frying"
+      },
+      "discriminator": "in hot oil in a pan",
+      "grade": 2
+    },
+    {
+      "w": "boil",
+      "synset": "boil.v.02",
+      "gloss_source": "wordnet",
+      "gloss": "immerse or be immersed in a boiling liquid, often for cooking purposes",
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-11-12"
+      },
+      "zipf": 3.83,
+      "register": "neutral",
+      "senses_at_pos": 5,
+      "forms": {
+        "base": "boil",
+        "third": "boils",
+        "past": "boiled",
+        "part": "boiling"
+      },
+      "discriminator": "in bubbling water",
+      "gloss_zipf_waiver": {
+        "words": [
+          "immerse"
+        ],
+        "reason": "single hard word; 'boiling liquid' and 'cooking' carry the meaning, and the discriminator 'in bubbling water' restates it",
+        "by": "claude",
+        "at": "2026-11-12"
+      },
+      "grade": 2
+    },
+    {
+      "w": "stew",
+      "synset": "stew.v.03",
+      "gloss_source": "wordnet",
+      "gloss": "cook slowly and for a long time in liquid",
+      "zipf": 3.48,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "stew",
+        "third": "stews",
+        "past": "stewed",
+        "part": "stewing"
+      },
+      "discriminator": "slowly, for a long time, in a pot of thick liquid",
+      "grade": 3
+    },
+    {
+      "w": "steam",
+      "synset": "steam.v.06",
+      "gloss_source": "wordnet",
+      "gloss": "cook something by letting steam pass over it",
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-11-12"
+      },
+      "zipf": 4.52,
+      "register": "neutral",
+      "senses_at_pos": 6,
+      "forms": {
+        "base": "steam",
+        "third": "steams",
+        "past": "steamed",
+        "part": "steaming"
+      },
+      "discriminator": "above the water, in the hot vapour",
+      "grade": 3
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-cook-01-s01",
+      "answer": "bake",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Gran ___ a lemon cake until its top was golden and cracked.",
+      "cue_phrase": "golden and cracked",
+      "surface": {
+        "bake": "baked",
+        "fry": "fried",
+        "boil": "boiled",
+        "stew": "stewed",
+        "steam": "steamed"
+      }
+    },
+    {
+      "id": "A-cook-01-s02",
+      "answer": "bake",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Dad ___ two loaves of bread, and their crusts came out crunchy and brown.",
+      "cue_phrase": "loaves of bread; crusts",
+      "surface": {
+        "bake": "baked",
+        "fry": "fried",
+        "boil": "boiled",
+        "stew": "stewed",
+        "steam": "steamed"
+      }
+    },
+    {
+      "id": "A-cook-01-s03",
+      "answer": "bake",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Mia ___ a batch of cupcakes, then iced them pink once they cooled.",
+      "cue_phrase": "a batch of cupcakes",
+      "surface": {
+        "bake": "baked",
+        "fry": "fried",
+        "boil": "boiled",
+        "stew": "stewed",
+        "steam": "steamed"
+      }
+    },
+    {
+      "id": "A-cook-01-s04",
+      "answer": "bake",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "For the school fete, Mum ___ three trays of muffins before breakfast.",
+      "cue_phrase": "three trays of muffins",
+      "surface": {
+        "bake": "baked",
+        "fry": "fried",
+        "boil": "boiled",
+        "stew": "stewed",
+        "steam": "steamed"
+      }
+    },
+    {
+      "id": "A-cook-01-s05",
+      "answer": "bake",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Nana ___ an apple pie until its pastry top was flaky and golden.",
+      "cue_phrase": "pastry top was flaky and golden",
+      "surface": {
+        "bake": "baked",
+        "fry": "fried",
+        "boil": "boiled",
+        "stew": "stewed",
+        "steam": "steamed"
+      }
+    },
+    {
+      "id": "A-cook-01-s06",
+      "answer": "bake",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Pop ___ the big potatoes whole, wrapped in foil, until they were soft inside.",
+      "cue_phrase": "whole, wrapped in foil",
+      "surface": {
+        "bake": "baked",
+        "fry": "fried",
+        "boil": "boiled",
+        "stew": "stewed",
+        "steam": "steamed"
+      }
+    },
+    {
+      "id": "A-cook-01-s07",
+      "answer": "bake",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Our class ___ banana bread, and the whole school smelled it at recess.",
+      "cue_phrase": "banana bread",
+      "surface": {
+        "bake": "baked",
+        "fry": "fried",
+        "boil": "boiled",
+        "stew": "stewed",
+        "steam": "steamed"
+      }
+    },
+    {
+      "id": "A-cook-01-s08",
+      "answer": "bake",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "Ivy slid the tray of star biscuits in and ___ them for ten minutes.",
+      "cue_phrase": "slid the tray of star biscuits in",
+      "surface": {
+        "bake": "baked",
+        "fry": "fried",
+        "boil": "boiled",
+        "stew": "stewed",
+        "steam": "steamed"
+      }
+    },
+    {
+      "id": "A-cook-01-s09",
+      "answer": "fry",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Dad ___ the eggs in a pan of sizzling oil for breakfast.",
+      "cue_phrase": "pan of sizzling oil",
+      "surface": {
+        "bake": "baked",
+        "fry": "fried",
+        "boil": "boiled",
+        "stew": "stewed",
+        "steam": "steamed"
+      }
+    },
+    {
+      "id": "A-cook-01-s10",
+      "answer": "fry",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The oil spat and sizzled as Nana ___ the fish in her big pan.",
+      "cue_phrase": "oil spat and sizzled",
+      "surface": {
+        "bake": "baked",
+        "fry": "fried",
+        "boil": "boiled",
+        "stew": "stewed",
+        "steam": "steamed"
+      }
+    },
+    {
+      "id": "A-cook-01-s11",
+      "answer": "fry",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Sam ___ the bacon in a pan until it curled up crispy.",
+      "cue_phrase": "in a pan until it curled up crispy",
+      "surface": {
+        "bake": "baked",
+        "fry": "fried",
+        "boil": "boiled",
+        "stew": "stewed",
+        "steam": "steamed"
+      }
+    },
+    {
+      "id": "A-cook-01-s12",
+      "answer": "fry",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "At the market, a man ___ crunchy spring rolls in a big wok of oil.",
+      "cue_phrase": "wok of oil",
+      "surface": {
+        "bake": "baked",
+        "fry": "fried",
+        "boil": "boiled",
+        "stew": "stewed",
+        "steam": "steamed"
+      }
+    },
+    {
+      "id": "A-cook-01-s13",
+      "answer": "fry",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Ella ___ the onions in butter until they turned soft and golden.",
+      "cue_phrase": "in butter",
+      "surface": {
+        "bake": "baked",
+        "fry": "fried",
+        "boil": "boiled",
+        "stew": "stewed",
+        "steam": "steamed"
+      }
+    },
+    {
+      "id": "A-cook-01-s14",
+      "answer": "fry",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Dad ___ the sausages in the pan, and spitting grease made him jump back.",
+      "cue_phrase": "spitting grease",
+      "surface": {
+        "bake": "baked",
+        "fry": "fried",
+        "boil": "boiled",
+        "stew": "stewed",
+        "steam": "steamed"
+      }
+    },
+    {
+      "id": "A-cook-01-s15",
+      "answer": "fry",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Mum ___ the pancakes in a buttery pan, flipping each one when it bubbled.",
+      "cue_phrase": "buttery pan, flipping",
+      "surface": {
+        "bake": "baked",
+        "fry": "fried",
+        "boil": "boiled",
+        "stew": "stewed",
+        "steam": "steamed"
+      }
+    },
+    {
+      "id": "A-cook-01-s16",
+      "answer": "fry",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Dad ___ the leftover rice in a sizzling pan with a splash of oil.",
+      "cue_phrase": "sizzling pan with a splash of oil",
+      "surface": {
+        "bake": "baked",
+        "fry": "fried",
+        "boil": "boiled",
+        "stew": "stewed",
+        "steam": "steamed"
+      }
+    },
+    {
+      "id": "A-cook-01-s17",
+      "answer": "boil",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Mum ___ the peas in a little pan of bubbling water.",
+      "cue_phrase": "in a little pan of bubbling water",
+      "surface": {
+        "bake": "baked",
+        "fry": "fried",
+        "boil": "boiled",
+        "stew": "stewed",
+        "steam": "steamed"
+      }
+    },
+    {
+      "id": "A-cook-01-s18",
+      "answer": "boil",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Leo ___ two eggs, still in their shells, in a pan of bubbling water.",
+      "cue_phrase": "in a pan of bubbling water",
+      "surface": {
+        "bake": "baked",
+        "fry": "fried",
+        "boil": "boiled",
+        "stew": "stewed",
+        "steam": "steamed"
+      }
+    },
+    {
+      "id": "A-cook-01-s19",
+      "answer": "boil",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Dad dropped the corn cobs into the bubbling pot and ___ them for ten minutes.",
+      "cue_phrase": "dropped into the bubbling pot",
+      "surface": {
+        "bake": "baked",
+        "fry": "fried",
+        "boil": "boiled",
+        "stew": "stewed",
+        "steam": "steamed"
+      }
+    },
+    {
+      "id": "A-cook-01-s20",
+      "answer": "boil",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Gran ___ the potatoes in salty water, then drained them and mashed them.",
+      "cue_phrase": "in salty water, then drained them",
+      "surface": {
+        "bake": "baked",
+        "fry": "fried",
+        "boil": "boiled",
+        "stew": "stewed",
+        "steam": "steamed"
+      }
+    },
+    {
+      "id": "A-cook-01-s21",
+      "answer": "boil",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Kai ___ the noodles for two minutes, then tipped them into a sieve to drain.",
+      "cue_phrase": "tipped them into a sieve to drain",
+      "surface": {
+        "bake": "baked",
+        "fry": "fried",
+        "boil": "boiled",
+        "stew": "stewed",
+        "steam": "steamed"
+      }
+    },
+    {
+      "id": "A-cook-01-s22",
+      "answer": "boil",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The dumplings ___ in the pot of water and floated up when they were ready.",
+      "cue_phrase": "in the pot of water and floated up",
+      "surface": {
+        "bake": "baked",
+        "fry": "fried",
+        "boil": "boiled",
+        "stew": "stewed",
+        "steam": "steamed"
+      }
+    },
+    {
+      "id": "A-cook-01-s23",
+      "answer": "boil",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The spaghetti ___ in the big pot, its water bubbling up to the rim.",
+      "cue_phrase": "its water bubbling up to the rim",
+      "surface": {
+        "bake": "baked",
+        "fry": "fried",
+        "boil": "boiled",
+        "stew": "stewed",
+        "steam": "steamed"
+      }
+    },
+    {
+      "id": "A-cook-01-s24",
+      "answer": "boil",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "Gran ___ the beetroot in a pot of water until it turned the water purple.",
+      "cue_phrase": "turned the water purple",
+      "surface": {
+        "bake": "baked",
+        "fry": "fried",
+        "boil": "boiled",
+        "stew": "stewed",
+        "steam": "steamed"
+      }
+    },
+    {
+      "id": "A-cook-01-s25",
+      "answer": "stew",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Nonna ___ beef and tomatoes on low heat all afternoon until the sauce was thick.",
+      "cue_phrase": "low heat all afternoon",
+      "surface": {
+        "bake": "baked",
+        "fry": "fried",
+        "boil": "boiled",
+        "stew": "stewed",
+        "steam": "steamed"
+      }
+    },
+    {
+      "id": "A-cook-01-s26",
+      "answer": "stew",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Mum ___ the lamb and vegetables in gravy on the stove for three hours.",
+      "cue_phrase": "in gravy on the stove for three hours",
+      "surface": {
+        "bake": "baked",
+        "fry": "fried",
+        "boil": "boiled",
+        "stew": "stewed",
+        "steam": "steamed"
+      }
+    },
+    {
+      "id": "A-cook-01-s27",
+      "answer": "stew",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "In a small saucepan, the apples ___ gently in their own juice until mushy.",
+      "cue_phrase": "gently in their own juice",
+      "surface": {
+        "bake": "baked",
+        "fry": "fried",
+        "boil": "boiled",
+        "stew": "stewed",
+        "steam": "steamed"
+      }
+    },
+    {
+      "id": "A-cook-01-s28",
+      "answer": "stew",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "All day, chicken and veggies ___ in rich gravy at the back of the stove.",
+      "cue_phrase": "all day; in rich gravy",
+      "surface": {
+        "bake": "baked",
+        "fry": "fried",
+        "boil": "boiled",
+        "stew": "stewed",
+        "steam": "steamed"
+      }
+    },
+    {
+      "id": "A-cook-01-s29",
+      "answer": "stew",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "All afternoon the kitchen smelled delicious while Dad ___ beef chunks in tomato sauce.",
+      "cue_phrase": "all afternoon; beef chunks in tomato sauce",
+      "surface": {
+        "bake": "baked",
+        "fry": "fried",
+        "boil": "boiled",
+        "stew": "stewed",
+        "steam": "steamed"
+      }
+    },
+    {
+      "id": "A-cook-01-s30",
+      "answer": "stew",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Grandpa ___ beans, onions and tomatoes gently on the stove from lunch until dinner.",
+      "cue_phrase": "gently; from lunch until dinner",
+      "surface": {
+        "bake": "baked",
+        "fry": "fried",
+        "boil": "boiled",
+        "stew": "stewed",
+        "steam": "steamed"
+      }
+    },
+    {
+      "id": "A-cook-01-s31",
+      "answer": "stew",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "On the camp stove, Uncle Ray ___ meat and potatoes in gravy until dark.",
+      "cue_phrase": "in gravy until dark",
+      "surface": {
+        "bake": "baked",
+        "fry": "fried",
+        "boil": "boiled",
+        "stew": "stewed",
+        "steam": "steamed"
+      }
+    },
+    {
+      "id": "A-cook-01-s32",
+      "answer": "stew",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Nana ___ the plums with sugar on the lowest heat all afternoon until sticky.",
+      "cue_phrase": "lowest heat all afternoon",
+      "surface": {
+        "bake": "baked",
+        "fry": "fried",
+        "boil": "boiled",
+        "stew": "stewed",
+        "steam": "steamed"
+      }
+    },
+    {
+      "id": "A-cook-01-s33",
+      "answer": "steam",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Dad ___ the broccoli in a basket above the bubbling water.",
+      "cue_phrase": "in a basket above the bubbling water",
+      "surface": {
+        "bake": "baked",
+        "fry": "fried",
+        "boil": "boiled",
+        "stew": "stewed",
+        "steam": "steamed"
+      }
+    },
+    {
+      "id": "A-cook-01-s34",
+      "answer": "steam",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "We ___ the pork buns in a bamboo basket over a pot of water.",
+      "cue_phrase": "bamboo basket over a pot of water",
+      "surface": {
+        "bake": "baked",
+        "fry": "fried",
+        "boil": "boiled",
+        "stew": "stewed",
+        "steam": "steamed"
+      }
+    },
+    {
+      "id": "A-cook-01-s35",
+      "answer": "steam",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Mum ___ the fish in a metal basket that sat just above the water.",
+      "cue_phrase": "sat just above the water",
+      "surface": {
+        "bake": "baked",
+        "fry": "fried",
+        "boil": "boiled",
+        "stew": "stewed",
+        "steam": "steamed"
+      }
+    },
+    {
+      "id": "A-cook-01-s36",
+      "answer": "steam",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Grandma ___ the green beans in a covered basket on top of the pot.",
+      "cue_phrase": "covered basket on top of the pot",
+      "surface": {
+        "bake": "baked",
+        "fry": "fried",
+        "boil": "boiled",
+        "stew": "stewed",
+        "steam": "steamed"
+      }
+    },
+    {
+      "id": "A-cook-01-s37",
+      "answer": "steam",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The carrots never touched the water, but they ___ until soft in the pot.",
+      "cue_phrase": "never touched the water",
+      "surface": {
+        "bake": "baked",
+        "fry": "fried",
+        "boil": "boiled",
+        "stew": "stewed",
+        "steam": "steamed"
+      }
+    },
+    {
+      "id": "A-cook-01-s38",
+      "answer": "steam",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "In a basket over the bubbling pot, Sana ___ the dumplings for twelve minutes.",
+      "cue_phrase": "in a basket over the bubbling pot",
+      "surface": {
+        "bake": "baked",
+        "fry": "fried",
+        "boil": "boiled",
+        "stew": "stewed",
+        "steam": "steamed"
+      }
+    },
+    {
+      "id": "A-cook-01-s39",
+      "answer": "steam",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Gran ___ zucchini slices in a basket resting over a pot of bubbling water.",
+      "cue_phrase": "basket resting over a pot",
+      "surface": {
+        "bake": "baked",
+        "fry": "fried",
+        "boil": "boiled",
+        "stew": "stewed",
+        "steam": "steamed"
+      }
+    },
+    {
+      "id": "A-cook-01-s40",
+      "answer": "steam",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "Lin ___ the soft white buns on a rack over the water until fluffy.",
+      "cue_phrase": "on a rack over the water",
+      "surface": {
+        "bake": "baked",
+        "fry": "fried",
+        "boil": "boiled",
+        "stew": "stewed",
+        "steam": "steamed"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "bake",
+      "picked": "fry",
+      "line": "Bake is cooking in the dry heat of an oven. Fry is cooking in hot oil in a pan."
+    },
+    {
+      "answer": "bake",
+      "picked": "boil",
+      "line": "Bake is cooking in the dry heat of an oven. Boil is cooking in bubbling water."
+    },
+    {
+      "answer": "bake",
+      "picked": "stew",
+      "line": "Bake is dry oven heat, for cakes and bread. Stew is cooking gently for hours in a pot of sauce."
+    },
+    {
+      "answer": "bake",
+      "picked": "steam",
+      "line": "Bake is dry oven heat that turns food golden. Steam is wet heat rising from water below."
+    },
+    {
+      "answer": "fry",
+      "picked": "bake",
+      "line": "Fry is cooking in hot oil in a pan. Bake is cooking in the dry heat of an oven."
+    },
+    {
+      "answer": "fry",
+      "picked": "boil",
+      "line": "Fry is cooking in hot oil. Boil is cooking in bubbling water."
+    },
+    {
+      "answer": "fry",
+      "picked": "stew",
+      "line": "Fry is quick cooking in hot oil. Stew is cooking gently for hours in a pot of sauce."
+    },
+    {
+      "answer": "fry",
+      "picked": "steam",
+      "line": "Fry is cooking in hot oil in a pan. Steam is cooking in the hot cloud above water."
+    },
+    {
+      "answer": "boil",
+      "picked": "bake",
+      "line": "Boil is cooking in bubbling water. Bake is cooking in the dry heat of an oven."
+    },
+    {
+      "answer": "boil",
+      "picked": "fry",
+      "line": "Boil is cooking in bubbling water. Fry is cooking in hot oil."
+    },
+    {
+      "answer": "boil",
+      "picked": "stew",
+      "line": "Boil is cooking in fast-bubbling water. Stew is cooking gently for hours in a thick sauce."
+    },
+    {
+      "answer": "boil",
+      "picked": "steam",
+      "line": "Boil puts the food right in the bubbling water. Steam keeps it above the water."
+    },
+    {
+      "answer": "stew",
+      "picked": "bake",
+      "line": "Stew is cooking gently for hours in a pot of sauce. Bake is dry heat in an oven."
+    },
+    {
+      "answer": "stew",
+      "picked": "fry",
+      "line": "Stew is cooking gently for hours in a pot of sauce. Fry is quick cooking in hot oil."
+    },
+    {
+      "answer": "stew",
+      "picked": "boil",
+      "line": "Stew is cooking gently for hours in a thick sauce. Boil is cooking in fast-bubbling water."
+    },
+    {
+      "answer": "stew",
+      "picked": "steam",
+      "line": "Stew cooks food in a sauce for hours. Steam cooks it above the water, not in it."
+    },
+    {
+      "answer": "steam",
+      "picked": "bake",
+      "line": "Steam is cooking in the hot cloud above water. Bake is cooking in the dry heat of an oven."
+    },
+    {
+      "answer": "steam",
+      "picked": "fry",
+      "line": "Steam is cooking in the hot cloud above water. Fry is cooking in hot oil in a pan."
+    },
+    {
+      "answer": "steam",
+      "picked": "boil",
+      "line": "Steam keeps the food above the water. Boil puts the food right in the bubbling water."
+    },
+    {
+      "answer": "steam",
+      "picked": "stew",
+      "line": "Steam cooks food above the water, not in it. Stew cooks it for hours in a sauce."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-11-12T12:09:17+00:00",
+    "model": "claude-opus-5-5",
+    "scrubbed_at": "2026-11-12",
+    "scrub_note": "Scrubbed by claude 2026-11-12: every sentence and contrast read after judging. Toast (grade 1) swapped for stew (grade 3) so the set pitches at Year 3. s16 rewritten twice: intransitive and deep-fry frames failed the fry sense (cook on a hot surface using fat); s32 and s36 rewritten after single boil dissents; s08, s25, s36 trimmed for length. Final: 40/40 unanimous passes."
+  }
+}

@@ -125,8 +125,8 @@
       "answer": "nibble",
       "cue": "explicit",
       "reserve": false,
-      "text": "Sara used her front teeth to ___ one raisin for a minute.",
-      "cue_phrase": "front teeth",
+      "text": "Sara used her front teeth to ___ the edge of her biscuit.",
+      "cue_phrase": "front teeth; the edge",
       "surface": {
         "nibble": "nibble",
         "munch": "munch",
@@ -155,46 +155,30 @@
       "answer": "nibble",
       "cue": "contextual",
       "reserve": false,
-      "text": "At tea, Tom chose to ___ the biscuit corner instead of finishing it.",
-      "cue_phrase": "biscuit corner",
+      "text": "Tom only wanted to ___ a tiny corner of the biscuit.",
+      "cue_phrase": "a tiny corner",
       "surface": {
         "nibble": "nibble",
         "munch": "munch",
         "gulp": "gulp",
         "gobble": "gobble",
         "sip": "sip"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: gpt-5.5 also reads munch charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
-          "by": "claude",
-          "at": "2026-07-05"
-        }
-      ]
+      }
     },
     {
       "id": "A-eat-01-s05",
       "answer": "nibble",
       "cue": "inferential",
       "reserve": false,
-      "text": "Only a thin crescent vanished as the hamster ___ the apple slice.",
-      "cue_phrase": "thin crescent vanished",
+      "text": "The hamster ___ the apple, taking bites as tiny as crumbs.",
+      "cue_phrase": "bites as tiny as crumbs",
       "surface": {
         "nibble": "nibbled",
         "munch": "munched",
         "gulp": "gulped",
         "gobble": "gobbled",
         "sip": "sipped"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: gpt-5.5 also reads munch charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
-          "by": "claude",
-          "at": "2026-07-05"
-        }
-      ]
+      }
     },
     {
       "id": "A-eat-01-s06",
@@ -216,8 +200,8 @@
       "answer": "nibble",
       "cue": "explicit",
       "reserve": true,
-      "text": "The fairy ___ the cake crumb with careful pin-prick teeth.",
-      "cue_phrase": "pin-prick teeth",
+      "text": "The fairy ___ a cake crumb with her tiny, careful teeth.",
+      "cue_phrase": "tiny, careful teeth",
       "surface": {
         "nibble": "nibbled",
         "munch": "munched",
@@ -231,21 +215,21 @@
       "answer": "nibble",
       "cue": "explicit",
       "reserve": true,
-      "text": "Please ___ the sample slowly, taking the tiniest mouthfuls.",
-      "cue_phrase": "tiniest mouthfuls",
+      "text": "The shy mouse ___ the cheese in tiny bites, ears twitching.",
+      "cue_phrase": "in tiny bites",
       "surface": {
-        "nibble": "nibble",
-        "munch": "munch",
-        "gulp": "gulp",
-        "gobble": "gobble",
-        "sip": "sip"
+        "nibble": "nibbled",
+        "munch": "munched",
+        "gulp": "gulped",
+        "gobble": "gobbled",
+        "sip": "sipped"
       },
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: gpt-5.5 also reads sip charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (munch); read by claude for Year 2 and the scene facts rule it out",
           "by": "claude",
-          "at": "2026-07-05"
+          "at": "2026-11-12"
         }
       ]
     },
@@ -277,69 +261,45 @@
       "answer": "munch",
       "cue": "explicit",
       "reserve": false,
-      "text": "We heard Sam ___ the carrots with loud jaw cracks.",
-      "cue_phrase": "loud jaw cracks",
+      "text": "We could hear Sam ___ his carrot sticks from across the room.",
+      "cue_phrase": "hear; carrot sticks",
       "surface": {
         "nibble": "nibble",
         "munch": "munch",
         "gulp": "gulp",
         "gobble": "gobble",
         "sip": "sip"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: gpt-5.5 also reads gobble charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
-          "by": "claude",
-          "at": "2026-07-05"
-        }
-      ]
+      }
     },
     {
       "id": "A-eat-01-s11",
       "answer": "munch",
       "cue": "contextual",
       "reserve": false,
-      "text": "Kira ___ popcorn with crunches through the whole chapter.",
-      "cue_phrase": "crunches through the whole",
+      "text": "Kira ___ popcorn loudly all through the movie.",
+      "cue_phrase": "loudly all through the movie",
       "surface": {
         "nibble": "nibbled",
         "munch": "munched",
         "gulp": "gulped",
         "gobble": "gobbled",
         "sip": "sipped"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: gpt-5.5 also reads nibble charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
-          "by": "claude",
-          "at": "2026-07-05"
-        }
-      ]
+      }
     },
     {
       "id": "A-eat-01-s12",
       "answer": "munch",
       "cue": "contextual",
       "reserve": false,
-      "text": "The pony began to ___ oats with clack-clack sounds after its ride.",
-      "cue_phrase": "clack-clack sounds",
+      "text": "The pony began to ___ its crunchy oats, chomp after chomp.",
+      "cue_phrase": "crunchy oats, chomp after chomp",
       "surface": {
-        "munch": "munch",
         "nibble": "nibble",
+        "munch": "munch",
         "gulp": "gulp",
         "gobble": "gobble",
         "sip": "sip"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: gpt-5.5 also reads gobble, nibble charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
-          "by": "claude",
-          "at": "2026-07-05"
-        }
-      ]
+      }
     },
     {
       "id": "A-eat-01-s13",
@@ -369,57 +329,41 @@
       "answer": "munch",
       "cue": "inferential",
       "reserve": false,
-      "text": "The classroom stayed quiet except for pupils who ___ cereal, crunch after crunch.",
+      "text": "At breakfast, Grandpa ___ his cornflakes, crunch after crunch.",
       "cue_phrase": "crunch after crunch",
       "surface": {
-        "munch": "munched",
         "nibble": "nibbled",
+        "munch": "munched",
         "gulp": "gulped",
         "gobble": "gobbled",
         "sip": "sipped"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: gpt-5.5 also reads gobble, nibble charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
-          "by": "claude",
-          "at": "2026-07-05"
-        }
-      ]
+      }
     },
     {
       "id": "A-eat-01-s15",
       "answer": "munch",
       "cue": "explicit",
       "reserve": true,
-      "text": "A squirrel can ___ nuts loudly, making tap-tap jaw sounds.",
-      "cue_phrase": "tap-tap jaw sounds",
+      "text": "A possum can ___ apples loudly on the roof all night.",
+      "cue_phrase": "loudly; all night",
       "surface": {
-        "munch": "munch",
         "nibble": "nibble",
+        "munch": "munch",
         "gulp": "gulp",
         "gobble": "gobble",
         "sip": "sip"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: gpt-5.5 also reads gobble, nibble charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
-          "by": "claude",
-          "at": "2026-07-05"
-        }
-      ]
+      }
     },
     {
       "id": "A-eat-01-s16",
       "answer": "munch",
       "cue": "contextual",
       "reserve": true,
-      "text": "Nora was ___ toast so crunchily that the dog stared.",
-      "cue_phrase": "so crunchily",
+      "text": "Nora was ___ her toast so loudly that the dog looked up.",
+      "cue_phrase": "so loudly",
       "surface": {
-        "munch": "munching",
         "nibble": "nibbling",
+        "munch": "munching",
         "gulp": "gulping",
         "gobble": "gobbling",
         "sip": "sipping"
@@ -427,9 +371,9 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: gpt-5.5 also reads gobble, nibble charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (gobble); read by claude for Year 2 and the scene facts rule it out",
           "by": "claude",
-          "at": "2026-07-05"
+          "at": "2026-11-12"
         }
       ]
     },
@@ -453,14 +397,14 @@
       "answer": "gulp",
       "cue": "explicit",
       "reserve": false,
-      "text": "The hungry giant ___ his lemonade in one go, straight from the jug.",
-      "cue_phrase": "in one go; jug",
+      "text": "The thirsty giant ___ a whole jug of lemonade in one go.",
+      "cue_phrase": "in one go",
       "surface": {
-        "gulp": "gulp",
-        "nibble": "nibble",
-        "munch": "munch",
-        "gobble": "gobble",
-        "sip": "sip"
+        "nibble": "nibbled",
+        "munch": "munched",
+        "gulp": "gulped",
+        "gobble": "gobbled",
+        "sip": "sipped"
       }
     },
     {
@@ -483,12 +427,12 @@
       "answer": "gulp",
       "cue": "contextual",
       "reserve": false,
-      "text": "To win the silly race, Mia tried to ___ juice at once.",
-      "cue_phrase": "juice at once",
+      "text": "In the silly race, Mia tried to ___ her juice all at once.",
+      "cue_phrase": "all at once",
       "surface": {
-        "gulp": "gulp",
         "nibble": "nibble",
         "munch": "munch",
+        "gulp": "gulp",
         "gobble": "gobble",
         "sip": "sip"
       }
@@ -498,12 +442,12 @@
       "answer": "gulp",
       "cue": "inferential",
       "reserve": false,
-      "text": "His full cup emptied when he ___ it with one huge throat movement.",
-      "cue_phrase": "huge throat movement",
+      "text": "Jack tipped back his head and ___ the whole glass of water.",
+      "cue_phrase": "tipped back his head; whole glass",
       "surface": {
-        "gulp": "gulped",
         "nibble": "nibbled",
         "munch": "munched",
+        "gulp": "gulped",
         "gobble": "gobbled",
         "sip": "sipped"
       }
@@ -574,21 +518,21 @@
       "answer": "gobble",
       "cue": "explicit",
       "reserve": false,
-      "text": "The puppy ___ its dinner, hardly using teeth, with gravy everywhere.",
-      "cue_phrase": "hardly using teeth",
+      "text": "The hungry puppy ___ its dinner so fast that gravy flew everywhere.",
+      "cue_phrase": "so fast that gravy flew everywhere",
       "surface": {
-        "gobble": "gobbled",
         "nibble": "nibbled",
         "munch": "munched",
         "gulp": "gulped",
+        "gobble": "gobbled",
         "sip": "sipped"
       },
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: gpt-5.5 also reads gulp charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (gulp, munch); read by claude for Year 2 and the scene facts rule it out",
           "by": "claude",
-          "at": "2026-07-05"
+          "at": "2026-11-12"
         }
       ]
     },
@@ -597,21 +541,21 @@
       "answer": "gobble",
       "cue": "explicit",
       "reserve": false,
-      "text": "The ogre likes to ___ pies, barely closing jaws between mouthfuls.",
-      "cue_phrase": "barely closing jaws",
+      "text": "The greedy ogre likes to ___ his pies, crumbs flying everywhere.",
+      "cue_phrase": "greedy; crumbs flying everywhere",
       "surface": {
-        "gobble": "gobble",
         "nibble": "nibble",
         "munch": "munch",
         "gulp": "gulp",
+        "gobble": "gobble",
         "sip": "sip"
       },
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: gpt-5.5 also reads gulp charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (munch); read by claude for Year 2 and the scene facts rule it out",
           "by": "claude",
-          "at": "2026-07-05"
+          "at": "2026-11-12"
         }
       ]
     },
@@ -620,21 +564,21 @@
       "answer": "gobble",
       "cue": "contextual",
       "reserve": false,
-      "text": "Max ___ his entire plate of eggs in under a minute and ran for the bus.",
-      "cue_phrase": "entire plate; under a minute",
+      "text": "Late for the bus, Max ___ his eggs in a messy rush.",
+      "cue_phrase": "in a messy rush",
       "surface": {
-        "gobble": "gobbled",
         "nibble": "nibbled",
         "munch": "munched",
         "gulp": "gulped",
+        "gobble": "gobbled",
         "sip": "sipped"
       },
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: gpt-5.5 also reads gulp charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (gulp); read by claude for Year 2 and the scene facts rule it out",
           "by": "claude",
-          "at": "2026-07-05"
+          "at": "2026-11-12"
         }
       ]
     },
@@ -643,21 +587,21 @@
       "answer": "gobble",
       "cue": "contextual",
       "reserve": false,
-      "text": "The raccoon ___ the stolen sandwich in seconds, dropping lettuce everywhere.",
-      "cue_phrase": "in seconds; dropping lettuce",
+      "text": "The naughty dog ___ the stolen sandwich in seconds, dropping lettuce everywhere.",
+      "cue_phrase": "in seconds; dropping lettuce everywhere",
       "surface": {
-        "gobble": "gobble",
-        "nibble": "nibble",
-        "munch": "munch",
-        "gulp": "gulp",
-        "sip": "sip"
+        "nibble": "nibbled",
+        "munch": "munched",
+        "gulp": "gulped",
+        "gobble": "gobbled",
+        "sip": "sipped"
       },
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: gpt-5.5 also reads gulp, munch charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (gulp); read by claude for Year 2 and the scene facts rule it out",
           "by": "claude",
-          "at": "2026-07-05"
+          "at": "2026-11-12"
         }
       ]
     },
@@ -666,21 +610,21 @@
       "answer": "gobble",
       "cue": "inferential",
       "reserve": false,
-      "text": "Leo ___ noodles; long strands slid down with sauce on both cheeks.",
-      "cue_phrase": "long strands slid",
+      "text": "Leo ___ his noodles so fast that sauce covered both cheeks.",
+      "cue_phrase": "so fast that sauce covered both cheeks",
       "surface": {
-        "gobble": "gobbled",
         "nibble": "nibbled",
         "munch": "munched",
         "gulp": "gulped",
+        "gobble": "gobbled",
         "sip": "sipped"
       },
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: gpt-5.5 also reads gulp charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (gulp); read by claude for Year 2 and the scene facts rule it out",
           "by": "claude",
-          "at": "2026-07-05"
+          "at": "2026-11-12"
         }
       ]
     },
@@ -689,21 +633,21 @@
       "answer": "gobble",
       "cue": "inferential",
       "reserve": false,
-      "text": "No one spoke while the troll ___ the whole plate of dumplings in one minute flat.",
-      "cue_phrase": "one minute flat",
+      "text": "The troll ___ ten dumplings fast, with sauce all over his beard.",
+      "cue_phrase": "ten dumplings fast; sauce all over",
       "surface": {
-        "gobble": "gobbled",
         "nibble": "nibbled",
         "munch": "munched",
         "gulp": "gulped",
+        "gobble": "gobbled",
         "sip": "sipped"
       },
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: gpt-5.5 also reads gulp, munch charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (gulp, munch); read by claude for Year 2 and the scene facts rule it out",
           "by": "claude",
-          "at": "2026-07-05"
+          "at": "2026-11-12"
         }
       ]
     },
@@ -712,21 +656,21 @@
       "answer": "gobble",
       "cue": "explicit",
       "reserve": true,
-      "text": "Don't ___ your lunch like the ogre in the story, jaws never closing.",
-      "cue_phrase": "jaws never closing",
+      "text": "Slow down! Don't ___ your lunch and spray crumbs everywhere.",
+      "cue_phrase": "Slow down; spray crumbs everywhere",
       "surface": {
-        "gobble": "gobble",
         "nibble": "nibble",
         "munch": "munch",
         "gulp": "gulp",
+        "gobble": "gobble",
         "sip": "sip"
       },
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: gpt-5.5 also reads gulp charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (munch); read by claude for Year 2 and the scene facts rule it out",
           "by": "claude",
-          "at": "2026-07-05"
+          "at": "2026-11-12"
         }
       ]
     },
@@ -758,14 +702,14 @@
       "answer": "sip",
       "cue": "explicit",
       "reserve": false,
-      "text": "The cocoa was still too hot, so Maya ___ it slowly from the edge of the mug.",
-      "cue_phrase": "too hot; slowly from the edge",
+      "text": "The cocoa was very hot, so Maya ___ it slowly.",
+      "cue_phrase": "very hot; slowly",
       "surface": {
-        "sip": "sipped",
         "nibble": "nibbled",
         "munch": "munched",
         "gulp": "gulped",
-        "gobble": "gobbled"
+        "gobble": "gobbled",
+        "sip": "sipped"
       }
     },
     {
@@ -773,14 +717,14 @@
       "answer": "sip",
       "cue": "explicit",
       "reserve": false,
-      "text": "Grandpa ___ his tiny cup of coffee in little tastes, making it last.",
-      "cue_phrase": "little tastes, making it last",
+      "text": "Grandpa ___ his tiny cup of coffee, making it last.",
+      "cue_phrase": "tiny cup; making it last",
       "surface": {
-        "sip": "sip",
-        "nibble": "nibble",
-        "munch": "munch",
-        "gulp": "gulp",
-        "gobble": "gobble"
+        "nibble": "nibbled",
+        "munch": "munched",
+        "gulp": "gulped",
+        "gobble": "gobbled",
+        "sip": "sipped"
       }
     },
     {
@@ -788,14 +732,14 @@
       "answer": "sip",
       "cue": "contextual",
       "reserve": false,
-      "text": "The juice had to last the whole film, so Ben ___ it carefully.",
-      "cue_phrase": "had to last the whole film",
+      "text": "Ben ___ his juice slowly to make it last the whole film.",
+      "cue_phrase": "make it last the whole film",
       "surface": {
-        "sip": "sipped",
         "nibble": "nibbled",
         "munch": "munched",
         "gulp": "gulped",
-        "gobble": "gobbled"
+        "gobble": "gobbled",
+        "sip": "sipped"
       }
     },
     {
@@ -803,14 +747,14 @@
       "answer": "sip",
       "cue": "contextual",
       "reserve": false,
-      "text": "Too shy to ask for more, the mouse in the story ___ dew from a leaf.",
-      "cue_phrase": "dew from a leaf",
+      "text": "The tiny mouse ___ a drop of dew from a leaf.",
+      "cue_phrase": "a drop of dew",
       "surface": {
-        "sip": "sip",
-        "nibble": "nibble",
-        "munch": "munch",
-        "gulp": "gulp",
-        "gobble": "gobble"
+        "nibble": "nibbled",
+        "munch": "munched",
+        "gulp": "gulped",
+        "gobble": "gobbled",
+        "sip": "sipped"
       }
     },
     {
@@ -818,14 +762,14 @@
       "answer": "sip",
       "cue": "inferential",
       "reserve": false,
-      "text": "Her lemonade was nearly full by the last page, though she had ___ it since breakfast.",
-      "cue_phrase": "nearly full; since breakfast",
+      "text": "Mia ___ her lemonade all morning, and it was still half full.",
+      "cue_phrase": "all morning; still half full",
       "surface": {
-        "sip": "sipped",
         "nibble": "nibbled",
         "munch": "munched",
         "gulp": "gulped",
-        "gobble": "gobbled"
+        "gobble": "gobbled",
+        "sip": "sipped"
       }
     },
     {
@@ -833,14 +777,14 @@
       "answer": "sip",
       "cue": "inferential",
       "reserve": false,
-      "text": "The soup judge ___ once from each bowl and moved on down the table.",
-      "cue_phrase": "once from each bowl",
+      "text": "The soup judge ___ a little from each bowl, then moved on.",
+      "cue_phrase": "a little from each bowl",
       "surface": {
-        "sip": "sipped",
         "nibble": "nibbled",
         "munch": "munched",
         "gulp": "gulped",
-        "gobble": "gobbled"
+        "gobble": "gobbled",
+        "sip": "sipped"
       }
     },
     {
@@ -848,23 +792,15 @@
       "answer": "sip",
       "cue": "contextual",
       "reserve": true,
-      "text": "Hidden behind the curtain, the spy ___ her tea and watched the door.",
-      "cue_phrase": "spy; watched the door",
+      "text": "The queen ___ her tea politely from a tiny china cup.",
+      "cue_phrase": "politely; tiny china cup",
       "surface": {
-        "sip": "sipping",
-        "nibble": "nibbling",
-        "munch": "munching",
-        "gulp": "gulping",
-        "gobble": "gobbling"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: gpt-5.5 also reads gulp charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
-          "by": "claude",
-          "at": "2026-07-05"
-        }
-      ]
+        "nibble": "nibbled",
+        "munch": "munched",
+        "gulp": "gulped",
+        "gobble": "gobbled",
+        "sip": "sipped"
+      }
     },
     {
       "id": "A-eat-01-s40",
@@ -891,7 +827,7 @@
     {
       "answer": "nibble",
       "picked": "gulp",
-      "line": "Nibble is slow and tiny. Gulp is taking drink or food down in one go."
+      "line": "Nibble is slow and tiny. Gulp is swallowing food or drink in one go."
     },
     {
       "answer": "nibble",
@@ -911,7 +847,7 @@
     {
       "answer": "munch",
       "picked": "gulp",
-      "line": "Munch is crunchy mouth work. Gulp is down the throat in one go."
+      "line": "Munch is noisy, crunchy chewing. Gulp is swallowing in one go."
     },
     {
       "answer": "munch",
@@ -926,17 +862,17 @@
     {
       "answer": "gulp",
       "picked": "nibble",
-      "line": "Gulp is down in one go. Nibble is tiny, careful mouthfuls."
+      "line": "Gulp is down in one go. Nibble is tiny, careful bites."
     },
     {
       "answer": "gulp",
       "picked": "munch",
-      "line": "Gulp is a fast throat action. Munch is steady crunchy mouth work."
+      "line": "Gulp is one fast swallow. Munch is steady, noisy, crunchy chewing."
     },
     {
       "answer": "gulp",
       "picked": "gobble",
-      "line": "Gulp is one fast throat action. Gobble is rushed, messy mouthfuls of food."
+      "line": "Gulp is one fast swallow. Gobble is lots of rushed, messy mouthfuls of food."
     },
     {
       "answer": "gulp",
@@ -956,7 +892,7 @@
     {
       "answer": "gobble",
       "picked": "gulp",
-      "line": "Gobble is messy food rushing. Gulp is down the throat in one go."
+      "line": "Gobble is rushed, messy eating. Gulp is swallowing in one go."
     },
     {
       "answer": "gobble",
@@ -988,6 +924,6 @@
     "generated_at": "2026-07-05T07:20:46+00:00",
     "model": "gpt-5.5",
     "scrubbed_at": "2026-07-05",
-    "scrub_note": "devour swapped for sip: gobble/devour proved judge-inseparable in every frame; sip also makes gulp's drink dimension coherent. Full read by claude during judge triage: every flagged sentence adjudicated (rewrite or recorded waiver), unflagged sentences read for frame sanity."
+    "scrub_note": "devour swapped for sip: gobble/devour proved judge-inseparable in every frame; sip also makes gulp's drink dimension coherent. Full read by claude during judge triage: every flagged sentence adjudicated (rewrite or recorded waiver), unflagged sentences read for frame sanity. Year 2 readability pass by claude 2026-11-12: rewrote 28 sentences and 6 contrasts. Fixed the five 16-17 word sentences (s27 s30 s33 s36 s37). Replaced the contorted cues 'thin crescent vanished', 'clack-clack', 'tap-tap jaw sounds', 'crunchily', 'huge throat movement', 'hardly using teeth' and 'jaws never closing' with plain scenes (crumb-sized bites, crunch after crunch, gravy flying, tipping back a glass). Corrected s18's surface table, which was base forms in a past frame. Single gpt-5.5 gobble/gulp and munch dissents were read and waived."
   }
 }

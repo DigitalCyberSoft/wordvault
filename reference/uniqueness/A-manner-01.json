@@ -578,7 +578,7 @@
       "judged_at": "2026-07-06T17:01:47+00:00"
     },
     "A-manner-01-s21": {
-      "text_sha256": "99bcc64587af7cbf2d0e3a413a188d57fc23fed643ec61acb376a30550e91ae6",
+      "text_sha256": "d97241af28fac366c512466093333362c57fb122c92e0dbf2af91812094f919e",
       "verdict": "review",
       "judges": [
         {
@@ -599,13 +599,12 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "incredulous",
             "sceptical"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-06T17:05:05+00:00"
+      "judged_at": "2026-11-12T12:15:38+00:00"
     },
     "A-manner-01-s22": {
       "text_sha256": "715754525e6b7f90d200e3a31fa618ecedb526685bba80e45a79e19e4602e599",
@@ -637,7 +636,7 @@
       "judged_at": "2026-07-06T17:05:05+00:00"
     },
     "A-manner-01-s23": {
-      "text_sha256": "d1b870d1b1113ff73154f93ae419a323dca613779bda166d7666313c4f30fda1",
+      "text_sha256": "602dded56aca5affbdf6807382bf0fe574b883630d2a52f150ff7c5b0d5a7d86",
       "verdict": "review",
       "judges": [
         {
@@ -658,13 +657,12 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "incredulous",
             "sceptical"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-06T17:37:04+00:00"
+      "judged_at": "2026-11-12T12:15:38+00:00"
     },
     "A-manner-01-s24": {
       "text_sha256": "1caac74c91c1b69137234b6f097bf64859827046d62c4c6c4b1112f9b6e7dd5b",

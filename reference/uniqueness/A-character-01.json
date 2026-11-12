@@ -174,14 +174,13 @@
       "judged_at": "2026-07-06T17:34:39+00:00"
     },
     "A-character-01-s07": {
-      "text_sha256": "07c8f93af3f16269fd0da2491ba6c9549df926adf44bcfacdea1e17cba9268c2",
-      "verdict": "review",
+      "text_sha256": "fad12f8c5ff70bc37de65eaf1c7c22b4c591de87279a9145e490a0e07285dc0a",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "reluctant",
-            "wary"
+            "reluctant"
           ],
           "sense_match": true
         },
@@ -195,13 +194,12 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "reluctant",
-            "wary"
+            "reluctant"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-06T17:34:39+00:00"
+      "judged_at": "2026-11-12T12:10:47+00:00"
     },
     "A-character-01-s08": {
       "text_sha256": "fc038621c0610cd1efd6ea7c2239c8f4246c6fb9810adaf18a7bdca2c37c669d",

@@ -95,54 +95,38 @@
       "answer": "soaked",
       "cue": "explicit",
       "reserve": false,
-      "text": "His football boot was ___ right through; the stiff leather held, yet Dad tipped a puddle out.",
-      "cue_phrase": "tipped a puddle out",
+      "text": "Caught in the storm with no umbrella, Ana got ___ to the skin.",
+      "cue_phrase": "to the skin",
       "surface": {
         "soaked": "soaked",
         "damp": "damp",
         "soggy": "soggy",
         "dripping": "dripping",
         "humid": "humid"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: gpt-4.1 also reads dripping, soggy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
-          "by": "claude",
-          "at": "2026-07-05"
-        }
-      ]
+      }
     },
     {
       "id": "A-wet-01-s02",
       "answer": "soaked",
       "cue": "explicit",
       "reserve": false,
-      "text": "Rain had worked deep into the map case's inner pocket, leaving it ___ though it held its shape.",
-      "cue_phrase": "deep into the map case's inner pocket",
+      "text": "Ella fell in the river in her school uniform and came out ___ to the bone.",
+      "cue_phrase": "to the bone",
       "surface": {
         "soaked": "soaked",
         "damp": "damp",
         "soggy": "soggy",
         "dripping": "dripping",
         "humid": "humid"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "ADJACENCY-2OF3 (gpt-5.5 adds damp, soggy; gpt-4.1 adds soggy): soggy read ignores the stated shape-retention marker; wet-through with form intact is soaked",
-          "by": "claude",
-          "at": "2026-07-05"
-        }
-      ]
+      }
     },
     {
       "id": "A-wet-01-s03",
       "answer": "soaked",
       "cue": "contextual",
       "reserve": false,
-      "text": "After stepping into the ankle-deep puddle, her boot was ___; leather stayed stiff.",
-      "cue_phrase": "ankle-deep puddle",
+      "text": "After the hose fight, Jack was ___ right down to his undies.",
+      "cue_phrase": "right down to his undies",
       "surface": {
         "soaked": "soaked",
         "damp": "damp",
@@ -153,9 +137,9 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "ADJACENCY-2OF3 (gpt-4.1 adds soggy; claude-opus-4-8 adds dripping, soggy): soggy and dripping co-occur fresh from a puddle; 'leather stayed stiff' contradicts softening, and ankle-deep immersion stages saturation",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (soggy); read and rejected: the subject is a person or worn clothing, which does not go soft and limp, so soggy does not fit",
           "by": "claude",
-          "at": "2026-07-05"
+          "at": "2026-11-12"
         }
       ]
     },
@@ -164,31 +148,23 @@
       "answer": "soaked",
       "cue": "contextual",
       "reserve": false,
-      "text": "His cap had taken in rain at every stitch and stayed ___ all afternoon, still holding its shape.",
-      "cue_phrase": "rain at every stitch",
+      "text": "The storm got through my raincoat and jumper, and even my singlet was ___ through.",
+      "cue_phrase": "even my singlet",
       "surface": {
         "soaked": "soaked",
         "damp": "damp",
         "soggy": "soggy",
         "dripping": "dripping",
         "humid": "humid"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "ADJACENCY-2OF3 (gpt-5.5 adds damp, dripping, soggy; gpt-4.1 adds soggy): soggy read ignores 'still holding its shape'; every-stitch saturation is soaked's feature",
-          "by": "claude",
-          "at": "2026-07-05"
-        }
-      ]
+      }
     },
     {
       "id": "A-wet-01-s05",
       "answer": "soaked",
       "cue": "inferential",
       "reserve": false,
-      "text": "Grandad wrung a whole puddle out of the glove, and even then it felt ___ to the seams.",
-      "cue_phrase": "wrung a whole puddle out",
+      "text": "After an hour in the downpour, the scouts were ___ through every layer.",
+      "cue_phrase": "through every layer",
       "surface": {
         "soaked": "soaked",
         "damp": "damp",
@@ -199,9 +175,9 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "ADJACENCY-2OF3 (gpt-5.5 adds damp, soggy; gpt-4.1 adds soggy): a just-wrung glove still wet to the seams is saturation; soggy reads a texture the frame does not stage",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (soggy); read and rejected: the subject is a person or worn clothing, which does not go soft and limp, so soggy does not fit",
           "by": "claude",
-          "at": "2026-07-05"
+          "at": "2026-11-12"
         }
       ]
     },
@@ -210,8 +186,8 @@
       "answer": "soaked",
       "cue": "inferential",
       "reserve": false,
-      "text": "A week in the flooded shed left the rope ___ right through, yet neatly coiled as ever.",
-      "cue_phrase": "a week in the flooded shed",
+      "text": "Paddling through the flood, Grandpa got his trousers ___ right up to the knees.",
+      "cue_phrase": "Paddling through the flood",
       "surface": {
         "soaked": "soaked",
         "damp": "damp",
@@ -222,9 +198,9 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: gpt-4.1 also reads soggy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (soggy); read and rejected: the subject is a person or worn clothing, which does not go soft and limp, so soggy does not fit",
           "by": "claude",
-          "at": "2026-07-05"
+          "at": "2026-11-12"
         }
       ]
     },
@@ -233,31 +209,23 @@
       "answer": "soaked",
       "cue": "contextual",
       "reserve": true,
-      "text": "By the campfire that night, the wooden shield was still ___, twice its dry weight.",
-      "cue_phrase": "twice its dry weight",
+      "text": "Dad walked home in the storm, and even the shirt under his jacket was ___ through.",
+      "cue_phrase": "the shirt under his jacket",
       "surface": {
         "soaked": "soaked",
         "damp": "damp",
         "soggy": "soggy",
         "dripping": "dripping",
         "humid": "humid"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "ADJACENCY-2OF3 (gpt-4.1 adds damp, soggy; claude-opus-4-8 adds soggy): 'twice its dry weight' states saturation mass; soggy's softening is not staged on solid oak, but waterlogged-wood usage overlaps",
-          "by": "claude",
-          "at": "2026-07-05"
-        }
-      ]
+      }
     },
     {
       "id": "A-wet-01-s08",
       "answer": "soaked",
       "cue": "explicit",
       "reserve": true,
-      "text": "By morning the scout badge was still ___ from front to back, its stitching flat as ever.",
-      "cue_phrase": "its stitching flat as ever",
+      "text": "Our tent flooded in the night, so by morning our pyjamas were ___ right through.",
+      "cue_phrase": "tent flooded in the night",
       "surface": {
         "soaked": "soaked",
         "damp": "damp",
@@ -268,9 +236,9 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: gpt-5.5 also reads damp, soggy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (soggy); read and rejected: the subject is a person or worn clothing, which does not go soft and limp, so soggy does not fit",
           "by": "claude",
-          "at": "2026-07-05"
+          "at": "2026-11-12"
         }
       ]
     },
@@ -369,8 +337,8 @@
       "answer": "damp",
       "cue": "contextual",
       "reserve": true,
-      "text": "The dog's paw print was ___, pale, and vanished after lunch.",
-      "cue_phrase": "pale, and vanished",
+      "text": "Ellie's swimmers had dried in the sun all morning and were only ___ now.",
+      "cue_phrase": "dried in the sun all morning",
       "surface": {
         "soaked": "soaked",
         "damp": "damp",
@@ -414,8 +382,8 @@
       "answer": "soggy",
       "cue": "explicit",
       "reserve": false,
-      "text": "His paper crown became ___, limp at the points, though only tips were marked.",
-      "cue_phrase": "limp at the points",
+      "text": "Rain turned Tom's paper crown ___, so the points flopped down over his ears.",
+      "cue_phrase": "points flopped down",
       "surface": {
         "soaked": "soaked",
         "damp": "damp",
@@ -426,9 +394,9 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: gpt-5.5 also reads damp charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (damp, soaked); read and rejected: the points flopping down shows the paper has gone soft; soaked or damp says nothing about flopping",
           "by": "claude",
-          "at": "2026-07-05"
+          "at": "2026-11-12"
         }
       ]
     },
@@ -666,31 +634,23 @@
       "answer": "dripping",
       "cue": "inferential",
       "reserve": false,
-      "text": "The dog came in ___ from the rain and left a trail across the kitchen floor.",
-      "cue_phrase": "left a trail across the kitchen floor",
+      "text": "Long after the rain stopped, the gutter was still ___, plinking onto the bin lid.",
+      "cue_phrase": "plinking onto the bin lid",
       "surface": {
         "soaked": "soaked",
         "damp": "damp",
         "soggy": "soggy",
         "dripping": "dripping",
         "humid": "humid"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "ADJACENCY-2OF3 (gpt-5.5 adds soaked, soggy; claude-opus-4-8 adds soaked): soaked co-occurs on a rain-wet dog; the drop trail stages active shedding, dripping's exclusive feature",
-          "by": "claude",
-          "at": "2026-07-05"
-        }
-      ]
+      }
     },
     {
       "id": "A-wet-01-s31",
       "answer": "dripping",
       "cue": "contextual",
       "reserve": true,
-      "text": "The mermaid's glass comb was ___, leaving a trail across the shell shelf.",
-      "cue_phrase": "leaving a trail",
+      "text": "Fresh from the pool, Sam's goggles were ___, leaving little puddles across the floor.",
+      "cue_phrase": "leaving little puddles",
       "surface": {
         "soaked": "soaked",
         "damp": "damp",
@@ -701,9 +661,9 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: gpt-5.5 also reads soaked charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (soaked); read and rejected: goggles cannot soak water through; the puddles are drops falling off them",
           "by": "claude",
-          "at": "2026-07-05"
+          "at": "2026-11-12"
         }
       ]
     },
@@ -896,8 +856,8 @@
       "answer": "humid",
       "cue": "explicit",
       "reserve": true,
-      "text": "At noon, the tent felt ___, hot and sticky, though nothing had spilled.",
-      "cue_phrase": "hot and sticky",
+      "text": "At noon, the air inside the tent felt ___, hot, heavy and sticky.",
+      "cue_phrase": "hot, heavy and sticky",
       "surface": {
         "soaked": "soaked",
         "damp": "damp",
@@ -908,9 +868,9 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: gpt-5.5 also reads damp charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (damp); read and rejected: the air itself is hot, heavy and sticky; damp describes slightly wet things, not hot sticky air",
           "by": "claude",
-          "at": "2026-07-05"
+          "at": "2026-11-12"
         }
       ]
     }
@@ -1021,6 +981,6 @@
     "generated_at": "2026-07-05T11:29:49+00:00",
     "model": "gpt-5.5",
     "scrubbed_at": "2026-07-05T13:42:27+00:00",
-    "scrub_note": "soaked frames s01/s02/s04-s07 rewritten out of defensive register ('no bead fell') keeping the absorption-evidence logic. Full read + judge triage."
+    "scrub_note": "soaked frames s01/s02/s04-s07 rewritten out of defensive register ('no bead fell') keeping the absorption-evidence logic. Full read + judge triage. Fairness pass by claude 2026-11-12: all 8 soaked frames were defensive hedges against soggy ('though it held its shape') and 5 still failed, so soaked now uses wet-through people and worn clothes ('to the skin', 'right down to his undies', 'even my singlet ... through'); dripping s30 moved to a gutter long after the rain. Also replaced odd/defensive s15, s18, s31 and s40. Single gpt-5.5 soggy/damp dissents read and waived."
   }
 }

@@ -255,8 +255,8 @@
       "answer": "dubious",
       "cue": "explicit",
       "reserve": false,
-      "text": "Mum looked ___ when the goldfish was blamed for eating the cake.",
-      "cue_phrase": "goldfish was blamed",
+      "text": "Ms Okafor looked ___ when Liam claimed his dog had eaten his history essay again.",
+      "cue_phrase": "claimed his dog had eaten his history essay again",
       "surface": {
         "disoriented": "disoriented",
         "dubious": "dubious",
@@ -362,8 +362,8 @@
       "answer": "dubious",
       "cue": "inferential",
       "reserve": false,
-      "text": "Tom was ___ after the tiny puppy was called a fierce wolf.",
-      "cue_phrase": "fierce wolf",
+      "text": "The scientists stayed ___ about the miracle battery until another lab could repeat the results.",
+      "cue_phrase": "until another lab could repeat the results",
       "surface": {
         "disoriented": "disoriented",
         "dubious": "dubious",
@@ -385,8 +385,8 @@
       "answer": "dubious",
       "cue": "contextual",
       "reserve": true,
-      "text": "Grandad sounded ___ when the radio announced a dragon in the park.",
-      "cue_phrase": "dragon in the park",
+      "text": "Grandad sounded ___ when the salesman promised the rusty old car had hardly been driven.",
+      "cue_phrase": "salesman promised; rusty old car had hardly been driven",
       "surface": {
         "disoriented": "disoriented",
         "dubious": "dubious",
@@ -408,8 +408,8 @@
       "answer": "dubious",
       "cue": "inferential",
       "reserve": true,
-      "text": "Mira felt ___ about the poster saying carrots make homework vanish.",
-      "cue_phrase": "homework vanish",
+      "text": "Mira was ___ about the glowing online review, since the shop owner's own brother had written it.",
+      "cue_phrase": "the shop owner's own brother had written it",
       "surface": {
         "disoriented": "disoriented",
         "dubious": "dubious",
@@ -552,8 +552,8 @@
       "answer": "perplexed",
       "cue": "inferential",
       "reserve": true,
-      "text": "The twins were ___ when their shadows pointed upward at noon.",
-      "cue_phrase": "shadows pointed upward",
+      "text": "The twins were ___ when their identical cakes, baked side by side, came out different colours.",
+      "cue_phrase": "identical cakes, baked side by side, came out different colours",
       "surface": {
         "disoriented": "disoriented",
         "dubious": "dubious",
@@ -973,6 +973,6 @@
     "generated_at": "2026-07-06T14:46:05+00:00",
     "model": "gpt-5.5",
     "scrubbed_at": "2026-07-07",
-    "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+    "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite). Fairness pass by claude 2026-11-12: dubious s09/s14/s15/s16 now doubt plausible but self-serving claims (the dog-ate-my-essay excuse, an unreplicated battery, a used-car pitch, a review written by the owner's brother) rather than absurd ones that read as perplexing; perplexed s24 is now a baking puzzle, not shadows (disoriented)."
   }
 }

@@ -89,100 +89,68 @@
       "answer": "earlier",
       "cue": "explicit",
       "reserve": false,
-      "text": "___, a squirrel knocked acorns down before the school concert began.",
-      "cue_phrase": "before the school concert",
+      "text": "The path is still wet because it rained ___ this morning.",
+      "cue_phrase": "this morning",
       "surface": {
         "earlier": "earlier",
         "beforehand": "beforehand",
         "meanwhile": "meanwhile",
         "afterwards": "afterwards",
         "finally": "finally"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (beforehand); single-judge charity lane per triage policy",
-          "by": "claude",
-          "at": "2026-07-10"
-        }
-      ]
+      }
     },
     {
       "id": "B-time-order-01-s02",
       "answer": "earlier",
       "cue": "explicit",
       "reserve": false,
-      "text": "___, a frog splashed into the pond before the big race.",
-      "cue_phrase": "before the big race",
+      "text": "Remember the rainbow we saw ___ today, on the way to school?",
+      "cue_phrase": "today, on the way to school",
       "surface": {
         "earlier": "earlier",
         "beforehand": "beforehand",
         "meanwhile": "meanwhile",
         "afterwards": "afterwards",
         "finally": "finally"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (beforehand); single-judge charity lane per triage policy",
-          "by": "claude",
-          "at": "2026-07-10"
-        }
-      ]
+      }
     },
     {
       "id": "B-time-order-01-s03",
       "answer": "earlier",
       "cue": "contextual",
       "reserve": false,
-      "text": "The birthday picnic is this afternoon, but Dad spilt the flour ___.",
-      "cue_phrase": "picnic is this afternoon",
+      "text": "Dad's phone shows a missed call; Aunty May rang ___ while he was mowing.",
+      "cue_phrase": "a missed call",
       "surface": {
         "earlier": "earlier",
         "beforehand": "beforehand",
         "meanwhile": "meanwhile",
         "afterwards": "afterwards",
         "finally": "finally"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (beforehand); single-judge charity lane per triage policy",
-          "by": "claude",
-          "at": "2026-07-10"
-        }
-      ]
+      }
     },
     {
       "id": "B-time-order-01-s04",
       "answer": "earlier",
       "cue": "contextual",
       "reserve": false,
-      "text": "___, the classroom clock stopped before the spelling test.",
-      "cue_phrase": "before the spelling test",
+      "text": "The sandcastle we built ___ has already been washed away by the tide.",
+      "cue_phrase": "already been washed away",
       "surface": {
         "earlier": "earlier",
         "beforehand": "beforehand",
         "meanwhile": "meanwhile",
         "afterwards": "afterwards",
         "finally": "finally"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (beforehand); single-judge charity lane per triage policy",
-          "by": "claude",
-          "at": "2026-07-10"
-        }
-      ]
+      }
     },
     {
       "id": "B-time-order-01-s05",
       "answer": "earlier",
       "cue": "inferential",
       "reserve": false,
-      "text": "When the concert began, Sam's glove was already in the bin; it vanished ___.",
-      "cue_phrase": "already in the bin",
+      "text": "Gran's teacup is still warm, so she must have been here ___.",
+      "cue_phrase": "teacup is still warm",
       "surface": {
         "earlier": "earlier",
         "beforehand": "beforehand",
@@ -193,9 +161,9 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (beforehand); single-judge charity lane per triage policy",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (beforehand); read and rejected: there is no event to prepare for or follow, only the present clue (warm cup, paw prints) pointing back to some time already past",
           "by": "claude",
-          "at": "2026-07-10"
+          "at": "2026-11-12"
         }
       ]
     },
@@ -204,8 +172,8 @@
       "answer": "earlier",
       "cue": "inferential",
       "reserve": false,
-      "text": "When the big race started, the track was already soaked; rain had fallen ___.",
-      "cue_phrase": "already soaked",
+      "text": "There are muddy paw prints on the rug, so the dog came inside ___.",
+      "cue_phrase": "muddy paw prints",
       "surface": {
         "earlier": "earlier",
         "beforehand": "beforehand",
@@ -216,9 +184,9 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (beforehand); single-judge charity lane per triage policy",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (afterwards); read and rejected: there is no event to prepare for or follow, only the present clue (warm cup, paw prints) pointing back to some time already past",
           "by": "claude",
-          "at": "2026-07-10"
+          "at": "2026-11-12"
         }
       ]
     },
@@ -227,77 +195,53 @@
       "answer": "earlier",
       "cue": "contextual",
       "reserve": true,
-      "text": "My sandwich had already gone ___, well before the museum trip.",
-      "cue_phrase": "had already gone",
+      "text": "Your library book is on the kitchen bench, where you left it ___.",
+      "cue_phrase": "where you left it",
       "surface": {
         "earlier": "earlier",
         "beforehand": "beforehand",
         "meanwhile": "meanwhile",
         "afterwards": "afterwards",
         "finally": "finally"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (beforehand); single-judge charity lane per triage policy",
-          "by": "claude",
-          "at": "2026-07-10"
-        }
-      ]
+      }
     },
     {
       "id": "B-time-order-01-s08",
       "answer": "earlier",
       "cue": "explicit",
       "reserve": true,
-      "text": "___, the kite tore before the beach contest opened.",
-      "cue_phrase": "before the beach contest",
+      "text": "Mum's cake tin is full of crumbs; somebody had a slice ___.",
+      "cue_phrase": "full of crumbs",
       "surface": {
         "earlier": "earlier",
         "beforehand": "beforehand",
         "meanwhile": "meanwhile",
         "afterwards": "afterwards",
         "finally": "finally"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (beforehand); single-judge charity lane per triage policy",
-          "by": "claude",
-          "at": "2026-07-10"
-        }
-      ]
+      }
     },
     {
       "id": "B-time-order-01-s09",
       "answer": "beforehand",
       "cue": "explicit",
       "reserve": false,
-      "text": "___, we packed torches for the cave play so we were ready.",
-      "cue_phrase": "so we were ready",
+      "text": "Tomorrow is the big race, so tonight Mina will fill everyone's water bottles ___.",
+      "cue_phrase": "Tomorrow is the big race",
       "surface": {
         "earlier": "earlier",
         "beforehand": "beforehand",
         "meanwhile": "meanwhile",
         "afterwards": "afterwards",
         "finally": "finally"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "ADJACENCY-2OF3: gpt-5.5 and claude-opus-4-8 cross to earlier, finally; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
-          "by": "claude",
-          "at": "2026-07-10"
-        }
-      ]
+      }
     },
     {
       "id": "B-time-order-01-s10",
       "answer": "beforehand",
       "cue": "explicit",
       "reserve": false,
-      "text": "We laid out costumes for the school concert ___, to avoid panic.",
-      "cue_phrase": "to avoid panic",
+      "text": "Guests come at six, so this afternoon we will set the table ___.",
+      "cue_phrase": "Guests come at six",
       "surface": {
         "earlier": "earlier",
         "beforehand": "beforehand",
@@ -308,9 +252,9 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "ADJACENCY-2OF3: gpt-5.5 and claude-opus-4-8 cross to earlier; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (earlier); read and rejected: 'this afternoon' already places the setting before the six o'clock guests on purpose; earlier would need a comparison the frame never gives",
           "by": "claude",
-          "at": "2026-07-10"
+          "at": "2026-11-12"
         }
       ]
     },
@@ -319,146 +263,98 @@
       "answer": "beforehand",
       "cue": "contextual",
       "reserve": false,
-      "text": "___, Mina filled bottles for the big race so everyone could drink.",
-      "cue_phrase": "so everyone could drink",
+      "text": "The school fair is on Saturday, so on Friday night we will bake the cakes ___.",
+      "cue_phrase": "on Friday night",
       "surface": {
         "earlier": "earlier",
         "beforehand": "beforehand",
         "meanwhile": "meanwhile",
         "afterwards": "afterwards",
         "finally": "finally"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "ADJACENCY-2OF3: gpt-5.5 and claude-opus-4-8 cross to afterwards, earlier, finally; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
-          "by": "claude",
-          "at": "2026-07-10"
-        }
-      ]
+      }
     },
     {
       "id": "B-time-order-01-s12",
       "answer": "beforehand",
       "cue": "contextual",
       "reserve": false,
-      "text": "The class labelled paints for the art show ___, ready for Monday.",
-      "cue_phrase": "ready for Monday",
+      "text": "The art show opens on Monday, so on Sunday we will label the paints ___.",
+      "cue_phrase": "opens on Monday, so on Sunday",
       "surface": {
         "earlier": "earlier",
         "beforehand": "beforehand",
         "meanwhile": "meanwhile",
         "afterwards": "afterwards",
         "finally": "finally"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "ADJACENCY-2OF3: gpt-5.5 and claude-opus-4-8 cross to earlier; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
-          "by": "claude",
-          "at": "2026-07-10"
-        }
-      ]
+      }
     },
     {
       "id": "B-time-order-01-s13",
       "answer": "beforehand",
       "cue": "inferential",
       "reserve": false,
-      "text": "___, Gran charged the lanterns for the storm, and none went dark.",
-      "cue_phrase": "none went dark",
+      "text": "The cave tour was on Friday, so we packed our torches the night ___.",
+      "cue_phrase": "the night",
       "surface": {
         "earlier": "earlier",
         "beforehand": "beforehand",
         "meanwhile": "meanwhile",
         "afterwards": "afterwards",
         "finally": "finally"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "ADJACENCY-2OF3: gpt-5.5 and claude-opus-4-8 cross to earlier, finally; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
-          "by": "claude",
-          "at": "2026-07-10"
-        }
-      ]
+      }
     },
     {
       "id": "B-time-order-01-s14",
       "answer": "beforehand",
       "cue": "inferential",
       "reserve": false,
-      "text": "We practised the song for assembly ___, and remembered every verse.",
-      "cue_phrase": "remembered every verse",
+      "text": "Assembly was on Monday, so we practised our song every lunchtime the week ___.",
+      "cue_phrase": "every lunchtime the week",
       "surface": {
         "earlier": "earlier",
         "beforehand": "beforehand",
         "meanwhile": "meanwhile",
         "afterwards": "afterwards",
         "finally": "finally"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "ADJACENCY-2OF3: gpt-5.5 and claude-opus-4-8 cross to earlier; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
-          "by": "claude",
-          "at": "2026-07-10"
-        }
-      ]
+      }
     },
     {
       "id": "B-time-order-01-s15",
       "answer": "beforehand",
       "cue": "contextual",
       "reserve": true,
-      "text": "___, Dad froze juice for the picnic, so cups stayed cold.",
-      "cue_phrase": "cups stayed cold",
+      "text": "The picnic is at noon, so this morning Dad will freeze some juice ___.",
+      "cue_phrase": "picnic is at noon",
       "surface": {
         "earlier": "earlier",
         "beforehand": "beforehand",
         "meanwhile": "meanwhile",
         "afterwards": "afterwards",
         "finally": "finally"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "ADJACENCY-2OF3: gpt-5.5 and claude-opus-4-8 cross to earlier, finally; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
-          "by": "claude",
-          "at": "2026-07-10"
-        }
-      ]
+      }
     },
     {
       "id": "B-time-order-01-s16",
       "answer": "beforehand",
       "cue": "contextual",
       "reserve": true,
-      "text": "Leah sharpened pencils for the maths quiz ___, ready on her desk.",
-      "cue_phrase": "ready on her desk",
+      "text": "The test is tomorrow, so tonight Leah will sharpen her pencils ___.",
+      "cue_phrase": "test is tomorrow",
       "surface": {
         "earlier": "earlier",
         "beforehand": "beforehand",
         "meanwhile": "meanwhile",
         "afterwards": "afterwards",
         "finally": "finally"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "ADJACENCY-2OF3: gpt-5.5 and claude-opus-4-8 cross to earlier; honest scale-neighbour fit, frame carries the discriminator (see cue_phrase); waived per inverse-donor lane",
-          "by": "claude",
-          "at": "2026-07-10"
-        }
-      ]
+      }
     },
     {
       "id": "B-time-order-01-s17",
       "answer": "meanwhile",
       "cue": "explicit",
       "reserve": false,
-      "text": "___, Mum baked bread while the school concert carried on.",
-      "cue_phrase": "while the school concert",
+      "text": "Dad held the ladder steady; ___, Mum climbed up to clear the gutter.",
+      "cue_phrase": "held the ladder steady",
       "surface": {
         "earlier": "earlier",
         "beforehand": "beforehand",
@@ -469,9 +365,9 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (earlier); single-judge charity lane per triage policy",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (finally); read and rejected: the helper's action (steadying, holding, distracting) only works while the other action happens, and no long wait is staged for finally",
           "by": "claude",
-          "at": "2026-07-10"
+          "at": "2026-11-12"
         }
       ]
     },
@@ -480,8 +376,8 @@
       "answer": "meanwhile",
       "cue": "explicit",
       "reserve": false,
-      "text": "___, the dog sleeps under a tree while the big race carries on.",
-      "cue_phrase": "while the big race",
+      "text": "Ella kept watch at the window; ___, her brothers hid the Easter eggs.",
+      "cue_phrase": "kept watch at the window",
       "surface": {
         "earlier": "earlier",
         "beforehand": "beforehand",
@@ -495,31 +391,23 @@
       "answer": "meanwhile",
       "cue": "contextual",
       "reserve": false,
-      "text": "___, rain tapped the windows as the puppet show rolled on.",
-      "cue_phrase": "puppet show rolled on",
+      "text": "Mum was stuck in traffic for an hour; ___, we cleaned the whole house as a surprise.",
+      "cue_phrase": "stuck in traffic for an hour",
       "surface": {
         "earlier": "earlier",
         "beforehand": "beforehand",
         "meanwhile": "meanwhile",
         "afterwards": "afterwards",
         "finally": "finally"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (earlier); single-judge charity lane per triage policy",
-          "by": "claude",
-          "at": "2026-07-10"
-        }
-      ]
+      }
     },
     {
       "id": "B-time-order-01-s20",
       "answer": "meanwhile",
       "cue": "contextual",
       "reserve": false,
-      "text": "___, the baby giggles in the hall as the spelling test goes on.",
-      "cue_phrase": "test goes on",
+      "text": "Sam kept the teacher chatting at the door; ___, we hung up her birthday banner.",
+      "cue_phrase": "kept the teacher chatting at the door",
       "surface": {
         "earlier": "earlier",
         "beforehand": "beforehand",
@@ -533,31 +421,23 @@
       "answer": "meanwhile",
       "cue": "inferential",
       "reserve": false,
-      "text": "___, smoke curled from chimneys while the snow fair stayed open.",
-      "cue_phrase": "while the snow fair",
+      "text": "The twins kept Dad busy in the garden; ___, Mum wrapped his present inside.",
+      "cue_phrase": "kept Dad busy in the garden",
       "surface": {
         "earlier": "earlier",
         "beforehand": "beforehand",
         "meanwhile": "meanwhile",
         "afterwards": "afterwards",
         "finally": "finally"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (earlier); single-judge charity lane per triage policy",
-          "by": "claude",
-          "at": "2026-07-10"
-        }
-      ]
+      }
     },
     {
       "id": "B-time-order-01-s22",
       "answer": "meanwhile",
       "cue": "inferential",
       "reserve": false,
-      "text": "___, the caretaker sweeps leaves as the football match carries on.",
-      "cue_phrase": "football match carries on",
+      "text": "The goalie kept the coach talking; ___, the team sneaked the cake into the clubhouse.",
+      "cue_phrase": "kept the coach talking",
       "surface": {
         "earlier": "earlier",
         "beforehand": "beforehand",
@@ -571,8 +451,8 @@
       "answer": "meanwhile",
       "cue": "explicit",
       "reserve": true,
-      "text": "___, Ravi drew dragons while the train journey kept rumbling.",
-      "cue_phrase": "while the train journey",
+      "text": "Jo held the torch still; ___, Grandpa fixed the fuse box in the dark.",
+      "cue_phrase": "held the torch still",
       "surface": {
         "earlier": "earlier",
         "beforehand": "beforehand",
@@ -583,9 +463,9 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (earlier); single-judge charity lane per triage policy",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (finally); read and rejected: the helper's action (steadying, holding, distracting) only works while the other action happens, and no long wait is staged for finally",
           "by": "claude",
-          "at": "2026-07-10"
+          "at": "2026-11-12"
         }
       ]
     },
@@ -594,8 +474,31 @@
       "answer": "meanwhile",
       "cue": "contextual",
       "reserve": true,
-      "text": "___, the cat chases dust as the birthday party sings upstairs.",
-      "cue_phrase": "birthday party sings",
+      "text": "Lily kept the dog busy with a ball; ___, Mum slipped out the front gate.",
+      "cue_phrase": "kept the dog busy with a ball",
+      "surface": {
+        "earlier": "earlier",
+        "beforehand": "beforehand",
+        "meanwhile": "meanwhile",
+        "afterwards": "afterwards",
+        "finally": "finally"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (finally); read and rejected: the helper's action (steadying, holding, distracting) only works while the other action happens, and no long wait is staged for finally",
+          "by": "claude",
+          "at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "id": "B-time-order-01-s25",
+      "answer": "afterwards",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "We swam in the sea all morning; ___, our hair was stiff with salt.",
+      "cue_phrase": "stiff with salt",
       "surface": {
         "earlier": "earlier",
         "beforehand": "beforehand",
@@ -605,172 +508,101 @@
       }
     },
     {
-      "id": "B-time-order-01-s25",
-      "answer": "afterwards",
-      "cue": "explicit",
-      "reserve": false,
-      "text": "___, we ate sandwiches once the school concert ended.",
-      "cue_phrase": "once the school concert",
-      "surface": {
-        "earlier": "earlier",
-        "beforehand": "beforehand",
-        "meanwhile": "meanwhile",
-        "afterwards": "afterwards",
-        "finally": "finally"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (earlier, finally); single-judge charity lane per triage policy",
-          "by": "claude",
-          "at": "2026-07-10"
-        }
-      ]
-    },
-    {
       "id": "B-time-order-01-s26",
       "answer": "afterwards",
       "cue": "explicit",
       "reserve": false,
-      "text": "___, the runners drank water once the big race was over.",
-      "cue_phrase": "race was over",
+      "text": "The disco finished at nine; ___, the hall floor was covered in streamers.",
+      "cue_phrase": "covered in streamers",
       "surface": {
         "earlier": "earlier",
         "beforehand": "beforehand",
         "meanwhile": "meanwhile",
         "afterwards": "afterwards",
         "finally": "finally"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (earlier, finally); single-judge charity lane per triage policy",
-          "by": "claude",
-          "at": "2026-07-10"
-        }
-      ]
+      }
     },
     {
       "id": "B-time-order-01-s27",
       "answer": "afterwards",
       "cue": "contextual",
       "reserve": false,
-      "text": "___, the hall grew quiet when the disco ended.",
-      "cue_phrase": "when the disco ended",
+      "text": "We had a birthday party at the park; ___, paper hats lay all over the grass.",
+      "cue_phrase": "paper hats lay all over",
       "surface": {
         "earlier": "earlier",
         "beforehand": "beforehand",
         "meanwhile": "meanwhile",
         "afterwards": "afterwards",
         "finally": "finally"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (earlier, finally); single-judge charity lane per triage policy",
-          "by": "claude",
-          "at": "2026-07-10"
-        }
-      ]
+      }
     },
     {
       "id": "B-time-order-01-s28",
       "answer": "afterwards",
       "cue": "contextual",
       "reserve": false,
-      "text": "___, we collected paper hats once the birthday party was over.",
-      "cue_phrase": "party was over",
+      "text": "We hiked through the mud all day; ___, our boots were caked in brown.",
+      "cue_phrase": "caked in brown",
       "surface": {
         "earlier": "earlier",
         "beforehand": "beforehand",
         "meanwhile": "meanwhile",
         "afterwards": "afterwards",
         "finally": "finally"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (earlier, finally); single-judge charity lane per triage policy",
-          "by": "claude",
-          "at": "2026-07-10"
-        }
-      ]
+      }
     },
     {
       "id": "B-time-order-01-s29",
       "answer": "afterwards",
       "cue": "inferential",
       "reserve": false,
-      "text": "___, muddy boots lined the porch once the hike ended.",
-      "cue_phrase": "once the hike ended",
+      "text": "We made glitter cards in class; ___, we found sparkles in our hair for days.",
+      "cue_phrase": "sparkles in our hair for days",
       "surface": {
         "earlier": "earlier",
         "beforehand": "beforehand",
         "meanwhile": "meanwhile",
         "afterwards": "afterwards",
         "finally": "finally"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (earlier, finally); single-judge charity lane per triage policy",
-          "by": "claude",
-          "at": "2026-07-10"
-        }
-      ]
+      }
     },
     {
       "id": "B-time-order-01-s30",
       "answer": "afterwards",
       "cue": "inferential",
       "reserve": false,
-      "text": "___, the classroom smelt of glue when the craft fair closed.",
-      "cue_phrase": "craft fair closed",
+      "text": "The fireworks ended; ___, smoke hung over the beach for ages.",
+      "cue_phrase": "The fireworks ended",
       "surface": {
         "earlier": "earlier",
         "beforehand": "beforehand",
         "meanwhile": "meanwhile",
         "afterwards": "afterwards",
         "finally": "finally"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (earlier, finally); single-judge charity lane per triage policy",
-          "by": "claude",
-          "at": "2026-07-10"
-        }
-      ]
+      }
     },
     {
       "id": "B-time-order-01-s31",
       "answer": "afterwards",
       "cue": "explicit",
       "reserve": true,
-      "text": "___, we waved goodbye once the puppet show finished.",
-      "cue_phrase": "puppet show finished",
+      "text": "We picked strawberries all morning; ___, our fingers were stained red.",
+      "cue_phrase": "fingers were stained red",
       "surface": {
         "earlier": "earlier",
         "beforehand": "beforehand",
         "meanwhile": "meanwhile",
         "afterwards": "afterwards",
         "finally": "finally"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (finally); single-judge charity lane per triage policy",
-          "by": "claude",
-          "at": "2026-07-10"
-        }
-      ]
+      }
     },
     {
       "id": "B-time-order-01-s32",
       "answer": "afterwards",
       "cue": "contextual",
       "reserve": true,
-      "text": "___, the team cheered when the football match was over.",
+      "text": "The footy match was over, and ___, the muddy team sang in the change rooms.",
       "cue_phrase": "match was over",
       "surface": {
         "earlier": "earlier",
@@ -778,15 +610,7 @@
         "meanwhile": "meanwhile",
         "afterwards": "afterwards",
         "finally": "finally"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (finally); single-judge charity lane per triage policy",
-          "by": "claude",
-          "at": "2026-07-10"
-        }
-      ]
+      }
     },
     {
       "id": "B-time-order-01-s33",
@@ -838,8 +662,8 @@
       "answer": "finally",
       "cue": "contextual",
       "reserve": false,
-      "text": "After seven riddles in the door quest, ___, the gate swung open.",
-      "cue_phrase": "After seven riddles",
+      "text": "After seven tricky riddles, ___, the castle gate swung open.",
+      "cue_phrase": "After seven tricky riddles",
       "surface": {
         "earlier": "earlier",
         "beforehand": "beforehand",
@@ -853,8 +677,8 @@
       "answer": "finally",
       "cue": "inferential",
       "reserve": false,
-      "text": "___, after three wobbly tries at the school play, the curtain rose.",
-      "cue_phrase": "after three wobbly tries",
+      "text": "After three wobbly tries, ___, Mia rode her bike without falling off.",
+      "cue_phrase": "After three wobbly tries",
       "surface": {
         "earlier": "earlier",
         "beforehand": "beforehand",
@@ -898,8 +722,8 @@
       "answer": "finally",
       "cue": "contextual",
       "reserve": true,
-      "text": "After a whole week of the model castle build, ___, the flag flew.",
-      "cue_phrase": "whole week of",
+      "text": "After a whole week of building the model castle, ___, we stuck the flag on top.",
+      "cue_phrase": "a whole week of building",
       "surface": {
         "earlier": "earlier",
         "beforehand": "beforehand",
@@ -913,27 +737,27 @@
     {
       "answer": "earlier",
       "picked": "beforehand",
-      "line": "Earlier is just before the event; beforehand is before it on purpose to be ready."
+      "line": "Earlier just means some time before now; beforehand is before an event, on purpose, to be ready."
     },
     {
       "answer": "earlier",
       "picked": "meanwhile",
-      "line": "Earlier is before the event; meanwhile is while it is going on."
+      "line": "Earlier is already past; meanwhile is while something else is going on."
     },
     {
       "answer": "earlier",
       "picked": "afterwards",
-      "line": "Earlier is before the event; afterwards is when the event is over."
+      "line": "Earlier is already past, before now; afterwards is once an event is over."
     },
     {
       "answer": "earlier",
       "picked": "finally",
-      "line": "Earlier is before the event; finally is the last step after a big wait."
+      "line": "Earlier is simply some time already past; finally is the last step after a big wait."
     },
     {
       "answer": "beforehand",
       "picked": "earlier",
-      "line": "Beforehand is before on purpose to get ready; earlier is just before."
+      "line": "Beforehand is before the event, on purpose, to get ready; earlier just means some time before now."
     },
     {
       "answer": "beforehand",
@@ -953,7 +777,7 @@
     {
       "answer": "meanwhile",
       "picked": "earlier",
-      "line": "Meanwhile is while the event goes on; earlier is before it."
+      "line": "Meanwhile is while the event goes on; earlier is some time already past."
     },
     {
       "answer": "meanwhile",
@@ -973,7 +797,7 @@
     {
       "answer": "afterwards",
       "picked": "earlier",
-      "line": "Afterwards is when the event is over; earlier is before it."
+      "line": "Afterwards is when the event is over; earlier is some time already past."
     },
     {
       "answer": "afterwards",
@@ -993,7 +817,7 @@
     {
       "answer": "finally",
       "picked": "earlier",
-      "line": "Finally is the last step after a big wait; earlier is before the event."
+      "line": "Finally is the last step after a big wait; earlier is simply some time already past."
     },
     {
       "answer": "finally",
@@ -1015,7 +839,7 @@
     "generated_at": "2026-07-10T04:44:44+00:00",
     "model": "gpt-5.5",
     "scrubbed_at": "2026-07-10",
-    "scrub_note": "Scrubbed by claude 2026-07-10: all 40 read. Fixed broken mid-sentence appositions (s03/s05/s06/s07), dropped a doubled 'before' (s09), moved trailing meanwhile/afterwards to sentence-initial position, meanwhile trailing frames recast in present tense so earlier dies on tense, not luck (s18-s24 even ids, s26-s32 even ids)."
+    "scrub_note": "Scrubbed by claude 2026-07-10: all 40 read. Fixed broken mid-sentence appositions (s03/s05/s06/s07), dropped a doubled 'before' (s09), moved trailing meanwhile/afterwards to sentence-initial position, meanwhile trailing frames recast in present tense so earlier dies on tense, not luck (s18-s24 even ids, s26-s32 even ids). Fairness pass by claude 2026-11-12: 8 beforehand frames let earlier in (2 judges), so beforehand now sits in future plans with a stated preparation time or 'the night/week before' (s09-s16). The contorted 'Earlier, X before Y' and 'Afterwards, X once Y ended' doubles were rewritten too: earlier frames now point back from a present clue (warm teacup, paw prints, s01-s08), meanwhile frames make the helper's action only work at the same moment (ladder, torch, lookout, s17-s24), afterwards frames show an after-state caused by the event (salt-stiff hair, caked boots, s25-s32), and three awkward finally frames were smoothed (s36/s37/s40). Earlier contrast lines updated to 'some time already past'. Remaining single gpt-5.5 dissents read and waived."
   },
   "scale": {
     "left": "long before",

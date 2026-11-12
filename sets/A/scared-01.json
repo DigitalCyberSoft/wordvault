@@ -445,8 +445,8 @@
       "answer": "terrified",
       "cue": "explicit",
       "reserve": false,
-      "text": "Seeing smoke fill the hall, Aisha was ___, too afraid to speak.",
-      "cue_phrase": "too afraid to speak",
+      "text": "Stuck at the top of the broken ride, Aisha was ___, more frightened than ever before.",
+      "cue_phrase": "more frightened than ever before",
       "surface": {
         "startled": "startled",
         "terrified": "terrified",
@@ -583,8 +583,8 @@
       "answer": "terrified",
       "cue": "contextual",
       "reserve": true,
-      "text": "The villagers grew ___ when lava rolled towards their only bridge.",
-      "cue_phrase": "lava rolled towards",
+      "text": "Alone in the pitch-black cave after the torch died, the twins clung together, ___ and screaming.",
+      "cue_phrase": "clung together; screaming",
       "surface": {
         "startled": "startled",
         "terrified": "terrified",
@@ -712,8 +712,8 @@
       "answer": "timid",
       "cue": "inferential",
       "reserve": false,
-      "text": "Priya had always been too ___ to try the big slide, watching from behind her friend.",
-      "cue_phrase": "always been too",
+      "text": "Priya was a ___ girl who always hung back and let others choose first.",
+      "cue_phrase": "always hung back and let others choose first",
       "surface": {
         "startled": "startled",
         "terrified": "terrified",
@@ -788,8 +788,8 @@
       "answer": "horrified",
       "cue": "explicit",
       "reserve": false,
-      "text": "Jade was ___ to find slugs sliding across the kitchen floor.",
-      "cue_phrase": "slugs on the floor",
+      "text": "Jade stared, ___, at the rotten fish the dog had dragged onto her clean bed.",
+      "cue_phrase": "stared; rotten fish; onto her clean bed",
       "surface": {
         "startled": "startled",
         "terrified": "terrified",
@@ -1051,6 +1051,6 @@
     "generated_at": "2026-07-05T11:07:53+00:00",
     "model": "gpt-5.5",
     "scrubbed_at": "2026-07-05T13:42:27+00:00",
-    "scrub_note": "Donor surgery: nervous->alarmed (invaded timid on all eight frames); terrified s22/s24 restaged to self-danger. Full read + judge triage."
+    "scrub_note": "Donor surgery: nervous->alarmed (invaded timid on all eight frames); terrified s22/s24 restaged to self-danger. Full read + judge triage. Fairness pass by claude 2026-11-12: terrified s17/s23 restaged at the top of the intensity scale (more frightened than ever, screaming in a pitch-black cave) to exclude alarmed/horrified; timid s30 is now a trait (always hangs back), not one too-scared moment; horrified s34 is now a slow disgusted stare, not a sudden find (startled)."
   }
 }

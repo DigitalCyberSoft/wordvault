@@ -307,8 +307,8 @@
       "answer": "arid",
       "cue": "inferential",
       "reserve": false,
-      "text": "Our route looked ___, with wells marked many miles apart.",
-      "cue_phrase": "wells marked many miles",
+      "text": "Under endless blue skies, our outback route was ___, with dry creek beds and water tanks hours apart.",
+      "cue_phrase": "dry creek beds and water tanks hours apart",
       "surface": {
         "sweltering": "sweltering",
         "arid": "arid",
@@ -353,8 +353,8 @@
       "answer": "arid",
       "cue": "contextual",
       "reserve": true,
-      "text": "Only thorn bushes survived on the ___ hill behind the goats.",
-      "cue_phrase": "thorn bushes survived",
+      "text": "The sunny little town was so ___ that its drinking water arrived by truck.",
+      "cue_phrase": "sunny; drinking water arrived by truck",
       "surface": {
         "sweltering": "sweltering",
         "arid": "arid",
@@ -414,8 +414,8 @@
       "answer": "brisk",
       "cue": "explicit",
       "reserve": false,
-      "text": "The ___ sea wind nipped our cheeks awake, and we laughed the whole walk.",
-      "cue_phrase": "laughed the whole walk",
+      "text": "The ___ autumn breeze was cool enough for a light jumper and made us walk faster.",
+      "cue_phrase": "cool enough for a light jumper",
       "surface": {
         "sweltering": "sweltering",
         "arid": "arid",
@@ -437,8 +437,8 @@
       "answer": "brisk",
       "cue": "contextual",
       "reserve": false,
-      "text": "A ___ gust pinked our noses while we jogged along the seafront.",
-      "cue_phrase": "pinked our noses",
+      "text": "A ___ spring breeze ruffled our T-shirts and hurried us along the seafront.",
+      "cue_phrase": "spring breeze ruffled our T-shirts",
       "surface": {
         "sweltering": "sweltering",
         "arid": "arid",
@@ -498,8 +498,8 @@
       "answer": "brisk",
       "cue": "inferential",
       "reserve": false,
-      "text": "The hilltop air felt ___, my scarf flying as I grinned.",
-      "cue_phrase": "scarf flying as I grinned",
+      "text": "After the stuffy bus, the hilltop air felt ___, and we jogged up laughing in our light jackets.",
+      "cue_phrase": "After the stuffy bus; light jackets",
       "surface": {
         "sweltering": "sweltering",
         "arid": "arid",
@@ -521,8 +521,8 @@
       "answer": "brisk",
       "cue": "contextual",
       "reserve": true,
-      "text": "We chose the path with the ___ gusts because they kept us awake.",
-      "cue_phrase": "kept us awake",
+      "text": "We took the shady creek path, where the ___ air woke us up after the long, hot drive.",
+      "cue_phrase": "shady creek path; woke us up after the long, hot drive",
       "surface": {
         "sweltering": "sweltering",
         "arid": "arid",
@@ -981,6 +981,6 @@
     "generated_at": "2026-07-07T03:41:57+00:00",
     "model": "gpt-5.5",
     "scrubbed_at": "2026-07-07",
-    "scrub_note": "Scrubbed by claude 2026-07-07: mechanical sweeps clean (one purple-snow frame cleared - colour absurdity, not calendar), all 40 sentences, all 20 contrasts, and mixed-tense surface maps read per set; no defects."
+    "scrub_note": "Scrubbed by claude 2026-07-07: mechanical sweeps clean (one purple-snow frame cleared - colour absurdity, not calendar), all 40 sentences, all 20 contrasts, and mixed-tense surface maps read per set; no defects. Fairness pass by claude 2026-11-12: brisk s18/s19/s22/s23 now carry mild-temperature facts (light jumper, T-shirts, light jackets, relief after a hot drive), so frigid is excluded; arid s13/s15 are now sunny (blue skies, a sunny town with trucked-in water), so cheerless, damp bleak drops out."
   }
 }

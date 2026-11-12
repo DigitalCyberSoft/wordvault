@@ -678,7 +678,7 @@
       "judged_at": "2026-07-07T03:50:56+00:00"
     },
     "A-desire-01-s25": {
-      "text_sha256": "88ceadfd917282a1bb67f40d8d855d8c06c35275506f4fb06f06ff0c54b04bb4",
+      "text_sha256": "4ba04425ca985f80fe8d2ec1426b7a85333b515c24b494d7c26d08ef598b6516",
       "verdict": "review",
       "judges": [
         {
@@ -700,24 +700,22 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "covet",
-            "envy"
+            "covet"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-07T03:50:56+00:00"
+      "judged_at": "2026-11-12T12:12:41+00:00"
     },
     "A-desire-01-s26": {
-      "text_sha256": "8a8edcfdf1975409645e26d1b7e5365ee5ff8ff35c5b41bf7ec260211cdc5ab5",
+      "text_sha256": "db7444b5625aee79a5d6b229e7d6a083c4d4735ceed991a1a803a7821b9cf8a0",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
             "covet",
-            "crave",
-            "envy"
+            "crave"
           ],
           "sense_match": true
         },
@@ -731,16 +729,15 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "covet",
-            "envy"
+            "covet"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-07T03:50:56+00:00"
+      "judged_at": "2026-11-12T12:12:41+00:00"
     },
     "A-desire-01-s27": {
-      "text_sha256": "f243c2cba8ebe443fd49a5f02ca014c1a52db8c0cb5560b575274d9ab46eb50a",
+      "text_sha256": "6f2177e59a442ed2ecd6586958f6b3d97537200938ac789035c76d922107d5ed",
       "verdict": "review",
       "judges": [
         {
@@ -762,24 +759,22 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "covet",
-            "envy"
+            "covet"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-07T03:50:56+00:00"
+      "judged_at": "2026-11-12T12:26:58+00:00"
     },
     "A-desire-01-s28": {
-      "text_sha256": "e345c66315ad371ebf98f5cf8a9c0358d951d83e18bf7a6519185282458dd128",
+      "text_sha256": "da5f0188ed23c3ebde236a860f1e84a5f1b0fb43f457cae0a1a3329f6547f7ee",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
             "covet",
-            "crave",
-            "envy"
+            "crave"
           ],
           "sense_match": true
         },
@@ -793,16 +788,15 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "covet",
-            "envy"
+            "covet"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-07T03:50:56+00:00"
+      "judged_at": "2026-11-12T12:12:41+00:00"
     },
     "A-desire-01-s29": {
-      "text_sha256": "b44980f0f222a9c9b25ab226699363aae1ed57b4c4bd69cfa8c0e2c281223289",
+      "text_sha256": "bf589d8e4886aa58aec26492e240e92502eec5401f10bcca60a1a5e8d17b36e1",
       "verdict": "review",
       "judges": [
         {
@@ -824,24 +818,22 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "covet",
-            "envy"
+            "covet"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-07T03:50:56+00:00"
+      "judged_at": "2026-11-12T12:12:41+00:00"
     },
     "A-desire-01-s30": {
-      "text_sha256": "3a9e6231c477113750fcdfd9349fe32bdb1b4563496ee99949141636367a8a8f",
+      "text_sha256": "986faec257da17c66f5d4674c139dc9590f67d5ab27119a9fd351a8fd201034c",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
             "covet",
-            "crave",
-            "envy"
+            "crave"
           ],
           "sense_match": true
         },
@@ -855,46 +847,15 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "covet",
-            "envy"
+            "covet"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-07T03:50:56+00:00"
+      "judged_at": "2026-11-12T12:12:41+00:00"
     },
     "A-desire-01-s31": {
-      "text_sha256": "32f26b430cf479cbb8aa8fd3efd41d4c3c13081d0f0098c5a5fb679531ea33df",
-      "verdict": "review",
-      "judges": [
-        {
-          "model": "gpt-5.5",
-          "fits": [
-            "covet",
-            "crave"
-          ],
-          "sense_match": true
-        },
-        {
-          "model": "gpt-4.1",
-          "fits": [
-            "covet"
-          ],
-          "sense_match": true
-        },
-        {
-          "model": "claude-opus-4-8",
-          "fits": [
-            "covet",
-            "crave"
-          ],
-          "sense_match": true
-        }
-      ],
-      "judged_at": "2026-07-07T03:52:50+00:00"
-    },
-    "A-desire-01-s32": {
-      "text_sha256": "55ef19ebd16e376986793a7d4b892c3b3d692a4a1bb0fbea587bfa03523cc774",
+      "text_sha256": "65ca4c94d15a69f7dd7a2cdd95b39fc8d97abced89c60e49c2b3c73b0b8d07d7",
       "verdict": "review",
       "judges": [
         {
@@ -916,13 +877,42 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "covet",
-            "crave"
+            "covet"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-07T03:52:50+00:00"
+      "judged_at": "2026-11-12T12:12:41+00:00"
+    },
+    "A-desire-01-s32": {
+      "text_sha256": "4d6a614791a4e3c377eaa1f2a85047804ccea324dfeafa5dbb19bc79910eed70",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "covet",
+            "crave",
+            "envy"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "covet"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "covet"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-11-12T12:12:41+00:00"
     },
     "A-desire-01-s33": {
       "text_sha256": "2da7eaaba86eb59846885d02b39cf697c8539ef8312a508333be763e3d1a1041",

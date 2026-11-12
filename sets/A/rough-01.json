@@ -623,8 +623,8 @@
       "answer": "scratchy",
       "cue": "explicit",
       "reserve": false,
-      "text": "The ___ tag inside Milo's new shirt itched his neck all through assembly.",
-      "cue_phrase": "itched his neck",
+      "text": "The ___ tag in Milo's new shirt bothered his neck, so Mum snipped it out.",
+      "cue_phrase": "tag; bothered his neck; snipped it out",
       "surface": {
         "jagged": "jagged",
         "prickly": "prickly",
@@ -669,8 +669,8 @@
       "answer": "scratchy",
       "cue": "contextual",
       "reserve": false,
-      "text": "Nan's hand-knitted scarf felt ___ against Priya's chin the whole walk home.",
-      "cue_phrase": "against Priya's chin",
+      "text": "Ruby kept tugging at the ___ collar of her costume, which annoyed her neck all show.",
+      "cue_phrase": "kept tugging; annoyed her neck all show",
       "surface": {
         "jagged": "jagged",
         "prickly": "prickly",
@@ -692,8 +692,8 @@
       "answer": "scratchy",
       "cue": "contextual",
       "reserve": false,
-      "text": "The costume beard was so ___ that the actor's cheeks turned pink by the final bow.",
-      "cue_phrase": "cheeks turned pink",
+      "text": "In her shorts, Ruby found the old cinema seat ___ on the backs of her knees.",
+      "cue_phrase": "In her shorts; on the backs of her knees",
       "surface": {
         "jagged": "jagged",
         "prickly": "prickly",
@@ -738,8 +738,8 @@
       "answer": "scratchy",
       "cue": "inferential",
       "reserve": false,
-      "text": "Grandad's old car rug felt ___ on Tara's arms, and she squirmed the whole ride.",
-      "cue_phrase": "squirmed the whole ride",
+      "text": "Tara wriggled all evening because her ___ new pyjamas bothered her arms and back.",
+      "cue_phrase": "wriggled all evening; bothered her arms and back",
       "surface": {
         "jagged": "jagged",
         "prickly": "prickly",
@@ -784,8 +784,8 @@
       "answer": "scratchy",
       "cue": "inferential",
       "reserve": true,
-      "text": "That cheap blanket is so ___ that Ben sleeps on a smooth sheet instead.",
-      "cue_phrase": "sleeps on a smooth sheet instead",
+      "text": "Ben keeps tugging at the ___ waistband of his new pants all through assembly.",
+      "cue_phrase": "keeps tugging; all through assembly",
       "surface": {
         "jagged": "jagged",
         "prickly": "prickly",
@@ -909,6 +909,6 @@
     "generated_at": "2026-07-05T11:23:46+00:00",
     "model": "gpt-5.5",
     "scrubbed_at": "2026-07-05T13:42:27+00:00",
-    "scrub_note": "scratchy frames s33/s35-s40 rewritten tactile to match the abrasive pin (drafts had used the sound sense). Full read + judge triage."
+    "scrub_note": "scratchy frames s33/s35-s40 rewritten tactile to match the abrasive pin (drafts had used the sound sense). Full read + judge triage. Fairness pass by claude 2026-11-12: scratchy s33/s35/s36/s38/s40 had wool, beard and blanket scenes that 2-3 judges also read as coarse/prickly; rewrote them as clothing irritation with no named coarse material or spikes (a tag, costume collar, cinema seat, pyjamas, waistband). A single gpt-5.5 coarse/prickly dissent remains, the same pattern as shipped s34/s37/s39."
   }
 }

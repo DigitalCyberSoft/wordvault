@@ -1,0 +1,1080 @@
+{
+  "id": "A-draw-01",
+  "bank": "A",
+  "pos": "verb",
+  "theme": "making marks on paper",
+  "band": 1,
+  "band_override": 1,
+  "computed": {
+    "zipf_min": 4.19,
+    "zipf_mean": 4.61,
+    "tightness": 0.285,
+    "band_suggested": 2,
+    "scored_at": "2026-11-12T12:07:37+00:00"
+  },
+  "words": [
+    {
+      "w": "draw",
+      "synset": "draw.v.06",
+      "gloss_source": "authored",
+      "gloss": "make a picture of something with lines, using a pencil, pen or chalk",
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-11-12"
+      },
+      "zipf": 4.81,
+      "register": "neutral",
+      "senses_at_pos": 36,
+      "forms": {
+        "base": "draw",
+        "third": "draws",
+        "past": "drew",
+        "part": "drawing"
+      },
+      "discriminator": "a picture made with lines",
+      "grade": 1
+    },
+    {
+      "w": "paint",
+      "synset": "paint.v.03",
+      "gloss_source": "authored",
+      "gloss": "make a picture with a brush and wet paint",
+      "zipf": 4.52,
+      "register": "neutral",
+      "senses_at_pos": 4,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "paint",
+        "third": "paints",
+        "past": "painted",
+        "part": "painting"
+      },
+      "discriminator": "a brush and wet paint",
+      "grade": 1
+    },
+    {
+      "w": "colour",
+      "synset": "color.v.01",
+      "gloss_source": "authored",
+      "gloss": "fill in a shape or picture with coloured pencils or pens",
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-11-12"
+      },
+      "zipf": 4.49,
+      "register": "neutral",
+      "senses_at_pos": 6,
+      "forms": {
+        "base": "colour",
+        "third": "colours",
+        "past": "coloured",
+        "part": "colouring"
+      },
+      "discriminator": "filling in a shape",
+      "grade": 1
+    },
+    {
+      "w": "write",
+      "synset": "write.v.07",
+      "gloss_source": "authored",
+      "gloss": "put letters or words on paper or another surface",
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-11-12"
+      },
+      "zipf": 5.03,
+      "register": "neutral",
+      "senses_at_pos": 10,
+      "forms": {
+        "base": "write",
+        "third": "writes",
+        "past": "wrote",
+        "part": "writing"
+      },
+      "discriminator": "letters and words",
+      "grade": 1
+    },
+    {
+      "w": "trace",
+      "synset": "trace.v.07",
+      "gloss_source": "authored",
+      "gloss": "copy a picture or shape by going over its lines through thin paper, or by following its edge",
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-11-12"
+      },
+      "zipf": 4.19,
+      "register": "neutral",
+      "senses_at_pos": 8,
+      "forms": {
+        "base": "trace",
+        "third": "traces",
+        "past": "traced",
+        "part": "tracing"
+      },
+      "discriminator": "going over lines you can already see",
+      "grade": 2
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-draw-01-s01",
+      "answer": "draw",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "With her pencil, Mia ___ her dog from memory.",
+      "cue_phrase": "pencil; from memory",
+      "surface": {
+        "draw": "drew",
+        "paint": "painted",
+        "colour": "coloured",
+        "write": "wrote",
+        "trace": "traced"
+      },
+      "waivers": [
+        {
+          "check": "GLOSS-WORD-ECHO",
+          "word": "pencil",
+          "note": "'pencil' is the everyday Year-1 word for the scene fact; the gloss line is a dictionary definition, the sentence is a scene",
+          "by": "claude",
+          "at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "id": "A-draw-01-s02",
+      "answer": "draw",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Ruby ___ a hopscotch game on the path with chalk.",
+      "cue_phrase": "hopscotch; with chalk",
+      "surface": {
+        "draw": "drew",
+        "paint": "painted",
+        "colour": "coloured",
+        "write": "wrote",
+        "trace": "traced"
+      },
+      "waivers": [
+        {
+          "check": "GLOSS-WORD-ECHO",
+          "word": "chalk",
+          "note": "'chalk' is the everyday Year-1 word for the scene fact; the gloss line is a dictionary definition, the sentence is a scene",
+          "by": "claude",
+          "at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "id": "A-draw-01-s03",
+      "answer": "draw",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Kai ___ the monster from his dream in pencil.",
+      "cue_phrase": "from his dream; in pencil",
+      "surface": {
+        "draw": "drew",
+        "paint": "painted",
+        "colour": "coloured",
+        "write": "wrote",
+        "trace": "traced"
+      },
+      "waivers": [
+        {
+          "check": "GLOSS-WORD-ECHO",
+          "word": "pencil",
+          "note": "'pencil' is the everyday Year-1 word for the scene fact; the gloss line is a dictionary definition, the sentence is a scene",
+          "by": "claude",
+          "at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "id": "A-draw-01-s04",
+      "answer": "draw",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Ben ___ the apple in the fruit bowl, in pencil.",
+      "cue_phrase": "the apple in the fruit bowl; in pencil",
+      "surface": {
+        "draw": "drew",
+        "paint": "painted",
+        "colour": "coloured",
+        "write": "wrote",
+        "trace": "traced"
+      },
+      "waivers": [
+        {
+          "check": "GLOSS-WORD-ECHO",
+          "word": "pencil",
+          "note": "'pencil' is the everyday Year-1 word for the scene fact; the gloss line is a dictionary definition, the sentence is a scene",
+          "by": "claude",
+          "at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "id": "A-draw-01-s05",
+      "answer": "draw",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Tom ___ his own castle in pencil and left it white.",
+      "cue_phrase": "his own castle; left it white",
+      "surface": {
+        "draw": "drew",
+        "paint": "painted",
+        "colour": "coloured",
+        "write": "wrote",
+        "trace": "traced"
+      },
+      "waivers": [
+        {
+          "check": "GLOSS-WORD-ECHO",
+          "word": "pencil",
+          "note": "'pencil' is the everyday Year-1 word for the scene fact; the gloss line is a dictionary definition, the sentence is a scene",
+          "by": "claude",
+          "at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "id": "A-draw-01-s06",
+      "answer": "draw",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Zoe ___ a cat from her own head, in pencil.",
+      "cue_phrase": "from her own head",
+      "surface": {
+        "draw": "drew",
+        "paint": "painted",
+        "colour": "coloured",
+        "write": "wrote",
+        "trace": "traced"
+      },
+      "waivers": [
+        {
+          "check": "GLOSS-WORD-ECHO",
+          "word": "pencil",
+          "note": "'pencil' is the everyday Year-1 word for the scene fact; the gloss line is a dictionary definition, the sentence is a scene",
+          "by": "claude",
+          "at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "id": "A-draw-01-s07",
+      "answer": "draw",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Grandpa sat still while Lily ___ him in pencil.",
+      "cue_phrase": "sat still; in pencil",
+      "surface": {
+        "draw": "drew",
+        "paint": "painted",
+        "colour": "coloured",
+        "write": "wrote",
+        "trace": "traced"
+      },
+      "waivers": [
+        {
+          "check": "GLOSS-WORD-ECHO",
+          "word": "pencil",
+          "note": "'pencil' is the everyday Year-1 word for the scene fact; the gloss line is a dictionary definition, the sentence is a scene",
+          "by": "claude",
+          "at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "id": "A-draw-01-s08",
+      "answer": "draw",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "On the blackboard, Jack ___ a dinosaur with chalk.",
+      "cue_phrase": "on the blackboard; with chalk",
+      "surface": {
+        "draw": "drew",
+        "paint": "painted",
+        "colour": "coloured",
+        "write": "wrote",
+        "trace": "traced"
+      },
+      "waivers": [
+        {
+          "check": "GLOSS-WORD-ECHO",
+          "word": "chalk",
+          "note": "'chalk' is the everyday Year-1 word for the scene fact; the gloss line is a dictionary definition, the sentence is a scene",
+          "by": "claude",
+          "at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "id": "A-draw-01-s09",
+      "answer": "paint",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Zoe dipped her brush and ___ a big red sun.",
+      "cue_phrase": "dipped her brush",
+      "surface": {
+        "draw": "drew",
+        "paint": "painted",
+        "colour": "coloured",
+        "write": "wrote",
+        "trace": "traced"
+      },
+      "waivers": [
+        {
+          "check": "GLOSS-WORD-ECHO",
+          "word": "brush",
+          "note": "'brush' is the everyday Year-1 word for the scene fact; the gloss line is a dictionary definition, the sentence is a scene",
+          "by": "claude",
+          "at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "id": "A-draw-01-s10",
+      "answer": "paint",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Sam ___ a whale at the easel with his wet brush.",
+      "cue_phrase": "easel; wet brush",
+      "surface": {
+        "draw": "drew",
+        "paint": "painted",
+        "colour": "coloured",
+        "write": "wrote",
+        "trace": "traced"
+      },
+      "waivers": [
+        {
+          "check": "GLOSS-WORD-ECHO",
+          "word": "brush",
+          "note": "'brush' is the everyday Year-1 word for the scene fact; the gloss line is a dictionary definition, the sentence is a scene",
+          "by": "claude",
+          "at": "2026-11-12"
+        },
+        {
+          "check": "GLOSS-WORD-ECHO",
+          "word": "wet",
+          "note": "'wet' is the everyday Year-1 word for the scene fact; the gloss line is a dictionary definition, the sentence is a scene",
+          "by": "claude",
+          "at": "2026-11-12"
+        },
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists draw; a picture made at the easel with a wet brush is painted, draw is lines from pencil, pen or chalk",
+          "by": "claude",
+          "at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "id": "A-draw-01-s11",
+      "answer": "paint",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Lily ___ a sunflower with big wet brushstrokes.",
+      "cue_phrase": "big wet brushstrokes",
+      "surface": {
+        "draw": "drew",
+        "paint": "painted",
+        "colour": "coloured",
+        "write": "wrote",
+        "trace": "traced"
+      },
+      "waivers": [
+        {
+          "check": "GLOSS-WORD-ECHO",
+          "word": "wet",
+          "note": "'wet' is the everyday Year-1 word for the scene fact; the gloss line is a dictionary definition, the sentence is a scene",
+          "by": "claude",
+          "at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "id": "A-draw-01-s12",
+      "answer": "paint",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Ned's brush dripped green as he ___ some grass.",
+      "cue_phrase": "brush dripped green",
+      "surface": {
+        "draw": "drew",
+        "paint": "painted",
+        "colour": "coloured",
+        "write": "wrote",
+        "trace": "traced"
+      },
+      "waivers": [
+        {
+          "check": "GLOSS-WORD-ECHO",
+          "word": "brush",
+          "note": "'brush' is the everyday Year-1 word for the scene fact; the gloss line is a dictionary definition, the sentence is a scene",
+          "by": "claude",
+          "at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "id": "A-draw-01-s13",
+      "answer": "paint",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Ava ___ a boat and pegged it up to dry.",
+      "cue_phrase": "pegged it up to dry",
+      "surface": {
+        "draw": "drew",
+        "paint": "painted",
+        "colour": "coloured",
+        "write": "wrote",
+        "trace": "traced"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-4.1 lists draw; pegging a picture up to dry means wet paint, a drawing never needs drying",
+          "by": "claude",
+          "at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "id": "A-draw-01-s14",
+      "answer": "paint",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Max ___ a frog, and green drips ran down.",
+      "cue_phrase": "green drips ran down",
+      "surface": {
+        "draw": "drew",
+        "paint": "painted",
+        "colour": "coloured",
+        "write": "wrote",
+        "trace": "traced"
+      }
+    },
+    {
+      "id": "A-draw-01-s15",
+      "answer": "paint",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Pop wet his soft brush and ___ a stormy sea.",
+      "cue_phrase": "wet his soft brush",
+      "surface": {
+        "draw": "drew",
+        "paint": "painted",
+        "colour": "coloured",
+        "write": "wrote",
+        "trace": "traced"
+      },
+      "waivers": [
+        {
+          "check": "GLOSS-WORD-ECHO",
+          "word": "brush",
+          "note": "'brush' is the everyday Year-1 word for the scene fact; the gloss line is a dictionary definition, the sentence is a scene",
+          "by": "claude",
+          "at": "2026-11-12"
+        },
+        {
+          "check": "GLOSS-WORD-ECHO",
+          "word": "wet",
+          "note": "'wet' is the everyday Year-1 word for the scene fact; the gloss line is a dictionary definition, the sentence is a scene",
+          "by": "claude",
+          "at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "id": "A-draw-01-s16",
+      "answer": "paint",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Ruby ___ a bird, and its wet blue wings shone.",
+      "cue_phrase": "wet blue wings shone",
+      "surface": {
+        "draw": "drew",
+        "paint": "painted",
+        "colour": "coloured",
+        "write": "wrote",
+        "trace": "traced"
+      },
+      "waivers": [
+        {
+          "check": "GLOSS-WORD-ECHO",
+          "word": "wet",
+          "note": "'wet' is the everyday Year-1 word for the scene fact; the gloss line is a dictionary definition, the sentence is a scene",
+          "by": "claude",
+          "at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "id": "A-draw-01-s17",
+      "answer": "colour",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Max ___ the whole fish orange with his crayons.",
+      "cue_phrase": "the whole fish orange; crayons",
+      "surface": {
+        "draw": "drew",
+        "paint": "painted",
+        "colour": "coloured",
+        "write": "wrote",
+        "trace": "traced"
+      }
+    },
+    {
+      "id": "A-draw-01-s18",
+      "answer": "colour",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Ella ___ the dinosaur green with a crayon, inside the lines.",
+      "cue_phrase": "green with a crayon; inside the lines",
+      "surface": {
+        "draw": "drew",
+        "paint": "painted",
+        "colour": "coloured",
+        "write": "wrote",
+        "trace": "traced"
+      }
+    },
+    {
+      "id": "A-draw-01-s19",
+      "answer": "colour",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Jo ___ the printed elephant grey with her crayons.",
+      "cue_phrase": "printed elephant grey",
+      "surface": {
+        "draw": "drew",
+        "paint": "painted",
+        "colour": "coloured",
+        "write": "wrote",
+        "trace": "traced"
+      }
+    },
+    {
+      "id": "A-draw-01-s20",
+      "answer": "colour",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Ben ___ each numbered shape blue or yellow with crayons.",
+      "cue_phrase": "each numbered shape blue or yellow",
+      "surface": {
+        "draw": "drew",
+        "paint": "painted",
+        "colour": "coloured",
+        "write": "wrote",
+        "trace": "traced"
+      },
+      "waivers": [
+        {
+          "check": "GLOSS-WORD-ECHO",
+          "word": "shape",
+          "note": "'shape' is the everyday Year-1 word for the scene fact; the gloss line is a dictionary definition, the sentence is a scene",
+          "by": "claude",
+          "at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "id": "A-draw-01-s21",
+      "answer": "colour",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Ava ___ the balloon red with crayon until no white showed.",
+      "cue_phrase": "until no white showed",
+      "surface": {
+        "draw": "drew",
+        "paint": "painted",
+        "colour": "coloured",
+        "write": "wrote",
+        "trace": "traced"
+      }
+    },
+    {
+      "id": "A-draw-01-s22",
+      "answer": "colour",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Jack ___ the puppy outline brown with his textas.",
+      "cue_phrase": "puppy outline brown",
+      "surface": {
+        "draw": "drew",
+        "paint": "painted",
+        "colour": "coloured",
+        "write": "wrote",
+        "trace": "traced"
+      }
+    },
+    {
+      "id": "A-draw-01-s23",
+      "answer": "colour",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Lucy ___ the butterfly's wings blue and yellow with crayons.",
+      "cue_phrase": "wings blue and yellow",
+      "surface": {
+        "draw": "drew",
+        "paint": "painted",
+        "colour": "coloured",
+        "write": "wrote",
+        "trace": "traced"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists draw; 'the wings blue and yellow with crayons' is filling existing wings, drawing does not take a colour result",
+          "by": "claude",
+          "at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "id": "A-draw-01-s24",
+      "answer": "colour",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Tom ___ the worksheet sun bright yellow with a crayon.",
+      "cue_phrase": "worksheet sun bright yellow",
+      "surface": {
+        "draw": "drew",
+        "paint": "painted",
+        "colour": "coloured",
+        "write": "wrote",
+        "trace": "traced"
+      }
+    },
+    {
+      "id": "A-draw-01-s25",
+      "answer": "write",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Ava ___ her name at the top of her worksheet.",
+      "cue_phrase": "her name at the top",
+      "surface": {
+        "draw": "drew",
+        "paint": "painted",
+        "colour": "coloured",
+        "write": "wrote",
+        "trace": "traced"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists trace; nothing to go over is in the scene (no dots, no paper on top)",
+          "by": "claude",
+          "at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "id": "A-draw-01-s26",
+      "answer": "write",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Leo ___ 'Happy birthday, Nan!' in pen inside the card.",
+      "cue_phrase": "'Happy birthday, Nan!'",
+      "surface": {
+        "draw": "drew",
+        "paint": "painted",
+        "colour": "coloured",
+        "write": "wrote",
+        "trace": "traced"
+      }
+    },
+    {
+      "id": "A-draw-01-s27",
+      "answer": "write",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Mum ___ milk, bread and eggs on the shopping list.",
+      "cue_phrase": "on the shopping list",
+      "surface": {
+        "draw": "drew",
+        "paint": "painted",
+        "colour": "coloured",
+        "write": "wrote",
+        "trace": "traced"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists draw; milk, bread and eggs on a shopping list are words",
+          "by": "claude",
+          "at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "id": "A-draw-01-s28",
+      "answer": "write",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Before bed, Ruby ___ a note to the tooth fairy.",
+      "cue_phrase": "a note to the tooth fairy",
+      "surface": {
+        "draw": "drew",
+        "paint": "painted",
+        "colour": "coloured",
+        "write": "wrote",
+        "trace": "traced"
+      }
+    },
+    {
+      "id": "A-draw-01-s29",
+      "answer": "write",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Grandpa could read Kai's postcard because Kai ___ it neatly.",
+      "cue_phrase": "Grandpa could read",
+      "surface": {
+        "draw": "drew",
+        "paint": "painted",
+        "colour": "coloured",
+        "write": "wrote",
+        "trace": "traced"
+      }
+    },
+    {
+      "id": "A-draw-01-s30",
+      "answer": "write",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Santa knows what Ben wants, because Ben ___ a list.",
+      "cue_phrase": "Santa knows what Ben wants",
+      "surface": {
+        "draw": "drew",
+        "paint": "painted",
+        "colour": "coloured",
+        "write": "wrote",
+        "trace": "traced"
+      }
+    },
+    {
+      "id": "A-draw-01-s31",
+      "answer": "write",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "On the whiteboard, Miss Lee ___ today's date.",
+      "cue_phrase": "today's date",
+      "surface": {
+        "draw": "drew",
+        "paint": "painted",
+        "colour": "coloured",
+        "write": "wrote",
+        "trace": "traced"
+      }
+    },
+    {
+      "id": "A-draw-01-s32",
+      "answer": "write",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Lily ___ three sentences about her cat.",
+      "cue_phrase": "three sentences",
+      "surface": {
+        "draw": "drew",
+        "paint": "painted",
+        "colour": "coloured",
+        "write": "wrote",
+        "trace": "traced"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists trace; nothing to go over is in the scene, sentences are written",
+          "by": "claude",
+          "at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "id": "A-draw-01-s33",
+      "answer": "trace",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Ben ___ the koala's lines, which showed through his paper.",
+      "cue_phrase": "lines, which showed through his paper",
+      "surface": {
+        "draw": "drew",
+        "paint": "painted",
+        "colour": "coloured",
+        "write": "wrote",
+        "trace": "traced"
+      },
+      "waivers": [
+        {
+          "check": "GLOSS-WORD-ECHO",
+          "word": "lines",
+          "note": "'lines' is the everyday Year-1 word for the scene fact; the gloss line is a dictionary definition, the sentence is a scene",
+          "by": "claude",
+          "at": "2026-11-12"
+        },
+        {
+          "check": "GLOSS-WORD-ECHO",
+          "word": "paper",
+          "note": "'paper' is the everyday Year-1 word for the scene fact; the gloss line is a dictionary definition, the sentence is a scene",
+          "by": "claude",
+          "at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "id": "A-draw-01-s34",
+      "answer": "trace",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Mia ___ the grey dotted letters of her name.",
+      "cue_phrase": "grey dotted letters",
+      "surface": {
+        "draw": "drew",
+        "paint": "painted",
+        "colour": "coloured",
+        "write": "wrote",
+        "trace": "traced"
+      }
+    },
+    {
+      "id": "A-draw-01-s35",
+      "answer": "trace",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Against the bright window, Ruby ___ the horse through the page.",
+      "cue_phrase": "against the bright window; through the page",
+      "surface": {
+        "draw": "drew",
+        "paint": "painted",
+        "colour": "coloured",
+        "write": "wrote",
+        "trace": "traced"
+      }
+    },
+    {
+      "id": "A-draw-01-s36",
+      "answer": "trace",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Ava ___ the map of Australia through baking paper.",
+      "cue_phrase": "through baking paper",
+      "surface": {
+        "draw": "drew",
+        "paint": "painted",
+        "colour": "coloured",
+        "write": "wrote",
+        "trace": "traced"
+      },
+      "waivers": [
+        {
+          "check": "GLOSS-WORD-ECHO",
+          "word": "paper",
+          "note": "'paper' is the everyday Year-1 word for the scene fact; the gloss line is a dictionary definition, the sentence is a scene",
+          "by": "claude",
+          "at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "id": "A-draw-01-s37",
+      "answer": "trace",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Ella ___ the bird that showed through her page.",
+      "cue_phrase": "showed through her page",
+      "surface": {
+        "draw": "drew",
+        "paint": "painted",
+        "colour": "coloured",
+        "write": "wrote",
+        "trace": "traced"
+      }
+    },
+    {
+      "id": "A-draw-01-s38",
+      "answer": "trace",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Ivy ___ each grey dotted line of the fish.",
+      "cue_phrase": "each grey dotted line",
+      "surface": {
+        "draw": "drew",
+        "paint": "painted",
+        "colour": "coloured",
+        "write": "wrote",
+        "trace": "traced"
+      }
+    },
+    {
+      "id": "A-draw-01-s39",
+      "answer": "trace",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Dad ___ the outline of Grandma's face under the thin paper.",
+      "cue_phrase": "outline; under the thin paper",
+      "surface": {
+        "draw": "drew",
+        "paint": "painted",
+        "colour": "coloured",
+        "write": "wrote",
+        "trace": "traced"
+      },
+      "waivers": [
+        {
+          "check": "GLOSS-WORD-ECHO",
+          "word": "paper",
+          "note": "'paper' is the everyday Year-1 word for the scene fact; the gloss line is a dictionary definition, the sentence is a scene",
+          "by": "claude",
+          "at": "2026-11-12"
+        },
+        {
+          "check": "GLOSS-WORD-ECHO",
+          "word": "thin",
+          "note": "'thin' is the everyday Year-1 word for the scene fact; the gloss line is a dictionary definition, the sentence is a scene",
+          "by": "claude",
+          "at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "id": "A-draw-01-s40",
+      "answer": "trace",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Sam ___ the star's grey dotted lines with his pencil.",
+      "cue_phrase": "grey dotted lines",
+      "surface": {
+        "draw": "drew",
+        "paint": "painted",
+        "colour": "coloured",
+        "write": "wrote",
+        "trace": "traced"
+      },
+      "waivers": [
+        {
+          "check": "GLOSS-WORD-ECHO",
+          "word": "lines",
+          "note": "'lines' is the everyday Year-1 word for the scene fact; the gloss line is a dictionary definition, the sentence is a scene",
+          "by": "claude",
+          "at": "2026-11-12"
+        },
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists draw; the star's grey dotted lines already exist, going over existing lines is tracing (sibling s34/s38 pass 3/3)",
+          "by": "claude",
+          "at": "2026-11-12"
+        }
+      ]
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "draw",
+      "picked": "paint",
+      "line": "Drawing is lines from a pencil or chalk. Painting needs a brush and wet paint."
+    },
+    {
+      "answer": "draw",
+      "picked": "colour",
+      "line": "Drawing makes a new picture from nothing. Colouring fills in a shape already there."
+    },
+    {
+      "answer": "draw",
+      "picked": "write",
+      "line": "Drawing makes a picture. Writing makes letters and words."
+    },
+    {
+      "answer": "draw",
+      "picked": "trace",
+      "line": "Drawing comes from your own eyes or head. Tracing follows lines already on the page."
+    },
+    {
+      "answer": "paint",
+      "picked": "draw",
+      "line": "This picture was wet and made with a brush, so it was painted, not drawn."
+    },
+    {
+      "answer": "paint",
+      "picked": "colour",
+      "line": "Painting uses a wet brush. Colouring fills in a shape with crayons or pencils."
+    },
+    {
+      "answer": "paint",
+      "picked": "write",
+      "line": "Painting makes a picture with a brush. Writing makes words."
+    },
+    {
+      "answer": "paint",
+      "picked": "trace",
+      "line": "Painting makes a new picture with a brush. Tracing follows lines you can see under the page."
+    },
+    {
+      "answer": "colour",
+      "picked": "draw",
+      "line": "Colouring fills in a shape that is already there. Drawing makes the lines."
+    },
+    {
+      "answer": "colour",
+      "picked": "paint",
+      "line": "Colouring here uses crayons or textas. Painting would need a brush and wet paint."
+    },
+    {
+      "answer": "colour",
+      "picked": "write",
+      "line": "Colouring fills a shape. Writing puts down letters and words."
+    },
+    {
+      "answer": "colour",
+      "picked": "trace",
+      "line": "Colouring fills the inside of a shape. Tracing goes over its lines."
+    },
+    {
+      "answer": "write",
+      "picked": "draw",
+      "line": "Writing makes letters and words. Drawing makes a picture."
+    },
+    {
+      "answer": "write",
+      "picked": "paint",
+      "line": "Writing puts down words to read. Painting makes a picture with a brush."
+    },
+    {
+      "answer": "write",
+      "picked": "colour",
+      "line": "Writing makes words. Colouring fills in a shape."
+    },
+    {
+      "answer": "write",
+      "picked": "trace",
+      "line": "Writing makes your own letters. Tracing goes over letters already there."
+    },
+    {
+      "answer": "trace",
+      "picked": "draw",
+      "line": "Tracing follows lines you can already see. Drawing makes new lines yourself."
+    },
+    {
+      "answer": "trace",
+      "picked": "paint",
+      "line": "Tracing goes over lines you can see. Painting makes a picture with a wet brush."
+    },
+    {
+      "answer": "trace",
+      "picked": "colour",
+      "line": "Tracing goes along the lines. Colouring fills in the space inside them."
+    },
+    {
+      "answer": "trace",
+      "picked": "write",
+      "line": "Tracing goes over lines already there. Writing makes your own words."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-11-12T12:15:18+00:00",
+    "model": "claude-opus-5-5",
+    "scrubbed_at": "2026-11-12",
+    "scrub_note": "Scrubbed by claude 2026-11-12: all 40 sentences and 20 contrasts authored and read aloud at Year-1 level (<=12 words); five judge rounds - rewrote 2 sense-mismatch items (marker, finger painting), 2 paint items where two judges let draw in (easel/smock, rinsed brush) and tightened 7 trace/write items against draw, write and paint, and moved one paint item off a gloss trigram; 7 remaining single-judge dissents read and recorded as waivers."
+  }
+}

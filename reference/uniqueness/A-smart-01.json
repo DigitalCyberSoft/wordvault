@@ -378,13 +378,12 @@
       "judged_at": "2026-07-05T13:15:14+00:00"
     },
     "A-smart-01-s14": {
-      "text_sha256": "21c9ddb411b3ba684a19a347697530c9fc8380cf310607d41c873ac60b157a26",
-      "verdict": "review",
+      "text_sha256": "195873afbbfd80bb2b8bce57e4f760340c11ac04f978e5c07846dd4cd9befbad",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "clever",
             "wise"
           ],
           "sense_match": true
@@ -392,7 +391,6 @@
         {
           "model": "gpt-4.1",
           "fits": [
-            "clever",
             "wise"
           ],
           "sense_match": true
@@ -405,7 +403,7 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T13:15:14+00:00"
+      "judged_at": "2026-11-12T12:18:38+00:00"
     },
     "A-smart-01-s15": {
       "text_sha256": "f965b8551b36e5b5f0134e43718045cfc7f8811f725c77d8fe40540c011d43ce",

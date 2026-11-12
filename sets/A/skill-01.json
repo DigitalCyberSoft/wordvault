@@ -696,8 +696,8 @@
       "answer": "finesse",
       "cue": "explicit",
       "reserve": true,
-      "text": "One wrong tug could snap the thread, but Bea's ___ freed it.",
-      "cue_phrase": "wrong tug could snap",
+      "text": "Mr Lee broke the news of the cancelled final with such ___ that nobody felt crushed.",
+      "cue_phrase": "broke the news; nobody felt crushed",
       "surface": {
         "stamina": "stamina",
         "agility": "agility",
@@ -941,6 +941,6 @@
     "generated_at": "2026-07-07T03:36:24+00:00",
     "model": "gpt-5.5",
     "scrubbed_at": "2026-07-07",
-    "scrub_note": "Scrubbed by claude 2026-07-07: mechanical sweeps clean (one purple-snow frame cleared - colour absurdity, not calendar), all 40 sentences, all 20 contrasts, and mixed-tense surface maps read per set; no defects."
+    "scrub_note": "Scrubbed by claude 2026-07-07: mechanical sweeps clean (one purple-snow frame cleared - colour absurdity, not calendar), all 40 sentences, all 20 contrasts, and mixed-tense surface maps read per set; no defects. Fairness pass by claude 2026-11-12: finesse s32 is now tactful handling of bad news, with no hand skill (dexterity)."
   }
 }

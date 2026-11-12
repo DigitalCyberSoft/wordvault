@@ -21,7 +21,7 @@ answers for is a shipping bug, because it punishes a correct answer.
 | 2 | Set tightness | distinct categories (hiss / moo) → adjacent rungs of one scale (gleaming / twinkling) |
 | 3 | Cue mix *served* | explicit-heavy → inferential-heavy (authoring is uniform 2/2/2; the runtime shifts what it draws - a future knob, v1 serves uniformly) |
 | 4 | Bank mix | A+B only → bank C (their/there, borrow/lend) from year 3 |
-| 5 | Sentence length | short frames dominate low years (review-lane flag above 15 words in bands 1-2; bands remain authoring metadata) |
+| 5 | Sentence length | gated by the year a set serves (M11): Year 1 at most 12 words (review above 10), Year 2 at most 14 (review above 12), Year 3+ at most 18 |
 | 6 | Review pressure | lockboxes interleave after every 4th set at all levels |
 
 Fixed non-levers: 3 runs per safe, 5 tiles. The lock timer (below) is a
@@ -29,21 +29,25 @@ failure condition, not a difficulty input: speed never moves the level.
 
 ## The year ladder
 
-Seven Australian school years of four levels each (`MAX_LEVEL = 28`). WITHIN
-every year the crack requirement climbs - 2 pins at the year's first level,
-then 3, 4, and the full 5 as its exit exam (`crackNeedFor` cycles; review
-lockboxes stay at 3) - so each year's new vocabulary gets fast early wins and
-ends on a structurally hard vault. Leveling is still gated on clean-crack
-streaks, never on a single success.
+Seven Australian school years of four steps each (`MAX_LEVEL = 28`, integer
+levels). WITHIN every year the crack requirement climbs - 2 pins at the year's
+first step, then 3, 4, and the full 5 as its exit exam (`crackNeedFor`; review
+lockboxes stay at 3) - and **each step is one clean crack**. So a child passes
+a year with **four clean cracks in a row**: the pin count is also the visible
+in-a-row progress (the HUD shows `Year 2 ●●○○`). Any miss breaks the run.
 
-Sets are pitched at the school year of their HARDEST word (`setYearOf`: the
-max of the per-word `grade` fields; the child must know all five). Selection
-widens one year at a time if a year is thin. Bank C never serves below year 3.
+Sets are pitched with a **gifted lean** (`setYearOf`): a set serves the year
+where at most ONE of its words is a stretch, and that stretch is at most one
+year ahead - `max(second-hardest grade, hardest grade - 1)`. Four known words
+plus one new one is the learning sweet spot; the old "hardest word" pitch
+parked shiny/sparkly sets in Year 6 because of a single word. Bank C pitches
+no lower than year 3. Selection borrows from neighbouring years only while a
+year offers fewer than `MIN_POOL` (4) sets.
 
 | Years | Levels | Feel | Banks | Example sets |
 |---|---|---|---|---|
-| 1-2 | 1-8 | Everyday similarity families, manner splits | A, B | ways to move things, sounds people make, cry, eat |
-| 3-4 | 9-16 | Rarer members, one-shade gaps, usage traps begin | A, B, C | brave, tired, shine, their/there, borrow/lend |
+| 1-2 | 1-8 | Everyday similarity families, manner splits, short frames | A, B | ways to move things, ways to clean, making marks, eat |
+| 3-4 | 9-16 | Rarer members, one-shade gaps, usage traps begin | A, B, C | little movements, ways to cook, cry, their/there, borrow/lend |
 | 5-6 | 17-24 | Tier-2 vocabulary, inferential cues carry more | A, B, C | climate, tricks, secrecy, skill |
 | 7 | 25-28 | Literary-register abstractions, cue buried or fully inferential | A, B, C | statements, tempo, desire |
 
@@ -72,7 +76,8 @@ Two authoring laws specific to these sets, learned at the gates:
 
 ## The lock timer
 
-`LOCK_TIMER_MS` (15 s) per sentence, enforced by the UI, graded by
+`LOCK_TIMER_MS` (15 s) per sentence - `EARLY_TIMER_MS` (20 s) in Years 1-2,
+where the child is still decoding (`lockTimerFor`) - enforced by the UI, graded by
 `Core.timeout()`: expiry is a MISS in everything but the tap (run ends, lamp
 lights, same difficulty math, its own teaching card). The clock pauses while
 the tab is hidden and stops the moment an answer is committed. Settings
@@ -107,19 +112,27 @@ via light, not via each other).
 
 ## Runtime adaptivity (for reference; the code is game-core.js)
 
-Difficulty is a float; level = round(difficulty), clamped to 1-28. The only way
-up is a **clean crack** (no misses), and climbing needs a consecutive run of
-them that lengthens with level: 1 through year 3 (levels 1-12), 2 across years
-4-5 (13-20), 3 in years 6-7 (21-28). Up-step +0.7; set exhaustion (three
-misses) steps -0.8; scrappy cracks hold. Review lockboxes never move the
-level. A parent cap clamps the top, and **Starting year** (Settings) places a
-new player at their school year's first level. The Level Up screen fires only
-on a first-ever reach of a level.
+The level is an integer 1-28 (`year = ceil(level / 4)`, `step = (level - 1) % 4`).
+`adjustDifficulty(level, outcome, slips, cap)`:
+
+| Outcome | Effect |
+|---|---|
+| clean crack (no misses) | one step up; on the year's 5-pin vault, **passes the year** |
+| scrappy crack (cracked after a miss) | the in-a-row run breaks: back to the year's first step |
+| exhausted safe (three misses) | back to the year's first step; the 2nd exhausted safe **in a row** (`SLIPS_TO_DROP`) drops to the start of the year below |
+| review lockbox | nothing moves |
+
+Speed never moves anything. A grown-up cap (Settings → Highest year) holds the
+child at that year's 5-pin vault, and **Starting year** places a new player at
+their school year's first step. The Year Passed screen fires only on a
+first-ever arrival in a year; every crack and exhaust card says where the child
+now stands ("2 clean cracks in a row to pass Year 3"). Saves from the old float
+curve round onto the integer ladder.
 
 ## Exhaustion and review
 
-Three misses exhaust a safe: the missed words' cards are shown, the level
-drops, and the set joins the review queue flagged `exhausted` (served first).
+Three misses exhaust a safe: the missed words' cards are shown, the child
+returns to the start of the year (or the year below, on a second in a row), and the set joins the review queue flagged `exhausted` (served first).
 Cracked sets queue too. After every 4th completed set, one lockbox is offered:
 one run, 3-in-a-row, sentences drawn only from the set's reserve pool (never
 seen in normal play), coins only.
@@ -128,7 +141,7 @@ seen in normal play), coins only.
 
 Runs per set (3), the per-year crack curve (2/3/4/5, `crackNeedFor`), the
 lock timer (`LOCK_TIMER_MS`, 15 s), review cadence (4) and lockbox length (3),
-the help threshold (long-press glosses below level 17), the needed-streak
-curve, bank mix targets (65/20/15), the served cue-mix curve (lever 3), and
+the help threshold (long-press glosses below level 17), steps per year (4)
+and the slips that drop a year (2), the thin-year pool (`MIN_POOL`), bank mix targets (65/20/15), the served cue-mix curve (lever 3), and
 the M11 length thresholds. All are constants in game-core.js or gates in
 tools/, one line each.

@@ -126,8 +126,8 @@
       "answer": "grab",
       "cue": "explicit",
       "reserve": false,
-      "text": "Milo ___ the falling cup by its handle before it smashed.",
-      "cue_phrase": "falling cup by its handle",
+      "text": "Milo ___ the falling cup before it hit the floor.",
+      "cue_phrase": "falling cup",
       "surface": {
         "grab": "grabbed",
         "pat": "patted",
@@ -141,8 +141,8 @@
       "answer": "grab",
       "cue": "explicit",
       "reserve": false,
-      "text": "As the balloon drifted away, Rina ___ its string tight.",
-      "cue_phrase": "its string tight",
+      "text": "Rina ___ the balloon string just in time.",
+      "cue_phrase": "just in time",
       "surface": {
         "grab": "grabbed",
         "pat": "patted",
@@ -156,8 +156,8 @@
       "answer": "grab",
       "cue": "contextual",
       "reserve": false,
-      "text": "Dad ___ Sam's sleeve in the crowd so he stayed close.",
-      "cue_phrase": "so he stayed close",
+      "text": "Dad ___ my sleeve so I would not get lost.",
+      "cue_phrase": "so I would not get lost",
       "surface": {
         "grab": "grabbed",
         "pat": "patted",
@@ -171,8 +171,8 @@
       "answer": "grab",
       "cue": "contextual",
       "reserve": false,
-      "text": "Zoe ___ the last biscuit before the dog reached the plate.",
-      "cue_phrase": "before the dog reached",
+      "text": "Zoe ___ the last biscuit before the dog got it.",
+      "cue_phrase": "before the dog got it",
       "surface": {
         "grab": "grabbed",
         "pat": "patted",
@@ -186,8 +186,8 @@
       "answer": "grab",
       "cue": "inferential",
       "reserve": false,
-      "text": "The cookie jar wobbled, so Ben ___ it against his chest.",
-      "cue_phrase": "against his chest",
+      "text": "The bus stopped fast, so Ben ___ the pole.",
+      "cue_phrase": "bus stopped fast",
       "surface": {
         "grab": "grabbed",
         "pat": "patted",
@@ -201,8 +201,8 @@
       "answer": "grab",
       "cue": "inferential",
       "reserve": false,
-      "text": "When the goat nibbled her map, Ella ___ the corner back.",
-      "cue_phrase": "corner back",
+      "text": "The goat chewed her map, so Ella ___ it back.",
+      "cue_phrase": "it back",
       "surface": {
         "grab": "grabbed",
         "pat": "patted",
@@ -231,14 +231,14 @@
       "answer": "grab",
       "cue": "inferential",
       "reserve": true,
-      "text": "The wind made Oli ___ his hat before it flew off.",
-      "cue_phrase": "before it flew off",
+      "text": "Oli ___ his hat before it blew away.",
+      "cue_phrase": "before it blew away",
       "surface": {
-        "grab": "grab",
-        "pat": "pat",
-        "poke": "poke",
-        "wave": "wave",
-        "clap": "clap"
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
       }
     },
     {
@@ -246,8 +246,8 @@
       "answer": "pat",
       "cue": "explicit",
       "reserve": false,
-      "text": "The nurse ___ the puppy's head with a soft open palm.",
-      "cue_phrase": "soft open palm",
+      "text": "Gran ___ the puppy's head with her open palm.",
+      "cue_phrase": "with her open palm",
       "surface": {
         "grab": "grabbed",
         "pat": "patted",
@@ -261,8 +261,8 @@
       "answer": "pat",
       "cue": "explicit",
       "reserve": false,
-      "text": "Gran ___ the sofa cushion in small kind taps.",
-      "cue_phrase": "small kind taps",
+      "text": "Mum ___ the sleepy baby with soft little taps.",
+      "cue_phrase": "soft little taps",
       "surface": {
         "grab": "grabbed",
         "pat": "patted",
@@ -276,7 +276,7 @@
       "answer": "pat",
       "cue": "contextual",
       "reserve": false,
-      "text": "After the thunder, Mina ___ the dog's side until its tail wagged.",
+      "text": "Mina ___ the scared dog until its tail wagged.",
       "cue_phrase": "until its tail wagged",
       "surface": {
         "grab": "grabbed",
@@ -291,8 +291,8 @@
       "answer": "pat",
       "cue": "contextual",
       "reserve": false,
-      "text": "The teacher ___ the clay lid to settle it without denting the pot.",
-      "cue_phrase": "without denting the pot",
+      "text": "Sam ___ the top of his sandcastle to make it smooth.",
+      "cue_phrase": "to make it smooth",
       "surface": {
         "grab": "grabbed",
         "pat": "patted",
@@ -336,14 +336,14 @@
       "answer": "pat",
       "cue": "contextual",
       "reserve": true,
-      "text": "Please ___ the seed soil until it sits smooth.",
-      "cue_phrase": "until it sits smooth",
+      "text": "Gran ___ the seat beside her, and I sat down.",
+      "cue_phrase": "and I sat down",
       "surface": {
-        "grab": "grab",
-        "pat": "pat",
-        "poke": "poke",
-        "wave": "wave",
-        "clap": "clap"
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
       }
     },
     {
@@ -351,14 +351,14 @@
       "answer": "pat",
       "cue": "inferential",
       "reserve": true,
-      "text": "To calm the rabbit, Sol tried to ___ its back softly.",
+      "text": "To calm the rabbit, Sol ___ its head.",
       "cue_phrase": "To calm the rabbit",
       "surface": {
-        "grab": "grab",
-        "pat": "pat",
-        "poke": "poke",
-        "wave": "wave",
-        "clap": "clap"
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
       }
     },
     {
@@ -366,8 +366,8 @@
       "answer": "poke",
       "cue": "explicit",
       "reserve": false,
-      "text": "Lina ___ the jelly with one small tip, making a dent.",
-      "cue_phrase": "one small tip",
+      "text": "Lina ___ the wobbly jelly with her fingertip.",
+      "cue_phrase": "with her fingertip",
       "surface": {
         "grab": "grabbed",
         "pat": "patted",
@@ -381,8 +381,8 @@
       "answer": "poke",
       "cue": "explicit",
       "reserve": false,
-      "text": "Raj ___ the doorbell with a single knuckle.",
-      "cue_phrase": "single knuckle",
+      "text": "Raj ___ the soft dough with his thumb.",
+      "cue_phrase": "with his thumb",
       "surface": {
         "grab": "grabbed",
         "pat": "patted",
@@ -396,8 +396,8 @@
       "answer": "poke",
       "cue": "contextual",
       "reserve": false,
-      "text": "The crab hid, so Eva ___ the sand hole with a twig.",
-      "cue_phrase": "with a twig",
+      "text": "Eva ___ the crab hole with a stick.",
+      "cue_phrase": "with a stick",
       "surface": {
         "grab": "grabbed",
         "pat": "patted",
@@ -411,8 +411,8 @@
       "answer": "poke",
       "cue": "contextual",
       "reserve": false,
-      "text": "To test the cake, Niko ___ the middle with a skewer.",
-      "cue_phrase": "with a skewer",
+      "text": "Dad ___ the baked potato with a fork.",
+      "cue_phrase": "with a fork",
       "surface": {
         "grab": "grabbed",
         "pat": "patted",
@@ -441,7 +441,7 @@
       "answer": "poke",
       "cue": "inferential",
       "reserve": false,
-      "text": "The lift arrived after Sima ___ the tiny button.",
+      "text": "Sima ___ the tiny button, and the toy beeped.",
       "cue_phrase": "tiny button",
       "surface": {
         "grab": "grabbed",
@@ -471,8 +471,8 @@
       "answer": "poke",
       "cue": "contextual",
       "reserve": true,
-      "text": "The map tore when Kavi ___ it with a sharp stick.",
-      "cue_phrase": "sharp stick",
+      "text": "Kavi ___ the balloon with a pin, and it popped.",
+      "cue_phrase": "with a pin",
       "surface": {
         "grab": "grabbed",
         "pat": "patted",
@@ -486,8 +486,8 @@
       "answer": "wave",
       "cue": "explicit",
       "reserve": false,
-      "text": "Maya ___ her arm high for the ferry crew on deck.",
-      "cue_phrase": "arm high for",
+      "text": "Maya ___ her arm from side to side at the boat.",
+      "cue_phrase": "from side to side",
       "surface": {
         "grab": "grabbed",
         "pat": "patted",
@@ -501,8 +501,8 @@
       "answer": "wave",
       "cue": "explicit",
       "reserve": false,
-      "text": "Luca ___ his scarf high, and the boat captain nodded.",
-      "cue_phrase": "boat captain nodded",
+      "text": "Luca ___ his scarf above his head at the footy.",
+      "cue_phrase": "above his head",
       "surface": {
         "grab": "grabbed",
         "pat": "patted",
@@ -516,8 +516,8 @@
       "answer": "wave",
       "cue": "contextual",
       "reserve": false,
-      "text": "When the school bus left, Asha ___ her arm until it turned.",
-      "cue_phrase": "school bus left",
+      "text": "As the bus drove off, Asha ___ to her friends.",
+      "cue_phrase": "bus drove off",
       "surface": {
         "grab": "grabbed",
         "pat": "patted",
@@ -531,8 +531,8 @@
       "answer": "wave",
       "cue": "contextual",
       "reserve": false,
-      "text": "At the parade, Nia ___ a flag so her brother spotted her.",
-      "cue_phrase": "brother spotted her",
+      "text": "Nia ___ her flag in the air until her brother saw her.",
+      "cue_phrase": "until her brother saw her",
       "surface": {
         "grab": "grabbed",
         "pat": "patted",
@@ -546,8 +546,8 @@
       "answer": "wave",
       "cue": "inferential",
       "reserve": false,
-      "text": "The lost hiker ___ a bright sleeve until the rescue team looked up.",
-      "cue_phrase": "team looked up",
+      "text": "From the island, Sam ___ a red shirt at the ship.",
+      "cue_phrase": "at the ship",
       "surface": {
         "grab": "grabbed",
         "pat": "patted",
@@ -561,8 +561,8 @@
       "answer": "wave",
       "cue": "inferential",
       "reserve": false,
-      "text": "Across the river, Ben ___ his cap, and Grandma smiled back.",
-      "cue_phrase": "Grandma smiled back",
+      "text": "Across the river, Leo ___ his cap at Grandma.",
+      "cue_phrase": "Across the river",
       "surface": {
         "grab": "grabbed",
         "pat": "patted",
@@ -576,8 +576,8 @@
       "answer": "wave",
       "cue": "contextual",
       "reserve": true,
-      "text": "The queen ___ her arm from the balcony while the crowd cheered below.",
-      "cue_phrase": "from the balcony",
+      "text": "The queen ___ from the castle window to the crowd.",
+      "cue_phrase": "from the castle window",
       "surface": {
         "grab": "grabbed",
         "pat": "patted",
@@ -591,14 +591,14 @@
       "answer": "wave",
       "cue": "inferential",
       "reserve": true,
-      "text": "To greet the dragon, Pip had to ___ a white cloth above his head.",
-      "cue_phrase": "above his head",
+      "text": "Kit ___ a white flag, and the dragon stopped.",
+      "cue_phrase": "white flag",
       "surface": {
-        "grab": "grab",
-        "pat": "pat",
-        "poke": "poke",
-        "wave": "wave",
-        "clap": "clap"
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
       }
     },
     {
@@ -606,8 +606,8 @@
       "answer": "clap",
       "cue": "explicit",
       "reserve": false,
-      "text": "At the finale, Mira ___ her palms, making a sharp smack.",
-      "cue_phrase": "sharp smack",
+      "text": "The show ended, and Mira ___ as loud as she could.",
+      "cue_phrase": "as loud as she could",
       "surface": {
         "grab": "grabbed",
         "pat": "patted",
@@ -621,8 +621,8 @@
       "answer": "clap",
       "cue": "explicit",
       "reserve": false,
-      "text": "Balloons popped as Omar ___ his palms in loud beats.",
-      "cue_phrase": "loud beats",
+      "text": "Omar ___ his palms with a loud smack.",
+      "cue_phrase": "palms with a loud smack",
       "surface": {
         "grab": "grabbed",
         "pat": "patted",
@@ -636,8 +636,8 @@
       "answer": "clap",
       "cue": "contextual",
       "reserve": false,
-      "text": "The audience ___ their palms when the little actors bowed on stage.",
-      "cue_phrase": "actors bowed on stage",
+      "text": "When the actors bowed, the crowd ___ loudly.",
+      "cue_phrase": "actors bowed",
       "surface": {
         "grab": "grabbed",
         "pat": "patted",
@@ -651,8 +651,8 @@
       "answer": "clap",
       "cue": "contextual",
       "reserve": false,
-      "text": "At assembly, everyone ___ their palms for the team until the hall echoed.",
-      "cue_phrase": "hall echoed",
+      "text": "At assembly, we ___ for the team until the hall rang.",
+      "cue_phrase": "until the hall rang",
       "surface": {
         "grab": "grabbed",
         "pat": "patted",
@@ -666,8 +666,8 @@
       "answer": "clap",
       "cue": "inferential",
       "reserve": false,
-      "text": "The magic spell worked only after Zoe ___ three times, palm against palm.",
-      "cue_phrase": "palm against palm",
+      "text": "Zoe ___ so hard that her palms stung.",
+      "cue_phrase": "her palms stung",
       "surface": {
         "grab": "grabbed",
         "pat": "patted",
@@ -681,8 +681,8 @@
       "answer": "clap",
       "cue": "inferential",
       "reserve": false,
-      "text": "The baby laughed at the loud smack when Dad ___ his palms.",
-      "cue_phrase": "loud smack",
+      "text": "Dad ___, and the baby laughed at the loud noise.",
+      "cue_phrase": "loud noise",
       "surface": {
         "grab": "grabbed",
         "pat": "patted",
@@ -696,14 +696,14 @@
       "answer": "clap",
       "cue": "explicit",
       "reserve": true,
-      "text": "Please ___ palm against palm with the beat.",
-      "cue_phrase": "palm against palm",
+      "text": "Everyone ___ their palms in time with the drum.",
+      "cue_phrase": "palms in time",
       "surface": {
-        "grab": "grab",
-        "pat": "pat",
-        "poke": "poke",
-        "wave": "wave",
-        "clap": "clap"
+        "grab": "grabbed",
+        "pat": "patted",
+        "poke": "poked",
+        "wave": "waved",
+        "clap": "clapped"
       }
     },
     {
@@ -711,8 +711,8 @@
       "answer": "clap",
       "cue": "contextual",
       "reserve": true,
-      "text": "The coach made us ___ palm against palm before the cheer.",
-      "cue_phrase": "before the cheer",
+      "text": "Please ___ loudly if you liked the puppet show!",
+      "cue_phrase": "loudly if you liked",
       "surface": {
         "grab": "grab",
         "pat": "pat",
@@ -726,108 +726,108 @@
     {
       "answer": "grab",
       "picked": "pat",
-      "line": "Grab closes fingers round an item fast. Pat uses soft palm taps without carrying it off."
+      "line": "Grab closes your fingers round it fast. Pat gives soft taps with a flat hand."
     },
     {
       "answer": "grab",
       "picked": "poke",
-      "line": "Grab gets hold of an item. Poke jabs one small spot and does not carry it away."
+      "line": "Grab takes hold of it. Poke pushes one spot with a fingertip."
     },
     {
       "answer": "grab",
       "picked": "wave",
-      "line": "Grab closes on an item. Wave swings through the air, touching nothing."
+      "line": "Grab takes hold of something. Wave swings your hand in the air and touches nothing."
     },
     {
       "answer": "grab",
       "picked": "clap",
-      "line": "Grab gets hold of one item. Clap makes a sound by bringing palms into contact."
+      "line": "Grab takes hold of something. Clap hits your two hands together to make a sound."
     },
     {
       "answer": "pat",
       "picked": "grab",
-      "line": "Pat is soft palm tapping. Grab closes fingers round an item and holds it."
+      "line": "Pat gives soft taps with a flat hand. Grab closes your fingers round it and holds on."
     },
     {
       "answer": "pat",
       "picked": "poke",
-      "line": "Pat uses a broad, soft palm. Poke uses one small tip on one spot."
+      "line": "Pat uses a soft flat hand. Poke uses one fingertip on one spot."
     },
     {
       "answer": "pat",
       "picked": "wave",
-      "line": "Pat makes soft contact on a surface. Wave is shown from a distance without contact."
+      "line": "Pat touches something softly. Wave swings in the air and touches nothing."
     },
     {
       "answer": "pat",
       "picked": "clap",
-      "line": "Pat is quiet, soft tapping. Clap is louder palm-to-palm sound, often for cheering."
+      "line": "Pat is quiet taps on something. Clap is loud, with your two hands hitting each other."
     },
     {
       "answer": "poke",
       "picked": "grab",
-      "line": "Poke jabs one small spot. Grab closes round an item and holds it."
+      "line": "Poke pushes one spot. Grab closes round it and holds on."
     },
     {
       "answer": "poke",
       "picked": "pat",
-      "line": "Poke uses one small tip. Pat uses a soft palm over a wider place."
+      "line": "Poke uses one fingertip. Pat uses a soft flat hand."
     },
     {
       "answer": "poke",
       "picked": "wave",
-      "line": "Poke presses into one spot. Wave happens where nothing is contacted."
+      "line": "Poke pushes into one spot. Wave touches nothing at all."
     },
     {
       "answer": "poke",
       "picked": "clap",
-      "line": "Poke jabs one spot. Clap brings palms into contact to make a sound."
+      "line": "Poke pushes one spot with a tip. Clap hits your two hands together for a sound."
     },
     {
       "answer": "wave",
       "picked": "grab",
-      "line": "Wave swings back and forth touching nothing. Grab closes on an item and holds it."
+      "line": "Wave swings your hand and touches nothing. Grab takes hold of something."
     },
     {
       "answer": "wave",
       "picked": "pat",
-      "line": "Wave touches nothing. Pat uses soft palm contact on a surface."
+      "line": "Wave touches nothing. Pat gives soft taps on something."
     },
     {
       "answer": "wave",
       "picked": "poke",
-      "line": "Wave is seen from away. Poke jabs one small spot with a tip."
+      "line": "Wave is seen from far away. Poke pushes one spot up close."
     },
     {
       "answer": "wave",
       "picked": "clap",
-      "line": "Wave is a silent sign through space. Clap makes a palm-to-palm sound."
+      "line": "Wave is a quiet sign in the air. Clap makes a loud sound with your hands."
     },
     {
       "answer": "clap",
       "picked": "grab",
-      "line": "Clap makes a sound with palms. Grab closes round an item and holds it."
+      "line": "Clap makes a sound with your hands. Grab takes hold of something."
     },
     {
       "answer": "clap",
       "picked": "pat",
-      "line": "Clap is louder palm-to-palm sound. Pat is soft tapping on another surface."
+      "line": "Clap is loud, hand hitting hand. Pat is soft taps on something else."
     },
     {
       "answer": "clap",
       "picked": "poke",
-      "line": "Clap uses palms meeting for sound. Poke jabs one small spot with a tip."
+      "line": "Clap makes a sound with your hands. Poke pushes one spot with a tip."
     },
     {
       "answer": "clap",
       "picked": "wave",
-      "line": "Clap makes a sound with palms. Wave swings through the air and touches nothing."
+      "line": "Clap makes a sound with your hands. Wave swings in the air with no sound."
     }
   ],
   "meta": {
     "generated_at": "2026-07-06T14:40:52+00:00",
     "model": "gpt-5.5",
     "scrubbed_at": "2026-07-07",
-    "scrub_note": "Scrubbed by claude 2026-07-07 (dedicated pre-scrub agent failed twice on output limits): mechanical sweeps (cue hygiene, meta-frames, seasonal, templates, duplicates), all 20 contrast lines read per set, every sentence read for frame sanity, all judge hards fixed and re-judged to zero. Fixes: wave re-pinned to brandish.v.01 + 3 contrasts aligned, hop gloss authored to the one-foot sense the set teaches, pat/nod/wink frames restaged, one dangling pronoun."
+    "scrub_note": "Scrubbed by claude 2026-07-07 (dedicated pre-scrub agent failed twice on output limits): mechanical sweeps (cue hygiene, meta-frames, seasonal, templates, duplicates), all 20 contrast lines read per set, every sentence read for frame sanity, all judge hards fixed and re-judged to zero. Fixes: wave re-pinned to brandish.v.01 + 3 contrasts aligned, hop gloss authored to the one-foot sense the set teaches, pat/nod/wink frames restaged, one dangling pronoun. Year-1 rewrite by claude 2026-11-12: 35 of 40 sentences re-staged for gifted 6-7 year olds (max 12 words, was up to 14; 'palm against palm', 'finale', 'skewer', 'knuckle', hiker/rescue-team frames simplified), poke-a-hole sense fix and a grab-the-flag co-fit restaged, all 20 contrasts simplified ('item', 'contact', 'surface' gone); re-judged: 0 hard, 0 dissents."
   }
 }

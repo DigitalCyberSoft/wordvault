@@ -31,13 +31,12 @@
       "judged_at": "2026-07-06T16:19:00+00:00"
     },
     "A-atmosphere-01-s02": {
-      "text_sha256": "05c6d9b0e21e6a8e77cfc0670f69b92b10eec1547c402fc4dbb502d3921c7e99",
+      "text_sha256": "8e399aebcb6a15974a494099c2217ad135acfe3e0305003ad364e54aa91430be",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "desolate",
             "melancholy"
           ],
           "sense_match": true
@@ -58,7 +57,7 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-06T16:19:00+00:00"
+      "judged_at": "2026-11-12T12:10:08+00:00"
     },
     "A-atmosphere-01-s03": {
       "text_sha256": "6466764322ff0fb3eda68b3acf97348af05dc9ba8cab8897b6617ca280c4042d",
@@ -119,13 +118,12 @@
       "judged_at": "2026-07-06T16:19:00+00:00"
     },
     "A-atmosphere-01-s05": {
-      "text_sha256": "965368d22fe452341dc5063b05f7176196e9c621a25fbd68a43aa3a9176e8b5c",
-      "verdict": "review",
+      "text_sha256": "8c1948a2c7311c41ab9d3502f15cd50725264d5e4d4f0e0de97562069dcc2392",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "desolate",
             "melancholy"
           ],
           "sense_match": true
@@ -133,7 +131,6 @@
         {
           "model": "gpt-4.1",
           "fits": [
-            "desolate",
             "melancholy"
           ],
           "sense_match": true
@@ -146,7 +143,7 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-06T16:19:00+00:00"
+      "judged_at": "2026-11-12T12:10:08+00:00"
     },
     "A-atmosphere-01-s06": {
       "text_sha256": "6f5a00bff16077cf41b2982b667a8c4970b11f8455f8afd90c7d002937777d2a",

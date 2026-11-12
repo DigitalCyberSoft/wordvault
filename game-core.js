@@ -21,19 +21,24 @@
 
   // ---------------------------------------------------------------------------
   // Tunables. MAX_LEVEL is 28: seven Australian school years (1-7) of four
-  // levels each, and within every year the lock grows from 2 pins to the full
-  // 5 before the next year begins (see LEVELS.md). HELP_THRESHOLD is the level
-  // where in-play long-press gloss help switches off (year 5) and the Get
-  // Ready screen becomes the only vocabulary support.
+  // levels ("steps") each. A step is one clean crack: within every year the
+  // lock grows 2 -> 3 -> 4 -> 5 pins, and a clean crack of the 5-pin vault
+  // passes the year. So a year is passed with STEPS_PER_YEAR clean cracks IN A
+  // ROW; any miss sends the child back to the year's 2-pin start (see
+  // adjustDifficulty and LEVELS.md). HELP_THRESHOLD is the level where in-play
+  // long-press gloss help switches off (year 5) and the Get Ready screen
+  // becomes the only vocabulary support.
   var MAX_LEVEL = 28;
+  var STEPS_PER_YEAR = 4;
   var HELP_THRESHOLD = 17;
   var RUNS_PER_SET = 3;      // misses allowed per encounter; a miss ends its run
-  var CRACK_NEED = 5;        // pin ceiling (each year's 4th level); crackNeedFor cycles below
+  var CRACK_NEED = 5;        // pin ceiling (each year's 4th step); crackNeedFor cycles below
   var REVIEW_CRACK_NEED = 3; // consecutive corrects to open a review lockbox
   var REVIEW_EVERY = 4;      // a lockbox is offered after every Nth completed set
-  var UP_STEP = 0.7;
-  var DOWN_STEP = 0.8;
+  var SLIPS_TO_DROP = 2;     // exhausted safes IN A ROW that step a child down a year
+  var MIN_POOL = 4;          // sets a year must offer before selection borrows a neighbour year
   var LOCK_TIMER_MS = 15000; // seconds on the clock per sentence; expiry = a miss
+  var EARLY_TIMER_MS = 20000; // Years 1-2: young readers decode the slip AND five tiles
 
   // Themed shelves for the Curio Cabinet. Five treasures complete a shelf and
   // unlock its cosmetic. Item ids double as art keys (assets/collectibles/<id>.png);
@@ -105,32 +110,50 @@
   function fillText(sentence, w) { return sentence.text.replace('___', sentence.surface[w]); }
   function bandOf(level) { return Math.max(1, Math.min(5, Math.ceil(level / 4))); }
   // The level ladder is year-first: levels 1-4 are Year 1, 5-8 Year 2, ... 25-28
-  // Year 7. Within a year the pin count climbs (crackNeedFor below).
-  function yearOf(level) { return Math.max(1, Math.min(7, Math.ceil(levelOf(level) / 4))); }
+  // Year 7. Within a year the step (0-3) sets the pin count (crackNeedFor).
+  function yearOf(level) { return Math.max(1, Math.min(7, Math.ceil(levelOf(level) / STEPS_PER_YEAR))); }
+  function stepOf(level) { return (levelOf(level) - 1) % STEPS_PER_YEAR; }
+  function yearStart(year) { return (Math.max(1, Math.min(7, year)) - 1) * STEPS_PER_YEAR + 1; }
+  // clean cracks in a row still needed to pass the level's year (4 at a year's start, 1 on its 5-pin vault)
+  function cleanToPass(level) { return STEPS_PER_YEAR - stepOf(level); }
 
-  // A set is pitched at the school year of its HARDEST word: the child must
-  // know all five. Ungraded sets (dev fixtures) fall back to a band estimate.
+  // A set is pitched at the school year where at most ONE of its words is a
+  // stretch, and that stretch is at most one year ahead: max(second-hardest
+  // grade, hardest grade - 1). Sets are five words with one feature apart, so
+  // four known words plus one new one is the learning sweet spot, and the
+  // one-year stretch is the gifted lean (a pure "hardest word" pitch parked
+  // shiny/sparkly sets in Year 6 because of one word). Bank C (their/there and
+  // kin) never pitches below year 3: those traps assume reading stamina the
+  // youngest players don't have yet. Ungraded sets (dev fixtures) fall back to
+  // a band estimate.
   function setYearOf(set) {
-    var yr = yearRange(set);
-    return yr ? yr.max : Math.min(7, set.band + 2);
+    var g = [];
+    for (var i = 0; i < set.words.length; i++) if (typeof set.words[i].grade === 'number') g.push(set.words[i].grade);
+    var y;
+    if (g.length === set.words.length && g.length >= 2) {
+      g.sort(function (a, b) { return a - b; });
+      y = Math.max(g[g.length - 2], g[g.length - 1] - 1);
+    } else {
+      y = Math.min(7, set.band + 2);
+    }
+    if (set.bank === 'C') y = Math.max(y, 3);
+    return Math.max(1, Math.min(7, y));
   }
 
-  // Sets pitched at the level's year; if the year is thin, widen the net one
-  // year at a time rather than starving the draw. Bank C (their/there and kin)
-  // never serves below year 3: those traps assume reading stamina the youngest
-  // players don't have yet.
+  // Sets pitched at the level's year; if the year offers fewer than MIN_POOL
+  // sets, widen the net one year at a time (both directions) so a thin year
+  // never loops the same two or three safes.
   function setsForLevel(content, level) {
-    var want = yearOf(level);
+    var want = yearOf(level), ids = [];
     for (var spread = 0; spread <= 6; spread++) {
-      var ids = [];
+      ids = [];
       for (var i = 0; i < content.sets.length; i++) {
         var s = content.sets[i];
-        if (s.bank === 'C' && want < 3) continue;
         if (Math.abs(setYearOf(s) - want) <= spread) ids.push(s.id);
       }
-      if (ids.length) return ids;
+      if (ids.length >= Math.min(MIN_POOL, content.sets.length)) return ids;
     }
-    return [];
+    return ids;
   }
 
   // Prefer sets the player has never met; then the least-played; never repeat the
@@ -225,13 +248,12 @@
   // reload resumes at the top of the current run. States:
   //   ready -> run -> (miss -> run)* -> cracked | exhausted | failed(review)
   // Locks grow more pins WITHIN each school year: every year starts at 2 pins
-  // and works up to the full 5 before the next year's words arrive (level 1-4
-  // of the year -> 2,3,4,5 pins). New-year vocabulary gets fast early wins;
-  // the year's exit exam is a full 5-pin vault. Leveling itself still needs
-  // clean-crack STREAKS (neededStreak below), so one lucky crack never moves
-  // the level.
+  // and works up to the full 5 before the next year's words arrive (step 0-3
+  // of the year -> 2,3,4,5 pins). Each step is one clean crack, so the pin
+  // count doubles as the child's in-a-row progress through the year, and the
+  // year's exit exam is a full 5-pin vault (adjustDifficulty below).
   function crackNeedFor(level) {
-    return Math.min(2 + (levelOf(level) - 1) % 4, CRACK_NEED);
+    return Math.min(2 + stepOf(level), CRACK_NEED);
   }
 
   function newEncounter(set, opts, rng) {
@@ -336,6 +358,11 @@
     return { correct: false, timedOut: true, state: enc.state };
   }
 
+  // The clock a sentence gets at a level: Years 1-2 read more slowly, so they
+  // get EARLY_TIMER_MS; Year 3 up gets LOCK_TIMER_MS. Still a failure
+  // condition only - it never feeds adjustDifficulty.
+  function lockTimerFor(level) { return yearOf(level) <= 2 ? EARLY_TIMER_MS : LOCK_TIMER_MS; }
+
   function isClean(enc) { return enc.state === 'cracked' && enc.misses === 0; }
 
   // Everything the miss card needs: both glosses, the cue, the directed line.
@@ -378,40 +405,56 @@
   }
 
   // ---------------------------------------------------------------------------
-  // Adaptive difficulty. Difficulty IS the level, a persisted float. Driven only
-  // by performance, never by speed: there are no timers in this game, and a slow
-  // correct answer is a correct answer.
-  //   - the only way UP is a CLEAN crack (crack with zero misses), and the climb
-  //     needs a run of clean cracks that lengthens with the level: one through
-  //     year 3 (levels 1-12), two across years 4-5 (13-20), three in years 6-7;
-  //   - a scrappy crack (cracked, but missed along the way) holds the level and
-  //     breaks the streak;
-  //   - exhausting a set (three misses, no crack) drops the level;
-  //   - review lockboxes never move the level in either direction.
-  function neededStreak(level) { return level >= 21 ? 3 : (level >= 13 ? 2 : 1); }
-  function adjustDifficulty(difficulty, outcome, streak, capLevel) {
-    var d = difficulty, s = streak || 0;
+  // Progression. The level is an INTEGER 1-28 (year = ceil(level / 4), step =
+  // (level - 1) % 4) and moves only on performance, never on speed:
+  //   - clean crack (cracked with zero misses): one step up. On the year's
+  //     5-pin vault that passes the year (event 'promoted'); so a year is
+  //     passed with four clean cracks in a row;
+  //   - scrappy crack (cracked, but a miss along the way): the in-a-row run is
+  //     broken, back to the year's first step (event 'reset');
+  //   - exhausted safe (three misses): back to the year's first step, and the
+  //     SLIPS_TO_DROP-th exhausted safe in a row steps down to the start of
+  //     the year below (event 'demoted') - one bad safe never costs a year;
+  //   - review lockboxes never move anything.
+  // `slips` counts exhausted safes in a row (any crack clears it). capLevel
+  // (a grown-up knob, a year's top level) clamps the top.
+  // Returns { difficulty: level, slips, event }; event is one of
+  // step | promoted | top | reset | hold | demoted.
+  function adjustDifficulty(level, outcome, slips, capLevel) {
+    var lv = levelOf(level), sl = slips || 0, ev = 'hold';
+    var top = capLevel ? Math.min(MAX_LEVEL, levelOf(capLevel)) : MAX_LEVEL;
+    var start = yearStart(yearOf(lv));
     if (outcome === 'clean-crack') {
-      s += 1;
-      if (s >= neededStreak(Math.round(d))) { d += UP_STEP; s = 0; }
+      sl = 0;
+      if (lv >= top) { ev = 'top'; }
+      else { ev = stepOf(lv) === STEPS_PER_YEAR - 1 ? 'promoted' : 'step'; lv += 1; }
     } else if (outcome === 'crack') {
-      s = 0;
+      sl = 0;
+      if (lv > start) { lv = start; ev = 'reset'; }
     } else if (outcome === 'exhausted') {
-      s = 0; d -= DOWN_STEP;
+      sl += 1;
+      if (sl >= SLIPS_TO_DROP && yearOf(lv) > 1) {
+        lv = yearStart(yearOf(lv) - 1); sl = 0; ev = 'demoted';
+      } else if (lv > start) {
+        lv = start; ev = 'reset';
+      }
     } else if (outcome === 'review-opened' || outcome === 'review-failed') {
       // reviews are retention practice, not placement evidence
     } else {
       throw new Error('adjustDifficulty(): unknown outcome ' + outcome);
     }
-    d = Math.max(1, Math.min(MAX_LEVEL + 0.99, d));
-    if (capLevel) d = Math.min(d, capLevel + 0.99); // parent control: don't climb past the cap
-    return { difficulty: d, streak: s };
+    return { difficulty: Math.min(lv, top), slips: sl, event: ev };
   }
-  function levelOf(difficulty) { return Math.max(1, Math.min(MAX_LEVEL, Math.round(difficulty))); }
+  // Integer level from a stored value. Older saves held a float (the old
+  // +0.7 / -0.8 curve); rounding migrates them onto the ladder.
+  function levelOf(difficulty) {
+    var v = Math.round(+difficulty);
+    return isFinite(v) ? Math.max(1, Math.min(MAX_LEVEL, v)) : 1;
+  }
 
   // ---------------------------------------------------------------------------
   // Rewards. Coins are a quiet tally; the collectible is the real prize. Speed
-  // pays a small coin bonus and NOTHING else (deliberately not a difficulty
+  // pays a small coin bonus and NOTHING else (deliberately not a progression
   // input; see adjustDifficulty).
   function coinsFor(outcome, level, need) {
     // crack pay scales with the pins seated, so a 2-pin band-1 vault does not
@@ -489,16 +532,17 @@
   return {
     MAX_LEVEL: MAX_LEVEL, HELP_THRESHOLD: HELP_THRESHOLD, RUNS_PER_SET: RUNS_PER_SET,
     CRACK_NEED: CRACK_NEED, REVIEW_CRACK_NEED: REVIEW_CRACK_NEED, REVIEW_EVERY: REVIEW_EVERY,
-    LOCK_TIMER_MS: LOCK_TIMER_MS,
-    crackNeedFor: crackNeedFor,
-    UP_STEP: UP_STEP, DOWN_STEP: DOWN_STEP, SHELVES: SHELVES,
+    LOCK_TIMER_MS: LOCK_TIMER_MS, EARLY_TIMER_MS: EARLY_TIMER_MS, lockTimerFor: lockTimerFor,
+    STEPS_PER_YEAR: STEPS_PER_YEAR, SLIPS_TO_DROP: SLIPS_TO_DROP,
+    MIN_POOL: MIN_POOL, crackNeedFor: crackNeedFor, SHELVES: SHELVES,
     makeRng: makeRng, shuffle: shuffle, bandOf: bandOf, yearOf: yearOf, setYearOf: setYearOf,
+    stepOf: stepOf, yearStart: yearStart, cleanToPass: cleanToPass,
     setsForLevel: setsForLevel, pickSet: pickSet, validateContent: validateContent,
     newEncounter: newEncounter, startRun: startRun, drawSentence: drawSentence,
     sentenceById: sentenceById, fillText: fillText, answer: answer, timeout: timeout, isClean: isClean,
     contrastFor: contrastFor, missedWords: missedWords, gradientOrder: gradientOrder,
     yearRange: yearRange,
-    neededStreak: neededStreak, adjustDifficulty: adjustDifficulty, levelOf: levelOf,
+    adjustDifficulty: adjustDifficulty, levelOf: levelOf,
     coinsFor: coinsFor, speedBonus: speedBonus,
     reviewDue: reviewDue, pushReview: pushReview, pickReview: pickReview, settleReview: settleReview,
     nextCollectible: nextCollectible, shelfState: shelfState, cosmeticsUnlocked: cosmeticsUnlocked

@@ -1,0 +1,806 @@
+{
+  "id": "B-texture-01",
+  "bank": "B",
+  "pos": "adjective",
+  "theme": "how things feel",
+  "band": 2,
+  "band_override": 2,
+  "computed": {
+    "zipf_min": 2.76,
+    "zipf_mean": 3.29,
+    "tightness": null,
+    "band_suggested": 4,
+    "scored_at": "2026-11-12T12:10:00+00:00"
+  },
+  "words": [
+    {
+      "w": "sticky",
+      "synset": "gluey.s.01",
+      "gloss_source": "authored",
+      "gloss": "tending to cling to whatever it touches",
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-11-12",
+        "note": "adhesive texture sense (glue, honey), not weather or awkwardness"
+      },
+      "zipf": 3.8,
+      "register": "neutral",
+      "senses_at_pos": 5,
+      "forms": {
+        "base": "sticky"
+      },
+      "discriminator": "holds on to whatever touches it, like glue or honey",
+      "grade": 1
+    },
+    {
+      "w": "slimy",
+      "synset": "slimed.s.01",
+      "gloss_source": "wordnet",
+      "gloss": "covered with or resembling slime",
+      "zipf": 3.08,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "slimy"
+      },
+      "discriminator": "wet and slippery, like a snail",
+      "grade": 2
+    },
+    {
+      "w": "stretchy",
+      "synset": "stretchable.s.01",
+      "gloss_source": "authored",
+      "gloss": "able to be pulled longer and then spring back to its shape",
+      "zipf": 2.76,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "stretchy"
+      },
+      "discriminator": "pulls out longer and springs back, like a rubber band",
+      "grade": 2
+    },
+    {
+      "w": "fluffy",
+      "synset": "downy.s.01",
+      "gloss_source": "authored",
+      "gloss": "soft, light and full of air",
+      "zipf": 3.59,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "fluffy"
+      },
+      "discriminator": "soft and full of air, like a chick or a cloud",
+      "grade": 1
+    },
+    {
+      "w": "crunchy",
+      "synset": null,
+      "gloss_source": "authored",
+      "gloss": "breaking with a sharp noise when bitten or crushed",
+      "zipf": 3.22,
+      "register": "neutral",
+      "senses_at_pos": null,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "crunchy"
+      },
+      "discriminator": "breaks noisily when bitten or stepped on",
+      "grade": 1
+    }
+  ],
+  "sentences": [
+    {
+      "id": "B-texture-01-s01",
+      "answer": "sticky",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "My fingers were so ___ from the honey that they stuck together.",
+      "cue_phrase": "stuck together",
+      "surface": {
+        "sticky": "sticky",
+        "slimy": "slimy",
+        "stretchy": "stretchy",
+        "fluffy": "fluffy",
+        "crunchy": "crunchy"
+      }
+    },
+    {
+      "id": "B-texture-01-s02",
+      "answer": "sticky",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The tape was so ___ that it stuck to my hair.",
+      "cue_phrase": "stuck to my hair",
+      "surface": {
+        "sticky": "sticky",
+        "slimy": "slimy",
+        "stretchy": "stretchy",
+        "fluffy": "fluffy",
+        "crunchy": "crunchy"
+      }
+    },
+    {
+      "id": "B-texture-01-s03",
+      "answer": "sticky",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "After eating the toffee apple, Lily's hands felt ___.",
+      "cue_phrase": "after eating the toffee apple",
+      "surface": {
+        "sticky": "sticky",
+        "slimy": "slimy",
+        "stretchy": "stretchy",
+        "fluffy": "fluffy",
+        "crunchy": "crunchy"
+      }
+    },
+    {
+      "id": "B-texture-01-s04",
+      "answer": "sticky",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Dad wiped up the ___ jam that had spilled on the bench.",
+      "cue_phrase": "jam that had spilled",
+      "surface": {
+        "sticky": "sticky",
+        "slimy": "slimy",
+        "stretchy": "stretchy",
+        "fluffy": "fluffy",
+        "crunchy": "crunchy"
+      }
+    },
+    {
+      "id": "B-texture-01-s05",
+      "answer": "sticky",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The lolly was so ___ that the wrapper would not come off.",
+      "cue_phrase": "the wrapper would not come off",
+      "surface": {
+        "sticky": "sticky",
+        "slimy": "slimy",
+        "stretchy": "stretchy",
+        "fluffy": "fluffy",
+        "crunchy": "crunchy"
+      }
+    },
+    {
+      "id": "B-texture-01-s06",
+      "answer": "sticky",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Where the lemonade spilled, the floor was ___ under my feet.",
+      "cue_phrase": "where the lemonade spilled",
+      "surface": {
+        "sticky": "sticky",
+        "slimy": "slimy",
+        "stretchy": "stretchy",
+        "fluffy": "fluffy",
+        "crunchy": "crunchy"
+      }
+    },
+    {
+      "id": "B-texture-01-s07",
+      "answer": "sticky",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The glue stick was so ___ that the paper stuck to my finger.",
+      "cue_phrase": "the paper stuck to my finger",
+      "surface": {
+        "sticky": "sticky",
+        "slimy": "slimy",
+        "stretchy": "stretchy",
+        "fluffy": "fluffy",
+        "crunchy": "crunchy"
+      }
+    },
+    {
+      "id": "B-texture-01-s08",
+      "answer": "sticky",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "Her lollipop was ___, so dog hairs stuck to it.",
+      "cue_phrase": "dog hairs stuck to it",
+      "surface": {
+        "sticky": "sticky",
+        "slimy": "slimy",
+        "stretchy": "stretchy",
+        "fluffy": "fluffy",
+        "crunchy": "crunchy"
+      }
+    },
+    {
+      "id": "B-texture-01-s09",
+      "answer": "slimy",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The fish was so ___ that it slid right out of my hands.",
+      "cue_phrase": "slid right out of my hands",
+      "surface": {
+        "sticky": "sticky",
+        "slimy": "slimy",
+        "stretchy": "stretchy",
+        "fluffy": "fluffy",
+        "crunchy": "crunchy"
+      }
+    },
+    {
+      "id": "B-texture-01-s10",
+      "answer": "slimy",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The green rock in the creek was wet and ___, and I slipped.",
+      "cue_phrase": "wet; and I slipped",
+      "surface": {
+        "sticky": "sticky",
+        "slimy": "slimy",
+        "stretchy": "stretchy",
+        "fluffy": "fluffy",
+        "crunchy": "crunchy"
+      }
+    },
+    {
+      "id": "B-texture-01-s11",
+      "answer": "slimy",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The wet seaweed felt cold and ___ around my ankles.",
+      "cue_phrase": "the wet seaweed",
+      "surface": {
+        "sticky": "sticky",
+        "slimy": "slimy",
+        "stretchy": "stretchy",
+        "fluffy": "fluffy",
+        "crunchy": "crunchy"
+      }
+    },
+    {
+      "id": "B-texture-01-s12",
+      "answer": "slimy",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Old lettuce at the bottom of the fridge goes brown and ___.",
+      "cue_phrase": "old lettuce; goes brown",
+      "surface": {
+        "sticky": "sticky",
+        "slimy": "slimy",
+        "stretchy": "stretchy",
+        "fluffy": "fluffy",
+        "crunchy": "crunchy"
+      }
+    },
+    {
+      "id": "B-texture-01-s13",
+      "answer": "slimy",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The worm felt ___ as it slid between my fingers.",
+      "cue_phrase": "slid between my fingers",
+      "surface": {
+        "sticky": "sticky",
+        "slimy": "slimy",
+        "stretchy": "stretchy",
+        "fluffy": "fluffy",
+        "crunchy": "crunchy"
+      }
+    },
+    {
+      "id": "B-texture-01-s14",
+      "answer": "slimy",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The tadpole slipped through my fingers because it was so ___.",
+      "cue_phrase": "slipped through my fingers",
+      "surface": {
+        "sticky": "sticky",
+        "slimy": "slimy",
+        "stretchy": "stretchy",
+        "fluffy": "fluffy",
+        "crunchy": "crunchy"
+      }
+    },
+    {
+      "id": "B-texture-01-s15",
+      "answer": "slimy",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The pond bottom was wet and ___, and my feet slid.",
+      "cue_phrase": "my feet slid",
+      "surface": {
+        "sticky": "sticky",
+        "slimy": "slimy",
+        "stretchy": "stretchy",
+        "fluffy": "fluffy",
+        "crunchy": "crunchy"
+      }
+    },
+    {
+      "id": "B-texture-01-s16",
+      "answer": "slimy",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "The slug felt cold, wet and ___ on my finger.",
+      "cue_phrase": "the slug felt cold, wet",
+      "surface": {
+        "sticky": "sticky",
+        "slimy": "slimy",
+        "stretchy": "stretchy",
+        "fluffy": "fluffy",
+        "crunchy": "crunchy"
+      }
+    },
+    {
+      "id": "B-texture-01-s17",
+      "answer": "stretchy",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The ___ rubber band grew as long as my arm without breaking.",
+      "cue_phrase": "grew as long as my arm",
+      "surface": {
+        "sticky": "sticky",
+        "slimy": "slimy",
+        "stretchy": "stretchy",
+        "fluffy": "fluffy",
+        "crunchy": "crunchy"
+      }
+    },
+    {
+      "id": "B-texture-01-s18",
+      "answer": "stretchy",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "When I let go, the ___ hair tie went small again.",
+      "cue_phrase": "when I let go; went small again",
+      "surface": {
+        "sticky": "sticky",
+        "slimy": "slimy",
+        "stretchy": "stretchy",
+        "fluffy": "fluffy",
+        "crunchy": "crunchy"
+      }
+    },
+    {
+      "id": "B-texture-01-s19",
+      "answer": "stretchy",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ waistband on my shorts lets them fit over my tummy.",
+      "cue_phrase": "lets them fit over my tummy",
+      "surface": {
+        "sticky": "sticky",
+        "slimy": "slimy",
+        "stretchy": "stretchy",
+        "fluffy": "fluffy",
+        "crunchy": "crunchy"
+      }
+    },
+    {
+      "id": "B-texture-01-s20",
+      "answer": "stretchy",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ slingshot band shot the pom-pom across the room.",
+      "cue_phrase": "slingshot band shot",
+      "surface": {
+        "sticky": "sticky",
+        "slimy": "slimy",
+        "stretchy": "stretchy",
+        "fluffy": "fluffy",
+        "crunchy": "crunchy"
+      }
+    },
+    {
+      "id": "B-texture-01-s21",
+      "answer": "stretchy",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "My ___ swimming cap fits Dad's big head and my small one.",
+      "cue_phrase": "fits Dad's big head and my small one",
+      "surface": {
+        "sticky": "sticky",
+        "slimy": "slimy",
+        "stretchy": "stretchy",
+        "fluffy": "fluffy",
+        "crunchy": "crunchy"
+      }
+    },
+    {
+      "id": "B-texture-01-s22",
+      "answer": "stretchy",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Ted tugged his ___ toy snake until it reached the door.",
+      "cue_phrase": "tugged; until it reached the door",
+      "surface": {
+        "sticky": "sticky",
+        "slimy": "slimy",
+        "stretchy": "stretchy",
+        "fluffy": "fluffy",
+        "crunchy": "crunchy"
+      }
+    },
+    {
+      "id": "B-texture-01-s23",
+      "answer": "stretchy",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The ___ bracelet slid over my hand but still hugged my wrist.",
+      "cue_phrase": "slid over my hand but still hugged my wrist",
+      "surface": {
+        "sticky": "sticky",
+        "slimy": "slimy",
+        "stretchy": "stretchy",
+        "fluffy": "fluffy",
+        "crunchy": "crunchy"
+      }
+    },
+    {
+      "id": "B-texture-01-s24",
+      "answer": "stretchy",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "The ___ tights fit both me and my big sister.",
+      "cue_phrase": "fit both me and my big sister",
+      "surface": {
+        "sticky": "sticky",
+        "slimy": "slimy",
+        "stretchy": "stretchy",
+        "fluffy": "fluffy",
+        "crunchy": "crunchy"
+      }
+    },
+    {
+      "id": "B-texture-01-s25",
+      "answer": "fluffy",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The baby chick was yellow and ___, like a tiny pom-pom.",
+      "cue_phrase": "like a tiny pom-pom",
+      "surface": {
+        "sticky": "sticky",
+        "slimy": "slimy",
+        "stretchy": "stretchy",
+        "fluffy": "fluffy",
+        "crunchy": "crunchy"
+      }
+    },
+    {
+      "id": "B-texture-01-s26",
+      "answer": "fluffy",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The clouds looked white and ___, like big piles of cotton wool.",
+      "cue_phrase": "like big piles of cotton wool",
+      "surface": {
+        "sticky": "sticky",
+        "slimy": "slimy",
+        "stretchy": "stretchy",
+        "fluffy": "fluffy",
+        "crunchy": "crunchy"
+      }
+    },
+    {
+      "id": "B-texture-01-s27",
+      "answer": "fluffy",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "After a bath, our puppy's fur dried big and ___.",
+      "cue_phrase": "fur dried big",
+      "surface": {
+        "sticky": "sticky",
+        "slimy": "slimy",
+        "stretchy": "stretchy",
+        "fluffy": "fluffy",
+        "crunchy": "crunchy"
+      }
+    },
+    {
+      "id": "B-texture-01-s28",
+      "answer": "fluffy",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Gran makes thick, ___ pancakes that puff up in the pan.",
+      "cue_phrase": "puff up in the pan",
+      "surface": {
+        "sticky": "sticky",
+        "slimy": "slimy",
+        "stretchy": "stretchy",
+        "fluffy": "fluffy",
+        "crunchy": "crunchy"
+      }
+    },
+    {
+      "id": "B-texture-01-s29",
+      "answer": "fluffy",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The sheep looked twice as big in its thick, ___ wool.",
+      "cue_phrase": "looked twice as big",
+      "surface": {
+        "sticky": "sticky",
+        "slimy": "slimy",
+        "stretchy": "stretchy",
+        "fluffy": "fluffy",
+        "crunchy": "crunchy"
+      }
+    },
+    {
+      "id": "B-texture-01-s30",
+      "answer": "fluffy",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The new towel was so ___ that my face sank into it.",
+      "cue_phrase": "my face sank into it",
+      "surface": {
+        "sticky": "sticky",
+        "slimy": "slimy",
+        "stretchy": "stretchy",
+        "fluffy": "fluffy",
+        "crunchy": "crunchy"
+      }
+    },
+    {
+      "id": "B-texture-01-s31",
+      "answer": "fluffy",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The dandelion's ___ white head blew away in the wind.",
+      "cue_phrase": "white head blew away",
+      "surface": {
+        "sticky": "sticky",
+        "slimy": "slimy",
+        "stretchy": "stretchy",
+        "fluffy": "fluffy",
+        "crunchy": "crunchy"
+      }
+    },
+    {
+      "id": "B-texture-01-s32",
+      "answer": "fluffy",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The ___ ducklings huddled together under their mum's wing.",
+      "cue_phrase": "ducklings huddled together",
+      "surface": {
+        "sticky": "sticky",
+        "slimy": "slimy",
+        "stretchy": "stretchy",
+        "fluffy": "fluffy",
+        "crunchy": "crunchy"
+      }
+    },
+    {
+      "id": "B-texture-01-s33",
+      "answer": "crunchy",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The dry autumn leaves were ___ under my boots.",
+      "cue_phrase": "dry autumn leaves; under my boots",
+      "surface": {
+        "sticky": "sticky",
+        "slimy": "slimy",
+        "stretchy": "stretchy",
+        "fluffy": "fluffy",
+        "crunchy": "crunchy"
+      }
+    },
+    {
+      "id": "B-texture-01-s34",
+      "answer": "crunchy",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "A fresh carrot is ___, but an old one goes bendy.",
+      "cue_phrase": "fresh; an old one goes bendy",
+      "surface": {
+        "sticky": "sticky",
+        "slimy": "slimy",
+        "stretchy": "stretchy",
+        "fluffy": "fluffy",
+        "crunchy": "crunchy"
+      }
+    },
+    {
+      "id": "B-texture-01-s35",
+      "answer": "crunchy",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Toast is ___ at the edges where it got a bit burnt.",
+      "cue_phrase": "at the edges; a bit burnt",
+      "surface": {
+        "sticky": "sticky",
+        "slimy": "slimy",
+        "stretchy": "stretchy",
+        "fluffy": "fluffy",
+        "crunchy": "crunchy"
+      }
+    },
+    {
+      "id": "B-texture-01-s36",
+      "answer": "crunchy",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The ___ taco shell snapped into bits when I bit it.",
+      "cue_phrase": "snapped into bits when I bit it",
+      "surface": {
+        "sticky": "sticky",
+        "slimy": "slimy",
+        "stretchy": "stretchy",
+        "fluffy": "fluffy",
+        "crunchy": "crunchy"
+      }
+    },
+    {
+      "id": "B-texture-01-s37",
+      "answer": "crunchy",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "These chips are so ___ the whole class can hear me eat.",
+      "cue_phrase": "the whole class can hear me eat",
+      "surface": {
+        "sticky": "sticky",
+        "slimy": "slimy",
+        "stretchy": "stretchy",
+        "fluffy": "fluffy",
+        "crunchy": "crunchy"
+      }
+    },
+    {
+      "id": "B-texture-01-s38",
+      "answer": "crunchy",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The ___ cereal went soft once the milk soaked in.",
+      "cue_phrase": "went soft once the milk soaked in",
+      "surface": {
+        "sticky": "sticky",
+        "slimy": "slimy",
+        "stretchy": "stretchy",
+        "fluffy": "fluffy",
+        "crunchy": "crunchy"
+      }
+    },
+    {
+      "id": "B-texture-01-s39",
+      "answer": "crunchy",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The ice cubes were ___ when Dad chewed them.",
+      "cue_phrase": "when Dad chewed them",
+      "surface": {
+        "sticky": "sticky",
+        "slimy": "slimy",
+        "stretchy": "stretchy",
+        "fluffy": "fluffy",
+        "crunchy": "crunchy"
+      }
+    },
+    {
+      "id": "B-texture-01-s40",
+      "answer": "crunchy",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "The ___ nut biscuits went snap and crack as we ate.",
+      "cue_phrase": "went snap and crack",
+      "surface": {
+        "sticky": "sticky",
+        "slimy": "slimy",
+        "stretchy": "stretchy",
+        "fluffy": "fluffy",
+        "crunchy": "crunchy"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "sticky",
+      "picked": "slimy",
+      "line": "Sticky things hold on to you, like honey or tape. Slimy things are wet and slip away."
+    },
+    {
+      "answer": "sticky",
+      "picked": "stretchy",
+      "line": "Sticky things hold on to what touches them. Stretchy things pull long and go back."
+    },
+    {
+      "answer": "sticky",
+      "picked": "fluffy",
+      "line": "Sticky things hold on, like glue. Fluffy things are soft and puffy, like a chick."
+    },
+    {
+      "answer": "sticky",
+      "picked": "crunchy",
+      "line": "Sticky things hold on to your fingers. Crunchy things crack loudly when you bite."
+    },
+    {
+      "answer": "slimy",
+      "picked": "sticky",
+      "line": "Slimy things are wet and slippery, like a snail. Sticky things hold on, like tape."
+    },
+    {
+      "answer": "slimy",
+      "picked": "stretchy",
+      "line": "Slimy things are wet and slippery. Stretchy things pull long, then go back."
+    },
+    {
+      "answer": "slimy",
+      "picked": "fluffy",
+      "line": "Slimy things are wet and slippery, like a fish. Fluffy things are soft and puffy, like a chick."
+    },
+    {
+      "answer": "slimy",
+      "picked": "crunchy",
+      "line": "Slimy things are wet and slide about. Crunchy things are dry and crack when you bite."
+    },
+    {
+      "answer": "stretchy",
+      "picked": "sticky",
+      "line": "Stretchy things pull long and go back, like a rubber band. Sticky things hold on, like tape."
+    },
+    {
+      "answer": "stretchy",
+      "picked": "slimy",
+      "line": "Stretchy things pull long and go back. Slimy things are wet and slippery."
+    },
+    {
+      "answer": "stretchy",
+      "picked": "fluffy",
+      "line": "Stretchy things pull long and go back. Fluffy things are soft and puffy."
+    },
+    {
+      "answer": "stretchy",
+      "picked": "crunchy",
+      "line": "Stretchy things pull long without breaking. Crunchy things crack and break when you bite."
+    },
+    {
+      "answer": "fluffy",
+      "picked": "sticky",
+      "line": "Fluffy things are soft and puffy, like a cloud. Sticky things hold on, like honey."
+    },
+    {
+      "answer": "fluffy",
+      "picked": "slimy",
+      "line": "Fluffy things are dry, soft and puffy. Slimy things are wet and slippery."
+    },
+    {
+      "answer": "fluffy",
+      "picked": "stretchy",
+      "line": "Fluffy things are soft and puffy, like a chick. Stretchy things pull long and go back."
+    },
+    {
+      "answer": "fluffy",
+      "picked": "crunchy",
+      "line": "Fluffy things are soft and puffy. Crunchy things crack loudly when you bite them."
+    },
+    {
+      "answer": "crunchy",
+      "picked": "sticky",
+      "line": "Crunchy things crack loudly when you bite. Sticky things hold on to your fingers."
+    },
+    {
+      "answer": "crunchy",
+      "picked": "slimy",
+      "line": "Crunchy things are dry and crack when you bite. Slimy things are wet and slippery."
+    },
+    {
+      "answer": "crunchy",
+      "picked": "stretchy",
+      "line": "Crunchy things crack and break. Stretchy things pull long and go back without breaking."
+    },
+    {
+      "answer": "crunchy",
+      "picked": "fluffy",
+      "line": "Crunchy things crack loudly when you bite. Fluffy things are soft and puffy."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-11-12T12:09:59+00:00",
+    "model": "claude-opus-5-5",
+    "scrubbed_at": "2026-11-12",
+    "scrub_note": "Scrubbed by claude 2026-11-12: all 40 sentences and 20 contrasts hand-written and read in full after judging. smooth swapped for stretchy so the set computes to Y2 (four members graded Y1). sticky, fluffy and stretchy carry authored glosses on pinned synsets (WordNet cards are self-referential, opaque or fail G5); crunchy has no WordNet entry and is authored with no synset. Round 1 judge: 37 pass; s07 (wet glue, gpt-5.5 read slimy) rewritten to a glue stick; s16 (wet soap) and s36 (gravel underfoot) rejected on sense by gpt-5.5 and rewritten to a slug and a bitten taco shell. Final: 40/40 pass."
+  }
+}

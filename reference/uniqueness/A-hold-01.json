@@ -282,7 +282,7 @@
       "judged_at": "2026-07-06T16:35:06+00:00"
     },
     "A-hold-01-s11": {
-      "text_sha256": "4e2d3d3816a90bd74e27e42ebdc97d549dbeb19e42e6b8e20bf835940a4f2b86",
+      "text_sha256": "fc771ce2c0b14e979ee42bb8d45b1baeaa8fce9fc11455158169839875a2a776",
       "verdict": "review",
       "judges": [
         {
@@ -303,13 +303,12 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "clutch",
-            "cradle"
+            "clutch"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-06T16:37:10+00:00"
+      "judged_at": "2026-11-12T12:14:05+00:00"
     },
     "A-hold-01-s12": {
       "text_sha256": "5c7f7d2c8d822333e474f5d9d72903e0f566e8871b3cbdd5a012b14197cef9ea",

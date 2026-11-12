@@ -268,14 +268,14 @@
       "answer": "clutch",
       "cue": "contextual",
       "reserve": false,
-      "text": "The goalkeeper ___ the ball against his chest, away from kicking boots.",
-      "cue_phrase": "away from kicking boots",
+      "text": "As boots flew in, the goalkeeper lay curled up, ___ the ball with white knuckles.",
+      "cue_phrase": "lay curled up; with white knuckles",
       "surface": {
-        "snatch": "snatched",
-        "clutch": "clutched",
-        "cradle": "cradled",
-        "pinch": "pinched",
-        "dangle": "dangled"
+        "snatch": "snatching",
+        "clutch": "clutching",
+        "cradle": "cradling",
+        "pinch": "pinching",
+        "dangle": "dangling"
       },
       "waivers": [
         {
@@ -876,6 +876,6 @@
     "generated_at": "2026-07-06T14:21:46+00:00",
     "model": "gpt-5.5",
     "scrubbed_at": "2026-07-07",
-    "scrub_note": "Scrubbed by claude 2026-07-07 (dedicated pre-scrub agent failed twice on output limits): mechanical sweeps (cue hygiene, meta-frames, seasonal, templates, duplicates), all 20 contrast lines read per set, every sentence read for frame sanity, all judge hards fixed and re-judged to zero. Fixes: wave re-pinned to brandish.v.01 + 3 contrasts aligned, hop gloss authored to the one-foot sense the set teaches, pat/nod/wink frames restaged, one dangling pronoun."
+    "scrub_note": "Scrubbed by claude 2026-07-07 (dedicated pre-scrub agent failed twice on output limits): mechanical sweeps (cue hygiene, meta-frames, seasonal, templates, duplicates), all 20 contrast lines read per set, every sentence read for frame sanity, all judge hards fixed and re-judged to zero. Fixes: wave re-pinned to brandish.v.01 + 3 contrasts aligned, hop gloss authored to the one-foot sense the set teaches, pat/nod/wink frames restaged, one dangling pronoun. Fairness pass by claude 2026-11-12: clutch s11 now has white knuckles while curled up under flying boots, excluding the gentle cradle."
   }
 }

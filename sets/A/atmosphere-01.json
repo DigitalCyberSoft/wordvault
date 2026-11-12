@@ -118,8 +118,8 @@
       "answer": "melancholy",
       "cue": "explicit",
       "reserve": false,
-      "text": "After the goodbye note, the room felt ___, though the sun shone.",
-      "cue_phrase": "After the goodbye note",
+      "text": "Though the classroom was full, a ___ mood hung over it as Ms Patel packed her desk.",
+      "cue_phrase": "classroom was full; Ms Patel packed her desk",
       "surface": {
         "melancholy": "melancholy",
         "tranquil": "tranquil",
@@ -187,8 +187,8 @@
       "answer": "melancholy",
       "cue": "inferential",
       "reserve": false,
-      "text": "The torn kite hung in the tree as children walked home, looking ___.",
-      "cue_phrase": "torn kite hung",
+      "text": "The busker's ___ violin tune made several shoppers pause and think of people they had lost.",
+      "cue_phrase": "think of people they had lost",
       "surface": {
         "melancholy": "melancholy",
         "tranquil": "tranquil",
@@ -933,6 +933,6 @@
     "generated_at": "2026-07-06T14:18:06+00:00",
     "model": "gpt-5.5",
     "scrubbed_at": "2026-07-07",
-    "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+    "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite). Fairness pass by claude 2026-11-12: melancholy s02/s05 are now set among people (a full classroom, shoppers) so desolate (empty of life) cannot fit."
   }
 }

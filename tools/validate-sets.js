@@ -27,6 +27,8 @@ function R(setId, gate, msg) { review.push({ set: setId, gate: gate, msg: msg })
 
 function sha256(buf) { return crypto.createHash('sha256').update(buf).digest('hex'); }
 function words(text) { return (text.toLowerCase().match(/[a-z']+/g) || []); }
+// M11 sentence length by the school year a set serves (index 0 = Year 3+)
+var LENGTH_BY_YEAR = { 0: { soft: 15, max: 18 }, 1: { soft: 10, max: 12 }, 2: { soft: 12, max: 14 } };
 var STOP = {};
 ('a an the and or but of to in on at for with as by from is are was were be been being it its this that these those ' +
  'through over under into onto along toward towards past around about before after again out up down off very ' +
@@ -97,6 +99,7 @@ files.forEach(function (entry) {
     }
   });
 
+  var setYear = Core.setYearOf(set);
   var texts = {};
   set.sentences.forEach(function (s) {
     var sid = s.id || '(no id)';
@@ -165,9 +168,13 @@ files.forEach(function (entry) {
     }
 
     // M11 length bounds
+    // Bounds follow the school year the set serves (Core.setYearOf): a Year 1
+    // reader gets 12 words at most, Year 2 gets 14, Year 3+ the full 18; the
+    // review lane flags anything past the comfortable length for the year.
     var n = words(s.text.replace('___', 'x')).length;
-    if (n < 6 || n > 18) H(id, 'M11', sid + ': ' + n + ' words (bounds 6-18)');
-    else if (n > 15 && (set.band_override || set.band) <= 2) R(id, 'M11', sid + ': ' + n + ' words is long for band ' + set.band);
+    var lim = LENGTH_BY_YEAR[setYear] || LENGTH_BY_YEAR[0];
+    if (n < 6 || n > lim.max) H(id, 'M11', sid + ': ' + n + ' words (bounds 6-' + lim.max + ' for Year ' + setYear + ')');
+    else if (n > lim.soft) R(id, 'M11', sid + ': ' + n + ' words is long for Year ' + setYear);
   });
 
   // M8 cue mix per word: >=2 of each cue type active, >=2 reserve
@@ -223,7 +230,14 @@ files.forEach(function (entry) {
       if (!v) H(id, 'M14', s.id + ': never judged');
       else if (v.text_sha256 !== h) H(id, 'M14', s.id + ': edited since judging (stale verdict)');
       else if (v.verdict === 'hard') H(id, 'M14', s.id + ': judge rejected the answer or its sense');
-      else if (v.verdict === 'review') R(id, 'M14', s.id + ': judge flagged a possible second fit — resolve in REVIEW.md');
+      else if (v.verdict === 'review') {
+        // fairness: when a MAJORITY of the ensemble accepts a second word, a
+        // child tapping it is marked wrong for a defensible answer - that is a
+        // shipping bug, not a review item. A lone dissent stays reviewable.
+        var dissent = (v.judges || []).filter(function (j) { return (j.fits || []).length > 1; }).length;
+        if (dissent >= 2) H(id, 'M14', s.id + ': ' + dissent + ' of ' + v.judges.length + ' judges accept a second word (rewrite the cue)');
+        else R(id, 'M14', s.id + ': judge flagged a possible second fit — resolve in REVIEW.md');
+      }
       else if (v.verdict !== 'pass') H(id, 'M14', s.id + ': unknown verdict ' + v.verdict);
     });
   }

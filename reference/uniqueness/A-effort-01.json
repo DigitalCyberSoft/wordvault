@@ -352,13 +352,12 @@
       "judged_at": "2026-07-06T16:41:29+00:00"
     },
     "A-effort-01-s13": {
-      "text_sha256": "f2d52f6062c7b7e4e57d9ab55ca96d94934f5dba5e8f36096e680834338a3d2a",
-      "verdict": "review",
+      "text_sha256": "89def25693443286ae97b7337cc1cff972a6c5901e07b7153613578146f82096",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "persevere",
             "toil"
           ],
           "sense_match": true
@@ -373,13 +372,12 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "persevere",
             "toil"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-06T16:41:29+00:00"
+      "judged_at": "2026-11-12T12:13:34+00:00"
     },
     "A-effort-01-s14": {
       "text_sha256": "d0c7e4ef546fdd098e8480d6d618ed897d95348d8832059e5756dfdceeb61004",
@@ -734,14 +732,13 @@
       "judged_at": "2026-07-06T16:43:28+00:00"
     },
     "A-effort-01-s26": {
-      "text_sha256": "805f1bcd29f3a425aae445e62e628f8c8462627fef36c92abf502ddbaaaccac4",
-      "verdict": "review",
+      "text_sha256": "f2921e7ef65825d6bdf9e3b2c99238049ea3fcf160c45e156ce0ce27ba9b92f0",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "persevere",
-            "toil"
+            "persevere"
           ],
           "sense_match": true
         },
@@ -755,13 +752,12 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "persevere",
-            "toil"
+            "persevere"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-06T16:43:28+00:00"
+      "judged_at": "2026-11-12T12:13:34+00:00"
     },
     "A-effort-01-s27": {
       "text_sha256": "674582d78b8a1893f0c6e6d09dc1812d1399f5c2d1f4c6474e75d138656fa490",
@@ -793,14 +789,13 @@
       "judged_at": "2026-07-06T16:43:28+00:00"
     },
     "A-effort-01-s28": {
-      "text_sha256": "356750b1e56eaac2b4d3d4d1a88c9d5fc6477b6b2f13d965000c3ad74c5c60cc",
-      "verdict": "review",
+      "text_sha256": "4bd57247c68ef4ca6b60c9b5e281cd7a5c8bcc6afc80e225279e4526bebe0630",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "persevere",
-            "toil"
+            "persevere"
           ],
           "sense_match": true
         },
@@ -814,13 +809,12 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "persevere",
-            "toil"
+            "persevere"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-06T16:43:28+00:00"
+      "judged_at": "2026-11-12T12:13:34+00:00"
     },
     "A-effort-01-s29": {
       "text_sha256": "aef71724df954a8f8edfb6af626b6e22c86b1b97fd4080f91c87730a7fa23fd6",

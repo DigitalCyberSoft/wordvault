@@ -95,8 +95,8 @@
       "answer": "filthy",
       "cue": "explicit",
       "reserve": false,
-      "text": "The bin room was ___, utterly foul from floor to ceiling.",
-      "cue_phrase": "utterly foul from floor",
+      "text": "The bin room was ___, with smelly rubbish from floor to ceiling.",
+      "cue_phrase": "smelly rubbish from floor to ceiling",
       "surface": {
         "filthy": "filthy",
         "grubby": "grubby",
@@ -110,8 +110,8 @@
       "answer": "filthy",
       "cue": "explicit",
       "reserve": false,
-      "text": "The abandoned kennel was ___, with rotting scraps in every corner.",
-      "cue_phrase": "rotting scraps in every corner",
+      "text": "The old kennel was ___, with rotten food in every corner.",
+      "cue_phrase": "rotten food in every corner",
       "surface": {
         "filthy": "filthy",
         "grubby": "grubby",
@@ -270,23 +270,8 @@
       "answer": "grubby",
       "cue": "explicit",
       "reserve": false,
-      "text": "The cuffs were ___, showing grey smudges from breaktime games.",
-      "cue_phrase": "grey smudges from",
-      "surface": {
-        "filthy": "filthy",
-        "grubby": "grubby",
-        "dusty": "dusty",
-        "muddy": "muddy",
-        "greasy": "greasy"
-      }
-    },
-    {
-      "id": "A-dirty-01-s11",
-      "answer": "grubby",
-      "cue": "contextual",
-      "reserve": false,
-      "text": "Wash your hands before lunch; those ___ fingers have left faint marks on the cup.",
-      "cue_phrase": "faint marks on the cup",
+      "text": "Tom's shirt cuffs were ___ with grey smudges from recess.",
+      "cue_phrase": "grey smudges from recess",
       "surface": {
         "filthy": "filthy",
         "grubby": "grubby",
@@ -297,9 +282,32 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "ADJACENCY-2OF3 (gpt-5.5 adds dusty, greasy; claude-opus-4-8 adds greasy): greasy read is charitable; unwashed-hand grime with a 'faint marks' degree marker is grubby's home ground",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (filthy); read by claude for Year 2 and the scene facts rule it out",
           "by": "claude",
-          "at": "2026-07-05"
+          "at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "id": "A-dirty-01-s11",
+      "answer": "grubby",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The toddler's ___ fingers left grey smudges all over the white door.",
+      "cue_phrase": "fingers left grey smudges",
+      "surface": {
+        "filthy": "filthy",
+        "grubby": "grubby",
+        "dusty": "dusty",
+        "muddy": "muddy",
+        "greasy": "greasy"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (dusty, filthy); read by claude for Year 2 and the scene facts rule it out",
+          "by": "claude",
+          "at": "2026-11-12"
         }
       ]
     },
@@ -308,8 +316,8 @@
       "answer": "grubby",
       "cue": "contextual",
       "reserve": false,
-      "text": "The corner of Tom's workbook turned ___ where his thumb rested every day.",
-      "cue_phrase": "where his thumb rested",
+      "text": "Ana's book had a ___ corner where her thumb always rested.",
+      "cue_phrase": "where her thumb always rested",
       "surface": {
         "filthy": "filthy",
         "grubby": "grubby",
@@ -320,9 +328,9 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: gpt-5.5 also reads greasy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (greasy); read by claude for Year 2 and the scene facts rule it out",
           "by": "claude",
-          "at": "2026-07-05"
+          "at": "2026-11-12"
         }
       ]
     },
@@ -331,8 +339,23 @@
       "answer": "grubby",
       "cue": "inferential",
       "reserve": false,
-      "text": "After one trip under the climbing frame, Dan's knees came out a little ___.",
-      "cue_phrase": "after one trip under the climbing frame",
+      "text": "Dan's jumper looked a bit ___ after he wore it all week.",
+      "cue_phrase": "a bit; wore it all week",
+      "surface": {
+        "filthy": "filthy",
+        "grubby": "grubby",
+        "dusty": "dusty",
+        "muddy": "muddy",
+        "greasy": "greasy"
+      }
+    },
+    {
+      "id": "A-dirty-01-s14",
+      "answer": "grubby",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Lots of little fingers had made the light switch ___.",
+      "cue_phrase": "Lots of little fingers",
       "surface": {
         "filthy": "filthy",
         "grubby": "grubby",
@@ -343,56 +366,57 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "ADJACENCY-2OF3 (gpt-5.5 adds dusty, muddy; claude-opus-4-8 adds dusty): dusty read is charitable; no dust staged, play-grime after crawling is grubby",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (filthy, greasy); read by claude for Year 2 and the scene facts rule it out",
           "by": "claude",
-          "at": "2026-07-05"
+          "at": "2026-11-12"
         }
       ]
-    },
-    {
-      "id": "A-dirty-01-s14",
-      "answer": "grubby",
-      "cue": "inferential",
-      "reserve": false,
-      "text": "A pale ring of finger smudges made the light switch ___ after garden club.",
-      "cue_phrase": "pale ring of finger smudges",
-      "surface": {
-        "filthy": "filthy",
-        "grubby": "grubby",
-        "dusty": "dusty",
-        "muddy": "muddy",
-        "greasy": "greasy"
-      }
     },
     {
       "id": "A-dirty-01-s15",
       "answer": "grubby",
       "cue": "contextual",
       "reserve": true,
-      "text": "The toddler's ___ chin wore one biscuit crumb and a little grey mark.",
-      "cue_phrase": "one biscuit crumb",
+      "text": "Sam's ___ little face had jam and biscuit crumbs on it.",
+      "cue_phrase": "jam and biscuit crumbs",
       "surface": {
         "filthy": "filthy",
         "grubby": "grubby",
         "dusty": "dusty",
         "muddy": "muddy",
         "greasy": "greasy"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (filthy); read by claude for Year 2 and the scene facts rule it out",
+          "by": "claude",
+          "at": "2026-11-12"
+        }
+      ]
     },
     {
       "id": "A-dirty-01-s16",
       "answer": "grubby",
       "cue": "inferential",
       "reserve": true,
-      "text": "Grandad rubbed the ___ coins until the dull film from his pocket came off.",
-      "cue_phrase": "dull film from his pocket",
+      "text": "Grandad polished the old, ___ coins from the bottom of his pocket.",
+      "cue_phrase": "bottom of his pocket",
       "surface": {
         "filthy": "filthy",
         "grubby": "grubby",
         "dusty": "dusty",
         "muddy": "muddy",
         "greasy": "greasy"
-      }
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (dusty, filthy); read by claude for Year 2 and the scene facts rule it out",
+          "by": "claude",
+          "at": "2026-11-12"
+        }
+      ]
     },
     {
       "id": "A-dirty-01-s17",
@@ -521,23 +545,15 @@
       "answer": "dusty",
       "cue": "contextual",
       "reserve": true,
-      "text": "The dragon sneezed after unrolling the ___ map from the crypt.",
-      "cue_phrase": "sneezed after unrolling",
+      "text": "The dragon sneezed as it unrolled the ___ old map.",
+      "cue_phrase": "sneezed as it unrolled",
       "surface": {
         "filthy": "filthy",
         "grubby": "grubby",
         "dusty": "dusty",
         "muddy": "muddy",
         "greasy": "greasy"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: gpt-5.5 also reads filthy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
-          "by": "claude",
-          "at": "2026-07-05"
-        }
-      ]
+      }
     },
     {
       "id": "A-dirty-01-s24",
@@ -567,31 +583,23 @@
       "answer": "muddy",
       "cue": "explicit",
       "reserve": false,
-      "text": "After the storm, the path was ___, with brown squelch underfoot.",
-      "cue_phrase": "brown squelch underfoot",
+      "text": "After the storm, the path was ___ and squelched under our boots.",
+      "cue_phrase": "squelched under our boots",
       "surface": {
         "filthy": "filthy",
         "grubby": "grubby",
         "dusty": "dusty",
         "muddy": "muddy",
         "greasy": "greasy"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: gpt-5.5 also reads filthy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
-          "by": "claude",
-          "at": "2026-07-05"
-        }
-      ]
+      }
     },
     {
       "id": "A-dirty-01-s26",
       "answer": "muddy",
       "cue": "explicit",
       "reserve": false,
-      "text": "The dog's paws were ___, caked with soft brown earth.",
-      "cue_phrase": "soft brown earth",
+      "text": "The dog was clean except for his ___ paws from the puddles.",
+      "cue_phrase": "clean except for his paws; puddles",
       "surface": {
         "filthy": "filthy",
         "grubby": "grubby",
@@ -602,9 +610,9 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: gpt-5.5 also reads filthy, grubby charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (filthy, grubby); read by claude for Year 2 and the scene facts rule it out",
           "by": "claude",
-          "at": "2026-07-05"
+          "at": "2026-11-12"
         }
       ]
     },
@@ -704,8 +712,8 @@
       "answer": "muddy",
       "cue": "inferential",
       "reserve": true,
-      "text": "The knight's cloak became ___ when he fell in the marsh.",
-      "cue_phrase": "fell in the marsh",
+      "text": "Only the bottom of the knight's cloak was ___ from the swamp.",
+      "cue_phrase": "Only the bottom; swamp",
       "surface": {
         "filthy": "filthy",
         "grubby": "grubby",
@@ -716,9 +724,9 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: gpt-5.5 also reads filthy charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (filthy, grubby); read by claude for Year 2 and the scene facts rule it out",
           "by": "claude",
-          "at": "2026-07-05"
+          "at": "2026-11-12"
         }
       ]
     },
@@ -742,8 +750,8 @@
       "answer": "greasy",
       "cue": "explicit",
       "reserve": false,
-      "text": "The bike chain left ___ smears with a slippery shine.",
-      "cue_phrase": "slippery shine",
+      "text": "The oily bike chain left ___ black marks on my hands.",
+      "cue_phrase": "oily bike chain",
       "surface": {
         "filthy": "filthy",
         "grubby": "grubby",
@@ -754,9 +762,9 @@
       "waivers": [
         {
           "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: gpt-5.5 also reads filthy, grubby charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (filthy); read by claude for Year 2 and the scene facts rule it out",
           "by": "claude",
-          "at": "2026-07-05"
+          "at": "2026-11-12"
         }
       ]
     },
@@ -803,31 +811,23 @@
       "answer": "greasy",
       "cue": "inferential",
       "reserve": false,
-      "text": "The mechanic's ___ rag slid from his pocket after wiping engine parts.",
-      "cue_phrase": "wiping engine parts",
+      "text": "After wiping the car engine, the mechanic's rag was ___ and slippery.",
+      "cue_phrase": "wiping the car engine; slippery",
       "surface": {
         "filthy": "filthy",
         "grubby": "grubby",
         "dusty": "dusty",
         "muddy": "muddy",
         "greasy": "greasy"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: gpt-5.5 also reads filthy, grubby charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
-          "by": "claude",
-          "at": "2026-07-05"
-        }
-      ]
+      }
     },
     {
       "id": "A-dirty-01-s38",
       "answer": "greasy",
       "cue": "inferential",
       "reserve": false,
-      "text": "Soap was needed because the ___ bowl made water bead up.",
-      "cue_phrase": "water bead up",
+      "text": "After the fish and chips, the ___ bowl was too slippery to hold.",
+      "cue_phrase": "fish and chips; too slippery to hold",
       "surface": {
         "filthy": "filthy",
         "grubby": "grubby",
@@ -973,6 +973,6 @@
     "generated_at": "2026-07-05T11:22:03+00:00",
     "model": "gpt-5.5",
     "scrubbed_at": "2026-07-05T13:42:27+00:00",
-    "scrub_note": "grubby s11-s16 given degree markers to exclude filthy; dusty s17 tightened. Full read + judge triage."
+    "scrub_note": "grubby s11-s16 given degree markers to exclude filthy; dusty s17 tightened. Full read + judge triage. Year 2 readability pass by claude 2026-11-12: rewrote 16 sentences. Fixed s11 (15 words and a two-fit) and the s13 two-fit (dusty/muddy under the climbing frame), which is now a jumper worn all week. The muddy s26 and s32 re-fits on filthy were limited to paws and the cloak hem, and s38's 'water bead up' became too slippery to hold. 'Utterly foul', 'abandoned', 'crypt' and 'marsh' were simplified. Single gpt-5.5 filthy dissents were read and waived."
   }
 }

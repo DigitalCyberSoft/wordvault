@@ -502,8 +502,8 @@
       "answer": "covet",
       "cue": "explicit",
       "reserve": false,
-      "text": "Nell ___ Pip's crown and dreamed of keeping that exact crown.",
-      "cue_phrase": "keeping that exact crown",
+      "text": "The neighbouring king ___ the rich valley across the border and sent spies to map every farm.",
+      "cue_phrase": "rich valley across the border; sent spies to map",
       "surface": {
         "envy": "envied",
         "relish": "relished",
@@ -525,8 +525,8 @@
       "answer": "covet",
       "cue": "explicit",
       "reserve": false,
-      "text": "Mara ___ Jo's telescope, whispering, 'I must own that one.'",
-      "cue_phrase": "own that one",
+      "text": "Long before the auction, the collector ___ the famous blue stamp and saved every dollar for it.",
+      "cue_phrase": "Long before the auction; saved every dollar for it",
       "surface": {
         "envy": "envied",
         "relish": "relished",
@@ -548,8 +548,8 @@
       "answer": "covet",
       "cue": "contextual",
       "reserve": false,
-      "text": "At the fair, I ___ Bea's painted drum, not any drum on sale.",
-      "cue_phrase": "not any drum",
+      "text": "For decades the old collector ___ the painting in the duke's hall, though it was never for sale.",
+      "cue_phrase": "though it was never for sale",
       "surface": {
         "envy": "envied",
         "relish": "relished",
@@ -571,8 +571,8 @@
       "answer": "covet",
       "cue": "contextual",
       "reserve": false,
-      "text": "Luca began to ___ Ed's skates, refusing the newer pair.",
-      "cue_phrase": "refusing the newer pair",
+      "text": "As soon as the museum put the jade dragon on display, the thief began to ___ it.",
+      "cue_phrase": "museum put the jade dragon on display; the thief",
       "surface": {
         "envy": "envy",
         "relish": "relish",
@@ -594,8 +594,8 @@
       "answer": "covet",
       "cue": "inferential",
       "reserve": false,
-      "text": "The pirate ___ the queen's ruby, planning a velvet case for it.",
-      "cue_phrase": "velvet case for it",
+      "text": "Captain Vane ___ the ruby in the queen's crown and drew plans of the palace windows.",
+      "cue_phrase": "drew plans of the palace windows",
       "surface": {
         "envy": "envied",
         "relish": "relished",
@@ -617,8 +617,8 @@
       "answer": "covet",
       "cue": "inferential",
       "reserve": false,
-      "text": "Jin ___ Noor's chess set and cleared a shelf at home.",
-      "cue_phrase": "cleared a shelf",
+      "text": "Each Saturday, Jin ___ the carved chess set in the antique shop window, counting his savings.",
+      "cue_phrase": "in the antique shop window, counting his savings",
       "surface": {
         "envy": "envied",
         "relish": "relished",
@@ -640,8 +640,8 @@
       "answer": "covet",
       "cue": "contextual",
       "reserve": true,
-      "text": "In the story, goblins ___ the wizard's moonstone for their own chest.",
-      "cue_phrase": "for their own chest",
+      "text": "The goblin king ___ the moonstone in the wizard's tower and plotted to steal it.",
+      "cue_phrase": "plotted to steal it",
       "surface": {
         "envy": "envied",
         "relish": "relished",
@@ -663,8 +663,8 @@
       "answer": "covet",
       "cue": "inferential",
       "reserve": true,
-      "text": "Every match, Pete ___ Kim's lucky bat, ignoring all spare bats.",
-      "cue_phrase": "ignoring all spare bats",
+      "text": "The rival club ___ our town's championship cup and has tried to buy it twice.",
+      "cue_phrase": "has tried to buy it twice",
       "surface": {
         "envy": "envies",
         "relish": "relishes",
@@ -908,6 +908,6 @@
     "generated_at": "2026-07-07T03:31:06+00:00",
     "model": "gpt-5.5",
     "scrubbed_at": "2026-07-07",
-    "scrub_note": "Scrubbed by claude 2026-07-07: mechanical sweeps clean (one purple-snow frame cleared - colour absurdity, not calendar), all 40 sentences, all 20 contrasts, and mixed-tense surface maps read per set; no defects."
+    "scrub_note": "Scrubbed by claude 2026-07-07: mechanical sweeps clean (one purple-snow frame cleared - colour absurdity, not calendar), all 40 sentences, all 20 contrasts, and mixed-tense surface maps read per set; no defects. Fairness pass by claude 2026-11-12: all eight covet sentences had 'X's thing' frames that let envy (and crave) in. The pattern is fixed: covet now targets an object held by a kingdom, museum, shop, duke or crown, with plans to acquire it (spies, saving, plotting), so no rival person can be envied and no bodily want is involved. A single gpt-5.5 envy/crave dissent remains."
   }
 }

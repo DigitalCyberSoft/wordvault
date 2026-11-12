@@ -270,8 +270,8 @@
       "answer": "flee",
       "cue": "explicit",
       "reserve": false,
-      "text": "When the boiler hissed, the mice ___, dashing through the kitchen door.",
-      "cue_phrase": "dashing through the kitchen",
+      "text": "When the boiler hissed, the mice ___ in every direction, squeaking and scattering.",
+      "cue_phrase": "in every direction, squeaking and scattering",
       "surface": {
         "evade": "evaded",
         "flee": "fled",
@@ -293,8 +293,8 @@
       "answer": "flee",
       "cue": "explicit",
       "reserve": false,
-      "text": "At the dragon's roar, villagers ___, sprinting over the bridge.",
-      "cue_phrase": "sprinting over the bridge",
+      "text": "At the dragon's roar, villagers ___ in panic, dropping baskets and shoving across the bridge.",
+      "cue_phrase": "in panic, dropping baskets and shoving",
       "surface": {
         "evade": "evaded",
         "flee": "fled",
@@ -980,6 +980,6 @@
     "generated_at": "2026-07-06T14:30:09+00:00",
     "model": "gpt-5.5",
     "scrubbed_at": "2026-07-07",
-    "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+    "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite). Fairness pass by claude 2026-11-12: flee s09/s10 now show panicked scattering, which rules out the ordered pull-back of retreat."
   }
 }

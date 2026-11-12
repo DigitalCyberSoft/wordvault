@@ -367,8 +367,8 @@
       "answer": "paddle",
       "cue": "explicit",
       "reserve": true,
-      "text": "Cousins ___ by the flat stone at the lake edge, giggling at every ripple.",
-      "cue_phrase": "giggling at every ripple",
+      "text": "Sitting on the jetty, the cousins ___, kicking and splashing their feet in the lake.",
+      "cue_phrase": "Sitting on the jetty; kicking and splashing their feet",
       "surface": {
         "wade": "waded",
         "paddle": "paddled",
@@ -916,6 +916,6 @@
     "generated_at": "2026-07-06T05:24:41+00:00",
     "model": "gpt-5.5",
     "scrubbed_at": "2026-07-06T08:40:26+00:00",
-    "scrub_note": "Full read; two toe-tic frames varied; s16 restaged from ducklings (swim sense) to children at play to match the dabble pin. s34 rephrased off the verbatim gloss (M7)."
+    "scrub_note": "Full read; two toe-tic frames varied; s16 restaged from ducklings (swim sense) to children at play to match the dabble pin. s34 rephrased off the verbatim gloss (M7). Fairness pass by claude 2026-11-12: paddle s16 now has the cousins sitting on the jetty kicking their feet, so wade (walking) is excluded."
   }
 }

@@ -174,8 +174,8 @@
       "answer": "giggle",
       "cue": "inferential",
       "reserve": false,
-      "text": "The class tried to stay serious, but the banana crown had them ___.",
-      "cue_phrase": "banana crown",
+      "text": "The teacher's funny banana hat made the whole class ___.",
+      "cue_phrase": "funny banana hat",
       "surface": {
         "giggle": "giggle",
         "shout": "shout",
@@ -324,14 +324,14 @@
       "answer": "shout",
       "cue": "contextual",
       "reserve": true,
-      "text": "A referee ___ 'Time!' when every runner must freeze.",
-      "cue_phrase": "every runner must freeze",
+      "text": "The referee ___ \"Stop!\" and every runner froze.",
+      "cue_phrase": "every runner froze",
       "surface": {
-        "giggle": "giggles",
-        "shout": "shouts",
-        "hum": "hums",
-        "sigh": "sighs",
-        "whistle": "whistles"
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
       }
     },
     {
@@ -392,8 +392,8 @@
       "answer": "hum",
       "cue": "contextual",
       "reserve": false,
-      "text": "Nina's cheeks buzzed as she ___ the bedtime tune.",
-      "cue_phrase": "cheeks buzzed",
+      "text": "Nina ___ the bedtime tune, her lips pressed together.",
+      "cue_phrase": "lips pressed together",
       "surface": {
         "giggle": "giggled",
         "shout": "shouted",
@@ -407,8 +407,8 @@
       "answer": "hum",
       "cue": "contextual",
       "reserve": false,
-      "text": "The tune came from Max's nose while he ___ over the puzzle.",
-      "cue_phrase": "from Max's nose",
+      "text": "Max forgot the words, so he ___ the tune with his lips closed.",
+      "cue_phrase": "lips closed",
       "surface": {
         "giggle": "giggled",
         "shout": "shouted",
@@ -467,23 +467,15 @@
       "answer": "hum",
       "cue": "contextual",
       "reserve": true,
-      "text": "Bo ___ through his nose whenever the cello tune starts.",
-      "cue_phrase": "through his nose",
+      "text": "Bo ___ along to the radio with his mouth closed.",
+      "cue_phrase": "mouth closed",
       "surface": {
-        "giggle": "giggles",
-        "shout": "shouts",
-        "hum": "hums",
-        "sigh": "sighs",
-        "whistle": "whistles"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (sigh); single-judge charity lane per triage policy",
-          "by": "claude",
-          "at": "2026-07-07"
-        }
-      ]
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
+      }
     },
     {
       "id": "B-sounds-01-s25",
@@ -505,8 +497,8 @@
       "answer": "sigh",
       "cue": "explicit",
       "reserve": false,
-      "text": "Raj ___ once, with a heavy whoosh into the chilly hall.",
-      "cue_phrase": "heavy whoosh",
+      "text": "Raj ___ with a slow, sad \"Ohhh\" when the rain started.",
+      "cue_phrase": "slow, sad \"Ohhh\"",
       "surface": {
         "giggle": "giggled",
         "shout": "shouted",
@@ -535,8 +527,8 @@
       "answer": "sigh",
       "cue": "contextual",
       "reserve": false,
-      "text": "Grandma ___, puffing the loose receipt across the suitcase.",
-      "cue_phrase": "puffing the loose receipt",
+      "text": "Grandma looked at the messy room and ___ heavily.",
+      "cue_phrase": "messy room; heavily",
       "surface": {
         "giggle": "giggled",
         "shout": "shouted",
@@ -580,8 +572,8 @@
       "answer": "sigh",
       "cue": "explicit",
       "reserve": true,
-      "text": "The wizard ___, sending a weary whoosh through his moustache.",
-      "cue_phrase": "weary whoosh",
+      "text": "The sleepy wizard ___, and a slow whoosh ruffled his moustache.",
+      "cue_phrase": "slow whoosh ruffled",
       "surface": {
         "giggle": "giggled",
         "shout": "shouted",
@@ -595,8 +587,8 @@
       "answer": "sigh",
       "cue": "contextual",
       "reserve": true,
-      "text": "At the empty cake plate, Noor ___ with a weary whoosh.",
-      "cue_phrase": "empty cake plate",
+      "text": "Noor saw the empty cake plate and ___ sadly.",
+      "cue_phrase": "empty cake plate; sadly",
       "surface": {
         "giggle": "giggled",
         "shout": "shouted",
@@ -610,7 +602,7 @@
       "answer": "whistle",
       "cue": "explicit",
       "reserve": false,
-      "text": "With two fingers in his mouth, Kai ___ a shrill tune.",
+      "text": "With two fingers in his mouth, Kai ___ loudly to call his dog.",
       "cue_phrase": "two fingers in his mouth",
       "surface": {
         "giggle": "giggled",
@@ -625,8 +617,8 @@
       "answer": "whistle",
       "cue": "explicit",
       "reserve": false,
-      "text": "Pia learned to ___ a piercing tune through her teeth.",
-      "cue_phrase": "through her teeth",
+      "text": "Pia learned to ___ a tune like a bird with her lips.",
+      "cue_phrase": "like a bird with her lips",
       "surface": {
         "giggle": "giggle",
         "shout": "shout",
@@ -640,8 +632,8 @@
       "answer": "whistle",
       "cue": "contextual",
       "reserve": false,
-      "text": "The dog came running when Sam ___ the sharp call through his teeth.",
-      "cue_phrase": "through his teeth",
+      "text": "Sam ___ a cheerful tune with his lips in a little O.",
+      "cue_phrase": "lips in a little O",
       "surface": {
         "giggle": "giggled",
         "shout": "shouted",
@@ -655,8 +647,8 @@
       "answer": "whistle",
       "cue": "contextual",
       "reserve": false,
-      "text": "Bea ___ a shrill tune through two fingers, and the pony turned.",
-      "cue_phrase": "through two fingers",
+      "text": "Bea ___ a high, sharp note, and the pony trotted over.",
+      "cue_phrase": "high, sharp note",
       "surface": {
         "giggle": "giggled",
         "shout": "shouted",
@@ -670,14 +662,14 @@
       "answer": "whistle",
       "cue": "inferential",
       "reserve": false,
-      "text": "The kettle's steam shriek taught Omar to ___ just like it.",
-      "cue_phrase": "steam shriek",
+      "text": "Omar copied the kettle's squeal and ___ just like it.",
+      "cue_phrase": "kettle's squeal",
       "surface": {
-        "giggle": "giggle",
-        "shout": "shout",
-        "hum": "hum",
-        "sigh": "sigh",
-        "whistle": "whistle"
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
       }
     },
     {
@@ -700,8 +692,8 @@
       "answer": "whistle",
       "cue": "contextual",
       "reserve": true,
-      "text": "Two fingers tucked in, Maya ___ and the shepherd looked over.",
-      "cue_phrase": "Two fingers tucked",
+      "text": "Maya made a tiny O with her lips and ___ to the parrot.",
+      "cue_phrase": "tiny O with her lips",
       "surface": {
         "giggle": "giggled",
         "shout": "shouted",
@@ -715,14 +707,14 @@
       "answer": "whistle",
       "cue": "contextual",
       "reserve": true,
-      "text": "Rin ___ a piercing birdcall whenever the shepherd raises his hand.",
-      "cue_phrase": "piercing birdcall",
+      "text": "Rin ___ like a bird, and a real bird answered.",
+      "cue_phrase": "a real bird answered",
       "surface": {
-        "giggle": "giggles",
-        "shout": "shouts",
-        "hum": "hums",
-        "sigh": "sighs",
-        "whistle": "whistles"
+        "giggle": "giggled",
+        "shout": "shouted",
+        "hum": "hummed",
+        "sigh": "sighed",
+        "whistle": "whistled"
       }
     }
   ],
@@ -730,42 +722,42 @@
     {
       "answer": "giggle",
       "picked": "shout",
-      "line": "A giggle is small and amused. A shout is words sent strongly across a space."
+      "line": "A giggle is a small, happy laugh. A shout is loud words sent far."
     },
     {
       "answer": "giggle",
       "picked": "hum",
-      "line": "A giggle comes from finding fun. A hum carries a tune with the mouth shut."
+      "line": "A giggle is a little laugh at something funny. A hum is a tune with the mouth shut."
     },
     {
       "answer": "giggle",
       "picked": "sigh",
-      "line": "A giggle is a small amused sound. A sigh is one slow whoosh when feelings sink."
+      "line": "A giggle is a small happy laugh. A sigh is one slow whoosh when you feel sad or tired."
     },
     {
       "answer": "giggle",
       "picked": "whistle",
-      "line": "A giggle is amused and tiny. A whistle is a sharp tune made through the mouth."
+      "line": "A giggle is a small laugh. A whistle is a sharp tune blown through the lips."
     },
     {
       "answer": "shout",
       "picked": "giggle",
-      "line": "A shout sends words far. A giggle is small and amused, not meant to carry."
+      "line": "A shout sends words far. A giggle is a small laugh, not meant to carry."
     },
     {
       "answer": "shout",
       "picked": "hum",
-      "line": "A shout uses words for others to hear. A hum is a tune with the mouth shut."
+      "line": "A shout is loud words for others to hear. A hum is a tune with the mouth shut."
     },
     {
       "answer": "shout",
       "picked": "sigh",
-      "line": "A shout sends words out strongly. A sigh is one slow whoosh, not a message."
+      "line": "A shout sends loud words out. A sigh is one slow whoosh, with no words."
     },
     {
       "answer": "shout",
       "picked": "whistle",
-      "line": "A shout carries words. A whistle carries a sharp tune or call without words."
+      "line": "A shout carries words. A whistle carries a sharp tune or call with no words."
     },
     {
       "answer": "hum",
@@ -775,17 +767,17 @@
     {
       "answer": "hum",
       "picked": "shout",
-      "line": "A hum is a quiet tune. A shout is words sent strongly to reach someone."
+      "line": "A hum is a quiet tune. A shout is loud words sent to reach someone."
     },
     {
       "answer": "hum",
       "picked": "sigh",
-      "line": "A hum keeps a tune going. A sigh is one slow whoosh when feelings drop."
+      "line": "A hum keeps a tune going. A sigh is one slow whoosh when you feel sad or tired."
     },
     {
       "answer": "hum",
       "picked": "whistle",
-      "line": "A hum uses a shut mouth for a tune. A whistle is sharper and comes through the mouth."
+      "line": "A hum is a tune with the mouth shut. A whistle is a sharp tune blown through the lips."
     },
     {
       "answer": "sigh",
@@ -795,7 +787,7 @@
     {
       "answer": "sigh",
       "picked": "shout",
-      "line": "A sigh is one slow whoosh. A shout is words sent strongly across a space."
+      "line": "A sigh is one slow whoosh. A shout is loud words sent far."
     },
     {
       "answer": "sigh",
@@ -820,7 +812,7 @@
     {
       "answer": "whistle",
       "picked": "hum",
-      "line": "A whistle is sharp and mouth-made. A hum is a tune with the mouth shut."
+      "line": "A whistle is a sharp tune blown through the lips. A hum is a tune with the mouth shut."
     },
     {
       "answer": "whistle",
@@ -832,6 +824,6 @@
     "generated_at": "2026-07-06T14:52:35+00:00",
     "model": "gpt-5.5",
     "scrubbed_at": "2026-07-07",
-    "scrub_note": "Scrubbed by claude 2026-07-07 (dedicated pre-scrub agent failed twice on output limits): mechanical sweeps (cue hygiene, meta-frames, seasonal, templates, duplicates), all 20 contrast lines read per set, every sentence read for frame sanity, all judge hards fixed and re-judged to zero. Fixes: wave re-pinned to brandish.v.01 + 3 contrasts aligned, hop gloss authored to the one-foot sense the set teaches, pat/nod/wink frames restaged, one dangling pronoun."
+    "scrub_note": "Scrubbed by claude 2026-07-07 (dedicated pre-scrub agent failed twice on output limits): mechanical sweeps (cue hygiene, meta-frames, seasonal, templates, duplicates), all 20 contrast lines read per set, every sentence read for frame sanity, all judge hards fixed and re-judged to zero. Fixes: wave re-pinned to brandish.v.01 + 3 contrasts aligned, hop gloss authored to the one-foot sense the set teaches, pat/nod/wink frames restaged, one dangling pronoun. Year 2 readability pass by claude 2026-11-12: rewrote 16 sentences and 13 contrasts. Replaced odd cues ('cheeks buzzed', 'tune came from Max's nose', 'heavy whoosh into the chilly hall', 'puffing the loose receipt', 'steam shriek', 'piercing') and fixed s24's present/past tense mix. The whistle frames 'through her/his teeth' drew a gpt-5.5 sense rejection against the lips gloss, so s34, s35 and s39 now stage the lips."
   }
 }

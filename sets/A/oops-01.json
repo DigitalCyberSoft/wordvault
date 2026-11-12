@@ -1,0 +1,832 @@
+{
+  "id": "A-oops-01",
+  "bank": "A",
+  "pos": "verb",
+  "theme": "little accidents",
+  "band": 1,
+  "band_override": 1,
+  "computed": {
+    "zipf_min": 3.41,
+    "zipf_mean": 4.08,
+    "tightness": 0.28,
+    "band_suggested": 2,
+    "scored_at": "2026-11-12T12:11:48+00:00"
+  },
+  "words": [
+    {
+      "w": "trip",
+      "synset": "stumble.v.02",
+      "gloss_source": "authored",
+      "gloss": "catch your foot on something and stumble or nearly fall",
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-11-12"
+      },
+      "zipf": 4.9,
+      "register": "neutral",
+      "senses_at_pos": 5,
+      "forms": {
+        "base": "trip",
+        "third": "trips",
+        "past": "tripped",
+        "part": "tripping"
+      },
+      "discriminator": "your foot catches on something",
+      "grade": 1
+    },
+    {
+      "w": "slip",
+      "synset": "skid.v.04",
+      "gloss_source": "authored",
+      "gloss": "lose your footing by sliding, as on a smooth or greasy surface",
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-11-12"
+      },
+      "zipf": 4.28,
+      "register": "neutral",
+      "senses_at_pos": 11,
+      "forms": {
+        "base": "slip",
+        "third": "slips",
+        "past": "slipped",
+        "part": "slipping"
+      },
+      "discriminator": "your feet slide on something slippery",
+      "grade": 1
+    },
+    {
+      "w": "tumble",
+      "synset": "tumble.v.01",
+      "gloss_source": "authored",
+      "gloss": "fall and go rolling helplessly",
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-11-12"
+      },
+      "zipf": 3.41,
+      "register": "neutral",
+      "senses_at_pos": 11,
+      "forms": {
+        "base": "tumble",
+        "third": "tumbles",
+        "past": "tumbled",
+        "part": "tumbling"
+      },
+      "discriminator": "fall and roll over and over",
+      "grade": 2
+    },
+    {
+      "w": "bump",
+      "synset": "bump.v.01",
+      "gloss_source": "wordnet",
+      "gloss": "knock against with force or violence",
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-11-12"
+      },
+      "zipf": 3.98,
+      "register": "neutral",
+      "senses_at_pos": 5,
+      "forms": {
+        "base": "bump",
+        "third": "bumps",
+        "past": "bumped",
+        "part": "bumping"
+      },
+      "discriminator": "knock into something or someone",
+      "grade": 1
+    },
+    {
+      "w": "spill",
+      "synset": "spill.v.01",
+      "gloss_source": "wordnet",
+      "gloss": "cause or allow (a liquid substance) to run or flow from a container",
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-11-12"
+      },
+      "zipf": 3.84,
+      "register": "neutral",
+      "senses_at_pos": 6,
+      "forms": {
+        "base": "spill",
+        "third": "spills",
+        "past": "spilled",
+        "part": "spilling"
+      },
+      "discriminator": "a drink or liquid comes out by accident",
+      "grade": 1
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-oops-01-s01",
+      "answer": "trip",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Mia ___ on her loose shoelace but grabbed the fence.",
+      "cue_phrase": "loose shoelace; grabbed the fence",
+      "surface": {
+        "trip": "tripped",
+        "slip": "slipped",
+        "tumble": "tumbled",
+        "bump": "bumped",
+        "spill": "spilled"
+      }
+    },
+    {
+      "id": "A-oops-01-s02",
+      "answer": "trip",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Ben's toe caught a root, and he ___ and hopped.",
+      "cue_phrase": "toe caught a root",
+      "surface": {
+        "trip": "tripped",
+        "slip": "slipped",
+        "tumble": "tumbled",
+        "bump": "bumped",
+        "spill": "spilled"
+      }
+    },
+    {
+      "id": "A-oops-01-s03",
+      "answer": "trip",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Grandpa ___ over sleepy Rex but grabbed the door.",
+      "cue_phrase": "over sleepy Rex; grabbed the door",
+      "surface": {
+        "trip": "tripped",
+        "slip": "slipped",
+        "tumble": "tumbled",
+        "bump": "bumped",
+        "spill": "spilled"
+      }
+    },
+    {
+      "id": "A-oops-01-s04",
+      "answer": "trip",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Ivy ___ over her school bag but kept her balance.",
+      "cue_phrase": "over her school bag; kept her balance",
+      "surface": {
+        "trip": "tripped",
+        "slip": "slipped",
+        "tumble": "tumbled",
+        "bump": "bumped",
+        "spill": "spilled"
+      }
+    },
+    {
+      "id": "A-oops-01-s05",
+      "answer": "trip",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Mum ___ over Dad's boots but caught the wall.",
+      "cue_phrase": "over Dad's boots; caught the wall",
+      "surface": {
+        "trip": "tripped",
+        "slip": "slipped",
+        "tumble": "tumbled",
+        "bump": "bumped",
+        "spill": "spilled"
+      }
+    },
+    {
+      "id": "A-oops-01-s06",
+      "answer": "trip",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Luca's laces were undone, and he ___ but stayed up.",
+      "cue_phrase": "laces were undone; stayed up",
+      "surface": {
+        "trip": "tripped",
+        "slip": "slipped",
+        "tumble": "tumbled",
+        "bump": "bumped",
+        "spill": "spilled"
+      }
+    },
+    {
+      "id": "A-oops-01-s07",
+      "answer": "trip",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Kai ___ over the hose but stayed on his feet.",
+      "cue_phrase": "over the hose; stayed on his feet",
+      "surface": {
+        "trip": "tripped",
+        "slip": "slipped",
+        "tumble": "tumbled",
+        "bump": "bumped",
+        "spill": "spilled"
+      }
+    },
+    {
+      "id": "A-oops-01-s08",
+      "answer": "trip",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Lucy ___ over a rock, wobbled, and dropped her ice cream.",
+      "cue_phrase": "over a rock, wobbled",
+      "surface": {
+        "trip": "tripped",
+        "slip": "slipped",
+        "tumble": "tumbled",
+        "bump": "bumped",
+        "spill": "spilled"
+      }
+    },
+    {
+      "id": "A-oops-01-s09",
+      "answer": "slip",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Leo ___ on the wet tiles, and his feet shot out.",
+      "cue_phrase": "wet tiles; his feet shot out",
+      "surface": {
+        "trip": "tripped",
+        "slip": "slipped",
+        "tumble": "tumbled",
+        "bump": "bumped",
+        "spill": "spilled"
+      }
+    },
+    {
+      "id": "A-oops-01-s10",
+      "answer": "slip",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Zoe ___ on a banana skin, just like in cartoons.",
+      "cue_phrase": "on a banana skin",
+      "surface": {
+        "trip": "tripped",
+        "slip": "slipped",
+        "tumble": "tumbled",
+        "bump": "bumped",
+        "spill": "spilled"
+      }
+    },
+    {
+      "id": "A-oops-01-s11",
+      "answer": "slip",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Pop ___ on the slimy rocks at the beach.",
+      "cue_phrase": "slimy rocks",
+      "surface": {
+        "trip": "tripped",
+        "slip": "slipped",
+        "tumble": "tumbled",
+        "bump": "bumped",
+        "spill": "spilled"
+      }
+    },
+    {
+      "id": "A-oops-01-s12",
+      "answer": "slip",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Ella ___ on the soapy bathroom floor.",
+      "cue_phrase": "soapy bathroom floor",
+      "surface": {
+        "trip": "tripped",
+        "slip": "slipped",
+        "tumble": "tumbled",
+        "bump": "bumped",
+        "spill": "spilled"
+      }
+    },
+    {
+      "id": "A-oops-01-s13",
+      "answer": "slip",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Sam ___ in his socks on the shiny floor.",
+      "cue_phrase": "in his socks on the shiny floor",
+      "surface": {
+        "trip": "tripped",
+        "slip": "slipped",
+        "tumble": "tumbled",
+        "bump": "bumped",
+        "spill": "spilled"
+      }
+    },
+    {
+      "id": "A-oops-01-s14",
+      "answer": "slip",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Max ___ on a lump of butter on the floor.",
+      "cue_phrase": "a lump of butter",
+      "surface": {
+        "trip": "tripped",
+        "slip": "slipped",
+        "tumble": "tumbled",
+        "bump": "bumped",
+        "spill": "spilled"
+      }
+    },
+    {
+      "id": "A-oops-01-s15",
+      "answer": "slip",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Mia ___ on the mud and sat in the creek.",
+      "cue_phrase": "on the mud; sat in the creek",
+      "surface": {
+        "trip": "tripped",
+        "slip": "slipped",
+        "tumble": "tumbled",
+        "bump": "bumped",
+        "spill": "spilled"
+      }
+    },
+    {
+      "id": "A-oops-01-s16",
+      "answer": "slip",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Josh ___ on the frosty grass and slid onto his back.",
+      "cue_phrase": "frosty grass; slid onto his back",
+      "surface": {
+        "trip": "tripped",
+        "slip": "slipped",
+        "tumble": "tumbled",
+        "bump": "bumped",
+        "spill": "spilled"
+      }
+    },
+    {
+      "id": "A-oops-01-s17",
+      "answer": "tumble",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Jack ___ down the grassy hill, over and over.",
+      "cue_phrase": "over and over",
+      "surface": {
+        "trip": "tripped",
+        "slip": "slipped",
+        "tumble": "tumbled",
+        "bump": "bumped",
+        "spill": "spilled"
+      }
+    },
+    {
+      "id": "A-oops-01-s18",
+      "answer": "tumble",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Head over heels, Mia ___ down the sand dune.",
+      "cue_phrase": "Head over heels",
+      "surface": {
+        "trip": "tripped",
+        "slip": "slipped",
+        "tumble": "tumbled",
+        "bump": "bumped",
+        "spill": "spilled"
+      }
+    },
+    {
+      "id": "A-oops-01-s19",
+      "answer": "tumble",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The puppy ___ down the hill like a fluffy ball.",
+      "cue_phrase": "like a fluffy ball",
+      "surface": {
+        "trip": "tripped",
+        "slip": "slipped",
+        "tumble": "tumbled",
+        "bump": "bumped",
+        "spill": "spilled"
+      }
+    },
+    {
+      "id": "A-oops-01-s20",
+      "answer": "tumble",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The twins ___ down the bank like two barrels.",
+      "cue_phrase": "like two barrels",
+      "surface": {
+        "trip": "tripped",
+        "slip": "slipped",
+        "tumble": "tumbled",
+        "bump": "bumped",
+        "spill": "spilled"
+      }
+    },
+    {
+      "id": "A-oops-01-s21",
+      "answer": "tumble",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Kim ___ down the hill and got up dizzy.",
+      "cue_phrase": "got up dizzy",
+      "surface": {
+        "trip": "tripped",
+        "slip": "slipped",
+        "tumble": "tumbled",
+        "bump": "bumped",
+        "spill": "spilled"
+      }
+    },
+    {
+      "id": "A-oops-01-s22",
+      "answer": "tumble",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Sam ___ down the bank, seeing sky, grass, sky, grass.",
+      "cue_phrase": "sky, grass, sky, grass",
+      "surface": {
+        "trip": "tripped",
+        "slip": "slipped",
+        "tumble": "tumbled",
+        "bump": "bumped",
+        "spill": "spilled"
+      }
+    },
+    {
+      "id": "A-oops-01-s23",
+      "answer": "tumble",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Kai ___ down the slope at the park, doing somersaults.",
+      "cue_phrase": "doing somersaults",
+      "surface": {
+        "trip": "tripped",
+        "slip": "slipped",
+        "tumble": "tumbled",
+        "bump": "bumped",
+        "spill": "spilled"
+      }
+    },
+    {
+      "id": "A-oops-01-s24",
+      "answer": "tumble",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Ruby ___ down the sandhill, spinning like a wheel.",
+      "cue_phrase": "spinning like a wheel",
+      "surface": {
+        "trip": "tripped",
+        "slip": "slipped",
+        "tumble": "tumbled",
+        "bump": "bumped",
+        "spill": "spilled"
+      }
+    },
+    {
+      "id": "A-oops-01-s25",
+      "answer": "bump",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Not looking, Leo ___ right into a pole.",
+      "cue_phrase": "right into a pole",
+      "surface": {
+        "trip": "tripped",
+        "slip": "slipped",
+        "tumble": "tumbled",
+        "bump": "bumped",
+        "spill": "spilled"
+      }
+    },
+    {
+      "id": "A-oops-01-s26",
+      "answer": "bump",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Two kids ___ into each other at the corner.",
+      "cue_phrase": "into each other",
+      "surface": {
+        "trip": "tripped",
+        "slip": "slipped",
+        "tumble": "tumbled",
+        "bump": "bumped",
+        "spill": "spilled"
+      }
+    },
+    {
+      "id": "A-oops-01-s27",
+      "answer": "bump",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Walking past, Max ___ into the table, and the vase wobbled.",
+      "cue_phrase": "Walking past; into the table",
+      "surface": {
+        "trip": "tripped",
+        "slip": "slipped",
+        "tumble": "tumbled",
+        "bump": "bumped",
+        "spill": "spilled"
+      }
+    },
+    {
+      "id": "A-oops-01-s28",
+      "answer": "bump",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "In the dark, Dad ___ into the door. Ouch!",
+      "cue_phrase": "into the door",
+      "surface": {
+        "trip": "tripped",
+        "slip": "slipped",
+        "tumble": "tumbled",
+        "bump": "bumped",
+        "spill": "spilled"
+      }
+    },
+    {
+      "id": "A-oops-01-s29",
+      "answer": "bump",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Lily got a lump where she ___ into the cupboard.",
+      "cue_phrase": "got a lump",
+      "surface": {
+        "trip": "tripped",
+        "slip": "slipped",
+        "tumble": "tumbled",
+        "bump": "bumped",
+        "spill": "spilled"
+      }
+    },
+    {
+      "id": "A-oops-01-s30",
+      "answer": "bump",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The trolleys ___ together with a clang at the shops.",
+      "cue_phrase": "together with a clang",
+      "surface": {
+        "trip": "tripped",
+        "slip": "slipped",
+        "tumble": "tumbled",
+        "bump": "bumped",
+        "spill": "spilled"
+      }
+    },
+    {
+      "id": "A-oops-01-s31",
+      "answer": "bump",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Dodgem cars ___ into each other at the show.",
+      "cue_phrase": "Dodgem cars",
+      "surface": {
+        "trip": "tripped",
+        "slip": "slipped",
+        "tumble": "tumbled",
+        "bump": "bumped",
+        "spill": "spilled"
+      }
+    },
+    {
+      "id": "A-oops-01-s32",
+      "answer": "bump",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "Our heads ___ together when we both bent down.",
+      "cue_phrase": "Our heads",
+      "surface": {
+        "trip": "tripped",
+        "slip": "slipped",
+        "tumble": "tumbled",
+        "bump": "bumped",
+        "spill": "spilled"
+      }
+    },
+    {
+      "id": "A-oops-01-s33",
+      "answer": "spill",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Max ___ all over his new shirt at breakfast.",
+      "cue_phrase": "all over his new shirt",
+      "surface": {
+        "trip": "tripped",
+        "slip": "slipped",
+        "tumble": "tumbled",
+        "bump": "bumped",
+        "spill": "spilled"
+      }
+    },
+    {
+      "id": "A-oops-01-s34",
+      "answer": "spill",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "In her high chair, Rosa ___ all over the tray.",
+      "cue_phrase": "all over the tray",
+      "surface": {
+        "trip": "tripped",
+        "slip": "slipped",
+        "tumble": "tumbled",
+        "bump": "bumped",
+        "spill": "spilled"
+      }
+    },
+    {
+      "id": "A-oops-01-s35",
+      "answer": "spill",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Ruby ___ on the white rug, and now it's purple.",
+      "cue_phrase": "now it's purple",
+      "surface": {
+        "trip": "tripped",
+        "slip": "slipped",
+        "tumble": "tumbled",
+        "bump": "bumped",
+        "spill": "spilled"
+      }
+    },
+    {
+      "id": "A-oops-01-s36",
+      "answer": "spill",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Kai ___ on the art table, and now it's blue.",
+      "cue_phrase": "now it's blue",
+      "surface": {
+        "trip": "tripped",
+        "slip": "slipped",
+        "tumble": "tumbled",
+        "bump": "bumped",
+        "spill": "spilled"
+      }
+    },
+    {
+      "id": "A-oops-01-s37",
+      "answer": "spill",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Leo ___ at lunch, and now his lap is soaking.",
+      "cue_phrase": "his lap is soaking",
+      "surface": {
+        "trip": "tripped",
+        "slip": "slipped",
+        "tumble": "tumbled",
+        "bump": "bumped",
+        "spill": "spilled"
+      }
+    },
+    {
+      "id": "A-oops-01-s38",
+      "answer": "spill",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Gran fetched a sponge after Tom ___ at the table.",
+      "cue_phrase": "fetched a sponge",
+      "surface": {
+        "trip": "tripped",
+        "slip": "slipped",
+        "tumble": "tumbled",
+        "bump": "bumped",
+        "spill": "spilled"
+      }
+    },
+    {
+      "id": "A-oops-01-s39",
+      "answer": "spill",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "Dad ___ at the party, and the carpet got sticky.",
+      "cue_phrase": "the carpet got sticky",
+      "surface": {
+        "trip": "tripped",
+        "slip": "slipped",
+        "tumble": "tumbled",
+        "bump": "bumped",
+        "spill": "spilled"
+      }
+    },
+    {
+      "id": "A-oops-01-s40",
+      "answer": "spill",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "Ella ___ in her schoolbag, and her books got sticky.",
+      "cue_phrase": "her books got sticky",
+      "surface": {
+        "trip": "tripped",
+        "slip": "slipped",
+        "tumble": "tumbled",
+        "bump": "bumped",
+        "spill": "spilled"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "trip",
+      "picked": "slip",
+      "line": "Trip is when your foot catches on something. Slip is when your feet slide on something slippery."
+    },
+    {
+      "answer": "trip",
+      "picked": "tumble",
+      "line": "Trip is your foot catching on something. Tumble is rolling over and over."
+    },
+    {
+      "answer": "trip",
+      "picked": "bump",
+      "line": "Trip is your foot catching on something. Bump is knocking into something."
+    },
+    {
+      "answer": "trip",
+      "picked": "spill",
+      "line": "Trip is your foot catching on something. Spill is a drink coming out by accident."
+    },
+    {
+      "answer": "slip",
+      "picked": "trip",
+      "line": "Slip is your feet sliding on something wet or smooth. Trip is your foot catching on something."
+    },
+    {
+      "answer": "slip",
+      "picked": "tumble",
+      "line": "Slip is your feet sliding out. Tumble is rolling over and over."
+    },
+    {
+      "answer": "slip",
+      "picked": "bump",
+      "line": "Slip is your feet sliding out from under you. Bump is knocking into something."
+    },
+    {
+      "answer": "slip",
+      "picked": "spill",
+      "line": "Slip is your feet sliding. Spill is a drink coming out of its cup."
+    },
+    {
+      "answer": "tumble",
+      "picked": "trip",
+      "line": "Tumble is rolling over and over. Trip is just your foot catching on something."
+    },
+    {
+      "answer": "tumble",
+      "picked": "slip",
+      "line": "Tumble is rolling over and over. Slip is your feet sliding out."
+    },
+    {
+      "answer": "tumble",
+      "picked": "bump",
+      "line": "Tumble is rolling over and over. Bump is knocking into something."
+    },
+    {
+      "answer": "tumble",
+      "picked": "spill",
+      "line": "Tumble is someone or something rolling over and over. Spill is a drink coming out."
+    },
+    {
+      "answer": "bump",
+      "picked": "trip",
+      "line": "Bump is knocking into something. Trip is your foot catching on something."
+    },
+    {
+      "answer": "bump",
+      "picked": "slip",
+      "line": "Bump is knocking into something. Slip is your feet sliding out."
+    },
+    {
+      "answer": "bump",
+      "picked": "tumble",
+      "line": "Bump is one knock into something. Tumble is rolling over and over."
+    },
+    {
+      "answer": "bump",
+      "picked": "spill",
+      "line": "Bump is knocking into something. Spill is a drink coming out and making a mess."
+    },
+    {
+      "answer": "spill",
+      "picked": "trip",
+      "line": "Spill is a drink or paint coming out by accident. Trip is your foot catching on something."
+    },
+    {
+      "answer": "spill",
+      "picked": "slip",
+      "line": "Spill is a drink coming out of its cup. Slip is your feet sliding."
+    },
+    {
+      "answer": "spill",
+      "picked": "tumble",
+      "line": "Spill is a drink running out. Tumble is rolling over and over."
+    },
+    {
+      "answer": "spill",
+      "picked": "bump",
+      "line": "Spill is a drink coming out and making a mess. Bump is knocking into something."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-11-12T12:11:32+00:00",
+    "model": "claude-opus-5-5",
+    "scrubbed_at": "2026-11-12",
+    "scrub_note": "Scrubbed by claude 2026-11-12: all 40 sentences and 20 contrasts read aloud at Year-1 level after judging; 4 judge rounds, final 40/40 pass. Fifth member tumble (rolling over and over). trip authored (WordNet miss a step drew sense rejections), slip authored (WordNet gloss below the opacity floor), tumble authored to the rolling sense. Fixes: trip frames given a stays-up beat so tumble cannot fit, slip frames show feet sliding, liquid-subject spill frames recast with a person subject to match the pinned causative sense, trimmed long frames."
+  }
+}

@@ -146,7 +146,7 @@
       "judged_at": "2026-07-05T13:16:27+00:00"
     },
     "A-sad-01-s06": {
-      "text_sha256": "fce61152473d1c38e18a607ced62ba6e7395a645c92ce82c80ddb64183c460ce",
+      "text_sha256": "7c6d96c01afc95e32bfb36d802d7961959f51f686b0ed6a9ddf5d0dd48690d4b",
       "verdict": "pass",
       "judges": [
         {
@@ -171,7 +171,7 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T13:16:27+00:00"
+      "judged_at": "2026-11-12T12:25:17+00:00"
     },
     "A-sad-01-s07": {
       "text_sha256": "08550dd3d65177797900f6c7a68d717d8f36a1ea97a7233eaae2bdd6742804ba",
@@ -401,13 +401,12 @@
       "judged_at": "2026-07-05T13:17:26+00:00"
     },
     "A-sad-01-s15": {
-      "text_sha256": "3103c41404eaef15d7135136b267fe7e218cc4e6e981d92415ce9c00b23098cc",
-      "verdict": "review",
+      "text_sha256": "44827f1e16e12aed1357028bea4d73a4ecd2470203290b1b0dc9e80a5a45169a",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "disappointed",
             "guilty"
           ],
           "sense_match": true
@@ -427,7 +426,7 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T13:17:26+00:00"
+      "judged_at": "2026-11-12T12:25:17+00:00"
     },
     "A-sad-01-s16": {
       "text_sha256": "24a0b3c7119c2798a6b7cdfabff17c055892d86f3ef6d18122765de5af05f9c5",
@@ -516,14 +515,13 @@
       "judged_at": "2026-07-05T13:17:26+00:00"
     },
     "A-sad-01-s19": {
-      "text_sha256": "5ebd6e9ab5c6453c3d793e3abb6c28b11d0e1821d6acf9ee928ccbd5e2b63fa6",
-      "verdict": "review",
+      "text_sha256": "71f4f51dc15b56073b82a61fe2b8fa06a13dd9955606fccf7d13d7ddab7a6e09",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "heartbroken",
-            "lonely"
+            "heartbroken"
           ],
           "sense_match": true
         },
@@ -542,7 +540,7 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T13:17:26+00:00"
+      "judged_at": "2026-11-12T12:25:17+00:00"
     },
     "A-sad-01-s20": {
       "text_sha256": "1c69a474249c07b49e35b3da067a6b37a7eba95ab2d53e878d09c75c73fd9822",
@@ -941,14 +939,13 @@
       "judged_at": "2026-07-05T13:19:01+00:00"
     },
     "A-sad-01-s34": {
-      "text_sha256": "5ab712dc132743bb8dcf121ecd7095c1b96f64ed447af1b17113594a8158d420",
-      "verdict": "review",
+      "text_sha256": "480e4ff722d8ab90d2c6a601559dbf99ec49590ea56be6a702d0b2cacc1eaafe",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "homesick",
-            "lonely"
+            "homesick"
           ],
           "sense_match": true
         },
@@ -962,13 +959,12 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "homesick",
-            "lonely"
+            "homesick"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T13:19:01+00:00"
+      "judged_at": "2026-11-12T12:25:17+00:00"
     },
     "A-sad-01-s35": {
       "text_sha256": "4a7381d03c6c20d9d2e0333b663dc83c62dbc498661846775e2c9a78502708d0",
@@ -999,14 +995,13 @@
       "judged_at": "2026-07-05T13:19:01+00:00"
     },
     "A-sad-01-s36": {
-      "text_sha256": "61113f3e81850ef07befc155121be9bf3482d4aa579f5d8585e0cea0e290dd7b",
-      "verdict": "review",
+      "text_sha256": "ce355b20f613339ed556b804d0d82fd46d18d6de1437839b08912830c3ff52b9",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "homesick",
-            "lonely"
+            "homesick"
           ],
           "sense_match": true
         },
@@ -1020,13 +1015,12 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "homesick",
-            "lonely"
+            "homesick"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T13:19:01+00:00"
+      "judged_at": "2026-11-12T12:25:17+00:00"
     },
     "A-sad-01-s37": {
       "text_sha256": "09f8a9799c0ad3c06303f9ab23cf9257a6a2c2bbfa30a9a96907379e710e3630",

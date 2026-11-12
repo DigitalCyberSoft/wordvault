@@ -1,0 +1,903 @@
+{
+  "id": "A-clean-01",
+  "bank": "A",
+  "pos": "verb",
+  "theme": "cleaning up",
+  "band": 1,
+  "band_override": 1,
+  "computed": {
+    "zipf_min": 3.69,
+    "zipf_mean": 4.17,
+    "tightness": 0.392,
+    "band_suggested": 2,
+    "scored_at": "2026-11-12T12:11:48+00:00"
+  },
+  "words": [
+    {
+      "w": "sweep",
+      "synset": "sweep.v.03",
+      "gloss_source": "authored",
+      "gloss": "clean a floor or yard by brushing loose dirt away with a long-handled brush",
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-11-12"
+      },
+      "zipf": 3.97,
+      "register": "neutral",
+      "senses_at_pos": 9,
+      "forms": {
+        "base": "sweep",
+        "third": "sweeps",
+        "past": "swept",
+        "part": "sweeping"
+      },
+      "discriminator": "a broom pushes loose bits off a floor",
+      "grade": 1
+    },
+    {
+      "w": "wipe",
+      "synset": "wipe.v.01",
+      "gloss_source": "authored",
+      "gloss": "clean a surface by passing a cloth or hand over it",
+      "zipf": 4.01,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "wipe",
+        "third": "wipes",
+        "past": "wiped",
+        "part": "wiping"
+      },
+      "discriminator": "a cloth or hand passed lightly over a surface",
+      "grade": 1
+    },
+    {
+      "w": "scrub",
+      "synset": "scrub.v.01",
+      "gloss_source": "wordnet",
+      "gloss": "clean with hard rubbing",
+      "zipf": 3.69,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "scrub",
+        "third": "scrubs",
+        "past": "scrubbed",
+        "part": "scrubbing"
+      },
+      "discriminator": "hard rubbing at stuck-on mess",
+      "grade": 2
+    },
+    {
+      "w": "wash",
+      "synset": "wash.v.03",
+      "gloss_source": "wordnet",
+      "gloss": "cleanse with a cleaning agent, such as soap, and water",
+      "dominant_sense_ok": {
+        "by": "claude",
+        "at": "2026-11-12"
+      },
+      "zipf": 4.46,
+      "register": "neutral",
+      "senses_at_pos": 13,
+      "forms": {
+        "base": "wash",
+        "third": "washes",
+        "past": "washed",
+        "part": "washing"
+      },
+      "discriminator": "water and soap all over",
+      "grade": 1
+    },
+    {
+      "w": "dry",
+      "synset": "dry.v.01",
+      "gloss_source": "wordnet",
+      "gloss": "remove the moisture from and make dry",
+      "zipf": 4.74,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "dry",
+        "third": "dries",
+        "past": "dried",
+        "part": "drying"
+      },
+      "discriminator": "takes the wet away with a towel, sun or warm air",
+      "grade": 1
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-clean-01-s01",
+      "answer": "sweep",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Dad took the broom and ___ sand off the deck.",
+      "cue_phrase": "took the broom",
+      "surface": {
+        "sweep": "swept",
+        "wipe": "wiped",
+        "scrub": "scrubbed",
+        "wash": "washed",
+        "dry": "dried"
+      }
+    },
+    {
+      "id": "A-clean-01-s02",
+      "answer": "sweep",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Mia ___ the crumbs under the table into the dustpan.",
+      "cue_phrase": "into the dustpan",
+      "surface": {
+        "sweep": "swept",
+        "wipe": "wiped",
+        "scrub": "scrubbed",
+        "wash": "washed",
+        "dry": "dried"
+      }
+    },
+    {
+      "id": "A-clean-01-s03",
+      "answer": "sweep",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Grandpa ___ the leaves off the steps into a heap.",
+      "cue_phrase": "off the steps into a heap",
+      "surface": {
+        "sweep": "swept",
+        "wipe": "wiped",
+        "scrub": "scrubbed",
+        "wash": "washed",
+        "dry": "dried"
+      }
+    },
+    {
+      "id": "A-clean-01-s04",
+      "answer": "sweep",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The cleaner ___ the school hall, pushing a pile ahead.",
+      "cue_phrase": "pushing a pile ahead",
+      "surface": {
+        "sweep": "swept",
+        "wipe": "wiped",
+        "scrub": "scrubbed",
+        "wash": "washed",
+        "dry": "dried"
+      }
+    },
+    {
+      "id": "A-clean-01-s05",
+      "answer": "sweep",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Swish, swish! Nan ___ the gum leaves into a pile.",
+      "cue_phrase": "Swish, swish!; into a pile",
+      "surface": {
+        "sweep": "swept",
+        "wipe": "wiped",
+        "scrub": "scrubbed",
+        "wash": "washed",
+        "dry": "dried"
+      }
+    },
+    {
+      "id": "A-clean-01-s06",
+      "answer": "sweep",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Ben ___ the veranda and filled a bag with leaves.",
+      "cue_phrase": "filled a bag with leaves",
+      "surface": {
+        "sweep": "swept",
+        "wipe": "wiped",
+        "scrub": "scrubbed",
+        "wash": "washed",
+        "dry": "dried"
+      }
+    },
+    {
+      "id": "A-clean-01-s07",
+      "answer": "sweep",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Kai ___ the pine needles out of the cubby house.",
+      "cue_phrase": "pine needles out of the cubby",
+      "surface": {
+        "sweep": "swept",
+        "wipe": "wiped",
+        "scrub": "scrubbed",
+        "wash": "washed",
+        "dry": "dried"
+      }
+    },
+    {
+      "id": "A-clean-01-s08",
+      "answer": "sweep",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Ruby ___ the sand out the door with the broom.",
+      "cue_phrase": "with the broom",
+      "surface": {
+        "sweep": "swept",
+        "wipe": "wiped",
+        "scrub": "scrubbed",
+        "wash": "washed",
+        "dry": "dried"
+      }
+    },
+    {
+      "id": "A-clean-01-s09",
+      "answer": "wipe",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Jack ___ the jam off his chin with a napkin.",
+      "cue_phrase": "with a napkin",
+      "surface": {
+        "sweep": "swept",
+        "wipe": "wiped",
+        "scrub": "scrubbed",
+        "wash": "washed",
+        "dry": "dried"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit; gpt-4.1 and claude-opus-4-8 find the answer unique. Read and rejected: napkin on a chin is a light pass; nothing stuck on to scrub.",
+          "by": "claude",
+          "at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "id": "A-clean-01-s10",
+      "answer": "wipe",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "In one quick swipe, Mum ___ milk off the table.",
+      "cue_phrase": "one quick swipe",
+      "surface": {
+        "sweep": "swept",
+        "wipe": "wiped",
+        "scrub": "scrubbed",
+        "wash": "washed",
+        "dry": "dried"
+      }
+    },
+    {
+      "id": "A-clean-01-s11",
+      "answer": "wipe",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Nana ___ the chocolate off Leo's mouth with her thumb.",
+      "cue_phrase": "off Leo's mouth with her thumb",
+      "surface": {
+        "sweep": "swept",
+        "wipe": "wiped",
+        "scrub": "scrubbed",
+        "wash": "washed",
+        "dry": "dried"
+      }
+    },
+    {
+      "id": "A-clean-01-s12",
+      "answer": "wipe",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Tom ___ his smudgy glasses on his shirt.",
+      "cue_phrase": "smudgy glasses on his shirt",
+      "surface": {
+        "sweep": "swept",
+        "wipe": "wiped",
+        "scrub": "scrubbed",
+        "wash": "washed",
+        "dry": "dried"
+      }
+    },
+    {
+      "id": "A-clean-01-s13",
+      "answer": "wipe",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Lily ___ a peephole in the steamy window with her finger.",
+      "cue_phrase": "peephole in the steamy window",
+      "surface": {
+        "sweep": "swept",
+        "wipe": "wiped",
+        "scrub": "scrubbed",
+        "wash": "washed",
+        "dry": "dried"
+      }
+    },
+    {
+      "id": "A-clean-01-s14",
+      "answer": "wipe",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Ana ___ the drawing off the whiteboard in one swoosh.",
+      "cue_phrase": "in one swoosh",
+      "surface": {
+        "sweep": "swept",
+        "wipe": "wiped",
+        "scrub": "scrubbed",
+        "wash": "washed",
+        "dry": "dried"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit; gpt-4.1 and claude-opus-4-8 find the answer unique. Read and rejected: one swoosh across a whiteboard; a broom never touches a whiteboard.",
+          "by": "claude",
+          "at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "id": "A-clean-01-s15",
+      "answer": "wipe",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Zoe ___ the sauce off her fingers with a serviette.",
+      "cue_phrase": "with a serviette",
+      "surface": {
+        "sweep": "swept",
+        "wipe": "wiped",
+        "scrub": "scrubbed",
+        "wash": "washed",
+        "dry": "dried"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit; gpt-4.1 and claude-opus-4-8 find the answer unique. Read and rejected: a serviette over fingers is a light pass; nothing stuck on to scrub.",
+          "by": "claude",
+          "at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "id": "A-clean-01-s16",
+      "answer": "wipe",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Pop ___ the chalk off his fingers onto his jeans.",
+      "cue_phrase": "off his fingers onto his jeans",
+      "surface": {
+        "sweep": "swept",
+        "wipe": "wiped",
+        "scrub": "scrubbed",
+        "wash": "washed",
+        "dry": "dried"
+      }
+    },
+    {
+      "id": "A-clean-01-s17",
+      "answer": "scrub",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Dad ___ the burnt pan with all his strength.",
+      "cue_phrase": "with all his strength",
+      "surface": {
+        "sweep": "swept",
+        "wipe": "wiped",
+        "scrub": "scrubbed",
+        "wash": "washed",
+        "dry": "dried"
+      }
+    },
+    {
+      "id": "A-clean-01-s18",
+      "answer": "scrub",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Lucy ___ the caked-on mud with a stiff little brush.",
+      "cue_phrase": "caked-on mud; stiff little brush",
+      "surface": {
+        "sweep": "swept",
+        "wipe": "wiped",
+        "scrub": "scrubbed",
+        "wash": "washed",
+        "dry": "dried"
+      }
+    },
+    {
+      "id": "A-clean-01-s19",
+      "answer": "scrub",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Ali ___ stuck-on paint off the bench with a brush.",
+      "cue_phrase": "stuck-on paint",
+      "surface": {
+        "sweep": "swept",
+        "wipe": "wiped",
+        "scrub": "scrubbed",
+        "wash": "washed",
+        "dry": "dried"
+      }
+    },
+    {
+      "id": "A-clean-01-s20",
+      "answer": "scrub",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Gran ___ the muddy boots with an old toothbrush.",
+      "cue_phrase": "muddy boots with an old toothbrush",
+      "surface": {
+        "sweep": "swept",
+        "wipe": "wiped",
+        "scrub": "scrubbed",
+        "wash": "washed",
+        "dry": "dried"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit; gpt-4.1 and claude-opus-4-8 find the answer unique. Read and rejected: toothbrush on caked boots is hard rubbing; no soap or water staged for wash.",
+          "by": "claude",
+          "at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "id": "A-clean-01-s21",
+      "answer": "scrub",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Ivy ___ old glue off the desk until her arm ached.",
+      "cue_phrase": "until her arm ached",
+      "surface": {
+        "sweep": "swept",
+        "wipe": "wiped",
+        "scrub": "scrubbed",
+        "wash": "washed",
+        "dry": "dried"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit; gpt-4.1 and claude-opus-4-8 find the answer unique. Read and rejected: aching arm stages long hard rubbing; no water staged for wash, too much effort for a light wipe.",
+          "by": "claude",
+          "at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "id": "A-clean-01-s22",
+      "answer": "scrub",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Pop ___ the black pan with steel wool.",
+      "cue_phrase": "black pan with steel wool",
+      "surface": {
+        "sweep": "swept",
+        "wipe": "wiped",
+        "scrub": "scrubbed",
+        "wash": "washed",
+        "dry": "dried"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit; gpt-4.1 and claude-opus-4-8 find the answer unique. Read and rejected: steel wool is the scrubbing tool; no soap or water staged for wash.",
+          "by": "claude",
+          "at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "id": "A-clean-01-s23",
+      "answer": "scrub",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Nina ___ texta off the wall with a scourer.",
+      "cue_phrase": "with a scourer",
+      "surface": {
+        "sweep": "swept",
+        "wipe": "wiped",
+        "scrub": "scrubbed",
+        "wash": "washed",
+        "dry": "dried"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit; gpt-4.1 and claude-opus-4-8 find the answer unique. Read and rejected: a scourer is the scrubbing tool; not a light wipe.",
+          "by": "claude",
+          "at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "id": "A-clean-01-s24",
+      "answer": "scrub",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Dad ___ the barbecue grill with a wire brush.",
+      "cue_phrase": "with a wire brush",
+      "surface": {
+        "sweep": "swept",
+        "wipe": "wiped",
+        "scrub": "scrubbed",
+        "wash": "washed",
+        "dry": "dried"
+      }
+    },
+    {
+      "id": "A-clean-01-s25",
+      "answer": "wash",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Dad gently ___ the puppy in a tub of bubbles.",
+      "cue_phrase": "in a tub of bubbles",
+      "surface": {
+        "sweep": "swept",
+        "wipe": "wiped",
+        "scrub": "scrubbed",
+        "wash": "washed",
+        "dry": "dried"
+      }
+    },
+    {
+      "id": "A-clean-01-s26",
+      "answer": "wash",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Mum ___ baby Lola's hair with soft baby shampoo.",
+      "cue_phrase": "with soft baby shampoo",
+      "surface": {
+        "sweep": "swept",
+        "wipe": "wiped",
+        "scrub": "scrubbed",
+        "wash": "washed",
+        "dry": "dried"
+      }
+    },
+    {
+      "id": "A-clean-01-s27",
+      "answer": "wash",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Gran ___ our sandy beach towels and hung them out.",
+      "cue_phrase": "sandy beach towels and hung them out",
+      "surface": {
+        "sweep": "swept",
+        "wipe": "wiped",
+        "scrub": "scrubbed",
+        "wash": "washed",
+        "dry": "dried"
+      }
+    },
+    {
+      "id": "A-clean-01-s28",
+      "answer": "wash",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "In a sink of bubbles, Kim gently ___ Nan's teacups.",
+      "cue_phrase": "In a sink of bubbles; gently",
+      "surface": {
+        "sweep": "swept",
+        "wipe": "wiped",
+        "scrub": "scrubbed",
+        "wash": "washed",
+        "dry": "dried"
+      }
+    },
+    {
+      "id": "A-clean-01-s29",
+      "answer": "wash",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The machine hummed while it ___ our muddy footy socks.",
+      "cue_phrase": "machine hummed; muddy footy socks",
+      "surface": {
+        "sweep": "swept",
+        "wipe": "wiped",
+        "scrub": "scrubbed",
+        "wash": "washed",
+        "dry": "dried"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit; gpt-4.1 and claude-opus-4-8 find the answer unique. Read and rejected: the socks are muddy, so the machine is cleaning them, not drying.",
+          "by": "claude",
+          "at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "id": "A-clean-01-s30",
+      "answer": "wash",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Teddy smelled of strawberry shampoo after Mum gently ___ him.",
+      "cue_phrase": "smelled of strawberry shampoo; gently",
+      "surface": {
+        "sweep": "swept",
+        "wipe": "wiped",
+        "scrub": "scrubbed",
+        "wash": "washed",
+        "dry": "dried"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit; gpt-4.1 and claude-opus-4-8 find the answer unique. Read and rejected: shampoo smell plus gently stages a wash; gently excludes scrub, shampoo excludes dry.",
+          "by": "claude",
+          "at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "id": "A-clean-01-s31",
+      "answer": "wash",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "On Sunday, Dad ___ every dirty shirt in the house.",
+      "cue_phrase": "every dirty shirt",
+      "surface": {
+        "sweep": "swept",
+        "wipe": "wiped",
+        "scrub": "scrubbed",
+        "wash": "washed",
+        "dry": "dried"
+      }
+    },
+    {
+      "id": "A-clean-01-s32",
+      "answer": "wash",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "Ruby gently ___ her doll's tiny dress in bubbles.",
+      "cue_phrase": "gently; in bubbles",
+      "surface": {
+        "sweep": "swept",
+        "wipe": "wiped",
+        "scrub": "scrubbed",
+        "wash": "washed",
+        "dry": "dried"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit; gpt-4.1 and claude-opus-4-8 find the answer unique. Read and rejected: gently in bubbles excludes hard rubbing.",
+          "by": "claude",
+          "at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "id": "A-clean-01-s33",
+      "answer": "dry",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "After her swim, Ella ___ herself in a big fluffy towel.",
+      "cue_phrase": "after her swim; in a big fluffy towel",
+      "surface": {
+        "sweep": "swept",
+        "wipe": "wiped",
+        "scrub": "scrubbed",
+        "wash": "washed",
+        "dry": "dried"
+      }
+    },
+    {
+      "id": "A-clean-01-s34",
+      "answer": "dry",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The hot sun ___ the clothes on the line.",
+      "cue_phrase": "hot sun; on the line",
+      "surface": {
+        "sweep": "swept",
+        "wipe": "wiped",
+        "scrub": "scrubbed",
+        "wash": "washed",
+        "dry": "dried"
+      }
+    },
+    {
+      "id": "A-clean-01-s35",
+      "answer": "dry",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The warm wind soon ___ the puddles on the playground.",
+      "cue_phrase": "warm wind soon; the puddles",
+      "surface": {
+        "sweep": "swept",
+        "wipe": "wiped",
+        "scrub": "scrubbed",
+        "wash": "washed",
+        "dry": "dried"
+      }
+    },
+    {
+      "id": "A-clean-01-s36",
+      "answer": "dry",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Noah hung his swimmers on the fence to ___ them.",
+      "cue_phrase": "hung his swimmers on the fence",
+      "surface": {
+        "sweep": "sweep",
+        "wipe": "wipe",
+        "scrub": "scrub",
+        "wash": "wash",
+        "dry": "dry"
+      }
+    },
+    {
+      "id": "A-clean-01-s37",
+      "answer": "dry",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Pia's hair dripped down her back until she ___ it.",
+      "cue_phrase": "hair dripped down her back",
+      "surface": {
+        "sweep": "swept",
+        "wipe": "wiped",
+        "scrub": "scrubbed",
+        "wash": "washed",
+        "dry": "dried"
+      }
+    },
+    {
+      "id": "A-clean-01-s38",
+      "answer": "dry",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Josh put his paintings in the sun to ___ them.",
+      "cue_phrase": "paintings in the sun",
+      "surface": {
+        "sweep": "sweep",
+        "wipe": "wipe",
+        "scrub": "scrub",
+        "wash": "wash",
+        "dry": "dry"
+      }
+    },
+    {
+      "id": "A-clean-01-s39",
+      "answer": "dry",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "After the bath, Dad ___ the baby in a warm towel.",
+      "cue_phrase": "After the bath; in a warm towel",
+      "surface": {
+        "sweep": "swept",
+        "wipe": "wiped",
+        "scrub": "scrubbed",
+        "wash": "washed",
+        "dry": "dried"
+      }
+    },
+    {
+      "id": "A-clean-01-s40",
+      "answer": "dry",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "The heater ___ our soggy socks overnight.",
+      "cue_phrase": "heater; soggy socks",
+      "surface": {
+        "sweep": "swept",
+        "wipe": "wiped",
+        "scrub": "scrubbed",
+        "wash": "washed",
+        "dry": "dried"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "sweep",
+      "picked": "wipe",
+      "line": "Sweep pushes loose bits along the ground with a broom. Wipe moves a cloth over a table or a face."
+    },
+    {
+      "answer": "sweep",
+      "picked": "scrub",
+      "line": "Sweep moves loose bits with a broom. Scrub rubs hard at mess that is stuck on."
+    },
+    {
+      "answer": "sweep",
+      "picked": "wash",
+      "line": "Sweep moves dry bits with a broom. Wash uses soap and water."
+    },
+    {
+      "answer": "sweep",
+      "picked": "dry",
+      "line": "Sweep pushes bits away with a broom. Dry takes the wet off something."
+    },
+    {
+      "answer": "wipe",
+      "picked": "sweep",
+      "line": "Wipe is a quick cloth or hand over a surface. Sweep is a broom on the ground."
+    },
+    {
+      "answer": "wipe",
+      "picked": "scrub",
+      "line": "Wipe is quick and light. Scrub is slow, hard rubbing at stuck-on mess."
+    },
+    {
+      "answer": "wipe",
+      "picked": "wash",
+      "line": "Wipe is a quick pass with a cloth. Wash needs soap and water all over."
+    },
+    {
+      "answer": "wipe",
+      "picked": "dry",
+      "line": "Wipe takes off mess like jam or chalk. Dry takes off water."
+    },
+    {
+      "answer": "scrub",
+      "picked": "sweep",
+      "line": "Scrub rubs hard at stuck-on mess. Sweep moves loose bits with a broom."
+    },
+    {
+      "answer": "scrub",
+      "picked": "wipe",
+      "line": "Scrub means rubbing hard, again and again. Wipe is one quick, light pass."
+    },
+    {
+      "answer": "scrub",
+      "picked": "wash",
+      "line": "Scrub is hard rubbing at stuck-on mess. Wash is soap and water all over, and can be gentle."
+    },
+    {
+      "answer": "scrub",
+      "picked": "dry",
+      "line": "Scrub gets stuck-on mess off. Dry only takes the wet away."
+    },
+    {
+      "answer": "wash",
+      "picked": "sweep",
+      "line": "Wash uses soap and water all over. Sweep moves dry bits with a broom."
+    },
+    {
+      "answer": "wash",
+      "picked": "wipe",
+      "line": "Wash puts the whole thing in soap and water. Wipe is a quick cloth over the top."
+    },
+    {
+      "answer": "wash",
+      "picked": "scrub",
+      "line": "Wash can be gentle, like a baby's hair. Scrub is hard rubbing."
+    },
+    {
+      "answer": "wash",
+      "picked": "dry",
+      "line": "Wash makes things clean and wet. Dry comes after and takes the wet away."
+    },
+    {
+      "answer": "dry",
+      "picked": "sweep",
+      "line": "Dry takes the wet away with a towel, sun or wind. Sweep pushes bits with a broom."
+    },
+    {
+      "answer": "dry",
+      "picked": "wipe",
+      "line": "Dry is about getting rid of water. Wipe takes off mess like jam or chalk."
+    },
+    {
+      "answer": "dry",
+      "picked": "scrub",
+      "line": "Dry takes the wet away. Scrub rubs hard at stuck-on mess."
+    },
+    {
+      "answer": "dry",
+      "picked": "wash",
+      "line": "Dry takes the wet away. Wash makes things wet and soapy."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-11-12T12:11:32+00:00",
+    "model": "claude-opus-5-5",
+    "scrubbed_at": "2026-11-12",
+    "scrub_note": "Scrubbed by claude 2026-11-12: all 40 sentences and 20 contrasts read aloud at Year-1 level after judging; 4 judge rounds. rinse swapped for dry at grading (scrub and rinse both graded 2, which would make the set Year 2); sweep, wipe authored to the broom/cloth senses taught (WordNet sweep self-defines, wipe says circular motion). Fixes: two-fit sweep/scrub/wash frames restaged with heap/dustpan, steel wool, gently and machine cues; trimmed long frames; 10 single gpt-5.5 dissents read and waived with reasons."
+  }
+}

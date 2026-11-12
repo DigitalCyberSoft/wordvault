@@ -347,7 +347,7 @@
       "judged_at": "2026-07-07T03:56:05+00:00"
     },
     "B-climate-01-s13": {
-      "text_sha256": "95c98ff2ec3683561d88ec7ebb9a19a7f6c67f7b749e5e215445b8b7f2ccfcd8",
+      "text_sha256": "b1483e1369c69c65dee73ec4d1a45dc69ac494f251d5eb427ef46a00d6a3cea1",
       "verdict": "review",
       "judges": [
         {
@@ -368,13 +368,12 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "arid",
-            "bleak"
+            "arid"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-07T03:56:05+00:00"
+      "judged_at": "2026-11-12T12:21:14+00:00"
     },
     "B-climate-01-s14": {
       "text_sha256": "49a971e22c9ba90cd2ac81bc42c12f0b9dad5fe736c459cfb006c217f0d4ea3d",
@@ -407,15 +406,13 @@
       "judged_at": "2026-07-07T03:56:05+00:00"
     },
     "B-climate-01-s15": {
-      "text_sha256": "1b222c127db13eba784f12260b34262460380f20a6084a93ff596f92bd53ae95",
-      "verdict": "review",
+      "text_sha256": "5cefbc9ddff484fd29182598de8a0940d878ad25ade93091d8384fdae5a52d91",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "arid",
-            "bleak",
-            "sweltering"
+            "arid"
           ],
           "sense_match": true
         },
@@ -429,13 +426,12 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "arid",
-            "bleak"
+            "arid"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-07T03:56:05+00:00"
+      "judged_at": "2026-11-12T12:28:50+00:00"
     },
     "B-climate-01-s16": {
       "text_sha256": "056e0fea5c127f87e422fbd3967020804441505f93bf3870d0b178a7bb2e65f2",
@@ -468,22 +464,20 @@
       "judged_at": "2026-07-07T03:56:05+00:00"
     },
     "B-climate-01-s18": {
-      "text_sha256": "64a2337d37353bcac5c3204378581e569eb8b99df999d58a620250c32cffb2b2",
-      "verdict": "review",
+      "text_sha256": "448c9d23366693400a8119d54bd684417bacad2b8aa118cade36cecfbb9c2093",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "brisk",
-            "frigid"
+            "brisk"
           ],
           "sense_match": true
         },
         {
           "model": "gpt-4.1",
           "fits": [
-            "brisk",
-            "frigid"
+            "brisk"
           ],
           "sense_match": true
         },
@@ -495,7 +489,7 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-07T04:16:42+00:00"
+      "judged_at": "2026-11-12T12:21:14+00:00"
     },
     "B-climate-01-s25": {
       "text_sha256": "216f2da8152bd18bad082fdc8d0b7661572fae3daf5f6ad2cd4f65590d77cf49",
@@ -985,22 +979,20 @@
       "judged_at": "2026-07-07T04:16:42+00:00"
     },
     "B-climate-01-s19": {
-      "text_sha256": "92a2a62bb63b8fd24ad63d0542c3fd40bfe87dd894d84abebd2463d02d7bffea",
-      "verdict": "review",
+      "text_sha256": "37da972c795d136d200979f7e4ca08d3f718271b942d4d839d5b69c8e0ae7835",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "brisk",
-            "frigid"
+            "brisk"
           ],
           "sense_match": true
         },
         {
           "model": "gpt-4.1",
           "fits": [
-            "brisk",
-            "frigid"
+            "brisk"
           ],
           "sense_match": true
         },
@@ -1012,7 +1004,7 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-07T04:16:42+00:00"
+      "judged_at": "2026-11-12T12:21:14+00:00"
     },
     "B-climate-01-s20": {
       "text_sha256": "442daaa15c5f81070ad66ecf730489e8832a182a9f5eadd9fe4d8335f85cae73",
@@ -1072,22 +1064,20 @@
       "judged_at": "2026-07-07T04:21:49+00:00"
     },
     "B-climate-01-s22": {
-      "text_sha256": "ed2274a32a05e56dd6877ebcf92717ea473332fa206656569f8b9636e8c4493c",
-      "verdict": "review",
+      "text_sha256": "19ff2ece32a99de09dcfa43ff31f498c8453d15577e240429f6f1525c1618431",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "brisk",
-            "frigid"
+            "brisk"
           ],
           "sense_match": true
         },
         {
           "model": "gpt-4.1",
           "fits": [
-            "brisk",
-            "frigid"
+            "brisk"
           ],
           "sense_match": true
         },
@@ -1099,26 +1089,23 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-07T04:16:42+00:00"
+      "judged_at": "2026-11-12T12:21:14+00:00"
     },
     "B-climate-01-s23": {
-      "text_sha256": "173544a154e644c5bcb10b1830cc45c5f80372e8d15e337ca007613fab072a70",
-      "verdict": "review",
+      "text_sha256": "62746462a431543288b7faec824a30b9c1b7c6825838069f35ac085c65ab4a5a",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "bleak",
-            "brisk",
-            "frigid"
+            "brisk"
           ],
           "sense_match": true
         },
         {
           "model": "gpt-4.1",
           "fits": [
-            "brisk",
-            "frigid"
+            "brisk"
           ],
           "sense_match": true
         },
@@ -1130,7 +1117,7 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-07T04:16:42+00:00"
+      "judged_at": "2026-11-12T12:21:14+00:00"
     },
     "B-climate-01-s24": {
       "text_sha256": "b8a876ea873b12a7580726f593e42714a7b9511edf299aa6cf580ff37f62bee9",

@@ -467,7 +467,7 @@
       "judged_at": "2026-07-05T13:22:25+00:00"
     },
     "A-scared-01-s17": {
-      "text_sha256": "07c3511e6e1dabfebef69a795073960bf261a5dd5e73bdef368dde41e793e7cb",
+      "text_sha256": "6a5eb3b72b6684489293d2c67e9cf98bf20a770c0532464738ef46acb5fd54e0",
       "verdict": "review",
       "judges": [
         {
@@ -489,13 +489,12 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "horrified",
             "terrified"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T13:22:25+00:00"
+      "judged_at": "2026-11-12T12:31:07+00:00"
     },
     "A-scared-01-s18": {
       "text_sha256": "f40feb5536b26bc48e5a998b4996f0fa6469e93cf2d550a923641c3003c3ed63",
@@ -647,14 +646,12 @@
       "judged_at": "2026-07-05T13:23:49+00:00"
     },
     "A-scared-01-s23": {
-      "text_sha256": "0e7a17470aacdbfc3b7c75c126e9034f71f336518e6674504a5598927c6424eb",
-      "verdict": "review",
+      "text_sha256": "27720420ec826cca635847c5241fc9a2bdc1120fe048e5c3473919c054514cbd",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "alarmed",
-            "horrified",
             "terrified"
           ],
           "sense_match": true
@@ -669,13 +666,12 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "alarmed",
             "terrified"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T13:23:49+00:00"
+      "judged_at": "2026-11-12T12:24:54+00:00"
     },
     "A-scared-01-s24": {
       "text_sha256": "7ea052044f83aa5f282266339cf00c650273fcb419b211e6679fbee417ba1798",
@@ -850,13 +846,12 @@
       "judged_at": "2026-07-05T13:23:49+00:00"
     },
     "A-scared-01-s30": {
-      "text_sha256": "ab578fe953988d78d754c7304178cb037c1035de7086372f002cdd0baf2eee1c",
-      "verdict": "review",
+      "text_sha256": "fe5c71933205584ee520acdc3b214cd6d2896920639883d37ea2de3a6b228735",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "terrified",
             "timid"
           ],
           "sense_match": true
@@ -871,13 +866,12 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "terrified",
             "timid"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T13:23:49+00:00"
+      "judged_at": "2026-11-12T12:17:38+00:00"
     },
     "A-scared-01-s31": {
       "text_sha256": "82f61152ac4b23b1a10723dfb4ce6255457ec218a2e3dc1d2958b3af74a56d58",
@@ -965,15 +959,13 @@
       "judged_at": "2026-07-05T13:24:47+00:00"
     },
     "A-scared-01-s34": {
-      "text_sha256": "602e3fed34fdfe33ffe0690e08a547e0f2f828bf4bcffe269404308e88358f75",
-      "verdict": "review",
+      "text_sha256": "b87ea664ee84977c2e05e40144c7af0e002fb9c4466e919f67708b830fa6fe4e",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "alarmed",
-            "horrified",
-            "startled"
+            "horrified"
           ],
           "sense_match": true
         },
@@ -987,13 +979,12 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "horrified",
-            "startled"
+            "horrified"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T13:24:47+00:00"
+      "judged_at": "2026-11-12T12:17:38+00:00"
     },
     "A-scared-01-s35": {
       "text_sha256": "c87c76c1737662712bf9236acf0bce0353928f8e53e5cf7dea55c5e341262f54",

@@ -2,7 +2,7 @@
   "set_id": "B-move-01",
   "sentences": {
     "B-move-01-s09": {
-      "text_sha256": "bc0bda7878000f6c3c28254255d86f850e69c0ec71fa9dce6095d7bbd7e06e3f",
+      "text_sha256": "254772d0b2327b77cac6b06b6d86bb5d127d29cdbe3133b5e6cd5d212cc5e635",
       "verdict": "pass",
       "judges": [
         {
@@ -27,10 +27,10 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-06T17:51:55+00:00"
+      "judged_at": "2026-11-12T12:25:14+00:00"
     },
     "B-move-01-s10": {
-      "text_sha256": "f14adeb6a9a8c47a07e5e81340004ca553a8829e6d8078f2c19436c8f917f772",
+      "text_sha256": "bd70db4e0c865265754b4923b03b2eda755d08a3cf32b78cba0fb8a5092cadb0",
       "verdict": "pass",
       "judges": [
         {
@@ -55,7 +55,7 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-06T17:51:55+00:00"
+      "judged_at": "2026-11-12T12:36:20+00:00"
     },
     "B-move-01-s11": {
       "text_sha256": "09f6793ba35b27ae9b56840b2dfe87400912f8b82aadda3fe7bcefb409929885",
@@ -86,7 +86,7 @@
       "judged_at": "2026-07-06T17:53:12+00:00"
     },
     "B-move-01-s12": {
-      "text_sha256": "73417b492114c7c71c2f500facd3d061f60e548d6f7717df2d5e016681b5b2a9",
+      "text_sha256": "357cbcbadca47754636972f372403bfb5105ff129afa80c241d54e24410b6113",
       "verdict": "pass",
       "judges": [
         {
@@ -111,10 +111,10 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-06T17:53:12+00:00"
+      "judged_at": "2026-11-12T12:25:44+00:00"
     },
     "B-move-01-s13": {
-      "text_sha256": "005e85fb468cf923edb4b9b3b0c9c1346ce979dec07ec5b483e240258570c486",
+      "text_sha256": "4f39b926a9785791d5ff77aa025a4a93009ccaccc29f169c89f99ac37ea19d94",
       "verdict": "pass",
       "judges": [
         {
@@ -139,7 +139,7 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-06T17:53:12+00:00"
+      "judged_at": "2026-11-12T12:36:20+00:00"
     },
     "B-move-01-s14": {
       "text_sha256": "a5b3bd62cabf15028632d73a0f20ed2394643ae3298899e429bc6122e444cd65",
@@ -170,7 +170,7 @@
       "judged_at": "2026-07-06T17:53:12+00:00"
     },
     "B-move-01-s15": {
-      "text_sha256": "e733c55ce0b010e08b805cfecc3ef7b690664e9865c2c8bbd5b108a4b9fa1e18",
+      "text_sha256": "8fed24674db4c2b0ffc055f7a6e8eb8d39acde7608f382758e0db7167a004f6a",
       "verdict": "pass",
       "judges": [
         {
@@ -195,7 +195,7 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-06T17:53:12+00:00"
+      "judged_at": "2026-11-12T12:36:20+00:00"
     },
     "B-move-01-s16": {
       "text_sha256": "03bd0301c4daba6b0190c457b1f77dcbd24cfafac783015263315edc58af9fd5",
@@ -255,7 +255,7 @@
       "judged_at": "2026-07-06T17:53:12+00:00"
     },
     "B-move-01-s18": {
-      "text_sha256": "742980a9f94dcb0a16a053957ea7e390fe48ebd2188815c4db6167e09b25d2f2",
+      "text_sha256": "68bbd1c49c26ce4c10f72675177aae08d8063038025e65ae3ba2007d6558988d",
       "verdict": "pass",
       "judges": [
         {
@@ -280,7 +280,7 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-06T17:53:12+00:00"
+      "judged_at": "2026-11-12T12:36:20+00:00"
     },
     "B-move-01-s19": {
       "text_sha256": "d1f44445ab7da7280b2d7645374657657a530c6d4600cf67ef20845171ec3b8f",
@@ -311,7 +311,7 @@
       "judged_at": "2026-07-06T17:53:12+00:00"
     },
     "B-move-01-s20": {
-      "text_sha256": "d1b5be62222b7903a0372c6b3a8580ff9a668a968aacdfd2f7bb11b57958dc54",
+      "text_sha256": "3c7f74a6835f3472fbeedf8cb561999f7775b2a3fd766fd9236a766980345248",
       "verdict": "pass",
       "judges": [
         {
@@ -336,7 +336,7 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-06T17:53:12+00:00"
+      "judged_at": "2026-11-12T12:25:44+00:00"
     },
     "B-move-01-s21": {
       "text_sha256": "627a9fd4667a287e46d36566aec7816728c1601e3cab72da2067d64baa9289a7",
@@ -367,7 +367,7 @@
       "judged_at": "2026-07-06T17:54:29+00:00"
     },
     "B-move-01-s22": {
-      "text_sha256": "3154416c9ac54b9909885c3336241713776deb6992a2a4882a5f067927174c05",
+      "text_sha256": "e78fbc2448f97531c0373bdd86f1b5105924481315c527d949ab7df7ccf491d5",
       "verdict": "pass",
       "judges": [
         {
@@ -392,7 +392,7 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-06T17:54:29+00:00"
+      "judged_at": "2026-11-12T12:25:44+00:00"
     },
     "B-move-01-s23": {
       "text_sha256": "13f5519dbcd444fcef6681037ad4874ce5649975ea795eef6acbaac3133632e6",
@@ -479,7 +479,7 @@
       "judged_at": "2026-07-06T17:54:29+00:00"
     },
     "B-move-01-s26": {
-      "text_sha256": "f7e082da4f13a69fdc2a84447769077e4036944de6c98d5b98543dc5a00606d8",
+      "text_sha256": "6431caf79f25e2bf886fc341355e48b3784cc1c484dc5448f2dfa37221fe0630",
       "verdict": "pass",
       "judges": [
         {
@@ -504,7 +504,7 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-06T17:54:29+00:00"
+      "judged_at": "2026-11-12T12:25:44+00:00"
     },
     "B-move-01-s27": {
       "text_sha256": "a999d22b15b10f5d08d4d402526e1a9e024736cbd919a76bac1b8654d8a5bed7",
@@ -535,7 +535,7 @@
       "judged_at": "2026-07-06T17:54:29+00:00"
     },
     "B-move-01-s28": {
-      "text_sha256": "4d036d259d7a2ea2acac38017988daf5a3cdbb342ab8fee3711669cb2c2e081f",
+      "text_sha256": "5a4cc0ccad10c63961068f03e9bfb95cd3f6d9e3ac20ca79a1a216d35eb18d0e",
       "verdict": "pass",
       "judges": [
         {
@@ -560,10 +560,10 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-06T17:54:29+00:00"
+      "judged_at": "2026-11-12T12:25:44+00:00"
     },
     "B-move-01-s29": {
-      "text_sha256": "df0b8b6671bb872262f6f9d7a65003b10735442094c8c8c515b510d7feabe88f",
+      "text_sha256": "3034dbfde9ba710cdfac7157b64c87e747ec8b208b416c35653a185a59ccfe8f",
       "verdict": "pass",
       "judges": [
         {
@@ -588,7 +588,7 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-06T17:54:29+00:00"
+      "judged_at": "2026-11-12T12:36:20+00:00"
     },
     "B-move-01-s30": {
       "text_sha256": "3e107dea197e927ae5a35ce6b6d5766cf61c602a4df5b9d1fa620d69069a8f43",
@@ -647,7 +647,7 @@
       "judged_at": "2026-07-06T17:56:18+00:00"
     },
     "B-move-01-s32": {
-      "text_sha256": "83b4ef1f38b4c74f5defa7b28ef576075618b8bd298904e056b7fb9e878ea30c",
+      "text_sha256": "b740bf9ca98638a1bd61a794baf89a4d5258e8fdcdb8cfee00b4251d3c62d8b9",
       "verdict": "pass",
       "judges": [
         {
@@ -672,129 +672,10 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-06T17:56:18+00:00"
+      "judged_at": "2026-11-12T12:25:44+00:00"
     },
     "B-move-01-s33": {
-      "text_sha256": "6665aae838e259b5d3d86be55a05159bb14e0144ad549256deaba87eb59e5d3a",
-      "verdict": "review",
-      "judges": [
-        {
-          "model": "gpt-5.5",
-          "fits": [
-            "dance",
-            "hop",
-            "slide"
-          ],
-          "sense_match": true
-        },
-        {
-          "model": "gpt-4.1",
-          "fits": [
-            "dance"
-          ],
-          "sense_match": true
-        },
-        {
-          "model": "claude-opus-4-8",
-          "fits": [
-            "dance"
-          ],
-          "sense_match": true
-        }
-      ],
-      "judged_at": "2026-07-06T17:56:18+00:00"
-    },
-    "B-move-01-s34": {
-      "text_sha256": "676d28d7084bd2f54e0c9e41e87ecb318520205e4ad216157f5e145525a542b5",
-      "verdict": "review",
-      "judges": [
-        {
-          "model": "gpt-5.5",
-          "fits": [
-            "dance",
-            "hop",
-            "slide"
-          ],
-          "sense_match": true
-        },
-        {
-          "model": "gpt-4.1",
-          "fits": [
-            "dance"
-          ],
-          "sense_match": true
-        },
-        {
-          "model": "claude-opus-4-8",
-          "fits": [
-            "dance"
-          ],
-          "sense_match": true
-        }
-      ],
-      "judged_at": "2026-07-06T17:56:18+00:00"
-    },
-    "B-move-01-s35": {
-      "text_sha256": "1d35ae5b657effb5957de1d128ccec71679ccca2a60c73cb9d7f24b235ddfa70",
-      "verdict": "review",
-      "judges": [
-        {
-          "model": "gpt-5.5",
-          "fits": [
-            "dance",
-            "hop"
-          ],
-          "sense_match": true
-        },
-        {
-          "model": "gpt-4.1",
-          "fits": [
-            "dance"
-          ],
-          "sense_match": true
-        },
-        {
-          "model": "claude-opus-4-8",
-          "fits": [
-            "dance"
-          ],
-          "sense_match": true
-        }
-      ],
-      "judged_at": "2026-07-06T17:56:18+00:00"
-    },
-    "B-move-01-s36": {
-      "text_sha256": "1c5329d698bdb3a25bba8b0702ac6b19e769297f1a096b0d96a9718b1d200b7e",
-      "verdict": "review",
-      "judges": [
-        {
-          "model": "gpt-5.5",
-          "fits": [
-            "dance",
-            "hop",
-            "slide"
-          ],
-          "sense_match": true
-        },
-        {
-          "model": "gpt-4.1",
-          "fits": [
-            "dance"
-          ],
-          "sense_match": true
-        },
-        {
-          "model": "claude-opus-4-8",
-          "fits": [
-            "dance"
-          ],
-          "sense_match": true
-        }
-      ],
-      "judged_at": "2026-07-06T17:56:18+00:00"
-    },
-    "B-move-01-s37": {
-      "text_sha256": "11f98e05d2e2594c6a5114cdc9b7c80338e1116c160de8dca7c8b56159d8e2e4",
+      "text_sha256": "ca20c797095eb75495cbec00d60d5cd708a118a6d5b60eaca1eb24f7b553ec4c",
       "verdict": "pass",
       "judges": [
         {
@@ -819,10 +700,10 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-06T17:56:18+00:00"
+      "judged_at": "2026-11-12T12:25:44+00:00"
     },
-    "B-move-01-s38": {
-      "text_sha256": "3e3cd91f48474ec98817a541de4b2374e5e66737a27da3b9da2f1417c7172b80",
+    "B-move-01-s34": {
+      "text_sha256": "feb55126e06d3b169e0f387965edabcc75d99ea011ebc05254c5561d6865dd63",
       "verdict": "review",
       "judges": [
         {
@@ -849,10 +730,38 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-06T17:56:18+00:00"
+      "judged_at": "2026-11-12T12:26:48+00:00"
     },
-    "B-move-01-s39": {
-      "text_sha256": "c4b63fe3d12e3f62fbf34fbf8b77362b94826bc7b5a6ab3f1953741193890320",
+    "B-move-01-s35": {
+      "text_sha256": "c8615f801dd9b409c7f9bfa53f6781ed5d20c88653b83380f75c72c98d6e27f3",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "dance"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "dance"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "dance"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-11-12T12:26:48+00:00"
+    },
+    "B-move-01-s36": {
+      "text_sha256": "608e51c42fe516793d68c141a382f9bbe4ce79b0708ab761995b790634bbda73",
       "verdict": "review",
       "judges": [
         {
@@ -878,7 +787,94 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-06T17:56:18+00:00"
+      "judged_at": "2026-11-12T12:26:48+00:00"
+    },
+    "B-move-01-s37": {
+      "text_sha256": "640f444e36084e42c8f59d7a6300fb0853ecbf7d61f87a1be1b70e178ea0c553",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "dance",
+            "hop"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "dance"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "dance"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-11-12T12:26:48+00:00"
+    },
+    "B-move-01-s38": {
+      "text_sha256": "6e9ed5cbf20bec8f5bed19cefeeead6200f5debfece9781c58393f5e471abc0e",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "dance"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "dance"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "dance"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-11-12T12:26:48+00:00"
+    },
+    "B-move-01-s39": {
+      "text_sha256": "1a79ad6e6c717931fa42b4f1aa3b72604ce9f452733c9037b0c5b679554bdda5",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "dance",
+            "hop",
+            "slide"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "dance"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "dance"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-11-12T12:26:48+00:00"
     },
     "B-move-01-s40": {
       "text_sha256": "be04f89e5951b915d0dddcd2638c4345906cef3841e82e26cdb7389b58ce4424",
@@ -910,7 +906,7 @@
       "judged_at": "2026-07-06T17:56:18+00:00"
     },
     "B-move-01-s01": {
-      "text_sha256": "1f4f084eac1988a04b4673328ff27e514ac4ae3c4c72764f46ffd592adfe8083",
+      "text_sha256": "7cf3ad7bee7766362d127acea1197fff4b103ddd4b1e923dde1fba3bd7c784e4",
       "verdict": "pass",
       "judges": [
         {
@@ -935,10 +931,10 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-06T18:11:24+00:00"
+      "judged_at": "2026-11-12T12:36:20+00:00"
     },
     "B-move-01-s02": {
-      "text_sha256": "cb83cd536ff543997e8d951d2cb4de49d5f257807c47e36b47f23c10428162e5",
+      "text_sha256": "7cad434b6d6682aec31a91ff449d90dbfa7f6538c9d6654c29aad38ca7dcaeb5",
       "verdict": "pass",
       "judges": [
         {
@@ -963,10 +959,10 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-06T18:11:24+00:00"
+      "judged_at": "2026-11-12T12:36:20+00:00"
     },
     "B-move-01-s03": {
-      "text_sha256": "4f6d29d4db624df2ebe0235717167ea6edb4f45e5249282766ee8b3bb8275e3d",
+      "text_sha256": "0ee08367d78306402fe510792cd83079ecc5cfc585f295f6758b6ddbbee342bf",
       "verdict": "pass",
       "judges": [
         {
@@ -991,10 +987,10 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-06T18:11:24+00:00"
+      "judged_at": "2026-11-12T12:25:14+00:00"
     },
     "B-move-01-s04": {
-      "text_sha256": "354835b3c7fe5dbbf57b46a0d511d9dbfcc6040f26533577858c45139afed518",
+      "text_sha256": "2ff6b483985046c36e085c0ce4b589b74debebef5e3a47b1f114db98dbbbe183",
       "verdict": "pass",
       "judges": [
         {
@@ -1019,10 +1015,10 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-06T18:11:24+00:00"
+      "judged_at": "2026-11-12T12:31:50+00:00"
     },
     "B-move-01-s05": {
-      "text_sha256": "f7497de8b4f84125d772ce3fe5c354f9a40bd856ad237e557993a2c9bd908e4a",
+      "text_sha256": "cad1b0d2936cbfb761d85c6cd41bf31f99812ced5ded4f94944a63a2c8cd24fe",
       "verdict": "review",
       "judges": [
         {
@@ -1048,46 +1044,44 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-06T18:11:24+00:00"
+      "judged_at": "2026-11-12T12:25:14+00:00"
     },
     "B-move-01-s06": {
-      "text_sha256": "b57adf9584f88d56e07e8ab87b89a8c431c7939000e659573abff4aa4f51bf7a",
+      "text_sha256": "b0f987ed475f0594b2774e6ca9c5456fe538ad09d277be281a15dc27514780bb",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "hop"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "hop"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "hop"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-11-12T12:25:14+00:00"
+    },
+    "B-move-01-s07": {
+      "text_sha256": "1fcf800f34a23973e70f6b9e0261f6972a5db410bae746e88640ddd8d36732c6",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "hop"
-          ],
-          "sense_match": true
-        },
-        {
-          "model": "gpt-4.1",
-          "fits": [
-            "crawl",
-            "hop",
-            "slide"
-          ],
-          "sense_match": true
-        },
-        {
-          "model": "claude-opus-4-8",
-          "fits": [
-            "hop",
-            "slide"
-          ],
-          "sense_match": true
-        }
-      ],
-      "judged_at": "2026-07-06T18:12:46+00:00"
-    },
-    "B-move-01-s07": {
-      "text_sha256": "efbac68d3d036413003d3f9263057b723990d1fd2a205ddf186f9df7933e3869",
-      "verdict": "pass",
-      "judges": [
-        {
-          "model": "gpt-5.5",
-          "fits": [
+            "dance",
             "hop"
           ],
           "sense_match": true
@@ -1107,10 +1101,10 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-06T18:11:24+00:00"
+      "judged_at": "2026-11-12T12:25:14+00:00"
     },
     "B-move-01-s08": {
-      "text_sha256": "4fac2db176bd82c87c3a27cebea07b579eddad328fa586a11378e9f90350fd63",
+      "text_sha256": "1f46a6dd1db48e22b91db8f7b0fa464c3263ff6cee66cbb8cc0cae09210dd595",
       "verdict": "pass",
       "judges": [
         {
@@ -1135,7 +1129,7 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-06T18:11:24+00:00"
+      "judged_at": "2026-11-12T12:36:20+00:00"
     }
   }
 }

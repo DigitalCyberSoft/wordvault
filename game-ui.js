@@ -39,11 +39,12 @@
   var LS = {
     get coins() { var v = parseInt(lsGet('wordvault.coins'), 10); return isFinite(v) && v >= 0 ? v : 0; },
     set coins(v) { lsSet('wordvault.coins', v); },
-    // A fresh game opens at the chosen starting year's first level (a grown-up
-    // knob, like the cap): difficulty defaults to that level until play moves it.
+    // The integer level 1-28 (key name kept from the float era; levelOf()
+    // rounds an old float save onto the ladder). A fresh game opens at the
+    // chosen starting year's first level (a grown-up knob, like the cap).
     get difficulty() {
       var v = parseFloat(lsGet('wordvault.difficulty'));
-      return (isFinite(v) && v >= 1) ? v : (this.startYear - 1) * 4 + 1;
+      return (isFinite(v) && v >= 1) ? C.levelOf(v) : C.yearStart(this.startYear);
     },
     set difficulty(v) { lsSet('wordvault.difficulty', v); },
     get startYear() { var v = parseInt(lsGet('wordvault.startyear'), 10); return (isFinite(v) && v >= 1 && v <= 7) ? v : 1; },
@@ -54,6 +55,9 @@
     // where they already are.
     get bestLevel() { var v = parseInt(lsGet('wordvault.bestlevel'), 10); return (isFinite(v) && v >= 1) ? v : C.levelOf(this.difficulty); },
     set bestLevel(v) { lsSet('wordvault.bestlevel', v); },
+    // Exhausted safes in a row: the second one steps down a year (Core.SLIPS_TO_DROP).
+    get slips() { return +(lsGet('wordvault.slips') || 0); },
+    set slips(v) { lsSet('wordvault.slips', v); },
     // Live clean-crack streak (spans sets, so it persists) and its record.
     get streak() { return +(lsGet('wordvault.streak') || 0); },
     set streak(v) { lsSet('wordvault.streak', v); },
@@ -131,11 +135,24 @@
   // ---- run state (in-memory; the persisted projection is LS.encounter) ----
   var S = null;
 
-  function currentLevel() { return C.levelOf(LS.difficulty); }
+  // the grown-up cap also clamps a level reached before the cap was set
+  function currentLevel() {
+    var lv = C.levelOf(LS.difficulty);
+    return LS.capLevel ? Math.min(lv, LS.capLevel) : lv;
+  }
+  // "Year 2 ●●○○": the dots are clean cracks in a row this year, so the
+  // child can always see how close the next year is
+  function yearProgress(lvl) {
+    var done = C.stepOf(lvl), dots = '';
+    for (var i = 0; i < C.STEPS_PER_YEAR; i++) dots += i < done ? '●' : '○';
+    return dots;
+  }
   function refreshHud() {
     el('coins').textContent = LS.coins;
     var lvl = currentLevel();
-    el('level-pill').textContent = 'Level ' + lvl + ' · Y' + C.yearOf(lvl);
+    el('level-pill').textContent = 'Year ' + C.yearOf(lvl) + ' ' + yearProgress(lvl);
+    el('level-pill').title = C.cleanToPass(lvl) + ' clean crack' + (C.cleanToPass(lvl) === 1 ? '' : 's') +
+      ' in a row to pass Year ' + C.yearOf(lvl);
     el('beststreak').textContent = LS.bestStreak;
     el('mute-toggle').textContent = LS.muted ? '🔇 Sound off' : '🔊 Sound on';
   }
@@ -406,12 +423,13 @@
   }
 
   // ---- the lock timer ----
-  // Core.LOCK_TIMER_MS on the clock per sentence; running out is a miss
+  // Core.lockTimerFor(level) on the clock per sentence (20 s in Years 1-2,
+  // 15 s from Year 3); running out is a miss
   // (Core.timeout). The clock runs ONLY while a sentence is up - overlays,
   // cards and the ready screen all stop it - and it pauses while the tab is
   // hidden, so switching away never fails a lock on return. Under reduced
   // motion the bar steps once a second instead of animating.
-  var timer = { deadline: 0, raf: 0, left: 0 };
+  var timer = { deadline: 0, raf: 0, left: 0, total: C.LOCK_TIMER_MS };
   function timerStop() {
     cancelAnimationFrame(timer.raf);
     clearTimeout(timer.raf);
@@ -422,7 +440,8 @@
   function timerStart() {
     timerStop();
     if (!LS.timerOn) return;
-    timer.deadline = Date.now() + C.LOCK_TIMER_MS;
+    timer.total = C.lockTimerFor(currentLevel());
+    timer.deadline = Date.now() + timer.total;
     el('timer-wrap').hidden = false;
     timerTick();
   }
@@ -430,7 +449,7 @@
     if (!timer.deadline) return;
     var left = timer.deadline - Date.now();
     if (left <= 0) { onTimeout(); return; }
-    var f = left / C.LOCK_TIMER_MS;
+    var f = left / timer.total;
     el('timer-fill').style.transform = 'scaleX(' + f.toFixed(4) + ')';
     el('timer-num').textContent = Math.ceil(left / 1000);
     el('timer-wrap').classList.toggle('low', left < 5000);
@@ -612,11 +631,17 @@
     el('miss-line').textContent = con.line;
     fillWhenline(sentence.answer, picked);
   }
+  // the first miss of a safe is when the in-a-row run breaks; say so once
+  function streakNote() {
+    return S.enc.misses === 1 && !S.review
+      ? ' You can still crack it, but the Year ' + C.yearOf(currentLevel()) + ' run will start again.'
+      : '';
+  }
   function showMissCard(sentence, picked, runsRemain) {
     fillMissCard(sentence, picked);
     var left = S.enc.runsAllowed - S.enc.misses;
     el('miss-runs-left').textContent = runsRemain
-      ? (left === 1 ? 'Last run. Read the cue twice.' : left + ' runs left.')
+      ? (left === 1 ? 'Last run. Read the cue twice.' : left + ' runs left.') + streakNote()
       : 'That was the last run for this safe.';
     el('miss-next').textContent = runsRemain ? 'Try the next run ▶' : 'See the words ▶';
     S.missWasFinal = !runsRemain;
@@ -648,16 +673,16 @@
     el('miss-cue').appendChild(read);
     el('miss-right-word').textContent = sentence.surface[sentence.answer];
     el('miss-right-gloss').textContent = right ? right.gloss : '';
-    el('miss-picked-word').textContent = '⏱ ' + Math.round(C.LOCK_TIMER_MS / 1000) + 's';
+    el('miss-picked-word').textContent = '⏱ ' + Math.round(timer.total / 1000) + 's';
     el('miss-picked-gloss').textContent = 'The timer ran out before a word was chosen.';
-    el('miss-line').textContent = 'Read the cue first, then scan the tiles — fifteen seconds is plenty once you know what you’re hunting for.';
+    el('miss-line').textContent = 'Read the cue first, then scan the tiles — there is plenty of time once you know what you’re hunting for.';
     fillWhenline(sentence.answer, null);
   }
   function showTimeoutCard(sentence, runsRemain) {
     fillTimeoutCard(sentence);
     var left = S.enc.runsAllowed - S.enc.misses;
     el('miss-runs-left').textContent = runsRemain
-      ? (left === 1 ? 'Last run. Cue first, then tiles.' : left + ' runs left.')
+      ? (left === 1 ? 'Last run. Cue first, then tiles.' : left + ' runs left.') + streakNote()
       : 'That was the last run for this safe.';
     el('miss-next').textContent = runsRemain ? 'Try the next run ▶' : 'See the words ▶';
     S.missWasFinal = !runsRemain;
@@ -692,14 +717,28 @@
     LS.history = h;
   }
 
+  // One line under the crack/exhaust card saying where the child now stands
+  // on the year ladder - the in-a-row rule only motivates if it is visible.
+  function progressLine(ev, lvl, stuck) {
+    var yr = C.yearOf(lvl), left = C.cleanToPass(lvl);
+    var more = left + ' clean crack' + (left === 1 ? '' : 's') + ' in a row to pass Year ' + yr + '.';
+    if (ev === 'promoted') return '🎓 Year ' + (yr - 1) + ' passed - welcome to Year ' + yr + '!';
+    if (ev === 'step') return 'Clean crack! ' + yearProgress(lvl) + ' ' + (left === 1 ? 'One more clean crack passes Year ' + yr + '!' : more);
+    if (ev === 'top') return lvl >= C.MAX_LEVEL ? 'Top of the ladder - Master of the Vault!' : 'Clean crack! That is as high as Settings allow for now.';
+    if (ev === 'reset') return (stuck ? 'This safe stayed shut' : 'A pin slipped on the way') +
+      ', so the Year ' + yr + ' run starts again: ' + more;
+    if (ev === 'demoted') return 'Let’s step back to Year ' + yr + ' and build up again: ' + more;
+    return more;
+  }
+
   function onCracked() {
     var clean = C.isClean(S.enc);
-    // the record counts consecutive clean cracks, so it is taken from the
-    // incremented value BEFORE adjustDifficulty resets the streak on a climb
-    if (clean) LS.bestStreak = Math.max(LS.bestStreak, LS.streak + 1);
-    var adj = C.adjustDifficulty(LS.difficulty, clean ? 'clean-crack' : 'crack', LS.streak, LS.capLevel);
+    LS.streak = clean ? LS.streak + 1 : 0;
+    if (clean) LS.bestStreak = Math.max(LS.bestStreak, LS.streak);
+    var adj = C.adjustDifficulty(currentLevel(), clean ? 'clean-crack' : 'crack', LS.slips, LS.capLevel);
     LS.difficulty = adj.difficulty;
-    LS.streak = adj.streak;
+    LS.slips = adj.slips;
+    S.progressLine = progressLine(adj.event, adj.difficulty);
     var coins = C.coinsFor('crack', currentLevel(), S.enc.need) +
       C.speedBonus(Date.now() - S.startedAt, S.answered);
     LS.coins = LS.coins + coins;
@@ -709,8 +748,10 @@
     recordHistory('crack');
     LS.setsCount = LS.setsCount + 1;
     LS.review = C.pushReview(LS.review, { setId: S.set.id, exhausted: false, at: Date.now() });
+    // the big celebration is for passing a year for the first time
     var newLevel = currentLevel();
-    if (newLevel > LS.bestLevel) { S.queuedLevelUp = newLevel; LS.bestLevel = newLevel; }
+    if (adj.event === 'promoted' && newLevel > LS.bestLevel) S.queuedLevelUp = newLevel;
+    if (newLevel > LS.bestLevel) LS.bestLevel = newLevel;
     LS.encounter = null;
     refreshHud();
     el('vault-reward').textContent = reward ? reward.emoji : '🪙';
@@ -724,7 +765,8 @@
       name.textContent = reward ? reward.name : 'The cabinet is full - coins only!';
       el('crack-collectible').appendChild(big);
       el('crack-collectible').appendChild(name);
-      el('crack-coins').textContent = '+' + coins + ' coins' + (clean ? ' · clean crack!' : '');
+      el('crack-coins').textContent = '+' + coins + ' coins';
+      el('crack-progress').textContent = S.progressLine || '';
       var shelf = reward ? C.shelfState(LS.collectibles).filter(function (s) { return s.shelfId === reward.shelfId; })[0] : null;
       el('crack-shelf').textContent = shelf
         ? (shelf.complete ? '★ ' + shelf.name + ' complete! New look unlocked in the Cabinet.'
@@ -741,8 +783,9 @@
     renderDoor(false);
     el('vault-reward').textContent = ' ';
     if (S.queuedLevelUp) {
-      el('levelup-num').textContent = 'Level ' + S.queuedLevelUp;
-      el('levelup-rank').textContent = rankFor(S.queuedLevelUp);
+      el('levelup-num').textContent = 'Year ' + C.yearOf(S.queuedLevelUp);
+      el('levelup-rank').textContent = rankFor(S.queuedLevelUp) +
+        ' · new words, and the vaults start again at 2 pins';
       S.queuedLevelUp = 0;
       Snd.fanfare();
       show('levelup-overlay');
@@ -753,9 +796,11 @@
   }
 
   function onExhausted() {
-    var adj = C.adjustDifficulty(LS.difficulty, 'exhausted', LS.streak, LS.capLevel);
+    var adj = C.adjustDifficulty(currentLevel(), 'exhausted', LS.slips, LS.capLevel);
     LS.difficulty = adj.difficulty;
+    LS.slips = adj.slips;
     LS.streak = 0;
+    el('exhaust-progress').textContent = progressLine(adj.event, adj.difficulty, true);
     recordHistory('exhausted');
     LS.setsCount = LS.setsCount + 1;
     LS.review = C.pushReview(LS.review, { setId: S.set.id, exhausted: true, at: Date.now() });
@@ -780,6 +825,7 @@
     openVault(function () {
       el('crack-collectible').innerHTML = '<div style="font-size:4rem">🔓</div><p style="font-weight:800">Still yours! The words held.</p>';
       el('crack-coins').textContent = '+' + coins + ' coins';
+      el('crack-progress').textContent = 'Review lockboxes never change your year.';
       el('crack-shelf').textContent = '';
       show('crack-overlay');
       if (S.auto) autoContinue('crack-next');
@@ -936,12 +982,12 @@
     el('set-sound-val').textContent = LS.muted ? 'Off' : 'On';
     el('set-sound-val').classList.toggle('off', LS.muted);
     el('set-year-val').textContent = 'Year ' + LS.startYear;
-    el('set-cap-val').textContent = LS.capLevel ? 'Level ' + LS.capLevel : 'Off';
+    el('set-cap-val').textContent = LS.capLevel ? 'Year ' + C.yearOf(LS.capLevel) : 'Off';
     el('set-cap-val').classList.toggle('off', !LS.capLevel);
     var fxv = !FX.supported() ? 'No WebGL' : LS.fxWanted ? 'On' : 'Off';
     el('set-fx-val').textContent = fxv;
     el('set-fx-val').classList.toggle('off', fxv !== 'On');
-    el('set-timer-val').textContent = LS.timerOn ? Math.round(C.LOCK_TIMER_MS / 1000) + 's' : 'Off';
+    el('set-timer-val').textContent = LS.timerOn ? Math.round(C.lockTimerFor(currentLevel()) / 1000) + 's' : 'Off';
     el('set-timer-val').classList.toggle('off', !LS.timerOn);
   }
   // in-game confirm: the same overlay system as everything else, because a
@@ -954,7 +1000,7 @@
   }
 
   function wipeProgress() {
-    ['coins', 'difficulty', 'bestlevel', 'streak', 'collectibles', 'cosmetic',
+    ['coins', 'difficulty', 'bestlevel', 'streak', 'slips', 'collectibles', 'cosmetic',
       'review', 'history', 'setscount', 'reviewedat', 'encounter'].forEach(function (k) {
       lsDel('wordvault.' + k);
     });
@@ -1054,14 +1100,17 @@
     el('set-cap').addEventListener('click', function () {
       var idx = CAPS.indexOf(LS.capLevel);
       LS.capLevel = CAPS[(idx + 1) % CAPS.length];
+      refreshHud();
       refreshSettings();
     });
     el('set-year').addEventListener('click', function () {
       // cycling the starting year MOVES the game there, both directions: it is
       // the grown-up placing the child, streak and all
       LS.startYear = (LS.startYear % 7) + 1;
-      LS.difficulty = (LS.startYear - 1) * 4 + 1;
+      LS.difficulty = C.yearStart(LS.startYear);
+      LS.bestLevel = LS.difficulty; // celebrations count from the placement
       LS.streak = 0;
+      LS.slips = 0;
       refreshHud();
       refreshSettings();
     });

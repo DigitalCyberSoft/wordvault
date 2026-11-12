@@ -30,13 +30,12 @@
       "judged_at": "2026-07-06T17:08:08+00:00"
     },
     "A-ponder-01-s02": {
-      "text_sha256": "7ec0906070949df4502a63735fe6c89475a6bf99de0a0fb857c8c812d30c5eb4",
-      "verdict": "review",
+      "text_sha256": "fda6060b9a6d45eda89909d96ca4fc13f13f6a833ca729a12336da355e7be162",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "evaluate",
             "scrutinise"
           ],
           "sense_match": true
@@ -51,13 +50,12 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "evaluate",
             "scrutinise"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-06T17:08:08+00:00"
+      "judged_at": "2026-11-12T12:16:04+00:00"
     },
     "A-ponder-01-s03": {
       "text_sha256": "41737d41b1029900c793bfc80c18a667c4c20530859251ddbb6606ddb51d8e88",
@@ -88,13 +86,12 @@
       "judged_at": "2026-07-06T17:08:08+00:00"
     },
     "A-ponder-01-s04": {
-      "text_sha256": "b21480b5073c1003e4e9f0b06899662f3251b39981c4266ee3b7532b10107dbb",
-      "verdict": "review",
+      "text_sha256": "c93bf5e82b287abd924a6e4ad0323e6fc59fc0e5f3eda42626c4dc933f42af7a",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "evaluate",
             "scrutinise"
           ],
           "sense_match": true
@@ -109,13 +106,12 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "evaluate",
             "scrutinise"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-06T17:08:08+00:00"
+      "judged_at": "2026-11-12T12:16:04+00:00"
     },
     "A-ponder-01-s05": {
       "text_sha256": "330e468387dc2198ee922a5c87a4a73828dd2489eeb517e914dc0128903c2db7",
@@ -828,7 +824,7 @@
       "judged_at": "2026-07-06T17:11:01+00:00"
     },
     "A-ponder-01-s30": {
-      "text_sha256": "1bb2b882265c8fdee9a5a7eb8e4ed3b324a88c5c09f44d9b001d67b210db442d",
+      "text_sha256": "5b1e718b30dcbe0b56ed381e08858c57cd2f920f10e0c821255fae634a6c190f",
       "verdict": "review",
       "judges": [
         {
@@ -849,13 +845,12 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "evaluate",
-            "scrutinise"
+            "evaluate"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-06T17:11:01+00:00"
+      "judged_at": "2026-11-12T12:16:04+00:00"
     },
     "A-ponder-01-s31": {
       "text_sha256": "b6314e494f9a1aa7493044da0702cf1921031c916a5d39d3b511e32dc4ce987a",

@@ -776,13 +776,12 @@
       "judged_at": "2026-07-05T13:21:23+00:00"
     },
     "A-tired-01-s28": {
-      "text_sha256": "c1b9a050949a079892afd131d81f640d6045315f4a63caaba1ba605761eaa057",
-      "verdict": "review",
+      "text_sha256": "9bc5f21249edbb3c1f532e5a1c4978d4e885e519510219095d794e5068fd842d",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "drowsy",
             "sluggish"
           ],
           "sense_match": true
@@ -797,13 +796,12 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "drowsy",
             "sluggish"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T13:21:23+00:00"
+      "judged_at": "2026-11-12T12:19:27+00:00"
     },
     "A-tired-01-s29": {
       "text_sha256": "58414119828b872fd39ae8d4bdfd38cca36dc4add8ced310636ef8a6aea02d9e",

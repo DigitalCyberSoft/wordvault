@@ -35,7 +35,7 @@
   <div id="hud">
     <span class="logo"><img src="assets/logo/logo-mark.svg" alt="" onerror="this.style.display='none'"> Word Vault</span>
     <span class="stat coins">🪙 <b id="coins">0</b></span>
-    <span class="stat">🔓 <b id="level-pill">Level 1</b></span>
+    <span class="stat">🔓 <b id="level-pill">Year 1 ○○○○</b></span>
     <span class="stat year" id="year-stat" hidden>🎓 <b id="year-pill">Year 1</b></span>
     <span class="stat" title="Best clean-crack streak">🏆 <b id="beststreak">0</b></span>
     <span class="spacer"></span>
@@ -235,6 +235,7 @@
       <h2>💥 CRACKED!</h2>
       <div id="crack-collectible"></div>
       <p class="money-line" id="crack-coins"></p>
+      <p class="progress-line" id="crack-progress"></p>
       <p class="shelfline" id="crack-shelf"></p>
       <button class="big brass" id="crack-next">Collect ▶</button>
     </div>
@@ -245,13 +246,14 @@
       <h2>This safe keeps its secret… for now</h2>
       <p style="font-weight:600">Here are the words that slipped away. Read them once — you’ll meet this safe again.</p>
       <div id="exhaust-words"></div>
+      <p class="progress-line" id="exhaust-progress"></p>
       <button class="big" id="exhaust-next">Onward ▶</button>
     </div>
   </div>
 
   <div class="overlay" id="levelup-overlay">
     <div class="card">
-      <h2>⭐ Level up!</h2>
+      <h2>⭐ Year passed!</h2>
       <p class="rank" id="levelup-num"></p>
       <p id="levelup-rank" style="font-weight:700"></p>
       <button class="big brass" id="levelup-btn">Keep cracking ▶</button>
@@ -272,8 +274,8 @@
       <div class="set-list">
         <button class="set-row" id="set-sound"><span>Sound</span><span class="set-val" id="set-sound-val">On</span></button>
         <button class="set-row" id="set-year"><span>Starting year <small>(school year 1–7)</small></span><span class="set-val" id="set-year-val">Year 1</span></button>
-        <button class="set-row" id="set-timer"><span>Lock timer <small>(15 seconds per sentence)</small></span><span class="set-val" id="set-timer-val">On</span></button>
-        <button class="set-row" id="set-cap"><span>Top level cap <small>(for grown-ups)</small></span><span class="set-val" id="set-cap-val">Off</span></button>
+        <button class="set-row" id="set-timer"><span>Lock timer <small>(20 s in Years 1–2, then 15 s)</small></span><span class="set-val" id="set-timer-val">On</span></button>
+        <button class="set-row" id="set-cap"><span>Highest year <small>(for grown-ups)</small></span><span class="set-val" id="set-cap-val">Off</span></button>
         <button class="set-row" id="set-fx"><span>Holo vault <small>(needs a capable screen)</small></span><span class="set-val" id="set-fx-val">On</span></button>
         <button class="set-row" id="set-howto"><span>How to play</span><span class="set-val">→</span></button>
         <button class="set-row" id="set-newgame"><span>New game <small>(wipes progress)</small></span><span class="set-val">→</span></button>
@@ -287,18 +289,20 @@
       <h2>How to play</h2>
       <p class="howto-classic" style="text-align:left;font-weight:600;line-height:1.55">
         Five words are carved on the brass tiles. The paper slip shows a sentence with a hole in it.
-        <b>Tap the one word that truly fits — you have 15 seconds before the lock re-seals.</b>
+        <b>Tap the one word that truly fits — you have 15 seconds (20 in Years 1–2) before the lock re-seals.</b>
         Every correct word seats one tumbler pin; seat them all in a row and the vault swings open.
-        Each school year's vaults grow from 2 pins up to 5. One wrong word (or an empty clock) and
+        Each school year's vaults grow from 2 pins up to 5 — four clean cracks in a row pass the year.
+        One wrong word (or an empty clock) and
         all the pins spring back: that run is over, a lamp lights on the alarm, and three misses
         ring the alarm — that safe stays shut for now. Press and hold a tile to peek at what a
         word means (on lower levels).
       </p>
       <p class="howto-holo" style="text-align:left;font-weight:600;line-height:1.55">
         Five words glow on the holo tiles. The screen shows a sentence with a gap in it.
-        <b>Tap the one word that truly fits — the fuse around the lock burns for 15 seconds.</b>
+        <b>Tap the one word that truly fits — the fuse around the lock burns for 15 seconds (20 in Years 1–2).</b>
         Every correct word charges one energy pin; charge them all in a row and the vault iris
-        spins open. Each school year's vaults grow from 2 pins up to 5. One wrong word (or a
+        spins open. Each school year's vaults grow from 2 pins up to 5 — four clean cracks in a row
+        pass the year. One wrong word (or a
         burnt-out fuse) and the charge arcs away: that run is over, a warning lamp lights, and
         three misses trip the alarm — that vault stays sealed for now. Press and hold a tile to
         peek at what a word means (on lower levels).
@@ -310,7 +314,7 @@
   <div class="overlay" id="confirm-overlay">
     <div class="card confirm-card">
       <h2>💥 Start over?</h2>
-      <p style="font-weight:600">This wipes coins, level and the cabinet for a new player.<br>The best-streak trophy stays on the wall.</p>
+      <p style="font-weight:600">This wipes coins, school year and the cabinet for a new player.<br>The best-streak trophy stays on the wall.</p>
       <div class="confirm-btns">
         <button class="big plain" id="confirm-no">Keep my game</button>
         <button class="big brass" id="confirm-yes">Start over</button>

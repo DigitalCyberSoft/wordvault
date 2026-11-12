@@ -818,8 +818,8 @@
       "answer": "covert",
       "cue": "inferential",
       "reserve": false,
-      "text": "The ___ meeting used the back staircase while reporters waited outside.",
-      "cue_phrase": "reporters waited outside",
+      "text": "The ___ mission was hidden even from the soldiers, who learned their target only after takeoff.",
+      "cue_phrase": "hidden even from the soldiers; only after takeoff",
       "surface": {
         "stealthy": "stealthy",
         "devious": "devious",
@@ -989,6 +989,6 @@
     "generated_at": "2026-07-07T03:33:54+00:00",
     "model": "gpt-5.5",
     "scrubbed_at": "2026-07-07",
-    "scrub_note": "Scrubbed by claude 2026-07-07: mechanical sweeps clean (one purple-snow frame cleared - colour absurdity, not calendar), all 40 sentences, all 20 contrasts, and mixed-tense surface maps read per set; no defects."
+    "scrub_note": "Scrubbed by claude 2026-07-07: mechanical sweeps clean (one purple-snow frame cleared - colour absurdity, not calendar), all 40 sentences, all 20 contrasts, and mixed-tense surface maps read per set; no defects. Fairness pass by claude 2026-11-12: covert s38 is now a military mission hidden even from its own soldiers, not a low-key meeting (discreet)."
   }
 }

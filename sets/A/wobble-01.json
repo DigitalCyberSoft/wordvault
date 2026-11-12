@@ -1,0 +1,857 @@
+{
+  "id": "A-wobble-01",
+  "bank": "A",
+  "pos": "verb",
+  "theme": "little movements",
+  "band": 2,
+  "band_override": 2,
+  "computed": {
+    "zipf_min": 2.59,
+    "zipf_mean": 3.05,
+    "tightness": 0.296,
+    "band_suggested": 3,
+    "scored_at": "2026-11-12T12:30:33+00:00"
+  },
+  "words": [
+    {
+      "w": "sway",
+      "synset": "rock.v.01",
+      "gloss_source": "wordnet",
+      "gloss": "move back and forth or sideways",
+      "zipf": 3.65,
+      "register": "neutral",
+      "senses_at_pos": 4,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "sway",
+        "third": "sways",
+        "past": "swayed",
+        "part": "swaying"
+      },
+      "discriminator": "slow, smooth swinging from side to side",
+      "grade": 3
+    },
+    {
+      "w": "wobble",
+      "synset": "wobble.v.01",
+      "gloss_source": "wordnet",
+      "gloss": "move unsteadily",
+      "zipf": 3.02,
+      "register": "neutral",
+      "senses_at_pos": 3,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "wobble",
+        "third": "wobbles",
+        "past": "wobbled",
+        "part": "wobbling"
+      },
+      "discriminator": "unsteady, tipping as if about to fall",
+      "gloss_zipf_waiver": {
+        "words": [
+          "unsteadily"
+        ],
+        "reason": "transparent un- + steady; a Year 3 reader decodes it from 'steady', and the discriminator 'tipping as if about to fall' carries it",
+        "by": "claude",
+        "at": "2026-11-12"
+      },
+      "grade": 2
+    },
+    {
+      "w": "wriggle",
+      "synset": "writhe.v.01",
+      "gloss_source": "wordnet",
+      "gloss": "to move in a twisting or contorted motion, (especially when struggling)",
+      "zipf": 2.59,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "wriggle",
+        "third": "wriggles",
+        "past": "wriggled",
+        "part": "wriggling"
+      },
+      "discriminator": "twisting the body about to get free or comfy",
+      "gloss_zipf_waiver": {
+        "words": [
+          "contorted"
+        ],
+        "reason": "single hard word; 'twisting' and 'struggling' in the same gloss carry the meaning",
+        "by": "claude",
+        "at": "2026-11-12"
+      },
+      "grade": 2
+    },
+    {
+      "w": "shiver",
+      "synset": "shiver.v.02",
+      "gloss_source": "wordnet",
+      "gloss": "shake, as from cold",
+      "zipf": 3.05,
+      "register": "neutral",
+      "senses_at_pos": 2,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "shiver",
+        "third": "shivers",
+        "past": "shivered",
+        "part": "shivering"
+      },
+      "discriminator": "shaking because you are cold",
+      "grade": 2
+    },
+    {
+      "w": "flinch",
+      "synset": "flinch.v.01",
+      "gloss_source": "wordnet",
+      "gloss": "draw back, as with fear or pain",
+      "zipf": 2.92,
+      "register": "neutral",
+      "senses_at_pos": 1,
+      "dominant_sense_ok": null,
+      "forms": {
+        "base": "flinch",
+        "third": "flinches",
+        "past": "flinched",
+        "part": "flinching"
+      },
+      "discriminator": "a quick pull back when something scares or hurts you",
+      "grade": 4
+    }
+  ],
+  "sentences": [
+    {
+      "id": "A-wobble-01-s01",
+      "answer": "sway",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "In the soft breeze, the tall gum trees ___ slowly and smoothly.",
+      "cue_phrase": "slowly and smoothly",
+      "surface": {
+        "sway": "swayed",
+        "wobble": "wobbled",
+        "wriggle": "wriggled",
+        "shiver": "shivered",
+        "flinch": "flinched"
+      }
+    },
+    {
+      "id": "A-wobble-01-s02",
+      "answer": "sway",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The choir ___ gently from side to side in time with the song.",
+      "cue_phrase": "gently from side to side",
+      "surface": {
+        "sway": "swayed",
+        "wobble": "wobbled",
+        "wriggle": "wriggled",
+        "shiver": "shivered",
+        "flinch": "flinched"
+      }
+    },
+    {
+      "id": "A-wobble-01-s03",
+      "answer": "sway",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Tied to the jetty, the little boat ___ softly on the calm, rolling water.",
+      "cue_phrase": "softly; calm, rolling water",
+      "surface": {
+        "sway": "swayed",
+        "wobble": "wobbled",
+        "wriggle": "wriggled",
+        "shiver": "shivered",
+        "flinch": "flinched"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-4.1 also allows wobble; the other two judges find sway unique. A boat on calm water moving softly is a smooth swing, not an about-to-tip wobble. Accepted.",
+          "by": "claude",
+          "at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "id": "A-wobble-01-s04",
+      "answer": "sway",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Mum held the sleepy baby and ___ slowly to the lullaby.",
+      "cue_phrase": "slowly to the lullaby",
+      "surface": {
+        "sway": "swayed",
+        "wobble": "wobbled",
+        "wriggle": "wriggled",
+        "shiver": "shivered",
+        "flinch": "flinched"
+      }
+    },
+    {
+      "id": "A-wobble-01-s05",
+      "answer": "sway",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The long grass in the paddock ___ like gentle green waves in the wind.",
+      "cue_phrase": "like gentle green waves",
+      "surface": {
+        "sway": "swayed",
+        "wobble": "wobbled",
+        "wriggle": "wriggled",
+        "shiver": "shivered",
+        "flinch": "flinched"
+      }
+    },
+    {
+      "id": "A-wobble-01-s06",
+      "answer": "sway",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Between two gum trees, the hammock ___ gently until Grandpa began to snore.",
+      "cue_phrase": "until Grandpa began to snore",
+      "surface": {
+        "sway": "swayed",
+        "wobble": "wobbled",
+        "wriggle": "wriggled",
+        "shiver": "shivered",
+        "flinch": "flinched"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-4.1 also allows wobble; the other two judges find sway unique. A hammock that rocks Grandpa gently to sleep is smooth and steady, not tipping. Accepted.",
+          "by": "claude",
+          "at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "id": "A-wobble-01-s07",
+      "answer": "sway",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "At the wedding, Nana and Pop ___ slowly together to the soft music.",
+      "cue_phrase": "slowly together to the soft music",
+      "surface": {
+        "sway": "swayed",
+        "wobble": "wobbled",
+        "wriggle": "wriggled",
+        "shiver": "shivered",
+        "flinch": "flinched"
+      }
+    },
+    {
+      "id": "A-wobble-01-s08",
+      "answer": "sway",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "The tall sunflowers ___ smoothly in the breeze, never once tipping over.",
+      "cue_phrase": "smoothly; never once tipping over",
+      "surface": {
+        "sway": "swayed",
+        "wobble": "wobbled",
+        "wriggle": "wriggled",
+        "shiver": "shivered",
+        "flinch": "flinched"
+      }
+    },
+    {
+      "id": "A-wobble-01-s09",
+      "answer": "wobble",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The table had one short leg, so it ___ every time we leaned on it.",
+      "cue_phrase": "one short leg",
+      "surface": {
+        "sway": "swayed",
+        "wobble": "wobbled",
+        "wriggle": "wriggled",
+        "shiver": "shivered",
+        "flinch": "flinched"
+      }
+    },
+    {
+      "id": "A-wobble-01-s10",
+      "answer": "wobble",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Set down on a bumpy rock, the picnic cup ___ and nearly tipped over.",
+      "cue_phrase": "bumpy rock; nearly tipped over",
+      "surface": {
+        "sway": "swayed",
+        "wobble": "wobbled",
+        "wriggle": "wriggled",
+        "shiver": "shivered",
+        "flinch": "flinched"
+      }
+    },
+    {
+      "id": "A-wobble-01-s11",
+      "answer": "wobble",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "My loose front tooth ___ whenever I pushed it with my tongue.",
+      "cue_phrase": "loose front tooth",
+      "surface": {
+        "sway": "swayed",
+        "wobble": "wobbled",
+        "wriggle": "wriggled",
+        "shiver": "shivered",
+        "flinch": "flinched"
+      }
+    },
+    {
+      "id": "A-wobble-01-s12",
+      "answer": "wobble",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Baby Max ___ across the rug on his very first steps, arms out wide.",
+      "cue_phrase": "very first steps, arms out wide",
+      "surface": {
+        "sway": "swayed",
+        "wobble": "wobbled",
+        "wriggle": "wriggled",
+        "shiver": "shivered",
+        "flinch": "flinched"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: gpt-5.5 also allows sway; the other two judges find wobble unique. Very first steps with arms out for balance is the classic unsteady toddler wobble. Accepted; the miss card teaches this edge.",
+          "by": "claude",
+          "at": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "id": "A-wobble-01-s13",
+      "answer": "wobble",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The three-legged stool had a cracked leg, so it ___ when Nana sat down.",
+      "cue_phrase": "a cracked leg",
+      "surface": {
+        "sway": "swayed",
+        "wobble": "wobbled",
+        "wriggle": "wriggled",
+        "shiver": "shivered",
+        "flinch": "flinched"
+      }
+    },
+    {
+      "id": "A-wobble-01-s14",
+      "answer": "wobble",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Lily set the egg down on the bench, and it ___ before lying still.",
+      "cue_phrase": "before lying still",
+      "surface": {
+        "sway": "swayed",
+        "wobble": "wobbled",
+        "wriggle": "wriggled",
+        "shiver": "shivered",
+        "flinch": "flinched"
+      }
+    },
+    {
+      "id": "A-wobble-01-s15",
+      "answer": "wobble",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "As the spinning top slowed down, it began to ___ and then fell over.",
+      "cue_phrase": "spinning top slowed down",
+      "surface": {
+        "sway": "sway",
+        "wobble": "wobble",
+        "wriggle": "wriggle",
+        "shiver": "shiver",
+        "flinch": "flinch"
+      }
+    },
+    {
+      "id": "A-wobble-01-s16",
+      "answer": "wobble",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "With its bent front wheel, Sophie's scooter ___ all the way to school.",
+      "cue_phrase": "bent front wheel",
+      "surface": {
+        "sway": "swayed",
+        "wobble": "wobbled",
+        "wriggle": "wriggled",
+        "shiver": "shivered",
+        "flinch": "flinched"
+      }
+    },
+    {
+      "id": "A-wobble-01-s17",
+      "answer": "wriggle",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "The puppy ___ and twisted until it slipped out of Dad's arms.",
+      "cue_phrase": "twisted until it slipped out",
+      "surface": {
+        "sway": "swayed",
+        "wobble": "wobbled",
+        "wriggle": "wriggled",
+        "shiver": "shivered",
+        "flinch": "flinched"
+      }
+    },
+    {
+      "id": "A-wobble-01-s18",
+      "answer": "wriggle",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Zoe had to ___ on her tummy to squeeze under the fence.",
+      "cue_phrase": "on her tummy to squeeze under",
+      "surface": {
+        "sway": "sway",
+        "wobble": "wobble",
+        "wriggle": "wriggle",
+        "shiver": "shiver",
+        "flinch": "flinch"
+      }
+    },
+    {
+      "id": "A-wobble-01-s19",
+      "answer": "wriggle",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The fat pink worm ___ across the wet path after the rain.",
+      "cue_phrase": "fat pink worm",
+      "surface": {
+        "sway": "swayed",
+        "wobble": "wobbled",
+        "wriggle": "wriggled",
+        "shiver": "shivered",
+        "flinch": "flinched"
+      }
+    },
+    {
+      "id": "A-wobble-01-s20",
+      "answer": "wriggle",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "It took Dad ages to ___ into his tight wetsuit at the beach.",
+      "cue_phrase": "into his tight wetsuit",
+      "surface": {
+        "sway": "sway",
+        "wobble": "wobble",
+        "wriggle": "wriggle",
+        "shiver": "shiver",
+        "flinch": "flinch"
+      }
+    },
+    {
+      "id": "A-wobble-01-s21",
+      "answer": "wriggle",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "The tiny lizard ___ free from Max's hand and darted under a rock.",
+      "cue_phrase": "free from Max's hand",
+      "surface": {
+        "sway": "swayed",
+        "wobble": "wobbled",
+        "wriggle": "wriggled",
+        "shiver": "shivered",
+        "flinch": "flinched"
+      }
+    },
+    {
+      "id": "A-wobble-01-s22",
+      "answer": "wriggle",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Snug in her sleeping bag, Ava ___ down until only her nose poked out.",
+      "cue_phrase": "down until only her nose poked out",
+      "surface": {
+        "sway": "swayed",
+        "wobble": "wobbled",
+        "wriggle": "wriggled",
+        "shiver": "shivered",
+        "flinch": "flinched"
+      }
+    },
+    {
+      "id": "A-wobble-01-s23",
+      "answer": "wriggle",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "The baby ___ and kicked so much that Mum couldn't get his nappy on.",
+      "cue_phrase": "kicked so much; couldn't get his nappy on",
+      "surface": {
+        "sway": "swayed",
+        "wobble": "wobbled",
+        "wriggle": "wriggled",
+        "shiver": "shivered",
+        "flinch": "flinched"
+      }
+    },
+    {
+      "id": "A-wobble-01-s24",
+      "answer": "wriggle",
+      "cue": "inferential",
+      "reserve": true,
+      "text": "Toby ___ on the scratchy carpet, trying to get comfy during the long assembly.",
+      "cue_phrase": "trying to get comfy",
+      "surface": {
+        "sway": "swayed",
+        "wobble": "wobbled",
+        "wriggle": "wriggled",
+        "shiver": "shivered",
+        "flinch": "flinched"
+      }
+    },
+    {
+      "id": "A-wobble-01-s25",
+      "answer": "shiver",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Straight out of the icy pool, Ruby ___ until her teeth chattered.",
+      "cue_phrase": "icy pool; teeth chattered",
+      "surface": {
+        "sway": "swayed",
+        "wobble": "wobbled",
+        "wriggle": "wriggled",
+        "shiver": "shivered",
+        "flinch": "flinched"
+      }
+    },
+    {
+      "id": "A-wobble-01-s26",
+      "answer": "shiver",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "On the frosty morning, we ___ at the bus stop in our thin jumpers.",
+      "cue_phrase": "frosty morning; thin jumpers",
+      "surface": {
+        "sway": "swayed",
+        "wobble": "wobbled",
+        "wriggle": "wriggled",
+        "shiver": "shivered",
+        "flinch": "flinched"
+      }
+    },
+    {
+      "id": "A-wobble-01-s27",
+      "answer": "shiver",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Caught in the icy wind without a jacket, Ollie ___ all the way home.",
+      "cue_phrase": "icy wind without a jacket",
+      "surface": {
+        "sway": "swayed",
+        "wobble": "wobbled",
+        "wriggle": "wriggled",
+        "shiver": "shivered",
+        "flinch": "flinched"
+      }
+    },
+    {
+      "id": "A-wobble-01-s28",
+      "answer": "shiver",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Freezing in her wet swimmers, Jo ___ and hugged her towel tight.",
+      "cue_phrase": "freezing in her wet swimmers",
+      "surface": {
+        "sway": "swayed",
+        "wobble": "wobbled",
+        "wriggle": "wriggled",
+        "shiver": "shivered",
+        "flinch": "flinched"
+      }
+    },
+    {
+      "id": "A-wobble-01-s29",
+      "answer": "shiver",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "His lips turning blue, Ben ___ until Mum wrapped him in a warm towel.",
+      "cue_phrase": "lips turning blue; warm towel",
+      "surface": {
+        "sway": "swayed",
+        "wobble": "wobbled",
+        "wriggle": "wriggled",
+        "shiver": "shivered",
+        "flinch": "flinched"
+      }
+    },
+    {
+      "id": "A-wobble-01-s30",
+      "answer": "shiver",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "When the heater broke on a winter night, we all ___ under our blankets.",
+      "cue_phrase": "heater broke on a winter night",
+      "surface": {
+        "sway": "swayed",
+        "wobble": "wobbled",
+        "wriggle": "wriggled",
+        "shiver": "shivered",
+        "flinch": "flinched"
+      }
+    },
+    {
+      "id": "A-wobble-01-s31",
+      "answer": "shiver",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Fresh out of the chilly sea, Kai ___ and begged for his warm hoodie.",
+      "cue_phrase": "chilly sea; warm hoodie",
+      "surface": {
+        "sway": "swayed",
+        "wobble": "wobbled",
+        "wriggle": "wriggled",
+        "shiver": "shivered",
+        "flinch": "flinched"
+      }
+    },
+    {
+      "id": "A-wobble-01-s32",
+      "answer": "shiver",
+      "cue": "explicit",
+      "reserve": true,
+      "text": "On the frosty oval, our breath puffed white and we all ___ in our shorts.",
+      "cue_phrase": "frosty oval; breath puffed white",
+      "surface": {
+        "sway": "swayed",
+        "wobble": "wobbled",
+        "wriggle": "wriggled",
+        "shiver": "shivered",
+        "flinch": "flinched"
+      }
+    },
+    {
+      "id": "A-wobble-01-s33",
+      "answer": "flinch",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Ava ___ when the balloon popped right next to her ear.",
+      "cue_phrase": "balloon popped right next to her ear",
+      "surface": {
+        "sway": "swayed",
+        "wobble": "wobbled",
+        "wriggle": "wriggled",
+        "shiver": "shivered",
+        "flinch": "flinched"
+      }
+    },
+    {
+      "id": "A-wobble-01-s34",
+      "answer": "flinch",
+      "cue": "explicit",
+      "reserve": false,
+      "text": "Sam ___ for a split second as the nurse's needle pricked his arm.",
+      "cue_phrase": "for a split second; needle pricked",
+      "surface": {
+        "sway": "swayed",
+        "wobble": "wobbled",
+        "wriggle": "wriggled",
+        "shiver": "shivered",
+        "flinch": "flinched"
+      }
+    },
+    {
+      "id": "A-wobble-01-s35",
+      "answer": "flinch",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The cricket ball zoomed at Jack's face, and he ___ and shut his eyes tight.",
+      "cue_phrase": "zoomed at Jack's face; shut his eyes",
+      "surface": {
+        "sway": "swayed",
+        "wobble": "wobbled",
+        "wriggle": "wriggled",
+        "shiver": "shivered",
+        "flinch": "flinched"
+      }
+    },
+    {
+      "id": "A-wobble-01-s36",
+      "answer": "flinch",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "Mia touched the hot pan by mistake and ___, snatching her hand away.",
+      "cue_phrase": "touched the hot pan; snatching her hand away",
+      "surface": {
+        "sway": "swayed",
+        "wobble": "wobbled",
+        "wriggle": "wriggled",
+        "shiver": "shivered",
+        "flinch": "flinched"
+      }
+    },
+    {
+      "id": "A-wobble-01-s37",
+      "answer": "flinch",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Leo ___ at every crack of thunder, his shoulders jumping up to his ears.",
+      "cue_phrase": "every crack of thunder; shoulders jumping",
+      "surface": {
+        "sway": "swayed",
+        "wobble": "wobbled",
+        "wriggle": "wriggled",
+        "shiver": "shivered",
+        "flinch": "flinched"
+      }
+    },
+    {
+      "id": "A-wobble-01-s38",
+      "answer": "flinch",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Grandpa slammed the door by accident, and the whole class ___ at the bang.",
+      "cue_phrase": "slammed the door; at the bang",
+      "surface": {
+        "sway": "swayed",
+        "wobble": "wobbled",
+        "wriggle": "wriggled",
+        "shiver": "shivered",
+        "flinch": "flinched"
+      }
+    },
+    {
+      "id": "A-wobble-01-s39",
+      "answer": "flinch",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "When the dog snapped at his fingers, Ben ___ and jerked his hand away.",
+      "cue_phrase": "snapped at his fingers; jerked his hand away",
+      "surface": {
+        "sway": "swayed",
+        "wobble": "wobbled",
+        "wriggle": "wriggled",
+        "shiver": "shivered",
+        "flinch": "flinched"
+      }
+    },
+    {
+      "id": "A-wobble-01-s40",
+      "answer": "flinch",
+      "cue": "contextual",
+      "reserve": true,
+      "text": "Ruby ___ and blinked hard as the soccer ball whizzed past her nose.",
+      "cue_phrase": "blinked hard; whizzed past her nose",
+      "surface": {
+        "sway": "swayed",
+        "wobble": "wobbled",
+        "wriggle": "wriggled",
+        "shiver": "shivered",
+        "flinch": "flinched"
+      }
+    }
+  ],
+  "contrasts": [
+    {
+      "answer": "sway",
+      "picked": "wobble",
+      "line": "Sway is slow and smooth, like a tree in the breeze. Wobble is shaky, like something about to tip over."
+    },
+    {
+      "answer": "sway",
+      "picked": "wriggle",
+      "line": "Sway is a gentle swing from side to side. Wriggle is twisting your body to get free or comfy."
+    },
+    {
+      "answer": "sway",
+      "picked": "shiver",
+      "line": "Sway is a slow, smooth swing. Shiver is quick shaking because you feel cold."
+    },
+    {
+      "answer": "wobble",
+      "picked": "sway",
+      "line": "Wobble is shaky and unsteady, as if about to fall. Sway is a smooth, steady swing."
+    },
+    {
+      "answer": "wobble",
+      "picked": "wriggle",
+      "line": "Wobble is tipping unsteadily, like a loose tooth. Wriggle is twisting your body to get free."
+    },
+    {
+      "answer": "wobble",
+      "picked": "shiver",
+      "line": "Wobble is tipping from side to side, nearly falling. Shiver is shaking because you are cold."
+    },
+    {
+      "answer": "wriggle",
+      "picked": "sway",
+      "line": "Wriggle is twisting your body to get free or comfy. Sway is a gentle side-to-side swing."
+    },
+    {
+      "answer": "wriggle",
+      "picked": "wobble",
+      "line": "Wriggle is twisting your body to get through or get free. Wobble is tipping when something is unsteady."
+    },
+    {
+      "answer": "wriggle",
+      "picked": "shiver",
+      "line": "Wriggle is twisting your body about. Shiver is shaking because you are cold."
+    },
+    {
+      "answer": "shiver",
+      "picked": "sway",
+      "line": "Shiver is shaking from cold. Sway is a slow, smooth swing, like trees in a breeze."
+    },
+    {
+      "answer": "shiver",
+      "picked": "wobble",
+      "line": "Shiver is shaking because you are cold. Wobble is tipping as if you might fall over."
+    },
+    {
+      "answer": "shiver",
+      "picked": "wriggle",
+      "line": "Shiver is shaking from cold. Wriggle is twisting your body to get free or comfy."
+    },
+    {
+      "answer": "sway",
+      "picked": "flinch",
+      "line": "Sway is a slow, smooth swing. Flinch is a quick jump back when something scares or hurts you."
+    },
+    {
+      "answer": "wobble",
+      "picked": "flinch",
+      "line": "Wobble is tipping as if about to fall. Flinch is a quick pull back from a scare or a sting."
+    },
+    {
+      "answer": "wriggle",
+      "picked": "flinch",
+      "line": "Wriggle is twisting your body to get free or comfy. Flinch is one quick jump back from a scare."
+    },
+    {
+      "answer": "shiver",
+      "picked": "flinch",
+      "line": "Shiver is shaking because you are cold. Flinch is a quick pull back when something scares or hurts you."
+    },
+    {
+      "answer": "flinch",
+      "picked": "sway",
+      "line": "Flinch is a sudden pull back from a scare or pain. Sway is a slow, gentle swing."
+    },
+    {
+      "answer": "flinch",
+      "picked": "wobble",
+      "line": "Flinch is a quick jump back from a scare. Wobble is tipping like you might fall over."
+    },
+    {
+      "answer": "flinch",
+      "picked": "wriggle",
+      "line": "Flinch is one quick pull back from a fright. Wriggle is twisting your body about to get free."
+    },
+    {
+      "answer": "flinch",
+      "picked": "shiver",
+      "line": "Flinch is a sudden jump back from a scare or a sting. Shiver is shaking that keeps going when you are cold."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-11-12T12:09:17+00:00",
+    "model": "claude-opus-5-5",
+    "scrubbed_at": "2026-11-12",
+    "scrub_note": "Scrubbed by claude 2026-11-12: every sentence and contrast read after judging. Original fifth member tremble was swapped for flinch after three judge rounds showed shiver/tremble overlap both ways (tremble with cold, shiver with fear); tremble items had passed only once moved to hands/fingers. Shiver cold scenes rewritten twice (hail let flinch in). Three single-judge dissents (s03, s06, s12) adjudicated and waived."
+  }
+}

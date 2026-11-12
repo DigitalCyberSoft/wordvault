@@ -110,8 +110,8 @@
       "answer": "cheerful",
       "cue": "explicit",
       "reserve": false,
-      "text": "The reading corner looked ___, bright and welcoming before any news arrived.",
-      "cue_phrase": "bright and welcoming",
+      "text": "With yellow cushions and sunny posters, the reading corner looked ___.",
+      "cue_phrase": "yellow cushions and sunny posters",
       "surface": {
         "cheerful": "cheerful",
         "delighted": "delighted",
@@ -125,8 +125,8 @@
       "answer": "cheerful",
       "cue": "contextual",
       "reserve": false,
-      "text": "Omar stayed ___, humming through the ordinary Monday desk tasks.",
-      "cue_phrase": "ordinary Monday desk tasks",
+      "text": "Even on a plain old Monday, Omar hummed and smiled, ___ as always.",
+      "cue_phrase": "as always",
       "surface": {
         "cheerful": "cheerful",
         "delighted": "delighted",
@@ -200,8 +200,8 @@
       "answer": "cheerful",
       "cue": "contextual",
       "reserve": true,
-      "text": "The bouncy tune kept everyone ___ through the dull ordinary clean-up.",
-      "cue_phrase": "dull ordinary clean-up",
+      "text": "The bouncy music kept everyone ___ while we stacked chairs after the fete.",
+      "cue_phrase": "bouncy music kept everyone",
       "surface": {
         "cheerful": "cheerful",
         "delighted": "delighted",
@@ -215,46 +215,30 @@
       "answer": "delighted",
       "cue": "explicit",
       "reserve": false,
-      "text": "Zara was ___, squealing with joy when the puppet sneezed glitter.",
-      "cue_phrase": "squealing with joy",
+      "text": "Zara was ___ to see the puppet sneeze glitter, and she squealed with joy.",
+      "cue_phrase": "squealed with joy",
       "surface": {
         "cheerful": "cheerful",
         "delighted": "delighted",
         "proud": "proud",
         "relieved": "relieved",
         "grateful": "grateful"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "ADJACENCY-2OF3 (gpt-5.5 adds cheerful; claude-opus-4-8 adds cheerful): cheerful co-occurs with joy; the event trigger and squealing burst are delighted's features, cheerful is a standing mood",
-          "by": "claude",
-          "at": "2026-07-05"
-        }
-      ]
+      }
     },
     {
       "id": "A-happy-01-s10",
       "answer": "delighted",
       "cue": "explicit",
       "reserve": false,
-      "text": "The class was ___, jumping and whooping at the surprise snow news.",
-      "cue_phrase": "jumping and whooping",
+      "text": "The class jumped and whooped, ___ to see a koala in the schoolyard gum tree.",
+      "cue_phrase": "jumped and whooped",
       "surface": {
         "cheerful": "cheerful",
         "delighted": "delighted",
         "proud": "proud",
         "relieved": "relieved",
         "grateful": "grateful"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "ADJACENCY-2OF3 (gpt-5.5 adds cheerful; claude-opus-4-8 adds cheerful): cheerful co-occurs; jumping and whooping at sudden news is delighted's burst, not a standing sunny mood",
-          "by": "claude",
-          "at": "2026-07-05"
-        }
-      ]
+      }
     },
     {
       "id": "A-happy-01-s11",
@@ -276,23 +260,15 @@
       "answer": "delighted",
       "cue": "contextual",
       "reserve": false,
-      "text": "Ben looked ___ as fireworks bloomed above the fairground.",
-      "cue_phrase": "fireworks bloomed",
+      "text": "Ben gasped, ___ to see fireworks bloom right above the fairground.",
+      "cue_phrase": "fireworks bloom right above",
       "surface": {
         "cheerful": "cheerful",
         "delighted": "delighted",
         "proud": "proud",
         "relieved": "relieved",
         "grateful": "grateful"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "ADJACENCY-2OF3 (gpt-5.5 adds cheerful; claude-opus-4-8 adds cheerful): cheerful co-occurs; the fireworks trigger stages delighted's in-the-moment joy",
-          "by": "claude",
-          "at": "2026-07-05"
-        }
-      ]
+      }
     },
     {
       "id": "A-happy-01-s13",
@@ -406,23 +382,15 @@
       "answer": "proud",
       "cue": "explicit",
       "reserve": false,
-      "text": "Leo looked at the finished model he had built alone and felt quietly ___.",
-      "cue_phrase": "built alone; quietly",
+      "text": "Leo stood beside the model he had built by himself, back straight, ___ as a peacock.",
+      "cue_phrase": "as a peacock",
       "surface": {
         "cheerful": "cheerful",
         "delighted": "delighted",
         "proud": "proud",
         "relieved": "relieved",
         "grateful": "grateful"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "ADJACENCY-2OF3 (gpt-5.5 adds delighted; claude-opus-4-8 adds delighted): delight co-occurs with pride; 'built alone' stages own-achievement, pride's exclusive feature",
-          "by": "claude",
-          "at": "2026-07-05"
-        }
-      ]
+      }
     },
     {
       "id": "A-happy-01-s19",
@@ -475,23 +443,15 @@
       "answer": "proud",
       "cue": "inferential",
       "reserve": false,
-      "text": "His pupils solved the puzzle; Mr Shah stood quietly ___.",
-      "cue_phrase": "pupils solved the puzzle",
+      "text": "Mr Shah's class won the maths trophy, and he walked them back to class, chest out, ___.",
+      "cue_phrase": "chest out",
       "surface": {
         "cheerful": "cheerful",
         "delighted": "delighted",
         "proud": "proud",
         "relieved": "relieved",
         "grateful": "grateful"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "ADJACENCY-2OF3 (gpt-5.5 adds delighted; claude-opus-4-8 adds delighted): delight co-occurs; achievement by his own pupils plus the quiet manner stage pride, not a joy burst",
-          "by": "claude",
-          "at": "2026-07-05"
-        }
-      ]
+      }
     },
     {
       "id": "A-happy-01-s22",
@@ -513,23 +473,15 @@
       "answer": "proud",
       "cue": "contextual",
       "reserve": true,
-      "text": "Dad heard my solo and glowed as if the achievement were his own, ___.",
-      "cue_phrase": "as if the achievement were his own",
+      "text": "Dad heard my solo and sat up straight and tall, ___ as if he had sung it himself.",
+      "cue_phrase": "as if he had sung it himself",
       "surface": {
         "cheerful": "cheerful",
         "delighted": "delighted",
         "proud": "proud",
         "relieved": "relieved",
         "grateful": "grateful"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "ADJACENCY-2OF3 (gpt-5.5 adds delighted; claude-opus-4-8 adds delighted): delight co-occurs; 'as if the achievement were his own' names pride's feature",
-          "by": "claude",
-          "at": "2026-07-05"
-        }
-      ]
+      }
     },
     {
       "id": "A-happy-01-s24",
@@ -989,6 +941,6 @@
     "generated_at": "2026-07-05T11:04:21+00:00",
     "model": "gpt-5.5",
     "scrubbed_at": "2026-07-05T13:42:27+00:00",
-    "scrub_note": "Full read; proud s23 rephrased ('achievement glow'); proud s18 delighted adjacency accepted with waiver."
+    "scrub_note": "Full read; proud s23 rephrased ('achievement glow'); proud s18 delighted adjacency accepted with waiver. Fairness pass by claude 2026-11-12: delighted s09/s10/s12 let cheerful in, so each is now a burst of joy 'to see' a specific surprise; proud s18/s21/s23 let delighted in, so they now stage pride posture or pride in someone else's win ('as if he had sung it himself'). Defensive cheerful hedges s02/s03/s08 ('before any news arrived', 'ordinary Monday desk tasks') replaced with plain scenes."
   }
 }

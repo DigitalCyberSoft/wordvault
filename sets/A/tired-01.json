@@ -612,8 +612,8 @@
       "answer": "sluggish",
       "cue": "contextual",
       "reserve": false,
-      "text": "After the enormous lunch, the whole team was ___ during the afternoon drills.",
-      "cue_phrase": "after the enormous lunch",
+      "text": "Full of pudding but chatting brightly, the team was ___, jogging at half pace.",
+      "cue_phrase": "chatting brightly; jogging at half pace",
       "surface": {
         "drowsy": "drowsy",
         "exhausted": "exhausted",
@@ -925,6 +925,6 @@
     "generated_at": "2026-07-05T11:13:46+00:00",
     "model": "gpt-5.5",
     "scrubbed_at": "2026-07-05T13:42:27+00:00",
-    "scrub_note": "Full read after the weary->restless swap; no changes needed."
+    "scrub_note": "Full read after the weary->restless swap; no changes needed. Fairness pass by claude 2026-11-12: sluggish s28 now has the team chatting brightly while moving at half pace, so drowsy is excluded."
   }
 }

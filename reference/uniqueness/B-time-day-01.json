@@ -2,7 +2,7 @@
   "set_id": "B-time-day-01",
   "sentences": {
     "B-time-day-01-s01": {
-      "text_sha256": "ca7a776600a4704f01b2904f969ae7edeaacf1ecf1e555286272619550947fb1",
+      "text_sha256": "6bc6a1a8f6c33ea409ce56077012aad6d53d170f7c363fc6fd6d8792024ddb6c",
       "verdict": "pass",
       "judges": [
         {
@@ -27,10 +27,10 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-10T05:08:04+00:00"
+      "judged_at": "2026-11-12T12:29:43+00:00"
     },
     "B-time-day-01-s02": {
-      "text_sha256": "92edc42d8569cb3239953ed6023608da810b82ac991b5143f886e9e46da8651d",
+      "text_sha256": "266d05661e804342796005d8eff104d915ab0fe516d95eb2a605a8b2c7960558",
       "verdict": "pass",
       "judges": [
         {
@@ -55,7 +55,7 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-10T05:08:04+00:00"
+      "judged_at": "2026-11-12T12:29:43+00:00"
     },
     "B-time-day-01-s03": {
       "text_sha256": "378940a552235e155a5ed14b577d002c6d2be6e82fe8ccc66079ae4f3a5dcf2e",
@@ -287,13 +287,12 @@
       "judged_at": "2026-07-10T05:08:04+00:00"
     },
     "B-time-day-01-s11": {
-      "text_sha256": "78a783b3d4edb6207ee8edaafd627b9f7a7b77ed99a6dc5f3f6e6b0693ad9498",
-      "verdict": "review",
+      "text_sha256": "1bd19ad4d9bdb559baf42dc9fa0e77d0b27ebbe60362d1488846f3f29c489852",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "afternoon",
             "midday"
           ],
           "sense_match": true
@@ -301,7 +300,6 @@
         {
           "model": "gpt-4.1",
           "fits": [
-            "afternoon",
             "midday"
           ],
           "sense_match": true
@@ -314,16 +312,15 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-10T05:09:25+00:00"
+      "judged_at": "2026-11-12T12:29:43+00:00"
     },
     "B-time-day-01-s12": {
-      "text_sha256": "9675fbc82d319249ab256c0bacf9be2c1c86c82c3bcdeb6193d9029a0209c17a",
-      "verdict": "review",
+      "text_sha256": "9a5f41761014e809dbe2bcbcfd07deb3e91d7c16637a4ee65f1a4d1310c16a1e",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "afternoon",
             "midday"
           ],
           "sense_match": true
@@ -343,7 +340,7 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-10T05:09:25+00:00"
+      "judged_at": "2026-11-12T12:36:52+00:00"
     },
     "B-time-day-01-s13": {
       "text_sha256": "298b7d74b6aafb27928c1f6c52dcf148c5a83d7195e7a3ebe3db43ac28d5b96c",
@@ -461,7 +458,7 @@
       "judged_at": "2026-07-10T05:09:25+00:00"
     },
     "B-time-day-01-s17": {
-      "text_sha256": "f87df4b6d3a14f58936e639bc33f008f74283e8810849f4f840c9be567a6acc3",
+      "text_sha256": "869a83262328b9ba544474370606a546bd3536f9f000367e35e40af5e97c4b83",
       "verdict": "pass",
       "judges": [
         {
@@ -486,7 +483,7 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-10T05:09:25+00:00"
+      "judged_at": "2026-11-12T12:29:43+00:00"
     },
     "B-time-day-01-s18": {
       "text_sha256": "c9dd71a77fa66f76318856c6602c6e15f07e6f2d198b7bcf6714456381e22d99",
@@ -576,22 +573,20 @@
       "judged_at": "2026-07-10T05:09:25+00:00"
     },
     "B-time-day-01-s21": {
-      "text_sha256": "022cbdbd0919e5009567781b59d1373a3de81366080e9d7e32ca8231ef964485",
-      "verdict": "review",
+      "text_sha256": "6ee25cdfaad01508f4ba9e8576de7f5880a0fefa946637d4772a77172d43da8f",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "afternoon",
-            "evening"
+            "afternoon"
           ],
           "sense_match": true
         },
         {
           "model": "gpt-4.1",
           "fits": [
-            "afternoon",
-            "evening"
+            "afternoon"
           ],
           "sense_match": true
         },
@@ -603,7 +598,7 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-10T05:11:03+00:00"
+      "judged_at": "2026-11-12T12:29:43+00:00"
     },
     "B-time-day-01-s22": {
       "text_sha256": "d0f5b25ee50de5ace7274f33f678b06d873217ec3696fbfdc0ad84a22f9bbf5d",
@@ -634,36 +629,7 @@
       "judged_at": "2026-07-10T05:11:03+00:00"
     },
     "B-time-day-01-s23": {
-      "text_sha256": "e86bec95af9c507cb3dd4c18156d23b23678713f6455d2a105570a3fc61dcecb",
-      "verdict": "review",
-      "judges": [
-        {
-          "model": "gpt-5.5",
-          "fits": [
-            "afternoon"
-          ],
-          "sense_match": true
-        },
-        {
-          "model": "gpt-4.1",
-          "fits": [
-            "afternoon",
-            "evening"
-          ],
-          "sense_match": true
-        },
-        {
-          "model": "claude-opus-4-8",
-          "fits": [
-            "afternoon"
-          ],
-          "sense_match": true
-        }
-      ],
-      "judged_at": "2026-07-10T05:11:03+00:00"
-    },
-    "B-time-day-01-s24": {
-      "text_sha256": "fe9055db1d7fb0531d3416d2dc0c990f8a73c03c32a4af0a8f800c3f1da80643",
+      "text_sha256": "5a4e3a06e2627c79ca3affe71137cca6015e00293287ca16464ccd06d988b4cc",
       "verdict": "pass",
       "judges": [
         {
@@ -688,7 +654,35 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-10T05:32:08+00:00"
+      "judged_at": "2026-11-12T12:29:43+00:00"
+    },
+    "B-time-day-01-s24": {
+      "text_sha256": "6b195e3485391fb8d0b33525ef164960015449c7fa2d12867e9c921d380b473a",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "afternoon"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "afternoon"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "afternoon"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-11-12T12:36:52+00:00"
     },
     "B-time-day-01-s25": {
       "text_sha256": "f44340fb005aa307ba3ac24673b0b74a1f33f1f768770a556bcacef900204008",
@@ -750,14 +744,13 @@
       "judged_at": "2026-07-10T05:11:03+00:00"
     },
     "B-time-day-01-s27": {
-      "text_sha256": "e75a9bbeaf6c8bff1007e76839f7ffe3eed5c6cd8bda8f1939ad4a24fd199a88",
-      "verdict": "review",
+      "text_sha256": "c874d1db4d084cf18efd77d31ba8497ceb4b5973c92329d0acb696be62a60f3d",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "evening",
-            "night"
+            "evening"
           ],
           "sense_match": true
         },
@@ -771,13 +764,12 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "evening",
-            "night"
+            "evening"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-10T05:11:03+00:00"
+      "judged_at": "2026-11-12T12:29:43+00:00"
     },
     "B-time-day-01-s28": {
       "text_sha256": "845e971faa31de8ec1c0759282f61613e5b60c86a6eeb6c047af4f74db7f3c60",
@@ -867,14 +859,13 @@
       "judged_at": "2026-07-10T05:11:03+00:00"
     },
     "B-time-day-01-s31": {
-      "text_sha256": "f7dc7ad27dd69e08a5bb1b4b038923343ecb43a5c74e32c505e005e8e5323cb9",
-      "verdict": "review",
+      "text_sha256": "c1dd9e5ccca9b8f626bc6a2dca86435ada6263193606f4ce174b1a37359e7b61",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "evening",
-            "night"
+            "evening"
           ],
           "sense_match": true
         },
@@ -888,13 +879,12 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "evening",
-            "night"
+            "evening"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-10T05:32:08+00:00"
+      "judged_at": "2026-11-12T12:36:52+00:00"
     },
     "B-time-day-01-s32": {
       "text_sha256": "3c3642f4784db9d884436c3e2e2a29c57503892bb24aba7b5b2c08c5a05a24c1",
@@ -1068,7 +1058,7 @@
       "judged_at": "2026-07-10T05:12:21+00:00"
     },
     "B-time-day-01-s38": {
-      "text_sha256": "ef92e72d9c1f837196f0f8a624993e5b43e599228147a939c8b31f5546a164c8",
+      "text_sha256": "81b4d7ba6fbca8672364b2c196e5cf0e7c9ba0f37b45eec6e5d6f2a6eeeb96a8",
       "verdict": "pass",
       "judges": [
         {
@@ -1093,16 +1083,15 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-10T05:12:21+00:00"
+      "judged_at": "2026-11-12T12:29:53+00:00"
     },
     "B-time-day-01-s39": {
-      "text_sha256": "75c8d74f28c110bd97f058c251b9d01e254082bc16134d00b64f891756bc576a",
-      "verdict": "review",
+      "text_sha256": "d2cc1fcfec0dff9cf1fd1937e78c8bf510e07c4aea00158343f02ba4c98dffcc",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "evening",
             "night"
           ],
           "sense_match": true
@@ -1122,7 +1111,7 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-10T05:12:21+00:00"
+      "judged_at": "2026-11-12T12:29:53+00:00"
     },
     "B-time-day-01-s40": {
       "text_sha256": "7a2658122183b4371da856afe80a6fd82b675082e7776119f14ee0db80d2016a",

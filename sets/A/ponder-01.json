@@ -125,8 +125,8 @@
       "answer": "scrutinise",
       "cue": "explicit",
       "reserve": false,
-      "text": "The referee ___ the photo, checking whether the ball crossed the line.",
-      "cue_phrase": "checking whether",
+      "text": "Searching for a single stray hair, the forensic team ___ the carpet centimetre by centimetre.",
+      "cue_phrase": "single stray hair; centimetre by centimetre",
       "surface": {
         "scrutinise": "scrutinised",
         "speculate": "speculated",
@@ -163,8 +163,8 @@
       "answer": "scrutinise",
       "cue": "contextual",
       "reserve": false,
-      "text": "Dad ___ each map symbol before choosing the safe path downhill.",
-      "cue_phrase": "each map symbol",
+      "text": "The ranger ___ the muddy bank for the faint tracks of a platypus.",
+      "cue_phrase": "for the faint tracks",
       "surface": {
         "scrutinise": "scrutinised",
         "speculate": "speculated",
@@ -641,8 +641,8 @@
       "answer": "evaluate",
       "cue": "inferential",
       "reserve": false,
-      "text": "Before prizes were given, the panel had to ___ every painting.",
-      "cue_phrase": "Before prizes were given",
+      "text": "After a term of the new recycling scheme, the council met to ___ its success.",
+      "cue_phrase": "After a term; its success",
       "surface": {
         "scrutinise": "scrutinise",
         "speculate": "speculate",
@@ -940,6 +940,6 @@
     "generated_at": "2026-07-06T14:39:32+00:00",
     "model": "gpt-5.4",
     "scrubbed_at": "2026-07-07",
-    "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+    "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite). Fairness pass by claude 2026-11-12: scrutinise s02/s04 are now searches for a tiny detail (a stray hair, faint tracks) with no judgement of quality; evaluate s30 is now judging whether a scheme succeeded."
   }
 }

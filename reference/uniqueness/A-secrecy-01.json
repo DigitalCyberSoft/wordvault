@@ -1062,14 +1062,14 @@
       "judged_at": "2026-07-07T03:53:49+00:00"
     },
     "A-secrecy-01-s38": {
-      "text_sha256": "c783596ebcbc40d22415511c4a0ecce7205e6bc9866258c4c40fc33043ed9b2d",
+      "text_sha256": "bcc13a93f6bf3141ca5c2d3887335e3969972e9ad2a43dbb508bd6b706ba5dd8",
       "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
             "covert",
-            "discreet"
+            "stealthy"
           ],
           "sense_match": true
         },
@@ -1083,13 +1083,12 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "covert",
-            "discreet"
+            "covert"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-07T03:53:49+00:00"
+      "judged_at": "2026-11-12T12:17:53+00:00"
     },
     "A-secrecy-01-s39": {
       "text_sha256": "46db94601c7027e07c60750a862a872fe21f8f3019bf44b6b859782c7f5f20a5",

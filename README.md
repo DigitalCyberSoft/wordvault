@@ -5,11 +5,12 @@ A vocabulary game disguised as safe-cracking, in the same family as
 words are engraved on brass tiles; a paper slip shows a sentence with a hole in
 it; the child taps the one word that truly fits. Every correct word seats a
 tumbler pin - seat them all and the vault swings open. The ladder is seven
-Australian school years of four levels each (28 levels), and within every year
-the locks grow from 2 pins to the full 5 before the next year's words arrive.
+Australian school years (Years 1-7, leaning towards gifted readers), and within
+every year the locks grow from 2 pins to the full 5: **four clean cracks in a
+row pass the year**.
 One wrong word - or letting the 15-second lock timer run out - springs every
 pin back out: that run is over, and a safe grants three runs before it keeps
-its secret and the game moves on (gently, a level down).
+its secret and the game moves on (the year's run of pins starts again).
 
 The difficulty lives in the language: word rarity rises, the cue drifts from
 explicit ("cried very loudly") to inferential, and the words in a set close in
@@ -30,11 +31,15 @@ on each other (walk-family first, scalding-vs-boiling later).
 - **Review lockboxes.** Cracked and failed safes come back later as smaller
   lockboxes with fresh sentences: three in a row to open, one run only.
   Retention practice, never a level change.
-- **It adapts by itself.** Clean cracks (no misses) raise the level, exhausted
-  safes lower it, and it settles where the child is challenged but not stuck.
-  Speed never moves the level: `adjustDifficulty` takes no time input.
-  A **Level Up** fires only on a genuine personal best.
-- **The lock timer.** 15 seconds per sentence (`Core.LOCK_TIMER_MS`); expiry
+- **Years are passed in a row.** Each clean crack (no misses) is one step and
+  one more pin; four clean cracks in a row pass the school year. A miss breaks
+  the run (back to the year's 2-pin start), and only a second exhausted safe in
+  a row steps down a year. The HUD shows `Year 2 ●●○○`, and every crack card
+  says how many clean cracks are left. Speed never moves the level:
+  `adjustDifficulty` takes no time input. **Year passed!** fires only on a
+  first-ever arrival in a year.
+- **The lock timer.** 15 seconds per sentence (`Core.LOCK_TIMER_MS`), 20 in
+  Years 1-2 (`Core.lockTimerFor`, `EARLY_TIMER_MS`); expiry
   is a miss with its own teaching card. Settings offers a grown-up off-switch
   for slower readers, and a **Starting year** knob (Year 1-7) places a new
   player at their school year.

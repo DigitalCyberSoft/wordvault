@@ -2,7 +2,7 @@
   "set_id": "A-talk-01",
   "sentences": {
     "A-talk-01-s01": {
-      "text_sha256": "8e8a43ff8f6dcde1b1e3f46e4b8d1edeba2f240f8faacc2365f0d053b5a869e4",
+      "text_sha256": "22f69ce7bb176769af53c0de0fce64699208e15fb836e885f3e51846c98bf6b9",
       "verdict": "pass",
       "judges": [
         {
@@ -27,10 +27,10 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T07:48:48+00:00"
+      "judged_at": "2026-11-12T12:32:39+00:00"
     },
     "A-talk-01-s02": {
-      "text_sha256": "936dcc13165cd2ee4232a8bd278593397908832012f840eb6c64bb060dbcaadd",
+      "text_sha256": "d9f7425ee6e6512d513c15b71af2c9cc0c75a5463ed552ad5d9ed68921c0c2b0",
       "verdict": "pass",
       "judges": [
         {
@@ -55,10 +55,10 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T07:48:48+00:00"
+      "judged_at": "2026-11-12T12:32:39+00:00"
     },
     "A-talk-01-s03": {
-      "text_sha256": "7b41cca54dbc9bf31aca04d242cac509ce47d80bb0aa6d1e3f7064eb4ca6d00a",
+      "text_sha256": "8e0d588875f27e09b81847c267bf3660edb4180136cf3ce379a7ba6c7c0816f8",
       "verdict": "pass",
       "judges": [
         {
@@ -83,10 +83,10 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T07:48:48+00:00"
+      "judged_at": "2026-11-12T12:32:39+00:00"
     },
     "A-talk-01-s04": {
-      "text_sha256": "8748c43984315580f379c2d1b67399013cabf19883b128ae619e3e334d0e7008",
+      "text_sha256": "9dc89b02000a95e1566a3f5c50a22c924c666f7007b6123caa9c18932e7bbaa9",
       "verdict": "pass",
       "judges": [
         {
@@ -111,10 +111,10 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T07:48:48+00:00"
+      "judged_at": "2026-11-12T12:32:39+00:00"
     },
     "A-talk-01-s05": {
-      "text_sha256": "310e189efb337d4aec33de656d660bf5567816d075483864ee98995bdfe62dda",
+      "text_sha256": "065a8374f7e3a957f256b61f17e9fafba538f6855b58d38f8b50b9ae3501d1ac",
       "verdict": "pass",
       "judges": [
         {
@@ -139,10 +139,10 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T07:48:48+00:00"
+      "judged_at": "2026-11-12T12:32:39+00:00"
     },
     "A-talk-01-s06": {
-      "text_sha256": "961b36a3089cf5377db44e968737d7f9dcdfa321b56c60b60444a16e3f92a97c",
+      "text_sha256": "f493e004378a228b007b6c1823011dee08ae5d2a36aec0312cc3a616a3c0df27",
       "verdict": "pass",
       "judges": [
         {
@@ -167,10 +167,10 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T07:48:48+00:00"
+      "judged_at": "2026-11-12T12:32:39+00:00"
     },
     "A-talk-01-s07": {
-      "text_sha256": "130cc95ab1c26c7f86a48f15118be5c1d57a812f984846d791d5bc87fd78bbb8",
+      "text_sha256": "cdd3c21186aa3869f6bc83595a254f3accb56777c224abc2332c044aa1b3f559",
       "verdict": "pass",
       "judges": [
         {
@@ -195,10 +195,10 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T07:48:48+00:00"
+      "judged_at": "2026-11-12T12:32:39+00:00"
     },
     "A-talk-01-s08": {
-      "text_sha256": "f46f48d84d321c8b3d879d6a6d975ab22839fb3eb05a2d605890229910f35626",
+      "text_sha256": "9b4428de2862f8265064d3b3793b28f866232b7fa4515641293e1e663e2c13d4",
       "verdict": "pass",
       "judges": [
         {
@@ -223,7 +223,7 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T07:48:48+00:00"
+      "judged_at": "2026-11-12T12:32:39+00:00"
     },
     "A-talk-01-s09": {
       "text_sha256": "8c053c61084e6ff91e7c7a00e1e6c9714bf3999e602f9c62893888e044312302",
@@ -286,98 +286,7 @@
       "judged_at": "2026-07-05T07:48:48+00:00"
     },
     "A-talk-01-s11": {
-      "text_sha256": "af0184276e79470864883badd6fb24fab659f9759ce9beb3eef553d794cbfc64",
-      "verdict": "review",
-      "judges": [
-        {
-          "model": "gpt-5.5",
-          "fits": [
-            "mumble",
-            "whisper"
-          ],
-          "sense_match": true
-        },
-        {
-          "model": "gpt-4.1",
-          "fits": [
-            "mumble",
-            "whisper"
-          ],
-          "sense_match": true
-        },
-        {
-          "model": "claude-opus-4-8",
-          "fits": [
-            "mumble"
-          ],
-          "sense_match": true
-        }
-      ],
-      "judged_at": "2026-07-05T07:50:42+00:00"
-    },
-    "A-talk-01-s12": {
-      "text_sha256": "949b1f313f82ed5a08039f2cac1608e445a8e3353cc1dbe18f9a7f702300cadc",
-      "verdict": "review",
-      "judges": [
-        {
-          "model": "gpt-5.5",
-          "fits": [
-            "mumble",
-            "whisper"
-          ],
-          "sense_match": true
-        },
-        {
-          "model": "gpt-4.1",
-          "fits": [
-            "mumble",
-            "whisper"
-          ],
-          "sense_match": true
-        },
-        {
-          "model": "claude-opus-4-8",
-          "fits": [
-            "mumble"
-          ],
-          "sense_match": true
-        }
-      ],
-      "judged_at": "2026-07-05T07:50:42+00:00"
-    },
-    "A-talk-01-s13": {
-      "text_sha256": "5ae4ba1e8a4acb38962eea04328f7528844e2de258a20d04c6ad8db72edd8516",
-      "verdict": "review",
-      "judges": [
-        {
-          "model": "gpt-5.5",
-          "fits": [
-            "bellow",
-            "chatter",
-            "mumble",
-            "whisper"
-          ],
-          "sense_match": true
-        },
-        {
-          "model": "gpt-4.1",
-          "fits": [
-            "mumble"
-          ],
-          "sense_match": true
-        },
-        {
-          "model": "claude-opus-4-8",
-          "fits": [
-            "mumble"
-          ],
-          "sense_match": true
-        }
-      ],
-      "judged_at": "2026-07-05T07:50:42+00:00"
-    },
-    "A-talk-01-s14": {
-      "text_sha256": "491401281e08b99e90ac1a74efb9ea0f0aa97139c2c8be3554892473b1101b21",
+      "text_sha256": "77afe505f75fadd14677df303739b5a12fc91b1efb8687831f31724cc635d697",
       "verdict": "pass",
       "judges": [
         {
@@ -402,7 +311,92 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T07:50:42+00:00"
+      "judged_at": "2026-11-12T12:32:39+00:00"
+    },
+    "A-talk-01-s12": {
+      "text_sha256": "eb369a350a9d616b297a6b0c37d304d3401c0387f67460fc970167e4e4e96732",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "mumble"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "mumble"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "mumble"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-11-12T12:32:39+00:00"
+    },
+    "A-talk-01-s13": {
+      "text_sha256": "0e7865923e945241e008f113332bb58ddf55699eb960e9b18f1ebaf00ef0ee44",
+      "verdict": "pass",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "mumble"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "mumble"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "mumble"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-11-12T12:54:37+00:00"
+    },
+    "A-talk-01-s14": {
+      "text_sha256": "fa2cc3a3d0c96bcbca9fcd13a832a47c7d1e8b76288ba76a7aed5fb383f4710b",
+      "verdict": "review",
+      "judges": [
+        {
+          "model": "gpt-5.5",
+          "fits": [
+            "mumble",
+            "whisper"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "gpt-4.1",
+          "fits": [
+            "mumble"
+          ],
+          "sense_match": true
+        },
+        {
+          "model": "claude-opus-4-8",
+          "fits": [
+            "mumble"
+          ],
+          "sense_match": true
+        }
+      ],
+      "judged_at": "2026-11-12T12:33:51+00:00"
     },
     "A-talk-01-s15": {
       "text_sha256": "85a3d03366205bc4f765ef27127e37d765d9e3bf19588bde563005136cbcbccd",
@@ -575,14 +569,13 @@
       "judged_at": "2026-07-05T07:50:42+00:00"
     },
     "A-talk-01-s21": {
-      "text_sha256": "e97311ada6c54e0a2d15cbaddbbc533692b90be53d48b99218a5425be0533f8d",
-      "verdict": "review",
+      "text_sha256": "0bbf148409f123edccfdf30063b3e2708ec7d18afff99d27c872f294c175e640",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "chatter",
-            "whisper"
+            "chatter"
           ],
           "sense_match": true
         },
@@ -601,17 +594,16 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T07:51:50+00:00"
+      "judged_at": "2026-11-12T12:54:37+00:00"
     },
     "A-talk-01-s22": {
-      "text_sha256": "c4c8639e3e5047b8e5897e5219a9b4e58cacfc1a62f2ab8e3b3f1968f00c3fe4",
-      "verdict": "review",
+      "text_sha256": "afff626257600cc2daa596d24b19f04bfdbd77c1135974c0504c42f031bc1a49",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "chatter",
-            "whisper"
+            "chatter"
           ],
           "sense_match": true
         },
@@ -630,7 +622,7 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T07:51:50+00:00"
+      "judged_at": "2026-11-12T12:54:37+00:00"
     },
     "A-talk-01-s23": {
       "text_sha256": "2a4eac6b2f7b453bcca3d73e394dcf846d4a784302673e220415d0a1d665beda",
@@ -689,7 +681,7 @@
       "judged_at": "2026-07-05T07:51:50+00:00"
     },
     "A-talk-01-s25": {
-      "text_sha256": "7c1a4fdb2530f867ebd1aa6560637647e5bfb883d76d0f40b2632025de7828a8",
+      "text_sha256": "76ae3c588d136b356f571cc1af151724a65fb1daf4291c74ad1596f1e305edff",
       "verdict": "pass",
       "judges": [
         {
@@ -714,10 +706,10 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T07:51:50+00:00"
+      "judged_at": "2026-11-12T12:33:51+00:00"
     },
     "A-talk-01-s26": {
-      "text_sha256": "d7ecdcf8d1eadf441d3266af98532f19035cc81f79fd149caf0610e719766a1e",
+      "text_sha256": "2070a4166b528fd085c827cb97dc7d883fc63a457b243ae3d30c7bc02f0d0262",
       "verdict": "pass",
       "judges": [
         {
@@ -742,10 +734,10 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T07:51:50+00:00"
+      "judged_at": "2026-11-12T12:33:51+00:00"
     },
     "A-talk-01-s27": {
-      "text_sha256": "cbcd1f03fb2813dd15d82aa98dbc8437b8e72625959b305af8a4d741d9d3b310",
+      "text_sha256": "9453926f1120cc06033a31e4cec2c2b8955457b032cd8d3afc53d0ed8dab9ef9",
       "verdict": "pass",
       "judges": [
         {
@@ -770,10 +762,10 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T07:51:50+00:00"
+      "judged_at": "2026-11-12T12:33:51+00:00"
     },
     "A-talk-01-s28": {
-      "text_sha256": "8afe761a010a556573f650ba77212c8281f5ef15d29af7751130148fb75a73ca",
+      "text_sha256": "77707a789b67090188c46764dbb2cdc18945c1a9b26710c98a8d05019ada2d61",
       "verdict": "pass",
       "judges": [
         {
@@ -798,16 +790,19 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T07:51:50+00:00"
+      "judged_at": "2026-11-12T12:33:51+00:00"
     },
     "A-talk-01-s29": {
-      "text_sha256": "c738373e3d3426043948abf1712e976db613486fdf2f54c0f9ac67ce892bebc6",
-      "verdict": "pass",
+      "text_sha256": "a9a82fc41de902518c3518bc65bda118d815dd005f0e8616ad82426e66e825e3",
+      "verdict": "review",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "announce"
+            "announce",
+            "bellow",
+            "mumble",
+            "whisper"
           ],
           "sense_match": true
         },
@@ -826,10 +821,10 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T07:51:50+00:00"
+      "judged_at": "2026-11-12T12:33:51+00:00"
     },
     "A-talk-01-s30": {
-      "text_sha256": "474d4aed48feff0029cd78a54e82aba83a46071b1b35e5bf4ba45fb9faf720f9",
+      "text_sha256": "19184397b43baa8494d0409167834278d2c3e082faddcd483e31284057a8532d",
       "verdict": "pass",
       "judges": [
         {
@@ -854,10 +849,10 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T07:51:50+00:00"
+      "judged_at": "2026-11-12T12:33:51+00:00"
     },
     "A-talk-01-s31": {
-      "text_sha256": "7c56c3e3918498e2f949af5fa0059704a1f5de7922707923f84c09e09a33b188",
+      "text_sha256": "ca8e51fcd616e65d794e7ce2a69f247347fea805dd2d6211445a70894e3f6ffb",
       "verdict": "pass",
       "judges": [
         {
@@ -882,7 +877,7 @@
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T07:53:10+00:00"
+      "judged_at": "2026-11-12T12:33:51+00:00"
     },
     "A-talk-01-s32": {
       "text_sha256": "a28d78be5fccf34fd68d1700f400bc28ab161ebe6f8551768f3f1d77b01b33af",

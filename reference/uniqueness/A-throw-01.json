@@ -145,13 +145,12 @@
       "judged_at": "2026-07-05T08:33:51+00:00"
     },
     "A-throw-01-s06": {
-      "text_sha256": "da368f019b78118c305df265802845862844993999c9c59f34993ac4de8d2b20",
-      "verdict": "review",
+      "text_sha256": "6b714bdd64ddeca4700d55b301a380581730e49531aec38aef1396fe522fc69a",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "lob",
             "toss"
           ],
           "sense_match": true
@@ -166,13 +165,12 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "lob",
             "toss"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T08:33:51+00:00"
+      "judged_at": "2026-11-12T12:30:11+00:00"
     },
     "A-throw-01-s07": {
       "text_sha256": "0031c02f19b659d14303e7b70d2eadde5664a0ff2e49039089af8a7f3b9da874",
@@ -551,14 +549,13 @@
       "judged_at": "2026-07-05T07:56:47+00:00"
     },
     "A-throw-01-s20": {
-      "text_sha256": "5bdd057636bb83a16165feb063bdfb3701507973c346dc4279b97b8c38a133a9",
-      "verdict": "review",
+      "text_sha256": "64c3d108d1778f5f3a4cc7f3fc3bcec7f6e0531e6c8e0b748c1464dfb8117fd0",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "lob",
-            "toss"
+            "lob"
           ],
           "sense_match": true
         },
@@ -572,24 +569,21 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "lob",
-            "toss"
+            "lob"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T07:56:47+00:00"
+      "judged_at": "2026-11-12T12:19:15+00:00"
     },
     "A-throw-01-s21": {
-      "text_sha256": "a264966b905871ecca70cce5ace1cd0c9928a8538328e57533eec6e54aeb4f6d",
-      "verdict": "review",
+      "text_sha256": "d3989e2810db6d80e835aefe0468ae911d397eece208970d88bd9cda214b1908",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "hurl",
-            "lob",
-            "toss"
+            "lob"
           ],
           "sense_match": true
         },
@@ -603,24 +597,21 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "lob",
-            "toss"
+            "lob"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T07:59:14+00:00"
+      "judged_at": "2026-11-12T12:19:15+00:00"
     },
     "A-throw-01-s22": {
-      "text_sha256": "d29893c7737ee4946bd2dde311a2d78ed7126c38d1c6e4017fd813cecb882d9a",
-      "verdict": "review",
+      "text_sha256": "30c9317b13ad137847dbc2bfa6ecc54e43784ce349594b537dc015cc7772b68d",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "hurl",
-            "lob",
-            "toss"
+            "lob"
           ],
           "sense_match": true
         },
@@ -634,13 +625,12 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "lob",
-            "toss"
+            "lob"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T07:59:14+00:00"
+      "judged_at": "2026-11-12T12:19:15+00:00"
     },
     "A-throw-01-s23": {
       "text_sha256": "7d968769203fa9d59053ae2dd905ea228d593355b1c6ec95806102f476650c87",
@@ -672,15 +662,13 @@
       "judged_at": "2026-07-05T07:59:14+00:00"
     },
     "A-throw-01-s24": {
-      "text_sha256": "6dbb6d361c9a1eb845adad3b9053f08ead3e8d19d9c34b84167754493e5f55d7",
-      "verdict": "review",
+      "text_sha256": "5bb43a8291e7bf40bbd175d0786955fd8f424f88485588a9e25d76a9c55d0598",
+      "verdict": "pass",
       "judges": [
         {
           "model": "gpt-5.5",
           "fits": [
-            "drop",
-            "lob",
-            "toss"
+            "lob"
           ],
           "sense_match": true
         },
@@ -694,13 +682,12 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "lob",
-            "toss"
+            "lob"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-05T07:59:14+00:00"
+      "judged_at": "2026-11-12T12:19:15+00:00"
     },
     "A-throw-01-s25": {
       "text_sha256": "3d2e31d0862866a27d3eb6bb44b09476706dbc99d2ab1c76b8445d6567df0a95",

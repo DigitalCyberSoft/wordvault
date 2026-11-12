@@ -246,8 +246,8 @@
       "answer": "peer",
       "cue": "explicit",
       "reserve": false,
-      "text": "Rosa ___ into the dim jar, trying to make out tadpoles.",
-      "cue_phrase": "trying to make out",
+      "text": "Eyes wide, Rosa ___ into the murky pond, trying to make out tadpoles.",
+      "cue_phrase": "Eyes wide; murky pond; trying to make out",
       "surface": {
         "glance": "glanced",
         "peer": "peered",
@@ -269,8 +269,8 @@
       "answer": "peer",
       "cue": "explicit",
       "reserve": false,
-      "text": "Maya ___ into the dark cupboard, hunting for the second mitten.",
-      "cue_phrase": "into the dark cupboard",
+      "text": "Maya ___ into the pitch-dark cupboard with wide eyes, hunting for the missing mitten.",
+      "cue_phrase": "pitch-dark cupboard with wide eyes",
       "surface": {
         "glance": "glanced",
         "peer": "peered",
@@ -292,8 +292,8 @@
       "answer": "peer",
       "cue": "contextual",
       "reserve": false,
-      "text": "Jon ___ through the mist, searching for the next path marker.",
-      "cue_phrase": "through the mist",
+      "text": "Jon ___ into the grey fog, eyes stretched wide, hunting for the next path marker.",
+      "cue_phrase": "grey fog, eyes stretched wide",
       "surface": {
         "glance": "glanced",
         "peer": "peered",
@@ -750,8 +750,8 @@
       "answer": "squint",
       "cue": "explicit",
       "reserve": false,
-      "text": "In the bright sun, Luca pulled his cap low and ___ at the tiny map.",
-      "cue_phrase": "in the bright sun",
+      "text": "The sun blazed off the white sand, so Luca ___ with his eyes nearly shut.",
+      "cue_phrase": "sun blazed; eyes nearly shut",
       "surface": {
         "glance": "glanced",
         "peer": "peered",
@@ -1012,6 +1012,6 @@
     "generated_at": "2026-07-06T05:17:17+00:00",
     "model": "gpt-5.5",
     "scrubbed_at": "2026-07-06T08:39:41+00:00",
-    "scrub_note": "Full read; register pass replaced seven 'eyelids' anatomy hedges and two 'one heartbeat' repeats with storybook staging; peer/squint 2-of-3s adjudicated (narrowing eyes in the dark is counterproductive)."
+    "scrub_note": "Full read; register pass replaced seven 'eyelids' anatomy hedges and two 'one heartbeat' repeats with storybook staging; peer/squint 2-of-3s adjudicated (narrowing eyes in the dark is counterproductive). Fairness pass by claude 2026-11-12: peer s09-s11 add wide eyes in the dark or fog so squint (narrowed eyes) is excluded; squint s33 drops the tiny map that let peer in."
   }
 }

@@ -121,8 +121,8 @@
       "answer": "whisper",
       "cue": "explicit",
       "reserve": false,
-      "text": "I ___ clearly so only my brother heard the secret plan.",
-      "cue_phrase": "only my brother heard",
+      "text": "I ___ the secret plan into my brother's ear, and he heard every word.",
+      "cue_phrase": "into my brother's ear",
       "surface": {
         "whisper": "whispered",
         "mumble": "mumbled",
@@ -136,8 +136,8 @@
       "answer": "whisper",
       "cue": "explicit",
       "reserve": false,
-      "text": "Please ___ clearly, right by my ear, so nobody else hears.",
-      "cue_phrase": "nobody else hears",
+      "text": "Please ___ in the library, so you don't disturb the readers.",
+      "cue_phrase": "don't disturb the readers",
       "surface": {
         "whisper": "whisper",
         "mumble": "mumble",
@@ -151,8 +151,8 @@
       "answer": "whisper",
       "cue": "contextual",
       "reserve": false,
-      "text": "From behind the curtain, Lia ___ clearly to help the stuck actor.",
-      "cue_phrase": "behind the curtain",
+      "text": "From behind the curtain, Lia ___ the forgotten line to the stuck actor.",
+      "cue_phrase": "From behind the curtain",
       "surface": {
         "whisper": "whispered",
         "mumble": "mumbled",
@@ -166,8 +166,8 @@
       "answer": "whisper",
       "cue": "contextual",
       "reserve": false,
-      "text": "At the sleepover, we ___ clearly under blankets, careful not to wake parents.",
-      "cue_phrase": "not to wake parents",
+      "text": "Under the blankets, we ___ ghost stories so we wouldn't wake Mum.",
+      "cue_phrase": "so we wouldn't wake Mum",
       "surface": {
         "whisper": "whispered",
         "mumble": "mumbled",
@@ -181,8 +181,8 @@
       "answer": "whisper",
       "cue": "inferential",
       "reserve": false,
-      "text": "The guard nearby kept sleeping while Nora ___ clearly beside him.",
-      "cue_phrase": "guard nearby kept sleeping",
+      "text": "The guard kept snoring while Nora ___ the escape plan to her friends.",
+      "cue_phrase": "guard kept snoring",
       "surface": {
         "whisper": "whispered",
         "mumble": "mumbled",
@@ -196,7 +196,7 @@
       "answer": "whisper",
       "cue": "inferential",
       "reserve": false,
-      "text": "Finn put a finger to his lips and ___ clearly.",
+      "text": "Finn put a finger to his lips and ___, 'The baby's asleep.'",
       "cue_phrase": "finger to his lips",
       "surface": {
         "whisper": "whispered",
@@ -211,14 +211,14 @@
       "answer": "whisper",
       "cue": "contextual",
       "reserve": true,
-      "text": "To keep the hiding place secret, Sam had to ___ clearly.",
-      "cue_phrase": "hiding place secret",
+      "text": "Sam cupped his hands around my ear and ___ the way to our hiding place.",
+      "cue_phrase": "cupped his hands around my ear",
       "surface": {
-        "whisper": "whisper",
-        "mumble": "mumble",
-        "chatter": "chatter",
-        "announce": "announce",
-        "bellow": "bellow"
+        "whisper": "whispered",
+        "mumble": "mumbled",
+        "chatter": "chattered",
+        "announce": "announced",
+        "bellow": "bellowed"
       }
     },
     {
@@ -226,14 +226,14 @@
       "answer": "whisper",
       "cue": "contextual",
       "reserve": true,
-      "text": "Behind the museum rope, the guide ___ clearly into one child's ear.",
-      "cue_phrase": "one child's ear",
+      "text": "So the bats wouldn't wake, the guide ___ each fact, and we caught every word.",
+      "cue_phrase": "So the bats wouldn't wake",
       "surface": {
-        "whisper": "whispers",
-        "mumble": "mumbles",
-        "chatter": "chatters",
-        "announce": "announces",
-        "bellow": "bellows"
+        "whisper": "whispered",
+        "mumble": "mumbled",
+        "chatter": "chattered",
+        "announce": "announced",
+        "bellow": "bellowed"
       }
     },
     {
@@ -287,77 +287,8 @@
       "answer": "mumble",
       "cue": "contextual",
       "reserve": false,
-      "text": "With toothpaste foam in his mouth, Omar ___ after bedtime.",
-      "cue_phrase": "toothpaste foam in his mouth",
-      "surface": {
-        "whisper": "whispered",
-        "mumble": "mumbled",
-        "chatter": "chattered",
-        "announce": "announced",
-        "bellow": "bellowed"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "ADJACENCY-2OF3 (gpt-5.5 adds whisper; gpt-4.1 adds whisper): whisper co-occurs with low speech; toothpaste foam obstructs speech into mumbling - whispering is deliberate quietness",
-          "by": "claude",
-          "at": "2026-07-05"
-        }
-      ]
-    },
-    {
-      "id": "A-talk-01-s12",
-      "answer": "mumble",
-      "cue": "contextual",
-      "reserve": false,
-      "text": "The sleepy pirate ___ through his beard, and nobody caught the password.",
-      "cue_phrase": "through his beard",
-      "surface": {
-        "whisper": "whispered",
-        "mumble": "mumbled",
-        "chatter": "chattered",
-        "announce": "announced",
-        "bellow": "bellowed"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "ADJACENCY-2OF3 (gpt-5.5 adds whisper; gpt-4.1 adds whisper): whisper co-occurs; speech lost through a beard is indistinct, mumble's feature, not deliberately hushed",
-          "by": "claude",
-          "at": "2026-07-05"
-        }
-      ]
-    },
-    {
-      "id": "A-talk-01-s13",
-      "answer": "mumble",
-      "cue": "inferential",
-      "reserve": false,
-      "text": "Maya kept the cookie in her cheek and ___ unclearly.",
-      "cue_phrase": "cookie in her cheek",
-      "surface": {
-        "whisper": "whispered",
-        "mumble": "mumbled",
-        "chatter": "chattered",
-        "announce": "announced",
-        "bellow": "bellowed"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: gpt-5.5 also reads bellow, chatter, whisper charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
-          "by": "claude",
-          "at": "2026-07-05"
-        }
-      ]
-    },
-    {
-      "id": "A-talk-01-s14",
-      "answer": "mumble",
-      "cue": "inferential",
-      "reserve": false,
-      "text": "It was not quiet, just mushy, when Ben ___.",
-      "cue_phrase": "not quiet, just mushy",
+      "text": "Mum asked about homework, and Omar ___ an answer through a mouthful of toothpaste.",
+      "cue_phrase": "mouthful of toothpaste",
       "surface": {
         "whisper": "whispered",
         "mumble": "mumbled",
@@ -365,6 +296,59 @@
         "announce": "announced",
         "bellow": "bellowed"
       }
+    },
+    {
+      "id": "A-talk-01-s12",
+      "answer": "mumble",
+      "cue": "contextual",
+      "reserve": false,
+      "text": "The sleepy captain ___ with his chin on his chest, his words all running together.",
+      "cue_phrase": "words all running together",
+      "surface": {
+        "whisper": "whispered",
+        "mumble": "mumbled",
+        "chatter": "chattered",
+        "announce": "announced",
+        "bellow": "bellowed"
+      }
+    },
+    {
+      "id": "A-talk-01-s13",
+      "answer": "mumble",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Cheeks stuffed with cookie, Maya ___ a reply that nobody could make out.",
+      "cue_phrase": "Cheeks stuffed with cookie",
+      "surface": {
+        "whisper": "whispered",
+        "mumble": "mumbled",
+        "chatter": "chattered",
+        "announce": "announced",
+        "bellow": "bellowed"
+      }
+    },
+    {
+      "id": "A-talk-01-s14",
+      "answer": "mumble",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Ben ___ into his collar, chin down, so his answer came out as a blur.",
+      "cue_phrase": "came out as a blur",
+      "surface": {
+        "whisper": "whispered",
+        "mumble": "mumbled",
+        "chatter": "chattered",
+        "announce": "announced",
+        "bellow": "bellowed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (whisper); read and rejected: the answer came out as a blur, i.e. indistinct; a whisper is quiet but clear",
+          "by": "claude",
+          "at": "2026-11-12"
+        }
+      ]
     },
     {
       "id": "A-talk-01-s15",
@@ -477,46 +461,30 @@
       "answer": "chatter",
       "cue": "inferential",
       "reserve": false,
-      "text": "I heard a stream of tiny stories whenever Poppy ___.",
-      "cue_phrase": "stream of tiny stories",
+      "text": "Walking home, Poppy ___ about shoes, clouds, lunch and cats without stopping for breath.",
+      "cue_phrase": "without stopping for breath",
       "surface": {
         "whisper": "whispered",
         "mumble": "mumbled",
         "chatter": "chattered",
         "announce": "announced",
         "bellow": "bellowed"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: gpt-5.5 also reads whisper charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
-          "by": "claude",
-          "at": "2026-07-05"
-        }
-      ]
+      }
     },
     {
       "id": "A-talk-01-s22",
       "answer": "chatter",
       "cue": "inferential",
       "reserve": false,
-      "text": "Before class, Jay ___ until three small topics tangled together.",
-      "cue_phrase": "small topics tangled",
+      "text": "Before class, Jay ___ away about footy, his lunch and his new puppy, all at top speed.",
+      "cue_phrase": "all at top speed",
       "surface": {
         "whisper": "whispered",
         "mumble": "mumbled",
         "chatter": "chattered",
         "announce": "announced",
         "bellow": "bellowed"
-      },
-      "waivers": [
-        {
-          "check": "UNIQUENESS-REVIEW",
-          "note": "CHARITY-1OF3: gpt-5.5 also reads whisper charitably; the other two judges find the answer unique. Accepted per triage policy; the miss card teaches this exact edge.",
-          "by": "claude",
-          "at": "2026-07-05"
-        }
-      ]
+      }
     },
     {
       "id": "A-talk-01-s23",
@@ -553,8 +521,8 @@
       "answer": "announce",
       "cue": "explicit",
       "reserve": false,
-      "text": "The head teacher will ___ officially to everyone after lunch.",
-      "cue_phrase": "officially to everyone",
+      "text": "After lunch, the head teacher will ___ the new school captains at assembly.",
+      "cue_phrase": "new school captains at assembly",
       "surface": {
         "whisper": "whisper",
         "mumble": "mumble",
@@ -568,8 +536,8 @@
       "answer": "announce",
       "cue": "explicit",
       "reserve": false,
-      "text": "Please ___ officially, so the whole club gets the rule change.",
-      "cue_phrase": "whole club gets",
+      "text": "Please ___ the rule change to the whole club at today's meeting.",
+      "cue_phrase": "to the whole club",
       "surface": {
         "whisper": "whisper",
         "mumble": "mumble",
@@ -583,8 +551,8 @@
       "answer": "announce",
       "cue": "contextual",
       "reserve": false,
-      "text": "At assembly, the captain ___ officially from the stage after voting.",
-      "cue_phrase": "At assembly",
+      "text": "A sign on the pool gate ___ that swimming lessons would start on Monday.",
+      "cue_phrase": "A sign on the pool gate",
       "surface": {
         "whisper": "whispered",
         "mumble": "mumbled",
@@ -598,23 +566,8 @@
       "answer": "announce",
       "cue": "contextual",
       "reserve": false,
-      "text": "The noticeboard message will ___ officially for all families before tomorrow's trip.",
-      "cue_phrase": "for all families",
-      "surface": {
-        "whisper": "whisper",
-        "mumble": "mumble",
-        "chatter": "chatter",
-        "announce": "announce",
-        "bellow": "bellow"
-      }
-    },
-    {
-      "id": "A-talk-01-s29",
-      "answer": "announce",
-      "cue": "inferential",
-      "reserve": false,
-      "text": "When the bell rang, Mrs Patel ___ officially to every class.",
-      "cue_phrase": "to every class",
+      "text": "The principal ___ the excursion date in the school newsletter.",
+      "cue_phrase": "in the school newsletter",
       "surface": {
         "whisper": "whispered",
         "mumble": "mumbled",
@@ -624,18 +577,41 @@
       }
     },
     {
+      "id": "A-talk-01-s29",
+      "answer": "announce",
+      "cue": "inferential",
+      "reserve": false,
+      "text": "Over the loudspeaker, Mrs Patel ___ that the school fair would start at noon.",
+      "cue_phrase": "Over the loudspeaker",
+      "surface": {
+        "whisper": "whispered",
+        "mumble": "mumbled",
+        "chatter": "chattered",
+        "announce": "announced",
+        "bellow": "bellowed"
+      },
+      "waivers": [
+        {
+          "check": "UNIQUENESS-REVIEW",
+          "note": "CHARITY-1OF3: only gpt-5.5 lists a second fit (bellow, mumble, whisper); read and rejected: a loudspeaker message to the school about the fair is an announcement; whisper and mumble defeat a loudspeaker and nothing calls for a bellow",
+          "by": "claude",
+          "at": "2026-11-12"
+        }
+      ]
+    },
+    {
       "id": "A-talk-01-s30",
       "answer": "announce",
       "cue": "inferential",
       "reserve": false,
-      "text": "A royal scroll arrived to ___ officially before the birthday feast.",
-      "cue_phrase": "royal scroll arrived",
+      "text": "The king's messenger nailed up a notice that ___ a feast for everyone.",
+      "cue_phrase": "nailed up a notice",
       "surface": {
-        "whisper": "whisper",
-        "mumble": "mumble",
-        "chatter": "chatter",
-        "announce": "announce",
-        "bellow": "bellow"
+        "whisper": "whispered",
+        "mumble": "mumbled",
+        "chatter": "chattered",
+        "announce": "announced",
+        "bellow": "bellowed"
       }
     },
     {
@@ -643,14 +619,14 @@
       "answer": "announce",
       "cue": "contextual",
       "reserve": true,
-      "text": "The referee raised a flag to ___ officially after the race.",
-      "cue_phrase": "referee raised a flag",
+      "text": "The school website ___ the new holiday dates on Monday morning.",
+      "cue_phrase": "The school website",
       "surface": {
-        "whisper": "whisper",
-        "mumble": "mumble",
-        "chatter": "chatter",
-        "announce": "announce",
-        "bellow": "bellow"
+        "whisper": "whispered",
+        "mumble": "mumbled",
+        "chatter": "chattered",
+        "announce": "announced",
+        "bellow": "bellowed"
       }
     },
     {
@@ -895,6 +871,6 @@
     "generated_at": "2026-07-05T07:22:59+00:00",
     "model": "gpt-5.5",
     "scrubbed_at": "2026-07-05",
-    "scrub_note": "Full read by claude during judge triage: every flagged sentence adjudicated (rewrite or recorded waiver), unflagged sentences read for frame sanity."
+    "scrub_note": "Full read by claude during judge triage: every flagged sentence adjudicated (rewrite or recorded waiver), unflagged sentences read for frame sanity. Fairness pass by claude 2026-11-12: mumble s11/s12 let whisper in (now toothpaste-mouthed and sleepy, words running together); the whisper block's defensive 'clearly' and the announce block's intransitive 'officially' were rewritten as natural scenes (whisper into an ear, in the library; announce over the loudspeaker, in the newsletter, on a sign), and s13/s14/s21/s22 smoothed. Single gpt-5.5 dissents read and waived."
   }
 }

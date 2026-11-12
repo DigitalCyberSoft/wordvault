@@ -418,8 +418,8 @@
       "answer": "declare",
       "cue": "inferential",
       "reserve": false,
-      "text": "The captain raised the trophy and ___ in a firm voice, 'This match is ours.'",
-      "cue_phrase": "in a firm voice",
+      "text": "At assembly, the principal calmly ___ that phones would stay in lockers from Monday.",
+      "cue_phrase": "At assembly; calmly; from Monday",
       "surface": {
         "retort": "retorted",
         "exclaim": "exclaimed",
@@ -860,6 +860,6 @@
     "generated_at": "2026-07-06T14:44:14+00:00",
     "model": "gpt-5.5",
     "scrubbed_at": "2026-07-07",
-    "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite)."
+    "scrub_note": "Dedicated pre-scrub agent pass (77 defect fixes + 32 surface-map regens + hone->improvise and immerse->wallow roster surgery applied 2026-07-06), then judge triage by claude 2026-07-07: every hard fixed and re-judged to zero, every review adjudicated (charity/adjacency waiver or rewrite). Fairness pass by claude 2026-11-12: declare s21 is now a calm assembly announcement, so exclaim (sudden outburst) is excluded."
   }
 }

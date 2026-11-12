@@ -125,8 +125,8 @@
       "answer": "determined",
       "cue": "contextual",
       "reserve": false,
-      "text": "The climbers turned back in the storm, but returned next spring, more ___ than ever.",
-      "cue_phrase": "returned next spring",
+      "text": "Mia failed her swimming test twice but kept practising every morning, as ___ as ever.",
+      "cue_phrase": "failed her swimming test twice but kept practising",
       "surface": {
         "determined": "determined",
         "daring": "daring",
@@ -261,8 +261,8 @@
       "answer": "daring",
       "cue": "contextual",
       "reserve": false,
-      "text": "After checking her helmet, Mei got ___ and tried the steeper trail.",
-      "cue_phrase": "the steeper trail",
+      "text": "Helmet on and heart thumping, Mei felt ___ and chose the scariest trail for fun.",
+      "cue_phrase": "Helmet on and heart thumping; for fun",
       "surface": {
         "determined": "determined",
         "daring": "daring",
@@ -353,8 +353,8 @@
       "answer": "daring",
       "cue": "contextual",
       "reserve": true,
-      "text": "Despite butterflies, after the instructor nodded, Zed became ___ and tried the rope swing.",
-      "cue_phrase": "Despite butterflies",
+      "text": "With the lifeguard watching, Zed felt ___ and tried the highest rope swing, knees shaking.",
+      "cue_phrase": "lifeguard watching; knees shaking",
       "surface": {
         "determined": "determined",
         "daring": "daring",
@@ -558,8 +558,8 @@
       "answer": "reckless",
       "cue": "explicit",
       "reserve": false,
-      "text": "Ignoring the warning sign, Jae took a ___ leap across the wet rocks.",
-      "cue_phrase": "ignoring the warning sign",
+      "text": "Jae was ___ with Mum's sharp scissors, waving them about while running through the house.",
+      "cue_phrase": "waving them about while running",
       "surface": {
         "determined": "determined",
         "daring": "daring",
@@ -650,8 +650,8 @@
       "answer": "reckless",
       "cue": "inferential",
       "reserve": false,
-      "text": "Ana was ___, ignoring the fence and sprinting over cracked concrete.",
-      "cue_phrase": "ignoring the fence",
+      "text": "The ___ driver raced through the school crossing while chatting on his phone.",
+      "cue_phrase": "raced through the school crossing while chatting",
       "surface": {
         "determined": "determined",
         "daring": "daring",
@@ -997,6 +997,6 @@
     "generated_at": "2026-07-05T11:02:23+00:00",
     "model": "gpt-5.5",
     "scrubbed_at": "2026-07-05T13:42:27+00:00",
-    "scrub_note": "fearless s20 given real danger; reckless s26 foolish-risk marker; s28 'were ___ to light' parse ambiguity removed. Full read + judge triage."
+    "scrub_note": "fearless s20 given real danger; reckless s26 foolish-risk marker; s28 'were ___ to light' parse ambiguity removed. Full read + judge triage. Fairness pass by claude 2026-11-12: rewrote s03 (determined: repeated failure then practice, no risk), s11/s15 (daring: fear present plus safety gear or lifeguard, so neither fearless nor reckless fits) and s26/s30 (reckless moved to careless everyday acts, scissors and a phoning driver, so daring cannot fit); 2+ judges had accepted daring/fearless/determined."
   }
 }

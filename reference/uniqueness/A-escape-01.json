@@ -231,7 +231,7 @@
       "judged_at": "2026-07-06T16:48:30+00:00"
     },
     "A-escape-01-s09": {
-      "text_sha256": "5724db227d8e27c36b1fa59dc77948c56c63f4a4c9ff79c42970f5cb0a686646",
+      "text_sha256": "a28a7fe78807a02dfbdb4099cb2028681e33f9165725510f4cfe45758395b09c",
       "verdict": "review",
       "judges": [
         {
@@ -252,16 +252,15 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "flee",
-            "retreat"
+            "flee"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-06T16:48:30+00:00"
+      "judged_at": "2026-11-12T12:13:51+00:00"
     },
     "A-escape-01-s10": {
-      "text_sha256": "eb6f2cd5ffcb7d056264c4e07676292edc67ab09294a50786094a1e125b569b5",
+      "text_sha256": "19c89c85d8845695b634b07952c46d998e324c8488de91de6ad221759d58a296",
       "verdict": "review",
       "judges": [
         {
@@ -282,13 +281,12 @@
         {
           "model": "claude-opus-4-8",
           "fits": [
-            "flee",
-            "retreat"
+            "flee"
           ],
           "sense_match": true
         }
       ],
-      "judged_at": "2026-07-06T16:48:30+00:00"
+      "judged_at": "2026-11-12T12:13:51+00:00"
     },
     "A-escape-01-s11": {
       "text_sha256": "5ac558abaa332dba9fa0eb655e12ba753f609c553cb204b038ede8c5655ce794",
