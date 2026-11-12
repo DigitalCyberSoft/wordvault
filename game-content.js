@@ -14,14 +14,15 @@
   'use strict';
   var DATA = {
    "schema_version": 1,
-   "built_at": "2026-11-12T12:59:01Z",
+   "built_at": "2026-11-12T15:46:10Z",
    "builder": "tools/bake-content.js",
-   "source_sha256": "de85dfdf9cb00639009eb617be40b16fae13b2e0cb7e5d0b6792d3234ef5203c",
+   "source_sha256": "34d83e3c5e079b5e2916727aa418a7a251136a9217543e10d29948d5499ffc14",
    "counts": {
     "sets": 77,
     "words": 385,
     "sentences": 3080,
-    "contrasts": 1540
+    "contrasts": 1540,
+    "forms": 814
    },
    "bands": {
     "1": [
@@ -70829,7 +70830,20489 @@
       "scrub_note": "Scrubbed by claude 2026-07-07: sweeps clean, all 40 sentences and 20 contrasts read; s06 restaged (cave drop staged the steep sense of abrupt, not the pinned sudden-event sense). Post-judge hard fixes s05/s28/s39: abrupt-change collocation, wiper cycle interval marker, moth course-reversal (pinned-sense dimension)."
      }
     }
-   ]
+   ],
+   "forms": {
+    "A-angry-01": {
+     "families": {
+      "frustrated": [
+       {
+        "form": "frustrated",
+        "pos": "adjective",
+        "note": "adjective: upset because progress is blocked"
+       },
+       {
+        "form": "frustrate",
+        "pos": "verb",
+        "note": "verb: to block someone from doing what they want"
+       },
+       {
+        "form": "frustrates",
+        "pos": "verb",
+        "note": "verb: blocks someone from doing what they want"
+       },
+       {
+        "form": "frustrating",
+        "pos": "adjective",
+        "note": "adjective: causing upset by blocking progress"
+       },
+       {
+        "form": "frustratingly",
+        "pos": "adverb",
+        "note": "adverb: in a way that blocks progress and upsets people"
+       },
+       {
+        "form": "frustration",
+        "pos": "noun",
+        "note": "noun: upset caused by blocked progress"
+       }
+      ],
+      "jealous": [
+       {
+        "form": "jealous",
+        "pos": "adjective",
+        "note": "adjective: unhappy because another has what you want"
+       },
+       {
+        "form": "jealously",
+        "pos": "adverb",
+        "note": "adverb: with envy of what another person has"
+       },
+       {
+        "form": "jealousy",
+        "pos": "noun",
+        "note": "noun: unhappiness over what another person has"
+       },
+       {
+        "form": "jealousies",
+        "pos": "noun",
+        "note": "noun: feelings of envy over what others have"
+       }
+      ],
+      "resentful": [
+       {
+        "form": "resentful",
+        "pos": "adjective",
+        "note": "adjective: quietly angry about something unfair"
+       },
+       {
+        "form": "resent",
+        "pos": "verb",
+        "note": "verb: to feel bitter anger about unfair treatment"
+       },
+       {
+        "form": "resents",
+        "pos": "verb",
+        "note": "verb: feels bitter anger about unfair treatment"
+       },
+       {
+        "form": "resented",
+        "pos": "verb",
+        "note": "verb: felt bitter anger about unfair treatment"
+       },
+       {
+        "form": "resenting",
+        "pos": "verb",
+        "note": "verb: feeling bitter anger about unfair treatment"
+       },
+       {
+        "form": "resentment",
+        "pos": "noun",
+        "note": "noun: bitter anger about unfair treatment"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:A-angry-01-s02",
+       "word": "frustrated",
+       "text": "Priya grew ___ when the jigsaw's last piece refused to fit anywhere.",
+       "answer": "frustrated",
+       "tiles": [
+        "frustrated",
+        "frustrating",
+        "frustration",
+        "frustrate",
+        "frustratingly"
+       ],
+       "notes": {
+        "frustrated": "adjective: upset because progress is blocked",
+        "frustrate": "verb: to block someone from doing what they want",
+        "frustrating": "adjective: causing upset by blocking progress",
+        "frustratingly": "adverb: in a way that blocks progress and upsets people",
+        "frustration": "noun: upset caused by blocked progress"
+       }
+      },
+      {
+       "id": "F:A-angry-01-s04",
+       "word": "frustrated",
+       "text": "Mina's kite dived into the hedge again and again until she was ___.",
+       "answer": "frustrated",
+       "tiles": [
+        "frustrated",
+        "frustrating",
+        "frustration",
+        "frustrate",
+        "frustratingly"
+       ],
+       "notes": {
+        "frustrated": "adjective: upset because progress is blocked",
+        "frustrate": "verb: to block someone from doing what they want",
+        "frustrating": "adjective: causing upset by blocking progress",
+        "frustratingly": "adverb: in a way that blocks progress and upsets people",
+        "frustration": "noun: upset caused by blocked progress"
+       }
+      },
+      {
+       "id": "F:A-angry-01-s27",
+       "word": "jealous",
+       "text": "Lila kept staring at her cousin's sparkly trainers instead of her own plain ones, feeling ___.",
+       "answer": "jealous",
+       "tiles": [
+        "jealous",
+        "jealousy",
+        "jealously",
+        "jealousies"
+       ],
+       "notes": {
+        "jealous": "adjective: unhappy because another has what you want",
+        "jealously": "adverb: with envy of what another person has",
+        "jealousy": "noun: unhappiness over what another person has",
+        "jealousies": "noun: feelings of envy over what others have"
+       }
+      },
+      {
+       "id": "F:A-angry-01-s34",
+       "word": "resentful",
+       "text": "Mina was polite about it, but stayed ___ about the promise nobody had kept.",
+       "answer": "resentful",
+       "tiles": [
+        "resentful",
+        "resentment",
+        "resent",
+        "resented",
+        "resents"
+       ],
+       "notes": {
+        "resentful": "adjective: quietly angry about something unfair",
+        "resent": "verb: to feel bitter anger about unfair treatment",
+        "resents": "verb: feels bitter anger about unfair treatment",
+        "resented": "verb: felt bitter anger about unfair treatment",
+        "resentment": "noun: bitter anger about unfair treatment"
+       }
+      },
+      {
+       "id": "F:A-angry-01-s36",
+       "word": "resentful",
+       "text": "For days, Kira was ___ after her idea was stolen.",
+       "answer": "resentful",
+       "tiles": [
+        "resentful",
+        "resentment",
+        "resent",
+        "resented",
+        "resents"
+       ],
+       "notes": {
+        "resentful": "adjective: quietly angry about something unfair",
+        "resent": "verb: to feel bitter anger about unfair treatment",
+        "resents": "verb: feels bitter anger about unfair treatment",
+        "resented": "verb: felt bitter anger about unfair treatment",
+        "resentment": "noun: bitter anger about unfair treatment"
+       }
+      }
+     ]
+    },
+    "A-brave-01": {
+     "families": {
+      "determined": [
+       {
+        "form": "determined",
+        "pos": "adjective",
+        "note": "adjective: not giving up on a difficult task"
+       },
+       {
+        "form": "determine",
+        "pos": "verb",
+        "note": "verb: to firmly decide to do something"
+       },
+       {
+        "form": "determines",
+        "pos": "verb",
+        "note": "verb: firmly decides to do something"
+       },
+       {
+        "form": "determining",
+        "pos": "verb",
+        "note": "verb: firmly deciding to do something"
+       },
+       {
+        "form": "determinedly",
+        "pos": "adverb",
+        "note": "adverb: with firm effort and no giving up"
+       },
+       {
+        "form": "determination",
+        "pos": "noun",
+        "note": "noun: firmness in trying to reach a goal"
+       }
+      ],
+      "daring": [
+       {
+        "form": "daring",
+        "pos": "adjective",
+        "note": "adjective: brave enough to take risks"
+       },
+       {
+        "form": "dare",
+        "pos": "verb",
+        "note": "verb: to be brave enough to try something risky"
+       },
+       {
+        "form": "dares",
+        "pos": "verb",
+        "note": "verb: is brave enough to try something risky"
+       },
+       {
+        "form": "dared",
+        "pos": "verb",
+        "note": "verb: was brave enough to try something risky"
+       },
+       {
+        "form": "daringly",
+        "pos": "adverb",
+        "note": "adverb: in a brave, risk-taking way"
+       }
+      ],
+      "fearless": [
+       {
+        "form": "fearless",
+        "pos": "adjective",
+        "note": "adjective: not scared, even when danger is real"
+       },
+       {
+        "form": "fear",
+        "pos": "noun",
+        "note": "noun: a scared feeling about danger"
+       },
+       {
+        "form": "fears",
+        "pos": "noun",
+        "note": "noun: scared feelings about dangers"
+       },
+       {
+        "form": "feared",
+        "pos": "verb",
+        "note": "verb: felt scared of someone or something"
+       },
+       {
+        "form": "fearing",
+        "pos": "verb",
+        "note": "verb: feeling scared of someone or something"
+       },
+       {
+        "form": "fearlessly",
+        "pos": "adverb",
+        "note": "adverb: without being scared by danger"
+       },
+       {
+        "form": "fearlessness",
+        "pos": "noun",
+        "note": "noun: bravery when danger is real"
+       }
+      ],
+      "heroic": [
+       {
+        "form": "heroic",
+        "pos": "adjective",
+        "note": "adjective: showing great bravery in helping others"
+       },
+       {
+        "form": "hero",
+        "pos": "noun",
+        "note": "noun: a very brave person admired by others"
+       },
+       {
+        "form": "heroes",
+        "pos": "noun",
+        "note": "noun: very brave people admired by others"
+       },
+       {
+        "form": "heroically",
+        "pos": "adverb",
+        "note": "adverb: with great bravery in helping others"
+       },
+       {
+        "form": "heroism",
+        "pos": "noun",
+        "note": "noun: great bravery in helping others"
+       },
+       {
+        "form": "heroine",
+        "pos": "noun",
+        "note": "noun: a very brave girl or woman admired by others"
+       },
+       {
+        "form": "heroines",
+        "pos": "noun",
+        "note": "noun: very brave girls or women admired by others"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:A-brave-01-s01",
+       "word": "determined",
+       "text": "Maya was ___ to finish the race, jogging on long after her legs burned.",
+       "answer": "determined",
+       "tiles": [
+        "determined",
+        "determine",
+        "determination",
+        "determining",
+        "determinedly"
+       ],
+       "notes": {
+        "determined": "adjective: not giving up on a difficult task",
+        "determine": "verb: to firmly decide to do something",
+        "determining": "verb: firmly deciding to do something",
+        "determinedly": "adverb: with firm effort and no giving up",
+        "determination": "noun: firmness in trying to reach a goal"
+       }
+      },
+      {
+       "id": "F:A-brave-01-s02",
+       "word": "determined",
+       "text": "Despite failing twice, Leo stayed ___ and tried the jump serve again.",
+       "answer": "determined",
+       "tiles": [
+        "determined",
+        "determine",
+        "determination",
+        "determining",
+        "determinedly"
+       ],
+       "notes": {
+        "determined": "adjective: not giving up on a difficult task",
+        "determine": "verb: to firmly decide to do something",
+        "determining": "verb: firmly deciding to do something",
+        "determinedly": "adverb: with firm effort and no giving up",
+        "determination": "noun: firmness in trying to reach a goal"
+       }
+      },
+      {
+       "id": "F:A-brave-01-s03",
+       "word": "determined",
+       "text": "Mia failed her swimming test twice but kept practising every morning, as ___ as ever.",
+       "answer": "determined",
+       "tiles": [
+        "determined",
+        "determine",
+        "determination",
+        "determining",
+        "determinedly"
+       ],
+       "notes": {
+        "determined": "adjective: not giving up on a difficult task",
+        "determine": "verb: to firmly decide to do something",
+        "determining": "verb: firmly deciding to do something",
+        "determinedly": "adverb: with firm effort and no giving up",
+        "determination": "noun: firmness in trying to reach a goal"
+       }
+      },
+      {
+       "id": "F:A-brave-01-s04",
+       "word": "determined",
+       "text": "Every fall from the skateboard left Ana more ___ to land the trick.",
+       "answer": "determined",
+       "tiles": [
+        "determined",
+        "determine",
+        "determination",
+        "determining",
+        "determinedly"
+       ],
+       "notes": {
+        "determined": "adjective: not giving up on a difficult task",
+        "determine": "verb: to firmly decide to do something",
+        "determining": "verb: firmly deciding to do something",
+        "determinedly": "adverb: with firm effort and no giving up",
+        "determination": "noun: firmness in trying to reach a goal"
+       }
+      },
+      {
+       "id": "F:A-brave-01-s09",
+       "word": "daring",
+       "text": "His knees wobbled, but Omar was ___, choosing the supervised zip-wire for fun.",
+       "answer": "daring",
+       "tiles": [
+        "daring",
+        "dare",
+        "dared",
+        "dares",
+        "daringly"
+       ],
+       "notes": {
+        "daring": "adjective: brave enough to take risks",
+        "dare": "verb: to be brave enough to try something risky",
+        "dares": "verb: is brave enough to try something risky",
+        "dared": "verb: was brave enough to try something risky",
+        "daringly": "adverb: in a brave, risk-taking way"
+       }
+      },
+      {
+       "id": "F:A-brave-01-s10",
+       "word": "daring",
+       "text": "Although her stomach fluttered, Priya felt ___ choosing guided high ropes for excitement.",
+       "answer": "daring",
+       "tiles": [
+        "daring",
+        "dare",
+        "dared",
+        "dares",
+        "daringly"
+       ],
+       "notes": {
+        "daring": "adjective: brave enough to take risks",
+        "dare": "verb: to be brave enough to try something risky",
+        "dares": "verb: is brave enough to try something risky",
+        "dared": "verb: was brave enough to try something risky",
+        "daringly": "adverb: in a brave, risk-taking way"
+       }
+      },
+      {
+       "id": "F:A-brave-01-s11",
+       "word": "daring",
+       "text": "Helmet on and heart thumping, Mei felt ___ and chose the scariest trail for fun.",
+       "answer": "daring",
+       "tiles": [
+        "daring",
+        "dare",
+        "dared",
+        "dares",
+        "daringly"
+       ],
+       "notes": {
+        "daring": "adjective: brave enough to take risks",
+        "dare": "verb: to be brave enough to try something risky",
+        "dares": "verb: is brave enough to try something risky",
+        "dared": "verb: was brave enough to try something risky",
+        "daringly": "adverb: in a brave, risk-taking way"
+       }
+      },
+      {
+       "id": "F:A-brave-01-s12",
+       "word": "daring",
+       "text": "Tomas felt ___ when he chose the taller slide, grinning at the rush.",
+       "answer": "daring",
+       "tiles": [
+        "daring",
+        "dare",
+        "dared",
+        "dares",
+        "daringly"
+       ],
+       "notes": {
+        "daring": "adjective: brave enough to take risks",
+        "dare": "verb: to be brave enough to try something risky",
+        "dares": "verb: is brave enough to try something risky",
+        "dared": "verb: was brave enough to try something risky",
+        "daringly": "adverb: in a brave, risk-taking way"
+       }
+      },
+      {
+       "id": "F:A-brave-01-s17",
+       "word": "fearless",
+       "text": "The dog growled nearby, yet Ben stayed ___, with no tremble.",
+       "answer": "fearless",
+       "tiles": [
+        "fearless",
+        "fear",
+        "fears",
+        "feared",
+        "fearing"
+       ],
+       "notes": {
+        "fearless": "adjective: not scared, even when danger is real",
+        "fear": "noun: a scared feeling about danger",
+        "fears": "noun: scared feelings about dangers",
+        "feared": "verb: felt scared of someone or something",
+        "fearing": "verb: feeling scared of someone or something"
+       }
+      },
+      {
+       "id": "F:A-brave-01-s18",
+       "word": "fearless",
+       "text": "As thunder cracked overhead, Asha remained ___, calm as warm milk.",
+       "answer": "fearless",
+       "tiles": [
+        "fearless",
+        "fear",
+        "fears",
+        "feared",
+        "fearing"
+       ],
+       "notes": {
+        "fearless": "adjective: not scared, even when danger is real",
+        "fear": "noun: a scared feeling about danger",
+        "fears": "noun: scared feelings about dangers",
+        "feared": "verb: felt scared of someone or something",
+        "fearing": "verb: feeling scared of someone or something"
+       }
+      },
+      {
+       "id": "F:A-brave-01-s19",
+       "word": "fearless",
+       "text": "A wasp circled Tariq's face, but he seemed ___, not flinching once.",
+       "answer": "fearless",
+       "tiles": [
+        "fearless",
+        "fear",
+        "fears",
+        "feared",
+        "fearing"
+       ],
+       "notes": {
+        "fearless": "adjective: not scared, even when danger is real",
+        "fear": "noun: a scared feeling about danger",
+        "fears": "noun: scared feelings about dangers",
+        "feared": "verb: felt scared of someone or something",
+        "fearing": "verb: feeling scared of someone or something"
+       }
+      },
+      {
+       "id": "F:A-brave-01-s20",
+       "word": "fearless",
+       "text": "The rope bridge swayed over the gorge, but Jo felt ___, her heartbeat steady.",
+       "answer": "fearless",
+       "tiles": [
+        "fearless",
+        "fear",
+        "fears",
+        "feared",
+        "fearing"
+       ],
+       "notes": {
+        "fearless": "adjective: not scared, even when danger is real",
+        "fear": "noun: a scared feeling about danger",
+        "fears": "noun: scared feelings about dangers",
+        "feared": "verb: felt scared of someone or something",
+        "fearing": "verb: feeling scared of someone or something"
+       }
+      },
+      {
+       "id": "F:A-brave-01-s33",
+       "word": "heroic",
+       "text": "Though trembling, the ___ neighbour carried the toddler from smoke after calling for help.",
+       "answer": "heroic",
+       "tiles": [
+        "heroic",
+        "hero",
+        "heroes",
+        "heroine",
+        "heroism"
+       ],
+       "notes": {
+        "heroic": "adjective: showing great bravery in helping others",
+        "hero": "noun: a very brave person admired by others",
+        "heroes": "noun: very brave people admired by others",
+        "heroism": "noun: great bravery in helping others",
+        "heroine": "noun: a very brave girl or woman admired by others"
+       }
+      },
+      {
+       "id": "F:A-brave-01-s34",
+       "word": "heroic",
+       "text": "Though nervous, the ___ nurse crossed with rescuers to bring children medicine.",
+       "answer": "heroic",
+       "tiles": [
+        "heroic",
+        "hero",
+        "heroes",
+        "heroine",
+        "heroism"
+       ],
+       "notes": {
+        "heroic": "adjective: showing great bravery in helping others",
+        "hero": "noun: a very brave person admired by others",
+        "heroes": "noun: very brave people admired by others",
+        "heroism": "noun: great bravery in helping others",
+        "heroine": "noun: a very brave girl or woman admired by others"
+       }
+      },
+      {
+       "id": "F:A-brave-01-s35",
+       "word": "heroic",
+       "text": "Maya made a ___ climb, roped safely, not for excitement, to free the kitten.",
+       "answer": "heroic",
+       "tiles": [
+        "heroic",
+        "hero",
+        "heroes",
+        "heroine",
+        "heroism"
+       ],
+       "notes": {
+        "heroic": "adjective: showing great bravery in helping others",
+        "hero": "noun: a very brave person admired by others",
+        "heroes": "noun: very brave people admired by others",
+        "heroism": "noun: great bravery in helping others",
+        "heroine": "noun: a very brave girl or woman admired by others"
+       }
+      },
+      {
+       "id": "F:A-brave-01-s36",
+       "word": "heroic",
+       "text": "Though tired, Arun's ___ swim with a guide rope, not for fun, brought medicine to his sister.",
+       "answer": "heroic",
+       "tiles": [
+        "heroic",
+        "hero",
+        "heroes",
+        "heroine",
+        "heroism"
+       ],
+       "notes": {
+        "heroic": "adjective: showing great bravery in helping others",
+        "hero": "noun: a very brave person admired by others",
+        "heroes": "noun: very brave people admired by others",
+        "heroism": "noun: great bravery in helping others",
+        "heroine": "noun: a very brave girl or woman admired by others"
+       }
+      }
+     ]
+    },
+    "A-character-01": {
+     "families": {
+      "defiant": [
+       {
+        "form": "defiant",
+        "pos": "adjective",
+        "note": "adjective: boldly refusing to obey or give in"
+       },
+       {
+        "form": "defiantly",
+        "pos": "adverb",
+        "note": "adverb: in a bold, disobedient way"
+       },
+       {
+        "form": "defiance",
+        "pos": "noun",
+        "note": "noun: bold refusal to obey or give in"
+       },
+       {
+        "form": "defy",
+        "pos": "verb",
+        "note": "verb: to refuse boldly to obey or yield"
+       },
+       {
+        "form": "defies",
+        "pos": "verb",
+        "note": "verb: refuses boldly to obey or yield"
+       },
+       {
+        "form": "defied",
+        "pos": "verb",
+        "note": "verb: refused boldly to obey or yield"
+       },
+       {
+        "form": "defying",
+        "pos": "verb",
+        "note": "verb: refusing boldly to obey or yield"
+       }
+      ],
+      "composed": [
+       {
+        "form": "composed",
+        "pos": "adjective",
+        "note": "adjective: calm and in control of feelings"
+       },
+       {
+        "form": "compose",
+        "pos": "verb",
+        "note": "verb: to make calm or settle oneself"
+       },
+       {
+        "form": "composes",
+        "pos": "verb",
+        "note": "verb: makes calm or settles oneself"
+       },
+       {
+        "form": "composing",
+        "pos": "verb",
+        "note": "verb: making calm or settling oneself"
+       },
+       {
+        "form": "composure",
+        "pos": "noun",
+        "note": "noun: calm control of feelings"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:A-character-01-s17",
+       "word": "defiant",
+       "text": "Kira was ___ when the captain ordered silence, shouting, \"No, listen!\"",
+       "answer": "defiant",
+       "tiles": [
+        "defiant",
+        "defiance",
+        "defy",
+        "defying",
+        "defied"
+       ],
+       "notes": {
+        "defiant": "adjective: boldly refusing to obey or give in",
+        "defiance": "noun: bold refusal to obey or give in",
+        "defy": "verb: to refuse boldly to obey or yield",
+        "defied": "verb: refused boldly to obey or yield",
+        "defying": "verb: refusing boldly to obey or yield"
+       }
+      },
+      {
+       "id": "F:A-character-01-s18",
+       "word": "defiant",
+       "text": "Ben was ___ after the teacher's order, crossing his arms and refusing.",
+       "answer": "defiant",
+       "tiles": [
+        "defiant",
+        "defiance",
+        "defy",
+        "defying",
+        "defied"
+       ],
+       "notes": {
+        "defiant": "adjective: boldly refusing to obey or give in",
+        "defiance": "noun: bold refusal to obey or give in",
+        "defy": "verb: to refuse boldly to obey or yield",
+        "defied": "verb: refused boldly to obey or yield",
+        "defying": "verb: refusing boldly to obey or yield"
+       }
+      },
+      {
+       "id": "F:A-character-01-s19",
+       "word": "defiant",
+       "text": "The dragon stayed ___ as the king commanded kneeling; smoke spelled NO.",
+       "answer": "defiant",
+       "tiles": [
+        "defiant",
+        "defiance",
+        "defy",
+        "defying",
+        "defied"
+       ],
+       "notes": {
+        "defiant": "adjective: boldly refusing to obey or give in",
+        "defiance": "noun: bold refusal to obey or give in",
+        "defy": "verb: to refuse boldly to obey or yield",
+        "defied": "verb: refused boldly to obey or yield",
+        "defying": "verb: refusing boldly to obey or yield"
+       }
+      },
+      {
+       "id": "F:A-character-01-s20",
+       "word": "defiant",
+       "text": "Lena remained ___ during detention, tapping after each warning to stop.",
+       "answer": "defiant",
+       "tiles": [
+        "defiant",
+        "defiance",
+        "defy",
+        "defying",
+        "defied"
+       ],
+       "notes": {
+        "defiant": "adjective: boldly refusing to obey or give in",
+        "defiance": "noun: bold refusal to obey or give in",
+        "defy": "verb: to refuse boldly to obey or yield",
+        "defied": "verb: refused boldly to obey or yield",
+        "defying": "verb: refusing boldly to obey or yield"
+       }
+      },
+      {
+       "id": "F:A-character-01-s33",
+       "word": "composed",
+       "text": "Nora was ___ as plates crashed, speaking softly and sweeping glass.",
+       "answer": "composed",
+       "tiles": [
+        "composed",
+        "compose",
+        "composing",
+        "composure"
+       ],
+       "notes": {
+        "composed": "adjective: calm and in control of feelings",
+        "compose": "verb: to make calm or settle oneself",
+        "composing": "verb: making calm or settling oneself",
+        "composure": "noun: calm control of feelings"
+       }
+      },
+      {
+       "id": "F:A-character-01-s34",
+       "word": "composed",
+       "text": "The captain remained ___ during the storm, giving orders in a level voice.",
+       "answer": "composed",
+       "tiles": [
+        "composed",
+        "compose",
+        "composing",
+        "composure"
+       ],
+       "notes": {
+        "composed": "adjective: calm and in control of feelings",
+        "compose": "verb: to make calm or settle oneself",
+        "composing": "verb: making calm or settling oneself",
+        "composure": "noun: calm control of feelings"
+       }
+      },
+      {
+       "id": "F:A-character-01-s35",
+       "word": "composed",
+       "text": "When the cake fell, Priya was ___ and cut neat squares anyway.",
+       "answer": "composed",
+       "tiles": [
+        "composed",
+        "compose",
+        "composing",
+        "composure"
+       ],
+       "notes": {
+        "composed": "adjective: calm and in control of feelings",
+        "compose": "verb: to make calm or settle oneself",
+        "composing": "verb: making calm or settling oneself",
+        "composure": "noun: calm control of feelings"
+       }
+      },
+      {
+       "id": "F:A-character-01-s36",
+       "word": "composed",
+       "text": "The goalie felt ___ after the miss, breathing slowly before the next kick.",
+       "answer": "composed",
+       "tiles": [
+        "composed",
+        "compose",
+        "composing",
+        "composure"
+       ],
+       "notes": {
+        "composed": "adjective: calm and in control of feelings",
+        "compose": "verb: to make calm or settle oneself",
+        "composing": "verb: making calm or settling oneself",
+        "composure": "noun: calm control of feelings"
+       }
+      }
+     ]
+    },
+    "A-clean-01": {
+     "families": {
+      "sweep": [
+       {
+        "form": "sweep",
+        "pos": "verb",
+        "note": "verb: to clean a floor with a broom or brush"
+       },
+       {
+        "form": "sweeping",
+        "pos": "verb",
+        "note": "verb: cleaning a floor with a broom or brush"
+       },
+       {
+        "form": "sweeps",
+        "pos": "verb",
+        "note": "verb: cleans a floor with a broom or brush"
+       },
+       {
+        "form": "swept",
+        "pos": "verb",
+        "note": "verb: cleaned a floor with a broom or brush"
+       },
+       {
+        "form": "sweeper",
+        "pos": "noun",
+        "note": "noun: a person or machine that cleans floors with a brush"
+       }
+      ],
+      "wipe": [
+       {
+        "form": "wipe",
+        "pos": "verb",
+        "note": "verb: to clean a surface with a cloth or hand"
+       },
+       {
+        "form": "wiped",
+        "pos": "verb",
+        "note": "verb: cleaned a surface with a cloth or hand"
+       },
+       {
+        "form": "wipes",
+        "pos": "verb",
+        "note": "verb: cleans a surface with a cloth or hand"
+       },
+       {
+        "form": "wiping",
+        "pos": "verb",
+        "note": "verb: cleaning a surface with a cloth or hand"
+       },
+       {
+        "form": "wiper",
+        "pos": "noun",
+        "note": "noun: a blade or tool that clears water or dirt from glass"
+       }
+      ],
+      "scrub": [
+       {
+        "form": "scrub",
+        "pos": "verb",
+        "note": "verb: to clean by rubbing hard"
+       },
+       {
+        "form": "scrubbed",
+        "pos": "verb",
+        "note": "verb: cleaned by rubbing hard"
+       },
+       {
+        "form": "scrubbing",
+        "pos": "verb",
+        "note": "verb: cleaning by rubbing hard"
+       },
+       {
+        "form": "scrubs",
+        "pos": "verb",
+        "note": "verb: cleans by rubbing hard"
+       },
+       {
+        "form": "scrubber",
+        "pos": "noun",
+        "note": "noun: a brush or pad for cleaning by hard rubbing"
+       }
+      ],
+      "wash": [
+       {
+        "form": "wash",
+        "pos": "verb",
+        "note": "verb: to clean with water and soap"
+       },
+       {
+        "form": "washed",
+        "pos": "verb",
+        "note": "verb: cleaned with water and soap"
+       },
+       {
+        "form": "washes",
+        "pos": "verb",
+        "note": "verb: cleans with water and soap"
+       },
+       {
+        "form": "washing",
+        "pos": "verb",
+        "note": "verb: cleaning with water and soap"
+       },
+       {
+        "form": "washer",
+        "pos": "noun",
+        "note": "noun: a machine that cleans clothes with water"
+       },
+       {
+        "form": "washable",
+        "pos": "adjective",
+        "note": "adjective: able to be cleaned with water without damage"
+       }
+      ],
+      "dry": [
+       {
+        "form": "dried",
+        "pos": "verb",
+        "note": "verb: removed water from something"
+       },
+       {
+        "form": "dries",
+        "pos": "verb",
+        "note": "verb: removes water from something"
+       },
+       {
+        "form": "dry",
+        "pos": "verb",
+        "note": "verb: to remove water from something"
+       },
+       {
+        "form": "drying",
+        "pos": "verb",
+        "note": "verb: removing water from something"
+       },
+       {
+        "form": "dryer",
+        "pos": "noun",
+        "note": "noun: a machine that removes water from clothes"
+       },
+       {
+        "form": "dryness",
+        "pos": "noun",
+        "note": "noun: the state of having little or no water"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:A-clean-01-s01",
+       "word": "sweep",
+       "text": "Dad took the broom and ___ sand off the deck.",
+       "answer": "swept",
+       "tiles": [
+        "swept",
+        "sweep",
+        "sweeping",
+        "sweeper"
+       ],
+       "notes": {
+        "sweep": "verb: to clean a floor with a broom or brush",
+        "sweeping": "verb: cleaning a floor with a broom or brush",
+        "swept": "verb: cleaned a floor with a broom or brush",
+        "sweeper": "noun: a person or machine that cleans floors with a brush"
+       }
+      },
+      {
+       "id": "F:A-clean-01-s02",
+       "word": "sweep",
+       "text": "Mia ___ the crumbs under the table into the dustpan.",
+       "answer": "swept",
+       "tiles": [
+        "swept",
+        "sweep",
+        "sweeping",
+        "sweeper"
+       ],
+       "notes": {
+        "sweep": "verb: to clean a floor with a broom or brush",
+        "sweeping": "verb: cleaning a floor with a broom or brush",
+        "swept": "verb: cleaned a floor with a broom or brush",
+        "sweeper": "noun: a person or machine that cleans floors with a brush"
+       }
+      },
+      {
+       "id": "F:A-clean-01-s03",
+       "word": "sweep",
+       "text": "Grandpa ___ the leaves off the steps into a heap.",
+       "answer": "swept",
+       "tiles": [
+        "swept",
+        "sweep",
+        "sweeping",
+        "sweeper"
+       ],
+       "notes": {
+        "sweep": "verb: to clean a floor with a broom or brush",
+        "sweeping": "verb: cleaning a floor with a broom or brush",
+        "swept": "verb: cleaned a floor with a broom or brush",
+        "sweeper": "noun: a person or machine that cleans floors with a brush"
+       }
+      },
+      {
+       "id": "F:A-clean-01-s04",
+       "word": "sweep",
+       "text": "The cleaner ___ the school hall, pushing a pile ahead.",
+       "answer": "swept",
+       "tiles": [
+        "swept",
+        "sweep",
+        "sweeping",
+        "sweeper"
+       ],
+       "notes": {
+        "sweep": "verb: to clean a floor with a broom or brush",
+        "sweeping": "verb: cleaning a floor with a broom or brush",
+        "swept": "verb: cleaned a floor with a broom or brush",
+        "sweeper": "noun: a person or machine that cleans floors with a brush"
+       }
+      },
+      {
+       "id": "F:A-clean-01-s09",
+       "word": "wipe",
+       "text": "Jack ___ the jam off his chin with a napkin.",
+       "answer": "wiped",
+       "tiles": [
+        "wiped",
+        "wipe",
+        "wiping",
+        "wiper"
+       ],
+       "notes": {
+        "wipe": "verb: to clean a surface with a cloth or hand",
+        "wiped": "verb: cleaned a surface with a cloth or hand",
+        "wiping": "verb: cleaning a surface with a cloth or hand",
+        "wiper": "noun: a blade or tool that clears water or dirt from glass"
+       }
+      },
+      {
+       "id": "F:A-clean-01-s10",
+       "word": "wipe",
+       "text": "In one quick swipe, Mum ___ milk off the table.",
+       "answer": "wiped",
+       "tiles": [
+        "wiped",
+        "wipe",
+        "wiping",
+        "wiper"
+       ],
+       "notes": {
+        "wipe": "verb: to clean a surface with a cloth or hand",
+        "wiped": "verb: cleaned a surface with a cloth or hand",
+        "wiping": "verb: cleaning a surface with a cloth or hand",
+        "wiper": "noun: a blade or tool that clears water or dirt from glass"
+       }
+      },
+      {
+       "id": "F:A-clean-01-s11",
+       "word": "wipe",
+       "text": "Nana ___ the chocolate off Leo's mouth with her thumb.",
+       "answer": "wiped",
+       "tiles": [
+        "wiped",
+        "wipe",
+        "wiping",
+        "wiper"
+       ],
+       "notes": {
+        "wipe": "verb: to clean a surface with a cloth or hand",
+        "wiped": "verb: cleaned a surface with a cloth or hand",
+        "wiping": "verb: cleaning a surface with a cloth or hand",
+        "wiper": "noun: a blade or tool that clears water or dirt from glass"
+       }
+      },
+      {
+       "id": "F:A-clean-01-s12",
+       "word": "wipe",
+       "text": "Tom ___ his smudgy glasses on his shirt.",
+       "answer": "wiped",
+       "tiles": [
+        "wiped",
+        "wipe",
+        "wiping",
+        "wiper"
+       ],
+       "notes": {
+        "wipe": "verb: to clean a surface with a cloth or hand",
+        "wiped": "verb: cleaned a surface with a cloth or hand",
+        "wiping": "verb: cleaning a surface with a cloth or hand",
+        "wiper": "noun: a blade or tool that clears water or dirt from glass"
+       }
+      },
+      {
+       "id": "F:A-clean-01-s17",
+       "word": "scrub",
+       "text": "Dad ___ the burnt pan with all his strength.",
+       "answer": "scrubbed",
+       "tiles": [
+        "scrubbed",
+        "scrub",
+        "scrubbing",
+        "scrubber"
+       ],
+       "notes": {
+        "scrub": "verb: to clean by rubbing hard",
+        "scrubbed": "verb: cleaned by rubbing hard",
+        "scrubbing": "verb: cleaning by rubbing hard",
+        "scrubber": "noun: a brush or pad for cleaning by hard rubbing"
+       }
+      },
+      {
+       "id": "F:A-clean-01-s18",
+       "word": "scrub",
+       "text": "Lucy ___ the caked-on mud with a stiff little brush.",
+       "answer": "scrubbed",
+       "tiles": [
+        "scrubbed",
+        "scrub",
+        "scrubbing",
+        "scrubber"
+       ],
+       "notes": {
+        "scrub": "verb: to clean by rubbing hard",
+        "scrubbed": "verb: cleaned by rubbing hard",
+        "scrubbing": "verb: cleaning by rubbing hard",
+        "scrubber": "noun: a brush or pad for cleaning by hard rubbing"
+       }
+      },
+      {
+       "id": "F:A-clean-01-s19",
+       "word": "scrub",
+       "text": "Ali ___ stuck-on paint off the bench with a brush.",
+       "answer": "scrubbed",
+       "tiles": [
+        "scrubbed",
+        "scrub",
+        "scrubbing",
+        "scrubber"
+       ],
+       "notes": {
+        "scrub": "verb: to clean by rubbing hard",
+        "scrubbed": "verb: cleaned by rubbing hard",
+        "scrubbing": "verb: cleaning by rubbing hard",
+        "scrubber": "noun: a brush or pad for cleaning by hard rubbing"
+       }
+      },
+      {
+       "id": "F:A-clean-01-s20",
+       "word": "scrub",
+       "text": "Gran ___ the muddy boots with an old toothbrush.",
+       "answer": "scrubbed",
+       "tiles": [
+        "scrubbed",
+        "scrub",
+        "scrubbing",
+        "scrubber"
+       ],
+       "notes": {
+        "scrub": "verb: to clean by rubbing hard",
+        "scrubbed": "verb: cleaned by rubbing hard",
+        "scrubbing": "verb: cleaning by rubbing hard",
+        "scrubber": "noun: a brush or pad for cleaning by hard rubbing"
+       }
+      },
+      {
+       "id": "F:A-clean-01-s25",
+       "word": "wash",
+       "text": "Dad gently ___ the puppy in a tub of bubbles.",
+       "answer": "washed",
+       "tiles": [
+        "washed",
+        "wash",
+        "washing",
+        "washer",
+        "washable"
+       ],
+       "notes": {
+        "wash": "verb: to clean with water and soap",
+        "washed": "verb: cleaned with water and soap",
+        "washing": "verb: cleaning with water and soap",
+        "washer": "noun: a machine that cleans clothes with water",
+        "washable": "adjective: able to be cleaned with water without damage"
+       }
+      },
+      {
+       "id": "F:A-clean-01-s26",
+       "word": "wash",
+       "text": "Mum ___ baby Lola's hair with soft baby shampoo.",
+       "answer": "washed",
+       "tiles": [
+        "washed",
+        "wash",
+        "washing",
+        "washer",
+        "washable"
+       ],
+       "notes": {
+        "wash": "verb: to clean with water and soap",
+        "washed": "verb: cleaned with water and soap",
+        "washing": "verb: cleaning with water and soap",
+        "washer": "noun: a machine that cleans clothes with water",
+        "washable": "adjective: able to be cleaned with water without damage"
+       }
+      },
+      {
+       "id": "F:A-clean-01-s27",
+       "word": "wash",
+       "text": "Gran ___ our sandy beach towels and hung them out.",
+       "answer": "washed",
+       "tiles": [
+        "washed",
+        "wash",
+        "washing",
+        "washer",
+        "washable"
+       ],
+       "notes": {
+        "wash": "verb: to clean with water and soap",
+        "washed": "verb: cleaned with water and soap",
+        "washing": "verb: cleaning with water and soap",
+        "washer": "noun: a machine that cleans clothes with water",
+        "washable": "adjective: able to be cleaned with water without damage"
+       }
+      },
+      {
+       "id": "F:A-clean-01-s28",
+       "word": "wash",
+       "text": "In a sink of bubbles, Kim gently ___ Nan's teacups.",
+       "answer": "washed",
+       "tiles": [
+        "washed",
+        "wash",
+        "washing",
+        "washer",
+        "washable"
+       ],
+       "notes": {
+        "wash": "verb: to clean with water and soap",
+        "washed": "verb: cleaned with water and soap",
+        "washing": "verb: cleaning with water and soap",
+        "washer": "noun: a machine that cleans clothes with water",
+        "washable": "adjective: able to be cleaned with water without damage"
+       }
+      },
+      {
+       "id": "F:A-clean-01-s33",
+       "word": "dry",
+       "text": "After her swim, Ella ___ herself in a big fluffy towel.",
+       "answer": "dried",
+       "tiles": [
+        "dried",
+        "dry",
+        "drying",
+        "dryer",
+        "dryness"
+       ],
+       "notes": {
+        "dried": "verb: removed water from something",
+        "dry": "verb: to remove water from something",
+        "drying": "verb: removing water from something",
+        "dryer": "noun: a machine that removes water from clothes",
+        "dryness": "noun: the state of having little or no water"
+       }
+      },
+      {
+       "id": "F:A-clean-01-s34",
+       "word": "dry",
+       "text": "The hot sun ___ the clothes on the line.",
+       "answer": "dried",
+       "tiles": [
+        "dried",
+        "dry",
+        "drying",
+        "dryer",
+        "dryness"
+       ],
+       "notes": {
+        "dried": "verb: removed water from something",
+        "dry": "verb: to remove water from something",
+        "drying": "verb: removing water from something",
+        "dryer": "noun: a machine that removes water from clothes",
+        "dryness": "noun: the state of having little or no water"
+       }
+      },
+      {
+       "id": "F:A-clean-01-s35",
+       "word": "dry",
+       "text": "The warm wind soon ___ the puddles on the playground.",
+       "answer": "dried",
+       "tiles": [
+        "dried",
+        "dry",
+        "drying",
+        "dryer",
+        "dryness"
+       ],
+       "notes": {
+        "dried": "verb: removed water from something",
+        "dry": "verb: to remove water from something",
+        "drying": "verb: removing water from something",
+        "dryer": "noun: a machine that removes water from clothes",
+        "dryness": "noun: the state of having little or no water"
+       }
+      },
+      {
+       "id": "F:A-clean-01-s36",
+       "word": "dry",
+       "text": "Noah hung his swimmers on the fence to ___ them.",
+       "answer": "dry",
+       "tiles": [
+        "dry",
+        "dried",
+        "drying",
+        "dryer",
+        "dries"
+       ],
+       "notes": {
+        "dried": "verb: removed water from something",
+        "dries": "verb: removes water from something",
+        "dry": "verb: to remove water from something",
+        "drying": "verb: removing water from something",
+        "dryer": "noun: a machine that removes water from clothes"
+       }
+      }
+     ]
+    },
+    "A-cook-01": {
+     "families": {
+      "bake": [
+       {
+        "form": "bake",
+        "pos": "verb",
+        "note": "verb: to cook food with dry heat in an oven"
+       },
+       {
+        "form": "baked",
+        "pos": "verb",
+        "note": "verb: cooked food with dry heat in an oven"
+       },
+       {
+        "form": "bakes",
+        "pos": "verb",
+        "note": "verb: cooks food with dry heat in an oven"
+       },
+       {
+        "form": "baking",
+        "pos": "noun",
+        "note": "noun: cooking food with dry heat in an oven"
+       },
+       {
+        "form": "baker",
+        "pos": "noun",
+        "note": "noun: person who makes bread, cakes, or biscuits in an oven"
+       },
+       {
+        "form": "bakery",
+        "pos": "noun",
+        "note": "noun: place where bread, cakes, or biscuits are made or sold"
+       }
+      ],
+      "fry": [
+       {
+        "form": "fried",
+        "pos": "verb",
+        "note": "verb: cooked food on a hot surface using fat"
+       },
+       {
+        "form": "fries",
+        "pos": "verb",
+        "note": "verb: cooks food on a hot surface using fat"
+       },
+       {
+        "form": "fry",
+        "pos": "verb",
+        "note": "verb: to cook food on a hot surface using fat"
+       },
+       {
+        "form": "frying",
+        "pos": "verb",
+        "note": "verb: cooking food on a hot surface using fat"
+       }
+      ],
+      "boil": [
+       {
+        "form": "boil",
+        "pos": "verb",
+        "note": "verb: to cook food in very hot bubbling liquid"
+       },
+       {
+        "form": "boiled",
+        "pos": "verb",
+        "note": "verb: cooked food in very hot bubbling liquid"
+       },
+       {
+        "form": "boiling",
+        "pos": "verb",
+        "note": "verb: cooking food in very hot bubbling liquid"
+       },
+       {
+        "form": "boils",
+        "pos": "verb",
+        "note": "verb: cooks food in very hot bubbling liquid"
+       }
+      ],
+      "stew": [
+       {
+        "form": "stew",
+        "pos": "verb",
+        "note": "verb: to cook slowly in liquid for a long time"
+       },
+       {
+        "form": "stewed",
+        "pos": "verb",
+        "note": "verb: cooked slowly in liquid for a long time"
+       },
+       {
+        "form": "stewing",
+        "pos": "verb",
+        "note": "verb: cooking slowly in liquid for a long time"
+       },
+       {
+        "form": "stews",
+        "pos": "verb",
+        "note": "verb: cooks slowly in liquid for a long time"
+       }
+      ],
+      "steam": [
+       {
+        "form": "steam",
+        "pos": "verb",
+        "note": "verb: to cook food with hot vapour"
+       },
+       {
+        "form": "steamed",
+        "pos": "verb",
+        "note": "verb: cooked food with hot vapour"
+       },
+       {
+        "form": "steaming",
+        "pos": "verb",
+        "note": "verb: cooking food with hot vapour"
+       },
+       {
+        "form": "steams",
+        "pos": "verb",
+        "note": "verb: cooks food with hot vapour"
+       },
+       {
+        "form": "steamer",
+        "pos": "noun",
+        "note": "noun: pot or basket used to cook food with hot vapour"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:A-cook-01-s01",
+       "word": "bake",
+       "text": "Gran ___ a lemon cake until its top was golden and cracked.",
+       "answer": "baked",
+       "tiles": [
+        "baked",
+        "baker",
+        "baking",
+        "bake",
+        "bakery"
+       ],
+       "notes": {
+        "bake": "verb: to cook food with dry heat in an oven",
+        "baked": "verb: cooked food with dry heat in an oven",
+        "baking": "noun: cooking food with dry heat in an oven",
+        "baker": "noun: person who makes bread, cakes, or biscuits in an oven",
+        "bakery": "noun: place where bread, cakes, or biscuits are made or sold"
+       }
+      },
+      {
+       "id": "F:A-cook-01-s02",
+       "word": "bake",
+       "text": "Dad ___ two loaves of bread, and their crusts came out crunchy and brown.",
+       "answer": "baked",
+       "tiles": [
+        "baked",
+        "baker",
+        "baking",
+        "bake",
+        "bakery"
+       ],
+       "notes": {
+        "bake": "verb: to cook food with dry heat in an oven",
+        "baked": "verb: cooked food with dry heat in an oven",
+        "baking": "noun: cooking food with dry heat in an oven",
+        "baker": "noun: person who makes bread, cakes, or biscuits in an oven",
+        "bakery": "noun: place where bread, cakes, or biscuits are made or sold"
+       }
+      },
+      {
+       "id": "F:A-cook-01-s03",
+       "word": "bake",
+       "text": "Mia ___ a batch of cupcakes, then iced them pink once they cooled.",
+       "answer": "baked",
+       "tiles": [
+        "baked",
+        "baker",
+        "baking",
+        "bake",
+        "bakery"
+       ],
+       "notes": {
+        "bake": "verb: to cook food with dry heat in an oven",
+        "baked": "verb: cooked food with dry heat in an oven",
+        "baking": "noun: cooking food with dry heat in an oven",
+        "baker": "noun: person who makes bread, cakes, or biscuits in an oven",
+        "bakery": "noun: place where bread, cakes, or biscuits are made or sold"
+       }
+      },
+      {
+       "id": "F:A-cook-01-s04",
+       "word": "bake",
+       "text": "For the school fete, Mum ___ three trays of muffins before breakfast.",
+       "answer": "baked",
+       "tiles": [
+        "baked",
+        "baker",
+        "baking",
+        "bake",
+        "bakery"
+       ],
+       "notes": {
+        "bake": "verb: to cook food with dry heat in an oven",
+        "baked": "verb: cooked food with dry heat in an oven",
+        "baking": "noun: cooking food with dry heat in an oven",
+        "baker": "noun: person who makes bread, cakes, or biscuits in an oven",
+        "bakery": "noun: place where bread, cakes, or biscuits are made or sold"
+       }
+      },
+      {
+       "id": "F:A-cook-01-s09",
+       "word": "fry",
+       "text": "Dad ___ the eggs in a pan of sizzling oil for breakfast.",
+       "answer": "fried",
+       "tiles": [
+        "fried",
+        "fry",
+        "frying"
+       ],
+       "notes": {
+        "fried": "verb: cooked food on a hot surface using fat",
+        "fry": "verb: to cook food on a hot surface using fat",
+        "frying": "verb: cooking food on a hot surface using fat"
+       }
+      },
+      {
+       "id": "F:A-cook-01-s10",
+       "word": "fry",
+       "text": "The oil spat and sizzled as Nana ___ the fish in her big pan.",
+       "answer": "fried",
+       "tiles": [
+        "fried",
+        "fry",
+        "frying"
+       ],
+       "notes": {
+        "fried": "verb: cooked food on a hot surface using fat",
+        "fry": "verb: to cook food on a hot surface using fat",
+        "frying": "verb: cooking food on a hot surface using fat"
+       }
+      },
+      {
+       "id": "F:A-cook-01-s11",
+       "word": "fry",
+       "text": "Sam ___ the bacon in a pan until it curled up crispy.",
+       "answer": "fried",
+       "tiles": [
+        "fried",
+        "fry",
+        "frying"
+       ],
+       "notes": {
+        "fried": "verb: cooked food on a hot surface using fat",
+        "fry": "verb: to cook food on a hot surface using fat",
+        "frying": "verb: cooking food on a hot surface using fat"
+       }
+      },
+      {
+       "id": "F:A-cook-01-s12",
+       "word": "fry",
+       "text": "At the market, a man ___ crunchy spring rolls in a big wok of oil.",
+       "answer": "fried",
+       "tiles": [
+        "fried",
+        "fry",
+        "frying"
+       ],
+       "notes": {
+        "fried": "verb: cooked food on a hot surface using fat",
+        "fry": "verb: to cook food on a hot surface using fat",
+        "frying": "verb: cooking food on a hot surface using fat"
+       }
+      },
+      {
+       "id": "F:A-cook-01-s17",
+       "word": "boil",
+       "text": "Mum ___ the peas in a little pan of bubbling water.",
+       "answer": "boiled",
+       "tiles": [
+        "boiled",
+        "boil",
+        "boiling"
+       ],
+       "notes": {
+        "boil": "verb: to cook food in very hot bubbling liquid",
+        "boiled": "verb: cooked food in very hot bubbling liquid",
+        "boiling": "verb: cooking food in very hot bubbling liquid"
+       }
+      },
+      {
+       "id": "F:A-cook-01-s18",
+       "word": "boil",
+       "text": "Leo ___ two eggs, still in their shells, in a pan of bubbling water.",
+       "answer": "boiled",
+       "tiles": [
+        "boiled",
+        "boil",
+        "boiling"
+       ],
+       "notes": {
+        "boil": "verb: to cook food in very hot bubbling liquid",
+        "boiled": "verb: cooked food in very hot bubbling liquid",
+        "boiling": "verb: cooking food in very hot bubbling liquid"
+       }
+      },
+      {
+       "id": "F:A-cook-01-s19",
+       "word": "boil",
+       "text": "Dad dropped the corn cobs into the bubbling pot and ___ them for ten minutes.",
+       "answer": "boiled",
+       "tiles": [
+        "boiled",
+        "boil",
+        "boiling"
+       ],
+       "notes": {
+        "boil": "verb: to cook food in very hot bubbling liquid",
+        "boiled": "verb: cooked food in very hot bubbling liquid",
+        "boiling": "verb: cooking food in very hot bubbling liquid"
+       }
+      },
+      {
+       "id": "F:A-cook-01-s20",
+       "word": "boil",
+       "text": "Gran ___ the potatoes in salty water, then drained them and mashed them.",
+       "answer": "boiled",
+       "tiles": [
+        "boiled",
+        "boil",
+        "boiling"
+       ],
+       "notes": {
+        "boil": "verb: to cook food in very hot bubbling liquid",
+        "boiled": "verb: cooked food in very hot bubbling liquid",
+        "boiling": "verb: cooking food in very hot bubbling liquid"
+       }
+      },
+      {
+       "id": "F:A-cook-01-s25",
+       "word": "stew",
+       "text": "Nonna ___ beef and tomatoes on low heat all afternoon until the sauce was thick.",
+       "answer": "stewed",
+       "tiles": [
+        "stewed",
+        "stew",
+        "stewing"
+       ],
+       "notes": {
+        "stew": "verb: to cook slowly in liquid for a long time",
+        "stewed": "verb: cooked slowly in liquid for a long time",
+        "stewing": "verb: cooking slowly in liquid for a long time"
+       }
+      },
+      {
+       "id": "F:A-cook-01-s26",
+       "word": "stew",
+       "text": "Mum ___ the lamb and vegetables in gravy on the stove for three hours.",
+       "answer": "stewed",
+       "tiles": [
+        "stewed",
+        "stew",
+        "stewing"
+       ],
+       "notes": {
+        "stew": "verb: to cook slowly in liquid for a long time",
+        "stewed": "verb: cooked slowly in liquid for a long time",
+        "stewing": "verb: cooking slowly in liquid for a long time"
+       }
+      },
+      {
+       "id": "F:A-cook-01-s27",
+       "word": "stew",
+       "text": "In a small saucepan, the apples ___ gently in their own juice until mushy.",
+       "answer": "stewed",
+       "tiles": [
+        "stewed",
+        "stew",
+        "stewing"
+       ],
+       "notes": {
+        "stew": "verb: to cook slowly in liquid for a long time",
+        "stewed": "verb: cooked slowly in liquid for a long time",
+        "stewing": "verb: cooking slowly in liquid for a long time"
+       }
+      },
+      {
+       "id": "F:A-cook-01-s28",
+       "word": "stew",
+       "text": "All day, chicken and veggies ___ in rich gravy at the back of the stove.",
+       "answer": "stewed",
+       "tiles": [
+        "stewed",
+        "stew",
+        "stewing"
+       ],
+       "notes": {
+        "stew": "verb: to cook slowly in liquid for a long time",
+        "stewed": "verb: cooked slowly in liquid for a long time",
+        "stewing": "verb: cooking slowly in liquid for a long time"
+       }
+      },
+      {
+       "id": "F:A-cook-01-s33",
+       "word": "steam",
+       "text": "Dad ___ the broccoli in a basket above the bubbling water.",
+       "answer": "steamed",
+       "tiles": [
+        "steamed",
+        "steam",
+        "steamer",
+        "steaming"
+       ],
+       "notes": {
+        "steam": "verb: to cook food with hot vapour",
+        "steamed": "verb: cooked food with hot vapour",
+        "steaming": "verb: cooking food with hot vapour",
+        "steamer": "noun: pot or basket used to cook food with hot vapour"
+       }
+      },
+      {
+       "id": "F:A-cook-01-s34",
+       "word": "steam",
+       "text": "We ___ the pork buns in a bamboo basket over a pot of water.",
+       "answer": "steamed",
+       "tiles": [
+        "steamed",
+        "steam",
+        "steamer",
+        "steaming"
+       ],
+       "notes": {
+        "steam": "verb: to cook food with hot vapour",
+        "steamed": "verb: cooked food with hot vapour",
+        "steaming": "verb: cooking food with hot vapour",
+        "steamer": "noun: pot or basket used to cook food with hot vapour"
+       }
+      },
+      {
+       "id": "F:A-cook-01-s35",
+       "word": "steam",
+       "text": "Mum ___ the fish in a metal basket that sat just above the water.",
+       "answer": "steamed",
+       "tiles": [
+        "steamed",
+        "steam",
+        "steamer",
+        "steaming"
+       ],
+       "notes": {
+        "steam": "verb: to cook food with hot vapour",
+        "steamed": "verb: cooked food with hot vapour",
+        "steaming": "verb: cooking food with hot vapour",
+        "steamer": "noun: pot or basket used to cook food with hot vapour"
+       }
+      },
+      {
+       "id": "F:A-cook-01-s36",
+       "word": "steam",
+       "text": "Grandma ___ the green beans in a covered basket on top of the pot.",
+       "answer": "steamed",
+       "tiles": [
+        "steamed",
+        "steam",
+        "steamer",
+        "steaming"
+       ],
+       "notes": {
+        "steam": "verb: to cook food with hot vapour",
+        "steamed": "verb: cooked food with hot vapour",
+        "steaming": "verb: cooking food with hot vapour",
+        "steamer": "noun: pot or basket used to cook food with hot vapour"
+       }
+      }
+     ]
+    },
+    "A-craft-01": {
+     "families": {
+      "subtle": [
+       {
+        "form": "subtle",
+        "pos": "adjective",
+        "note": "adjective: slight or delicate and not easy to notice"
+       },
+       {
+        "form": "subtler",
+        "pos": "adjective",
+        "note": "adjective: more slight or delicate and harder to notice"
+       },
+       {
+        "form": "subtly",
+        "pos": "adverb",
+        "note": "adverb: in a slight or delicate way not easily noticed"
+       },
+       {
+        "form": "subtlety",
+        "pos": "noun",
+        "note": "noun: a small detail or difference not easy to notice"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:A-craft-01-s25",
+       "word": "subtle",
+       "text": "The ___ colour change barely showed along the dragon's wing.",
+       "answer": "subtle",
+       "tiles": [
+        "subtle",
+        "subtly",
+        "subtlety",
+        "subtler"
+       ],
+       "notes": {
+        "subtle": "adjective: slight or delicate and not easy to notice",
+        "subtler": "adjective: more slight or delicate and harder to notice",
+        "subtly": "adverb: in a slight or delicate way not easily noticed",
+        "subtlety": "noun: a small detail or difference not easy to notice"
+       }
+      },
+      {
+       "id": "F:A-craft-01-s26",
+       "word": "subtle",
+       "text": "The fox's ___ clue was visible only under moonlight.",
+       "answer": "subtle",
+       "tiles": [
+        "subtle",
+        "subtly",
+        "subtlety",
+        "subtler"
+       ],
+       "notes": {
+        "subtle": "adjective: slight or delicate and not easy to notice",
+        "subtler": "adjective: more slight or delicate and harder to notice",
+        "subtly": "adverb: in a slight or delicate way not easily noticed",
+        "subtlety": "noun: a small detail or difference not easy to notice"
+       }
+      },
+      {
+       "id": "F:A-craft-01-s27",
+       "word": "subtle",
+       "text": "Lila noticed the ___ mint taste after the second sip.",
+       "answer": "subtle",
+       "tiles": [
+        "subtle",
+        "subtly",
+        "subtlety",
+        "subtler"
+       ],
+       "notes": {
+        "subtle": "adjective: slight or delicate and not easy to notice",
+        "subtler": "adjective: more slight or delicate and harder to notice",
+        "subtly": "adverb: in a slight or delicate way not easily noticed",
+        "subtlety": "noun: a small detail or difference not easy to notice"
+       }
+      },
+      {
+       "id": "F:A-craft-01-s28",
+       "word": "subtle",
+       "text": "On stage, the ___ wink lasted less than a heartbeat.",
+       "answer": "subtle",
+       "tiles": [
+        "subtle",
+        "subtly",
+        "subtlety",
+        "subtler"
+       ],
+       "notes": {
+        "subtle": "adjective: slight or delicate and not easy to notice",
+        "subtler": "adjective: more slight or delicate and harder to notice",
+        "subtly": "adverb: in a slight or delicate way not easily noticed",
+        "subtlety": "noun: a small detail or difference not easy to notice"
+       }
+      }
+     ]
+    },
+    "A-cry-01": {
+     "families": {
+      "whimper": [
+       {
+        "form": "whimper",
+        "pos": "verb",
+        "note": "verb: to cry weakly or softly"
+       },
+       {
+        "form": "whimpered",
+        "pos": "verb",
+        "note": "verb: cried weakly or softly"
+       },
+       {
+        "form": "whimpering",
+        "pos": "verb",
+        "note": "verb: crying weakly or softly"
+       },
+       {
+        "form": "whimpers",
+        "pos": "verb",
+        "note": "verb: cries weakly or softly"
+       }
+      ],
+      "sob": [
+       {
+        "form": "sob",
+        "pos": "verb",
+        "note": "verb: to weep with shaking breaths"
+       },
+       {
+        "form": "sobbed",
+        "pos": "verb",
+        "note": "verb: wept with shaking breaths"
+       },
+       {
+        "form": "sobbing",
+        "pos": "verb",
+        "note": "verb: weeping with shaking breaths"
+       },
+       {
+        "form": "sobs",
+        "pos": "verb",
+        "note": "verb: weeps with shaking breaths"
+       }
+      ],
+      "blubber": [
+       {
+        "form": "blubber",
+        "pos": "verb",
+        "note": "verb: to cry noisily with sniffs"
+       },
+       {
+        "form": "blubbered",
+        "pos": "verb",
+        "note": "verb: cried noisily with sniffs"
+       },
+       {
+        "form": "blubbering",
+        "pos": "verb",
+        "note": "verb: crying noisily with sniffs"
+       },
+       {
+        "form": "blubbers",
+        "pos": "verb",
+        "note": "verb: cries noisily with sniffs"
+       }
+      ],
+      "bawl": [
+       {
+        "form": "bawl",
+        "pos": "verb",
+        "note": "verb: to cry out loudly"
+       },
+       {
+        "form": "bawled",
+        "pos": "verb",
+        "note": "verb: cried out loudly"
+       },
+       {
+        "form": "bawling",
+        "pos": "verb",
+        "note": "verb: crying out loudly"
+       },
+       {
+        "form": "bawls",
+        "pos": "verb",
+        "note": "verb: cries out loudly"
+       }
+      ],
+      "howl": [
+       {
+        "form": "howl",
+        "pos": "verb",
+        "note": "verb: to make a long loud cry"
+       },
+       {
+        "form": "howled",
+        "pos": "verb",
+        "note": "verb: made a long loud cry"
+       },
+       {
+        "form": "howling",
+        "pos": "verb",
+        "note": "verb: making a long loud cry"
+       },
+       {
+        "form": "howls",
+        "pos": "verb",
+        "note": "verb: makes a long loud cry"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:A-cry-01-s01",
+       "word": "whimper",
+       "text": "Under the bed, the puppy ___ in a tiny, frightened sound.",
+       "answer": "whimpered",
+       "tiles": [
+        "whimpered",
+        "whimper",
+        "whimpering"
+       ],
+       "notes": {
+        "whimper": "verb: to cry weakly or softly",
+        "whimpered": "verb: cried weakly or softly",
+        "whimpering": "verb: crying weakly or softly"
+       }
+      },
+      {
+       "id": "F:A-cry-01-s02",
+       "word": "whimper",
+       "text": "Nina began to ___ with small scared noises during the thunder.",
+       "answer": "whimper",
+       "tiles": [
+        "whimper",
+        "whimpering",
+        "whimpers",
+        "whimpered"
+       ],
+       "notes": {
+        "whimper": "verb: to cry weakly or softly",
+        "whimpered": "verb: cried weakly or softly",
+        "whimpering": "verb: crying weakly or softly",
+        "whimpers": "verb: cries weakly or softly"
+       }
+      },
+      {
+       "id": "F:A-cry-01-s03",
+       "word": "whimper",
+       "text": "The mouse under the chair ___ when the cat sniffed nearby.",
+       "answer": "whimpered",
+       "tiles": [
+        "whimpered",
+        "whimper",
+        "whimpering"
+       ],
+       "notes": {
+        "whimper": "verb: to cry weakly or softly",
+        "whimpered": "verb: cried weakly or softly",
+        "whimpering": "verb: crying weakly or softly"
+       }
+      },
+      {
+       "id": "F:A-cry-01-s04",
+       "word": "whimper",
+       "text": "The owl's shadow made the tiny bat ___ inside the cave.",
+       "answer": "whimper",
+       "tiles": [
+        "whimper",
+        "whimpering",
+        "whimpers",
+        "whimpered"
+       ],
+       "notes": {
+        "whimper": "verb: to cry weakly or softly",
+        "whimpered": "verb: cried weakly or softly",
+        "whimpering": "verb: crying weakly or softly",
+        "whimpers": "verb: cries weakly or softly"
+       }
+      },
+      {
+       "id": "F:A-cry-01-s09",
+       "word": "sob",
+       "text": "After the goodbye, Dad ___ with big shaky breaths.",
+       "answer": "sobbed",
+       "tiles": [
+        "sobbed",
+        "sobbing",
+        "sob"
+       ],
+       "notes": {
+        "sob": "verb: to weep with shaking breaths",
+        "sobbed": "verb: wept with shaking breaths",
+        "sobbing": "verb: weeping with shaking breaths"
+       }
+      },
+      {
+       "id": "F:A-cry-01-s10",
+       "word": "sob",
+       "text": "Maya ___ into Mum's shoulder, each breath coming in jerky gulps.",
+       "answer": "sobbed",
+       "tiles": [
+        "sobbed",
+        "sobbing",
+        "sob"
+       ],
+       "notes": {
+        "sob": "verb: to weep with shaking breaths",
+        "sobbed": "verb: wept with shaking breaths",
+        "sobbing": "verb: weeping with shaking breaths"
+       }
+      },
+      {
+       "id": "F:A-cry-01-s11",
+       "word": "sob",
+       "text": "When his best friend moved away, Omar ___ without a sound, his shoulders shaking.",
+       "answer": "sobbed",
+       "tiles": [
+        "sobbed",
+        "sobbing",
+        "sob"
+       ],
+       "notes": {
+        "sob": "verb: to weep with shaking breaths",
+        "sobbed": "verb: wept with shaking breaths",
+        "sobbing": "verb: weeping with shaking breaths"
+       }
+      },
+      {
+       "id": "F:A-cry-01-s12",
+       "word": "sob",
+       "text": "At the sad ending, our teacher ___ silently behind her book, her shoulders shaking.",
+       "answer": "sobbed",
+       "tiles": [
+        "sobbed",
+        "sobbing",
+        "sob"
+       ],
+       "notes": {
+        "sob": "verb: to weep with shaking breaths",
+        "sobbed": "verb: wept with shaking breaths",
+        "sobbing": "verb: weeping with shaking breaths"
+       }
+      },
+      {
+       "id": "F:A-cry-01-s17",
+       "word": "blubber",
+       "text": "Ben ___ with wet sniffles and words nobody understood.",
+       "answer": "blubbered",
+       "tiles": [
+        "blubbered",
+        "blubber",
+        "blubbering"
+       ],
+       "notes": {
+        "blubber": "verb: to cry noisily with sniffs",
+        "blubbered": "verb: cried noisily with sniffs",
+        "blubbering": "verb: crying noisily with sniffs"
+       }
+      },
+      {
+       "id": "F:A-cry-01-s18",
+       "word": "blubber",
+       "text": "The pirate was ___, all runny nose and wobbly chatter.",
+       "answer": "blubbering",
+       "tiles": [
+        "blubbering",
+        "blubber",
+        "blubbers",
+        "blubbered"
+       ],
+       "notes": {
+        "blubber": "verb: to cry noisily with sniffs",
+        "blubbered": "verb: cried noisily with sniffs",
+        "blubbering": "verb: crying noisily with sniffs",
+        "blubbers": "verb: cries noisily with sniffs"
+       }
+      },
+      {
+       "id": "F:A-cry-01-s19",
+       "word": "blubber",
+       "text": "After dropping the pie, Mo ___ through jammy hiccups and sniffles.",
+       "answer": "blubbered",
+       "tiles": [
+        "blubbered",
+        "blubber",
+        "blubbering"
+       ],
+       "notes": {
+        "blubber": "verb: to cry noisily with sniffs",
+        "blubbered": "verb: cried noisily with sniffs",
+        "blubbering": "verb: crying noisily with sniffs"
+       }
+      },
+      {
+       "id": "F:A-cry-01-s20",
+       "word": "blubber",
+       "text": "The drippy-nosed clown began to ___ about his burst balloon.",
+       "answer": "blubber",
+       "tiles": [
+        "blubber",
+        "blubbering",
+        "blubbers",
+        "blubbered"
+       ],
+       "notes": {
+        "blubber": "verb: to cry noisily with sniffs",
+        "blubbered": "verb: cried noisily with sniffs",
+        "blubbering": "verb: crying noisily with sniffs",
+        "blubbers": "verb: cries noisily with sniffs"
+       }
+      },
+      {
+       "id": "F:A-cry-01-s25",
+       "word": "bawl",
+       "text": "The baby ___ at top volume in short angry bursts.",
+       "answer": "bawled",
+       "tiles": [
+        "bawled",
+        "bawling",
+        "bawl"
+       ],
+       "notes": {
+        "bawl": "verb: to cry out loudly",
+        "bawled": "verb: cried out loudly",
+        "bawling": "verb: crying out loudly"
+       }
+      },
+      {
+       "id": "F:A-cry-01-s26",
+       "word": "bawl",
+       "text": "The dropped ice cream made Tara ___ in ear-splitting bursts.",
+       "answer": "bawl",
+       "tiles": [
+        "bawl",
+        "bawling",
+        "bawled",
+        "bawls"
+       ],
+       "notes": {
+        "bawl": "verb: to cry out loudly",
+        "bawled": "verb: cried out loudly",
+        "bawling": "verb: crying out loudly",
+        "bawls": "verb: cries out loudly"
+       }
+      },
+      {
+       "id": "F:A-cry-01-s27",
+       "word": "bawl",
+       "text": "During his tantrum, Ravi ___ in blasts that filled the hall.",
+       "answer": "bawled",
+       "tiles": [
+        "bawled",
+        "bawling",
+        "bawl"
+       ],
+       "notes": {
+        "bawl": "verb: to cry out loudly",
+        "bawled": "verb: cried out loudly",
+        "bawling": "verb: crying out loudly"
+       }
+      },
+      {
+       "id": "F:A-cry-01-s28",
+       "word": "bawl",
+       "text": "The toy swap made me ___, red-faced and noisy.",
+       "answer": "bawl",
+       "tiles": [
+        "bawl",
+        "bawling",
+        "bawled",
+        "bawls"
+       ],
+       "notes": {
+        "bawl": "verb: to cry out loudly",
+        "bawled": "verb: cried out loudly",
+        "bawling": "verb: crying out loudly",
+        "bawls": "verb: cries out loudly"
+       }
+      },
+      {
+       "id": "F:A-cry-01-s33",
+       "word": "howl",
+       "text": "The wolf ___ with one drawn-out wail under the moon.",
+       "answer": "howled",
+       "tiles": [
+        "howled",
+        "howling",
+        "howl"
+       ],
+       "notes": {
+        "howl": "verb: to make a long loud cry",
+        "howled": "verb: made a long loud cry",
+        "howling": "verb: making a long loud cry"
+       }
+      },
+      {
+       "id": "F:A-cry-01-s34",
+       "word": "howl",
+       "text": "Leo began to ___ with one stretched wail at the spooky bit.",
+       "answer": "howl",
+       "tiles": [
+        "howl",
+        "howling",
+        "howls",
+        "howled"
+       ],
+       "notes": {
+        "howl": "verb: to make a long loud cry",
+        "howled": "verb: made a long loud cry",
+        "howling": "verb: making a long loud cry",
+        "howls": "verb: makes a long loud cry"
+       }
+      },
+      {
+       "id": "F:A-cry-01-s35",
+       "word": "howl",
+       "text": "On the hilltop, the dog ___ towards the moon.",
+       "answer": "howled",
+       "tiles": [
+        "howled",
+        "howling",
+        "howl"
+       ],
+       "notes": {
+        "howl": "verb: to make a long loud cry",
+        "howled": "verb: made a long loud cry",
+        "howling": "verb: making a long loud cry"
+       }
+      },
+      {
+       "id": "F:A-cry-01-s36",
+       "word": "howl",
+       "text": "The lonely wolf was ___ across the snowy valley.",
+       "answer": "howling",
+       "tiles": [
+        "howling",
+        "howl",
+        "howls",
+        "howled"
+       ],
+       "notes": {
+        "howl": "verb: to make a long loud cry",
+        "howled": "verb: made a long loud cry",
+        "howling": "verb: making a long loud cry",
+        "howls": "verb: makes a long loud cry"
+       }
+      }
+     ]
+    },
+    "A-dark-01": {
+     "families": {
+      "dim": [
+       {
+        "form": "dim",
+        "pos": "adjective",
+        "note": "adjective: lacking strong light"
+       },
+       {
+        "form": "dimmer",
+        "pos": "adjective",
+        "note": "adjective: having less light than another"
+       },
+       {
+        "form": "dimly",
+        "pos": "adverb",
+        "note": "adverb: with little light"
+       },
+       {
+        "form": "dimmed",
+        "pos": "verb",
+        "note": "verb: made or became less bright"
+       },
+       {
+        "form": "dimming",
+        "pos": "verb",
+        "note": "verb: making or becoming less bright"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:A-dark-01-s01",
+       "word": "dim",
+       "text": "Turn the dial down until the bulb looks ___, not dazzling.",
+       "answer": "dim",
+       "tiles": [
+        "dim",
+        "dimly",
+        "dimmed",
+        "dimmer",
+        "dimming"
+       ],
+       "notes": {
+        "dim": "adjective: lacking strong light",
+        "dimmer": "adjective: having less light than another",
+        "dimly": "adverb: with little light",
+        "dimmed": "verb: made or became less bright",
+        "dimming": "verb: making or becoming less bright"
+       }
+      },
+      {
+       "id": "F:A-dark-01-s02",
+       "word": "dim",
+       "text": "Mum chose a ___ night-lamp, gentle enough for sleepy eyes.",
+       "answer": "dim",
+       "tiles": [
+        "dim",
+        "dimly",
+        "dimmed",
+        "dimmer",
+        "dimming"
+       ],
+       "notes": {
+        "dim": "adjective: lacking strong light",
+        "dimmer": "adjective: having less light than another",
+        "dimly": "adverb: with little light",
+        "dimmed": "verb: made or became less bright",
+        "dimming": "verb: making or becoming less bright"
+       }
+      },
+      {
+       "id": "F:A-dark-01-s03",
+       "word": "dim",
+       "text": "The tiny wall bulbs gave a ___ glow during the play.",
+       "answer": "dim",
+       "tiles": [
+        "dim",
+        "dimly",
+        "dimmed",
+        "dimmer",
+        "dimming"
+       ],
+       "notes": {
+        "dim": "adjective: lacking strong light",
+        "dimmer": "adjective: having less light than another",
+        "dimly": "adverb: with little light",
+        "dimmed": "verb: made or became less bright",
+        "dimming": "verb: making or becoming less bright"
+       }
+      },
+      {
+       "id": "F:A-dark-01-s04",
+       "word": "dim",
+       "text": "After sunset, the shop sign was ___, yet its letters showed.",
+       "answer": "dim",
+       "tiles": [
+        "dim",
+        "dimly",
+        "dimmed",
+        "dimmer",
+        "dimming"
+       ],
+       "notes": {
+        "dim": "adjective: lacking strong light",
+        "dimmer": "adjective: having less light than another",
+        "dimly": "adverb: with little light",
+        "dimmed": "verb: made or became less bright",
+        "dimming": "verb: making or becoming less bright"
+       }
+      }
+     ]
+    },
+    "A-desire-01": {
+     "families": {
+      "envy": [
+       {
+        "form": "envy",
+        "pos": "verb",
+        "note": "verb: to wish for what someone else has"
+       },
+       {
+        "form": "envied",
+        "pos": "verb",
+        "note": "verb: wished for what someone else had"
+       },
+       {
+        "form": "envies",
+        "pos": "verb",
+        "note": "verb: wishes for what someone else has"
+       },
+       {
+        "form": "envying",
+        "pos": "verb",
+        "note": "verb: wishing for what someone else has"
+       },
+       {
+        "form": "envious",
+        "pos": "adjective",
+        "note": "adjective: wanting what another person has"
+       },
+       {
+        "form": "enviable",
+        "pos": "adjective",
+        "note": "adjective: likely to be wanted by other people"
+       }
+      ],
+      "relish": [
+       {
+        "form": "relish",
+        "pos": "verb",
+        "note": "verb: to enjoy something very much"
+       },
+       {
+        "form": "relished",
+        "pos": "verb",
+        "note": "verb: enjoyed something very much"
+       },
+       {
+        "form": "relishes",
+        "pos": "verb",
+        "note": "verb: enjoys something very much"
+       },
+       {
+        "form": "relishing",
+        "pos": "verb",
+        "note": "verb: enjoying something very much"
+       }
+      ],
+      "crave": [
+       {
+        "form": "crave",
+        "pos": "verb",
+        "note": "verb: to want something very strongly"
+       },
+       {
+        "form": "craved",
+        "pos": "verb",
+        "note": "verb: wanted something very strongly"
+       },
+       {
+        "form": "craves",
+        "pos": "verb",
+        "note": "verb: wants something very strongly"
+       },
+       {
+        "form": "craving",
+        "pos": "verb",
+        "note": "verb: wanting something very strongly"
+       }
+      ],
+      "covet": [
+       {
+        "form": "covet",
+        "pos": "verb",
+        "note": "verb: to long to own something that belongs to another"
+       },
+       {
+        "form": "coveted",
+        "pos": "verb",
+        "note": "verb: strongly wished to own another person's thing"
+       },
+       {
+        "form": "coveting",
+        "pos": "verb",
+        "note": "verb: strongly wishing to own another person's thing"
+       },
+       {
+        "form": "covets",
+        "pos": "verb",
+        "note": "verb: strongly wishes to own another person's thing"
+       },
+       {
+        "form": "covetous",
+        "pos": "adjective",
+        "note": "adjective: greedy for things owned by others"
+       },
+       {
+        "form": "covetousness",
+        "pos": "noun",
+        "note": "noun: greed for things owned by others"
+       }
+      ],
+      "lament": [
+       {
+        "form": "lament",
+        "pos": "verb",
+        "note": "verb: to express grief in words"
+       },
+       {
+        "form": "lamented",
+        "pos": "verb",
+        "note": "verb: expressed grief in words"
+       },
+       {
+        "form": "lamenting",
+        "pos": "verb",
+        "note": "verb: expressing grief in words"
+       },
+       {
+        "form": "laments",
+        "pos": "verb",
+        "note": "verb: expresses grief in words"
+       },
+       {
+        "form": "lamentation",
+        "pos": "noun",
+        "note": "noun: a spoken or written expression of grief"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:A-desire-01-s01",
+       "word": "envy",
+       "text": "Nia ___ Tom for winning two prizes while she clapped softly.",
+       "answer": "envied",
+       "tiles": [
+        "envied",
+        "envy",
+        "envious",
+        "enviable",
+        "envying"
+       ],
+       "notes": {
+        "envy": "verb: to wish for what someone else has",
+        "envied": "verb: wished for what someone else had",
+        "envying": "verb: wishing for what someone else has",
+        "envious": "adjective: wanting what another person has",
+        "enviable": "adjective: likely to be wanted by other people"
+       }
+      },
+      {
+       "id": "F:A-desire-01-s02",
+       "word": "envy",
+       "text": "Sam ___ Lila for getting the solo he practised all week.",
+       "answer": "envied",
+       "tiles": [
+        "envied",
+        "envy",
+        "envious",
+        "enviable",
+        "envying"
+       ],
+       "notes": {
+        "envy": "verb: to wish for what someone else has",
+        "envied": "verb: wished for what someone else had",
+        "envying": "verb: wishing for what someone else has",
+        "envious": "adjective: wanting what another person has",
+        "enviable": "adjective: likely to be wanted by other people"
+       }
+      },
+      {
+       "id": "F:A-desire-01-s03",
+       "word": "envy",
+       "text": "As Ben showed his gold badge, Omar ___ him from the back row.",
+       "answer": "envied",
+       "tiles": [
+        "envied",
+        "envy",
+        "envious",
+        "enviable",
+        "envying"
+       ],
+       "notes": {
+        "envy": "verb: to wish for what someone else has",
+        "envied": "verb: wished for what someone else had",
+        "envying": "verb: wishing for what someone else has",
+        "envious": "adjective: wanting what another person has",
+        "enviable": "adjective: likely to be wanted by other people"
+       }
+      },
+      {
+       "id": "F:A-desire-01-s04",
+       "word": "envy",
+       "text": "When Priya's kite soared highest, Dan ___ her until his own dipped.",
+       "answer": "envied",
+       "tiles": [
+        "envied",
+        "envy",
+        "envious",
+        "enviable",
+        "envying"
+       ],
+       "notes": {
+        "envy": "verb: to wish for what someone else has",
+        "envied": "verb: wished for what someone else had",
+        "envying": "verb: wishing for what someone else has",
+        "envious": "adjective: wanting what another person has",
+        "enviable": "adjective: likely to be wanted by other people"
+       }
+      },
+      {
+       "id": "F:A-desire-01-s09",
+       "word": "relish",
+       "text": "Mina ___ the hot soup, humming after every spoonful.",
+       "answer": "relished",
+       "tiles": [
+        "relished",
+        "relish",
+        "relishing"
+       ],
+       "notes": {
+        "relish": "verb: to enjoy something very much",
+        "relished": "verb: enjoyed something very much",
+        "relishing": "verb: enjoying something very much"
+       }
+      },
+      {
+       "id": "F:A-desire-01-s10",
+       "word": "relish",
+       "text": "The twins ___ the muddy slide, cheering with every splash.",
+       "answer": "relished",
+       "tiles": [
+        "relished",
+        "relish",
+        "relishing"
+       ],
+       "notes": {
+        "relish": "verb: to enjoy something very much",
+        "relished": "verb: enjoyed something very much",
+        "relishing": "verb: enjoying something very much"
+       }
+      },
+      {
+       "id": "F:A-desire-01-s11",
+       "word": "relish",
+       "text": "During story time, Dad ___ the dragon voices and asked for more pages.",
+       "answer": "relished",
+       "tiles": [
+        "relished",
+        "relish",
+        "relishing"
+       ],
+       "notes": {
+        "relish": "verb: to enjoy something very much",
+        "relished": "verb: enjoyed something very much",
+        "relishing": "verb: enjoying something very much"
+       }
+      },
+      {
+       "id": "F:A-desire-01-s12",
+       "word": "relish",
+       "text": "Lena ___ the puzzle's tricky ending, laughing when the last piece clicked.",
+       "answer": "relished",
+       "tiles": [
+        "relished",
+        "relish",
+        "relishing"
+       ],
+       "notes": {
+        "relish": "verb: to enjoy something very much",
+        "relished": "verb: enjoyed something very much",
+        "relishing": "verb: enjoying something very much"
+       }
+      },
+      {
+       "id": "F:A-desire-01-s17",
+       "word": "crave",
+       "text": "After the desert hike, Tia ___ water so badly her hands shook.",
+       "answer": "craved",
+       "tiles": [
+        "craved",
+        "craving",
+        "crave"
+       ],
+       "notes": {
+        "crave": "verb: to want something very strongly",
+        "craved": "verb: wanted something very strongly",
+        "craving": "verb: wanting something very strongly"
+       }
+      },
+      {
+       "id": "F:A-desire-01-s19",
+       "word": "crave",
+       "text": "By lunchtime, Nora ___ a sandwich and stared at every lunchbox.",
+       "answer": "craved",
+       "tiles": [
+        "craved",
+        "craving",
+        "crave"
+       ],
+       "notes": {
+        "crave": "verb: to want something very strongly",
+        "craved": "verb: wanted something very strongly",
+        "craving": "verb: wanting something very strongly"
+       }
+      },
+      {
+       "id": "F:A-desire-01-s20",
+       "word": "crave",
+       "text": "After the race, Ben ___ air, gulping with both hands on knees.",
+       "answer": "craved",
+       "tiles": [
+        "craved",
+        "craving",
+        "crave"
+       ],
+       "notes": {
+        "crave": "verb: to want something very strongly",
+        "craved": "verb: wanted something very strongly",
+        "craving": "verb: wanting something very strongly"
+       }
+      },
+      {
+       "id": "F:A-desire-01-s25",
+       "word": "covet",
+       "text": "The neighbouring king ___ the rich valley across the border and sent spies to map every farm.",
+       "answer": "coveted",
+       "tiles": [
+        "coveted",
+        "covet",
+        "coveting",
+        "covetous",
+        "covetousness"
+       ],
+       "notes": {
+        "covet": "verb: to long to own something that belongs to another",
+        "coveted": "verb: strongly wished to own another person's thing",
+        "coveting": "verb: strongly wishing to own another person's thing",
+        "covetous": "adjective: greedy for things owned by others",
+        "covetousness": "noun: greed for things owned by others"
+       }
+      },
+      {
+       "id": "F:A-desire-01-s26",
+       "word": "covet",
+       "text": "Long before the auction, the collector ___ the famous blue stamp and saved every dollar for it.",
+       "answer": "coveted",
+       "tiles": [
+        "coveted",
+        "covet",
+        "coveting",
+        "covetous",
+        "covetousness"
+       ],
+       "notes": {
+        "covet": "verb: to long to own something that belongs to another",
+        "coveted": "verb: strongly wished to own another person's thing",
+        "coveting": "verb: strongly wishing to own another person's thing",
+        "covetous": "adjective: greedy for things owned by others",
+        "covetousness": "noun: greed for things owned by others"
+       }
+      },
+      {
+       "id": "F:A-desire-01-s27",
+       "word": "covet",
+       "text": "For decades the old collector ___ the painting in the duke's hall, though it was never for sale.",
+       "answer": "coveted",
+       "tiles": [
+        "coveted",
+        "covet",
+        "coveting",
+        "covetous",
+        "covetousness"
+       ],
+       "notes": {
+        "covet": "verb: to long to own something that belongs to another",
+        "coveted": "verb: strongly wished to own another person's thing",
+        "coveting": "verb: strongly wishing to own another person's thing",
+        "covetous": "adjective: greedy for things owned by others",
+        "covetousness": "noun: greed for things owned by others"
+       }
+      },
+      {
+       "id": "F:A-desire-01-s28",
+       "word": "covet",
+       "text": "As soon as the museum put the jade dragon on display, the thief began to ___ it.",
+       "answer": "covet",
+       "tiles": [
+        "covet",
+        "coveted",
+        "coveting",
+        "covetous",
+        "covets"
+       ],
+       "notes": {
+        "covet": "verb: to long to own something that belongs to another",
+        "coveted": "verb: strongly wished to own another person's thing",
+        "coveting": "verb: strongly wishing to own another person's thing",
+        "covets": "verb: strongly wishes to own another person's thing",
+        "covetous": "adjective: greedy for things owned by others"
+       }
+      },
+      {
+       "id": "F:A-desire-01-s33",
+       "word": "lament",
+       "text": "Mina ___ the lost rabbit, sobbing, 'My pet is gone!'",
+       "answer": "lamented",
+       "tiles": [
+        "lamented",
+        "lament",
+        "lamenting",
+        "lamentation"
+       ],
+       "notes": {
+        "lament": "verb: to express grief in words",
+        "lamented": "verb: expressed grief in words",
+        "lamenting": "verb: expressing grief in words",
+        "lamentation": "noun: a spoken or written expression of grief"
+       }
+      },
+      {
+       "id": "F:A-desire-01-s35",
+       "word": "lament",
+       "text": "At sunset, Gran ___ the empty chair and told stories through tears.",
+       "answer": "lamented",
+       "tiles": [
+        "lamented",
+        "lament",
+        "lamenting",
+        "lamentation"
+       ],
+       "notes": {
+        "lament": "verb: to express grief in words",
+        "lamented": "verb: expressed grief in words",
+        "lamenting": "verb: expressing grief in words",
+        "lamentation": "noun: a spoken or written expression of grief"
+       }
+      },
+      {
+       "id": "F:A-desire-01-s36",
+       "word": "lament",
+       "text": "The team ___ the broken cup, saying sorry in small voices.",
+       "answer": "lamented",
+       "tiles": [
+        "lamented",
+        "lament",
+        "lamenting",
+        "lamentation"
+       ],
+       "notes": {
+        "lament": "verb: to express grief in words",
+        "lamented": "verb: expressed grief in words",
+        "lamenting": "verb: expressing grief in words",
+        "lamentation": "noun: a spoken or written expression of grief"
+       }
+      }
+     ]
+    },
+    "A-disrepair-01": {
+     "families": {
+      "warped": [
+       {
+        "form": "warp",
+        "pos": "verb",
+        "note": "verb: to bend or twist out of the proper shape"
+       },
+       {
+        "form": "warps",
+        "pos": "verb",
+        "note": "verb: bends or twists out of the proper shape"
+       },
+       {
+        "form": "warped",
+        "pos": "adjective",
+        "note": "adjective: bent or twisted out of the proper shape"
+       },
+       {
+        "form": "warping",
+        "pos": "verb",
+        "note": "verb: bending or twisting out of the proper shape"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:A-disrepair-01-s17",
+       "word": "warped",
+       "text": "The ___ door bowed so much that the latch missed the hole.",
+       "answer": "warped",
+       "tiles": [
+        "warped",
+        "warp",
+        "warping"
+       ],
+       "notes": {
+        "warp": "verb: to bend or twist out of the proper shape",
+        "warped": "adjective: bent or twisted out of the proper shape",
+        "warping": "verb: bending or twisting out of the proper shape"
+       }
+      },
+      {
+       "id": "F:A-disrepair-01-s18",
+       "word": "warped",
+       "text": "The ___ floorboards rose in humps where rain had leaked.",
+       "answer": "warped",
+       "tiles": [
+        "warped",
+        "warp",
+        "warping"
+       ],
+       "notes": {
+        "warp": "verb: to bend or twist out of the proper shape",
+        "warped": "adjective: bent or twisted out of the proper shape",
+        "warping": "verb: bending or twisting out of the proper shape"
+       }
+      },
+      {
+       "id": "F:A-disrepair-01-s19",
+       "word": "warped",
+       "text": "The ___ window frame no longer held the glass square.",
+       "answer": "warped",
+       "tiles": [
+        "warped",
+        "warp",
+        "warping"
+       ],
+       "notes": {
+        "warp": "verb: to bend or twist out of the proper shape",
+        "warped": "adjective: bent or twisted out of the proper shape",
+        "warping": "verb: bending or twisting out of the proper shape"
+       }
+      },
+      {
+       "id": "F:A-disrepair-01-s20",
+       "word": "warped",
+       "text": "The ___ cupboard door curved outward and would not close.",
+       "answer": "warped",
+       "tiles": [
+        "warped",
+        "warp",
+        "warping"
+       ],
+       "notes": {
+        "warp": "verb: to bend or twist out of the proper shape",
+        "warped": "adjective: bent or twisted out of the proper shape",
+        "warping": "verb: bending or twisting out of the proper shape"
+       }
+      }
+     ]
+    },
+    "A-draw-01": {
+     "families": {
+      "draw": [
+       {
+        "form": "draw",
+        "pos": "verb",
+        "note": "verb: to make a picture with lines"
+       },
+       {
+        "form": "draws",
+        "pos": "verb",
+        "note": "verb: makes a picture with lines"
+       },
+       {
+        "form": "drawing",
+        "pos": "verb",
+        "note": "verb: making a picture with lines"
+       },
+       {
+        "form": "drew",
+        "pos": "verb",
+        "note": "verb: made a picture with lines"
+       },
+       {
+        "form": "drawn",
+        "pos": "verb",
+        "note": "verb: made a picture with lines"
+       }
+      ],
+      "paint": [
+       {
+        "form": "paint",
+        "pos": "verb",
+        "note": "verb: to make a picture with a brush and wet pigment"
+       },
+       {
+        "form": "painted",
+        "pos": "verb",
+        "note": "verb: made a picture with a brush and wet pigment"
+       },
+       {
+        "form": "painting",
+        "pos": "verb",
+        "note": "verb: making a picture with a brush and wet pigment"
+       },
+       {
+        "form": "paints",
+        "pos": "verb",
+        "note": "verb: makes a picture with a brush and wet pigment"
+       },
+       {
+        "form": "painter",
+        "pos": "noun",
+        "note": "noun: person who makes pictures with wet pigment"
+       }
+      ],
+      "colour": [
+       {
+        "form": "colour",
+        "pos": "verb",
+        "note": "verb: to fill a picture or shape with hues"
+       },
+       {
+        "form": "coloured",
+        "pos": "verb",
+        "note": "verb: filled a picture or shape with hues"
+       },
+       {
+        "form": "colouring",
+        "pos": "verb",
+        "note": "verb: filling a picture or shape with hues"
+       },
+       {
+        "form": "colours",
+        "pos": "verb",
+        "note": "verb: fills a picture or shape with hues"
+       },
+       {
+        "form": "colourful",
+        "pos": "adjective",
+        "note": "adjective: having many bright hues"
+       },
+       {
+        "form": "colourless",
+        "pos": "adjective",
+        "note": "adjective: having no hue"
+       }
+      ],
+      "write": [
+       {
+        "form": "write",
+        "pos": "verb",
+        "note": "verb: to put letters or words on a surface"
+       },
+       {
+        "form": "writes",
+        "pos": "verb",
+        "note": "verb: puts letters or words on a surface"
+       },
+       {
+        "form": "writing",
+        "pos": "verb",
+        "note": "verb: putting letters or words on a surface"
+       },
+       {
+        "form": "wrote",
+        "pos": "verb",
+        "note": "verb: put letters or words on a surface"
+       },
+       {
+        "form": "written",
+        "pos": "verb",
+        "note": "verb: put letters or words on a surface"
+       },
+       {
+        "form": "writer",
+        "pos": "noun",
+        "note": "noun: person who creates stories, books or articles"
+       }
+      ],
+      "trace": [
+       {
+        "form": "trace",
+        "pos": "verb",
+        "note": "verb: to copy lines by following over or around them"
+       },
+       {
+        "form": "traced",
+        "pos": "verb",
+        "note": "verb: copied lines by following over or around them"
+       },
+       {
+        "form": "traces",
+        "pos": "verb",
+        "note": "verb: copies lines by following over or around them"
+       },
+       {
+        "form": "tracing",
+        "pos": "verb",
+        "note": "verb: copying lines by following over or around them"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:A-draw-01-s01",
+       "word": "draw",
+       "text": "With her pencil, Mia ___ her dog from memory.",
+       "answer": "drew",
+       "tiles": [
+        "drew",
+        "draw",
+        "drawing",
+        "drawn"
+       ],
+       "notes": {
+        "draw": "verb: to make a picture with lines",
+        "drawing": "verb: making a picture with lines",
+        "drew": "verb: made a picture with lines",
+        "drawn": "verb: made a picture with lines"
+       }
+      },
+      {
+       "id": "F:A-draw-01-s02",
+       "word": "draw",
+       "text": "Ruby ___ a hopscotch game on the path with chalk.",
+       "answer": "drew",
+       "tiles": [
+        "drew",
+        "draw",
+        "drawing",
+        "drawn"
+       ],
+       "notes": {
+        "draw": "verb: to make a picture with lines",
+        "drawing": "verb: making a picture with lines",
+        "drew": "verb: made a picture with lines",
+        "drawn": "verb: made a picture with lines"
+       }
+      },
+      {
+       "id": "F:A-draw-01-s03",
+       "word": "draw",
+       "text": "Kai ___ the monster from his dream in pencil.",
+       "answer": "drew",
+       "tiles": [
+        "drew",
+        "draw",
+        "drawing",
+        "drawn"
+       ],
+       "notes": {
+        "draw": "verb: to make a picture with lines",
+        "drawing": "verb: making a picture with lines",
+        "drew": "verb: made a picture with lines",
+        "drawn": "verb: made a picture with lines"
+       }
+      },
+      {
+       "id": "F:A-draw-01-s04",
+       "word": "draw",
+       "text": "Ben ___ the apple in the fruit bowl, in pencil.",
+       "answer": "drew",
+       "tiles": [
+        "drew",
+        "draw",
+        "drawing",
+        "drawn"
+       ],
+       "notes": {
+        "draw": "verb: to make a picture with lines",
+        "drawing": "verb: making a picture with lines",
+        "drew": "verb: made a picture with lines",
+        "drawn": "verb: made a picture with lines"
+       }
+      },
+      {
+       "id": "F:A-draw-01-s09",
+       "word": "paint",
+       "text": "Zoe dipped her brush and ___ a big red sun.",
+       "answer": "painted",
+       "tiles": [
+        "painted",
+        "painting",
+        "paint",
+        "painter"
+       ],
+       "notes": {
+        "paint": "verb: to make a picture with a brush and wet pigment",
+        "painted": "verb: made a picture with a brush and wet pigment",
+        "painting": "verb: making a picture with a brush and wet pigment",
+        "painter": "noun: person who makes pictures with wet pigment"
+       }
+      },
+      {
+       "id": "F:A-draw-01-s10",
+       "word": "paint",
+       "text": "Sam ___ a whale at the easel with his wet brush.",
+       "answer": "painted",
+       "tiles": [
+        "painted",
+        "painting",
+        "paint",
+        "painter"
+       ],
+       "notes": {
+        "paint": "verb: to make a picture with a brush and wet pigment",
+        "painted": "verb: made a picture with a brush and wet pigment",
+        "painting": "verb: making a picture with a brush and wet pigment",
+        "painter": "noun: person who makes pictures with wet pigment"
+       }
+      },
+      {
+       "id": "F:A-draw-01-s11",
+       "word": "paint",
+       "text": "Lily ___ a sunflower with big wet brushstrokes.",
+       "answer": "painted",
+       "tiles": [
+        "painted",
+        "painting",
+        "paint",
+        "painter"
+       ],
+       "notes": {
+        "paint": "verb: to make a picture with a brush and wet pigment",
+        "painted": "verb: made a picture with a brush and wet pigment",
+        "painting": "verb: making a picture with a brush and wet pigment",
+        "painter": "noun: person who makes pictures with wet pigment"
+       }
+      },
+      {
+       "id": "F:A-draw-01-s12",
+       "word": "paint",
+       "text": "Ned's brush dripped green as he ___ some grass.",
+       "answer": "painted",
+       "tiles": [
+        "painted",
+        "painting",
+        "paint",
+        "painter"
+       ],
+       "notes": {
+        "paint": "verb: to make a picture with a brush and wet pigment",
+        "painted": "verb: made a picture with a brush and wet pigment",
+        "painting": "verb: making a picture with a brush and wet pigment",
+        "painter": "noun: person who makes pictures with wet pigment"
+       }
+      },
+      {
+       "id": "F:A-draw-01-s17",
+       "word": "colour",
+       "text": "Max ___ the whole fish orange with his crayons.",
+       "answer": "coloured",
+       "tiles": [
+        "coloured",
+        "colour",
+        "colourful",
+        "colouring",
+        "colourless"
+       ],
+       "notes": {
+        "colour": "verb: to fill a picture or shape with hues",
+        "coloured": "verb: filled a picture or shape with hues",
+        "colouring": "verb: filling a picture or shape with hues",
+        "colourful": "adjective: having many bright hues",
+        "colourless": "adjective: having no hue"
+       }
+      },
+      {
+       "id": "F:A-draw-01-s18",
+       "word": "colour",
+       "text": "Ella ___ the dinosaur green with a crayon, inside the lines.",
+       "answer": "coloured",
+       "tiles": [
+        "coloured",
+        "colour",
+        "colourful",
+        "colouring",
+        "colourless"
+       ],
+       "notes": {
+        "colour": "verb: to fill a picture or shape with hues",
+        "coloured": "verb: filled a picture or shape with hues",
+        "colouring": "verb: filling a picture or shape with hues",
+        "colourful": "adjective: having many bright hues",
+        "colourless": "adjective: having no hue"
+       }
+      },
+      {
+       "id": "F:A-draw-01-s19",
+       "word": "colour",
+       "text": "Jo ___ the printed elephant grey with her crayons.",
+       "answer": "coloured",
+       "tiles": [
+        "coloured",
+        "colour",
+        "colourful",
+        "colouring",
+        "colourless"
+       ],
+       "notes": {
+        "colour": "verb: to fill a picture or shape with hues",
+        "coloured": "verb: filled a picture or shape with hues",
+        "colouring": "verb: filling a picture or shape with hues",
+        "colourful": "adjective: having many bright hues",
+        "colourless": "adjective: having no hue"
+       }
+      },
+      {
+       "id": "F:A-draw-01-s20",
+       "word": "colour",
+       "text": "Ben ___ each numbered shape blue or yellow with crayons.",
+       "answer": "coloured",
+       "tiles": [
+        "coloured",
+        "colour",
+        "colourful",
+        "colouring",
+        "colourless"
+       ],
+       "notes": {
+        "colour": "verb: to fill a picture or shape with hues",
+        "coloured": "verb: filled a picture or shape with hues",
+        "colouring": "verb: filling a picture or shape with hues",
+        "colourful": "adjective: having many bright hues",
+        "colourless": "adjective: having no hue"
+       }
+      },
+      {
+       "id": "F:A-draw-01-s25",
+       "word": "write",
+       "text": "Ava ___ her name at the top of her worksheet.",
+       "answer": "wrote",
+       "tiles": [
+        "wrote",
+        "written",
+        "writing",
+        "write",
+        "writer"
+       ],
+       "notes": {
+        "write": "verb: to put letters or words on a surface",
+        "writing": "verb: putting letters or words on a surface",
+        "wrote": "verb: put letters or words on a surface",
+        "written": "verb: put letters or words on a surface",
+        "writer": "noun: person who creates stories, books or articles"
+       }
+      },
+      {
+       "id": "F:A-draw-01-s26",
+       "word": "write",
+       "text": "Leo ___ 'Happy birthday, Nan!' in pen inside the card.",
+       "answer": "wrote",
+       "tiles": [
+        "wrote",
+        "written",
+        "writing",
+        "write",
+        "writer"
+       ],
+       "notes": {
+        "write": "verb: to put letters or words on a surface",
+        "writing": "verb: putting letters or words on a surface",
+        "wrote": "verb: put letters or words on a surface",
+        "written": "verb: put letters or words on a surface",
+        "writer": "noun: person who creates stories, books or articles"
+       }
+      },
+      {
+       "id": "F:A-draw-01-s27",
+       "word": "write",
+       "text": "Mum ___ milk, bread and eggs on the shopping list.",
+       "answer": "wrote",
+       "tiles": [
+        "wrote",
+        "written",
+        "writing",
+        "write",
+        "writer"
+       ],
+       "notes": {
+        "write": "verb: to put letters or words on a surface",
+        "writing": "verb: putting letters or words on a surface",
+        "wrote": "verb: put letters or words on a surface",
+        "written": "verb: put letters or words on a surface",
+        "writer": "noun: person who creates stories, books or articles"
+       }
+      },
+      {
+       "id": "F:A-draw-01-s28",
+       "word": "write",
+       "text": "Before bed, Ruby ___ a note to the tooth fairy.",
+       "answer": "wrote",
+       "tiles": [
+        "wrote",
+        "written",
+        "writing",
+        "write",
+        "writer"
+       ],
+       "notes": {
+        "write": "verb: to put letters or words on a surface",
+        "writing": "verb: putting letters or words on a surface",
+        "wrote": "verb: put letters or words on a surface",
+        "written": "verb: put letters or words on a surface",
+        "writer": "noun: person who creates stories, books or articles"
+       }
+      },
+      {
+       "id": "F:A-draw-01-s33",
+       "word": "trace",
+       "text": "Ben ___ the koala's lines, which showed through his paper.",
+       "answer": "traced",
+       "tiles": [
+        "traced",
+        "trace",
+        "tracing"
+       ],
+       "notes": {
+        "trace": "verb: to copy lines by following over or around them",
+        "traced": "verb: copied lines by following over or around them",
+        "tracing": "verb: copying lines by following over or around them"
+       }
+      },
+      {
+       "id": "F:A-draw-01-s34",
+       "word": "trace",
+       "text": "Mia ___ the grey dotted letters of her name.",
+       "answer": "traced",
+       "tiles": [
+        "traced",
+        "trace",
+        "tracing"
+       ],
+       "notes": {
+        "trace": "verb: to copy lines by following over or around them",
+        "traced": "verb: copied lines by following over or around them",
+        "tracing": "verb: copying lines by following over or around them"
+       }
+      },
+      {
+       "id": "F:A-draw-01-s35",
+       "word": "trace",
+       "text": "Against the bright window, Ruby ___ the horse through the page.",
+       "answer": "traced",
+       "tiles": [
+        "traced",
+        "trace",
+        "tracing"
+       ],
+       "notes": {
+        "trace": "verb: to copy lines by following over or around them",
+        "traced": "verb: copied lines by following over or around them",
+        "tracing": "verb: copying lines by following over or around them"
+       }
+      },
+      {
+       "id": "F:A-draw-01-s36",
+       "word": "trace",
+       "text": "Ava ___ the map of Australia through baking paper.",
+       "answer": "traced",
+       "tiles": [
+        "traced",
+        "trace",
+        "tracing"
+       ],
+       "notes": {
+        "trace": "verb: to copy lines by following over or around them",
+        "traced": "verb: copied lines by following over or around them",
+        "tracing": "verb: copying lines by following over or around them"
+       }
+      }
+     ]
+    },
+    "A-dwell-01": {
+     "families": {
+      "reminisce": [
+       {
+        "form": "reminisce",
+        "pos": "verb",
+        "note": "verb: to think or talk about earlier times"
+       },
+       {
+        "form": "reminisced",
+        "pos": "verb",
+        "note": "verb: thought or talked about earlier times"
+       },
+       {
+        "form": "reminisces",
+        "pos": "verb",
+        "note": "verb: thinks or talks about earlier times"
+       },
+       {
+        "form": "reminiscing",
+        "pos": "verb",
+        "note": "verb: thinking or talking about earlier times"
+       },
+       {
+        "form": "reminiscence",
+        "pos": "noun",
+        "note": "noun: a memory shared about earlier times"
+       },
+       {
+        "form": "reminiscences",
+        "pos": "noun",
+        "note": "noun: memories shared about earlier times"
+       },
+       {
+        "form": "reminiscent",
+        "pos": "adjective",
+        "note": "adjective: bringing earlier times to mind"
+       }
+      ],
+      "brood": [
+       {
+        "form": "brood",
+        "pos": "verb",
+        "note": "verb: to keep worrying in a gloomy way"
+       },
+       {
+        "form": "brooded",
+        "pos": "verb",
+        "note": "verb: kept worrying in a gloomy way"
+       },
+       {
+        "form": "brooding",
+        "pos": "verb",
+        "note": "verb: worrying in a gloomy way"
+       },
+       {
+        "form": "broods",
+        "pos": "verb",
+        "note": "verb: keeps worrying in a gloomy way"
+       }
+      ],
+      "muse": [
+       {
+        "form": "muse",
+        "pos": "verb",
+        "note": "verb: to think quietly and with curiosity"
+       },
+       {
+        "form": "mused",
+        "pos": "verb",
+        "note": "verb: thought quietly and with curiosity"
+       },
+       {
+        "form": "muses",
+        "pos": "verb",
+        "note": "verb: thinks quietly and with curiosity"
+       },
+       {
+        "form": "musing",
+        "pos": "verb",
+        "note": "verb: thinking quietly and with curiosity"
+       }
+      ],
+      "obsess": [
+       {
+        "form": "obsess",
+        "pos": "verb",
+        "note": "verb: to be unable to stop thinking about something"
+       },
+       {
+        "form": "obsessed",
+        "pos": "verb",
+        "note": "verb: was unable to stop thinking about something"
+       },
+       {
+        "form": "obsesses",
+        "pos": "verb",
+        "note": "verb: fills the mind and is hard to ignore"
+       },
+       {
+        "form": "obsessing",
+        "pos": "verb",
+        "note": "verb: being unable to stop thinking about something"
+       },
+       {
+        "form": "obsession",
+        "pos": "noun",
+        "note": "noun: a thought or interest that will not leave the mind"
+       },
+       {
+        "form": "obsessive",
+        "pos": "adjective",
+        "note": "adjective: unable to let one idea or interest go"
+       },
+       {
+        "form": "obsessively",
+        "pos": "adverb",
+        "note": "adverb: in a way that cannot let one idea or interest go"
+       }
+      ],
+      "wallow": [
+       {
+        "form": "wallow",
+        "pos": "verb",
+        "note": "verb: to stay in a sad feeling almost by choice"
+       },
+       {
+        "form": "wallowed",
+        "pos": "verb",
+        "note": "verb: stayed in a sad feeling almost by choice"
+       },
+       {
+        "form": "wallowing",
+        "pos": "verb",
+        "note": "verb: staying in a sad feeling almost by choice"
+       },
+       {
+        "form": "wallows",
+        "pos": "verb",
+        "note": "verb: stays in a sad feeling almost by choice"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:A-dwell-01-s01",
+       "word": "reminisce",
+       "text": "At the picnic, Gran ___, retelling the kite days of her childhood.",
+       "answer": "reminisced",
+       "tiles": [
+        "reminisced",
+        "reminiscent",
+        "reminisce",
+        "reminiscing",
+        "reminiscences"
+       ],
+       "notes": {
+        "reminisce": "verb: to think or talk about earlier times",
+        "reminisced": "verb: thought or talked about earlier times",
+        "reminiscing": "verb: thinking or talking about earlier times",
+        "reminiscences": "noun: memories shared about earlier times",
+        "reminiscent": "adjective: bringing earlier times to mind"
+       }
+      },
+      {
+       "id": "F:A-dwell-01-s02",
+       "word": "reminisce",
+       "text": "Dad ___, laughing over the old match photos and his muddy goal.",
+       "answer": "reminisced",
+       "tiles": [
+        "reminisced",
+        "reminiscent",
+        "reminisce",
+        "reminiscing",
+        "reminiscences"
+       ],
+       "notes": {
+        "reminisce": "verb: to think or talk about earlier times",
+        "reminisced": "verb: thought or talked about earlier times",
+        "reminiscing": "verb: thinking or talking about earlier times",
+        "reminiscences": "noun: memories shared about earlier times",
+        "reminiscent": "adjective: bringing earlier times to mind"
+       }
+      },
+      {
+       "id": "F:A-dwell-01-s04",
+       "word": "reminisce",
+       "text": "Nora ___ by the campfire, retelling last summer's canoe spill.",
+       "answer": "reminisced",
+       "tiles": [
+        "reminisced",
+        "reminiscent",
+        "reminisce",
+        "reminiscing",
+        "reminiscences"
+       ],
+       "notes": {
+        "reminisce": "verb: to think or talk about earlier times",
+        "reminisced": "verb: thought or talked about earlier times",
+        "reminiscing": "verb: thinking or talking about earlier times",
+        "reminiscences": "noun: memories shared about earlier times",
+        "reminiscent": "adjective: bringing earlier times to mind"
+       }
+      },
+      {
+       "id": "F:A-dwell-01-s09",
+       "word": "brood",
+       "text": "Sam ___ all evening, frowning over three worries before the trip.",
+       "answer": "brooded",
+       "tiles": [
+        "brooded",
+        "brood",
+        "brooding"
+       ],
+       "notes": {
+        "brood": "verb: to keep worrying in a gloomy way",
+        "brooded": "verb: kept worrying in a gloomy way",
+        "brooding": "verb: worrying in a gloomy way"
+       }
+      },
+      {
+       "id": "F:A-dwell-01-s10",
+       "word": "brood",
+       "text": "In the locker room, Leila ___ under a cloud of worries.",
+       "answer": "brooded",
+       "tiles": [
+        "brooded",
+        "brood",
+        "brooding"
+       ],
+       "notes": {
+        "brood": "verb: to keep worrying in a gloomy way",
+        "brooded": "verb: kept worrying in a gloomy way",
+        "brooding": "verb: worrying in a gloomy way"
+       }
+      },
+      {
+       "id": "F:A-dwell-01-s11",
+       "word": "brood",
+       "text": "After the missed penalty and argument, Tom ___ silently by the fence.",
+       "answer": "brooded",
+       "tiles": [
+        "brooded",
+        "brood",
+        "brooding"
+       ],
+       "notes": {
+        "brood": "verb: to keep worrying in a gloomy way",
+        "brooded": "verb: kept worrying in a gloomy way",
+        "brooding": "verb: worrying in a gloomy way"
+       }
+      },
+      {
+       "id": "F:A-dwell-01-s12",
+       "word": "brood",
+       "text": "Mina ___ under her hood after two rumours spoiled her day.",
+       "answer": "brooded",
+       "tiles": [
+        "brooded",
+        "brood",
+        "brooding"
+       ],
+       "notes": {
+        "brood": "verb: to keep worrying in a gloomy way",
+        "brooded": "verb: kept worrying in a gloomy way",
+        "brooding": "verb: worrying in a gloomy way"
+       }
+      },
+      {
+       "id": "F:A-dwell-01-s17",
+       "word": "muse",
+       "text": "Lena ___ by the pond, asking where moonlight goes at dawn.",
+       "answer": "mused",
+       "tiles": [
+        "mused",
+        "muse",
+        "musing"
+       ],
+       "notes": {
+        "muse": "verb: to think quietly and with curiosity",
+        "mused": "verb: thought quietly and with curiosity",
+        "musing": "verb: thinking quietly and with curiosity"
+       }
+      },
+      {
+       "id": "F:A-dwell-01-s18",
+       "word": "muse",
+       "text": "Omar ___ on the hill, asking if clouds keep secrets.",
+       "answer": "mused",
+       "tiles": [
+        "mused",
+        "muse",
+        "musing"
+       ],
+       "notes": {
+        "muse": "verb: to think quietly and with curiosity",
+        "mused": "verb: thought quietly and with curiosity",
+        "musing": "verb: thinking quietly and with curiosity"
+       }
+      },
+      {
+       "id": "F:A-dwell-01-s19",
+       "word": "muse",
+       "text": "During art, Priya ___ softly, 'What colour would Tuesday wear?'",
+       "answer": "mused",
+       "tiles": [
+        "mused",
+        "muse",
+        "musing"
+       ],
+       "notes": {
+        "muse": "verb: to think quietly and with curiosity",
+        "mused": "verb: thought quietly and with curiosity",
+        "musing": "verb: thinking quietly and with curiosity"
+       }
+      },
+      {
+       "id": "F:A-dwell-01-s20",
+       "word": "muse",
+       "text": "Under the stars, the twins ___, 'Maybe planets have bedtime songs.'",
+       "answer": "mused",
+       "tiles": [
+        "mused",
+        "muse",
+        "musing"
+       ],
+       "notes": {
+        "muse": "verb: to think quietly and with curiosity",
+        "mused": "verb: thought quietly and with curiosity",
+        "musing": "verb: thinking quietly and with curiosity"
+       }
+      },
+      {
+       "id": "F:A-dwell-01-s25",
+       "word": "obsess",
+       "text": "Finn ___ for hours, checking the same score every five minutes.",
+       "answer": "obsessed",
+       "tiles": [
+        "obsessed",
+        "obsession",
+        "obsessive",
+        "obsessing",
+        "obsess"
+       ],
+       "notes": {
+        "obsess": "verb: to be unable to stop thinking about something",
+        "obsessed": "verb: was unable to stop thinking about something",
+        "obsessing": "verb: being unable to stop thinking about something",
+        "obsession": "noun: a thought or interest that will not leave the mind",
+        "obsessive": "adjective: unable to let one idea or interest go"
+       }
+      },
+      {
+       "id": "F:A-dwell-01-s26",
+       "word": "obsess",
+       "text": "Rosa ___ all night, whispering the same spelling mistake again.",
+       "answer": "obsessed",
+       "tiles": [
+        "obsessed",
+        "obsession",
+        "obsessive",
+        "obsessing",
+        "obsess"
+       ],
+       "notes": {
+        "obsess": "verb: to be unable to stop thinking about something",
+        "obsessed": "verb: was unable to stop thinking about something",
+        "obsessing": "verb: being unable to stop thinking about something",
+        "obsession": "noun: a thought or interest that will not leave the mind",
+        "obsessive": "adjective: unable to let one idea or interest go"
+       }
+      },
+      {
+       "id": "F:A-dwell-01-s27",
+       "word": "obsess",
+       "text": "Max ___ during dinner, drawing the lost key on every napkin.",
+       "answer": "obsessed",
+       "tiles": [
+        "obsessed",
+        "obsession",
+        "obsessive",
+        "obsessing",
+        "obsess"
+       ],
+       "notes": {
+        "obsess": "verb: to be unable to stop thinking about something",
+        "obsessed": "verb: was unable to stop thinking about something",
+        "obsessing": "verb: being unable to stop thinking about something",
+        "obsession": "noun: a thought or interest that will not leave the mind",
+        "obsessive": "adjective: unable to let one idea or interest go"
+       }
+      },
+      {
+       "id": "F:A-dwell-01-s28",
+       "word": "obsess",
+       "text": "I ___ over the new chess opening all week, setting up the same six moves everywhere.",
+       "answer": "obsessed",
+       "tiles": [
+        "obsessed",
+        "obsession",
+        "obsessive",
+        "obsessing",
+        "obsess"
+       ],
+       "notes": {
+        "obsess": "verb: to be unable to stop thinking about something",
+        "obsessed": "verb: was unable to stop thinking about something",
+        "obsessing": "verb: being unable to stop thinking about something",
+        "obsession": "noun: a thought or interest that will not leave the mind",
+        "obsessive": "adjective: unable to let one idea or interest go"
+       }
+      },
+      {
+       "id": "F:A-dwell-01-s33",
+       "word": "wallow",
+       "text": "After the lost final, Kai ___ all weekend, sad songs on repeat and curtains shut.",
+       "answer": "wallowed",
+       "tiles": [
+        "wallowed",
+        "wallow",
+        "wallowing"
+       ],
+       "notes": {
+        "wallow": "verb: to stay in a sad feeling almost by choice",
+        "wallowed": "verb: stayed in a sad feeling almost by choice",
+        "wallowing": "verb: staying in a sad feeling almost by choice"
+       }
+      },
+      {
+       "id": "F:A-dwell-01-s34",
+       "word": "wallow",
+       "text": "Nia ___, sighing loudly whenever anyone walked past her door.",
+       "answer": "wallowed",
+       "tiles": [
+        "wallowed",
+        "wallow",
+        "wallowing"
+       ],
+       "notes": {
+        "wallow": "verb: to stay in a sad feeling almost by choice",
+        "wallowed": "verb: stayed in a sad feeling almost by choice",
+        "wallowing": "verb: staying in a sad feeling almost by choice"
+       }
+      },
+      {
+       "id": "F:A-dwell-01-s35",
+       "word": "wallow",
+       "text": "Milo ___ under three blankets, announcing his cold to the whole house hourly.",
+       "answer": "wallowed",
+       "tiles": [
+        "wallowed",
+        "wallow",
+        "wallowing"
+       ],
+       "notes": {
+        "wallow": "verb: to stay in a sad feeling almost by choice",
+        "wallowed": "verb: stayed in a sad feeling almost by choice",
+        "wallowing": "verb: staying in a sad feeling almost by choice"
+       }
+      },
+      {
+       "id": "F:A-dwell-01-s36",
+       "word": "wallow",
+       "text": "After losing his shield, the knight ___, writing four sad poems before lunch.",
+       "answer": "wallowed",
+       "tiles": [
+        "wallowed",
+        "wallow",
+        "wallowing"
+       ],
+       "notes": {
+        "wallow": "verb: to stay in a sad feeling almost by choice",
+        "wallowed": "verb: stayed in a sad feeling almost by choice",
+        "wallowing": "verb: staying in a sad feeling almost by choice"
+       }
+      }
+     ]
+    },
+    "A-eat-01": {
+     "families": {
+      "nibble": [
+       {
+        "form": "nibble",
+        "pos": "verb",
+        "note": "verb: to eat by taking very small bites"
+       },
+       {
+        "form": "nibbled",
+        "pos": "verb",
+        "note": "verb: ate by taking very small bites"
+       },
+       {
+        "form": "nibbles",
+        "pos": "verb",
+        "note": "verb: eats by taking very small bites"
+       },
+       {
+        "form": "nibbling",
+        "pos": "verb",
+        "note": "verb: eating by taking very small bites"
+       }
+      ],
+      "munch": [
+       {
+        "form": "munch",
+        "pos": "verb",
+        "note": "verb: to chew food with a loud sound"
+       },
+       {
+        "form": "munched",
+        "pos": "verb",
+        "note": "verb: chewed food with a loud sound"
+       },
+       {
+        "form": "munches",
+        "pos": "verb",
+        "note": "verb: chews food with a loud sound"
+       },
+       {
+        "form": "munching",
+        "pos": "verb",
+        "note": "verb: chewing food with a loud sound"
+       }
+      ],
+      "gulp": [
+       {
+        "form": "gulp",
+        "pos": "verb",
+        "note": "verb: to swallow quickly or greedily"
+       },
+       {
+        "form": "gulped",
+        "pos": "verb",
+        "note": "verb: swallowed quickly or greedily"
+       },
+       {
+        "form": "gulping",
+        "pos": "verb",
+        "note": "verb: swallowing quickly or greedily"
+       },
+       {
+        "form": "gulps",
+        "pos": "verb",
+        "note": "verb: swallows quickly or greedily"
+       }
+      ],
+      "gobble": [
+       {
+        "form": "gobble",
+        "pos": "verb",
+        "note": "verb: to eat quickly without chewing well"
+       },
+       {
+        "form": "gobbled",
+        "pos": "verb",
+        "note": "verb: ate quickly without chewing well"
+       },
+       {
+        "form": "gobbles",
+        "pos": "verb",
+        "note": "verb: eats quickly without chewing well"
+       },
+       {
+        "form": "gobbling",
+        "pos": "verb",
+        "note": "verb: eating quickly without chewing well"
+       }
+      ],
+      "sip": [
+       {
+        "form": "sip",
+        "pos": "verb",
+        "note": "verb: to drink by taking tiny mouthfuls"
+       },
+       {
+        "form": "sipped",
+        "pos": "verb",
+        "note": "verb: drank by taking tiny mouthfuls"
+       },
+       {
+        "form": "sipping",
+        "pos": "verb",
+        "note": "verb: drinking by taking tiny mouthfuls"
+       },
+       {
+        "form": "sips",
+        "pos": "verb",
+        "note": "verb: drinks by taking tiny mouthfuls"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:A-eat-01-s01",
+       "word": "nibble",
+       "text": "The mouse ___ the cracker, leaving only faint tooth marks.",
+       "answer": "nibbled",
+       "tiles": [
+        "nibbled",
+        "nibble",
+        "nibbling"
+       ],
+       "notes": {
+        "nibble": "verb: to eat by taking very small bites",
+        "nibbled": "verb: ate by taking very small bites",
+        "nibbling": "verb: eating by taking very small bites"
+       }
+      },
+      {
+       "id": "F:A-eat-01-s02",
+       "word": "nibble",
+       "text": "Sara used her front teeth to ___ the edge of her biscuit.",
+       "answer": "nibble",
+       "tiles": [
+        "nibble",
+        "nibbling",
+        "nibbles",
+        "nibbled"
+       ],
+       "notes": {
+        "nibble": "verb: to eat by taking very small bites",
+        "nibbled": "verb: ate by taking very small bites",
+        "nibbles": "verb: eats by taking very small bites",
+        "nibbling": "verb: eating by taking very small bites"
+       }
+      },
+      {
+       "id": "F:A-eat-01-s03",
+       "word": "nibble",
+       "text": "The shy rabbit ___ the lettuce edge, stopping after each tiny taste.",
+       "answer": "nibbled",
+       "tiles": [
+        "nibbled",
+        "nibble",
+        "nibbling"
+       ],
+       "notes": {
+        "nibble": "verb: to eat by taking very small bites",
+        "nibbled": "verb: ate by taking very small bites",
+        "nibbling": "verb: eating by taking very small bites"
+       }
+      },
+      {
+       "id": "F:A-eat-01-s04",
+       "word": "nibble",
+       "text": "Tom only wanted to ___ a tiny corner of the biscuit.",
+       "answer": "nibble",
+       "tiles": [
+        "nibble",
+        "nibbling",
+        "nibbles",
+        "nibbled"
+       ],
+       "notes": {
+        "nibble": "verb: to eat by taking very small bites",
+        "nibbled": "verb: ate by taking very small bites",
+        "nibbles": "verb: eats by taking very small bites",
+        "nibbling": "verb: eating by taking very small bites"
+       }
+      },
+      {
+       "id": "F:A-eat-01-s09",
+       "word": "munch",
+       "text": "The goat ___ hay with steady crunch-crunch sounds by the fence.",
+       "answer": "munched",
+       "tiles": [
+        "munched",
+        "munch",
+        "munching"
+       ],
+       "notes": {
+        "munch": "verb: to chew food with a loud sound",
+        "munched": "verb: chewed food with a loud sound",
+        "munching": "verb: chewing food with a loud sound"
+       }
+      },
+      {
+       "id": "F:A-eat-01-s11",
+       "word": "munch",
+       "text": "Kira ___ popcorn loudly all through the movie.",
+       "answer": "munched",
+       "tiles": [
+        "munched",
+        "munch",
+        "munching"
+       ],
+       "notes": {
+        "munch": "verb: to chew food with a loud sound",
+        "munched": "verb: chewed food with a loud sound",
+        "munching": "verb: chewing food with a loud sound"
+       }
+      },
+      {
+       "id": "F:A-eat-01-s12",
+       "word": "munch",
+       "text": "The pony began to ___ its crunchy oats, chomp after chomp.",
+       "answer": "munch",
+       "tiles": [
+        "munch",
+        "munching",
+        "munched",
+        "munches"
+       ],
+       "notes": {
+        "munch": "verb: to chew food with a loud sound",
+        "munched": "verb: chewed food with a loud sound",
+        "munches": "verb: chews food with a loud sound",
+        "munching": "verb: chewing food with a loud sound"
+       }
+      },
+      {
+       "id": "F:A-eat-01-s17",
+       "word": "gulp",
+       "text": "After football, I ___ my water in one go.",
+       "answer": "gulped",
+       "tiles": [
+        "gulped",
+        "gulp",
+        "gulping"
+       ],
+       "notes": {
+        "gulp": "verb: to swallow quickly or greedily",
+        "gulped": "verb: swallowed quickly or greedily",
+        "gulping": "verb: swallowing quickly or greedily"
+       }
+      },
+      {
+       "id": "F:A-eat-01-s18",
+       "word": "gulp",
+       "text": "The thirsty giant ___ a whole jug of lemonade in one go.",
+       "answer": "gulped",
+       "tiles": [
+        "gulped",
+        "gulp",
+        "gulping"
+       ],
+       "notes": {
+        "gulp": "verb: to swallow quickly or greedily",
+        "gulped": "verb: swallowed quickly or greedily",
+        "gulping": "verb: swallowing quickly or greedily"
+       }
+      },
+      {
+       "id": "F:A-eat-01-s19",
+       "word": "gulp",
+       "text": "The thirsty camel ___ a bucketful before anyone counted three.",
+       "answer": "gulped",
+       "tiles": [
+        "gulped",
+        "gulp",
+        "gulping"
+       ],
+       "notes": {
+        "gulp": "verb: to swallow quickly or greedily",
+        "gulped": "verb: swallowed quickly or greedily",
+        "gulping": "verb: swallowing quickly or greedily"
+       }
+      },
+      {
+       "id": "F:A-eat-01-s20",
+       "word": "gulp",
+       "text": "In the silly race, Mia tried to ___ her juice all at once.",
+       "answer": "gulp",
+       "tiles": [
+        "gulp",
+        "gulps",
+        "gulping",
+        "gulped"
+       ],
+       "notes": {
+        "gulp": "verb: to swallow quickly or greedily",
+        "gulped": "verb: swallowed quickly or greedily",
+        "gulping": "verb: swallowing quickly or greedily",
+        "gulps": "verb: swallows quickly or greedily"
+       }
+      },
+      {
+       "id": "F:A-eat-01-s25",
+       "word": "gobble",
+       "text": "The hungry puppy ___ its dinner so fast that gravy flew everywhere.",
+       "answer": "gobbled",
+       "tiles": [
+        "gobbled",
+        "gobble",
+        "gobbling"
+       ],
+       "notes": {
+        "gobble": "verb: to eat quickly without chewing well",
+        "gobbled": "verb: ate quickly without chewing well",
+        "gobbling": "verb: eating quickly without chewing well"
+       }
+      },
+      {
+       "id": "F:A-eat-01-s26",
+       "word": "gobble",
+       "text": "The greedy ogre likes to ___ his pies, crumbs flying everywhere.",
+       "answer": "gobble",
+       "tiles": [
+        "gobble",
+        "gobbling",
+        "gobbled",
+        "gobbles"
+       ],
+       "notes": {
+        "gobble": "verb: to eat quickly without chewing well",
+        "gobbled": "verb: ate quickly without chewing well",
+        "gobbles": "verb: eats quickly without chewing well",
+        "gobbling": "verb: eating quickly without chewing well"
+       }
+      },
+      {
+       "id": "F:A-eat-01-s27",
+       "word": "gobble",
+       "text": "Late for the bus, Max ___ his eggs in a messy rush.",
+       "answer": "gobbled",
+       "tiles": [
+        "gobbled",
+        "gobble",
+        "gobbling"
+       ],
+       "notes": {
+        "gobble": "verb: to eat quickly without chewing well",
+        "gobbled": "verb: ate quickly without chewing well",
+        "gobbling": "verb: eating quickly without chewing well"
+       }
+      },
+      {
+       "id": "F:A-eat-01-s28",
+       "word": "gobble",
+       "text": "The naughty dog ___ the stolen sandwich in seconds, dropping lettuce everywhere.",
+       "answer": "gobbled",
+       "tiles": [
+        "gobbled",
+        "gobble",
+        "gobbling"
+       ],
+       "notes": {
+        "gobble": "verb: to eat quickly without chewing well",
+        "gobbled": "verb: ate quickly without chewing well",
+        "gobbling": "verb: eating quickly without chewing well"
+       }
+      },
+      {
+       "id": "F:A-eat-01-s33",
+       "word": "sip",
+       "text": "The cocoa was very hot, so Maya ___ it slowly.",
+       "answer": "sipped",
+       "tiles": [
+        "sipped",
+        "sip",
+        "sipping"
+       ],
+       "notes": {
+        "sip": "verb: to drink by taking tiny mouthfuls",
+        "sipped": "verb: drank by taking tiny mouthfuls",
+        "sipping": "verb: drinking by taking tiny mouthfuls"
+       }
+      },
+      {
+       "id": "F:A-eat-01-s34",
+       "word": "sip",
+       "text": "Grandpa ___ his tiny cup of coffee, making it last.",
+       "answer": "sipped",
+       "tiles": [
+        "sipped",
+        "sip",
+        "sipping"
+       ],
+       "notes": {
+        "sip": "verb: to drink by taking tiny mouthfuls",
+        "sipped": "verb: drank by taking tiny mouthfuls",
+        "sipping": "verb: drinking by taking tiny mouthfuls"
+       }
+      },
+      {
+       "id": "F:A-eat-01-s35",
+       "word": "sip",
+       "text": "Ben ___ his juice slowly to make it last the whole film.",
+       "answer": "sipped",
+       "tiles": [
+        "sipped",
+        "sip",
+        "sipping"
+       ],
+       "notes": {
+        "sip": "verb: to drink by taking tiny mouthfuls",
+        "sipped": "verb: drank by taking tiny mouthfuls",
+        "sipping": "verb: drinking by taking tiny mouthfuls"
+       }
+      },
+      {
+       "id": "F:A-eat-01-s36",
+       "word": "sip",
+       "text": "The tiny mouse ___ a drop of dew from a leaf.",
+       "answer": "sipped",
+       "tiles": [
+        "sipped",
+        "sip",
+        "sipping"
+       ],
+       "notes": {
+        "sip": "verb: to drink by taking tiny mouthfuls",
+        "sipped": "verb: drank by taking tiny mouthfuls",
+        "sipping": "verb: drinking by taking tiny mouthfuls"
+       }
+      }
+     ]
+    },
+    "A-effort-01": {
+     "families": {
+      "strive": [
+       {
+        "form": "strive",
+        "pos": "verb",
+        "note": "verb: to make a great effort towards an aim"
+       },
+       {
+        "form": "strives",
+        "pos": "verb",
+        "note": "verb: makes a great effort towards an aim"
+       },
+       {
+        "form": "striving",
+        "pos": "verb",
+        "note": "verb: making a great effort towards an aim"
+       },
+       {
+        "form": "strove",
+        "pos": "verb",
+        "note": "verb: made a great effort towards an aim"
+       },
+       {
+        "form": "striven",
+        "pos": "verb",
+        "note": "verb: made a great effort towards an aim"
+       }
+      ],
+      "toil": [
+       {
+        "form": "toil",
+        "pos": "verb",
+        "note": "verb: to work very hard for a long time"
+       },
+       {
+        "form": "toiled",
+        "pos": "verb",
+        "note": "verb: worked very hard for a long time"
+       },
+       {
+        "form": "toiling",
+        "pos": "verb",
+        "note": "verb: working very hard for a long time"
+       },
+       {
+        "form": "toils",
+        "pos": "verb",
+        "note": "verb: works very hard for a long time"
+       }
+      ],
+      "tinker": [
+       {
+        "form": "tinker",
+        "pos": "verb",
+        "note": "verb: to make small changes while trying to mend something"
+       },
+       {
+        "form": "tinkered",
+        "pos": "verb",
+        "note": "verb: made small changes while trying to mend something"
+       },
+       {
+        "form": "tinkering",
+        "pos": "verb",
+        "note": "verb: making small changes while trying to mend something"
+       },
+       {
+        "form": "tinkers",
+        "pos": "verb",
+        "note": "verb: makes small changes while trying to mend something"
+       }
+      ],
+      "persevere": [
+       {
+        "form": "persevere",
+        "pos": "verb",
+        "note": "verb: to keep trying despite trouble or delay"
+       },
+       {
+        "form": "persevered",
+        "pos": "verb",
+        "note": "verb: kept trying despite trouble or delay"
+       },
+       {
+        "form": "perseveres",
+        "pos": "verb",
+        "note": "verb: keeps trying despite trouble or delay"
+       },
+       {
+        "form": "persevering",
+        "pos": "verb",
+        "note": "verb: keeping on despite trouble or delay"
+       },
+       {
+        "form": "perseverance",
+        "pos": "noun",
+        "note": "noun: steady effort despite trouble or delay"
+       }
+      ],
+      "improvise": [
+       {
+        "form": "improvise",
+        "pos": "verb",
+        "note": "verb: to manage using what is available without planning"
+       },
+       {
+        "form": "improvised",
+        "pos": "verb",
+        "note": "verb: managed using what was available without planning"
+       },
+       {
+        "form": "improvises",
+        "pos": "verb",
+        "note": "verb: manages using what is available without planning"
+       },
+       {
+        "form": "improvising",
+        "pos": "verb",
+        "note": "verb: managing using what is available without planning"
+       },
+       {
+        "form": "improvisation",
+        "pos": "noun",
+        "note": "noun: an unplanned way of doing or making something"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:A-effort-01-s01",
+       "word": "strive",
+       "text": "In the final lap, Amira ___ for first place with pumping arms.",
+       "answer": "strove",
+       "tiles": [
+        "strove",
+        "strive",
+        "striving",
+        "striven"
+       ],
+       "notes": {
+        "strive": "verb: to make a great effort towards an aim",
+        "striving": "verb: making a great effort towards an aim",
+        "strove": "verb: made a great effort towards an aim",
+        "striven": "verb: made a great effort towards an aim"
+       }
+      },
+      {
+       "id": "F:A-effort-01-s02",
+       "word": "strive",
+       "text": "The young knight had to ___ for the silver crown, muscles shaking.",
+       "answer": "strive",
+       "tiles": [
+        "strive",
+        "striving",
+        "strives",
+        "strove",
+        "striven"
+       ],
+       "notes": {
+        "strive": "verb: to make a great effort towards an aim",
+        "strives": "verb: makes a great effort towards an aim",
+        "striving": "verb: making a great effort towards an aim",
+        "strove": "verb: made a great effort towards an aim",
+        "striven": "verb: made a great effort towards an aim"
+       }
+      },
+      {
+       "id": "F:A-effort-01-s03",
+       "word": "strive",
+       "text": "In the boat race, our crew ___ for the flag, oars splashing wildly.",
+       "answer": "strove",
+       "tiles": [
+        "strove",
+        "strive",
+        "striving",
+        "striven"
+       ],
+       "notes": {
+        "strive": "verb: to make a great effort towards an aim",
+        "striving": "verb: making a great effort towards an aim",
+        "strove": "verb: made a great effort towards an aim",
+        "striven": "verb: made a great effort towards an aim"
+       }
+      },
+      {
+       "id": "F:A-effort-01-s04",
+       "word": "strive",
+       "text": "Ben ___ for a record, cheeks red after every jump.",
+       "answer": "strove",
+       "tiles": [
+        "strove",
+        "strive",
+        "striving",
+        "striven"
+       ],
+       "notes": {
+        "strive": "verb: to make a great effort towards an aim",
+        "striving": "verb: making a great effort towards an aim",
+        "strove": "verb: made a great effort towards an aim",
+        "striven": "verb: made a great effort towards an aim"
+       }
+      },
+      {
+       "id": "F:A-effort-01-s09",
+       "word": "toil",
+       "text": "All afternoon, the farmers ___ in mud until their backs ached.",
+       "answer": "toiled",
+       "tiles": [
+        "toiled",
+        "toil",
+        "toiling"
+       ],
+       "notes": {
+        "toil": "verb: to work very hard for a long time",
+        "toiled": "verb: worked very hard for a long time",
+        "toiling": "verb: working very hard for a long time"
+       }
+      },
+      {
+       "id": "F:A-effort-01-s10",
+       "word": "toil",
+       "text": "For six hours, the crew had to ___, hauling stones with aching shoulders.",
+       "answer": "toil",
+       "tiles": [
+        "toil",
+        "toiling",
+        "toiled",
+        "toils"
+       ],
+       "notes": {
+        "toil": "verb: to work very hard for a long time",
+        "toiled": "verb: worked very hard for a long time",
+        "toiling": "verb: working very hard for a long time",
+        "toils": "verb: works very hard for a long time"
+       }
+      },
+      {
+       "id": "F:A-effort-01-s11",
+       "word": "toil",
+       "text": "Mum and I ___ beside the hot oven from dawn, baking pies.",
+       "answer": "toiled",
+       "tiles": [
+        "toiled",
+        "toil",
+        "toiling"
+       ],
+       "notes": {
+        "toil": "verb: to work very hard for a long time",
+        "toiled": "verb: worked very hard for a long time",
+        "toiling": "verb: working very hard for a long time"
+       }
+      },
+      {
+       "id": "F:A-effort-01-s12",
+       "word": "toil",
+       "text": "The miners ___ below the hill, faces dusty when the lamps were lit.",
+       "answer": "toiled",
+       "tiles": [
+        "toiled",
+        "toil",
+        "toiling"
+       ],
+       "notes": {
+        "toil": "verb: to work very hard for a long time",
+        "toiled": "verb: worked very hard for a long time",
+        "toiling": "verb: working very hard for a long time"
+       }
+      },
+      {
+       "id": "F:A-effort-01-s17",
+       "word": "tinker",
+       "text": "Milo ___ with tiny screws until the toy train rolled again.",
+       "answer": "tinkered",
+       "tiles": [
+        "tinkered",
+        "tinker",
+        "tinkering"
+       ],
+       "notes": {
+        "tinker": "verb: to make small changes while trying to mend something",
+        "tinkered": "verb: made small changes while trying to mend something",
+        "tinkering": "verb: making small changes while trying to mend something"
+       }
+      },
+      {
+       "id": "F:A-effort-01-s18",
+       "word": "tinker",
+       "text": "Grandad had to ___ inside the radio, swapping wires until music crackled out.",
+       "answer": "tinker",
+       "tiles": [
+        "tinker",
+        "tinkering",
+        "tinkered",
+        "tinkers"
+       ],
+       "notes": {
+        "tinker": "verb: to make small changes while trying to mend something",
+        "tinkered": "verb: made small changes while trying to mend something",
+        "tinkering": "verb: making small changes while trying to mend something",
+        "tinkers": "verb: makes small changes while trying to mend something"
+       }
+      },
+      {
+       "id": "F:A-effort-01-s19",
+       "word": "tinker",
+       "text": "Jia ___ with the leaky pen, turning the nib and cap.",
+       "answer": "tinkered",
+       "tiles": [
+        "tinkered",
+        "tinker",
+        "tinkering"
+       ],
+       "notes": {
+        "tinker": "verb: to make small changes while trying to mend something",
+        "tinkered": "verb: made small changes while trying to mend something",
+        "tinkering": "verb: making small changes while trying to mend something"
+       }
+      },
+      {
+       "id": "F:A-effort-01-s20",
+       "word": "tinker",
+       "text": "The robot club ___ with the loose bolts, twisting each until the wheels spun.",
+       "answer": "tinkered",
+       "tiles": [
+        "tinkered",
+        "tinker",
+        "tinkering"
+       ],
+       "notes": {
+        "tinker": "verb: to make small changes while trying to mend something",
+        "tinkered": "verb: made small changes while trying to mend something",
+        "tinkering": "verb: making small changes while trying to mend something"
+       }
+      },
+      {
+       "id": "F:A-effort-01-s25",
+       "word": "persevere",
+       "text": "After three falls, Omar ___ and finished the icy hill race.",
+       "answer": "persevered",
+       "tiles": [
+        "persevered",
+        "perseverance",
+        "persevere",
+        "persevering"
+       ],
+       "notes": {
+        "persevere": "verb: to keep trying despite trouble or delay",
+        "persevered": "verb: kept trying despite trouble or delay",
+        "persevering": "verb: keeping on despite trouble or delay",
+        "perseverance": "noun: steady effort despite trouble or delay"
+       }
+      },
+      {
+       "id": "F:A-effort-01-s26",
+       "word": "persevere",
+       "text": "Bea failed the swimming test twice but decided to ___, and passed on her third try.",
+       "answer": "persevere",
+       "tiles": [
+        "persevere",
+        "perseverance",
+        "persevered",
+        "persevering",
+        "perseveres"
+       ],
+       "notes": {
+        "persevere": "verb: to keep trying despite trouble or delay",
+        "persevered": "verb: kept trying despite trouble or delay",
+        "perseveres": "verb: keeps trying despite trouble or delay",
+        "persevering": "verb: keeping on despite trouble or delay",
+        "perseverance": "noun: steady effort despite trouble or delay"
+       }
+      },
+      {
+       "id": "F:A-effort-01-s27",
+       "word": "persevere",
+       "text": "The snail ___ after the rain washed it back to the gate.",
+       "answer": "persevered",
+       "tiles": [
+        "persevered",
+        "perseverance",
+        "persevere",
+        "persevering"
+       ],
+       "notes": {
+        "persevere": "verb: to keep trying despite trouble or delay",
+        "persevered": "verb: kept trying despite trouble or delay",
+        "persevering": "verb: keeping on despite trouble or delay",
+        "perseverance": "noun: steady effort despite trouble or delay"
+       }
+      },
+      {
+       "id": "F:A-effort-01-s28",
+       "word": "persevere",
+       "text": "Kai forgot his lines at every rehearsal, but he ___ and spoke them perfectly on opening night.",
+       "answer": "persevered",
+       "tiles": [
+        "persevered",
+        "perseverance",
+        "persevere",
+        "persevering"
+       ],
+       "notes": {
+        "persevere": "verb: to keep trying despite trouble or delay",
+        "persevered": "verb: kept trying despite trouble or delay",
+        "persevering": "verb: keeping on despite trouble or delay",
+        "perseverance": "noun: steady effort despite trouble or delay"
+       }
+      },
+      {
+       "id": "F:A-effort-01-s33",
+       "word": "improvise",
+       "text": "When the speakers died, the band ___, drumming out the beat on buckets.",
+       "answer": "improvised",
+       "tiles": [
+        "improvised",
+        "improvisation",
+        "improvise",
+        "improvising"
+       ],
+       "notes": {
+        "improvise": "verb: to manage using what is available without planning",
+        "improvised": "verb: managed using what was available without planning",
+        "improvising": "verb: managing using what is available without planning",
+        "improvisation": "noun: an unplanned way of doing or making something"
+       }
+      },
+      {
+       "id": "F:A-effort-01-s34",
+       "word": "improvise",
+       "text": "Mia's kite string snapped, so she ___, knotting on a spare shoelace instead.",
+       "answer": "improvised",
+       "tiles": [
+        "improvised",
+        "improvisation",
+        "improvise",
+        "improvising"
+       ],
+       "notes": {
+        "improvise": "verb: to manage using what is available without planning",
+        "improvised": "verb: managed using what was available without planning",
+        "improvising": "verb: managing using what is available without planning",
+        "improvisation": "noun: an unplanned way of doing or making something"
+       }
+      },
+      {
+       "id": "F:A-effort-01-s35",
+       "word": "improvise",
+       "text": "The recipe called for eggs we did not have, so Dad simply ___ with mashed banana.",
+       "answer": "improvised",
+       "tiles": [
+        "improvised",
+        "improvisation",
+        "improvise",
+        "improvising"
+       ],
+       "notes": {
+        "improvise": "verb: to manage using what is available without planning",
+        "improvised": "verb: managed using what was available without planning",
+        "improvising": "verb: managing using what is available without planning",
+        "improvisation": "noun: an unplanned way of doing or making something"
+       }
+      },
+      {
+       "id": "F:A-effort-01-s36",
+       "word": "improvise",
+       "text": "Their tent poles were missing, so the scouts ___, lashing branches together instead.",
+       "answer": "improvised",
+       "tiles": [
+        "improvised",
+        "improvisation",
+        "improvise",
+        "improvising"
+       ],
+       "notes": {
+        "improvise": "verb: to manage using what is available without planning",
+        "improvised": "verb: managed using what was available without planning",
+        "improvising": "verb: managing using what is available without planning",
+        "improvisation": "noun: an unplanned way of doing or making something"
+       }
+      }
+     ]
+    },
+    "A-escape-01": {
+     "families": {
+      "evade": [
+       {
+        "form": "evade",
+        "pos": "verb",
+        "note": "verb: to use tricks to escape or avoid someone or something"
+       },
+       {
+        "form": "evaded",
+        "pos": "verb",
+        "note": "verb: used tricks to escape or avoid someone or something"
+       },
+       {
+        "form": "evades",
+        "pos": "verb",
+        "note": "verb: uses tricks to escape or avoid someone or something"
+       },
+       {
+        "form": "evading",
+        "pos": "verb",
+        "note": "verb: using tricks to escape or avoid someone or something"
+       },
+       {
+        "form": "evasion",
+        "pos": "noun",
+        "note": "noun: an act of avoiding someone or something by trickery"
+       },
+       {
+        "form": "evasive",
+        "pos": "adjective",
+        "note": "adjective: avoiding clear answers or direct action"
+       }
+      ],
+      "flee": [
+       {
+        "form": "flee",
+        "pos": "verb",
+        "note": "verb: to run away quickly from danger or trouble"
+       },
+       {
+        "form": "fled",
+        "pos": "verb",
+        "note": "verb: ran away quickly from danger or trouble"
+       },
+       {
+        "form": "fleeing",
+        "pos": "verb",
+        "note": "verb: running away quickly from danger or trouble"
+       },
+       {
+        "form": "flees",
+        "pos": "verb",
+        "note": "verb: runs away quickly from danger or trouble"
+       }
+      ],
+      "retreat": [
+       {
+        "form": "retreat",
+        "pos": "verb",
+        "note": "verb: to pull back from a place in an ordered way"
+       },
+       {
+        "form": "retreated",
+        "pos": "verb",
+        "note": "verb: pulled back from a place in an ordered way"
+       },
+       {
+        "form": "retreating",
+        "pos": "verb",
+        "note": "verb: pulling back from a place in an ordered way"
+       },
+       {
+        "form": "retreats",
+        "pos": "verb",
+        "note": "verb: pulls back from a place in an ordered way"
+       }
+      ],
+      "cower": [
+       {
+        "form": "cower",
+        "pos": "verb",
+        "note": "verb: to crouch low because of fear"
+       },
+       {
+        "form": "cowered",
+        "pos": "verb",
+        "note": "verb: crouched low because of fear"
+       },
+       {
+        "form": "cowering",
+        "pos": "verb",
+        "note": "verb: crouching low because of fear"
+       },
+       {
+        "form": "cowers",
+        "pos": "verb",
+        "note": "verb: crouches low because of fear"
+       }
+      ],
+      "lurk": [
+       {
+        "form": "lurk",
+        "pos": "verb",
+        "note": "verb: to wait hidden and out of sight"
+       },
+       {
+        "form": "lurked",
+        "pos": "verb",
+        "note": "verb: waited hidden and out of sight"
+       },
+       {
+        "form": "lurking",
+        "pos": "verb",
+        "note": "verb: waiting hidden and out of sight"
+       },
+       {
+        "form": "lurks",
+        "pos": "verb",
+        "note": "verb: waits hidden and out of sight"
+       },
+       {
+        "form": "lurker",
+        "pos": "noun",
+        "note": "noun: someone who waits hidden or watches without joining in"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:A-escape-01-s01",
+       "word": "evade",
+       "text": "At the gate, Mara tried to ___ by showing a swapped pass.",
+       "answer": "evade",
+       "tiles": [
+        "evade",
+        "evasion",
+        "evasive",
+        "evading",
+        "evaded"
+       ],
+       "notes": {
+        "evade": "verb: to use tricks to escape or avoid someone or something",
+        "evaded": "verb: used tricks to escape or avoid someone or something",
+        "evading": "verb: using tricks to escape or avoid someone or something",
+        "evasion": "noun: an act of avoiding someone or something by trickery",
+        "evasive": "adjective: avoiding clear answers or direct action"
+       }
+      },
+      {
+       "id": "F:A-escape-01-s02",
+       "word": "evade",
+       "text": "The goblin managed to ___ by painting footprints toward the empty shed.",
+       "answer": "evade",
+       "tiles": [
+        "evade",
+        "evasion",
+        "evasive",
+        "evading",
+        "evaded"
+       ],
+       "notes": {
+        "evade": "verb: to use tricks to escape or avoid someone or something",
+        "evaded": "verb: used tricks to escape or avoid someone or something",
+        "evading": "verb: using tricks to escape or avoid someone or something",
+        "evasion": "noun: an act of avoiding someone or something by trickery",
+        "evasive": "adjective: avoiding clear answers or direct action"
+       }
+      },
+      {
+       "id": "F:A-escape-01-s03",
+       "word": "evade",
+       "text": "Jin hoped to ___ the roll call by sending his twin to answer in his place.",
+       "answer": "evade",
+       "tiles": [
+        "evade",
+        "evasion",
+        "evasive",
+        "evading",
+        "evaded"
+       ],
+       "notes": {
+        "evade": "verb: to use tricks to escape or avoid someone or something",
+        "evaded": "verb: used tricks to escape or avoid someone or something",
+        "evading": "verb: using tricks to escape or avoid someone or something",
+        "evasion": "noun: an act of avoiding someone or something by trickery",
+        "evasive": "adjective: avoiding clear answers or direct action"
+       }
+      },
+      {
+       "id": "F:A-escape-01-s04",
+       "word": "evade",
+       "text": "The mouse tried to ___ by sending the cat toward a squeaky boot.",
+       "answer": "evade",
+       "tiles": [
+        "evade",
+        "evasion",
+        "evasive",
+        "evading",
+        "evaded"
+       ],
+       "notes": {
+        "evade": "verb: to use tricks to escape or avoid someone or something",
+        "evaded": "verb: used tricks to escape or avoid someone or something",
+        "evading": "verb: using tricks to escape or avoid someone or something",
+        "evasion": "noun: an act of avoiding someone or something by trickery",
+        "evasive": "adjective: avoiding clear answers or direct action"
+       }
+      },
+      {
+       "id": "F:A-escape-01-s09",
+       "word": "flee",
+       "text": "When the boiler hissed, the mice ___ in every direction, squeaking and scattering.",
+       "answer": "fled",
+       "tiles": [
+        "fled",
+        "flee",
+        "fleeing"
+       ],
+       "notes": {
+        "flee": "verb: to run away quickly from danger or trouble",
+        "fled": "verb: ran away quickly from danger or trouble",
+        "fleeing": "verb: running away quickly from danger or trouble"
+       }
+      },
+      {
+       "id": "F:A-escape-01-s10",
+       "word": "flee",
+       "text": "At the dragon's roar, villagers ___ in panic, dropping baskets and shoving across the bridge.",
+       "answer": "fled",
+       "tiles": [
+        "fled",
+        "flee",
+        "fleeing"
+       ],
+       "notes": {
+        "flee": "verb: to run away quickly from danger or trouble",
+        "fled": "verb: ran away quickly from danger or trouble",
+        "fleeing": "verb: running away quickly from danger or trouble"
+       }
+      },
+      {
+       "id": "F:A-escape-01-s11",
+       "word": "flee",
+       "text": "The goats ___ as the wild dog charged, hooves thundering downhill.",
+       "answer": "fled",
+       "tiles": [
+        "fled",
+        "flee",
+        "fleeing"
+       ],
+       "notes": {
+        "flee": "verb: to run away quickly from danger or trouble",
+        "fled": "verb: ran away quickly from danger or trouble",
+        "fleeing": "verb: running away quickly from danger or trouble"
+       }
+      },
+      {
+       "id": "F:A-escape-01-s12",
+       "word": "flee",
+       "text": "When sparks jumped, Sam and Tariq ___, racing straight to the gate.",
+       "answer": "fled",
+       "tiles": [
+        "fled",
+        "flee",
+        "fleeing"
+       ],
+       "notes": {
+        "flee": "verb: to run away quickly from danger or trouble",
+        "fled": "verb: ran away quickly from danger or trouble",
+        "fleeing": "verb: running away quickly from danger or trouble"
+       }
+      },
+      {
+       "id": "F:A-escape-01-s17",
+       "word": "retreat",
+       "text": "At the captain's signal, the chess soldiers ___ in a neat line.",
+       "answer": "retreated",
+       "tiles": [
+        "retreated",
+        "retreat",
+        "retreating"
+       ],
+       "notes": {
+        "retreat": "verb: to pull back from a place in an ordered way",
+        "retreated": "verb: pulled back from a place in an ordered way",
+        "retreating": "verb: pulling back from a place in an ordered way"
+       }
+      },
+      {
+       "id": "F:A-escape-01-s18",
+       "word": "retreat",
+       "text": "The hikers ___ step by step when the snow bridge cracked.",
+       "answer": "retreated",
+       "tiles": [
+        "retreated",
+        "retreat",
+        "retreating"
+       ],
+       "notes": {
+        "retreat": "verb: to pull back from a place in an ordered way",
+        "retreated": "verb: pulled back from a place in an ordered way",
+        "retreating": "verb: pulling back from a place in an ordered way"
+       }
+      },
+      {
+       "id": "F:A-escape-01-s19",
+       "word": "retreat",
+       "text": "After the whistle, the swimmers ___ lane by lane to the ropes.",
+       "answer": "retreated",
+       "tiles": [
+        "retreated",
+        "retreat",
+        "retreating"
+       ],
+       "notes": {
+        "retreat": "verb: to pull back from a place in an ordered way",
+        "retreated": "verb: pulled back from a place in an ordered way",
+        "retreating": "verb: pulling back from a place in an ordered way"
+       }
+      },
+      {
+       "id": "F:A-escape-01-s20",
+       "word": "retreat",
+       "text": "The ants ___ in columns as the puddle spread across the path.",
+       "answer": "retreated",
+       "tiles": [
+        "retreated",
+        "retreat",
+        "retreating"
+       ],
+       "notes": {
+        "retreat": "verb: to pull back from a place in an ordered way",
+        "retreated": "verb: pulled back from a place in an ordered way",
+        "retreating": "verb: pulling back from a place in an ordered way"
+       }
+      },
+      {
+       "id": "F:A-escape-01-s25",
+       "word": "cower",
+       "text": "During the fireworks, the puppy ___ under the chair, trembling with chin down.",
+       "answer": "cowered",
+       "tiles": [
+        "cowered",
+        "cowering",
+        "cower"
+       ],
+       "notes": {
+        "cower": "verb: to crouch low because of fear",
+        "cowered": "verb: crouched low because of fear",
+        "cowering": "verb: crouching low because of fear"
+       }
+      },
+      {
+       "id": "F:A-escape-01-s26",
+       "word": "cower",
+       "text": "When the ogre shouted, Ben ___ behind the barrel, knees against his chest.",
+       "answer": "cowered",
+       "tiles": [
+        "cowered",
+        "cowering",
+        "cower"
+       ],
+       "notes": {
+        "cower": "verb: to crouch low because of fear",
+        "cowered": "verb: crouched low because of fear",
+        "cowering": "verb: crouching low because of fear"
+       }
+      },
+      {
+       "id": "F:A-escape-01-s27",
+       "word": "cower",
+       "text": "The kitten ___ beneath the sofa, ears flat, while thunder rattled the windows.",
+       "answer": "cowered",
+       "tiles": [
+        "cowered",
+        "cowering",
+        "cower"
+       ],
+       "notes": {
+        "cower": "verb: to crouch low because of fear",
+        "cowered": "verb: crouched low because of fear",
+        "cowering": "verb: crouching low because of fear"
+       }
+      },
+      {
+       "id": "F:A-escape-01-s28",
+       "word": "cower",
+       "text": "Mina ___ in the corner, arms over her head, as plates smashed.",
+       "answer": "cowered",
+       "tiles": [
+        "cowered",
+        "cowering",
+        "cower"
+       ],
+       "notes": {
+        "cower": "verb: to crouch low because of fear",
+        "cowered": "verb: crouched low because of fear",
+        "cowering": "verb: crouching low because of fear"
+       }
+      },
+      {
+       "id": "F:A-escape-01-s33",
+       "word": "lurk",
+       "text": "The tiger ___ among the reeds until the deer bent down.",
+       "answer": "lurked",
+       "tiles": [
+        "lurked",
+        "lurking",
+        "lurk",
+        "lurker"
+       ],
+       "notes": {
+        "lurk": "verb: to wait hidden and out of sight",
+        "lurked": "verb: waited hidden and out of sight",
+        "lurking": "verb: waiting hidden and out of sight",
+        "lurker": "noun: someone who waits hidden or watches without joining in"
+       }
+      },
+      {
+       "id": "F:A-escape-01-s34",
+       "word": "lurk",
+       "text": "A pirate ___ behind the curtain, ready to grab the treasure map.",
+       "answer": "lurked",
+       "tiles": [
+        "lurked",
+        "lurking",
+        "lurk",
+        "lurker"
+       ],
+       "notes": {
+        "lurk": "verb: to wait hidden and out of sight",
+        "lurked": "verb: waited hidden and out of sight",
+        "lurking": "verb: waiting hidden and out of sight",
+        "lurker": "noun: someone who waits hidden or watches without joining in"
+       }
+      },
+      {
+       "id": "F:A-escape-01-s35",
+       "word": "lurk",
+       "text": "The spider ___ under the leaf until a fly landed nearby.",
+       "answer": "lurked",
+       "tiles": [
+        "lurked",
+        "lurking",
+        "lurk",
+        "lurker"
+       ],
+       "notes": {
+        "lurk": "verb: to wait hidden and out of sight",
+        "lurked": "verb: waited hidden and out of sight",
+        "lurking": "verb: waiting hidden and out of sight",
+        "lurker": "noun: someone who waits hidden or watches without joining in"
+       }
+      },
+      {
+       "id": "F:A-escape-01-s36",
+       "word": "lurk",
+       "text": "The goalie ___ behind the post until the striker looked left.",
+       "answer": "lurked",
+       "tiles": [
+        "lurked",
+        "lurking",
+        "lurk",
+        "lurker"
+       ],
+       "notes": {
+        "lurk": "verb: to wait hidden and out of sight",
+        "lurked": "verb: waited hidden and out of sight",
+        "lurking": "verb: waiting hidden and out of sight",
+        "lurker": "noun: someone who waits hidden or watches without joining in"
+       }
+      }
+     ]
+    },
+    "A-fortune-01": {
+     "families": {
+      "deteriorate": [
+       {
+        "form": "deteriorate",
+        "pos": "verb",
+        "note": "verb: to become worse in condition or quality"
+       },
+       {
+        "form": "deteriorated",
+        "pos": "verb",
+        "note": "verb: became worse in condition or quality"
+       },
+       {
+        "form": "deteriorates",
+        "pos": "verb",
+        "note": "verb: becomes worse in condition or quality"
+       },
+       {
+        "form": "deteriorating",
+        "pos": "verb",
+        "note": "verb: becoming worse in condition or quality"
+       },
+       {
+        "form": "deterioration",
+        "pos": "noun",
+        "note": "noun: a change to a worse condition or quality"
+       }
+      ],
+      "dwindle": [
+       {
+        "form": "dwindle",
+        "pos": "verb",
+        "note": "verb: to become smaller, weaker, or less in amount"
+       },
+       {
+        "form": "dwindled",
+        "pos": "verb",
+        "note": "verb: became smaller, weaker, or less in amount"
+       },
+       {
+        "form": "dwindles",
+        "pos": "verb",
+        "note": "verb: becomes smaller, weaker, or less in amount"
+       },
+       {
+        "form": "dwindling",
+        "pos": "verb",
+        "note": "verb: becoming smaller, weaker, or less in amount"
+       }
+      ],
+      "prosper": [
+       {
+        "form": "prosper",
+        "pos": "verb",
+        "note": "verb: to do well and be successful"
+       },
+       {
+        "form": "prospered",
+        "pos": "verb",
+        "note": "verb: did well and was successful"
+       },
+       {
+        "form": "prospering",
+        "pos": "verb",
+        "note": "verb: doing well and becoming successful"
+       },
+       {
+        "form": "prospers",
+        "pos": "verb",
+        "note": "verb: does well and becomes successful"
+       },
+       {
+        "form": "prosperity",
+        "pos": "noun",
+        "note": "noun: success, wealth, and good fortune"
+       },
+       {
+        "form": "prosperous",
+        "pos": "adjective",
+        "note": "adjective: successful, wealthy, and doing well"
+       }
+      ],
+      "endure": [
+       {
+        "form": "endure",
+        "pos": "verb",
+        "note": "verb: to keep existing over time"
+       },
+       {
+        "form": "endured",
+        "pos": "verb",
+        "note": "verb: kept existing over time"
+       },
+       {
+        "form": "endures",
+        "pos": "verb",
+        "note": "verb: keeps existing over time"
+       },
+       {
+        "form": "enduring",
+        "pos": "verb",
+        "note": "verb: keeping existing over time"
+       },
+       {
+        "form": "endurance",
+        "pos": "noun",
+        "note": "noun: the ability to last or keep going"
+       }
+      ],
+      "relent": [
+       {
+        "form": "relent",
+        "pos": "verb",
+        "note": "verb: to become less severe and give in"
+       },
+       {
+        "form": "relented",
+        "pos": "verb",
+        "note": "verb: became less severe and gave in"
+       },
+       {
+        "form": "relenting",
+        "pos": "verb",
+        "note": "verb: becoming less severe and giving in"
+       },
+       {
+        "form": "relents",
+        "pos": "verb",
+        "note": "verb: becomes less severe and gives in"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:A-fortune-01-s01",
+       "word": "deteriorate",
+       "text": "After months outside, the toy car ___: rust spotted every wheel.",
+       "answer": "deteriorated",
+       "tiles": [
+        "deteriorated",
+        "deterioration",
+        "deteriorating",
+        "deteriorate"
+       ],
+       "notes": {
+        "deteriorate": "verb: to become worse in condition or quality",
+        "deteriorated": "verb: became worse in condition or quality",
+        "deteriorating": "verb: becoming worse in condition or quality",
+        "deterioration": "noun: a change to a worse condition or quality"
+       }
+      },
+      {
+       "id": "F:A-fortune-01-s02",
+       "word": "deteriorate",
+       "text": "By spring, the shed ___, with holes in its roof.",
+       "answer": "deteriorated",
+       "tiles": [
+        "deteriorated",
+        "deterioration",
+        "deteriorating",
+        "deteriorate"
+       ],
+       "notes": {
+        "deteriorate": "verb: to become worse in condition or quality",
+        "deteriorated": "verb: became worse in condition or quality",
+        "deteriorating": "verb: becoming worse in condition or quality",
+        "deterioration": "noun: a change to a worse condition or quality"
+       }
+      },
+      {
+       "id": "F:A-fortune-01-s03",
+       "word": "deteriorate",
+       "text": "The damp cellar made the cardboard castle ___ and sag at the towers.",
+       "answer": "deteriorate",
+       "tiles": [
+        "deteriorate",
+        "deterioration",
+        "deteriorated",
+        "deteriorating",
+        "deteriorates"
+       ],
+       "notes": {
+        "deteriorate": "verb: to become worse in condition or quality",
+        "deteriorated": "verb: became worse in condition or quality",
+        "deteriorates": "verb: becomes worse in condition or quality",
+        "deteriorating": "verb: becoming worse in condition or quality",
+        "deterioration": "noun: a change to a worse condition or quality"
+       }
+      },
+      {
+       "id": "F:A-fortune-01-s04",
+       "word": "deteriorate",
+       "text": "The bicycle ___ after winter; its chain stuck and tyres split.",
+       "answer": "deteriorated",
+       "tiles": [
+        "deteriorated",
+        "deterioration",
+        "deteriorating",
+        "deteriorate"
+       ],
+       "notes": {
+        "deteriorate": "verb: to become worse in condition or quality",
+        "deteriorated": "verb: became worse in condition or quality",
+        "deteriorating": "verb: becoming worse in condition or quality",
+        "deterioration": "noun: a change to a worse condition or quality"
+       }
+      },
+      {
+       "id": "F:A-fortune-01-s09",
+       "word": "dwindle",
+       "text": "The biscuit pile ___ from twelve to two by lunchtime.",
+       "answer": "dwindled",
+       "tiles": [
+        "dwindled",
+        "dwindling",
+        "dwindle"
+       ],
+       "notes": {
+        "dwindle": "verb: to become smaller, weaker, or less in amount",
+        "dwindled": "verb: became smaller, weaker, or less in amount",
+        "dwindling": "verb: becoming smaller, weaker, or less in amount"
+       }
+      },
+      {
+       "id": "F:A-fortune-01-s10",
+       "word": "dwindle",
+       "text": "By dusk, the campfire ___ to a few red coals.",
+       "answer": "dwindled",
+       "tiles": [
+        "dwindled",
+        "dwindling",
+        "dwindle"
+       ],
+       "notes": {
+        "dwindle": "verb: to become smaller, weaker, or less in amount",
+        "dwindled": "verb: became smaller, weaker, or less in amount",
+        "dwindling": "verb: becoming smaller, weaker, or less in amount"
+       }
+      },
+      {
+       "id": "F:A-fortune-01-s11",
+       "word": "dwindle",
+       "text": "Sharing with neighbours made our water supply ___ before the hike ended.",
+       "answer": "dwindle",
+       "tiles": [
+        "dwindle",
+        "dwindling",
+        "dwindled",
+        "dwindles"
+       ],
+       "notes": {
+        "dwindle": "verb: to become smaller, weaker, or less in amount",
+        "dwindled": "verb: became smaller, weaker, or less in amount",
+        "dwindles": "verb: becomes smaller, weaker, or less in amount",
+        "dwindling": "verb: becoming smaller, weaker, or less in amount"
+       }
+      },
+      {
+       "id": "F:A-fortune-01-s12",
+       "word": "dwindle",
+       "text": "As tickets sold, the stack on the desk ___ fast.",
+       "answer": "dwindled",
+       "tiles": [
+        "dwindled",
+        "dwindling",
+        "dwindle"
+       ],
+       "notes": {
+        "dwindle": "verb: to become smaller, weaker, or less in amount",
+        "dwindled": "verb: became smaller, weaker, or less in amount",
+        "dwindling": "verb: becoming smaller, weaker, or less in amount"
+       }
+      },
+      {
+       "id": "F:A-fortune-01-s17",
+       "word": "prosper",
+       "text": "The little bakery ___; queues stretched round the corner each morning.",
+       "answer": "prospered",
+       "tiles": [
+        "prospered",
+        "prosperity",
+        "prosperous",
+        "prosper",
+        "prospering"
+       ],
+       "notes": {
+        "prosper": "verb: to do well and be successful",
+        "prospered": "verb: did well and was successful",
+        "prospering": "verb: doing well and becoming successful",
+        "prosperity": "noun: success, wealth, and good fortune",
+        "prosperous": "adjective: successful, wealthy, and doing well"
+       }
+      },
+      {
+       "id": "F:A-fortune-01-s18",
+       "word": "prosper",
+       "text": "Our school chess club ___, winning trophies and doubling its members.",
+       "answer": "prospered",
+       "tiles": [
+        "prospered",
+        "prosperity",
+        "prosperous",
+        "prosper",
+        "prospering"
+       ],
+       "notes": {
+        "prosper": "verb: to do well and be successful",
+        "prospered": "verb: did well and was successful",
+        "prospering": "verb: doing well and becoming successful",
+        "prosperity": "noun: success, wealth, and good fortune",
+        "prosperous": "adjective: successful, wealthy, and doing well"
+       }
+      },
+      {
+       "id": "F:A-fortune-01-s19",
+       "word": "prosper",
+       "text": "Good soil helped the bean patch ___, filling baskets every weekend.",
+       "answer": "prosper",
+       "tiles": [
+        "prosper",
+        "prosperity",
+        "prosperous",
+        "prospered",
+        "prospering"
+       ],
+       "notes": {
+        "prosper": "verb: to do well and be successful",
+        "prospered": "verb: did well and was successful",
+        "prospering": "verb: doing well and becoming successful",
+        "prosperity": "noun: success, wealth, and good fortune",
+        "prosperous": "adjective: successful, wealthy, and doing well"
+       }
+      },
+      {
+       "id": "F:A-fortune-01-s20",
+       "word": "prosper",
+       "text": "Maya's jam stall ___; she needed a second table for jars.",
+       "answer": "prospered",
+       "tiles": [
+        "prospered",
+        "prosperity",
+        "prosperous",
+        "prosper",
+        "prospering"
+       ],
+       "notes": {
+        "prosper": "verb: to do well and be successful",
+        "prospered": "verb: did well and was successful",
+        "prospering": "verb: doing well and becoming successful",
+        "prosperity": "noun: success, wealth, and good fortune",
+        "prosperous": "adjective: successful, wealthy, and doing well"
+       }
+      },
+      {
+       "id": "F:A-fortune-01-s25",
+       "word": "endure",
+       "text": "The stone tower ___ for centuries, with every wall still straight.",
+       "answer": "endured",
+       "tiles": [
+        "endured",
+        "endure",
+        "endurance",
+        "enduring"
+       ],
+       "notes": {
+        "endure": "verb: to keep existing over time",
+        "endured": "verb: kept existing over time",
+        "enduring": "verb: keeping existing over time",
+        "endurance": "noun: the ability to last or keep going"
+       }
+      },
+      {
+       "id": "F:A-fortune-01-s26",
+       "word": "endure",
+       "text": "Grandad's kite ___ ten summers without a tear in the sail.",
+       "answer": "endured",
+       "tiles": [
+        "endured",
+        "endure",
+        "endurance",
+        "enduring"
+       ],
+       "notes": {
+        "endure": "verb: to keep existing over time",
+        "endured": "verb: kept existing over time",
+        "enduring": "verb: keeping existing over time",
+        "endurance": "noun: the ability to last or keep going"
+       }
+      },
+      {
+       "id": "F:A-fortune-01-s27",
+       "word": "endure",
+       "text": "The lighthouse ___, its lamp still turning, long after the boat sheds had gone.",
+       "answer": "endured",
+       "tiles": [
+        "endured",
+        "endure",
+        "endurance",
+        "enduring"
+       ],
+       "notes": {
+        "endure": "verb: to keep existing over time",
+        "endured": "verb: kept existing over time",
+        "enduring": "verb: keeping existing over time",
+        "endurance": "noun: the ability to last or keep going"
+       }
+      },
+      {
+       "id": "F:A-fortune-01-s28",
+       "word": "endure",
+       "text": "The family recipe ___, copied neatly from notebook to notebook.",
+       "answer": "endured",
+       "tiles": [
+        "endured",
+        "endure",
+        "endurance",
+        "enduring"
+       ],
+       "notes": {
+        "endure": "verb: to keep existing over time",
+        "endured": "verb: kept existing over time",
+        "enduring": "verb: keeping existing over time",
+        "endurance": "noun: the ability to last or keep going"
+       }
+      },
+      {
+       "id": "F:A-fortune-01-s33",
+       "word": "relent",
+       "text": "After three polite pleas, the guard ___ and opened the gate.",
+       "answer": "relented",
+       "tiles": [
+        "relented",
+        "relent",
+        "relenting"
+       ],
+       "notes": {
+        "relent": "verb: to become less severe and give in",
+        "relented": "verb: became less severe and gave in",
+        "relenting": "verb: becoming less severe and giving in"
+       }
+      },
+      {
+       "id": "F:A-fortune-01-s34",
+       "word": "relent",
+       "text": "Mum ___ after bedtime stories, allowing one quiet chapter.",
+       "answer": "relented",
+       "tiles": [
+        "relented",
+        "relent",
+        "relenting"
+       ],
+       "notes": {
+        "relent": "verb: to become less severe and give in",
+        "relented": "verb: became less severe and gave in",
+        "relenting": "verb: becoming less severe and giving in"
+       }
+      },
+      {
+       "id": "F:A-fortune-01-s35",
+       "word": "relent",
+       "text": "The puppy's sad eyes made Omar ___ about the sofa rule.",
+       "answer": "relent",
+       "tiles": [
+        "relent",
+        "relented",
+        "relents",
+        "relenting"
+       ],
+       "notes": {
+        "relent": "verb: to become less severe and give in",
+        "relented": "verb: became less severe and gave in",
+        "relenting": "verb: becoming less severe and giving in",
+        "relents": "verb: becomes less severe and gives in"
+       }
+      },
+      {
+       "id": "F:A-fortune-01-s36",
+       "word": "relent",
+       "text": "At last, the captain ___, letting the tired crew rest.",
+       "answer": "relented",
+       "tiles": [
+        "relented",
+        "relent",
+        "relenting"
+       ],
+       "notes": {
+        "relent": "verb: to become less severe and give in",
+        "relented": "verb: became less severe and gave in",
+        "relenting": "verb: becoming less severe and giving in"
+       }
+      }
+     ]
+    },
+    "A-happy-01": {
+     "families": {
+      "delighted": [
+       {
+        "form": "delight",
+        "pos": "noun",
+        "note": "noun: great pleasure"
+       },
+       {
+        "form": "delights",
+        "pos": "verb",
+        "note": "verb: gives great pleasure to"
+       },
+       {
+        "form": "delighted",
+        "pos": "adjective",
+        "note": "adjective: very pleased"
+       },
+       {
+        "form": "delighting",
+        "pos": "verb",
+        "note": "verb: giving great pleasure to"
+       },
+       {
+        "form": "delightful",
+        "pos": "adjective",
+        "note": "adjective: giving great pleasure"
+       },
+       {
+        "form": "delightfully",
+        "pos": "adverb",
+        "note": "adverb: in a very pleasing way"
+       }
+      ],
+      "proud": [
+       {
+        "form": "proud",
+        "pos": "adjective",
+        "note": "adjective: pleased about success or good qualities"
+       },
+       {
+        "form": "prouder",
+        "pos": "adjective",
+        "note": "adjective: more pleased about success or good qualities"
+       },
+       {
+        "form": "proudest",
+        "pos": "adjective",
+        "note": "adjective: most pleased about success or good qualities"
+       },
+       {
+        "form": "proudly",
+        "pos": "adverb",
+        "note": "adverb: with satisfaction about success"
+       }
+      ],
+      "relieved": [
+       {
+        "form": "relieve",
+        "pos": "verb",
+        "note": "verb: to ease worry, pain, or difficulty"
+       },
+       {
+        "form": "relieves",
+        "pos": "verb",
+        "note": "verb: eases worry, pain, or difficulty"
+       },
+       {
+        "form": "relieved",
+        "pos": "adjective",
+        "note": "adjective: glad because worry has eased"
+       },
+       {
+        "form": "relieving",
+        "pos": "verb",
+        "note": "verb: easing worry, pain, or difficulty"
+       },
+       {
+        "form": "relief",
+        "pos": "noun",
+        "note": "noun: the easing of worry, pain, or difficulty"
+       }
+      ],
+      "grateful": [
+       {
+        "form": "grateful",
+        "pos": "adjective",
+        "note": "adjective: feeling or showing thanks"
+       },
+       {
+        "form": "gratefully",
+        "pos": "adverb",
+        "note": "adverb: in a thankful way"
+       },
+       {
+        "form": "gratefulness",
+        "pos": "noun",
+        "note": "noun: a feeling of thanks"
+       },
+       {
+        "form": "gratitude",
+        "pos": "noun",
+        "note": "noun: a thankful feeling"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:A-happy-01-s09",
+       "word": "delighted",
+       "text": "Zara was ___ to see the puppet sneeze glitter, and she squealed with joy.",
+       "answer": "delighted",
+       "tiles": [
+        "delighted",
+        "delight",
+        "delightful",
+        "delights",
+        "delightfully"
+       ],
+       "notes": {
+        "delight": "noun: great pleasure",
+        "delights": "verb: gives great pleasure to",
+        "delighted": "adjective: very pleased",
+        "delightful": "adjective: giving great pleasure",
+        "delightfully": "adverb: in a very pleasing way"
+       }
+      },
+      {
+       "id": "F:A-happy-01-s10",
+       "word": "delighted",
+       "text": "The class jumped and whooped, ___ to see a koala in the schoolyard gum tree.",
+       "answer": "delighted",
+       "tiles": [
+        "delighted",
+        "delight",
+        "delightful",
+        "delights",
+        "delightfully"
+       ],
+       "notes": {
+        "delight": "noun: great pleasure",
+        "delights": "verb: gives great pleasure to",
+        "delighted": "adjective: very pleased",
+        "delightful": "adjective: giving great pleasure",
+        "delightfully": "adverb: in a very pleasing way"
+       }
+      },
+      {
+       "id": "F:A-happy-01-s11",
+       "word": "delighted",
+       "text": "When the cake volcano fizzed, Noor was ___ and clapped at once.",
+       "answer": "delighted",
+       "tiles": [
+        "delighted",
+        "delight",
+        "delightful",
+        "delights",
+        "delightfully"
+       ],
+       "notes": {
+        "delight": "noun: great pleasure",
+        "delights": "verb: gives great pleasure to",
+        "delighted": "adjective: very pleased",
+        "delightful": "adjective: giving great pleasure",
+        "delightfully": "adverb: in a very pleasing way"
+       }
+      },
+      {
+       "id": "F:A-happy-01-s12",
+       "word": "delighted",
+       "text": "Ben gasped, ___ to see fireworks bloom right above the fairground.",
+       "answer": "delighted",
+       "tiles": [
+        "delighted",
+        "delight",
+        "delightful",
+        "delights",
+        "delightfully"
+       ],
+       "notes": {
+        "delight": "noun: great pleasure",
+        "delights": "verb: gives great pleasure to",
+        "delighted": "adjective: very pleased",
+        "delightful": "adjective: giving great pleasure",
+        "delightfully": "adverb: in a very pleasing way"
+       }
+      },
+      {
+       "id": "F:A-happy-01-s17",
+       "word": "proud",
+       "text": "After earning the badge through practice, Aisha stood ___ and tall.",
+       "answer": "proud",
+       "tiles": [
+        "proud",
+        "proudly",
+        "proudest",
+        "prouder"
+       ],
+       "notes": {
+        "proud": "adjective: pleased about success or good qualities",
+        "prouder": "adjective: more pleased about success or good qualities",
+        "proudest": "adjective: most pleased about success or good qualities",
+        "proudly": "adverb: with satisfaction about success"
+       }
+      },
+      {
+       "id": "F:A-happy-01-s18",
+       "word": "proud",
+       "text": "Leo stood beside the model he had built by himself, back straight, ___ as a peacock.",
+       "answer": "proud",
+       "tiles": [
+        "proud",
+        "proudly",
+        "proudest",
+        "prouder"
+       ],
+       "notes": {
+        "proud": "adjective: pleased about success or good qualities",
+        "prouder": "adjective: more pleased about success or good qualities",
+        "proudest": "adjective: most pleased about success or good qualities",
+        "proudly": "adverb: with satisfaction about success"
+       }
+      },
+      {
+       "id": "F:A-happy-01-s26",
+       "word": "relieved",
+       "text": "Ravi was ___ when the alarm was false, not a fire.",
+       "answer": "relieved",
+       "tiles": [
+        "relieved",
+        "relief",
+        "relieve",
+        "relieving"
+       ],
+       "notes": {
+        "relieve": "verb: to ease worry, pain, or difficulty",
+        "relieved": "adjective: glad because worry has eased",
+        "relieving": "verb: easing worry, pain, or difficulty",
+        "relief": "noun: the easing of worry, pain, or difficulty"
+       }
+      },
+      {
+       "id": "F:A-happy-01-s28",
+       "word": "relieved",
+       "text": "We found the missing key before bedtime, so Dad seemed ___.",
+       "answer": "relieved",
+       "tiles": [
+        "relieved",
+        "relief",
+        "relieve",
+        "relieving"
+       ],
+       "notes": {
+        "relieve": "verb: to ease worry, pain, or difficulty",
+        "relieved": "adjective: glad because worry has eased",
+        "relieving": "verb: easing worry, pain, or difficulty",
+        "relief": "noun: the easing of worry, pain, or difficulty"
+       }
+      },
+      {
+       "id": "F:A-happy-01-s34",
+       "word": "grateful",
+       "text": "Sam was ___ after Dad helped, then wrote a thank-you card.",
+       "answer": "grateful",
+       "tiles": [
+        "grateful",
+        "gratitude",
+        "gratefully",
+        "gratefulness"
+       ],
+       "notes": {
+        "grateful": "adjective: feeling or showing thanks",
+        "gratefully": "adverb: in a thankful way",
+        "gratefulness": "noun: a feeling of thanks",
+        "gratitude": "noun: a thankful feeling"
+       }
+      }
+     ]
+    },
+    "A-hold-01": {
+     "families": {
+      "snatch": [
+       {
+        "form": "snatch",
+        "pos": "verb",
+        "note": "verb: to grab quickly or eagerly"
+       },
+       {
+        "form": "snatched",
+        "pos": "verb",
+        "note": "verb: grabbed quickly or eagerly"
+       },
+       {
+        "form": "snatches",
+        "pos": "verb",
+        "note": "verb: grabs quickly or eagerly"
+       },
+       {
+        "form": "snatching",
+        "pos": "verb",
+        "note": "verb: grabbing quickly or eagerly"
+       },
+       {
+        "form": "snatcher",
+        "pos": "noun",
+        "note": "noun: a person who grabs something quickly"
+       }
+      ],
+      "clutch": [
+       {
+        "form": "clutch",
+        "pos": "verb",
+        "note": "verb: to hold tightly, usually in the hands"
+       },
+       {
+        "form": "clutched",
+        "pos": "verb",
+        "note": "verb: held tightly, usually in the hands"
+       },
+       {
+        "form": "clutches",
+        "pos": "verb",
+        "note": "verb: holds tightly, usually in the hands"
+       },
+       {
+        "form": "clutching",
+        "pos": "verb",
+        "note": "verb: holding tightly, usually in the hands"
+       }
+      ],
+      "cradle": [
+       {
+        "form": "cradle",
+        "pos": "verb",
+        "note": "verb: to hold gently and carefully"
+       },
+       {
+        "form": "cradled",
+        "pos": "verb",
+        "note": "verb: held gently and carefully"
+       },
+       {
+        "form": "cradles",
+        "pos": "verb",
+        "note": "verb: holds gently and carefully"
+       },
+       {
+        "form": "cradling",
+        "pos": "verb",
+        "note": "verb: holding gently and carefully"
+       }
+      ],
+      "pinch": [
+       {
+        "form": "pinch",
+        "pos": "verb",
+        "note": "verb: to squeeze tightly between the fingers"
+       },
+       {
+        "form": "pinched",
+        "pos": "verb",
+        "note": "verb: squeezed tightly between the fingers"
+       },
+       {
+        "form": "pinches",
+        "pos": "verb",
+        "note": "verb: squeezes tightly between the fingers"
+       },
+       {
+        "form": "pinching",
+        "pos": "verb",
+        "note": "verb: squeezing tightly between the fingers"
+       }
+      ],
+      "dangle": [
+       {
+        "form": "dangle",
+        "pos": "verb",
+        "note": "verb: to hold so it hangs and swings loosely"
+       },
+       {
+        "form": "dangled",
+        "pos": "verb",
+        "note": "verb: held so it hung and swung loosely"
+       },
+       {
+        "form": "dangles",
+        "pos": "verb",
+        "note": "verb: holds so it hangs and swings loosely"
+       },
+       {
+        "form": "dangling",
+        "pos": "verb",
+        "note": "verb: holding so it hangs and swings loosely"
+       },
+       {
+        "form": "dangly",
+        "pos": "adjective",
+        "note": "adjective: hanging and swinging loosely"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:A-hold-01-s01",
+       "word": "snatch",
+       "text": "Tara ___ the falling key in one quick move before the drain swallowed it.",
+       "answer": "snatched",
+       "tiles": [
+        "snatched",
+        "snatch",
+        "snatching",
+        "snatcher"
+       ],
+       "notes": {
+        "snatch": "verb: to grab quickly or eagerly",
+        "snatched": "verb: grabbed quickly or eagerly",
+        "snatching": "verb: grabbing quickly or eagerly",
+        "snatcher": "noun: a person who grabs something quickly"
+       }
+      },
+      {
+       "id": "F:A-hold-01-s02",
+       "word": "snatch",
+       "text": "A gull swooped, so Ben ___ the sandwich away in a flash.",
+       "answer": "snatched",
+       "tiles": [
+        "snatched",
+        "snatch",
+        "snatching",
+        "snatcher"
+       ],
+       "notes": {
+        "snatch": "verb: to grab quickly or eagerly",
+        "snatched": "verb: grabbed quickly or eagerly",
+        "snatching": "verb: grabbing quickly or eagerly",
+        "snatcher": "noun: a person who grabs something quickly"
+       }
+      },
+      {
+       "id": "F:A-hold-01-s03",
+       "word": "snatch",
+       "text": "When the doors opened, Lina ___ the dropped ticket just before it slid through.",
+       "answer": "snatched",
+       "tiles": [
+        "snatched",
+        "snatch",
+        "snatching",
+        "snatcher"
+       ],
+       "notes": {
+        "snatch": "verb: to grab quickly or eagerly",
+        "snatched": "verb: grabbed quickly or eagerly",
+        "snatching": "verb: grabbing quickly or eagerly",
+        "snatcher": "noun: a person who grabs something quickly"
+       }
+      },
+      {
+       "id": "F:A-hold-01-s04",
+       "word": "snatch",
+       "text": "As the wind lifted the map, Omar ___ it off the wall.",
+       "answer": "snatched",
+       "tiles": [
+        "snatched",
+        "snatch",
+        "snatching",
+        "snatcher"
+       ],
+       "notes": {
+        "snatch": "verb: to grab quickly or eagerly",
+        "snatched": "verb: grabbed quickly or eagerly",
+        "snatching": "verb: grabbing quickly or eagerly",
+        "snatcher": "noun: a person who grabs something quickly"
+       }
+      },
+      {
+       "id": "F:A-hold-01-s09",
+       "word": "clutch",
+       "text": "Sam ___ the rope with both fists on the swaying bridge.",
+       "answer": "clutched",
+       "tiles": [
+        "clutched",
+        "clutch",
+        "clutching"
+       ],
+       "notes": {
+        "clutch": "verb: to hold tightly, usually in the hands",
+        "clutched": "verb: held tightly, usually in the hands",
+        "clutching": "verb: holding tightly, usually in the hands"
+       }
+      },
+      {
+       "id": "F:A-hold-01-s10",
+       "word": "clutch",
+       "text": "During thunder, Ella ___ her blanket until her knuckles whitened.",
+       "answer": "clutched",
+       "tiles": [
+        "clutched",
+        "clutch",
+        "clutching"
+       ],
+       "notes": {
+        "clutch": "verb: to hold tightly, usually in the hands",
+        "clutched": "verb: held tightly, usually in the hands",
+        "clutching": "verb: holding tightly, usually in the hands"
+       }
+      },
+      {
+       "id": "F:A-hold-01-s11",
+       "word": "clutch",
+       "text": "As boots flew in, the goalkeeper lay curled up, ___ the ball with white knuckles.",
+       "answer": "clutching",
+       "tiles": [
+        "clutching",
+        "clutch",
+        "clutches",
+        "clutched"
+       ],
+       "notes": {
+        "clutch": "verb: to hold tightly, usually in the hands",
+        "clutched": "verb: held tightly, usually in the hands",
+        "clutches": "verb: holds tightly, usually in the hands",
+        "clutching": "verb: holding tightly, usually in the hands"
+       }
+      },
+      {
+       "id": "F:A-hold-01-s12",
+       "word": "clutch",
+       "text": "On the cliff path, I ___ Dad's sleeve whenever pebbles slipped.",
+       "answer": "clutched",
+       "tiles": [
+        "clutched",
+        "clutch",
+        "clutching"
+       ],
+       "notes": {
+        "clutch": "verb: to hold tightly, usually in the hands",
+        "clutched": "verb: held tightly, usually in the hands",
+        "clutching": "verb: holding tightly, usually in the hands"
+       }
+      },
+      {
+       "id": "F:A-hold-01-s17",
+       "word": "cradle",
+       "text": "Mum ___ the kitten like a soap bubble after its bath.",
+       "answer": "cradled",
+       "tiles": [
+        "cradled",
+        "cradle",
+        "cradling"
+       ],
+       "notes": {
+        "cradle": "verb: to hold gently and carefully",
+        "cradled": "verb: held gently and carefully",
+        "cradling": "verb: holding gently and carefully"
+       }
+      },
+      {
+       "id": "F:A-hold-01-s18",
+       "word": "cradle",
+       "text": "Arun ___ the cracked egg as if it were glass.",
+       "answer": "cradled",
+       "tiles": [
+        "cradled",
+        "cradle",
+        "cradling"
+       ],
+       "notes": {
+        "cradle": "verb: to hold gently and carefully",
+        "cradled": "verb: held gently and carefully",
+        "cradling": "verb: holding gently and carefully"
+       }
+      },
+      {
+       "id": "F:A-hold-01-s19",
+       "word": "cradle",
+       "text": "Zoe ___ the sleeping baby doll in the crook of her arm.",
+       "answer": "cradled",
+       "tiles": [
+        "cradled",
+        "cradle",
+        "cradling"
+       ],
+       "notes": {
+        "cradle": "verb: to hold gently and carefully",
+        "cradled": "verb: held gently and carefully",
+        "cradling": "verb: holding gently and carefully"
+       }
+      },
+      {
+       "id": "F:A-hold-01-s20",
+       "word": "cradle",
+       "text": "The nurse ___ the bandaged paw on a folded towel.",
+       "answer": "cradled",
+       "tiles": [
+        "cradled",
+        "cradle",
+        "cradling"
+       ],
+       "notes": {
+        "cradle": "verb: to hold gently and carefully",
+        "cradled": "verb: held gently and carefully",
+        "cradling": "verb: holding gently and carefully"
+       }
+      },
+      {
+       "id": "F:A-hold-01-s25",
+       "word": "pinch",
+       "text": "Dad ___ a raisin with his thumb and first finger.",
+       "answer": "pinched",
+       "tiles": [
+        "pinched",
+        "pinch",
+        "pinching"
+       ],
+       "notes": {
+        "pinch": "verb: to squeeze tightly between the fingers",
+        "pinched": "verb: squeezed tightly between the fingers",
+        "pinching": "verb: squeezing tightly between the fingers"
+       }
+      },
+      {
+       "id": "F:A-hold-01-s26",
+       "word": "pinch",
+       "text": "Mira ___ a tiny seed using only finger and thumb.",
+       "answer": "pinched",
+       "tiles": [
+        "pinched",
+        "pinch",
+        "pinching"
+       ],
+       "notes": {
+        "pinch": "verb: to squeeze tightly between the fingers",
+        "pinched": "verb: squeezed tightly between the fingers",
+        "pinching": "verb: squeezing tightly between the fingers"
+       }
+      },
+      {
+       "id": "F:A-hold-01-s27",
+       "word": "pinch",
+       "text": "The chef ___ the salt between finger and thumb, sprinkling it over the soup.",
+       "answer": "pinches",
+       "tiles": [
+        "pinches",
+        "pinch",
+        "pinching"
+       ],
+       "notes": {
+        "pinch": "verb: to squeeze tightly between the fingers",
+        "pinches": "verb: squeezes tightly between the fingers",
+        "pinching": "verb: squeezing tightly between the fingers"
+       }
+      },
+      {
+       "id": "F:A-hold-01-s28",
+       "word": "pinch",
+       "text": "Mia ___ the page corner to turn just one sheet.",
+       "answer": "pinched",
+       "tiles": [
+        "pinched",
+        "pinch",
+        "pinching"
+       ],
+       "notes": {
+        "pinch": "verb: to squeeze tightly between the fingers",
+        "pinched": "verb: squeezed tightly between the fingers",
+        "pinching": "verb: squeezing tightly between the fingers"
+       }
+      },
+      {
+       "id": "F:A-hold-01-s33",
+       "word": "dangle",
+       "text": "Maya ___ the sock over the puppy's nose, letting it sway out of reach.",
+       "answer": "dangled",
+       "tiles": [
+        "dangled",
+        "dangling",
+        "dangle",
+        "dangly"
+       ],
+       "notes": {
+        "dangle": "verb: to hold so it hangs and swings loosely",
+        "dangled": "verb: held so it hung and swung loosely",
+        "dangling": "verb: holding so it hangs and swings loosely",
+        "dangly": "adjective: hanging and swinging loosely"
+       }
+      },
+      {
+       "id": "F:A-hold-01-s34",
+       "word": "dangle",
+       "text": "A fisher ___ the bait over the water so it bobs.",
+       "answer": "dangles",
+       "tiles": [
+        "dangles",
+        "dangling",
+        "dangle",
+        "dangly"
+       ],
+       "notes": {
+        "dangle": "verb: to hold so it hangs and swings loosely",
+        "dangles": "verb: holds so it hangs and swings loosely",
+        "dangling": "verb: holding so it hangs and swings loosely",
+        "dangly": "adjective: hanging and swinging loosely"
+       }
+      },
+      {
+       "id": "F:A-hold-01-s35",
+       "word": "dangle",
+       "text": "Ned ___ his muddy boots off the pier edge after swimming.",
+       "answer": "dangled",
+       "tiles": [
+        "dangled",
+        "dangling",
+        "dangle",
+        "dangly"
+       ],
+       "notes": {
+        "dangle": "verb: to hold so it hangs and swings loosely",
+        "dangled": "verb: held so it hung and swung loosely",
+        "dangling": "verb: holding so it hangs and swings loosely",
+        "dangly": "adjective: hanging and swinging loosely"
+       }
+      }
+     ]
+    },
+    "A-kitchen-01": {
+     "families": {
+      "cut": [
+       {
+        "form": "cut",
+        "pos": "verb",
+        "note": "verb: to separate with a sharp tool"
+       },
+       {
+        "form": "cuts",
+        "pos": "verb",
+        "note": "verb: separates with a sharp tool"
+       },
+       {
+        "form": "cutting",
+        "pos": "verb",
+        "note": "verb: separating with a sharp tool"
+       },
+       {
+        "form": "cutter",
+        "pos": "noun",
+        "note": "noun: a person or tool that separates with a sharp edge"
+       }
+      ],
+      "peel": [
+       {
+        "form": "peel",
+        "pos": "verb",
+        "note": "verb: to strip the skin from fruit or vegetables"
+       },
+       {
+        "form": "peeled",
+        "pos": "verb",
+        "note": "verb: stripped the skin from fruit or vegetables"
+       },
+       {
+        "form": "peeling",
+        "pos": "verb",
+        "note": "verb: stripping the skin from fruit or vegetables"
+       },
+       {
+        "form": "peels",
+        "pos": "verb",
+        "note": "verb: strips the skin from fruit or vegetables"
+       },
+       {
+        "form": "peeler",
+        "pos": "noun",
+        "note": "noun: a tool for stripping skin from food"
+       }
+      ],
+      "wash": [
+       {
+        "form": "wash",
+        "pos": "verb",
+        "note": "verb: to clean with soap and water"
+       },
+       {
+        "form": "washed",
+        "pos": "verb",
+        "note": "verb: cleaned with soap and water"
+       },
+       {
+        "form": "washes",
+        "pos": "verb",
+        "note": "verb: cleans with soap and water"
+       },
+       {
+        "form": "washing",
+        "pos": "verb",
+        "note": "verb: cleaning with soap and water"
+       },
+       {
+        "form": "washable",
+        "pos": "adjective",
+        "note": "adjective: able to be cleaned with soap and water"
+       },
+       {
+        "form": "washer",
+        "pos": "noun",
+        "note": "noun: a machine or person that cleans with water"
+       }
+      ],
+      "stir": [
+       {
+        "form": "stir",
+        "pos": "verb",
+        "note": "verb: to move a spoon through a liquid or mixture"
+       },
+       {
+        "form": "stirred",
+        "pos": "verb",
+        "note": "verb: moved a spoon through a liquid or mixture"
+       },
+       {
+        "form": "stirring",
+        "pos": "verb",
+        "note": "verb: moving a spoon through a liquid or mixture"
+       },
+       {
+        "form": "stirs",
+        "pos": "verb",
+        "note": "verb: moves a spoon through a liquid or mixture"
+       },
+       {
+        "form": "stirrer",
+        "pos": "noun",
+        "note": "noun: a tool or person that mixes liquid or food"
+       }
+      ],
+      "pour": [
+       {
+        "form": "pour",
+        "pos": "verb",
+        "note": "verb: to make liquid flow from a container"
+       },
+       {
+        "form": "poured",
+        "pos": "verb",
+        "note": "verb: made liquid flow from a container"
+       },
+       {
+        "form": "pouring",
+        "pos": "verb",
+        "note": "verb: making liquid flow from a container"
+       },
+       {
+        "form": "pours",
+        "pos": "verb",
+        "note": "verb: makes liquid flow from a container"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:A-kitchen-01-s01",
+       "word": "cut",
+       "text": "Dad ___ the pizza into eight slices.",
+       "answer": "cuts",
+       "tiles": [
+        "cuts",
+        "cutting",
+        "cutter"
+       ],
+       "notes": {
+        "cuts": "verb: separates with a sharp tool",
+        "cutting": "verb: separating with a sharp tool",
+        "cutter": "noun: a person or tool that separates with a sharp edge"
+       }
+      },
+      {
+       "id": "F:A-kitchen-01-s02",
+       "word": "cut",
+       "text": "Mum ___ my sandwich in half with a knife.",
+       "answer": "cut",
+       "tiles": [
+        "cut",
+        "cutting",
+        "cutter"
+       ],
+       "notes": {
+        "cut": "verb: to separate with a sharp tool",
+        "cutting": "verb: separating with a sharp tool",
+        "cutter": "noun: a person or tool that separates with a sharp edge"
+       }
+      },
+      {
+       "id": "F:A-kitchen-01-s03",
+       "word": "cut",
+       "text": "Nan ___ the watermelon so we each got a slice.",
+       "answer": "cut",
+       "tiles": [
+        "cut",
+        "cutting",
+        "cutter"
+       ],
+       "notes": {
+        "cut": "verb: to separate with a sharp tool",
+        "cutting": "verb: separating with a sharp tool",
+        "cutter": "noun: a person or tool that separates with a sharp edge"
+       }
+      },
+      {
+       "id": "F:A-kitchen-01-s04",
+       "word": "cut",
+       "text": "Sam helped Dad ___ the cheese into little squares.",
+       "answer": "cut",
+       "tiles": [
+        "cut",
+        "cutting",
+        "cutter"
+       ],
+       "notes": {
+        "cut": "verb: to separate with a sharp tool",
+        "cutting": "verb: separating with a sharp tool",
+        "cutter": "noun: a person or tool that separates with a sharp edge"
+       }
+      },
+      {
+       "id": "F:A-kitchen-01-s09",
+       "word": "peel",
+       "text": "Mia ___ the mandarin with her thumbs.",
+       "answer": "peeled",
+       "tiles": [
+        "peeled",
+        "peel",
+        "peeling",
+        "peeler"
+       ],
+       "notes": {
+        "peel": "verb: to strip the skin from fruit or vegetables",
+        "peeled": "verb: stripped the skin from fruit or vegetables",
+        "peeling": "verb: stripping the skin from fruit or vegetables",
+        "peeler": "noun: a tool for stripping skin from food"
+       }
+      },
+      {
+       "id": "F:A-kitchen-01-s10",
+       "word": "peel",
+       "text": "Dad ___ the potatoes, and brown curls fell in the sink.",
+       "answer": "peeled",
+       "tiles": [
+        "peeled",
+        "peel",
+        "peeling",
+        "peeler"
+       ],
+       "notes": {
+        "peel": "verb: to strip the skin from fruit or vegetables",
+        "peeled": "verb: stripped the skin from fruit or vegetables",
+        "peeling": "verb: stripping the skin from fruit or vegetables",
+        "peeler": "noun: a tool for stripping skin from food"
+       }
+      },
+      {
+       "id": "F:A-kitchen-01-s11",
+       "word": "peel",
+       "text": "Zoe ___ her banana, and the yellow coat hung down.",
+       "answer": "peeled",
+       "tiles": [
+        "peeled",
+        "peel",
+        "peeling",
+        "peeler"
+       ],
+       "notes": {
+        "peel": "verb: to strip the skin from fruit or vegetables",
+        "peeled": "verb: stripped the skin from fruit or vegetables",
+        "peeling": "verb: stripping the skin from fruit or vegetables",
+        "peeler": "noun: a tool for stripping skin from food"
+       }
+      },
+      {
+       "id": "F:A-kitchen-01-s12",
+       "word": "peel",
+       "text": "Grandpa ___ the apple in one long, curly ribbon.",
+       "answer": "peeled",
+       "tiles": [
+        "peeled",
+        "peel",
+        "peeling",
+        "peeler"
+       ],
+       "notes": {
+        "peel": "verb: to strip the skin from fruit or vegetables",
+        "peeled": "verb: stripped the skin from fruit or vegetables",
+        "peeling": "verb: stripping the skin from fruit or vegetables",
+        "peeler": "noun: a tool for stripping skin from food"
+       }
+      },
+      {
+       "id": "F:A-kitchen-01-s17",
+       "word": "wash",
+       "text": "After dinner, I ___ the plates in the bubbly sink.",
+       "answer": "washed",
+       "tiles": [
+        "washed",
+        "wash",
+        "washing",
+        "washer",
+        "washable"
+       ],
+       "notes": {
+        "wash": "verb: to clean with soap and water",
+        "washed": "verb: cleaned with soap and water",
+        "washing": "verb: cleaning with soap and water",
+        "washable": "adjective: able to be cleaned with soap and water",
+        "washer": "noun: a machine or person that cleans with water"
+       }
+      },
+      {
+       "id": "F:A-kitchen-01-s18",
+       "word": "wash",
+       "text": "Dad ___ the dirty pot with a sponge and bubbles.",
+       "answer": "washed",
+       "tiles": [
+        "washed",
+        "wash",
+        "washing",
+        "washer",
+        "washable"
+       ],
+       "notes": {
+        "wash": "verb: to clean with soap and water",
+        "washed": "verb: cleaned with soap and water",
+        "washing": "verb: cleaning with soap and water",
+        "washable": "adjective: able to be cleaned with soap and water",
+        "washer": "noun: a machine or person that cleans with water"
+       }
+      },
+      {
+       "id": "F:A-kitchen-01-s19",
+       "word": "wash",
+       "text": "Max ___ the sticky cups until they shone.",
+       "answer": "washed",
+       "tiles": [
+        "washed",
+        "wash",
+        "washing",
+        "washer",
+        "washable"
+       ],
+       "notes": {
+        "wash": "verb: to clean with soap and water",
+        "washed": "verb: cleaned with soap and water",
+        "washing": "verb: cleaning with soap and water",
+        "washable": "adjective: able to be cleaned with soap and water",
+        "washer": "noun: a machine or person that cleans with water"
+       }
+      },
+      {
+       "id": "F:A-kitchen-01-s20",
+       "word": "wash",
+       "text": "Mum ___ our lunchboxes in the sink with a brush.",
+       "answer": "washes",
+       "tiles": [
+        "washes",
+        "wash",
+        "washing",
+        "washer",
+        "washable"
+       ],
+       "notes": {
+        "wash": "verb: to clean with soap and water",
+        "washes": "verb: cleans with soap and water",
+        "washing": "verb: cleaning with soap and water",
+        "washable": "adjective: able to be cleaned with soap and water",
+        "washer": "noun: a machine or person that cleans with water"
+       }
+      },
+      {
+       "id": "F:A-kitchen-01-s25",
+       "word": "stir",
+       "text": "Dad ___ the soup round and round with a big spoon.",
+       "answer": "stirs",
+       "tiles": [
+        "stirs",
+        "stir",
+        "stirring",
+        "stirrer"
+       ],
+       "notes": {
+        "stir": "verb: to move a spoon through a liquid or mixture",
+        "stirring": "verb: moving a spoon through a liquid or mixture",
+        "stirs": "verb: moves a spoon through a liquid or mixture",
+        "stirrer": "noun: a tool or person that mixes liquid or food"
+       }
+      },
+      {
+       "id": "F:A-kitchen-01-s26",
+       "word": "stir",
+       "text": "Ivy ___ the cake mix with a wooden spoon.",
+       "answer": "stirred",
+       "tiles": [
+        "stirred",
+        "stir",
+        "stirring",
+        "stirrer"
+       ],
+       "notes": {
+        "stir": "verb: to move a spoon through a liquid or mixture",
+        "stirred": "verb: moved a spoon through a liquid or mixture",
+        "stirring": "verb: moving a spoon through a liquid or mixture",
+        "stirrer": "noun: a tool or person that mixes liquid or food"
+       }
+      },
+      {
+       "id": "F:A-kitchen-01-s27",
+       "word": "stir",
+       "text": "Keep ___ the porridge so it doesn't stick to the pot.",
+       "answer": "stirring",
+       "tiles": [
+        "stirring",
+        "stir",
+        "stirred",
+        "stirs",
+        "stirrer"
+       ],
+       "notes": {
+        "stir": "verb: to move a spoon through a liquid or mixture",
+        "stirred": "verb: moved a spoon through a liquid or mixture",
+        "stirring": "verb: moving a spoon through a liquid or mixture",
+        "stirs": "verb: moves a spoon through a liquid or mixture",
+        "stirrer": "noun: a tool or person that mixes liquid or food"
+       }
+      },
+      {
+       "id": "F:A-kitchen-01-s28",
+       "word": "stir",
+       "text": "Grandpa ___ his tea until the sugar melted away.",
+       "answer": "stirred",
+       "tiles": [
+        "stirred",
+        "stir",
+        "stirring",
+        "stirrer"
+       ],
+       "notes": {
+        "stir": "verb: to move a spoon through a liquid or mixture",
+        "stirred": "verb: moved a spoon through a liquid or mixture",
+        "stirring": "verb: moving a spoon through a liquid or mixture",
+        "stirrer": "noun: a tool or person that mixes liquid or food"
+       }
+      },
+      {
+       "id": "F:A-kitchen-01-s33",
+       "word": "pour",
+       "text": "Dad ___ milk from the jug into my glass.",
+       "answer": "poured",
+       "tiles": [
+        "poured",
+        "pour",
+        "pouring"
+       ],
+       "notes": {
+        "pour": "verb: to make liquid flow from a container",
+        "poured": "verb: made liquid flow from a container",
+        "pouring": "verb: making liquid flow from a container"
+       }
+      },
+      {
+       "id": "F:A-kitchen-01-s34",
+       "word": "pour",
+       "text": "Sara tipped the bottle and ___ juice into the cups.",
+       "answer": "poured",
+       "tiles": [
+        "poured",
+        "pour",
+        "pouring"
+       ],
+       "notes": {
+        "pour": "verb: to make liquid flow from a container",
+        "poured": "verb: made liquid flow from a container",
+        "pouring": "verb: making liquid flow from a container"
+       }
+      },
+      {
+       "id": "F:A-kitchen-01-s35",
+       "word": "pour",
+       "text": "Gran ___ the hot tea from the teapot into her cup.",
+       "answer": "poured",
+       "tiles": [
+        "poured",
+        "pour",
+        "pouring"
+       ],
+       "notes": {
+        "pour": "verb: to make liquid flow from a container",
+        "poured": "verb: made liquid flow from a container",
+        "pouring": "verb: making liquid flow from a container"
+       }
+      },
+      {
+       "id": "F:A-kitchen-01-s36",
+       "word": "pour",
+       "text": "Can you ___ some water into the dog's bowl?",
+       "answer": "pour",
+       "tiles": [
+        "pour",
+        "pouring",
+        "poured",
+        "pours"
+       ],
+       "notes": {
+        "pour": "verb: to make liquid flow from a container",
+        "poured": "verb: made liquid flow from a container",
+        "pouring": "verb: making liquid flow from a container",
+        "pours": "verb: makes liquid flow from a container"
+       }
+      }
+     ]
+    },
+    "A-like-01": {
+     "families": {
+      "enjoy": [
+       {
+        "form": "enjoy",
+        "pos": "verb",
+        "note": "verb: to get pleasure or fun from something"
+       },
+       {
+        "form": "enjoyed",
+        "pos": "verb",
+        "note": "verb: got pleasure or fun from something"
+       },
+       {
+        "form": "enjoying",
+        "pos": "verb",
+        "note": "verb: getting pleasure or fun from something"
+       },
+       {
+        "form": "enjoys",
+        "pos": "verb",
+        "note": "verb: gets pleasure or fun from something"
+       },
+       {
+        "form": "enjoyment",
+        "pos": "noun",
+        "note": "noun: pleasure or fun gained from something"
+       },
+       {
+        "form": "enjoyable",
+        "pos": "adjective",
+        "note": "adjective: giving pleasure or fun"
+       }
+      ],
+      "admire": [
+       {
+        "form": "admire",
+        "pos": "verb",
+        "note": "verb: to feel great respect or warm approval"
+       },
+       {
+        "form": "admired",
+        "pos": "verb",
+        "note": "verb: felt great respect or warm approval"
+       },
+       {
+        "form": "admires",
+        "pos": "verb",
+        "note": "verb: feels great respect or warm approval"
+       },
+       {
+        "form": "admiring",
+        "pos": "verb",
+        "note": "verb: feeling great respect or warm approval"
+       },
+       {
+        "form": "admiration",
+        "pos": "noun",
+        "note": "noun: great respect or warm approval"
+       },
+       {
+        "form": "admirer",
+        "pos": "noun",
+        "note": "noun: a person who feels great respect or warm approval"
+       },
+       {
+        "form": "admiringly",
+        "pos": "adverb",
+        "note": "adverb: with great respect or warm approval"
+       }
+      ],
+      "adore": [
+       {
+        "form": "adore",
+        "pos": "verb",
+        "note": "verb: to love very much"
+       },
+       {
+        "form": "adored",
+        "pos": "verb",
+        "note": "verb: loved very much"
+       },
+       {
+        "form": "adores",
+        "pos": "verb",
+        "note": "verb: loves very much"
+       },
+       {
+        "form": "adoring",
+        "pos": "verb",
+        "note": "verb: loving very much"
+       },
+       {
+        "form": "adoration",
+        "pos": "noun",
+        "note": "noun: very deep love"
+       },
+       {
+        "form": "adorable",
+        "pos": "adjective",
+        "note": "adjective: very cute and easy to love"
+       }
+      ],
+      "cherish": [
+       {
+        "form": "cherish",
+        "pos": "verb",
+        "note": "verb: to love and care for deeply"
+       },
+       {
+        "form": "cherished",
+        "pos": "verb",
+        "note": "verb: loved and cared for deeply"
+       },
+       {
+        "form": "cherishes",
+        "pos": "verb",
+        "note": "verb: loves and cares for deeply"
+       },
+       {
+        "form": "cherishing",
+        "pos": "verb",
+        "note": "verb: loving and caring for deeply"
+       }
+      ],
+      "miss": [
+       {
+        "form": "miss",
+        "pos": "verb",
+        "note": "verb: to feel sad because someone or something is away"
+       },
+       {
+        "form": "missed",
+        "pos": "verb",
+        "note": "verb: felt sad because someone or something was away"
+       },
+       {
+        "form": "misses",
+        "pos": "verb",
+        "note": "verb: feels sad because someone or something is away"
+       },
+       {
+        "form": "missing",
+        "pos": "verb",
+        "note": "verb: feeling sad because someone or something is away"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:A-like-01-s01",
+       "word": "enjoy",
+       "text": "Nia ___ skating after school; it was fun, though not her favourite.",
+       "answer": "enjoyed",
+       "tiles": [
+        "enjoyed",
+        "enjoy",
+        "enjoying",
+        "enjoyable",
+        "enjoyment"
+       ],
+       "notes": {
+        "enjoy": "verb: to get pleasure or fun from something",
+        "enjoyed": "verb: got pleasure or fun from something",
+        "enjoying": "verb: getting pleasure or fun from something",
+        "enjoyment": "noun: pleasure or fun gained from something",
+        "enjoyable": "adjective: giving pleasure or fun"
+       }
+      },
+      {
+       "id": "F:A-like-01-s02",
+       "word": "enjoy",
+       "text": "Ollie wanted to ___ chess because the silly matches were fun.",
+       "answer": "enjoy",
+       "tiles": [
+        "enjoy",
+        "enjoyed",
+        "enjoying",
+        "enjoys",
+        "enjoyable"
+       ],
+       "notes": {
+        "enjoy": "verb: to get pleasure or fun from something",
+        "enjoyed": "verb: got pleasure or fun from something",
+        "enjoying": "verb: getting pleasure or fun from something",
+        "enjoys": "verb: gets pleasure or fun from something",
+        "enjoyable": "adjective: giving pleasure or fun"
+       }
+      },
+      {
+       "id": "F:A-like-01-s03",
+       "word": "enjoy",
+       "text": "I ___ the rainy walk, grinning, but would not choose it again.",
+       "answer": "enjoyed",
+       "tiles": [
+        "enjoyed",
+        "enjoy",
+        "enjoying",
+        "enjoyable",
+        "enjoyment"
+       ],
+       "notes": {
+        "enjoy": "verb: to get pleasure or fun from something",
+        "enjoyed": "verb: got pleasure or fun from something",
+        "enjoying": "verb: getting pleasure or fun from something",
+        "enjoyment": "noun: pleasure or fun gained from something",
+        "enjoyable": "adjective: giving pleasure or fun"
+       }
+      },
+      {
+       "id": "F:A-like-01-s04",
+       "word": "enjoy",
+       "text": "The class ___ the quiz a bit when jokes appeared between questions.",
+       "answer": "enjoyed",
+       "tiles": [
+        "enjoyed",
+        "enjoy",
+        "enjoying",
+        "enjoyable",
+        "enjoyment"
+       ],
+       "notes": {
+        "enjoy": "verb: to get pleasure or fun from something",
+        "enjoyed": "verb: got pleasure or fun from something",
+        "enjoying": "verb: getting pleasure or fun from something",
+        "enjoyment": "noun: pleasure or fun gained from something",
+        "enjoyable": "adjective: giving pleasure or fun"
+       }
+      },
+      {
+       "id": "F:A-like-01-s09",
+       "word": "admire",
+       "text": "Zara ___ the captain, hoping to play just like her one day.",
+       "answer": "admired",
+       "tiles": [
+        "admired",
+        "admire",
+        "admiration",
+        "admiring",
+        "admirer"
+       ],
+       "notes": {
+        "admire": "verb: to feel great respect or warm approval",
+        "admired": "verb: felt great respect or warm approval",
+        "admiring": "verb: feeling great respect or warm approval",
+        "admiration": "noun: great respect or warm approval",
+        "admirer": "noun: a person who feels great respect or warm approval"
+       }
+      },
+      {
+       "id": "F:A-like-01-s10",
+       "word": "admire",
+       "text": "Ben learned to ___ the dancer for moves he wished he could do.",
+       "answer": "admire",
+       "tiles": [
+        "admire",
+        "admired",
+        "admiration",
+        "admiring",
+        "admirer"
+       ],
+       "notes": {
+        "admire": "verb: to feel great respect or warm approval",
+        "admired": "verb: felt great respect or warm approval",
+        "admiring": "verb: feeling great respect or warm approval",
+        "admiration": "noun: great respect or warm approval",
+        "admirer": "noun: a person who feels great respect or warm approval"
+       }
+      },
+      {
+       "id": "F:A-like-01-s11",
+       "word": "admire",
+       "text": "Mina ___ the careful builder, staring at the tower's perfect balance.",
+       "answer": "admired",
+       "tiles": [
+        "admired",
+        "admire",
+        "admiration",
+        "admiring",
+        "admirer"
+       ],
+       "notes": {
+        "admire": "verb: to feel great respect or warm approval",
+        "admired": "verb: felt great respect or warm approval",
+        "admiring": "verb: feeling great respect or warm approval",
+        "admiration": "noun: great respect or warm approval",
+        "admirer": "noun: a person who feels great respect or warm approval"
+       }
+      },
+      {
+       "id": "F:A-like-01-s12",
+       "word": "admire",
+       "text": "We ___ our chess teacher, gasping at the clever plan he made.",
+       "answer": "admired",
+       "tiles": [
+        "admired",
+        "admire",
+        "admiration",
+        "admiring",
+        "admirer"
+       ],
+       "notes": {
+        "admire": "verb: to feel great respect or warm approval",
+        "admired": "verb: felt great respect or warm approval",
+        "admiring": "verb: feeling great respect or warm approval",
+        "admiration": "noun: great respect or warm approval",
+        "admirer": "noun: a person who feels great respect or warm approval"
+       }
+      },
+      {
+       "id": "F:A-like-01-s17",
+       "word": "adore",
+       "text": "Tia ___ the neighbour's kitten, squealing with joy whenever it appeared at the fence.",
+       "answer": "adored",
+       "tiles": [
+        "adored",
+        "adorable",
+        "adore",
+        "adoration",
+        "adoring"
+       ],
+       "notes": {
+        "adore": "verb: to love very much",
+        "adored": "verb: loved very much",
+        "adoring": "verb: loving very much",
+        "adoration": "noun: very deep love",
+        "adorable": "adjective: very cute and easy to love"
+       }
+      },
+      {
+       "id": "F:A-like-01-s19",
+       "word": "adore",
+       "text": "Maya ___ her grandpa, racing down the driveway shrieking whenever his car pulled in.",
+       "answer": "adored",
+       "tiles": [
+        "adored",
+        "adorable",
+        "adore",
+        "adoration",
+        "adoring"
+       ],
+       "notes": {
+        "adore": "verb: to love very much",
+        "adored": "verb: loved very much",
+        "adoring": "verb: loving very much",
+        "adoration": "noun: very deep love",
+        "adorable": "adjective: very cute and easy to love"
+       }
+      },
+      {
+       "id": "F:A-like-01-s20",
+       "word": "adore",
+       "text": "Mia ___ the therapy pony the moment it arrived, planting a kiss between its ears.",
+       "answer": "adored",
+       "tiles": [
+        "adored",
+        "adorable",
+        "adore",
+        "adoration",
+        "adoring"
+       ],
+       "notes": {
+        "adore": "verb: to love very much",
+        "adored": "verb: loved very much",
+        "adoring": "verb: loving very much",
+        "adoration": "noun: very deep love",
+        "adorable": "adjective: very cute and easy to love"
+       }
+      },
+      {
+       "id": "F:A-like-01-s25",
+       "word": "cherish",
+       "text": "Grandad ___ the medal, keeping it safe as a precious memory.",
+       "answer": "cherished",
+       "tiles": [
+        "cherished",
+        "cherish",
+        "cherishing"
+       ],
+       "notes": {
+        "cherish": "verb: to love and care for deeply",
+        "cherished": "verb: loved and cared for deeply",
+        "cherishing": "verb: loving and caring for deeply"
+       }
+      },
+      {
+       "id": "F:A-like-01-s26",
+       "word": "cherish",
+       "text": "Mira learned to ___ the old scarf because it held family stories.",
+       "answer": "cherish",
+       "tiles": [
+        "cherish",
+        "cherished",
+        "cherishing",
+        "cherishes"
+       ],
+       "notes": {
+        "cherish": "verb: to love and care for deeply",
+        "cherished": "verb: loved and cared for deeply",
+        "cherishes": "verb: loves and cares for deeply",
+        "cherishing": "verb: loving and caring for deeply"
+       }
+      },
+      {
+       "id": "F:A-like-01-s27",
+       "word": "cherish",
+       "text": "Sam ___ the ticket stub, tucking it inside his memory box.",
+       "answer": "cherished",
+       "tiles": [
+        "cherished",
+        "cherish",
+        "cherishing"
+       ],
+       "notes": {
+        "cherish": "verb: to love and care for deeply",
+        "cherished": "verb: loved and cared for deeply",
+        "cherishing": "verb: loving and caring for deeply"
+       }
+      },
+      {
+       "id": "F:A-like-01-s28",
+       "word": "cherish",
+       "text": "Lena ___ the tiny shell, wrapping it carefully for years.",
+       "answer": "cherished",
+       "tiles": [
+        "cherished",
+        "cherish",
+        "cherishing"
+       ],
+       "notes": {
+        "cherish": "verb: to love and care for deeply",
+        "cherished": "verb: loved and cared for deeply",
+        "cherishing": "verb: loving and caring for deeply"
+       }
+      },
+      {
+       "id": "F:A-like-01-s33",
+       "word": "miss",
+       "text": "Away at camp, Noor ___ her little brother more than she expected.",
+       "answer": "missed",
+       "tiles": [
+        "missed",
+        "miss",
+        "missing"
+       ],
+       "notes": {
+        "miss": "verb: to feel sad because someone or something is away",
+        "missed": "verb: felt sad because someone or something was away",
+        "missing": "verb: feeling sad because someone or something is away"
+       }
+      },
+      {
+       "id": "F:A-like-01-s35",
+       "word": "miss",
+       "text": "Since the pool closed for repairs, Amir ___ his Saturday swims.",
+       "answer": "missed",
+       "tiles": [
+        "missed",
+        "miss",
+        "missing"
+       ],
+       "notes": {
+        "miss": "verb: to feel sad because someone or something is away",
+        "missed": "verb: felt sad because someone or something was away",
+        "missing": "verb: feeling sad because someone or something is away"
+       }
+      },
+      {
+       "id": "F:A-like-01-s36",
+       "word": "miss",
+       "text": "Moving house meant Lily ___ the mango tree outside her old window.",
+       "answer": "missed",
+       "tiles": [
+        "missed",
+        "miss",
+        "missing"
+       ],
+       "notes": {
+        "miss": "verb: to feel sad because someone or something is away",
+        "missed": "verb: felt sad because someone or something was away",
+        "missing": "verb: feeling sad because someone or something is away"
+       }
+      }
+     ]
+    },
+    "A-look-01": {
+     "families": {
+      "glance": [
+       {
+        "form": "glance",
+        "pos": "verb",
+        "note": "verb: to take a quick look lasting only a moment"
+       },
+       {
+        "form": "glanced",
+        "pos": "verb",
+        "note": "verb: took a quick look lasting only a moment"
+       },
+       {
+        "form": "glances",
+        "pos": "verb",
+        "note": "verb: takes a quick look lasting only a moment"
+       },
+       {
+        "form": "glancing",
+        "pos": "verb",
+        "note": "verb: taking a quick look lasting only a moment"
+       }
+      ],
+      "peer": [
+       {
+        "form": "peer",
+        "pos": "verb",
+        "note": "verb: to look hard at something difficult to see"
+       },
+       {
+        "form": "peered",
+        "pos": "verb",
+        "note": "verb: looked hard at something difficult to see"
+       },
+       {
+        "form": "peering",
+        "pos": "verb",
+        "note": "verb: looking hard at something difficult to see"
+       },
+       {
+        "form": "peers",
+        "pos": "verb",
+        "note": "verb: looks hard at something difficult to see"
+       }
+      ],
+      "gaze": [
+       {
+        "form": "gaze",
+        "pos": "verb",
+        "note": "verb: to look steadily at someone or something"
+       },
+       {
+        "form": "gazed",
+        "pos": "verb",
+        "note": "verb: looked steadily at someone or something"
+       },
+       {
+        "form": "gazes",
+        "pos": "verb",
+        "note": "verb: looks steadily at someone or something"
+       },
+       {
+        "form": "gazing",
+        "pos": "verb",
+        "note": "verb: looking steadily at someone or something"
+       }
+      ],
+      "glare": [
+       {
+        "form": "glare",
+        "pos": "verb",
+        "note": "verb: to look at someone in a hard, angry way"
+       },
+       {
+        "form": "glared",
+        "pos": "verb",
+        "note": "verb: looked at someone in a hard, angry way"
+       },
+       {
+        "form": "glares",
+        "pos": "verb",
+        "note": "verb: looks at someone in a hard, angry way"
+       },
+       {
+        "form": "glaring",
+        "pos": "verb",
+        "note": "verb: looking at someone in a hard, angry way"
+       },
+       {
+        "form": "glaringly",
+        "pos": "adverb",
+        "note": "adverb: in a very obvious or unpleasantly bright way"
+       }
+      ],
+      "squint": [
+       {
+        "form": "squint",
+        "pos": "verb",
+        "note": "verb: to partly close the eyes against bright light"
+       },
+       {
+        "form": "squinted",
+        "pos": "verb",
+        "note": "verb: partly closed the eyes against bright light"
+       },
+       {
+        "form": "squinting",
+        "pos": "verb",
+        "note": "verb: partly closing the eyes against bright light"
+       },
+       {
+        "form": "squints",
+        "pos": "verb",
+        "note": "verb: partly closes the eyes against bright light"
+       },
+       {
+        "form": "squinty",
+        "pos": "adjective",
+        "note": "adjective: having eyes partly closed or not looking straight"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:A-look-01-s01",
+       "word": "glance",
+       "text": "Omar ___ at the timer for one heartbeat before stirring the soup.",
+       "answer": "glanced",
+       "tiles": [
+        "glanced",
+        "glance",
+        "glancing"
+       ],
+       "notes": {
+        "glance": "verb: to take a quick look lasting only a moment",
+        "glanced": "verb: took a quick look lasting only a moment",
+        "glancing": "verb: taking a quick look lasting only a moment"
+       }
+      },
+      {
+       "id": "F:A-look-01-s02",
+       "word": "glance",
+       "text": "Lily ___ at the note in a flash, then hid it.",
+       "answer": "glanced",
+       "tiles": [
+        "glanced",
+        "glance",
+        "glancing"
+       ],
+       "notes": {
+        "glance": "verb: to take a quick look lasting only a moment",
+        "glanced": "verb: took a quick look lasting only a moment",
+        "glancing": "verb: taking a quick look lasting only a moment"
+       }
+      },
+      {
+       "id": "F:A-look-01-s03",
+       "word": "glance",
+       "text": "Between two drumbeats, Mia ___ at the map and chose left.",
+       "answer": "glanced",
+       "tiles": [
+        "glanced",
+        "glance",
+        "glancing"
+       ],
+       "notes": {
+        "glance": "verb: to take a quick look lasting only a moment",
+        "glanced": "verb: took a quick look lasting only a moment",
+        "glancing": "verb: taking a quick look lasting only a moment"
+       }
+      },
+      {
+       "id": "F:A-look-01-s04",
+       "word": "glance",
+       "text": "During one skip, Asha ___ at the card, then played hers.",
+       "answer": "glanced",
+       "tiles": [
+        "glanced",
+        "glance",
+        "glancing"
+       ],
+       "notes": {
+        "glance": "verb: to take a quick look lasting only a moment",
+        "glanced": "verb: took a quick look lasting only a moment",
+        "glancing": "verb: taking a quick look lasting only a moment"
+       }
+      },
+      {
+       "id": "F:A-look-01-s09",
+       "word": "peer",
+       "text": "Eyes wide, Rosa ___ into the murky pond, trying to make out tadpoles.",
+       "answer": "peered",
+       "tiles": [
+        "peered",
+        "peer",
+        "peering"
+       ],
+       "notes": {
+        "peer": "verb: to look hard at something difficult to see",
+        "peered": "verb: looked hard at something difficult to see",
+        "peering": "verb: looking hard at something difficult to see"
+       }
+      },
+      {
+       "id": "F:A-look-01-s10",
+       "word": "peer",
+       "text": "Maya ___ into the pitch-dark cupboard with wide eyes, hunting for the missing mitten.",
+       "answer": "peered",
+       "tiles": [
+        "peered",
+        "peer",
+        "peering"
+       ],
+       "notes": {
+        "peer": "verb: to look hard at something difficult to see",
+        "peered": "verb: looked hard at something difficult to see",
+        "peering": "verb: looking hard at something difficult to see"
+       }
+      },
+      {
+       "id": "F:A-look-01-s11",
+       "word": "peer",
+       "text": "Jon ___ into the grey fog, eyes stretched wide, hunting for the next path marker.",
+       "answer": "peered",
+       "tiles": [
+        "peered",
+        "peer",
+        "peering"
+       ],
+       "notes": {
+        "peer": "verb: to look hard at something difficult to see",
+        "peered": "verb: looked hard at something difficult to see",
+        "peering": "verb: looking hard at something difficult to see"
+       }
+      },
+      {
+       "id": "F:A-look-01-s12",
+       "word": "peer",
+       "text": "Finn ___ into the shadowy cage, trying to spot the sleeping lizard.",
+       "answer": "peered",
+       "tiles": [
+        "peered",
+        "peer",
+        "peering"
+       ],
+       "notes": {
+        "peer": "verb: to look hard at something difficult to see",
+        "peered": "verb: looked hard at something difficult to see",
+        "peering": "verb: looking hard at something difficult to see"
+       }
+      },
+      {
+       "id": "F:A-look-01-s17",
+       "word": "gaze",
+       "text": "Maya ___ at the moonlit castle for several minutes, smiling softly.",
+       "answer": "gazed",
+       "tiles": [
+        "gazed",
+        "gaze",
+        "gazing"
+       ],
+       "notes": {
+        "gaze": "verb: to look steadily at someone or something",
+        "gazed": "verb: looked steadily at someone or something",
+        "gazing": "verb: looking steadily at someone or something"
+       }
+      },
+      {
+       "id": "F:A-look-01-s18",
+       "word": "gaze",
+       "text": "Leo ___ at the sleeping puppy, still as a statue.",
+       "answer": "gazed",
+       "tiles": [
+        "gazed",
+        "gaze",
+        "gazing"
+       ],
+       "notes": {
+        "gaze": "verb: to look steadily at someone or something",
+        "gazed": "verb: looked steadily at someone or something",
+        "gazing": "verb: looking steadily at someone or something"
+       }
+      },
+      {
+       "id": "F:A-look-01-s19",
+       "word": "gaze",
+       "text": "The class ___ at the rainbow until the playground went quiet.",
+       "answer": "gazed",
+       "tiles": [
+        "gazed",
+        "gaze",
+        "gazing"
+       ],
+       "notes": {
+        "gaze": "verb: to look steadily at someone or something",
+        "gazed": "verb: looked steadily at someone or something",
+        "gazing": "verb: looking steadily at someone or something"
+       }
+      },
+      {
+       "id": "F:A-look-01-s20",
+       "word": "gaze",
+       "text": "Amir ___ at the aquarium fish while his ice cream melted.",
+       "answer": "gazed",
+       "tiles": [
+        "gazed",
+        "gaze",
+        "gazing"
+       ],
+       "notes": {
+        "gaze": "verb: to look steadily at someone or something",
+        "gazed": "verb: looked steadily at someone or something",
+        "gazing": "verb: looking steadily at someone or something"
+       }
+      },
+      {
+       "id": "F:A-look-01-s25",
+       "word": "glare",
+       "text": "After Max stole her seat, Tia ___ at him, fists tight.",
+       "answer": "glared",
+       "tiles": [
+        "glared",
+        "glare",
+        "glaring",
+        "glaringly"
+       ],
+       "notes": {
+        "glare": "verb: to look at someone in a hard, angry way",
+        "glared": "verb: looked at someone in a hard, angry way",
+        "glaring": "verb: looking at someone in a hard, angry way",
+        "glaringly": "adverb: in a very obvious or unpleasantly bright way"
+       }
+      },
+      {
+       "id": "F:A-look-01-s26",
+       "word": "glare",
+       "text": "The dragon ___ at the knight, smoke curling from its nose.",
+       "answer": "glared",
+       "tiles": [
+        "glared",
+        "glare",
+        "glaring",
+        "glaringly"
+       ],
+       "notes": {
+        "glare": "verb: to look at someone in a hard, angry way",
+        "glared": "verb: looked at someone in a hard, angry way",
+        "glaring": "verb: looking at someone in a hard, angry way",
+        "glaringly": "adverb: in a very obvious or unpleasantly bright way"
+       }
+      },
+      {
+       "id": "F:A-look-01-s27",
+       "word": "glare",
+       "text": "When Ben splashed mud on her dress, Ava ___ at him.",
+       "answer": "glared",
+       "tiles": [
+        "glared",
+        "glare",
+        "glaring",
+        "glaringly"
+       ],
+       "notes": {
+        "glare": "verb: to look at someone in a hard, angry way",
+        "glared": "verb: looked at someone in a hard, angry way",
+        "glaring": "verb: looking at someone in a hard, angry way",
+        "glaringly": "adverb: in a very obvious or unpleasantly bright way"
+       }
+      },
+      {
+       "id": "F:A-look-01-s28",
+       "word": "glare",
+       "text": "The cat ___ at the puppy for pawing its bowl.",
+       "answer": "glared",
+       "tiles": [
+        "glared",
+        "glare",
+        "glaring",
+        "glaringly"
+       ],
+       "notes": {
+        "glare": "verb: to look at someone in a hard, angry way",
+        "glared": "verb: looked at someone in a hard, angry way",
+        "glaring": "verb: looking at someone in a hard, angry way",
+        "glaringly": "adverb: in a very obvious or unpleasantly bright way"
+       }
+      },
+      {
+       "id": "F:A-look-01-s33",
+       "word": "squint",
+       "text": "The sun blazed off the white sand, so Luca ___ with his eyes nearly shut.",
+       "answer": "squinted",
+       "tiles": [
+        "squinted",
+        "squint",
+        "squinting",
+        "squinty"
+       ],
+       "notes": {
+        "squint": "verb: to partly close the eyes against bright light",
+        "squinted": "verb: partly closed the eyes against bright light",
+        "squinting": "verb: partly closing the eyes against bright light",
+        "squinty": "adjective: having eyes partly closed or not looking straight"
+       }
+      },
+      {
+       "id": "F:A-look-01-s34",
+       "word": "squint",
+       "text": "On the glittering snow, Emma ___ all the way to the gate.",
+       "answer": "squinted",
+       "tiles": [
+        "squinted",
+        "squint",
+        "squinting",
+        "squinty"
+       ],
+       "notes": {
+        "squint": "verb: to partly close the eyes against bright light",
+        "squinted": "verb: partly closed the eyes against bright light",
+        "squinting": "verb: partly closing the eyes against bright light",
+        "squinty": "adjective: having eyes partly closed or not looking straight"
+       }
+      },
+      {
+       "id": "F:A-look-01-s35",
+       "word": "squint",
+       "text": "Sun bounced off the water, so Kai ___ under his cap.",
+       "answer": "squinted",
+       "tiles": [
+        "squinted",
+        "squint",
+        "squinting",
+        "squinty"
+       ],
+       "notes": {
+        "squint": "verb: to partly close the eyes against bright light",
+        "squinted": "verb: partly closed the eyes against bright light",
+        "squinting": "verb: partly closing the eyes against bright light",
+        "squinty": "adjective: having eyes partly closed or not looking straight"
+       }
+      },
+      {
+       "id": "F:A-look-01-s36",
+       "word": "squint",
+       "text": "The white pavement shone, and Nora ___ beneath her hat.",
+       "answer": "squinted",
+       "tiles": [
+        "squinted",
+        "squint",
+        "squinting",
+        "squinty"
+       ],
+       "notes": {
+        "squint": "verb: to partly close the eyes against bright light",
+        "squinted": "verb: partly closed the eyes against bright light",
+        "squinting": "verb: partly closing the eyes against bright light",
+        "squinty": "adjective: having eyes partly closed or not looking straight"
+       }
+      }
+     ]
+    },
+    "A-manner-01": {
+     "families": {
+      "sceptical": [
+       {
+        "form": "sceptical",
+        "pos": "adjective",
+        "note": "adjective: tending to doubt or question things"
+       },
+       {
+        "form": "sceptic",
+        "pos": "noun",
+        "note": "noun: a person who doubts or questions things"
+       },
+       {
+        "form": "sceptics",
+        "pos": "noun",
+        "note": "noun: people who doubt or question things"
+       },
+       {
+        "form": "scepticism",
+        "pos": "noun",
+        "note": "noun: doubt or a questioning attitude"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:A-manner-01-s17",
+       "word": "sceptical",
+       "text": "Maya was ___, asking for proof before accepting the magic trick.",
+       "answer": "sceptical",
+       "tiles": [
+        "sceptical",
+        "scepticism",
+        "sceptic",
+        "sceptics"
+       ],
+       "notes": {
+        "sceptical": "adjective: tending to doubt or question things",
+        "sceptic": "noun: a person who doubts or questions things",
+        "sceptics": "noun: people who doubt or question things",
+        "scepticism": "noun: doubt or a questioning attitude"
+       }
+      },
+      {
+       "id": "F:A-manner-01-s18",
+       "word": "sceptical",
+       "text": "When Uncle described his record-sized fish, Leo stayed ___ and asked for a photograph.",
+       "answer": "sceptical",
+       "tiles": [
+        "sceptical",
+        "scepticism",
+        "sceptic",
+        "sceptics"
+       ],
+       "notes": {
+        "sceptical": "adjective: tending to doubt or question things",
+        "sceptic": "noun: a person who doubts or questions things",
+        "sceptics": "noun: people who doubt or question things",
+        "scepticism": "noun: doubt or a questioning attitude"
+       }
+      },
+      {
+       "id": "F:A-manner-01-s19",
+       "word": "sceptical",
+       "text": "The advert said the glue was strongest, so Sam felt ___ and tested it.",
+       "answer": "sceptical",
+       "tiles": [
+        "sceptical",
+        "scepticism",
+        "sceptic",
+        "sceptics"
+       ],
+       "notes": {
+        "sceptical": "adjective: tending to doubt or question things",
+        "sceptic": "noun: a person who doubts or questions things",
+        "sceptics": "noun: people who doubt or question things",
+        "scepticism": "noun: doubt or a questioning attitude"
+       }
+      },
+      {
+       "id": "F:A-manner-01-s20",
+       "word": "sceptical",
+       "text": "When the seed packet promised blue carrots, Priya felt ___ and read reviews.",
+       "answer": "sceptical",
+       "tiles": [
+        "sceptical",
+        "scepticism",
+        "sceptic",
+        "sceptics"
+       ],
+       "notes": {
+        "sceptical": "adjective: tending to doubt or question things",
+        "sceptic": "noun: a person who doubts or questions things",
+        "sceptics": "noun: people who doubt or question things",
+        "scepticism": "noun: doubt or a questioning attitude"
+       }
+      }
+     ]
+    },
+    "A-materials-01": {
+     "families": {
+      "flammable": [
+       {
+        "form": "flammable",
+        "pos": "adjective",
+        "note": "adjective: catching fire very easily"
+       },
+       {
+        "form": "flammability",
+        "pos": "noun",
+        "note": "noun: how easily something catches fire"
+       },
+       {
+        "form": "flame",
+        "pos": "noun",
+        "note": "noun: the hot, bright part of a fire"
+       },
+       {
+        "form": "flames",
+        "pos": "noun",
+        "note": "noun: hot, bright parts of a fire"
+       },
+       {
+        "form": "flamed",
+        "pos": "verb",
+        "note": "verb: burned with a hot, bright fire"
+       },
+       {
+        "form": "flaming",
+        "pos": "adjective",
+        "note": "adjective: burning with a hot, bright fire"
+       }
+      ],
+      "buoyant": [
+       {
+        "form": "buoyant",
+        "pos": "adjective",
+        "note": "adjective: tending to float or rise"
+       },
+       {
+        "form": "buoyancy",
+        "pos": "noun",
+        "note": "noun: the ability to float or rise"
+       },
+       {
+        "form": "buoy",
+        "pos": "verb",
+        "note": "verb: to keep afloat or lift up"
+       },
+       {
+        "form": "buoys",
+        "pos": "verb",
+        "note": "verb: keeps afloat or lifts up"
+       },
+       {
+        "form": "buoyed",
+        "pos": "verb",
+        "note": "verb: kept afloat or lifted up"
+       }
+      ],
+      "porous": [
+       {
+        "form": "porous",
+        "pos": "adjective",
+        "note": "adjective: full of tiny openings that let liquid through"
+       },
+       {
+        "form": "porosity",
+        "pos": "noun",
+        "note": "noun: the amount of tiny openings in a material"
+       },
+       {
+        "form": "pore",
+        "pos": "noun",
+        "note": "noun: a tiny opening in skin, rock, or another surface"
+       },
+       {
+        "form": "pores",
+        "pos": "noun",
+        "note": "noun: tiny openings in skin, rock, or other surfaces"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:A-materials-01-s09",
+       "word": "flammable",
+       "text": "A stray spark made the ___ curtain blaze at once.",
+       "answer": "flammable",
+       "tiles": [
+        "flammable",
+        "flame",
+        "flames",
+        "flaming",
+        "flamed"
+       ],
+       "notes": {
+        "flammable": "adjective: catching fire very easily",
+        "flame": "noun: the hot, bright part of a fire",
+        "flames": "noun: hot, bright parts of a fire",
+        "flamed": "verb: burned with a hot, bright fire",
+        "flaming": "adjective: burning with a hot, bright fire"
+       }
+      },
+      {
+       "id": "F:A-materials-01-s10",
+       "word": "flammable",
+       "text": "Near the candle, the ___ ribbon burned before Tom could shout.",
+       "answer": "flammable",
+       "tiles": [
+        "flammable",
+        "flame",
+        "flames",
+        "flaming",
+        "flamed"
+       ],
+       "notes": {
+        "flammable": "adjective: catching fire very easily",
+        "flame": "noun: the hot, bright part of a fire",
+        "flames": "noun: hot, bright parts of a fire",
+        "flamed": "verb: burned with a hot, bright fire",
+        "flaming": "adjective: burning with a hot, bright fire"
+       }
+      },
+      {
+       "id": "F:A-materials-01-s11",
+       "word": "flammable",
+       "text": "The scout kept the ___ blanket far from the camp stove.",
+       "answer": "flammable",
+       "tiles": [
+        "flammable",
+        "flame",
+        "flames",
+        "flaming",
+        "flamed"
+       ],
+       "notes": {
+        "flammable": "adjective: catching fire very easily",
+        "flame": "noun: the hot, bright part of a fire",
+        "flames": "noun: hot, bright parts of a fire",
+        "flamed": "verb: burned with a hot, bright fire",
+        "flaming": "adjective: burning with a hot, bright fire"
+       }
+      },
+      {
+       "id": "F:A-materials-01-s12",
+       "word": "flammable",
+       "text": "Mum moved the ___ spray away before lighting the grill.",
+       "answer": "flammable",
+       "tiles": [
+        "flammable",
+        "flame",
+        "flames",
+        "flaming",
+        "flamed"
+       ],
+       "notes": {
+        "flammable": "adjective: catching fire very easily",
+        "flame": "noun: the hot, bright part of a fire",
+        "flames": "noun: hot, bright parts of a fire",
+        "flamed": "verb: burned with a hot, bright fire",
+        "flaming": "adjective: burning with a hot, bright fire"
+       }
+      },
+      {
+       "id": "F:A-materials-01-s25",
+       "word": "buoyant",
+       "text": "The ___ cork bobbed on the pond while stones sank.",
+       "answer": "buoyant",
+       "tiles": [
+        "buoyant",
+        "buoy",
+        "buoyancy",
+        "buoys",
+        "buoyed"
+       ],
+       "notes": {
+        "buoyant": "adjective: tending to float or rise",
+        "buoyancy": "noun: the ability to float or rise",
+        "buoy": "verb: to keep afloat or lift up",
+        "buoys": "verb: keeps afloat or lifts up",
+        "buoyed": "verb: kept afloat or lifted up"
+       }
+      },
+      {
+       "id": "F:A-materials-01-s26",
+       "word": "buoyant",
+       "text": "In the bath, the ___ toy stayed on top.",
+       "answer": "buoyant",
+       "tiles": [
+        "buoyant",
+        "buoy",
+        "buoyancy",
+        "buoys",
+        "buoyed"
+       ],
+       "notes": {
+        "buoyant": "adjective: tending to float or rise",
+        "buoyancy": "noun: the ability to float or rise",
+        "buoy": "verb: to keep afloat or lift up",
+        "buoys": "verb: keeps afloat or lifts up",
+        "buoyed": "verb: kept afloat or lifted up"
+       }
+      },
+      {
+       "id": "F:A-materials-01-s27",
+       "word": "buoyant",
+       "text": "Maya tied the ___ barrels under the raft before crossing.",
+       "answer": "buoyant",
+       "tiles": [
+        "buoyant",
+        "buoy",
+        "buoyancy",
+        "buoys",
+        "buoyed"
+       ],
+       "notes": {
+        "buoyant": "adjective: tending to float or rise",
+        "buoyancy": "noun: the ability to float or rise",
+        "buoy": "verb: to keep afloat or lift up",
+        "buoys": "verb: keeps afloat or lifts up",
+        "buoyed": "verb: kept afloat or lifted up"
+       }
+      },
+      {
+       "id": "F:A-materials-01-s28",
+       "word": "buoyant",
+       "text": "The fisherman trusted the ___ ring after his boat tipped.",
+       "answer": "buoyant",
+       "tiles": [
+        "buoyant",
+        "buoy",
+        "buoyancy",
+        "buoys",
+        "buoyed"
+       ],
+       "notes": {
+        "buoyant": "adjective: tending to float or rise",
+        "buoyancy": "noun: the ability to float or rise",
+        "buoy": "verb: to keep afloat or lift up",
+        "buoys": "verb: keeps afloat or lifts up",
+        "buoyed": "verb: kept afloat or lifted up"
+       }
+      },
+      {
+       "id": "F:A-materials-01-s33",
+       "word": "porous",
+       "text": "The ___ sponge drank up the spill before it reached the floor.",
+       "answer": "porous",
+       "tiles": [
+        "porous",
+        "pores",
+        "pore",
+        "porosity"
+       ],
+       "notes": {
+        "porous": "adjective: full of tiny openings that let liquid through",
+        "porosity": "noun: the amount of tiny openings in a material",
+        "pore": "noun: a tiny opening in skin, rock, or another surface",
+        "pores": "noun: tiny openings in skin, rock, or other surfaces"
+       }
+      },
+      {
+       "id": "F:A-materials-01-s34",
+       "word": "porous",
+       "text": "Rain disappeared into the ___ brick, leaving the path dry.",
+       "answer": "porous",
+       "tiles": [
+        "porous",
+        "pores",
+        "pore",
+        "porosity"
+       ],
+       "notes": {
+        "porous": "adjective: full of tiny openings that let liquid through",
+        "porosity": "noun: the amount of tiny openings in a material",
+        "pore": "noun: a tiny opening in skin, rock, or another surface",
+        "pores": "noun: tiny openings in skin, rock, or other surfaces"
+       }
+      },
+      {
+       "id": "F:A-materials-01-s35",
+       "word": "porous",
+       "text": "Nora's ___ towel grew heavy after one wipe of the sink.",
+       "answer": "porous",
+       "tiles": [
+        "porous",
+        "pores",
+        "pore",
+        "porosity"
+       ],
+       "notes": {
+        "porous": "adjective: full of tiny openings that let liquid through",
+        "porosity": "noun: the amount of tiny openings in a material",
+        "pore": "noun: a tiny opening in skin, rock, or another surface",
+        "pores": "noun: tiny openings in skin, rock, or other surfaces"
+       }
+      },
+      {
+       "id": "F:A-materials-01-s36",
+       "word": "porous",
+       "text": "The gardener watered the ___ soil twice because puddles vanished fast.",
+       "answer": "porous",
+       "tiles": [
+        "porous",
+        "pores",
+        "pore",
+        "porosity"
+       ],
+       "notes": {
+        "porous": "adjective: full of tiny openings that let liquid through",
+        "porosity": "noun: the amount of tiny openings in a material",
+        "pore": "noun: a tiny opening in skin, rock, or another surface",
+        "pores": "noun: tiny openings in skin, rock, or other surfaces"
+       }
+      }
+     ]
+    },
+    "A-old-01": {
+     "families": {
+      "elderly": [
+       {
+        "form": "elderly",
+        "pos": "adjective",
+        "note": "adjective: advanced in age, said respectfully of people"
+       },
+       {
+        "form": "elder",
+        "pos": "noun",
+        "note": "noun: a person of greater age or rank"
+       },
+       {
+        "form": "elders",
+        "pos": "noun",
+        "note": "noun: people of greater age or rank"
+       },
+       {
+        "form": "eldest",
+        "pos": "adjective",
+        "note": "adjective: greatest in age among a group"
+       }
+      ],
+      "antique": [
+       {
+        "form": "antique",
+        "pos": "adjective",
+        "note": "adjective: from earlier times and valued for age"
+       },
+       {
+        "form": "antiques",
+        "pos": "noun",
+        "note": "noun: objects from earlier times valued for age"
+       },
+       {
+        "form": "antiquity",
+        "pos": "noun",
+        "note": "noun: the very distant past"
+       },
+       {
+        "form": "antiquities",
+        "pos": "noun",
+        "note": "noun: objects surviving from the very distant past"
+       },
+       {
+        "form": "antiquarian",
+        "pos": "adjective",
+        "note": "adjective: concerned with items from earlier times"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:A-old-01-s01",
+       "word": "elderly",
+       "text": "The ___ grandmother hummed while her grandson tied her scarf.",
+       "answer": "elderly",
+       "tiles": [
+        "elderly",
+        "elder",
+        "elders",
+        "eldest"
+       ],
+       "notes": {
+        "elderly": "adjective: advanced in age, said respectfully of people",
+        "elder": "noun: a person of greater age or rank",
+        "elders": "noun: people of greater age or rank",
+        "eldest": "adjective: greatest in age among a group"
+       }
+      },
+      {
+       "id": "F:A-old-01-s02",
+       "word": "elderly",
+       "text": "The ___ man accepted Sam's seat on the crowded bus.",
+       "answer": "elderly",
+       "tiles": [
+        "elderly",
+        "elder",
+        "elders",
+        "eldest"
+       ],
+       "notes": {
+        "elderly": "adjective: advanced in age, said respectfully of people",
+        "elder": "noun: a person of greater age or rank",
+        "elders": "noun: people of greater age or rank",
+        "eldest": "adjective: greatest in age among a group"
+       }
+      },
+      {
+       "id": "F:A-old-01-s03",
+       "word": "elderly",
+       "text": "The ___ neighbour leant on her stick during the garden party.",
+       "answer": "elderly",
+       "tiles": [
+        "elderly",
+        "elder",
+        "elders",
+        "eldest"
+       ],
+       "notes": {
+        "elderly": "adjective: advanced in age, said respectfully of people",
+        "elder": "noun: a person of greater age or rank",
+        "elders": "noun: people of greater age or rank",
+        "eldest": "adjective: greatest in age among a group"
+       }
+      },
+      {
+       "id": "F:A-old-01-s04",
+       "word": "elderly",
+       "text": "The ___ aunt asked the nurse to read the tiny label.",
+       "answer": "elderly",
+       "tiles": [
+        "elderly",
+        "elder",
+        "elders",
+        "eldest"
+       ],
+       "notes": {
+        "elderly": "adjective: advanced in age, said respectfully of people",
+        "elder": "noun: a person of greater age or rank",
+        "elders": "noun: people of greater age or rank",
+        "eldest": "adjective: greatest in age among a group"
+       }
+      },
+      {
+       "id": "F:A-old-01-s09",
+       "word": "antique",
+       "text": "The ___ teapot from 1820 sat behind locked glass.",
+       "answer": "antique",
+       "tiles": [
+        "antique",
+        "antiques",
+        "antiquity",
+        "antiquities",
+        "antiquarian"
+       ],
+       "notes": {
+        "antique": "adjective: from earlier times and valued for age",
+        "antiques": "noun: objects from earlier times valued for age",
+        "antiquity": "noun: the very distant past",
+        "antiquities": "noun: objects surviving from the very distant past",
+        "antiquarian": "adjective: concerned with items from earlier times"
+       }
+      },
+      {
+       "id": "F:A-old-01-s10",
+       "word": "antique",
+       "text": "The ___ clock from 1890 ticked inside a velvet case.",
+       "answer": "antique",
+       "tiles": [
+        "antique",
+        "antiques",
+        "antiquity",
+        "antiquities",
+        "antiquarian"
+       ],
+       "notes": {
+        "antique": "adjective: from earlier times and valued for age",
+        "antiques": "noun: objects from earlier times valued for age",
+        "antiquity": "noun: the very distant past",
+        "antiquities": "noun: objects surviving from the very distant past",
+        "antiquarian": "adjective: concerned with items from earlier times"
+       }
+      },
+      {
+       "id": "F:A-old-01-s11",
+       "word": "antique",
+       "text": "In the shop window, the ___ vase from 1910 wore a gold price tag.",
+       "answer": "antique",
+       "tiles": [
+        "antique",
+        "antiques",
+        "antiquity",
+        "antiquities",
+        "antiquarian"
+       ],
+       "notes": {
+        "antique": "adjective: from earlier times and valued for age",
+        "antiques": "noun: objects from earlier times valued for age",
+        "antiquity": "noun: the very distant past",
+        "antiquities": "noun: objects surviving from the very distant past",
+        "antiquarian": "adjective: concerned with items from earlier times"
+       }
+      },
+      {
+       "id": "F:A-old-01-s12",
+       "word": "antique",
+       "text": "The ___ mirror had carved roses and a label saying 1885.",
+       "answer": "antique",
+       "tiles": [
+        "antique",
+        "antiques",
+        "antiquity",
+        "antiquities",
+        "antiquarian"
+       ],
+       "notes": {
+        "antique": "adjective: from earlier times and valued for age",
+        "antiques": "noun: objects from earlier times valued for age",
+        "antiquity": "noun: the very distant past",
+        "antiquities": "noun: objects surviving from the very distant past",
+        "antiquarian": "adjective: concerned with items from earlier times"
+       }
+      }
+     ]
+    },
+    "A-oops-01": {
+     "families": {
+      "trip": [
+       {
+        "form": "trip",
+        "pos": "verb",
+        "note": "verb: catch a foot and almost fall"
+       },
+       {
+        "form": "tripped",
+        "pos": "verb",
+        "note": "verb: caught a foot and almost fell"
+       },
+       {
+        "form": "tripping",
+        "pos": "verb",
+        "note": "verb: catching a foot and almost falling"
+       },
+       {
+        "form": "trips",
+        "pos": "verb",
+        "note": "verb: catches a foot and almost falls"
+       }
+      ],
+      "slip": [
+       {
+        "form": "slip",
+        "pos": "verb",
+        "note": "verb: lose footing by sliding"
+       },
+       {
+        "form": "slipped",
+        "pos": "verb",
+        "note": "verb: lost footing by sliding"
+       },
+       {
+        "form": "slipping",
+        "pos": "verb",
+        "note": "verb: losing footing by sliding"
+       },
+       {
+        "form": "slips",
+        "pos": "verb",
+        "note": "verb: loses footing by sliding"
+       },
+       {
+        "form": "slippery",
+        "pos": "adjective",
+        "note": "adjective: smooth or wet enough to make feet slide"
+       }
+      ],
+      "tumble": [
+       {
+        "form": "tumble",
+        "pos": "verb",
+        "note": "verb: fall and roll helplessly"
+       },
+       {
+        "form": "tumbled",
+        "pos": "verb",
+        "note": "verb: fell and rolled helplessly"
+       },
+       {
+        "form": "tumbles",
+        "pos": "verb",
+        "note": "verb: falls and rolls helplessly"
+       },
+       {
+        "form": "tumbling",
+        "pos": "verb",
+        "note": "verb: falling and rolling helplessly"
+       }
+      ],
+      "bump": [
+       {
+        "form": "bump",
+        "pos": "verb",
+        "note": "verb: knock against something with force"
+       },
+       {
+        "form": "bumped",
+        "pos": "verb",
+        "note": "verb: knocked against something with force"
+       },
+       {
+        "form": "bumping",
+        "pos": "verb",
+        "note": "verb: knocking against something with force"
+       },
+       {
+        "form": "bumps",
+        "pos": "verb",
+        "note": "verb: knocks against something with force"
+       }
+      ],
+      "spill": [
+       {
+        "form": "spill",
+        "pos": "verb",
+        "note": "verb: let liquid run out of a container"
+       },
+       {
+        "form": "spilled",
+        "pos": "verb",
+        "note": "verb: let liquid run out of a container in the past"
+       },
+       {
+        "form": "spilt",
+        "pos": "verb",
+        "note": "verb: let liquid run out of a container in the past"
+       },
+       {
+        "form": "spilling",
+        "pos": "verb",
+        "note": "verb: letting liquid run out of a container"
+       },
+       {
+        "form": "spills",
+        "pos": "verb",
+        "note": "verb: lets liquid run out of a container"
+       },
+       {
+        "form": "spillage",
+        "pos": "noun",
+        "note": "noun: liquid that has run out of its container"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:A-oops-01-s01",
+       "word": "trip",
+       "text": "Mia ___ on her loose shoelace but grabbed the fence.",
+       "answer": "tripped",
+       "tiles": [
+        "tripped",
+        "trip",
+        "tripping"
+       ],
+       "notes": {
+        "trip": "verb: catch a foot and almost fall",
+        "tripped": "verb: caught a foot and almost fell",
+        "tripping": "verb: catching a foot and almost falling"
+       }
+      },
+      {
+       "id": "F:A-oops-01-s02",
+       "word": "trip",
+       "text": "Ben's toe caught a root, and he ___ and hopped.",
+       "answer": "tripped",
+       "tiles": [
+        "tripped",
+        "trip",
+        "tripping"
+       ],
+       "notes": {
+        "trip": "verb: catch a foot and almost fall",
+        "tripped": "verb: caught a foot and almost fell",
+        "tripping": "verb: catching a foot and almost falling"
+       }
+      },
+      {
+       "id": "F:A-oops-01-s03",
+       "word": "trip",
+       "text": "Grandpa ___ over sleepy Rex but grabbed the door.",
+       "answer": "tripped",
+       "tiles": [
+        "tripped",
+        "trip",
+        "tripping"
+       ],
+       "notes": {
+        "trip": "verb: catch a foot and almost fall",
+        "tripped": "verb: caught a foot and almost fell",
+        "tripping": "verb: catching a foot and almost falling"
+       }
+      },
+      {
+       "id": "F:A-oops-01-s04",
+       "word": "trip",
+       "text": "Ivy ___ over her school bag but kept her balance.",
+       "answer": "tripped",
+       "tiles": [
+        "tripped",
+        "trip",
+        "tripping"
+       ],
+       "notes": {
+        "trip": "verb: catch a foot and almost fall",
+        "tripped": "verb: caught a foot and almost fell",
+        "tripping": "verb: catching a foot and almost falling"
+       }
+      },
+      {
+       "id": "F:A-oops-01-s09",
+       "word": "slip",
+       "text": "Leo ___ on the wet tiles, and his feet shot out.",
+       "answer": "slipped",
+       "tiles": [
+        "slipped",
+        "slip",
+        "slipping",
+        "slippery"
+       ],
+       "notes": {
+        "slip": "verb: lose footing by sliding",
+        "slipped": "verb: lost footing by sliding",
+        "slipping": "verb: losing footing by sliding",
+        "slippery": "adjective: smooth or wet enough to make feet slide"
+       }
+      },
+      {
+       "id": "F:A-oops-01-s10",
+       "word": "slip",
+       "text": "Zoe ___ on a banana skin, just like in cartoons.",
+       "answer": "slipped",
+       "tiles": [
+        "slipped",
+        "slip",
+        "slipping",
+        "slippery"
+       ],
+       "notes": {
+        "slip": "verb: lose footing by sliding",
+        "slipped": "verb: lost footing by sliding",
+        "slipping": "verb: losing footing by sliding",
+        "slippery": "adjective: smooth or wet enough to make feet slide"
+       }
+      },
+      {
+       "id": "F:A-oops-01-s11",
+       "word": "slip",
+       "text": "Pop ___ on the slimy rocks at the beach.",
+       "answer": "slipped",
+       "tiles": [
+        "slipped",
+        "slip",
+        "slipping",
+        "slippery"
+       ],
+       "notes": {
+        "slip": "verb: lose footing by sliding",
+        "slipped": "verb: lost footing by sliding",
+        "slipping": "verb: losing footing by sliding",
+        "slippery": "adjective: smooth or wet enough to make feet slide"
+       }
+      },
+      {
+       "id": "F:A-oops-01-s12",
+       "word": "slip",
+       "text": "Ella ___ on the soapy bathroom floor.",
+       "answer": "slipped",
+       "tiles": [
+        "slipped",
+        "slip",
+        "slipping",
+        "slippery"
+       ],
+       "notes": {
+        "slip": "verb: lose footing by sliding",
+        "slipped": "verb: lost footing by sliding",
+        "slipping": "verb: losing footing by sliding",
+        "slippery": "adjective: smooth or wet enough to make feet slide"
+       }
+      },
+      {
+       "id": "F:A-oops-01-s17",
+       "word": "tumble",
+       "text": "Jack ___ down the grassy hill, over and over.",
+       "answer": "tumbled",
+       "tiles": [
+        "tumbled",
+        "tumble",
+        "tumbling"
+       ],
+       "notes": {
+        "tumble": "verb: fall and roll helplessly",
+        "tumbled": "verb: fell and rolled helplessly",
+        "tumbling": "verb: falling and rolling helplessly"
+       }
+      },
+      {
+       "id": "F:A-oops-01-s18",
+       "word": "tumble",
+       "text": "Head over heels, Mia ___ down the sand dune.",
+       "answer": "tumbled",
+       "tiles": [
+        "tumbled",
+        "tumble",
+        "tumbling"
+       ],
+       "notes": {
+        "tumble": "verb: fall and roll helplessly",
+        "tumbled": "verb: fell and rolled helplessly",
+        "tumbling": "verb: falling and rolling helplessly"
+       }
+      },
+      {
+       "id": "F:A-oops-01-s19",
+       "word": "tumble",
+       "text": "The puppy ___ down the hill like a fluffy ball.",
+       "answer": "tumbled",
+       "tiles": [
+        "tumbled",
+        "tumble",
+        "tumbling"
+       ],
+       "notes": {
+        "tumble": "verb: fall and roll helplessly",
+        "tumbled": "verb: fell and rolled helplessly",
+        "tumbling": "verb: falling and rolling helplessly"
+       }
+      },
+      {
+       "id": "F:A-oops-01-s20",
+       "word": "tumble",
+       "text": "The twins ___ down the bank like two barrels.",
+       "answer": "tumbled",
+       "tiles": [
+        "tumbled",
+        "tumble",
+        "tumbling"
+       ],
+       "notes": {
+        "tumble": "verb: fall and roll helplessly",
+        "tumbled": "verb: fell and rolled helplessly",
+        "tumbling": "verb: falling and rolling helplessly"
+       }
+      },
+      {
+       "id": "F:A-oops-01-s25",
+       "word": "bump",
+       "text": "Not looking, Leo ___ right into a pole.",
+       "answer": "bumped",
+       "tiles": [
+        "bumped",
+        "bump",
+        "bumping"
+       ],
+       "notes": {
+        "bump": "verb: knock against something with force",
+        "bumped": "verb: knocked against something with force",
+        "bumping": "verb: knocking against something with force"
+       }
+      },
+      {
+       "id": "F:A-oops-01-s26",
+       "word": "bump",
+       "text": "Two kids ___ into each other at the corner.",
+       "answer": "bumped",
+       "tiles": [
+        "bumped",
+        "bump",
+        "bumping"
+       ],
+       "notes": {
+        "bump": "verb: knock against something with force",
+        "bumped": "verb: knocked against something with force",
+        "bumping": "verb: knocking against something with force"
+       }
+      },
+      {
+       "id": "F:A-oops-01-s27",
+       "word": "bump",
+       "text": "Walking past, Max ___ into the table, and the vase wobbled.",
+       "answer": "bumped",
+       "tiles": [
+        "bumped",
+        "bump",
+        "bumping"
+       ],
+       "notes": {
+        "bump": "verb: knock against something with force",
+        "bumped": "verb: knocked against something with force",
+        "bumping": "verb: knocking against something with force"
+       }
+      },
+      {
+       "id": "F:A-oops-01-s28",
+       "word": "bump",
+       "text": "In the dark, Dad ___ into the door. Ouch!",
+       "answer": "bumped",
+       "tiles": [
+        "bumped",
+        "bump",
+        "bumping"
+       ],
+       "notes": {
+        "bump": "verb: knock against something with force",
+        "bumped": "verb: knocked against something with force",
+        "bumping": "verb: knocking against something with force"
+       }
+      },
+      {
+       "id": "F:A-oops-01-s33",
+       "word": "spill",
+       "text": "Max ___ all over his new shirt at breakfast.",
+       "answer": "spilled",
+       "tiles": [
+        "spilled",
+        "spill",
+        "spilling",
+        "spillage"
+       ],
+       "notes": {
+        "spill": "verb: let liquid run out of a container",
+        "spilled": "verb: let liquid run out of a container in the past",
+        "spilling": "verb: letting liquid run out of a container",
+        "spillage": "noun: liquid that has run out of its container"
+       }
+      },
+      {
+       "id": "F:A-oops-01-s34",
+       "word": "spill",
+       "text": "In her high chair, Rosa ___ all over the tray.",
+       "answer": "spilled",
+       "tiles": [
+        "spilled",
+        "spill",
+        "spilling",
+        "spillage"
+       ],
+       "notes": {
+        "spill": "verb: let liquid run out of a container",
+        "spilled": "verb: let liquid run out of a container in the past",
+        "spilling": "verb: letting liquid run out of a container",
+        "spillage": "noun: liquid that has run out of its container"
+       }
+      },
+      {
+       "id": "F:A-oops-01-s35",
+       "word": "spill",
+       "text": "Ruby ___ on the white rug, and now it's purple.",
+       "answer": "spilled",
+       "tiles": [
+        "spilled",
+        "spill",
+        "spilling",
+        "spillage"
+       ],
+       "notes": {
+        "spill": "verb: let liquid run out of a container",
+        "spilled": "verb: let liquid run out of a container in the past",
+        "spilling": "verb: letting liquid run out of a container",
+        "spillage": "noun: liquid that has run out of its container"
+       }
+      },
+      {
+       "id": "F:A-oops-01-s36",
+       "word": "spill",
+       "text": "Kai ___ on the art table, and now it's blue.",
+       "answer": "spilled",
+       "tiles": [
+        "spilled",
+        "spill",
+        "spilling",
+        "spillage"
+       ],
+       "notes": {
+        "spill": "verb: let liquid run out of a container",
+        "spilled": "verb: let liquid run out of a container in the past",
+        "spilling": "verb: letting liquid run out of a container",
+        "spillage": "noun: liquid that has run out of its container"
+       }
+      }
+     ]
+    },
+    "A-ponder-01": {
+     "families": {
+      "scrutinise": [
+       {
+        "form": "scrutinise",
+        "pos": "verb",
+        "note": "verb: to examine very closely and critically"
+       },
+       {
+        "form": "scrutinised",
+        "pos": "verb",
+        "note": "verb: examined very closely and critically"
+       },
+       {
+        "form": "scrutinises",
+        "pos": "verb",
+        "note": "verb: examines very closely and critically"
+       },
+       {
+        "form": "scrutinising",
+        "pos": "verb",
+        "note": "verb: examining very closely and critically"
+       },
+       {
+        "form": "scrutiny",
+        "pos": "noun",
+        "note": "noun: close and critical examination"
+       }
+      ],
+      "speculate": [
+       {
+        "form": "speculate",
+        "pos": "verb",
+        "note": "verb: to guess about what is not yet known"
+       },
+       {
+        "form": "speculated",
+        "pos": "verb",
+        "note": "verb: guessed about what was not yet known"
+       },
+       {
+        "form": "speculates",
+        "pos": "verb",
+        "note": "verb: guesses about what is not yet known"
+       },
+       {
+        "form": "speculating",
+        "pos": "verb",
+        "note": "verb: guessing about what is not yet known"
+       },
+       {
+        "form": "speculation",
+        "pos": "noun",
+        "note": "noun: a guess based on incomplete facts"
+       },
+       {
+        "form": "speculative",
+        "pos": "adjective",
+        "note": "adjective: based on guessing, not proof"
+       },
+       {
+        "form": "speculatively",
+        "pos": "adverb",
+        "note": "adverb: in a way based on guessing, not proof"
+       }
+      ],
+      "deliberate": [
+       {
+        "form": "deliberate",
+        "pos": "verb",
+        "note": "verb: to think about carefully before deciding"
+       },
+       {
+        "form": "deliberated",
+        "pos": "verb",
+        "note": "verb: thought about carefully before deciding"
+       },
+       {
+        "form": "deliberates",
+        "pos": "verb",
+        "note": "verb: thinks about carefully before deciding"
+       },
+       {
+        "form": "deliberating",
+        "pos": "verb",
+        "note": "verb: thinking about carefully before deciding"
+       },
+       {
+        "form": "deliberation",
+        "pos": "noun",
+        "note": "noun: careful thought or discussion before a decision"
+       },
+       {
+        "form": "deliberative",
+        "pos": "adjective",
+        "note": "adjective: involving careful thought before a decision"
+       }
+      ],
+      "evaluate": [
+       {
+        "form": "evaluate",
+        "pos": "verb",
+        "note": "verb: to judge the value or quality of"
+       },
+       {
+        "form": "evaluated",
+        "pos": "verb",
+        "note": "verb: judged the value or quality of"
+       },
+       {
+        "form": "evaluates",
+        "pos": "verb",
+        "note": "verb: judges the value or quality of"
+       },
+       {
+        "form": "evaluating",
+        "pos": "verb",
+        "note": "verb: judging the value or quality of"
+       },
+       {
+        "form": "evaluation",
+        "pos": "noun",
+        "note": "noun: a judgement of value or quality"
+       },
+       {
+        "form": "evaluative",
+        "pos": "adjective",
+        "note": "adjective: judging value or quality"
+       },
+       {
+        "form": "evaluator",
+        "pos": "noun",
+        "note": "noun: a person who judges value or quality"
+       }
+      ],
+      "envisage": [
+       {
+        "form": "envisage",
+        "pos": "verb",
+        "note": "verb: to imagine a possible future thing or event"
+       },
+       {
+        "form": "envisaged",
+        "pos": "verb",
+        "note": "verb: imagined a possible future thing or event"
+       },
+       {
+        "form": "envisages",
+        "pos": "verb",
+        "note": "verb: imagines a possible future thing or event"
+       },
+       {
+        "form": "envisaging",
+        "pos": "verb",
+        "note": "verb: imagining a possible future thing or event"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:A-ponder-01-s01",
+       "word": "scrutinise",
+       "text": "At the museum, we used magnifiers to ___ tiny cracks in the old vase.",
+       "answer": "scrutinise",
+       "tiles": [
+        "scrutinise",
+        "scrutiny",
+        "scrutinised",
+        "scrutinising",
+        "scrutinises"
+       ],
+       "notes": {
+        "scrutinise": "verb: to examine very closely and critically",
+        "scrutinised": "verb: examined very closely and critically",
+        "scrutinises": "verb: examines very closely and critically",
+        "scrutinising": "verb: examining very closely and critically",
+        "scrutiny": "noun: close and critical examination"
+       }
+      },
+      {
+       "id": "F:A-ponder-01-s02",
+       "word": "scrutinise",
+       "text": "Searching for a single stray hair, the forensic team ___ the carpet centimetre by centimetre.",
+       "answer": "scrutinised",
+       "tiles": [
+        "scrutinised",
+        "scrutiny",
+        "scrutinise",
+        "scrutinising"
+       ],
+       "notes": {
+        "scrutinise": "verb: to examine very closely and critically",
+        "scrutinised": "verb: examined very closely and critically",
+        "scrutinising": "verb: examining very closely and critically",
+        "scrutiny": "noun: close and critical examination"
+       }
+      },
+      {
+       "id": "F:A-ponder-01-s03",
+       "word": "scrutinise",
+       "text": "Mina bent over the stamp album to ___ the tiny printing.",
+       "answer": "scrutinise",
+       "tiles": [
+        "scrutinise",
+        "scrutiny",
+        "scrutinised",
+        "scrutinising",
+        "scrutinises"
+       ],
+       "notes": {
+        "scrutinise": "verb: to examine very closely and critically",
+        "scrutinised": "verb: examined very closely and critically",
+        "scrutinises": "verb: examines very closely and critically",
+        "scrutinising": "verb: examining very closely and critically",
+        "scrutiny": "noun: close and critical examination"
+       }
+      },
+      {
+       "id": "F:A-ponder-01-s04",
+       "word": "scrutinise",
+       "text": "The ranger ___ the muddy bank for the faint tracks of a platypus.",
+       "answer": "scrutinised",
+       "tiles": [
+        "scrutinised",
+        "scrutiny",
+        "scrutinise",
+        "scrutinising"
+       ],
+       "notes": {
+        "scrutinise": "verb: to examine very closely and critically",
+        "scrutinised": "verb: examined very closely and critically",
+        "scrutinising": "verb: examining very closely and critically",
+        "scrutiny": "noun: close and critical examination"
+       }
+      },
+      {
+       "id": "F:A-ponder-01-s09",
+       "word": "speculate",
+       "text": "While clouds hid the moon, we ___ about what made the thumping.",
+       "answer": "speculated",
+       "tiles": [
+        "speculated",
+        "speculation",
+        "speculative",
+        "speculate",
+        "speculating"
+       ],
+       "notes": {
+        "speculate": "verb: to guess about what is not yet known",
+        "speculated": "verb: guessed about what was not yet known",
+        "speculating": "verb: guessing about what is not yet known",
+        "speculation": "noun: a guess based on incomplete facts",
+        "speculative": "adjective: based on guessing, not proof"
+       }
+      },
+      {
+       "id": "F:A-ponder-01-s10",
+       "word": "speculate",
+       "text": "The class ___ about who sent the mystery postcard with no name.",
+       "answer": "speculated",
+       "tiles": [
+        "speculated",
+        "speculation",
+        "speculative",
+        "speculate",
+        "speculating"
+       ],
+       "notes": {
+        "speculate": "verb: to guess about what is not yet known",
+        "speculated": "verb: guessed about what was not yet known",
+        "speculating": "verb: guessing about what is not yet known",
+        "speculation": "noun: a guess based on incomplete facts",
+        "speculative": "adjective: based on guessing, not proof"
+       }
+      },
+      {
+       "id": "F:A-ponder-01-s11",
+       "word": "speculate",
+       "text": "When the headteacher whispered, children began to ___ about the surprise.",
+       "answer": "speculate",
+       "tiles": [
+        "speculate",
+        "speculation",
+        "speculative",
+        "speculated",
+        "speculating"
+       ],
+       "notes": {
+        "speculate": "verb: to guess about what is not yet known",
+        "speculated": "verb: guessed about what was not yet known",
+        "speculating": "verb: guessing about what is not yet known",
+        "speculation": "noun: a guess based on incomplete facts",
+        "speculative": "adjective: based on guessing, not proof"
+       }
+      },
+      {
+       "id": "F:A-ponder-01-s12",
+       "word": "speculate",
+       "text": "Villagers ___ about the cave noise before anyone reached the hilltop.",
+       "answer": "speculated",
+       "tiles": [
+        "speculated",
+        "speculation",
+        "speculative",
+        "speculate",
+        "speculating"
+       ],
+       "notes": {
+        "speculate": "verb: to guess about what is not yet known",
+        "speculated": "verb: guessed about what was not yet known",
+        "speculating": "verb: guessing about what is not yet known",
+        "speculation": "noun: a guess based on incomplete facts",
+        "speculative": "adjective: based on guessing, not proof"
+       }
+      },
+      {
+       "id": "F:A-ponder-01-s17",
+       "word": "deliberate",
+       "text": "The council had one hour to ___ before choosing the new playground.",
+       "answer": "deliberate",
+       "tiles": [
+        "deliberate",
+        "deliberation",
+        "deliberative",
+        "deliberating",
+        "deliberated"
+       ],
+       "notes": {
+        "deliberate": "verb: to think about carefully before deciding",
+        "deliberated": "verb: thought about carefully before deciding",
+        "deliberating": "verb: thinking about carefully before deciding",
+        "deliberation": "noun: careful thought or discussion before a decision",
+        "deliberative": "adjective: involving careful thought before a decision"
+       }
+      },
+      {
+       "id": "F:A-ponder-01-s18",
+       "word": "deliberate",
+       "text": "I ___ between the blue bike and the red scooter all afternoon.",
+       "answer": "deliberated",
+       "tiles": [
+        "deliberated",
+        "deliberate",
+        "deliberation",
+        "deliberative",
+        "deliberating"
+       ],
+       "notes": {
+        "deliberate": "verb: to think about carefully before deciding",
+        "deliberated": "verb: thought about carefully before deciding",
+        "deliberating": "verb: thinking about carefully before deciding",
+        "deliberation": "noun: careful thought or discussion before a decision",
+        "deliberative": "adjective: involving careful thought before a decision"
+       }
+      },
+      {
+       "id": "F:A-ponder-01-s19",
+       "word": "deliberate",
+       "text": "Before voting, the team will ___ over two designs for the flag.",
+       "answer": "deliberate",
+       "tiles": [
+        "deliberate",
+        "deliberation",
+        "deliberative",
+        "deliberating",
+        "deliberated"
+       ],
+       "notes": {
+        "deliberate": "verb: to think about carefully before deciding",
+        "deliberated": "verb: thought about carefully before deciding",
+        "deliberating": "verb: thinking about carefully before deciding",
+        "deliberation": "noun: careful thought or discussion before a decision",
+        "deliberative": "adjective: involving careful thought before a decision"
+       }
+      },
+      {
+       "id": "F:A-ponder-01-s20",
+       "word": "deliberate",
+       "text": "Nan ___ a long while before deciding which seeds to plant.",
+       "answer": "deliberated",
+       "tiles": [
+        "deliberated",
+        "deliberate",
+        "deliberation",
+        "deliberative",
+        "deliberating"
+       ],
+       "notes": {
+        "deliberate": "verb: to think about carefully before deciding",
+        "deliberated": "verb: thought about carefully before deciding",
+        "deliberating": "verb: thinking about carefully before deciding",
+        "deliberation": "noun: careful thought or discussion before a decision",
+        "deliberative": "adjective: involving careful thought before a decision"
+       }
+      },
+      {
+       "id": "F:A-ponder-01-s25",
+       "word": "evaluate",
+       "text": "The coach asked us to ___ each routine out of ten.",
+       "answer": "evaluate",
+       "tiles": [
+        "evaluate",
+        "evaluation",
+        "evaluated",
+        "evaluating",
+        "evaluates"
+       ],
+       "notes": {
+        "evaluate": "verb: to judge the value or quality of",
+        "evaluated": "verb: judged the value or quality of",
+        "evaluates": "verb: judges the value or quality of",
+        "evaluating": "verb: judging the value or quality of",
+        "evaluation": "noun: a judgement of value or quality"
+       }
+      },
+      {
+       "id": "F:A-ponder-01-s26",
+       "word": "evaluate",
+       "text": "After the tasting, judges ___ the soups for flavour and texture.",
+       "answer": "evaluated",
+       "tiles": [
+        "evaluated",
+        "evaluation",
+        "evaluate",
+        "evaluating",
+        "evaluator"
+       ],
+       "notes": {
+        "evaluate": "verb: to judge the value or quality of",
+        "evaluated": "verb: judged the value or quality of",
+        "evaluating": "verb: judging the value or quality of",
+        "evaluation": "noun: a judgement of value or quality",
+        "evaluator": "noun: a person who judges value or quality"
+       }
+      },
+      {
+       "id": "F:A-ponder-01-s28",
+       "word": "evaluate",
+       "text": "To ___ the play, the class compared acting, costumes, and singing.",
+       "answer": "evaluate",
+       "tiles": [
+        "evaluate",
+        "evaluation",
+        "evaluated",
+        "evaluating",
+        "evaluates"
+       ],
+       "notes": {
+        "evaluate": "verb: to judge the value or quality of",
+        "evaluated": "verb: judged the value or quality of",
+        "evaluates": "verb: judges the value or quality of",
+        "evaluating": "verb: judging the value or quality of",
+        "evaluation": "noun: a judgement of value or quality"
+       }
+      },
+      {
+       "id": "F:A-ponder-01-s33",
+       "word": "envisage",
+       "text": "Standing on the empty field, I tried to ___ a castle there.",
+       "answer": "envisage",
+       "tiles": [
+        "envisage",
+        "envisaged",
+        "envisages",
+        "envisaging"
+       ],
+       "notes": {
+        "envisage": "verb: to imagine a possible future thing or event",
+        "envisaged": "verb: imagined a possible future thing or event",
+        "envisages": "verb: imagines a possible future thing or event",
+        "envisaging": "verb: imagining a possible future thing or event"
+       }
+      },
+      {
+       "id": "F:A-ponder-01-s34",
+       "word": "envisage",
+       "text": "The inventor ___ how the treehouse might look with rope bridges.",
+       "answer": "envisaged",
+       "tiles": [
+        "envisaged",
+        "envisage",
+        "envisaging"
+       ],
+       "notes": {
+        "envisage": "verb: to imagine a possible future thing or event",
+        "envisaged": "verb: imagined a possible future thing or event",
+        "envisaging": "verb: imagining a possible future thing or event"
+       }
+      },
+      {
+       "id": "F:A-ponder-01-s35",
+       "word": "envisage",
+       "text": "Before building, the twins would ___ bedrooms above the bakery shop.",
+       "answer": "envisage",
+       "tiles": [
+        "envisage",
+        "envisaged",
+        "envisages",
+        "envisaging"
+       ],
+       "notes": {
+        "envisage": "verb: to imagine a possible future thing or event",
+        "envisaged": "verb: imagined a possible future thing or event",
+        "envisages": "verb: imagines a possible future thing or event",
+        "envisaging": "verb: imagining a possible future thing or event"
+       }
+      },
+      {
+       "id": "F:A-ponder-01-s36",
+       "word": "envisage",
+       "text": "She ___ the garden in spring, full of beans and yellow tulips.",
+       "answer": "envisaged",
+       "tiles": [
+        "envisaged",
+        "envisage",
+        "envisaging"
+       ],
+       "notes": {
+        "envisage": "verb: to imagine a possible future thing or event",
+        "envisaged": "verb: imagined a possible future thing or event",
+        "envisaging": "verb: imagining a possible future thing or event"
+       }
+      }
+     ]
+    },
+    "A-qualities-01": {
+     "families": {
+      "resolute": [
+       {
+        "form": "resolute",
+        "pos": "adjective",
+        "note": "adjective: firm in purpose or belief"
+       },
+       {
+        "form": "resolutely",
+        "pos": "adverb",
+        "note": "adverb: with firm purpose or belief"
+       },
+       {
+        "form": "resolve",
+        "pos": "verb",
+        "note": "verb: to make a firm decision"
+       },
+       {
+        "form": "resolves",
+        "pos": "verb",
+        "note": "verb: makes a firm decision"
+       },
+       {
+        "form": "resolved",
+        "pos": "verb",
+        "note": "verb: made a firm decision"
+       },
+       {
+        "form": "resolving",
+        "pos": "verb",
+        "note": "verb: making a firm decision"
+       },
+       {
+        "form": "resolution",
+        "pos": "noun",
+        "note": "noun: firm determination to do something"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:A-qualities-01-s33",
+       "word": "resolute",
+       "text": "Despite boos, the ___ dancer finished the routine without missing a step.",
+       "answer": "resolute",
+       "tiles": [
+        "resolute",
+        "resolution",
+        "resolve",
+        "resolved",
+        "resolving"
+       ],
+       "notes": {
+        "resolute": "adjective: firm in purpose or belief",
+        "resolve": "verb: to make a firm decision",
+        "resolved": "verb: made a firm decision",
+        "resolving": "verb: making a firm decision",
+        "resolution": "noun: firm determination to do something"
+       }
+      },
+      {
+       "id": "F:A-qualities-01-s34",
+       "word": "resolute",
+       "text": "The ___ climber kept going after wind tore the flag away.",
+       "answer": "resolute",
+       "tiles": [
+        "resolute",
+        "resolution",
+        "resolve",
+        "resolved",
+        "resolving"
+       ],
+       "notes": {
+        "resolute": "adjective: firm in purpose or belief",
+        "resolve": "verb: to make a firm decision",
+        "resolved": "verb: made a firm decision",
+        "resolving": "verb: making a firm decision",
+        "resolution": "noun: firm determination to do something"
+       }
+      },
+      {
+       "id": "F:A-qualities-01-s35",
+       "word": "resolute",
+       "text": "When the puzzle grew hard, the ___ twins stayed until midnight.",
+       "answer": "resolute",
+       "tiles": [
+        "resolute",
+        "resolution",
+        "resolve",
+        "resolved",
+        "resolving"
+       ],
+       "notes": {
+        "resolute": "adjective: firm in purpose or belief",
+        "resolve": "verb: to make a firm decision",
+        "resolved": "verb: made a firm decision",
+        "resolving": "verb: making a firm decision",
+        "resolution": "noun: firm determination to do something"
+       }
+      },
+      {
+       "id": "F:A-qualities-01-s36",
+       "word": "resolute",
+       "text": "The ___ goalkeeper faced five shots and refused to leave the net.",
+       "answer": "resolute",
+       "tiles": [
+        "resolute",
+        "resolution",
+        "resolve",
+        "resolved",
+        "resolving"
+       ],
+       "notes": {
+        "resolute": "adjective: firm in purpose or belief",
+        "resolve": "verb: to make a firm decision",
+        "resolved": "verb: made a firm decision",
+        "resolving": "verb: making a firm decision",
+        "resolution": "noun: firm determination to do something"
+       }
+      }
+     ]
+    },
+    "A-reply-01": {
+     "families": {
+      "retort": [
+       {
+        "form": "retort",
+        "pos": "verb",
+        "note": "verb: to answer back quickly and sharply"
+       },
+       {
+        "form": "retorted",
+        "pos": "verb",
+        "note": "verb: answered back quickly and sharply"
+       },
+       {
+        "form": "retorting",
+        "pos": "verb",
+        "note": "verb: answering back quickly and sharply"
+       },
+       {
+        "form": "retorts",
+        "pos": "verb",
+        "note": "verb: answers back quickly and sharply"
+       }
+      ],
+      "exclaim": [
+       {
+        "form": "exclaim",
+        "pos": "verb",
+        "note": "verb: to call out suddenly with strong feeling"
+       },
+       {
+        "form": "exclaimed",
+        "pos": "verb",
+        "note": "verb: called out suddenly with strong feeling"
+       },
+       {
+        "form": "exclaiming",
+        "pos": "verb",
+        "note": "verb: calling out suddenly with strong feeling"
+       },
+       {
+        "form": "exclaims",
+        "pos": "verb",
+        "note": "verb: calls out suddenly with strong feeling"
+       },
+       {
+        "form": "exclamation",
+        "pos": "noun",
+        "note": "noun: a sudden cry showing strong feeling"
+       }
+      ],
+      "declare": [
+       {
+        "form": "declare",
+        "pos": "verb",
+        "note": "verb: to state something firmly and openly"
+       },
+       {
+        "form": "declared",
+        "pos": "verb",
+        "note": "verb: stated something firmly and openly"
+       },
+       {
+        "form": "declares",
+        "pos": "verb",
+        "note": "verb: states something firmly and openly"
+       },
+       {
+        "form": "declaring",
+        "pos": "verb",
+        "note": "verb: stating something firmly and openly"
+       },
+       {
+        "form": "declaration",
+        "pos": "noun",
+        "note": "noun: a firm public statement"
+       }
+      ],
+      "murmur": [
+       {
+        "form": "murmur",
+        "pos": "verb",
+        "note": "verb: to speak in a low, unclear voice"
+       },
+       {
+        "form": "murmured",
+        "pos": "verb",
+        "note": "verb: spoke in a low, unclear voice"
+       },
+       {
+        "form": "murmuring",
+        "pos": "verb",
+        "note": "verb: speaking in a low, unclear voice"
+       },
+       {
+        "form": "murmurs",
+        "pos": "verb",
+        "note": "verb: speaks in a low, unclear voice"
+       }
+      ],
+      "recite": [
+       {
+        "form": "recite",
+        "pos": "verb",
+        "note": "verb: to say aloud from memory"
+       },
+       {
+        "form": "recited",
+        "pos": "verb",
+        "note": "verb: said aloud from memory"
+       },
+       {
+        "form": "recites",
+        "pos": "verb",
+        "note": "verb: says aloud from memory"
+       },
+       {
+        "form": "reciting",
+        "pos": "verb",
+        "note": "verb: saying aloud from memory"
+       },
+       {
+        "form": "recitation",
+        "pos": "noun",
+        "note": "noun: the act of saying words aloud from memory"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:A-reply-01-s01",
+       "word": "retort",
+       "text": "When Leo sneered at her drawing, Ava ___ with a cutting reply.",
+       "answer": "retorted",
+       "tiles": [
+        "retorted",
+        "retort",
+        "retorting"
+       ],
+       "notes": {
+        "retort": "verb: to answer back quickly and sharply",
+        "retorted": "verb: answered back quickly and sharply",
+        "retorting": "verb: answering back quickly and sharply"
+       }
+      },
+      {
+       "id": "F:A-reply-01-s02",
+       "word": "retort",
+       "text": "Nina ___, 'At least mine found puddles,' as a snappy reply.",
+       "answer": "retorted",
+       "tiles": [
+        "retorted",
+        "retort",
+        "retorting"
+       ],
+       "notes": {
+        "retort": "verb: to answer back quickly and sharply",
+        "retorted": "verb: answered back quickly and sharply",
+        "retorting": "verb: answering back quickly and sharply"
+       }
+      },
+      {
+       "id": "F:A-reply-01-s03",
+       "word": "retort",
+       "text": "Tom said, 'Your cake fell,' and Priya ___, 'Yours never rose.'",
+       "answer": "retorted",
+       "tiles": [
+        "retorted",
+        "retort",
+        "retorting"
+       ],
+       "notes": {
+        "retort": "verb: to answer back quickly and sharply",
+        "retorted": "verb: answered back quickly and sharply",
+        "retorting": "verb: answering back quickly and sharply"
+       }
+      },
+      {
+       "id": "F:A-reply-01-s04",
+       "word": "retort",
+       "text": "After Jai laughed, 'Too slow,' Mina ___, 'You still lost.'",
+       "answer": "retorted",
+       "tiles": [
+        "retorted",
+        "retort",
+        "retorting"
+       ],
+       "notes": {
+        "retort": "verb: to answer back quickly and sharply",
+        "retorted": "verb: answered back quickly and sharply",
+        "retorting": "verb: answering back quickly and sharply"
+       }
+      },
+      {
+       "id": "F:A-reply-01-s09",
+       "word": "exclaim",
+       "text": "Seeing the fireworks bloom, Poppy ___, 'Wow!' with a delighted shout.",
+       "answer": "exclaimed",
+       "tiles": [
+        "exclaimed",
+        "exclamation",
+        "exclaim",
+        "exclaiming"
+       ],
+       "notes": {
+        "exclaim": "verb: to call out suddenly with strong feeling",
+        "exclaimed": "verb: called out suddenly with strong feeling",
+        "exclaiming": "verb: calling out suddenly with strong feeling",
+        "exclamation": "noun: a sudden cry showing strong feeling"
+       }
+      },
+      {
+       "id": "F:A-reply-01-s10",
+       "word": "exclaim",
+       "text": "A frog hopped from the boot, and Ravi ___ with a startled cry.",
+       "answer": "exclaimed",
+       "tiles": [
+        "exclaimed",
+        "exclamation",
+        "exclaim",
+        "exclaiming"
+       ],
+       "notes": {
+        "exclaim": "verb: to call out suddenly with strong feeling",
+        "exclaimed": "verb: called out suddenly with strong feeling",
+        "exclaiming": "verb: calling out suddenly with strong feeling",
+        "exclamation": "noun: a sudden cry showing strong feeling"
+       }
+      },
+      {
+       "id": "F:A-reply-01-s11",
+       "word": "exclaim",
+       "text": "The treasure chest opened, and Mia ___, 'Gold coins everywhere!'",
+       "answer": "exclaimed",
+       "tiles": [
+        "exclaimed",
+        "exclamation",
+        "exclaim",
+        "exclaiming"
+       ],
+       "notes": {
+        "exclaim": "verb: to call out suddenly with strong feeling",
+        "exclaimed": "verb: called out suddenly with strong feeling",
+        "exclaiming": "verb: calling out suddenly with strong feeling",
+        "exclamation": "noun: a sudden cry showing strong feeling"
+       }
+      },
+      {
+       "id": "F:A-reply-01-s12",
+       "word": "exclaim",
+       "text": "When ice slid down his collar, Ben ___, 'That's freezing!'",
+       "answer": "exclaimed",
+       "tiles": [
+        "exclaimed",
+        "exclamation",
+        "exclaim",
+        "exclaiming"
+       ],
+       "notes": {
+        "exclaim": "verb: to call out suddenly with strong feeling",
+        "exclaimed": "verb: called out suddenly with strong feeling",
+        "exclaiming": "verb: calling out suddenly with strong feeling",
+        "exclamation": "noun: a sudden cry showing strong feeling"
+       }
+      },
+      {
+       "id": "F:A-reply-01-s17",
+       "word": "declare",
+       "text": "At assembly, the mayor ___, 'The park opens today,' in an official voice.",
+       "answer": "declared",
+       "tiles": [
+        "declared",
+        "declaration",
+        "declare",
+        "declaring"
+       ],
+       "notes": {
+        "declare": "verb: to state something firmly and openly",
+        "declared": "verb: stated something firmly and openly",
+        "declaring": "verb: stating something firmly and openly",
+        "declaration": "noun: a firm public statement"
+       }
+      },
+      {
+       "id": "F:A-reply-01-s18",
+       "word": "declare",
+       "text": "The judge ___, 'The red team wins,' from the centre podium.",
+       "answer": "declared",
+       "tiles": [
+        "declared",
+        "declaration",
+        "declare",
+        "declaring"
+       ],
+       "notes": {
+        "declare": "verb: to state something firmly and openly",
+        "declared": "verb: stated something firmly and openly",
+        "declaring": "verb: stating something firmly and openly",
+        "declaration": "noun: a firm public statement"
+       }
+      },
+      {
+       "id": "F:A-reply-01-s19",
+       "word": "declare",
+       "text": "Before the school crowd, Zara ___, 'The fair begins at nine.'",
+       "answer": "declared",
+       "tiles": [
+        "declared",
+        "declaration",
+        "declare",
+        "declaring"
+       ],
+       "notes": {
+        "declare": "verb: to state something firmly and openly",
+        "declared": "verb: stated something firmly and openly",
+        "declaring": "verb: stating something firmly and openly",
+        "declaration": "noun: a firm public statement"
+       }
+      },
+      {
+       "id": "F:A-reply-01-s20",
+       "word": "declare",
+       "text": "On the castle balcony, the queen ___, 'The bridge is open.'",
+       "answer": "declared",
+       "tiles": [
+        "declared",
+        "declaration",
+        "declare",
+        "declaring"
+       ],
+       "notes": {
+        "declare": "verb: to state something firmly and openly",
+        "declared": "verb: stated something firmly and openly",
+        "declaring": "verb: stating something firmly and openly",
+        "declaration": "noun: a firm public statement"
+       }
+      },
+      {
+       "id": "F:A-reply-01-s25",
+       "word": "murmur",
+       "text": "During story time, Lily ___, 'Careful,' barely above a whisper.",
+       "answer": "murmured",
+       "tiles": [
+        "murmured",
+        "murmur",
+        "murmuring"
+       ],
+       "notes": {
+        "murmur": "verb: to speak in a low, unclear voice",
+        "murmured": "verb: spoke in a low, unclear voice",
+        "murmuring": "verb: speaking in a low, unclear voice"
+       }
+      },
+      {
+       "id": "F:A-reply-01-s26",
+       "word": "murmur",
+       "text": "In the library, Noah ___, 'I'm here,' in a low voice.",
+       "answer": "murmured",
+       "tiles": [
+        "murmured",
+        "murmur",
+        "murmuring"
+       ],
+       "notes": {
+        "murmur": "verb: to speak in a low, unclear voice",
+        "murmured": "verb: spoke in a low, unclear voice",
+        "murmuring": "verb: speaking in a low, unclear voice"
+       }
+      },
+      {
+       "id": "F:A-reply-01-s27",
+       "word": "murmur",
+       "text": "The baby slept nearby, so Gran ___, 'Close the door.'",
+       "answer": "murmured",
+       "tiles": [
+        "murmured",
+        "murmur",
+        "murmuring"
+       ],
+       "notes": {
+        "murmur": "verb: to speak in a low, unclear voice",
+        "murmured": "verb: spoke in a low, unclear voice",
+        "murmuring": "verb: speaking in a low, unclear voice"
+       }
+      },
+      {
+       "id": "F:A-reply-01-s28",
+       "word": "murmur",
+       "text": "During the test, Sami ___, 'I found your marble' to Isla.",
+       "answer": "murmured",
+       "tiles": [
+        "murmured",
+        "murmur",
+        "murmuring"
+       ],
+       "notes": {
+        "murmur": "verb: to speak in a low, unclear voice",
+        "murmured": "verb: spoke in a low, unclear voice",
+        "murmuring": "verb: speaking in a low, unclear voice"
+       }
+      },
+      {
+       "id": "F:A-reply-01-s33",
+       "word": "recite",
+       "text": "At the concert, Ana ___, 'Twinkle, twinkle, little star,' by heart.",
+       "answer": "recited",
+       "tiles": [
+        "recited",
+        "recite",
+        "reciting",
+        "recitation"
+       ],
+       "notes": {
+        "recite": "verb: to say aloud from memory",
+        "recited": "verb: said aloud from memory",
+        "reciting": "verb: saying aloud from memory",
+        "recitation": "noun: the act of saying words aloud from memory"
+       }
+      },
+      {
+       "id": "F:A-reply-01-s34",
+       "word": "recite",
+       "text": "Without her script, Dev ___, 'To be brave, begin today.'",
+       "answer": "recited",
+       "tiles": [
+        "recited",
+        "recite",
+        "reciting",
+        "recitation"
+       ],
+       "notes": {
+        "recite": "verb: to say aloud from memory",
+        "recited": "verb: said aloud from memory",
+        "reciting": "verb: saying aloud from memory",
+        "recitation": "noun: the act of saying words aloud from memory"
+       }
+      },
+      {
+       "id": "F:A-reply-01-s35",
+       "word": "recite",
+       "text": "The class poem came next, and Finn ___, 'Rain taps roofs.'",
+       "answer": "recited",
+       "tiles": [
+        "recited",
+        "recite",
+        "reciting",
+        "recitation"
+       ],
+       "notes": {
+        "recite": "verb: to say aloud from memory",
+        "recited": "verb: said aloud from memory",
+        "reciting": "verb: saying aloud from memory",
+        "recitation": "noun: the act of saying words aloud from memory"
+       }
+      },
+      {
+       "id": "F:A-reply-01-s36",
+       "word": "recite",
+       "text": "In the play, Leila ___, 'First, mix flour, salt, and water.'",
+       "answer": "recited",
+       "tiles": [
+        "recited",
+        "recite",
+        "reciting",
+        "recitation"
+       ],
+       "notes": {
+        "recite": "verb: to say aloud from memory",
+        "recited": "verb: said aloud from memory",
+        "reciting": "verb: saying aloud from memory",
+        "recitation": "noun: the act of saying words aloud from memory"
+       }
+      }
+     ]
+    },
+    "A-rough-01": {
+     "families": {
+      "scratchy": [
+       {
+        "form": "scratch",
+        "pos": "verb",
+        "note": "verb: to rub skin with nails or something sharp"
+       },
+       {
+        "form": "scratches",
+        "pos": "verb",
+        "note": "verb: rubs skin with nails or something sharp"
+       },
+       {
+        "form": "scratching",
+        "pos": "verb",
+        "note": "verb: rubbing skin with nails or something sharp"
+       },
+       {
+        "form": "scratchy",
+        "pos": "adjective",
+        "note": "adjective: rough and irritating to the skin"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:A-rough-01-s33",
+       "word": "scratchy",
+       "text": "The ___ tag in Milo's new shirt bothered his neck, so Mum snipped it out.",
+       "answer": "scratchy",
+       "tiles": [
+        "scratchy",
+        "scratch",
+        "scratching",
+        "scratches"
+       ],
+       "notes": {
+        "scratch": "verb: to rub skin with nails or something sharp",
+        "scratches": "verb: rubs skin with nails or something sharp",
+        "scratching": "verb: rubbing skin with nails or something sharp",
+        "scratchy": "adjective: rough and irritating to the skin"
+       }
+      },
+      {
+       "id": "F:A-rough-01-s34",
+       "word": "scratchy",
+       "text": "A ___ label rasps the neck and makes it itch.",
+       "answer": "scratchy",
+       "tiles": [
+        "scratchy",
+        "scratch",
+        "scratching",
+        "scratches"
+       ],
+       "notes": {
+        "scratch": "verb: to rub skin with nails or something sharp",
+        "scratches": "verb: rubs skin with nails or something sharp",
+        "scratching": "verb: rubbing skin with nails or something sharp",
+        "scratchy": "adjective: rough and irritating to the skin"
+       }
+      },
+      {
+       "id": "F:A-rough-01-s35",
+       "word": "scratchy",
+       "text": "Ruby kept tugging at the ___ collar of her costume, which annoyed her neck all show.",
+       "answer": "scratchy",
+       "tiles": [
+        "scratchy",
+        "scratch",
+        "scratching",
+        "scratches"
+       ],
+       "notes": {
+        "scratch": "verb: to rub skin with nails or something sharp",
+        "scratches": "verb: rubs skin with nails or something sharp",
+        "scratching": "verb: rubbing skin with nails or something sharp",
+        "scratchy": "adjective: rough and irritating to the skin"
+       }
+      },
+      {
+       "id": "F:A-rough-01-s36",
+       "word": "scratchy",
+       "text": "In her shorts, Ruby found the old cinema seat ___ on the backs of her knees.",
+       "answer": "scratchy",
+       "tiles": [
+        "scratchy",
+        "scratch",
+        "scratching",
+        "scratches"
+       ],
+       "notes": {
+        "scratch": "verb: to rub skin with nails or something sharp",
+        "scratches": "verb: rubs skin with nails or something sharp",
+        "scratching": "verb: rubbing skin with nails or something sharp",
+        "scratchy": "adjective: rough and irritating to the skin"
+       }
+      }
+     ]
+    },
+    "A-sad-01": {
+     "families": {
+      "disappointed": [
+       {
+        "form": "disappoint",
+        "pos": "verb",
+        "note": "verb: to let someone down by not meeting hopes"
+       },
+       {
+        "form": "disappoints",
+        "pos": "verb",
+        "note": "verb: lets someone down by not meeting hopes"
+       },
+       {
+        "form": "disappointed",
+        "pos": "adjective",
+        "note": "adjective: let down because hopes did not come true"
+       },
+       {
+        "form": "disappointing",
+        "pos": "adjective",
+        "note": "adjective: not as good as expected or hoped"
+       },
+       {
+        "form": "disappointment",
+        "pos": "noun",
+        "note": "noun: sadness when hopes do not come true"
+       },
+       {
+        "form": "disappointments",
+        "pos": "noun",
+        "note": "noun: things or times that fail to meet hopes"
+       }
+      ],
+      "lonely": [
+       {
+        "form": "lone",
+        "pos": "adjective",
+        "note": "adjective: without other people nearby"
+       },
+       {
+        "form": "lonely",
+        "pos": "adjective",
+        "note": "adjective: sad from having no one with you"
+       },
+       {
+        "form": "lonelier",
+        "pos": "adjective",
+        "note": "adjective: sadder from having no one with you"
+       },
+       {
+        "form": "loneliest",
+        "pos": "adjective",
+        "note": "adjective: saddest from having no one with you"
+       },
+       {
+        "form": "loneliness",
+        "pos": "noun",
+        "note": "noun: sadness from having no one with you"
+       }
+      ],
+      "heartbroken": [
+       {
+        "form": "heartbreak",
+        "pos": "noun",
+        "note": "noun: deep sadness after loss or hurt"
+       },
+       {
+        "form": "heartbreaks",
+        "pos": "noun",
+        "note": "noun: times of deep sadness after loss or hurt"
+       },
+       {
+        "form": "heartbroken",
+        "pos": "adjective",
+        "note": "adjective: very sad after loss or hurt"
+       },
+       {
+        "form": "heartbreaking",
+        "pos": "adjective",
+        "note": "adjective: causing very deep sadness"
+       },
+       {
+        "form": "heartbreakingly",
+        "pos": "adverb",
+        "note": "adverb: in a way that causes very deep sadness"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:A-sad-01-s26",
+       "word": "disappointed",
+       "text": "Sofia was ___ after expecting cake and finding plain biscuits.",
+       "answer": "disappointed",
+       "tiles": [
+        "disappointed",
+        "disappointing",
+        "disappointment",
+        "disappoint",
+        "disappointments"
+       ],
+       "notes": {
+        "disappoint": "verb: to let someone down by not meeting hopes",
+        "disappointed": "adjective: let down because hopes did not come true",
+        "disappointing": "adjective: not as good as expected or hoped",
+        "disappointment": "noun: sadness when hopes do not come true",
+        "disappointments": "noun: things or times that fail to meet hopes"
+       }
+      },
+      {
+       "id": "F:A-sad-01-s27",
+       "word": "disappointed",
+       "text": "The team looked ___; the trophy went to another class.",
+       "answer": "disappointed",
+       "tiles": [
+        "disappointed",
+        "disappointing",
+        "disappointment",
+        "disappoint",
+        "disappointments"
+       ],
+       "notes": {
+        "disappoint": "verb: to let someone down by not meeting hopes",
+        "disappointed": "adjective: let down because hopes did not come true",
+        "disappointing": "adjective: not as good as expected or hoped",
+        "disappointment": "noun: sadness when hopes do not come true",
+        "disappointments": "noun: things or times that fail to meet hopes"
+       }
+      },
+      {
+       "id": "F:A-sad-01-s28",
+       "word": "disappointed",
+       "text": "Mum seemed ___ when the repaired kite still would not fly.",
+       "answer": "disappointed",
+       "tiles": [
+        "disappointed",
+        "disappointing",
+        "disappointment",
+        "disappoint",
+        "disappointments"
+       ],
+       "notes": {
+        "disappoint": "verb: to let someone down by not meeting hopes",
+        "disappointed": "adjective: let down because hopes did not come true",
+        "disappointing": "adjective: not as good as expected or hoped",
+        "disappointment": "noun: sadness when hopes do not come true",
+        "disappointments": "noun: things or times that fail to meet hopes"
+       }
+      },
+      {
+       "id": "F:A-sad-01-s03",
+       "word": "lonely",
+       "text": "New to the school, Priya ate by herself again and started feeling ___.",
+       "answer": "lonely",
+       "tiles": [
+        "lonely",
+        "lone",
+        "loneliness",
+        "loneliest",
+        "lonelier"
+       ],
+       "notes": {
+        "lone": "adjective: without other people nearby",
+        "lonely": "adjective: sad from having no one with you",
+        "lonelier": "adjective: sadder from having no one with you",
+        "loneliest": "adjective: saddest from having no one with you",
+        "loneliness": "noun: sadness from having no one with you"
+       }
+      },
+      {
+       "id": "F:A-sad-01-s04",
+       "word": "lonely",
+       "text": "Everyone had a partner by the time Ben looked up, and he worked alone, ___.",
+       "answer": "lonely",
+       "tiles": [
+        "lonely",
+        "lone",
+        "loneliness",
+        "loneliest",
+        "lonelier"
+       ],
+       "notes": {
+        "lone": "adjective: without other people nearby",
+        "lonely": "adjective: sad from having no one with you",
+        "lonelier": "adjective: sadder from having no one with you",
+        "loneliest": "adjective: saddest from having no one with you",
+        "loneliness": "noun: sadness from having no one with you"
+       }
+      },
+      {
+       "id": "F:A-sad-01-s17",
+       "word": "heartbroken",
+       "text": "Maya was ___ after her old dog died in the night.",
+       "answer": "heartbroken",
+       "tiles": [
+        "heartbroken",
+        "heartbreaking",
+        "heartbreak",
+        "heartbreakingly",
+        "heartbreaks"
+       ],
+       "notes": {
+        "heartbreak": "noun: deep sadness after loss or hurt",
+        "heartbreaks": "noun: times of deep sadness after loss or hurt",
+        "heartbroken": "adjective: very sad after loss or hurt",
+        "heartbreaking": "adjective: causing very deep sadness",
+        "heartbreakingly": "adverb: in a way that causes very deep sadness"
+       }
+      },
+      {
+       "id": "F:A-sad-01-s19",
+       "word": "heartbroken",
+       "text": "Lily looked ___ as she washed the bowl her rabbit would never need again.",
+       "answer": "heartbroken",
+       "tiles": [
+        "heartbroken",
+        "heartbreaking",
+        "heartbreak",
+        "heartbreakingly",
+        "heartbreaks"
+       ],
+       "notes": {
+        "heartbreak": "noun: deep sadness after loss or hurt",
+        "heartbreaks": "noun: times of deep sadness after loss or hurt",
+        "heartbroken": "adjective: very sad after loss or hurt",
+        "heartbreaking": "adjective: causing very deep sadness",
+        "heartbreakingly": "adverb: in a way that causes very deep sadness"
+       }
+      },
+      {
+       "id": "F:A-sad-01-s20",
+       "word": "heartbroken",
+       "text": "Grandad's cracked violin left Dad ___; it had been his mother's.",
+       "answer": "heartbroken",
+       "tiles": [
+        "heartbroken",
+        "heartbreaking",
+        "heartbreak",
+        "heartbreakingly",
+        "heartbreaks"
+       ],
+       "notes": {
+        "heartbreak": "noun: deep sadness after loss or hurt",
+        "heartbreaks": "noun: times of deep sadness after loss or hurt",
+        "heartbroken": "adjective: very sad after loss or hurt",
+        "heartbreaking": "adjective: causing very deep sadness",
+        "heartbreakingly": "adverb: in a way that causes very deep sadness"
+       }
+      }
+     ]
+    },
+    "A-say-01": {
+     "families": {
+      "boast": [
+       {
+        "form": "boast",
+        "pos": "verb",
+        "note": "verb: to talk with too much pride to impress others"
+       },
+       {
+        "form": "boasted",
+        "pos": "verb",
+        "note": "verb: talked with too much pride to impress others"
+       },
+       {
+        "form": "boasting",
+        "pos": "verb",
+        "note": "verb: talking with too much pride to impress others"
+       },
+       {
+        "form": "boasts",
+        "pos": "verb",
+        "note": "verb: talks with too much pride to impress others"
+       },
+       {
+        "form": "boastful",
+        "pos": "adjective",
+        "note": "adjective: too proud when talking about yourself"
+       }
+      ],
+      "plead": [
+       {
+        "form": "plead",
+        "pos": "verb",
+        "note": "verb: to ask urgently for help or mercy"
+       },
+       {
+        "form": "pleaded",
+        "pos": "verb",
+        "note": "verb: asked urgently for help or mercy"
+       },
+       {
+        "form": "pleading",
+        "pos": "verb",
+        "note": "verb: asking urgently for help or mercy"
+       },
+       {
+        "form": "pleads",
+        "pos": "verb",
+        "note": "verb: asks urgently for help or mercy"
+       },
+       {
+        "form": "plea",
+        "pos": "noun",
+        "note": "noun: an urgent request for help or mercy"
+       }
+      ],
+      "insist": [
+       {
+        "form": "insist",
+        "pos": "verb",
+        "note": "verb: to say or demand something firmly and not give up"
+       },
+       {
+        "form": "insisted",
+        "pos": "verb",
+        "note": "verb: said or demanded something firmly and did not give up"
+       },
+       {
+        "form": "insisting",
+        "pos": "verb",
+        "note": "verb: saying or demanding something firmly and not giving up"
+       },
+       {
+        "form": "insists",
+        "pos": "verb",
+        "note": "verb: says or demands something firmly and does not give up"
+       },
+       {
+        "form": "insistence",
+        "pos": "noun",
+        "note": "noun: a firm demand or statement that will not change"
+       },
+       {
+        "form": "insistent",
+        "pos": "adjective",
+        "note": "adjective: firm and refusing to give up"
+       },
+       {
+        "form": "insistently",
+        "pos": "adverb",
+        "note": "adverb: in a firm way that will not give up"
+       }
+      ],
+      "confess": [
+       {
+        "form": "confess",
+        "pos": "verb",
+        "note": "verb: to admit a wrong action or secret"
+       },
+       {
+        "form": "confessed",
+        "pos": "verb",
+        "note": "verb: admitted a wrong action or secret"
+       },
+       {
+        "form": "confesses",
+        "pos": "verb",
+        "note": "verb: admits a wrong action or secret"
+       },
+       {
+        "form": "confessing",
+        "pos": "verb",
+        "note": "verb: admitting a wrong action or secret"
+       },
+       {
+        "form": "confession",
+        "pos": "noun",
+        "note": "noun: a statement admitting a wrong action or secret"
+       },
+       {
+        "form": "confessions",
+        "pos": "noun",
+        "note": "noun: statements admitting wrong actions or secrets"
+       }
+      ],
+      "tease": [
+       {
+        "form": "tease",
+        "pos": "verb",
+        "note": "verb: to mock or make fun of someone playfully"
+       },
+       {
+        "form": "teased",
+        "pos": "verb",
+        "note": "verb: mocked or made fun of someone playfully"
+       },
+       {
+        "form": "teases",
+        "pos": "verb",
+        "note": "verb: mocks or makes fun of someone playfully"
+       },
+       {
+        "form": "teasing",
+        "pos": "verb",
+        "note": "verb: mocking or making fun of someone playfully"
+       },
+       {
+        "form": "teaser",
+        "pos": "noun",
+        "note": "noun: a person who mocks others playfully"
+       },
+       {
+        "form": "teasingly",
+        "pos": "adverb",
+        "note": "adverb: in a playful, mocking way"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:A-say-01-s01",
+       "word": "boast",
+       "text": "At assembly, Leo ___, 'My poem is the finest in school!'",
+       "answer": "boasted",
+       "tiles": [
+        "boasted",
+        "boast",
+        "boasting",
+        "boastful"
+       ],
+       "notes": {
+        "boast": "verb: to talk with too much pride to impress others",
+        "boasted": "verb: talked with too much pride to impress others",
+        "boasting": "verb: talking with too much pride to impress others",
+        "boastful": "adjective: too proud when talking about yourself"
+       }
+      },
+      {
+       "id": "F:A-say-01-s02",
+       "word": "boast",
+       "text": "Holding the trophy, Sara ___, 'No one can beat my jumps!'",
+       "answer": "boasted",
+       "tiles": [
+        "boasted",
+        "boast",
+        "boasting",
+        "boastful"
+       ],
+       "notes": {
+        "boast": "verb: to talk with too much pride to impress others",
+        "boasted": "verb: talked with too much pride to impress others",
+        "boasting": "verb: talking with too much pride to impress others",
+        "boastful": "adjective: too proud when talking about yourself"
+       }
+      },
+      {
+       "id": "F:A-say-01-s03",
+       "word": "boast",
+       "text": "On the bus, Niko ___, 'I won three races before lunch!'",
+       "answer": "boasted",
+       "tiles": [
+        "boasted",
+        "boast",
+        "boasting",
+        "boastful"
+       ],
+       "notes": {
+        "boast": "verb: to talk with too much pride to impress others",
+        "boasted": "verb: talked with too much pride to impress others",
+        "boasting": "verb: talking with too much pride to impress others",
+        "boastful": "adjective: too proud when talking about yourself"
+       }
+      },
+      {
+       "id": "F:A-say-01-s04",
+       "word": "boast",
+       "text": "Beside his huge sandcastle, Amir ___, 'Mine is taller than everyone else's!'",
+       "answer": "boasted",
+       "tiles": [
+        "boasted",
+        "boast",
+        "boasting",
+        "boastful"
+       ],
+       "notes": {
+        "boast": "verb: to talk with too much pride to impress others",
+        "boasted": "verb: talked with too much pride to impress others",
+        "boasting": "verb: talking with too much pride to impress others",
+        "boastful": "adjective: too proud when talking about yourself"
+       }
+      },
+      {
+       "id": "F:A-say-01-s09",
+       "word": "plead",
+       "text": "At bedtime, Noor ___, 'Please, please read one more chapter!'",
+       "answer": "pleaded",
+       "tiles": [
+        "pleaded",
+        "plea",
+        "plead",
+        "pleading"
+       ],
+       "notes": {
+        "plead": "verb: to ask urgently for help or mercy",
+        "pleaded": "verb: asked urgently for help or mercy",
+        "pleading": "verb: asking urgently for help or mercy",
+        "plea": "noun: an urgent request for help or mercy"
+       }
+      },
+      {
+       "id": "F:A-say-01-s10",
+       "word": "plead",
+       "text": "Beside the locked gate, Sam ___, 'Please let me in!'",
+       "answer": "pleaded",
+       "tiles": [
+        "pleaded",
+        "plea",
+        "plead",
+        "pleading"
+       ],
+       "notes": {
+        "plead": "verb: to ask urgently for help or mercy",
+        "pleaded": "verb: asked urgently for help or mercy",
+        "pleading": "verb: asking urgently for help or mercy",
+        "plea": "noun: an urgent request for help or mercy"
+       }
+      },
+      {
+       "id": "F:A-say-01-s11",
+       "word": "plead",
+       "text": "With watery eyes, Ava ___, 'Let the stray puppy stay tonight!'",
+       "answer": "pleaded",
+       "tiles": [
+        "pleaded",
+        "plea",
+        "plead",
+        "pleading"
+       ],
+       "notes": {
+        "plead": "verb: to ask urgently for help or mercy",
+        "pleaded": "verb: asked urgently for help or mercy",
+        "pleading": "verb: asking urgently for help or mercy",
+        "plea": "noun: an urgent request for help or mercy"
+       }
+      },
+      {
+       "id": "F:A-say-01-s12",
+       "word": "plead",
+       "text": "In the rain, Luca ___, 'Can we go inside now, please?'",
+       "answer": "pleaded",
+       "tiles": [
+        "pleaded",
+        "plea",
+        "plead",
+        "pleading"
+       ],
+       "notes": {
+        "plead": "verb: to ask urgently for help or mercy",
+        "pleaded": "verb: asked urgently for help or mercy",
+        "pleading": "verb: asking urgently for help or mercy",
+        "plea": "noun: an urgent request for help or mercy"
+       }
+      },
+      {
+       "id": "F:A-say-01-s17",
+       "word": "insist",
+       "text": "At the map, Dan ___, 'North is this way,' and would not change.",
+       "answer": "insisted",
+       "tiles": [
+        "insisted",
+        "insist",
+        "insisting",
+        "insistence",
+        "insistent"
+       ],
+       "notes": {
+        "insist": "verb: to say or demand something firmly and not give up",
+        "insisted": "verb: said or demanded something firmly and did not give up",
+        "insisting": "verb: saying or demanding something firmly and not giving up",
+        "insistence": "noun: a firm demand or statement that will not change",
+        "insistent": "adjective: firm and refusing to give up"
+       }
+      },
+      {
+       "id": "F:A-say-01-s18",
+       "word": "insist",
+       "text": "When friends disagreed, Lina ___, 'The answer is twelve,' every time.",
+       "answer": "insisted",
+       "tiles": [
+        "insisted",
+        "insist",
+        "insisting",
+        "insistence",
+        "insistent"
+       ],
+       "notes": {
+        "insist": "verb: to say or demand something firmly and not give up",
+        "insisted": "verb: said or demanded something firmly and did not give up",
+        "insisting": "verb: saying or demanding something firmly and not giving up",
+        "insistence": "noun: a firm demand or statement that will not change",
+        "insistent": "adjective: firm and refusing to give up"
+       }
+      },
+      {
+       "id": "F:A-say-01-s19",
+       "word": "insist",
+       "text": "After two corrections, Mateo ___, 'The library closes at six.'",
+       "answer": "insisted",
+       "tiles": [
+        "insisted",
+        "insist",
+        "insisting",
+        "insistence",
+        "insistent"
+       ],
+       "notes": {
+        "insist": "verb: to say or demand something firmly and not give up",
+        "insisted": "verb: said or demanded something firmly and did not give up",
+        "insisting": "verb: saying or demanding something firmly and not giving up",
+        "insistence": "noun: a firm demand or statement that will not change",
+        "insistent": "adjective: firm and refusing to give up"
+       }
+      },
+      {
+       "id": "F:A-say-01-s20",
+       "word": "insist",
+       "text": "During rehearsal, Erin ___, 'My line comes next,' despite the groans.",
+       "answer": "insisted",
+       "tiles": [
+        "insisted",
+        "insist",
+        "insisting",
+        "insistence",
+        "insistent"
+       ],
+       "notes": {
+        "insist": "verb: to say or demand something firmly and not give up",
+        "insisted": "verb: said or demanded something firmly and did not give up",
+        "insisting": "verb: saying or demanding something firmly and not giving up",
+        "insistence": "noun: a firm demand or statement that will not change",
+        "insistent": "adjective: firm and refusing to give up"
+       }
+      },
+      {
+       "id": "F:A-say-01-s25",
+       "word": "confess",
+       "text": "After the vase cracked, Lily ___, 'I kicked the ball indoors.'",
+       "answer": "confessed",
+       "tiles": [
+        "confessed",
+        "confession",
+        "confess",
+        "confessions",
+        "confessing"
+       ],
+       "notes": {
+        "confess": "verb: to admit a wrong action or secret",
+        "confessed": "verb: admitted a wrong action or secret",
+        "confessing": "verb: admitting a wrong action or secret",
+        "confession": "noun: a statement admitting a wrong action or secret",
+        "confessions": "noun: statements admitting wrong actions or secrets"
+       }
+      },
+      {
+       "id": "F:A-say-01-s26",
+       "word": "confess",
+       "text": "With blue paint on his sleeve, Max ___, 'I spilled it.'",
+       "answer": "confessed",
+       "tiles": [
+        "confessed",
+        "confession",
+        "confess",
+        "confessions",
+        "confessing"
+       ],
+       "notes": {
+        "confess": "verb: to admit a wrong action or secret",
+        "confessed": "verb: admitted a wrong action or secret",
+        "confessing": "verb: admitting a wrong action or secret",
+        "confession": "noun: a statement admitting a wrong action or secret",
+        "confessions": "noun: statements admitting wrong actions or secrets"
+       }
+      },
+      {
+       "id": "F:A-say-01-s27",
+       "word": "confess",
+       "text": "By the broken window, Tara ___, 'My stone hit the glass.'",
+       "answer": "confessed",
+       "tiles": [
+        "confessed",
+        "confession",
+        "confess",
+        "confessions",
+        "confessing"
+       ],
+       "notes": {
+        "confess": "verb: to admit a wrong action or secret",
+        "confessed": "verb: admitted a wrong action or secret",
+        "confessing": "verb: admitting a wrong action or secret",
+        "confession": "noun: a statement admitting a wrong action or secret",
+        "confessions": "noun: statements admitting wrong actions or secrets"
+       }
+      },
+      {
+       "id": "F:A-say-01-s28",
+       "word": "confess",
+       "text": "At lunch, Omar ___, 'I took the last biscuit.'",
+       "answer": "confessed",
+       "tiles": [
+        "confessed",
+        "confession",
+        "confess",
+        "confessions",
+        "confessing"
+       ],
+       "notes": {
+        "confess": "verb: to admit a wrong action or secret",
+        "confessed": "verb: admitted a wrong action or secret",
+        "confessing": "verb: admitting a wrong action or secret",
+        "confession": "noun: a statement admitting a wrong action or secret",
+        "confessions": "noun: statements admitting wrong actions or secrets"
+       }
+      },
+      {
+       "id": "F:A-say-01-s33",
+       "word": "tease",
+       "text": "Ravi ___, 'Nice giant hat, captain!' and his brother laughed.",
+       "answer": "teased",
+       "tiles": [
+        "teased",
+        "tease",
+        "teasing",
+        "teaser",
+        "teasingly"
+       ],
+       "notes": {
+        "tease": "verb: to mock or make fun of someone playfully",
+        "teased": "verb: mocked or made fun of someone playfully",
+        "teasing": "verb: mocking or making fun of someone playfully",
+        "teaser": "noun: a person who mocks others playfully",
+        "teasingly": "adverb: in a playful, mocking way"
+       }
+      },
+      {
+       "id": "F:A-say-01-s34",
+       "word": "tease",
+       "text": "Mum ___, 'Careful, Sir Snore-a-lot,' and Dad grinned.",
+       "answer": "teased",
+       "tiles": [
+        "teased",
+        "tease",
+        "teasing",
+        "teaser",
+        "teasingly"
+       ],
+       "notes": {
+        "tease": "verb: to mock or make fun of someone playfully",
+        "teased": "verb: mocked or made fun of someone playfully",
+        "teasing": "verb: mocking or making fun of someone playfully",
+        "teaser": "noun: a person who mocks others playfully",
+        "teasingly": "adverb: in a playful, mocking way"
+       }
+      },
+      {
+       "id": "F:A-say-01-s35",
+       "word": "tease",
+       "text": "At lunch, Pia ___, 'Your soup moustache looks royal!'",
+       "answer": "teased",
+       "tiles": [
+        "teased",
+        "tease",
+        "teasing",
+        "teaser",
+        "teasingly"
+       ],
+       "notes": {
+        "tease": "verb: to mock or make fun of someone playfully",
+        "teased": "verb: mocked or made fun of someone playfully",
+        "teasing": "verb: mocking or making fun of someone playfully",
+        "teaser": "noun: a person who mocks others playfully",
+        "teasingly": "adverb: in a playful, mocking way"
+       }
+      },
+      {
+       "id": "F:A-say-01-s36",
+       "word": "tease",
+       "text": "During football, Lee ___, 'Nice moon kick!' and Ali bowed.",
+       "answer": "teased",
+       "tiles": [
+        "teased",
+        "tease",
+        "teasing",
+        "teaser",
+        "teasingly"
+       ],
+       "notes": {
+        "tease": "verb: to mock or make fun of someone playfully",
+        "teased": "verb: mocked or made fun of someone playfully",
+        "teasing": "verb: mocking or making fun of someone playfully",
+        "teaser": "noun: a person who mocks others playfully",
+        "teasingly": "adverb: in a playful, mocking way"
+       }
+      }
+     ]
+    },
+    "A-scared-01": {
+     "families": {
+      "alarmed": [
+       {
+        "form": "alarm",
+        "pos": "verb",
+        "note": "verb: to make someone feel sudden fear of danger"
+       },
+       {
+        "form": "alarms",
+        "pos": "verb",
+        "note": "verb: makes someone feel sudden fear of danger"
+       },
+       {
+        "form": "alarmed",
+        "pos": "adjective",
+        "note": "adjective: feeling sudden fear of danger"
+       },
+       {
+        "form": "alarming",
+        "pos": "adjective",
+        "note": "adjective: causing sudden fear or worry"
+       },
+       {
+        "form": "alarmingly",
+        "pos": "adverb",
+        "note": "adverb: in a way that causes sudden fear or worry"
+       }
+      ],
+      "startled": [
+       {
+        "form": "startle",
+        "pos": "verb",
+        "note": "verb: to make someone jump with a sudden fright"
+       },
+       {
+        "form": "startles",
+        "pos": "verb",
+        "note": "verb: makes someone jump with a sudden fright"
+       },
+       {
+        "form": "startled",
+        "pos": "adjective",
+        "note": "adjective: jumping or shocked by a sudden fright"
+       },
+       {
+        "form": "startling",
+        "pos": "adjective",
+        "note": "adjective: causing sudden surprise or fright"
+       },
+       {
+        "form": "startlingly",
+        "pos": "adverb",
+        "note": "adverb: in a way that causes sudden surprise or fright"
+       }
+      ],
+      "terrified": [
+       {
+        "form": "terrify",
+        "pos": "verb",
+        "note": "verb: to make someone feel extreme fear"
+       },
+       {
+        "form": "terrifies",
+        "pos": "verb",
+        "note": "verb: makes someone feel extreme fear"
+       },
+       {
+        "form": "terrified",
+        "pos": "adjective",
+        "note": "adjective: feeling extreme fear"
+       },
+       {
+        "form": "terrifying",
+        "pos": "adjective",
+        "note": "adjective: causing extreme fear"
+       },
+       {
+        "form": "terrifyingly",
+        "pos": "adverb",
+        "note": "adverb: in a way that causes extreme fear"
+       },
+       {
+        "form": "terror",
+        "pos": "noun",
+        "note": "noun: extreme fear"
+       }
+      ],
+      "horrified": [
+       {
+        "form": "horrify",
+        "pos": "verb",
+        "note": "verb: to make someone feel shocked and upset"
+       },
+       {
+        "form": "horrified",
+        "pos": "adjective",
+        "note": "adjective: shocked and upset by something awful"
+       },
+       {
+        "form": "horrifying",
+        "pos": "adjective",
+        "note": "adjective: causing shock, fear, or disgust"
+       },
+       {
+        "form": "horrifyingly",
+        "pos": "adverb",
+        "note": "adverb: in a way that causes shock, fear, or disgust"
+       },
+       {
+        "form": "horror",
+        "pos": "noun",
+        "note": "noun: strong fear, shock, or disgust"
+       },
+       {
+        "form": "horrific",
+        "pos": "adjective",
+        "note": "adjective: extremely shocking or frightening"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:A-scared-01-s01",
+       "word": "alarmed",
+       "text": "Lina smelled smoke from the kitchen and felt ___, calling Dad straight away.",
+       "answer": "alarmed",
+       "tiles": [
+        "alarmed",
+        "alarm",
+        "alarming",
+        "alarmingly"
+       ],
+       "notes": {
+        "alarm": "verb: to make someone feel sudden fear of danger",
+        "alarmed": "adjective: feeling sudden fear of danger",
+        "alarming": "adjective: causing sudden fear or worry",
+        "alarmingly": "adverb: in a way that causes sudden fear or worry"
+       }
+      },
+      {
+       "id": "F:A-scared-01-s02",
+       "word": "alarmed",
+       "text": "Seeing the creek rise towards the path, Raj grew ___ and turned back.",
+       "answer": "alarmed",
+       "tiles": [
+        "alarmed",
+        "alarm",
+        "alarming",
+        "alarmingly"
+       ],
+       "notes": {
+        "alarm": "verb: to make someone feel sudden fear of danger",
+        "alarmed": "adjective: feeling sudden fear of danger",
+        "alarming": "adjective: causing sudden fear or worry",
+        "alarmingly": "adverb: in a way that causes sudden fear or worry"
+       }
+      },
+      {
+       "id": "F:A-scared-01-s03",
+       "word": "alarmed",
+       "text": "The ice gave a long slow creak, and Ana stepped carefully to the bank, ___.",
+       "answer": "alarmed",
+       "tiles": [
+        "alarmed",
+        "alarm",
+        "alarming",
+        "alarmingly"
+       ],
+       "notes": {
+        "alarm": "verb: to make someone feel sudden fear of danger",
+        "alarmed": "adjective: feeling sudden fear of danger",
+        "alarming": "adjective: causing sudden fear or worry",
+        "alarmingly": "adverb: in a way that causes sudden fear or worry"
+       }
+      },
+      {
+       "id": "F:A-scared-01-s04",
+       "word": "alarmed",
+       "text": "When the ladder wobbled under Grandpa, Tom felt ___ and held it with both hands.",
+       "answer": "alarmed",
+       "tiles": [
+        "alarmed",
+        "alarm",
+        "alarming",
+        "alarmingly"
+       ],
+       "notes": {
+        "alarm": "verb: to make someone feel sudden fear of danger",
+        "alarmed": "adjective: feeling sudden fear of danger",
+        "alarming": "adjective: causing sudden fear or worry",
+        "alarmingly": "adverb: in a way that causes sudden fear or worry"
+       }
+      },
+      {
+       "id": "F:A-scared-01-s09",
+       "word": "startled",
+       "text": "When the balloon burst, Poppy was ___ for one quick second.",
+       "answer": "startled",
+       "tiles": [
+        "startled",
+        "startling",
+        "startle",
+        "startlingly"
+       ],
+       "notes": {
+        "startle": "verb: to make someone jump with a sudden fright",
+        "startled": "adjective: jumping or shocked by a sudden fright",
+        "startling": "adjective: causing sudden surprise or fright",
+        "startlingly": "adverb: in a way that causes sudden surprise or fright"
+       }
+      },
+      {
+       "id": "F:A-scared-01-s10",
+       "word": "startled",
+       "text": "A dropped tray clattered, and Noah looked ___ with a little gasp.",
+       "answer": "startled",
+       "tiles": [
+        "startled",
+        "startling",
+        "startle",
+        "startlingly"
+       ],
+       "notes": {
+        "startle": "verb: to make someone jump with a sudden fright",
+        "startled": "adjective: jumping or shocked by a sudden fright",
+        "startling": "adjective: causing sudden surprise or fright",
+        "startlingly": "adverb: in a way that causes sudden surprise or fright"
+       }
+      },
+      {
+       "id": "F:A-scared-01-s11",
+       "word": "startled",
+       "text": "The cat leapt out, making Sam feel ___, then laugh.",
+       "answer": "startled",
+       "tiles": [
+        "startled",
+        "startling",
+        "startle",
+        "startlingly"
+       ],
+       "notes": {
+        "startle": "verb: to make someone jump with a sudden fright",
+        "startled": "adjective: jumping or shocked by a sudden fright",
+        "startling": "adjective: causing sudden surprise or fright",
+        "startlingly": "adverb: in a way that causes sudden surprise or fright"
+       }
+      },
+      {
+       "id": "F:A-scared-01-s12",
+       "word": "startled",
+       "text": "The loud bang left the rabbits ___, frozen mid-hop for a moment.",
+       "answer": "startled",
+       "tiles": [
+        "startled",
+        "startling",
+        "startle",
+        "startlingly"
+       ],
+       "notes": {
+        "startle": "verb: to make someone jump with a sudden fright",
+        "startled": "adjective: jumping or shocked by a sudden fright",
+        "startling": "adjective: causing sudden surprise or fright",
+        "startlingly": "adverb: in a way that causes sudden surprise or fright"
+       }
+      },
+      {
+       "id": "F:A-scared-01-s17",
+       "word": "terrified",
+       "text": "Stuck at the top of the broken ride, Aisha was ___, more frightened than ever before.",
+       "answer": "terrified",
+       "tiles": [
+        "terrified",
+        "terror",
+        "terrifying",
+        "terrify",
+        "terrifyingly"
+       ],
+       "notes": {
+        "terrify": "verb: to make someone feel extreme fear",
+        "terrified": "adjective: feeling extreme fear",
+        "terrifying": "adjective: causing extreme fear",
+        "terrifyingly": "adverb: in a way that causes extreme fear",
+        "terror": "noun: extreme fear"
+       }
+      },
+      {
+       "id": "F:A-scared-01-s18",
+       "word": "terrified",
+       "text": "The cub was ___, crying hard when the river swept mum away.",
+       "answer": "terrified",
+       "tiles": [
+        "terrified",
+        "terror",
+        "terrifying",
+        "terrify",
+        "terrifyingly"
+       ],
+       "notes": {
+        "terrify": "verb: to make someone feel extreme fear",
+        "terrified": "adjective: feeling extreme fear",
+        "terrifying": "adjective: causing extreme fear",
+        "terrifyingly": "adverb: in a way that causes extreme fear",
+        "terror": "noun: extreme fear"
+       }
+      },
+      {
+       "id": "F:A-scared-01-s19",
+       "word": "terrified",
+       "text": "Under the dragon's claws, the knight felt ___ and dropped his sword.",
+       "answer": "terrified",
+       "tiles": [
+        "terrified",
+        "terror",
+        "terrifying",
+        "terrify",
+        "terrifyingly"
+       ],
+       "notes": {
+        "terrify": "verb: to make someone feel extreme fear",
+        "terrified": "adjective: feeling extreme fear",
+        "terrifying": "adjective: causing extreme fear",
+        "terrifyingly": "adverb: in a way that causes extreme fear",
+        "terror": "noun: extreme fear"
+       }
+      },
+      {
+       "id": "F:A-scared-01-s20",
+       "word": "terrified",
+       "text": "When the lift stuck in darkness, Kai became ___ and screamed for help.",
+       "answer": "terrified",
+       "tiles": [
+        "terrified",
+        "terror",
+        "terrifying",
+        "terrify",
+        "terrifyingly"
+       ],
+       "notes": {
+        "terrify": "verb: to make someone feel extreme fear",
+        "terrified": "adjective: feeling extreme fear",
+        "terrifying": "adjective: causing extreme fear",
+        "terrifyingly": "adverb: in a way that causes extreme fear",
+        "terror": "noun: extreme fear"
+       }
+      },
+      {
+       "id": "F:A-scared-01-s33",
+       "word": "horrified",
+       "text": "Mum was ___ at the state of my room, hands over her mouth.",
+       "answer": "horrified",
+       "tiles": [
+        "horrified",
+        "horror",
+        "horrific",
+        "horrifying",
+        "horrify"
+       ],
+       "notes": {
+        "horrify": "verb: to make someone feel shocked and upset",
+        "horrified": "adjective: shocked and upset by something awful",
+        "horrifying": "adjective: causing shock, fear, or disgust",
+        "horror": "noun: strong fear, shock, or disgust",
+        "horrific": "adjective: extremely shocking or frightening"
+       }
+      },
+      {
+       "id": "F:A-scared-01-s34",
+       "word": "horrified",
+       "text": "Jade stared, ___, at the rotten fish the dog had dragged onto her clean bed.",
+       "answer": "horrified",
+       "tiles": [
+        "horrified",
+        "horror",
+        "horrific",
+        "horrifying",
+        "horrify"
+       ],
+       "notes": {
+        "horrify": "verb: to make someone feel shocked and upset",
+        "horrified": "adjective: shocked and upset by something awful",
+        "horrifying": "adjective: causing shock, fear, or disgust",
+        "horror": "noun: strong fear, shock, or disgust",
+        "horrific": "adjective: extremely shocking or frightening"
+       }
+      },
+      {
+       "id": "F:A-scared-01-s35",
+       "word": "horrified",
+       "text": "Leo was ___ by the smell from the fridge and slammed it shut.",
+       "answer": "horrified",
+       "tiles": [
+        "horrified",
+        "horror",
+        "horrific",
+        "horrifying",
+        "horrify"
+       ],
+       "notes": {
+        "horrify": "verb: to make someone feel shocked and upset",
+        "horrified": "adjective: shocked and upset by something awful",
+        "horrifying": "adjective: causing shock, fear, or disgust",
+        "horror": "noun: strong fear, shock, or disgust",
+        "horrific": "adjective: extremely shocking or frightening"
+       }
+      },
+      {
+       "id": "F:A-scared-01-s36",
+       "word": "horrified",
+       "text": "The librarian looked ___ when she saw the juice stains across the returned book.",
+       "answer": "horrified",
+       "tiles": [
+        "horrified",
+        "horror",
+        "horrific",
+        "horrifying",
+        "horrify"
+       ],
+       "notes": {
+        "horrify": "verb: to make someone feel shocked and upset",
+        "horrified": "adjective: shocked and upset by something awful",
+        "horrifying": "adjective: causing shock, fear, or disgust",
+        "horror": "noun: strong fear, shock, or disgust",
+        "horrific": "adjective: extremely shocking or frightening"
+       }
+      }
+     ]
+    },
+    "A-see-01": {
+     "families": {
+      "see": [
+       {
+        "form": "see",
+        "pos": "verb",
+        "note": "verb: to notice something with the eyes"
+       },
+       {
+        "form": "sees",
+        "pos": "verb",
+        "note": "verb: notices something with the eyes"
+       },
+       {
+        "form": "saw",
+        "pos": "verb",
+        "note": "verb: noticed something with the eyes"
+       },
+       {
+        "form": "seeing",
+        "pos": "verb",
+        "note": "verb: noticing something with the eyes"
+       },
+       {
+        "form": "seen",
+        "pos": "verb",
+        "note": "verb: noticed with the eyes before or by now"
+       }
+      ],
+      "watch": [
+       {
+        "form": "watch",
+        "pos": "verb",
+        "note": "verb: to keep eyes on moving or changing action for a time"
+       },
+       {
+        "form": "watched",
+        "pos": "verb",
+        "note": "verb: kept eyes on moving or changing action for a time"
+       },
+       {
+        "form": "watches",
+        "pos": "verb",
+        "note": "verb: keeps eyes on moving or changing action for a time"
+       },
+       {
+        "form": "watching",
+        "pos": "verb",
+        "note": "verb: keeping eyes on moving or changing action for a time"
+       },
+       {
+        "form": "watcher",
+        "pos": "noun",
+        "note": "noun: a person who keeps eyes on an event or thing"
+       }
+      ],
+      "read": [
+       {
+        "form": "read",
+        "pos": "verb",
+        "note": "verb: to take in and understand written words"
+       },
+       {
+        "form": "reading",
+        "pos": "verb",
+        "note": "verb: taking in and understanding written words"
+       },
+       {
+        "form": "reads",
+        "pos": "verb",
+        "note": "verb: takes in and understands written words"
+       },
+       {
+        "form": "reader",
+        "pos": "noun",
+        "note": "noun: a person who takes in written words"
+       },
+       {
+        "form": "readable",
+        "pos": "adjective",
+        "note": "adjective: easy to understand as written words"
+       }
+      ],
+      "blink": [
+       {
+        "form": "blink",
+        "pos": "verb",
+        "note": "verb: to shut and open both eyes very quickly"
+       },
+       {
+        "form": "blinked",
+        "pos": "verb",
+        "note": "verb: shut and opened both eyes very quickly"
+       },
+       {
+        "form": "blinking",
+        "pos": "verb",
+        "note": "verb: shutting and opening both eyes very quickly"
+       },
+       {
+        "form": "blinks",
+        "pos": "verb",
+        "note": "verb: shuts and opens both eyes very quickly"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:A-see-01-s01",
+       "word": "see",
+       "text": "It was too dark for Ivy to ___ her hand.",
+       "answer": "see",
+       "tiles": [
+        "see",
+        "seen",
+        "saw",
+        "seeing",
+        "sees"
+       ],
+       "notes": {
+        "see": "verb: to notice something with the eyes",
+        "sees": "verb: notices something with the eyes",
+        "saw": "verb: noticed something with the eyes",
+        "seeing": "verb: noticing something with the eyes",
+        "seen": "verb: noticed with the eyes before or by now"
+       }
+      },
+      {
+       "id": "F:A-see-01-s02",
+       "word": "see",
+       "text": "Nan's new glasses help her ___ every tiny crumb.",
+       "answer": "see",
+       "tiles": [
+        "see",
+        "seen",
+        "saw",
+        "seeing",
+        "sees"
+       ],
+       "notes": {
+        "see": "verb: to notice something with the eyes",
+        "sees": "verb: notices something with the eyes",
+        "saw": "verb: noticed something with the eyes",
+        "seeing": "verb: noticing something with the eyes",
+        "seen": "verb: noticed with the eyes before or by now"
+       }
+      },
+      {
+       "id": "F:A-see-01-s03",
+       "word": "see",
+       "text": "Found you! I can ___ your feet under the curtain!",
+       "answer": "see",
+       "tiles": [
+        "see",
+        "seen",
+        "saw",
+        "seeing",
+        "sees"
+       ],
+       "notes": {
+        "see": "verb: to notice something with the eyes",
+        "sees": "verb: notices something with the eyes",
+        "saw": "verb: noticed something with the eyes",
+        "seeing": "verb: noticing something with the eyes",
+        "seen": "verb: noticed with the eyes before or by now"
+       }
+      },
+      {
+       "id": "F:A-see-01-s04",
+       "word": "see",
+       "text": "From the hilltop, Ben could just ___ his house.",
+       "answer": "see",
+       "tiles": [
+        "see",
+        "seen",
+        "saw",
+        "seeing",
+        "sees"
+       ],
+       "notes": {
+        "see": "verb: to notice something with the eyes",
+        "sees": "verb: notices something with the eyes",
+        "saw": "verb: noticed something with the eyes",
+        "seeing": "verb: noticing something with the eyes",
+        "seen": "verb: noticed with the eyes before or by now"
+       }
+      },
+      {
+       "id": "F:A-see-01-s17",
+       "word": "watch",
+       "text": "Please ___ the puppy so he doesn't run off.",
+       "answer": "watch",
+       "tiles": [
+        "watch",
+        "watching",
+        "watched",
+        "watches",
+        "watcher"
+       ],
+       "notes": {
+        "watch": "verb: to keep eyes on moving or changing action for a time",
+        "watched": "verb: kept eyes on moving or changing action for a time",
+        "watches": "verb: keeps eyes on moving or changing action for a time",
+        "watching": "verb: keeping eyes on moving or changing action for a time",
+        "watcher": "noun: a person who keeps eyes on an event or thing"
+       }
+      },
+      {
+       "id": "F:A-see-01-s18",
+       "word": "watch",
+       "text": "The lifeguard ___ the swimmers so nobody got into trouble.",
+       "answer": "watched",
+       "tiles": [
+        "watched",
+        "watch",
+        "watching",
+        "watcher"
+       ],
+       "notes": {
+        "watch": "verb: to keep eyes on moving or changing action for a time",
+        "watched": "verb: kept eyes on moving or changing action for a time",
+        "watching": "verb: keeping eyes on moving or changing action for a time",
+        "watcher": "noun: a person who keeps eyes on an event or thing"
+       }
+      },
+      {
+       "id": "F:A-see-01-s19",
+       "word": "watch",
+       "text": "Can you ___ the bath so it doesn't overflow?",
+       "answer": "watch",
+       "tiles": [
+        "watch",
+        "watching",
+        "watched",
+        "watches",
+        "watcher"
+       ],
+       "notes": {
+        "watch": "verb: to keep eyes on moving or changing action for a time",
+        "watched": "verb: kept eyes on moving or changing action for a time",
+        "watches": "verb: keeps eyes on moving or changing action for a time",
+        "watching": "verb: keeping eyes on moving or changing action for a time",
+        "watcher": "noun: a person who keeps eyes on an event or thing"
+       }
+      },
+      {
+       "id": "F:A-see-01-s20",
+       "word": "watch",
+       "text": "Jai had to ___ the pot so it wouldn't boil over.",
+       "answer": "watch",
+       "tiles": [
+        "watch",
+        "watching",
+        "watched",
+        "watches",
+        "watcher"
+       ],
+       "notes": {
+        "watch": "verb: to keep eyes on moving or changing action for a time",
+        "watched": "verb: kept eyes on moving or changing action for a time",
+        "watches": "verb: keeps eyes on moving or changing action for a time",
+        "watching": "verb: keeping eyes on moving or changing action for a time",
+        "watcher": "noun: a person who keeps eyes on an event or thing"
+       }
+      },
+      {
+       "id": "F:A-see-01-s25",
+       "word": "read",
+       "text": "Dad ___ the bedtime story out loud in funny voices.",
+       "answer": "read",
+       "tiles": [
+        "read",
+        "reading",
+        "reader",
+        "readable"
+       ],
+       "notes": {
+        "read": "verb: to take in and understand written words",
+        "reading": "verb: taking in and understanding written words",
+        "reader": "noun: a person who takes in written words",
+        "readable": "adjective: easy to understand as written words"
+       }
+      },
+      {
+       "id": "F:A-see-01-s26",
+       "word": "read",
+       "text": "Mia ___ her chapter book right to the end.",
+       "answer": "read",
+       "tiles": [
+        "read",
+        "reading",
+        "reader",
+        "readable"
+       ],
+       "notes": {
+        "read": "verb: to take in and understand written words",
+        "reading": "verb: taking in and understanding written words",
+        "reader": "noun: a person who takes in written words",
+        "readable": "adjective: easy to understand as written words"
+       }
+      },
+      {
+       "id": "F:A-see-01-s27",
+       "word": "read",
+       "text": "Each night, Grandpa ___ two pages to me.",
+       "answer": "read",
+       "tiles": [
+        "read",
+        "reading",
+        "reader",
+        "readable"
+       ],
+       "notes": {
+        "read": "verb: to take in and understand written words",
+        "reading": "verb: taking in and understanding written words",
+        "reader": "noun: a person who takes in written words",
+        "readable": "adjective: easy to understand as written words"
+       }
+      },
+      {
+       "id": "F:A-see-01-s28",
+       "word": "read",
+       "text": "Ella ___ her chapter book under the covers by torchlight.",
+       "answer": "read",
+       "tiles": [
+        "read",
+        "reading",
+        "reader",
+        "readable"
+       ],
+       "notes": {
+        "read": "verb: to take in and understand written words",
+        "reading": "verb: taking in and understanding written words",
+        "reader": "noun: a person who takes in written words",
+        "readable": "adjective: easy to understand as written words"
+       }
+      },
+      {
+       "id": "F:A-see-01-s33",
+       "word": "blink",
+       "text": "Sand blew in Max's eyes, and he ___ fast.",
+       "answer": "blinked",
+       "tiles": [
+        "blinked",
+        "blink",
+        "blinking"
+       ],
+       "notes": {
+        "blink": "verb: to shut and open both eyes very quickly",
+        "blinked": "verb: shut and opened both eyes very quickly",
+        "blinking": "verb: shutting and opening both eyes very quickly"
+       }
+      },
+      {
+       "id": "F:A-see-01-s34",
+       "word": "blink",
+       "text": "In the staring game, Leo ___ first, so Ivy won.",
+       "answer": "blinked",
+       "tiles": [
+        "blinked",
+        "blink",
+        "blinking"
+       ],
+       "notes": {
+        "blink": "verb: to shut and open both eyes very quickly",
+        "blinked": "verb: shut and opened both eyes very quickly",
+        "blinking": "verb: shutting and opening both eyes very quickly"
+       }
+      },
+      {
+       "id": "F:A-see-01-s35",
+       "word": "blink",
+       "text": "Leaving the dark cinema, we ___ in the bright sun.",
+       "answer": "blinked",
+       "tiles": [
+        "blinked",
+        "blink",
+        "blinking"
+       ],
+       "notes": {
+        "blink": "verb: to shut and open both eyes very quickly",
+        "blinked": "verb: shut and opened both eyes very quickly",
+        "blinking": "verb: shutting and opening both eyes very quickly"
+       }
+      },
+      {
+       "id": "F:A-see-01-s36",
+       "word": "blink",
+       "text": "Campfire smoke made Dad ___ and rub his face.",
+       "answer": "blink",
+       "tiles": [
+        "blink",
+        "blinking",
+        "blinked",
+        "blinks"
+       ],
+       "notes": {
+        "blink": "verb: to shut and open both eyes very quickly",
+        "blinked": "verb: shut and opened both eyes very quickly",
+        "blinking": "verb: shutting and opening both eyes very quickly",
+        "blinks": "verb: shuts and opens both eyes very quickly"
+       }
+      }
+     ]
+    },
+    "A-shine-01": {
+     "families": {
+      "shiny": [
+       {
+        "form": "shine",
+        "pos": "verb",
+        "note": "verb: to give out or reflect light"
+       },
+       {
+        "form": "shines",
+        "pos": "verb",
+        "note": "verb: gives out or reflects light"
+       },
+       {
+        "form": "shining",
+        "pos": "adjective",
+        "note": "adjective: giving out or reflecting light"
+       },
+       {
+        "form": "shiny",
+        "pos": "adjective",
+        "note": "adjective: reflecting light brightly"
+       },
+       {
+        "form": "shinier",
+        "pos": "adjective",
+        "note": "adjective: more bright from reflected light"
+       }
+      ],
+      "sparkly": [
+       {
+        "form": "sparkle",
+        "pos": "noun",
+        "note": "noun: a small bright flash"
+       },
+       {
+        "form": "sparkles",
+        "pos": "verb",
+        "note": "verb: gives off small bright flashes"
+       },
+       {
+        "form": "sparkled",
+        "pos": "verb",
+        "note": "verb: gave off small bright flashes"
+       },
+       {
+        "form": "sparkling",
+        "pos": "adjective",
+        "note": "adjective: giving off small bright flashes"
+       },
+       {
+        "form": "sparkly",
+        "pos": "adjective",
+        "note": "adjective: full of small bright flashes"
+       }
+      ],
+      "dazzling": [
+       {
+        "form": "dazzle",
+        "pos": "verb",
+        "note": "verb: to overwhelm the eyes with bright light"
+       },
+       {
+        "form": "dazzles",
+        "pos": "verb",
+        "note": "verb: overwhelms the eyes with bright light"
+       },
+       {
+        "form": "dazzled",
+        "pos": "adjective",
+        "note": "adjective: unable to see clearly after bright light"
+       },
+       {
+        "form": "dazzling",
+        "pos": "adjective",
+        "note": "adjective: intensely bright and hard to look at"
+       },
+       {
+        "form": "dazzlingly",
+        "pos": "adverb",
+        "note": "adverb: in an intensely bright way"
+       }
+      ],
+      "radiant": [
+       {
+        "form": "radiate",
+        "pos": "verb",
+        "note": "verb: to send out light or heat"
+       },
+       {
+        "form": "radiates",
+        "pos": "verb",
+        "note": "verb: sends out light or heat"
+       },
+       {
+        "form": "radiated",
+        "pos": "verb",
+        "note": "verb: sent out light or heat"
+       },
+       {
+        "form": "radiating",
+        "pos": "verb",
+        "note": "verb: sending out light or heat"
+       },
+       {
+        "form": "radiant",
+        "pos": "adjective",
+        "note": "adjective: giving out a bright glow"
+       },
+       {
+        "form": "radiance",
+        "pos": "noun",
+        "note": "noun: a bright glow"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:A-shine-01-s01",
+       "word": "shiny",
+       "text": "The polished spoon was ___ enough to show my grin.",
+       "answer": "shiny",
+       "tiles": [
+        "shiny",
+        "shine",
+        "shining",
+        "shines",
+        "shinier"
+       ],
+       "notes": {
+        "shine": "verb: to give out or reflect light",
+        "shines": "verb: gives out or reflects light",
+        "shining": "adjective: giving out or reflecting light",
+        "shiny": "adjective: reflecting light brightly",
+        "shinier": "adjective: more bright from reflected light"
+       }
+      },
+      {
+       "id": "F:A-shine-01-s02",
+       "word": "shiny",
+       "text": "Dad rubbed the buckle until it looked ___ like a tiny mirror.",
+       "answer": "shiny",
+       "tiles": [
+        "shiny",
+        "shine",
+        "shining",
+        "shines",
+        "shinier"
+       ],
+       "notes": {
+        "shine": "verb: to give out or reflect light",
+        "shines": "verb: gives out or reflects light",
+        "shining": "adjective: giving out or reflecting light",
+        "shiny": "adjective: reflecting light brightly",
+        "shinier": "adjective: more bright from reflected light"
+       }
+      },
+      {
+       "id": "F:A-shine-01-s03",
+       "word": "shiny",
+       "text": "The new rain boots were ___, with smooth black sides.",
+       "answer": "shiny",
+       "tiles": [
+        "shiny",
+        "shine",
+        "shining",
+        "shines",
+        "shinier"
+       ],
+       "notes": {
+        "shine": "verb: to give out or reflect light",
+        "shines": "verb: gives out or reflects light",
+        "shining": "adjective: giving out or reflecting light",
+        "shiny": "adjective: reflecting light brightly",
+        "shinier": "adjective: more bright from reflected light"
+       }
+      },
+      {
+       "id": "F:A-shine-01-s10",
+       "word": "sparkly",
+       "text": "Her skirt looked ___ because hundreds of sequins made tiny glints.",
+       "answer": "sparkly",
+       "tiles": [
+        "sparkly",
+        "sparkling",
+        "sparkle",
+        "sparkles",
+        "sparkled"
+       ],
+       "notes": {
+        "sparkle": "noun: a small bright flash",
+        "sparkles": "verb: gives off small bright flashes",
+        "sparkled": "verb: gave off small bright flashes",
+        "sparkling": "adjective: giving off small bright flashes",
+        "sparkly": "adjective: full of small bright flashes"
+       }
+      },
+      {
+       "id": "F:A-shine-01-s11",
+       "word": "sparkly",
+       "text": "Even lying perfectly still, the fairy dust looked ___, packed with glitter dots.",
+       "answer": "sparkly",
+       "tiles": [
+        "sparkly",
+        "sparkling",
+        "sparkle",
+        "sparkles",
+        "sparkled"
+       ],
+       "notes": {
+        "sparkle": "noun: a small bright flash",
+        "sparkles": "verb: gives off small bright flashes",
+        "sparkled": "verb: gave off small bright flashes",
+        "sparkling": "adjective: giving off small bright flashes",
+        "sparkly": "adjective: full of small bright flashes"
+       }
+      },
+      {
+       "id": "F:A-shine-01-s17",
+       "word": "dazzling",
+       "text": "Sunlight off the fresh snow was so ___ that everyone squinted.",
+       "answer": "dazzling",
+       "tiles": [
+        "dazzling",
+        "dazzle",
+        "dazzled",
+        "dazzles",
+        "dazzlingly"
+       ],
+       "notes": {
+        "dazzle": "verb: to overwhelm the eyes with bright light",
+        "dazzles": "verb: overwhelms the eyes with bright light",
+        "dazzled": "adjective: unable to see clearly after bright light",
+        "dazzling": "adjective: intensely bright and hard to look at",
+        "dazzlingly": "adverb: in an intensely bright way"
+       }
+      },
+      {
+       "id": "F:A-shine-01-s18",
+       "word": "dazzling",
+       "text": "The headlights on full beam were ___, and Dad flipped the mirror.",
+       "answer": "dazzling",
+       "tiles": [
+        "dazzling",
+        "dazzle",
+        "dazzled",
+        "dazzles",
+        "dazzlingly"
+       ],
+       "notes": {
+        "dazzle": "verb: to overwhelm the eyes with bright light",
+        "dazzles": "verb: overwhelms the eyes with bright light",
+        "dazzled": "adjective: unable to see clearly after bright light",
+        "dazzling": "adjective: intensely bright and hard to look at",
+        "dazzlingly": "adverb: in an intensely bright way"
+       }
+      },
+      {
+       "id": "F:A-shine-01-s19",
+       "word": "dazzling",
+       "text": "At noon the white sand became ___, and we read under the parasol.",
+       "answer": "dazzling",
+       "tiles": [
+        "dazzling",
+        "dazzle",
+        "dazzled",
+        "dazzles",
+        "dazzlingly"
+       ],
+       "notes": {
+        "dazzle": "verb: to overwhelm the eyes with bright light",
+        "dazzles": "verb: overwhelms the eyes with bright light",
+        "dazzled": "adjective: unable to see clearly after bright light",
+        "dazzling": "adjective: intensely bright and hard to look at",
+        "dazzlingly": "adverb: in an intensely bright way"
+       }
+      },
+      {
+       "id": "F:A-shine-01-s20",
+       "word": "dazzling",
+       "text": "A ___ flash burst from the wizard's wand, and the goblins covered their eyes.",
+       "answer": "dazzling",
+       "tiles": [
+        "dazzling",
+        "dazzle",
+        "dazzled",
+        "dazzles",
+        "dazzlingly"
+       ],
+       "notes": {
+        "dazzle": "verb: to overwhelm the eyes with bright light",
+        "dazzles": "verb: overwhelms the eyes with bright light",
+        "dazzled": "adjective: unable to see clearly after bright light",
+        "dazzling": "adjective: intensely bright and hard to look at",
+        "dazzlingly": "adverb: in an intensely bright way"
+       }
+      },
+      {
+       "id": "F:A-shine-01-s25",
+       "word": "radiant",
+       "text": "The lantern fish seemed ___, glowing as if lit from inside.",
+       "answer": "radiant",
+       "tiles": [
+        "radiant",
+        "radiance",
+        "radiating",
+        "radiate",
+        "radiated"
+       ],
+       "notes": {
+        "radiate": "verb: to send out light or heat",
+        "radiated": "verb: sent out light or heat",
+        "radiating": "verb: sending out light or heat",
+        "radiant": "adjective: giving out a bright glow",
+        "radiance": "noun: a bright glow"
+       }
+      },
+      {
+       "id": "F:A-shine-01-s26",
+       "word": "radiant",
+       "text": "The paper lantern was ___, washing the porch in a gentle glow.",
+       "answer": "radiant",
+       "tiles": [
+        "radiant",
+        "radiance",
+        "radiating",
+        "radiate",
+        "radiated"
+       ],
+       "notes": {
+        "radiate": "verb: to send out light or heat",
+        "radiated": "verb: sent out light or heat",
+        "radiating": "verb: sending out light or heat",
+        "radiant": "adjective: giving out a bright glow",
+        "radiance": "noun: a bright glow"
+       }
+      },
+      {
+       "id": "F:A-shine-01-s27",
+       "word": "radiant",
+       "text": "The sunrise looked ___, pouring golden warmth over the hills.",
+       "answer": "radiant",
+       "tiles": [
+        "radiant",
+        "radiance",
+        "radiating",
+        "radiate",
+        "radiated"
+       ],
+       "notes": {
+        "radiate": "verb: to send out light or heat",
+        "radiated": "verb: sent out light or heat",
+        "radiating": "verb: sending out light or heat",
+        "radiant": "adjective: giving out a bright glow",
+        "radiance": "noun: a bright glow"
+       }
+      }
+     ]
+    },
+    "A-size-01": {
+     "families": {
+      "towering": [
+       {
+        "form": "tower",
+        "pos": "verb",
+        "note": "verb: to rise high above surrounding things"
+       },
+       {
+        "form": "towers",
+        "pos": "verb",
+        "note": "verb: rises high above surrounding things"
+       },
+       {
+        "form": "towered",
+        "pos": "verb",
+        "note": "verb: rose high above surrounding things"
+       },
+       {
+        "form": "towering",
+        "pos": "adjective",
+        "note": "adjective: rising very high over nearby things"
+       }
+      ],
+      "spacious": [
+       {
+        "form": "space",
+        "pos": "noun",
+        "note": "noun: empty area available for use"
+       },
+       {
+        "form": "spaces",
+        "pos": "noun",
+        "note": "noun: empty areas or gaps"
+       },
+       {
+        "form": "spaced",
+        "pos": "adjective",
+        "note": "adjective: placed with gaps between things"
+       },
+       {
+        "form": "spacing",
+        "pos": "noun",
+        "note": "noun: the gaps left between things"
+       },
+       {
+        "form": "spacious",
+        "pos": "adjective",
+        "note": "adjective: having plenty of room"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:A-size-01-s09",
+       "word": "towering",
+       "text": "The crane stood ___ over the rooftops, taller than every chimney in town.",
+       "answer": "towering",
+       "tiles": [
+        "towering",
+        "tower",
+        "towers",
+        "towered"
+       ],
+       "notes": {
+        "tower": "verb: to rise high above surrounding things",
+        "towers": "verb: rises high above surrounding things",
+        "towered": "verb: rose high above surrounding things",
+        "towering": "adjective: rising very high over nearby things"
+       }
+      },
+      {
+       "id": "F:A-size-01-s10",
+       "word": "towering",
+       "text": "From the beach, the lighthouse looked ___, high above the little cottages.",
+       "answer": "towering",
+       "tiles": [
+        "towering",
+        "tower",
+        "towers",
+        "towered"
+       ],
+       "notes": {
+        "tower": "verb: to rise high above surrounding things",
+        "towers": "verb: rises high above surrounding things",
+        "towered": "verb: rose high above surrounding things",
+        "towering": "adjective: rising very high over nearby things"
+       }
+      },
+      {
+       "id": "F:A-size-01-s11",
+       "word": "towering",
+       "text": "The ___ mast rose thin as a pencil above the harbour boats.",
+       "answer": "towering",
+       "tiles": [
+        "towering",
+        "tower",
+        "towers",
+        "towered"
+       ],
+       "notes": {
+        "tower": "verb: to rise high above surrounding things",
+        "towers": "verb: rises high above surrounding things",
+        "towered": "verb: rose high above surrounding things",
+        "towering": "adjective: rising very high over nearby things"
+       }
+      },
+      {
+       "id": "F:A-size-01-s12",
+       "word": "towering",
+       "text": "A ___ poplar stood over the courtyard, slim but stealing the afternoon sun.",
+       "answer": "towering",
+       "tiles": [
+        "towering",
+        "tower",
+        "towers",
+        "towered"
+       ],
+       "notes": {
+        "tower": "verb: to rise high above surrounding things",
+        "towers": "verb: rises high above surrounding things",
+        "towered": "verb: rose high above surrounding things",
+        "towering": "adjective: rising very high over nearby things"
+       }
+      },
+      {
+       "id": "F:A-size-01-s33",
+       "word": "spacious",
+       "text": "The new classroom felt ___, easily fitting beanbags, desks and a reading tent.",
+       "answer": "spacious",
+       "tiles": [
+        "spacious",
+        "space",
+        "spaces",
+        "spaced",
+        "spacing"
+       ],
+       "notes": {
+        "space": "noun: empty area available for use",
+        "spaces": "noun: empty areas or gaps",
+        "spaced": "adjective: placed with gaps between things",
+        "spacing": "noun: the gaps left between things",
+        "spacious": "adjective: having plenty of room"
+       }
+      },
+      {
+       "id": "F:A-size-01-s34",
+       "word": "spacious",
+       "text": "The tent looked small outside, yet inside it was ___, fitting all five of us.",
+       "answer": "spacious",
+       "tiles": [
+        "spacious",
+        "space",
+        "spaces",
+        "spaced",
+        "spacing"
+       ],
+       "notes": {
+        "space": "noun: empty area available for use",
+        "spaces": "noun: empty areas or gaps",
+        "spaced": "adjective: placed with gaps between things",
+        "spacing": "noun: the gaps left between things",
+        "spacious": "adjective: having plenty of room"
+       }
+      },
+      {
+       "id": "F:A-size-01-s35",
+       "word": "spacious",
+       "text": "Our ___ tent fitted four sleeping bags and everyone's muddy boots.",
+       "answer": "spacious",
+       "tiles": [
+        "spacious",
+        "space",
+        "spaces",
+        "spaced",
+        "spacing"
+       ],
+       "notes": {
+        "space": "noun: empty area available for use",
+        "spaces": "noun: empty areas or gaps",
+        "spaced": "adjective: placed with gaps between things",
+        "spacing": "noun: the gaps left between things",
+        "spacious": "adjective: having plenty of room"
+       }
+      },
+      {
+       "id": "F:A-size-01-s36",
+       "word": "spacious",
+       "text": "Our new car was surprisingly ___, with room for five kids and the dog.",
+       "answer": "spacious",
+       "tiles": [
+        "spacious",
+        "space",
+        "spaces",
+        "spaced",
+        "spacing"
+       ],
+       "notes": {
+        "space": "noun: empty area available for use",
+        "spaces": "noun: empty areas or gaps",
+        "spaced": "adjective: placed with gaps between things",
+        "spacing": "noun: the gaps left between things",
+        "spacious": "adjective: having plenty of room"
+       }
+      }
+     ]
+    },
+    "A-skill-01": {
+     "families": {
+      "intuition": [
+       {
+        "form": "intuition",
+        "pos": "noun",
+        "note": "noun: knowledge gained without reasoning it out"
+       },
+       {
+        "form": "intuitive",
+        "pos": "adjective",
+        "note": "adjective: known or felt without reasoning it out"
+       },
+       {
+        "form": "intuitively",
+        "pos": "adverb",
+        "note": "adverb: in a way based on feeling rather than reasoning"
+       },
+       {
+        "form": "intuit",
+        "pos": "verb",
+        "note": "verb: to know by feeling rather than reasoning"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:A-skill-01-s33",
+       "word": "intuition",
+       "text": "Before opening the box, Lina's ___ told her the kitten hid inside.",
+       "answer": "intuition",
+       "tiles": [
+        "intuition",
+        "intuitive",
+        "intuitively",
+        "intuit"
+       ],
+       "notes": {
+        "intuition": "noun: knowledge gained without reasoning it out",
+        "intuitive": "adjective: known or felt without reasoning it out",
+        "intuitively": "adverb: in a way based on feeling rather than reasoning",
+        "intuit": "verb: to know by feeling rather than reasoning"
+       }
+      },
+      {
+       "id": "F:A-skill-01-s34",
+       "word": "intuition",
+       "text": "Tom's ___ picked the safe path before he saw the loose stones.",
+       "answer": "intuition",
+       "tiles": [
+        "intuition",
+        "intuitive",
+        "intuitively",
+        "intuit"
+       ],
+       "notes": {
+        "intuition": "noun: knowledge gained without reasoning it out",
+        "intuitive": "adjective: known or felt without reasoning it out",
+        "intuitively": "adverb: in a way based on feeling rather than reasoning",
+        "intuit": "verb: to know by feeling rather than reasoning"
+       }
+      },
+      {
+       "id": "F:A-skill-01-s35",
+       "word": "intuition",
+       "text": "No map helped, yet Priya's ___ led the group back to camp.",
+       "answer": "intuition",
+       "tiles": [
+        "intuition",
+        "intuitive",
+        "intuitively",
+        "intuit"
+       ],
+       "notes": {
+        "intuition": "noun: knowledge gained without reasoning it out",
+        "intuitive": "adjective: known or felt without reasoning it out",
+        "intuitively": "adverb: in a way based on feeling rather than reasoning",
+        "intuit": "verb: to know by feeling rather than reasoning"
+       }
+      },
+      {
+       "id": "F:A-skill-01-s36",
+       "word": "intuition",
+       "text": "Milo's ___ made him choose the quiet door, just before bells rang.",
+       "answer": "intuition",
+       "tiles": [
+        "intuition",
+        "intuitive",
+        "intuitively",
+        "intuit"
+       ],
+       "notes": {
+        "intuition": "noun: knowledge gained without reasoning it out",
+        "intuitive": "adjective: known or felt without reasoning it out",
+        "intuitively": "adverb: in a way based on feeling rather than reasoning",
+        "intuit": "verb: to know by feeling rather than reasoning"
+       }
+      }
+     ]
+    },
+    "A-smart-01": {
+     "families": {
+      "clever": [
+       {
+        "form": "clever",
+        "pos": "adjective",
+        "note": "adjective: quick at finding answers or solutions"
+       },
+       {
+        "form": "cleverer",
+        "pos": "adjective",
+        "note": "adjective: more quick at solving problems"
+       },
+       {
+        "form": "cleverest",
+        "pos": "adjective",
+        "note": "adjective: most quick at solving problems"
+       },
+       {
+        "form": "cleverly",
+        "pos": "adverb",
+        "note": "adverb: in a quick, smart way"
+       },
+       {
+        "form": "cleverness",
+        "pos": "noun",
+        "note": "noun: skill at solving problems quickly"
+       }
+      ],
+      "wise": [
+       {
+        "form": "wise",
+        "pos": "adjective",
+        "note": "adjective: showing good judgement from experience"
+       },
+       {
+        "form": "wiser",
+        "pos": "adjective",
+        "note": "adjective: showing better judgement from experience"
+       },
+       {
+        "form": "wisest",
+        "pos": "adjective",
+        "note": "adjective: showing the best judgement from experience"
+       },
+       {
+        "form": "wisely",
+        "pos": "adverb",
+        "note": "adverb: with good judgement"
+       },
+       {
+        "form": "wisdom",
+        "pos": "noun",
+        "note": "noun: good judgement gained through experience"
+       }
+      ],
+      "curious": [
+       {
+        "form": "curious",
+        "pos": "adjective",
+        "note": "adjective: eager to find out and learn more"
+       },
+       {
+        "form": "curiously",
+        "pos": "adverb",
+        "note": "adverb: with an eager wish to learn or find out"
+       },
+       {
+        "form": "curiosity",
+        "pos": "noun",
+        "note": "noun: a strong wish to learn or find out"
+       },
+       {
+        "form": "curiosities",
+        "pos": "noun",
+        "note": "noun: strong wishes to learn or find out"
+       }
+      ],
+      "observant": [
+       {
+        "form": "observe",
+        "pos": "verb",
+        "note": "verb: to watch carefully or notice"
+       },
+       {
+        "form": "observes",
+        "pos": "verb",
+        "note": "verb: watches carefully or notices"
+       },
+       {
+        "form": "observed",
+        "pos": "verb",
+        "note": "verb: watched carefully or noticed"
+       },
+       {
+        "form": "observing",
+        "pos": "verb",
+        "note": "verb: watching carefully or noticing"
+       },
+       {
+        "form": "observant",
+        "pos": "adjective",
+        "note": "adjective: quick to notice details"
+       },
+       {
+        "form": "observation",
+        "pos": "noun",
+        "note": "noun: the act of watching carefully or noticing"
+       },
+       {
+        "form": "observer",
+        "pos": "noun",
+        "note": "noun: someone who watches carefully"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:A-smart-01-s01",
+       "word": "clever",
+       "text": "Maya found a ___ shortcut for the puzzle and finished it in seconds.",
+       "answer": "clever",
+       "tiles": [
+        "clever",
+        "cleverly",
+        "cleverness",
+        "cleverest",
+        "cleverer"
+       ],
+       "notes": {
+        "clever": "adjective: quick at finding answers or solutions",
+        "cleverer": "adjective: more quick at solving problems",
+        "cleverest": "adjective: most quick at solving problems",
+        "cleverly": "adverb: in a quick, smart way",
+        "cleverness": "noun: skill at solving problems quickly"
+       }
+      },
+      {
+       "id": "F:A-smart-01-s02",
+       "word": "clever",
+       "text": "Someone ___ can crack a riddle after one clue.",
+       "answer": "clever",
+       "tiles": [
+        "clever",
+        "cleverly",
+        "cleverness",
+        "cleverest",
+        "cleverer"
+       ],
+       "notes": {
+        "clever": "adjective: quick at finding answers or solutions",
+        "cleverer": "adjective: more quick at solving problems",
+        "cleverest": "adjective: most quick at solving problems",
+        "cleverly": "adverb: in a quick, smart way",
+        "cleverness": "noun: skill at solving problems quickly"
+       }
+      },
+      {
+       "id": "F:A-smart-01-s04",
+       "word": "clever",
+       "text": "Mara was ___ when one clue led her to the hidden number.",
+       "answer": "clever",
+       "tiles": [
+        "clever",
+        "cleverly",
+        "cleverness",
+        "cleverest",
+        "cleverer"
+       ],
+       "notes": {
+        "clever": "adjective: quick at finding answers or solutions",
+        "cleverer": "adjective: more quick at solving problems",
+        "cleverest": "adjective: most quick at solving problems",
+        "cleverly": "adverb: in a quick, smart way",
+        "cleverness": "noun: skill at solving problems quickly"
+       }
+      },
+      {
+       "id": "F:A-smart-01-s09",
+       "word": "wise",
+       "text": "Grandpa gave ___ advice: save the sweets until after the match.",
+       "answer": "wise",
+       "tiles": [
+        "wise",
+        "wisdom",
+        "wisely",
+        "wiser",
+        "wisest"
+       ],
+       "notes": {
+        "wise": "adjective: showing good judgement from experience",
+        "wiser": "adjective: showing better judgement from experience",
+        "wisest": "adjective: showing the best judgement from experience",
+        "wisely": "adverb: with good judgement",
+        "wisdom": "noun: good judgement gained through experience"
+       }
+      },
+      {
+       "id": "F:A-smart-01-s10",
+       "word": "wise",
+       "text": "Someone ___ knows when safety matters more than winning.",
+       "answer": "wise",
+       "tiles": [
+        "wise",
+        "wisdom",
+        "wisely",
+        "wiser",
+        "wisest"
+       ],
+       "notes": {
+        "wise": "adjective: showing good judgement from experience",
+        "wiser": "adjective: showing better judgement from experience",
+        "wisest": "adjective: showing the best judgement from experience",
+        "wisely": "adverb: with good judgement",
+        "wisdom": "noun: good judgement gained through experience"
+       }
+      },
+      {
+       "id": "F:A-smart-01-s17",
+       "word": "curious",
+       "text": "Tom stayed ___ all show, asking how the magician did every trick.",
+       "answer": "curious",
+       "tiles": [
+        "curious",
+        "curiosity",
+        "curiously",
+        "curiosities"
+       ],
+       "notes": {
+        "curious": "adjective: eager to find out and learn more",
+        "curiously": "adverb: with an eager wish to learn or find out",
+        "curiosity": "noun: a strong wish to learn or find out",
+        "curiosities": "noun: strong wishes to learn or find out"
+       }
+      },
+      {
+       "id": "F:A-smart-01-s18",
+       "word": "curious",
+       "text": "Someone ___ wants to know what is inside every closed box.",
+       "answer": "curious",
+       "tiles": [
+        "curious",
+        "curiosity",
+        "curiously",
+        "curiosities"
+       ],
+       "notes": {
+        "curious": "adjective: eager to find out and learn more",
+        "curiously": "adverb: with an eager wish to learn or find out",
+        "curiosity": "noun: a strong wish to learn or find out",
+        "curiosities": "noun: strong wishes to learn or find out"
+       }
+      },
+      {
+       "id": "F:A-smart-01-s19",
+       "word": "curious",
+       "text": "At the museum, the ___ twins pressed every information button.",
+       "answer": "curious",
+       "tiles": [
+        "curious",
+        "curiosity",
+        "curiously",
+        "curiosities"
+       ],
+       "notes": {
+        "curious": "adjective: eager to find out and learn more",
+        "curiously": "adverb: with an eager wish to learn or find out",
+        "curiosity": "noun: a strong wish to learn or find out",
+        "curiosities": "noun: strong wishes to learn or find out"
+       }
+      },
+      {
+       "id": "F:A-smart-01-s20",
+       "word": "curious",
+       "text": "The ___ puppy sniffed each bag to see what was inside.",
+       "answer": "curious",
+       "tiles": [
+        "curious",
+        "curiosity",
+        "curiously",
+        "curiosities"
+       ],
+       "notes": {
+        "curious": "adjective: eager to find out and learn more",
+        "curiously": "adverb: with an eager wish to learn or find out",
+        "curiosity": "noun: a strong wish to learn or find out",
+        "curiosities": "noun: strong wishes to learn or find out"
+       }
+      },
+      {
+       "id": "F:A-smart-01-s25",
+       "word": "observant",
+       "text": "Ana was ___ enough to spot the tiny spider hiding on the ceiling beam.",
+       "answer": "observant",
+       "tiles": [
+        "observant",
+        "observed",
+        "observation",
+        "observe",
+        "observer"
+       ],
+       "notes": {
+        "observe": "verb: to watch carefully or notice",
+        "observed": "verb: watched carefully or noticed",
+        "observant": "adjective: quick to notice details",
+        "observation": "noun: the act of watching carefully or noticing",
+        "observer": "noun: someone who watches carefully"
+       }
+      },
+      {
+       "id": "F:A-smart-01-s26",
+       "word": "observant",
+       "text": "Someone ___ can spot a missing comma on a crowded page.",
+       "answer": "observant",
+       "tiles": [
+        "observant",
+        "observed",
+        "observation",
+        "observe",
+        "observer"
+       ],
+       "notes": {
+        "observe": "verb: to watch carefully or notice",
+        "observed": "verb: watched carefully or noticed",
+        "observant": "adjective: quick to notice details",
+        "observation": "noun: the act of watching carefully or noticing",
+        "observer": "noun: someone who watches carefully"
+       }
+      },
+      {
+       "id": "F:A-smart-01-s27",
+       "word": "observant",
+       "text": "Because she was ___, Poppy saw the blue thread on the rug.",
+       "answer": "observant",
+       "tiles": [
+        "observant",
+        "observed",
+        "observation",
+        "observe",
+        "observer"
+       ],
+       "notes": {
+        "observe": "verb: to watch carefully or notice",
+        "observed": "verb: watched carefully or noticed",
+        "observant": "adjective: quick to notice details",
+        "observation": "noun: the act of watching carefully or noticing",
+        "observer": "noun: someone who watches carefully"
+       }
+      },
+      {
+       "id": "F:A-smart-01-s28",
+       "word": "observant",
+       "text": "The ___ guard heard the faint click behind the curtain.",
+       "answer": "observant",
+       "tiles": [
+        "observant",
+        "observed",
+        "observation",
+        "observe",
+        "observer"
+       ],
+       "notes": {
+        "observe": "verb: to watch carefully or notice",
+        "observed": "verb: watched carefully or noticed",
+        "observant": "adjective: quick to notice details",
+        "observation": "noun: the act of watching carefully or noticing",
+        "observer": "noun: someone who watches carefully"
+       }
+      }
+     ]
+    },
+    "A-sound-01": {
+     "families": {
+      "piercing": [
+       {
+        "form": "piercing",
+        "pos": "adjective",
+        "note": "adjective: high, sharp, and painful to hear"
+       },
+       {
+        "form": "pierce",
+        "pos": "verb",
+        "note": "verb: to cut sharply through the air as a sound"
+       },
+       {
+        "form": "pierces",
+        "pos": "verb",
+        "note": "verb: cuts sharply through the air as a sound"
+       },
+       {
+        "form": "pierced",
+        "pos": "verb",
+        "note": "verb: cut sharply through the air as a sound"
+       }
+      ],
+      "booming": [
+       {
+        "form": "booming",
+        "pos": "adjective",
+        "note": "adjective: deep and very loud"
+       },
+       {
+        "form": "boom",
+        "pos": "noun",
+        "note": "noun: a deep, very loud sound"
+       },
+       {
+        "form": "booms",
+        "pos": "verb",
+        "note": "verb: makes a deep, very loud sound"
+       },
+       {
+        "form": "boomed",
+        "pos": "verb",
+        "note": "verb: made a deep, very loud sound"
+       }
+      ],
+      "squeaky": [
+       {
+        "form": "squeaky",
+        "pos": "adjective",
+        "note": "adjective: making a short, high, thin sound"
+       },
+       {
+        "form": "squeak",
+        "pos": "noun",
+        "note": "noun: a short, high, thin sound"
+       },
+       {
+        "form": "squeaks",
+        "pos": "verb",
+        "note": "verb: makes a short, high, thin sound"
+       },
+       {
+        "form": "squeaked",
+        "pos": "verb",
+        "note": "verb: made a short, high, thin sound"
+       },
+       {
+        "form": "squeaking",
+        "pos": "adjective",
+        "note": "adjective: making a short, high, thin sound"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:A-sound-01-s17",
+       "word": "piercing",
+       "text": "The ___ whistle felt needle-bright and made everyone wince.",
+       "answer": "piercing",
+       "tiles": [
+        "piercing",
+        "pierce",
+        "pierced",
+        "pierces"
+       ],
+       "notes": {
+        "piercing": "adjective: high, sharp, and painful to hear",
+        "pierce": "verb: to cut sharply through the air as a sound",
+        "pierces": "verb: cuts sharply through the air as a sound",
+        "pierced": "verb: cut sharply through the air as a sound"
+       }
+      },
+      {
+       "id": "F:A-sound-01-s18",
+       "word": "piercing",
+       "text": "A ___ shriek sliced the air, and the class covered their heads.",
+       "answer": "piercing",
+       "tiles": [
+        "piercing",
+        "pierce",
+        "pierced",
+        "pierces"
+       ],
+       "notes": {
+        "piercing": "adjective: high, sharp, and painful to hear",
+        "pierce": "verb: to cut sharply through the air as a sound",
+        "pierces": "verb: cuts sharply through the air as a sound",
+        "pierced": "verb: cut sharply through the air as a sound"
+       }
+      },
+      {
+       "id": "F:A-sound-01-s19",
+       "word": "piercing",
+       "text": "The ___ alarm sent a painful tingle through my teeth.",
+       "answer": "piercing",
+       "tiles": [
+        "piercing",
+        "pierce",
+        "pierced",
+        "pierces"
+       ],
+       "notes": {
+        "piercing": "adjective: high, sharp, and painful to hear",
+        "pierce": "verb: to cut sharply through the air as a sound",
+        "pierces": "verb: cuts sharply through the air as a sound",
+        "pierced": "verb: cut sharply through the air as a sound"
+       }
+      },
+      {
+       "id": "F:A-sound-01-s20",
+       "word": "piercing",
+       "text": "At the pool, the ___ referee whistle made toddlers cry.",
+       "answer": "piercing",
+       "tiles": [
+        "piercing",
+        "pierce",
+        "pierced",
+        "pierces"
+       ],
+       "notes": {
+        "piercing": "adjective: high, sharp, and painful to hear",
+        "pierce": "verb: to cut sharply through the air as a sound",
+        "pierces": "verb: cuts sharply through the air as a sound",
+        "pierced": "verb: cut sharply through the air as a sound"
+       }
+      },
+      {
+       "id": "F:A-sound-01-s25",
+       "word": "booming",
+       "text": "The ___ drumbeat was low and shook the gym floor.",
+       "answer": "booming",
+       "tiles": [
+        "booming",
+        "boom",
+        "booms",
+        "boomed"
+       ],
+       "notes": {
+        "booming": "adjective: deep and very loud",
+        "boom": "noun: a deep, very loud sound",
+        "booms": "verb: makes a deep, very loud sound",
+        "boomed": "verb: made a deep, very loud sound"
+       }
+      },
+      {
+       "id": "F:A-sound-01-s26",
+       "word": "booming",
+       "text": "A ___ voice rolled across the hall and rattled windows.",
+       "answer": "booming",
+       "tiles": [
+        "booming",
+        "boom",
+        "booms",
+        "boomed"
+       ],
+       "notes": {
+        "booming": "adjective: deep and very loud",
+        "boom": "noun: a deep, very loud sound",
+        "booms": "verb: makes a deep, very loud sound",
+        "boomed": "verb: made a deep, very loud sound"
+       }
+      },
+      {
+       "id": "F:A-sound-01-s27",
+       "word": "booming",
+       "text": "The ___ gong made the stage boards tremble under our shoes.",
+       "answer": "booming",
+       "tiles": [
+        "booming",
+        "boom",
+        "booms",
+        "boomed"
+       ],
+       "notes": {
+        "booming": "adjective: deep and very loud",
+        "boom": "noun: a deep, very loud sound",
+        "booms": "verb: makes a deep, very loud sound",
+        "boomed": "verb: made a deep, very loud sound"
+       }
+      },
+      {
+       "id": "F:A-sound-01-s28",
+       "word": "booming",
+       "text": "The ___ bass of the parade drums thudded in my chest.",
+       "answer": "booming",
+       "tiles": [
+        "booming",
+        "boom",
+        "booms",
+        "boomed"
+       ],
+       "notes": {
+        "booming": "adjective: deep and very loud",
+        "boom": "noun: a deep, very loud sound",
+        "booms": "verb: makes a deep, very loud sound",
+        "boomed": "verb: made a deep, very loud sound"
+       }
+      },
+      {
+       "id": "F:A-sound-01-s33",
+       "word": "squeaky",
+       "text": "The ___ toy voice was small, peepy, and silly.",
+       "answer": "squeaky",
+       "tiles": [
+        "squeaky",
+        "squeak",
+        "squeaking",
+        "squeaks",
+        "squeaked"
+       ],
+       "notes": {
+        "squeaky": "adjective: making a short, high, thin sound",
+        "squeak": "noun: a short, high, thin sound",
+        "squeaks": "verb: makes a short, high, thin sound",
+        "squeaked": "verb: made a short, high, thin sound",
+        "squeaking": "adjective: making a short, high, thin sound"
+       }
+      }
+     ]
+    },
+    "A-statements-01": {
+     "families": {
+      "vague": [
+       {
+        "form": "vague",
+        "pos": "adjective",
+        "note": "adjective: not clear or fully explained"
+       },
+       {
+        "form": "vaguest",
+        "pos": "adjective",
+        "note": "adjective: least clear or exact"
+       },
+       {
+        "form": "vaguely",
+        "pos": "adverb",
+        "note": "adverb: in a way that is not clear or exact"
+       },
+       {
+        "form": "vagueness",
+        "pos": "noun",
+        "note": "noun: lack of clarity or exactness"
+       }
+      ],
+      "ambiguous": [
+       {
+        "form": "ambiguous",
+        "pos": "adjective",
+        "note": "adjective: having more than one possible meaning"
+       },
+       {
+        "form": "ambiguously",
+        "pos": "adverb",
+        "note": "adverb: in a way with more than one possible meaning"
+       },
+       {
+        "form": "ambiguity",
+        "pos": "noun",
+        "note": "noun: a possible double meaning or uncertainty"
+       },
+       {
+        "form": "ambiguities",
+        "pos": "noun",
+        "note": "noun: possible double meanings or uncertainties"
+       }
+      ],
+      "emphatic": [
+       {
+        "form": "emphatic",
+        "pos": "adjective",
+        "note": "adjective: forceful and definite in expression or action"
+       },
+       {
+        "form": "emphatically",
+        "pos": "adverb",
+        "note": "adverb: in a forceful and definite way"
+       },
+       {
+        "form": "emphasis",
+        "pos": "noun",
+        "note": "noun: special importance or force given to something"
+       },
+       {
+        "form": "emphasise",
+        "pos": "verb",
+        "note": "verb: to give special importance or force to something"
+       },
+       {
+        "form": "emphasises",
+        "pos": "verb",
+        "note": "verb: gives special importance or force to something"
+       },
+       {
+        "form": "emphasised",
+        "pos": "verb",
+        "note": "verb: gave special importance or force to something"
+       },
+       {
+        "form": "emphasising",
+        "pos": "verb",
+        "note": "verb: giving special importance or force to something"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:A-statements-01-s09",
+       "word": "vague",
+       "text": "Tariq's ___ invitation said the party was 'sometime near the park'.",
+       "answer": "vague",
+       "tiles": [
+        "vague",
+        "vaguely",
+        "vagueness",
+        "vaguest"
+       ],
+       "notes": {
+        "vague": "adjective: not clear or fully explained",
+        "vaguest": "adjective: least clear or exact",
+        "vaguely": "adverb: in a way that is not clear or exact",
+        "vagueness": "noun: lack of clarity or exactness"
+       }
+      },
+      {
+       "id": "F:A-statements-01-s10",
+       "word": "vague",
+       "text": "The ___ homework note only said to bring 'stuff for later'.",
+       "answer": "vague",
+       "tiles": [
+        "vague",
+        "vaguely",
+        "vagueness",
+        "vaguest"
+       ],
+       "notes": {
+        "vague": "adjective: not clear or fully explained",
+        "vaguest": "adjective: least clear or exact",
+        "vaguely": "adverb: in a way that is not clear or exact",
+        "vagueness": "noun: lack of clarity or exactness"
+       }
+      },
+      {
+       "id": "F:A-statements-01-s11",
+       "word": "vague",
+       "text": "By the fountain, Mina's ___ directions said 'somewhere past trees' and we wandered.",
+       "answer": "vague",
+       "tiles": [
+        "vague",
+        "vaguely",
+        "vagueness",
+        "vaguest"
+       ],
+       "notes": {
+        "vague": "adjective: not clear or fully explained",
+        "vaguest": "adjective: least clear or exact",
+        "vaguely": "adverb: in a way that is not clear or exact",
+        "vagueness": "noun: lack of clarity or exactness"
+       }
+      },
+      {
+       "id": "F:A-statements-01-s12",
+       "word": "vague",
+       "text": "The ___ poster promised a prize 'soon', so nobody knew the day.",
+       "answer": "vague",
+       "tiles": [
+        "vague",
+        "vaguely",
+        "vagueness",
+        "vaguest"
+       ],
+       "notes": {
+        "vague": "adjective: not clear or fully explained",
+        "vaguest": "adjective: least clear or exact",
+        "vaguely": "adverb: in a way that is not clear or exact",
+        "vagueness": "noun: lack of clarity or exactness"
+       }
+      },
+      {
+       "id": "F:A-statements-01-s17",
+       "word": "ambiguous",
+       "text": "The ___ poster covered a wall: 'Watch the crane,' beside a bird and a machine.",
+       "answer": "ambiguous",
+       "tiles": [
+        "ambiguous",
+        "ambiguity",
+        "ambiguities",
+        "ambiguously"
+       ],
+       "notes": {
+        "ambiguous": "adjective: having more than one possible meaning",
+        "ambiguously": "adverb: in a way with more than one possible meaning",
+        "ambiguity": "noun: a possible double meaning or uncertainty",
+        "ambiguities": "noun: possible double meanings or uncertainties"
+       }
+      },
+      {
+       "id": "F:A-statements-01-s18",
+       "word": "ambiguous",
+       "text": "The crowded ___ notice read 'Seal tank,' between aquarium tape and a pup drawing.",
+       "answer": "ambiguous",
+       "tiles": [
+        "ambiguous",
+        "ambiguity",
+        "ambiguities",
+        "ambiguously"
+       ],
+       "notes": {
+        "ambiguous": "adjective: having more than one possible meaning",
+        "ambiguously": "adverb: in a way with more than one possible meaning",
+        "ambiguity": "noun: a possible double meaning or uncertainty",
+        "ambiguities": "noun: possible double meanings or uncertainties"
+       }
+      },
+      {
+       "id": "F:A-statements-01-s19",
+       "word": "ambiguous",
+       "text": "At the castle fair, the paragraph-long ___ sign about 'bat training' sat by clubs and cages.",
+       "answer": "ambiguous",
+       "tiles": [
+        "ambiguous",
+        "ambiguity",
+        "ambiguities",
+        "ambiguously"
+       ],
+       "notes": {
+        "ambiguous": "adjective: having more than one possible meaning",
+        "ambiguously": "adverb: in a way with more than one possible meaning",
+        "ambiguity": "noun: a possible double meaning or uncertainty",
+        "ambiguities": "noun: possible double meanings or uncertainties"
+       }
+      },
+      {
+       "id": "F:A-statements-01-s20",
+       "word": "ambiguous",
+       "text": "The chalkboard's sprawling ___ menu line, 'Kids eat free after farmers arrive,' puzzled goats and children.",
+       "answer": "ambiguous",
+       "tiles": [
+        "ambiguous",
+        "ambiguity",
+        "ambiguities",
+        "ambiguously"
+       ],
+       "notes": {
+        "ambiguous": "adjective: having more than one possible meaning",
+        "ambiguously": "adverb: in a way with more than one possible meaning",
+        "ambiguity": "noun: a possible double meaning or uncertainty",
+        "ambiguities": "noun: possible double meanings or uncertainties"
+       }
+      },
+      {
+       "id": "F:A-statements-01-s33",
+       "word": "emphatic",
+       "text": "With a table-thump, Ava's ___ refusal shook the cups: 'I will not!'",
+       "answer": "emphatic",
+       "tiles": [
+        "emphatic",
+        "emphasis",
+        "emphasised",
+        "emphasise",
+        "emphatically"
+       ],
+       "notes": {
+        "emphatic": "adjective: forceful and definite in expression or action",
+        "emphatically": "adverb: in a forceful and definite way",
+        "emphasis": "noun: special importance or force given to something",
+        "emphasise": "verb: to give special importance or force to something",
+        "emphasised": "verb: gave special importance or force to something"
+       }
+      },
+      {
+       "id": "F:A-statements-01-s34",
+       "word": "emphatic",
+       "text": "The coach's ___ warning boomed across the pool and silenced the splashers.",
+       "answer": "emphatic",
+       "tiles": [
+        "emphatic",
+        "emphasis",
+        "emphasised",
+        "emphasise",
+        "emphatically"
+       ],
+       "notes": {
+        "emphatic": "adjective: forceful and definite in expression or action",
+        "emphatically": "adverb: in a forceful and definite way",
+        "emphasis": "noun: special importance or force given to something",
+        "emphasise": "verb: to give special importance or force to something",
+        "emphasised": "verb: gave special importance or force to something"
+       }
+      },
+      {
+       "id": "F:A-statements-01-s35",
+       "word": "emphatic",
+       "text": "At dinner, Dad's ___ 'No pets on tables!' made the kitten leap down.",
+       "answer": "emphatic",
+       "tiles": [
+        "emphatic",
+        "emphasis",
+        "emphasised",
+        "emphasise",
+        "emphatically"
+       ],
+       "notes": {
+        "emphatic": "adjective: forceful and definite in expression or action",
+        "emphatically": "adverb: in a forceful and definite way",
+        "emphasis": "noun: special importance or force given to something",
+        "emphasise": "verb: to give special importance or force to something",
+        "emphasised": "verb: gave special importance or force to something"
+       }
+      },
+      {
+       "id": "F:A-statements-01-s36",
+       "word": "emphatic",
+       "text": "The queen's ___ command rang through the hall, and guards snapped upright.",
+       "answer": "emphatic",
+       "tiles": [
+        "emphatic",
+        "emphasis",
+        "emphasised",
+        "emphasise",
+        "emphatically"
+       ],
+       "notes": {
+        "emphatic": "adjective: forceful and definite in expression or action",
+        "emphatically": "adverb: in a forceful and definite way",
+        "emphasis": "noun: special importance or force given to something",
+        "emphasise": "verb: to give special importance or force to something",
+        "emphasised": "verb: gave special importance or force to something"
+       }
+      }
+     ]
+    },
+    "A-talk-01": {
+     "families": {
+      "whisper": [
+       {
+        "form": "whisper",
+        "pos": "verb",
+        "note": "verb: to speak very softly in a low voice"
+       },
+       {
+        "form": "whispered",
+        "pos": "verb",
+        "note": "verb: spoke very softly in a low voice"
+       },
+       {
+        "form": "whispering",
+        "pos": "verb",
+        "note": "verb: speaking very softly in a low voice"
+       },
+       {
+        "form": "whispers",
+        "pos": "verb",
+        "note": "verb: speaks very softly in a low voice"
+       },
+       {
+        "form": "whisperer",
+        "pos": "noun",
+        "note": "noun: a person who speaks very softly in a low voice"
+       }
+      ],
+      "mumble": [
+       {
+        "form": "mumble",
+        "pos": "verb",
+        "note": "verb: to speak unclearly and quietly"
+       },
+       {
+        "form": "mumbled",
+        "pos": "verb",
+        "note": "verb: spoke unclearly and quietly"
+       },
+       {
+        "form": "mumbles",
+        "pos": "verb",
+        "note": "verb: speaks unclearly and quietly"
+       },
+       {
+        "form": "mumbling",
+        "pos": "verb",
+        "note": "verb: speaking unclearly and quietly"
+       }
+      ],
+      "chatter": [
+       {
+        "form": "chatter",
+        "pos": "verb",
+        "note": "verb: to talk quickly about unimportant things"
+       },
+       {
+        "form": "chattered",
+        "pos": "verb",
+        "note": "verb: talked quickly about unimportant things"
+       },
+       {
+        "form": "chattering",
+        "pos": "verb",
+        "note": "verb: talking quickly about unimportant things"
+       },
+       {
+        "form": "chatters",
+        "pos": "verb",
+        "note": "verb: talks quickly about unimportant things"
+       },
+       {
+        "form": "chatterbox",
+        "pos": "noun",
+        "note": "noun: a person who talks a lot"
+       }
+      ],
+      "announce": [
+       {
+        "form": "announce",
+        "pos": "verb",
+        "note": "verb: to make something known publicly"
+       },
+       {
+        "form": "announced",
+        "pos": "verb",
+        "note": "verb: made something known publicly"
+       },
+       {
+        "form": "announces",
+        "pos": "verb",
+        "note": "verb: makes something known publicly"
+       },
+       {
+        "form": "announcing",
+        "pos": "verb",
+        "note": "verb: making something known publicly"
+       },
+       {
+        "form": "announcement",
+        "pos": "noun",
+        "note": "noun: a public statement giving information"
+       },
+       {
+        "form": "announcer",
+        "pos": "noun",
+        "note": "noun: a person who gives information to an audience"
+       }
+      ],
+      "bellow": [
+       {
+        "form": "bellow",
+        "pos": "verb",
+        "note": "verb: to shout in a very loud deep voice"
+       },
+       {
+        "form": "bellowed",
+        "pos": "verb",
+        "note": "verb: shouted in a very loud deep voice"
+       },
+       {
+        "form": "bellowing",
+        "pos": "verb",
+        "note": "verb: shouting in a very loud deep voice"
+       },
+       {
+        "form": "bellows",
+        "pos": "verb",
+        "note": "verb: shouts in a very loud deep voice"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:A-talk-01-s01",
+       "word": "whisper",
+       "text": "I ___ the secret plan into my brother's ear, and he heard every word.",
+       "answer": "whispered",
+       "tiles": [
+        "whispered",
+        "whisper",
+        "whispering",
+        "whisperer"
+       ],
+       "notes": {
+        "whisper": "verb: to speak very softly in a low voice",
+        "whispered": "verb: spoke very softly in a low voice",
+        "whispering": "verb: speaking very softly in a low voice",
+        "whisperer": "noun: a person who speaks very softly in a low voice"
+       }
+      },
+      {
+       "id": "F:A-talk-01-s02",
+       "word": "whisper",
+       "text": "Please ___ in the library, so you don't disturb the readers.",
+       "answer": "whisper",
+       "tiles": [
+        "whisper",
+        "whispers",
+        "whispered",
+        "whispering",
+        "whisperer"
+       ],
+       "notes": {
+        "whisper": "verb: to speak very softly in a low voice",
+        "whispered": "verb: spoke very softly in a low voice",
+        "whispering": "verb: speaking very softly in a low voice",
+        "whispers": "verb: speaks very softly in a low voice",
+        "whisperer": "noun: a person who speaks very softly in a low voice"
+       }
+      },
+      {
+       "id": "F:A-talk-01-s03",
+       "word": "whisper",
+       "text": "From behind the curtain, Lia ___ the forgotten line to the stuck actor.",
+       "answer": "whispered",
+       "tiles": [
+        "whispered",
+        "whisper",
+        "whispering",
+        "whisperer"
+       ],
+       "notes": {
+        "whisper": "verb: to speak very softly in a low voice",
+        "whispered": "verb: spoke very softly in a low voice",
+        "whispering": "verb: speaking very softly in a low voice",
+        "whisperer": "noun: a person who speaks very softly in a low voice"
+       }
+      },
+      {
+       "id": "F:A-talk-01-s04",
+       "word": "whisper",
+       "text": "Under the blankets, we ___ ghost stories so we wouldn't wake Mum.",
+       "answer": "whispered",
+       "tiles": [
+        "whispered",
+        "whisper",
+        "whispering",
+        "whisperer"
+       ],
+       "notes": {
+        "whisper": "verb: to speak very softly in a low voice",
+        "whispered": "verb: spoke very softly in a low voice",
+        "whispering": "verb: speaking very softly in a low voice",
+        "whisperer": "noun: a person who speaks very softly in a low voice"
+       }
+      },
+      {
+       "id": "F:A-talk-01-s09",
+       "word": "mumble",
+       "text": "He ___, and the words came out unclear through his sandwich.",
+       "answer": "mumbled",
+       "tiles": [
+        "mumbled",
+        "mumble",
+        "mumbling"
+       ],
+       "notes": {
+        "mumble": "verb: to speak unclearly and quietly",
+        "mumbled": "verb: spoke unclearly and quietly",
+        "mumbling": "verb: speaking unclearly and quietly"
+       }
+      },
+      {
+       "id": "F:A-talk-01-s10",
+       "word": "mumble",
+       "text": "Don't ___; I am near enough but cannot catch the words.",
+       "answer": "mumble",
+       "tiles": [
+        "mumble",
+        "mumbling",
+        "mumbled",
+        "mumbles"
+       ],
+       "notes": {
+        "mumble": "verb: to speak unclearly and quietly",
+        "mumbled": "verb: spoke unclearly and quietly",
+        "mumbles": "verb: speaks unclearly and quietly",
+        "mumbling": "verb: speaking unclearly and quietly"
+       }
+      },
+      {
+       "id": "F:A-talk-01-s11",
+       "word": "mumble",
+       "text": "Mum asked about homework, and Omar ___ an answer through a mouthful of toothpaste.",
+       "answer": "mumbled",
+       "tiles": [
+        "mumbled",
+        "mumble",
+        "mumbling"
+       ],
+       "notes": {
+        "mumble": "verb: to speak unclearly and quietly",
+        "mumbled": "verb: spoke unclearly and quietly",
+        "mumbling": "verb: speaking unclearly and quietly"
+       }
+      },
+      {
+       "id": "F:A-talk-01-s12",
+       "word": "mumble",
+       "text": "The sleepy captain ___ with his chin on his chest, his words all running together.",
+       "answer": "mumbled",
+       "tiles": [
+        "mumbled",
+        "mumble",
+        "mumbling"
+       ],
+       "notes": {
+        "mumble": "verb: to speak unclearly and quietly",
+        "mumbled": "verb: spoke unclearly and quietly",
+        "mumbling": "verb: speaking unclearly and quietly"
+       }
+      },
+      {
+       "id": "F:A-talk-01-s17",
+       "word": "chatter",
+       "text": "The twins ___ like excited sparrows, tiny topic after tiny topic.",
+       "answer": "chattered",
+       "tiles": [
+        "chattered",
+        "chatter",
+        "chattering",
+        "chatterbox"
+       ],
+       "notes": {
+        "chatter": "verb: to talk quickly about unimportant things",
+        "chattered": "verb: talked quickly about unimportant things",
+        "chattering": "verb: talking quickly about unimportant things",
+        "chatterbox": "noun: a person who talks a lot"
+       }
+      },
+      {
+       "id": "F:A-talk-01-s18",
+       "word": "chatter",
+       "text": "Please stop ___ like a happy bird over every tiny thing.",
+       "answer": "chattering",
+       "tiles": [
+        "chattering",
+        "chatter",
+        "chatters",
+        "chatterbox",
+        "chattered"
+       ],
+       "notes": {
+        "chatter": "verb: to talk quickly about unimportant things",
+        "chattered": "verb: talked quickly about unimportant things",
+        "chattering": "verb: talking quickly about unimportant things",
+        "chatters": "verb: talks quickly about unimportant things",
+        "chatterbox": "noun: a person who talks a lot"
+       }
+      },
+      {
+       "id": "F:A-talk-01-s19",
+       "word": "chatter",
+       "text": "On the bus, friends ___ in a bubbling stream until our stop.",
+       "answer": "chattered",
+       "tiles": [
+        "chattered",
+        "chatter",
+        "chattering",
+        "chatterbox"
+       ],
+       "notes": {
+        "chatter": "verb: to talk quickly about unimportant things",
+        "chattered": "verb: talked quickly about unimportant things",
+        "chattering": "verb: talking quickly about unimportant things",
+        "chatterbox": "noun: a person who talks a lot"
+       }
+      },
+      {
+       "id": "F:A-talk-01-s20",
+       "word": "chatter",
+       "text": "During craft time, Mina ___ in many quick bursts between giggles.",
+       "answer": "chattered",
+       "tiles": [
+        "chattered",
+        "chatter",
+        "chattering",
+        "chatterbox"
+       ],
+       "notes": {
+        "chatter": "verb: to talk quickly about unimportant things",
+        "chattered": "verb: talked quickly about unimportant things",
+        "chattering": "verb: talking quickly about unimportant things",
+        "chatterbox": "noun: a person who talks a lot"
+       }
+      },
+      {
+       "id": "F:A-talk-01-s25",
+       "word": "announce",
+       "text": "After lunch, the head teacher will ___ the new school captains at assembly.",
+       "answer": "announce",
+       "tiles": [
+        "announce",
+        "announced",
+        "announcement",
+        "announces",
+        "announcing"
+       ],
+       "notes": {
+        "announce": "verb: to make something known publicly",
+        "announced": "verb: made something known publicly",
+        "announces": "verb: makes something known publicly",
+        "announcing": "verb: making something known publicly",
+        "announcement": "noun: a public statement giving information"
+       }
+      },
+      {
+       "id": "F:A-talk-01-s26",
+       "word": "announce",
+       "text": "Please ___ the rule change to the whole club at today's meeting.",
+       "answer": "announce",
+       "tiles": [
+        "announce",
+        "announced",
+        "announcement",
+        "announces",
+        "announcing"
+       ],
+       "notes": {
+        "announce": "verb: to make something known publicly",
+        "announced": "verb: made something known publicly",
+        "announces": "verb: makes something known publicly",
+        "announcing": "verb: making something known publicly",
+        "announcement": "noun: a public statement giving information"
+       }
+      },
+      {
+       "id": "F:A-talk-01-s27",
+       "word": "announce",
+       "text": "A sign on the pool gate ___ that swimming lessons would start on Monday.",
+       "answer": "announced",
+       "tiles": [
+        "announced",
+        "announcement",
+        "announce",
+        "announcing",
+        "announcer"
+       ],
+       "notes": {
+        "announce": "verb: to make something known publicly",
+        "announced": "verb: made something known publicly",
+        "announcing": "verb: making something known publicly",
+        "announcement": "noun: a public statement giving information",
+        "announcer": "noun: a person who gives information to an audience"
+       }
+      },
+      {
+       "id": "F:A-talk-01-s28",
+       "word": "announce",
+       "text": "The principal ___ the excursion date in the school newsletter.",
+       "answer": "announced",
+       "tiles": [
+        "announced",
+        "announcement",
+        "announce",
+        "announcing",
+        "announcer"
+       ],
+       "notes": {
+        "announce": "verb: to make something known publicly",
+        "announced": "verb: made something known publicly",
+        "announcing": "verb: making something known publicly",
+        "announcement": "noun: a public statement giving information",
+        "announcer": "noun: a person who gives information to an audience"
+       }
+      },
+      {
+       "id": "F:A-talk-01-s33",
+       "word": "bellow",
+       "text": "The giant ___ in a huge roar that shook the cave.",
+       "answer": "bellowed",
+       "tiles": [
+        "bellowed",
+        "bellow",
+        "bellowing"
+       ],
+       "notes": {
+        "bellow": "verb: to shout in a very loud deep voice",
+        "bellowed": "verb: shouted in a very loud deep voice",
+        "bellowing": "verb: shouting in a very loud deep voice"
+       }
+      },
+      {
+       "id": "F:A-talk-01-s34",
+       "word": "bellow",
+       "text": "Dad had to ___ over the storm, using his biggest roar.",
+       "answer": "bellow",
+       "tiles": [
+        "bellow",
+        "bellows",
+        "bellowing",
+        "bellowed"
+       ],
+       "notes": {
+        "bellow": "verb: to shout in a very loud deep voice",
+        "bellowed": "verb: shouted in a very loud deep voice",
+        "bellowing": "verb: shouting in a very loud deep voice",
+        "bellows": "verb: shouts in a very loud deep voice"
+       }
+      },
+      {
+       "id": "F:A-talk-01-s35",
+       "word": "bellow",
+       "text": "Across the field, the coach ___ in a deep roar over thunder.",
+       "answer": "bellowed",
+       "tiles": [
+        "bellowed",
+        "bellow",
+        "bellowing"
+       ],
+       "notes": {
+        "bellow": "verb: to shout in a very loud deep voice",
+        "bellowed": "verb: shouted in a very loud deep voice",
+        "bellowing": "verb: shouting in a very loud deep voice"
+       }
+      },
+      {
+       "id": "F:A-talk-01-s36",
+       "word": "bellow",
+       "text": "The dragon ___ from the tower, rattling cups in the kitchen.",
+       "answer": "bellowed",
+       "tiles": [
+        "bellowed",
+        "bellow",
+        "bellowing"
+       ],
+       "notes": {
+        "bellow": "verb: to shout in a very loud deep voice",
+        "bellowed": "verb: shouted in a very loud deep voice",
+        "bellowing": "verb: shouting in a very loud deep voice"
+       }
+      }
+     ]
+    },
+    "A-throw-01": {
+     "families": {
+      "toss": [
+       {
+        "form": "toss",
+        "pos": "verb",
+        "note": "verb: to throw lightly or casually"
+       },
+       {
+        "form": "tossed",
+        "pos": "verb",
+        "note": "verb: threw lightly or casually"
+       },
+       {
+        "form": "tosses",
+        "pos": "verb",
+        "note": "verb: throws lightly or casually"
+       },
+       {
+        "form": "tossing",
+        "pos": "verb",
+        "note": "verb: throwing lightly or casually"
+       }
+      ],
+      "hurl": [
+       {
+        "form": "hurl",
+        "pos": "verb",
+        "note": "verb: to throw with great force"
+       },
+       {
+        "form": "hurled",
+        "pos": "verb",
+        "note": "verb: threw with great force"
+       },
+       {
+        "form": "hurling",
+        "pos": "verb",
+        "note": "verb: throwing with great force"
+       },
+       {
+        "form": "hurls",
+        "pos": "verb",
+        "note": "verb: throws with great force"
+       }
+      ],
+      "lob": [
+       {
+        "form": "lob",
+        "pos": "verb",
+        "note": "verb: to throw in a high curve"
+       },
+       {
+        "form": "lobbed",
+        "pos": "verb",
+        "note": "verb: threw in a high curve"
+       },
+       {
+        "form": "lobbing",
+        "pos": "verb",
+        "note": "verb: throwing in a high curve"
+       },
+       {
+        "form": "lobs",
+        "pos": "verb",
+        "note": "verb: throws in a high curve"
+       }
+      ],
+      "drop": [
+       {
+        "form": "drop",
+        "pos": "verb",
+        "note": "verb: to let something fall"
+       },
+       {
+        "form": "dropped",
+        "pos": "verb",
+        "note": "verb: let something fall"
+       },
+       {
+        "form": "dropping",
+        "pos": "verb",
+        "note": "verb: letting something fall"
+       },
+       {
+        "form": "drops",
+        "pos": "verb",
+        "note": "verb: lets something fall"
+       }
+      ],
+      "roll": [
+       {
+        "form": "roll",
+        "pos": "verb",
+        "note": "verb: to move by turning over and over"
+       },
+       {
+        "form": "rolled",
+        "pos": "verb",
+        "note": "verb: moved by turning over and over"
+       },
+       {
+        "form": "rolling",
+        "pos": "verb",
+        "note": "verb: moving by turning over and over"
+       },
+       {
+        "form": "rolls",
+        "pos": "verb",
+        "note": "verb: moves by turning over and over"
+       },
+       {
+        "form": "roller",
+        "pos": "noun",
+        "note": "noun: something that moves on a turning cylinder"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:A-throw-01-s01",
+       "word": "toss",
+       "text": "With a tiny wrist flick, Ana ___ the beanbag across one arm's length.",
+       "answer": "tossed",
+       "tiles": [
+        "tossed",
+        "toss",
+        "tossing"
+       ],
+       "notes": {
+        "toss": "verb: to throw lightly or casually",
+        "tossed": "verb: threw lightly or casually",
+        "tossing": "verb: throwing lightly or casually"
+       }
+      },
+      {
+       "id": "F:A-throw-01-s02",
+       "word": "toss",
+       "text": "Dad gave an easy little flip to ___ the keys onto the sofa.",
+       "answer": "toss",
+       "tiles": [
+        "toss",
+        "tossed",
+        "tossing",
+        "tosses"
+       ],
+       "notes": {
+        "toss": "verb: to throw lightly or casually",
+        "tossed": "verb: threw lightly or casually",
+        "tosses": "verb: throws lightly or casually",
+        "tossing": "verb: throwing lightly or casually"
+       }
+      },
+      {
+       "id": "F:A-throw-01-s03",
+       "word": "toss",
+       "text": "At the picnic, Nia ___ grapes gently from palm to palm.",
+       "answer": "tossed",
+       "tiles": [
+        "tossed",
+        "toss",
+        "tossing"
+       ],
+       "notes": {
+        "toss": "verb: to throw lightly or casually",
+        "tossed": "verb: threw lightly or casually",
+        "tossing": "verb: throwing lightly or casually"
+       }
+      },
+      {
+       "id": "F:A-throw-01-s04",
+       "word": "toss",
+       "text": "During catch, Eli ___ the soft ball with a relaxed finger flick.",
+       "answer": "tossed",
+       "tiles": [
+        "tossed",
+        "toss",
+        "tossing"
+       ],
+       "notes": {
+        "toss": "verb: to throw lightly or casually",
+        "tossed": "verb: threw lightly or casually",
+        "tossing": "verb: throwing lightly or casually"
+       }
+      },
+      {
+       "id": "F:A-throw-01-s09",
+       "word": "hurl",
+       "text": "With all her strength, Mira ___ the snowball at the old fence.",
+       "answer": "hurled",
+       "tiles": [
+        "hurled",
+        "hurling",
+        "hurl"
+       ],
+       "notes": {
+        "hurl": "verb: to throw with great force",
+        "hurled": "verb: threw with great force",
+        "hurling": "verb: throwing with great force"
+       }
+      },
+      {
+       "id": "F:A-throw-01-s10",
+       "word": "hurl",
+       "text": "The giant ___ boulders as hard as he could at the castle gate.",
+       "answer": "hurled",
+       "tiles": [
+        "hurled",
+        "hurling",
+        "hurl"
+       ],
+       "notes": {
+        "hurl": "verb: to throw with great force",
+        "hurled": "verb: threw with great force",
+        "hurling": "verb: throwing with great force"
+       }
+      },
+      {
+       "id": "F:A-throw-01-s11",
+       "word": "hurl",
+       "text": "Using both hands and a fierce shout, Leo ___ the ball across the field.",
+       "answer": "hurled",
+       "tiles": [
+        "hurled",
+        "hurling",
+        "hurl"
+       ],
+       "notes": {
+        "hurl": "verb: to throw with great force",
+        "hurled": "verb: threw with great force",
+        "hurling": "verb: throwing with great force"
+       }
+      },
+      {
+       "id": "F:A-throw-01-s12",
+       "word": "hurl",
+       "text": "Angry waves ___ pebbles hard against the harbour wall during the storm.",
+       "answer": "hurled",
+       "tiles": [
+        "hurled",
+        "hurling",
+        "hurl"
+       ],
+       "notes": {
+        "hurl": "verb: to throw with great force",
+        "hurled": "verb: threw with great force",
+        "hurling": "verb: throwing with great force"
+       }
+      },
+      {
+       "id": "F:A-throw-01-s17",
+       "word": "lob",
+       "text": "At tennis practice, Uma ___ the ball in a slow curve over her rival.",
+       "answer": "lobbed",
+       "tiles": [
+        "lobbed",
+        "lob",
+        "lobbing"
+       ],
+       "notes": {
+        "lob": "verb: to throw in a high curve",
+        "lobbed": "verb: threw in a high curve",
+        "lobbing": "verb: throwing in a high curve"
+       }
+      },
+      {
+       "id": "F:A-throw-01-s18",
+       "word": "lob",
+       "text": "The player ___ a pass above the defender, not straight at him.",
+       "answer": "lobbed",
+       "tiles": [
+        "lobbed",
+        "lob",
+        "lobbing"
+       ],
+       "notes": {
+        "lob": "verb: to throw in a high curve",
+        "lobbed": "verb: threw in a high curve",
+        "lobbing": "verb: throwing in a high curve"
+       }
+      },
+      {
+       "id": "F:A-throw-01-s19",
+       "word": "lob",
+       "text": "The catapult ___ foam balls over the cardboard wall in slow looping paths.",
+       "answer": "lobbed",
+       "tiles": [
+        "lobbed",
+        "lob",
+        "lobbing"
+       ],
+       "notes": {
+        "lob": "verb: to throw in a high curve",
+        "lobbed": "verb: threw in a high curve",
+        "lobbing": "verb: throwing in a high curve"
+       }
+      },
+      {
+       "id": "F:A-throw-01-s20",
+       "word": "lob",
+       "text": "When her rival rushed the net, Priya ___ the shuttle high to the back line.",
+       "answer": "lobbed",
+       "tiles": [
+        "lobbed",
+        "lob",
+        "lobbing"
+       ],
+       "notes": {
+        "lob": "verb: to throw in a high curve",
+        "lobbed": "verb: threw in a high curve",
+        "lobbing": "verb: throwing in a high curve"
+       }
+      },
+      {
+       "id": "F:A-throw-01-s25",
+       "word": "drop",
+       "text": "At the bin, Ali ___ the wrapper by opening his fingers.",
+       "answer": "dropped",
+       "tiles": [
+        "dropped",
+        "drop",
+        "dropping"
+       ],
+       "notes": {
+        "drop": "verb: to let something fall",
+        "dropped": "verb: let something fall",
+        "dropping": "verb: letting something fall"
+       }
+      },
+      {
+       "id": "F:A-throw-01-s26",
+       "word": "drop",
+       "text": "May ___ the marble straight down by opening her hand.",
+       "answer": "dropped",
+       "tiles": [
+        "dropped",
+        "drop",
+        "dropping"
+       ],
+       "notes": {
+        "drop": "verb: to let something fall",
+        "dropped": "verb: let something fall",
+        "dropping": "verb: letting something fall"
+       }
+      },
+      {
+       "id": "F:A-throw-01-s27",
+       "word": "drop",
+       "text": "The toddler ___ the spoon from loose fingers, and it clattered below.",
+       "answer": "dropped",
+       "tiles": [
+        "dropped",
+        "drop",
+        "dropping"
+       ],
+       "notes": {
+        "drop": "verb: to let something fall",
+        "dropped": "verb: let something fall",
+        "dropping": "verb: letting something fall"
+       }
+      },
+      {
+       "id": "F:A-throw-01-s28",
+       "word": "drop",
+       "text": "On the tower, Finn ___ the pebble without any push.",
+       "answer": "dropped",
+       "tiles": [
+        "dropped",
+        "drop",
+        "dropping"
+       ],
+       "notes": {
+        "drop": "verb: to let something fall",
+        "dropped": "verb: let something fall",
+        "dropping": "verb: letting something fall"
+       }
+      },
+      {
+       "id": "F:A-throw-01-s33",
+       "word": "roll",
+       "text": "Ben ___ the hoop along the path like a wheel.",
+       "answer": "rolled",
+       "tiles": [
+        "rolled",
+        "roll",
+        "rolling",
+        "roller"
+       ],
+       "notes": {
+        "roll": "verb: to move by turning over and over",
+        "rolled": "verb: moved by turning over and over",
+        "rolling": "verb: moving by turning over and over",
+        "roller": "noun: something that moves on a turning cylinder"
+       }
+      },
+      {
+       "id": "F:A-throw-01-s34",
+       "word": "roll",
+       "text": "The toddler ___ the ball down the ramp without lifting it.",
+       "answer": "rolled",
+       "tiles": [
+        "rolled",
+        "roll",
+        "rolling",
+        "roller"
+       ],
+       "notes": {
+        "roll": "verb: to move by turning over and over",
+        "rolled": "verb: moved by turning over and over",
+        "rolling": "verb: moving by turning over and over",
+        "roller": "noun: something that moves on a turning cylinder"
+       }
+      },
+      {
+       "id": "F:A-throw-01-s35",
+       "word": "roll",
+       "text": "In bowling, Sara ___ the heavy ball along the lane.",
+       "answer": "rolls",
+       "tiles": [
+        "rolls",
+        "roll",
+        "rolling",
+        "roller"
+       ],
+       "notes": {
+        "roll": "verb: to move by turning over and over",
+        "rolling": "verb: moving by turning over and over",
+        "rolls": "verb: moves by turning over and over",
+        "roller": "noun: something that moves on a turning cylinder"
+       }
+      },
+      {
+       "id": "F:A-throw-01-s36",
+       "word": "roll",
+       "text": "Ned ___ the toy car across the floor on its four wheels.",
+       "answer": "rolled",
+       "tiles": [
+        "rolled",
+        "roll",
+        "rolling",
+        "roller"
+       ],
+       "notes": {
+        "roll": "verb: to move by turning over and over",
+        "rolled": "verb: moved by turning over and over",
+        "rolling": "verb: moving by turning over and over",
+        "roller": "noun: something that moves on a turning cylinder"
+       }
+      }
+     ]
+    },
+    "A-time-frequency-01": {
+     "families": {
+      "rarely": [
+       {
+        "form": "rare",
+        "pos": "adjective",
+        "note": "adjective: not happening or found often"
+       },
+       {
+        "form": "rarer",
+        "pos": "adjective",
+        "note": "adjective: less common than another"
+       },
+       {
+        "form": "rarest",
+        "pos": "adjective",
+        "note": "adjective: least common of all"
+       },
+       {
+        "form": "rarely",
+        "pos": "adverb",
+        "note": "adverb: not often"
+       },
+       {
+        "form": "rarity",
+        "pos": "noun",
+        "note": "noun: something uncommon, or the state of being uncommon"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:A-time-frequency-01-s09",
+       "word": "rarely",
+       "text": "Hugo ___ forgets his hat, only once or twice all year.",
+       "answer": "rarely",
+       "tiles": [
+        "rarely",
+        "rare",
+        "rarity",
+        "rarest",
+        "rarer"
+       ],
+       "notes": {
+        "rare": "adjective: not happening or found often",
+        "rarer": "adjective: less common than another",
+        "rarest": "adjective: least common of all",
+        "rarely": "adverb: not often",
+        "rarity": "noun: something uncommon, or the state of being uncommon"
+       }
+      },
+      {
+       "id": "F:A-time-frequency-01-s10",
+       "word": "rarely",
+       "text": "Our class ___ gets icy poles, just two Fridays this term.",
+       "answer": "rarely",
+       "tiles": [
+        "rarely",
+        "rare",
+        "rarity",
+        "rarest",
+        "rarer"
+       ],
+       "notes": {
+        "rare": "adjective: not happening or found often",
+        "rarer": "adjective: less common than another",
+        "rarest": "adjective: least common of all",
+        "rarely": "adverb: not often",
+        "rarity": "noun: something uncommon, or the state of being uncommon"
+       }
+      },
+      {
+       "id": "F:A-time-frequency-01-s11",
+       "word": "rarely",
+       "text": "Maya ___ visits the library at lunch, just three times this term.",
+       "answer": "rarely",
+       "tiles": [
+        "rarely",
+        "rare",
+        "rarity",
+        "rarest",
+        "rarer"
+       ],
+       "notes": {
+        "rare": "adjective: not happening or found often",
+        "rarer": "adjective: less common than another",
+        "rarest": "adjective: least common of all",
+        "rarely": "adverb: not often",
+        "rarity": "noun: something uncommon, or the state of being uncommon"
+       }
+      },
+      {
+       "id": "F:A-time-frequency-01-s12",
+       "word": "rarely",
+       "text": "The canteen ___ sells pies, only one day all year.",
+       "answer": "rarely",
+       "tiles": [
+        "rarely",
+        "rare",
+        "rarity",
+        "rarest",
+        "rarer"
+       ],
+       "notes": {
+        "rare": "adjective: not happening or found often",
+        "rarer": "adjective: less common than another",
+        "rarest": "adjective: least common of all",
+        "rarely": "adverb: not often",
+        "rarity": "noun: something uncommon, or the state of being uncommon"
+       }
+      }
+     ]
+    },
+    "A-time-nearness-01": {
+     "families": {
+      "later": [
+       {
+        "form": "late",
+        "pos": "adjective",
+        "note": "adjective: after the expected or usual time"
+       },
+       {
+        "form": "later",
+        "pos": "adverb",
+        "note": "adverb: at a time after this one"
+       },
+       {
+        "form": "latest",
+        "pos": "adjective",
+        "note": "adjective: last or most recent in time"
+       },
+       {
+        "form": "lately",
+        "pos": "adverb",
+        "note": "adverb: during recent times"
+       },
+       {
+        "form": "lateness",
+        "pos": "noun",
+        "note": "noun: the state of being after the expected time"
+       }
+      ],
+      "eventually": [
+       {
+        "form": "eventual",
+        "pos": "adjective",
+        "note": "adjective: happening in the end after some time"
+       },
+       {
+        "form": "eventually",
+        "pos": "adverb",
+        "note": "adverb: in the end, after some time"
+       },
+       {
+        "form": "eventuate",
+        "pos": "verb",
+        "note": "verb: to happen as the final result"
+       },
+       {
+        "form": "eventuality",
+        "pos": "noun",
+        "note": "noun: a possible result or outcome"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:A-time-nearness-01-s17",
+       "word": "later",
+       "text": "It's only breakfast, so we'll open the presents ___, tonight.",
+       "answer": "later",
+       "tiles": [
+        "later",
+        "late",
+        "latest",
+        "lately",
+        "lateness"
+       ],
+       "notes": {
+        "late": "adjective: after the expected or usual time",
+        "later": "adverb: at a time after this one",
+        "latest": "adjective: last or most recent in time",
+        "lately": "adverb: during recent times",
+        "lateness": "noun: the state of being after the expected time"
+       }
+      },
+      {
+       "id": "F:A-time-nearness-01-s18",
+       "word": "later",
+       "text": "___, after the shopping, Dad will mend the kite.",
+       "answer": "later",
+       "tiles": [
+        "later",
+        "late",
+        "latest",
+        "lately",
+        "lateness"
+       ],
+       "notes": {
+        "late": "adjective: after the expected or usual time",
+        "later": "adverb: at a time after this one",
+        "latest": "adjective: last or most recent in time",
+        "lately": "adverb: during recent times",
+        "lateness": "noun: the state of being after the expected time"
+       }
+      },
+      {
+       "id": "F:A-time-nearness-01-s19",
+       "word": "later",
+       "text": "The cake must cool for three hours, so we will ice it ___.",
+       "answer": "later",
+       "tiles": [
+        "later",
+        "late",
+        "latest",
+        "lately",
+        "lateness"
+       ],
+       "notes": {
+        "late": "adjective: after the expected or usual time",
+        "later": "adverb: at a time after this one",
+        "latest": "adjective: last or most recent in time",
+        "lately": "adverb: during recent times",
+        "lateness": "noun: the state of being after the expected time"
+       }
+      },
+      {
+       "id": "F:A-time-nearness-01-s20",
+       "word": "later",
+       "text": "It's still morning; you can clean your muddy boots ___, after tea.",
+       "answer": "later",
+       "tiles": [
+        "later",
+        "late",
+        "latest",
+        "lately",
+        "lateness"
+       ],
+       "notes": {
+        "late": "adjective: after the expected or usual time",
+        "later": "adverb: at a time after this one",
+        "latest": "adjective: last or most recent in time",
+        "lately": "adverb: during recent times",
+        "lateness": "noun: the state of being after the expected time"
+       }
+      },
+      {
+       "id": "F:A-time-nearness-01-s25",
+       "word": "eventually",
+       "text": "After many months, the tiny oak ___ filled the pot.",
+       "answer": "eventually",
+       "tiles": [
+        "eventually",
+        "eventual",
+        "eventuality",
+        "eventuate"
+       ],
+       "notes": {
+        "eventual": "adjective: happening in the end after some time",
+        "eventually": "adverb: in the end, after some time",
+        "eventuate": "verb: to happen as the final result",
+        "eventuality": "noun: a possible result or outcome"
+       }
+      },
+      {
+       "id": "F:A-time-nearness-01-s26",
+       "word": "eventually",
+       "text": "___, after weeks of practice, Jaya played the tune cleanly.",
+       "answer": "eventually",
+       "tiles": [
+        "eventually",
+        "eventual",
+        "eventuality",
+        "eventuate"
+       ],
+       "notes": {
+        "eventual": "adjective: happening in the end after some time",
+        "eventually": "adverb: in the end, after some time",
+        "eventuate": "verb: to happen as the final result",
+        "eventuality": "noun: a possible result or outcome"
+       }
+      },
+      {
+       "id": "F:A-time-nearness-01-s27",
+       "word": "eventually",
+       "text": "Brick by brick, over the school year, the new library ___ opened.",
+       "answer": "eventually",
+       "tiles": [
+        "eventually",
+        "eventual",
+        "eventuality",
+        "eventuate"
+       ],
+       "notes": {
+        "eventual": "adjective: happening in the end after some time",
+        "eventually": "adverb: in the end, after some time",
+        "eventuate": "verb: to happen as the final result",
+        "eventuality": "noun: a possible result or outcome"
+       }
+      },
+      {
+       "id": "F:A-time-nearness-01-s28",
+       "word": "eventually",
+       "text": "Coin by coin, over a whole year, Sam's money jar ___ held enough for a bike.",
+       "answer": "eventually",
+       "tiles": [
+        "eventually",
+        "eventual",
+        "eventuality",
+        "eventuate"
+       ],
+       "notes": {
+        "eventual": "adjective: happening in the end after some time",
+        "eventually": "adverb: in the end, after some time",
+        "eventuate": "verb: to happen as the final result",
+        "eventuality": "noun: a possible result or outcome"
+       }
+      }
+     ]
+    },
+    "A-tired-01": {
+     "families": {
+      "exhausted": [
+       {
+        "form": "exhaust",
+        "pos": "verb",
+        "note": "verb: to make someone extremely tired"
+       },
+       {
+        "form": "exhausts",
+        "pos": "verb",
+        "note": "verb: makes someone extremely tired"
+       },
+       {
+        "form": "exhausted",
+        "pos": "adjective",
+        "note": "adjective: extremely tired, with little energy left"
+       },
+       {
+        "form": "exhausting",
+        "pos": "adjective",
+        "note": "adjective: making someone extremely tired"
+       },
+       {
+        "form": "exhaustion",
+        "pos": "noun",
+        "note": "noun: extreme tiredness"
+       }
+      ],
+      "restless": [
+       {
+        "form": "rest",
+        "pos": "verb",
+        "note": "verb: to stop moving and be calm or quiet"
+       },
+       {
+        "form": "rests",
+        "pos": "verb",
+        "note": "verb: stops moving and becomes calm or quiet"
+       },
+       {
+        "form": "rested",
+        "pos": "verb",
+        "note": "verb: stopped moving to become calm or quiet"
+       },
+       {
+        "form": "resting",
+        "pos": "verb",
+        "note": "verb: stopping activity to become calm or quiet"
+       },
+       {
+        "form": "restless",
+        "pos": "adjective",
+        "note": "adjective: unable to be calm, quiet or still"
+       },
+       {
+        "form": "restlessly",
+        "pos": "adverb",
+        "note": "adverb: in an unsettled, fidgety way"
+       },
+       {
+        "form": "restlessness",
+        "pos": "noun",
+        "note": "noun: an unsettled feeling or need to move"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:A-tired-01-s09",
+       "word": "exhausted",
+       "text": "After three races, the whole team was ___, with no energy left.",
+       "answer": "exhausted",
+       "tiles": [
+        "exhausted",
+        "exhaust",
+        "exhausting",
+        "exhaustion"
+       ],
+       "notes": {
+        "exhaust": "verb: to make someone extremely tired",
+        "exhausted": "adjective: extremely tired, with little energy left",
+        "exhausting": "adjective: making someone extremely tired",
+        "exhaustion": "noun: extreme tiredness"
+       }
+      },
+      {
+       "id": "F:A-tired-01-s10",
+       "word": "exhausted",
+       "text": "The climbers were ___; not one had strength to lift a rope.",
+       "answer": "exhausted",
+       "tiles": [
+        "exhausted",
+        "exhaust",
+        "exhausting",
+        "exhaustion"
+       ],
+       "notes": {
+        "exhaust": "verb: to make someone extremely tired",
+        "exhausted": "adjective: extremely tired, with little energy left",
+        "exhausting": "adjective: making someone extremely tired",
+        "exhaustion": "noun: extreme tiredness"
+       }
+      },
+      {
+       "id": "F:A-tired-01-s11",
+       "word": "exhausted",
+       "text": "By sunset, every dancer was ___, sprawled across the studio floor.",
+       "answer": "exhausted",
+       "tiles": [
+        "exhausted",
+        "exhaust",
+        "exhausting",
+        "exhaustion"
+       ],
+       "notes": {
+        "exhaust": "verb: to make someone extremely tired",
+        "exhausted": "adjective: extremely tired, with little energy left",
+        "exhausting": "adjective: making someone extremely tired",
+        "exhaustion": "noun: extreme tiredness"
+       }
+      },
+      {
+       "id": "F:A-tired-01-s12",
+       "word": "exhausted",
+       "text": "After shovelling snow, the neighbours were ___; nobody had energy for cocoa.",
+       "answer": "exhausted",
+       "tiles": [
+        "exhausted",
+        "exhaust",
+        "exhausting",
+        "exhaustion"
+       ],
+       "notes": {
+        "exhaust": "verb: to make someone extremely tired",
+        "exhausted": "adjective: extremely tired, with little energy left",
+        "exhausting": "adjective: making someone extremely tired",
+        "exhaustion": "noun: extreme tiredness"
+       }
+      },
+      {
+       "id": "F:A-tired-01-s33",
+       "word": "restless",
+       "text": "Ben lay ___ in the tent, turning over every few minutes, sleep refusing to come.",
+       "answer": "restless",
+       "tiles": [
+        "restless",
+        "rest",
+        "resting",
+        "rests",
+        "rested"
+       ],
+       "notes": {
+        "rest": "verb: to stop moving and be calm or quiet",
+        "rests": "verb: stops moving and becomes calm or quiet",
+        "rested": "verb: stopped moving to become calm or quiet",
+        "resting": "verb: stopping activity to become calm or quiet",
+        "restless": "adjective: unable to be calm, quiet or still"
+       }
+      },
+      {
+       "id": "F:A-tired-01-s34",
+       "word": "restless",
+       "text": "The baby was ___ all evening, kicking her blanket off each time it settled.",
+       "answer": "restless",
+       "tiles": [
+        "restless",
+        "rest",
+        "resting",
+        "rests",
+        "rested"
+       ],
+       "notes": {
+        "rest": "verb: to stop moving and be calm or quiet",
+        "rests": "verb: stops moving and becomes calm or quiet",
+        "rested": "verb: stopped moving to become calm or quiet",
+        "resting": "verb: stopping activity to become calm or quiet",
+        "restless": "adjective: unable to be calm, quiet or still"
+       }
+      },
+      {
+       "id": "F:A-tired-01-s35",
+       "word": "restless",
+       "text": "On the last day of term, the whole class was ___, chairs scraping every minute.",
+       "answer": "restless",
+       "tiles": [
+        "restless",
+        "rest",
+        "resting",
+        "rests",
+        "rested"
+       ],
+       "notes": {
+        "rest": "verb: to stop moving and be calm or quiet",
+        "rests": "verb: stops moving and becomes calm or quiet",
+        "rested": "verb: stopped moving to become calm or quiet",
+        "resting": "verb: stopping activity to become calm or quiet",
+        "restless": "adjective: unable to be calm, quiet or still"
+       }
+      },
+      {
+       "id": "F:A-tired-01-s36",
+       "word": "restless",
+       "text": "Rain kept the puppies indoors, and by lunch they were ___, pacing the hallway.",
+       "answer": "restless",
+       "tiles": [
+        "restless",
+        "rest",
+        "resting",
+        "rests",
+        "rested"
+       ],
+       "notes": {
+        "rest": "verb: to stop moving and be calm or quiet",
+        "rests": "verb: stops moving and becomes calm or quiet",
+        "rested": "verb: stopped moving to become calm or quiet",
+        "resting": "verb: stopping activity to become calm or quiet",
+        "restless": "adjective: unable to be calm, quiet or still"
+       }
+      }
+     ]
+    },
+    "A-walk-manner-01": {
+     "families": {
+      "tiptoe": [
+       {
+        "form": "tiptoe",
+        "pos": "verb",
+        "note": "verb: to move quietly on the toes"
+       },
+       {
+        "form": "tiptoed",
+        "pos": "verb",
+        "note": "verb: moved quietly on the toes"
+       },
+       {
+        "form": "tiptoeing",
+        "pos": "verb",
+        "note": "verb: moving quietly on the toes"
+       },
+       {
+        "form": "tiptoes",
+        "pos": "verb",
+        "note": "verb: moves quietly on the toes"
+       }
+      ],
+      "limp": [
+       {
+        "form": "limp",
+        "pos": "verb",
+        "note": "verb: to move unevenly because of pain or injury"
+       },
+       {
+        "form": "limped",
+        "pos": "verb",
+        "note": "verb: moved unevenly because of pain or injury"
+       },
+       {
+        "form": "limping",
+        "pos": "verb",
+        "note": "verb: moving unevenly because of pain or injury"
+       },
+       {
+        "form": "limps",
+        "pos": "verb",
+        "note": "verb: moves unevenly because of pain or injury"
+       }
+      ],
+      "trudge": [
+       {
+        "form": "trudge",
+        "pos": "verb",
+        "note": "verb: to move on foot slowly with heavy steps"
+       },
+       {
+        "form": "trudged",
+        "pos": "verb",
+        "note": "verb: moved on foot slowly with heavy steps"
+       },
+       {
+        "form": "trudges",
+        "pos": "verb",
+        "note": "verb: moves on foot slowly with heavy steps"
+       },
+       {
+        "form": "trudging",
+        "pos": "verb",
+        "note": "verb: moving on foot slowly with heavy steps"
+       }
+      ],
+      "stroll": [
+       {
+        "form": "stroll",
+        "pos": "verb",
+        "note": "verb: to move on foot in a slow, relaxed way"
+       },
+       {
+        "form": "strolled",
+        "pos": "verb",
+        "note": "verb: moved on foot in a slow, relaxed way"
+       },
+       {
+        "form": "strolling",
+        "pos": "verb",
+        "note": "verb: moving on foot in a slow, relaxed way"
+       },
+       {
+        "form": "strolls",
+        "pos": "verb",
+        "note": "verb: moves on foot in a slow, relaxed way"
+       }
+      ],
+      "march": [
+       {
+        "form": "march",
+        "pos": "verb",
+        "note": "verb: to move with steady, regular steps"
+       },
+       {
+        "form": "marched",
+        "pos": "verb",
+        "note": "verb: moved with steady, regular steps"
+       },
+       {
+        "form": "marches",
+        "pos": "verb",
+        "note": "verb: moves with steady, regular steps"
+       },
+       {
+        "form": "marching",
+        "pos": "verb",
+        "note": "verb: moving with steady, regular steps"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:A-walk-manner-01-s09",
+       "word": "tiptoe",
+       "text": "Ana ___ past the sleeping baby without making a single sound.",
+       "answer": "tiptoed",
+       "tiles": [
+        "tiptoed",
+        "tiptoe",
+        "tiptoeing"
+       ],
+       "notes": {
+        "tiptoe": "verb: to move quietly on the toes",
+        "tiptoed": "verb: moved quietly on the toes",
+        "tiptoeing": "verb: moving quietly on the toes"
+       }
+      },
+      {
+       "id": "F:A-walk-manner-01-s10",
+       "word": "tiptoe",
+       "text": "We ___ down the dark hallway, careful that the floorboards stayed silent.",
+       "answer": "tiptoed",
+       "tiles": [
+        "tiptoed",
+        "tiptoe",
+        "tiptoeing"
+       ],
+       "notes": {
+        "tiptoe": "verb: to move quietly on the toes",
+        "tiptoed": "verb: moved quietly on the toes",
+        "tiptoeing": "verb: moving quietly on the toes"
+       }
+      },
+      {
+       "id": "F:A-walk-manner-01-s11",
+       "word": "tiptoe",
+       "text": "The surprise was hidden in the kitchen, so Dad ___ in before anyone could hear him.",
+       "answer": "tiptoed",
+       "tiles": [
+        "tiptoed",
+        "tiptoe",
+        "tiptoeing"
+       ],
+       "notes": {
+        "tiptoe": "verb: to move quietly on the toes",
+        "tiptoed": "verb: moved quietly on the toes",
+        "tiptoeing": "verb: moving quietly on the toes"
+       }
+      },
+      {
+       "id": "F:A-walk-manner-01-s12",
+       "word": "tiptoe",
+       "text": "She ___ around the squeaky spot in the floor that always gave her away.",
+       "answer": "tiptoed",
+       "tiles": [
+        "tiptoed",
+        "tiptoe",
+        "tiptoeing"
+       ],
+       "notes": {
+        "tiptoe": "verb: to move quietly on the toes",
+        "tiptoed": "verb: moved quietly on the toes",
+        "tiptoeing": "verb: moving quietly on the toes"
+       }
+      },
+      {
+       "id": "F:A-walk-manner-01-s33",
+       "word": "limp",
+       "text": "After twisting his ankle, Leo ___ off the field, wincing with each step.",
+       "answer": "limped",
+       "tiles": [
+        "limped",
+        "limp",
+        "limping"
+       ],
+       "notes": {
+        "limp": "verb: to move unevenly because of pain or injury",
+        "limped": "verb: moved unevenly because of pain or injury",
+        "limping": "verb: moving unevenly because of pain or injury"
+       }
+      },
+      {
+       "id": "F:A-walk-manner-01-s34",
+       "word": "limp",
+       "text": "The old dog ___ to its basket, holding one sore paw off the ground.",
+       "answer": "limped",
+       "tiles": [
+        "limped",
+        "limp",
+        "limping"
+       ],
+       "notes": {
+        "limp": "verb: to move unevenly because of pain or injury",
+        "limped": "verb: moved unevenly because of pain or injury",
+        "limping": "verb: moving unevenly because of pain or injury"
+       }
+      },
+      {
+       "id": "F:A-walk-manner-01-s35",
+       "word": "limp",
+       "text": "Her bruised knee made her ___ the last block home.",
+       "answer": "limp",
+       "tiles": [
+        "limp",
+        "limping",
+        "limped",
+        "limps"
+       ],
+       "notes": {
+        "limp": "verb: to move unevenly because of pain or injury",
+        "limped": "verb: moved unevenly because of pain or injury",
+        "limping": "verb: moving unevenly because of pain or injury",
+        "limps": "verb: moves unevenly because of pain or injury"
+       }
+      },
+      {
+       "id": "F:A-walk-manner-01-s36",
+       "word": "limp",
+       "text": "Clutching his ankle, he ___ to the bench, and the coach sent on a substitute.",
+       "answer": "limped",
+       "tiles": [
+        "limped",
+        "limp",
+        "limping"
+       ],
+       "notes": {
+        "limp": "verb: to move unevenly because of pain or injury",
+        "limped": "verb: moved unevenly because of pain or injury",
+        "limping": "verb: moving unevenly because of pain or injury"
+       }
+      },
+      {
+       "id": "F:A-walk-manner-01-s17",
+       "word": "trudge",
+       "text": "Worn out after training, every player ___ slowly back to the changing rooms together.",
+       "answer": "trudged",
+       "tiles": [
+        "trudged",
+        "trudging",
+        "trudge"
+       ],
+       "notes": {
+        "trudge": "verb: to move on foot slowly with heavy steps",
+        "trudged": "verb: moved on foot slowly with heavy steps",
+        "trudging": "verb: moving on foot slowly with heavy steps"
+       }
+      },
+      {
+       "id": "F:A-walk-manner-01-s18",
+       "word": "trudge",
+       "text": "We ___ up the last hill together, boots dragging, longing for a rest.",
+       "answer": "trudged",
+       "tiles": [
+        "trudged",
+        "trudging",
+        "trudge"
+       ],
+       "notes": {
+        "trudge": "verb: to move on foot slowly with heavy steps",
+        "trudged": "verb: moved on foot slowly with heavy steps",
+        "trudging": "verb: moving on foot slowly with heavy steps"
+       }
+      },
+      {
+       "id": "F:A-walk-manner-01-s19",
+       "word": "trudge",
+       "text": "Cold and exhausted, with snow up to their knees, the hikers ___ toward the distant cabin.",
+       "answer": "trudged",
+       "tiles": [
+        "trudged",
+        "trudging",
+        "trudge"
+       ],
+       "notes": {
+        "trudge": "verb: to move on foot slowly with heavy steps",
+        "trudged": "verb: moved on foot slowly with heavy steps",
+        "trudging": "verb: moving on foot slowly with heavy steps"
+       }
+      },
+      {
+       "id": "F:A-walk-manner-01-s20",
+       "word": "trudge",
+       "text": "After the longest school day ever, Sam ___ home under a backpack full of books.",
+       "answer": "trudged",
+       "tiles": [
+        "trudged",
+        "trudging",
+        "trudge"
+       ],
+       "notes": {
+        "trudge": "verb: to move on foot slowly with heavy steps",
+        "trudged": "verb: moved on foot slowly with heavy steps",
+        "trudging": "verb: moving on foot slowly with heavy steps"
+       }
+      },
+      {
+       "id": "F:A-walk-manner-01-s25",
+       "word": "stroll",
+       "text": "With nowhere to be all afternoon, we ___ along the riverbank.",
+       "answer": "strolled",
+       "tiles": [
+        "strolled",
+        "stroll",
+        "strolling"
+       ],
+       "notes": {
+        "stroll": "verb: to move on foot in a slow, relaxed way",
+        "strolled": "verb: moved on foot in a slow, relaxed way",
+        "strolling": "verb: moving on foot in a slow, relaxed way"
+       }
+      },
+      {
+       "id": "F:A-walk-manner-01-s26",
+       "word": "stroll",
+       "text": "They ___ through the park in the sunshine, stopping to smell the roses.",
+       "answer": "strolled",
+       "tiles": [
+        "strolled",
+        "stroll",
+        "strolling"
+       ],
+       "notes": {
+        "stroll": "verb: to move on foot in a slow, relaxed way",
+        "strolled": "verb: moved on foot in a slow, relaxed way",
+        "strolling": "verb: moving on foot in a slow, relaxed way"
+       }
+      },
+      {
+       "id": "F:A-walk-manner-01-s27",
+       "word": "stroll",
+       "text": "Ice creams in hand, the two friends ___ down the pier, chatting about nothing.",
+       "answer": "strolled",
+       "tiles": [
+        "strolled",
+        "stroll",
+        "strolling"
+       ],
+       "notes": {
+        "stroll": "verb: to move on foot in a slow, relaxed way",
+        "strolled": "verb: moved on foot in a slow, relaxed way",
+        "strolling": "verb: moving on foot in a slow, relaxed way"
+       }
+      },
+      {
+       "id": "F:A-walk-manner-01-s28",
+       "word": "stroll",
+       "text": "On holiday at last, Grandpa ___ around the old town admiring the doorways.",
+       "answer": "strolled",
+       "tiles": [
+        "strolled",
+        "stroll",
+        "strolling"
+       ],
+       "notes": {
+        "stroll": "verb: to move on foot in a slow, relaxed way",
+        "strolled": "verb: moved on foot in a slow, relaxed way",
+        "strolling": "verb: moving on foot in a slow, relaxed way"
+       }
+      },
+      {
+       "id": "F:A-walk-manner-01-s01",
+       "word": "march",
+       "text": "The band ___ across the field in perfect time with the drums.",
+       "answer": "marched",
+       "tiles": [
+        "marched",
+        "march",
+        "marching"
+       ],
+       "notes": {
+        "march": "verb: to move with steady, regular steps",
+        "marched": "verb: moved with steady, regular steps",
+        "marching": "verb: moving with steady, regular steps"
+       }
+      },
+      {
+       "id": "F:A-walk-manner-01-s02",
+       "word": "march",
+       "text": "Chin up and arms swinging, the scouts ___ in neat rows past the judges.",
+       "answer": "marched",
+       "tiles": [
+        "marched",
+        "march",
+        "marching"
+       ],
+       "notes": {
+        "march": "verb: to move with steady, regular steps",
+        "marched": "verb: moved with steady, regular steps",
+        "marching": "verb: moving with steady, regular steps"
+       }
+      },
+      {
+       "id": "F:A-walk-manner-01-s04",
+       "word": "march",
+       "text": "The team ___ onto the court in a single proud line, step for step.",
+       "answer": "marched",
+       "tiles": [
+        "marched",
+        "march",
+        "marching"
+       ],
+       "notes": {
+        "march": "verb: to move with steady, regular steps",
+        "marched": "verb: moved with steady, regular steps",
+        "marching": "verb: moving with steady, regular steps"
+       }
+      }
+     ]
+    },
+    "A-water-move-01": {
+     "families": {
+      "wade": [
+       {
+        "form": "wade",
+        "pos": "verb",
+        "note": "verb: to walk through shallow water"
+       },
+       {
+        "form": "waded",
+        "pos": "verb",
+        "note": "verb: walked through shallow water"
+       },
+       {
+        "form": "wades",
+        "pos": "verb",
+        "note": "verb: walks through shallow water"
+       },
+       {
+        "form": "wading",
+        "pos": "verb",
+        "note": "verb: walking through shallow water"
+       }
+      ],
+      "paddle": [
+       {
+        "form": "paddle",
+        "pos": "verb",
+        "note": "verb: to splash about in water with hands or feet"
+       },
+       {
+        "form": "paddled",
+        "pos": "verb",
+        "note": "verb: splashed about in water with hands or feet"
+       },
+       {
+        "form": "paddles",
+        "pos": "verb",
+        "note": "verb: splashes about in water with hands or feet"
+       },
+       {
+        "form": "paddling",
+        "pos": "verb",
+        "note": "verb: splashing about in water with hands or feet"
+       }
+      ],
+      "drift": [
+       {
+        "form": "drift",
+        "pos": "verb",
+        "note": "verb: to be carried along by air or water"
+       },
+       {
+        "form": "drifted",
+        "pos": "verb",
+        "note": "verb: was carried along by air or water"
+       },
+       {
+        "form": "drifting",
+        "pos": "verb",
+        "note": "verb: being carried along by air or water"
+       },
+       {
+        "form": "drifts",
+        "pos": "verb",
+        "note": "verb: is carried along by air or water"
+       },
+       {
+        "form": "drifter",
+        "pos": "noun",
+        "note": "noun: someone or something carried along by air or water"
+       }
+      ],
+      "plunge": [
+       {
+        "form": "plunge",
+        "pos": "verb",
+        "note": "verb: to drop or jump suddenly downward into something"
+       },
+       {
+        "form": "plunged",
+        "pos": "verb",
+        "note": "verb: dropped or jumped suddenly downward into something"
+       },
+       {
+        "form": "plunges",
+        "pos": "verb",
+        "note": "verb: drops or jumps suddenly downward into something"
+       },
+       {
+        "form": "plunging",
+        "pos": "verb",
+        "note": "verb: dropping or jumping suddenly downward into something"
+       }
+      ],
+      "bob": [
+       {
+        "form": "bob",
+        "pos": "verb",
+        "note": "verb: to move up and down again and again"
+       },
+       {
+        "form": "bobbed",
+        "pos": "verb",
+        "note": "verb: moved up and down again and again"
+       },
+       {
+        "form": "bobbing",
+        "pos": "verb",
+        "note": "verb: moving up and down again and again"
+       },
+       {
+        "form": "bobs",
+        "pos": "verb",
+        "note": "verb: moves up and down again and again"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:A-water-move-01-s01",
+       "word": "wade",
+       "text": "Lena ___ across the ankle-high stream, holding her lunchbox above the ripples.",
+       "answer": "waded",
+       "tiles": [
+        "waded",
+        "wade",
+        "wading"
+       ],
+       "notes": {
+        "wade": "verb: to walk through shallow water",
+        "waded": "verb: walked through shallow water",
+        "wading": "verb: walking through shallow water"
+       }
+      },
+      {
+       "id": "F:A-water-move-01-s02",
+       "word": "wade",
+       "text": "Our class ___ through knee-high puddles after the drain blocked the playground gate.",
+       "answer": "waded",
+       "tiles": [
+        "waded",
+        "wade",
+        "wading"
+       ],
+       "notes": {
+        "wade": "verb: to walk through shallow water",
+        "waded": "verb: walked through shallow water",
+        "wading": "verb: walking through shallow water"
+       }
+      },
+      {
+       "id": "F:A-water-move-01-s03",
+       "word": "wade",
+       "text": "Mum lifted her skirt and ___ to the stranded football near the reeds.",
+       "answer": "waded",
+       "tiles": [
+        "waded",
+        "wade",
+        "wading"
+       ],
+       "notes": {
+        "wade": "verb: to walk through shallow water",
+        "waded": "verb: walked through shallow water",
+        "wading": "verb: walking through shallow water"
+       }
+      },
+      {
+       "id": "F:A-water-move-01-s04",
+       "word": "wade",
+       "text": "With socks stuffed in pockets, the hikers ___ over shiny stones to camp.",
+       "answer": "waded",
+       "tiles": [
+        "waded",
+        "wade",
+        "wading"
+       ],
+       "notes": {
+        "wade": "verb: to walk through shallow water",
+        "waded": "verb: walked through shallow water",
+        "wading": "verb: walking through shallow water"
+       }
+      },
+      {
+       "id": "F:A-water-move-01-s10",
+       "word": "paddle",
+       "text": "On warm afternoons, Rafi ___ from the low step, flicking spray with his toes.",
+       "answer": "paddles",
+       "tiles": [
+        "paddles",
+        "paddle",
+        "paddling"
+       ],
+       "notes": {
+        "paddle": "verb: to splash about in water with hands or feet",
+        "paddles": "verb: splashes about in water with hands or feet",
+        "paddling": "verb: splashing about in water with hands or feet"
+       }
+      },
+      {
+       "id": "F:A-water-move-01-s12",
+       "word": "paddle",
+       "text": "The beach trip let us ___ from the rock ledge, stirring the foam gently.",
+       "answer": "paddle",
+       "tiles": [
+        "paddle",
+        "paddling",
+        "paddles",
+        "paddled"
+       ],
+       "notes": {
+        "paddle": "verb: to splash about in water with hands or feet",
+        "paddled": "verb: splashed about in water with hands or feet",
+        "paddles": "verb: splashes about in water with hands or feet",
+        "paddling": "verb: splashing about in water with hands or feet"
+       }
+      },
+      {
+       "id": "F:A-water-move-01-s17",
+       "word": "drift",
+       "text": "The paper boat ___ downstream without oars, engine, or anyone pushing.",
+       "answer": "drifted",
+       "tiles": [
+        "drifted",
+        "drift",
+        "drifting",
+        "drifter"
+       ],
+       "notes": {
+        "drift": "verb: to be carried along by air or water",
+        "drifted": "verb: was carried along by air or water",
+        "drifting": "verb: being carried along by air or water",
+        "drifter": "noun: someone or something carried along by air or water"
+       }
+      },
+      {
+       "id": "F:A-water-move-01-s18",
+       "word": "drift",
+       "text": "A leaf ___ ten metres downstream, lying flat and still on the river.",
+       "answer": "drifted",
+       "tiles": [
+        "drifted",
+        "drift",
+        "drifting",
+        "drifter"
+       ],
+       "notes": {
+        "drift": "verb: to be carried along by air or water",
+        "drifted": "verb: was carried along by air or water",
+        "drifting": "verb: being carried along by air or water",
+        "drifter": "noun: someone or something carried along by air or water"
+       }
+      },
+      {
+       "id": "F:A-water-move-01-s19",
+       "word": "drift",
+       "text": "The untied raft ___ away, level as a tray, while everyone argued.",
+       "answer": "drifted",
+       "tiles": [
+        "drifted",
+        "drift",
+        "drifting",
+        "drifter"
+       ],
+       "notes": {
+        "drift": "verb: to be carried along by air or water",
+        "drifted": "verb: was carried along by air or water",
+        "drifting": "verb: being carried along by air or water",
+        "drifter": "noun: someone or something carried along by air or water"
+       }
+      },
+      {
+       "id": "F:A-water-move-01-s25",
+       "word": "plunge",
+       "text": "At the whistle, Sam ___ headfirst from the board into the pool.",
+       "answer": "plunged",
+       "tiles": [
+        "plunged",
+        "plunge",
+        "plunging"
+       ],
+       "notes": {
+        "plunge": "verb: to drop or jump suddenly downward into something",
+        "plunged": "verb: dropped or jumped suddenly downward into something",
+        "plunging": "verb: dropping or jumping suddenly downward into something"
+       }
+      },
+      {
+       "id": "F:A-water-move-01-s26",
+       "word": "plunge",
+       "text": "The stunt frog ___ from the lily pad into the pond with one leap.",
+       "answer": "plunges",
+       "tiles": [
+        "plunges",
+        "plunge",
+        "plunging"
+       ],
+       "notes": {
+        "plunge": "verb: to drop or jump suddenly downward into something",
+        "plunges": "verb: drops or jumps suddenly downward into something",
+        "plunging": "verb: dropping or jumping suddenly downward into something"
+       }
+      },
+      {
+       "id": "F:A-water-move-01-s27",
+       "word": "plunge",
+       "text": "The pirate ___ off the mast, and a tall spray hid his hat.",
+       "answer": "plunged",
+       "tiles": [
+        "plunged",
+        "plunge",
+        "plunging"
+       ],
+       "notes": {
+        "plunge": "verb: to drop or jump suddenly downward into something",
+        "plunged": "verb: dropped or jumped suddenly downward into something",
+        "plunging": "verb: dropping or jumping suddenly downward into something"
+       }
+      },
+      {
+       "id": "F:A-water-move-01-s28",
+       "word": "plunge",
+       "text": "The dragon made its rider ___ through the cloud into the lake below.",
+       "answer": "plunge",
+       "tiles": [
+        "plunge",
+        "plunged",
+        "plunging",
+        "plunges"
+       ],
+       "notes": {
+        "plunge": "verb: to drop or jump suddenly downward into something",
+        "plunged": "verb: dropped or jumped suddenly downward into something",
+        "plunges": "verb: drops or jumps suddenly downward into something",
+        "plunging": "verb: dropping or jumping suddenly downward into something"
+       }
+      },
+      {
+       "id": "F:A-water-move-01-s33",
+       "word": "bob",
+       "text": "The cork ___ in place, rising and sinking beside the toy boat.",
+       "answer": "bobbed",
+       "tiles": [
+        "bobbed",
+        "bob",
+        "bobbing"
+       ],
+       "notes": {
+        "bob": "verb: to move up and down again and again",
+        "bobbed": "verb: moved up and down again and again",
+        "bobbing": "verb: moving up and down again and again"
+       }
+      },
+      {
+       "id": "F:A-water-move-01-s34",
+       "word": "bob",
+       "text": "A fishing float ___ on the spot whenever tiny waves pass.",
+       "answer": "bobs",
+       "tiles": [
+        "bobs",
+        "bob",
+        "bobbing"
+       ],
+       "notes": {
+        "bob": "verb: to move up and down again and again",
+        "bobbing": "verb: moving up and down again and again",
+        "bobs": "verb: moves up and down again and again"
+       }
+      }
+     ]
+    },
+    "A-wet-01": {
+     "families": {
+      "soaked": [
+       {
+        "form": "soak",
+        "pos": "verb",
+        "note": "verb: to make or become wet all the way through"
+       },
+       {
+        "form": "soaks",
+        "pos": "verb",
+        "note": "verb: makes or becomes wet all the way through"
+       },
+       {
+        "form": "soaked",
+        "pos": "adjective",
+        "note": "adjective: wet all the way through"
+       },
+       {
+        "form": "soaking",
+        "pos": "adjective",
+        "note": "adjective: very wet all the way through"
+       }
+      ],
+      "damp": [
+       {
+        "form": "damp",
+        "pos": "adjective",
+        "note": "adjective: slightly wet"
+       },
+       {
+        "form": "damper",
+        "pos": "adjective",
+        "note": "adjective: less dry than something else"
+       },
+       {
+        "form": "dampness",
+        "pos": "noun",
+        "note": "noun: slight wetness"
+       },
+       {
+        "form": "dampen",
+        "pos": "verb",
+        "note": "verb: to make or become slightly wet"
+       },
+       {
+        "form": "dampened",
+        "pos": "verb",
+        "note": "verb: made or became slightly wet"
+       }
+      ],
+      "dripping": [
+       {
+        "form": "drip",
+        "pos": "verb",
+        "note": "verb: to fall in small drops"
+       },
+       {
+        "form": "drips",
+        "pos": "verb",
+        "note": "verb: falls in small drops"
+       },
+       {
+        "form": "dripped",
+        "pos": "verb",
+        "note": "verb: fell in small drops"
+       },
+       {
+        "form": "dripping",
+        "pos": "adjective",
+        "note": "adjective: so wet that drops are falling"
+       },
+       {
+        "form": "drippy",
+        "pos": "adjective",
+        "note": "adjective: wet enough to let drops fall"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:A-wet-01-s01",
+       "word": "soaked",
+       "text": "Caught in the storm with no umbrella, Ana got ___ to the skin.",
+       "answer": "soaked",
+       "tiles": [
+        "soaked",
+        "soak",
+        "soaking"
+       ],
+       "notes": {
+        "soak": "verb: to make or become wet all the way through",
+        "soaked": "adjective: wet all the way through",
+        "soaking": "adjective: very wet all the way through"
+       }
+      },
+      {
+       "id": "F:A-wet-01-s02",
+       "word": "soaked",
+       "text": "Ella fell in the river in her school uniform and came out ___ to the bone.",
+       "answer": "soaked",
+       "tiles": [
+        "soaked",
+        "soak",
+        "soaking"
+       ],
+       "notes": {
+        "soak": "verb: to make or become wet all the way through",
+        "soaked": "adjective: wet all the way through",
+        "soaking": "adjective: very wet all the way through"
+       }
+      },
+      {
+       "id": "F:A-wet-01-s03",
+       "word": "soaked",
+       "text": "After the hose fight, Jack was ___ right down to his undies.",
+       "answer": "soaked",
+       "tiles": [
+        "soaked",
+        "soak",
+        "soaking"
+       ],
+       "notes": {
+        "soak": "verb: to make or become wet all the way through",
+        "soaked": "adjective: wet all the way through",
+        "soaking": "adjective: very wet all the way through"
+       }
+      },
+      {
+       "id": "F:A-wet-01-s04",
+       "word": "soaked",
+       "text": "The storm got through my raincoat and jumper, and even my singlet was ___ through.",
+       "answer": "soaked",
+       "tiles": [
+        "soaked",
+        "soak",
+        "soaking"
+       ],
+       "notes": {
+        "soak": "verb: to make or become wet all the way through",
+        "soaked": "adjective: wet all the way through",
+        "soaking": "adjective: very wet all the way through"
+       }
+      },
+      {
+       "id": "F:A-wet-01-s09",
+       "word": "damp",
+       "text": "The apron felt ___, just a little cool from the spray.",
+       "answer": "damp",
+       "tiles": [
+        "damp",
+        "damper",
+        "dampen",
+        "dampened",
+        "dampness"
+       ],
+       "notes": {
+        "damp": "adjective: slightly wet",
+        "damper": "adjective: less dry than something else",
+        "dampness": "noun: slight wetness",
+        "dampen": "verb: to make or become slightly wet",
+        "dampened": "verb: made or became slightly wet"
+       }
+      },
+      {
+       "id": "F:A-wet-01-s10",
+       "word": "damp",
+       "text": "The bench was ___, with only a faint mark on my sleeve.",
+       "answer": "damp",
+       "tiles": [
+        "damp",
+        "damper",
+        "dampen",
+        "dampened",
+        "dampness"
+       ],
+       "notes": {
+        "damp": "adjective: slightly wet",
+        "damper": "adjective: less dry than something else",
+        "dampness": "noun: slight wetness",
+        "dampen": "verb: to make or become slightly wet",
+        "dampened": "verb: made or became slightly wet"
+       }
+      },
+      {
+       "id": "F:A-wet-01-s11",
+       "word": "damp",
+       "text": "Mist touched the window, leaving the curtain ___ near the bottom edge.",
+       "answer": "damp",
+       "tiles": [
+        "damp",
+        "damper",
+        "dampen",
+        "dampened",
+        "dampness"
+       ],
+       "notes": {
+        "damp": "adjective: slightly wet",
+        "damper": "adjective: less dry than something else",
+        "dampness": "noun: slight wetness",
+        "dampen": "verb: to make or become slightly wet",
+        "dampened": "verb: made or became slightly wet"
+       }
+      },
+      {
+       "id": "F:A-wet-01-s12",
+       "word": "damp",
+       "text": "A small splash made the worksheet ___, but the writing stayed clear.",
+       "answer": "damp",
+       "tiles": [
+        "damp",
+        "damper",
+        "dampen",
+        "dampened",
+        "dampness"
+       ],
+       "notes": {
+        "damp": "adjective: slightly wet",
+        "damper": "adjective: less dry than something else",
+        "dampness": "noun: slight wetness",
+        "dampen": "verb: to make or become slightly wet",
+        "dampened": "verb: made or became slightly wet"
+       }
+      },
+      {
+       "id": "F:A-wet-01-s25",
+       "word": "dripping",
+       "text": "The glass statue was ___; beads slid off its chin.",
+       "answer": "dripping",
+       "tiles": [
+        "dripping",
+        "drip",
+        "drips",
+        "dripped",
+        "drippy"
+       ],
+       "notes": {
+        "drip": "verb: to fall in small drops",
+        "drips": "verb: falls in small drops",
+        "dripped": "verb: fell in small drops",
+        "dripping": "adjective: so wet that drops are falling",
+        "drippy": "adjective: wet enough to let drops fall"
+       }
+      },
+      {
+       "id": "F:A-wet-01-s26",
+       "word": "dripping",
+       "text": "The icicle was ___, making tiny splashes on the path below.",
+       "answer": "dripping",
+       "tiles": [
+        "dripping",
+        "drip",
+        "drips",
+        "dripped",
+        "drippy"
+       ],
+       "notes": {
+        "drip": "verb: to fall in small drops",
+        "drips": "verb: falls in small drops",
+        "dripped": "verb: fell in small drops",
+        "dripping": "adjective: so wet that drops are falling",
+        "drippy": "adjective: wet enough to let drops fall"
+       }
+      },
+      {
+       "id": "F:A-wet-01-s27",
+       "word": "dripping",
+       "text": "After the bath, the rubber duck was ___; spots kept appearing below.",
+       "answer": "dripping",
+       "tiles": [
+        "dripping",
+        "drip",
+        "drips",
+        "dripped",
+        "drippy"
+       ],
+       "notes": {
+        "drip": "verb: to fall in small drops",
+        "drips": "verb: falls in small drops",
+        "dripped": "verb: fell in small drops",
+        "dripping": "adjective: so wet that drops are falling",
+        "drippy": "adjective: wet enough to let drops fall"
+       }
+      }
+     ]
+    },
+    "A-wobble-01": {
+     "families": {
+      "sway": [
+       {
+        "form": "sway",
+        "pos": "verb",
+        "note": "verb: to move slowly from side to side"
+       },
+       {
+        "form": "swayed",
+        "pos": "verb",
+        "note": "verb: moved slowly from side to side"
+       },
+       {
+        "form": "swaying",
+        "pos": "verb",
+        "note": "verb: moving slowly from side to side"
+       },
+       {
+        "form": "sways",
+        "pos": "verb",
+        "note": "verb: moves slowly from side to side"
+       }
+      ],
+      "wobble": [
+       {
+        "form": "wobble",
+        "pos": "verb",
+        "note": "verb: to move unsteadily from side to side"
+       },
+       {
+        "form": "wobbled",
+        "pos": "verb",
+        "note": "verb: moved unsteadily from side to side"
+       },
+       {
+        "form": "wobbles",
+        "pos": "verb",
+        "note": "verb: moves unsteadily from side to side"
+       },
+       {
+        "form": "wobbling",
+        "pos": "verb",
+        "note": "verb: moving unsteadily from side to side"
+       },
+       {
+        "form": "wobbly",
+        "pos": "adjective",
+        "note": "adjective: likely to move unsteadily"
+       }
+      ],
+      "wriggle": [
+       {
+        "form": "wriggle",
+        "pos": "verb",
+        "note": "verb: to move with short twisting motions"
+       },
+       {
+        "form": "wriggled",
+        "pos": "verb",
+        "note": "verb: moved with short twisting motions"
+       },
+       {
+        "form": "wriggles",
+        "pos": "verb",
+        "note": "verb: moves with short twisting motions"
+       },
+       {
+        "form": "wriggling",
+        "pos": "verb",
+        "note": "verb: moving with short twisting motions"
+       }
+      ],
+      "shiver": [
+       {
+        "form": "shiver",
+        "pos": "verb",
+        "note": "verb: to shake slightly from cold or fear"
+       },
+       {
+        "form": "shivered",
+        "pos": "verb",
+        "note": "verb: shook slightly from cold or fear"
+       },
+       {
+        "form": "shivering",
+        "pos": "verb",
+        "note": "verb: shaking slightly from cold or fear"
+       },
+       {
+        "form": "shivers",
+        "pos": "verb",
+        "note": "verb: shakes slightly from cold or fear"
+       }
+      ],
+      "flinch": [
+       {
+        "form": "flinch",
+        "pos": "verb",
+        "note": "verb: to pull back suddenly from pain or fear"
+       },
+       {
+        "form": "flinched",
+        "pos": "verb",
+        "note": "verb: pulled back suddenly from pain or fear"
+       },
+       {
+        "form": "flinches",
+        "pos": "verb",
+        "note": "verb: pulls back suddenly from pain or fear"
+       },
+       {
+        "form": "flinching",
+        "pos": "verb",
+        "note": "verb: pulling back suddenly from pain or fear"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:A-wobble-01-s02",
+       "word": "sway",
+       "text": "The choir ___ gently from side to side in time with the song.",
+       "answer": "swayed",
+       "tiles": [
+        "swayed",
+        "sway",
+        "swaying"
+       ],
+       "notes": {
+        "sway": "verb: to move slowly from side to side",
+        "swayed": "verb: moved slowly from side to side",
+        "swaying": "verb: moving slowly from side to side"
+       }
+      },
+      {
+       "id": "F:A-wobble-01-s03",
+       "word": "sway",
+       "text": "Tied to the jetty, the little boat ___ softly on the calm, rolling water.",
+       "answer": "swayed",
+       "tiles": [
+        "swayed",
+        "sway",
+        "swaying"
+       ],
+       "notes": {
+        "sway": "verb: to move slowly from side to side",
+        "swayed": "verb: moved slowly from side to side",
+        "swaying": "verb: moving slowly from side to side"
+       }
+      },
+      {
+       "id": "F:A-wobble-01-s04",
+       "word": "sway",
+       "text": "Mum held the sleepy baby and ___ slowly to the lullaby.",
+       "answer": "swayed",
+       "tiles": [
+        "swayed",
+        "sway",
+        "swaying"
+       ],
+       "notes": {
+        "sway": "verb: to move slowly from side to side",
+        "swayed": "verb: moved slowly from side to side",
+        "swaying": "verb: moving slowly from side to side"
+       }
+      },
+      {
+       "id": "F:A-wobble-01-s09",
+       "word": "wobble",
+       "text": "The table had one short leg, so it ___ every time we leaned on it.",
+       "answer": "wobbled",
+       "tiles": [
+        "wobbled",
+        "wobbly",
+        "wobble",
+        "wobbling"
+       ],
+       "notes": {
+        "wobble": "verb: to move unsteadily from side to side",
+        "wobbled": "verb: moved unsteadily from side to side",
+        "wobbling": "verb: moving unsteadily from side to side",
+        "wobbly": "adjective: likely to move unsteadily"
+       }
+      },
+      {
+       "id": "F:A-wobble-01-s10",
+       "word": "wobble",
+       "text": "Set down on a bumpy rock, the picnic cup ___ and nearly tipped over.",
+       "answer": "wobbled",
+       "tiles": [
+        "wobbled",
+        "wobbly",
+        "wobble",
+        "wobbling"
+       ],
+       "notes": {
+        "wobble": "verb: to move unsteadily from side to side",
+        "wobbled": "verb: moved unsteadily from side to side",
+        "wobbling": "verb: moving unsteadily from side to side",
+        "wobbly": "adjective: likely to move unsteadily"
+       }
+      },
+      {
+       "id": "F:A-wobble-01-s11",
+       "word": "wobble",
+       "text": "My loose front tooth ___ whenever I pushed it with my tongue.",
+       "answer": "wobbled",
+       "tiles": [
+        "wobbled",
+        "wobbly",
+        "wobble",
+        "wobbling"
+       ],
+       "notes": {
+        "wobble": "verb: to move unsteadily from side to side",
+        "wobbled": "verb: moved unsteadily from side to side",
+        "wobbling": "verb: moving unsteadily from side to side",
+        "wobbly": "adjective: likely to move unsteadily"
+       }
+      },
+      {
+       "id": "F:A-wobble-01-s12",
+       "word": "wobble",
+       "text": "Baby Max ___ across the rug on his very first steps, arms out wide.",
+       "answer": "wobbled",
+       "tiles": [
+        "wobbled",
+        "wobbly",
+        "wobble",
+        "wobbling"
+       ],
+       "notes": {
+        "wobble": "verb: to move unsteadily from side to side",
+        "wobbled": "verb: moved unsteadily from side to side",
+        "wobbling": "verb: moving unsteadily from side to side",
+        "wobbly": "adjective: likely to move unsteadily"
+       }
+      },
+      {
+       "id": "F:A-wobble-01-s17",
+       "word": "wriggle",
+       "text": "The puppy ___ and twisted until it slipped out of Dad's arms.",
+       "answer": "wriggled",
+       "tiles": [
+        "wriggled",
+        "wriggle",
+        "wriggling"
+       ],
+       "notes": {
+        "wriggle": "verb: to move with short twisting motions",
+        "wriggled": "verb: moved with short twisting motions",
+        "wriggling": "verb: moving with short twisting motions"
+       }
+      },
+      {
+       "id": "F:A-wobble-01-s18",
+       "word": "wriggle",
+       "text": "Zoe had to ___ on her tummy to squeeze under the fence.",
+       "answer": "wriggle",
+       "tiles": [
+        "wriggle",
+        "wriggling",
+        "wriggled",
+        "wriggles"
+       ],
+       "notes": {
+        "wriggle": "verb: to move with short twisting motions",
+        "wriggled": "verb: moved with short twisting motions",
+        "wriggles": "verb: moves with short twisting motions",
+        "wriggling": "verb: moving with short twisting motions"
+       }
+      },
+      {
+       "id": "F:A-wobble-01-s19",
+       "word": "wriggle",
+       "text": "The fat pink worm ___ across the wet path after the rain.",
+       "answer": "wriggled",
+       "tiles": [
+        "wriggled",
+        "wriggle",
+        "wriggling"
+       ],
+       "notes": {
+        "wriggle": "verb: to move with short twisting motions",
+        "wriggled": "verb: moved with short twisting motions",
+        "wriggling": "verb: moving with short twisting motions"
+       }
+      },
+      {
+       "id": "F:A-wobble-01-s20",
+       "word": "wriggle",
+       "text": "It took Dad ages to ___ into his tight wetsuit at the beach.",
+       "answer": "wriggle",
+       "tiles": [
+        "wriggle",
+        "wriggling",
+        "wriggled",
+        "wriggles"
+       ],
+       "notes": {
+        "wriggle": "verb: to move with short twisting motions",
+        "wriggled": "verb: moved with short twisting motions",
+        "wriggles": "verb: moves with short twisting motions",
+        "wriggling": "verb: moving with short twisting motions"
+       }
+      },
+      {
+       "id": "F:A-wobble-01-s25",
+       "word": "shiver",
+       "text": "Straight out of the icy pool, Ruby ___ until her teeth chattered.",
+       "answer": "shivered",
+       "tiles": [
+        "shivered",
+        "shivering",
+        "shiver"
+       ],
+       "notes": {
+        "shiver": "verb: to shake slightly from cold or fear",
+        "shivered": "verb: shook slightly from cold or fear",
+        "shivering": "verb: shaking slightly from cold or fear"
+       }
+      },
+      {
+       "id": "F:A-wobble-01-s26",
+       "word": "shiver",
+       "text": "On the frosty morning, we ___ at the bus stop in our thin jumpers.",
+       "answer": "shivered",
+       "tiles": [
+        "shivered",
+        "shivering",
+        "shiver"
+       ],
+       "notes": {
+        "shiver": "verb: to shake slightly from cold or fear",
+        "shivered": "verb: shook slightly from cold or fear",
+        "shivering": "verb: shaking slightly from cold or fear"
+       }
+      },
+      {
+       "id": "F:A-wobble-01-s27",
+       "word": "shiver",
+       "text": "Caught in the icy wind without a jacket, Ollie ___ all the way home.",
+       "answer": "shivered",
+       "tiles": [
+        "shivered",
+        "shivering",
+        "shiver"
+       ],
+       "notes": {
+        "shiver": "verb: to shake slightly from cold or fear",
+        "shivered": "verb: shook slightly from cold or fear",
+        "shivering": "verb: shaking slightly from cold or fear"
+       }
+      },
+      {
+       "id": "F:A-wobble-01-s28",
+       "word": "shiver",
+       "text": "Freezing in her wet swimmers, Jo ___ and hugged her towel tight.",
+       "answer": "shivered",
+       "tiles": [
+        "shivered",
+        "shivering",
+        "shiver"
+       ],
+       "notes": {
+        "shiver": "verb: to shake slightly from cold or fear",
+        "shivered": "verb: shook slightly from cold or fear",
+        "shivering": "verb: shaking slightly from cold or fear"
+       }
+      },
+      {
+       "id": "F:A-wobble-01-s33",
+       "word": "flinch",
+       "text": "Ava ___ when the balloon popped right next to her ear.",
+       "answer": "flinched",
+       "tiles": [
+        "flinched",
+        "flinch",
+        "flinching"
+       ],
+       "notes": {
+        "flinch": "verb: to pull back suddenly from pain or fear",
+        "flinched": "verb: pulled back suddenly from pain or fear",
+        "flinching": "verb: pulling back suddenly from pain or fear"
+       }
+      },
+      {
+       "id": "F:A-wobble-01-s34",
+       "word": "flinch",
+       "text": "Sam ___ for a split second as the nurse's needle pricked his arm.",
+       "answer": "flinched",
+       "tiles": [
+        "flinched",
+        "flinch",
+        "flinching"
+       ],
+       "notes": {
+        "flinch": "verb: to pull back suddenly from pain or fear",
+        "flinched": "verb: pulled back suddenly from pain or fear",
+        "flinching": "verb: pulling back suddenly from pain or fear"
+       }
+      },
+      {
+       "id": "F:A-wobble-01-s35",
+       "word": "flinch",
+       "text": "The cricket ball zoomed at Jack's face, and he ___ and shut his eyes tight.",
+       "answer": "flinched",
+       "tiles": [
+        "flinched",
+        "flinch",
+        "flinching"
+       ],
+       "notes": {
+        "flinch": "verb: to pull back suddenly from pain or fear",
+        "flinched": "verb: pulled back suddenly from pain or fear",
+        "flinching": "verb: pulling back suddenly from pain or fear"
+       }
+      },
+      {
+       "id": "F:A-wobble-01-s36",
+       "word": "flinch",
+       "text": "Mia touched the hot pan by mistake and ___, snatching her hand away.",
+       "answer": "flinched",
+       "tiles": [
+        "flinched",
+        "flinch",
+        "flinching"
+       ],
+       "notes": {
+        "flinch": "verb: to pull back suddenly from pain or fear",
+        "flinched": "verb: pulled back suddenly from pain or fear",
+        "flinching": "verb: pulling back suddenly from pain or fear"
+       }
+      }
+     ]
+    },
+    "B-buildings-01": {
+     "families": {
+      "arch": [
+       {
+        "form": "arch",
+        "pos": "noun",
+        "note": "noun: a curved support over an opening"
+       },
+       {
+        "form": "arches",
+        "pos": "noun",
+        "note": "noun: more than one curved support over an opening"
+       },
+       {
+        "form": "arched",
+        "pos": "adjective",
+        "note": "adjective: built with a curved support over an opening"
+       },
+       {
+        "form": "arching",
+        "pos": "adjective",
+        "note": "adjective: bending in a high curve"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:B-buildings-01-s01",
+       "word": "arch",
+       "text": "At the gate, the stone ___ made an upside-down U.",
+       "answer": "arch",
+       "tiles": [
+        "arch",
+        "arches",
+        "arched",
+        "arching"
+       ],
+       "notes": {
+        "arch": "noun: a curved support over an opening",
+        "arches": "noun: more than one curved support over an opening",
+        "arched": "adjective: built with a curved support over an opening",
+        "arching": "adjective: bending in a high curve"
+       }
+      },
+      {
+       "id": "F:B-buildings-01-s02",
+       "word": "arch",
+       "text": "The mason built a ___ that bridged the doorway in a bow.",
+       "answer": "arch",
+       "tiles": [
+        "arch",
+        "arches",
+        "arched",
+        "arching"
+       ],
+       "notes": {
+        "arch": "noun: a curved support over an opening",
+        "arches": "noun: more than one curved support over an opening",
+        "arched": "adjective: built with a curved support over an opening",
+        "arching": "adjective: bending in a high curve"
+       }
+      },
+      {
+       "id": "F:B-buildings-01-s03",
+       "word": "arch",
+       "text": "We stepped beneath the ___ that framed the oak doorway.",
+       "answer": "arch",
+       "tiles": [
+        "arch",
+        "arches",
+        "arched",
+        "arching"
+       ],
+       "notes": {
+        "arch": "noun: a curved support over an opening",
+        "arches": "noun: more than one curved support over an opening",
+        "arched": "adjective: built with a curved support over an opening",
+        "arching": "adjective: bending in a high curve"
+       }
+      },
+      {
+       "id": "F:B-buildings-01-s04",
+       "word": "arch",
+       "text": "Lanterns hung from the ___ forming the palace doorway.",
+       "answer": "arch",
+       "tiles": [
+        "arch",
+        "arches",
+        "arched",
+        "arching"
+       ],
+       "notes": {
+        "arch": "noun: a curved support over an opening",
+        "arches": "noun: more than one curved support over an opening",
+        "arched": "adjective: built with a curved support over an opening",
+        "arching": "adjective: bending in a high curve"
+       }
+      }
+     ]
+    },
+    "B-carry-01": {
+     "families": {
+      "push": [
+       {
+        "form": "push",
+        "pos": "verb",
+        "note": "verb: to press against something to move it away"
+       },
+       {
+        "form": "pushed",
+        "pos": "verb",
+        "note": "verb: pressed against something to move it away"
+       },
+       {
+        "form": "pushes",
+        "pos": "verb",
+        "note": "verb: presses against something to move it away"
+       },
+       {
+        "form": "pushing",
+        "pos": "verb",
+        "note": "verb: pressing against something to move it away"
+       }
+      ],
+      "pull": [
+       {
+        "form": "pull",
+        "pos": "verb",
+        "note": "verb: to draw something closer by using force"
+       },
+       {
+        "form": "pulled",
+        "pos": "verb",
+        "note": "verb: drew something closer by using force"
+       },
+       {
+        "form": "pulling",
+        "pos": "verb",
+        "note": "verb: drawing something closer by using force"
+       },
+       {
+        "form": "pulls",
+        "pos": "verb",
+        "note": "verb: draws something closer by using force"
+       }
+      ],
+      "lift": [
+       {
+        "form": "lift",
+        "pos": "verb",
+        "note": "verb: to raise something to a higher position"
+       },
+       {
+        "form": "lifted",
+        "pos": "verb",
+        "note": "verb: raised something to a higher position"
+       },
+       {
+        "form": "lifting",
+        "pos": "verb",
+        "note": "verb: raising something to a higher position"
+       },
+       {
+        "form": "lifts",
+        "pos": "verb",
+        "note": "verb: raises something to a higher position"
+       }
+      ],
+      "carry": [
+       {
+        "form": "carried",
+        "pos": "verb",
+        "note": "verb: moved something while supporting its weight"
+       },
+       {
+        "form": "carries",
+        "pos": "verb",
+        "note": "verb: moves something while supporting its weight"
+       },
+       {
+        "form": "carry",
+        "pos": "verb",
+        "note": "verb: to move something while supporting its weight"
+       },
+       {
+        "form": "carrying",
+        "pos": "verb",
+        "note": "verb: moving something while supporting its weight"
+       }
+      ],
+      "throw": [
+       {
+        "form": "throw",
+        "pos": "verb",
+        "note": "verb: to send something flying through the air"
+       },
+       {
+        "form": "threw",
+        "pos": "verb",
+        "note": "verb: sent something flying through the air"
+       },
+       {
+        "form": "throwing",
+        "pos": "verb",
+        "note": "verb: sending something flying through the air"
+       },
+       {
+        "form": "throws",
+        "pos": "verb",
+        "note": "verb: sends something flying through the air"
+       },
+       {
+        "form": "thrown",
+        "pos": "verb",
+        "note": "verb: sent flying through the air by someone"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:B-carry-01-s01",
+       "word": "push",
+       "text": "Mia ___ the pram along, walking behind it.",
+       "answer": "pushed",
+       "tiles": [
+        "pushed",
+        "push",
+        "pushing"
+       ],
+       "notes": {
+        "push": "verb: to press against something to move it away",
+        "pushed": "verb: pressed against something to move it away",
+        "pushing": "verb: pressing against something to move it away"
+       }
+      },
+      {
+       "id": "F:B-carry-01-s02",
+       "word": "push",
+       "text": "Dad ___ hard on the stuck door with his shoulder.",
+       "answer": "pushed",
+       "tiles": [
+        "pushed",
+        "push",
+        "pushing"
+       ],
+       "notes": {
+        "push": "verb: to press against something to move it away",
+        "pushed": "verb: pressed against something to move it away",
+        "pushing": "verb: pressing against something to move it away"
+       }
+      },
+      {
+       "id": "F:B-carry-01-s03",
+       "word": "push",
+       "text": "Ravi ___ the trolley ahead of him down the aisle.",
+       "answer": "pushed",
+       "tiles": [
+        "pushed",
+        "push",
+        "pushing"
+       ],
+       "notes": {
+        "push": "verb: to press against something to move it away",
+        "pushed": "verb: pressed against something to move it away",
+        "pushing": "verb: pressing against something to move it away"
+       }
+      },
+      {
+       "id": "F:B-carry-01-s04",
+       "word": "push",
+       "text": "Ella leaned on the box and ___ it to the wall.",
+       "answer": "pushed",
+       "tiles": [
+        "pushed",
+        "push",
+        "pushing"
+       ],
+       "notes": {
+        "push": "verb: to press against something to move it away",
+        "pushed": "verb: pressed against something to move it away",
+        "pushing": "verb: pressing against something to move it away"
+       }
+      },
+      {
+       "id": "F:B-carry-01-s09",
+       "word": "pull",
+       "text": "Lila ___ the bucket towards her by the rope.",
+       "answer": "pulled",
+       "tiles": [
+        "pulled",
+        "pull",
+        "pulling"
+       ],
+       "notes": {
+        "pull": "verb: to draw something closer by using force",
+        "pulled": "verb: drew something closer by using force",
+        "pulling": "verb: drawing something closer by using force"
+       }
+      },
+      {
+       "id": "F:B-carry-01-s10",
+       "word": "pull",
+       "text": "Sam ___ the drawer open by its round handle.",
+       "answer": "pulled",
+       "tiles": [
+        "pulled",
+        "pull",
+        "pulling"
+       ],
+       "notes": {
+        "pull": "verb: to draw something closer by using force",
+        "pulled": "verb: drew something closer by using force",
+        "pulling": "verb: drawing something closer by using force"
+       }
+      },
+      {
+       "id": "F:B-carry-01-s11",
+       "word": "pull",
+       "text": "The puppy on its lead ___ Ada along the path.",
+       "answer": "pulled",
+       "tiles": [
+        "pulled",
+        "pull",
+        "pulling"
+       ],
+       "notes": {
+        "pull": "verb: to draw something closer by using force",
+        "pulled": "verb: drew something closer by using force",
+        "pulling": "verb: drawing something closer by using force"
+       }
+      },
+      {
+       "id": "F:B-carry-01-s12",
+       "word": "pull",
+       "text": "Nia ___ the blanket closer, tucking it under her chin.",
+       "answer": "pulled",
+       "tiles": [
+        "pulled",
+        "pull",
+        "pulling"
+       ],
+       "notes": {
+        "pull": "verb: to draw something closer by using force",
+        "pulled": "verb: drew something closer by using force",
+        "pulling": "verb: drawing something closer by using force"
+       }
+      },
+      {
+       "id": "F:B-carry-01-s17",
+       "word": "lift",
+       "text": "Bo ___ the suitcase straight up onto the top shelf.",
+       "answer": "lifted",
+       "tiles": [
+        "lifted",
+        "lift",
+        "lifting"
+       ],
+       "notes": {
+        "lift": "verb: to raise something to a higher position",
+        "lifted": "verb: raised something to a higher position",
+        "lifting": "verb: raising something to a higher position"
+       }
+      },
+      {
+       "id": "F:B-carry-01-s18",
+       "word": "lift",
+       "text": "Mina ___ her cup to her lips and drank.",
+       "answer": "lifted",
+       "tiles": [
+        "lifted",
+        "lift",
+        "lifting"
+       ],
+       "notes": {
+        "lift": "verb: to raise something to a higher position",
+        "lifted": "verb: raised something to a higher position",
+        "lifting": "verb: raising something to a higher position"
+       }
+      },
+      {
+       "id": "F:B-carry-01-s19",
+       "word": "lift",
+       "text": "Omar ___ the gold cup above his head for the photo.",
+       "answer": "lifted",
+       "tiles": [
+        "lifted",
+        "lift",
+        "lifting"
+       ],
+       "notes": {
+        "lift": "verb: to raise something to a higher position",
+        "lifted": "verb: raised something to a higher position",
+        "lifting": "verb: raising something to a higher position"
+       }
+      },
+      {
+       "id": "F:B-carry-01-s20",
+       "word": "lift",
+       "text": "Jai ___ his feet so Mum could sweep under them.",
+       "answer": "lifted",
+       "tiles": [
+        "lifted",
+        "lift",
+        "lifting"
+       ],
+       "notes": {
+        "lift": "verb: to raise something to a higher position",
+        "lifted": "verb: raised something to a higher position",
+        "lifting": "verb: raising something to a higher position"
+       }
+      },
+      {
+       "id": "F:B-carry-01-s25",
+       "word": "carry",
+       "text": "Lena ___ the puppy in her arms to the couch.",
+       "answer": "carried",
+       "tiles": [
+        "carried",
+        "carry",
+        "carrying"
+       ],
+       "notes": {
+        "carried": "verb: moved something while supporting its weight",
+        "carry": "verb: to move something while supporting its weight",
+        "carrying": "verb: moving something while supporting its weight"
+       }
+      },
+      {
+       "id": "F:B-carry-01-s26",
+       "word": "carry",
+       "text": "Tariq ___ the tray of drinks out to the garden.",
+       "answer": "carried",
+       "tiles": [
+        "carried",
+        "carry",
+        "carrying"
+       ],
+       "notes": {
+        "carried": "verb: moved something while supporting its weight",
+        "carry": "verb: to move something while supporting its weight",
+        "carrying": "verb: moving something while supporting its weight"
+       }
+      },
+      {
+       "id": "F:B-carry-01-s27",
+       "word": "carry",
+       "text": "Maya ___ her library books home in her school bag.",
+       "answer": "carried",
+       "tiles": [
+        "carried",
+        "carry",
+        "carrying"
+       ],
+       "notes": {
+        "carried": "verb: moved something while supporting its weight",
+        "carry": "verb: to move something while supporting its weight",
+        "carrying": "verb: moving something while supporting its weight"
+       }
+      },
+      {
+       "id": "F:B-carry-01-s28",
+       "word": "carry",
+       "text": "Pip ___ the baby bird to the vet in a box.",
+       "answer": "carried",
+       "tiles": [
+        "carried",
+        "carry",
+        "carrying"
+       ],
+       "notes": {
+        "carried": "verb: moved something while supporting its weight",
+        "carry": "verb: to move something while supporting its weight",
+        "carrying": "verb: moving something while supporting its weight"
+       }
+      },
+      {
+       "id": "F:B-carry-01-s33",
+       "word": "throw",
+       "text": "Kai ___ the beanbag into the hoop from ten steps away.",
+       "answer": "threw",
+       "tiles": [
+        "threw",
+        "throw",
+        "throwing",
+        "thrown"
+       ],
+       "notes": {
+        "throw": "verb: to send something flying through the air",
+        "threw": "verb: sent something flying through the air",
+        "throwing": "verb: sending something flying through the air",
+        "thrown": "verb: sent flying through the air by someone"
+       }
+      },
+      {
+       "id": "F:B-carry-01-s34",
+       "word": "throw",
+       "text": "Mira ___ the snowball at the cardboard monster.",
+       "answer": "threw",
+       "tiles": [
+        "threw",
+        "throw",
+        "throwing",
+        "thrown"
+       ],
+       "notes": {
+        "throw": "verb: to send something flying through the air",
+        "threw": "verb: sent something flying through the air",
+        "throwing": "verb: sending something flying through the air",
+        "thrown": "verb: sent flying through the air by someone"
+       }
+      },
+      {
+       "id": "F:B-carry-01-s35",
+       "word": "throw",
+       "text": "Jon ___ a pebble far out into the pond.",
+       "answer": "threw",
+       "tiles": [
+        "threw",
+        "throw",
+        "throwing",
+        "thrown"
+       ],
+       "notes": {
+        "throw": "verb: to send something flying through the air",
+        "threw": "verb: sent something flying through the air",
+        "throwing": "verb: sending something flying through the air",
+        "thrown": "verb: sent flying through the air by someone"
+       }
+      },
+      {
+       "id": "F:B-carry-01-s36",
+       "word": "throw",
+       "text": "Luca ___ the ball, and his friend caught it.",
+       "answer": "threw",
+       "tiles": [
+        "threw",
+        "throw",
+        "throwing",
+        "thrown"
+       ],
+       "notes": {
+        "throw": "verb: to send something flying through the air",
+        "threw": "verb: sent something flying through the air",
+        "throwing": "verb: sending something flying through the air",
+        "thrown": "verb: sent flying through the air by someone"
+       }
+      }
+     ]
+    },
+    "B-faces-01": {
+     "families": {
+      "grin": [
+       {
+        "form": "grin",
+        "pos": "verb",
+        "note": "verb: to smile widely, showing the teeth"
+       },
+       {
+        "form": "grinned",
+        "pos": "verb",
+        "note": "verb: smiled widely, showing the teeth"
+       },
+       {
+        "form": "grinning",
+        "pos": "verb",
+        "note": "verb: smiling widely, showing the teeth"
+       },
+       {
+        "form": "grins",
+        "pos": "verb",
+        "note": "verb: smiles widely, showing the teeth"
+       }
+      ],
+      "frown": [
+       {
+        "form": "frown",
+        "pos": "verb",
+        "note": "verb: to lower the eyebrows to show displeasure"
+       },
+       {
+        "form": "frowned",
+        "pos": "verb",
+        "note": "verb: lowered the eyebrows to show displeasure"
+       },
+       {
+        "form": "frowning",
+        "pos": "verb",
+        "note": "verb: lowering the eyebrows to show displeasure"
+       },
+       {
+        "form": "frowns",
+        "pos": "verb",
+        "note": "verb: lowers the eyebrows to show displeasure"
+       }
+      ],
+      "wink": [
+       {
+        "form": "wink",
+        "pos": "verb",
+        "note": "verb: to close one eye quickly as a signal"
+       },
+       {
+        "form": "winked",
+        "pos": "verb",
+        "note": "verb: closed one eye quickly as a signal"
+       },
+       {
+        "form": "winking",
+        "pos": "verb",
+        "note": "verb: closing one eye quickly as a signal"
+       },
+       {
+        "form": "winks",
+        "pos": "verb",
+        "note": "verb: closes one eye quickly as a signal"
+       }
+      ],
+      "yawn": [
+       {
+        "form": "yawn",
+        "pos": "verb",
+        "note": "verb: to open the mouth wide with a sleepy breath"
+       },
+       {
+        "form": "yawned",
+        "pos": "verb",
+        "note": "verb: opened the mouth wide with a sleepy breath"
+       },
+       {
+        "form": "yawning",
+        "pos": "verb",
+        "note": "verb: opening the mouth wide with a sleepy breath"
+       },
+       {
+        "form": "yawns",
+        "pos": "verb",
+        "note": "verb: opens the mouth wide with a sleepy breath"
+       }
+      ],
+      "nod": [
+       {
+        "form": "nod",
+        "pos": "verb",
+        "note": "verb: to dip the head down and up to mean yes"
+       },
+       {
+        "form": "nodded",
+        "pos": "verb",
+        "note": "verb: dipped the head down and up to mean yes"
+       },
+       {
+        "form": "nodding",
+        "pos": "verb",
+        "note": "verb: dipping the head down and up to mean yes"
+       },
+       {
+        "form": "nods",
+        "pos": "verb",
+        "note": "verb: dips the head down and up to mean yes"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:B-faces-01-s01",
+       "word": "grin",
+       "text": "When Dad revealed the puppy, Isla ___ from ear to ear.",
+       "answer": "grinned",
+       "tiles": [
+        "grinned",
+        "grin",
+        "grinning"
+       ],
+       "notes": {
+        "grin": "verb: to smile widely, showing the teeth",
+        "grinned": "verb: smiled widely, showing the teeth",
+        "grinning": "verb: smiling widely, showing the teeth"
+       }
+      },
+      {
+       "id": "F:B-faces-01-s02",
+       "word": "grin",
+       "text": "Arlo scored and ___, his smile as wide as a banana.",
+       "answer": "grinned",
+       "tiles": [
+        "grinned",
+        "grin",
+        "grinning"
+       ],
+       "notes": {
+        "grin": "verb: to smile widely, showing the teeth",
+        "grinned": "verb: smiled widely, showing the teeth",
+        "grinning": "verb: smiling widely, showing the teeth"
+       }
+      },
+      {
+       "id": "F:B-faces-01-s03",
+       "word": "grin",
+       "text": "The surprise birthday cake made Priya ___ with delight.",
+       "answer": "grin",
+       "tiles": [
+        "grin",
+        "grinning",
+        "grinned",
+        "grins"
+       ],
+       "notes": {
+        "grin": "verb: to smile widely, showing the teeth",
+        "grinned": "verb: smiled widely, showing the teeth",
+        "grinning": "verb: smiling widely, showing the teeth",
+        "grins": "verb: smiles widely, showing the teeth"
+       }
+      },
+      {
+       "id": "F:B-faces-01-s04",
+       "word": "grin",
+       "text": "A medal on his shirt made Ben ___ until his cheeks ached.",
+       "answer": "grin",
+       "tiles": [
+        "grin",
+        "grinning",
+        "grinned",
+        "grins"
+       ],
+       "notes": {
+        "grin": "verb: to smile widely, showing the teeth",
+        "grinned": "verb: smiled widely, showing the teeth",
+        "grinning": "verb: smiling widely, showing the teeth",
+        "grins": "verb: smiles widely, showing the teeth"
+       }
+      },
+      {
+       "id": "F:B-faces-01-s09",
+       "word": "frown",
+       "text": "Mina ___ at the spilled paint, her forehead all creased.",
+       "answer": "frowned",
+       "tiles": [
+        "frowned",
+        "frown",
+        "frowning"
+       ],
+       "notes": {
+        "frown": "verb: to lower the eyebrows to show displeasure",
+        "frowned": "verb: lowered the eyebrows to show displeasure",
+        "frowning": "verb: lowering the eyebrows to show displeasure"
+       }
+      },
+      {
+       "id": "F:B-faces-01-s10",
+       "word": "frown",
+       "text": "Ollie ___ crossly when his block tower fell down.",
+       "answer": "frowned",
+       "tiles": [
+        "frowned",
+        "frown",
+        "frowning"
+       ],
+       "notes": {
+        "frown": "verb: to lower the eyebrows to show displeasure",
+        "frowned": "verb: lowered the eyebrows to show displeasure",
+        "frowning": "verb: lowering the eyebrows to show displeasure"
+       }
+      },
+      {
+       "id": "F:B-faces-01-s11",
+       "word": "frown",
+       "text": "Getting the sum wrong again made Max ___ at his page.",
+       "answer": "frown",
+       "tiles": [
+        "frown",
+        "frowned",
+        "frowning",
+        "frowns"
+       ],
+       "notes": {
+        "frown": "verb: to lower the eyebrows to show displeasure",
+        "frowned": "verb: lowered the eyebrows to show displeasure",
+        "frowning": "verb: lowering the eyebrows to show displeasure",
+        "frowns": "verb: lowers the eyebrows to show displeasure"
+       }
+      },
+      {
+       "id": "F:B-faces-01-s12",
+       "word": "frown",
+       "text": "Rain spoiled the picnic, so Nora ___ at the grey sky.",
+       "answer": "frowned",
+       "tiles": [
+        "frowned",
+        "frown",
+        "frowning"
+       ],
+       "notes": {
+        "frown": "verb: to lower the eyebrows to show displeasure",
+        "frowned": "verb: lowered the eyebrows to show displeasure",
+        "frowning": "verb: lowering the eyebrows to show displeasure"
+       }
+      },
+      {
+       "id": "F:B-faces-01-s17",
+       "word": "wink",
+       "text": "Kai ___ at Tara with one eye before hiding the card.",
+       "answer": "winked",
+       "tiles": [
+        "winked",
+        "wink",
+        "winking"
+       ],
+       "notes": {
+        "wink": "verb: to close one eye quickly as a signal",
+        "winked": "verb: closed one eye quickly as a signal",
+        "winking": "verb: closing one eye quickly as a signal"
+       }
+      },
+      {
+       "id": "F:B-faces-01-s18",
+       "word": "wink",
+       "text": "With a quick blink of one eye, Grandma ___ at me.",
+       "answer": "winked",
+       "tiles": [
+        "winked",
+        "wink",
+        "winking"
+       ],
+       "notes": {
+        "wink": "verb: to close one eye quickly as a signal",
+        "winked": "verb: closed one eye quickly as a signal",
+        "winking": "verb: closing one eye quickly as a signal"
+       }
+      },
+      {
+       "id": "F:B-faces-01-s19",
+       "word": "wink",
+       "text": "Dad ___ at me, one eye shut, to say \"It's our secret.\"",
+       "answer": "winked",
+       "tiles": [
+        "winked",
+        "wink",
+        "winking"
+       ],
+       "notes": {
+        "wink": "verb: to close one eye quickly as a signal",
+        "winked": "verb: closed one eye quickly as a signal",
+        "winking": "verb: closing one eye quickly as a signal"
+       }
+      },
+      {
+       "id": "F:B-faces-01-s20",
+       "word": "wink",
+       "text": "Mum ___ at Jo with one eye, so Jo kept quiet.",
+       "answer": "winked",
+       "tiles": [
+        "winked",
+        "wink",
+        "winking"
+       ],
+       "notes": {
+        "wink": "verb: to close one eye quickly as a signal",
+        "winked": "verb: closed one eye quickly as a signal",
+        "winking": "verb: closing one eye quickly as a signal"
+       }
+      },
+      {
+       "id": "F:B-faces-01-s25",
+       "word": "yawn",
+       "text": "Way past bedtime, Nina ___ so hugely we could see her tonsils.",
+       "answer": "yawned",
+       "tiles": [
+        "yawned",
+        "yawn",
+        "yawning"
+       ],
+       "notes": {
+        "yawn": "verb: to open the mouth wide with a sleepy breath",
+        "yawned": "verb: opened the mouth wide with a sleepy breath",
+        "yawning": "verb: opening the mouth wide with a sleepy breath"
+       }
+      },
+      {
+       "id": "F:B-faces-01-s26",
+       "word": "yawn",
+       "text": "Leo ___ so long that his jaw stretched and eyes watered.",
+       "answer": "yawned",
+       "tiles": [
+        "yawned",
+        "yawn",
+        "yawning"
+       ],
+       "notes": {
+        "yawn": "verb: to open the mouth wide with a sleepy breath",
+        "yawned": "verb: opened the mouth wide with a sleepy breath",
+        "yawning": "verb: opening the mouth wide with a sleepy breath"
+       }
+      },
+      {
+       "id": "F:B-faces-01-s28",
+       "word": "yawn",
+       "text": "The film was so boring that Mia ___ behind her hand.",
+       "answer": "yawned",
+       "tiles": [
+        "yawned",
+        "yawn",
+        "yawning"
+       ],
+       "notes": {
+        "yawn": "verb: to open the mouth wide with a sleepy breath",
+        "yawned": "verb: opened the mouth wide with a sleepy breath",
+        "yawning": "verb: opening the mouth wide with a sleepy breath"
+       }
+      },
+      {
+       "id": "F:B-faces-01-s33",
+       "word": "nod",
+       "text": "Maya ___ to agree, her head bobbing up and down.",
+       "answer": "nodded",
+       "tiles": [
+        "nodded",
+        "nod",
+        "nodding"
+       ],
+       "notes": {
+        "nod": "verb: to dip the head down and up to mean yes",
+        "nodded": "verb: dipped the head down and up to mean yes",
+        "nodding": "verb: dipping the head down and up to mean yes"
+       }
+      },
+      {
+       "id": "F:B-faces-01-s34",
+       "word": "nod",
+       "text": "Omar did not speak, but he ___ to show he agreed.",
+       "answer": "nodded",
+       "tiles": [
+        "nodded",
+        "nod",
+        "nodding"
+       ],
+       "notes": {
+        "nod": "verb: to dip the head down and up to mean yes",
+        "nodded": "verb: dipped the head down and up to mean yes",
+        "nodding": "verb: dipping the head down and up to mean yes"
+       }
+      },
+      {
+       "id": "F:B-faces-01-s35",
+       "word": "nod",
+       "text": "Edie wanted more soup, but her mouth was full, so she just ___.",
+       "answer": "nodded",
+       "tiles": [
+        "nodded",
+        "nod",
+        "nodding"
+       ],
+       "notes": {
+        "nod": "verb: to dip the head down and up to mean yes",
+        "nodded": "verb: dipped the head down and up to mean yes",
+        "nodding": "verb: dipping the head down and up to mean yes"
+       }
+      },
+      {
+       "id": "F:B-faces-01-s36",
+       "word": "nod",
+       "text": "\"Do we all agree?\" asked the captain, and the crew ___.",
+       "answer": "nodded",
+       "tiles": [
+        "nodded",
+        "nod",
+        "nodding"
+       ],
+       "notes": {
+        "nod": "verb: to dip the head down and up to mean yes",
+        "nodded": "verb: dipped the head down and up to mean yes",
+        "nodding": "verb: dipping the head down and up to mean yes"
+       }
+      }
+     ]
+    },
+    "B-hands-01": {
+     "families": {
+      "grab": [
+       {
+        "form": "grab",
+        "pos": "verb",
+        "note": "verb: to take hold of suddenly"
+       },
+       {
+        "form": "grabbed",
+        "pos": "verb",
+        "note": "verb: took hold of suddenly"
+       },
+       {
+        "form": "grabbing",
+        "pos": "verb",
+        "note": "verb: taking hold of suddenly"
+       },
+       {
+        "form": "grabs",
+        "pos": "verb",
+        "note": "verb: takes hold of suddenly"
+       }
+      ],
+      "pat": [
+       {
+        "form": "pat",
+        "pos": "verb",
+        "note": "verb: to touch gently with a flat hand"
+       },
+       {
+        "form": "pats",
+        "pos": "verb",
+        "note": "verb: touches gently with a flat hand"
+       },
+       {
+        "form": "patted",
+        "pos": "verb",
+        "note": "verb: touched gently with a flat hand"
+       },
+       {
+        "form": "patting",
+        "pos": "verb",
+        "note": "verb: touching gently with a flat hand"
+       }
+      ],
+      "poke": [
+       {
+        "form": "poke",
+        "pos": "verb",
+        "note": "verb: to push quickly with a finger or point"
+       },
+       {
+        "form": "poked",
+        "pos": "verb",
+        "note": "verb: pushed quickly with a finger or point"
+       },
+       {
+        "form": "pokes",
+        "pos": "verb",
+        "note": "verb: pushes quickly with a finger or point"
+       },
+       {
+        "form": "poking",
+        "pos": "verb",
+        "note": "verb: pushing quickly with a finger or point"
+       }
+      ],
+      "wave": [
+       {
+        "form": "wave",
+        "pos": "verb",
+        "note": "verb: to move or swing back and forth"
+       },
+       {
+        "form": "waved",
+        "pos": "verb",
+        "note": "verb: moved or swung back and forth"
+       },
+       {
+        "form": "waves",
+        "pos": "verb",
+        "note": "verb: moves or swings back and forth"
+       },
+       {
+        "form": "waving",
+        "pos": "verb",
+        "note": "verb: moving or swinging back and forth"
+       }
+      ],
+      "clap": [
+       {
+        "form": "clap",
+        "pos": "verb",
+        "note": "verb: to strike one's hands together"
+       },
+       {
+        "form": "clapped",
+        "pos": "verb",
+        "note": "verb: struck one's hands together"
+       },
+       {
+        "form": "clapping",
+        "pos": "verb",
+        "note": "verb: striking one's hands together"
+       },
+       {
+        "form": "claps",
+        "pos": "verb",
+        "note": "verb: strikes one's hands together"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:B-hands-01-s01",
+       "word": "grab",
+       "text": "Milo ___ the falling cup before it hit the floor.",
+       "answer": "grabbed",
+       "tiles": [
+        "grabbed",
+        "grab",
+        "grabbing"
+       ],
+       "notes": {
+        "grab": "verb: to take hold of suddenly",
+        "grabbed": "verb: took hold of suddenly",
+        "grabbing": "verb: taking hold of suddenly"
+       }
+      },
+      {
+       "id": "F:B-hands-01-s02",
+       "word": "grab",
+       "text": "Rina ___ the balloon string just in time.",
+       "answer": "grabbed",
+       "tiles": [
+        "grabbed",
+        "grab",
+        "grabbing"
+       ],
+       "notes": {
+        "grab": "verb: to take hold of suddenly",
+        "grabbed": "verb: took hold of suddenly",
+        "grabbing": "verb: taking hold of suddenly"
+       }
+      },
+      {
+       "id": "F:B-hands-01-s03",
+       "word": "grab",
+       "text": "Dad ___ my sleeve so I would not get lost.",
+       "answer": "grabbed",
+       "tiles": [
+        "grabbed",
+        "grab",
+        "grabbing"
+       ],
+       "notes": {
+        "grab": "verb: to take hold of suddenly",
+        "grabbed": "verb: took hold of suddenly",
+        "grabbing": "verb: taking hold of suddenly"
+       }
+      },
+      {
+       "id": "F:B-hands-01-s04",
+       "word": "grab",
+       "text": "Zoe ___ the last biscuit before the dog got it.",
+       "answer": "grabbed",
+       "tiles": [
+        "grabbed",
+        "grab",
+        "grabbing"
+       ],
+       "notes": {
+        "grab": "verb: to take hold of suddenly",
+        "grabbed": "verb: took hold of suddenly",
+        "grabbing": "verb: taking hold of suddenly"
+       }
+      },
+      {
+       "id": "F:B-hands-01-s09",
+       "word": "pat",
+       "text": "Gran ___ the puppy's head with her open palm.",
+       "answer": "patted",
+       "tiles": [
+        "patted",
+        "pat",
+        "patting"
+       ],
+       "notes": {
+        "pat": "verb: to touch gently with a flat hand",
+        "patted": "verb: touched gently with a flat hand",
+        "patting": "verb: touching gently with a flat hand"
+       }
+      },
+      {
+       "id": "F:B-hands-01-s10",
+       "word": "pat",
+       "text": "Mum ___ the sleepy baby with soft little taps.",
+       "answer": "patted",
+       "tiles": [
+        "patted",
+        "pat",
+        "patting"
+       ],
+       "notes": {
+        "pat": "verb: to touch gently with a flat hand",
+        "patted": "verb: touched gently with a flat hand",
+        "patting": "verb: touching gently with a flat hand"
+       }
+      },
+      {
+       "id": "F:B-hands-01-s11",
+       "word": "pat",
+       "text": "Mina ___ the scared dog until its tail wagged.",
+       "answer": "patted",
+       "tiles": [
+        "patted",
+        "pat",
+        "patting"
+       ],
+       "notes": {
+        "pat": "verb: to touch gently with a flat hand",
+        "patted": "verb: touched gently with a flat hand",
+        "patting": "verb: touching gently with a flat hand"
+       }
+      },
+      {
+       "id": "F:B-hands-01-s12",
+       "word": "pat",
+       "text": "Sam ___ the top of his sandcastle to make it smooth.",
+       "answer": "patted",
+       "tiles": [
+        "patted",
+        "pat",
+        "patting"
+       ],
+       "notes": {
+        "pat": "verb: to touch gently with a flat hand",
+        "patted": "verb: touched gently with a flat hand",
+        "patting": "verb: touching gently with a flat hand"
+       }
+      },
+      {
+       "id": "F:B-hands-01-s17",
+       "word": "poke",
+       "text": "Lina ___ the wobbly jelly with her fingertip.",
+       "answer": "poked",
+       "tiles": [
+        "poked",
+        "poke",
+        "poking"
+       ],
+       "notes": {
+        "poke": "verb: to push quickly with a finger or point",
+        "poked": "verb: pushed quickly with a finger or point",
+        "poking": "verb: pushing quickly with a finger or point"
+       }
+      },
+      {
+       "id": "F:B-hands-01-s18",
+       "word": "poke",
+       "text": "Raj ___ the soft dough with his thumb.",
+       "answer": "poked",
+       "tiles": [
+        "poked",
+        "poke",
+        "poking"
+       ],
+       "notes": {
+        "poke": "verb: to push quickly with a finger or point",
+        "poked": "verb: pushed quickly with a finger or point",
+        "poking": "verb: pushing quickly with a finger or point"
+       }
+      },
+      {
+       "id": "F:B-hands-01-s19",
+       "word": "poke",
+       "text": "Eva ___ the crab hole with a stick.",
+       "answer": "poked",
+       "tiles": [
+        "poked",
+        "poke",
+        "poking"
+       ],
+       "notes": {
+        "poke": "verb: to push quickly with a finger or point",
+        "poked": "verb: pushed quickly with a finger or point",
+        "poking": "verb: pushing quickly with a finger or point"
+       }
+      },
+      {
+       "id": "F:B-hands-01-s20",
+       "word": "poke",
+       "text": "Dad ___ the baked potato with a fork.",
+       "answer": "poked",
+       "tiles": [
+        "poked",
+        "poke",
+        "poking"
+       ],
+       "notes": {
+        "poke": "verb: to push quickly with a finger or point",
+        "poked": "verb: pushed quickly with a finger or point",
+        "poking": "verb: pushing quickly with a finger or point"
+       }
+      },
+      {
+       "id": "F:B-hands-01-s25",
+       "word": "wave",
+       "text": "Maya ___ her arm from side to side at the boat.",
+       "answer": "waved",
+       "tiles": [
+        "waved",
+        "wave",
+        "waving"
+       ],
+       "notes": {
+        "wave": "verb: to move or swing back and forth",
+        "waved": "verb: moved or swung back and forth",
+        "waving": "verb: moving or swinging back and forth"
+       }
+      },
+      {
+       "id": "F:B-hands-01-s26",
+       "word": "wave",
+       "text": "Luca ___ his scarf above his head at the footy.",
+       "answer": "waved",
+       "tiles": [
+        "waved",
+        "wave",
+        "waving"
+       ],
+       "notes": {
+        "wave": "verb: to move or swing back and forth",
+        "waved": "verb: moved or swung back and forth",
+        "waving": "verb: moving or swinging back and forth"
+       }
+      },
+      {
+       "id": "F:B-hands-01-s27",
+       "word": "wave",
+       "text": "As the bus drove off, Asha ___ to her friends.",
+       "answer": "waved",
+       "tiles": [
+        "waved",
+        "wave",
+        "waving"
+       ],
+       "notes": {
+        "wave": "verb: to move or swing back and forth",
+        "waved": "verb: moved or swung back and forth",
+        "waving": "verb: moving or swinging back and forth"
+       }
+      },
+      {
+       "id": "F:B-hands-01-s28",
+       "word": "wave",
+       "text": "Nia ___ her flag in the air until her brother saw her.",
+       "answer": "waved",
+       "tiles": [
+        "waved",
+        "wave",
+        "waving"
+       ],
+       "notes": {
+        "wave": "verb: to move or swing back and forth",
+        "waved": "verb: moved or swung back and forth",
+        "waving": "verb: moving or swinging back and forth"
+       }
+      },
+      {
+       "id": "F:B-hands-01-s33",
+       "word": "clap",
+       "text": "The show ended, and Mira ___ as loud as she could.",
+       "answer": "clapped",
+       "tiles": [
+        "clapped",
+        "clap",
+        "clapping"
+       ],
+       "notes": {
+        "clap": "verb: to strike one's hands together",
+        "clapped": "verb: struck one's hands together",
+        "clapping": "verb: striking one's hands together"
+       }
+      },
+      {
+       "id": "F:B-hands-01-s34",
+       "word": "clap",
+       "text": "Omar ___ his palms with a loud smack.",
+       "answer": "clapped",
+       "tiles": [
+        "clapped",
+        "clap",
+        "clapping"
+       ],
+       "notes": {
+        "clap": "verb: to strike one's hands together",
+        "clapped": "verb: struck one's hands together",
+        "clapping": "verb: striking one's hands together"
+       }
+      },
+      {
+       "id": "F:B-hands-01-s35",
+       "word": "clap",
+       "text": "When the actors bowed, the crowd ___ loudly.",
+       "answer": "clapped",
+       "tiles": [
+        "clapped",
+        "clap",
+        "clapping"
+       ],
+       "notes": {
+        "clap": "verb: to strike one's hands together",
+        "clapped": "verb: struck one's hands together",
+        "clapping": "verb: striking one's hands together"
+       }
+      },
+      {
+       "id": "F:B-hands-01-s36",
+       "word": "clap",
+       "text": "At assembly, we ___ for the team until the hall rang.",
+       "answer": "clapped",
+       "tiles": [
+        "clapped",
+        "clap",
+        "clapping"
+       ],
+       "notes": {
+        "clap": "verb: to strike one's hands together",
+        "clapped": "verb: struck one's hands together",
+        "clapping": "verb: striking one's hands together"
+       }
+      }
+     ]
+    },
+    "B-journey-01": {
+     "families": {
+      "pilgrimage": [
+       {
+        "form": "pilgrimage",
+        "pos": "noun",
+        "note": "noun: trip to a holy place"
+       },
+       {
+        "form": "pilgrimages",
+        "pos": "noun",
+        "note": "noun: trips to holy places"
+       },
+       {
+        "form": "pilgrim",
+        "pos": "noun",
+        "note": "noun: person going to a holy place"
+       },
+       {
+        "form": "pilgrims",
+        "pos": "noun",
+        "note": "noun: people going to holy places"
+       }
+      ],
+      "commute": [
+       {
+        "form": "commute",
+        "pos": "noun",
+        "note": "noun: regular trip to work or school"
+       },
+       {
+        "form": "commutes",
+        "pos": "noun",
+        "note": "noun: regular trips to work or school"
+       },
+       {
+        "form": "commuted",
+        "pos": "verb",
+        "note": "verb: travelled regularly to work or school"
+       },
+       {
+        "form": "commuting",
+        "pos": "verb",
+        "note": "verb: travelling regularly to work or school"
+       },
+       {
+        "form": "commuter",
+        "pos": "noun",
+        "note": "noun: person who travels regularly to work or school"
+       },
+       {
+        "form": "commuters",
+        "pos": "noun",
+        "note": "noun: people who travel regularly to work or school"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:B-journey-01-s01",
+       "word": "pilgrimage",
+       "text": "Nana packed candles for her ___ to pray at the hillside shrine.",
+       "answer": "pilgrimage",
+       "tiles": [
+        "pilgrimage",
+        "pilgrims",
+        "pilgrim",
+        "pilgrimages"
+       ],
+       "notes": {
+        "pilgrimage": "noun: trip to a holy place",
+        "pilgrimages": "noun: trips to holy places",
+        "pilgrim": "noun: person going to a holy place",
+        "pilgrims": "noun: people going to holy places"
+       }
+      },
+      {
+       "id": "F:B-journey-01-s02",
+       "word": "pilgrimage",
+       "text": "Before dawn, Ravi began his ___ towards the temple of healing.",
+       "answer": "pilgrimage",
+       "tiles": [
+        "pilgrimage",
+        "pilgrims",
+        "pilgrim",
+        "pilgrimages"
+       ],
+       "notes": {
+        "pilgrimage": "noun: trip to a holy place",
+        "pilgrimages": "noun: trips to holy places",
+        "pilgrim": "noun: person going to a holy place",
+        "pilgrims": "noun: people going to holy places"
+       }
+      },
+      {
+       "id": "F:B-journey-01-s03",
+       "word": "pilgrimage",
+       "text": "Mum tied prayer ribbons to our bags before the ___.",
+       "answer": "pilgrimage",
+       "tiles": [
+        "pilgrimage",
+        "pilgrims",
+        "pilgrim",
+        "pilgrimages"
+       ],
+       "notes": {
+        "pilgrimage": "noun: trip to a holy place",
+        "pilgrimages": "noun: trips to holy places",
+        "pilgrim": "noun: person going to a holy place",
+        "pilgrims": "noun: people going to holy places"
+       }
+      },
+      {
+       "id": "F:B-journey-01-s04",
+       "word": "pilgrimage",
+       "text": "Lena walked silently during the ___, carrying flowers for the shrine.",
+       "answer": "pilgrimage",
+       "tiles": [
+        "pilgrimage",
+        "pilgrims",
+        "pilgrim",
+        "pilgrimages"
+       ],
+       "notes": {
+        "pilgrimage": "noun: trip to a holy place",
+        "pilgrimages": "noun: trips to holy places",
+        "pilgrim": "noun: person going to a holy place",
+        "pilgrims": "noun: people going to holy places"
+       }
+      },
+      {
+       "id": "F:B-journey-01-s25",
+       "word": "commute",
+       "text": "Dad's ___ from home to the office happens every weekday morning.",
+       "answer": "commute",
+       "tiles": [
+        "commute",
+        "commuter",
+        "commuting",
+        "commuters",
+        "commuted"
+       ],
+       "notes": {
+        "commute": "noun: regular trip to work or school",
+        "commuted": "verb: travelled regularly to work or school",
+        "commuting": "verb: travelling regularly to work or school",
+        "commuter": "noun: person who travels regularly to work or school",
+        "commuters": "noun: people who travel regularly to work or school"
+       }
+      },
+      {
+       "id": "F:B-journey-01-s26",
+       "word": "commute",
+       "text": "Mina's ___ between her flat and classroom repeats Monday to Friday.",
+       "answer": "commute",
+       "tiles": [
+        "commute",
+        "commuter",
+        "commuting",
+        "commuters",
+        "commuted"
+       ],
+       "notes": {
+        "commute": "noun: regular trip to work or school",
+        "commuted": "verb: travelled regularly to work or school",
+        "commuting": "verb: travelling regularly to work or school",
+        "commuter": "noun: person who travels regularly to work or school",
+        "commuters": "noun: people who travel regularly to work or school"
+       }
+      },
+      {
+       "id": "F:B-journey-01-s27",
+       "word": "commute",
+       "text": "Rain or shine, the same bus carries Omar to the office on his ___.",
+       "answer": "commute",
+       "tiles": [
+        "commute",
+        "commuter",
+        "commuting",
+        "commuters",
+        "commuted"
+       ],
+       "notes": {
+        "commute": "noun: regular trip to work or school",
+        "commuted": "verb: travelled regularly to work or school",
+        "commuting": "verb: travelling regularly to work or school",
+        "commuter": "noun: person who travels regularly to work or school",
+        "commuters": "noun: people who travel regularly to work or school"
+       }
+      },
+      {
+       "id": "F:B-journey-01-s28",
+       "word": "commute",
+       "text": "After breakfast, Tia starts her ___, then returns home after lessons.",
+       "answer": "commute",
+       "tiles": [
+        "commute",
+        "commuter",
+        "commuting",
+        "commuters",
+        "commuted"
+       ],
+       "notes": {
+        "commute": "noun: regular trip to work or school",
+        "commuted": "verb: travelled regularly to work or school",
+        "commuting": "verb: travelling regularly to work or school",
+        "commuter": "noun: person who travels regularly to work or school",
+        "commuters": "noun: people who travel regularly to work or school"
+       }
+      }
+     ]
+    },
+    "B-landform-01": {
+     "families": {
+      "peak": [
+       {
+        "form": "peak",
+        "pos": "noun",
+        "note": "noun: the highest point of a mountain or hill"
+       },
+       {
+        "form": "peaks",
+        "pos": "noun",
+        "note": "noun: highest points of mountains or hills"
+       },
+       {
+        "form": "peaked",
+        "pos": "verb",
+        "note": "verb: reached the highest point"
+       },
+       {
+        "form": "peaking",
+        "pos": "verb",
+        "note": "verb: reaching the highest point"
+       }
+      ],
+      "slope": [
+       {
+        "form": "slope",
+        "pos": "noun",
+        "note": "noun: a hillside rising or falling at an angle"
+       },
+       {
+        "form": "slopes",
+        "pos": "noun",
+        "note": "noun: hillsides rising or falling at angles"
+       },
+       {
+        "form": "sloped",
+        "pos": "adjective",
+        "note": "adjective: rising or falling at an angle"
+       },
+       {
+        "form": "sloping",
+        "pos": "adjective",
+        "note": "adjective: going up or down at an angle"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:B-landform-01-s25",
+       "word": "peak",
+       "text": "We reached the ___, the highest spot for miles.",
+       "answer": "peak",
+       "tiles": [
+        "peak",
+        "peaks",
+        "peaked",
+        "peaking"
+       ],
+       "notes": {
+        "peak": "noun: the highest point of a mountain or hill",
+        "peaks": "noun: highest points of mountains or hills",
+        "peaked": "verb: reached the highest point",
+        "peaking": "verb: reaching the highest point"
+       }
+      },
+      {
+       "id": "F:B-landform-01-s26",
+       "word": "peak",
+       "text": "The flag fluttered on the ___, above every ridge nearby.",
+       "answer": "peak",
+       "tiles": [
+        "peak",
+        "peaks",
+        "peaked",
+        "peaking"
+       ],
+       "notes": {
+        "peak": "noun: the highest point of a mountain or hill",
+        "peaks": "noun: highest points of mountains or hills",
+        "peaked": "verb: reached the highest point",
+        "peaking": "verb: reaching the highest point"
+       }
+      },
+      {
+       "id": "F:B-landform-01-s28",
+       "word": "peak",
+       "text": "After hours upward, the last scramble to the ___ made everyone cheer.",
+       "answer": "peak",
+       "tiles": [
+        "peak",
+        "peaks",
+        "peaked",
+        "peaking"
+       ],
+       "notes": {
+        "peak": "noun: the highest point of a mountain or hill",
+        "peaks": "noun: highest points of mountains or hills",
+        "peaked": "verb: reached the highest point",
+        "peaking": "verb: reaching the highest point"
+       }
+      },
+      {
+       "id": "F:B-landform-01-s33",
+       "word": "slope",
+       "text": "The ___ was slanted, so the ball rolled down by itself.",
+       "answer": "slope",
+       "tiles": [
+        "slope",
+        "slopes",
+        "sloping",
+        "sloped"
+       ],
+       "notes": {
+        "slope": "noun: a hillside rising or falling at an angle",
+        "slopes": "noun: hillsides rising or falling at angles",
+        "sloped": "adjective: rising or falling at an angle",
+        "sloping": "adjective: going up or down at an angle"
+       }
+      },
+      {
+       "id": "F:B-landform-01-s34",
+       "word": "slope",
+       "text": "The grassy ___ rose gently from the gate to the barn.",
+       "answer": "slope",
+       "tiles": [
+        "slope",
+        "slopes",
+        "sloping",
+        "sloped"
+       ],
+       "notes": {
+        "slope": "noun: a hillside rising or falling at an angle",
+        "slopes": "noun: hillsides rising or falling at angles",
+        "sloped": "adjective: rising or falling at an angle",
+        "sloping": "adjective: going up or down at an angle"
+       }
+      }
+     ]
+    },
+    "B-move-01": {
+     "families": {
+      "hop": [
+       {
+        "form": "hop",
+        "pos": "verb",
+        "note": "verb: to spring along on one foot"
+       },
+       {
+        "form": "hopped",
+        "pos": "verb",
+        "note": "verb: moved by springing along on one foot"
+       },
+       {
+        "form": "hopping",
+        "pos": "verb",
+        "note": "verb: moving by springing along on one foot"
+       },
+       {
+        "form": "hops",
+        "pos": "verb",
+        "note": "verb: springs along on one foot"
+       }
+      ],
+      "crawl": [
+       {
+        "form": "crawl",
+        "pos": "verb",
+        "note": "verb: to move slowly with the body close to the ground"
+       },
+       {
+        "form": "crawled",
+        "pos": "verb",
+        "note": "verb: moved slowly with the body close to the ground"
+       },
+       {
+        "form": "crawling",
+        "pos": "verb",
+        "note": "verb: moving slowly with the body close to the ground"
+       },
+       {
+        "form": "crawls",
+        "pos": "verb",
+        "note": "verb: moves slowly with the body close to the ground"
+       },
+       {
+        "form": "crawler",
+        "pos": "noun",
+        "note": "noun: a person or animal moving low along the ground"
+       }
+      ],
+      "climb": [
+       {
+        "form": "climb",
+        "pos": "verb",
+        "note": "verb: to go upward by effort or steady progress"
+       },
+       {
+        "form": "climbed",
+        "pos": "verb",
+        "note": "verb: went upward by effort or steady progress"
+       },
+       {
+        "form": "climbing",
+        "pos": "verb",
+        "note": "verb: going upward by effort or steady progress"
+       },
+       {
+        "form": "climbs",
+        "pos": "verb",
+        "note": "verb: goes upward by effort or steady progress"
+       },
+       {
+        "form": "climber",
+        "pos": "noun",
+        "note": "noun: a person who goes up rocks, trees, or mountains"
+       }
+      ],
+      "slide": [
+       {
+        "form": "slid",
+        "pos": "verb",
+        "note": "verb: moved smoothly along a surface"
+       },
+       {
+        "form": "slide",
+        "pos": "verb",
+        "note": "verb: to move smoothly along a surface"
+       },
+       {
+        "form": "slides",
+        "pos": "verb",
+        "note": "verb: moves smoothly along a surface"
+       },
+       {
+        "form": "sliding",
+        "pos": "verb",
+        "note": "verb: moving smoothly along a surface"
+       }
+      ],
+      "dance": [
+       {
+        "form": "dance",
+        "pos": "verb",
+        "note": "verb: to move to music with steps and turns"
+       },
+       {
+        "form": "danced",
+        "pos": "verb",
+        "note": "verb: moved to music with steps and turns"
+       },
+       {
+        "form": "dances",
+        "pos": "verb",
+        "note": "verb: moves to music with steps and turns"
+       },
+       {
+        "form": "dancing",
+        "pos": "verb",
+        "note": "verb: moving to music with steps and turns"
+       },
+       {
+        "form": "dancer",
+        "pos": "noun",
+        "note": "noun: a person who moves to music with steps and turns"
+       },
+       {
+        "form": "danceable",
+        "pos": "adjective",
+        "note": "adjective: having a beat suitable for moving to music"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:B-move-01-s01",
+       "word": "hop",
+       "text": "Leo ___ to the gate on one foot, holding the other up.",
+       "answer": "hopped",
+       "tiles": [
+        "hopped",
+        "hop",
+        "hopping"
+       ],
+       "notes": {
+        "hop": "verb: to spring along on one foot",
+        "hopped": "verb: moved by springing along on one foot",
+        "hopping": "verb: moving by springing along on one foot"
+       }
+      },
+      {
+       "id": "F:B-move-01-s02",
+       "word": "hop",
+       "text": "In the game, Rafi had to ___ on one foot to the cone.",
+       "answer": "hop",
+       "tiles": [
+        "hop",
+        "hopping",
+        "hops",
+        "hopped"
+       ],
+       "notes": {
+        "hop": "verb: to spring along on one foot",
+        "hopped": "verb: moved by springing along on one foot",
+        "hopping": "verb: moving by springing along on one foot",
+        "hops": "verb: springs along on one foot"
+       }
+      },
+      {
+       "id": "F:B-move-01-s03",
+       "word": "hop",
+       "text": "A sore toe made Poppy ___ along on just her left foot.",
+       "answer": "hop",
+       "tiles": [
+        "hop",
+        "hopping",
+        "hops",
+        "hopped"
+       ],
+       "notes": {
+        "hop": "verb: to spring along on one foot",
+        "hopped": "verb: moved by springing along on one foot",
+        "hopping": "verb: moving by springing along on one foot",
+        "hops": "verb: springs along on one foot"
+       }
+      },
+      {
+       "id": "F:B-move-01-s04",
+       "word": "hop",
+       "text": "Leo had to ___ from square three to four on one leg.",
+       "answer": "hop",
+       "tiles": [
+        "hop",
+        "hopping",
+        "hops",
+        "hopped"
+       ],
+       "notes": {
+        "hop": "verb: to spring along on one foot",
+        "hopped": "verb: moved by springing along on one foot",
+        "hopping": "verb: moving by springing along on one foot",
+        "hops": "verb: springs along on one foot"
+       }
+      },
+      {
+       "id": "F:B-move-01-s09",
+       "word": "crawl",
+       "text": "The baby ___ across the rug on her hands and knees.",
+       "answer": "crawled",
+       "tiles": [
+        "crawled",
+        "crawl",
+        "crawling",
+        "crawler"
+       ],
+       "notes": {
+        "crawl": "verb: to move slowly with the body close to the ground",
+        "crawled": "verb: moved slowly with the body close to the ground",
+        "crawling": "verb: moving slowly with the body close to the ground",
+        "crawler": "noun: a person or animal moving low along the ground"
+       }
+      },
+      {
+       "id": "F:B-move-01-s10",
+       "word": "crawl",
+       "text": "I ___ under the table on my knees to find my marble.",
+       "answer": "crawled",
+       "tiles": [
+        "crawled",
+        "crawl",
+        "crawling",
+        "crawler"
+       ],
+       "notes": {
+        "crawl": "verb: to move slowly with the body close to the ground",
+        "crawled": "verb: moved slowly with the body close to the ground",
+        "crawling": "verb: moving slowly with the body close to the ground",
+        "crawler": "noun: a person or animal moving low along the ground"
+       }
+      },
+      {
+       "id": "F:B-move-01-s11",
+       "word": "crawl",
+       "text": "The tunnel was too low, so we ___ through it on all fours.",
+       "answer": "crawled",
+       "tiles": [
+        "crawled",
+        "crawl",
+        "crawling",
+        "crawler"
+       ],
+       "notes": {
+        "crawl": "verb: to move slowly with the body close to the ground",
+        "crawled": "verb: moved slowly with the body close to the ground",
+        "crawling": "verb: moving slowly with the body close to the ground",
+        "crawler": "noun: a person or animal moving low along the ground"
+       }
+      },
+      {
+       "id": "F:B-move-01-s12",
+       "word": "crawl",
+       "text": "In the fire drill, we ___ low under the pretend smoke.",
+       "answer": "crawled",
+       "tiles": [
+        "crawled",
+        "crawl",
+        "crawling",
+        "crawler"
+       ],
+       "notes": {
+        "crawl": "verb: to move slowly with the body close to the ground",
+        "crawled": "verb: moved slowly with the body close to the ground",
+        "crawling": "verb: moving slowly with the body close to the ground",
+        "crawler": "noun: a person or animal moving low along the ground"
+       }
+      },
+      {
+       "id": "F:B-move-01-s17",
+       "word": "climb",
+       "text": "The goat ___ up the rocky path to reach the sweet leaves.",
+       "answer": "climbed",
+       "tiles": [
+        "climbed",
+        "climb",
+        "climbing",
+        "climber"
+       ],
+       "notes": {
+        "climb": "verb: to go upward by effort or steady progress",
+        "climbed": "verb: went upward by effort or steady progress",
+        "climbing": "verb: going upward by effort or steady progress",
+        "climber": "noun: a person who goes up rocks, trees, or mountains"
+       }
+      },
+      {
+       "id": "F:B-move-01-s18",
+       "word": "climb",
+       "text": "At camp, we ___ up the rope ladder to the treehouse.",
+       "answer": "climbed",
+       "tiles": [
+        "climbed",
+        "climb",
+        "climbing",
+        "climber"
+       ],
+       "notes": {
+        "climb": "verb: to go upward by effort or steady progress",
+        "climbed": "verb: went upward by effort or steady progress",
+        "climbing": "verb: going upward by effort or steady progress",
+        "climber": "noun: a person who goes up rocks, trees, or mountains"
+       }
+      },
+      {
+       "id": "F:B-move-01-s19",
+       "word": "climb",
+       "text": "Lena ___ up the tall frame until her hand reached the top bar.",
+       "answer": "climbed",
+       "tiles": [
+        "climbed",
+        "climb",
+        "climbing",
+        "climber"
+       ],
+       "notes": {
+        "climb": "verb: to go upward by effort or steady progress",
+        "climbed": "verb: went upward by effort or steady progress",
+        "climbing": "verb: going upward by effort or steady progress",
+        "climber": "noun: a person who goes up rocks, trees, or mountains"
+       }
+      },
+      {
+       "id": "F:B-move-01-s20",
+       "word": "climb",
+       "text": "The cat ___ up the tree to get onto the shed roof.",
+       "answer": "climbed",
+       "tiles": [
+        "climbed",
+        "climb",
+        "climbing",
+        "climber"
+       ],
+       "notes": {
+        "climb": "verb: to go upward by effort or steady progress",
+        "climbed": "verb: went upward by effort or steady progress",
+        "climbing": "verb: going upward by effort or steady progress",
+        "climber": "noun: a person who goes up rocks, trees, or mountains"
+       }
+      },
+      {
+       "id": "F:B-move-01-s25",
+       "word": "slide",
+       "text": "The penguin ___ on its belly across the icy pond.",
+       "answer": "slid",
+       "tiles": [
+        "slid",
+        "slide",
+        "sliding"
+       ],
+       "notes": {
+        "slid": "verb: moved smoothly along a surface",
+        "slide": "verb: to move smoothly along a surface",
+        "sliding": "verb: moving smoothly along a surface"
+       }
+      },
+      {
+       "id": "F:B-move-01-s26",
+       "word": "slide",
+       "text": "At the pool, Mina ___ down the wet ramp into the water.",
+       "answer": "slid",
+       "tiles": [
+        "slid",
+        "slide",
+        "sliding"
+       ],
+       "notes": {
+        "slid": "verb: moved smoothly along a surface",
+        "slide": "verb: to move smoothly along a surface",
+        "sliding": "verb: moving smoothly along a surface"
+       }
+      },
+      {
+       "id": "F:B-move-01-s27",
+       "word": "slide",
+       "text": "The tray ___ across the polished counter without a bump.",
+       "answer": "slid",
+       "tiles": [
+        "slid",
+        "slide",
+        "sliding"
+       ],
+       "notes": {
+        "slid": "verb: moved smoothly along a surface",
+        "slide": "verb: to move smoothly along a surface",
+        "sliding": "verb: moving smoothly along a surface"
+       }
+      },
+      {
+       "id": "F:B-move-01-s33",
+       "word": "dance",
+       "text": "When their song came on, the twins ___ and twirled around the kitchen.",
+       "answer": "danced",
+       "tiles": [
+        "danced",
+        "dance",
+        "dancing",
+        "dancer",
+        "danceable"
+       ],
+       "notes": {
+        "dance": "verb: to move to music with steps and turns",
+        "danced": "verb: moved to music with steps and turns",
+        "dancing": "verb: moving to music with steps and turns",
+        "dancer": "noun: a person who moves to music with steps and turns",
+        "danceable": "adjective: having a beat suitable for moving to music"
+       }
+      },
+      {
+       "id": "F:B-move-01-s34",
+       "word": "dance",
+       "text": "In ballet class, Tia ___ across the room as the piano played.",
+       "answer": "danced",
+       "tiles": [
+        "danced",
+        "dance",
+        "dancing",
+        "dancer",
+        "danceable"
+       ],
+       "notes": {
+        "dance": "verb: to move to music with steps and turns",
+        "danced": "verb: moved to music with steps and turns",
+        "dancing": "verb: moving to music with steps and turns",
+        "dancer": "noun: a person who moves to music with steps and turns",
+        "danceable": "adjective: having a beat suitable for moving to music"
+       }
+      },
+      {
+       "id": "F:B-move-01-s35",
+       "word": "dance",
+       "text": "When the band played, Grandma ___ with Grandpa all night.",
+       "answer": "danced",
+       "tiles": [
+        "danced",
+        "dance",
+        "dancing",
+        "dancer",
+        "danceable"
+       ],
+       "notes": {
+        "dance": "verb: to move to music with steps and turns",
+        "danced": "verb: moved to music with steps and turns",
+        "dancing": "verb: moving to music with steps and turns",
+        "dancer": "noun: a person who moves to music with steps and turns",
+        "danceable": "adjective: having a beat suitable for moving to music"
+       }
+      },
+      {
+       "id": "F:B-move-01-s36",
+       "word": "dance",
+       "text": "At the school disco, everyone ___ under the flashing lights.",
+       "answer": "danced",
+       "tiles": [
+        "danced",
+        "dance",
+        "dancing",
+        "dancer",
+        "danceable"
+       ],
+       "notes": {
+        "dance": "verb: to move to music with steps and turns",
+        "danced": "verb: moved to music with steps and turns",
+        "dancing": "verb: moving to music with steps and turns",
+        "dancer": "noun: a person who moves to music with steps and turns",
+        "danceable": "adjective: having a beat suitable for moving to music"
+       }
+      }
+     ]
+    },
+    "B-river-01": {
+     "families": {
+      "rapids": [
+       {
+        "form": "rapid",
+        "pos": "noun",
+        "note": "noun: a fast, rough part of a river"
+       },
+       {
+        "form": "rapids",
+        "pos": "noun",
+        "note": "noun: fast, rough parts of a river"
+       },
+       {
+        "form": "rapidly",
+        "pos": "adverb",
+        "note": "adverb: very quickly"
+       },
+       {
+        "form": "rapidity",
+        "pos": "noun",
+        "note": "noun: great speed or quickness"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:B-river-01-s03",
+       "word": "rapids",
+       "text": "The ___ made paddles shake, then stopped at a glassy pool.",
+       "answer": "rapids",
+       "tiles": [
+        "rapids",
+        "rapid",
+        "rapidly",
+        "rapidity"
+       ],
+       "notes": {
+        "rapid": "noun: a fast, rough part of a river",
+        "rapids": "noun: fast, rough parts of a river",
+        "rapidly": "adverb: very quickly",
+        "rapidity": "noun: great speed or quickness"
+       }
+      },
+      {
+       "id": "F:B-river-01-s04",
+       "word": "rapids",
+       "text": "After the ___, everyone's sleeves dripped, but the boat slid quietly.",
+       "answer": "rapids",
+       "tiles": [
+        "rapids",
+        "rapid",
+        "rapidly",
+        "rapidity"
+       ],
+       "notes": {
+        "rapid": "noun: a fast, rough part of a river",
+        "rapids": "noun: fast, rough parts of a river",
+        "rapidly": "adverb: very quickly",
+        "rapidity": "noun: great speed or quickness"
+       }
+      }
+     ]
+    },
+    "B-sky-01": {
+     "families": {
+      "meteor": [
+       {
+        "form": "meteor",
+        "pos": "noun",
+        "note": "noun: bright streak made by a space rock in the air"
+       },
+       {
+        "form": "meteors",
+        "pos": "noun",
+        "note": "noun: bright streaks made by space rocks in the air"
+       },
+       {
+        "form": "meteoric",
+        "pos": "adjective",
+        "note": "adjective: about bright streaks from space rocks in air"
+       },
+       {
+        "form": "meteorite",
+        "pos": "noun",
+        "note": "noun: space rock that reaches the ground from space"
+       }
+      ],
+      "eclipse": [
+       {
+        "form": "eclipse",
+        "pos": "noun",
+        "note": "noun: blocking of light between bodies in space"
+       },
+       {
+        "form": "eclipses",
+        "pos": "noun",
+        "note": "noun: events where one space body blocks another's light"
+       },
+       {
+        "form": "eclipsed",
+        "pos": "verb",
+        "note": "verb: blocked the light of another body in space"
+       },
+       {
+        "form": "eclipsing",
+        "pos": "verb",
+        "note": "verb: blocking another space body's light"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:B-sky-01-s09",
+       "word": "meteor",
+       "text": "The ___ flashed once, then vanished before Sam counted to three.",
+       "answer": "meteor",
+       "tiles": [
+        "meteor",
+        "meteorite",
+        "meteors",
+        "meteoric"
+       ],
+       "notes": {
+        "meteor": "noun: bright streak made by a space rock in the air",
+        "meteors": "noun: bright streaks made by space rocks in the air",
+        "meteoric": "adjective: about bright streaks from space rocks in air",
+        "meteorite": "noun: space rock that reaches the ground from space"
+       }
+      },
+      {
+       "id": "F:B-sky-01-s10",
+       "word": "meteor",
+       "text": "The class gasped as the ___ zipped across and was gone instantly.",
+       "answer": "meteor",
+       "tiles": [
+        "meteor",
+        "meteorite",
+        "meteors",
+        "meteoric"
+       ],
+       "notes": {
+        "meteor": "noun: bright streak made by a space rock in the air",
+        "meteors": "noun: bright streaks made by space rocks in the air",
+        "meteoric": "adjective: about bright streaks from space rocks in air",
+        "meteorite": "noun: space rock that reaches the ground from space"
+       }
+      },
+      {
+       "id": "F:B-sky-01-s11",
+       "word": "meteor",
+       "text": "During the campout, the ___ made everyone point, then quickly disappeared.",
+       "answer": "meteor",
+       "tiles": [
+        "meteor",
+        "meteorite",
+        "meteors",
+        "meteoric"
+       ],
+       "notes": {
+        "meteor": "noun: bright streak made by a space rock in the air",
+        "meteors": "noun: bright streaks made by space rocks in the air",
+        "meteoric": "adjective: about bright streaks from space rocks in air",
+        "meteorite": "noun: space rock that reaches the ground from space"
+       }
+      },
+      {
+       "id": "F:B-sky-01-s12",
+       "word": "meteor",
+       "text": "On the hill, the ___ drew a sudden white line, then nothing.",
+       "answer": "meteor",
+       "tiles": [
+        "meteor",
+        "meteorite",
+        "meteors",
+        "meteoric"
+       ],
+       "notes": {
+        "meteor": "noun: bright streak made by a space rock in the air",
+        "meteors": "noun: bright streaks made by space rocks in the air",
+        "meteoric": "adjective: about bright streaks from space rocks in air",
+        "meteorite": "noun: space rock that reaches the ground from space"
+       }
+      },
+      {
+       "id": "F:B-sky-01-s17",
+       "word": "eclipse",
+       "text": "At noon, the ___ made the sun look like a bitten biscuit.",
+       "answer": "eclipse",
+       "tiles": [
+        "eclipse",
+        "eclipsed",
+        "eclipses",
+        "eclipsing"
+       ],
+       "notes": {
+        "eclipse": "noun: blocking of light between bodies in space",
+        "eclipses": "noun: events where one space body blocks another's light",
+        "eclipsed": "verb: blocked the light of another body in space",
+        "eclipsing": "verb: blocking another space body's light"
+       }
+      },
+      {
+       "id": "F:B-sky-01-s18",
+       "word": "eclipse",
+       "text": "The ___ turned day dim when the moon covered the sun.",
+       "answer": "eclipse",
+       "tiles": [
+        "eclipse",
+        "eclipsed",
+        "eclipses",
+        "eclipsing"
+       ],
+       "notes": {
+        "eclipse": "noun: blocking of light between bodies in space",
+        "eclipses": "noun: events where one space body blocks another's light",
+        "eclipsed": "verb: blocked the light of another body in space",
+        "eclipsing": "verb: blocking another space body's light"
+       }
+      },
+      {
+       "id": "F:B-sky-01-s19",
+       "word": "eclipse",
+       "text": "We wore special dark glasses as the ___ slowly hid the sun.",
+       "answer": "eclipse",
+       "tiles": [
+        "eclipse",
+        "eclipsed",
+        "eclipses",
+        "eclipsing"
+       ],
+       "notes": {
+        "eclipse": "noun: blocking of light between bodies in space",
+        "eclipses": "noun: events where one space body blocks another's light",
+        "eclipsed": "verb: blocked the light of another body in space",
+        "eclipsing": "verb: blocking another space body's light"
+       }
+      },
+      {
+       "id": "F:B-sky-01-s20",
+       "word": "eclipse",
+       "text": "The playground went dusky during the ___, though lunchtime had just begun.",
+       "answer": "eclipse",
+       "tiles": [
+        "eclipse",
+        "eclipsed",
+        "eclipses",
+        "eclipsing"
+       ],
+       "notes": {
+        "eclipse": "noun: blocking of light between bodies in space",
+        "eclipses": "noun: events where one space body blocks another's light",
+        "eclipsed": "verb: blocked the light of another body in space",
+        "eclipsing": "verb: blocking another space body's light"
+       }
+      }
+     ]
+    },
+    "B-sounds-01": {
+     "families": {
+      "giggle": [
+       {
+        "form": "giggle",
+        "pos": "verb",
+        "note": "verb: to laugh in a light, silly, bubbling way"
+       },
+       {
+        "form": "giggled",
+        "pos": "verb",
+        "note": "verb: laughed in a light, silly, bubbling way"
+       },
+       {
+        "form": "giggles",
+        "pos": "verb",
+        "note": "verb: laughs in a light, silly, bubbling way"
+       },
+       {
+        "form": "giggling",
+        "pos": "verb",
+        "note": "verb: laughing in a light, silly, bubbling way"
+       }
+      ],
+      "shout": [
+       {
+        "form": "shout",
+        "pos": "verb",
+        "note": "verb: to say something in a very loud voice"
+       },
+       {
+        "form": "shouted",
+        "pos": "verb",
+        "note": "verb: said something in a very loud voice"
+       },
+       {
+        "form": "shouting",
+        "pos": "verb",
+        "note": "verb: saying something in a very loud voice"
+       },
+       {
+        "form": "shouts",
+        "pos": "verb",
+        "note": "verb: says something in a very loud voice"
+       }
+      ],
+      "hum": [
+       {
+        "form": "hum",
+        "pos": "verb",
+        "note": "verb: to sing with closed lips"
+       },
+       {
+        "form": "hummed",
+        "pos": "verb",
+        "note": "verb: sang with closed lips"
+       },
+       {
+        "form": "humming",
+        "pos": "verb",
+        "note": "verb: singing with closed lips"
+       },
+       {
+        "form": "hums",
+        "pos": "verb",
+        "note": "verb: sings with closed lips"
+       }
+      ],
+      "sigh": [
+       {
+        "form": "sigh",
+        "pos": "verb",
+        "note": "verb: to let out one long deep breath when tired or sad"
+       },
+       {
+        "form": "sighed",
+        "pos": "verb",
+        "note": "verb: let out one long deep breath when tired or sad"
+       },
+       {
+        "form": "sighing",
+        "pos": "verb",
+        "note": "verb: letting out one long deep breath when tired or sad"
+       },
+       {
+        "form": "sighs",
+        "pos": "verb",
+        "note": "verb: lets out one long deep breath when tired or sad"
+       }
+      ],
+      "whistle": [
+       {
+        "form": "whistle",
+        "pos": "verb",
+        "note": "verb: to make a high clear note by blowing air through the lips"
+       },
+       {
+        "form": "whistled",
+        "pos": "verb",
+        "note": "verb: made a high clear note by blowing air through the lips"
+       },
+       {
+        "form": "whistles",
+        "pos": "verb",
+        "note": "verb: makes a high clear note by blowing air through the lips"
+       },
+       {
+        "form": "whistling",
+        "pos": "verb",
+        "note": "verb: making a high clear note by blowing air through the lips"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:B-sounds-01-s01",
+       "word": "giggle",
+       "text": "The wobbly jelly made Noor ___ in tiny tee-hees.",
+       "answer": "giggle",
+       "tiles": [
+        "giggle",
+        "giggles",
+        "giggling",
+        "giggled"
+       ],
+       "notes": {
+        "giggle": "verb: to laugh in a light, silly, bubbling way",
+        "giggled": "verb: laughed in a light, silly, bubbling way",
+        "giggles": "verb: laughs in a light, silly, bubbling way",
+        "giggling": "verb: laughing in a light, silly, bubbling way"
+       }
+      },
+      {
+       "id": "F:B-sounds-01-s02",
+       "word": "giggle",
+       "text": "At the puppet's wink, Ben ___ with small tee-hee sounds.",
+       "answer": "giggled",
+       "tiles": [
+        "giggled",
+        "giggle",
+        "giggling"
+       ],
+       "notes": {
+        "giggle": "verb: to laugh in a light, silly, bubbling way",
+        "giggled": "verb: laughed in a light, silly, bubbling way",
+        "giggling": "verb: laughing in a light, silly, bubbling way"
+       }
+      },
+      {
+       "id": "F:B-sounds-01-s03",
+       "word": "giggle",
+       "text": "Lena covered her mouth and ___ when the goat wore socks.",
+       "answer": "giggled",
+       "tiles": [
+        "giggled",
+        "giggle",
+        "giggling"
+       ],
+       "notes": {
+        "giggle": "verb: to laugh in a light, silly, bubbling way",
+        "giggled": "verb: laughed in a light, silly, bubbling way",
+        "giggling": "verb: laughing in a light, silly, bubbling way"
+       }
+      },
+      {
+       "id": "F:B-sounds-01-s04",
+       "word": "giggle",
+       "text": "Two tiny squeaks escaped as Ravi ___ at the upside-down hat.",
+       "answer": "giggled",
+       "tiles": [
+        "giggled",
+        "giggle",
+        "giggling"
+       ],
+       "notes": {
+        "giggle": "verb: to laugh in a light, silly, bubbling way",
+        "giggled": "verb: laughed in a light, silly, bubbling way",
+        "giggling": "verb: laughing in a light, silly, bubbling way"
+       }
+      },
+      {
+       "id": "F:B-sounds-01-s09",
+       "word": "shout",
+       "text": "From the gate, Omar ___ 'Wait!' across the busy playground.",
+       "answer": "shouted",
+       "tiles": [
+        "shouted",
+        "shout",
+        "shouting"
+       ],
+       "notes": {
+        "shout": "verb: to say something in a very loud voice",
+        "shouted": "verb: said something in a very loud voice",
+        "shouting": "verb: saying something in a very loud voice"
+       }
+      },
+      {
+       "id": "F:B-sounds-01-s10",
+       "word": "shout",
+       "text": "The lifeguard had to ___ 'Swim back!' over the waves.",
+       "answer": "shout",
+       "tiles": [
+        "shout",
+        "shouting",
+        "shouted",
+        "shouts"
+       ],
+       "notes": {
+        "shout": "verb: to say something in a very loud voice",
+        "shouted": "verb: said something in a very loud voice",
+        "shouting": "verb: saying something in a very loud voice",
+        "shouts": "verb: says something in a very loud voice"
+       }
+      },
+      {
+       "id": "F:B-sounds-01-s11",
+       "word": "shout",
+       "text": "When the bus doors opened, Priya ___ 'Here!' from the back.",
+       "answer": "shouted",
+       "tiles": [
+        "shouted",
+        "shout",
+        "shouting"
+       ],
+       "notes": {
+        "shout": "verb: to say something in a very loud voice",
+        "shouted": "verb: said something in a very loud voice",
+        "shouting": "verb: saying something in a very loud voice"
+       }
+      },
+      {
+       "id": "F:B-sounds-01-s12",
+       "word": "shout",
+       "text": "The captain cupped both hands and ___ orders across the windy field.",
+       "answer": "shouted",
+       "tiles": [
+        "shouted",
+        "shout",
+        "shouting"
+       ],
+       "notes": {
+        "shout": "verb: to say something in a very loud voice",
+        "shouted": "verb: said something in a very loud voice",
+        "shouting": "verb: saying something in a very loud voice"
+       }
+      },
+      {
+       "id": "F:B-sounds-01-s17",
+       "word": "hum",
+       "text": "Mouth shut, Asha ___ the tune while washing brushes.",
+       "answer": "hummed",
+       "tiles": [
+        "hummed",
+        "hum",
+        "humming"
+       ],
+       "notes": {
+        "hum": "verb: to sing with closed lips",
+        "hummed": "verb: sang with closed lips",
+        "humming": "verb: singing with closed lips"
+       }
+      },
+      {
+       "id": "F:B-sounds-01-s18",
+       "word": "hum",
+       "text": "During the quiet music, Finn began to ___ with his mouth shut.",
+       "answer": "hum",
+       "tiles": [
+        "hum",
+        "humming",
+        "hums",
+        "hummed"
+       ],
+       "notes": {
+        "hum": "verb: to sing with closed lips",
+        "hummed": "verb: sang with closed lips",
+        "humming": "verb: singing with closed lips",
+        "hums": "verb: sings with closed lips"
+       }
+      },
+      {
+       "id": "F:B-sounds-01-s19",
+       "word": "hum",
+       "text": "Nina ___ the bedtime tune, her lips pressed together.",
+       "answer": "hummed",
+       "tiles": [
+        "hummed",
+        "hum",
+        "humming"
+       ],
+       "notes": {
+        "hum": "verb: to sing with closed lips",
+        "hummed": "verb: sang with closed lips",
+        "humming": "verb: singing with closed lips"
+       }
+      },
+      {
+       "id": "F:B-sounds-01-s20",
+       "word": "hum",
+       "text": "Max forgot the words, so he ___ the tune with his lips closed.",
+       "answer": "hummed",
+       "tiles": [
+        "hummed",
+        "hum",
+        "humming"
+       ],
+       "notes": {
+        "hum": "verb: to sing with closed lips",
+        "hummed": "verb: sang with closed lips",
+        "humming": "verb: singing with closed lips"
+       }
+      },
+      {
+       "id": "F:B-sounds-01-s25",
+       "word": "sigh",
+       "text": "Mia ___, sending one slow puff across her homework.",
+       "answer": "sighed",
+       "tiles": [
+        "sighed",
+        "sigh",
+        "sighing"
+       ],
+       "notes": {
+        "sigh": "verb: to let out one long deep breath when tired or sad",
+        "sighed": "verb: let out one long deep breath when tired or sad",
+        "sighing": "verb: letting out one long deep breath when tired or sad"
+       }
+      },
+      {
+       "id": "F:B-sounds-01-s26",
+       "word": "sigh",
+       "text": "Raj ___ with a slow, sad \"Ohhh\" when the rain started.",
+       "answer": "sighed",
+       "tiles": [
+        "sighed",
+        "sigh",
+        "sighing"
+       ],
+       "notes": {
+        "sigh": "verb: to let out one long deep breath when tired or sad",
+        "sighed": "verb: let out one long deep breath when tired or sad",
+        "sighing": "verb: letting out one long deep breath when tired or sad"
+       }
+      },
+      {
+       "id": "F:B-sounds-01-s27",
+       "word": "sigh",
+       "text": "After missing the bus, Leo ___, fogging the window glass.",
+       "answer": "sighed",
+       "tiles": [
+        "sighed",
+        "sigh",
+        "sighing"
+       ],
+       "notes": {
+        "sigh": "verb: to let out one long deep breath when tired or sad",
+        "sighed": "verb: let out one long deep breath when tired or sad",
+        "sighing": "verb: letting out one long deep breath when tired or sad"
+       }
+      },
+      {
+       "id": "F:B-sounds-01-s28",
+       "word": "sigh",
+       "text": "Grandma looked at the messy room and ___ heavily.",
+       "answer": "sighed",
+       "tiles": [
+        "sighed",
+        "sigh",
+        "sighing"
+       ],
+       "notes": {
+        "sigh": "verb: to let out one long deep breath when tired or sad",
+        "sighed": "verb: let out one long deep breath when tired or sad",
+        "sighing": "verb: letting out one long deep breath when tired or sad"
+       }
+      },
+      {
+       "id": "F:B-sounds-01-s33",
+       "word": "whistle",
+       "text": "With two fingers in his mouth, Kai ___ loudly to call his dog.",
+       "answer": "whistled",
+       "tiles": [
+        "whistled",
+        "whistle",
+        "whistling"
+       ],
+       "notes": {
+        "whistle": "verb: to make a high clear note by blowing air through the lips",
+        "whistled": "verb: made a high clear note by blowing air through the lips",
+        "whistling": "verb: making a high clear note by blowing air through the lips"
+       }
+      },
+      {
+       "id": "F:B-sounds-01-s34",
+       "word": "whistle",
+       "text": "Pia learned to ___ a tune like a bird with her lips.",
+       "answer": "whistle",
+       "tiles": [
+        "whistle",
+        "whistles",
+        "whistling",
+        "whistled"
+       ],
+       "notes": {
+        "whistle": "verb: to make a high clear note by blowing air through the lips",
+        "whistled": "verb: made a high clear note by blowing air through the lips",
+        "whistles": "verb: makes a high clear note by blowing air through the lips",
+        "whistling": "verb: making a high clear note by blowing air through the lips"
+       }
+      },
+      {
+       "id": "F:B-sounds-01-s35",
+       "word": "whistle",
+       "text": "Sam ___ a cheerful tune with his lips in a little O.",
+       "answer": "whistled",
+       "tiles": [
+        "whistled",
+        "whistle",
+        "whistling"
+       ],
+       "notes": {
+        "whistle": "verb: to make a high clear note by blowing air through the lips",
+        "whistled": "verb: made a high clear note by blowing air through the lips",
+        "whistling": "verb: making a high clear note by blowing air through the lips"
+       }
+      },
+      {
+       "id": "F:B-sounds-01-s36",
+       "word": "whistle",
+       "text": "Bea ___ a high, sharp note, and the pony trotted over.",
+       "answer": "whistled",
+       "tiles": [
+        "whistled",
+        "whistle",
+        "whistling"
+       ],
+       "notes": {
+        "whistle": "verb: to make a high clear note by blowing air through the lips",
+        "whistled": "verb: made a high clear note by blowing air through the lips",
+        "whistling": "verb: making a high clear note by blowing air through the lips"
+       }
+      }
+     ]
+    },
+    "B-tempo-01": {
+     "families": {
+      "relentless": [
+       {
+        "form": "relent",
+        "pos": "verb",
+        "note": "verb: to ease off or become less severe"
+       },
+       {
+        "form": "relented",
+        "pos": "verb",
+        "note": "verb: eased off or became less severe"
+       },
+       {
+        "form": "relentless",
+        "pos": "adjective",
+        "note": "adjective: never stopping or easing off"
+       },
+       {
+        "form": "relentlessly",
+        "pos": "adverb",
+        "note": "adverb: without stopping or easing off"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:B-tempo-01-s17",
+       "word": "relentless",
+       "text": "In storm week, ___ rain drums on our roof without a pause.",
+       "answer": "relentless",
+       "tiles": [
+        "relentless",
+        "relentlessly",
+        "relented",
+        "relent"
+       ],
+       "notes": {
+        "relent": "verb: to ease off or become less severe",
+        "relented": "verb: eased off or became less severe",
+        "relentless": "adjective: never stopping or easing off",
+        "relentlessly": "adverb: without stopping or easing off"
+       }
+      },
+      {
+       "id": "F:B-tempo-01-s18",
+       "word": "relentless",
+       "text": "Her ___ questions kept coming through breakfast, lunch, and the bus ride.",
+       "answer": "relentless",
+       "tiles": [
+        "relentless",
+        "relentlessly",
+        "relented",
+        "relent"
+       ],
+       "notes": {
+        "relent": "verb: to ease off or become less severe",
+        "relented": "verb: eased off or became less severe",
+        "relentless": "adjective: never stopping or easing off",
+        "relentlessly": "adverb: without stopping or easing off"
+       }
+      },
+      {
+       "id": "F:B-tempo-01-s19",
+       "word": "relentless",
+       "text": "The ___ wind pushed the tent ropes hour after hour.",
+       "answer": "relentless",
+       "tiles": [
+        "relentless",
+        "relentlessly",
+        "relented",
+        "relent"
+       ],
+       "notes": {
+        "relent": "verb: to ease off or become less severe",
+        "relented": "verb: eased off or became less severe",
+        "relentless": "adjective: never stopping or easing off",
+        "relentlessly": "adverb: without stopping or easing off"
+       }
+      },
+      {
+       "id": "F:B-tempo-01-s20",
+       "word": "relentless",
+       "text": "A ___ chant followed the runners from the gate to the finish.",
+       "answer": "relentless",
+       "tiles": [
+        "relentless",
+        "relentlessly",
+        "relented",
+        "relent"
+       ],
+       "notes": {
+        "relent": "verb: to ease off or become less severe",
+        "relented": "verb: eased off or became less severe",
+        "relentless": "adjective: never stopping or easing off",
+        "relentlessly": "adverb: without stopping or easing off"
+       }
+      }
+     ]
+    },
+    "B-texture-01": {
+     "families": {
+      "sticky": [
+       {
+        "form": "sticky",
+        "pos": "adjective",
+        "note": "adjective: tending to cling to surfaces"
+       },
+       {
+        "form": "stick",
+        "pos": "verb",
+        "note": "verb: to become attached to a surface"
+       },
+       {
+        "form": "sticks",
+        "pos": "verb",
+        "note": "verb: becomes attached to a surface"
+       },
+       {
+        "form": "sticking",
+        "pos": "verb",
+        "note": "verb: becoming attached to a surface"
+       }
+      ],
+      "stretchy": [
+       {
+        "form": "stretchy",
+        "pos": "adjective",
+        "note": "adjective: able to be pulled longer and spring back"
+       },
+       {
+        "form": "stretch",
+        "pos": "verb",
+        "note": "verb: to pull something so it becomes longer"
+       },
+       {
+        "form": "stretches",
+        "pos": "verb",
+        "note": "verb: pulls something so it becomes longer"
+       },
+       {
+        "form": "stretched",
+        "pos": "verb",
+        "note": "verb: pulled something so it became longer"
+       },
+       {
+        "form": "stretching",
+        "pos": "verb",
+        "note": "verb: pulling something so it becomes longer"
+       }
+      ],
+      "fluffy": [
+       {
+        "form": "fluffy",
+        "pos": "adjective",
+        "note": "adjective: soft, light, and full of air"
+       },
+       {
+        "form": "fluff",
+        "pos": "noun",
+        "note": "noun: soft light fibres or down"
+       },
+       {
+        "form": "fluffed",
+        "pos": "verb",
+        "note": "verb: made soft and full of air"
+       },
+       {
+        "form": "fluffing",
+        "pos": "verb",
+        "note": "verb: making soft and full of air"
+       }
+      ],
+      "crunchy": [
+       {
+        "form": "crunchy",
+        "pos": "adjective",
+        "note": "adjective: making a sharp sound when bitten or crushed"
+       },
+       {
+        "form": "crunch",
+        "pos": "verb",
+        "note": "verb: to bite or crush with a sharp sound"
+       },
+       {
+        "form": "crunches",
+        "pos": "verb",
+        "note": "verb: bites or crushes with a sharp sound"
+       },
+       {
+        "form": "crunched",
+        "pos": "verb",
+        "note": "verb: bit or crushed with a sharp sound"
+       },
+       {
+        "form": "crunching",
+        "pos": "verb",
+        "note": "verb: biting or crushing with a sharp sound"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:B-texture-01-s01",
+       "word": "sticky",
+       "text": "My fingers were so ___ from the honey that they stuck together.",
+       "answer": "sticky",
+       "tiles": [
+        "sticky",
+        "stick",
+        "sticks",
+        "sticking"
+       ],
+       "notes": {
+        "sticky": "adjective: tending to cling to surfaces",
+        "stick": "verb: to become attached to a surface",
+        "sticks": "verb: becomes attached to a surface",
+        "sticking": "verb: becoming attached to a surface"
+       }
+      },
+      {
+       "id": "F:B-texture-01-s02",
+       "word": "sticky",
+       "text": "The tape was so ___ that it stuck to my hair.",
+       "answer": "sticky",
+       "tiles": [
+        "sticky",
+        "stick",
+        "sticks",
+        "sticking"
+       ],
+       "notes": {
+        "sticky": "adjective: tending to cling to surfaces",
+        "stick": "verb: to become attached to a surface",
+        "sticks": "verb: becomes attached to a surface",
+        "sticking": "verb: becoming attached to a surface"
+       }
+      },
+      {
+       "id": "F:B-texture-01-s03",
+       "word": "sticky",
+       "text": "After eating the toffee apple, Lily's hands felt ___.",
+       "answer": "sticky",
+       "tiles": [
+        "sticky",
+        "stick",
+        "sticks",
+        "sticking"
+       ],
+       "notes": {
+        "sticky": "adjective: tending to cling to surfaces",
+        "stick": "verb: to become attached to a surface",
+        "sticks": "verb: becomes attached to a surface",
+        "sticking": "verb: becoming attached to a surface"
+       }
+      },
+      {
+       "id": "F:B-texture-01-s04",
+       "word": "sticky",
+       "text": "Dad wiped up the ___ jam that had spilled on the bench.",
+       "answer": "sticky",
+       "tiles": [
+        "sticky",
+        "stick",
+        "sticks",
+        "sticking"
+       ],
+       "notes": {
+        "sticky": "adjective: tending to cling to surfaces",
+        "stick": "verb: to become attached to a surface",
+        "sticks": "verb: becomes attached to a surface",
+        "sticking": "verb: becoming attached to a surface"
+       }
+      },
+      {
+       "id": "F:B-texture-01-s17",
+       "word": "stretchy",
+       "text": "The ___ rubber band grew as long as my arm without breaking.",
+       "answer": "stretchy",
+       "tiles": [
+        "stretchy",
+        "stretch",
+        "stretched",
+        "stretching",
+        "stretches"
+       ],
+       "notes": {
+        "stretchy": "adjective: able to be pulled longer and spring back",
+        "stretch": "verb: to pull something so it becomes longer",
+        "stretches": "verb: pulls something so it becomes longer",
+        "stretched": "verb: pulled something so it became longer",
+        "stretching": "verb: pulling something so it becomes longer"
+       }
+      },
+      {
+       "id": "F:B-texture-01-s18",
+       "word": "stretchy",
+       "text": "When I let go, the ___ hair tie went small again.",
+       "answer": "stretchy",
+       "tiles": [
+        "stretchy",
+        "stretch",
+        "stretched",
+        "stretching",
+        "stretches"
+       ],
+       "notes": {
+        "stretchy": "adjective: able to be pulled longer and spring back",
+        "stretch": "verb: to pull something so it becomes longer",
+        "stretches": "verb: pulls something so it becomes longer",
+        "stretched": "verb: pulled something so it became longer",
+        "stretching": "verb: pulling something so it becomes longer"
+       }
+      },
+      {
+       "id": "F:B-texture-01-s19",
+       "word": "stretchy",
+       "text": "The ___ waistband on my shorts lets them fit over my tummy.",
+       "answer": "stretchy",
+       "tiles": [
+        "stretchy",
+        "stretch",
+        "stretched",
+        "stretching",
+        "stretches"
+       ],
+       "notes": {
+        "stretchy": "adjective: able to be pulled longer and spring back",
+        "stretch": "verb: to pull something so it becomes longer",
+        "stretches": "verb: pulls something so it becomes longer",
+        "stretched": "verb: pulled something so it became longer",
+        "stretching": "verb: pulling something so it becomes longer"
+       }
+      },
+      {
+       "id": "F:B-texture-01-s25",
+       "word": "fluffy",
+       "text": "The baby chick was yellow and ___, like a tiny pom-pom.",
+       "answer": "fluffy",
+       "tiles": [
+        "fluffy",
+        "fluff",
+        "fluffed",
+        "fluffing"
+       ],
+       "notes": {
+        "fluffy": "adjective: soft, light, and full of air",
+        "fluff": "noun: soft light fibres or down",
+        "fluffed": "verb: made soft and full of air",
+        "fluffing": "verb: making soft and full of air"
+       }
+      },
+      {
+       "id": "F:B-texture-01-s26",
+       "word": "fluffy",
+       "text": "The clouds looked white and ___, like big piles of cotton wool.",
+       "answer": "fluffy",
+       "tiles": [
+        "fluffy",
+        "fluff",
+        "fluffed",
+        "fluffing"
+       ],
+       "notes": {
+        "fluffy": "adjective: soft, light, and full of air",
+        "fluff": "noun: soft light fibres or down",
+        "fluffed": "verb: made soft and full of air",
+        "fluffing": "verb: making soft and full of air"
+       }
+      },
+      {
+       "id": "F:B-texture-01-s27",
+       "word": "fluffy",
+       "text": "After a bath, our puppy's fur dried big and ___.",
+       "answer": "fluffy",
+       "tiles": [
+        "fluffy",
+        "fluff",
+        "fluffed",
+        "fluffing"
+       ],
+       "notes": {
+        "fluffy": "adjective: soft, light, and full of air",
+        "fluff": "noun: soft light fibres or down",
+        "fluffed": "verb: made soft and full of air",
+        "fluffing": "verb: making soft and full of air"
+       }
+      },
+      {
+       "id": "F:B-texture-01-s28",
+       "word": "fluffy",
+       "text": "Gran makes thick, ___ pancakes that puff up in the pan.",
+       "answer": "fluffy",
+       "tiles": [
+        "fluffy",
+        "fluff",
+        "fluffed",
+        "fluffing"
+       ],
+       "notes": {
+        "fluffy": "adjective: soft, light, and full of air",
+        "fluff": "noun: soft light fibres or down",
+        "fluffed": "verb: made soft and full of air",
+        "fluffing": "verb: making soft and full of air"
+       }
+      },
+      {
+       "id": "F:B-texture-01-s34",
+       "word": "crunchy",
+       "text": "A fresh carrot is ___, but an old one goes bendy.",
+       "answer": "crunchy",
+       "tiles": [
+        "crunchy",
+        "crunch",
+        "crunching",
+        "crunches",
+        "crunched"
+       ],
+       "notes": {
+        "crunchy": "adjective: making a sharp sound when bitten or crushed",
+        "crunch": "verb: to bite or crush with a sharp sound",
+        "crunches": "verb: bites or crushes with a sharp sound",
+        "crunched": "verb: bit or crushed with a sharp sound",
+        "crunching": "verb: biting or crushing with a sharp sound"
+       }
+      },
+      {
+       "id": "F:B-texture-01-s35",
+       "word": "crunchy",
+       "text": "Toast is ___ at the edges where it got a bit burnt.",
+       "answer": "crunchy",
+       "tiles": [
+        "crunchy",
+        "crunch",
+        "crunching",
+        "crunches",
+        "crunched"
+       ],
+       "notes": {
+        "crunchy": "adjective: making a sharp sound when bitten or crushed",
+        "crunch": "verb: to bite or crush with a sharp sound",
+        "crunches": "verb: bites or crushes with a sharp sound",
+        "crunched": "verb: bit or crushed with a sharp sound",
+        "crunching": "verb: biting or crushing with a sharp sound"
+       }
+      },
+      {
+       "id": "F:B-texture-01-s36",
+       "word": "crunchy",
+       "text": "The ___ taco shell snapped into bits when I bit it.",
+       "answer": "crunchy",
+       "tiles": [
+        "crunchy",
+        "crunch",
+        "crunching",
+        "crunches",
+        "crunched"
+       ],
+       "notes": {
+        "crunchy": "adjective: making a sharp sound when bitten or crushed",
+        "crunch": "verb: to bite or crush with a sharp sound",
+        "crunches": "verb: bites or crushes with a sharp sound",
+        "crunched": "verb: bit or crushed with a sharp sound",
+        "crunching": "verb: biting or crushing with a sharp sound"
+       }
+      }
+     ]
+    },
+    "B-time-order-01": {
+     "families": {
+      "finally": [
+       {
+        "form": "final",
+        "pos": "adjective",
+        "note": "adjective: last in a series or at the end"
+       },
+       {
+        "form": "finally",
+        "pos": "adverb",
+        "note": "adverb: after a long wait or at the end"
+       },
+       {
+        "form": "finalise",
+        "pos": "verb",
+        "note": "verb: to complete or make settled"
+       },
+       {
+        "form": "finalised",
+        "pos": "verb",
+        "note": "verb: completed or made settled"
+       },
+       {
+        "form": "finalising",
+        "pos": "verb",
+        "note": "verb: completing or making settled"
+       },
+       {
+        "form": "finality",
+        "pos": "noun",
+        "note": "noun: the state of being settled and unable to change"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:B-time-order-01-s33",
+       "word": "finally",
+       "text": "After ten clues in the treasure hunt, ___, we found the key.",
+       "answer": "finally",
+       "tiles": [
+        "finally",
+        "final",
+        "finalised",
+        "finality",
+        "finalise"
+       ],
+       "notes": {
+        "final": "adjective: last in a series or at the end",
+        "finally": "adverb: after a long wait or at the end",
+        "finalise": "verb: to complete or make settled",
+        "finalised": "verb: completed or made settled",
+        "finality": "noun: the state of being settled and unable to change"
+       }
+      },
+      {
+       "id": "F:B-time-order-01-s34",
+       "word": "finally",
+       "text": "After eight laps in the big race, ___, Nia crossed the line.",
+       "answer": "finally",
+       "tiles": [
+        "finally",
+        "final",
+        "finalised",
+        "finality",
+        "finalise"
+       ],
+       "notes": {
+        "final": "adjective: last in a series or at the end",
+        "finally": "adverb: after a long wait or at the end",
+        "finalise": "verb: to complete or make settled",
+        "finalised": "verb: completed or made settled",
+        "finality": "noun: the state of being settled and unable to change"
+       }
+      },
+      {
+       "id": "F:B-time-order-01-s35",
+       "word": "finally",
+       "text": "___, after all morning at the bake sale, the last cake sold.",
+       "answer": "finally",
+       "tiles": [
+        "finally",
+        "final",
+        "finalised",
+        "finality",
+        "finalise"
+       ],
+       "notes": {
+        "final": "adjective: last in a series or at the end",
+        "finally": "adverb: after a long wait or at the end",
+        "finalise": "verb: to complete or make settled",
+        "finalised": "verb: completed or made settled",
+        "finality": "noun: the state of being settled and unable to change"
+       }
+      },
+      {
+       "id": "F:B-time-order-01-s36",
+       "word": "finally",
+       "text": "After seven tricky riddles, ___, the castle gate swung open.",
+       "answer": "finally",
+       "tiles": [
+        "finally",
+        "final",
+        "finalised",
+        "finality",
+        "finalise"
+       ],
+       "notes": {
+        "final": "adjective: last in a series or at the end",
+        "finally": "adverb: after a long wait or at the end",
+        "finalise": "verb: to complete or make settled",
+        "finalised": "verb: completed or made settled",
+        "finality": "noun: the state of being settled and unable to change"
+       }
+      }
+     ]
+    },
+    "B-water-01": {
+     "families": {
+      "stream": [
+       {
+        "form": "stream",
+        "pos": "noun",
+        "note": "noun: a natural body of running water"
+       },
+       {
+        "form": "streams",
+        "pos": "noun",
+        "note": "noun: natural bodies of running water"
+       },
+       {
+        "form": "streamed",
+        "pos": "verb",
+        "note": "verb: moved along in a steady current"
+       },
+       {
+        "form": "streaming",
+        "pos": "verb",
+        "note": "verb: moving along in a steady current"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:B-water-01-s01",
+       "word": "stream",
+       "text": "The narrow ___ slipped under the footbridge, carrying leaves past Mia.",
+       "answer": "stream",
+       "tiles": [
+        "stream",
+        "streaming",
+        "streams",
+        "streamed"
+       ],
+       "notes": {
+        "stream": "noun: a natural body of running water",
+        "streams": "noun: natural bodies of running water",
+        "streamed": "verb: moved along in a steady current",
+        "streaming": "verb: moving along in a steady current"
+       }
+      },
+      {
+       "id": "F:B-water-01-s02",
+       "word": "stream",
+       "text": "Pebbles clicked as the ___ raced along its winding channel.",
+       "answer": "stream",
+       "tiles": [
+        "stream",
+        "streaming",
+        "streams",
+        "streamed"
+       ],
+       "notes": {
+        "stream": "noun: a natural body of running water",
+        "streams": "noun: natural bodies of running water",
+        "streamed": "verb: moved along in a steady current",
+        "streaming": "verb: moving along in a steady current"
+       }
+      },
+      {
+       "id": "F:B-water-01-s03",
+       "word": "stream",
+       "text": "Nina followed the ___ through the wood, hearing it chatter.",
+       "answer": "stream",
+       "tiles": [
+        "stream",
+        "streaming",
+        "streams",
+        "streamed"
+       ],
+       "notes": {
+        "stream": "noun: a natural body of running water",
+        "streams": "noun: natural bodies of running water",
+        "streamed": "verb: moved along in a steady current",
+        "streaming": "verb: moving along in a steady current"
+       }
+      },
+      {
+       "id": "F:B-water-01-s04",
+       "word": "stream",
+       "text": "The toy boat floated down the ___ and disappeared round a bend.",
+       "answer": "stream",
+       "tiles": [
+        "stream",
+        "streaming",
+        "streams",
+        "streamed"
+       ],
+       "notes": {
+        "stream": "noun: a natural body of running water",
+        "streams": "noun: natural bodies of running water",
+        "streamed": "verb: moved along in a steady current",
+        "streaming": "verb: moving along in a steady current"
+       }
+      }
+     ]
+    },
+    "B-weather-01": {
+     "families": {
+      "drizzle": [
+       {
+        "form": "drizzle",
+        "pos": "noun",
+        "note": "noun: very light rain, stronger than mist"
+       },
+       {
+        "form": "drizzled",
+        "pos": "verb",
+        "note": "verb: fell as very light rain"
+       },
+       {
+        "form": "drizzling",
+        "pos": "verb",
+        "note": "verb: falling as very light rain"
+       },
+       {
+        "form": "drizzly",
+        "pos": "adjective",
+        "note": "adjective: marked by very light rain"
+       }
+      ],
+      "hail": [
+       {
+        "form": "hail",
+        "pos": "noun",
+        "note": "noun: small balls of ice falling from clouds"
+       },
+       {
+        "form": "hails",
+        "pos": "verb",
+        "note": "verb: sends small balls of ice from clouds"
+       },
+       {
+        "form": "hailed",
+        "pos": "verb",
+        "note": "verb: sent small balls of ice from clouds"
+       },
+       {
+        "form": "hailing",
+        "pos": "verb",
+        "note": "verb: sending small balls of ice from clouds"
+       }
+      ]
+     },
+     "items": [
+      {
+       "id": "F:B-weather-01-s01",
+       "word": "drizzle",
+       "text": "The ___ fell in tiny wet specks on the picnic map.",
+       "answer": "drizzle",
+       "tiles": [
+        "drizzle",
+        "drizzled",
+        "drizzling",
+        "drizzly"
+       ],
+       "notes": {
+        "drizzle": "noun: very light rain, stronger than mist",
+        "drizzled": "verb: fell as very light rain",
+        "drizzling": "verb: falling as very light rain",
+        "drizzly": "adjective: marked by very light rain"
+       }
+      },
+      {
+       "id": "F:B-weather-01-s02",
+       "word": "drizzle",
+       "text": "The ___ barely dotted the puddle, making pinprick circles.",
+       "answer": "drizzle",
+       "tiles": [
+        "drizzle",
+        "drizzled",
+        "drizzling",
+        "drizzly"
+       ],
+       "notes": {
+        "drizzle": "noun: very light rain, stronger than mist",
+        "drizzled": "verb: fell as very light rain",
+        "drizzling": "verb: falling as very light rain",
+        "drizzly": "adjective: marked by very light rain"
+       }
+      },
+      {
+       "id": "F:B-weather-01-s03",
+       "word": "drizzle",
+       "text": "Lena kept drawing outside because the ___ only freckled her paper.",
+       "answer": "drizzle",
+       "tiles": [
+        "drizzle",
+        "drizzled",
+        "drizzling",
+        "drizzly"
+       ],
+       "notes": {
+        "drizzle": "noun: very light rain, stronger than mist",
+        "drizzled": "verb: fell as very light rain",
+        "drizzling": "verb: falling as very light rain",
+        "drizzly": "adjective: marked by very light rain"
+       }
+      },
+      {
+       "id": "F:B-weather-01-s04",
+       "word": "drizzle",
+       "text": "Dad left the hood down; the ___ fell and tickled his hair.",
+       "answer": "drizzle",
+       "tiles": [
+        "drizzle",
+        "drizzled",
+        "drizzling",
+        "drizzly"
+       ],
+       "notes": {
+        "drizzle": "noun: very light rain, stronger than mist",
+        "drizzled": "verb: fell as very light rain",
+        "drizzling": "verb: falling as very light rain",
+        "drizzly": "adjective: marked by very light rain"
+       }
+      },
+      {
+       "id": "F:B-weather-01-s17",
+       "word": "hail",
+       "text": "The ___ fell as hard white balls that bounced off helmets.",
+       "answer": "hail",
+       "tiles": [
+        "hail",
+        "hailed",
+        "hailing",
+        "hails"
+       ],
+       "notes": {
+        "hail": "noun: small balls of ice falling from clouds",
+        "hails": "verb: sends small balls of ice from clouds",
+        "hailed": "verb: sent small balls of ice from clouds",
+        "hailing": "verb: sending small balls of ice from clouds"
+       }
+      },
+      {
+       "id": "F:B-weather-01-s18",
+       "word": "hail",
+       "text": "The ___ rattled like marbles across the classroom roof.",
+       "answer": "hail",
+       "tiles": [
+        "hail",
+        "hailed",
+        "hailing",
+        "hails"
+       ],
+       "notes": {
+        "hail": "noun: small balls of ice falling from clouds",
+        "hails": "verb: sends small balls of ice from clouds",
+        "hailed": "verb: sent small balls of ice from clouds",
+        "hailing": "verb: sending small balls of ice from clouds"
+       }
+      },
+      {
+       "id": "F:B-weather-01-s19",
+       "word": "hail",
+       "text": "After the ___, tiny round dents marked Mum's flower leaves.",
+       "answer": "hail",
+       "tiles": [
+        "hail",
+        "hailed",
+        "hailing",
+        "hails"
+       ],
+       "notes": {
+        "hail": "noun: small balls of ice falling from clouds",
+        "hails": "verb: sends small balls of ice from clouds",
+        "hailed": "verb: sent small balls of ice from clouds",
+        "hailing": "verb: sending small balls of ice from clouds"
+       }
+      }
+     ]
+    }
+   }
   };
   function byId(id) {
     for (var i = 0; i < DATA.sets.length; i++) if (DATA.sets[i].id === id) return DATA.sets[i];

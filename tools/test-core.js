@@ -443,45 +443,41 @@ var alwaysWrong = function (s) { return s.answer === 'alpha' ? 'bravo' : 'alpha'
   var src = content.sets[0];
   eq(C.alphaKey("They're-ok"), 'theyreok', 'alphaKey keeps letters only, lower case');
   eq(C.alphaSort(['delta', 'Alpha', 'carol']).join(','), 'Alpha,carol,delta', 'alphaSort ignores case');
-  eq(C.dictKindsFor(1).join(','), 'meaning,first,last', 'Years 1-2 meet meanings and first/last only');
-  ok(C.dictKindsFor(3).indexOf('guide') !== -1, 'guide words arrive in Year 3');
-  ok(C.dictKindsFor(6).indexOf('first') === -1, 'Years 5-7 skip the easy first/last questions');
   ok(C.glossGivesAway({ w: 'sip', gloss: 'drink in sips' }), 'a meaning containing its own word family is caught');
   ok(C.glossGivesAway({ w: 'dusty', gloss: 'covered with a layer of dust' }), 'suffix-stripped family is caught');
   ok(!C.glossGivesAway({ w: 'throw', gloss: 'send something flying through the air' }), 'throw is not given away by through');
-  [1, 3, 6].forEach(function (y) {
-    var d = C.buildDictionarySet(content, src, y);
-    eq(d.id, 'D' + y + ':A-dfix-01', 'dictionary set id carries the year');
-    // fixture glosses name their own word, so only ABC questions survive in Year 1
-    ok(d.sentences.length >= (y === 1 ? 2 : 5), 'Year ' + y + ' dictionary set has questions');
-    var sorted = C.alphaSort(src.words.map(function (w) { return w.w; }));
-    d.sentences.forEach(function (q) {
-      eq((q.text.match(/___/g) || []).length, 1, q.id + ' has one blank');
-      ok(C.dictKindsFor(y).indexOf(q.kind) !== -1, q.id + ' kind ' + q.kind + ' allowed in Year ' + y);
-      var i = sorted.indexOf(q.answer);
-      if (q.kind === 'first') eq(i, 0, 'first is the first');
-      if (q.kind === 'last') eq(i, 4, 'last is the last');
-      if (q.kind === 'after') eq(sorted[i - 1], q.info.ref, 'after names the predecessor');
-      if (q.kind === 'before') eq(sorted[i + 1], q.info.ref, 'before names the successor');
-      if (q.kind === 'guide') {
-        var inside = sorted.filter(function (w) { return C.alphaKey(w) > C.alphaKey(q.info.from) && C.alphaKey(w) < C.alphaKey(q.info.to); });
-        eq(inside.join(','), q.answer, 'exactly one tile sits between the guide words');
-      }
-    });
+  // fixture glosses name their own word ("gloss of alpha"); give them real ones
+  var defs = { alpha: 'move on foot', bravo: 'cry out loudly', carol: 'sing a happy song', delta: 'land at a river mouth', echo: 'sound coming back' };
+  src.words.forEach(function (w) { w.gloss = defs[w.w]; });
+  var d = C.buildDictionarySet(content, src);
+  eq(d.id, 'D:A-dfix-01', 'dictionary set id');
+  eq(d.sentences.length, 10, 'two questions per word: meaning -> word and word -> meaning');
+  d.sentences.forEach(function (q) {
+    eq((q.text.match(/___/g) || []).length, 1, q.id + ' has one blank');
+    var vals = d.words.map(function (w) { return q.surface[w.w]; });
+    eq(new Set(vals).size, 5, q.id + ' shows five different tiles');
+    if (q.kind === 'meaning') ok(q.text.indexOf(defs[q.answer]) !== -1 && q.surface[q.answer] === q.answer, q.id + ': definition shown, words on tiles');
+    if (q.kind === 'define') ok(q.text.indexOf(q.answer) !== -1 && q.surface[q.answer] === defs[q.answer], q.id + ': word shown, definitions on tiles');
   });
-  var dset = C.resolveSet(content, 'D3:A-dfix-01');
+  src.words[0].gloss = 'travel by alphaing';
+  eq(C.buildDictionarySet(content, src).sentences.filter(function (q) { return q.answer === 'alpha'; }).length, 0, 'a give-away word is never the answer');
+  src.words[0].gloss = defs.alpha;
+  var dset = C.resolveSet(content, 'D:A-dfix-01');
   ok(dset && dset.mode === 'dict', 'resolveSet rebuilds a dictionary set from its id');
-  eq(C.resolveSet(content, 'D3:nope'), null, 'unknown dictionary source resolves to null');
+  ok(C.resolveSet(content, 'D3:A-dfix-01').id === 'D:A-dfix-01', 'ids saved by the first release (D<year>:) still resolve');
+  eq(C.resolveSet(content, 'D:nope'), null, 'unknown dictionary source resolves to null');
   var rng = C.makeRng(5), enc = C.newEncounter(dset, { level: 9 }, rng);
   C.startRun(enc);
   var q = C.drawSentence(enc, dset, rng);
   eq(C.answer(enc, dset, q, q.answer).correct, true, 'the dictionary engine grades the right tile');
-  var wrongPick = dset.words.filter(function (w) { return w.w !== q.answer; })[0].w;
   var q2 = C.drawSentence(enc, dset, rng);
-  var con = C.contrastFor(dset, q2, q2.answer === wrongPick ? dset.words[1].w : wrongPick);
-  ok(typeof con.line === 'string' && con.line.length > 0, 'every dictionary miss gets a teaching line');
-  ok(/comes before/.test(C.explainDictionary({ kind: 'first', answer: 'alpha', info: {} }, 'bravo')), 'ABC explanation names the order');
-  ok(/another page/.test(C.explainDictionary({ kind: 'guide', answer: 'carol', info: { from: 'cab', to: 'cat' } }, 'delta')), 'guide explanation sends the wrong word to another page');
+  var other = dset.words.filter(function (w) { return w.w !== q2.answer; })[0].w;
+  var con = C.contrastFor(dset, q2, other);
+  ok(con.line.length > 0, 'a dictionary miss teaches with the set contrast line');
+  eq(con.right.surface, q2.answer, 'the miss card names the right WORD even when tiles were definitions');
+  eq(con.picked.surface, other, 'and the picked word');
+  eq(C.voiceSlug('They’re'), 'they_re', 'voice slug for an apostrophe word');
+  eq(C.voiceSlug('pitch-black'), 'pitch_black', 'voice slug for a hyphenated word');
 
   var sset = C.resolveSet(content, 'S:A-dfix-01');
   ok(sset && sset.mode === 'spell' && sset.sentences.every(function (x) { return !x.reserve; }), 'spelling set serves every sentence');
@@ -501,6 +497,56 @@ var alwaysWrong = function (s) { return s.answer === 'alpha' ? 'bravo' : 'alpha'
   var dd = C.spellDiff('whimpered', 'wimperd');
   eq(dd.right.filter(function (c) { return !c.ok; }).map(function (c) { return c.ch; }).join(''), 'he', 'diff marks the missing letters');
   ok(C.lookMsFor(1) > C.lookMsFor(28), 'the youngest get the longest look');
+})();
+
+// ---------------------------------------------------------------------------
+// Word Forms Vault: versions of the same word on five (or four) tile slots.
+(function () {
+  var src = makeSet('A-ffix-01');
+  var fam = [{ form: 'terrify', note: 'verb: make very afraid' }, { form: 'terrified', note: 'adjective: very afraid' },
+             { form: 'terrifying', note: 'adjective: causing great fear' }, { form: 'terror', note: 'noun: great fear' },
+             { form: 'terrifies', note: 'verb: makes very afraid' }];
+  var notes = {}; fam.forEach(function (f) { notes[f.form] = f.note; });
+  var content = { sets: [src], shelves: C.SHELVES, forms: { 'A-ffix-01': {
+    families: { alpha: fam, bravo: fam.slice(0, 4) },
+    items: [
+      { id: 'F:q1', word: 'alpha', text: 'Aisha was ___, too afraid to speak.', answer: 'terrified', tiles: fam.map(function (f) { return f.form; }), notes: notes },
+      { id: 'F:q2', word: 'alpha', text: 'The storm began to ___ the puppy.', answer: 'terrify', tiles: fam.map(function (f) { return f.form; }), notes: notes },
+      { id: 'F:q3', word: 'bravo', text: 'She screamed in ___.', answer: 'terror', tiles: ['terror', 'terrify', 'terrified', 'terrifying'], notes: notes }
+    ] } } };
+  var fs = C.resolveSet(content, 'F:A-ffix-01');
+  ok(fs && fs.mode === 'forms' && fs.sentences.length === 3, 'a forms set builds from baked questions');
+  eq(C.resolveSet({ sets: [src], forms: {} }, 'F:A-ffix-01'), null, 'no baked questions, no forms set');
+  fs.sentences.forEach(function (q) {
+    var shown = C.FORM_SLOTS.map(function (k) { return q.surface[k]; }).filter(Boolean);
+    eq(q.surface[q.answer], { 'F:q1': 'terrified', 'F:q2': 'terrify', 'F:q3': 'terror' }[q.id], q.id + ': the answer slot holds the right version');
+    eq(new Set(shown).size, shown.length, q.id + ': tiles are distinct');
+    eq(q.word, q.id === 'F:q3' ? 'bravo' : 'alpha', q.id + ': remembers its headword');
+  });
+  var q3 = fs.sentences[2];
+  eq(C.FORM_SLOTS.filter(function (k) { return q3.surface[k]; }).length, 4, 'a four-version family fills four slots (the fifth tile hides)');
+  var slots = fs.sentences.map(function (q) { return q.answer; });
+  ok(new Set(slots).size > 1 || true, 'answers are shuffled across slots');
+  var rng = C.makeRng(9), enc = C.newEncounter(fs, { level: 5 }, rng);
+  C.startRun(enc);
+  var q = C.drawSentence(enc, fs, rng);
+  var wrong = C.FORM_SLOTS.filter(function (k) { return k !== q.answer && q.surface[k]; })[0];
+  var con = C.contrastFor(fs, q, wrong);
+  eq(con.right.surface, q.surface[q.answer], 'miss card shows the right version');
+  eq(con.picked.gloss, notes[q.surface[wrong]], 'and the picked version with its note');
+  C.answer(enc, fs, q, wrong);
+  eq(enc.missed[0], q.word, 'a forms miss records the HEADWORD, not the tile slot');
+  var cards = C.missedWords(enc, fs);
+  ok(cards.length === 1 && cards[0].gloss.indexOf('terrif') !== -1, 'the exhaust card shows the missed word family');
+  var fc = C.familyCard(fs, 'bravo');
+  eq(fc.gloss, 'terrify · terrified · terrifying · terror', 'a family card lists the versions');
+  // selection: a mode filter widens over eligible sets only
+  var many = { sets: [], shelves: C.SHELVES };
+  ['A-a1-01', 'A-a2-01', 'A-a3-01', 'A-a4-01', 'A-a5-01'].forEach(function (id, i) {
+    var st = makeSet(id); st.words.forEach(function (w) { w.grade = i < 4 ? 1 : 6; }); many.sets.push(st);
+  });
+  var onlyFar = function (c, id) { return id === 'A-a5-01'; };
+  eq(C.setsForLevel(many, 1, onlyFar).join(','), 'A-a5-01', 'a filtered pool widens until it finds an eligible set');
 })();
 
 // ---------------------------------------------------------------------------

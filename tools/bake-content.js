@@ -54,6 +54,31 @@ sets.forEach(function (s) {
   perBank[s.bank] += 1;
 });
 
+// Word Forms Vault: ship only questions with a FRESH ensemble verdict of pass
+// or a lone dissent (tools/judge-forms.py). A hard verdict, a stale verdict
+// (text/tiles changed since judging) or no verdict never ships.
+var forms = {}, formsCount = 0;
+(function () {
+  var itemsPath = path.join(ROOT, 'forms', 'items.json');
+  var verdictPath = path.join(ROOT, 'reference', 'forms-verdicts.json');
+  if (!fs.existsSync(itemsPath) || !fs.existsSync(verdictPath)) return;
+  var items = JSON.parse(fs.readFileSync(itemsPath, 'utf8'));
+  var verdicts = JSON.parse(fs.readFileSync(verdictPath, 'utf8'));
+  var families = JSON.parse(fs.readFileSync(path.join(ROOT, 'forms', 'families.json'), 'utf8'));
+  manifest.update(fs.readFileSync(itemsPath));
+  manifest.update(fs.readFileSync(verdictPath));
+  items.forEach(function (it) {
+    var h = crypto.createHash('sha256').update(it.text + '\n' + it.tiles.slice().sort().join('|'), 'utf8').digest('hex');
+    var v = verdicts[it.id];
+    if (!v || v.hash !== h || (v.verdict !== 'pass' && v.verdict !== 'review')) return;
+    var f = forms[it.set] = forms[it.set] || { families: {}, items: [] };
+    f.families[it.word] = families[it.set][it.word];
+    f.items.push({ id: it.id, word: it.word, text: it.text, answer: it.answer, tiles: it.tiles, notes: it.notes });
+    formsCount++;
+  });
+})();
+counts.forms = formsCount;
+
 var data = {
   schema_version: 1,
   built_at: new Date().toISOString().replace(/\.\d+Z$/, 'Z'),
@@ -61,7 +86,8 @@ var data = {
   source_sha256: manifest.digest('hex'),
   counts: counts,
   bands: bands,
-  sets: sets
+  sets: sets,
+  forms: forms
 };
 
 var js = [
@@ -102,6 +128,7 @@ var report = [
   '| words | ' + counts.words + ' |',
   '| sentences | ' + counts.sentences + ' |',
   '| contrast lines | ' + counts.contrasts + ' |',
+  '| word-forms questions | ' + counts.forms + ' |',
   '',
   'Bank mix vs the 65/20/15 starting targets: A ' + perBank.A + ' (' + pct(perBank.A) + '), B ' +
     perBank.B + ' (' + pct(perBank.B) + '), C ' + perBank.C + ' (' + pct(perBank.C) + ').',
@@ -113,5 +140,5 @@ var report = [
 ].join('\n');
 fs.writeFileSync(path.join(ROOT, 'reference', 'CONTENT-REPORT.md'), report);
 
-console.log('bake-content: ' + counts.sets + ' set(s), ' + counts.sentences + ' sentences -> game-content.js (' +
+console.log('bake-content: ' + counts.sets + ' set(s), ' + counts.sentences + ' sentences, ' + counts.forms + ' word-forms questions -> game-content.js (' +
   Math.round(js.length / 1024) + ' KB)');

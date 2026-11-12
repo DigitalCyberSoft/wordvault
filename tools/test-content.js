@@ -86,44 +86,32 @@ data.sets.forEach(function (set) {
   ok(rev.state === 'cracked', set.id + ' review lockbox opens');
 });
 
-// Learning modes over the real corpus: every dictionary question, for every
-// set and year, has exactly one right tile; spelling has items for (almost)
-// every word; both modes run an encounter to a crack.
+// Learning modes over the real corpus: every dictionary question has five
+// distinct tiles and exactly one right one (definitions unique within a set);
+// every spelling word has a recorded clip; both modes run to a crack.
 (function () {
   var Cc = require('../game-core.js');
-  var dictQs = 0, guide = 0;
+  var fs = require('fs'), path = require('path');
+  var dictQs = 0, targets = {};
   data.sets.forEach(function (set) {
-    if (set.bank === 'C') return;
-    for (var y = 1; y <= 7; y++) {
-      var d = Cc.resolveSet(data, 'D' + y + ':' + set.id);
-      ok(d && d.sentences.length >= 3, set.id + ' Y' + y + ': dictionary set builds');
-      var sorted = Cc.alphaSort(d.words.map(function (w) { return w.w; }));
-      d.sentences.forEach(function (q) {
-        dictQs++;
-        var vals = d.words.map(function (w) { return q.surface[w.w]; });
-        ok(new Set(vals).size === 5, q.id + ': five distinct tiles');
-        var i = sorted.indexOf(q.answer);
-        if (q.kind === 'meaning') {
-          var w = d.words.filter(function (x) { return x.w === q.answer; })[0];
-          ok(!Cc.glossGivesAway(w), q.id + ': meaning does not give the word away');
-          ok(d.words.every(function (x) { return x.w === q.answer || x.gloss !== w.gloss; }), q.id + ': meaning is unique in the set');
-        }
-        if (q.kind === 'first') ok(i === 0, q.id + ': first');
-        if (q.kind === 'last') ok(i === 4, q.id + ': last');
-        if (q.kind === 'after') ok(i > 0 && sorted[i - 1] === q.info.ref, q.id + ': after');
-        if (q.kind === 'before') ok(i < 4 && sorted[i + 1] === q.info.ref, q.id + ': before');
-        if (q.kind === 'guide') {
-          guide++;
-          var inside = sorted.filter(function (x) { return Cc.alphaKey(x) > Cc.alphaKey(q.info.from) && Cc.alphaKey(x) < Cc.alphaKey(q.info.to); });
-          ok(inside.length === 1 && inside[0] === q.answer, q.id + ': exactly one word between the guide words');
-          ok(sorted.indexOf(q.info.from) === -1 && sorted.indexOf(q.info.to) === -1, q.id + ': guide words are not tiles');
-        }
-      });
-    }
     var sp = Cc.resolveSet(data, 'S:' + set.id);
+    sp.sentences.forEach(function (s) { targets[Cc.normSpelling(s.surface[s.answer])] = 1; });
     var spellable = sp.words.filter(function (w) { return sp.sentences.some(function (s) { return s.answer === w.w; }); }).length;
     ok(spellable >= 4, set.id + ': spelling covers at least 4 of 5 words (' + spellable + ')');
-    [sp, Cc.resolveSet(data, 'D4:' + set.id)].forEach(function (vs) {
+    var runs = [sp];
+    if (set.bank !== 'C') {
+      var d = Cc.resolveSet(data, 'D:' + set.id);
+      ok(d && d.sentences.length >= 6, set.id + ': dictionary set has at least 6 questions (' + d.sentences.length + ')');
+      var glosses = d.words.map(function (w) { return w.gloss; });
+      ok(new Set(glosses).size === 5, set.id + ': five different definitions');
+      d.sentences.forEach(function (q) {
+        dictQs++;
+        ok(new Set(d.words.map(function (w) { return q.surface[w.w]; })).size === 5, q.id + ': five distinct tiles');
+        ok(!Cc.glossGivesAway(d.words.filter(function (x) { return x.w === q.answer; })[0]), q.id + ': the answer is not given away');
+      });
+      runs.push(d);
+    }
+    runs.forEach(function (vs) {
       var rng = Cc.makeRng(11), enc = Cc.newEncounter(vs, { level: 16 }, rng);
       Cc.startRun(enc);
       for (var k = 0; k < enc.need; k++) {
@@ -134,7 +122,49 @@ data.sets.forEach(function (set) {
       ok(enc.state === 'cracked', vs.id + ': a perfect run cracks it');
     });
   });
-  ok(dictQs > 5000 && guide > 500, 'dictionary mode has broad coverage (' + dictQs + ' questions, ' + guide + ' guide-word pages)');
+  ok(dictQs > 600, 'dictionary mode has broad coverage (' + dictQs + ' questions)');
+  var root = path.join(__dirname, '..');
+  var missing = Object.keys(targets).filter(function (w) {
+    return !fs.existsSync(path.join(root, 'assets', 'voice', Cc.voiceSlug(w) + '.mp3'));
+  });
+  ok(!missing.length, 'every spelling word has a recorded clip (' + Object.keys(targets).length + ' words; missing: ' + missing.slice(0, 8).join(', ') + ')');
+  var check = path.join(root, 'reference', 'voice-check.json');
+  var vc = fs.existsSync(check) ? JSON.parse(fs.readFileSync(check, 'utf8')) : {};
+  var unheard = Object.keys(targets).filter(function (w) { return !(vc[w] && vc[w].ok); });
+  ok(!unheard.length, 'every clip was transcribed back to its word (' + unheard.slice(0, 8).join(', ') + ')');
+})();
+
+// Word Forms Vault over the baked questions: only judged, well-formed
+// questions shipped, every year can serve forms safes, and they play.
+(function () {
+  var Cc = require('../game-core.js');
+  var forms = data.forms || {};
+  var total = 0;
+  Object.keys(forms).forEach(function (sid) {
+    forms[sid].items.forEach(function (it) {
+      total++;
+      ok(it.tiles.indexOf(it.answer) !== -1, it.id + ': the answer is on a tile');
+      // 3 is the floor: a past-tense answer never sits beside its -s form
+      // (judge-forms.py tense_rivals), so relished / relish / relishing
+      ok(it.tiles.length >= 3 && it.tiles.length <= 5 && new Set(it.tiles).size === it.tiles.length, it.id + ': 3-5 distinct tiles');
+      ok((it.text.match(/___/g) || []).length === 1, it.id + ': one blank');
+      ok(it.tiles.every(function (t) { return it.notes[t]; }), it.id + ': every version has a note');
+      ok(forms[sid].families[it.word], it.id + ': its family ships too');
+    });
+  });
+  ok(total >= 300, 'word-forms questions shipped: ' + total);
+  var eligible = function (c, id) { var f = Cc.formsFor(c, id); return !!f && f.items.length >= 6; };
+  for (var y = 1; y <= 7; y++) {
+    var ids = Cc.setsForLevel(data, Cc.yearStart(y), eligible);
+    ok(ids.length >= 2, 'Year ' + y + ' can serve word-forms safes (' + ids.length + ')');
+  }
+  Object.keys(forms).forEach(function (sid) {
+    var fs = Cc.resolveSet(data, 'F:' + sid);
+    var rng = Cc.makeRng(4), enc = Cc.newEncounter(fs, { level: 12 }, rng);
+    Cc.startRun(enc);
+    for (var k = 0; k < enc.need; k++) { var q = Cc.drawSentence(enc, fs, rng); Cc.answer(enc, fs, q, q.answer); }
+    ok(enc.state === 'cracked', fs.id + ': a perfect run cracks it');
+  });
 })();
 
 console.log(passed + ' passed, ' + failed + ' failed');

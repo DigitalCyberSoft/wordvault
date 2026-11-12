@@ -143,15 +143,19 @@
   // Sets pitched at the level's year; if the year offers fewer than MIN_POOL
   // sets, widen the net one year at a time (both directions) so a thin year
   // never loops the same two or three safes.
-  function setsForLevel(content, level) {
-    var want = yearOf(level), ids = [];
+  // `filter(content, id)` narrows the pool for a mode (dictionary skips usage
+  // sets, word forms needs judged questions); widening counts only what passes.
+  function setsForLevel(content, level, filter) {
+    var want = yearOf(level), ids = [], eligible = 0;
+    for (var e = 0; e < content.sets.length; e++) if (!filter || filter(content, content.sets[e].id)) eligible++;
     for (var spread = 0; spread <= 6; spread++) {
       ids = [];
       for (var i = 0; i < content.sets.length; i++) {
         var s = content.sets[i];
+        if (filter && !filter(content, s.id)) continue;
         if (Math.abs(setYearOf(s) - want) <= spread) ids.push(s.id);
       }
-      if (ids.length >= Math.min(MIN_POOL, content.sets.length)) return ids;
+      if (ids.length >= Math.min(MIN_POOL, eligible)) return ids;
     }
     return ids;
   }
@@ -159,8 +163,7 @@
   // Prefer sets the player has never met; then the least-played; never repeat the
   // set just played while any alternative exists.
   function pickSet(content, opts, rng) {
-    var ids = setsForLevel(content, opts.level);
-    if (opts.filter) ids = ids.filter(function (id) { return opts.filter(content, id); });
+    var ids = setsForLevel(content, opts.level, opts.filter);
     if (!ids.length) return null;
     var history = opts.history || {};
     var pool = ids.filter(function (id) { return id !== opts.lastSetId; });
@@ -341,7 +344,8 @@
       if (enc.correctInRun >= enc.need) enc.state = 'cracked';
     } else {
       enc.misses += 1;
-      enc.missed.push(sentence.answer);
+      // word-forms questions answer with a tile slot; the lesson is the headword
+      enc.missed.push(sentence.word || sentence.answer);
       // a miss ends the run; the third miss (or any miss on a review) ends the set
       enc.state = enc.review ? 'failed' : (enc.misses >= enc.runsAllowed ? 'exhausted' : 'miss');
     }
@@ -357,7 +361,7 @@
     if (enc.state !== 'run') throw new Error('timeout() in state ' + enc.state);
     var s = enc.sentenceId ? sentenceById(set, enc.sentenceId) : null;
     enc.misses += 1;
-    if (s) enc.missed.push(s.answer);
+    if (s) enc.missed.push(s.word || s.answer);
     enc.state = enc.review ? 'failed' : (enc.misses >= enc.runsAllowed ? 'exhausted' : 'miss');
     enc.sentenceId = null;
     return { correct: false, timedOut: true, state: enc.state };
@@ -372,15 +376,25 @@
 
   // Everything the miss card needs: both glosses, the cue, the directed line.
   function contrastFor(set, sentence, picked) {
+    if (sentence.kind === 'form') {
+      var r = sentence.surface[sentence.answer], p = sentence.surface[picked];
+      return {
+        right: { w: r, gloss: sentence.notes[sentence.answer] || '', surface: r },
+        picked: { w: p, gloss: sentence.notes[picked] || '', surface: p },
+        cue: '', filled: fillText(sentence, sentence.answer),
+        line: 'Same word, different job: read the words around the gap to see which version the sentence needs.'
+      };
+    }
     var right = findWord(set, sentence.answer), wrong = findWord(set, picked);
-    var line = sentence.kind && sentence.kind !== 'meaning' ? explainDictionary(sentence, picked) : '';
-    for (var i = 0; !line && i < (set.contrasts || []).length; i++) {
+    var line = '';
+    for (var i = 0; i < (set.contrasts || []).length; i++) {
       var c = set.contrasts[i];
       if (c.answer === sentence.answer && c.picked === picked) { line = c.line; break; }
     }
     return {
-      right: { w: right.w, gloss: right.gloss, surface: sentence.surface[right.w] },
-      picked: { w: wrong.w, gloss: wrong.gloss, surface: sentence.surface[wrong.w] },
+      // a definition tile's text IS the gloss; the card names the word instead
+      right: { w: right.w, gloss: right.gloss, surface: sentence.kind === 'define' ? right.w : sentence.surface[right.w] },
+      picked: { w: wrong.w, gloss: wrong.gloss, surface: sentence.kind === 'define' ? wrong.w : sentence.surface[wrong.w] },
       cue: sentence.cue_phrase || '',
       filled: fillText(sentence, right.w),
       line: line
@@ -389,9 +403,20 @@
 
   // Unique missed words for the exhaustion screen, in the set's teaching order.
   function missedWords(enc, set) {
+    if (set.mode === 'forms') {
+      return enc.missed.filter(function (h, i) { return enc.missed.indexOf(h) === i && set.families[h]; })
+        .map(function (h) { return familyCard(set, h); });
+    }
     return set.words.filter(function (w) { return enc.missed.indexOf(w.w) !== -1; });
   }
 
+  // A word family as a study card: the headword and its versions.
+  function familyCard(set, head) {
+    var src = null;
+    (set.sourceWords || []).forEach(function (w) { if (w.w === head) src = w; });
+    return { w: head, grade: src ? src.grade : undefined,
+             gloss: (set.families[head] || []).map(function (f) { return f.form; }).join(' · ') };
+  }
   // The authored word order IS the semantic gradient; the Get Ready screen shows
   // it, play uses enc.tileOrder.
   function gradientOrder(set) { return wordsOf(set); }
@@ -462,12 +487,12 @@
   // and year ladder as the word game: each builds a VIRTUAL set (the shape
   // newEncounter/drawSentence/answer already speak) from a real, gated set,
   // so no new content needs judging.
-  //   - Spelling ('S:<set-id>'): Look, Cover, Write, Check. The child sees the
-  //     word in its (already judged) sentence, it is covered, they type it.
-  //   - Dictionary ('D<year>:<set-id>'): five tiles, questions a dictionary
-  //     answers - which word has this meaning, ABC order, guide words. Every
-  //     item has exactly one right tile BY CONSTRUCTION (glosses are unique
-  //     within a set by gates G3/G4; alphabetical order is total).
+  //   - Spelling ('S:<set-id>'): dictation. The child HEARS the word (a clip
+  //     recorded at build time, assets/voice/<voiceSlug>.mp3), reads its
+  //     judged sentence for meaning, and types it.
+  //   - Dictionary ('D:<set-id>'): match words to their definitions, both
+  //     ways, among the set's five similar definitions. Exactly one right
+  //     tile BY CONSTRUCTION (glosses are unique within a set by G3/G4).
   function alphaKey(w) { return String(w).toLowerCase().replace(/[^a-z]/g, ''); }
   function alphaSort(words) {
     return words.slice().sort(function (a, b) { var x = alphaKey(a), y = alphaKey(b); return x < y ? -1 : x > y ? 1 : 0; });
@@ -482,67 +507,64 @@
       return cands.some(function (c) { return c.length >= 3 && t.indexOf(c) === 0; });
     });
   }
-  // Every headword in the corpus (bank C usage words excluded): the pool the
-  // guide words of a dictionary page are drawn from.
-  function dictionaryVocab(content) {
-    var seen = {}, out = [];
-    content.sets.forEach(function (s) {
-      if (s.bank === 'C') return;
-      s.words.forEach(function (w) { var k = alphaKey(w.w); if (k && !seen[k]) { seen[k] = 1; out.push(w.w); } });
-    });
-    return alphaSort(out);
-  }
-  // Which kinds of dictionary question a year meets: ABC order first (years
-  // 1-2), then neighbours and guide words; the youngest never get guide words.
-  function dictKindsFor(year) {
-    if (year <= 2) return ['meaning', 'first', 'last'];
-    if (year <= 4) return ['meaning', 'first', 'last', 'after', 'before', 'guide'];
-    return ['meaning', 'after', 'before', 'guide'];
-  }
-  function buildDictionarySet(content, src, year) {
-    var kinds = dictKindsFor(year), ws = wordsOf(src), sorted = alphaSort(ws);
-    var vocab = dictionaryVocab(content), sentences = [], n = 0;
-    function surf() { var o = {}; ws.forEach(function (w) { o[w] = w; }); return o; }
-    function add(kind, answerW, text, cue, info) {
+  // The Dictionary Vault matches words to their definitions, both ways, inside
+  // one confusable set - so the five definitions on offer are SIMILAR ones
+  // (whimper / sob / bawl / howl / blubber), and the child must read closely:
+  //   meaning: "___ means 'cry weakly or softly'."  tiles = the five words
+  //   define:  "'whimper' means ___."               tiles = the five definitions
+  // A word whose definition contains its own family ("sip: drink in sips")
+  // is skipped as an answer (still a distractor): it would be a free point.
+  function buildDictionarySet(content, src) {
+    var ws = wordsOf(src), sentences = [], n = 0;
+    function add(kind, w, text, surface) {
       n += 1;
-      sentences.push({ id: 'D' + year + ':' + src.id + '-q' + (n < 10 ? '0' : '') + n, answer: answerW,
-        cue: 'explicit', reserve: false, kind: kind, text: text, cue_phrase: cue, surface: surf(), info: info || {} });
+      sentences.push({ id: 'D:' + src.id + '-q' + (n < 10 ? '0' : '') + n, answer: w.w, cue: 'explicit',
+        reserve: false, kind: kind, text: text, cue_phrase: w.gloss, surface: surface });
     }
-    if (kinds.indexOf('meaning') !== -1) {
-      src.words.forEach(function (w) {
-        if (!glossGivesAway(w)) add('meaning', w.w, '___ means “' + w.gloss + '”.', w.gloss);
-      });
-    }
-    if (kinds.indexOf('first') !== -1) add('first', sorted[0], 'In ABC order, ___ comes first.', 'comes first');
-    if (kinds.indexOf('last') !== -1) add('last', sorted[4], 'In ABC order, ___ comes last.', 'comes last');
-    for (var i = 0; i < sorted.length; i++) {
-      if (i > 0 && kinds.indexOf('after') !== -1) {
-        add('after', sorted[i], 'In ABC order, ___ comes straight after “' + sorted[i - 1] + '”.',
-          'straight after “' + sorted[i - 1] + '”', { ref: sorted[i - 1] });
-      }
-      if (i < 4 && kinds.indexOf('before') !== -1) {
-        add('before', sorted[i], 'In ABC order, ___ comes straight before “' + sorted[i + 1] + '”.',
-          'straight before “' + sorted[i + 1] + '”', { ref: sorted[i + 1] });
-      }
-      if (kinds.indexOf('guide') !== -1) {
-        // guide words that bracket THIS word and no other tile
-        var lo = i > 0 ? alphaKey(sorted[i - 1]) : '', hi = i < 4 ? alphaKey(sorted[i + 1]) : '{';
-        var me = alphaKey(sorted[i]), g1 = null, g2 = null;
-        vocab.forEach(function (v) {
-          var k = alphaKey(v);
-          if (ws.indexOf(v) !== -1) return;
-          if (k > lo && k < me) g1 = v;               // closest below wins (vocab is sorted)
-          if (k > me && k < hi && g2 === null) g2 = v; // closest above
-        });
-        if (g1 && g2) {
-          add('guide', sorted[i], 'A dictionary page starts at “' + g1 + '” and ends at “' + g2 + '”. ___ is on it.',
-            'from “' + g1 + '” to “' + g2 + '”', { from: g1, to: g2 });
-        }
-      }
-    }
-    return { id: 'D' + year + ':' + src.id, srcId: src.id, mode: 'dict', bank: src.bank, band: src.band,
+    var wordTiles = {}, defTiles = {};
+    src.words.forEach(function (w) { wordTiles[w.w] = w.w; defTiles[w.w] = w.gloss; });
+    src.words.forEach(function (w) {
+      if (glossGivesAway(w)) return;
+      add('meaning', w, '___ means “' + w.gloss + '”.', wordTiles);
+      add('define', w, '“' + w.w + '” means ___.', defTiles);
+    });
+    return { id: 'D:' + src.id, srcId: src.id, mode: 'dict', bank: src.bank, band: src.band,
              theme: src.theme, pos: src.pos, words: src.words, contrasts: src.contrasts || [], sentences: sentences };
   }
+  // The Word Forms Vault: different versions of the same word (terrify /
+  // terrified / terrifying / terror). Questions are baked by
+  // tools/judge-forms.py + bake-content.js (content.forms[<set-id>]); each
+  // reuses a sentence already judged for meaning and puts 3-5 versions of its
+  // answer word on the tiles. Tiles are five SLOTS (f0-f4) whose text changes
+  // per question; a question with fewer versions leaves the last slots empty (hidden).
+  var FORM_SLOTS = ['f0', 'f1', 'f2', 'f3', 'f4'];
+  function formsFor(content, setId) {
+    var f = content.forms && content.forms[setId];
+    return f && f.items && f.items.length ? f : null;
+  }
+  function buildFormsSet(content, src) {
+    var f = formsFor(content, src.id);
+    if (!f) return null;
+    var sentences = f.items.map(function (it) {
+      var tiles = it.tiles.slice();
+      // a stable shuffle per question, so the answer is not always on the left
+      var seed = 0;
+      for (var i = 0; i < it.id.length; i++) seed = (seed * 31 + it.id.charCodeAt(i)) >>> 0;
+      tiles = shuffle(tiles, makeRng(seed));
+      var surface = {}, notes = {}, answer = null;
+      tiles.forEach(function (t, k) {
+        surface[FORM_SLOTS[k]] = t;
+        notes[FORM_SLOTS[k]] = it.notes[t] || '';
+        if (t === it.answer) answer = FORM_SLOTS[k];
+      });
+      return { id: it.id, answer: answer, cue: 'explicit', reserve: false, kind: 'form', word: it.word,
+               text: it.text, cue_phrase: '', surface: surface, notes: notes };
+    });
+    return { id: 'F:' + src.id, srcId: src.id, mode: 'forms', bank: src.bank, band: src.band, theme: src.theme,
+             pos: src.pos, families: f.families, sourceWords: src.words, contrasts: [], sentences: sentences,
+             words: FORM_SLOTS.map(function (k) { return { w: k, gloss: '' }; }) };
+  }
+
   // Spelling serves the set's own judged sentences; the rare answer that is
   // two words on the tile ("looked at") is skipped.
   function spellingSetFrom(src) {
@@ -553,12 +575,16 @@
   }
   // Resolve any set id - real or virtual - against the baked content.
   function resolveSet(content, id) {
-    var m = /^D([1-7]):(.+)$/.exec(id || ''), src;
+    var m = /^D[1-7]?:(.+)$/.exec(id || ''), src; // D<year>: ids saved by the first release still resolve
     function byId(x) { for (var i = 0; i < content.sets.length; i++) if (content.sets[i].id === x) return content.sets[i]; return null; }
-    if (m) { src = byId(m[2]); return src && src.bank !== 'C' ? buildDictionarySet(content, src, +m[1]) : null; }
+    if (m) { src = byId(m[1]); return src && src.bank !== 'C' ? buildDictionarySet(content, src) : null; }
     if (/^S:/.test(id || '')) { src = byId(id.slice(2)); return src ? spellingSetFrom(src) : null; }
+    if (/^F:/.test(id || '')) { src = byId(id.slice(2)); return src ? buildFormsSet(content, src) : null; }
     return byId(id);
   }
+  // The clip a spelling word plays: assets/voice/<slug>.mp3, the same slug
+  // tools/generate-voice.py writes ("they're" -> they_re).
+  function voiceSlug(word) { return normSpelling(word).replace(/[^a-z]+/g, '_').replace(/^_+|_+$/g, ''); }
   // Typed answers (spelling): case and surrounding space never count, but
   // every letter, apostrophe and hyphen does.
   function normSpelling(t) { return String(t || '').trim().toLowerCase().replace(/[‘’`]/g, "'"); }
@@ -600,26 +626,6 @@
     else if (a.indexOf("'") !== -1 && a.replace(/'/g, '') === b.replace(/'/g, '')) tip = 'This word needs an apostrophe ( ’ ).';
     return { right: right, wrote: wrote, tip: tip };
   }
-  // The teaching line for a dictionary miss: why the right tile is right.
-  function explainDictionary(sentence, picked) {
-    var a = sentence.answer, info = sentence.info || {};
-    function why(x, y) { // why x comes before y
-      var p = alphaKey(x), q = alphaKey(y), k = 0;
-      while (k < p.length && k < q.length && p[k] === q[k]) k++;
-      if (k >= q.length) return '“' + y + '” is shorter, so it comes first.';
-      if (k >= p.length) return '“' + x + '” runs out of letters first, so it comes first.';
-      return (k ? 'Both start “' + p.slice(0, k) + '”, then ' : '') + '“' + p[k] + '” comes before “' + q[k] + '” in the alphabet.';
-    }
-    if (sentence.kind === 'first' || sentence.kind === 'after') return '“' + a + '” comes before “' + picked + '”: ' + why(a, picked);
-    if (sentence.kind === 'last' || sentence.kind === 'before') return '“' + picked + '” comes before “' + a + '”: ' + why(picked, a);
-    if (sentence.kind === 'guide') {
-      var pk = alphaKey(picked);
-      return '“' + a + '” sits between “' + info.from + '” and “' + info.to + '”. “' + picked + '” comes ' +
-        (pk < alphaKey(info.from) ? 'before “' + info.from + '”' : 'after “' + info.to + '”') + ', so it is on another page.';
-    }
-    return '';
-  }
-
   // ---------------------------------------------------------------------------
   // Rewards. Coins are a quiet tally; the collectible is the real prize. Speed
   // pays a small coin bonus and NOTHING else (deliberately not a progression
@@ -709,10 +715,10 @@
     newEncounter: newEncounter, startRun: startRun, drawSentence: drawSentence,
     sentenceById: sentenceById, fillText: fillText, answer: answer, timeout: timeout, isClean: isClean,
     contrastFor: contrastFor, missedWords: missedWords, gradientOrder: gradientOrder,
-    alphaKey: alphaKey, alphaSort: alphaSort, glossGivesAway: glossGivesAway, dictKindsFor: dictKindsFor,
+    alphaKey: alphaKey, alphaSort: alphaSort, glossGivesAway: glossGivesAway, voiceSlug: voiceSlug,
     buildDictionarySet: buildDictionarySet, spellingSetFrom: spellingSetFrom, resolveSet: resolveSet,
+    buildFormsSet: buildFormsSet, formsFor: formsFor, familyCard: familyCard, FORM_SLOTS: FORM_SLOTS,
     answerTyped: answerTyped, normSpelling: normSpelling, lookMsFor: lookMsFor, spellDiff: spellDiff,
-    explainDictionary: explainDictionary,
     yearRange: yearRange,
     adjustDifficulty: adjustDifficulty, levelOf: levelOf,
     coinsFor: coinsFor, speedBonus: speedBonus,

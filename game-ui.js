@@ -17,6 +17,8 @@
 
   function el(id) { return document.getElementById(id); }
   function show(id) { el(id).classList.add('show'); }
+  // close a quoted sentence: “It rained.” not “It rained.”.
+  function closeQuote(text) { return /[.!?”’'"]$/.test(String(text).trim()) ? '”' : '”.'; }
   function hide(id) { el(id).classList.remove('show'); }
   function reducedMotion() {
     return window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -44,7 +46,8 @@
   var MODES = {
     words: { icon: '🔓', name: 'Word Vault', short: 'Words' },
     spell: { icon: '✏️', name: 'Spelling Vault', short: 'Spelling' },
-    dict: { icon: '📖', name: 'Dictionary Vault', short: 'Dictionary' }
+    dict: { icon: '📖', name: 'Dictionary Vault', short: 'Dictionary' },
+    forms: { icon: '🌱', name: 'Word Forms Vault', short: 'Word forms' }
   };
   var MODE = 'words';
   function mk(k) { return MODE === 'words' ? 'wordvault.' + k : 'wordvault.' + MODE + '.' + k; }
@@ -126,6 +129,7 @@
   function unlockAudio() {
     if (audioUnlocked) return;
     audioUnlocked = true;
+    primeVoice();
     Object.keys(clips).forEach(function (id) {
       var a = clips[id];
       a.muted = true;
@@ -203,7 +207,7 @@
   // ---- picking what comes next ----
   // a real set id -> the set this mode plays (virtual for spelling/dictionary)
   function modeSetId(srcId) {
-    return MODE === 'dict' ? 'D' + C.yearOf(currentLevel()) + ':' + srcId : MODE === 'spell' ? 'S:' + srcId : srcId;
+    return MODE === 'dict' ? 'D:' + srcId : MODE === 'spell' ? 'S:' + srcId : MODE === 'forms' ? 'F:' + srcId : srcId;
   }
   function setById(id) { return C.resolveSet(CONTENT.data, id); }
   function pickNext() {
@@ -224,7 +228,9 @@
     var setId = C.pickSet(CONTENT.data, {
       level: currentLevel(), history: history, lastSetId: S && S.set ? (S.set.srcId || S.set.id) : null,
       // usage sets (their/there, borrow/lend) carry usage notes, not dictionary meanings
-      filter: MODE === 'dict' ? function (c, id) { return id.charAt(0) !== 'C'; } : null
+      filter: MODE === 'dict' ? function (c, id) { return id.charAt(0) !== 'C'; }
+        : MODE === 'forms' ? function (c, id) { var f = C.formsFor(c, id); return !!f && f.items.length >= 6; }
+        : null
     }, C.makeRng(Date.now() >>> 0));
     beginEncounter(setById(modeSetId(setId)), {});
   }
@@ -272,15 +278,17 @@
     el('ready-title').textContent = S.review ? '🔐 Review lockbox: ' + set.theme
       : MODE === 'spell' ? '✏️ Spelling list: ' + set.theme
       : MODE === 'dict' ? '📖 Dictionary page: ' + set.theme
+      : MODE === 'forms' ? '🌱 Word families: ' + set.theme
       : 'The job: ' + set.theme;
-    el('ready-btn').textContent = MODE === 'spell' ? 'I’ve read the list — start spelling ▶'
+    el('ready-btn').textContent = MODE === 'spell' ? 'I’ve studied the list — start the test ▶'
+      : MODE === 'forms' ? 'I’ve read the families — open the job ▶'
       : MODE === 'dict' ? 'I’ve read the page — open the job ▶' : 'I’ve read them — open the job ▶';
     var runsLeft = enc.runsAllowed - enc.misses;
     el('ready-runs').textContent = S.review
       ? '1 run · 3 pins to open · one miss and it stays shut'
       : (enc.misses ? 'Run ' + (enc.runIndex + 1) + ' of ' + enc.runsAllowed + ' · fresh sentences this run'
                     : enc.runsAllowed + ' runs · ' + enc.need + ' in a row cracks it');
-    var yr = C.yearRange(set);
+    var yr = C.yearRange(set.sourceWords ? { words: set.sourceWords } : set);
     el('ready-year').hidden = !yr;
     if (yr) el('ready-year').textContent = '🎓 ' + yr.label + ' words';
     el('year-stat').hidden = !yr;
@@ -289,8 +297,12 @@
     box.innerHTML = '';
     // Gloss cards in the authored order: the semantic gradient, not the
     // shuffled play order, so the child builds the scale before playing.
+    // the Word Forms Vault studies each word's family before the questions
+    if (MODE === 'forms') {
+      Object.keys(set.families).forEach(function (h) { box.appendChild(glossCard(C.familyCard(set, h))); });
+    }
     // the Dictionary Vault shows its page in ABC order, like a real dictionary
-    (MODE === 'dict' ? C.alphaSort(C.gradientOrder(set)) : C.gradientOrder(set)).forEach(function (w) {
+    else (MODE === 'dict' ? C.alphaSort(C.gradientOrder(set)) : C.gradientOrder(set)).forEach(function (w) {
       var word = null;
       for (var i = 0; i < set.words.length; i++) if (set.words[i].w === w) word = set.words[i];
       box.appendChild(glossCard(word));
@@ -345,18 +357,24 @@
   }
 
   function renderTiles(sentence) {
+    // word -> definition questions put five definitions on the tiles: stack them as rows
+    el('tiles').classList.toggle('defs', sentence.kind === 'define');
     var tiles = el('tiles').children;
     for (var i = 0; i < tiles.length; i++) {
       var w = S.enc.tileOrder[i];
-      tiles[i].textContent = sentence.surface[w];
+      // a word family with three or four versions leaves tiles empty: hide them
+      tiles[i].hidden = !sentence.surface[w];
+      tiles[i].textContent = sentence.surface[w] || '';
       tiles[i].setAttribute('data-word', w);
       tiles[i].classList.remove('gone', 'held');
       tiles[i].disabled = false;
     }
   }
   function renderTilesBlank() {
+    el('tiles').classList.remove('defs');
     var tiles = el('tiles').children;
     for (var i = 0; i < tiles.length; i++) {
+      tiles[i].hidden = false;
       tiles[i].textContent = '·····';
       tiles[i].setAttribute('data-word', '');
       tiles[i].disabled = true;
@@ -470,7 +488,8 @@
   function timerStart() {
     timerStop();
     if (!LS.timerOn || MODE === 'spell') return;
-    timer.total = C.lockTimerFor(currentLevel()) + (MODE === 'dict' ? 5000 : 0);
+    // five definitions take longer to read than five words
+    timer.total = C.lockTimerFor(currentLevel()) + (MODE === 'dict' ? 10000 : 0);
     timer.deadline = Date.now() + timer.total;
     el('timer-wrap').hidden = false;
     timerTick();
@@ -626,14 +645,16 @@
     });
   }
 
-  // ---- Spelling Vault: Look, Cover, Write, Check ----
-  // LOOK: the word sits in the slip's blank, lit gold (spoken aloud when the
-  // device has an on-device voice); COVER: after lookMsFor(level) or a tap;
-  // WRITE: on-screen or physical keyboard; CHECK: graded by Core.answerTyped.
-  // three rows so the whole keyboard fits under the vault on a laptop screen:
-  // letters plus apostrophe and hyphen, with Back, Hear and Check on the ends
+  // ---- Spelling Vault: dictation ----
+  // HEAR: the word plays from a clip recorded at build time
+  // (assets/voice/<Core.voiceSlug>.mp3, tools/generate-voice.py) - no network,
+  // same voice on every device - while its judged sentence on the slip gives
+  // the meaning. WRITE: on-screen or physical keyboard; 🔊 replays it.
+  // CHECK: Core.answerTyped. With sound switched off, or if a clip will not
+  // load, the word falls back to LOOK then COVER (lookMsFor) instead.
   var KEY_ROWS = [['qwertyuiop', 'back'], ["asdfghjkl'-", null], ['zxcvbnm', 'check']];
   var spellTimer = 0;
+  var voiceEl = null;
   function showInputFor(mode) {
     el('tiles').hidden = mode === 'spell';
     el('speller').hidden = mode !== 'spell';
@@ -650,7 +671,7 @@
     KEY_ROWS.forEach(function (row, r) {
       var box = el('krow-' + (r + 1));
       box.innerHTML = '';
-      if (row[1] === 'check') box.appendChild(keyBtn('🔊', { id: 'spell-hear', 'aria-label': 'hear the word', hidden: '' }, 'wide'));
+      if (row[1] === 'check') box.appendChild(keyBtn('🔊 Again', { id: 'spell-hear', 'aria-label': 'hear the word again' }, 'wide'));
       row[0].split('').forEach(function (ch) {
         box.appendChild(keyBtn(ch === "'" ? '’' : ch, { 'data-ch': ch,
           'aria-label': ch === "'" ? 'apostrophe' : ch === '-' ? 'hyphen' : ch }));
@@ -659,37 +680,54 @@
       if (row[1] === 'check') box.appendChild(keyBtn('✔ Check', { id: 'spell-check' }, 'wide go'));
     });
   }
-  // On-device voices only: a network voice would send the word off the
-  // device, and this game promises no network at play time.
-  function localVoice() {
-    if (!window.speechSynthesis || !speechSynthesis.getVoices) return null;
-    var vs = speechSynthesis.getVoices().filter(function (v) { return v.localService && /^en/i.test(v.lang); });
-    var au = vs.filter(function (v) { return /en[-_]AU/i.test(v.lang); });
-    return au[0] || vs[0] || null;
+  // one reusable element, primed in the first tap (iOS only lets an element
+  // play later if it was started inside a gesture once)
+  function primeVoice() {
+    voiceEl = new Audio('assets/sfx/tap.mp3');
+    voiceEl.muted = true;
+    var p = voiceEl.play();
+    if (p && p.catch) p.catch(function () {});
   }
-  function speak(word) {
-    var v = localVoice();
-    if (!v || LS.muted) return;
-    var u = new SpeechSynthesisUtterance(word);
-    u.voice = v; u.lang = v.lang; u.rate = 0.85;
-    speechSynthesis.cancel();
-    speechSynthesis.speak(u);
+  function playWord(word) {
+    if (!voiceEl) voiceEl = new Audio();
+    var item = S && S.enc ? S.enc.sentenceId : null;
+    voiceEl.pause();
+    voiceEl.muted = false;
+    voiceEl.volume = 1;
+    voiceEl.onerror = function () {
+      // no clip for this word: show it instead, unless the child is already typing
+      if (S && S.spell && S.enc.sentenceId === item && S.spell.phase === 'write' && !S.spell.typed) lookFallback();
+    };
+    voiceEl.src = 'assets/voice/' + C.voiceSlug(word) + '.mp3';
+    var p = voiceEl.play();
+    if (p && p.catch) p.catch(function (e) {
+      // blocked until a tap: the 🔊 key is that tap
+      if (e && e.name === 'NotAllowedError') el('spell-hear').classList.add('nudge');
+    });
   }
-  function spellTarget() { var s = currentSentence(); return s ? s.surface[s.answer] : ''; }
   function startSpell(sentence) {
     clearTimeout(spellTimer);
-    S.spell = { phase: 'look', typed: '' };
+    var word = sentence.surface[sentence.answer];
+    if (LS.muted) { startLook(word, '🔇 Sound is off: look at the word, then cover it'); return; }
+    S.spell = { phase: 'write', typed: '', heard: true };
+    el('spell-look').hidden = true;
+    el('spell-write').hidden = false;
+    el('spell-hear').classList.remove('nudge');
+    renderTyped();
+    playWord(word);
+    if (S.auto) autoSpell();
+  }
+  function startLook(word, say) {
+    S.spell = { phase: 'look', typed: '', heard: false };
     var blank = el('blank');
     blank.className = 'looking';
-    blank.textContent = sentence.surface[sentence.answer];
-    var canHear = !!localVoice();
-    el('spell-hear-look').hidden = !canHear;
-    el('spell-hear').hidden = !canHear;
+    blank.textContent = word;
+    el('spell-say').textContent = say;
     el('spell-look').hidden = false;
     el('spell-write').hidden = true;
-    speak(sentence.surface[sentence.answer]);
     spellTimer = setTimeout(coverWord, S.auto ? 300 : C.lookMsFor(currentLevel()));
   }
+  function lookFallback() { startLook(spellTarget(), '👀 Look at the word, then cover it'); }
   function coverWord() {
     clearTimeout(spellTimer);
     if (!S || !S.spell || S.spell.phase !== 'look' || S.enc.state !== 'run') return;
@@ -700,6 +738,7 @@
     Snd.page();
     if (S.auto) autoSpell();
   }
+  function spellTarget() { var s = currentSentence(); return s ? s.surface[s.answer] : ''; }
   function renderTyped() {
     var blank = el('blank');
     blank.className = 'typing';
@@ -786,7 +825,7 @@
     var strong = document.createElement('b');
     strong.textContent = C.fillText(sentence, sentence.answer);
     read.appendChild(strong);
-    read.appendChild(document.createTextNode('”.'));
+    read.appendChild(document.createTextNode(closeQuote(strong.textContent)));
     el('miss-cue').appendChild(read);
     var right = null;
     S.set.words.forEach(function (x) { if (x.w === sentence.answer) right = x; });
@@ -802,7 +841,7 @@
   function fillMissCard(sentence, picked) {
     if (MODE === 'spell') { fillSpellCard(sentence, picked); return; }
     el('miss-title').textContent = 'The tumblers reset';
-    el('miss-right-h').textContent = 'The word that fits';
+    el('miss-right-h').textContent = MODE === 'forms' ? 'The version that fits' : 'The word that fits';
     el('miss-picked-h').textContent = 'You picked';
     var con = C.contrastFor(S.set, sentence, picked);
     el('miss-cue').innerHTML = '';
@@ -812,7 +851,8 @@
     strong.textContent = con.filled;
     read.appendChild(strong);
     // a meaning question's cue IS the meaning, already quoted in the answer
-    read.appendChild(document.createTextNode(sentence.kind === 'meaning' ? '”.' : '” — the cue was “' + con.cue + '”.'));
+    // a dictionary question's cue IS the definition, already in the answer
+    read.appendChild(document.createTextNode(MODE === 'dict' || MODE === 'forms' ? closeQuote(con.filled) : '” — the cue was “' + con.cue + '”.'));
     el('miss-cue').appendChild(read);
     el('miss-right-word').textContent = con.right.surface;
     el('miss-right-gloss').textContent = con.right.gloss;
@@ -1228,7 +1268,7 @@
       if (mode === 'stall') return; // #timerdemo: never answer, let the clock run out
       var want = sentence.answer;
       if (mode === 'wrong' || (mode === 'miss' && S.enc.correctInRun === S.enc.need - 1)) {
-        want = S.enc.tileOrder.filter(function (w) { return w !== sentence.answer; })[0];
+        want = S.enc.tileOrder.filter(function (w) { return w !== sentence.answer && sentence.surface[w]; })[0];
         if (mode === 'miss') S.auto = 'right';
       }
       var tiles = el('tiles').children;
@@ -1272,8 +1312,8 @@
   function refreshTitle() {
     Object.keys(MODES).forEach(function (m) {
       inMode(m, function () {
-        var base = { words: 'Pick the word that fits the sentence', spell: 'Look, cover, write, check',
-                     dict: 'Meanings, ABC order, guide words' }[m];
+        var base = { words: 'Pick the word that fits the sentence', spell: 'Hear the word, spell it',
+                     dict: 'Match words to their meanings', forms: 'Terrify, terrified, terrifying?' }[m];
         var lvl = currentLevel();
         var started = !!LS.encounter || LS.setsCount > 0;
         el('mode-sub-' + m).textContent = started ? 'Year ' + C.yearOf(lvl) + ' ' + yearProgress(lvl) + ' · ' + base : base;
@@ -1327,18 +1367,11 @@
       if (k.id === 'spell-cover') coverWord();
       else if (k.id === 'spell-back') backKey();
       else if (k.id === 'spell-check') checkSpelling();
-      else if (k.id === 'spell-hear' || k.id === 'spell-hear-look') speak(spellTarget());
+      else if (k.id === 'spell-hear') { k.classList.remove('nudge'); playWord(spellTarget()); }
       else if (k.getAttribute('data-ch')) typeKey(k.getAttribute('data-ch'));
     });
     document.addEventListener('keydown', onSpellKeydown);
-    // voices load asynchronously on some browsers; re-check the Hear buttons
-    if (window.speechSynthesis && 'onvoiceschanged' in speechSynthesis) {
-      speechSynthesis.onvoiceschanged = function () {
-        var can = !!localVoice();
-        if (S && S.spell && S.spell.phase === 'look') el('spell-hear-look').hidden = !can;
-        if (S && S.spell && S.spell.phase === 'write') el('spell-hear').hidden = !can;
-      };
-    }
+
     el('confirm-yes').addEventListener('click', function () {
       Snd.tap();
       hide('confirm-overlay');

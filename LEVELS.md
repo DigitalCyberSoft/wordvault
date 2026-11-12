@@ -132,16 +132,21 @@ curve round onto the integer ladder.
 ## Spelling and Dictionary Vaults
 
 Both modes climb the same 28-step ladder with the same in-a-row rule, each on
-its own record. Spelling serves a set's own sentences (the answer's surface
-form, so inflection rules - doubling, dropping e, y to ied - come with it) and
-draws sets by the same gifted pitch; the word's grade is a meaning grade, so
-spelling difficulty follows it loosely. Dictionary questions by year:
+its own record, drawing sets by the same gifted pitch.
 
-| Years | Questions |
-|---|---|
-| 1-2 | meaning, ABC first, ABC last |
-| 3-4 | meaning, first, last, straight before/after, guide words |
-| 5-7 | meaning, straight before/after, guide words |
+- **Spelling** is dictation: the word is heard (a recorded clip), its judged
+  sentence gives the meaning, the child types it. Targets are the answer's
+  surface form in that sentence, so inflection rules (doubling, dropping e,
+  y to ied) come with it. A word's grade is a meaning grade, so spelling
+  difficulty follows it loosely.
+- **Word forms** puts versions of one word on the tiles (terrify /
+  terrified / terrifying / terror), under a sentence judged for meaning. The
+  sets come from the same year pitch; a set needs six judged questions to
+  serve, and a thin year borrows from its neighbours.
+- **Dictionary** is definition matching inside one confusable set, both ways
+  (definition to word, word to definition), so every year's definitions are
+  as close as that year's words: walking manners in Year 2, shades of doubt
+  in Year 7.
 
 ## Exhaustion and review
 

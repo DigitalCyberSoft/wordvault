@@ -53,30 +53,50 @@ school year (mode-prefixed `wordvault.<mode>.*` keys), clean-crack ladder and
 saved safe; coins, the cabinet and settings are shared, and 🏠 switches games.
 
 - **🔓 Word Vault** - the sentence game above (keys keep their original names).
-- **✏️ Spelling Vault** - Look, Cover, Write, Check, the routine Australian
-  classrooms use. The word sits lit in its own judged sentence for
-  `Core.lookMsFor` (5 s in Year 1 down to 2.5 s in Year 7), is covered, and is
-  typed on an on-screen keyboard (physical keys work too). The miss card shows
-  the right spelling and the attempt letter by letter, with the differences in
-  gold and a tip for the common slips (doubled letters, silent e, letter
-  order, apostrophes) from `Core.spellDiff`. No lock timer: spelling is about
-  care. 🔊 Hear it appears only when the device has an ON-DEVICE voice
-  (`localService`), so no word ever leaves the device.
-- **📖 Dictionary Vault** - the five tiles answer dictionary questions: which
-  word has this meaning, ABC order (first / last in Years 1-2; straight
-  before / after from Year 3), and guide words (from Year 3: "A page starts at
-  “bake” and ends at “beforehand”. ___ is on it."). The Get Ready card is the
-  dictionary page in ABC order. Misses explain the letter that decides the
-  order. The lock timer gets 5 s extra.
+- **✏️ Spelling Vault** - dictation, like a classroom spelling test. The
+  Get Ready card is the week's list (words and meanings); then each word is
+  SPOKEN from a clip recorded at build time (`assets/voice/<slug>.mp3`, an
+  Australian-teacher voice, see `tools/generate-voice.py`) while its judged
+  sentence sits on the slip for meaning, and the child types it on an
+  on-screen keyboard (physical keys work too); 🔊 Again replays it. The miss
+  card shows the right spelling and the attempt letter by letter, with the
+  differences in gold and a tip for common slips (doubled letters, silent e,
+  letter order, apostrophes) from `Core.spellDiff`. No lock timer: spelling is
+  about care. With sound switched off, or if a clip fails to load, the word
+  falls back to Look then Cover (`Core.lookMsFor`). The clips ship as files,
+  so the game still makes no network connection at play time.
+- **📖 Dictionary Vault** - matching words to their definitions, both ways,
+  among one confusable set's five SIMILAR definitions: "___ means 'cry weakly
+  or softly'" (tiles are the five words) and "'whimper' means ___" (tiles are
+  the five definitions, shown as rows). The Get Ready card is the dictionary
+  page in ABC order; a miss names both words with their definitions and the
+  set's contrast line. The lock timer gets 10 s extra for reading definitions.
 
-Both modes build VIRTUAL sets from the gated corpus (`Core.spellingSetFrom`,
-`Core.buildDictionarySet`, ids `S:<set>` and `D<year>:<set>`), so they need no
-new content gates: glosses are already unique within a set (G3/G4), meanings
-that contain their own word family ("sip: drink in sips") are skipped by
-`Core.glossGivesAway`, and guide words are picked from the corpus headwords so
-exactly one tile falls between them. `tools/test-content.js` re-proves one
-right tile for every dictionary question of every set in every year. Bank C
-usage sets stay out of the Dictionary Vault (their cards are usage notes).
+- **🌱 Word Forms Vault** - different versions of the same word: terrify /
+  terrified / terrifying / terror. Each question reuses one of the word's
+  judged sentences ("Aisha was ___, too afraid to speak.") with three to five
+  versions on the tiles (never two tenses that both fit: swept and sweeps
+  are not offered together, since the game teaches word class, not tense); the Get Ready card shows each word's family, and a
+  miss shows the right and picked versions with a one-line note each
+  ("adjective: feeling very great fear" / "adjective: causing very great
+  fear"). Families are drafted by `tools/draft-families.py` (gpt-5.5; every
+  form must be a real word by wordfreq, share the headword's root and keep its
+  meaning) into `forms/families.json`; `tools/judge-forms.py` builds the
+  questions (`forms/items.json`) and judges each with the same three-model
+  ensemble (`reference/forms-verdicts.json`). Grammar decides here, but
+  meaning still can ("Aisha was terrifying" is grammatical and wrong), so a
+  question ships only when every judge accepts the intended version and at
+  most one also accepts another; `tools/bake-content.js` drops hard, stale and
+  unjudged questions.
+
+The spelling and dictionary modes build VIRTUAL sets from the gated corpus (`Core.spellingSetFrom`,
+`Core.buildDictionarySet`, ids `S:<set>` and `D:<set>`), so they need no new
+content gates: definitions are unique within a set (G3/G4), and a word whose
+definition contains its own family ("sip: drink in sips") is never the answer
+(`Core.glossGivesAway`). `tools/test-content.js` checks five distinct tiles on
+every dictionary question, and that every spelling word has a clip that a
+speech-to-text model heard back as that word (`reference/voice-check.json`).
+Bank C usage sets stay out of the Dictionary Vault (their cards are usage notes).
 
 ## No build step, no server, no network
 
@@ -94,6 +114,8 @@ baked into `game-content.js`, and progress lives in `localStorage`
 | `game-core.js` | Pure logic, zero DOM: runs, draws, grading, adaptivity, review queue, collectibles (`Core`) |
 | `game-ui.js` | Rendering, input (tap answers, long-press peeks), audio, persistence |
 | `game-fx.js` | The holo vault: a WebGL shader lock (energy pins, ring dial, plasma core, iris door). Auto-detects; the SVG vault below it is the full fallback, and Settings → Holo vault turns it off (`FX`) |
+| `forms/` | Word Forms Vault source: drafted families and the built questions |
+| `assets/voice/` | One recorded clip per Spelling Vault word (generated, `tools/generate-voice.py`) |
 | `game-content.js` | **Baked** corpus - generated by `tools/bake-content.js`, never hand-edited (`Content`) |
 | `styles.css` | Tokens, vault, pins, tiles, motion (pin seat ≤250ms, relock ≤400ms, door ~800ms) |
 | `sets/{A,B,C}/*.json` | The authored sets: source of truth for all content |

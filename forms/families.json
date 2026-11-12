@@ -1,0 +1,5812 @@
+{
+ "A-aftermath-01": {},
+ "A-angry-01": {
+  "frustrated": [
+   {
+    "form": "frustrated",
+    "pos": "adjective",
+    "note": "adjective: upset because progress is blocked"
+   },
+   {
+    "form": "frustrate",
+    "pos": "verb",
+    "note": "verb: to block someone from doing what they want"
+   },
+   {
+    "form": "frustrates",
+    "pos": "verb",
+    "note": "verb: blocks someone from doing what they want"
+   },
+   {
+    "form": "frustrating",
+    "pos": "adjective",
+    "note": "adjective: causing upset by blocking progress"
+   },
+   {
+    "form": "frustratingly",
+    "pos": "adverb",
+    "note": "adverb: in a way that blocks progress and upsets people"
+   },
+   {
+    "form": "frustration",
+    "pos": "noun",
+    "note": "noun: upset caused by blocked progress"
+   }
+  ],
+  "jealous": [
+   {
+    "form": "jealous",
+    "pos": "adjective",
+    "note": "adjective: unhappy because another has what you want"
+   },
+   {
+    "form": "jealously",
+    "pos": "adverb",
+    "note": "adverb: with envy of what another person has"
+   },
+   {
+    "form": "jealousy",
+    "pos": "noun",
+    "note": "noun: unhappiness over what another person has"
+   },
+   {
+    "form": "jealousies",
+    "pos": "noun",
+    "note": "noun: feelings of envy over what others have"
+   }
+  ],
+  "resentful": [
+   {
+    "form": "resentful",
+    "pos": "adjective",
+    "note": "adjective: quietly angry about something unfair"
+   },
+   {
+    "form": "resent",
+    "pos": "verb",
+    "note": "verb: to feel bitter anger about unfair treatment"
+   },
+   {
+    "form": "resents",
+    "pos": "verb",
+    "note": "verb: feels bitter anger about unfair treatment"
+   },
+   {
+    "form": "resented",
+    "pos": "verb",
+    "note": "verb: felt bitter anger about unfair treatment"
+   },
+   {
+    "form": "resenting",
+    "pos": "verb",
+    "note": "verb: feeling bitter anger about unfair treatment"
+   },
+   {
+    "form": "resentment",
+    "pos": "noun",
+    "note": "noun: bitter anger about unfair treatment"
+   }
+  ]
+ },
+ "A-atmosphere-01": {},
+ "A-brave-01": {
+  "determined": [
+   {
+    "form": "determined",
+    "pos": "adjective",
+    "note": "adjective: not giving up on a difficult task"
+   },
+   {
+    "form": "determine",
+    "pos": "verb",
+    "note": "verb: to firmly decide to do something"
+   },
+   {
+    "form": "determines",
+    "pos": "verb",
+    "note": "verb: firmly decides to do something"
+   },
+   {
+    "form": "determining",
+    "pos": "verb",
+    "note": "verb: firmly deciding to do something"
+   },
+   {
+    "form": "determinedly",
+    "pos": "adverb",
+    "note": "adverb: with firm effort and no giving up"
+   },
+   {
+    "form": "determination",
+    "pos": "noun",
+    "note": "noun: firmness in trying to reach a goal"
+   }
+  ],
+  "daring": [
+   {
+    "form": "daring",
+    "pos": "adjective",
+    "note": "adjective: brave enough to take risks"
+   },
+   {
+    "form": "dare",
+    "pos": "verb",
+    "note": "verb: to be brave enough to try something risky"
+   },
+   {
+    "form": "dares",
+    "pos": "verb",
+    "note": "verb: is brave enough to try something risky"
+   },
+   {
+    "form": "dared",
+    "pos": "verb",
+    "note": "verb: was brave enough to try something risky"
+   },
+   {
+    "form": "daringly",
+    "pos": "adverb",
+    "note": "adverb: in a brave, risk-taking way"
+   }
+  ],
+  "fearless": [
+   {
+    "form": "fearless",
+    "pos": "adjective",
+    "note": "adjective: not scared, even when danger is real"
+   },
+   {
+    "form": "fear",
+    "pos": "noun",
+    "note": "noun: a scared feeling about danger"
+   },
+   {
+    "form": "fears",
+    "pos": "noun",
+    "note": "noun: scared feelings about dangers"
+   },
+   {
+    "form": "feared",
+    "pos": "verb",
+    "note": "verb: felt scared of someone or something"
+   },
+   {
+    "form": "fearing",
+    "pos": "verb",
+    "note": "verb: feeling scared of someone or something"
+   },
+   {
+    "form": "fearlessly",
+    "pos": "adverb",
+    "note": "adverb: without being scared by danger"
+   },
+   {
+    "form": "fearlessness",
+    "pos": "noun",
+    "note": "noun: bravery when danger is real"
+   }
+  ],
+  "heroic": [
+   {
+    "form": "heroic",
+    "pos": "adjective",
+    "note": "adjective: showing great bravery in helping others"
+   },
+   {
+    "form": "hero",
+    "pos": "noun",
+    "note": "noun: a very brave person admired by others"
+   },
+   {
+    "form": "heroes",
+    "pos": "noun",
+    "note": "noun: very brave people admired by others"
+   },
+   {
+    "form": "heroically",
+    "pos": "adverb",
+    "note": "adverb: with great bravery in helping others"
+   },
+   {
+    "form": "heroism",
+    "pos": "noun",
+    "note": "noun: great bravery in helping others"
+   },
+   {
+    "form": "heroine",
+    "pos": "noun",
+    "note": "noun: a very brave girl or woman admired by others"
+   },
+   {
+    "form": "heroines",
+    "pos": "noun",
+    "note": "noun: very brave girls or women admired by others"
+   }
+  ]
+ },
+ "A-character-01": {
+  "defiant": [
+   {
+    "form": "defiant",
+    "pos": "adjective",
+    "note": "adjective: boldly refusing to obey or give in"
+   },
+   {
+    "form": "defiantly",
+    "pos": "adverb",
+    "note": "adverb: in a bold, disobedient way"
+   },
+   {
+    "form": "defiance",
+    "pos": "noun",
+    "note": "noun: bold refusal to obey or give in"
+   },
+   {
+    "form": "defy",
+    "pos": "verb",
+    "note": "verb: to refuse boldly to obey or yield"
+   },
+   {
+    "form": "defies",
+    "pos": "verb",
+    "note": "verb: refuses boldly to obey or yield"
+   },
+   {
+    "form": "defied",
+    "pos": "verb",
+    "note": "verb: refused boldly to obey or yield"
+   },
+   {
+    "form": "defying",
+    "pos": "verb",
+    "note": "verb: refusing boldly to obey or yield"
+   }
+  ],
+  "composed": [
+   {
+    "form": "composed",
+    "pos": "adjective",
+    "note": "adjective: calm and in control of feelings"
+   },
+   {
+    "form": "compose",
+    "pos": "verb",
+    "note": "verb: to make calm or settle oneself"
+   },
+   {
+    "form": "composes",
+    "pos": "verb",
+    "note": "verb: makes calm or settles oneself"
+   },
+   {
+    "form": "composing",
+    "pos": "verb",
+    "note": "verb: making calm or settling oneself"
+   },
+   {
+    "form": "composure",
+    "pos": "noun",
+    "note": "noun: calm control of feelings"
+   }
+  ]
+ },
+ "A-clean-01": {
+  "sweep": [
+   {
+    "form": "sweep",
+    "pos": "verb",
+    "note": "verb: to clean a floor with a broom or brush"
+   },
+   {
+    "form": "sweeping",
+    "pos": "verb",
+    "note": "verb: cleaning a floor with a broom or brush"
+   },
+   {
+    "form": "sweeps",
+    "pos": "verb",
+    "note": "verb: cleans a floor with a broom or brush"
+   },
+   {
+    "form": "swept",
+    "pos": "verb",
+    "note": "verb: cleaned a floor with a broom or brush"
+   },
+   {
+    "form": "sweeper",
+    "pos": "noun",
+    "note": "noun: a person or machine that cleans floors with a brush"
+   }
+  ],
+  "wipe": [
+   {
+    "form": "wipe",
+    "pos": "verb",
+    "note": "verb: to clean a surface with a cloth or hand"
+   },
+   {
+    "form": "wiped",
+    "pos": "verb",
+    "note": "verb: cleaned a surface with a cloth or hand"
+   },
+   {
+    "form": "wipes",
+    "pos": "verb",
+    "note": "verb: cleans a surface with a cloth or hand"
+   },
+   {
+    "form": "wiping",
+    "pos": "verb",
+    "note": "verb: cleaning a surface with a cloth or hand"
+   },
+   {
+    "form": "wiper",
+    "pos": "noun",
+    "note": "noun: a blade or tool that clears water or dirt from glass"
+   }
+  ],
+  "scrub": [
+   {
+    "form": "scrub",
+    "pos": "verb",
+    "note": "verb: to clean by rubbing hard"
+   },
+   {
+    "form": "scrubbed",
+    "pos": "verb",
+    "note": "verb: cleaned by rubbing hard"
+   },
+   {
+    "form": "scrubbing",
+    "pos": "verb",
+    "note": "verb: cleaning by rubbing hard"
+   },
+   {
+    "form": "scrubs",
+    "pos": "verb",
+    "note": "verb: cleans by rubbing hard"
+   },
+   {
+    "form": "scrubber",
+    "pos": "noun",
+    "note": "noun: a brush or pad for cleaning by hard rubbing"
+   }
+  ],
+  "wash": [
+   {
+    "form": "wash",
+    "pos": "verb",
+    "note": "verb: to clean with water and soap"
+   },
+   {
+    "form": "washed",
+    "pos": "verb",
+    "note": "verb: cleaned with water and soap"
+   },
+   {
+    "form": "washes",
+    "pos": "verb",
+    "note": "verb: cleans with water and soap"
+   },
+   {
+    "form": "washing",
+    "pos": "verb",
+    "note": "verb: cleaning with water and soap"
+   },
+   {
+    "form": "washer",
+    "pos": "noun",
+    "note": "noun: a machine that cleans clothes with water"
+   },
+   {
+    "form": "washable",
+    "pos": "adjective",
+    "note": "adjective: able to be cleaned with water without damage"
+   }
+  ],
+  "dry": [
+   {
+    "form": "dried",
+    "pos": "verb",
+    "note": "verb: removed water from something"
+   },
+   {
+    "form": "dries",
+    "pos": "verb",
+    "note": "verb: removes water from something"
+   },
+   {
+    "form": "dry",
+    "pos": "verb",
+    "note": "verb: to remove water from something"
+   },
+   {
+    "form": "drying",
+    "pos": "verb",
+    "note": "verb: removing water from something"
+   },
+   {
+    "form": "dryer",
+    "pos": "noun",
+    "note": "noun: a machine that removes water from clothes"
+   },
+   {
+    "form": "dryness",
+    "pos": "noun",
+    "note": "noun: the state of having little or no water"
+   }
+  ]
+ },
+ "A-cook-01": {
+  "bake": [
+   {
+    "form": "bake",
+    "pos": "verb",
+    "note": "verb: to cook food with dry heat in an oven"
+   },
+   {
+    "form": "baked",
+    "pos": "verb",
+    "note": "verb: cooked food with dry heat in an oven"
+   },
+   {
+    "form": "bakes",
+    "pos": "verb",
+    "note": "verb: cooks food with dry heat in an oven"
+   },
+   {
+    "form": "baking",
+    "pos": "noun",
+    "note": "noun: cooking food with dry heat in an oven"
+   },
+   {
+    "form": "baker",
+    "pos": "noun",
+    "note": "noun: person who makes bread, cakes, or biscuits in an oven"
+   },
+   {
+    "form": "bakery",
+    "pos": "noun",
+    "note": "noun: place where bread, cakes, or biscuits are made or sold"
+   }
+  ],
+  "fry": [
+   {
+    "form": "fried",
+    "pos": "verb",
+    "note": "verb: cooked food on a hot surface using fat"
+   },
+   {
+    "form": "fries",
+    "pos": "verb",
+    "note": "verb: cooks food on a hot surface using fat"
+   },
+   {
+    "form": "fry",
+    "pos": "verb",
+    "note": "verb: to cook food on a hot surface using fat"
+   },
+   {
+    "form": "frying",
+    "pos": "verb",
+    "note": "verb: cooking food on a hot surface using fat"
+   }
+  ],
+  "boil": [
+   {
+    "form": "boil",
+    "pos": "verb",
+    "note": "verb: to cook food in very hot bubbling liquid"
+   },
+   {
+    "form": "boiled",
+    "pos": "verb",
+    "note": "verb: cooked food in very hot bubbling liquid"
+   },
+   {
+    "form": "boiling",
+    "pos": "verb",
+    "note": "verb: cooking food in very hot bubbling liquid"
+   },
+   {
+    "form": "boils",
+    "pos": "verb",
+    "note": "verb: cooks food in very hot bubbling liquid"
+   }
+  ],
+  "stew": [
+   {
+    "form": "stew",
+    "pos": "verb",
+    "note": "verb: to cook slowly in liquid for a long time"
+   },
+   {
+    "form": "stewed",
+    "pos": "verb",
+    "note": "verb: cooked slowly in liquid for a long time"
+   },
+   {
+    "form": "stewing",
+    "pos": "verb",
+    "note": "verb: cooking slowly in liquid for a long time"
+   },
+   {
+    "form": "stews",
+    "pos": "verb",
+    "note": "verb: cooks slowly in liquid for a long time"
+   }
+  ],
+  "steam": [
+   {
+    "form": "steam",
+    "pos": "verb",
+    "note": "verb: to cook food with hot vapour"
+   },
+   {
+    "form": "steamed",
+    "pos": "verb",
+    "note": "verb: cooked food with hot vapour"
+   },
+   {
+    "form": "steaming",
+    "pos": "verb",
+    "note": "verb: cooking food with hot vapour"
+   },
+   {
+    "form": "steams",
+    "pos": "verb",
+    "note": "verb: cooks food with hot vapour"
+   },
+   {
+    "form": "steamer",
+    "pos": "noun",
+    "note": "noun: pot or basket used to cook food with hot vapour"
+   }
+  ]
+ },
+ "A-craft-01": {
+  "subtle": [
+   {
+    "form": "subtle",
+    "pos": "adjective",
+    "note": "adjective: slight or delicate and not easy to notice"
+   },
+   {
+    "form": "subtler",
+    "pos": "adjective",
+    "note": "adjective: more slight or delicate and harder to notice"
+   },
+   {
+    "form": "subtly",
+    "pos": "adverb",
+    "note": "adverb: in a slight or delicate way not easily noticed"
+   },
+   {
+    "form": "subtlety",
+    "pos": "noun",
+    "note": "noun: a small detail or difference not easy to notice"
+   }
+  ]
+ },
+ "A-cry-01": {
+  "whimper": [
+   {
+    "form": "whimper",
+    "pos": "verb",
+    "note": "verb: to cry weakly or softly"
+   },
+   {
+    "form": "whimpered",
+    "pos": "verb",
+    "note": "verb: cried weakly or softly"
+   },
+   {
+    "form": "whimpering",
+    "pos": "verb",
+    "note": "verb: crying weakly or softly"
+   },
+   {
+    "form": "whimpers",
+    "pos": "verb",
+    "note": "verb: cries weakly or softly"
+   }
+  ],
+  "sob": [
+   {
+    "form": "sob",
+    "pos": "verb",
+    "note": "verb: to weep with shaking breaths"
+   },
+   {
+    "form": "sobbed",
+    "pos": "verb",
+    "note": "verb: wept with shaking breaths"
+   },
+   {
+    "form": "sobbing",
+    "pos": "verb",
+    "note": "verb: weeping with shaking breaths"
+   },
+   {
+    "form": "sobs",
+    "pos": "verb",
+    "note": "verb: weeps with shaking breaths"
+   }
+  ],
+  "blubber": [
+   {
+    "form": "blubber",
+    "pos": "verb",
+    "note": "verb: to cry noisily with sniffs"
+   },
+   {
+    "form": "blubbered",
+    "pos": "verb",
+    "note": "verb: cried noisily with sniffs"
+   },
+   {
+    "form": "blubbering",
+    "pos": "verb",
+    "note": "verb: crying noisily with sniffs"
+   },
+   {
+    "form": "blubbers",
+    "pos": "verb",
+    "note": "verb: cries noisily with sniffs"
+   }
+  ],
+  "bawl": [
+   {
+    "form": "bawl",
+    "pos": "verb",
+    "note": "verb: to cry out loudly"
+   },
+   {
+    "form": "bawled",
+    "pos": "verb",
+    "note": "verb: cried out loudly"
+   },
+   {
+    "form": "bawling",
+    "pos": "verb",
+    "note": "verb: crying out loudly"
+   },
+   {
+    "form": "bawls",
+    "pos": "verb",
+    "note": "verb: cries out loudly"
+   }
+  ],
+  "howl": [
+   {
+    "form": "howl",
+    "pos": "verb",
+    "note": "verb: to make a long loud cry"
+   },
+   {
+    "form": "howled",
+    "pos": "verb",
+    "note": "verb: made a long loud cry"
+   },
+   {
+    "form": "howling",
+    "pos": "verb",
+    "note": "verb: making a long loud cry"
+   },
+   {
+    "form": "howls",
+    "pos": "verb",
+    "note": "verb: makes a long loud cry"
+   }
+  ]
+ },
+ "A-dark-01": {
+  "dim": [
+   {
+    "form": "dim",
+    "pos": "adjective",
+    "note": "adjective: lacking strong light"
+   },
+   {
+    "form": "dimmer",
+    "pos": "adjective",
+    "note": "adjective: having less light than another"
+   },
+   {
+    "form": "dimly",
+    "pos": "adverb",
+    "note": "adverb: with little light"
+   },
+   {
+    "form": "dimmed",
+    "pos": "verb",
+    "note": "verb: made or became less bright"
+   },
+   {
+    "form": "dimming",
+    "pos": "verb",
+    "note": "verb: making or becoming less bright"
+   }
+  ],
+  "shadowy": [
+   {
+    "form": "shadow",
+    "pos": "noun",
+    "note": "noun: dark shape made when light is blocked"
+   },
+   {
+    "form": "shadows",
+    "pos": "noun",
+    "note": "noun: dark shapes made when light is blocked"
+   },
+   {
+    "form": "shadowed",
+    "pos": "adjective",
+    "note": "adjective: covered by shade"
+   },
+   {
+    "form": "shadowing",
+    "pos": "verb",
+    "note": "verb: blocking light from reaching something"
+   },
+   {
+    "form": "shadowy",
+    "pos": "adjective",
+    "note": "adjective: full of shade"
+   }
+  ]
+ },
+ "A-desire-01": {
+  "envy": [
+   {
+    "form": "envy",
+    "pos": "verb",
+    "note": "verb: to wish for what someone else has"
+   },
+   {
+    "form": "envied",
+    "pos": "verb",
+    "note": "verb: wished for what someone else had"
+   },
+   {
+    "form": "envies",
+    "pos": "verb",
+    "note": "verb: wishes for what someone else has"
+   },
+   {
+    "form": "envying",
+    "pos": "verb",
+    "note": "verb: wishing for what someone else has"
+   },
+   {
+    "form": "envious",
+    "pos": "adjective",
+    "note": "adjective: wanting what another person has"
+   },
+   {
+    "form": "enviable",
+    "pos": "adjective",
+    "note": "adjective: likely to be wanted by other people"
+   }
+  ],
+  "relish": [
+   {
+    "form": "relish",
+    "pos": "verb",
+    "note": "verb: to enjoy something very much"
+   },
+   {
+    "form": "relished",
+    "pos": "verb",
+    "note": "verb: enjoyed something very much"
+   },
+   {
+    "form": "relishes",
+    "pos": "verb",
+    "note": "verb: enjoys something very much"
+   },
+   {
+    "form": "relishing",
+    "pos": "verb",
+    "note": "verb: enjoying something very much"
+   }
+  ],
+  "crave": [
+   {
+    "form": "crave",
+    "pos": "verb",
+    "note": "verb: to want something very strongly"
+   },
+   {
+    "form": "craved",
+    "pos": "verb",
+    "note": "verb: wanted something very strongly"
+   },
+   {
+    "form": "craves",
+    "pos": "verb",
+    "note": "verb: wants something very strongly"
+   },
+   {
+    "form": "craving",
+    "pos": "verb",
+    "note": "verb: wanting something very strongly"
+   }
+  ],
+  "covet": [
+   {
+    "form": "covet",
+    "pos": "verb",
+    "note": "verb: to long to own something that belongs to another"
+   },
+   {
+    "form": "coveted",
+    "pos": "verb",
+    "note": "verb: strongly wished to own another person's thing"
+   },
+   {
+    "form": "coveting",
+    "pos": "verb",
+    "note": "verb: strongly wishing to own another person's thing"
+   },
+   {
+    "form": "covets",
+    "pos": "verb",
+    "note": "verb: strongly wishes to own another person's thing"
+   },
+   {
+    "form": "covetous",
+    "pos": "adjective",
+    "note": "adjective: greedy for things owned by others"
+   },
+   {
+    "form": "covetousness",
+    "pos": "noun",
+    "note": "noun: greed for things owned by others"
+   }
+  ],
+  "lament": [
+   {
+    "form": "lament",
+    "pos": "verb",
+    "note": "verb: to express grief in words"
+   },
+   {
+    "form": "lamented",
+    "pos": "verb",
+    "note": "verb: expressed grief in words"
+   },
+   {
+    "form": "lamenting",
+    "pos": "verb",
+    "note": "verb: expressing grief in words"
+   },
+   {
+    "form": "laments",
+    "pos": "verb",
+    "note": "verb: expresses grief in words"
+   },
+   {
+    "form": "lamentation",
+    "pos": "noun",
+    "note": "noun: a spoken or written expression of grief"
+   }
+  ]
+ },
+ "A-dirty-01": {},
+ "A-disrepair-01": {
+  "warped": [
+   {
+    "form": "warp",
+    "pos": "verb",
+    "note": "verb: to bend or twist out of the proper shape"
+   },
+   {
+    "form": "warps",
+    "pos": "verb",
+    "note": "verb: bends or twists out of the proper shape"
+   },
+   {
+    "form": "warped",
+    "pos": "adjective",
+    "note": "adjective: bent or twisted out of the proper shape"
+   },
+   {
+    "form": "warping",
+    "pos": "verb",
+    "note": "verb: bending or twisting out of the proper shape"
+   }
+  ]
+ },
+ "A-draw-01": {
+  "draw": [
+   {
+    "form": "draw",
+    "pos": "verb",
+    "note": "verb: to make a picture with lines"
+   },
+   {
+    "form": "draws",
+    "pos": "verb",
+    "note": "verb: makes a picture with lines"
+   },
+   {
+    "form": "drawing",
+    "pos": "verb",
+    "note": "verb: making a picture with lines"
+   },
+   {
+    "form": "drew",
+    "pos": "verb",
+    "note": "verb: made a picture with lines"
+   },
+   {
+    "form": "drawn",
+    "pos": "verb",
+    "note": "verb: made a picture with lines"
+   }
+  ],
+  "paint": [
+   {
+    "form": "paint",
+    "pos": "verb",
+    "note": "verb: to make a picture with a brush and wet pigment"
+   },
+   {
+    "form": "painted",
+    "pos": "verb",
+    "note": "verb: made a picture with a brush and wet pigment"
+   },
+   {
+    "form": "painting",
+    "pos": "verb",
+    "note": "verb: making a picture with a brush and wet pigment"
+   },
+   {
+    "form": "paints",
+    "pos": "verb",
+    "note": "verb: makes a picture with a brush and wet pigment"
+   },
+   {
+    "form": "painter",
+    "pos": "noun",
+    "note": "noun: person who makes pictures with wet pigment"
+   }
+  ],
+  "colour": [
+   {
+    "form": "colour",
+    "pos": "verb",
+    "note": "verb: to fill a picture or shape with hues"
+   },
+   {
+    "form": "coloured",
+    "pos": "verb",
+    "note": "verb: filled a picture or shape with hues"
+   },
+   {
+    "form": "colouring",
+    "pos": "verb",
+    "note": "verb: filling a picture or shape with hues"
+   },
+   {
+    "form": "colours",
+    "pos": "verb",
+    "note": "verb: fills a picture or shape with hues"
+   },
+   {
+    "form": "colourful",
+    "pos": "adjective",
+    "note": "adjective: having many bright hues"
+   },
+   {
+    "form": "colourless",
+    "pos": "adjective",
+    "note": "adjective: having no hue"
+   }
+  ],
+  "write": [
+   {
+    "form": "write",
+    "pos": "verb",
+    "note": "verb: to put letters or words on a surface"
+   },
+   {
+    "form": "writes",
+    "pos": "verb",
+    "note": "verb: puts letters or words on a surface"
+   },
+   {
+    "form": "writing",
+    "pos": "verb",
+    "note": "verb: putting letters or words on a surface"
+   },
+   {
+    "form": "wrote",
+    "pos": "verb",
+    "note": "verb: put letters or words on a surface"
+   },
+   {
+    "form": "written",
+    "pos": "verb",
+    "note": "verb: put letters or words on a surface"
+   },
+   {
+    "form": "writer",
+    "pos": "noun",
+    "note": "noun: person who creates stories, books or articles"
+   }
+  ],
+  "trace": [
+   {
+    "form": "trace",
+    "pos": "verb",
+    "note": "verb: to copy lines by following over or around them"
+   },
+   {
+    "form": "traced",
+    "pos": "verb",
+    "note": "verb: copied lines by following over or around them"
+   },
+   {
+    "form": "traces",
+    "pos": "verb",
+    "note": "verb: copies lines by following over or around them"
+   },
+   {
+    "form": "tracing",
+    "pos": "verb",
+    "note": "verb: copying lines by following over or around them"
+   }
+  ]
+ },
+ "A-dwell-01": {
+  "reminisce": [
+   {
+    "form": "reminisce",
+    "pos": "verb",
+    "note": "verb: to think or talk about earlier times"
+   },
+   {
+    "form": "reminisced",
+    "pos": "verb",
+    "note": "verb: thought or talked about earlier times"
+   },
+   {
+    "form": "reminisces",
+    "pos": "verb",
+    "note": "verb: thinks or talks about earlier times"
+   },
+   {
+    "form": "reminiscing",
+    "pos": "verb",
+    "note": "verb: thinking or talking about earlier times"
+   },
+   {
+    "form": "reminiscence",
+    "pos": "noun",
+    "note": "noun: a memory shared about earlier times"
+   },
+   {
+    "form": "reminiscences",
+    "pos": "noun",
+    "note": "noun: memories shared about earlier times"
+   },
+   {
+    "form": "reminiscent",
+    "pos": "adjective",
+    "note": "adjective: bringing earlier times to mind"
+   }
+  ],
+  "brood": [
+   {
+    "form": "brood",
+    "pos": "verb",
+    "note": "verb: to keep worrying in a gloomy way"
+   },
+   {
+    "form": "brooded",
+    "pos": "verb",
+    "note": "verb: kept worrying in a gloomy way"
+   },
+   {
+    "form": "brooding",
+    "pos": "verb",
+    "note": "verb: worrying in a gloomy way"
+   },
+   {
+    "form": "broods",
+    "pos": "verb",
+    "note": "verb: keeps worrying in a gloomy way"
+   }
+  ],
+  "muse": [
+   {
+    "form": "muse",
+    "pos": "verb",
+    "note": "verb: to think quietly and with curiosity"
+   },
+   {
+    "form": "mused",
+    "pos": "verb",
+    "note": "verb: thought quietly and with curiosity"
+   },
+   {
+    "form": "muses",
+    "pos": "verb",
+    "note": "verb: thinks quietly and with curiosity"
+   },
+   {
+    "form": "musing",
+    "pos": "verb",
+    "note": "verb: thinking quietly and with curiosity"
+   }
+  ],
+  "obsess": [
+   {
+    "form": "obsess",
+    "pos": "verb",
+    "note": "verb: to be unable to stop thinking about something"
+   },
+   {
+    "form": "obsessed",
+    "pos": "verb",
+    "note": "verb: was unable to stop thinking about something"
+   },
+   {
+    "form": "obsesses",
+    "pos": "verb",
+    "note": "verb: fills the mind and is hard to ignore"
+   },
+   {
+    "form": "obsessing",
+    "pos": "verb",
+    "note": "verb: being unable to stop thinking about something"
+   },
+   {
+    "form": "obsession",
+    "pos": "noun",
+    "note": "noun: a thought or interest that will not leave the mind"
+   },
+   {
+    "form": "obsessive",
+    "pos": "adjective",
+    "note": "adjective: unable to let one idea or interest go"
+   },
+   {
+    "form": "obsessively",
+    "pos": "adverb",
+    "note": "adverb: in a way that cannot let one idea or interest go"
+   }
+  ],
+  "wallow": [
+   {
+    "form": "wallow",
+    "pos": "verb",
+    "note": "verb: to stay in a sad feeling almost by choice"
+   },
+   {
+    "form": "wallowed",
+    "pos": "verb",
+    "note": "verb: stayed in a sad feeling almost by choice"
+   },
+   {
+    "form": "wallowing",
+    "pos": "verb",
+    "note": "verb: staying in a sad feeling almost by choice"
+   },
+   {
+    "form": "wallows",
+    "pos": "verb",
+    "note": "verb: stays in a sad feeling almost by choice"
+   }
+  ]
+ },
+ "A-eat-01": {
+  "nibble": [
+   {
+    "form": "nibble",
+    "pos": "verb",
+    "note": "verb: to eat by taking very small bites"
+   },
+   {
+    "form": "nibbled",
+    "pos": "verb",
+    "note": "verb: ate by taking very small bites"
+   },
+   {
+    "form": "nibbles",
+    "pos": "verb",
+    "note": "verb: eats by taking very small bites"
+   },
+   {
+    "form": "nibbling",
+    "pos": "verb",
+    "note": "verb: eating by taking very small bites"
+   }
+  ],
+  "munch": [
+   {
+    "form": "munch",
+    "pos": "verb",
+    "note": "verb: to chew food with a loud sound"
+   },
+   {
+    "form": "munched",
+    "pos": "verb",
+    "note": "verb: chewed food with a loud sound"
+   },
+   {
+    "form": "munches",
+    "pos": "verb",
+    "note": "verb: chews food with a loud sound"
+   },
+   {
+    "form": "munching",
+    "pos": "verb",
+    "note": "verb: chewing food with a loud sound"
+   }
+  ],
+  "gulp": [
+   {
+    "form": "gulp",
+    "pos": "verb",
+    "note": "verb: to swallow quickly or greedily"
+   },
+   {
+    "form": "gulped",
+    "pos": "verb",
+    "note": "verb: swallowed quickly or greedily"
+   },
+   {
+    "form": "gulping",
+    "pos": "verb",
+    "note": "verb: swallowing quickly or greedily"
+   },
+   {
+    "form": "gulps",
+    "pos": "verb",
+    "note": "verb: swallows quickly or greedily"
+   }
+  ],
+  "gobble": [
+   {
+    "form": "gobble",
+    "pos": "verb",
+    "note": "verb: to eat quickly without chewing well"
+   },
+   {
+    "form": "gobbled",
+    "pos": "verb",
+    "note": "verb: ate quickly without chewing well"
+   },
+   {
+    "form": "gobbles",
+    "pos": "verb",
+    "note": "verb: eats quickly without chewing well"
+   },
+   {
+    "form": "gobbling",
+    "pos": "verb",
+    "note": "verb: eating quickly without chewing well"
+   }
+  ],
+  "sip": [
+   {
+    "form": "sip",
+    "pos": "verb",
+    "note": "verb: to drink by taking tiny mouthfuls"
+   },
+   {
+    "form": "sipped",
+    "pos": "verb",
+    "note": "verb: drank by taking tiny mouthfuls"
+   },
+   {
+    "form": "sipping",
+    "pos": "verb",
+    "note": "verb: drinking by taking tiny mouthfuls"
+   },
+   {
+    "form": "sips",
+    "pos": "verb",
+    "note": "verb: drinks by taking tiny mouthfuls"
+   }
+  ]
+ },
+ "A-effort-01": {
+  "strive": [
+   {
+    "form": "strive",
+    "pos": "verb",
+    "note": "verb: to make a great effort towards an aim"
+   },
+   {
+    "form": "strives",
+    "pos": "verb",
+    "note": "verb: makes a great effort towards an aim"
+   },
+   {
+    "form": "striving",
+    "pos": "verb",
+    "note": "verb: making a great effort towards an aim"
+   },
+   {
+    "form": "strove",
+    "pos": "verb",
+    "note": "verb: made a great effort towards an aim"
+   },
+   {
+    "form": "striven",
+    "pos": "verb",
+    "note": "verb: made a great effort towards an aim"
+   }
+  ],
+  "toil": [
+   {
+    "form": "toil",
+    "pos": "verb",
+    "note": "verb: to work very hard for a long time"
+   },
+   {
+    "form": "toiled",
+    "pos": "verb",
+    "note": "verb: worked very hard for a long time"
+   },
+   {
+    "form": "toiling",
+    "pos": "verb",
+    "note": "verb: working very hard for a long time"
+   },
+   {
+    "form": "toils",
+    "pos": "verb",
+    "note": "verb: works very hard for a long time"
+   }
+  ],
+  "tinker": [
+   {
+    "form": "tinker",
+    "pos": "verb",
+    "note": "verb: to make small changes while trying to mend something"
+   },
+   {
+    "form": "tinkered",
+    "pos": "verb",
+    "note": "verb: made small changes while trying to mend something"
+   },
+   {
+    "form": "tinkering",
+    "pos": "verb",
+    "note": "verb: making small changes while trying to mend something"
+   },
+   {
+    "form": "tinkers",
+    "pos": "verb",
+    "note": "verb: makes small changes while trying to mend something"
+   }
+  ],
+  "persevere": [
+   {
+    "form": "persevere",
+    "pos": "verb",
+    "note": "verb: to keep trying despite trouble or delay"
+   },
+   {
+    "form": "persevered",
+    "pos": "verb",
+    "note": "verb: kept trying despite trouble or delay"
+   },
+   {
+    "form": "perseveres",
+    "pos": "verb",
+    "note": "verb: keeps trying despite trouble or delay"
+   },
+   {
+    "form": "persevering",
+    "pos": "verb",
+    "note": "verb: keeping on despite trouble or delay"
+   },
+   {
+    "form": "perseverance",
+    "pos": "noun",
+    "note": "noun: steady effort despite trouble or delay"
+   }
+  ],
+  "improvise": [
+   {
+    "form": "improvise",
+    "pos": "verb",
+    "note": "verb: to manage using what is available without planning"
+   },
+   {
+    "form": "improvised",
+    "pos": "verb",
+    "note": "verb: managed using what was available without planning"
+   },
+   {
+    "form": "improvises",
+    "pos": "verb",
+    "note": "verb: manages using what is available without planning"
+   },
+   {
+    "form": "improvising",
+    "pos": "verb",
+    "note": "verb: managing using what is available without planning"
+   },
+   {
+    "form": "improvisation",
+    "pos": "noun",
+    "note": "noun: an unplanned way of doing or making something"
+   }
+  ]
+ },
+ "A-escape-01": {
+  "evade": [
+   {
+    "form": "evade",
+    "pos": "verb",
+    "note": "verb: to use tricks to escape or avoid someone or something"
+   },
+   {
+    "form": "evaded",
+    "pos": "verb",
+    "note": "verb: used tricks to escape or avoid someone or something"
+   },
+   {
+    "form": "evades",
+    "pos": "verb",
+    "note": "verb: uses tricks to escape or avoid someone or something"
+   },
+   {
+    "form": "evading",
+    "pos": "verb",
+    "note": "verb: using tricks to escape or avoid someone or something"
+   },
+   {
+    "form": "evasion",
+    "pos": "noun",
+    "note": "noun: an act of avoiding someone or something by trickery"
+   },
+   {
+    "form": "evasive",
+    "pos": "adjective",
+    "note": "adjective: avoiding clear answers or direct action"
+   }
+  ],
+  "flee": [
+   {
+    "form": "flee",
+    "pos": "verb",
+    "note": "verb: to run away quickly from danger or trouble"
+   },
+   {
+    "form": "fled",
+    "pos": "verb",
+    "note": "verb: ran away quickly from danger or trouble"
+   },
+   {
+    "form": "fleeing",
+    "pos": "verb",
+    "note": "verb: running away quickly from danger or trouble"
+   },
+   {
+    "form": "flees",
+    "pos": "verb",
+    "note": "verb: runs away quickly from danger or trouble"
+   }
+  ],
+  "retreat": [
+   {
+    "form": "retreat",
+    "pos": "verb",
+    "note": "verb: to pull back from a place in an ordered way"
+   },
+   {
+    "form": "retreated",
+    "pos": "verb",
+    "note": "verb: pulled back from a place in an ordered way"
+   },
+   {
+    "form": "retreating",
+    "pos": "verb",
+    "note": "verb: pulling back from a place in an ordered way"
+   },
+   {
+    "form": "retreats",
+    "pos": "verb",
+    "note": "verb: pulls back from a place in an ordered way"
+   }
+  ],
+  "cower": [
+   {
+    "form": "cower",
+    "pos": "verb",
+    "note": "verb: to crouch low because of fear"
+   },
+   {
+    "form": "cowered",
+    "pos": "verb",
+    "note": "verb: crouched low because of fear"
+   },
+   {
+    "form": "cowering",
+    "pos": "verb",
+    "note": "verb: crouching low because of fear"
+   },
+   {
+    "form": "cowers",
+    "pos": "verb",
+    "note": "verb: crouches low because of fear"
+   }
+  ],
+  "lurk": [
+   {
+    "form": "lurk",
+    "pos": "verb",
+    "note": "verb: to wait hidden and out of sight"
+   },
+   {
+    "form": "lurked",
+    "pos": "verb",
+    "note": "verb: waited hidden and out of sight"
+   },
+   {
+    "form": "lurking",
+    "pos": "verb",
+    "note": "verb: waiting hidden and out of sight"
+   },
+   {
+    "form": "lurks",
+    "pos": "verb",
+    "note": "verb: waits hidden and out of sight"
+   },
+   {
+    "form": "lurker",
+    "pos": "noun",
+    "note": "noun: someone who waits hidden or watches without joining in"
+   }
+  ]
+ },
+ "A-feelings-01": {},
+ "A-fortune-01": {
+  "deteriorate": [
+   {
+    "form": "deteriorate",
+    "pos": "verb",
+    "note": "verb: to become worse in condition or quality"
+   },
+   {
+    "form": "deteriorated",
+    "pos": "verb",
+    "note": "verb: became worse in condition or quality"
+   },
+   {
+    "form": "deteriorates",
+    "pos": "verb",
+    "note": "verb: becomes worse in condition or quality"
+   },
+   {
+    "form": "deteriorating",
+    "pos": "verb",
+    "note": "verb: becoming worse in condition or quality"
+   },
+   {
+    "form": "deterioration",
+    "pos": "noun",
+    "note": "noun: a change to a worse condition or quality"
+   }
+  ],
+  "dwindle": [
+   {
+    "form": "dwindle",
+    "pos": "verb",
+    "note": "verb: to become smaller, weaker, or less in amount"
+   },
+   {
+    "form": "dwindled",
+    "pos": "verb",
+    "note": "verb: became smaller, weaker, or less in amount"
+   },
+   {
+    "form": "dwindles",
+    "pos": "verb",
+    "note": "verb: becomes smaller, weaker, or less in amount"
+   },
+   {
+    "form": "dwindling",
+    "pos": "verb",
+    "note": "verb: becoming smaller, weaker, or less in amount"
+   }
+  ],
+  "prosper": [
+   {
+    "form": "prosper",
+    "pos": "verb",
+    "note": "verb: to do well and be successful"
+   },
+   {
+    "form": "prospered",
+    "pos": "verb",
+    "note": "verb: did well and was successful"
+   },
+   {
+    "form": "prospering",
+    "pos": "verb",
+    "note": "verb: doing well and becoming successful"
+   },
+   {
+    "form": "prospers",
+    "pos": "verb",
+    "note": "verb: does well and becomes successful"
+   },
+   {
+    "form": "prosperity",
+    "pos": "noun",
+    "note": "noun: success, wealth, and good fortune"
+   },
+   {
+    "form": "prosperous",
+    "pos": "adjective",
+    "note": "adjective: successful, wealthy, and doing well"
+   }
+  ],
+  "endure": [
+   {
+    "form": "endure",
+    "pos": "verb",
+    "note": "verb: to keep existing over time"
+   },
+   {
+    "form": "endured",
+    "pos": "verb",
+    "note": "verb: kept existing over time"
+   },
+   {
+    "form": "endures",
+    "pos": "verb",
+    "note": "verb: keeps existing over time"
+   },
+   {
+    "form": "enduring",
+    "pos": "verb",
+    "note": "verb: keeping existing over time"
+   },
+   {
+    "form": "endurance",
+    "pos": "noun",
+    "note": "noun: the ability to last or keep going"
+   }
+  ],
+  "relent": [
+   {
+    "form": "relent",
+    "pos": "verb",
+    "note": "verb: to become less severe and give in"
+   },
+   {
+    "form": "relented",
+    "pos": "verb",
+    "note": "verb: became less severe and gave in"
+   },
+   {
+    "form": "relenting",
+    "pos": "verb",
+    "note": "verb: becoming less severe and giving in"
+   },
+   {
+    "form": "relents",
+    "pos": "verb",
+    "note": "verb: becomes less severe and gives in"
+   }
+  ]
+ },
+ "A-happy-01": {
+  "cheerful": [
+   {
+    "form": "cheer",
+    "pos": "noun",
+    "note": "noun: a happy feeling or mood"
+   },
+   {
+    "form": "cheered",
+    "pos": "verb",
+    "note": "verb: made someone feel happier"
+   },
+   {
+    "form": "cheering",
+    "pos": "adjective",
+    "note": "adjective: giving comfort or happiness"
+   },
+   {
+    "form": "cheerful",
+    "pos": "adjective",
+    "note": "adjective: happy and positive"
+   },
+   {
+    "form": "cheerfully",
+    "pos": "adverb",
+    "note": "adverb: in a happy, positive way"
+   },
+   {
+    "form": "cheerfulness",
+    "pos": "noun",
+    "note": "noun: a happy and positive mood"
+   },
+   {
+    "form": "cheery",
+    "pos": "adjective",
+    "note": "adjective: bright and happy"
+   }
+  ],
+  "delighted": [
+   {
+    "form": "delight",
+    "pos": "noun",
+    "note": "noun: great pleasure"
+   },
+   {
+    "form": "delights",
+    "pos": "verb",
+    "note": "verb: gives great pleasure to"
+   },
+   {
+    "form": "delighted",
+    "pos": "adjective",
+    "note": "adjective: very pleased"
+   },
+   {
+    "form": "delighting",
+    "pos": "verb",
+    "note": "verb: giving great pleasure to"
+   },
+   {
+    "form": "delightful",
+    "pos": "adjective",
+    "note": "adjective: giving great pleasure"
+   },
+   {
+    "form": "delightfully",
+    "pos": "adverb",
+    "note": "adverb: in a very pleasing way"
+   }
+  ],
+  "proud": [
+   {
+    "form": "proud",
+    "pos": "adjective",
+    "note": "adjective: pleased about success or good qualities"
+   },
+   {
+    "form": "prouder",
+    "pos": "adjective",
+    "note": "adjective: more pleased about success or good qualities"
+   },
+   {
+    "form": "proudest",
+    "pos": "adjective",
+    "note": "adjective: most pleased about success or good qualities"
+   },
+   {
+    "form": "proudly",
+    "pos": "adverb",
+    "note": "adverb: with satisfaction about success"
+   }
+  ],
+  "relieved": [
+   {
+    "form": "relieve",
+    "pos": "verb",
+    "note": "verb: to ease worry, pain, or difficulty"
+   },
+   {
+    "form": "relieves",
+    "pos": "verb",
+    "note": "verb: eases worry, pain, or difficulty"
+   },
+   {
+    "form": "relieved",
+    "pos": "adjective",
+    "note": "adjective: glad because worry has eased"
+   },
+   {
+    "form": "relieving",
+    "pos": "verb",
+    "note": "verb: easing worry, pain, or difficulty"
+   },
+   {
+    "form": "relief",
+    "pos": "noun",
+    "note": "noun: the easing of worry, pain, or difficulty"
+   }
+  ],
+  "grateful": [
+   {
+    "form": "grateful",
+    "pos": "adjective",
+    "note": "adjective: feeling or showing thanks"
+   },
+   {
+    "form": "gratefully",
+    "pos": "adverb",
+    "note": "adverb: in a thankful way"
+   },
+   {
+    "form": "gratefulness",
+    "pos": "noun",
+    "note": "noun: a feeling of thanks"
+   },
+   {
+    "form": "gratitude",
+    "pos": "noun",
+    "note": "noun: a thankful feeling"
+   }
+  ]
+ },
+ "A-hold-01": {
+  "snatch": [
+   {
+    "form": "snatch",
+    "pos": "verb",
+    "note": "verb: to grab quickly or eagerly"
+   },
+   {
+    "form": "snatched",
+    "pos": "verb",
+    "note": "verb: grabbed quickly or eagerly"
+   },
+   {
+    "form": "snatches",
+    "pos": "verb",
+    "note": "verb: grabs quickly or eagerly"
+   },
+   {
+    "form": "snatching",
+    "pos": "verb",
+    "note": "verb: grabbing quickly or eagerly"
+   },
+   {
+    "form": "snatcher",
+    "pos": "noun",
+    "note": "noun: a person who grabs something quickly"
+   }
+  ],
+  "clutch": [
+   {
+    "form": "clutch",
+    "pos": "verb",
+    "note": "verb: to hold tightly, usually in the hands"
+   },
+   {
+    "form": "clutched",
+    "pos": "verb",
+    "note": "verb: held tightly, usually in the hands"
+   },
+   {
+    "form": "clutches",
+    "pos": "verb",
+    "note": "verb: holds tightly, usually in the hands"
+   },
+   {
+    "form": "clutching",
+    "pos": "verb",
+    "note": "verb: holding tightly, usually in the hands"
+   }
+  ],
+  "cradle": [
+   {
+    "form": "cradle",
+    "pos": "verb",
+    "note": "verb: to hold gently and carefully"
+   },
+   {
+    "form": "cradled",
+    "pos": "verb",
+    "note": "verb: held gently and carefully"
+   },
+   {
+    "form": "cradles",
+    "pos": "verb",
+    "note": "verb: holds gently and carefully"
+   },
+   {
+    "form": "cradling",
+    "pos": "verb",
+    "note": "verb: holding gently and carefully"
+   }
+  ],
+  "pinch": [
+   {
+    "form": "pinch",
+    "pos": "verb",
+    "note": "verb: to squeeze tightly between the fingers"
+   },
+   {
+    "form": "pinched",
+    "pos": "verb",
+    "note": "verb: squeezed tightly between the fingers"
+   },
+   {
+    "form": "pinches",
+    "pos": "verb",
+    "note": "verb: squeezes tightly between the fingers"
+   },
+   {
+    "form": "pinching",
+    "pos": "verb",
+    "note": "verb: squeezing tightly between the fingers"
+   }
+  ],
+  "dangle": [
+   {
+    "form": "dangle",
+    "pos": "verb",
+    "note": "verb: to hold so it hangs and swings loosely"
+   },
+   {
+    "form": "dangled",
+    "pos": "verb",
+    "note": "verb: held so it hung and swung loosely"
+   },
+   {
+    "form": "dangles",
+    "pos": "verb",
+    "note": "verb: holds so it hangs and swings loosely"
+   },
+   {
+    "form": "dangling",
+    "pos": "verb",
+    "note": "verb: holding so it hangs and swings loosely"
+   },
+   {
+    "form": "dangly",
+    "pos": "adjective",
+    "note": "adjective: hanging and swinging loosely"
+   }
+  ]
+ },
+ "A-kitchen-01": {
+  "cut": [
+   {
+    "form": "cut",
+    "pos": "verb",
+    "note": "verb: to separate with a sharp tool"
+   },
+   {
+    "form": "cuts",
+    "pos": "verb",
+    "note": "verb: separates with a sharp tool"
+   },
+   {
+    "form": "cutting",
+    "pos": "verb",
+    "note": "verb: separating with a sharp tool"
+   },
+   {
+    "form": "cutter",
+    "pos": "noun",
+    "note": "noun: a person or tool that separates with a sharp edge"
+   }
+  ],
+  "peel": [
+   {
+    "form": "peel",
+    "pos": "verb",
+    "note": "verb: to strip the skin from fruit or vegetables"
+   },
+   {
+    "form": "peeled",
+    "pos": "verb",
+    "note": "verb: stripped the skin from fruit or vegetables"
+   },
+   {
+    "form": "peeling",
+    "pos": "verb",
+    "note": "verb: stripping the skin from fruit or vegetables"
+   },
+   {
+    "form": "peels",
+    "pos": "verb",
+    "note": "verb: strips the skin from fruit or vegetables"
+   },
+   {
+    "form": "peeler",
+    "pos": "noun",
+    "note": "noun: a tool for stripping skin from food"
+   }
+  ],
+  "wash": [
+   {
+    "form": "wash",
+    "pos": "verb",
+    "note": "verb: to clean with soap and water"
+   },
+   {
+    "form": "washed",
+    "pos": "verb",
+    "note": "verb: cleaned with soap and water"
+   },
+   {
+    "form": "washes",
+    "pos": "verb",
+    "note": "verb: cleans with soap and water"
+   },
+   {
+    "form": "washing",
+    "pos": "verb",
+    "note": "verb: cleaning with soap and water"
+   },
+   {
+    "form": "washable",
+    "pos": "adjective",
+    "note": "adjective: able to be cleaned with soap and water"
+   },
+   {
+    "form": "washer",
+    "pos": "noun",
+    "note": "noun: a machine or person that cleans with water"
+   }
+  ],
+  "stir": [
+   {
+    "form": "stir",
+    "pos": "verb",
+    "note": "verb: to move a spoon through a liquid or mixture"
+   },
+   {
+    "form": "stirred",
+    "pos": "verb",
+    "note": "verb: moved a spoon through a liquid or mixture"
+   },
+   {
+    "form": "stirring",
+    "pos": "verb",
+    "note": "verb: moving a spoon through a liquid or mixture"
+   },
+   {
+    "form": "stirs",
+    "pos": "verb",
+    "note": "verb: moves a spoon through a liquid or mixture"
+   },
+   {
+    "form": "stirrer",
+    "pos": "noun",
+    "note": "noun: a tool or person that mixes liquid or food"
+   }
+  ],
+  "pour": [
+   {
+    "form": "pour",
+    "pos": "verb",
+    "note": "verb: to make liquid flow from a container"
+   },
+   {
+    "form": "poured",
+    "pos": "verb",
+    "note": "verb: made liquid flow from a container"
+   },
+   {
+    "form": "pouring",
+    "pos": "verb",
+    "note": "verb: making liquid flow from a container"
+   },
+   {
+    "form": "pours",
+    "pos": "verb",
+    "note": "verb: makes liquid flow from a container"
+   }
+  ]
+ },
+ "A-like-01": {
+  "enjoy": [
+   {
+    "form": "enjoy",
+    "pos": "verb",
+    "note": "verb: to get pleasure or fun from something"
+   },
+   {
+    "form": "enjoyed",
+    "pos": "verb",
+    "note": "verb: got pleasure or fun from something"
+   },
+   {
+    "form": "enjoying",
+    "pos": "verb",
+    "note": "verb: getting pleasure or fun from something"
+   },
+   {
+    "form": "enjoys",
+    "pos": "verb",
+    "note": "verb: gets pleasure or fun from something"
+   },
+   {
+    "form": "enjoyment",
+    "pos": "noun",
+    "note": "noun: pleasure or fun gained from something"
+   },
+   {
+    "form": "enjoyable",
+    "pos": "adjective",
+    "note": "adjective: giving pleasure or fun"
+   }
+  ],
+  "admire": [
+   {
+    "form": "admire",
+    "pos": "verb",
+    "note": "verb: to feel great respect or warm approval"
+   },
+   {
+    "form": "admired",
+    "pos": "verb",
+    "note": "verb: felt great respect or warm approval"
+   },
+   {
+    "form": "admires",
+    "pos": "verb",
+    "note": "verb: feels great respect or warm approval"
+   },
+   {
+    "form": "admiring",
+    "pos": "verb",
+    "note": "verb: feeling great respect or warm approval"
+   },
+   {
+    "form": "admiration",
+    "pos": "noun",
+    "note": "noun: great respect or warm approval"
+   },
+   {
+    "form": "admirer",
+    "pos": "noun",
+    "note": "noun: a person who feels great respect or warm approval"
+   },
+   {
+    "form": "admiringly",
+    "pos": "adverb",
+    "note": "adverb: with great respect or warm approval"
+   }
+  ],
+  "adore": [
+   {
+    "form": "adore",
+    "pos": "verb",
+    "note": "verb: to love very much"
+   },
+   {
+    "form": "adored",
+    "pos": "verb",
+    "note": "verb: loved very much"
+   },
+   {
+    "form": "adores",
+    "pos": "verb",
+    "note": "verb: loves very much"
+   },
+   {
+    "form": "adoring",
+    "pos": "verb",
+    "note": "verb: loving very much"
+   },
+   {
+    "form": "adoration",
+    "pos": "noun",
+    "note": "noun: very deep love"
+   },
+   {
+    "form": "adorable",
+    "pos": "adjective",
+    "note": "adjective: very cute and easy to love"
+   }
+  ],
+  "cherish": [
+   {
+    "form": "cherish",
+    "pos": "verb",
+    "note": "verb: to love and care for deeply"
+   },
+   {
+    "form": "cherished",
+    "pos": "verb",
+    "note": "verb: loved and cared for deeply"
+   },
+   {
+    "form": "cherishes",
+    "pos": "verb",
+    "note": "verb: loves and cares for deeply"
+   },
+   {
+    "form": "cherishing",
+    "pos": "verb",
+    "note": "verb: loving and caring for deeply"
+   }
+  ],
+  "miss": [
+   {
+    "form": "miss",
+    "pos": "verb",
+    "note": "verb: to feel sad because someone or something is away"
+   },
+   {
+    "form": "missed",
+    "pos": "verb",
+    "note": "verb: felt sad because someone or something was away"
+   },
+   {
+    "form": "misses",
+    "pos": "verb",
+    "note": "verb: feels sad because someone or something is away"
+   },
+   {
+    "form": "missing",
+    "pos": "verb",
+    "note": "verb: feeling sad because someone or something is away"
+   }
+  ]
+ },
+ "A-look-01": {
+  "glance": [
+   {
+    "form": "glance",
+    "pos": "verb",
+    "note": "verb: to take a quick look lasting only a moment"
+   },
+   {
+    "form": "glanced",
+    "pos": "verb",
+    "note": "verb: took a quick look lasting only a moment"
+   },
+   {
+    "form": "glances",
+    "pos": "verb",
+    "note": "verb: takes a quick look lasting only a moment"
+   },
+   {
+    "form": "glancing",
+    "pos": "verb",
+    "note": "verb: taking a quick look lasting only a moment"
+   }
+  ],
+  "peer": [
+   {
+    "form": "peer",
+    "pos": "verb",
+    "note": "verb: to look hard at something difficult to see"
+   },
+   {
+    "form": "peered",
+    "pos": "verb",
+    "note": "verb: looked hard at something difficult to see"
+   },
+   {
+    "form": "peering",
+    "pos": "verb",
+    "note": "verb: looking hard at something difficult to see"
+   },
+   {
+    "form": "peers",
+    "pos": "verb",
+    "note": "verb: looks hard at something difficult to see"
+   }
+  ],
+  "gaze": [
+   {
+    "form": "gaze",
+    "pos": "verb",
+    "note": "verb: to look steadily at someone or something"
+   },
+   {
+    "form": "gazed",
+    "pos": "verb",
+    "note": "verb: looked steadily at someone or something"
+   },
+   {
+    "form": "gazes",
+    "pos": "verb",
+    "note": "verb: looks steadily at someone or something"
+   },
+   {
+    "form": "gazing",
+    "pos": "verb",
+    "note": "verb: looking steadily at someone or something"
+   }
+  ],
+  "glare": [
+   {
+    "form": "glare",
+    "pos": "verb",
+    "note": "verb: to look at someone in a hard, angry way"
+   },
+   {
+    "form": "glared",
+    "pos": "verb",
+    "note": "verb: looked at someone in a hard, angry way"
+   },
+   {
+    "form": "glares",
+    "pos": "verb",
+    "note": "verb: looks at someone in a hard, angry way"
+   },
+   {
+    "form": "glaring",
+    "pos": "verb",
+    "note": "verb: looking at someone in a hard, angry way"
+   },
+   {
+    "form": "glaringly",
+    "pos": "adverb",
+    "note": "adverb: in a very obvious or unpleasantly bright way"
+   }
+  ],
+  "squint": [
+   {
+    "form": "squint",
+    "pos": "verb",
+    "note": "verb: to partly close the eyes against bright light"
+   },
+   {
+    "form": "squinted",
+    "pos": "verb",
+    "note": "verb: partly closed the eyes against bright light"
+   },
+   {
+    "form": "squinting",
+    "pos": "verb",
+    "note": "verb: partly closing the eyes against bright light"
+   },
+   {
+    "form": "squints",
+    "pos": "verb",
+    "note": "verb: partly closes the eyes against bright light"
+   },
+   {
+    "form": "squinty",
+    "pos": "adjective",
+    "note": "adjective: having eyes partly closed or not looking straight"
+   }
+  ]
+ },
+ "A-manner-01": {
+  "sceptical": [
+   {
+    "form": "sceptical",
+    "pos": "adjective",
+    "note": "adjective: tending to doubt or question things"
+   },
+   {
+    "form": "sceptic",
+    "pos": "noun",
+    "note": "noun: a person who doubts or questions things"
+   },
+   {
+    "form": "sceptics",
+    "pos": "noun",
+    "note": "noun: people who doubt or question things"
+   },
+   {
+    "form": "scepticism",
+    "pos": "noun",
+    "note": "noun: doubt or a questioning attitude"
+   }
+  ]
+ },
+ "A-materials-01": {
+  "flammable": [
+   {
+    "form": "flammable",
+    "pos": "adjective",
+    "note": "adjective: catching fire very easily"
+   },
+   {
+    "form": "flammability",
+    "pos": "noun",
+    "note": "noun: how easily something catches fire"
+   },
+   {
+    "form": "flame",
+    "pos": "noun",
+    "note": "noun: the hot, bright part of a fire"
+   },
+   {
+    "form": "flames",
+    "pos": "noun",
+    "note": "noun: hot, bright parts of a fire"
+   },
+   {
+    "form": "flamed",
+    "pos": "verb",
+    "note": "verb: burned with a hot, bright fire"
+   },
+   {
+    "form": "flaming",
+    "pos": "adjective",
+    "note": "adjective: burning with a hot, bright fire"
+   }
+  ],
+  "buoyant": [
+   {
+    "form": "buoyant",
+    "pos": "adjective",
+    "note": "adjective: tending to float or rise"
+   },
+   {
+    "form": "buoyancy",
+    "pos": "noun",
+    "note": "noun: the ability to float or rise"
+   },
+   {
+    "form": "buoy",
+    "pos": "verb",
+    "note": "verb: to keep afloat or lift up"
+   },
+   {
+    "form": "buoys",
+    "pos": "verb",
+    "note": "verb: keeps afloat or lifts up"
+   },
+   {
+    "form": "buoyed",
+    "pos": "verb",
+    "note": "verb: kept afloat or lifted up"
+   }
+  ],
+  "porous": [
+   {
+    "form": "porous",
+    "pos": "adjective",
+    "note": "adjective: full of tiny openings that let liquid through"
+   },
+   {
+    "form": "porosity",
+    "pos": "noun",
+    "note": "noun: the amount of tiny openings in a material"
+   },
+   {
+    "form": "pore",
+    "pos": "noun",
+    "note": "noun: a tiny opening in skin, rock, or another surface"
+   },
+   {
+    "form": "pores",
+    "pos": "noun",
+    "note": "noun: tiny openings in skin, rock, or other surfaces"
+   }
+  ]
+ },
+ "A-old-01": {
+  "elderly": [
+   {
+    "form": "elderly",
+    "pos": "adjective",
+    "note": "adjective: advanced in age, said respectfully of people"
+   },
+   {
+    "form": "elder",
+    "pos": "noun",
+    "note": "noun: a person of greater age or rank"
+   },
+   {
+    "form": "elders",
+    "pos": "noun",
+    "note": "noun: people of greater age or rank"
+   },
+   {
+    "form": "eldest",
+    "pos": "adjective",
+    "note": "adjective: greatest in age among a group"
+   }
+  ],
+  "antique": [
+   {
+    "form": "antique",
+    "pos": "adjective",
+    "note": "adjective: from earlier times and valued for age"
+   },
+   {
+    "form": "antiques",
+    "pos": "noun",
+    "note": "noun: objects from earlier times valued for age"
+   },
+   {
+    "form": "antiquity",
+    "pos": "noun",
+    "note": "noun: the very distant past"
+   },
+   {
+    "form": "antiquities",
+    "pos": "noun",
+    "note": "noun: objects surviving from the very distant past"
+   },
+   {
+    "form": "antiquarian",
+    "pos": "adjective",
+    "note": "adjective: concerned with items from earlier times"
+   }
+  ]
+ },
+ "A-oops-01": {
+  "trip": [
+   {
+    "form": "trip",
+    "pos": "verb",
+    "note": "verb: catch a foot and almost fall"
+   },
+   {
+    "form": "tripped",
+    "pos": "verb",
+    "note": "verb: caught a foot and almost fell"
+   },
+   {
+    "form": "tripping",
+    "pos": "verb",
+    "note": "verb: catching a foot and almost falling"
+   },
+   {
+    "form": "trips",
+    "pos": "verb",
+    "note": "verb: catches a foot and almost falls"
+   }
+  ],
+  "slip": [
+   {
+    "form": "slip",
+    "pos": "verb",
+    "note": "verb: lose footing by sliding"
+   },
+   {
+    "form": "slipped",
+    "pos": "verb",
+    "note": "verb: lost footing by sliding"
+   },
+   {
+    "form": "slipping",
+    "pos": "verb",
+    "note": "verb: losing footing by sliding"
+   },
+   {
+    "form": "slips",
+    "pos": "verb",
+    "note": "verb: loses footing by sliding"
+   },
+   {
+    "form": "slippery",
+    "pos": "adjective",
+    "note": "adjective: smooth or wet enough to make feet slide"
+   }
+  ],
+  "tumble": [
+   {
+    "form": "tumble",
+    "pos": "verb",
+    "note": "verb: fall and roll helplessly"
+   },
+   {
+    "form": "tumbled",
+    "pos": "verb",
+    "note": "verb: fell and rolled helplessly"
+   },
+   {
+    "form": "tumbles",
+    "pos": "verb",
+    "note": "verb: falls and rolls helplessly"
+   },
+   {
+    "form": "tumbling",
+    "pos": "verb",
+    "note": "verb: falling and rolling helplessly"
+   }
+  ],
+  "bump": [
+   {
+    "form": "bump",
+    "pos": "verb",
+    "note": "verb: knock against something with force"
+   },
+   {
+    "form": "bumped",
+    "pos": "verb",
+    "note": "verb: knocked against something with force"
+   },
+   {
+    "form": "bumping",
+    "pos": "verb",
+    "note": "verb: knocking against something with force"
+   },
+   {
+    "form": "bumps",
+    "pos": "verb",
+    "note": "verb: knocks against something with force"
+   }
+  ],
+  "spill": [
+   {
+    "form": "spill",
+    "pos": "verb",
+    "note": "verb: let liquid run out of a container"
+   },
+   {
+    "form": "spilled",
+    "pos": "verb",
+    "note": "verb: let liquid run out of a container in the past"
+   },
+   {
+    "form": "spilt",
+    "pos": "verb",
+    "note": "verb: let liquid run out of a container in the past"
+   },
+   {
+    "form": "spilling",
+    "pos": "verb",
+    "note": "verb: letting liquid run out of a container"
+   },
+   {
+    "form": "spills",
+    "pos": "verb",
+    "note": "verb: lets liquid run out of a container"
+   },
+   {
+    "form": "spillage",
+    "pos": "noun",
+    "note": "noun: liquid that has run out of its container"
+   }
+  ]
+ },
+ "A-ponder-01": {
+  "scrutinise": [
+   {
+    "form": "scrutinise",
+    "pos": "verb",
+    "note": "verb: to examine very closely and critically"
+   },
+   {
+    "form": "scrutinised",
+    "pos": "verb",
+    "note": "verb: examined very closely and critically"
+   },
+   {
+    "form": "scrutinises",
+    "pos": "verb",
+    "note": "verb: examines very closely and critically"
+   },
+   {
+    "form": "scrutinising",
+    "pos": "verb",
+    "note": "verb: examining very closely and critically"
+   },
+   {
+    "form": "scrutiny",
+    "pos": "noun",
+    "note": "noun: close and critical examination"
+   }
+  ],
+  "speculate": [
+   {
+    "form": "speculate",
+    "pos": "verb",
+    "note": "verb: to guess about what is not yet known"
+   },
+   {
+    "form": "speculated",
+    "pos": "verb",
+    "note": "verb: guessed about what was not yet known"
+   },
+   {
+    "form": "speculates",
+    "pos": "verb",
+    "note": "verb: guesses about what is not yet known"
+   },
+   {
+    "form": "speculating",
+    "pos": "verb",
+    "note": "verb: guessing about what is not yet known"
+   },
+   {
+    "form": "speculation",
+    "pos": "noun",
+    "note": "noun: a guess based on incomplete facts"
+   },
+   {
+    "form": "speculative",
+    "pos": "adjective",
+    "note": "adjective: based on guessing, not proof"
+   },
+   {
+    "form": "speculatively",
+    "pos": "adverb",
+    "note": "adverb: in a way based on guessing, not proof"
+   }
+  ],
+  "deliberate": [
+   {
+    "form": "deliberate",
+    "pos": "verb",
+    "note": "verb: to think about carefully before deciding"
+   },
+   {
+    "form": "deliberated",
+    "pos": "verb",
+    "note": "verb: thought about carefully before deciding"
+   },
+   {
+    "form": "deliberates",
+    "pos": "verb",
+    "note": "verb: thinks about carefully before deciding"
+   },
+   {
+    "form": "deliberating",
+    "pos": "verb",
+    "note": "verb: thinking about carefully before deciding"
+   },
+   {
+    "form": "deliberation",
+    "pos": "noun",
+    "note": "noun: careful thought or discussion before a decision"
+   },
+   {
+    "form": "deliberative",
+    "pos": "adjective",
+    "note": "adjective: involving careful thought before a decision"
+   }
+  ],
+  "evaluate": [
+   {
+    "form": "evaluate",
+    "pos": "verb",
+    "note": "verb: to judge the value or quality of"
+   },
+   {
+    "form": "evaluated",
+    "pos": "verb",
+    "note": "verb: judged the value or quality of"
+   },
+   {
+    "form": "evaluates",
+    "pos": "verb",
+    "note": "verb: judges the value or quality of"
+   },
+   {
+    "form": "evaluating",
+    "pos": "verb",
+    "note": "verb: judging the value or quality of"
+   },
+   {
+    "form": "evaluation",
+    "pos": "noun",
+    "note": "noun: a judgement of value or quality"
+   },
+   {
+    "form": "evaluative",
+    "pos": "adjective",
+    "note": "adjective: judging value or quality"
+   },
+   {
+    "form": "evaluator",
+    "pos": "noun",
+    "note": "noun: a person who judges value or quality"
+   }
+  ],
+  "envisage": [
+   {
+    "form": "envisage",
+    "pos": "verb",
+    "note": "verb: to imagine a possible future thing or event"
+   },
+   {
+    "form": "envisaged",
+    "pos": "verb",
+    "note": "verb: imagined a possible future thing or event"
+   },
+   {
+    "form": "envisages",
+    "pos": "verb",
+    "note": "verb: imagines a possible future thing or event"
+   },
+   {
+    "form": "envisaging",
+    "pos": "verb",
+    "note": "verb: imagining a possible future thing or event"
+   }
+  ]
+ },
+ "A-qualities-01": {
+  "resolute": [
+   {
+    "form": "resolute",
+    "pos": "adjective",
+    "note": "adjective: firm in purpose or belief"
+   },
+   {
+    "form": "resolutely",
+    "pos": "adverb",
+    "note": "adverb: with firm purpose or belief"
+   },
+   {
+    "form": "resolve",
+    "pos": "verb",
+    "note": "verb: to make a firm decision"
+   },
+   {
+    "form": "resolves",
+    "pos": "verb",
+    "note": "verb: makes a firm decision"
+   },
+   {
+    "form": "resolved",
+    "pos": "verb",
+    "note": "verb: made a firm decision"
+   },
+   {
+    "form": "resolving",
+    "pos": "verb",
+    "note": "verb: making a firm decision"
+   },
+   {
+    "form": "resolution",
+    "pos": "noun",
+    "note": "noun: firm determination to do something"
+   }
+  ]
+ },
+ "A-reply-01": {
+  "retort": [
+   {
+    "form": "retort",
+    "pos": "verb",
+    "note": "verb: to answer back quickly and sharply"
+   },
+   {
+    "form": "retorted",
+    "pos": "verb",
+    "note": "verb: answered back quickly and sharply"
+   },
+   {
+    "form": "retorting",
+    "pos": "verb",
+    "note": "verb: answering back quickly and sharply"
+   },
+   {
+    "form": "retorts",
+    "pos": "verb",
+    "note": "verb: answers back quickly and sharply"
+   }
+  ],
+  "exclaim": [
+   {
+    "form": "exclaim",
+    "pos": "verb",
+    "note": "verb: to call out suddenly with strong feeling"
+   },
+   {
+    "form": "exclaimed",
+    "pos": "verb",
+    "note": "verb: called out suddenly with strong feeling"
+   },
+   {
+    "form": "exclaiming",
+    "pos": "verb",
+    "note": "verb: calling out suddenly with strong feeling"
+   },
+   {
+    "form": "exclaims",
+    "pos": "verb",
+    "note": "verb: calls out suddenly with strong feeling"
+   },
+   {
+    "form": "exclamation",
+    "pos": "noun",
+    "note": "noun: a sudden cry showing strong feeling"
+   }
+  ],
+  "declare": [
+   {
+    "form": "declare",
+    "pos": "verb",
+    "note": "verb: to state something firmly and openly"
+   },
+   {
+    "form": "declared",
+    "pos": "verb",
+    "note": "verb: stated something firmly and openly"
+   },
+   {
+    "form": "declares",
+    "pos": "verb",
+    "note": "verb: states something firmly and openly"
+   },
+   {
+    "form": "declaring",
+    "pos": "verb",
+    "note": "verb: stating something firmly and openly"
+   },
+   {
+    "form": "declaration",
+    "pos": "noun",
+    "note": "noun: a firm public statement"
+   }
+  ],
+  "murmur": [
+   {
+    "form": "murmur",
+    "pos": "verb",
+    "note": "verb: to speak in a low, unclear voice"
+   },
+   {
+    "form": "murmured",
+    "pos": "verb",
+    "note": "verb: spoke in a low, unclear voice"
+   },
+   {
+    "form": "murmuring",
+    "pos": "verb",
+    "note": "verb: speaking in a low, unclear voice"
+   },
+   {
+    "form": "murmurs",
+    "pos": "verb",
+    "note": "verb: speaks in a low, unclear voice"
+   }
+  ],
+  "recite": [
+   {
+    "form": "recite",
+    "pos": "verb",
+    "note": "verb: to say aloud from memory"
+   },
+   {
+    "form": "recited",
+    "pos": "verb",
+    "note": "verb: said aloud from memory"
+   },
+   {
+    "form": "recites",
+    "pos": "verb",
+    "note": "verb: says aloud from memory"
+   },
+   {
+    "form": "reciting",
+    "pos": "verb",
+    "note": "verb: saying aloud from memory"
+   },
+   {
+    "form": "recitation",
+    "pos": "noun",
+    "note": "noun: the act of saying words aloud from memory"
+   }
+  ]
+ },
+ "A-rough-01": {
+  "scratchy": [
+   {
+    "form": "scratch",
+    "pos": "verb",
+    "note": "verb: to rub skin with nails or something sharp"
+   },
+   {
+    "form": "scratches",
+    "pos": "verb",
+    "note": "verb: rubs skin with nails or something sharp"
+   },
+   {
+    "form": "scratching",
+    "pos": "verb",
+    "note": "verb: rubbing skin with nails or something sharp"
+   },
+   {
+    "form": "scratchy",
+    "pos": "adjective",
+    "note": "adjective: rough and irritating to the skin"
+   }
+  ]
+ },
+ "A-sad-01": {
+  "disappointed": [
+   {
+    "form": "disappoint",
+    "pos": "verb",
+    "note": "verb: to let someone down by not meeting hopes"
+   },
+   {
+    "form": "disappoints",
+    "pos": "verb",
+    "note": "verb: lets someone down by not meeting hopes"
+   },
+   {
+    "form": "disappointed",
+    "pos": "adjective",
+    "note": "adjective: let down because hopes did not come true"
+   },
+   {
+    "form": "disappointing",
+    "pos": "adjective",
+    "note": "adjective: not as good as expected or hoped"
+   },
+   {
+    "form": "disappointment",
+    "pos": "noun",
+    "note": "noun: sadness when hopes do not come true"
+   },
+   {
+    "form": "disappointments",
+    "pos": "noun",
+    "note": "noun: things or times that fail to meet hopes"
+   }
+  ],
+  "lonely": [
+   {
+    "form": "lone",
+    "pos": "adjective",
+    "note": "adjective: without other people nearby"
+   },
+   {
+    "form": "lonely",
+    "pos": "adjective",
+    "note": "adjective: sad from having no one with you"
+   },
+   {
+    "form": "lonelier",
+    "pos": "adjective",
+    "note": "adjective: sadder from having no one with you"
+   },
+   {
+    "form": "loneliest",
+    "pos": "adjective",
+    "note": "adjective: saddest from having no one with you"
+   },
+   {
+    "form": "loneliness",
+    "pos": "noun",
+    "note": "noun: sadness from having no one with you"
+   }
+  ],
+  "heartbroken": [
+   {
+    "form": "heartbreak",
+    "pos": "noun",
+    "note": "noun: deep sadness after loss or hurt"
+   },
+   {
+    "form": "heartbreaks",
+    "pos": "noun",
+    "note": "noun: times of deep sadness after loss or hurt"
+   },
+   {
+    "form": "heartbroken",
+    "pos": "adjective",
+    "note": "adjective: very sad after loss or hurt"
+   },
+   {
+    "form": "heartbreaking",
+    "pos": "adjective",
+    "note": "adjective: causing very deep sadness"
+   },
+   {
+    "form": "heartbreakingly",
+    "pos": "adverb",
+    "note": "adverb: in a way that causes very deep sadness"
+   }
+  ]
+ },
+ "A-say-01": {
+  "boast": [
+   {
+    "form": "boast",
+    "pos": "verb",
+    "note": "verb: to talk with too much pride to impress others"
+   },
+   {
+    "form": "boasted",
+    "pos": "verb",
+    "note": "verb: talked with too much pride to impress others"
+   },
+   {
+    "form": "boasting",
+    "pos": "verb",
+    "note": "verb: talking with too much pride to impress others"
+   },
+   {
+    "form": "boasts",
+    "pos": "verb",
+    "note": "verb: talks with too much pride to impress others"
+   },
+   {
+    "form": "boastful",
+    "pos": "adjective",
+    "note": "adjective: too proud when talking about yourself"
+   }
+  ],
+  "plead": [
+   {
+    "form": "plead",
+    "pos": "verb",
+    "note": "verb: to ask urgently for help or mercy"
+   },
+   {
+    "form": "pleaded",
+    "pos": "verb",
+    "note": "verb: asked urgently for help or mercy"
+   },
+   {
+    "form": "pleading",
+    "pos": "verb",
+    "note": "verb: asking urgently for help or mercy"
+   },
+   {
+    "form": "pleads",
+    "pos": "verb",
+    "note": "verb: asks urgently for help or mercy"
+   },
+   {
+    "form": "plea",
+    "pos": "noun",
+    "note": "noun: an urgent request for help or mercy"
+   }
+  ],
+  "insist": [
+   {
+    "form": "insist",
+    "pos": "verb",
+    "note": "verb: to say or demand something firmly and not give up"
+   },
+   {
+    "form": "insisted",
+    "pos": "verb",
+    "note": "verb: said or demanded something firmly and did not give up"
+   },
+   {
+    "form": "insisting",
+    "pos": "verb",
+    "note": "verb: saying or demanding something firmly and not giving up"
+   },
+   {
+    "form": "insists",
+    "pos": "verb",
+    "note": "verb: says or demands something firmly and does not give up"
+   },
+   {
+    "form": "insistence",
+    "pos": "noun",
+    "note": "noun: a firm demand or statement that will not change"
+   },
+   {
+    "form": "insistent",
+    "pos": "adjective",
+    "note": "adjective: firm and refusing to give up"
+   },
+   {
+    "form": "insistently",
+    "pos": "adverb",
+    "note": "adverb: in a firm way that will not give up"
+   }
+  ],
+  "confess": [
+   {
+    "form": "confess",
+    "pos": "verb",
+    "note": "verb: to admit a wrong action or secret"
+   },
+   {
+    "form": "confessed",
+    "pos": "verb",
+    "note": "verb: admitted a wrong action or secret"
+   },
+   {
+    "form": "confesses",
+    "pos": "verb",
+    "note": "verb: admits a wrong action or secret"
+   },
+   {
+    "form": "confessing",
+    "pos": "verb",
+    "note": "verb: admitting a wrong action or secret"
+   },
+   {
+    "form": "confession",
+    "pos": "noun",
+    "note": "noun: a statement admitting a wrong action or secret"
+   },
+   {
+    "form": "confessions",
+    "pos": "noun",
+    "note": "noun: statements admitting wrong actions or secrets"
+   }
+  ],
+  "tease": [
+   {
+    "form": "tease",
+    "pos": "verb",
+    "note": "verb: to mock or make fun of someone playfully"
+   },
+   {
+    "form": "teased",
+    "pos": "verb",
+    "note": "verb: mocked or made fun of someone playfully"
+   },
+   {
+    "form": "teases",
+    "pos": "verb",
+    "note": "verb: mocks or makes fun of someone playfully"
+   },
+   {
+    "form": "teasing",
+    "pos": "verb",
+    "note": "verb: mocking or making fun of someone playfully"
+   },
+   {
+    "form": "teaser",
+    "pos": "noun",
+    "note": "noun: a person who mocks others playfully"
+   },
+   {
+    "form": "teasingly",
+    "pos": "adverb",
+    "note": "adverb: in a playful, mocking way"
+   }
+  ]
+ },
+ "A-scared-01": {
+  "alarmed": [
+   {
+    "form": "alarm",
+    "pos": "verb",
+    "note": "verb: to make someone feel sudden fear of danger"
+   },
+   {
+    "form": "alarms",
+    "pos": "verb",
+    "note": "verb: makes someone feel sudden fear of danger"
+   },
+   {
+    "form": "alarmed",
+    "pos": "adjective",
+    "note": "adjective: feeling sudden fear of danger"
+   },
+   {
+    "form": "alarming",
+    "pos": "adjective",
+    "note": "adjective: causing sudden fear or worry"
+   },
+   {
+    "form": "alarmingly",
+    "pos": "adverb",
+    "note": "adverb: in a way that causes sudden fear or worry"
+   }
+  ],
+  "startled": [
+   {
+    "form": "startle",
+    "pos": "verb",
+    "note": "verb: to make someone jump with a sudden fright"
+   },
+   {
+    "form": "startles",
+    "pos": "verb",
+    "note": "verb: makes someone jump with a sudden fright"
+   },
+   {
+    "form": "startled",
+    "pos": "adjective",
+    "note": "adjective: jumping or shocked by a sudden fright"
+   },
+   {
+    "form": "startling",
+    "pos": "adjective",
+    "note": "adjective: causing sudden surprise or fright"
+   },
+   {
+    "form": "startlingly",
+    "pos": "adverb",
+    "note": "adverb: in a way that causes sudden surprise or fright"
+   }
+  ],
+  "terrified": [
+   {
+    "form": "terrify",
+    "pos": "verb",
+    "note": "verb: to make someone feel extreme fear"
+   },
+   {
+    "form": "terrifies",
+    "pos": "verb",
+    "note": "verb: makes someone feel extreme fear"
+   },
+   {
+    "form": "terrified",
+    "pos": "adjective",
+    "note": "adjective: feeling extreme fear"
+   },
+   {
+    "form": "terrifying",
+    "pos": "adjective",
+    "note": "adjective: causing extreme fear"
+   },
+   {
+    "form": "terrifyingly",
+    "pos": "adverb",
+    "note": "adverb: in a way that causes extreme fear"
+   },
+   {
+    "form": "terror",
+    "pos": "noun",
+    "note": "noun: extreme fear"
+   }
+  ],
+  "horrified": [
+   {
+    "form": "horrify",
+    "pos": "verb",
+    "note": "verb: to make someone feel shocked and upset"
+   },
+   {
+    "form": "horrified",
+    "pos": "adjective",
+    "note": "adjective: shocked and upset by something awful"
+   },
+   {
+    "form": "horrifying",
+    "pos": "adjective",
+    "note": "adjective: causing shock, fear, or disgust"
+   },
+   {
+    "form": "horrifyingly",
+    "pos": "adverb",
+    "note": "adverb: in a way that causes shock, fear, or disgust"
+   },
+   {
+    "form": "horror",
+    "pos": "noun",
+    "note": "noun: strong fear, shock, or disgust"
+   },
+   {
+    "form": "horrific",
+    "pos": "adjective",
+    "note": "adjective: extremely shocking or frightening"
+   }
+  ]
+ },
+ "A-secrecy-01": {},
+ "A-see-01": {
+  "see": [
+   {
+    "form": "see",
+    "pos": "verb",
+    "note": "verb: to notice something with the eyes"
+   },
+   {
+    "form": "sees",
+    "pos": "verb",
+    "note": "verb: notices something with the eyes"
+   },
+   {
+    "form": "saw",
+    "pos": "verb",
+    "note": "verb: noticed something with the eyes"
+   },
+   {
+    "form": "seeing",
+    "pos": "verb",
+    "note": "verb: noticing something with the eyes"
+   },
+   {
+    "form": "seen",
+    "pos": "verb",
+    "note": "verb: noticed with the eyes before or by now"
+   }
+  ],
+  "look": [
+   {
+    "form": "look",
+    "pos": "verb",
+    "note": "verb: to turn the eyes towards something on purpose"
+   },
+   {
+    "form": "looked",
+    "pos": "verb",
+    "note": "verb: turned the eyes towards something on purpose"
+   },
+   {
+    "form": "looking",
+    "pos": "verb",
+    "note": "verb: turning the eyes towards something on purpose"
+   },
+   {
+    "form": "looks",
+    "pos": "verb",
+    "note": "verb: turns the eyes towards something on purpose"
+   }
+  ],
+  "watch": [
+   {
+    "form": "watch",
+    "pos": "verb",
+    "note": "verb: to keep eyes on moving or changing action for a time"
+   },
+   {
+    "form": "watched",
+    "pos": "verb",
+    "note": "verb: kept eyes on moving or changing action for a time"
+   },
+   {
+    "form": "watches",
+    "pos": "verb",
+    "note": "verb: keeps eyes on moving or changing action for a time"
+   },
+   {
+    "form": "watching",
+    "pos": "verb",
+    "note": "verb: keeping eyes on moving or changing action for a time"
+   },
+   {
+    "form": "watcher",
+    "pos": "noun",
+    "note": "noun: a person who keeps eyes on an event or thing"
+   }
+  ],
+  "read": [
+   {
+    "form": "read",
+    "pos": "verb",
+    "note": "verb: to take in and understand written words"
+   },
+   {
+    "form": "reading",
+    "pos": "verb",
+    "note": "verb: taking in and understanding written words"
+   },
+   {
+    "form": "reads",
+    "pos": "verb",
+    "note": "verb: takes in and understands written words"
+   },
+   {
+    "form": "reader",
+    "pos": "noun",
+    "note": "noun: a person who takes in written words"
+   },
+   {
+    "form": "readable",
+    "pos": "adjective",
+    "note": "adjective: easy to understand as written words"
+   }
+  ],
+  "blink": [
+   {
+    "form": "blink",
+    "pos": "verb",
+    "note": "verb: to shut and open both eyes very quickly"
+   },
+   {
+    "form": "blinked",
+    "pos": "verb",
+    "note": "verb: shut and opened both eyes very quickly"
+   },
+   {
+    "form": "blinking",
+    "pos": "verb",
+    "note": "verb: shutting and opening both eyes very quickly"
+   },
+   {
+    "form": "blinks",
+    "pos": "verb",
+    "note": "verb: shuts and opens both eyes very quickly"
+   }
+  ]
+ },
+ "A-shine-01": {
+  "shiny": [
+   {
+    "form": "shine",
+    "pos": "verb",
+    "note": "verb: to give out or reflect light"
+   },
+   {
+    "form": "shines",
+    "pos": "verb",
+    "note": "verb: gives out or reflects light"
+   },
+   {
+    "form": "shining",
+    "pos": "adjective",
+    "note": "adjective: giving out or reflecting light"
+   },
+   {
+    "form": "shiny",
+    "pos": "adjective",
+    "note": "adjective: reflecting light brightly"
+   },
+   {
+    "form": "shinier",
+    "pos": "adjective",
+    "note": "adjective: more bright from reflected light"
+   }
+  ],
+  "sparkly": [
+   {
+    "form": "sparkle",
+    "pos": "noun",
+    "note": "noun: a small bright flash"
+   },
+   {
+    "form": "sparkles",
+    "pos": "verb",
+    "note": "verb: gives off small bright flashes"
+   },
+   {
+    "form": "sparkled",
+    "pos": "verb",
+    "note": "verb: gave off small bright flashes"
+   },
+   {
+    "form": "sparkling",
+    "pos": "adjective",
+    "note": "adjective: giving off small bright flashes"
+   },
+   {
+    "form": "sparkly",
+    "pos": "adjective",
+    "note": "adjective: full of small bright flashes"
+   }
+  ],
+  "dazzling": [
+   {
+    "form": "dazzle",
+    "pos": "verb",
+    "note": "verb: to overwhelm the eyes with bright light"
+   },
+   {
+    "form": "dazzles",
+    "pos": "verb",
+    "note": "verb: overwhelms the eyes with bright light"
+   },
+   {
+    "form": "dazzled",
+    "pos": "adjective",
+    "note": "adjective: unable to see clearly after bright light"
+   },
+   {
+    "form": "dazzling",
+    "pos": "adjective",
+    "note": "adjective: intensely bright and hard to look at"
+   },
+   {
+    "form": "dazzlingly",
+    "pos": "adverb",
+    "note": "adverb: in an intensely bright way"
+   }
+  ],
+  "radiant": [
+   {
+    "form": "radiate",
+    "pos": "verb",
+    "note": "verb: to send out light or heat"
+   },
+   {
+    "form": "radiates",
+    "pos": "verb",
+    "note": "verb: sends out light or heat"
+   },
+   {
+    "form": "radiated",
+    "pos": "verb",
+    "note": "verb: sent out light or heat"
+   },
+   {
+    "form": "radiating",
+    "pos": "verb",
+    "note": "verb: sending out light or heat"
+   },
+   {
+    "form": "radiant",
+    "pos": "adjective",
+    "note": "adjective: giving out a bright glow"
+   },
+   {
+    "form": "radiance",
+    "pos": "noun",
+    "note": "noun: a bright glow"
+   }
+  ]
+ },
+ "A-size-01": {
+  "towering": [
+   {
+    "form": "tower",
+    "pos": "verb",
+    "note": "verb: to rise high above surrounding things"
+   },
+   {
+    "form": "towers",
+    "pos": "verb",
+    "note": "verb: rises high above surrounding things"
+   },
+   {
+    "form": "towered",
+    "pos": "verb",
+    "note": "verb: rose high above surrounding things"
+   },
+   {
+    "form": "towering",
+    "pos": "adjective",
+    "note": "adjective: rising very high over nearby things"
+   }
+  ],
+  "spacious": [
+   {
+    "form": "space",
+    "pos": "noun",
+    "note": "noun: empty area available for use"
+   },
+   {
+    "form": "spaces",
+    "pos": "noun",
+    "note": "noun: empty areas or gaps"
+   },
+   {
+    "form": "spaced",
+    "pos": "adjective",
+    "note": "adjective: placed with gaps between things"
+   },
+   {
+    "form": "spacing",
+    "pos": "noun",
+    "note": "noun: the gaps left between things"
+   },
+   {
+    "form": "spacious",
+    "pos": "adjective",
+    "note": "adjective: having plenty of room"
+   }
+  ]
+ },
+ "A-skill-01": {
+  "intuition": [
+   {
+    "form": "intuition",
+    "pos": "noun",
+    "note": "noun: knowledge gained without reasoning it out"
+   },
+   {
+    "form": "intuitive",
+    "pos": "adjective",
+    "note": "adjective: known or felt without reasoning it out"
+   },
+   {
+    "form": "intuitively",
+    "pos": "adverb",
+    "note": "adverb: in a way based on feeling rather than reasoning"
+   },
+   {
+    "form": "intuit",
+    "pos": "verb",
+    "note": "verb: to know by feeling rather than reasoning"
+   }
+  ]
+ },
+ "A-smart-01": {
+  "clever": [
+   {
+    "form": "clever",
+    "pos": "adjective",
+    "note": "adjective: quick at finding answers or solutions"
+   },
+   {
+    "form": "cleverer",
+    "pos": "adjective",
+    "note": "adjective: more quick at solving problems"
+   },
+   {
+    "form": "cleverest",
+    "pos": "adjective",
+    "note": "adjective: most quick at solving problems"
+   },
+   {
+    "form": "cleverly",
+    "pos": "adverb",
+    "note": "adverb: in a quick, smart way"
+   },
+   {
+    "form": "cleverness",
+    "pos": "noun",
+    "note": "noun: skill at solving problems quickly"
+   }
+  ],
+  "wise": [
+   {
+    "form": "wise",
+    "pos": "adjective",
+    "note": "adjective: showing good judgement from experience"
+   },
+   {
+    "form": "wiser",
+    "pos": "adjective",
+    "note": "adjective: showing better judgement from experience"
+   },
+   {
+    "form": "wisest",
+    "pos": "adjective",
+    "note": "adjective: showing the best judgement from experience"
+   },
+   {
+    "form": "wisely",
+    "pos": "adverb",
+    "note": "adverb: with good judgement"
+   },
+   {
+    "form": "wisdom",
+    "pos": "noun",
+    "note": "noun: good judgement gained through experience"
+   }
+  ],
+  "curious": [
+   {
+    "form": "curious",
+    "pos": "adjective",
+    "note": "adjective: eager to find out and learn more"
+   },
+   {
+    "form": "curiously",
+    "pos": "adverb",
+    "note": "adverb: with an eager wish to learn or find out"
+   },
+   {
+    "form": "curiosity",
+    "pos": "noun",
+    "note": "noun: a strong wish to learn or find out"
+   },
+   {
+    "form": "curiosities",
+    "pos": "noun",
+    "note": "noun: strong wishes to learn or find out"
+   }
+  ],
+  "observant": [
+   {
+    "form": "observe",
+    "pos": "verb",
+    "note": "verb: to watch carefully or notice"
+   },
+   {
+    "form": "observes",
+    "pos": "verb",
+    "note": "verb: watches carefully or notices"
+   },
+   {
+    "form": "observed",
+    "pos": "verb",
+    "note": "verb: watched carefully or noticed"
+   },
+   {
+    "form": "observing",
+    "pos": "verb",
+    "note": "verb: watching carefully or noticing"
+   },
+   {
+    "form": "observant",
+    "pos": "adjective",
+    "note": "adjective: quick to notice details"
+   },
+   {
+    "form": "observation",
+    "pos": "noun",
+    "note": "noun: the act of watching carefully or noticing"
+   },
+   {
+    "form": "observer",
+    "pos": "noun",
+    "note": "noun: someone who watches carefully"
+   }
+  ]
+ },
+ "A-sound-01": {
+  "faint": [
+   {
+    "form": "faint",
+    "pos": "adjective",
+    "note": "adjective: very quiet or hard to hear"
+   },
+   {
+    "form": "fainter",
+    "pos": "adjective",
+    "note": "adjective: more quiet or less clear"
+   },
+   {
+    "form": "faintest",
+    "pos": "adjective",
+    "note": "adjective: most quiet or least clear"
+   },
+   {
+    "form": "faintly",
+    "pos": "adverb",
+    "note": "adverb: in a very quiet or unclear way"
+   }
+  ],
+  "piercing": [
+   {
+    "form": "piercing",
+    "pos": "adjective",
+    "note": "adjective: high, sharp, and painful to hear"
+   },
+   {
+    "form": "pierce",
+    "pos": "verb",
+    "note": "verb: to cut sharply through the air as a sound"
+   },
+   {
+    "form": "pierces",
+    "pos": "verb",
+    "note": "verb: cuts sharply through the air as a sound"
+   },
+   {
+    "form": "pierced",
+    "pos": "verb",
+    "note": "verb: cut sharply through the air as a sound"
+   }
+  ],
+  "booming": [
+   {
+    "form": "booming",
+    "pos": "adjective",
+    "note": "adjective: deep and very loud"
+   },
+   {
+    "form": "boom",
+    "pos": "noun",
+    "note": "noun: a deep, very loud sound"
+   },
+   {
+    "form": "booms",
+    "pos": "verb",
+    "note": "verb: makes a deep, very loud sound"
+   },
+   {
+    "form": "boomed",
+    "pos": "verb",
+    "note": "verb: made a deep, very loud sound"
+   }
+  ],
+  "squeaky": [
+   {
+    "form": "squeaky",
+    "pos": "adjective",
+    "note": "adjective: making a short, high, thin sound"
+   },
+   {
+    "form": "squeak",
+    "pos": "noun",
+    "note": "noun: a short, high, thin sound"
+   },
+   {
+    "form": "squeaks",
+    "pos": "verb",
+    "note": "verb: makes a short, high, thin sound"
+   },
+   {
+    "form": "squeaked",
+    "pos": "verb",
+    "note": "verb: made a short, high, thin sound"
+   },
+   {
+    "form": "squeaking",
+    "pos": "adjective",
+    "note": "adjective: making a short, high, thin sound"
+   }
+  ]
+ },
+ "A-statements-01": {
+  "vague": [
+   {
+    "form": "vague",
+    "pos": "adjective",
+    "note": "adjective: not clear or fully explained"
+   },
+   {
+    "form": "vaguest",
+    "pos": "adjective",
+    "note": "adjective: least clear or exact"
+   },
+   {
+    "form": "vaguely",
+    "pos": "adverb",
+    "note": "adverb: in a way that is not clear or exact"
+   },
+   {
+    "form": "vagueness",
+    "pos": "noun",
+    "note": "noun: lack of clarity or exactness"
+   }
+  ],
+  "ambiguous": [
+   {
+    "form": "ambiguous",
+    "pos": "adjective",
+    "note": "adjective: having more than one possible meaning"
+   },
+   {
+    "form": "ambiguously",
+    "pos": "adverb",
+    "note": "adverb: in a way with more than one possible meaning"
+   },
+   {
+    "form": "ambiguity",
+    "pos": "noun",
+    "note": "noun: a possible double meaning or uncertainty"
+   },
+   {
+    "form": "ambiguities",
+    "pos": "noun",
+    "note": "noun: possible double meanings or uncertainties"
+   }
+  ],
+  "emphatic": [
+   {
+    "form": "emphatic",
+    "pos": "adjective",
+    "note": "adjective: forceful and definite in expression or action"
+   },
+   {
+    "form": "emphatically",
+    "pos": "adverb",
+    "note": "adverb: in a forceful and definite way"
+   },
+   {
+    "form": "emphasis",
+    "pos": "noun",
+    "note": "noun: special importance or force given to something"
+   },
+   {
+    "form": "emphasise",
+    "pos": "verb",
+    "note": "verb: to give special importance or force to something"
+   },
+   {
+    "form": "emphasises",
+    "pos": "verb",
+    "note": "verb: gives special importance or force to something"
+   },
+   {
+    "form": "emphasised",
+    "pos": "verb",
+    "note": "verb: gave special importance or force to something"
+   },
+   {
+    "form": "emphasising",
+    "pos": "verb",
+    "note": "verb: giving special importance or force to something"
+   }
+  ]
+ },
+ "A-talk-01": {
+  "whisper": [
+   {
+    "form": "whisper",
+    "pos": "verb",
+    "note": "verb: to speak very softly in a low voice"
+   },
+   {
+    "form": "whispered",
+    "pos": "verb",
+    "note": "verb: spoke very softly in a low voice"
+   },
+   {
+    "form": "whispering",
+    "pos": "verb",
+    "note": "verb: speaking very softly in a low voice"
+   },
+   {
+    "form": "whispers",
+    "pos": "verb",
+    "note": "verb: speaks very softly in a low voice"
+   },
+   {
+    "form": "whisperer",
+    "pos": "noun",
+    "note": "noun: a person who speaks very softly in a low voice"
+   }
+  ],
+  "mumble": [
+   {
+    "form": "mumble",
+    "pos": "verb",
+    "note": "verb: to speak unclearly and quietly"
+   },
+   {
+    "form": "mumbled",
+    "pos": "verb",
+    "note": "verb: spoke unclearly and quietly"
+   },
+   {
+    "form": "mumbles",
+    "pos": "verb",
+    "note": "verb: speaks unclearly and quietly"
+   },
+   {
+    "form": "mumbling",
+    "pos": "verb",
+    "note": "verb: speaking unclearly and quietly"
+   }
+  ],
+  "chatter": [
+   {
+    "form": "chatter",
+    "pos": "verb",
+    "note": "verb: to talk quickly about unimportant things"
+   },
+   {
+    "form": "chattered",
+    "pos": "verb",
+    "note": "verb: talked quickly about unimportant things"
+   },
+   {
+    "form": "chattering",
+    "pos": "verb",
+    "note": "verb: talking quickly about unimportant things"
+   },
+   {
+    "form": "chatters",
+    "pos": "verb",
+    "note": "verb: talks quickly about unimportant things"
+   },
+   {
+    "form": "chatterbox",
+    "pos": "noun",
+    "note": "noun: a person who talks a lot"
+   }
+  ],
+  "announce": [
+   {
+    "form": "announce",
+    "pos": "verb",
+    "note": "verb: to make something known publicly"
+   },
+   {
+    "form": "announced",
+    "pos": "verb",
+    "note": "verb: made something known publicly"
+   },
+   {
+    "form": "announces",
+    "pos": "verb",
+    "note": "verb: makes something known publicly"
+   },
+   {
+    "form": "announcing",
+    "pos": "verb",
+    "note": "verb: making something known publicly"
+   },
+   {
+    "form": "announcement",
+    "pos": "noun",
+    "note": "noun: a public statement giving information"
+   },
+   {
+    "form": "announcer",
+    "pos": "noun",
+    "note": "noun: a person who gives information to an audience"
+   }
+  ],
+  "bellow": [
+   {
+    "form": "bellow",
+    "pos": "verb",
+    "note": "verb: to shout in a very loud deep voice"
+   },
+   {
+    "form": "bellowed",
+    "pos": "verb",
+    "note": "verb: shouted in a very loud deep voice"
+   },
+   {
+    "form": "bellowing",
+    "pos": "verb",
+    "note": "verb: shouting in a very loud deep voice"
+   },
+   {
+    "form": "bellows",
+    "pos": "verb",
+    "note": "verb: shouts in a very loud deep voice"
+   }
+  ]
+ },
+ "A-throw-01": {
+  "toss": [
+   {
+    "form": "toss",
+    "pos": "verb",
+    "note": "verb: to throw lightly or casually"
+   },
+   {
+    "form": "tossed",
+    "pos": "verb",
+    "note": "verb: threw lightly or casually"
+   },
+   {
+    "form": "tosses",
+    "pos": "verb",
+    "note": "verb: throws lightly or casually"
+   },
+   {
+    "form": "tossing",
+    "pos": "verb",
+    "note": "verb: throwing lightly or casually"
+   }
+  ],
+  "hurl": [
+   {
+    "form": "hurl",
+    "pos": "verb",
+    "note": "verb: to throw with great force"
+   },
+   {
+    "form": "hurled",
+    "pos": "verb",
+    "note": "verb: threw with great force"
+   },
+   {
+    "form": "hurling",
+    "pos": "verb",
+    "note": "verb: throwing with great force"
+   },
+   {
+    "form": "hurls",
+    "pos": "verb",
+    "note": "verb: throws with great force"
+   }
+  ],
+  "lob": [
+   {
+    "form": "lob",
+    "pos": "verb",
+    "note": "verb: to throw in a high curve"
+   },
+   {
+    "form": "lobbed",
+    "pos": "verb",
+    "note": "verb: threw in a high curve"
+   },
+   {
+    "form": "lobbing",
+    "pos": "verb",
+    "note": "verb: throwing in a high curve"
+   },
+   {
+    "form": "lobs",
+    "pos": "verb",
+    "note": "verb: throws in a high curve"
+   }
+  ],
+  "drop": [
+   {
+    "form": "drop",
+    "pos": "verb",
+    "note": "verb: to let something fall"
+   },
+   {
+    "form": "dropped",
+    "pos": "verb",
+    "note": "verb: let something fall"
+   },
+   {
+    "form": "dropping",
+    "pos": "verb",
+    "note": "verb: letting something fall"
+   },
+   {
+    "form": "drops",
+    "pos": "verb",
+    "note": "verb: lets something fall"
+   }
+  ],
+  "roll": [
+   {
+    "form": "roll",
+    "pos": "verb",
+    "note": "verb: to move by turning over and over"
+   },
+   {
+    "form": "rolled",
+    "pos": "verb",
+    "note": "verb: moved by turning over and over"
+   },
+   {
+    "form": "rolling",
+    "pos": "verb",
+    "note": "verb: moving by turning over and over"
+   },
+   {
+    "form": "rolls",
+    "pos": "verb",
+    "note": "verb: moves by turning over and over"
+   },
+   {
+    "form": "roller",
+    "pos": "noun",
+    "note": "noun: something that moves on a turning cylinder"
+   }
+  ]
+ },
+ "A-time-frequency-01": {
+  "rarely": [
+   {
+    "form": "rare",
+    "pos": "adjective",
+    "note": "adjective: not happening or found often"
+   },
+   {
+    "form": "rarer",
+    "pos": "adjective",
+    "note": "adjective: less common than another"
+   },
+   {
+    "form": "rarest",
+    "pos": "adjective",
+    "note": "adjective: least common of all"
+   },
+   {
+    "form": "rarely",
+    "pos": "adverb",
+    "note": "adverb: not often"
+   },
+   {
+    "form": "rarity",
+    "pos": "noun",
+    "note": "noun: something uncommon, or the state of being uncommon"
+   }
+  ]
+ },
+ "A-time-nearness-01": {
+  "later": [
+   {
+    "form": "late",
+    "pos": "adjective",
+    "note": "adjective: after the expected or usual time"
+   },
+   {
+    "form": "later",
+    "pos": "adverb",
+    "note": "adverb: at a time after this one"
+   },
+   {
+    "form": "latest",
+    "pos": "adjective",
+    "note": "adjective: last or most recent in time"
+   },
+   {
+    "form": "lately",
+    "pos": "adverb",
+    "note": "adverb: during recent times"
+   },
+   {
+    "form": "lateness",
+    "pos": "noun",
+    "note": "noun: the state of being after the expected time"
+   }
+  ],
+  "eventually": [
+   {
+    "form": "eventual",
+    "pos": "adjective",
+    "note": "adjective: happening in the end after some time"
+   },
+   {
+    "form": "eventually",
+    "pos": "adverb",
+    "note": "adverb: in the end, after some time"
+   },
+   {
+    "form": "eventuate",
+    "pos": "verb",
+    "note": "verb: to happen as the final result"
+   },
+   {
+    "form": "eventuality",
+    "pos": "noun",
+    "note": "noun: a possible result or outcome"
+   }
+  ]
+ },
+ "A-tired-01": {
+  "exhausted": [
+   {
+    "form": "exhaust",
+    "pos": "verb",
+    "note": "verb: to make someone extremely tired"
+   },
+   {
+    "form": "exhausts",
+    "pos": "verb",
+    "note": "verb: makes someone extremely tired"
+   },
+   {
+    "form": "exhausted",
+    "pos": "adjective",
+    "note": "adjective: extremely tired, with little energy left"
+   },
+   {
+    "form": "exhausting",
+    "pos": "adjective",
+    "note": "adjective: making someone extremely tired"
+   },
+   {
+    "form": "exhaustion",
+    "pos": "noun",
+    "note": "noun: extreme tiredness"
+   }
+  ],
+  "restless": [
+   {
+    "form": "rest",
+    "pos": "verb",
+    "note": "verb: to stop moving and be calm or quiet"
+   },
+   {
+    "form": "rests",
+    "pos": "verb",
+    "note": "verb: stops moving and becomes calm or quiet"
+   },
+   {
+    "form": "rested",
+    "pos": "verb",
+    "note": "verb: stopped moving to become calm or quiet"
+   },
+   {
+    "form": "resting",
+    "pos": "verb",
+    "note": "verb: stopping activity to become calm or quiet"
+   },
+   {
+    "form": "restless",
+    "pos": "adjective",
+    "note": "adjective: unable to be calm, quiet or still"
+   },
+   {
+    "form": "restlessly",
+    "pos": "adverb",
+    "note": "adverb: in an unsettled, fidgety way"
+   },
+   {
+    "form": "restlessness",
+    "pos": "noun",
+    "note": "noun: an unsettled feeling or need to move"
+   }
+  ]
+ },
+ "A-unsure-01": {},
+ "A-walk-manner-01": {
+  "tiptoe": [
+   {
+    "form": "tiptoe",
+    "pos": "verb",
+    "note": "verb: to move quietly on the toes"
+   },
+   {
+    "form": "tiptoed",
+    "pos": "verb",
+    "note": "verb: moved quietly on the toes"
+   },
+   {
+    "form": "tiptoeing",
+    "pos": "verb",
+    "note": "verb: moving quietly on the toes"
+   },
+   {
+    "form": "tiptoes",
+    "pos": "verb",
+    "note": "verb: moves quietly on the toes"
+   }
+  ],
+  "limp": [
+   {
+    "form": "limp",
+    "pos": "verb",
+    "note": "verb: to move unevenly because of pain or injury"
+   },
+   {
+    "form": "limped",
+    "pos": "verb",
+    "note": "verb: moved unevenly because of pain or injury"
+   },
+   {
+    "form": "limping",
+    "pos": "verb",
+    "note": "verb: moving unevenly because of pain or injury"
+   },
+   {
+    "form": "limps",
+    "pos": "verb",
+    "note": "verb: moves unevenly because of pain or injury"
+   }
+  ],
+  "trudge": [
+   {
+    "form": "trudge",
+    "pos": "verb",
+    "note": "verb: to move on foot slowly with heavy steps"
+   },
+   {
+    "form": "trudged",
+    "pos": "verb",
+    "note": "verb: moved on foot slowly with heavy steps"
+   },
+   {
+    "form": "trudges",
+    "pos": "verb",
+    "note": "verb: moves on foot slowly with heavy steps"
+   },
+   {
+    "form": "trudging",
+    "pos": "verb",
+    "note": "verb: moving on foot slowly with heavy steps"
+   }
+  ],
+  "stroll": [
+   {
+    "form": "stroll",
+    "pos": "verb",
+    "note": "verb: to move on foot in a slow, relaxed way"
+   },
+   {
+    "form": "strolled",
+    "pos": "verb",
+    "note": "verb: moved on foot in a slow, relaxed way"
+   },
+   {
+    "form": "strolling",
+    "pos": "verb",
+    "note": "verb: moving on foot in a slow, relaxed way"
+   },
+   {
+    "form": "strolls",
+    "pos": "verb",
+    "note": "verb: moves on foot in a slow, relaxed way"
+   }
+  ],
+  "march": [
+   {
+    "form": "march",
+    "pos": "verb",
+    "note": "verb: to move with steady, regular steps"
+   },
+   {
+    "form": "marched",
+    "pos": "verb",
+    "note": "verb: moved with steady, regular steps"
+   },
+   {
+    "form": "marches",
+    "pos": "verb",
+    "note": "verb: moves with steady, regular steps"
+   },
+   {
+    "form": "marching",
+    "pos": "verb",
+    "note": "verb: moving with steady, regular steps"
+   }
+  ]
+ },
+ "A-water-move-01": {
+  "wade": [
+   {
+    "form": "wade",
+    "pos": "verb",
+    "note": "verb: to walk through shallow water"
+   },
+   {
+    "form": "waded",
+    "pos": "verb",
+    "note": "verb: walked through shallow water"
+   },
+   {
+    "form": "wades",
+    "pos": "verb",
+    "note": "verb: walks through shallow water"
+   },
+   {
+    "form": "wading",
+    "pos": "verb",
+    "note": "verb: walking through shallow water"
+   }
+  ],
+  "paddle": [
+   {
+    "form": "paddle",
+    "pos": "verb",
+    "note": "verb: to splash about in water with hands or feet"
+   },
+   {
+    "form": "paddled",
+    "pos": "verb",
+    "note": "verb: splashed about in water with hands or feet"
+   },
+   {
+    "form": "paddles",
+    "pos": "verb",
+    "note": "verb: splashes about in water with hands or feet"
+   },
+   {
+    "form": "paddling",
+    "pos": "verb",
+    "note": "verb: splashing about in water with hands or feet"
+   }
+  ],
+  "drift": [
+   {
+    "form": "drift",
+    "pos": "verb",
+    "note": "verb: to be carried along by air or water"
+   },
+   {
+    "form": "drifted",
+    "pos": "verb",
+    "note": "verb: was carried along by air or water"
+   },
+   {
+    "form": "drifting",
+    "pos": "verb",
+    "note": "verb: being carried along by air or water"
+   },
+   {
+    "form": "drifts",
+    "pos": "verb",
+    "note": "verb: is carried along by air or water"
+   },
+   {
+    "form": "drifter",
+    "pos": "noun",
+    "note": "noun: someone or something carried along by air or water"
+   }
+  ],
+  "plunge": [
+   {
+    "form": "plunge",
+    "pos": "verb",
+    "note": "verb: to drop or jump suddenly downward into something"
+   },
+   {
+    "form": "plunged",
+    "pos": "verb",
+    "note": "verb: dropped or jumped suddenly downward into something"
+   },
+   {
+    "form": "plunges",
+    "pos": "verb",
+    "note": "verb: drops or jumps suddenly downward into something"
+   },
+   {
+    "form": "plunging",
+    "pos": "verb",
+    "note": "verb: dropping or jumping suddenly downward into something"
+   }
+  ],
+  "bob": [
+   {
+    "form": "bob",
+    "pos": "verb",
+    "note": "verb: to move up and down again and again"
+   },
+   {
+    "form": "bobbed",
+    "pos": "verb",
+    "note": "verb: moved up and down again and again"
+   },
+   {
+    "form": "bobbing",
+    "pos": "verb",
+    "note": "verb: moving up and down again and again"
+   },
+   {
+    "form": "bobs",
+    "pos": "verb",
+    "note": "verb: moves up and down again and again"
+   }
+  ]
+ },
+ "A-wet-01": {
+  "soaked": [
+   {
+    "form": "soak",
+    "pos": "verb",
+    "note": "verb: to make or become wet all the way through"
+   },
+   {
+    "form": "soaks",
+    "pos": "verb",
+    "note": "verb: makes or becomes wet all the way through"
+   },
+   {
+    "form": "soaked",
+    "pos": "adjective",
+    "note": "adjective: wet all the way through"
+   },
+   {
+    "form": "soaking",
+    "pos": "adjective",
+    "note": "adjective: very wet all the way through"
+   }
+  ],
+  "damp": [
+   {
+    "form": "damp",
+    "pos": "adjective",
+    "note": "adjective: slightly wet"
+   },
+   {
+    "form": "damper",
+    "pos": "adjective",
+    "note": "adjective: less dry than something else"
+   },
+   {
+    "form": "dampness",
+    "pos": "noun",
+    "note": "noun: slight wetness"
+   },
+   {
+    "form": "dampen",
+    "pos": "verb",
+    "note": "verb: to make or become slightly wet"
+   },
+   {
+    "form": "dampened",
+    "pos": "verb",
+    "note": "verb: made or became slightly wet"
+   }
+  ],
+  "dripping": [
+   {
+    "form": "drip",
+    "pos": "verb",
+    "note": "verb: to fall in small drops"
+   },
+   {
+    "form": "drips",
+    "pos": "verb",
+    "note": "verb: falls in small drops"
+   },
+   {
+    "form": "dripped",
+    "pos": "verb",
+    "note": "verb: fell in small drops"
+   },
+   {
+    "form": "dripping",
+    "pos": "adjective",
+    "note": "adjective: so wet that drops are falling"
+   },
+   {
+    "form": "drippy",
+    "pos": "adjective",
+    "note": "adjective: wet enough to let drops fall"
+   }
+  ]
+ },
+ "A-wobble-01": {
+  "sway": [
+   {
+    "form": "sway",
+    "pos": "verb",
+    "note": "verb: to move slowly from side to side"
+   },
+   {
+    "form": "swayed",
+    "pos": "verb",
+    "note": "verb: moved slowly from side to side"
+   },
+   {
+    "form": "swaying",
+    "pos": "verb",
+    "note": "verb: moving slowly from side to side"
+   },
+   {
+    "form": "sways",
+    "pos": "verb",
+    "note": "verb: moves slowly from side to side"
+   }
+  ],
+  "wobble": [
+   {
+    "form": "wobble",
+    "pos": "verb",
+    "note": "verb: to move unsteadily from side to side"
+   },
+   {
+    "form": "wobbled",
+    "pos": "verb",
+    "note": "verb: moved unsteadily from side to side"
+   },
+   {
+    "form": "wobbles",
+    "pos": "verb",
+    "note": "verb: moves unsteadily from side to side"
+   },
+   {
+    "form": "wobbling",
+    "pos": "verb",
+    "note": "verb: moving unsteadily from side to side"
+   },
+   {
+    "form": "wobbly",
+    "pos": "adjective",
+    "note": "adjective: likely to move unsteadily"
+   }
+  ],
+  "wriggle": [
+   {
+    "form": "wriggle",
+    "pos": "verb",
+    "note": "verb: to move with short twisting motions"
+   },
+   {
+    "form": "wriggled",
+    "pos": "verb",
+    "note": "verb: moved with short twisting motions"
+   },
+   {
+    "form": "wriggles",
+    "pos": "verb",
+    "note": "verb: moves with short twisting motions"
+   },
+   {
+    "form": "wriggling",
+    "pos": "verb",
+    "note": "verb: moving with short twisting motions"
+   }
+  ],
+  "shiver": [
+   {
+    "form": "shiver",
+    "pos": "verb",
+    "note": "verb: to shake slightly from cold or fear"
+   },
+   {
+    "form": "shivered",
+    "pos": "verb",
+    "note": "verb: shook slightly from cold or fear"
+   },
+   {
+    "form": "shivering",
+    "pos": "verb",
+    "note": "verb: shaking slightly from cold or fear"
+   },
+   {
+    "form": "shivers",
+    "pos": "verb",
+    "note": "verb: shakes slightly from cold or fear"
+   }
+  ],
+  "flinch": [
+   {
+    "form": "flinch",
+    "pos": "verb",
+    "note": "verb: to pull back suddenly from pain or fear"
+   },
+   {
+    "form": "flinched",
+    "pos": "verb",
+    "note": "verb: pulled back suddenly from pain or fear"
+   },
+   {
+    "form": "flinches",
+    "pos": "verb",
+    "note": "verb: pulls back suddenly from pain or fear"
+   },
+   {
+    "form": "flinching",
+    "pos": "verb",
+    "note": "verb: pulling back suddenly from pain or fear"
+   }
+  ]
+ },
+ "B-bearing-01": {},
+ "B-buildings-01": {
+  "arch": [
+   {
+    "form": "arch",
+    "pos": "noun",
+    "note": "noun: a curved support over an opening"
+   },
+   {
+    "form": "arches",
+    "pos": "noun",
+    "note": "noun: more than one curved support over an opening"
+   },
+   {
+    "form": "arched",
+    "pos": "adjective",
+    "note": "adjective: built with a curved support over an opening"
+   },
+   {
+    "form": "arching",
+    "pos": "adjective",
+    "note": "adjective: bending in a high curve"
+   }
+  ]
+ },
+ "B-carry-01": {
+  "push": [
+   {
+    "form": "push",
+    "pos": "verb",
+    "note": "verb: to press against something to move it away"
+   },
+   {
+    "form": "pushed",
+    "pos": "verb",
+    "note": "verb: pressed against something to move it away"
+   },
+   {
+    "form": "pushes",
+    "pos": "verb",
+    "note": "verb: presses against something to move it away"
+   },
+   {
+    "form": "pushing",
+    "pos": "verb",
+    "note": "verb: pressing against something to move it away"
+   }
+  ],
+  "pull": [
+   {
+    "form": "pull",
+    "pos": "verb",
+    "note": "verb: to draw something closer by using force"
+   },
+   {
+    "form": "pulled",
+    "pos": "verb",
+    "note": "verb: drew something closer by using force"
+   },
+   {
+    "form": "pulling",
+    "pos": "verb",
+    "note": "verb: drawing something closer by using force"
+   },
+   {
+    "form": "pulls",
+    "pos": "verb",
+    "note": "verb: draws something closer by using force"
+   }
+  ],
+  "lift": [
+   {
+    "form": "lift",
+    "pos": "verb",
+    "note": "verb: to raise something to a higher position"
+   },
+   {
+    "form": "lifted",
+    "pos": "verb",
+    "note": "verb: raised something to a higher position"
+   },
+   {
+    "form": "lifting",
+    "pos": "verb",
+    "note": "verb: raising something to a higher position"
+   },
+   {
+    "form": "lifts",
+    "pos": "verb",
+    "note": "verb: raises something to a higher position"
+   }
+  ],
+  "carry": [
+   {
+    "form": "carried",
+    "pos": "verb",
+    "note": "verb: moved something while supporting its weight"
+   },
+   {
+    "form": "carries",
+    "pos": "verb",
+    "note": "verb: moves something while supporting its weight"
+   },
+   {
+    "form": "carry",
+    "pos": "verb",
+    "note": "verb: to move something while supporting its weight"
+   },
+   {
+    "form": "carrying",
+    "pos": "verb",
+    "note": "verb: moving something while supporting its weight"
+   }
+  ],
+  "throw": [
+   {
+    "form": "throw",
+    "pos": "verb",
+    "note": "verb: to send something flying through the air"
+   },
+   {
+    "form": "threw",
+    "pos": "verb",
+    "note": "verb: sent something flying through the air"
+   },
+   {
+    "form": "throwing",
+    "pos": "verb",
+    "note": "verb: sending something flying through the air"
+   },
+   {
+    "form": "throws",
+    "pos": "verb",
+    "note": "verb: sends something flying through the air"
+   },
+   {
+    "form": "thrown",
+    "pos": "verb",
+    "note": "verb: sent flying through the air by someone"
+   }
+  ]
+ },
+ "B-climate-01": {},
+ "B-coast-01": {},
+ "B-faces-01": {
+  "grin": [
+   {
+    "form": "grin",
+    "pos": "verb",
+    "note": "verb: to smile widely, showing the teeth"
+   },
+   {
+    "form": "grinned",
+    "pos": "verb",
+    "note": "verb: smiled widely, showing the teeth"
+   },
+   {
+    "form": "grinning",
+    "pos": "verb",
+    "note": "verb: smiling widely, showing the teeth"
+   },
+   {
+    "form": "grins",
+    "pos": "verb",
+    "note": "verb: smiles widely, showing the teeth"
+   }
+  ],
+  "frown": [
+   {
+    "form": "frown",
+    "pos": "verb",
+    "note": "verb: to lower the eyebrows to show displeasure"
+   },
+   {
+    "form": "frowned",
+    "pos": "verb",
+    "note": "verb: lowered the eyebrows to show displeasure"
+   },
+   {
+    "form": "frowning",
+    "pos": "verb",
+    "note": "verb: lowering the eyebrows to show displeasure"
+   },
+   {
+    "form": "frowns",
+    "pos": "verb",
+    "note": "verb: lowers the eyebrows to show displeasure"
+   }
+  ],
+  "wink": [
+   {
+    "form": "wink",
+    "pos": "verb",
+    "note": "verb: to close one eye quickly as a signal"
+   },
+   {
+    "form": "winked",
+    "pos": "verb",
+    "note": "verb: closed one eye quickly as a signal"
+   },
+   {
+    "form": "winking",
+    "pos": "verb",
+    "note": "verb: closing one eye quickly as a signal"
+   },
+   {
+    "form": "winks",
+    "pos": "verb",
+    "note": "verb: closes one eye quickly as a signal"
+   }
+  ],
+  "yawn": [
+   {
+    "form": "yawn",
+    "pos": "verb",
+    "note": "verb: to open the mouth wide with a sleepy breath"
+   },
+   {
+    "form": "yawned",
+    "pos": "verb",
+    "note": "verb: opened the mouth wide with a sleepy breath"
+   },
+   {
+    "form": "yawning",
+    "pos": "verb",
+    "note": "verb: opening the mouth wide with a sleepy breath"
+   },
+   {
+    "form": "yawns",
+    "pos": "verb",
+    "note": "verb: opens the mouth wide with a sleepy breath"
+   }
+  ],
+  "nod": [
+   {
+    "form": "nod",
+    "pos": "verb",
+    "note": "verb: to dip the head down and up to mean yes"
+   },
+   {
+    "form": "nodded",
+    "pos": "verb",
+    "note": "verb: dipped the head down and up to mean yes"
+   },
+   {
+    "form": "nodding",
+    "pos": "verb",
+    "note": "verb: dipping the head down and up to mean yes"
+   },
+   {
+    "form": "nods",
+    "pos": "verb",
+    "note": "verb: dips the head down and up to mean yes"
+   }
+  ]
+ },
+ "B-hands-01": {
+  "grab": [
+   {
+    "form": "grab",
+    "pos": "verb",
+    "note": "verb: to take hold of suddenly"
+   },
+   {
+    "form": "grabbed",
+    "pos": "verb",
+    "note": "verb: took hold of suddenly"
+   },
+   {
+    "form": "grabbing",
+    "pos": "verb",
+    "note": "verb: taking hold of suddenly"
+   },
+   {
+    "form": "grabs",
+    "pos": "verb",
+    "note": "verb: takes hold of suddenly"
+   }
+  ],
+  "pat": [
+   {
+    "form": "pat",
+    "pos": "verb",
+    "note": "verb: to touch gently with a flat hand"
+   },
+   {
+    "form": "pats",
+    "pos": "verb",
+    "note": "verb: touches gently with a flat hand"
+   },
+   {
+    "form": "patted",
+    "pos": "verb",
+    "note": "verb: touched gently with a flat hand"
+   },
+   {
+    "form": "patting",
+    "pos": "verb",
+    "note": "verb: touching gently with a flat hand"
+   }
+  ],
+  "poke": [
+   {
+    "form": "poke",
+    "pos": "verb",
+    "note": "verb: to push quickly with a finger or point"
+   },
+   {
+    "form": "poked",
+    "pos": "verb",
+    "note": "verb: pushed quickly with a finger or point"
+   },
+   {
+    "form": "pokes",
+    "pos": "verb",
+    "note": "verb: pushes quickly with a finger or point"
+   },
+   {
+    "form": "poking",
+    "pos": "verb",
+    "note": "verb: pushing quickly with a finger or point"
+   }
+  ],
+  "wave": [
+   {
+    "form": "wave",
+    "pos": "verb",
+    "note": "verb: to move or swing back and forth"
+   },
+   {
+    "form": "waved",
+    "pos": "verb",
+    "note": "verb: moved or swung back and forth"
+   },
+   {
+    "form": "waves",
+    "pos": "verb",
+    "note": "verb: moves or swings back and forth"
+   },
+   {
+    "form": "waving",
+    "pos": "verb",
+    "note": "verb: moving or swinging back and forth"
+   }
+  ],
+  "clap": [
+   {
+    "form": "clap",
+    "pos": "verb",
+    "note": "verb: to strike one's hands together"
+   },
+   {
+    "form": "clapped",
+    "pos": "verb",
+    "note": "verb: struck one's hands together"
+   },
+   {
+    "form": "clapping",
+    "pos": "verb",
+    "note": "verb: striking one's hands together"
+   },
+   {
+    "form": "claps",
+    "pos": "verb",
+    "note": "verb: strikes one's hands together"
+   }
+  ]
+ },
+ "B-journey-01": {
+  "pilgrimage": [
+   {
+    "form": "pilgrimage",
+    "pos": "noun",
+    "note": "noun: trip to a holy place"
+   },
+   {
+    "form": "pilgrimages",
+    "pos": "noun",
+    "note": "noun: trips to holy places"
+   },
+   {
+    "form": "pilgrim",
+    "pos": "noun",
+    "note": "noun: person going to a holy place"
+   },
+   {
+    "form": "pilgrims",
+    "pos": "noun",
+    "note": "noun: people going to holy places"
+   }
+  ],
+  "commute": [
+   {
+    "form": "commute",
+    "pos": "noun",
+    "note": "noun: regular trip to work or school"
+   },
+   {
+    "form": "commutes",
+    "pos": "noun",
+    "note": "noun: regular trips to work or school"
+   },
+   {
+    "form": "commuted",
+    "pos": "verb",
+    "note": "verb: travelled regularly to work or school"
+   },
+   {
+    "form": "commuting",
+    "pos": "verb",
+    "note": "verb: travelling regularly to work or school"
+   },
+   {
+    "form": "commuter",
+    "pos": "noun",
+    "note": "noun: person who travels regularly to work or school"
+   },
+   {
+    "form": "commuters",
+    "pos": "noun",
+    "note": "noun: people who travel regularly to work or school"
+   }
+  ]
+ },
+ "B-landform-01": {
+  "peak": [
+   {
+    "form": "peak",
+    "pos": "noun",
+    "note": "noun: the highest point of a mountain or hill"
+   },
+   {
+    "form": "peaks",
+    "pos": "noun",
+    "note": "noun: highest points of mountains or hills"
+   },
+   {
+    "form": "peaked",
+    "pos": "verb",
+    "note": "verb: reached the highest point"
+   },
+   {
+    "form": "peaking",
+    "pos": "verb",
+    "note": "verb: reaching the highest point"
+   }
+  ],
+  "slope": [
+   {
+    "form": "slope",
+    "pos": "noun",
+    "note": "noun: a hillside rising or falling at an angle"
+   },
+   {
+    "form": "slopes",
+    "pos": "noun",
+    "note": "noun: hillsides rising or falling at angles"
+   },
+   {
+    "form": "sloped",
+    "pos": "adjective",
+    "note": "adjective: rising or falling at an angle"
+   },
+   {
+    "form": "sloping",
+    "pos": "adjective",
+    "note": "adjective: going up or down at an angle"
+   }
+  ]
+ },
+ "B-move-01": {
+  "hop": [
+   {
+    "form": "hop",
+    "pos": "verb",
+    "note": "verb: to spring along on one foot"
+   },
+   {
+    "form": "hopped",
+    "pos": "verb",
+    "note": "verb: moved by springing along on one foot"
+   },
+   {
+    "form": "hopping",
+    "pos": "verb",
+    "note": "verb: moving by springing along on one foot"
+   },
+   {
+    "form": "hops",
+    "pos": "verb",
+    "note": "verb: springs along on one foot"
+   }
+  ],
+  "crawl": [
+   {
+    "form": "crawl",
+    "pos": "verb",
+    "note": "verb: to move slowly with the body close to the ground"
+   },
+   {
+    "form": "crawled",
+    "pos": "verb",
+    "note": "verb: moved slowly with the body close to the ground"
+   },
+   {
+    "form": "crawling",
+    "pos": "verb",
+    "note": "verb: moving slowly with the body close to the ground"
+   },
+   {
+    "form": "crawls",
+    "pos": "verb",
+    "note": "verb: moves slowly with the body close to the ground"
+   },
+   {
+    "form": "crawler",
+    "pos": "noun",
+    "note": "noun: a person or animal moving low along the ground"
+   }
+  ],
+  "climb": [
+   {
+    "form": "climb",
+    "pos": "verb",
+    "note": "verb: to go upward by effort or steady progress"
+   },
+   {
+    "form": "climbed",
+    "pos": "verb",
+    "note": "verb: went upward by effort or steady progress"
+   },
+   {
+    "form": "climbing",
+    "pos": "verb",
+    "note": "verb: going upward by effort or steady progress"
+   },
+   {
+    "form": "climbs",
+    "pos": "verb",
+    "note": "verb: goes upward by effort or steady progress"
+   },
+   {
+    "form": "climber",
+    "pos": "noun",
+    "note": "noun: a person who goes up rocks, trees, or mountains"
+   }
+  ],
+  "slide": [
+   {
+    "form": "slid",
+    "pos": "verb",
+    "note": "verb: moved smoothly along a surface"
+   },
+   {
+    "form": "slide",
+    "pos": "verb",
+    "note": "verb: to move smoothly along a surface"
+   },
+   {
+    "form": "slides",
+    "pos": "verb",
+    "note": "verb: moves smoothly along a surface"
+   },
+   {
+    "form": "sliding",
+    "pos": "verb",
+    "note": "verb: moving smoothly along a surface"
+   }
+  ],
+  "dance": [
+   {
+    "form": "dance",
+    "pos": "verb",
+    "note": "verb: to move to music with steps and turns"
+   },
+   {
+    "form": "danced",
+    "pos": "verb",
+    "note": "verb: moved to music with steps and turns"
+   },
+   {
+    "form": "dances",
+    "pos": "verb",
+    "note": "verb: moves to music with steps and turns"
+   },
+   {
+    "form": "dancing",
+    "pos": "verb",
+    "note": "verb: moving to music with steps and turns"
+   },
+   {
+    "form": "dancer",
+    "pos": "noun",
+    "note": "noun: a person who moves to music with steps and turns"
+   },
+   {
+    "form": "danceable",
+    "pos": "adjective",
+    "note": "adjective: having a beat suitable for moving to music"
+   }
+  ]
+ },
+ "B-river-01": {
+  "rapids": [
+   {
+    "form": "rapid",
+    "pos": "noun",
+    "note": "noun: a fast, rough part of a river"
+   },
+   {
+    "form": "rapids",
+    "pos": "noun",
+    "note": "noun: fast, rough parts of a river"
+   },
+   {
+    "form": "rapidly",
+    "pos": "adverb",
+    "note": "adverb: very quickly"
+   },
+   {
+    "form": "rapidity",
+    "pos": "noun",
+    "note": "noun: great speed or quickness"
+   }
+  ]
+ },
+ "B-sky-01": {
+  "meteor": [
+   {
+    "form": "meteor",
+    "pos": "noun",
+    "note": "noun: bright streak made by a space rock in the air"
+   },
+   {
+    "form": "meteors",
+    "pos": "noun",
+    "note": "noun: bright streaks made by space rocks in the air"
+   },
+   {
+    "form": "meteoric",
+    "pos": "adjective",
+    "note": "adjective: about bright streaks from space rocks in air"
+   },
+   {
+    "form": "meteorite",
+    "pos": "noun",
+    "note": "noun: space rock that reaches the ground from space"
+   }
+  ],
+  "eclipse": [
+   {
+    "form": "eclipse",
+    "pos": "noun",
+    "note": "noun: blocking of light between bodies in space"
+   },
+   {
+    "form": "eclipses",
+    "pos": "noun",
+    "note": "noun: events where one space body blocks another's light"
+   },
+   {
+    "form": "eclipsed",
+    "pos": "verb",
+    "note": "verb: blocked the light of another body in space"
+   },
+   {
+    "form": "eclipsing",
+    "pos": "verb",
+    "note": "verb: blocking another space body's light"
+   }
+  ]
+ },
+ "B-sounds-01": {
+  "giggle": [
+   {
+    "form": "giggle",
+    "pos": "verb",
+    "note": "verb: to laugh in a light, silly, bubbling way"
+   },
+   {
+    "form": "giggled",
+    "pos": "verb",
+    "note": "verb: laughed in a light, silly, bubbling way"
+   },
+   {
+    "form": "giggles",
+    "pos": "verb",
+    "note": "verb: laughs in a light, silly, bubbling way"
+   },
+   {
+    "form": "giggling",
+    "pos": "verb",
+    "note": "verb: laughing in a light, silly, bubbling way"
+   }
+  ],
+  "shout": [
+   {
+    "form": "shout",
+    "pos": "verb",
+    "note": "verb: to say something in a very loud voice"
+   },
+   {
+    "form": "shouted",
+    "pos": "verb",
+    "note": "verb: said something in a very loud voice"
+   },
+   {
+    "form": "shouting",
+    "pos": "verb",
+    "note": "verb: saying something in a very loud voice"
+   },
+   {
+    "form": "shouts",
+    "pos": "verb",
+    "note": "verb: says something in a very loud voice"
+   }
+  ],
+  "hum": [
+   {
+    "form": "hum",
+    "pos": "verb",
+    "note": "verb: to sing with closed lips"
+   },
+   {
+    "form": "hummed",
+    "pos": "verb",
+    "note": "verb: sang with closed lips"
+   },
+   {
+    "form": "humming",
+    "pos": "verb",
+    "note": "verb: singing with closed lips"
+   },
+   {
+    "form": "hums",
+    "pos": "verb",
+    "note": "verb: sings with closed lips"
+   }
+  ],
+  "sigh": [
+   {
+    "form": "sigh",
+    "pos": "verb",
+    "note": "verb: to let out one long deep breath when tired or sad"
+   },
+   {
+    "form": "sighed",
+    "pos": "verb",
+    "note": "verb: let out one long deep breath when tired or sad"
+   },
+   {
+    "form": "sighing",
+    "pos": "verb",
+    "note": "verb: letting out one long deep breath when tired or sad"
+   },
+   {
+    "form": "sighs",
+    "pos": "verb",
+    "note": "verb: lets out one long deep breath when tired or sad"
+   }
+  ],
+  "whistle": [
+   {
+    "form": "whistle",
+    "pos": "verb",
+    "note": "verb: to make a high clear note by blowing air through the lips"
+   },
+   {
+    "form": "whistled",
+    "pos": "verb",
+    "note": "verb: made a high clear note by blowing air through the lips"
+   },
+   {
+    "form": "whistles",
+    "pos": "verb",
+    "note": "verb: makes a high clear note by blowing air through the lips"
+   },
+   {
+    "form": "whistling",
+    "pos": "verb",
+    "note": "verb: making a high clear note by blowing air through the lips"
+   }
+  ]
+ },
+ "B-tempo-01": {
+  "relentless": [
+   {
+    "form": "relent",
+    "pos": "verb",
+    "note": "verb: to ease off or become less severe"
+   },
+   {
+    "form": "relented",
+    "pos": "verb",
+    "note": "verb: eased off or became less severe"
+   },
+   {
+    "form": "relentless",
+    "pos": "adjective",
+    "note": "adjective: never stopping or easing off"
+   },
+   {
+    "form": "relentlessly",
+    "pos": "adverb",
+    "note": "adverb: without stopping or easing off"
+   }
+  ]
+ },
+ "B-texture-01": {
+  "sticky": [
+   {
+    "form": "sticky",
+    "pos": "adjective",
+    "note": "adjective: tending to cling to surfaces"
+   },
+   {
+    "form": "stick",
+    "pos": "verb",
+    "note": "verb: to become attached to a surface"
+   },
+   {
+    "form": "sticks",
+    "pos": "verb",
+    "note": "verb: becomes attached to a surface"
+   },
+   {
+    "form": "sticking",
+    "pos": "verb",
+    "note": "verb: becoming attached to a surface"
+   }
+  ],
+  "stretchy": [
+   {
+    "form": "stretchy",
+    "pos": "adjective",
+    "note": "adjective: able to be pulled longer and spring back"
+   },
+   {
+    "form": "stretch",
+    "pos": "verb",
+    "note": "verb: to pull something so it becomes longer"
+   },
+   {
+    "form": "stretches",
+    "pos": "verb",
+    "note": "verb: pulls something so it becomes longer"
+   },
+   {
+    "form": "stretched",
+    "pos": "verb",
+    "note": "verb: pulled something so it became longer"
+   },
+   {
+    "form": "stretching",
+    "pos": "verb",
+    "note": "verb: pulling something so it becomes longer"
+   }
+  ],
+  "fluffy": [
+   {
+    "form": "fluffy",
+    "pos": "adjective",
+    "note": "adjective: soft, light, and full of air"
+   },
+   {
+    "form": "fluff",
+    "pos": "noun",
+    "note": "noun: soft light fibres or down"
+   },
+   {
+    "form": "fluffed",
+    "pos": "verb",
+    "note": "verb: made soft and full of air"
+   },
+   {
+    "form": "fluffing",
+    "pos": "verb",
+    "note": "verb: making soft and full of air"
+   }
+  ],
+  "crunchy": [
+   {
+    "form": "crunchy",
+    "pos": "adjective",
+    "note": "adjective: making a sharp sound when bitten or crushed"
+   },
+   {
+    "form": "crunch",
+    "pos": "verb",
+    "note": "verb: to bite or crush with a sharp sound"
+   },
+   {
+    "form": "crunches",
+    "pos": "verb",
+    "note": "verb: bites or crushes with a sharp sound"
+   },
+   {
+    "form": "crunched",
+    "pos": "verb",
+    "note": "verb: bit or crushed with a sharp sound"
+   },
+   {
+    "form": "crunching",
+    "pos": "verb",
+    "note": "verb: biting or crushing with a sharp sound"
+   }
+  ]
+ },
+ "B-time-day-01": {},
+ "B-time-deixis-01": {},
+ "B-time-order-01": {
+  "finally": [
+   {
+    "form": "final",
+    "pos": "adjective",
+    "note": "adjective: last in a series or at the end"
+   },
+   {
+    "form": "finally",
+    "pos": "adverb",
+    "note": "adverb: after a long wait or at the end"
+   },
+   {
+    "form": "finalise",
+    "pos": "verb",
+    "note": "verb: to complete or make settled"
+   },
+   {
+    "form": "finalised",
+    "pos": "verb",
+    "note": "verb: completed or made settled"
+   },
+   {
+    "form": "finalising",
+    "pos": "verb",
+    "note": "verb: completing or making settled"
+   },
+   {
+    "form": "finality",
+    "pos": "noun",
+    "note": "noun: the state of being settled and unable to change"
+   }
+  ]
+ },
+ "B-tricks-01": {},
+ "B-water-01": {
+  "stream": [
+   {
+    "form": "stream",
+    "pos": "noun",
+    "note": "noun: a natural body of running water"
+   },
+   {
+    "form": "streams",
+    "pos": "noun",
+    "note": "noun: natural bodies of running water"
+   },
+   {
+    "form": "streamed",
+    "pos": "verb",
+    "note": "verb: moved along in a steady current"
+   },
+   {
+    "form": "streaming",
+    "pos": "verb",
+    "note": "verb: moving along in a steady current"
+   }
+  ]
+ },
+ "B-weather-01": {
+  "drizzle": [
+   {
+    "form": "drizzle",
+    "pos": "noun",
+    "note": "noun: very light rain, stronger than mist"
+   },
+   {
+    "form": "drizzled",
+    "pos": "verb",
+    "note": "verb: fell as very light rain"
+   },
+   {
+    "form": "drizzling",
+    "pos": "verb",
+    "note": "verb: falling as very light rain"
+   },
+   {
+    "form": "drizzly",
+    "pos": "adjective",
+    "note": "adjective: marked by very light rain"
+   }
+  ],
+  "hail": [
+   {
+    "form": "hail",
+    "pos": "noun",
+    "note": "noun: small balls of ice falling from clouds"
+   },
+   {
+    "form": "hails",
+    "pos": "verb",
+    "note": "verb: sends small balls of ice from clouds"
+   },
+   {
+    "form": "hailed",
+    "pos": "verb",
+    "note": "verb: sent small balls of ice from clouds"
+   },
+   {
+    "form": "hailing",
+    "pos": "verb",
+    "note": "verb: sending small balls of ice from clouds"
+   }
+  ]
+ }
+}

@@ -623,4 +623,29 @@ html.fx .spell-say { background: rgba(14,26,48,.92); box-shadow: inset 0 0 0 1px
   #speller { gap: 4px; }
   #spell-write { gap: 4px; }
   .key { height: 32px; }
+  /* overlays scroll on a sideways phone; margin:auto centres a card that
+     fits and top-aligns one that does not (align-items:center would clip
+     its top out of reach) */
+  .overlay { overflow-y: auto; padding: 8px 0; }
+  .overlay > * { margin: auto; }
+  .title-menu { gap: 8px; }
+  .title-logo, html.fx .title-logo.logo-holo { width: auto; max-width: 60%; max-height: 22vh; }
+  .title-wordmark { font-size: 1.6rem; margin-top: -4px; }
+  .menu-btns { gap: 8px; }
+  .mode-grid { gap: 8px; }
+  .mode-grid .menu-btn.mode-btn { padding: 6px 12px; }
 }
+/* definition tiles: five similar meanings, read as rows */
+#tiles.defs { flex-direction: column; align-items: stretch; flex-wrap: nowrap; gap: 6px; width: min(860px, 96vw); }
+#tiles.defs .tile { min-width: 0; min-height: 0; padding: 9px 18px; text-align: left; font-size: clamp(.95rem, 1.7vw, 1.1rem); font-weight: 700; letter-spacing: 0; line-height: 1.3; }
+@media (max-height: 600px) { #tiles.defs { gap: 3px; } #tiles.defs .tile { padding: 4px 12px; font-size: .85rem; } }
+/* the 🔊 key asks for a tap when the browser blocked the first play */
+.key.nudge { animation: nudge 1s ease-in-out infinite; }
+@keyframes nudge { 50% { transform: scale(1.12); box-shadow: 0 0 0 4px var(--gold); } }
+@media (prefers-reduced-motion: reduce) { .key.nudge { animation: none; box-shadow: 0 0 0 4px var(--gold); } }
+/* four games: a 2x2 grid on wider screens, a column on narrow ones */
+.title-menu { max-width: 640px; }
+.mode-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; width: 100%; }
+.mode-grid .menu-btn.mode-btn { padding: 12px 16px; }
+@media (max-width: 560px) { .mode-grid { grid-template-columns: 1fr; } }
+.tile[hidden] { display: none; }

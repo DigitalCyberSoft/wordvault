@@ -184,12 +184,12 @@
       <button class="tile" data-i="4"></button>
     </section>
 
-    <!-- Spelling Vault: Look, Cover, Write, Check. Replaces the tiles while
-         the spelling game runs; physical keyboards work too. -->
+    <!-- Spelling Vault: dictation (hear the word, type it). Replaces the
+         tiles while the spelling game runs; physical keyboards work too. The
+         look panel is the fallback when sound is off. -->
     <section id="speller" hidden>
       <div id="spell-look">
-        <span class="spell-say">👀 Look at the word, then cover it</span>
-        <button class="key wide" id="spell-hear-look" hidden>🔊 Hear it</button>
+        <span class="spell-say" id="spell-say">👀 Look at the word, then cover it</span>
         <button class="key wide go" id="spell-cover">Cover it ▶</button>
       </div>
       <div id="spell-write" hidden>
@@ -209,9 +209,12 @@
       <div class="title-wordmark">WORD VAULT</div>
       <div class="menu-btns">
         <button class="menu-btn primary" id="continue-btn" style="display:none"><span class="mb-ico">▶</span><span class="mb-text">Continue<span class="mb-sub" id="continue-sub"></span></span></button>
+        <div class="mode-grid">
         <button class="menu-btn mode-btn" data-mode="words"><span class="mb-ico">🔓</span><span class="mb-text">Word Vault<span class="mb-sub" id="mode-sub-words">Pick the word that fits the sentence</span></span></button>
-        <button class="menu-btn mode-btn" data-mode="spell"><span class="mb-ico">✏️</span><span class="mb-text">Spelling Vault<span class="mb-sub" id="mode-sub-spell">Look, cover, write, check</span></span></button>
-        <button class="menu-btn mode-btn" data-mode="dict"><span class="mb-ico">📖</span><span class="mb-text">Dictionary Vault<span class="mb-sub" id="mode-sub-dict">Meanings, ABC order, guide words</span></span></button>
+        <button class="menu-btn mode-btn" data-mode="spell"><span class="mb-ico">✏️</span><span class="mb-text">Spelling Vault<span class="mb-sub" id="mode-sub-spell">Hear the word, spell it</span></span></button>
+        <button class="menu-btn mode-btn" data-mode="dict"><span class="mb-ico">📖</span><span class="mb-text">Dictionary Vault<span class="mb-sub" id="mode-sub-dict">Match words to their meanings</span></span></button>
+        <button class="menu-btn mode-btn" data-mode="forms"><span class="mb-ico">🌱</span><span class="mb-text">Word Forms Vault<span class="mb-sub" id="mode-sub-forms">Terrify, terrified, terrifying?</span></span></button>
+        </div>
         <div class="menu-row">
           <button class="menu-btn small" id="cabinet-menu-btn"><span class="mb-ico">🗄️</span><span class="mb-text">Cabinet</span></button>
           <button class="menu-btn small" id="howto-btn"><span class="mb-ico">❓</span><span class="mb-text">How to</span></button>
@@ -329,10 +332,12 @@
         peek at what a word means (on lower levels).
       </p>
       <p class="howto-modes" style="text-align:left;font-weight:600;line-height:1.55">
-        <b>✏️ Spelling Vault:</b> look at the word in its sentence, cover it, type it from memory, then check.
-        Every word spelt right seats a pin. <b>📖 Dictionary Vault:</b> find the word with a meaning, put words
-        in ABC order, and spot which word belongs on a dictionary page. Each game has its own school year,
-        and four clean cracks in a row pass it. Tap 🏠 to switch games.
+        <b>✏️ Spelling Vault:</b> listen to the word (🔊 plays it again), read the sentence for its meaning,
+        then type it and check. Every word spelt right seats a pin. <b>📖 Dictionary Vault:</b> match each word
+        to its meaning, both ways: pick the word for a meaning, or the meaning for a word. The five meanings are
+        close cousins, so read them carefully. Each game has its own school year, and four clean cracks in a
+        row pass it. <b>🌱 Word Forms Vault:</b> the tiles are versions of the same word (terrify, terrified,
+        terrifying, terror); pick the one the sentence needs. Tap 🏠 to switch games.
       </p>
       <p><button class="big" id="howto-close">Got it</button></p>
     </div>
