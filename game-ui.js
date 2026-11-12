@@ -36,6 +36,19 @@
     if (raw === null || raw === '') return fallback;
     try { return JSON.parse(raw); } catch (e) { return fallback; }
   }
+  // ---- learning modes ----
+  // Three games share the vault: the word game (sentences), the Spelling
+  // Vault and the Dictionary Vault. Each keeps its OWN school year, slips,
+  // history and saved safe (mode-prefixed keys); coins, the cabinet and the
+  // settings are shared. The word game keeps the original key names.
+  var MODES = {
+    words: { icon: '🔓', name: 'Word Vault', short: 'Words' },
+    spell: { icon: '✏️', name: 'Spelling Vault', short: 'Spelling' },
+    dict: { icon: '📖', name: 'Dictionary Vault', short: 'Dictionary' }
+  };
+  var MODE = 'words';
+  function mk(k) { return MODE === 'words' ? 'wordvault.' + k : 'wordvault.' + MODE + '.' + k; }
+  function inMode(m, fn) { var was = MODE; MODE = m; try { return fn(); } finally { MODE = was; } }
   var LS = {
     get coins() { var v = parseInt(lsGet('wordvault.coins'), 10); return isFinite(v) && v >= 0 ? v : 0; },
     set coins(v) { lsSet('wordvault.coins', v); },
@@ -43,24 +56,26 @@
     // rounds an old float save onto the ladder). A fresh game opens at the
     // chosen starting year's first level (a grown-up knob, like the cap).
     get difficulty() {
-      var v = parseFloat(lsGet('wordvault.difficulty'));
+      var v = parseFloat(lsGet(mk('difficulty')));
       return (isFinite(v) && v >= 1) ? C.levelOf(v) : C.yearStart(this.startYear);
     },
-    set difficulty(v) { lsSet('wordvault.difficulty', v); },
+    set difficulty(v) { lsSet(mk('difficulty'), v); },
+    get lastMode() { var m = lsGet('wordvault.mode'); return MODES[m] ? m : 'words'; },
+    set lastMode(v) { lsSet('wordvault.mode', v); },
     get startYear() { var v = parseInt(lsGet('wordvault.startyear'), 10); return (isFinite(v) && v >= 1 && v <= 7) ? v : 1; },
     set startYear(v) { lsSet('wordvault.startyear', v); },
     // Highest level ever reached. The Level Up screen fires only on a new
     // record, never on re-climbing a level after a drop. Defaults to the
     // current level so a returning player isn't congratulated for standing
     // where they already are.
-    get bestLevel() { var v = parseInt(lsGet('wordvault.bestlevel'), 10); return (isFinite(v) && v >= 1) ? v : C.levelOf(this.difficulty); },
-    set bestLevel(v) { lsSet('wordvault.bestlevel', v); },
+    get bestLevel() { var v = parseInt(lsGet(mk('bestlevel')), 10); return (isFinite(v) && v >= 1) ? v : C.levelOf(this.difficulty); },
+    set bestLevel(v) { lsSet(mk('bestlevel'), v); },
     // Exhausted safes in a row: the second one steps down a year (Core.SLIPS_TO_DROP).
-    get slips() { return +(lsGet('wordvault.slips') || 0); },
-    set slips(v) { lsSet('wordvault.slips', v); },
+    get slips() { return +(lsGet(mk('slips')) || 0); },
+    set slips(v) { lsSet(mk('slips'), v); },
     // Live clean-crack streak (spans sets, so it persists) and its record.
-    get streak() { return +(lsGet('wordvault.streak') || 0); },
-    set streak(v) { lsSet('wordvault.streak', v); },
+    get streak() { return +(lsGet(mk('streak')) || 0); },
+    set streak(v) { lsSet(mk('streak'), v); },
     get bestStreak() { return +(lsGet('wordvault.beststreak') || 0); },
     set bestStreak(v) { lsSet('wordvault.beststreak', v); },
     get muted() { return lsGet('wordvault.muted') === 'on'; },
@@ -71,16 +86,16 @@
     set cosmetic(v) { lsSet('wordvault.cosmetic', JSON.stringify(v)); },
     get review() { return jsonGet('wordvault.review', []); },
     set review(v) { lsSet('wordvault.review', JSON.stringify(v)); },
-    get history() { return jsonGet('wordvault.history', {}); },
-    set history(v) { lsSet('wordvault.history', JSON.stringify(v)); },
-    get setsCount() { return +(lsGet('wordvault.setscount') || 0); },
-    set setsCount(v) { lsSet('wordvault.setscount', v); },
+    get history() { return jsonGet(mk('history'), {}); },
+    set history(v) { lsSet(mk('history'), JSON.stringify(v)); },
+    get setsCount() { return +(lsGet(mk('setscount')) || 0); },
+    set setsCount(v) { lsSet(mk('setscount'), v); },
     // setsCount value at the last review lockbox, so one due-point offers at
     // most one review (otherwise a non-empty queue would loop reviews forever).
     get reviewedAt() { var v = parseInt(lsGet('wordvault.reviewedat'), 10); return isFinite(v) ? v : -1; },
     set reviewedAt(v) { lsSet('wordvault.reviewedat', v); },
-    get encounter() { return jsonGet('wordvault.encounter', null); },
-    set encounter(v) { if (v) lsSet('wordvault.encounter', JSON.stringify(v)); else lsDel('wordvault.encounter'); },
+    get encounter() { return jsonGet(mk('encounter'), null); },
+    set encounter(v) { if (v) lsSet(mk('encounter'), JSON.stringify(v)); else lsDel(mk('encounter')); },
     get capLevel() { var v = parseInt(lsGet('wordvault.cap'), 10); return (isFinite(v) && v >= 1) ? v : 0; },
     set capLevel(v) { lsSet('wordvault.cap', v); },
     // holo vault preference; a display setting like mute, so it survives New Game
@@ -150,6 +165,7 @@
   function refreshHud() {
     el('coins').textContent = LS.coins;
     var lvl = currentLevel();
+    el('mode-ico').textContent = MODES[MODE].icon;
     el('level-pill').textContent = 'Year ' + C.yearOf(lvl) + ' ' + yearProgress(lvl);
     el('level-pill').title = C.cleanToPass(lvl) + ' clean crack' + (C.cleanToPass(lvl) === 1 ? '' : 's') +
       ' in a row to pass Year ' + C.yearOf(lvl);
@@ -185,24 +201,32 @@
   }
 
   // ---- picking what comes next ----
+  // a real set id -> the set this mode plays (virtual for spelling/dictionary)
+  function modeSetId(srcId) {
+    return MODE === 'dict' ? 'D' + C.yearOf(currentLevel()) + ':' + srcId : MODE === 'spell' ? 'S:' + srcId : srcId;
+  }
+  function setById(id) { return C.resolveSet(CONTENT.data, id); }
   function pickNext() {
     // dev hooks may pin the first safe to a named set (#missdemo=B-time-deixis-01)
     if (S && S.forceSetId) {
-      var forced = CONTENT.byId(S.forceSetId);
+      var forced = setById(modeSetId(S.forceSetId));
       S.forceSetId = null;
       if (forced) { beginEncounter(forced, {}); return; }
     }
+    // review lockboxes belong to the word game
     var queue = LS.review;
-    if (C.reviewDue(LS.setsCount, queue) && LS.reviewedAt !== LS.setsCount) {
+    if (MODE === 'words' && C.reviewDue(LS.setsCount, queue) && LS.reviewedAt !== LS.setsCount) {
       var pick = C.pickReview(queue);
-      var set = CONTENT.byId(pick.entry.setId);
+      var set = setById(pick.entry.setId);
       if (set) { beginEncounter(set, { review: true, entry: pick.entry }); return; }
     }
     var history = LS.history;
     var setId = C.pickSet(CONTENT.data, {
-      level: currentLevel(), history: history, lastSetId: S && S.set ? S.set.id : null
+      level: currentLevel(), history: history, lastSetId: S && S.set ? (S.set.srcId || S.set.id) : null,
+      // usage sets (their/there, borrow/lend) carry usage notes, not dictionary meanings
+      filter: MODE === 'dict' ? function (c, id) { return id.charAt(0) !== 'C'; } : null
     }, C.makeRng(Date.now() >>> 0));
-    beginEncounter(CONTENT.byId(setId), {});
+    beginEncounter(setById(modeSetId(setId)), {});
   }
 
   function beginEncounter(set, opts) {
@@ -245,9 +269,12 @@
   // ---- Get Ready ----
   function showReady() {
     var enc = S.enc, set = S.set;
-    el('ready-title').textContent = S.review
-      ? '🔐 Review lockbox: ' + set.theme
+    el('ready-title').textContent = S.review ? '🔐 Review lockbox: ' + set.theme
+      : MODE === 'spell' ? '✏️ Spelling list: ' + set.theme
+      : MODE === 'dict' ? '📖 Dictionary page: ' + set.theme
       : 'The job: ' + set.theme;
+    el('ready-btn').textContent = MODE === 'spell' ? 'I’ve read the list — start spelling ▶'
+      : MODE === 'dict' ? 'I’ve read the page — open the job ▶' : 'I’ve read them — open the job ▶';
     var runsLeft = enc.runsAllowed - enc.misses;
     el('ready-runs').textContent = S.review
       ? '1 run · 3 pins to open · one miss and it stays shut'
@@ -262,7 +289,8 @@
     box.innerHTML = '';
     // Gloss cards in the authored order: the semantic gradient, not the
     // shuffled play order, so the child builds the scale before playing.
-    C.gradientOrder(set).forEach(function (w) {
+    // the Dictionary Vault shows its page in ABC order, like a real dictionary
+    (MODE === 'dict' ? C.alphaSort(C.gradientOrder(set)) : C.gradientOrder(set)).forEach(function (w) {
       var word = null;
       for (var i = 0; i < set.words.length; i++) if (set.words[i].w === w) word = set.words[i];
       box.appendChild(glossCard(word));
@@ -273,6 +301,7 @@
     timerStop();
     el('slip-text').textContent = '';
     renderTilesBlank();
+    showInputFor(MODE);
     show('ready-overlay');
     if (S.auto) autoContinue('ready-btn');
   }
@@ -291,9 +320,10 @@
     var s = C.drawSentence(S.enc, S.set, S.rng);
     persistEncounter();
     renderSlip(s);
-    renderTiles(s);
     renderPins();
     S.busy = false;
+    if (MODE === 'spell') { startSpell(s); return; }
+    renderTiles(s);
     timerStart();
     if (S.auto) autoAnswer(s);
   }
@@ -439,8 +469,8 @@
   }
   function timerStart() {
     timerStop();
-    if (!LS.timerOn) return;
-    timer.total = C.lockTimerFor(currentLevel());
+    if (!LS.timerOn || MODE === 'spell') return;
+    timer.total = C.lockTimerFor(currentLevel()) + (MODE === 'dict' ? 5000 : 0);
     timer.deadline = Date.now() + timer.total;
     el('timer-wrap').hidden = false;
     timerTick();
@@ -548,43 +578,165 @@
       S.answered += 1;
       if (res.correct) {
         if (ghost) { ghost.parentNode.removeChild(ghost); tileEl.classList.remove('gone'); }
-        var blank = el('blank');
-        blank.textContent = sentence.surface[word];
-        blank.classList.add('filled', 'glow');
-        Snd.seat();
-        renderPins();
-        dialTurn(1);
-        mechThunk();
-        if (res.state === 'cracked') {
-          afterMs(500, function () { S.review ? onReviewOpened() : onCracked(); });
-        } else {
-          afterMs(520, nextSentence);
-        }
+        gradedRight(res, sentence.surface[word]);
       } else {
-        Snd.drop();
-        el('stage').classList.add('dimmed');
-        FX.pulse('fail', 0); // wrong-word flavour: discharge and power flicker
-        vaultShudder();
-        dropGhostBack(ghost, tileEl, function () {
-          Snd.relock();
-          springPins();
-          afterMs(480, function () {
-            el('stage').classList.remove('dimmed');
-            if (res.state === 'miss') showMissCard(sentence, word, true);
-            else if (res.state === 'exhausted') {
-              // light the third lamp NOW (renderPins otherwise waits for the
-              // next ready screen), then ring the klaxon and show the card
-              renderPins();
-              el('vault').classList.add('alarm');
-              FX.pulse('alarm');
-              Snd.alarm();
-              afterMs(750, function () { showMissCard(sentence, word, false); });
-            }
-            else onReviewFailed(sentence, word);
-          });
-        });
+        failBeat();
+        dropGhostBack(ghost, tileEl, function () { gradedWrong(res, sentence, word); });
       }
     });
+  }
+  // shared by tiles and typed spellings: a seated pin, or the relock beat
+  function gradedRight(res, shown) {
+    var blank = el('blank');
+    blank.classList.remove('typing', 'looking');
+    blank.textContent = shown;
+    blank.classList.add('filled', 'glow');
+    Snd.seat();
+    renderPins();
+    dialTurn(1);
+    mechThunk();
+    if (res.state === 'cracked') {
+      afterMs(500, function () { S.review ? onReviewOpened() : onCracked(); });
+    } else {
+      afterMs(520, nextSentence);
+    }
+  }
+  function failBeat() {
+    Snd.drop();
+    el('stage').classList.add('dimmed');
+    FX.pulse('fail', 0); // wrong-word flavour: discharge and power flicker
+    vaultShudder();
+  }
+  function gradedWrong(res, sentence, picked) {
+    Snd.relock();
+    springPins();
+    afterMs(480, function () {
+      el('stage').classList.remove('dimmed');
+      if (res.state === 'miss') showMissCard(sentence, picked, true);
+      else if (res.state === 'exhausted') {
+        // light the third lamp NOW (renderPins otherwise waits for the
+        // next ready screen), then ring the klaxon and show the card
+        renderPins();
+        el('vault').classList.add('alarm');
+        FX.pulse('alarm');
+        Snd.alarm();
+        afterMs(750, function () { showMissCard(sentence, picked, false); });
+      }
+      else onReviewFailed(sentence, picked);
+    });
+  }
+
+  // ---- Spelling Vault: Look, Cover, Write, Check ----
+  // LOOK: the word sits in the slip's blank, lit gold (spoken aloud when the
+  // device has an on-device voice); COVER: after lookMsFor(level) or a tap;
+  // WRITE: on-screen or physical keyboard; CHECK: graded by Core.answerTyped.
+  // three rows so the whole keyboard fits under the vault on a laptop screen:
+  // letters plus apostrophe and hyphen, with Back, Hear and Check on the ends
+  var KEY_ROWS = [['qwertyuiop', 'back'], ["asdfghjkl'-", null], ['zxcvbnm', 'check']];
+  var spellTimer = 0;
+  function showInputFor(mode) {
+    el('tiles').hidden = mode === 'spell';
+    el('speller').hidden = mode !== 'spell';
+    if (mode === 'spell') { el('spell-look').hidden = true; el('spell-write').hidden = true; }
+  }
+  function keyBtn(label, attrs, cls) {
+    var k = document.createElement('button');
+    k.className = 'key' + (cls ? ' ' + cls : '');
+    k.textContent = label;
+    for (var a in attrs) k.setAttribute(a, attrs[a]);
+    return k;
+  }
+  function buildKeys() {
+    KEY_ROWS.forEach(function (row, r) {
+      var box = el('krow-' + (r + 1));
+      box.innerHTML = '';
+      if (row[1] === 'check') box.appendChild(keyBtn('🔊', { id: 'spell-hear', 'aria-label': 'hear the word', hidden: '' }, 'wide'));
+      row[0].split('').forEach(function (ch) {
+        box.appendChild(keyBtn(ch === "'" ? '’' : ch, { 'data-ch': ch,
+          'aria-label': ch === "'" ? 'apostrophe' : ch === '-' ? 'hyphen' : ch }));
+      });
+      if (row[1] === 'back') box.appendChild(keyBtn('⌫', { id: 'spell-back', 'aria-label': 'delete a letter' }, 'wide'));
+      if (row[1] === 'check') box.appendChild(keyBtn('✔ Check', { id: 'spell-check' }, 'wide go'));
+    });
+  }
+  // On-device voices only: a network voice would send the word off the
+  // device, and this game promises no network at play time.
+  function localVoice() {
+    if (!window.speechSynthesis || !speechSynthesis.getVoices) return null;
+    var vs = speechSynthesis.getVoices().filter(function (v) { return v.localService && /^en/i.test(v.lang); });
+    var au = vs.filter(function (v) { return /en[-_]AU/i.test(v.lang); });
+    return au[0] || vs[0] || null;
+  }
+  function speak(word) {
+    var v = localVoice();
+    if (!v || LS.muted) return;
+    var u = new SpeechSynthesisUtterance(word);
+    u.voice = v; u.lang = v.lang; u.rate = 0.85;
+    speechSynthesis.cancel();
+    speechSynthesis.speak(u);
+  }
+  function spellTarget() { var s = currentSentence(); return s ? s.surface[s.answer] : ''; }
+  function startSpell(sentence) {
+    clearTimeout(spellTimer);
+    S.spell = { phase: 'look', typed: '' };
+    var blank = el('blank');
+    blank.className = 'looking';
+    blank.textContent = sentence.surface[sentence.answer];
+    var canHear = !!localVoice();
+    el('spell-hear-look').hidden = !canHear;
+    el('spell-hear').hidden = !canHear;
+    el('spell-look').hidden = false;
+    el('spell-write').hidden = true;
+    speak(sentence.surface[sentence.answer]);
+    spellTimer = setTimeout(coverWord, S.auto ? 300 : C.lookMsFor(currentLevel()));
+  }
+  function coverWord() {
+    clearTimeout(spellTimer);
+    if (!S || !S.spell || S.spell.phase !== 'look' || S.enc.state !== 'run') return;
+    S.spell.phase = 'write';
+    el('spell-look').hidden = true;
+    el('spell-write').hidden = false;
+    renderTyped();
+    Snd.page();
+    if (S.auto) autoSpell();
+  }
+  function renderTyped() {
+    var blank = el('blank');
+    blank.className = 'typing';
+    blank.textContent = S.spell.typed.replace(/'/g, '’');
+  }
+  function typeKey(ch) {
+    if (!S || S.busy || !S.spell || S.spell.phase !== 'write') return;
+    if (S.spell.typed.length >= spellTarget().length + 6) return;
+    S.spell.typed += ch;
+    Snd.tap();
+    renderTyped();
+  }
+  function backKey() {
+    if (!S || S.busy || !S.spell || S.spell.phase !== 'write') return;
+    S.spell.typed = S.spell.typed.slice(0, -1);
+    renderTyped();
+  }
+  function checkSpelling() {
+    if (!S || S.busy || !S.spell || S.spell.phase !== 'write' || S.enc.state !== 'run') return;
+    if (!S.spell.typed.trim()) return; // an empty check is a slip of the finger, not an answer
+    S.busy = true;
+    S.spell.phase = 'checked';
+    var sentence = currentSentence();
+    var res = C.answerTyped(S.enc, S.set, sentence, S.spell.typed);
+    S.answered += 1;
+    el('spell-write').hidden = true;
+    if (res.correct) gradedRight(res, sentence.surface[sentence.answer]);
+    else { failBeat(); afterMs(300, function () { gradedWrong(res, sentence, res.typed); }); }
+  }
+  function onSpellKeydown(e) {
+    if (MODE !== 'spell' || !S || !S.spell || e.ctrlKey || e.metaKey || e.altKey) return;
+    if (document.querySelector('.overlay.show')) return;
+    if (S.spell.phase === 'look' && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); coverWord(); return; }
+    if (S.spell.phase !== 'write') return;
+    if (e.key === 'Enter') { e.preventDefault(); checkSpelling(); }
+    else if (e.key === 'Backspace') { e.preventDefault(); backKey(); }
+    else if (/^[a-zA-Z'’-]$/.test(e.key)) { e.preventDefault(); typeKey(e.key.toLowerCase().replace('’', "'")); }
   }
 
   // ---- miss card (contrastive feedback) ----
@@ -612,17 +764,55 @@
     });
     wl.hidden = false;
   }
-  function fillMissCard(sentence, picked) {
-    el('miss-title').textContent = 'The tumblers reset';
-    el('miss-picked-h').textContent = 'You picked';
-    var con = C.contrastFor(S.set, sentence, picked);
+  function letters(cells) {
+    var box = document.createElement('span');
+    box.className = 'ltrs';
+    cells.forEach(function (c) {
+      var sp = document.createElement('span');
+      sp.className = 'ltr' + (c.ok ? '' : ' bad');
+      sp.textContent = c.ch === "'" ? '’' : c.ch;
+      box.appendChild(sp);
+    });
+    return box;
+  }
+  function fillSpellCard(sentence, typed) {
+    var target = sentence.surface[sentence.answer], d = C.spellDiff(target, typed);
+    el('miss-title').textContent = '✏️ Not quite — check the letters';
+    el('miss-right-h').textContent = 'The right spelling';
+    el('miss-picked-h').textContent = 'You wrote';
     el('miss-cue').innerHTML = '';
     var read = document.createElement('span');
     read.appendChild(document.createTextNode('The slip wanted: “'));
     var strong = document.createElement('b');
+    strong.textContent = C.fillText(sentence, sentence.answer);
+    read.appendChild(strong);
+    read.appendChild(document.createTextNode('”.'));
+    el('miss-cue').appendChild(read);
+    var right = null;
+    S.set.words.forEach(function (x) { if (x.w === sentence.answer) right = x; });
+    el('miss-right-word').innerHTML = '';
+    el('miss-right-word').appendChild(letters(d.right));
+    el('miss-right-gloss').textContent = right ? right.w + ': ' + right.gloss : '';
+    el('miss-picked-word').innerHTML = '';
+    el('miss-picked-word').appendChild(letters(d.wrote.length ? d.wrote : [{ ch: '—', ok: false }]));
+    el('miss-picked-gloss').textContent = '';
+    el('miss-line').textContent = d.tip;
+    el('whenline').hidden = true;
+  }
+  function fillMissCard(sentence, picked) {
+    if (MODE === 'spell') { fillSpellCard(sentence, picked); return; }
+    el('miss-title').textContent = 'The tumblers reset';
+    el('miss-right-h').textContent = 'The word that fits';
+    el('miss-picked-h').textContent = 'You picked';
+    var con = C.contrastFor(S.set, sentence, picked);
+    el('miss-cue').innerHTML = '';
+    var read = document.createElement('span');
+    read.appendChild(document.createTextNode(MODE === 'dict' ? 'The page wanted: “' : 'The slip wanted: “'));
+    var strong = document.createElement('b');
     strong.textContent = con.filled;
     read.appendChild(strong);
-    read.appendChild(document.createTextNode('” — the cue was “' + con.cue + '”.'));
+    // a meaning question's cue IS the meaning, already quoted in the answer
+    read.appendChild(document.createTextNode(sentence.kind === 'meaning' ? '”.' : '” — the cue was “' + con.cue + '”.'));
     el('miss-cue').appendChild(read);
     el('miss-right-word').textContent = con.right.surface;
     el('miss-right-gloss').textContent = con.right.gloss;
@@ -660,6 +850,7 @@
   // ---- timeout card: same overlay, but there is no picked word to contrast ----
   function fillTimeoutCard(sentence) {
     el('miss-title').textContent = '⏱ Too slow — the lock re-sealed';
+    el('miss-right-h').textContent = 'The word that fits';
     el('miss-picked-h').textContent = 'The clock';
     var right = null;
     S.set.words.forEach(function (x) { if (x.w === sentence.answer) right = x; });
@@ -708,12 +899,13 @@
   // ---- outcomes ----
   function recordHistory(outcome) {
     var h = LS.history;
-    var entry = h[S.set.id] || { plays: 0, cracks: 0, exhausts: 0 };
+    var hid = S.set.srcId || S.set.id;
+    var entry = h[hid] || { plays: 0, cracks: 0, exhausts: 0 };
     entry.plays += 1;
     if (outcome === 'crack') entry.cracks += 1;
     if (outcome === 'exhausted') entry.exhausts += 1;
     entry.at = Date.now();
-    h[S.set.id] = entry;
+    h[hid] = entry;
     LS.history = h;
   }
 
@@ -747,7 +939,7 @@
     if (reward) { owned.push(reward.itemId); LS.collectibles = owned; }
     recordHistory('crack');
     LS.setsCount = LS.setsCount + 1;
-    LS.review = C.pushReview(LS.review, { setId: S.set.id, exhausted: false, at: Date.now() });
+    if (MODE === 'words') LS.review = C.pushReview(LS.review, { setId: S.set.id, exhausted: false, at: Date.now() });
     // the big celebration is for passing a year for the first time
     var newLevel = currentLevel();
     if (adj.event === 'promoted' && newLevel > LS.bestLevel) S.queuedLevelUp = newLevel;
@@ -783,7 +975,8 @@
     renderDoor(false);
     el('vault-reward').textContent = ' ';
     if (S.queuedLevelUp) {
-      el('levelup-num').textContent = 'Year ' + C.yearOf(S.queuedLevelUp);
+      el('levelup-num').textContent = (MODE === 'words' ? '' : MODES[MODE].icon + ' ' + MODES[MODE].short + ' · ') +
+        'Year ' + C.yearOf(S.queuedLevelUp);
       el('levelup-rank').textContent = rankFor(S.queuedLevelUp) +
         ' · new words, and the vaults start again at 2 pins';
       S.queuedLevelUp = 0;
@@ -803,7 +996,7 @@
     el('exhaust-progress').textContent = progressLine(adj.event, adj.difficulty, true);
     recordHistory('exhausted');
     LS.setsCount = LS.setsCount + 1;
-    LS.review = C.pushReview(LS.review, { setId: S.set.id, exhausted: true, at: Date.now() });
+    if (MODE === 'words') LS.review = C.pushReview(LS.review, { setId: S.set.id, exhausted: true, at: Date.now() });
     LS.encounter = null;
     refreshHud();
     var box = el('exhaust-words');
@@ -879,7 +1072,7 @@
     Snd.tap();
     tile.classList.add('held');
     press = { tile: tile, id: e.pointerId, x: e.clientX, y: e.clientY, consumed: false, timer: null };
-    if (currentLevel() < C.HELP_THRESHOLD && !S.review) {
+    if (MODE === 'words' && currentLevel() < C.HELP_THRESHOLD && !S.review) {
       press.timer = setTimeout(function () {
         if (!press) return;
         press.consumed = true; // this gesture is a peek, not an answer
@@ -1000,9 +1193,13 @@
   }
 
   function wipeProgress() {
-    ['coins', 'difficulty', 'bestlevel', 'streak', 'slips', 'collectibles', 'cosmetic',
-      'review', 'history', 'setscount', 'reviewedat', 'encounter'].forEach(function (k) {
+    ['coins', 'collectibles', 'cosmetic', 'review', 'reviewedat', 'mode'].forEach(function (k) {
       lsDel('wordvault.' + k);
+    });
+    Object.keys(MODES).forEach(function (m) {
+      inMode(m, function () {
+        ['difficulty', 'bestlevel', 'streak', 'slips', 'history', 'setscount', 'encounter'].forEach(function (k) { lsDel(mk(k)); });
+      });
     });
     // the best-streak record survives a new game, like an arcade high score
     S = null;
@@ -1012,6 +1209,18 @@
 
   // ---- demo / QA hash hooks ----
   function autoContinue(btnId) { setTimeout(function () { el(btnId).click(); }, 250); }
+  function autoSpell() {
+    setTimeout(function () {
+      if (!S || S.busy || !S.spell || S.spell.phase !== 'write') return;
+      var target = spellTarget(), mode = S.auto;
+      if (mode === 'stall') return;
+      var wrong = mode === 'wrong' || (mode === 'miss' && S.enc.correctInRun === S.enc.need - 1);
+      if (mode === 'miss' && wrong) S.auto = 'right';
+      S.spell.typed = wrong ? target.slice(0, -1) : target;
+      renderTyped();
+      checkSpelling();
+    }, 350);
+  }
   function autoAnswer(sentence) {
     setTimeout(function () {
       if (!S || S.busy || S.enc.state !== 'run') return;
@@ -1039,17 +1248,56 @@
   }
 
   // ---- boot ----
+  function setMode(m) {
+    MODE = MODES[m] ? m : 'words';
+    LS.lastMode = MODE;
+    showInputFor(MODE);
+    refreshHud();
+  }
+  // a mode resumes its own saved safe; otherwise it picks a fresh one
   function startGame(resume) {
     hide('title-overlay');
+    showInputFor(MODE);
     if (resume) {
       var saved = LS.encounter;
-      var set = saved && CONTENT.byId(saved.setId);
+      var set = saved && setById(saved.setId);
       if (set) {
         beginEncounter(set, { review: saved.review, entry: saved.reviewEntry, resume: saved.enc });
         return;
       }
     }
     pickNext();
+  }
+  // the title menu shows each game's own year so a child sees all three ladders
+  function refreshTitle() {
+    Object.keys(MODES).forEach(function (m) {
+      inMode(m, function () {
+        var base = { words: 'Pick the word that fits the sentence', spell: 'Look, cover, write, check',
+                     dict: 'Meanings, ABC order, guide words' }[m];
+        var lvl = currentLevel();
+        var started = !!LS.encounter || LS.setsCount > 0;
+        el('mode-sub-' + m).textContent = started ? 'Year ' + C.yearOf(lvl) + ' ' + yearProgress(lvl) + ' · ' + base : base;
+      });
+    });
+    var last = LS.lastMode;
+    var saved = inMode(last, function () { return LS.encounter; });
+    var sset = saved && setById(saved.setId);
+    el('continue-btn').style.display = sset ? '' : 'none';
+    if (sset) {
+      el('continue-sub').textContent = MODES[last].icon + ' ' + sset.theme +
+        (saved.enc.misses ? ' · run ' + (saved.enc.runIndex + 1) : '');
+    }
+  }
+  // 🏠: park the current safe (persisted at its run boundary) and go to the menu
+  function goHome() {
+    // only an in-flight grading animation blocks; a card on screen never does
+    if (S && S.busy && !document.querySelector('.overlay.show')) return;
+    timerStop();
+    clearTimeout(spellTimer);
+    if (S && S.enc) persistEncounter();
+    ['ready-overlay', 'settings-overlay', 'cabinet-overlay', 'howto-overlay'].forEach(hide);
+    refreshTitle();
+    show('title-overlay');
   }
 
   function init() {
@@ -1059,22 +1307,38 @@
     refreshHud();
     refreshSettings();
 
-    var saved = LS.encounter;
-    if (saved && CONTENT.byId(saved.setId)) {
-      el('continue-btn').style.display = '';
-      el('continue-sub').textContent = CONTENT.byId(saved.setId).theme +
-        (saved.enc.misses ? ' · run ' + (saved.enc.runIndex + 1) : '');
-    }
+    buildKeys();
+    setMode(LS.lastMode);
+    refreshTitle();
 
-    el('continue-btn').addEventListener('click', function () { Snd.tap(); startGame(true); });
-    el('newgame-btn').addEventListener('click', function () {
-      Snd.tap();
-      if (LS.encounter || LS.setsCount > 0) {
-        askConfirm(function () { wipeProgress(); startGame(false); });
-        return;
-      }
-      startGame(false);
+    el('continue-btn').addEventListener('click', function () { Snd.tap(); setMode(LS.lastMode); startGame(true); });
+    Array.prototype.forEach.call(document.querySelectorAll('.mode-btn'), function (b) {
+      b.addEventListener('click', function () {
+        Snd.tap();
+        setMode(b.getAttribute('data-mode'));
+        startGame(!!LS.encounter);
+      });
     });
+    el('home-btn').addEventListener('click', function () { Snd.tap(); goHome(); });
+    el('ready-home').addEventListener('click', function () { Snd.tap(); goHome(); });
+    el('speller').addEventListener('click', function (e) {
+      var k = e.target.closest ? e.target.closest('button') : null;
+      if (!k) return;
+      if (k.id === 'spell-cover') coverWord();
+      else if (k.id === 'spell-back') backKey();
+      else if (k.id === 'spell-check') checkSpelling();
+      else if (k.id === 'spell-hear' || k.id === 'spell-hear-look') speak(spellTarget());
+      else if (k.getAttribute('data-ch')) typeKey(k.getAttribute('data-ch'));
+    });
+    document.addEventListener('keydown', onSpellKeydown);
+    // voices load asynchronously on some browsers; re-check the Hear buttons
+    if (window.speechSynthesis && 'onvoiceschanged' in speechSynthesis) {
+      speechSynthesis.onvoiceschanged = function () {
+        var can = !!localVoice();
+        if (S && S.spell && S.spell.phase === 'look') el('spell-hear-look').hidden = !can;
+        if (S && S.spell && S.spell.phase === 'write') el('spell-hear').hidden = !can;
+      };
+    }
     el('confirm-yes').addEventListener('click', function () {
       Snd.tap();
       hide('confirm-overlay');
@@ -1107,10 +1371,14 @@
       // cycling the starting year MOVES the game there, both directions: it is
       // the grown-up placing the child, streak and all
       LS.startYear = (LS.startYear % 7) + 1;
-      LS.difficulty = C.yearStart(LS.startYear);
-      LS.bestLevel = LS.difficulty; // celebrations count from the placement
-      LS.streak = 0;
-      LS.slips = 0;
+      Object.keys(MODES).forEach(function (m) {
+        inMode(m, function () {
+          LS.difficulty = C.yearStart(LS.startYear);
+          LS.bestLevel = LS.difficulty; // celebrations count from the placement
+          LS.streak = 0;
+          LS.slips = 0;
+        });
+      });
       refreshHud();
       refreshSettings();
     });
@@ -1136,8 +1404,8 @@
       askConfirm(function () {
         wipeProgress();
         hide('settings-overlay');
+        refreshTitle();
         show('title-overlay');
-        el('continue-btn').style.display = 'none';
         el('year-stat').hidden = true;
       });
     });
@@ -1179,12 +1447,18 @@
         base === 'timerdemo' || base === 'dialdemo') {
       // a trailing ! on the set id holds teaching cards open (screenshot rigs)
       var hold = !!arg && arg.charAt(arg.length - 1) === '!';
+      // #demo=spell / #wrongdemo=dict pick the game instead of a set
+      var forceId = hold ? arg.slice(0, -1) : arg;
+      if (forceId && MODES[forceId]) { setMode(forceId); forceId = null; }
       S = { auto: base === 'demo' || base === 'dialdemo' ? 'right' : base === 'wrongdemo' ? 'wrong'
               : base === 'missdemo' ? 'miss' : base === 'timerdemo' ? 'stall' : null,
-            forceSetId: hold ? arg.slice(0, -1) : arg, holdCards: hold };
+            forceSetId: forceId, holdCards: hold };
       startGame(!!LS.encounter);
     }
   }
+  if (!Element.prototype.closest) Element.prototype.closest = function (sel) {
+    var n = this; while (n && n.nodeType === 1) { if (n.matches && n.matches(sel)) return n; n = n.parentNode; } return null;
+  };
 
   document.addEventListener('DOMContentLoaded', init);
 })();

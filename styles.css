@@ -562,3 +562,65 @@ body.dial-clock #dial { stroke-width: 6; }
   #door-leaf, #tile-ghost, button.big, .menu-btn, .tile, #mech .stack, #bolt, .pinstack .keypin, .pinstack .setline,
   #dial, #handle, #rays, .coin-fly, #alarm-box .lamp { transition: none; }
 }
+
+/* ---- Spelling Vault: look panel and on-screen keyboard ---- */
+#speller { width: min(860px, 96vw); display: flex; flex-direction: column; align-items: center; gap: 8px; }
+#tiles[hidden], #speller[hidden], #spell-look[hidden], #spell-write[hidden] { display: none; }
+#spell-look { display: flex; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap; min-height: 84px; }
+.spell-say { font-weight: 800; font-size: 1.15rem; }
+#spell-write { display: flex; flex-direction: column; align-items: center; gap: 6px; width: 100%; }
+.krow { display: flex; gap: clamp(3px, .8vw, 7px); justify-content: center; width: 100%; }
+.key {
+  border: none; border-radius: var(--r-sm); min-width: clamp(26px, 6.6vw, 54px); height: clamp(36px, 5.6vh, 48px); padding: 0 6px;
+  font-family: inherit; font-size: clamp(1rem, 2.2vw, 1.35rem); font-weight: 800; color: #4a3410; cursor: pointer;
+  background: linear-gradient(180deg, #f2d488 0%, var(--brass-bright) 40%, var(--brass) 100%);
+  box-shadow: inset 0 2px 0 rgba(255,255,255,.6), 0 4px 0 var(--brass-dark), 0 6px 10px rgba(0,0,0,.2);
+  -webkit-tap-highlight-color: transparent; touch-action: manipulation;
+}
+.key:active, .key.pressed { transform: translateY(3px); box-shadow: inset 0 2px 0 rgba(255,255,255,.4), 0 1px 0 var(--brass-dark); }
+.key.wide { padding: 0 14px; font-size: 1.05rem; }
+.key[hidden] { display: none; }
+.key.go { background: var(--go); color: #fff; box-shadow: inset 0 2px 0 rgba(255,255,255,.35), 0 4px 0 var(--go-dark), 0 6px 10px rgba(0,0,0,.2); }
+.key:disabled { opacity: .5; cursor: default; }
+#blank.looking { background: rgba(240,180,41,.25); box-shadow: 0 0 0 3px var(--gold); letter-spacing: .06em; }
+#blank.typing { min-width: 6ch; letter-spacing: .08em; }
+#blank.typing:after { content: '|'; font-weight: 400; opacity: .55; animation: caret 1s steps(1) infinite; }
+@keyframes caret { 50% { opacity: 0; } }
+/* letter-by-letter check on the spelling miss card */
+.ltrs { font-size: clamp(1.4rem, 3vw, 1.9rem); font-weight: 800; letter-spacing: .08em; }
+.ltrs .ltr.bad { background: var(--gold); color: #3a2a16; border-radius: 4px; padding: 0 2px; }
+html.fx .key { background: linear-gradient(180deg, rgba(24,44,74,.96) 0%, rgba(11,21,38,.96) 100%); color: #d9f4ff;
+  text-shadow: 0 0 8px rgba(70,230,255,.5); box-shadow: inset 0 0 0 1px var(--fx-line), 0 4px 0 #071626, 0 6px 12px rgba(0,0,0,.45); }
+html.fx .key.go { background: #0e5e74; box-shadow: inset 0 0 0 1px rgba(70,230,255,.6), 0 4px 0 #071626; }
+html.fx .spell-say { color: var(--fx-text); }
+html.fx #blank.looking { background: rgba(240,180,41,.18); box-shadow: 0 0 0 2px rgba(240,180,41,.8), 0 0 18px rgba(240,180,41,.4); }
+@media (prefers-reduced-motion: reduce) { #blank.typing:after { animation: none; } }
+.link-btn { border: none; background: none; font-family: inherit; font-weight: 800; font-size: 1rem; color: var(--dim-ink); cursor: pointer; text-decoration: underline; padding: 6px 10px; }
+html.fx .link-btn { color: #7be6ff; }
+.menu-row { display: flex; gap: 10px; width: 100%; }
+.menu-btn.small { flex: 1; padding: 12px 10px; gap: 6px; font-size: 1rem; justify-content: center; }
+.menu-btn.small .mb-ico { font-size: 1.2rem; width: auto; }
+.menu-btns { gap: 12px; }
+.menu-btn.mode-btn { padding: 13px 22px; }
+#title-overlay { overflow-y: auto; }
+.spell-say { background: var(--paper); border-radius: 999px; padding: 8px 16px; box-shadow: 0 3px 0 rgba(0,0,0,.12); }
+html.fx .spell-say { background: rgba(14,26,48,.92); box-shadow: inset 0 0 0 1px var(--fx-line); }
+/* short screens (phones held sideways): the vault shrinks to whatever is left
+   after the slip and the tiles/keyboard, instead of pushing them off-screen */
+#vault-wrap { min-height: 0; }
+@media (max-height: 600px) {
+  body { display: flex; flex-direction: column; }
+  #hud { flex: none; padding: 4px 10px; gap: 8px; flex-wrap: nowrap; }
+  #hud .logo { display: none; }
+  #hud .stat { padding: 2px 9px; font-size: .9rem; white-space: nowrap; }
+  #hud button.toggle { padding: 6px 10px; font-size: .9rem; white-space: nowrap; }
+  #stage { flex: 1; min-height: 0; height: auto; gap: 4px; padding: 4px 12px 6px; }
+  #slip { padding: 6px 16px; min-height: 0; font-size: clamp(1rem, 2.2vw, 1.25rem); line-height: 1.35; }
+  #vault { height: 100%; width: auto; max-width: 100%; }
+  #tiles { min-height: 0; }
+  .tile { padding: 8px 14px; min-height: 42px; min-width: 96px; }
+  #spell-look { min-height: 0; }
+  #speller { gap: 4px; }
+  #spell-write { gap: 4px; }
+  .key { height: 32px; }
+}

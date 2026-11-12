@@ -86,5 +86,56 @@ data.sets.forEach(function (set) {
   ok(rev.state === 'cracked', set.id + ' review lockbox opens');
 });
 
+// Learning modes over the real corpus: every dictionary question, for every
+// set and year, has exactly one right tile; spelling has items for (almost)
+// every word; both modes run an encounter to a crack.
+(function () {
+  var Cc = require('../game-core.js');
+  var dictQs = 0, guide = 0;
+  data.sets.forEach(function (set) {
+    if (set.bank === 'C') return;
+    for (var y = 1; y <= 7; y++) {
+      var d = Cc.resolveSet(data, 'D' + y + ':' + set.id);
+      ok(d && d.sentences.length >= 3, set.id + ' Y' + y + ': dictionary set builds');
+      var sorted = Cc.alphaSort(d.words.map(function (w) { return w.w; }));
+      d.sentences.forEach(function (q) {
+        dictQs++;
+        var vals = d.words.map(function (w) { return q.surface[w.w]; });
+        ok(new Set(vals).size === 5, q.id + ': five distinct tiles');
+        var i = sorted.indexOf(q.answer);
+        if (q.kind === 'meaning') {
+          var w = d.words.filter(function (x) { return x.w === q.answer; })[0];
+          ok(!Cc.glossGivesAway(w), q.id + ': meaning does not give the word away');
+          ok(d.words.every(function (x) { return x.w === q.answer || x.gloss !== w.gloss; }), q.id + ': meaning is unique in the set');
+        }
+        if (q.kind === 'first') ok(i === 0, q.id + ': first');
+        if (q.kind === 'last') ok(i === 4, q.id + ': last');
+        if (q.kind === 'after') ok(i > 0 && sorted[i - 1] === q.info.ref, q.id + ': after');
+        if (q.kind === 'before') ok(i < 4 && sorted[i + 1] === q.info.ref, q.id + ': before');
+        if (q.kind === 'guide') {
+          guide++;
+          var inside = sorted.filter(function (x) { return Cc.alphaKey(x) > Cc.alphaKey(q.info.from) && Cc.alphaKey(x) < Cc.alphaKey(q.info.to); });
+          ok(inside.length === 1 && inside[0] === q.answer, q.id + ': exactly one word between the guide words');
+          ok(sorted.indexOf(q.info.from) === -1 && sorted.indexOf(q.info.to) === -1, q.id + ': guide words are not tiles');
+        }
+      });
+    }
+    var sp = Cc.resolveSet(data, 'S:' + set.id);
+    var spellable = sp.words.filter(function (w) { return sp.sentences.some(function (s) { return s.answer === w.w; }); }).length;
+    ok(spellable >= 4, set.id + ': spelling covers at least 4 of 5 words (' + spellable + ')');
+    [sp, Cc.resolveSet(data, 'D4:' + set.id)].forEach(function (vs) {
+      var rng = Cc.makeRng(11), enc = Cc.newEncounter(vs, { level: 16 }, rng);
+      Cc.startRun(enc);
+      for (var k = 0; k < enc.need; k++) {
+        var s = Cc.drawSentence(enc, vs, rng);
+        if (vs.mode === 'spell') Cc.answerTyped(enc, vs, s, s.surface[s.answer]);
+        else Cc.answer(enc, vs, s, s.answer);
+      }
+      ok(enc.state === 'cracked', vs.id + ': a perfect run cracks it');
+    });
+  });
+  ok(dictQs > 5000 && guide > 500, 'dictionary mode has broad coverage (' + dictQs + ' questions, ' + guide + ' guide-word pages)');
+})();
+
 console.log(passed + ' passed, ' + failed + ' failed');
 process.exit(failed ? 1 : 0);

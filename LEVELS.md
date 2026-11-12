@@ -129,6 +129,20 @@ first-ever arrival in a year; every crack and exhaust card says where the child
 now stands ("2 clean cracks in a row to pass Year 3"). Saves from the old float
 curve round onto the integer ladder.
 
+## Spelling and Dictionary Vaults
+
+Both modes climb the same 28-step ladder with the same in-a-row rule, each on
+its own record. Spelling serves a set's own sentences (the answer's surface
+form, so inflection rules - doubling, dropping e, y to ied - come with it) and
+draws sets by the same gifted pitch; the word's grade is a meaning grade, so
+spelling difficulty follows it loosely. Dictionary questions by year:
+
+| Years | Questions |
+|---|---|
+| 1-2 | meaning, ABC first, ABC last |
+| 3-4 | meaning, first, last, straight before/after, guide words |
+| 5-7 | meaning, straight before/after, guide words |
+
 ## Exhaustion and review
 
 Three misses exhaust a safe: the missed words' cards are shown, the child

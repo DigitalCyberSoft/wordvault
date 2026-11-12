@@ -436,5 +436,73 @@ var alwaysWrong = function (s) { return s.answer === 'alpha' ? 'bravo' : 'alpha'
 })();
 
 // ---------------------------------------------------------------------------
+// Learning modes: Dictionary questions have exactly one right tile; Spelling
+// grades typed words; both reuse the encounter engine.
+(function () {
+  var content = { sets: [makeSet('A-dfix-01'), makeSet('A-dfix-02')], shelves: C.SHELVES };
+  var src = content.sets[0];
+  eq(C.alphaKey("They're-ok"), 'theyreok', 'alphaKey keeps letters only, lower case');
+  eq(C.alphaSort(['delta', 'Alpha', 'carol']).join(','), 'Alpha,carol,delta', 'alphaSort ignores case');
+  eq(C.dictKindsFor(1).join(','), 'meaning,first,last', 'Years 1-2 meet meanings and first/last only');
+  ok(C.dictKindsFor(3).indexOf('guide') !== -1, 'guide words arrive in Year 3');
+  ok(C.dictKindsFor(6).indexOf('first') === -1, 'Years 5-7 skip the easy first/last questions');
+  ok(C.glossGivesAway({ w: 'sip', gloss: 'drink in sips' }), 'a meaning containing its own word family is caught');
+  ok(C.glossGivesAway({ w: 'dusty', gloss: 'covered with a layer of dust' }), 'suffix-stripped family is caught');
+  ok(!C.glossGivesAway({ w: 'throw', gloss: 'send something flying through the air' }), 'throw is not given away by through');
+  [1, 3, 6].forEach(function (y) {
+    var d = C.buildDictionarySet(content, src, y);
+    eq(d.id, 'D' + y + ':A-dfix-01', 'dictionary set id carries the year');
+    // fixture glosses name their own word, so only ABC questions survive in Year 1
+    ok(d.sentences.length >= (y === 1 ? 2 : 5), 'Year ' + y + ' dictionary set has questions');
+    var sorted = C.alphaSort(src.words.map(function (w) { return w.w; }));
+    d.sentences.forEach(function (q) {
+      eq((q.text.match(/___/g) || []).length, 1, q.id + ' has one blank');
+      ok(C.dictKindsFor(y).indexOf(q.kind) !== -1, q.id + ' kind ' + q.kind + ' allowed in Year ' + y);
+      var i = sorted.indexOf(q.answer);
+      if (q.kind === 'first') eq(i, 0, 'first is the first');
+      if (q.kind === 'last') eq(i, 4, 'last is the last');
+      if (q.kind === 'after') eq(sorted[i - 1], q.info.ref, 'after names the predecessor');
+      if (q.kind === 'before') eq(sorted[i + 1], q.info.ref, 'before names the successor');
+      if (q.kind === 'guide') {
+        var inside = sorted.filter(function (w) { return C.alphaKey(w) > C.alphaKey(q.info.from) && C.alphaKey(w) < C.alphaKey(q.info.to); });
+        eq(inside.join(','), q.answer, 'exactly one tile sits between the guide words');
+      }
+    });
+  });
+  var dset = C.resolveSet(content, 'D3:A-dfix-01');
+  ok(dset && dset.mode === 'dict', 'resolveSet rebuilds a dictionary set from its id');
+  eq(C.resolveSet(content, 'D3:nope'), null, 'unknown dictionary source resolves to null');
+  var rng = C.makeRng(5), enc = C.newEncounter(dset, { level: 9 }, rng);
+  C.startRun(enc);
+  var q = C.drawSentence(enc, dset, rng);
+  eq(C.answer(enc, dset, q, q.answer).correct, true, 'the dictionary engine grades the right tile');
+  var wrongPick = dset.words.filter(function (w) { return w.w !== q.answer; })[0].w;
+  var q2 = C.drawSentence(enc, dset, rng);
+  var con = C.contrastFor(dset, q2, q2.answer === wrongPick ? dset.words[1].w : wrongPick);
+  ok(typeof con.line === 'string' && con.line.length > 0, 'every dictionary miss gets a teaching line');
+  ok(/comes before/.test(C.explainDictionary({ kind: 'first', answer: 'alpha', info: {} }, 'bravo')), 'ABC explanation names the order');
+  ok(/another page/.test(C.explainDictionary({ kind: 'guide', answer: 'carol', info: { from: 'cab', to: 'cat' } }, 'delta')), 'guide explanation sends the wrong word to another page');
+
+  var sset = C.resolveSet(content, 'S:A-dfix-01');
+  ok(sset && sset.mode === 'spell' && sset.sentences.every(function (x) { return !x.reserve; }), 'spelling set serves every sentence');
+  enc = C.newEncounter(sset, { level: 1 }, rng);
+  C.startRun(enc);
+  var sp = C.drawSentence(enc, sset, rng);
+  var r = C.answerTyped(enc, sset, sp, '  ' + sp.surface[sp.answer].toUpperCase() + ' ');
+  ok(r.correct, 'spelling ignores case and surrounding space');
+  sp = C.drawSentence(enc, sset, rng);
+  r = C.answerTyped(enc, sset, sp, sp.surface[sp.answer] + 'x');
+  ok(!r.correct && r.state === 'miss', 'a misspelling is a miss that ends the run');
+  eq(C.normSpelling('They’re'), "they're", 'curly apostrophes count as straight ones');
+  eq(C.spellDiff('hopping', 'hoping').tip, 'This word doubles the “p”.', 'doubled-letter tip');
+  eq(C.spellDiff('hoping', 'hopping').tip, 'Only one “p” in this word.', 'single-letter tip');
+  eq(C.spellDiff('bake', 'bak').tip, 'Don’t forget the silent “e” on the end.', 'silent-e tip');
+  eq(C.spellDiff('form', 'from').tip, 'All the right letters, but some are in the wrong order.', 'order tip');
+  var dd = C.spellDiff('whimpered', 'wimperd');
+  eq(dd.right.filter(function (c) { return !c.ok; }).map(function (c) { return c.ch; }).join(''), 'he', 'diff marks the missing letters');
+  ok(C.lookMsFor(1) > C.lookMsFor(28), 'the youngest get the longest look');
+})();
+
+// ---------------------------------------------------------------------------
 console.log(passed + ' passed, ' + failed + ' failed');
 process.exit(failed ? 1 : 0);

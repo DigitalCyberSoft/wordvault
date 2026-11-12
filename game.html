@@ -35,10 +35,11 @@
   <div id="hud">
     <span class="logo"><img src="assets/logo/logo-mark.svg" alt="" onerror="this.style.display='none'"> Word Vault</span>
     <span class="stat coins">🪙 <b id="coins">0</b></span>
-    <span class="stat">🔓 <b id="level-pill">Year 1 ○○○○</b></span>
+    <span class="stat"><span id="mode-ico">🔓</span> <b id="level-pill">Year 1 ○○○○</b></span>
     <span class="stat year" id="year-stat" hidden>🎓 <b id="year-pill">Year 1</b></span>
     <span class="stat" title="Best clean-crack streak">🏆 <b id="beststreak">0</b></span>
     <span class="spacer"></span>
+    <button class="toggle" id="home-btn" title="Back to the menu to switch games">🏠</button>
     <button class="toggle" id="cabinet-btn">🗄️ Cabinet</button>
     <button class="toggle" id="mute-toggle">🔊 Sound on</button>
     <button class="toggle" id="settings-btn">⚙️</button>
@@ -182,6 +183,21 @@
       <button class="tile" data-i="3"></button>
       <button class="tile" data-i="4"></button>
     </section>
+
+    <!-- Spelling Vault: Look, Cover, Write, Check. Replaces the tiles while
+         the spelling game runs; physical keyboards work too. -->
+    <section id="speller" hidden>
+      <div id="spell-look">
+        <span class="spell-say">👀 Look at the word, then cover it</span>
+        <button class="key wide" id="spell-hear-look" hidden>🔊 Hear it</button>
+        <button class="key wide go" id="spell-cover">Cover it ▶</button>
+      </div>
+      <div id="spell-write" hidden>
+        <div class="krow" id="krow-1"></div>
+        <div class="krow" id="krow-2"></div>
+        <div class="krow" id="krow-3"></div>
+      </div>
+    </section>
   </div>
 
   <div id="gloss-pop" hidden></div>
@@ -193,10 +209,14 @@
       <div class="title-wordmark">WORD VAULT</div>
       <div class="menu-btns">
         <button class="menu-btn primary" id="continue-btn" style="display:none"><span class="mb-ico">▶</span><span class="mb-text">Continue<span class="mb-sub" id="continue-sub"></span></span></button>
-        <button class="menu-btn primary" id="newgame-btn"><span class="mb-ico">✨</span><span class="mb-text">New game</span></button>
-        <button class="menu-btn" id="cabinet-menu-btn"><span class="mb-ico">🗄️</span><span class="mb-text">Curio Cabinet<span class="mb-sub">Your cracked-safe treasures</span></span></button>
-        <button class="menu-btn" id="howto-btn"><span class="mb-ico">❓</span><span class="mb-text">How to play</span></button>
-        <button class="menu-btn" id="settings-menu-btn"><span class="mb-ico">⚙️</span><span class="mb-text">Settings</span></button>
+        <button class="menu-btn mode-btn" data-mode="words"><span class="mb-ico">🔓</span><span class="mb-text">Word Vault<span class="mb-sub" id="mode-sub-words">Pick the word that fits the sentence</span></span></button>
+        <button class="menu-btn mode-btn" data-mode="spell"><span class="mb-ico">✏️</span><span class="mb-text">Spelling Vault<span class="mb-sub" id="mode-sub-spell">Look, cover, write, check</span></span></button>
+        <button class="menu-btn mode-btn" data-mode="dict"><span class="mb-ico">📖</span><span class="mb-text">Dictionary Vault<span class="mb-sub" id="mode-sub-dict">Meanings, ABC order, guide words</span></span></button>
+        <div class="menu-row">
+          <button class="menu-btn small" id="cabinet-menu-btn"><span class="mb-ico">🗄️</span><span class="mb-text">Cabinet</span></button>
+          <button class="menu-btn small" id="howto-btn"><span class="mb-ico">❓</span><span class="mb-text">How to</span></button>
+          <button class="menu-btn small" id="settings-menu-btn"><span class="mb-ico">⚙️</span><span class="mb-text">Settings</span></button>
+        </div>
       </div>
     </div>
   </div>
@@ -208,6 +228,7 @@
       <div class="ready-runs" id="ready-runs"></div>
       <div id="ready-glosses"></div>
       <p style="margin:12px 0 14px"><button class="big brass" id="ready-btn">I’ve read them — open the job ▶</button></p>
+      <p style="margin:0 0 6px"><button class="link-btn" id="ready-home">🏠 Switch game</button></p>
     </div>
   </div>
 
@@ -216,7 +237,7 @@
       <h2 id="miss-title">The tumblers reset</h2>
       <p class="cue-line" id="miss-cue"></p>
       <div class="contrast-cols">
-        <div class="right-col"><h3>The word that fits</h3><div class="cword" id="miss-right-word"></div><p id="miss-right-gloss"></p></div>
+        <div class="right-col"><h3 id="miss-right-h">The word that fits</h3><div class="cword" id="miss-right-word"></div><p id="miss-right-gloss"></p></div>
         <div class="picked-col"><h3 id="miss-picked-h">You picked</h3><div class="cword" id="miss-picked-word"></div><p id="miss-picked-gloss"></p></div>
       </div>
       <div class="whenline" id="whenline" hidden>
@@ -306,6 +327,12 @@
         burnt-out fuse) and the charge arcs away: that run is over, a warning lamp lights, and
         three misses trip the alarm — that vault stays sealed for now. Press and hold a tile to
         peek at what a word means (on lower levels).
+      </p>
+      <p class="howto-modes" style="text-align:left;font-weight:600;line-height:1.55">
+        <b>✏️ Spelling Vault:</b> look at the word in its sentence, cover it, type it from memory, then check.
+        Every word spelt right seats a pin. <b>📖 Dictionary Vault:</b> find the word with a meaning, put words
+        in ABC order, and spot which word belongs on a dictionary page. Each game has its own school year,
+        and four clean cracks in a row pass it. Tap 🏠 to switch games.
       </p>
       <p><button class="big" id="howto-close">Got it</button></p>
     </div>

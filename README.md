@@ -46,6 +46,38 @@ on each other (walk-family first, scalding-vs-boiling later).
 - **The Curio Cabinet.** Every crack pays a few coins and one collectible;
   five related treasures complete a shelf.
 
+## Learning modes
+
+The title menu offers three games on the same vault. Each keeps its own
+school year (mode-prefixed `wordvault.<mode>.*` keys), clean-crack ladder and
+saved safe; coins, the cabinet and settings are shared, and 🏠 switches games.
+
+- **🔓 Word Vault** - the sentence game above (keys keep their original names).
+- **✏️ Spelling Vault** - Look, Cover, Write, Check, the routine Australian
+  classrooms use. The word sits lit in its own judged sentence for
+  `Core.lookMsFor` (5 s in Year 1 down to 2.5 s in Year 7), is covered, and is
+  typed on an on-screen keyboard (physical keys work too). The miss card shows
+  the right spelling and the attempt letter by letter, with the differences in
+  gold and a tip for the common slips (doubled letters, silent e, letter
+  order, apostrophes) from `Core.spellDiff`. No lock timer: spelling is about
+  care. 🔊 Hear it appears only when the device has an ON-DEVICE voice
+  (`localService`), so no word ever leaves the device.
+- **📖 Dictionary Vault** - the five tiles answer dictionary questions: which
+  word has this meaning, ABC order (first / last in Years 1-2; straight
+  before / after from Year 3), and guide words (from Year 3: "A page starts at
+  “bake” and ends at “beforehand”. ___ is on it."). The Get Ready card is the
+  dictionary page in ABC order. Misses explain the letter that decides the
+  order. The lock timer gets 5 s extra.
+
+Both modes build VIRTUAL sets from the gated corpus (`Core.spellingSetFrom`,
+`Core.buildDictionarySet`, ids `S:<set>` and `D<year>:<set>`), so they need no
+new content gates: glosses are already unique within a set (G3/G4), meanings
+that contain their own word family ("sip: drink in sips") are skipped by
+`Core.glossGivesAway`, and guide words are picked from the corpus headwords so
+exactly one tile falls between them. `tools/test-content.js` re-proves one
+right tile for every dictionary question of every set in every year. Bank C
+usage sets stay out of the Dictionary Vault (their cards are usage notes).
+
 ## No build step, no server, no network
 
 Plain HTML, CSS and classic `<script>` JavaScript. Open `game.html` straight
@@ -124,6 +156,7 @@ for a pass/fail banner over the shipped content.
 | `#settings` | Open Settings |
 | `#cabinet` | Open the Curio Cabinet |
 | `#selftest` | Run the content check in-page |
+| `#demo=spell`, `#missdemo=dict` | A demo hook given a mode name plays that game instead of pinning a set |
 
 ## Privacy
 
