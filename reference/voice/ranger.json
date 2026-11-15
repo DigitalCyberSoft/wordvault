@@ -1,0 +1,9 @@
+{
+ "name": "Ranger",
+ "engine": "Qwen3-TTS 12Hz 1.7B: VoiceDesign made the reference, Base clones it per word",
+ "design_seed": 59,
+ "instruct": "Male, late thirties, a broad, ocker Australian accent from rural Queensland. An outback wildlife ranger bursting with excitement, as if he has just spotted a rare animal: loud, warm, grinning, high-energy delivery with big rising emphasis and a cheeky laugh in the voice. Despite the energy, every word is crisp and clearly pronounced.",
+ "ref_text": "Oh, would you look at that! What a little beauty, eh? Righto, we've got some ripper spelling words today, so listen up and give it a red-hot go, mate!",
+ "ref_audio": "reference/voice/ranger-ref.wav",
+ "note": "An original character, an excitable outback wildlife ranger. Not a clone of any real person."
+}

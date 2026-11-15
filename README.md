@@ -55,8 +55,10 @@ saved safe; coins, the cabinet and settings are shared, and 🏠 switches games.
 - **🔓 Word Vault** - the sentence game above (keys keep their original names).
 - **✏️ Spelling Vault** - dictation, like a classroom spelling test. The
   Get Ready card is the week's list (words and meanings); then each word is
-  SPOKEN from a clip recorded at build time (`assets/voice/<slug>.mp3`, an
-  Australian-teacher voice, see `tools/generate-voice.py`) while its judged
+  SPOKEN from a clip recorded at build time (`assets/voice/<slug>.mp3`) in the voice of
+  "Ranger", an original character: an excitable outback wildlife ranger with
+  a broad Queensland accent, made locally with Qwen3-TTS (see
+  `tools/generate-voice.py` and `reference/voice/ranger.json`) while its judged
   sentence sits on the slip for meaning, and the child types it on an
   on-screen keyboard (physical keys work too); 🔊 Again replays it. The miss
   card shows the right spelling and the attempt letter by letter, with the

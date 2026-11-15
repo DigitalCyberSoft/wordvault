@@ -11,8 +11,15 @@ the sentence on screen for meaning. The game promises no network at play time,
 so voices are generated here, at build time, and ship as files; the runtime
 only plays assets/voice/<slug>.mp3 (Core.voiceSlug gives the same slug).
 
-Voice: OpenAI gpt-4o-mini-tts with an Australian-teacher instruction. Because
-no human ear is in this loop, every clip is VERIFIED: gpt-4o-transcribe
+Voice (--engine qwen, the default): "Ranger", an original character - an
+excitable outback wildlife ranger with a broad Queensland accent. Local
+Qwen3-TTS (../qwen3-tty): the VoiceDesign checkpoint made one reference clip
+from a description (reference/voice/ranger.json, ranger-ref.wav); the Base
+checkpoint clones that clip for every word, so all clips are one voice. No
+API cost for speech; tools/qwen-voice-worker.py runs in the qwen venv.
+--engine openai keeps the old gpt-4o-mini-tts "coral" teacher voice.
+
+Because no human ear is in this loop, every clip is VERIFIED: gpt-4o-transcribe
 transcribes it and the result must match the word (letters only). Mismatches
 are listed and exit non-zero, except known homophones recorded in
 HOMOPHONES_OK (the sentence on screen tells the child which spelling).
@@ -116,12 +123,63 @@ def api(url: str, body: bytes, ctype: str, key: str, timeout=90) -> bytes:
 
 
 def generate(word: str, key: str) -> None:
+    """OpenAI engine: one word, one request."""
     wav = api("https://api.openai.com/v1/audio/speech", json.dumps({
         "model": TTS_MODEL, "voice": TTS_VOICE, "input": word,
         "instructions": INSTRUCTIONS + (" " + CAREFUL[word] if word in CAREFUL else ""),
         "response_format": "wav"}).encode(), "application/json", key)
     with tempfile.NamedTemporaryFile(suffix=".wav", delete=False) as f:
         f.write(wav); tmp = f.name
+    finish(word, tmp)
+
+
+QWEN_HOME = Path(os.environ.get("QWEN3_TTS_HOME", ROOT.parent / "qwen3-tty"))
+# Clone mode takes no "say it carefully" instruction, and the ranger's broad
+# accent flaps a middle t/d ("patted" is heard as "padded", "waded" as
+# "waited"). He reads these respellings instead; the transcription check
+# still has to hear the real word.
+SPEAK_AS = {"patted": "pat tid", "waded": "way-did"}
+# A bare lowercase word sometimes picks up a sound from the end of the
+# reference line ("...go, mate!" + relish -> "tearlish"); 27 of 551 first
+# takes did. Retries change the framing as well as the seed: each of these
+# passed 12/12 on the words that failed bare.
+FRAMES = ["{}", "{C}.", "{C}!", "... {}"]
+
+
+def frame(text: str, attempt: int) -> str:
+    return FRAMES[attempt % len(FRAMES)].format(text, C=text[:1].upper() + text[1:])
+VOICE = ROOT / "reference" / "voice" / "ranger.json"
+
+
+def generate_qwen(words: list, attempt: int) -> dict:
+    """Qwen engine: the whole batch in one worker run (the model loads once).
+    Each retry uses a new seed, so a misheard word gets a fresh take."""
+    voice = json.loads(VOICE.read_text())
+    tmpdir = Path(tempfile.mkdtemp(prefix="wv-voice-"))
+    job = {"mode": "clone", "ref_audio": str(ROOT / voice["ref_audio"]), "ref_text": voice["ref_text"],
+           "items": [{"text": frame(SPEAK_AS.get(w, w), attempt), "out": str(tmpdir / (slug(w) + ".wav")), "seed": 1 + attempt * 7919}
+                     for w in words]}
+    p = subprocess.run([str(QWEN_HOME / ".venv" / "bin" / "python"), str(ROOT / "tools" / "qwen-voice-worker.py")],
+                       input=json.dumps(job), capture_output=True, text=True,
+                       env={**os.environ, "QWEN3_TTS_HOME": str(QWEN_HOME)})
+    done = {}
+    for line in p.stdout.splitlines():
+        if line.startswith("{"):
+            r = json.loads(line); done[Path(r["out"]).stem] = r
+    errors = {}
+    with concurrent.futures.ThreadPoolExecutor(8) as pool:
+        def fin(w):
+            r = done.get(slug(w))
+            if not r or not r["ok"]:
+                return w, (r or {}).get("error") or "worker gave no output: " + p.stderr[-300:]
+            finish(w, r["out"]); return w, None
+        for w, err in pool.map(fin, words):
+            if err: errors[w] = err
+    return errors
+
+
+def finish(word: str, tmp: str) -> None:
+    """Trim and level a raw take into assets/voice/<slug>.mp3."""
     dest = OUT / (slug(word) + ".mp3")
     # trim long leading/trailing silence so the word lands promptly, but keep a
     # 0.1 s cushion each side: a tight -50 dB trim clipped soft onsets and
@@ -213,6 +271,7 @@ def main() -> int:
     ap.add_argument("--verify", action="store_true", help="re-transcribe every clip")
     ap.add_argument("--only", default="")
     ap.add_argument("--retry", type=int, default=3, help="re-record a misheard clip up to N times")
+    ap.add_argument("--engine", choices=["qwen", "openai"], default="qwen")
     ap.add_argument("--normalize", action="store_true",
                     help="level every existing clip to TARGET_LUFS (no API calls), then exit")
     args = ap.parse_args()
@@ -230,12 +289,20 @@ def main() -> int:
         words = [w for w in words if w in want]
     check = json.loads(CHECK.read_text()) if CHECK.exists() else {}
 
-    todo = [w for w in words if args.force or not (OUT / (slug(w) + ".mp3")).exists()]
-    print(f"generate-voice: {len(words)} target word(s), {len(todo)} to record")
-    with concurrent.futures.ThreadPoolExecutor(6) as pool:
-        for w, err in zip(todo, pool.map(lambda w: _safe(generate, w, key), todo)):
-            if err: print(f"  FAILED {w}: {err}")
+    def record(ws, attempt):
+        if args.engine == "qwen":
+            errors = generate_qwen(ws, attempt)
+        else:
+            with concurrent.futures.ThreadPoolExecutor(6) as pool:
+                errors = {w: e for w, e in zip(ws, pool.map(lambda w: _safe(generate, w, key), ws)) if e}
+        for w in ws:
+            if w in errors: print(f"  FAILED {w}: {errors[w]}")
             else: check.pop(w, None)  # a fresh clip needs a fresh check
+
+    todo = [w for w in words if args.force or not (OUT / (slug(w) + ".mp3")).exists()]
+    print(f"generate-voice: {len(words)} target word(s), {len(todo)} to record with {args.engine}")
+    if todo:
+        record(todo, 0)
 
     verify = [w for w in words if (OUT / (slug(w) + ".mp3")).exists() and (args.verify or w not in check)]
     print(f"  verifying {len(verify)} clip(s) with {STT_MODEL}")
@@ -249,8 +316,8 @@ def main() -> int:
         if not again:
             break
         print(f"  retry {attempt + 1}: re-recording {len(again)} misheard clip(s)")
+        record(again, attempt + 1)
         with concurrent.futures.ThreadPoolExecutor(6) as pool:
-            list(pool.map(lambda w: _safe(generate, w, key), again))
             for w, res in zip(again, pool.map(lambda w: _safe(transcribe, w, key, ret=True), again)):
                 heard = res if isinstance(res, str) else ""
                 check[w] = {"heard": heard.strip(), "ok": heard_ok(w, heard)}
