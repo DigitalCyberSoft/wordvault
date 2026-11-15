@@ -22,6 +22,11 @@ Run with the tools venv (nltk cmudict enables the homophone check):
        python3 tools/generate-voice.py --force      # regenerate everything
        python3 tools/generate-voice.py --only clapped,read
        python3 tools/generate-voice.py --verify     # re-transcribe every clip
+       python3 tools/generate-voice.py --normalize  # re-level every clip (no API)
+
+Every clip is levelled to TARGET_LUFS (-18, a little above the sound
+effects) with two-pass linear loudnorm. A big boost can tip the transcriber
+on a borderline clip (hop -> "hot"); re-record those with --only ... --force.
 
 OPENAI_API_KEY comes from the environment. Needs ffmpeg. Stdlib only.
 """
@@ -123,10 +128,32 @@ def generate(word: str, key: str) -> None:
     # final -d ("brisk" played as "risk", "tumbled" as "tumble").
     # Mono 24 kHz 48 kbps: a few KB per word.
     trim = "silenceremove=start_periods=1:start_threshold=-60dB:start_silence=0.1"
+    trimmed = tmp + ".trim.wav"
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", tmp, "-af",
-                    f"{trim},areverse,{trim},areverse",
-                    "-ac", "1", "-ar", "24000", "-b:a", "48k", str(dest)], check=True)
-    os.unlink(tmp)
+                    f"{trim},areverse,{trim},areverse", "-ac", "1", trimmed], check=True)
+    normalize(trimmed, dest)
+    os.unlink(tmp); os.unlink(trimmed)
+
+
+# Every clip plays at the same loudness, a little above the sound effects
+# (about -20 LUFS): raw TTS output spanned 20 dB (winked -42 LUFS, others
+# -22), so a child set the volume for one word and missed the next.
+TARGET_LUFS, TARGET_TP = -18.0, -1.5
+
+
+def normalize(src: str, dest: Path) -> None:
+    """Two-pass EBU R128 loudnorm (linear, so the voice is not compressed)."""
+    probe = subprocess.run(["ffmpeg", "-hide_banner", "-i", src, "-af",
+                            f"loudnorm=I={TARGET_LUFS}:TP={TARGET_TP}:LRA=11:print_format=json",
+                            "-f", "null", "-"], capture_output=True, text=True, check=True).stderr
+    m = json.loads(probe[probe.rindex("{"):probe.rindex("}") + 1])
+    af = (f"loudnorm=I={TARGET_LUFS}:TP={TARGET_TP}:LRA=11:linear=true:"
+          f"measured_I={m['input_i']}:measured_TP={m['input_tp']}:measured_LRA={m['input_lra']}:"
+          f"measured_thresh={m['input_thresh']}:offset={m['target_offset']}")
+    out = str(dest) + ".tmp.mp3"
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", src, "-af", af,
+                    "-ac", "1", "-ar", "24000", "-b:a", "48k", out], check=True)
+    os.replace(out, dest)
 
 
 def transcribe(word: str, key: str) -> str:
@@ -186,7 +213,15 @@ def main() -> int:
     ap.add_argument("--verify", action="store_true", help="re-transcribe every clip")
     ap.add_argument("--only", default="")
     ap.add_argument("--retry", type=int, default=3, help="re-record a misheard clip up to N times")
+    ap.add_argument("--normalize", action="store_true",
+                    help="level every existing clip to TARGET_LUFS (no API calls), then exit")
     args = ap.parse_args()
+    if args.normalize:
+        clips = sorted(OUT.glob("*.mp3"))
+        with concurrent.futures.ThreadPoolExecutor(8) as pool:
+            list(pool.map(lambda p: normalize(str(p), p), clips))
+        print(f"generate-voice: levelled {len(clips)} clip(s) to {TARGET_LUFS} LUFS")
+        return 0
     key = os.environ.get("OPENAI_API_KEY") or sys.exit("OPENAI_API_KEY not set")
     OUT.mkdir(parents=True, exist_ok=True)
     words = targets()

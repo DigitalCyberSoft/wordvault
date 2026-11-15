@@ -1,6 +1,6 @@
 {
  "abrupt": {
-  "heard": "abrupt",
+  "heard": "Abrupt",
   "ok": true
  },
  "admire": {
@@ -8,7 +8,7 @@
   "ok": true
  },
  "admired": {
-  "heard": "admired",
+  "heard": "Admired",
   "ok": true
  },
  "adore": {
@@ -20,7 +20,7 @@
   "ok": true
  },
  "affable": {
-  "heard": "Affable",
+  "heard": "Affable.",
   "ok": true
  },
  "afternoon": {
@@ -32,11 +32,11 @@
   "ok": true
  },
  "agility": {
-  "heard": "Agility.",
+  "heard": "Agility",
   "ok": true
  },
  "alarmed": {
-  "heard": "alarmed",
+  "heard": "Alarmed",
   "ok": true
  },
  "alibi": {
@@ -52,11 +52,11 @@
   "ok": true
  },
  "ambiguous": {
-  "heard": "Ambiguous.",
+  "heard": "ambiguous",
   "ok": true
  },
  "ambivalent": {
-  "heard": "Ambivalent",
+  "heard": "Ambivalent.",
   "ok": true
  },
  "announce": {
@@ -76,7 +76,7 @@
   "ok": true
  },
  "apprehensive": {
-  "heard": "apprehensive",
+  "heard": "Apprehensive",
   "ok": true
  },
  "arch": {
@@ -84,7 +84,7 @@
   "ok": true
  },
  "arid": {
-  "heard": "Arid.",
+  "heard": "arid",
   "ok": true
  },
  "astute": {
@@ -100,15 +100,15 @@
   "ok": true
  },
  "bawl": {
-  "heard": "ball",
+  "heard": "Ball",
   "ok": true
  },
  "bawled": {
-  "heard": "bald",
+  "heard": "Bald",
   "ok": true
  },
  "bawling": {
-  "heard": "Balling",
+  "heard": "Bawling",
   "ok": true
  },
  "beforehand": {
@@ -116,7 +116,7 @@
   "ok": true
  },
  "bellow": {
-  "heard": "Bellow",
+  "heard": "bellow",
   "ok": true
  },
  "bellowed": {
@@ -156,7 +156,7 @@
   "ok": true
  },
  "bluff": {
-  "heard": "Bluff",
+  "heard": "Bluff.",
   "ok": true
  },
  "boast": {
@@ -176,11 +176,11 @@
   "ok": true
  },
  "bobs": {
-  "heard": "Bobs",
+  "heard": "Bob's",
   "ok": true
  },
  "boiled": {
-  "heard": "Boiled.",
+  "heard": "Boiled",
   "ok": true
  },
  "booming": {
@@ -192,7 +192,7 @@
   "ok": true
  },
  "borrowed": {
-  "heard": "borrowed",
+  "heard": "Borrowed",
   "ok": true
  },
  "borrows": {
@@ -212,7 +212,7 @@
   "ok": true
  },
  "brittle": {
-  "heard": "Brittle.",
+  "heard": "Brittle",
   "ok": true
  },
  "brood": {
@@ -228,7 +228,7 @@
   "ok": true
  },
  "brought": {
-  "heard": "Brought",
+  "heard": "brought",
   "ok": true
  },
  "bulky": {
@@ -256,7 +256,7 @@
   "ok": true
  },
  "chatter": {
-  "heard": "Chatter",
+  "heard": "chatter",
   "ok": true
  },
  "chattered": {
@@ -280,11 +280,11 @@
   "ok": true
  },
  "cherished": {
-  "heard": "Cherished",
+  "heard": "Cherished.",
   "ok": true
  },
  "cherishes": {
-  "heard": "Cherishes.",
+  "heard": "Cherishes",
   "ok": true
  },
  "clap": {
@@ -292,7 +292,7 @@
   "ok": true
  },
  "clapped": {
-  "heard": "Clapped",
+  "heard": "Clapped.",
   "ok": true
  },
  "clever": {
@@ -328,7 +328,7 @@
   "ok": true
  },
  "coloured": {
-  "heard": "colored",
+  "heard": "Colored",
   "ok": true
  },
  "comet": {
@@ -340,7 +340,7 @@
   "ok": true
  },
  "composed": {
-  "heard": "Composed",
+  "heard": "composed",
   "ok": true
  },
  "concise": {
@@ -352,15 +352,15 @@
   "ok": true
  },
  "confessed": {
-  "heard": "confessed",
+  "heard": "Confessed",
   "ok": true
  },
  "confesses": {
-  "heard": "confesses",
+  "heard": "Confesses.",
   "ok": true
  },
  "constellation": {
-  "heard": "Constellation.",
+  "heard": "Constellation",
   "ok": true
  },
  "courtyard": {
@@ -376,7 +376,7 @@
   "ok": true
  },
  "covet": {
-  "heard": "covet",
+  "heard": "Covet",
   "ok": true
  },
  "coveted": {
@@ -388,7 +388,7 @@
   "ok": true
  },
  "cower": {
-  "heard": "cower",
+  "heard": "Cower",
   "ok": true
  },
  "cowered": {
@@ -396,7 +396,7 @@
   "ok": true
  },
  "cowering": {
-  "heard": "Cowering.",
+  "heard": "cowering",
   "ok": true
  },
  "cradle": {
@@ -420,7 +420,7 @@
   "ok": true
  },
  "craves": {
-  "heard": "Craves",
+  "heard": "craves",
   "ok": true
  },
  "crawl": {
@@ -440,7 +440,7 @@
   "ok": true
  },
  "curious": {
-  "heard": "curious",
+  "heard": "Curious",
   "ok": true
  },
  "curt": {
@@ -448,19 +448,19 @@
   "ok": true
  },
  "cut": {
-  "heard": "cut",
+  "heard": "Cut",
   "ok": true
  },
  "cuts": {
-  "heard": "Cuts",
+  "heard": "cuts",
   "ok": true
  },
  "damp": {
-  "heard": "damp",
+  "heard": "Damp",
   "ok": true
  },
  "dance": {
-  "heard": "dance",
+  "heard": "Dance",
   "ok": true
  },
  "danced": {
@@ -472,7 +472,7 @@
   "ok": true
  },
  "dangle": {
-  "heard": "dangle",
+  "heard": "Dangle",
   "ok": true
  },
  "dangled": {
@@ -480,7 +480,7 @@
   "ok": true
  },
  "dangles": {
-  "heard": "dangles",
+  "heard": "Dangles",
   "ok": true
  },
  "dangling": {
@@ -496,7 +496,7 @@
   "ok": true
  },
  "declared": {
-  "heard": "declared",
+  "heard": "Declared",
   "ok": true
  },
  "declares": {
@@ -528,15 +528,15 @@
   "ok": true
  },
  "derelict": {
-  "heard": "derelict",
+  "heard": "Derelict",
   "ok": true
  },
  "desolate": {
-  "heard": "desolate",
+  "heard": "Desolate",
   "ok": true
  },
  "despondent": {
-  "heard": "Despondent.",
+  "heard": "Despondent",
   "ok": true
  },
  "deteriorate": {
@@ -548,7 +548,7 @@
   "ok": true
  },
  "deteriorates": {
-  "heard": "Deteriorates.",
+  "heard": "deteriorates",
   "ok": true
  },
  "determined": {
@@ -572,7 +572,7 @@
   "ok": true
  },
  "discreet": {
-  "heard": "Discreet.",
+  "heard": "discrete",
   "ok": true
  },
  "disoriented": {
@@ -596,7 +596,7 @@
   "ok": true
  },
  "drift": {
-  "heard": "Drift",
+  "heard": "Drift.",
   "ok": true
  },
  "drifted": {
@@ -604,11 +604,11 @@
   "ok": true
  },
  "drifts": {
-  "heard": "Drifts.",
+  "heard": "Drifts",
   "ok": true
  },
  "dripping": {
-  "heard": "Dripping.",
+  "heard": "Dripping",
   "ok": true
  },
  "drizzle": {
@@ -624,7 +624,7 @@
   "ok": true
  },
  "drowsy": {
-  "heard": "drowsy",
+  "heard": "Drowsy",
   "ok": true
  },
  "dry": {
@@ -644,27 +644,27 @@
   "ok": true
  },
  "dwindle": {
-  "heard": "Dwindle",
+  "heard": "dwindle",
   "ok": true
  },
  "dwindled": {
-  "heard": "Dwindled",
+  "heard": "Dwindled.",
   "ok": true
  },
  "dwindles": {
-  "heard": "dwindles",
+  "heard": "Dwindles",
   "ok": true
  },
  "earlier": {
-  "heard": "earlier",
+  "heard": "Earlier",
   "ok": true
  },
  "earnest": {
-  "heard": "Ernest",
+  "heard": "Earnest",
   "ok": true
  },
  "eclipse": {
-  "heard": "Eclipse",
+  "heard": "eclipse",
   "ok": true
  },
  "elderly": {
@@ -676,7 +676,7 @@
   "ok": true
  },
  "emphatic": {
-  "heard": "emphatic",
+  "heard": "Emphatic",
   "ok": true
  },
  "endured": {
@@ -684,7 +684,7 @@
   "ok": true
  },
  "endures": {
-  "heard": "Endures",
+  "heard": "endures",
   "ok": true
  },
  "enjoy": {
@@ -692,23 +692,23 @@
   "ok": true
  },
  "enjoyed": {
-  "heard": "enjoyed.",
+  "heard": "Enjoyed",
   "ok": true
  },
  "envied": {
-  "heard": "envied",
+  "heard": "Envied",
   "ok": true
  },
  "envies": {
-  "heard": "envies",
+  "heard": "Envies",
   "ok": true
  },
  "envisage": {
-  "heard": "Envisage",
+  "heard": "Envisage.",
   "ok": true
  },
  "envisaged": {
-  "heard": "Envisaged",
+  "heard": "envisaged",
   "ok": true
  },
  "erratic": {
@@ -732,7 +732,7 @@
   "ok": true
  },
  "evaluated": {
-  "heard": "Evaluated.",
+  "heard": "evaluated",
   "ok": true
  },
  "evening": {
@@ -748,7 +748,7 @@
   "ok": true
  },
  "exclaim": {
-  "heard": "Exclaim.",
+  "heard": "Exclaim",
   "ok": true
  },
  "exclaimed": {
@@ -756,7 +756,7 @@
   "ok": true
  },
  "exhausted": {
-  "heard": "Exhausted.",
+  "heard": "Exhausted",
   "ok": true
  },
  "exodus": {
@@ -764,7 +764,7 @@
   "ok": true
  },
  "faint": {
-  "heard": "Faint",
+  "heard": "faint",
   "ok": true
  },
  "fearless": {
@@ -772,7 +772,7 @@
   "ok": true
  },
  "filthy": {
-  "heard": "Filthy",
+  "heard": "filthy",
   "ok": true
  },
  "finally": {
@@ -784,7 +784,7 @@
   "ok": true
  },
  "flammable": {
-  "heard": "flammable",
+  "heard": "Flammable",
   "ok": true
  },
  "fled": {
@@ -796,7 +796,7 @@
   "ok": true
  },
  "fleeting": {
-  "heard": "fleeting",
+  "heard": "Fleeting",
   "ok": true
  },
  "flinched": {
@@ -824,7 +824,7 @@
   "ok": true
  },
  "frown": {
-  "heard": "frown",
+  "heard": "Frown",
   "ok": true
  },
  "frowned": {
@@ -836,11 +836,11 @@
   "ok": true
  },
  "frustrated": {
-  "heard": "Frustrated.",
+  "heard": "Frustrated",
   "ok": true
  },
  "furious": {
-  "heard": "Furious",
+  "heard": "Furious.",
   "ok": true
  },
  "gait": {
@@ -848,7 +848,7 @@
   "ok": true
  },
  "gaze": {
-  "heard": "Gaze",
+  "heard": "gaze",
   "ok": true
  },
  "gazed": {
@@ -856,7 +856,7 @@
   "ok": true
  },
  "gazes": {
-  "heard": "gazes",
+  "heard": "Gazes",
   "ok": true
  },
  "gigantic": {
@@ -876,7 +876,7 @@
   "ok": true
  },
  "glance": {
-  "heard": "Glance",
+  "heard": "glance",
   "ok": true
  },
  "glanced": {
@@ -892,7 +892,7 @@
   "ok": true
  },
  "glared": {
-  "heard": "Glared",
+  "heard": "Glared.",
   "ok": true
  },
  "gobble": {
@@ -912,15 +912,15 @@
   "ok": true
  },
  "grabbed": {
-  "heard": "Grabbed",
+  "heard": "grabbed",
   "ok": true
  },
  "grabs": {
-  "heard": "grabs",
+  "heard": "Grabs",
   "ok": true
  },
  "grateful": {
-  "heard": "grateful",
+  "heard": "Grateful",
   "ok": true
  },
  "greasy": {
@@ -932,7 +932,7 @@
   "ok": true
  },
  "grinned": {
-  "heard": "Grinned.",
+  "heard": "Grinned",
   "ok": true
  },
  "groggy": {
@@ -940,7 +940,7 @@
   "ok": true
  },
  "grubby": {
-  "heard": "grubby",
+  "heard": "Grubby",
   "ok": true
  },
  "grumpy": {
@@ -964,7 +964,7 @@
   "ok": true
  },
  "haphazard": {
-  "heard": "Haphazard",
+  "heard": "haphazard",
   "ok": true
  },
  "headland": {
@@ -1048,11 +1048,11 @@
   "ok": true
  },
  "incredulous": {
-  "heard": "Incredulous",
+  "heard": "Incredulous.",
   "ok": true
  },
  "insist": {
-  "heard": "Insist",
+  "heard": "insist",
   "ok": true
  },
  "insisted": {
@@ -1060,7 +1060,7 @@
   "ok": true
  },
  "insists": {
-  "heard": "Insists",
+  "heard": "insists",
   "ok": true
  },
  "intermittent": {
@@ -1088,7 +1088,7 @@
   "ok": true
  },
  "jetty": {
-  "heard": "jetty",
+  "heard": "Jetty",
   "ok": true
  },
  "jubilant": {
@@ -1116,7 +1116,7 @@
   "ok": true
  },
  "lamented": {
-  "heard": "Lamented",
+  "heard": "Lamented.",
   "ok": true
  },
  "laments": {
@@ -1188,7 +1188,7 @@
   "ok": true
  },
  "meanwhile": {
-  "heard": "Meanwhile",
+  "heard": "Meanwhile.",
   "ok": true
  },
  "medieval": {
@@ -1196,7 +1196,7 @@
   "ok": true
  },
  "melancholy": {
-  "heard": "melancholy",
+  "heard": "Melancholy",
   "ok": true
  },
  "meteor": {
@@ -1204,7 +1204,7 @@
   "ok": true
  },
  "meticulous": {
-  "heard": "meticulous",
+  "heard": "Meticulous",
   "ok": true
  },
  "midday": {
@@ -1220,11 +1220,11 @@
   "ok": true
  },
  "monotonous": {
-  "heard": "Monotonous.",
+  "heard": "Monotonous",
   "ok": true
  },
  "morning": {
-  "heard": "Morning",
+  "heard": "Morning.",
   "ok": true
  },
  "mortified": {
@@ -1232,11 +1232,11 @@
   "ok": true
  },
  "muddy": {
-  "heard": "Muddy.",
+  "heard": "Muddy",
   "ok": true
  },
  "muffled": {
-  "heard": "Muffled",
+  "heard": "Muffled.",
   "ok": true
  },
  "mumble": {
@@ -1244,7 +1244,7 @@
   "ok": true
  },
  "mumbled": {
-  "heard": "mumbled",
+  "heard": "Mumbled.",
   "ok": true
  },
  "munch": {
@@ -1252,7 +1252,7 @@
   "ok": true
  },
  "munched": {
-  "heard": "Munched",
+  "heard": "munched",
   "ok": true
  },
  "munching": {
@@ -1268,7 +1268,7 @@
   "ok": true
  },
  "murmurs": {
-  "heard": "murmurs",
+  "heard": "Murmurs",
   "ok": true
  },
  "muse": {
@@ -1280,7 +1280,7 @@
   "ok": true
  },
  "musing": {
-  "heard": "Musing",
+  "heard": "musing",
   "ok": true
  },
  "musty": {
@@ -1292,7 +1292,7 @@
   "ok": true
  },
  "nibble": {
-  "heard": "Nibble",
+  "heard": "nibble",
   "ok": true
  },
  "nibbled": {
@@ -1300,15 +1300,15 @@
   "ok": true
  },
  "night": {
-  "heard": "Night",
+  "heard": "Knight",
   "ok": true
  },
  "nodded": {
-  "heard": "nodded",
+  "heard": "Nodded",
   "ok": true
  },
  "nonchalant": {
-  "heard": "Nonchalant",
+  "heard": "Nonchalant.",
   "ok": true
  },
  "nostalgic": {
@@ -1344,7 +1344,7 @@
   "ok": true
  },
  "outdated": {
-  "heard": "Outdated.",
+  "heard": "Outdated",
   "ok": true
  },
  "overcast": {
@@ -1356,23 +1356,23 @@
   "ok": true
  },
  "paddled": {
-  "heard": "paddled",
+  "heard": "Paddled",
   "ok": true
  },
  "paddles": {
-  "heard": "Paddles.",
+  "heard": "Paddles",
   "ok": true
  },
  "painted": {
-  "heard": "painted",
+  "heard": "Painted",
   "ok": true
  },
  "patted": {
-  "heard": "Patted",
+  "heard": "patted",
   "ok": true
  },
  "peak": {
-  "heard": "Peek",
+  "heard": "peak",
   "ok": true
  },
  "peeled": {
@@ -1380,11 +1380,11 @@
   "ok": true
  },
  "peer": {
-  "heard": "Peer",
+  "heard": "peer",
   "ok": true
  },
  "peered": {
-  "heard": "Peered",
+  "heard": "peered",
   "ok": true
  },
  "peers": {
@@ -1392,7 +1392,7 @@
   "ok": true
  },
  "perplexed": {
-  "heard": "perplexed",
+  "heard": "Perplexed",
   "ok": true
  },
  "persevere": {
@@ -1404,7 +1404,7 @@
   "ok": true
  },
  "perseveres": {
-  "heard": "Perseveres.",
+  "heard": "Perseveres",
   "ok": true
  },
  "physique": {
@@ -1412,7 +1412,7 @@
   "ok": true
  },
  "piercing": {
-  "heard": "Piercing",
+  "heard": "piercing",
   "ok": true
  },
  "pilgrimage": {
@@ -1432,11 +1432,11 @@
   "ok": true
  },
  "pitch-black": {
-  "heard": "Pitch-black.",
+  "heard": "Pitch-black",
   "ok": true
  },
  "plain": {
-  "heard": "plane",
+  "heard": "Plane",
   "ok": true
  },
  "plead": {
@@ -1444,11 +1444,11 @@
   "ok": true
  },
  "pleaded": {
-  "heard": "pleaded",
+  "heard": "Pleaded",
   "ok": true
  },
  "pleads": {
-  "heard": "Pleads",
+  "heard": "pleads",
   "ok": true
  },
  "plunge": {
@@ -1456,11 +1456,11 @@
   "ok": true
  },
  "plunged": {
-  "heard": "Plunged",
+  "heard": "Plunged.",
   "ok": true
  },
  "plunges": {
-  "heard": "Plunges",
+  "heard": "Plunges.",
   "ok": true
  },
  "poise": {
@@ -1496,7 +1496,7 @@
   "ok": true
  },
  "prehistoric": {
-  "heard": "prehistoric.",
+  "heard": "Prehistoric",
   "ok": true
  },
  "prickly": {
@@ -1504,7 +1504,7 @@
   "ok": true
  },
  "prosper": {
-  "heard": "prosper",
+  "heard": "Prosper",
   "ok": true
  },
  "prospered": {
@@ -1512,7 +1512,7 @@
   "ok": true
  },
  "prospers": {
-  "heard": "Prospers.",
+  "heard": "Prospers",
   "ok": true
  },
  "proud": {
@@ -1524,15 +1524,15 @@
   "ok": true
  },
  "pulled": {
-  "heard": "Pulled",
+  "heard": "pulled",
   "ok": true
  },
  "pushed": {
-  "heard": "pushed",
+  "heard": "Pushed",
   "ok": true
  },
  "radiant": {
-  "heard": "radiant",
+  "heard": "Radiant",
   "ok": true
  },
  "rapids": {
@@ -1564,11 +1564,11 @@
   "ok": true
  },
  "relented": {
-  "heard": "Relented.",
+  "heard": "Relented",
   "ok": true
  },
  "relentless": {
-  "heard": "relentless",
+  "heard": "Relentless",
   "ok": true
  },
  "relents": {
@@ -1576,7 +1576,7 @@
   "ok": true
  },
  "relieved": {
-  "heard": "Relieved.",
+  "heard": "Relieved",
   "ok": true
  },
  "relish": {
@@ -1588,27 +1588,27 @@
   "ok": true
  },
  "relishes": {
-  "heard": "Relishes.",
+  "heard": "Relishes",
   "ok": true
  },
  "reluctant": {
-  "heard": "reluctant",
+  "heard": "Reluctant",
   "ok": true
  },
  "reminisce": {
-  "heard": "Reminisce.",
+  "heard": "Reminisce",
   "ok": true
  },
  "reminisced": {
-  "heard": "Reminisced",
+  "heard": "reminisced",
   "ok": true
  },
  "reminiscing": {
-  "heard": "Reminiscing",
+  "heard": "Reminiscing.",
   "ok": true
  },
  "remorseful": {
-  "heard": "remorseful",
+  "heard": "Remorseful",
   "ok": true
  },
  "resentful": {
@@ -1616,19 +1616,19 @@
   "ok": true
  },
  "resolute": {
-  "heard": "Resolute",
+  "heard": "Resolute.",
   "ok": true
  },
  "restless": {
-  "heard": "Restless",
+  "heard": "Restless.",
   "ok": true
  },
  "retorted": {
-  "heard": "Retorted",
+  "heard": "retorted",
   "ok": true
  },
  "retreat": {
-  "heard": "retreat",
+  "heard": "Retreat",
   "ok": true
  },
  "retreated": {
@@ -1636,11 +1636,11 @@
   "ok": true
  },
  "retreating": {
-  "heard": "Retreating",
+  "heard": "Retreating.",
   "ok": true
  },
  "rickety": {
-  "heard": "rickety",
+  "heard": "Rickety",
   "ok": true
  },
  "roll": {
@@ -1648,7 +1648,7 @@
   "ok": true
  },
  "rolled": {
-  "heard": "rolled",
+  "heard": "Rolled",
   "ok": true
  },
  "rolls": {
@@ -1660,23 +1660,23 @@
   "ok": true
  },
  "saw": {
-  "heard": "Saw",
+  "heard": "saw",
   "ok": true
  },
  "sceptical": {
-  "heard": "Skeptical",
+  "heard": "Skeptical.",
   "ok": true
  },
  "scratchy": {
-  "heard": "Scratchy.",
+  "heard": "scratchy",
   "ok": true
  },
  "scrubbed": {
-  "heard": "Scrubbed.",
+  "heard": "Scrubbed",
   "ok": true
  },
  "scrutinise": {
-  "heard": "Scrutinize.",
+  "heard": "Scrutinize",
   "ok": true
  },
  "scrutinised": {
@@ -1696,15 +1696,15 @@
   "ok": true
  },
  "shivered": {
-  "heard": "shivered",
+  "heard": "Shivered",
   "ok": true
  },
  "shout": {
-  "heard": "Shout",
+  "heard": "shout",
   "ok": true
  },
  "shouted": {
-  "heard": "shouted",
+  "heard": "Shouted",
   "ok": true
  },
  "sighed": {
@@ -1744,11 +1744,11 @@
   "ok": true
  },
  "sluggish": {
-  "heard": "Sluggish.",
+  "heard": "Sluggish",
   "ok": true
  },
  "smug": {
-  "heard": "smug",
+  "heard": "Smug",
   "ok": true
  },
  "snatch": {
@@ -1764,7 +1764,7 @@
   "ok": true
  },
  "sobbed": {
-  "heard": "sobbed",
+  "heard": "Sobbed",
   "ok": true
  },
  "soggy": {
@@ -1772,7 +1772,7 @@
   "ok": true
  },
  "someday": {
-  "heard": "Someday",
+  "heard": "Someday.",
   "ok": true
  },
  "sometimes": {
@@ -1780,19 +1780,19 @@
   "ok": true
  },
  "soon": {
-  "heard": "Soon",
+  "heard": "Soon.",
   "ok": true
  },
  "spacious": {
-  "heard": "spacious",
+  "heard": "Spacious",
   "ok": true
  },
  "sparkly": {
-  "heard": "sparkly",
+  "heard": "Sparkly",
   "ok": true
  },
  "speculate": {
-  "heard": "speculate",
+  "heard": "Speculate.",
   "ok": true
  },
  "speculated": {
@@ -1800,19 +1800,19 @@
   "ok": true
  },
  "spilled": {
-  "heard": "Spilled",
+  "heard": "spilled",
   "ok": true
  },
  "spire": {
-  "heard": "spire",
+  "heard": "Spire",
   "ok": true
  },
  "squeaky": {
-  "heard": "Squeaky",
+  "heard": "squeaky",
   "ok": true
  },
  "squint": {
-  "heard": "Squint",
+  "heard": "squint",
   "ok": true
  },
  "squinted": {
@@ -1824,11 +1824,11 @@
   "ok": true
  },
  "stance": {
-  "heard": "Stance",
+  "heard": "stance",
   "ok": true
  },
  "startled": {
-  "heard": "Startled",
+  "heard": "Startled.",
   "ok": true
  },
  "stature": {
@@ -1840,7 +1840,7 @@
   "ok": true
  },
  "steamed": {
-  "heard": "Steamed",
+  "heard": "steamed",
   "ok": true
  },
  "stewed": {
@@ -1848,11 +1848,11 @@
   "ok": true
  },
  "sticky": {
-  "heard": "Sticky.",
+  "heard": "Sticky",
   "ok": true
  },
  "stir": {
-  "heard": "stir",
+  "heard": "Stir",
   "ok": true
  },
  "stirred": {
@@ -1864,7 +1864,7 @@
   "ok": true
  },
  "stirs": {
-  "heard": "Stirs",
+  "heard": "Stirs.",
   "ok": true
  },
  "stream": {
@@ -1880,11 +1880,11 @@
   "ok": true
  },
  "strives": {
-  "heard": "Strives.",
+  "heard": "Strives",
   "ok": true
  },
  "stroll": {
-  "heard": "stroll",
+  "heard": "Stroll",
   "ok": true
  },
  "strolled": {
@@ -1892,15 +1892,15 @@
   "ok": true
  },
  "strove": {
-  "heard": "Strove",
+  "heard": "strove",
   "ok": true
  },
  "subtle": {
-  "heard": "subtle",
+  "heard": "Subtle",
   "ok": true
  },
  "swayed": {
-  "heard": "Suede",
+  "heard": "suede",
   "ok": true
  },
  "sweltering": {
@@ -1908,11 +1908,11 @@
   "ok": true
  },
  "swept": {
-  "heard": "Swept.",
+  "heard": "Swept",
   "ok": true
  },
  "take": {
-  "heard": "take",
+  "heard": "Take",
   "ok": true
  },
  "taking": {
@@ -1924,19 +1924,19 @@
   "ok": true
  },
  "tease": {
-  "heard": "tease",
+  "heard": "Tease",
   "ok": true
  },
  "teased": {
-  "heard": "Teased",
+  "heard": "teased",
   "ok": true
  },
  "teases": {
-  "heard": "teases",
+  "heard": "Teases.",
   "ok": true
  },
  "tentative": {
-  "heard": "Tentative.",
+  "heard": "Tentative",
   "ok": true
  },
  "terrified": {
@@ -1944,11 +1944,11 @@
   "ok": true
  },
  "than": {
-  "heard": "than",
+  "heard": "Then",
   "ok": true
  },
  "their": {
-  "heard": "There",
+  "heard": "Their",
   "ok": true
  },
  "then": {
@@ -1956,11 +1956,11 @@
   "ok": true
  },
  "there": {
-  "heard": "there",
+  "heard": "Their",
   "ok": true
  },
  "they're": {
-  "heard": "There",
+  "heard": "Their",
   "ok": true
  },
  "threw": {
@@ -1984,7 +1984,7 @@
   "ok": true
  },
  "tiptoe": {
-  "heard": "tiptoe",
+  "heard": "Tiptoe",
   "ok": true
  },
  "tiptoed": {
@@ -1992,11 +1992,11 @@
   "ok": true
  },
  "today": {
-  "heard": "Today",
+  "heard": "today",
   "ok": true
  },
  "toil": {
-  "heard": "toil",
+  "heard": "Toil",
   "ok": true
  },
  "toiled": {
@@ -2012,7 +2012,7 @@
   "ok": true
  },
  "tonight": {
-  "heard": "Tonight.",
+  "heard": "Tonight",
   "ok": true
  },
  "took": {
@@ -2028,11 +2028,11 @@
   "ok": true
  },
  "towering": {
-  "heard": "Towering",
+  "heard": "towering",
   "ok": true
  },
  "traced": {
-  "heard": "traced.",
+  "heard": "traced",
   "ok": true
  },
  "tranquil": {
@@ -2040,7 +2040,7 @@
   "ok": true
  },
  "transparent": {
-  "heard": "transparent",
+  "heard": "Transparent",
   "ok": true
  },
  "tributary": {
@@ -2068,15 +2068,15 @@
   "ok": true
  },
  "usually": {
-  "heard": "Usually.",
+  "heard": "Usually",
   "ok": true
  },
  "vague": {
-  "heard": "Vague",
+  "heard": "vague",
   "ok": true
  },
  "valley": {
-  "heard": "Valley",
+  "heard": "valley",
   "ok": true
  },
  "vast": {
@@ -2128,11 +2128,11 @@
   "ok": true
  },
  "whimper": {
-  "heard": "Whimper",
+  "heard": "whimper",
   "ok": true
  },
  "whimpered": {
-  "heard": "whimpered",
+  "heard": "Whimpered",
   "ok": true
  },
  "whimpering": {
@@ -2172,15 +2172,15 @@
   "ok": true
  },
  "wobble": {
-  "heard": "Wobble",
+  "heard": "wobble",
   "ok": true
  },
  "wobbled": {
-  "heard": "Wobbled",
+  "heard": "wobbled.",
   "ok": true
  },
  "wriggle": {
-  "heard": "Wriggle",
+  "heard": "wriggle",
   "ok": true
  },
  "wriggled": {
@@ -2192,7 +2192,7 @@
   "ok": true
  },
  "yawn": {
-  "heard": "Yawn",
+  "heard": "yawn",
   "ok": true
  },
  "yawned": {
@@ -2200,7 +2200,7 @@
   "ok": true
  },
  "yesterday": {
-  "heard": "Yesterday.",
+  "heard": "Yesterday",
   "ok": true
  }
 }
